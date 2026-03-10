@@ -214,22 +214,67 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
             <td>{status_html}</td>
             <td class="detail">{detail}</td></tr>""")
 
+    # Calculate valid crates per publisher (excluding errors)
+    publisher_valid_counts = {}
+    crate_publisher_map = {}
+    valid_publishers = set()
+    for r in results:
+        if not r.error:
+            valid_publishers.add(r.publisher)
+            crate_publisher_map[r.name] = r.publisher
+            publisher_valid_counts[r.publisher] = publisher_valid_counts.get(r.publisher, 0) + 1
+
+    sorted_publishers = sorted(valid_publishers)
+
     # Coverage rows
     coverage_rows = []
     for msg, meta in sorted_msgs:
         sev = meta["severity"]
-        missing = len(meta["crates_missing"])
+        missing_crates = meta["crates_missing"]
+
+        # Global stats
+        missing = len(missing_crates)
         present = valid_crates - missing
         pct = (present / valid_crates * 100) if valid_crates else 0
         bar_color = {"Violation": "var(--violation)", "Warning": "var(--warning)", "Info": "var(--info)"}[sev]
+
+        # Per-publisher stats
+        pub_cells = []
+        for pub in sorted_publishers:
+            total_pub = publisher_valid_counts.get(pub, 0)
+            if total_pub == 0:
+                pub_cells.append('<td class="count">-</td>')
+                continue
+
+            missing_pub = sum(1 for c in missing_crates if crate_publisher_map.get(c) == pub)
+            present_pub = total_pub - missing_pub
+            pct_pub = (present_pub / total_pub * 100)
+
+            # Highlight low coverage
+            style = ""
+            if pct_pub < 100:
+                if sev == "Violation":
+                    style = ' style="color: var(--violation); font-weight: bold;"'
+                elif sev == "Warning":
+                    style = ' style="color: var(--warning);"'
+
+            pub_cells.append(f'<td class="count"{style}>{pct_pub:.0f}%</td>')
+
+        pub_cells_html = "".join(pub_cells)
+
         coverage_rows.append(
             f'<tr><td>{severity_badge(sev)}</td>'
             f'<td>{escape(msg)}</td>'
             f'<td class="count">{present}/{valid_crates}</td>'
             f'<td class="count">{pct:.0f}%</td>'
             f'<td><div class="bar-bg"><div class="bar-fill" style="width:{pct:.1f}%;background:{bar_color}"></div></div></td>'
+            f'{pub_cells_html}'
             f'</tr>'
         )
+
+    # Dynamic header for coverage table
+    pub_headers = "".join(f'<th style="text-align:right" title="{escape(p)}">{escape(p)[:15]}</th>' for p in sorted_publishers)
+    coverage_thead = f'<thead><tr><th>Level</th><th>Constraint</th><th style="text-align:right">Have it</th><th style="text-align:right">%</th><th>Coverage</th>{pub_headers}</tr></thead>'
 
     # Per-publisher summary
     pub_stats: dict[str, dict] = {}
@@ -349,7 +394,7 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
 <section>
 <h2>Property coverage across crates</h2>
 <table>
-<thead><tr><th>Level</th><th>Constraint</th><th style="text-align:right">Have it</th><th style="text-align:right">%</th><th>Coverage</th></tr></thead>
+{coverage_thead}
 <tbody>{"".join(coverage_rows)}</tbody>
 </table>
 </section>
