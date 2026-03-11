@@ -6,11 +6,24 @@ BIA crates: https://github.com/BioImage-Archive/gide-ro-crate/tree/main/study_ro
 
 IDR crates: https://github.com/German-BioImaging/idr_study_crates/tree/main/ro-crates
 
-SSBD: ...
+SSBD: https://github.com/openssbd/gide-ro-crate
 
 ## Approach
 
-* Get the *-ro-crate-metadata.json files (e.g. via git submodules?)
+
+### 1 - Collect and Validate
+
+* Get the *-ro-crate-metadata.json files, currently via git submodules (see 'collect_crates.py')
+
+* Validate the RO-Crates using a SHACL profile (see "gide_shapes.ttl" for the profile and "validate_crates.py" for processing)
+
+* Generate an "index.html" displaying the compliance stats for the crates
+
+TODOS: Add URI-level validation (are ontology entries correct/valid? which ontologies are used?)
+
+### 2 - Serialize and export
+
+TODOS:
 
 * Serialize in RDF
 
@@ -59,6 +72,9 @@ def write_merged_ttl(
 ```
 
 * Output to Zenodo or something as a GIDE deliverable
+
+
+### 3 - Enrich and query
 
 * Enrich with upper terms from FBbi and NCBITaxon (see https://github.com/German-BioImaging/idr_study_crates/blob/main/scripts/join_with_fbbi_and_ncbitaxon.py)
 
