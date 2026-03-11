@@ -36,6 +36,11 @@ def clean_context(context):
     { "something": "http://example.com/something"
       }
 
+    also remove       "Taxon": {
+        "@id": "dwc:Taxon"
+      },
+
+    if it was set
     """
     for item in context:
         if isinstance(item, dict):
@@ -44,6 +49,10 @@ def clean_context(context):
                 dp = item["datePublished"]
                 if isinstance(dp, dict) and dp.get("@type") == "xsd:date":
                     del item["datePublished"]
+            if "Taxon" in item:
+                tax = item["Taxon"]
+                if isinstance(tax, dict) and tax.get("@id") == "dwc:Taxon":
+                    del item["Taxon"]
     return context
 
 
