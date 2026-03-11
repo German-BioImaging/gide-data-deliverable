@@ -21,7 +21,7 @@ from rdflib.plugins.shared.jsonld import context as jsonld_context
 HERE = Path(__file__).parent.resolve()
 CRATES_DIR = HERE / "GIDE_crates"
 SHAPES_FILE = HERE / "gide_shapes.ttl"
-HTML_OUTPUT = HERE / "validation_report.html"
+HTML_OUTPUT = HERE / "index.html"
 
 RO_CRATE_CONTEXT_URL = "https://w3id.org/ro/crate/1.2/context"
 _ro_crate_context_cache: dict | None = None
@@ -35,9 +35,10 @@ logging.getLogger("rdflib").setLevel(logging.ERROR)
 
 # ── Data structures ──────────────────────────────────────────────────────────
 
+
 @dataclass
 class Finding:
-    severity: str   # "Violation", "Warning", "Info"
+    severity: str  # "Violation", "Warning", "Info"
     message: str
     focus_node: str
     path: str
@@ -47,6 +48,7 @@ class Finding:
 class CrateResult:
     name: str
     publisher: str = "Unknown"
+    dataset_id: str = ""
     findings: list[Finding] = field(default_factory=list)
     error: str | None = None
 
@@ -73,10 +75,12 @@ class CrateResult:
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
+
 def _get_ro_crate_context() -> dict:
     global _ro_crate_context_cache
     if _ro_crate_context_cache is None:
         import urllib.request
+
         with urllib.request.urlopen(RO_CRATE_CONTEXT_URL) as resp:
             _ro_crate_context_cache = json.loads(resp.read())
     return _ro_crate_context_cache
@@ -95,8 +99,10 @@ def _install_context_hook():
     return original_fetch
 
 
-def extract_publisher(path: Path) -> str:
-    """Extract the publisher name from the JSON-LD without full RDF parsing."""
+def extract_metadata(path: Path) -> tuple[str, str]:
+    """Extract publisher name and dataset ID from JSON-LD without full RDF parsing."""
+    publisher = "Unknown"
+    dataset_id = ""
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
         graph = data.get("@graph", [])
@@ -105,15 +111,20 @@ def extract_publisher(path: Path) -> str:
         # Find the root Dataset
         for entity in graph:
             if isinstance(entity, dict) and "Dataset" in (entity.get("@type") or []):
+                # Extract Dataset ID
+                dataset_id = entity.get("@id", "")
+
+                # Extract Publisher
                 pub_ref = entity.get("publisher")
                 if isinstance(pub_ref, dict) and "@id" in pub_ref:
                     pub_entity = by_id.get(pub_ref["@id"], {})
-                    return pub_entity.get("name", pub_ref["@id"])
+                    publisher = pub_entity.get("name", pub_ref["@id"])
                 elif isinstance(pub_ref, str):
-                    return pub_ref
+                    publisher = pub_ref
+                break
     except Exception:
         pass
-    return "Unknown"
+    return publisher, dataset_id
 
 
 def parse_jsonld(path: Path) -> Graph:
@@ -147,6 +158,7 @@ def extract_findings(results_graph: Graph) -> list[Finding]:
 
 # ── HTML report ──────────────────────────────────────────────────────────────
 
+
 def write_html_report(results: list[CrateResult], output_path: Path) -> None:
     total = len(results)
     n_violations = sum(r.violations for r in results)
@@ -155,7 +167,9 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
     n_errors = sum(1 for r in results if r.error)
     crates_with_violations = sum(1 for r in results if r.violations)
     crates_with_warnings = sum(1 for r in results if r.warnings)
-    crates_clean = sum(1 for r in results if r.status == "pass" and not r.warnings and not r.infos)
+    crates_clean = sum(
+        1 for r in results if r.status == "pass" and not r.warnings and not r.infos
+    )
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     # For each finding message, collect which crates are missing it
@@ -175,7 +189,10 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
     sev_order = {"Violation": 0, "Warning": 1, "Info": 2}
     sorted_msgs = sorted(
         msg_meta.items(),
-        key=lambda item: (sev_order[item[1]["severity"]], -len(item[1]["crates_missing"])),
+        key=lambda item: (
+            sev_order[item[1]["severity"]],
+            -len(item[1]["crates_missing"]),
+        ),
     )
 
     valid_crates = total - n_errors
@@ -192,27 +209,41 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
         else:
             parts = []
             if r.violations:
-                parts.append(f'<span class="badge violation">{r.violations} violation(s)</span>')
+                parts.append(
+                    f'<span class="badge violation">{r.violations} violation(s)</span>'
+                )
             if r.warnings:
-                parts.append(f'<span class="badge warning">{r.warnings} warning(s)</span>')
+                parts.append(
+                    f'<span class="badge warning">{r.warnings} warning(s)</span>'
+                )
             if r.infos:
                 parts.append(f'<span class="badge info">{r.infos} info(s)</span>')
-            status_html = " ".join(parts) if parts else '<span class="badge ok">OK</span>'
+            status_html = (
+                " ".join(parts) if parts else '<span class="badge ok">OK</span>'
+            )
 
             detail_parts = []
-            for f in sorted(r.findings, key=lambda f: ("Violation", "Warning", "Info").index(f.severity)):
-                detail_parts.append(
-                    f'{severity_badge(f.severity)} {escape(f.message)}'
-                )
+            for f in sorted(
+                r.findings,
+                key=lambda f: ("Violation", "Warning", "Info").index(f.severity),
+            ):
+                detail_parts.append(f"{severity_badge(f.severity)} {escape(f.message)}")
             detail = "<br>".join(detail_parts)
 
-        rows.append(f"""<tr class="crate-row" data-status="{r.status}"
+        # Prepare link to original resource if dataset_id looks like a URL
+        link_html = ""
+        if r.dataset_id.startswith("http"):
+            link_html = f'<br><a href="{escape(r.dataset_id)}" target="_blank" style="font-size:.8rem">Original Resource ↗</a>'
+
+        rows.append(
+            f"""<tr class="crate-row" data-status="{r.status}"
             data-violations="{r.violations}" data-warnings="{r.warnings}" data-infos="{r.infos}"
             data-publisher="{escape(r.publisher)}">
-            <td class="crate-name">{escape(r.name)}</td>
+            <td class="crate-name">{escape(r.name)}{link_html}</td>
             <td class="publisher-cell">{escape(r.publisher)}</td>
             <td>{status_html}</td>
-            <td class="detail">{detail}</td></tr>""")
+            <td class="detail">{detail}</td></tr>"""
+        )
 
     # Calculate valid crates per publisher (excluding errors)
     publisher_valid_counts = {}
@@ -222,64 +253,100 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
         if not r.error:
             valid_publishers.add(r.publisher)
             crate_publisher_map[r.name] = r.publisher
-            publisher_valid_counts[r.publisher] = publisher_valid_counts.get(r.publisher, 0) + 1
+            publisher_valid_counts[r.publisher] = (
+                publisher_valid_counts.get(r.publisher, 0) + 1
+            )
 
     sorted_publishers = sorted(valid_publishers)
 
-    # Coverage rows
+    # Coverage rows - also build a mapping of constraint -> crates missing it
     coverage_rows = []
+    constraint_idx = 0
+    constraint_crates_map: dict[int, list[str]] = {}
+
     for msg, meta in sorted_msgs:
         sev = meta["severity"]
         missing_crates = meta["crates_missing"]
+        missing_crates_list = sorted(missing_crates)
+        constraint_crates_map[constraint_idx] = missing_crates_list
 
         # Global stats
         missing = len(missing_crates)
         present = valid_crates - missing
         pct = (present / valid_crates * 100) if valid_crates else 0
-        bar_color = {"Violation": "var(--violation)", "Warning": "var(--warning)", "Info": "var(--info)"}[sev]
+        bar_color = {
+            "Violation": "var(--violation)",
+            "Warning": "var(--warning)",
+            "Info": "var(--info)",
+        }[sev]
+
+        # Clickable global percentage cell
+        global_pct_click = ""
+        if missing > 0:
+            global_pct_click = f' class="count clickable-pct" data-constraint="{constraint_idx}" data-pub="all" title="Click to filter crates missing this constraint"'
+        else:
+            global_pct_click = ' class="count"'
 
         # Per-publisher stats
         pub_cells = []
-        for pub in sorted_publishers:
+        for pub_idx, pub in enumerate(sorted_publishers):
             total_pub = publisher_valid_counts.get(pub, 0)
             if total_pub == 0:
                 pub_cells.append('<td class="count">-</td>')
                 continue
 
-            missing_pub = sum(1 for c in missing_crates if crate_publisher_map.get(c) == pub)
+            missing_pub = sum(
+                1 for c in missing_crates if crate_publisher_map.get(c) == pub
+            )
             present_pub = total_pub - missing_pub
-            pct_pub = (present_pub / total_pub * 100)
+            pct_pub = present_pub / total_pub * 100
 
-            # Highlight low coverage
-            style = ""
+            # Highlight low coverage and make clickable
+            style_parts = []
             if pct_pub < 100:
                 if sev == "Violation":
-                    style = ' style="color: var(--violation); font-weight: bold;"'
+                    style_parts.append("color: var(--violation); font-weight: bold;")
                 elif sev == "Warning":
-                    style = ' style="color: var(--warning);"'
+                    style_parts.append("color: var(--warning);")
 
-            pub_cells.append(f'<td class="count"{style}>{pct_pub:.0f}%</td>')
+            if missing_pub > 0:
+                style_str = f' style="{" ".join(style_parts)}"' if style_parts else ""
+                pub_cells.append(
+                    f'<td class="count clickable-pct" data-constraint="{constraint_idx}" data-pub="{escape(pub)}" title="Click to filter {pub} crates missing this constraint"{style_str}>{pct_pub:.0f}%</td>'
+                )
+            else:
+                style_str = f' style="{" ".join(style_parts)}"' if style_parts else ""
+                pub_cells.append(f'<td class="count"{style_str}>{pct_pub:.0f}%</td>')
 
         pub_cells_html = "".join(pub_cells)
 
         coverage_rows.append(
-            f'<tr><td>{severity_badge(sev)}</td>'
-            f'<td>{escape(msg)}</td>'
+            f"<tr><td>{severity_badge(sev)}</td>"
+            f"<td>{escape(msg)}</td>"
             f'<td class="count">{present}/{valid_crates}</td>'
-            f'<td class="count">{pct:.0f}%</td>'
+            f"<td{global_pct_click}>{pct:.0f}%</td>"
             f'<td><div class="bar-bg"><div class="bar-fill" style="width:{pct:.1f}%;background:{bar_color}"></div></div></td>'
-            f'{pub_cells_html}'
-            f'</tr>'
+            f"{pub_cells_html}"
+            f"</tr>"
         )
+        constraint_idx += 1
+
+    # Build JSON map of constraint index -> crates missing
+    constraint_crates_json = json.dumps(constraint_crates_map)
 
     # Dynamic header for coverage table
-    pub_headers = "".join(f'<th style="text-align:right" title="{escape(p)}">{escape(p)[:15]}</th>' for p in sorted_publishers)
+    pub_headers = "".join(
+        f'<th style="text-align:right" title="{escape(p)}">{escape(p)[:15]}</th>'
+        for p in sorted_publishers
+    )
     coverage_thead = f'<thead><tr><th>Level</th><th>Constraint</th><th style="text-align:right">Have it</th><th style="text-align:right">%</th><th>Coverage</th>{pub_headers}</tr></thead>'
 
     # Per-publisher summary
     pub_stats: dict[str, dict] = {}
     for r in results:
-        ps = pub_stats.setdefault(r.publisher, {"total": 0, "violations": 0, "warnings": 0, "infos": 0})
+        ps = pub_stats.setdefault(
+            r.publisher, {"total": 0, "violations": 0, "warnings": 0, "infos": 0}
+        )
         ps["total"] += 1
         ps["violations"] += r.violations
         ps["warnings"] += r.warnings
@@ -289,7 +356,7 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
     for pub in sorted(pub_stats):
         ps = pub_stats[pub]
         pub_summary_rows.append(
-            f'<tr><td>{escape(pub)}</td>'
+            f"<tr><td>{escape(pub)}</td>"
             f'<td class="count">{ps["total"]}</td>'
             f'<td class="count">{ps["violations"]}</td>'
             f'<td class="count">{ps["warnings"]}</td>'
@@ -301,7 +368,9 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
     pub_options = '<option value="all">All publishers</option>'
     for pub in publishers:
         pub_count = sum(1 for r in results if r.publisher == pub)
-        pub_options += f'<option value="{escape(pub)}">{escape(pub)} ({pub_count})</option>'
+        pub_options += (
+            f'<option value="{escape(pub)}">{escape(pub)} ({pub_count})</option>'
+        )
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -353,6 +422,8 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
   .crate-name {{ font-family: monospace; white-space: nowrap; }}
   .detail {{ line-height: 1.7; }}
   .count {{ text-align: right; font-family: monospace; }}
+  .clickable-pct {{ cursor: pointer; text-decoration: underline; }}
+  .clickable-pct:hover {{ background: var(--bg); }}
 
   .badge {{
     display: inline-block; padding: .15rem .45rem; border-radius: .25rem;
@@ -393,7 +464,7 @@ def write_html_report(results: list[CrateResult], output_path: Path) -> None:
 
 <section>
 <h2>Property coverage across crates</h2>
-<table>
+<table id="coverage-table">
 {coverage_thead}
 <tbody>{"".join(coverage_rows)}</tbody>
 </table>
@@ -424,24 +495,49 @@ const buttons = document.querySelectorAll('.filter-btn');
 const search = document.getElementById('search');
 const pubFilter = document.getElementById('pub-filter');
 let activeFilter = 'all';
+let constraintFilter = null; // stores constraint index and publisher filter
+
+// Map of constraint index -> list of crate names missing that constraint
+const constraintCrates = {constraint_crates_json};
 
 function applyFilters() {{
   const q = search.value.toLowerCase();
   const pub = pubFilter.value;
   rows.forEach(row => {{
-    const name = row.querySelector('.crate-name').textContent.toLowerCase();
+    const crateCell = row.querySelector('.crate-name');
+    // Get the crate name from the first text node (before any <br> or links)
+    const crateName = crateCell.childNodes[0].textContent.trim();
+    const name = crateName.toLowerCase();
     const status = row.dataset.status;
     const v = parseInt(row.dataset.violations);
     const w = parseInt(row.dataset.warnings);
     const inf = parseInt(row.dataset.infos);
     let show = true;
+
+    // Standard filters
     if (activeFilter === 'fail') show = v > 0 || status === 'error';
     else if (activeFilter === 'warn') show = w > 0;
     else if (activeFilter === 'clean') show = v === 0 && w === 0 && inf === 0 && status !== 'error';
+
     if (pub !== 'all' && row.dataset.publisher !== pub) show = false;
     if (q && !name.includes(q)) show = false;
+
+    // Constraint filter from coverage table click
+    if (constraintFilter !== null) {{
+      const missingCrates = constraintCrates[constraintFilter.constraint] || [];
+      const isMissing = missingCrates.includes(crateName);
+      if (!isMissing) show = false;
+      if (constraintFilter.pub !== 'all' && row.dataset.publisher !== constraintFilter.pub) show = false;
+    }}
+
     row.classList.toggle('hidden', !show);
   }});
+}}
+
+function clearConstraintFilter() {{
+  constraintFilter = null;
+  const indicator = document.getElementById('constraint-filter-indicator');
+  if (indicator) indicator.remove();
 }}
 
 buttons.forEach(btn => {{
@@ -449,11 +545,52 @@ buttons.forEach(btn => {{
     buttons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activeFilter = btn.dataset.filter;
+    clearConstraintFilter();
     applyFilters();
   }});
 }});
-search.addEventListener('input', applyFilters);
-pubFilter.addEventListener('change', applyFilters);
+search.addEventListener('input', () => {{ clearConstraintFilter(); applyFilters(); }});
+pubFilter.addEventListener('change', () => {{ clearConstraintFilter(); applyFilters(); }});
+
+// Handle clicks on coverage table percentage cells
+document.querySelectorAll('.clickable-pct').forEach(cell => {{
+  cell.addEventListener('click', (e) => {{
+    const constraintIdx = parseInt(cell.dataset.constraint);
+    const pub = cell.dataset.pub;
+
+    // Set constraint filter
+    constraintFilter = {{ constraint: constraintIdx, pub: pub }};
+
+    // Reset other filters
+    buttons.forEach(b => b.classList.remove('active'));
+    buttons[0].classList.add('active');
+    activeFilter = 'all';
+    search.value = '';
+    if (pub !== 'all') {{
+      pubFilter.value = pub;
+    }} else {{
+      pubFilter.value = 'all';
+    }}
+
+    // Add visual indicator
+    let indicator = document.getElementById('constraint-filter-indicator');
+    if (!indicator) {{
+      indicator = document.createElement('span');
+      indicator.id = 'constraint-filter-indicator';
+      indicator.style.cssText = 'background: var(--info); color: white; padding: .2rem .5rem; border-radius: .25rem; font-size: .8rem; margin-left: .5rem; cursor: pointer;';
+      indicator.title = 'Click to clear constraint filter';
+      indicator.addEventListener('click', () => {{ clearConstraintFilter(); applyFilters(); }});
+      document.querySelector('.filters').appendChild(indicator);
+    }}
+    const constraintName = document.querySelectorAll('#coverage-table tbody tr')[constraintIdx]?.querySelector('td:nth-child(2)')?.textContent || 'constraint';
+    indicator.textContent = '✕ Filtering: ' + (pub !== 'all' ? pub + ' - ' : '') + constraintName.substring(0, 40) + (constraintName.length > 40 ? '...' : '');
+
+    // Scroll to per-crate results
+    document.getElementById('crate-table').scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+
+    applyFilters();
+  }});
+}});
 </script>
 
 </body>
@@ -463,6 +600,7 @@ pubFilter.addEventListener('change', applyFilters);
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
+
 
 def main():
     if not CRATES_DIR.exists():
@@ -487,7 +625,8 @@ def main():
     try:
         for i, crate_path in enumerate(crate_files, 1):
             name = crate_path.name
-            cr = CrateResult(name=name, publisher=extract_publisher(crate_path))
+            pub, ds_id = extract_metadata(crate_path)
+            cr = CrateResult(name=name, publisher=pub, dataset_id=ds_id)
             print(f"  [{i}/{total}] {name} ... ", end="", flush=True)
 
             try:
@@ -539,9 +678,13 @@ def main():
     print(f"\n{'='*60}")
     print(f"  TOTAL CRATES       : {total}")
     print(f"  Clean (no issues)  : {clean}")
-    print(f"  With violations    : {crates_with_violations}  ({total_violations} total)")
+    print(
+        f"  With violations    : {crates_with_violations}  ({total_violations} total)"
+    )
     print(f"  With warnings      : {crates_with_warnings}  ({total_warnings} total)")
-    print(f"  With info notices  : {sum(1 for r in all_results if r.infos)}  ({total_infos} total)")
+    print(
+        f"  With info notices  : {sum(1 for r in all_results if r.infos)}  ({total_infos} total)"
+    )
     print(f"  Parse errors       : {n_errors}")
     print(f"{'='*60}")
 
