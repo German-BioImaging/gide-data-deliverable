@@ -54,6 +54,8 @@ and CroissantML (https://mlcommons.org/working-groups/data/croissant/)
 
 * (adapt the gide figure from www.figma.com/design/tP7Re2iAr2zTRuoTI5CWx6/SWAT-Poster-Amsterdam-2026?node-id=0-1&p=f&t=prKLkapf6BbQOvye-0)
 
+PLACEHOLDER IMAGE
+![alt text](image.png)
 
 * Minimally, each foundingGIDE dataset is linked to describing concepts through the schema.org "about" and "measurementMethod" properties. The values for these properties should be terms from the NCBI Taxonomy and FBbi ontology, respectively. This ensures a basic layer of semantic search.
 
