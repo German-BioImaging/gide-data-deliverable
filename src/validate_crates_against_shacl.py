@@ -19,7 +19,7 @@ from rdflib import Graph, Namespace
 from rdflib.plugins.shared.jsonld import context as jsonld_context
 
 HERE = Path(__file__).parent.resolve()
-CRATES_DIR = HERE / "GIDE_crates"
+CRATES_DIR = HERE / "../data_deliverable/GIDE_crates"
 SHAPES_FILE = HERE / "gide_shapes.ttl"
 HTML_OUTPUT = HERE / "index.html"
 
@@ -600,6 +600,49 @@ document.querySelectorAll('.clickable-pct').forEach(cell => {{
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
+import os
+from concurrent.futures import ProcessPoolExecutor, as_completed
+from functools import partial
+
+# Module-level globals for worker processes
+_worker_shapes_graph: Graph | None = None
+_worker_original_fetch = None
+
+
+def _init_worker(shapes_file: Path):
+    """Initialize each worker process with its own shapes graph and context hook."""
+    global _worker_shapes_graph, _worker_original_fetch
+    _worker_original_fetch = _install_context_hook()
+    _worker_shapes_graph = Graph()
+    _worker_shapes_graph.parse(str(shapes_file), format="turtle")
+
+
+def validate_crate(crate_path: Path) -> CrateResult:
+    """Validate a single crate (runs in worker process)."""
+    name = crate_path.name
+    pub, ds_id = extract_metadata(crate_path)
+    cr = CrateResult(name=name, publisher=pub, dataset_id=ds_id)
+
+    try:
+        data_graph = parse_jsonld(crate_path)
+    except Exception as exc:
+        cr.error = str(exc)
+        return cr
+
+    try:
+        _, results_graph, _ = validate(
+            data_graph,
+            shacl_graph=_worker_shapes_graph,
+            abort_on_first=False,
+            allow_infos=True,
+            allow_warnings=True,
+        )
+    except Exception as exc:
+        cr.error = str(exc)
+        return cr
+
+    cr.findings = extract_findings(results_graph)
+    return cr
 
 
 def main():
@@ -613,58 +656,44 @@ def main():
         sys.exit("No RO-Crate metadata files found.")
 
     total = len(crate_files)
-    print(f"Validating {total} crate(s) against {SHAPES_FILE.name} ...\n")
-
-    original_fetch = _install_context_hook()
-
-    shapes_graph = Graph()
-    shapes_graph.parse(str(SHAPES_FILE), format="turtle")
+    max_workers = min(os.cpu_count() or 4, total)
+    print(
+        f"Validating {total} crate(s) against {SHAPES_FILE.name} using {max_workers} processes...\n"
+    )
 
     all_results: list[CrateResult] = []
+    completed = 0
 
-    try:
-        for i, crate_path in enumerate(crate_files, 1):
-            name = crate_path.name
-            pub, ds_id = extract_metadata(crate_path)
-            cr = CrateResult(name=name, publisher=pub, dataset_id=ds_id)
-            print(f"  [{i}/{total}] {name} ... ", end="", flush=True)
+    with ProcessPoolExecutor(
+        max_workers=max_workers,
+        initializer=_init_worker,
+        initargs=(SHAPES_FILE,),
+    ) as executor:
+        futures = {
+            executor.submit(validate_crate, crate_path): crate_path
+            for crate_path in crate_files
+        }
 
-            try:
-                data_graph = parse_jsonld(crate_path)
-            except Exception as exc:
-                cr.error = str(exc)
-                all_results.append(cr)
-                print("ERROR")
-                continue
-
-            try:
-                _, results_graph, _ = validate(
-                    data_graph,
-                    shacl_graph=shapes_graph,
-                    abort_on_first=False,
-                    allow_infos=True,
-                    allow_warnings=True,
-                )
-            except Exception as exc:
-                cr.error = str(exc)
-                all_results.append(cr)
-                print("ERROR")
-                continue
-
-            cr.findings = extract_findings(results_graph)
+        for future in as_completed(futures):
+            cr = future.result()
             all_results.append(cr)
 
-            parts = []
-            if cr.violations:
-                parts.append(f"{cr.violations} violation(s)")
-            if cr.warnings:
-                parts.append(f"{cr.warnings} warning(s)")
-            if cr.infos:
-                parts.append(f"{cr.infos} info(s)")
-            print(", ".join(parts) if parts else "ok")
-    finally:
-        jsonld_context.Context._fetch_context = original_fetch
+            completed += 1
+            if cr.error:
+                status = "ERROR"
+            else:
+                parts = []
+                if cr.violations:
+                    parts.append(f"{cr.violations} violation(s)")
+                if cr.warnings:
+                    parts.append(f"{cr.warnings} warning(s)")
+                if cr.infos:
+                    parts.append(f"{cr.infos} info(s)")
+                status = ", ".join(parts) if parts else "ok"
+            print(f"  [{completed}/{total}] {cr.name} ... {status}")
 
+    # Sort results by name for consistent output
+    all_results.sort(key=lambda r: r.name)
     # ── Aggregate ─────────────────────────────────────────────────────────
     total_violations = sum(r.violations for r in all_results)
     total_warnings = sum(r.warnings for r in all_results)
