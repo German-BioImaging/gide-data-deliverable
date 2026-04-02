@@ -1,0 +1,310 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1097"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1097",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5c317bef-ccb1-4f9a-ad9e-189a2a407713"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b0fa6e1e-0aa8-41d3-95f0-c7e4f120f99c"
+        },
+        {
+          "@id": "obo:NCBITaxon_3055"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8802-352X"
+        },
+        {
+          "@id": "#81e1abe6-552e-4ff9-a287-102742d1beff"
+        },
+        {
+          "@id": "#5ff3ff51-a277-4128-952d-10d333740815"
+        },
+        {
+          "@id": "#31533c5b-019a-44bd-9e37-b93ee536b7a4"
+        },
+        {
+          "@id": "#36ce2a9c-f619-4c67-8cbb-571fb5c1a104"
+        },
+        {
+          "@id": "#a2f14f5a-0c3d-4e14-a432-0f504b677d97"
+        },
+        {
+          "@id": "#9a5b7ff5-01c1-4c02-b891-f19d79ed81e2"
+        },
+        {
+          "@id": "#2acb8fd6-eafa-4dfb-aae2-6163c73693eb"
+        },
+        {
+          "@id": "#11ad1b23-1f29-44aa-9831-0050f0ef375c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-30",
+      "description": "Experimental Slimfield imaging data and tracking analysis of Rubisco and linker mixtures in vitro, including stoichiometry and colocalisation of pyrenoid proteins.\nAs used in the manuscript for fitting titration curves to extract molecular properties of the liquid pyrenoid matrix.",
+      "funder": [],
+      "identifier": "S-BIAD1097",
+      "keywords": [
+        "Sticker-and-spacer theory",
+        " Self-assembly",
+        "Kuhn length",
+        "Liquid liquid phase separation",
+        "Critical point",
+        "Pyrenoid",
+        " Carbon concentration mechanism",
+        "Single-molecule tracking"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Slimfield imaging for \"Predicting Rubisco:Linker Condensation from Titration in the Dilute Phase\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#11ad1b23-1f29-44aa-9831-0050f0ef375c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "email": "charley.schaefer@york.ac.uk",
+      "name": "Charley Schaefer"
+    },
+    {
+      "@id": "#2acb8fd6-eafa-4dfb-aae2-6163c73693eb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "name": "Mark C. Leake"
+    },
+    {
+      "@id": "#31533c5b-019a-44bd-9e37-b93ee536b7a4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "name": "Laura K. Gherman"
+    },
+    {
+      "@id": "#36ce2a9c-f619-4c67-8cbb-571fb5c1a104",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "name": "Michael Hodgkinson"
+    },
+    {
+      "@id": "#5ff3ff51-a277-4128-952d-10d333740815",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "name": "James Barrett"
+    },
+    {
+      "@id": "#81e1abe6-552e-4ff9-a287-102742d1beff",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "name": "Gaurav Kumar"
+    },
+    {
+      "@id": "#9a5b7ff5-01c1-4c02-b891-f19d79ed81e2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "name": "Luke Mackinder"
+    },
+    {
+      "@id": "#a2f14f5a-0c3d-4e14-a432-0f504b677d97",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "name": "Michael Plevin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8802-352X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "email": "alex.payne-dwyer@york.ac.uk",
+      "name": "Alex Payne-Dwyer"
+    },
+    {
+      "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of York"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3055",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Chlamydomonas reinhardtii"
+    },
+    {
+      "@id": "#b0fa6e1e-0aa8-41d3-95f0-c7e4f120f99c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Combinations of 1) The Rubisco enzyme purified from source and labelled with Atto594 at a low fixed concentration;  and titration of one of either 2) ",
+      "name": "Single-molecule Slimfield imaging for \"Predicting Rubisco:Linker Condensation from Titration in the Dilute Phase (Payne-Dwyer, Kumar, Barrett et al. 2024)\"",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3055"
+      }
+    },
+    {
+      "@id": "#5c317bef-ccb1-4f9a-ad9e-189a2a407713",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Prime95B 12-bit sensitivity gain at 10 ms exposure/frame.  Typically 5000 video frames per acquisition, each separated by 2.5 ms readout time.  See imaging protocol in manuscript SI.",
+      "labEquipment": "Slimfield microscope (Leake lab, York)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Slimfield"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1305
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1844783110650
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1271"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1271",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2d73c52c-680f-4161-8ecb-69bf641a1121"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fe86c0ca-de57-4b34-95c0-741c8d3fa13b"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8495-0510"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2782-4195"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9759-3700"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pbio.3002611"
+        }
+      ],
+      "datePublished": "2024-07-12",
+      "description": "Movies of Drosophila embryos during germband extension (GBE) were captured with a spinning disc confocal microscope controlled by Volocity software, using two fluorescence channels: channel 1 is Myosin II (sqh-GFP[KI]) and channel 2 is cell membranes (Gap43m-Cherry).  For further details, please see (Lye et al., 2024, PMID: 38683880).  Here we are providing the raw data and relevant annotations for the movies analysed in our publication:\n \n1. Raw movies. We are providing 10 zip files containing the Volocity files (.mvd2 movie files plus associated metadata) for the 4 WT and 6 twist movies analysed in our study. Please note that the movies are not all oriented with the ‘anterior to the left’ convention, but it is possible to tell anterior from posterior using the direction of tissue extension.\n \n2. Cell type information. We focused our analysis on the ectodermal cells by excluding any mesodermal and mesectodermal cells in the field of view, using several criteria (see Lye et al., 2024, PMID: 38683880). We are providing the information about cell types in 1 zip file ‘cell type movies’ containing movies for the 4 WT and 6 twist movies (as .mov files and also .tiff files), in which ectodermal cells are labelled in magenta and meso/mesectoderm are labelled in cyan.\n \n3. Movie synchronisation information. In our paper, we analysed data from 15 minutes before, to 30 minutes after, the start of germband extension (-15 mins to 30 mins of GBE).  Note that raw movie files also contain movie frames before and after this time period.  We provide in an Excel spreadsheet called 'Synchronisation information', the frame number that corresponds to 0 mins of GBE for each of the 4 WT and 6 twist movies. Note that in the raw Volocity movie files, frame numbering starts at 1, while in the processed movies in our in-house software 'otracks', frame numbering starts at zero, so there is a difference of 1 in the frame number corresponding to time zero of GBE in the raw movie files (1.) and the 'cell types\" movie files in 'otracks' (2.). This is indicated in the spreadsheet provided.",
+      "funder": [],
+      "identifier": "S-BIAD1271",
+      "keywords": [
+        "morphogenesis"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Movie data for Lye CM, Blanchard GB, Evans J, Nestor-Bergmann A, Sanson B. Polarised cell intercalation during Drosophila axis extension is robust to an orthogonal pull by the invaginating mesoderm. PLoS Biol. 2024 Apr 29;22(4):e3002611. doi: 10.1371/journal.pbio.3002611. PMID: 38683880; PMCID: PMC11081494.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8495-0510",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "je417@cam.ac.uk",
+      "name": "Jenny Evans"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9759-3700",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "cmg38@cam.ac.uk",
+      "name": "Claire Lye"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2782-4195",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "bs251@cam.ac.uk",
+      "name": "Bénédicte Sanson"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pbio.3002611",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2024",
+      "name": "Polarised cell intercalation during Drosophila axis extension is robust to an orthogonal pull by the invaginating mesoderm."
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#fe86c0ca-de57-4b34-95c0-741c8d3fa13b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila epithelia",
+      "name": "Time-lapse movies",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#2d73c52c-680f-4161-8ecb-69bf641a1121",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40x oil objective lens",
+      "labEquipment": "Nikon Eclipse E1000 microscope with a Yokogawa CSU10 spinning disk head and a Hamamatsu EM-CCD camera",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Spinning disc"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 12
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 35908350525
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000474/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000474/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000474",
+      "name": "Near-infrared imaging of phytochrome-derived autofluorescence in plant nuclei",
+      "description": "Capturing images of the nuclear dynamics within live cells is an essential technique for comprehending the intricate biological processes inherent to plant cell nuclei. While various methods exist for imaging nuclei, including combining fluorescent proteins and dyes with microscopy, there is a dearth of commercially available dyes for live-cell imaging. In Arabidopsis thaliana, we discovered that nuclei emit autofluorescence in the near-infrared (NIR) range of the spectrum and devised a non-invasive technique for the visualization of live cell nuclei using this inherent NIR autofluorescence. Our studies demonstrated the capability of the NIR imaging technique to visualize the dynamic behavior of nuclei within primary roots, root hairs, and pollen tubes, which are tissues that harbor a limited number of other organelles displaying autofluorescence. We further demonstrated the applicability of NIR autofluorescence imaging in various other tissues by incorporating fluorescence lifetime imaging techniques. Nuclear autofluorescence was also detected across a wide range of plant species, enabling analyses without the need for transformation. The nuclear autofluorescence in the NIR wavelength range was not observed in animal or yeast cells. Genetic analysis revealed that this autofluorescence was caused by the phytochrome protein. Our studies demonstrated that nuclear autofluorescence imaging can be effectively employed not only in model plants but also for studying nuclei in non-model plant species.",
+      "datePublished": "2025-10-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1111/tpj.16699"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_39947"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04100"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04679"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_50463"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03719"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_29727"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_79200"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04047"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03659"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_35875"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Akira Yoshinari",
+      "email": "yoshinari.akira.t2@f.mail.nagoya-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules (WPI-ITbM)",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04chrp450"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Masayoshi Nakamura"
+    },
+    {
+      "@id": "https://ror.org/04chrp450",
+      "@type": "Organization",
+      "name": "Nagoya University"
+    },
+    {
+      "@id": "https://doi.org/10.1111/tpj.16699",
+      "@type": "ScholarlyArticle",
+      "name": "Near-infrared imaging of phytochrome-derived autofluorescence in plant nuclei.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Spinacia oleacea"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "thale cress"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_39947",
+      "@type": "Taxon",
+      "scientificName": "Oryza sativa Japonica Group"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04100",
+      "@type": "Taxon",
+      "scientificName": "Nicotiana benthamiana"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04679",
+      "@type": "Taxon",
+      "scientificName": "Allium cepa"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097",
+      "@type": "Taxon",
+      "scientificName": "Nicotiana tabacum",
+      "vernacularName": "tobacco"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_50463",
+      "@type": "Taxon",
+      "scientificName": "Cardamine hirsute"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03719",
+      "@type": "Taxon",
+      "scientificName": "Capsella bursa-pastoris"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_29727",
+      "@type": "Taxon",
+      "scientificName": "Eruca vesicaria subsp. sativa"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_79200",
+      "@type": "Taxon",
+      "scientificName": "Daucus carota subsp. sativus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04047",
+      "@type": "Taxon",
+      "scientificName": "Coriandrum sativum"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03659",
+      "@type": "Taxon",
+      "scientificName": "Cucumis sativus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_35875",
+      "@type": "Taxon",
+      "scientificName": "Allium fistulosum"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 3907702784,
+      "description": "3.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 202,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

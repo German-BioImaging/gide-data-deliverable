@@ -1,0 +1,155 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000114/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000114/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000114",
+      "name": "A set of RNA-FISH and immunofluorescence images of Xist/Tsix expression during peri-implantation embryoic development using whole-mount 3D RNA-FISH",
+      "description": "RNA-FISH and immunofluorescence images of Xist/Tsix expression during peri-implantation embryoic development using whole-mount 3D RNA-FISH",
+      "datePublished": "2019-06-17",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "DNA Methylation[major]",
+        "Embryo Implantation[major]",
+        "Embryo, Mammalian/cytology",
+        "Embryo, Mammalian/metabolism[major]",
+        "Epigenesis, Genetic",
+        "Female",
+        "Gene Expression Regulation, Developmental[major]",
+        "Genomic Imprinting",
+        "In Situ Hybridization, Fluorescence",
+        "Male",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "RNA, Long Noncoding/genetics[major]",
+        "X Chromosome Inactivation[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-019-38807-0"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-261"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kuniya Abe",
+      "description": "Organization: RIKEN; Department: BioResource Research Center",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-019-38807-0",
+      "@type": "ScholarlyArticle",
+      "name": "Xist/Tsix expression dynamics during mouse peri-implantation development revealed by whole-mount 3D RNA-FISH.",
+      "datePublished": "2019"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 7516119040,
+      "description": "7.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 177,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

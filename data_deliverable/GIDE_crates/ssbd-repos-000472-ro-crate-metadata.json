@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000472/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000472/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000472",
+      "name": "Raman imaging showing the impact of repeated temperature cycling on cryopreserved human iPSC viability",
+      "description": "Human induced pluripotent stem cells (hiPSCs) are an attractive cell source for\r\nregenerative medicine. For its widespread use as a starting material, a robust\r\nstorage and distribution system in the frozen state is necessary. For this system,\r\nmanaging transient warming during storage and transport is essential, but how\r\ntransient warming affects cells and the mechanisms involved are not yet fully\r\nunderstood. This study examined the in uence of temperature cyclings\r\n(from−80°C to−150°C) on cryopreserved hiPSCs using a custom-made cryo\r\nRaman microscope, ow cytometry, and performance indices to assess viability.\r\nRaman spectroscopy indicated the disappearance of mitochondrial cytochrome\r\nsignals after thawing. A reduction in the mitochondrial membrane potential was\r\ndetected using ow cytometry. The performance indices indicated a decrease in\r\nattachment ef ciency with an increase in the number of temperature cycles. This\r\ndecrease was observed in the temperature cycle range above the glass transition\r\ntemperature of the cryoprotectant. Raman observations captured an increase in the\r\nsignal intensity of intracellular dimethyl sulfoxide (DMSO) during temperature cycles.\r\nBased on these results, we proposed a schematic illustration for cellular responses to\r\ntemperature uctuations, suggesting that temperature uctuations above the glass-\r\ntransition temperature trigger the movement of DMSO, leading to cytochrome c\r\noxidation, mitochondrial damage, and caspase-mediated cell death. This enhances\r\nour understanding of the key events during cryopreservation and informs the\r\ndevelopment of quality control strategies for hiPSC storage and transport.",
+      "datePublished": "2025-11-11",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.3389/fbioe.2024.1443795"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Masahiro Kino-Oka",
+      "email": "kino-oka@bio.eng.osaka-u.ac.jp",
+      "description": "Organization: The University of Osaka; Department: Department of Biotechnology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "The University of Osaka"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fbioe.2024.1443795",
+      "@type": "ScholarlyArticle",
+      "name": "The impact of repeated temperature cycling on cryopreserved human iPSC viability stems from cytochrome redox state changes.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 2277376,
+      "description": "2.3 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 9,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

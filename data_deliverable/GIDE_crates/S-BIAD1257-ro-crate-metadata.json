@@ -1,0 +1,328 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1257"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1257",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ea5564df-636f-411c-9cc9-52cc9d2aea6a"
+        },
+        {
+          "@id": "#8fc4a05b-e581-475a-91b8-903117dfaf3f"
+        },
+        {
+          "@id": "#4a8b5807-b8ee-4f74-8c4e-5a2aefd953f0"
+        },
+        {
+          "@id": "#2b8d36a1-30ca-48a7-8310-42ac88a0f81e"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5dc08af0-2412-424e-a8ea-d066934822b3"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-7034-0524"
+        },
+        {
+          "@id": "#2ab118f2-b9e9-449c-a62d-5c3fe247f2d5"
+        },
+        {
+          "@id": "#badff3a2-b87c-474c-9c55-f6e3ccac0b4c"
+        },
+        {
+          "@id": "#240b99d9-b24d-45c1-bdfd-7c3d18466e0a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-12",
+      "description": "T cells develop from circulating precursor cells, which enter the thymus and migrate through specialised sub-compartments that support their maturation and selection. In humans, this process starts in early fetal development and is highly active until thymic involution in adolescence. To map the micro-anatomical underpinnings of this process in pre- and early postnatal stages, we established a novel quantitative morphological framework for the thymus, the Cortico-Medullary Axis, and used it to perform a spatially resolved analysis. By applying this framework to a curated multimodal single-cell atlas, spatial transcriptomics, and high-resolution multiplex imaging data, we demonstrate establishment of the lobular cytokine network, canonical thymocyte trajectories and thymic epithelial cell distributions within the first trimester of fetal development. We pinpoint tissue niches of thymic epithelial cell progenitors and distinct subtypes associated with Hassall’s corpuscles and uncover divergence in the timing of medullary entry between CD4 vs. CD8 T cell lineages. These findings provide a basis for a detailed understanding of T lymphocyte development and are complemented with a holistic toolkit for cross-platform imaging data analysis, annotation, and Organ Axis construction (TissueTag), which can be applied to any tissue.",
+      "funder": [],
+      "identifier": "S-BIAD1257",
+      "keywords": [
+        "Thymus",
+        "common coordinate framework",
+        "CCF",
+        "Fetal",
+        "Spatial",
+        "Immunology",
+        "Visium",
+        "IBEX",
+        "RareCyte",
+        "RNAscope",
+        "Human"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A spatial human thymus cell atlas mapped to a continuous tissue axis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1257/25231c95-e4f8-4860-bcaf-13fa9674c56f/39a8d59f-031d-49d0-aa25-c953448f0e3f.png"
+      ]
+    },
+    {
+      "@id": "#240b99d9-b24d-45c1-bdfd-7c3d18466e0a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0597147f-9346-440b-bcd7-f88fbe680907"
+        }
+      ],
+      "name": "Ronald N. Germain"
+    },
+    {
+      "@id": "#2ab118f2-b9e9-449c-a62d-5c3fe247f2d5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "email": "st9@sanger.ac.uk",
+      "name": "Sarah Teichmann"
+    },
+    {
+      "@id": "#badff3a2-b87c-474c-9c55-f6e3ccac0b4c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0597147f-9346-440b-bcd7-f88fbe680907"
+        }
+      ],
+      "name": "Andrea J. Radtke"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7034-0524",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "email": "ny1@sanger.ac.uk",
+      "name": "Nadav Yayon"
+    },
+    {
+      "@id": "#0597147f-9346-440b-bcd7-f88fbe680907",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National Institute of Health"
+    },
+    {
+      "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Wellcome Sanger Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#5dc08af0-2412-424e-a8ea-d066934822b3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Thymus lobe",
+      "name": "Human Thymus",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2b8d36a1-30ca-48a7-8310-42ac88a0f81e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "relevant acquisition settings were applied using the software Artemis.\nwith the following protocol P61_A31_C98a_Sanger16",
+      "labEquipment": "RareCyte Orion microscope with a 20X objective",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "RareCyte Orion"
+    },
+    {
+      "@id": "#4a8b5807-b8ee-4f74-8c4e-5a2aefd953f0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20X (NA 0.16, 0.299 μm/pixel) water-immersion objective with 9-11 z-stacks with 2 µm-step. Channels: DAPI (excitation 355-385 nm, emission 430-500 nm), Atto 425 (ex. 435-460 nm, em. 470-515 nm), Opal 520 (ex. 460-490 nm, em. 500-550 nm), Opal 570 (ex. 530-560 nm, em. 570-620 nm), Opal 650 (ex. 615-645 nm, em. 655-760 nm). Confocal image stacks were stitched as individual z-stacks using proprietary Acapella scripts provided by Perkin Elmer, and visualised using OMERO Plus (Glencoe Software).",
+      "labEquipment": "Perkin Elmer Operetta CLS High Content Analysis System",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Imaging RNAscope"
+    },
+    {
+      "@id": "#8fc4a05b-e581-475a-91b8-903117dfaf3f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "TCS SP8 X confocal microscope with a 40X objective (NA 1.3), 4 HyD and 1 PMT detectors, a white light laser that produces a continuous spectral output between 470 and 670 nm as well as 405, 685, and 730 nm lasers. Panels consisted of antibodies conjugated to the following fluorophores and dyes: Hoechst, Alexa Fluor (AF)488, FITC, AF532, phycoerythrin (PE), eF570, AF555, iFluor (iF)594, AF647, eF660, AF680, and AF700. All images were captured at an 8-bit depth, with a line average of 3, and 1024x1024 format with the following pixel dimensions: x (0.284 μm), y (0.284 μm), and z (1 μm). Images were tiled and merged using the LAS X Navigator software (LAS X 3.5.7.23225).",
+      "labEquipment": "Confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "confocal microscopy IBEX"
+    },
+    {
+      "@id": "#ea5564df-636f-411c-9cc9-52cc9d2aea6a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Sections were stained with Haematoxylin and Eosin and imaged at 20X or 40X magnification (Hamamatsu Nanozoomer 2.0 HT)",
+      "labEquipment": "Hamamatsu NanoZoomer",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "H&E "
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 101
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 619159216222
+    }
+  ]
+}

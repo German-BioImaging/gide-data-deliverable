@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1375"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1375",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0fef3d9e-84f3-488a-84ee-332967c3ae3a"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0bdb777c-c03d-4962-a625-b4d2b6474662"
+        },
+        {
+          "@id": "obo:NCBITaxon_1423"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f36e0a45-ae7f-4c3a-98d1-16b0982bd6c3"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-23",
+      "description": "TIF files associated with manuscript \"A conjugative plasmid exploits flagella rotation as a cue to facilitate its transfer\" Manuscript EMBOJ-2024-118350",
+      "funder": [],
+      "identifier": "S-BIAD1375",
+      "keywords": [
+        "conjugation",
+        "bacteria",
+        "bacillus subtilis",
+        "pLS20"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A conjugative plasmid exploits flagella rotation as a cue to facilitate its transfer",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1375/e45fcc96-31df-4d07-a006-de5fc194f986/1310bd06-eead-4bdd-a1a1-ab2dc9529449.png"
+      ]
+    },
+    {
+      "@id": "#f36e0a45-ae7f-4c3a-98d1-16b0982bd6c3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03qxff017"
+        }
+      ],
+      "email": "sigalb@ekmd.huji.ac.il",
+      "name": "Sigal Ben-Yehuda"
+    },
+    {
+      "@id": "https://ror.org/03qxff017",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Hebrew University of Jerusalem"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_1423",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Bacillus subtilis"
+    },
+    {
+      "@id": "#0bdb777c-c03d-4962-a625-b4d2b6474662",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "bacteria",
+      "name": "conjugation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1423"
+      }
+    },
+    {
+      "@id": "#0fef3d9e-84f3-488a-84ee-332967c3ae3a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "see methods and legends",
+      "labEquipment": "see methods and legends",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "TIF files"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 49
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 862724225
+    }
+  ]
+}

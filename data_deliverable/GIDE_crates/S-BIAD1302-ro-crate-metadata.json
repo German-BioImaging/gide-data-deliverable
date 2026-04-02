@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1302"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1302",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#48e585bc-3675-404d-9b69-1104ba24d614"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a539e8ec-c14f-4ae2-b390-a5bd7fcd0e59"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9d22f9d1-87f9-4f2c-98df-172052404af5"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-02",
+      "description": "CbEPF1, a Coxiella burnetii effector protein, induces inter-organelle contact sites in the host cells. Submitted images are source files for manuscript figures",
+      "funder": [],
+      "identifier": "S-BIAD1302",
+      "keywords": [
+        "Coxiella burnetii",
+        "Lipid droplets",
+        "FFAT motif",
+        "Molecular Tethers"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "CbEPF1 induces ER-LD membrane contacts to regulate host lipid droplet metabolism",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1302/a05c82a0-c141-4f88-9a8c-f7a4c4f0bb85/e8066c3b-7af5-4db1-b8b8-18701ae86306.png"
+      ]
+    },
+    {
+      "@id": "#9d22f9d1-87f9-4f2c-98df-172052404af5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ea4ea89f-bd17-431c-9774-e47dcb07db6c"
+        }
+      ],
+      "email": "sgilk@unmc.edu",
+      "name": "Stacey Gilk"
+    },
+    {
+      "@id": "#ea4ea89f-bd17-431c-9774-e47dcb07db6c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Nebraska Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#a539e8ec-c14f-4ae2-b390-a5bd7fcd0e59",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells and MH-S cells",
+      "name": "HeLa cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#48e585bc-3675-404d-9b69-1104ba24d614",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were captured using Spinning-disk confocal microscopy (Nikon Eclipse Ti inverted microscope) equipped with Perfect Focus and controlled by NIS-Elements software (Nikon). Images were acquired through a 60× Plan Apo 1.40 NA objective (Nikon). Multicolor images were acquired sequentially.\n\nFor electron microscopy 120 kV electron microscope (FEI Tecnai G2 Spirit TEM) was used at 80 kV. Images were captured with an AMT CCD camera using Digital Micrograph software at room temperature. ",
+      "labEquipment": "Nikon Eclipse Ti2 spinning disc microscope\nFEI Tecnai G2 Spirit TEM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Nikon Eclipse Ti2 spinning disc and TEM"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 175
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 10212966894
+    }
+  ]
+}

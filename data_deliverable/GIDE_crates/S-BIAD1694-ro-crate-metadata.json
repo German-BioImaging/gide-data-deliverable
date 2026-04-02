@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1694"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1694",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e2f20bf3-7536-4d67-b66f-464944079c16"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f4bdf44b-49ec-4aab-a7af-42d8d2ff3a5a"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#18a4b33e-4cb1-4c10-95a2-b6626f3294ca"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-11",
+      "description": "Niemann–Pick disease type C (NPC) is a devastating lysosomal storage disease characterized by abnormal cholesterol accumulation in lysosomes. Currently, there is no treatment for NPC. Transcription factor EB (TFEB), a member of the microphthalmia transcription factors (MiTF), has emerged as a master regulator of lysosomal function and promoted the clearance of substrates stored in cells. However, it is not known whether TFEB plays a role in cholesterol clearance in NPC disease. Here, we show that transgenic overexpression of TFEB, but not TFE3 (another member of MiTF family) facilitates cholesterol clearance in various NPC1 cell models. Pharmacological activation of TFEB by sulforaphane (SFN), a previously identified natural small-molecule TFEB agonist by us, can dramatically ameliorate cholesterol accumulation in human and mouse NPC1 cell models. In NPC1 cells, SFN induces TFEB nuclear translocation via a ROS-Ca2+-calcineurin dependent but MTOR-independent pathway and upregulates the expression of TFEB-downstream genes, promoting lysosomal exocytosis and biogenesis. While genetic inhibition of TFEB abolishes the cholesterol clearance and exocytosis effect by SFN. In the NPC1 mouse model, SFN dephosphorylates/activates TFEB in brain and exhibits potent efficacy of rescuing the loss of Purkinje cells and body weight. Hence, pharmacological upregulating lysosome machinery via targeting TFEB represents a promising approach to treat NPC and related lysosomal storage diseases, and provides the possibility of TFEB agonists ie SFN as potential NPC therapeutic candidates.",
+      "funder": [],
+      "identifier": "S-BIAD1694",
+      "keywords": [
+        "TFEB agonists; Cholesterol accumulation; NPC1; Lysosome"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Small-molecule Activation of TFEB Alleviates Niemann-Pick Disease Type C via Promoting Lysosomal Exocytosis and Biogenesis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1694/d252254a-9d2f-432f-acdd-fee0e3eb6e95/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#18a4b33e-4cb1-4c10-95a2-b6626f3294ca",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7888ca80-a7cc-4530-b4ee-3b0bc4887bf9"
+        }
+      ],
+      "email": "2301139671@qq.com",
+      "name": "罗煜"
+    },
+    {
+      "@id": "#7888ca80-a7cc-4530-b4ee-3b0bc4887bf9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Zhejiang University of Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#f4bdf44b-49ec-4aab-a7af-42d8d2ff3a5a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "CELLS",
+      "name": "Small-molecule Activation of TFEB Alleviates Niemann-Pick Disease Type C via Promoting Lysosomal Exocytosis and Biogenesis",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e2f20bf3-7536-4d67-b66f-464944079c16",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "6655*5011",
+      "labEquipment": "Confocal microscopy ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Small-molecule Activation of TFEB Alleviates Niemann-Pick Disease Type C via Promoting Lysosomal Exocytosis and Biogenesis"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 203
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 754704057
+    }
+  ]
+}

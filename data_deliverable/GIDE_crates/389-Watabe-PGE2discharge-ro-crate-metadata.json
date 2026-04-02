@@ -1,0 +1,297 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/389-Watabe-PGE2discharge/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/389-Watabe-PGE2discharge/",
+      "@type": "Dataset",
+      "identifier": "389-Watabe-PGE2discharge",
+      "name": "Visual quantification of prostaglandin E2 discharge from a single cell",
+      "description": "Calcium transients drive cells to discharge prostaglandin E2 (PGE2). The authors visualized PGE2-induced protein kinase A (PKA) activation and quantitated PGE2 secreted from a single cell by combining fluorescence microscopy and a simulation model. For this purpose, they first prepared PGE2-producer cells that express either an optogenetic or a chemogenetic calcium channel stimulator: OptoSTIM1 (CRY2clust) or Gq-DREADD, respectively. Second, they prepared reporter cells expressing the Gs-coupled PGE2 reporter EP2 and the PKA biosensor Booster-PKA, which is based on the principle of Forster resonance FRET. Upon the stimulation-induced triggering of calcium transients, a single producer cell discharges PGE2 to stimulate PKA in the surrounding reporter cells. Due to the flow of the medium, the PKA-activated area exhibited a comet-like smear when HeLa cells were used. In contrast, radial PKA activation was observed when confluent MDCK cells were used, indicating that PGE2 diffusion was restricted to the basolateral space. By fitting the radius of the PKA-activated area to a simulation model based on simple diffusion, the authors estimated that a single HeLa cell secretes 0.25 fmol PGE2 upon a single calcium transient to activate PKA in more than 1000 neighboring cells. This model also predicts that the PGE2 discharge rate is comparable to the diffusion rate. Thus, their method quantitatively envisions that a single calcium transient affects more than 1000 neighboring cells via PGE2.",
+      "datePublished": "2026-01-21",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1247/csf.23047"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007165"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005737"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1853"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kenta Terai",
+      "email": "terai.kenta.5m@kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Tetsuya Watabe"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Shinya Yamahira"
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1247/csf.23047",
+      "@type": "ScholarlyArticle",
+      "name": "Visual quantification of prostaglandin E(2) discharge from a single cell.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ HeLa cell",
+      "description": "Homo sapiens ~ HeLa cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Canis lupus familiaris ~ MDCK cell",
+      "description": "Canis lupus familiaris ~ MDCK cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007165",
+      "@type": "DefinedTerm",
+      "name": "signal transduction"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
+      "@type": "DefinedTerm",
+      "name": "cytoplasm"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "FRET",
+      "description": "FRET",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 82723417350,
+      "description": "82.7 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 689,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

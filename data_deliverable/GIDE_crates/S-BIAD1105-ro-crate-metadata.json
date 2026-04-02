@@ -1,0 +1,263 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1105"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1105",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b2f40126-bcf6-43e0-9271-a17ef9be590f"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d8d4e01e-ef14-45a2-8e3d-297d31e199c4"
+        },
+        {
+          "@id": "#7fa09f1e-d50b-4699-8dc7-37f6e46cfe0b"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9261-7304"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0570-1768"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3666-8005"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1120-6912"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-31",
+      "description": "Solute carrier (SLC) transporters form a protein superfamily that enables transmembrane transport of a wide range of substrates, including nutrients, vitamins, ions and drugs. There are about 450 different SLCs, residing in cellular and a variety of subcellular membranes, and playing a vital role in cellular homeostasis and metabolic regulation. Loss-of-function of an unusually high proportion of SLC transporters is genetically associated with a plethora of human diseases, making them a rapidly emerging but challenging drug target. Knowledge of the protein environment of transporters may help conceive pharmacological interventions based on modulating proteostatic regulations including functional restauration and reveal the molecular basis for their functional integration with metabolic and cellular pathways. We aimed at obtaining a global survey of the SLC protein interaction landscape by using robust standardized one-step AP-MS protocol. We mapped the protein-protein interactions of 396 SLCs, covering thousands of novel interactions, to be assessed individually in the future using transporter-specific assays. Network and clustering analysis based on the individual interactome profiles allowed to identify proteins likely to affect the proteostatic regulation of transporters. We employed a streamlined functional assessment process based on RNAi-genetic perturbation of cells and measurement of protein stability and localization, including some transports assays, to positively validate the functional role of over 50 newly assessed interactions. Our data reveal core regulatory modes of SLCs as well as a functional context. As an example, we describe the role of a SLC16A6 phosphodegron in recruitment of an SKP1-CUL1-F-box protein E3 ligase, and the contributions of PDZ-domain proteins LIN7C and MPP1 to the subcellular localization of SLC43A2. Overall, our work provides insights into the complex molecular network of membrane transporters while offering the largest dataset dedicated to membrane proteins to date as a resource for the scientific community.",
+      "funder": [],
+      "identifier": "S-BIAD1105",
+      "keywords": [
+        "SLC superfamily",
+        "Protein-protein interactions",
+        "AP-MS",
+        "Trafficking",
+        "Proteostatic regulation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Interactome of the human solute carrier superfamily",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1105/19e21e4a-8c29-4f42-9d40-7cf9618e8339/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9261-7304",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3c196d32-7abf-434f-8efb-337159ea251e"
+        }
+      ],
+      "email": "rene.ladurner@gmail.com",
+      "name": "Rene Ladurner"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0570-1768",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3c196d32-7abf-434f-8efb-337159ea251e"
+        }
+      ],
+      "email": "GSuperti@cemm.oeaw.ac.at",
+      "name": "Giulio Superti-Furga"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1120-6912",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3c196d32-7abf-434f-8efb-337159ea251e"
+        }
+      ],
+      "email": "UGoldmann@cemm.oeaw.ac.at",
+      "name": "Ulrich Goldmann"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3666-8005",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3c196d32-7abf-434f-8efb-337159ea251e"
+        }
+      ],
+      "email": "ffrommelt@cemm.oeaw.ac.at",
+      "name": "Fabian Frommelt"
+    },
+    {
+      "@id": "#3c196d32-7abf-434f-8efb-337159ea251e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "CeMM Research Center for Molecular Medicine"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#7fa09f1e-d50b-4699-8dc7-37f6e46cfe0b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293 cells",
+      "name": "Live cell subcellular localization microscopy of SLC membrane transporters after RNA interference of SLC interaction partners",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d8d4e01e-ef14-45a2-8e3d-297d31e199c4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HAP1 cells",
+      "name": "Fixed cell subcellular localization microscopy of HA-MTCH2 after RNA interference of interaction partners",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b2f40126-bcf6-43e0-9271-a17ef9be590f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40x or 63x water objective with signal acquisition at 405 nm excitation (435-480 nm filter) for Hoechst or DAPI, 488 nm excitation (500-550 nm filter) for GFP or AF488 and 561 nm excitation (570-630 nm filter) for RFP or AF568.",
+      "labEquipment": "PerkinElmer Opera Phenix high content high throughput microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Opera Phenix imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 104785
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 213067656727
+    }
+  ]
+}

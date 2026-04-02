@@ -1,0 +1,323 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000475/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000475/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000475",
+      "name": "HAPLN2 forms aggregates and promotes microglial inflammation during brain aging in mice",
+      "description": "Protein aggregation is a hallmark of neurodegenerative diseases and is also observed in the brains of elderly individuals without such conditions, suggesting that aging drives the accumulation of protein aggregates. However, the comprehensive understanding of age-dependent protein aggregates involved in brain aging remains unclear. Here, we investigated proteins that become sarkosyl-insoluble with age and identified hyaluronan and proteoglycan link protein 2 (HAPLN2), a hyaluronic acid-binding protein of the extracellular matrix at the nodes of Ranvier, as an age-dependent aggregating protein in mouse brains. Elevated hyaluronic acid levels and impaired microglial function reduced the clearance of HAPLN2, leading to its accumulation. HAPLN2 oligomers induced microglial inflammatory responses both in vitro and in vivo. Furthermore, age-associated HAPLN2 aggregation was also observed in the human cerebellum. These findings suggest that HAPLN2 aggregation results from age-related decline in brain homeostasis and may exacerbate the brain environment by activating microglia. This study provides new insights into the mechanisms underlying cerebellar aging and highlights the role of HAPLN2 in age-associated changes in the brain.",
+      "datePublished": "2025-11-27",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Microglia/metabolism[major]",
+        "Microglia/pathology[major]",
+        "Aging/metabolism[major]",
+        "Aging/pathology[major]",
+        "Mice",
+        "Brain/metabolism[major]",
+        "Brain/pathology[major]",
+        "Humans",
+        "Extracellular Matrix Proteins/metabolism[major]",
+        "Extracellular Matrix Proteins/genetics[major]",
+        "Proteoglycans/metabolism[major]",
+        "Proteoglycans/genetics[major]",
+        "Mice, Inbred C57BL",
+        "Protein Aggregates",
+        "Inflammation/metabolism",
+        "Inflammation/pathology",
+        "Male",
+        "Hyaluronic Acid/metabolism",
+        "Cerebellum/metabolism",
+        "Cerebellum/pathology"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pbio.3003006"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007155"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007417"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0008065"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0085029"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001501"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0031012"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005576"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005615"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0033268"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0072534"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0045202"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shigeo Murata",
+      "email": "smurata@g.ecc.u-tokyo.ac.jp",
+      "description": "Organization: The University of Tokyo; Department: Graduate School of Pharmaceutical Sciences; Laboratory: Laboratory of Protein Metabolism",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Ayaka Watanabe"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Shoshiro Hirayama"
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by JSPS KAKENHI (grant no. JP22H00402, JP23H04918 for Sh.M., 23H04254, 22H04637 for S.H., and JP22H04926 for M.K.,) Takeda Science Foundation for Sh.M. and T.T., the European Research Council (#804581), Alzheimer’s Research UK (ARUK-PPG2019A-005,) Alzheimer’s Society (#AS-PhD-19a-016,) the Wellcome Trust Institutional Strategic Support Fund (204821/Z/16/Z) for J.A.V., and AMED under Grant Number JP21wm0425019 for M. T. The URLs of the funding organizations are as follows: KAKENHI: https://kaken.nii.ac.jp/en/, Takeda Science Foundation: https://www.takeda-sci.or.jp/en/, the European Research Council: https://erc.europa.eu/homepage, Alzheimer’s Research UK: https://www.alzheimersresearchuk.org/, Alzheimer’s Society: https://www.alzheimers.org.uk/, the Wellcome Trust Institutional Strategic Support Fund: https://wellcome.org/grant-funding/funded-people-and-projects/institutional-strategic-support-fund, AMED: https://www.amed.go.jp/en/index.html.The sponsors or funders had no role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript."
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pbio.3003006",
+      "@type": "ScholarlyArticle",
+      "name": "HAPLN2 forms aggregates and promotes microglial inflammation during brain aging in mice.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6",
+      "description": "C57BL/6",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007155",
+      "@type": "DefinedTerm",
+      "name": "cell adhesion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007417",
+      "@type": "DefinedTerm",
+      "name": "central nervous system development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008065",
+      "@type": "DefinedTerm",
+      "name": "establishment of blood-nerve barrier"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0085029",
+      "@type": "DefinedTerm",
+      "name": "extracellular matrix assembly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001501",
+      "@type": "DefinedTerm",
+      "name": "skeletal system development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0031012",
+      "@type": "DefinedTerm",
+      "name": "extracellular matrix"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005576",
+      "@type": "DefinedTerm",
+      "name": "extracellular region"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005615",
+      "@type": "DefinedTerm",
+      "name": "extracellular space"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0033268",
+      "@type": "DefinedTerm",
+      "name": "node of Ranvier"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0072534",
+      "@type": "DefinedTerm",
+      "name": "perineuronal net"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0045202",
+      "@type": "DefinedTerm",
+      "name": "synapse"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Fluorescence Microscopy",
+      "description": "Fluorescence Microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
+      "@type": "DefinedTerm",
+      "name": "Fluorescence Microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 6970064896,
+      "description": "7.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 151,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

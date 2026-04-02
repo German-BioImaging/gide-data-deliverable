@@ -1,0 +1,319 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD700"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD700",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#69ea9d5e-5c2b-48ef-8f6c-272d51225e7b"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8a9296f4-a281-461e-a735-5a70c2fbfb5f"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#13390f80-2c5c-4bac-9051-474ec4b8f377"
+        },
+        {
+          "@id": "#41defb4a-5c2a-4e1f-8ce6-f65dc9aca660"
+        },
+        {
+          "@id": "#fcb12fff-def5-4dde-b16a-6fe1f6a92abf"
+        },
+        {
+          "@id": "#21839061-ea79-4741-8965-31f022d56026"
+        },
+        {
+          "@id": "#9257b181-da5e-458b-b572-cdfb25c0048d"
+        },
+        {
+          "@id": "#c8199f39-11b6-4f1c-81a9-61668ac76e54"
+        },
+        {
+          "@id": "#5f6e9df8-37df-450b-8f36-bc46b61c0d69"
+        },
+        {
+          "@id": "#9764bf17-6dfc-4346-a25c-62066ae26085"
+        },
+        {
+          "@id": "#25690a25-0237-4052-b8f9-a42a85c4513b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-15",
+      "description": "Raw dataset - SMLM (dSTORM) imaging of plant nuclei in Lowicryl sections - wild-type, fasciata1, nucleolin 1 mutants\nRaw dataset - TEM - Lowicryl embedding - wild-type, fasciata1, nucleolin 1 mutants\nRaw dataset - TEM - Spurr embedding - wild-type, fasciata1, nucleolin 1 mutants",
+      "funder": [],
+      "identifier": "S-BIAD700",
+      "keywords": [
+        "DNA replication, nucleolus, A. thaliana, Click-iT, super-resolution, dSTORM, Correlative Light Electron Microscopy (CLEM), Single-molecule localisation microscopy (SMLM), Transmission electron microscopy (TEM) "
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "In-section Click-iT detection and super-resolution CLEM: Shedding light on nucleolar ultrastructure and S-phase progression in plants",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD700/27adab58-9ef0-41d3-aca8-550c1db2d7d5/f885ce17-d7f2-43c4-99cc-5c49fc5a0246.png"
+      ]
+    },
+    {
+      "@id": "#13390f80-2c5c-4bac-9051-474ec4b8f377",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0fed659e-b954-4b07-842d-b32187f98fc6"
+        }
+      ],
+      "email": "357550@mail.muni.cz",
+      "name": "Michal Franek"
+    },
+    {
+      "@id": "#21839061-ea79-4741-8965-31f022d56026",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0fed659e-b954-4b07-842d-b32187f98fc6"
+        }
+      ],
+      "email": "jakub.pospisil@ceitec.muni.cz",
+      "name": "Jakub Pospisil"
+    },
+    {
+      "@id": "#25690a25-0237-4052-b8f9-a42a85c4513b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#47982910-2eb2-4827-95fc-873abd434849"
+        }
+      ],
+      "email": "jiri.fajkus@ceitec.muni.cz",
+      "name": "Jiri Fajkus"
+    },
+    {
+      "@id": "#41defb4a-5c2a-4e1f-8ce6-f65dc9aca660",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0326ddbe-fd13-4aff-8e80-24ca57cffb07"
+        }
+      ],
+      "email": "lenka.koptasikova@natur.cuni.cz",
+      "name": "Lenka Koptasikova"
+    },
+    {
+      "@id": "#5f6e9df8-37df-450b-8f36-bc46b61c0d69",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c9c5f95-0202-4a0e-91de-032803649bfb"
+        }
+      ],
+      "email": "eliska.macickova@natur.cuni.cz",
+      "name": "Eliska Macickova"
+    },
+    {
+      "@id": "#9257b181-da5e-458b-b572-cdfb25c0048d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c9c5f95-0202-4a0e-91de-032803649bfb"
+        }
+      ],
+      "email": "david.liebl@natur.cuni.cz",
+      "name": "David Liebl"
+    },
+    {
+      "@id": "#9764bf17-6dfc-4346-a25c-62066ae26085",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0fed659e-b954-4b07-842d-b32187f98fc6"
+        }
+      ],
+      "email": "dvorackova.martina@gmail.com",
+      "name": "Martina Dvorackova"
+    },
+    {
+      "@id": "#c8199f39-11b6-4f1c-81a9-61668ac76e54",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0fed659e-b954-4b07-842d-b32187f98fc6"
+        }
+      ],
+      "email": "milan.esner@ceitec.muni.cz",
+      "name": "Milan Esner"
+    },
+    {
+      "@id": "#fcb12fff-def5-4dde-b16a-6fe1f6a92abf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c9c5f95-0202-4a0e-91de-032803649bfb"
+        }
+      ],
+      "email": "jiri.miksatko@natur.cuni.cz",
+      "name": "Jiri Miksatko"
+    },
+    {
+      "@id": "#0326ddbe-fd13-4aff-8e80-24ca57cffb07",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Exeter"
+    },
+    {
+      "@id": "#0fed659e-b954-4b07-842d-b32187f98fc6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Central European Institute of Technology – Masaryk University"
+    },
+    {
+      "@id": "#47982910-2eb2-4827-95fc-873abd434849",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Central European Institute of Technology"
+    },
+    {
+      "@id": "#6c9c5f95-0202-4a0e-91de-032803649bfb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Charles University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#8a9296f4-a281-461e-a735-5a70c2fbfb5f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Root tissue Arabidopsis thaliana",
+      "name": "Sections of plant root tissue from Arabidopsis thaliana",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#69ea9d5e-5c2b-48ef-8f6c-272d51225e7b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Time-lapse dSTORM imaging was performed on a Nikon Ti-E microscope with a Nikon CFI HP Apo TIRF 100x oil objective (1.49 NA, detection with EM CCD Andor iXon Ultra DU897 camera) and on Zeiss Elyra 7 (Carl Zeiss, GmBH) imaging system with a 63x Oil Plan-Apochromat oil objective (1.46 NA, detection with PCO edge 4.2 sCMOS camera) in the HILO mode. For SMLM of whole-mount samples, roots were immobilized on poly-L-lysine coated high-precision coverslips and mounted in an imaging buffer [50 mM Tris-HCl, 10 mM NaCl, 50 mM β-mercaptoethylamine (MEA, 30070, Sigma-Aldrich), 1.1 mg/ml glucose oxidase (G2133, Sigma-Aldrich) and 100 µg/ml catalase (C40, Sigma-Aldrich, St. Louis, MO, USA)]. For SMLM of sections, 500 nm and 1000 nm thick root sections were anchored to 22x22 mm high-precision poly-L-lysine coated coverslips, mounted in Chamlide holder cells and imaged as described above.",
+      "labEquipment": "Zeiss Elyra 7\nNikon Ti-E microscope",
+      "measurementTechnique": [],
+      "name": "Image acquisition of microscopy data performed on plant tissue sections - single molecule localization microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 45
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 104772533615
+    }
+  ]
+}

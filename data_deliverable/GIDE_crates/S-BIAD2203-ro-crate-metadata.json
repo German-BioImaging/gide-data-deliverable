@@ -1,0 +1,230 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2203"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2203",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#fce60a12-f875-4335-a402-ceba3363b21e"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ae8a23a7-15c1-4c9a-a730-aa5031fe6b6d"
+        },
+        {
+          "@id": "obo:NCBITaxon_34"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9033-9646"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4485-9840"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8721-1502"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-29",
+      "description": "Research into the evolution of multicellularity often focuses on clonal multicellularity, yet aggregative multicellularity (AM) may respond to different drivers and is also highly interesting evolutionarily, for example in its behavioral, regulatory, morphological, and social complexity and diversity. We investigate the potential for predation to shape AM evolution across different combinations of three species comprising a multi-trophic food web. Together in a three-species community, the fruiting bacterium Myxococcus xanthus is a mesopredator, while the bacterivorous nematode Pristionchus pacificus is apex predator and the bacterium Escherichia coli is a shared basal prey for both predators. The number and morphology of M. xanthus fruiting bodies is found to respond evolutionarily to nematodes, regardless of whether E. coli is present. E. coli alone with M. xanthus tends to reduce both fruiting body formation and spore production, but adding nematodes eliminates those negative effects. M. xanthus lineages with an ancestral antibiotic-resistance mutation evolved less overall, revealing strong historical contingency and suggesting potential tradeoffs between antibiotic-resistance and responsiveness to biotic selection. Our results suggest that predation both of and by mesopredators has played important roles in the evolution of aggregative multicellularity and reveal complex inter-trophic evolutionary interactions in a relatively simple three-species food web.",
+      "funder": [],
+      "identifier": "S-BIAD2203",
+      "keywords": [
+        "evolution of multicellularity",
+        "food web",
+        "mesopredator",
+        "Myxococcus",
+        "fruiting body",
+        "aggregative multicellularity",
+        "microbial evolutionary ecology",
+        "predator-prey interactions"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Predation, evo-devo, and historical contingency: A nematode predator drives evolution of aggregative multicellularity",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2203/82bb5647-a736-4180-9d1f-d63492e822ac/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8721-1502",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#09039ee8-dc22-4d24-8526-909663ccb3a3"
+        }
+      ],
+      "email": "gregory.velicer@env.ethz.ch",
+      "name": "Gregory J. Velicer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9033-9646",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04xs57h96"
+        }
+      ],
+      "email": "contact@kaitlinschaal.com",
+      "name": "Kaitlin A. Schaal"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4485-9840",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#09039ee8-dc22-4d24-8526-909663ccb3a3"
+        }
+      ],
+      "email": "marco.lafortezza@env.ethz.ch",
+      "name": "Marco La Fortezza"
+    },
+    {
+      "@id": "#09039ee8-dc22-4d24-8526-909663ccb3a3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "ETH Zurich"
+    },
+    {
+      "@id": "https://ror.org/04xs57h96",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Liverpool"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_34",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Myxococcus xanthus"
+    },
+    {
+      "@id": "#ae8a23a7-15c1-4c9a-a730-aa5031fe6b6d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bacterial fruiting bodies",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_34"
+      }
+    },
+    {
+      "@id": "#fce60a12-f875-4335-a402-ceba3363b21e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Microscope, camera, and software settings were the same for all samples across all blocks and replicates:\na.\tOptical zoom: 1.25x\nb.\tSide lamp intensity (wheel on the side of the microscope) set at max\nc.\tNo lamp filter (microscope’s base wheel) – brightest\nd.\tObjective aperture – black lever on right over the objective – completely closed\ne.\tLowest magnification objective – 0.5X\nf.\tMicroscope turret is on eye-camera (not only eye)\ng.\tImage plates lid-side down with the lid on",
+      "labEquipment": "Olympus SZX16 microscope and Olympus DP80 camera together with cellSens software version 1.15 (Olympus, Tokyo, Japan)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image aquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 335
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 5723364191
+    }
+  ]
+}

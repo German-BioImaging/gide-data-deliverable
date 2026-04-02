@@ -1,0 +1,169 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000357/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000357/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000357",
+      "name": "High-dimensional single-cell phenotyping of yeast heterozygous diploid strains",
+      "description": "Image and morphological data for high-dimensional single-cell phenotyping of yeast heterozygous diploid strains",
+      "datePublished": "2024-07-12",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Cell Enlargement",
+        "Genes, Essential",
+        "Haploinsufficiency[major]",
+        "Heterozygote",
+        "Phenotype",
+        "Saccharomyces cerevisiae",
+        "Single-Cell Analysis/methods[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pbio.2005130"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yoshikazu Ohya",
+      "email": "ohya@edu.k.u-tokyo.ac.jp",
+      "description": "Organization: University of Tokyo; Department: Department of Integrated Biosciences; Laboratory: Laboratory of Signal Transduction",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "University of Tokyo"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "Grants-in-Aid of Research Activity Start- up https://www.jsps.go.jp/english/ (grant number JP26882019) to S.O. Grants-in-Aid of Scientific Research from the Ministry of Education, Culture, Sports, Science and Technology, Japan http://www.mext.go.jp/en/ (grant number 24370002 and 15H04402) to Y.O."
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pbio.2005130",
+      "@type": "ScholarlyArticle",
+      "name": "High-dimensional single-cell phenotyping reveals extensive haploinsufficiency.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "BY4743",
+      "description": "BY4743",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932",
+      "@type": "Taxon",
+      "scientificName": "Saccharomyces cerevisiae",
+      "vernacularName": "baker's yeast"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 10749571072,
+      "description": "10.7 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 160121,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

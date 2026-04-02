@@ -1,0 +1,791 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2130"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2130",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c5e329bf-d85b-4b75-bbbc-1f7c306b9339"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5de92db5-1b07-45f0-9a71-e11fb6356f15"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#c45038cd-2923-4fb5-befe-4eb7b1c100b1"
+        },
+        {
+          "@id": "#19063eca-33ab-4f28-9739-425040dd3bf8"
+        },
+        {
+          "@id": "#cab05747-2f9d-4892-9f9d-07cefcc238e7"
+        },
+        {
+          "@id": "#905797b0-19a5-4970-81ea-cf56325bce34"
+        },
+        {
+          "@id": "#8c452d27-a4d1-46a8-a0dd-6ce0ddd10c6a"
+        },
+        {
+          "@id": "#627e0e5f-bbe2-4323-bc99-d6e1afe5dc83"
+        },
+        {
+          "@id": "#146710d9-7f16-4c81-ace5-052606a0b577"
+        },
+        {
+          "@id": "#57918d1d-e6d7-424d-84fe-d014dc3e5fac"
+        },
+        {
+          "@id": "#d1a3423b-3170-4a2d-9e1a-ca370a33d2a6"
+        },
+        {
+          "@id": "#c7d7785e-125a-414b-805d-547b63aee580"
+        },
+        {
+          "@id": "#022fcaaf-66ad-454b-bd4e-2c390098c2dc"
+        },
+        {
+          "@id": "#ab2ae178-1e42-4dc2-ab56-6a50be7f662c"
+        },
+        {
+          "@id": "#7aa92fc0-472f-4662-876b-cb6ad357f45a"
+        },
+        {
+          "@id": "#d629f9be-c2d2-4d80-8396-ef2cae315f77"
+        },
+        {
+          "@id": "#6e33db33-31d9-48a2-8d08-0baaa58cc63a"
+        },
+        {
+          "@id": "#f7140fb4-e4b2-492f-a347-3a8435e63dee"
+        },
+        {
+          "@id": "#f45b25a1-9fce-4c65-a1ef-756d28538bed"
+        },
+        {
+          "@id": "#53f4826f-dd1a-498f-91e0-b971d9159eb4"
+        },
+        {
+          "@id": "#ee250997-9240-4d8f-8641-33c2fa753a00"
+        },
+        {
+          "@id": "#811e2098-0f33-4541-b120-5a62ceaf25cd"
+        },
+        {
+          "@id": "#e1f92e3c-c3b4-4130-8d54-f0e19e3aeede"
+        },
+        {
+          "@id": "#d8cce63f-81c9-48e3-8853-8d74f3457387"
+        },
+        {
+          "@id": "#0150bd87-0aaf-4e7e-9ee7-70aaecc3b1fe"
+        },
+        {
+          "@id": "#50311a69-3082-4317-82ad-9769821bea33"
+        },
+        {
+          "@id": "#65065a38-aab5-4f1f-9a63-cfa44262b469"
+        },
+        {
+          "@id": "#afed82b4-5747-4400-a845-2f53221935d3"
+        },
+        {
+          "@id": "#2f702ba7-1ea2-4ab8-85d8-601941027979"
+        },
+        {
+          "@id": "#7db6cd34-5be8-4772-b887-864f13d62d69"
+        },
+        {
+          "@id": "#9eafed4f-9f34-4885-96c5-1d67b1984e05"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-26",
+      "description": "Precision medicine for paediatric and adult cancers that incorporates drug sensitivity profiling can identify effective therapies for individual patients. However, obtaining adequate biopsy samples for high-throughput (HTP) screening remains challenging, as tumours need to be expanded in culture or patient-derived xenografts – this is time-consuming and often unsuccessful. Herein, we have developed paediatric patient-derived tumour models using an engineered extracellular matrix (ECM) tissue mimic hydrogel system and HTP 3D bioprinting. Gene expression analysis from a neuroblastoma and sarcoma paediatric patient cohort identified key components of the ECM in these tumour types. Engineered hydrogels with ECM-mimic peptides were used to bioprint and create patient-specific tumouroids using patient-derived cells from xenograft models and the approach was further confirmed on direct patient tumour samples. Bioprinted tumouroids from the PDX models recapitulated the genetic and phenotypic characteristics of the original tumours and retained tumourigenicity. HTP drug screening of these models identified individualised drug sensitivities. Our approach offers a timely and clinically relevant technology platform for precision medicine in paediatric cancers, potentially transforming preclinical testing across multiple cancer types.",
+      "funder": [],
+      "identifier": "S-BIAD2130",
+      "keywords": [
+        "paediatric cancers",
+        "preclinical models",
+        "tumouroid models",
+        "3D bioprinting",
+        "high-throughput (HTP) drug screening"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "High-throughput 3D engineered paediatric tumour models for precision medicine",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2130/32e869c4-5a60-4741-9826-c486e73b72ef/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0150bd87-0aaf-4e7e-9ee7-70aaecc3b1fe",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        }
+      ],
+      "email": "mcowley@ccia.org.au",
+      "name": "Mark J. Cowley"
+    },
+    {
+      "@id": "#022fcaaf-66ad-454b-bd4e-2c390098c2dc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        }
+      ],
+      "email": "lcui@ccia.org.au",
+      "name": "Louise Cui"
+    },
+    {
+      "@id": "#146710d9-7f16-4c81-ace5-052606a0b577",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "https://ror.org/02jxrhq31"
+        }
+      ],
+      "email": "sarah.ghamrawi@gmail.com",
+      "name": "Sarah Ghamrawi"
+    },
+    {
+      "@id": "#19063eca-33ab-4f28-9739-425040dd3bf8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        },
+        {
+          "@id": "#2261d9e2-b01d-42f8-a43b-e65b86d92c09"
+        }
+      ],
+      "email": "vpoltavets@ccia.org.au",
+      "name": "Valentina Poltavets"
+    },
+    {
+      "@id": "#2f702ba7-1ea2-4ab8-85d8-601941027979",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        },
+        {
+          "@id": "https://ror.org/02aj7yc53"
+        }
+      ],
+      "email": "edolman@ccia.org.au",
+      "name": "M. Emmy M. Dolman"
+    },
+    {
+      "@id": "#50311a69-3082-4317-82ad-9769821bea33",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        },
+        {
+          "@id": "https://ror.org/022arq532"
+        }
+      ],
+      "email": "agifford@ccia.org.au",
+      "name": "Andrew J. Gifford"
+    },
+    {
+      "@id": "#53f4826f-dd1a-498f-91e0-b971d9159eb4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        }
+      ],
+      "email": "zbarger@ccia.org.au",
+      "name": "Zara Barger"
+    },
+    {
+      "@id": "#57918d1d-e6d7-424d-84fe-d014dc3e5fac",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#2261d9e2-b01d-42f8-a43b-e65b86d92c09"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        }
+      ],
+      "email": "pgraber@ccia.org.au",
+      "name": "Philipp Graber"
+    },
+    {
+      "@id": "#627e0e5f-bbe2-4323-bc99-d6e1afe5dc83",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        }
+      ],
+      "email": "axie@ccia.org.au",
+      "name": "Jinhan Xie"
+    },
+    {
+      "@id": "#65065a38-aab5-4f1f-9a63-cfa44262b469",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        }
+      ],
+      "email": "jfletcher@ccia.org.au",
+      "name": "Jamie I. Fletcher"
+    },
+    {
+      "@id": "#6e33db33-31d9-48a2-8d08-0baaa58cc63a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        }
+      ],
+      "email": "alin@ccia.org.au",
+      "name": "Angela Lin"
+    },
+    {
+      "@id": "#7aa92fc0-472f-4662-876b-cb6ad357f45a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        }
+      ],
+      "email": "pooja_venkat@hotmail.com",
+      "name": "Pooja Venkat"
+    },
+    {
+      "@id": "#7db6cd34-5be8-4772-b887-864f13d62d69",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03r8z3t63"
+        },
+        {
+          "@id": "#2261d9e2-b01d-42f8-a43b-e65b86d92c09"
+        }
+      ],
+      "email": "justin.gooding@unsw.edu.au",
+      "name": "J. Justin Gooding"
+    },
+    {
+      "@id": "#811e2098-0f33-4541-b120-5a62ceaf25cd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        }
+      ],
+      "email": "dmthomas@unsw.edu.au",
+      "name": "David M. Thomas"
+    },
+    {
+      "@id": "#8c452d27-a4d1-46a8-a0dd-6ce0ddd10c6a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        }
+      ],
+      "email": "akamili@ccia.org.au",
+      "name": "Alvin Kamili"
+    },
+    {
+      "@id": "#905797b0-19a5-4970-81ea-cf56325bce34",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        }
+      ],
+      "email": "gtax@ccia.org.au",
+      "name": "Gabor Tax"
+    },
+    {
+      "@id": "#9eafed4f-9f34-4885-96c5-1d67b1984e05",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        },
+        {
+          "@id": "#2261d9e2-b01d-42f8-a43b-e65b86d92c09"
+        }
+      ],
+      "email": "mkavallaris@ccia.org.au",
+      "name": "Maria Kavallaris"
+    },
+    {
+      "@id": "#ab2ae178-1e42-4dc2-ab56-6a50be7f662c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        }
+      ],
+      "email": "kkimpton@ccia.org.au",
+      "name": "Kathleen Kimpton"
+    },
+    {
+      "@id": "#afed82b4-5747-4400-a845-2f53221935d3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        },
+        {
+          "@id": "https://ror.org/02tj04e91"
+        }
+      ],
+      "email": "llau@ccia.org.au",
+      "name": "Loretta M. S. Lau"
+    },
+    {
+      "@id": "#c45038cd-2923-4fb5-befe-4eb7b1c100b1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "https://ror.org/0384j8v12"
+        }
+      ],
+      "email": "moonsun.jung@sydney.edu.au",
+      "name": "MoonSun Jung"
+    },
+    {
+      "@id": "#c7d7785e-125a-414b-805d-547b63aee580",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        }
+      ],
+      "email": "mwong-erasmus@ccia.org.au",
+      "name": "Marie Wong-Erasmus"
+    },
+    {
+      "@id": "#cab05747-2f9d-4892-9f9d-07cefcc238e7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#2261d9e2-b01d-42f8-a43b-e65b86d92c09"
+        }
+      ],
+      "email": "jskhinas@ccia.org.au",
+      "name": "Joanna N. Skhinas"
+    },
+    {
+      "@id": "#d1a3423b-3170-4a2d-9e1a-ca370a33d2a6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        }
+      ],
+      "email": "jmao@ccia.org.au",
+      "name": "Jie Mao"
+    },
+    {
+      "@id": "#d629f9be-c2d2-4d80-8396-ef2cae315f77",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        }
+      ],
+      "email": "cmayoh@ccia.org.au",
+      "name": "Chelsea Mayoh"
+    },
+    {
+      "@id": "#d8cce63f-81c9-48e3-8853-8d74f3457387",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05k0s5494"
+        },
+        {
+          "@id": "https://ror.org/0384j8v12"
+        }
+      ],
+      "email": "nicole.graf@health.nsw.gov.au",
+      "name": "Nicole S. Graf "
+    },
+    {
+      "@id": "#e1f92e3c-c3b4-4130-8d54-f0e19e3aeede",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03r8z3t63"
+        }
+      ],
+      "email": "e.du@unsw.edu.au",
+      "name": "Eric Y. Du"
+    },
+    {
+      "@id": "#ee250997-9240-4d8f-8641-33c2fa753a00",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b3dvp57"
+        }
+      ],
+      "email": "j.grady@garvan.org.au",
+      "name": "John Grady"
+    },
+    {
+      "@id": "#f45b25a1-9fce-4c65-a1ef-756d28538bed",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        }
+      ],
+      "email": "ash.fordham@outlook.com",
+      "name": "Ashleigh M. Fordham"
+    },
+    {
+      "@id": "#f7140fb4-e4b2-492f-a347-3a8435e63dee",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01x784220"
+        },
+        {
+          "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16"
+        }
+      ],
+      "email": "eflueren@ccia.org.au",
+      "name": "Emmy D. G. Fleuren"
+    },
+    {
+      "@id": "#2261d9e2-b01d-42f8-a43b-e65b86d92c09",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Australian Centre for NanoMedicine"
+    },
+    {
+      "@id": "#5dea5b49-149c-4d22-ba80-acff2b8e3d16",
+      "@type": [
+        "Organization"
+      ],
+      "name": "UNSW Medicine & Health"
+    },
+    {
+      "@id": "https://ror.org/01b3dvp57",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Garvan Institute of Medical Research"
+    },
+    {
+      "@id": "https://ror.org/01x784220",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Children's Cancer Institute Australia"
+    },
+    {
+      "@id": "https://ror.org/022arq532",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Prince of Wales Hospital"
+    },
+    {
+      "@id": "https://ror.org/02aj7yc53",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Princess Máxima Center"
+    },
+    {
+      "@id": "https://ror.org/02jxrhq31",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Melanoma Institute Australia"
+    },
+    {
+      "@id": "https://ror.org/02tj04e91",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Sydney Children's Hospital"
+    },
+    {
+      "@id": "https://ror.org/0384j8v12",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Sydney"
+    },
+    {
+      "@id": "https://ror.org/03r8z3t63",
+      "@type": [
+        "Organization"
+      ],
+      "name": "UNSW Sydney"
+    },
+    {
+      "@id": "https://ror.org/05k0s5494",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Children's Hospital at Westmead"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#5de92db5-1b07-45f0-9a71-e11fb6356f15",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "patient-derived tumour cells. 3D bioprinted tumouroid",
+      "name": "Tumouroid",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c5e329bf-d85b-4b75-bbbc-1f7c306b9339",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Z-stack images were taken using green fluorescence for live cells and red fluorescence for dead cells. Brightfield images were also taken. ",
+      "labEquipment": "CellDiscoverer 7 (Zeiss)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "CD7 - fluorescence and brightfield"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 24
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 81634203148
+    }
+  ]
+}

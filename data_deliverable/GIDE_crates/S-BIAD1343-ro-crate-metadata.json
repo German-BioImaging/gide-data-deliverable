@@ -1,0 +1,271 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1343"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1343",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a6f0023a-f490-4040-8e66-0e45cb0b53f5"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d4dc90d7-7951-4b63-8fb0-c99c5ff1d2d6"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9999-4292"
+        },
+        {
+          "@id": "#596cb560-4d25-402f-bd3b-52fe5725936c"
+        },
+        {
+          "@id": "#82ca6270-6379-4410-bc7c-fdb781153350"
+        },
+        {
+          "@id": "#9e4a7033-048a-4179-a693-9f58baea5301"
+        },
+        {
+          "@id": "#7c95938c-f78c-4717-bf4f-7628a7c41a4d"
+        },
+        {
+          "@id": "#da7b4d52-8744-4a4d-8c7c-88027afb8850"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-29",
+      "description": "The dataset is composed of 100 cases of whole slide images (WSIs) of renal cell carcinoma, a type of kidney cancer. These images are stained using Haematoxylin and Eosin (H&E), a common staining technique in histopathology that highlights different tissue components, allowing for detailed examination of the cellular structure and morphology.\nEach of these WSIs has been captured using various high-resolution scanners, including but not limited to the Zeiss Axio Z1, Hamamatsu, Philips, and Leica scanners. These scanners represent different data acquisition domains, meaning that the images might have subtle differences in color, contrast, resolution, and other imaging characteristics depending on the scanner used. These variations can introduce inconsistencies, which can make it challenging to directly compare or analyze images across different scanning devices.\nDue to these variations, it becomes crucial to develop algorithms that can effectively translate and normalize these WSIs. The goal of such an algorithm would be to standardize the images, making them more consistent regardless of the scanner used. This normalization process is essential for ensuring that any subsequent analysis, such as cancer diagnosis or grading using automated tools, is accurate and reliable across different datasets.\nThe dataset will be instrumental in the development of these normalization algorithms. Researchers can use these images to train, test, and validate models designed to minimize scanner-related variations, leading to more robust and generalized image analysis systems. This work is particularly significant in the context of digital pathology, where reliable and consistent image processing is key to supporting clinical decision-making.",
+      "funder": [],
+      "identifier": "S-BIAD1343",
+      "keywords": [
+        "H&E; WSI; Renal cell carcinoma; Normalisation; Digital pathology; multi-domain image translation; generative ad\u0002versarial networks; semantic structure"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Whole Slide Images of H&E Sections Digitised on Multiple Scanners.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1343/7e0f0a55-eaa6-49eb-b13f-2e791ef8dc35/0f7cf90a-b533-4072-b01f-54f663922bdb.png"
+      ]
+    },
+    {
+      "@id": "#596cb560-4d25-402f-bd3b-52fe5725936c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "hn33@st-andrews.ac.uk",
+      "name": "Haseeb Nazki"
+    },
+    {
+      "@id": "#7c95938c-f78c-4717-bf4f-7628a7c41a4d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "celo1@st-andrews.ac.uk",
+      "name": "Clare Orange"
+    },
+    {
+      "@id": "#82ca6270-6379-4410-bc7c-fdb781153350",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "oa7@st-andrews.ac.uk",
+      "name": "Ognjen Arandjelovic"
+    },
+    {
+      "@id": "#9e4a7033-048a-4179-a693-9f58baea5301",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "gds35@cam.ac.uk",
+      "name": "Grant D. Stewart"
+    },
+    {
+      "@id": "#da7b4d52-8744-4a4d-8c7c-88027afb8850",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "djh20@st-andrews.ac.uk",
+      "name": "David J. Harrison"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9999-4292",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#d4dc90d7-7951-4b63-8fb0-c99c5ff1d2d6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Renal cell carcinoma",
+      "name": "Biosample1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a6f0023a-f490-4040-8e66-0e45cb0b53f5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1. Zeiss Axio scan Z1, Grant - 20 x object magnification, 0.22𝜇𝑚/𝑝𝑖𝑥\n2. Zeiss Axio scan Z1, Louise - 20 x object magnification, 0.22𝜇𝑚/𝑝𝑖𝑥\n3. Hamamatsu NanoZoomer 2.0-HT- 20 x object magnification, 0.45𝜇𝑚/𝑝𝑖𝑥\n4. Hamamatsu NanoZoomer S60- 20 x object magnification, 0.42𝜇𝑚/𝑝𝑖𝑥\n5. Phillips Ultra Fast Scanner (UFS) -40 x object magnification, 0.25𝜇𝑚/𝑝𝑖𝑥\n6. Leica Aperio AT2 - 20 x object magnification (0.50𝜇𝑚/𝑝𝑖𝑥) ",
+      "labEquipment": "1. Zeiss Axio scan Z1, Grant\n2. Zeiss Axio scan Z1, Louise\n3. Hamamatsu NanoZoomer 2.0-HT\n4. Hamamatsu S60\n5. Phillips Ultra Fast Scanner (UFS)\n6. Leica Aperio AT2",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 599
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 586438234552
+    }
+  ]
+}

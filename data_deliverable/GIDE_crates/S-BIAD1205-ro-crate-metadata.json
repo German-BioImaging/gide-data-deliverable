@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1205"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1205",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#dd179ac0-eaa1-4112-9d08-7fc388076a96"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#474401d7-94dc-4ec6-9f80-d58d9dbae83e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#407b211d-6202-48a7-9232-12e677759d16"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-07",
+      "description": "Microscopy data related to FigEV2D",
+      "funder": [],
+      "identifier": "S-BIAD1205",
+      "keywords": [
+        "BODIIPY staining lipids"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Imaging data related to FigEV2D",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1205/a1cf756c-59c4-43de-82f2-8912ac423242/bccf6de0-4064-4af4-9183-926d421393bb.png"
+      ]
+    },
+    {
+      "@id": "#407b211d-6202-48a7-9232-12e677759d16",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e1d42477-ced4-472d-aeff-3ce5ddb944da"
+        }
+      ],
+      "email": "d20023@students.iitmandi.ac.in",
+      "name": "Shilpa thakur"
+    },
+    {
+      "@id": "#e1d42477-ced4-472d-aeff-3ce5ddb944da",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Indian Institute of Technology Mandi"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#474401d7-94dc-4ec6-9f80-d58d9dbae83e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "cells",
+      "name": "FigEV2D",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#dd179ac0-eaa1-4112-9d08-7fc388076a96",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "60x,1.0 N.A",
+      "labEquipment": "confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Microscopy data related to FigEV2D"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 51
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 81577164
+    }
+  ]
+}

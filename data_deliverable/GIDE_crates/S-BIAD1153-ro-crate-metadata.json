@@ -1,0 +1,356 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1153"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1153",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c85d063c-a130-4a0f-bb66-19ec0d1b080b"
+        },
+        {
+          "@id": "#2803dd20-3a80-4236-a2c3-c43dafdd1125"
+        },
+        {
+          "@id": "#021e6737-cbe9-48dd-8268-d30e374808a9"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c2b5d9f2-232d-4c15-bf25-3f13ad180223"
+        },
+        {
+          "@id": "#040292be-31bb-4ffd-9663-753b4f624ca4"
+        },
+        {
+          "@id": "#a1428a28-3ae4-4e49-8898-a2f292a02614"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9761-9808"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2293-3608"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4147-4782"
+        },
+        {
+          "@id": "#ee48ba66-b5b0-46c8-a233-46a1a9755487"
+        },
+        {
+          "@id": "#b32b544b-8ff0-4b3d-a688-1ef22b384c4f"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-29",
+      "description": "Image datasets for manuscript EMBOJ-2024-116687",
+      "funder": [],
+      "identifier": "S-BIAD1153",
+      "keywords": [
+        "Neurodegeneration",
+        "TDP-43",
+        "Wnt",
+        "GDE2"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Physiological regulation of neuronal Wnt activity is essential for TDP-43 localization and function",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1153/7bc2cbb6-2703-44c1-91dc-f2ba81eb7d9f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#b32b544b-8ff0-4b3d-a688-1ef22b384c4f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "email": "ewang49@jhu.edu",
+      "name": "Ethan Wang"
+    },
+    {
+      "@id": "#ee48ba66-b5b0-46c8-a233-46a1a9755487",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bccb20a1-f2d9-4999-8a88-7c45eb30dd98"
+        }
+      ],
+      "email": "macey.wilson@uga.edu",
+      "name": "Macey Wilson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2293-3608",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb"
+        }
+      ],
+      "email": "anwesterhaus@gmail.com",
+      "name": "Anna Westerhaus"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9761-9808",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb"
+        }
+      ],
+      "email": "nzhang51@jhmi.edu",
+      "name": "Nan Zhang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4147-4782",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb"
+        }
+      ],
+      "email": "ssockan1@jhmi.edu",
+      "name": "Shanthini Sockanathan"
+    },
+    {
+      "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Johns Hopkins Medicine"
+    },
+    {
+      "@id": "#bccb20a1-f2d9-4999-8a88-7c45eb30dd98",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Georgia"
+    },
+    {
+      "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Johns Hopkins University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#040292be-31bb-4ffd-9663-753b4f624ca4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "ALS and non-neurological control paraffin-embedded postmortem motor cortex sections ",
+      "name": "Human postmortem tissues",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a1428a28-3ae4-4e49-8898-a2f292a02614",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Induced spinal neurons from human iPSCs",
+      "name": "iSNs",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c2b5d9f2-232d-4c15-bf25-3f13ad180223",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse brain tissues",
+      "name": "Mouse brain",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#021e6737-cbe9-48dd-8268-d30e374808a9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Grids were viewed on a Hitachi 7600 TEM operating at 80 kV, and digital images were captured with an XR80 8-megapixel CCD by AMT at 80,000x magnification.",
+      "labEquipment": "Hitachi 7600 TEM",
+      "measurementTechnique": [],
+      "name": "TEM"
+    },
+    {
+      "@id": "#2803dd20-3a80-4236-a2c3-c43dafdd1125",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken on the 40x objective with both brightfield and epifluorescence. Contrast and brightness adjustments were made equally across experimental groups. ",
+      "labEquipment": "Keyence BZ-X710 epifluorescence microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Brightfield/epifluorescence imaging"
+    },
+    {
+      "@id": "#c85d063c-a130-4a0f-bb66-19ec0d1b080b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Immunostained tissues were imaged on Zeiss LSM700 confocal microscope on the 20x air objective or 40x oil objective with z-stacks.",
+      "labEquipment": "LSM700",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal microscopy "
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1923
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 25065607461
+    }
+  ]
+}

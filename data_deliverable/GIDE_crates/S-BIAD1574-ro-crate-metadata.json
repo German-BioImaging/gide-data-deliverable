@@ -1,0 +1,174 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1574"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1574",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d4d9f0e4-cd02-4d7f-80f9-69d086099a1d"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#42d486d3-d359-480c-b526-46973e4054e6"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#780e6038-2f1a-402b-8e02-cb3209d5f93f"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-13",
+      "description": "Images of 5 wood disk surfaces acquired with the Gigapixel Woodbot.\n\nSoftware for building your own Gigapixel Woodbot can be found on https://doi.org/10.5281/zenodo.14637832.\n\nReleases of software for analysis of the images can be found on https://doi.org/10.5281/zenodo.14637855.\n\nThe training datasets and trained YOLOv8 model needed to run the analysis, can be found on https://doi.org/10.5281/zenodo.14604996. \n\nThe increment core datasets accompanying these full disk images, can be found on https://doi.org/10.5281/zenodo.14627909. \n\nThis is part of an entire sample preparation, imaging and analysis pipeline available in the paper \"Enabling high-throughput quantitative wood anatomy through a dedicated pipeline\" in Plant Methods by Van den Bulcke and co-authors: https://doi.org/10.1186/s13007-025-01330-7.\n\nPlease cite our work when using these data.\n\nAlso acknowledge the following collections: The five beech discs used as in this paper were collected by the Institute for Nature and Forest Research (INBO: https://ror.org/00j54wy13) as part of the Intensive Monitoring Forest Ecosystems Measurement Network (International Co-operative Programme on Assessment and Monitoring of Air Pollution Effects on Forests level II). These discs (Tw81397, Tw81403, Tw81405, Tw81408, Tw81410) are part of the Tervuren xylarium, the wood collection curated at the Royal Museum for Central Africa, Belgium (https://ror.org/001805t51).",
+      "funder": [],
+      "identifier": "S-BIAD1574",
+      "keywords": [
+        "wood anatomy",
+        "gigapixel imaging",
+        "deep learning"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Images accompanying the paper \"Enabling high-throughput quantitative wood anatomy through a dedicated pipeline\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1574/ac1d55e3-2d6a-410b-a4dd-7419d25c29f8/2e556a6e-31a1-4ad1-81d9-85df01f2b5ce.png"
+      ]
+    },
+    {
+      "@id": "#780e6038-2f1a-402b-8e02-cb3209d5f93f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#91792e73-6254-4885-9f14-37fda3362547"
+        }
+      ],
+      "email": "jan.vandenbulcke@ugent.be",
+      "name": "Jan Van den Bulcke"
+    },
+    {
+      "@id": "#91792e73-6254-4885-9f14-37fda3362547",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ghent University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#42d486d3-d359-480c-b526-46973e4054e6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Stem disk",
+      "name": "Wood disks",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#d4d9f0e4-cd02-4d7f-80f9-69d086099a1d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See paper",
+      "labEquipment": "Gigapixel Woodbot",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Optical imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 15
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 421256871509
+    }
+  ]
+}

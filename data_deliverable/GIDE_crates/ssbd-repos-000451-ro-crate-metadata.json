@@ -1,0 +1,214 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000451/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000451/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000451",
+      "name": "The shape of vacuole and F-actin in tobacco BY-2 cells treated with neopetromin, a newly found peptide",
+      "description": "HPLC-MS analysis revealed the presence of an\r\nunreported peptide in the extract of the marine sponge Neopetrosia\r\nsp. Its structure was determined as a tripeptide, named\r\nneopetromin (1), composed of two tyrosine and one tryptophan\r\nresidues with a heteroaromatic C−N cross-link between side\r\nchains. The absolute configuration of amino acids was determined\r\nusing Marfey’s method after ozonolysis and hydrolysis of 1.\r\nCompound 1 promoted vacuole fragmentation in an actin-\r\nindependent manner in tobacco BY-2 cells.",
+      "datePublished": "2025-11-28",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1021/acs.jnatprod.4c00158"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0030837"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005773"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0015629"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Sachiko Tsukamoto",
+      "email": "sachiko@kumamoto-u.ac.jp",
+      "description": "Organization: Kumamoto University; Department: Department of Natural Medicines; Laboratory: Department of Natural Medicines",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02cgss904"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Yuki Hitora",
+      "email": "hitora@kumamoto-u.ac.jp",
+      "description": "Organization: Kumamoto University; Department: Graduate School of Pharmaceutical Sciences; Laboratory: Graduate School of Pharmaceutical Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02cgss904"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02cgss904",
+      "@type": "Organization",
+      "name": "Kumamoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jnatprod.4c00158",
+      "@type": "ScholarlyArticle",
+      "name": "Neopetromin, a Cyclic Tripeptide with a C-N Cross-Link, from the Marine Sponge Neopetrosia sp., That Causes Vacuole Fragmentation in Tobacco BY-2 Cells.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097"
+        }
+      ],
+      "hasCellLine": "TBY-2 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097",
+      "@type": "Taxon",
+      "scientificName": "Nicotiana tabacum",
+      "vernacularName": "tobacco"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030837",
+      "@type": "DefinedTerm",
+      "name": "negative regulation of actin filament polymerization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005773",
+      "@type": "DefinedTerm",
+      "name": "vacuole"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0015629",
+      "@type": "DefinedTerm",
+      "name": "actin cytoskeleton"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 649334784,
+      "description": "649.3 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 6,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1524"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1524",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#39a64a58-3ffe-41a1-af3a-c43a4e4470e6"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f2a16969-297d-48b4-8625-3ec17066fe09"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2318-1011"
+        },
+        {
+          "@id": "#a52dcaa7-8f80-4fa2-ae3f-304ed09da337"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-17",
+      "description": "Imaging files associated with \"Cellular behavior analysis from live-cell imaging of TCR T cell--cancer cell interactions.\" Data consists of co-cultures of TCR T cells and mKate+ A375 cells imaged every 4 minutes for 72 hours. T cells have either a safe harbor AAVS1 knockout, RASA2 knockout, or CUL5 knockout. ",
+      "funder": [],
+      "identifier": "S-BIAD1524",
+      "keywords": [
+        "T cells",
+        "TCR T cells",
+        "Live Cell Imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Cellular behavior analysis from live-cell imaging of TCR T cell-cancer cell interactions",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1524/89a6719b-07e2-4dca-ae2b-a022465516df/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#a52dcaa7-8f80-4fa2-ae3f-304ed09da337",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e69f0-59f4-4556-8bb7-44fd3d5993b4"
+        }
+      ],
+      "email": "barbara.engelhardt@gladstone.ucsf.edu",
+      "name": "Barbara Engelhardt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2318-1011",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e69f0-59f4-4556-8bb7-44fd3d5993b4"
+        }
+      ],
+      "email": "architverma@gmail.com",
+      "name": "Archit Verma"
+    },
+    {
+      "@id": "#e48e69f0-59f4-4556-8bb7-44fd3d5993b4",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Gladstone Institutes"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#f2a16969-297d-48b4-8625-3ec17066fe09",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human T Cells\nmKate+ A375 cancer cells",
+      "name": "TCR A375 Co-culture",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#39a64a58-3ffe-41a1-af3a-c43a4e4470e6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Antigen-specific T cells were co-cultured in X-VIVO-15 plus supplements, 100 IU IL-2 per ml and 1X Glucose (Gibco) with mKate+ A375 cells that were pre-seeded in a 96-well flat-bottom plates. T cells were added in various E:T ratios. Over a 72-hour span, images were captured every 4 minutes using the Incucyte S3 live-cell imaging platform (Essen Bioscience), and the mKate+ object counts for each well were recorded over time. ",
+      "labEquipment": "Sartorius Incucyte S3",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Incucyte"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 234444
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 542592178749
+    }
+  ]
+}

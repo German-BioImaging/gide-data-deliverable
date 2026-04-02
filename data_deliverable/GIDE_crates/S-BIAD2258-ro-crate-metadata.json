@@ -1,0 +1,861 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2258"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2258",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9fb409c3-4810-4a57-bff0-26b965340308"
+        },
+        {
+          "@id": "#69847b09-8ed4-42d3-932d-50901c1861a9"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d4de82db-9cb7-422c-b8a0-f0bfeaa5e1f9"
+        },
+        {
+          "@id": "obo:NCBITaxon_632957"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9018-3303"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0397-9555"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9887-1610"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5879-2544"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1180-5838"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8251-1503"
+        },
+        {
+          "@id": "https://orcid.org/0009-0006-7819-613X"
+        },
+        {
+          "@id": "https://orcid.org/0009-0000-6656-1634"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4343-8358"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6015-850X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1416-6223"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6673-3149"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8737-7967"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3407-2785"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9246-2314"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8073-5629"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7856-6763"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5065-4710"
+        },
+        {
+          "@id": "https://orcid.org/0009-0002-9731-5991"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9451-0663"
+        },
+        {
+          "@id": "https://orcid.org/0009-0005-4425-7590"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1032-2500"
+        },
+        {
+          "@id": "https://orcid.org/0009-0007-3601-9781"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8027-1836"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8143-8244"
+        },
+        {
+          "@id": "https://orcid.org/0009-0002-1687-8646"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6976-3004"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2085-5538"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9002-457X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9823-0581"
+        },
+        {
+          "@id": "https://orcid.org/0009-0002-5531-3752"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4301-3920"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0841-2707"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0733-7509"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6089-3766"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7375-3749"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9762-3583"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-31",
+      "description": "This dataset was acquired by confocal microscopy from environmental plankton tows during the TRaversing European Coastlines (TREC) expedition 2023-2024 (see Linked Information [1]). The dataset contains between 44 and 56 individual tiles for each of the 350 samples, acquired either in wide-field or confocal mode. The sampling sites and metadata are accessible via the respective BioSamples IDs.\n\nTo check the scripts used for data processing, to open the data files and metadata of your choice, as well as to report any issue, check the supporting GitHub repository: https://github.com/AlexandraZakieva/live-confocal-super-plankton.\nNOTA BENE After the release of this accession, the community flagged key improvements that should be made. We will implement them in January 2026. Meanwhile, for the most updated version of the OME-Zarr files, have a look at the GitHub repository.\n\nThe dataset is used for taxonomy analysis on the EcoTaxa platform at project ID 18361 [3].\n\nOntology according to Ontology Lookup Service [8]:\nBrightfield\tCHMO:0000104\nCell Wall\tGO:0005618\nCalcofluorWhite\tCHEBI:50011\nCFW\tCHEBI:50011\nChloA\tmesh:D000077194\nChlorophyll A\tmesh:D000077194\nChloroplast\tmesh:D002736\nenvironmental material\tENVO:00010483\nHoechst\tBAO:0000116\nHoechst33342\tFBbi:00000052\nHoechst34580\tmesh:C572112\nPE\tmesh:D010799\nPhycoerythrin\tmesh:D010799\npolysaccharides\tCHEBI:18154\nsurface structures\tGO:0009986\nT-PMT\tREPR:PMT",
+      "funder": [],
+      "identifier": "S-BIAD2258",
+      "keywords": [
+        "plankton",
+        "environmental",
+        "marine",
+        "confocal microscopy",
+        "live imaging"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "TRaversing European Coastlines (TREC) Live Plankton High-Content Fluorescence Microscopy Dataset",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6976-3004",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Flora Vincent"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7375-3749",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Niko Leisch"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8027-1836",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Yannick Schwab"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8073-5629",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Caroline Juery"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8737-7967",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Eliott Flaum"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9018-3303",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Tina Wiegand"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9246-2314",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Marie Jacobovitz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9823-0581",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05d78xc36"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Bugra Oezdemir"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9887-1610",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Thomas Beavis"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0397-9555",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02s6k3f65"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Sophie Baars"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0733-7509",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Kerstin Leberecht"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1032-2500",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01swzsf04"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Armando Rubio Ramos"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1180-5838",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02qg15b79"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Annemarie Pérez Boerema"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2085-5538",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02rx3b187"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Daniel Yee"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4343-8358",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#94285909-58fc-42e7-8dff-0ea3247f489b"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Johan Decelle"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5065-4710",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Felix Mikus"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5879-2544",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Chandni Bhickta"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6015-850X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02s6k3f65"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Manon Demulder"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6089-3766",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Alexandra Zakieva"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6673-3149",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01swzsf04"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Omaya Dudin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7856-6763",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#31b2b0c6-2716-49a7-bd64-2845fb29f408"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Marine Laporte"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8143-8244",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Hiral Shah"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8251-1503",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Michael Bonadonna"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9002-457X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Aliaksandr Halavatyi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9451-0663",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01swzsf04"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Marine Olivetta"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9762-3583",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Rainer Pepperkok"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0841-2707",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Matej Troják"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1416-6223",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Gautam Dey"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3407-2785",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Serena Flori"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4301-3920",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Charles Girardot"
+    },
+    {
+      "@id": "https://orcid.org/0009-0000-6656-1634",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f87c72ce-71ed-4d79-afcd-42f9cf0c8d61"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Fabien Chevalier"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-1687-8646",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02rx3b187"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Gaëlle Toullec"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-5531-3752",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Christopher Randolph Rhodes"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-9731-5991",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Kevin Moog"
+    },
+    {
+      "@id": "https://orcid.org/0009-0005-4425-7590",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Laurine Planat"
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-7819-613X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Paulina Cherek"
+    },
+    {
+      "@id": "https://orcid.org/0009-0007-3601-9781",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "TREC@embl.org",
+      "name": "Clémence Saint-Donat"
+    },
+    {
+      "@id": "#31b2b0c6-2716-49a7-bd64-2845fb29f408",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universite Claude BERNARD Lyon 1 Lyon - MeLiS—CNRS-UMR5284, INSERM-U1314 Lyon France"
+    },
+    {
+      "@id": "#94285909-58fc-42e7-8dff-0ea3247f489b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "CNRS Délégation Alpes"
+    },
+    {
+      "@id": "#f87c72ce-71ed-4d79-afcd-42f9cf0c8d61",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Cell and Plant Physiology Laboratory, CNRS, CEA, INRAE, IRIG, Université Grenoble Alpes, 38054 Grenoble, France"
+    },
+    {
+      "@id": "https://ror.org/01swzsf04",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Geneva"
+    },
+    {
+      "@id": "https://ror.org/02qg15b79",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Okinawa Institute of Science and Technology Graduate University"
+    },
+    {
+      "@id": "https://ror.org/02rx3b187",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université Grenoble Alpes"
+    },
+    {
+      "@id": "https://ror.org/02s6k3f65",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Basel"
+    },
+    {
+      "@id": "https://ror.org/03mstc592",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://ror.org/05d78xc36",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Euro-BioImaging ERIC"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_632957",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "marine plankton environmental sample"
+    },
+    {
+      "@id": "#d4de82db-9cb7-422c-b8a0-f0bfeaa5e1f9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "environmental material - BioSamples IDs are indicated in the File list.",
+      "name": "Plankton",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_632957"
+      }
+    },
+    {
+      "@id": "#69847b09-8ed4-42d3-932d-50901c1861a9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal images were acquired in one plane with a transmitted light detector (T-PMT) and 2-3 fluorescence channels, as indicated in the File List, with GaAsp detectors and then written in CZI files.",
+      "labEquipment": "Zeiss LSM 900",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Plankton Scans in confocal"
+    },
+    {
+      "@id": "#9fb409c3-4810-4a57-bff0-26b965340308",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Wide-field images were acquired with a monochromatic camera in bright-field and in epifluorescence mode with filter set \"45 AsRed\" and then written in CZI files with \"camera\" tag in the name.",
+      "labEquipment": "Zeiss LSM 900",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Plankton Scans in bright-field and epi-fluorescence"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 18626
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 135187851036
+    }
+  ]
+}

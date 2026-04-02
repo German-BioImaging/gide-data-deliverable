@@ -1,0 +1,241 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD928"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD928",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c292e945-17b8-47f3-b672-6d0bd85845f5"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#46949544-9790-4c26-9ea0-0ffeae943c7c"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6328-1485"
+        },
+        {
+          "@id": "#2cf11d47-8814-4bf3-b922-ab38988817f2"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-11-27",
+      "description": "Original data for our Latrophilin paper",
+      "funder": [],
+      "identifier": "S-BIAD928",
+      "keywords": [
+        "endothelial cell",
+        "mechanotransduction",
+        "shear stress"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Latrophilins are essential mediators of endothelial junctional fluid shear stress mechanotransduction",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD928/8e867bb2-e8f2-4612-92e2-bd83e1ece63a/f7bc5cf4-e86f-47e0-aba6-fdeeeeffe66d.png"
+      ]
+    },
+    {
+      "@id": "#2cf11d47-8814-4bf3-b922-ab38988817f2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9"
+        }
+      ],
+      "email": "martin.schwartz@yale.edu",
+      "name": "Martin Schwartz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6328-1485",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9"
+        }
+      ],
+      "email": "keiichiro.tanaka@yale.edu",
+      "name": "Keiichiro Tanaka"
+    },
+    {
+      "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Yale University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#46949544-9790-4c26-9ea0-0ffeae943c7c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human endothelial cells",
+      "name": "Biosample descriptions",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c292e945-17b8-47f3-b672-6d0bd85845f5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x or 60x objective.  Exposure time are optimized automatically by microscope application",
+      "labEquipment": "PerkinElmer spinning disk confocal microscope or a Leica Sp8 confocal microscope with the Leica Application Suite (LAS) software. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Imaging acquision protocol"
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 324
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1679900671
+    }
+  ]
+}

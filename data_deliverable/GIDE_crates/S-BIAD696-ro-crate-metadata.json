@@ -1,0 +1,211 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD696"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD696",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#86c0dfa5-41c9-4666-9c82-d125b7c45ae3"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f24c1dfb-748a-4b7f-8fce-e872dac004c8"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#4e88b2cb-bf75-457a-91d1-5762cf85fca9"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-10",
+      "description": "Even amongst genetically identical cancer cells, therapy resistance often only emerges from a very small subset of those cells. Much effort has gone into uncovering the molecular differences in rare individual cells in the initial population that may allow certain cells to become therapy resistant; however, comparatively little is known about variability in the resistant outcomes themselves. Here, we develop and apply FateMap, a framework that combines DNA barcoding with single-cell RNA sequencing to reveal the fates of hundreds of thousands of clones exposed to anti-cancer therapies. We show that resistant clones emerging from single-cell-derived cancer cells adopt molecularly, morphologically, and functionally distinct fate types. These different resistant types are largely predetermined by molecular differences between cells before addition of drug and not by extrinsic cell-specific microenvironmental factors. Changes in dose and kind of drug can, however, switch the resistant fate type of an initial cell, even resulting in the generation and elimination of certain fate types. Diversity in resistant fates was observed across several single-cell-derived cancer cell lines and types treated with a variety of drugs. Cell fate diversity as a result of variability in intrinsic cell states may be a generic feature of response to external cues.",
+      "funder": [],
+      "identifier": "S-BIAD696",
+      "keywords": [
+        "cancer",
+        "single-cell biology",
+        "lineage tracing",
+        "melanoma"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Pre-determined diversity in resistant fates emerges from homogenous cells after anti-cancer drug treatment\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#4e88b2cb-bf75-457a-91d1-5762cf85fca9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/000e0be47"
+        }
+      ],
+      "email": "yogesh.goyal@northwestern.edu",
+      "name": "Yogesh Goyal"
+    },
+    {
+      "@id": "https://ror.org/000e0be47",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Northwestern University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#f24c1dfb-748a-4b7f-8fce-e872dac004c8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human melanoma cells; Human breast cancer cells; and human melanocytes",
+      "name": "Images of human cancer cells from culture and solid tumors, and primary melanocytes",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#86c0dfa5-41c9-4666-9c82-d125b7c45ae3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "To image RNA FISH and nuclei signal, we used a Nikon TI-E inverted fluorescence microscope equipped with a SOLA SE U-nIR light engine (Lumencor), a Hamamatsu ORCA-Flash 4.0 V3 sCMOS camera, and 4X Plan-Fluor DL 4XF (Nikon MRH20041/MRH20045),​​ 10X Plan-Fluor 10X/0.30 (Nikon MRH10101) and 60X Plan-Apo λ (MRD01605) objectives. We used the following filter sets to acquire different fluorescence channels: 31000v2 (Chroma) for DAPI, 41028 (Chroma) for Atto 488, SP102v1 (Chroma) for Cy3, 17 SP104v2 (Chroma) for Atto 647N, and a custom filter set for Alexa 594. We tuned the exposure times depending on the dyes used (Cy3, Atto 647N, Alexa 594, and DAPI). For large tiled scans, we used a Nikon Perfect Focus system to maintain focus across the imaging area. For imaging RNA FISH signals in tissue sections, we acquired z-stacks (three positions) at 60X magnification, and used maximum intensity projection to visualize the signal. For brightfield imaging of resistant colonies, we used a Nikon Eclipse Ts2-FL with an Imagingsource DFK 33UX252 camera and 4X Plan-Fluor 4X/0.13 (Nikon MRH20041) objective. For time-lapse imaging of the emergence of drug-resistant colonies, we used an IncuCyte S3 Live Cell Imaging Analysis System (Sartorius) with a 4X objective on WM989 A6-G3 tagged with an mCherry nuclear reporter (H2B-mCherry). ",
+      "labEquipment": "Different imaging equipment were used, as stated below:\n\n1. Nikon TS2-FL microscope\n2. Nikon Ti2E inverted microscope\n3. IncuCyte S3 Live Cell Imaging Analysis System\n4. NanoString GeoMx Digital Spatial Profiler software",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "Image acquisition details"
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 325847355388
+    }
+  ]
+}

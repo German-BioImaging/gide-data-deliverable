@@ -1,0 +1,210 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2006"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2006",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c36e4977-706e-4eed-a8c6-f2a58726ba15"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#098959c7-f419-4dfa-b43d-5fc344b47288"
+        },
+        {
+          "@id": "#cabd4907-283f-46d8-a9f6-b41818e61cf2"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-1487-0747"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-10",
+      "description": "The dedifferentiation of somatic cells into a pluripotent state by cellular reprogramming coincides with a reversal of age-associated molecular hallmarks. Although transcription factor induced cellular reprogramming has been shown to ameliorate these aging phenotypes in human cells and extend health and lifespan in mice, translational applications of this approach are still limited. More recently, chemical reprogramming via small molecule cocktails have demonstrated a similar ability to induce pluripotency in vitro, however, its potential impact on aging is unknown. Here, we demonstrated that chemical-induced partial reprogramming can improve key drivers of aging including genomic instability and epigenetic alterations in aged human cells. Moreover, we identified an optimized combination of two reprogramming molecules sufficient to induce the amelioration of additional aging phenotypes including cellular senescence and oxidative stress. Importantly, in vivo application of this two-chemical combination significantly extended C. elegans lifespan and healthspan. Together, these data demonstrate that improvement of key drivers of aging and lifespan extension is possible via chemical-induced partial reprogramming, opening a path towards future translational applications.",
+      "funder": [],
+      "identifier": "S-BIAD2006",
+      "keywords": [
+        "Aging",
+        "Cellular reprogamming",
+        "Chemical reprogramming",
+        "Epigenetics",
+        "Lifespan"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Chemical reprogramming ameliorates cellular hallmarks of aging and extends lifespan",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1487-0747",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#59734047-62d0-40e5-af8f-42046666b9df"
+        }
+      ],
+      "email": "lucas.schoenfeldt@outlook.fr",
+      "name": "Lucas Schoenfeldt"
+    },
+    {
+      "@id": "#59734047-62d0-40e5-af8f-42046666b9df",
+      "@type": [
+        "Organization"
+      ],
+      "name": "EPITERNA"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#098959c7-f419-4dfa-b43d-5fc344b47288",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Dermal Fibroblasts",
+      "name": "Characterization of hallmarks of aging in human fibroblasts",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#cabd4907-283f-46d8-a9f6-b41818e61cf2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "WT N2 C. elegans",
+      "name": "Characterization of lifespan and healthspan in C. elegans",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#c36e4977-706e-4eed-a8c6-f2a58726ba15",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100X objective and with 15 z-sections of 0.3 μm intervals. Appropriate lasers were used (405 nm and 488 nm) with a typical laser intensity set to 5-10% transmission of the maximum intensity for methylated histones, Ki67 and ROS, and 30-40% for phosphorylated histones. Exposure time and binning were established separately to assure avoidance of signal saturation.",
+      "labEquipment": "Confocal image acquisition was performed using the Ti2 Yokogawa CSU-W1 Spinning Disk (Nikon).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image aquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 43
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2499727582
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1025"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1025",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#393796bf-6652-43f8-93b1-a52d4d9dccdb"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c0d672c2-4d26-4ceb-843c-fc069c9c32d9"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-7627-1160"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-01-31",
+      "description": "This dataset provides the microscopy images for the preprint https://doi.org/10.1101/2022.08.19.504407 ",
+      "funder": [],
+      "identifier": "S-BIAD1025",
+      "keywords": [
+        "Autophagy",
+        "Arabidopsis",
+        "Plant",
+        "ARF7",
+        "ATG8",
+        "NBR1"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "NBR1-mediated selective autophagy of ARF7 modulates root branching",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1025/4d6b3598-4bfd-491c-a6e5-4fc79a2daee2/43c2b023-a0c6-452e-90ff-2d027bdea450.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7627-1160",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035b05819"
+        }
+      ],
+      "email": "jeppe.ansboel@bio.ku.dk",
+      "name": "Jeppe Ansbøl"
+    },
+    {
+      "@id": "https://ror.org/035b05819",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Copenhagen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#c0d672c2-4d26-4ceb-843c-fc069c9c32d9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Root tissue",
+      "name": "ARF7 regulation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#393796bf-6652-43f8-93b1-a52d4d9dccdb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal imaging of seedlings was taken with LSM700 Zeiss confocal microscope from the Center for Advanced Bioimaging (CAB) Denmark. Images were taken using 20x air or 63x water objectives. For analysis of ARF7-Venus signal over time, we arbitrarily set the beginning of our experiments to coincide with a time point where ARF7 signal was low. Images were analyzed using Zen Blue 2012 (Zeiss).",
+      "labEquipment": "LSM700 Zeiss confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 362
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 923092960
+    }
+  ]
+}

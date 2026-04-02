@@ -1,0 +1,288 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1369"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1369",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#769ee1ea-85ac-4369-854f-e9867d96ecec"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#af86ba72-9646-47f6-9837-d50dab958929"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#8409da85-b932-4fee-b030-a01bd99f9db7"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0504-1824"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4479-5429"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9719-5446"
+        },
+        {
+          "@id": "#ccef9fe3-1e8f-4681-830f-cc939734b82c"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8002-1981"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9821-3578"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-19",
+      "description": "The diffusion properties of the membrane proteins CD86 and CTLA4 were measured at 25 °C using single-particle tracking (SPT) in U 2-OS cells stably expressing CD86-HT7, CD86-dHT7, CTLA4-HT7, or CTLA4-dHT7. For imaging of the proteins of interest for 20 s, the covalent HaloTag Ligand SiR-HTL, or the exchangeable HaloTag Ligands (xHTLs) SiR-S5, SiR-Hy5, JF585-S5, JF585-Hy4 were used at a concentration of 1 nM. The proteins of interest were also measured for 20 min using SiR-HTL, SiR-S5, or SiR-Hy5 at the same concentration. The diffusion properties of the membrane receptor EGFR were measured at 25 °C using SPT in U-2 OS cells transiently expressing the EGFR-HT7 fusion protein. The ligand SiR-S5 was used for imaging the protein of interest for 20 s or 30 min at 1 nM concentration. The diffusion of calreticulin (CalR)-HT7-KDEL was measured in U-2 OS cells stably expressing the protein of interest and targeted with 0.5 nM SiR-HTL or SiR-S5 for 20 min. ",
+      "funder": [],
+      "identifier": "S-BIAD1369",
+      "keywords": [
+        "single-particle tracking",
+        "microscopy",
+        "single-molecule",
+        "live cell"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Long-Term Single-Molecule Tracking in Living Cells using Weak-Affinity Protein Labeling ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#8409da85-b932-4fee-b030-a01bd99f9db7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "catapano@chemie.uni-frankfurt.de",
+      "name": "Claudia Catapano"
+    },
+    {
+      "@id": "#ccef9fe3-1e8f-4681-830f-cc939734b82c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "freund@chemie.uni-frankfurt.de",
+      "name": "Petra Freund"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9719-5446",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "jang@chemie.uni-frankfurt.de",
+      "name": "Soohyen Jang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4479-5429",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2a1c6b4b-7f68-47bb-8875-fcefc24fc8c1"
+        }
+      ],
+      "email": "Julian.Kompa@mr.mpg.de",
+      "name": "Julian Kompa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8002-1981",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2a1c6b4b-7f68-47bb-8875-fcefc24fc8c1"
+        }
+      ],
+      "email": "johnsson@mr.mpg.de",
+      "name": "Kai Johnsson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9821-3578",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "heilemann@chemie.uni-frankfurt.de",
+      "name": "Mike Heilemann"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0504-1824",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "dietz@chemie.uni-frankfurt.de",
+      "name": "Marina S. Dietz"
+    },
+    {
+      "@id": "#2a1c6b4b-7f68-47bb-8875-fcefc24fc8c1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute for Medical Research"
+    },
+    {
+      "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Goethe University Frankfurt"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#af86ba72-9646-47f6-9837-d50dab958929",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U-2 OS cells",
+      "name": "Samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#769ee1ea-85ac-4369-854f-e9867d96ecec",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "exposure time: 20 ms\nnumber of frames per tif file: 1000 (standard SPT measurements) or 60000 (CD86, CTLA4, CalR-HT7-KDEL) or 90000 (EGFR) (long-term SPT measurements)\nexcitation of SIR: 647 nm laser with an irradiation intensity of 0.4 kW/cm² or 0.06 kW/cm³ for long-term imaging of EGFR\nexcitation of JF585: 561 nm laser with an irradiation intensity of 0.5 kW/cm²\nImage size: 256 x 256 px with 157 nm pixel size",
+      "labEquipment": "commercial widefield microscope (N-STORM by Nikon) operated in TIRF or HILO illumination",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": " SPT measurements "
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 23
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 645915035291
+    }
+  ]
+}

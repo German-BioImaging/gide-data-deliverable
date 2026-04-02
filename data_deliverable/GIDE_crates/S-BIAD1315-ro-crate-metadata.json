@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1315"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1315",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d260c4f1-6da7-4faf-bb7e-4751496b9293"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b746af63-007e-4aef-8c29-35d507962152"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5579c23a-fde4-46c1-8753-d980074be295"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-09",
+      "description": "Prognostic value of T-cells between primary colorectal cancer (pCRC) and its paired synchronous and metachronous liver metastasis (LM) is underinvestigated and is the subject of the present study. We enrolled into this retrospective cohort study patients, who underwent resection of both pCRC and synchronous LM (N=55) or metachronous LM (N=44). After immunohistochemical staining for CD3+, CD8+ and CD45R0+ whole slides were scanned and T-cell densities were quantified using QuPath software in tumor center (TC), inner margin (IM), outer margin (OM) and peritumor zone (PT) of pCRC and LM. High densities of CD8+ T-cells in TC, OM and PT of synchronous LM were associated with longer disease-free survival (DFS), besides, the longest DFS was observed in patients with high densities of CD8+ T-cells in OM of both pCRC and LM. Great-er densities of CD3+ T-cells in IM and PT and CD8+ T-cells in IM, OM and PT in synchronous LM over pCRC were associated with longer DFS. Greater densities of CD8+ T-cells in the TC and IM and CD3+ T-cells in the IM of pCRC were found in the metachronous over synchronous group. \nThe first novel finding demonstrated that high densities of CD8+ and CD3+ T cells in both pCRC and synchronous LM were associated with favorable outcome. The second finding of high CD8+ and CD3+ cell densities in pCRC in metachronous over synchronous CRC may provide a mecha-nistic basis for the delay of metastatic spread. Both findings could be applied clinically with own reference values.\n",
+      "funder": [],
+      "identifier": "S-BIAD1315",
+      "keywords": [
+        "colorectal cancer, synchronous and metachronous liver metastases, tumor-infiltrating lympho-cytes, survival"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Prognostic assessment of T-cells in primary colorectal cancer and paired synchronous or metachronous liver metastasis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#5579c23a-fde4-46c1-8753-d980074be295",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c9c5f95-0202-4a0e-91de-032803649bfb"
+        }
+      ],
+      "email": "andriy.trailin@lfp.cuni.cz",
+      "name": "Andriy Trailin"
+    },
+    {
+      "@id": "#6c9c5f95-0202-4a0e-91de-032803649bfb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Charles University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#b746af63-007e-4aef-8c29-35d507962152",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tumor tissue of colorectal cancer with adjacent non-tumor colon tissue and liver metastasis of colorectal cancer with adjacent non-tumor liver tissue",
+      "name": "Formalin fixed-paraffin embedded tissue (FFPE) of primary colorectal cancer (pCRC)  and liver metastasis of colorectal cancer (CRCLM)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d260c4f1-6da7-4faf-bb7e-4751496b9293",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "objective x20",
+      "labEquipment": "Olympus VS200 scanner (Olympus, Shinjuku, Japan)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Whole-slide scans of pCRC and CRCLM"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 511
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 211059502248
+    }
+  ]
+}

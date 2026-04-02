@@ -1,0 +1,268 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1605"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1605",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ee109f38-ae74-46d7-a43c-4fb992bbfa78"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7febc3ed-b3b6-4820-8d39-d995b0b7ecb8"
+        },
+        {
+          "@id": "obo:NCBITaxon_562"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#34b6fb92-b8ff-4167-b018-a530d5085148"
+        },
+        {
+          "@id": "#a1ce60c8-7289-4294-b351-70b24034ea83"
+        },
+        {
+          "@id": "#8bf6bb8a-58ef-4475-9418-914c27e30137"
+        },
+        {
+          "@id": "#2e946863-9d95-47ad-bf0c-b927c0de303b"
+        },
+        {
+          "@id": "#ab343861-ca82-40a3-8fce-2392dc2c941c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-04",
+      "description": "To examine how bacteria achieve robust cell proliferation across diverse conditions, we developed a method that quantifies 77 cell morphological, cell cycle, and growth phenotypes of a fluorescently labeled Escherichia coli strain and >800 gene deletion derivatives under multiple nutrient conditions. This approach revealed extensive phenotypic plasticity and deviating mutant phenotypes were often nutrient dependent. From this broad phenotypic landscape emerged simple and robust unifying rules (laws) that connect DNA replication initiation, nucleoid segregation, FtsZ ring formation, and cell constriction to specific aspects of cell size (volume, length, or added length) at the population level. Furthermore, completion of cell division followed the initiation of cell constriction after a constant time delay across strains and nutrient conditions, identifying cell constriction as a key control point for cell size determination. Our work provides a population-level description of the governing principles by which E. coli integrates cell cycle processes and growth rate with cell size to achieve its robust proliferative capability.",
+      "funder": [],
+      "identifier": "S-BIAD1605",
+      "keywords": [
+        "cell proliferation",
+        "gene deletion",
+        "phenotypic plasticity",
+        "DNA replication",
+        "nucleoid",
+        "FtsZ"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Apparent simplicity and emergent robustness in the control of the Escherichia coli cell cycle",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#2e946863-9d95-47ad-bf0c-b927c0de303b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b70a2253-8f06-45de-b537-3a51918f0720"
+        }
+      ],
+      "name": "Géraldine Laloux"
+    },
+    {
+      "@id": "#34b6fb92-b8ff-4167-b018-a530d5085148",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#14157161-e255-488e-85fb-422178c6db82"
+        }
+      ],
+      "name": "Sander K. Govers"
+    },
+    {
+      "@id": "#8bf6bb8a-58ef-4475-9418-914c27e30137",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "name": "Bhavyaa Tyagi"
+    },
+    {
+      "@id": "#a1ce60c8-7289-4294-b351-70b24034ea83",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2ef38ce4-9e66-417b-b5a6-233cdb024477"
+        }
+      ],
+      "name": "Manuel Campos"
+    },
+    {
+      "@id": "#ab343861-ca82-40a3-8fce-2392dc2c941c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "Jacobs-Wagner@stanford.edu",
+      "name": "Christine Jacobs-Wagner"
+    },
+    {
+      "@id": "#14157161-e255-488e-85fb-422178c6db82",
+      "@type": [
+        "Organization"
+      ],
+      "name": "KU Leuven"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#2ef38ce4-9e66-417b-b5a6-233cdb024477",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université de Toulouse"
+    },
+    {
+      "@id": "#b70a2253-8f06-45de-b537-3a51918f0720",
+      "@type": [
+        "Organization"
+      ],
+      "name": "de Duve Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_562",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli"
+    },
+    {
+      "@id": "#7febc3ed-b3b6-4820-8d39-d995b0b7ecb8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli",
+      "name": "Organism used in \"Apparent simplicity and emergent robustness in the control of the Escherichia coli cell cycle\" by Govers et al. 2024",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#ee109f38-ae74-46d7-a43c-4fb992bbfa78",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were imaged on 1% agarose pads supplemented with either M9 buffer (for M9-based nutrient conditions) or the appropriate growth medium (for the richest, undefined nutrient conditions). To stain the chromosomal DNA that forms the nucleoid, cells were incubated with 1 μg/ml 4′,6-diamidino-2-phenylindole (DAPI) for 15 min in their growth medium prior to sampling for microscopy. To avoid having to correct for temporal biases introduced by cells spending longer times on agarose pads,35 at most two deletion strains or parent replicates were spotted (0.5 μl) on the same pad. Separated spots were then traced back under the microscope and imaging was performed within 5-10 min after spotting the cells on the pad.\nPhase contrast and epifluorescence imaging was performed on a Nikon Eclipse Ti microscope equipped with a 1.45 NA phase contrast CFI Plan Apo DM Lambda 100x oil objective (Nikon), an Orca-Flash4.0 V2 142 CMOS camera (Hamamatsu), and a Spectra X light engine (Lumencor). The following Chroma filter sets were used to acquire fluorescence images: DAPI (excitation ET350/50x, dichroic T400lp, emission ET460/50 m), YFP (excitation ET500/20x, dichroic T515lp, emission ET535/30 m) and mCherry/TexasRed (excitation ET560/40x, dichroic T585lpxr, emission ET630/75 m). The microscope was controlled by the NIS-Elements AR software.",
+      "labEquipment": "Phase contrast and epifluorescence imaging was performed on a Nikon Eclipse Ti microscope equipped with a 1.45 NA phase contrast CFI Plan Apo DM Lambda 100x oil objective (Nikon), an Orca-Flash4.0 V2 142 CMOS camera (Hamamatsu), and a Spectra X light engine (Lumencor).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "name": "Imaging conditions used in \"Apparent simplicity and emergent robustness in the control of the Escherichia coli cell cycle\" by Govers et al. 2024"
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1170313382629
+    }
+  ]
+}

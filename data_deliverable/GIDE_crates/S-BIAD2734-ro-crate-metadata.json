@@ -1,0 +1,238 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2734"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2734",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1bf39ff1-faca-4404-a27d-17a51524efa6"
+        },
+        {
+          "@id": "#41c47aa9-b9e1-4abe-b8f2-a330cd252cc3"
+        },
+        {
+          "@id": "#9641a129-7e08-4f34-abcc-0cc7395d9de8"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#588bbedc-9e40-40ac-90ea-643a056881a0"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8143-8175"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1167/iovs.66.15.66"
+        }
+      ],
+      "datePublished": "2026-01-09",
+      "description": "Purpose: Retinal ganglion cell (RGC) loss in glaucoma occurs in a large fraction of patients even after intraocular pressure (IOP) is reduced. Mitochondrial dysfunction is a key mechanism that links elevated IOP to RGC degeneration. We tested whether HDAP2, a novel high-density aromatic peptide that binds cardiolipin to stabilize mitochondrial membranes, can protect RGCs in the DBA/2J mouse model.\n\nMethods: DBA/2J mice received HDAP2 (3 mg/kg, intraperitoneally, every other day) starting at 4 months of age for 8 months. IOP was measured each month to track pressure exposure. RGC survival was assessed by counting RBPMS-stained cells in retinal wholemounts and optic nerve axons in semithin toludine blue-stained sections.\n\nResults: HDAP2-treated retinas had ~49% more RGCs than untreated retinas at similar pressure exposures (p = 0.0063; F(2,59) = 5.524). At mild IOP exposure, HDAP2 preserved 58% more RGCs compared with untreated retinas, and at high IOPs, RGC survival was 180% greater. Kaplan–Meier analysis indicated that HDAP2 increased the threshold for severe RGC loss by 29 mmHg and reduced the chance of developing severe RGC degeneration by a factor of 4.6. Optic nerve axons from treated retinas were also well preserved, with axon morphologies appearing indistinguishable from controls. Axon size distributions did not change significantly among the treatment groups, suggesting that protection by HDAP2 was similar among RGC subtypes. \n\nConclusions: HDAP2 preserved both RGCs and axons in a pressure-dependent manner and increased tolerance to IOP. These results suggest that HDAP2 may complement pressure-lowering therapy, including for normal-tension and treatment-refractory glaucoma.\n",
+      "funder": [],
+      "identifier": "S-BIAD2734",
+      "keywords": [
+        "glaucoma, retinal ganglion cells; neuroprotection; DBA/2J mice, mitochondrial dysfunction, intraocular pressure, HDAP2"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Mitochondrial-Targeted HDAP2 Preserves Retinal Ganglion Cells and Increases Pressure Tolerance in DBA/2J Mice",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8143-8175",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b3925295-d3d0-4e03-ae97-8b797d3d8b03"
+        }
+      ],
+      "email": "mmacneil@york.cuny.edu",
+      "name": "Margaret MacNeil"
+    },
+    {
+      "@id": "#b3925295-d3d0-4e03-ae97-8b797d3d8b03",
+      "@type": [
+        "Organization"
+      ],
+      "name": "York College, CUNY"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1167/iovs.66.15.66",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "Mitochondrial-Targeted HDAP2 Preserves Retinal Ganglion Cells and Increases Pressure Tolerance in DBA/2J Mice"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#588bbedc-9e40-40ac-90ea-643a056881a0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Imaged retinas and optic nerves - None",
+      "name": "DBA/2J Mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#1bf39ff1-faca-4404-a27d-17a51524efa6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nerves were imaged with a 40× Plan Fluor objective (NA 1.3 oil) using a Nikon Eclipse E800 microscope fitted with an AmScope MU1803 camera.",
+      "labEquipment": "Nikon Eclipse E800 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Optic nerve images"
+    },
+    {
+      "@id": "#41c47aa9-b9e1-4abe-b8f2-a330cd252cc3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Tissue was imaged using an Olympus Fluoview 300 confocal microscope with an Olympus 40× oil immersion objective (NA 1.0). Laser intensity for the 488 nm channel was maintained at ~530V to compare streptavidin and endogenous biotin labeling, to enable direct comparison of treatment conditions.",
+      "labEquipment": "Olympus Fluoview 300 confocal",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Vertical sections"
+    },
+    {
+      "@id": "#9641a129-7e08-4f34-abcc-0cc7395d9de8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The imaging plane was focused on RBPMS-labeled somas using 30-50 anchor points and the microscope systematically acquired ~160 images with 10% overlap. Airyscan processing automatically registered and blended the images to produce a single, high-resolution montage of each retinal wholemount. ",
+      "labEquipment": "Zeiss LSM 900 confocal microscope equipped with Airyscan 3.6 technology and a 10× objective. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Wholemount imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 157
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 104169470007
+    }
+  ]
+}

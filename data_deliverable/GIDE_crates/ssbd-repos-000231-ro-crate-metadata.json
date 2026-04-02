@@ -1,0 +1,228 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000231/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000231/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000231",
+      "name": "Live imaging of ERK activation on a small epithelial cell cluster during cell migration",
+      "description": "ssbd-repos-000231",
+      "datePublished": "2022-11-25",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Communication/physiology",
+        "Cell Movement/physiology[major]",
+        "Epithelial Cells/metabolism",
+        "Epithelial Cells/physiology[major]",
+        "MAP Kinase Signaling System",
+        "Models, Biological",
+        "Wound Healing/physiology"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-021-83396-6"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-773"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@nibb.ac.jp",
+      "description": "Organization: National Institute for Basic Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05q8wtt20"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/05q8wtt20",
+      "@type": "Organization",
+      "name": "National Institute for Basic Biology"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-021-83396-6",
+      "@type": "ScholarlyArticle",
+      "name": "Hierarchical modeling of mechano-chemical dynamics of epithelial sheets across cells and tissue.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "vernacularName": "dog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
+      "@type": "DefinedTerm",
+      "name": "cell migration"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "FRET",
+      "description": "FRET",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 188233728,
+      "description": "188.2 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

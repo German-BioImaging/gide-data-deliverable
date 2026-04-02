@@ -1,0 +1,152 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000426/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000426/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000426",
+      "name": "Imaging data on supersulphides airway protection",
+      "description": "Supersulphides are inorganic and organic sulphides with sulphur catenation with diverse physiological functions. Their synthesis is mainly mediated by mitochondrial cysteinyl-tRNA synthetase (CARS2) that functions as a principal cysteine persulphide synthase (CPERS). Here, we identify protective functions of supersulphides in viral airway infections (influenza and COVID-19), in aged lungs and in chronic lung diseases, including chronic obstructive pulmonary disease (COPD), idiopathic pulmonary fibrosis (IPF). We develop a method for breath supersulphur-omics and demonstrate that levels of exhaled supersulphides increase in people with COVID-19 infection and in a hamster model of SARS-CoV-2 infection. Lung damage and subsequent lethality that result from oxidative stress and inflammation in mouse models of COPD, IPF, and ageing were mitigated by endogenous supersulphides production by CARS2/CPERS or exogenous administration of the supersulphide donor glutathione trisulphide. We revealed a protective role of supersulphides in airways with various viral or chronic insults and demonstrated the potential of targeting supersulphides in lung disease.",
+      "datePublished": "2025-07-02",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-023-40182-4"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hisatoshi Sugiura",
+      "email": "sugiura@rm.med.tohoku.ac.jp",
+      "description": "Organization: Tohoku University Graduate School of Medicine; Department: Department of Respiratory Medicine",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01dq60k83"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hozumi Motohashi"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Takaaki Akaike"
+    },
+    {
+      "@id": "https://ror.org/01dq60k83",
+      "@type": "Organization",
+      "name": "Tohoku University Graduate School of Medicine"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-023-40182-4",
+      "@type": "ScholarlyArticle",
+      "name": "Supersulphides provide airway protection in viral and chronic lung diseases.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 55984128,
+      "description": "56.0 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 6,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

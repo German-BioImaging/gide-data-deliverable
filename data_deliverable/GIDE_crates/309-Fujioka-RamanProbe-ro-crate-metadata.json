@@ -1,0 +1,295 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/309-Fujioka-RamanProbe/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/309-Fujioka-RamanProbe/",
+      "@type": "Dataset",
+      "identifier": "309-Fujioka-RamanProbe",
+      "name": "Detection of multiple enzyme activities simultaneously in live cells by using activatable Raman probes ",
+      "description": "309-Fujioka-RamanProbe",
+      "datePublished": "2024-11-25",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1021/jacs.2c12381"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0001601"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "#biosample-5"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0004565"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000371"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1254"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Mako Kamiya",
+      "email": "kamiya.m.ad@m.titech.ac.jp",
+      "description": "Organization: Tokyo Institute of Technology; Department: Department of Life Science and Technology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0112mx960"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/0112mx960",
+      "@type": "Organization",
+      "name": "Tokyo Institute of Technology"
+    },
+    {
+      "@id": "https://doi.org/10.1021/jacs.2c12381",
+      "@type": "ScholarlyArticle",
+      "name": "Activatable Raman Probes Utilizing Enzyme-Induced Aggregate Formation for Selective Ex Vivo Imaging.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ HEK-LacZ",
+      "description": "Homo sapiens ~ HEK-LacZ",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": "HEK-LacZ"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ A549 cell",
+      "description": "Homo sapiens ~ A549 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0001601"
+      }
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ NCl-H226 (CLO_0008068)",
+      "description": "Homo sapiens ~ NCl-H226 (CLO_0008068)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": "NCl-H226 (CLO_0008068)"
+    },
+    {
+      "@id": "#biosample-4",
+      "@type": "BioSample",
+      "name": "Drosophila",
+      "description": "Drosophila",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-5",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ HEK293",
+      "description": "Homo sapiens ~ HEK293",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215",
+      "@type": "Taxon",
+      "scientificName": "drosophila"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001601",
+      "@type": "DefinedTerm",
+      "name": "A549 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
+      "@type": "DefinedTerm",
+      "name": "HEK293"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004565",
+      "@type": "DefinedTerm",
+      "name": "beta-galactosidase activity"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "stimulated Raman scattering (SRS) imaging",
+      "description": "stimulated Raman scattering (SRS) imaging",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000371"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000371",
+      "@type": "DefinedTerm",
+      "name": "stimulated Raman scattering (SRS) imaging"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 89074339,
+      "description": "89.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 40,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

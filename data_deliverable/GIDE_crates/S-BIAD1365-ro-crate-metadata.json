@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1365"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1365",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#36eeb1c9-68eb-4c88-b185-7a0435cd9bd1"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#bdada382-61d7-4919-8ff3-0adafc5f8880"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5117-2599"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6120-1581"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0751-1407"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-03",
+      "description": "Hepatocellular carcinoma (HCC), the most common form of primary liver cancer, is a leading cause of cancer related mortality worldwide. HCC occurs typically from a background of chronic liver disease, caused by a spectrum of predisposing conditions. Tumour development is driven by the expansion of clones that accumulated progressive driver mutations, with hepatocytes the most likely cell of origin. However, the landscape of driver mutations in HCC is broadly independent of the underlying aetiologies.  \n\nDespite an increasing range of systemic treatment options for advanced HCC outcomes remain heterogeneous and typically poor. Emerging data suggest that drug efficacies depend on disease aetiology and genetic alterations. Exploring subtypes in preclinical models with human relevance will therefore be essential to advance precision medicine in HCC. \n\nWe generated over twenty-five new genetically-driven immune-competent in vivo and in vitro HCC models. Our models represent multiple features of human HCC, including clonal origin, histopathological appearance, and metastasis to distant organs. We integrated transcriptomic data from the mouse models with human HCC data and identified four common human-mouse subtype clusters. The subtype clusters had distinct transcriptomic characteristics that aligned with the human histopathology.  \n\nIn a proof-of-principle analysis, we verified response to standard of care treatment and used a linked in vitro-in vivo pipeline to identify a promising therapeutic candidate, cladribine, that has not been linked to HCC treatment before. Cladribine acts in a highly effective subtype-specific manner in combination with standard of care therapy.  ",
+      "funder": [],
+      "identifier": "S-BIAD1365",
+      "keywords": [
+        "Liver",
+        "Cancer",
+        "Mouse Model"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Human-correlated genetic HCC models identify combination therapy for precision medicine ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1365/24625ad6-6672-439e-8859-3095bd69b213/53e866e8-5e60-415c-9064-b0d871018940.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5117-2599",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#db8f1a9e-8d3f-4f2c-92f3-fe2a80eb0763"
+        }
+      ],
+      "email": "g.skalka@crukscotlandinstitute.ac.uk",
+      "name": "George Skalka"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0751-1407",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#db8f1a9e-8d3f-4f2c-92f3-fe2a80eb0763"
+        }
+      ],
+      "email": "Miryam_mueller@yahoo.com",
+      "name": "Miryam Muller"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6120-1581",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#db8f1a9e-8d3f-4f2c-92f3-fe2a80eb0763"
+        }
+      ],
+      "email": "t.bird@crukscotlandinstitute.ac.uk",
+      "name": "Tom Bird"
+    },
+    {
+      "@id": "#db8f1a9e-8d3f-4f2c-92f3-fe2a80eb0763",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Cancer Research UK Scotland Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#bdada382-61d7-4919-8ff3-0adafc5f8880",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Hepatocellular Carcinoma.",
+      "name": "Histopathological imaging of hepatocellular carcinoma",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#36eeb1c9-68eb-4c88-b185-7a0435cd9bd1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Stained slides were scanned using a Leica Aperio AT2 slide scanner (Leica Microsystems, UK) at 20x magnification.",
+      "labEquipment": "Leica Aperio AT2 slide scanner (Leica Microsystems, UK)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Aperio AT2 Slide Scanning"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 150
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 32342223894
+    }
+  ]
+}

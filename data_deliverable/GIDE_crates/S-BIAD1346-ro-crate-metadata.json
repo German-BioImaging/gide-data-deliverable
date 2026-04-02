@@ -1,0 +1,273 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1346"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1346",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#38f7bfe1-6b26-4625-9147-0839a11a5bed"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4b4e9e77-f503-4fff-b57d-fcd1c98c099d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0001-2320-0318"
+        },
+        {
+          "@id": "#882050c4-a827-4f5d-9308-ecb941e034e8"
+        },
+        {
+          "@id": "#a013c6a8-daab-40a2-9954-b7f4f7fe0d53"
+        },
+        {
+          "@id": "#487a494a-d509-48c3-a722-40d35ed7e203"
+        },
+        {
+          "@id": "#05cec6c9-6e79-45b1-9687-f0c3d67b0125"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-29",
+      "description": "The dataset is composed of 9 whole slide images (WSIs) of clear cell renal cell carcinoma (ccRCC), a type of kidney cancer. These WSIs are mass spectrometry imaging (DESI-MSI) raw data files, haematoxylin and eosin (H&E) and multiplex immunofluorescent (mIF) images. The dataset comprises 3 different samples that were analysed by DESI-MSI and H&E and mIF were performed on the same slide. \nDESI-MSI images were acquired in the range of m/z 50-1200 Da with parameters set for sensitive detection of lipids, specially in the range m/z 600-900 Da. H&E images allow the identification of structurual features of the tissue. mIF images have been labeled using a pannel of protein markers to allow simultaneous visualisation of multiple targets withing the same tissue sample. Panel includes markers Ki67, CD45 and CD8 with a DNA counterstain (NucBlue). These markers enable the identification of proliferative and immune cells within cancer. This dataset will be expected to be highly valuable in the development of tools and methods aimed at characterising the metabolic heterogeneity in kidney cancer and identification of possible links of metabolic features with immune cells and proliferative cells. As DESI-MSI, H&E and mIF images were acquired from the same tissue slide a direct and unbiased correlation can be made between the results provided by each technique`s results. Furthermore, images can be used to develop and/or improve algorithms for alignment and co-registration of different imaging modalities. The integration of data from these different imaging modalities can help researchers gain deeper insights into the biochemical processes involved in the pathophisiology of renal cell carcinoma by capturing the metabolic heterogeneity of cell types in the tumour microenvironment. ",
+      "funder": [],
+      "identifier": "S-BIAD1346",
+      "keywords": [
+        "Mass Spectrometry;",
+        "clear cell renal cell carcinoma;",
+        "H&E;",
+        "Immunofluorescence;",
+        "Mass Spectrometry Imaging;",
+        "MSI"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Spatial Mass Spectrometry with Whole Slide Multiplex Immunofluorescence in Clear Cell Renal Cell Carcinoma",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1346/57b4a7ec-85f2-4e52-b055-284f75f54e93/2ead816b-bd41-45c3-9150-9c672e2c9044.png"
+      ]
+    },
+    {
+      "@id": "#05cec6c9-6e79-45b1-9687-f0c3d67b0125",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "ald24@st-andrews.ac.uk",
+      "name": "Alison L. Dickson"
+    },
+    {
+      "@id": "#487a494a-d509-48c3-a722-40d35ed7e203",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "djh20@st-andrews.ac.uk",
+      "name": "David J. Harrison"
+    },
+    {
+      "@id": "#882050c4-a827-4f5d-9308-ecb941e034e8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "#a013c6a8-daab-40a2-9954-b7f4f7fe0d53",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01nrxwf90"
+        }
+      ],
+      "email": "alex.laird@ed.ac.uk",
+      "name": "Alexander Laird"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-2320-0318",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "gmz1@st-andrews.ac.uk",
+      "name": "Greice Michele Zickuhr"
+    },
+    {
+      "@id": "https://ror.org/01nrxwf90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://ror.org/02wn5qz54",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#4b4e9e77-f503-4fff-b57d-fcd1c98c099d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Renal cell carcinoma",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#38f7bfe1-6b26-4625-9147-0839a11a5bed",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1. DESI-MSI: The Xevo G2-XS Q-ToF equipped with a DESI-XS ion source and heated transfer line (Waters, Milford USA) was operated at 20,000 resolving power in negative ionization mode between m/z 50–1200. A solvent\nmixture of 98% methanol and 2% water was delivered at 2 µL/min and nebulized with nitrogen at a backpressure of 1 bar. Spatial resolution was set at 20×20 µm at 10 scans/sec. The heated transfer line temperature was set to maintain 450 oC and ion source 150 oC. \n2. Zeiss Axio Z1 Scanner - FL images - NucBlue (DAPI Channel), Ki67 (FITC Channel), CD45 (Cy3 Channel) and CD8 (Cy5 Channel).\n3. Zeiss Axio Z1 Scanner - BF images",
+      "labEquipment": "1. DESI-MSI - Xevo G2-XS Q-ToF equipped with a DESI-XS ion source and heated transfer line (Waters, Milford USA)\n2. Zeiss Axio Z1 scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 12
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 43128189591
+    }
+  ]
+}

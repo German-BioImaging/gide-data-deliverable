@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000434/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000434/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000434",
+      "name": "Cre-mediated recombination site of Nes-Cre; Rosa26LSL-L10-GFP/+ mice and tamoxifen-injected (at P14, 17, and 21) Syn1CreERT2; Rosa26LSL-L10-GFP/+ mice",
+      "description": "Data of GFP and DAPI signals in Nes-Cre; Rosa26LSL-L10-GFP/+ mice, tamoxifen-injected (at P14, 17, and 21) Syn1CreERT2; Rosa26LSL-L10-GFP/+ mice and control of Rosa26LSL-L10-GFP/+ mice related Fig.3 of Nakai, et. al. (2024) Mol Brain. Each 1 representative mouse of 40 µm colonal sections.",
+      "datePublished": "2025-05-09",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1186/s13041-024-01084-8"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yu Hayashi",
+      "email": "yuhayashi@g.ecc.u-tokyo.ac.jp",
+      "description": "Organization: University of Tokyo; Department: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13041-024-01084-8",
+      "@type": "ScholarlyArticle",
+      "name": "Crucial role of TFAP2B in the nervous system for regulating NREM sleep.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 47972982784,
+      "description": "48.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 0,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

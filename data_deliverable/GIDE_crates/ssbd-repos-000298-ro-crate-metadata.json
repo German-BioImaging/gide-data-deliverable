@@ -1,0 +1,162 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000298/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000298/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000298",
+      "name": "Visualization and functional characterization of basement membrane dynamics in developing mouse hair follicles",
+      "description": "Tightly controlled basement membrane (BM) remodeling is thought to be essential for animal development and adult life. However, the full picture of BM dynamics and their functional importance remains largely unknown, especially in mammals, due to the lack of effective tools for visualizing BM dynamics in real time. Here, we established knock-in mice expressing fluorescently tagged collagen type IV alpha 2 chain (COL4A2) and a long-term 3D live-imaging system to capture BM dynamics. Imaging of growing hair follicles revealed that BM dynamics show regional BM turnover and elongation, which tightly control epithelial progenitor proliferation. Exposure to a matrix metalloproteinase inhibitor disrupts BM dynamics, causes a disproportionate shape of the hair follicle, and alters cellular division orientation. These results suggest that BM dynamics are tightly controlled in time and space during mammalian development and play essential roles in organogenesis by controlling the proliferation and fate of progenitor cells.",
+      "datePublished": "2024-12-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Basement Membrane/metabolism[major]",
+        "Hair Follicle/metabolism[major]",
+        "Hair Follicle/growth & development[major]",
+        "Morphogenesis[major]",
+        "Collagen Type IV/metabolism[major]",
+        "Collagen Type IV/genetics[major]",
+        "Green Fluorescent Proteins/metabolism[major]",
+        "Green Fluorescent Proteins/genetics[major]",
+        "Mice",
+        "Cell Proliferation",
+        "Stem Cells/metabolism",
+        "Stem Cells/cytology",
+        "Epithelial Cells/metabolism",
+        "Cell Movement",
+        "Mice, Transgenic"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1083/jcb.202404003"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Duligengaowa Wuergezhen",
+      "email": "duligengaowa.wuergezhen@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Tissue Microenvironment",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hironobu Fujiwara"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1083/jcb.202404003",
+      "@type": "ScholarlyArticle",
+      "name": "An eGFP-Col4a2 mouse model reveals basement membrane dynamics underlying hair follicle morphogenesis.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 13360013312,
+      "description": "13.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 239,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD627"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD627",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#94222e73-6bf0-4d73-9694-17c680ccd33c"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0498413e-76af-4559-b53a-05712cc32ba7"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#c8563d42-1546-4428-9851-b2594e07006d"
+        },
+        {
+          "@id": "#295f459b-6623-4716-9b45-211f5f801700"
+        },
+        {
+          "@id": "#8de175c9-4cef-4836-89fa-940e8426700f"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-02-22",
+      "description": "Test data belonging to a protocol paper describing dSTORM imaging and analysis of synaptonemal complex component SYCP3 and RAD51 and DMC1 in mouse spread meiotic nuclei including sample preparation, data acquisition, pre-processing, and data analysis. This data is part of the study described in PLOS Genetics (Koornneef et al. 2022, Multi-color dSTORM microscopy in Hormad1-/- spermatocytes reveals alterations in meiotic recombination intermediates and synaptonemal complex structure). ",
+      "funder": [],
+      "identifier": "S-BIAD627",
+      "keywords": [
+        "meiosis",
+        "RAD51",
+        "DMC1",
+        "super-resolution microscopy ",
+        "dSTORM",
+        "single-molecule analysis",
+        "SYCP3",
+        "spermatocytes"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "dSTORM Imaging and Analysis of Recombination Foci in Mouse Spread Meiotic Nuclei",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD627/8a7c31d1-3650-476a-bd51-b334d7f308eb/4f317b3d-a705-4f48-832d-b43bd510feb7.png"
+      ]
+    },
+    {
+      "@id": "#295f459b-6623-4716-9b45-211f5f801700",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a0763b0b-347e-4a70-b61f-c5c1c1cc35e6"
+        }
+      ],
+      "email": "w.baarends@erasmusmc.nl",
+      "name": "Willy Baarends"
+    },
+    {
+      "@id": "#8de175c9-4cef-4836-89fa-940e8426700f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a0763b0b-347e-4a70-b61f-c5c1c1cc35e6"
+        }
+      ],
+      "email": "j.slotman@erasmusmc.nl",
+      "name": "Johan Slotman"
+    },
+    {
+      "@id": "#c8563d42-1546-4428-9851-b2594e07006d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a0763b0b-347e-4a70-b61f-c5c1c1cc35e6"
+        }
+      ],
+      "email": "l.koornneef@erasmusmc.nl",
+      "name": "Lieke Koornneef"
+    },
+    {
+      "@id": "#a0763b0b-347e-4a70-b61f-c5c1c1cc35e6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Erasmus MC"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#0498413e-76af-4559-b53a-05712cc32ba7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse spermatocyte nuclei",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#94222e73-6bf0-4d73-9694-17c680ccd33c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For details see publication",
+      "labEquipment": "Zeiss Elyra PS1",
+      "measurementTechnique": [],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 26
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4690529930
+    }
+  ]
+}

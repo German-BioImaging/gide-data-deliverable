@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2492"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2492",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c38a8579-e1b3-4fe2-932a-23b9a087bc25"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e40044aa-9aab-46b0-a3ca-463d018e78a6"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6226-1420"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-16",
+      "description": "The main source of circulating erythropoietin (Epo) in the adult are kidney Norn cells, a recently identified interstitial cell type capable of becoming renal Epo-producing (REP) cells following a local decrease in tissue oxygenation. REP cells are restricted to small clusters in the cortico-medullary border region, suggesting that their microenvironment is relevant for cell differentiation and/or proper regulation of Epo production. Possibly for the same reason, REP cells cease to produce Epo in injured kidneys, which is rapidly reverted by stabilizers of the hypoxia-inducible factor (HIF). To shed new light on the mechanisms governing Epo production, we combined spatial transcriptomics, mRNA-FISH and sequential immunofluorescence, enabling the characterization of the direct neighbourhood of active REP cells. While in the hypoxic mouse kidney REP cells were closest to proximal tubule (PT) segments (S) S1 to S2/3 and endothelial cells, Epo was reinduced by HIF-stabilizers in injured kidneys in the vicinity of damaged PT cells that expressed high levels of injury markers. In contrast, the Norn and endothelial cell profiles remained normal. The REP cell microenvironment switched from pathways involved in energy metabolism under hypoxic conditions to inflammatory and fibrotic pathways under injury conditions. In summary, these data demonstrate that in the diseased kidney HIF-stabilizers reinduce Epo expression in REP cells with a metabolically inactive PT neighbourhood, consistent with a causal role of tubular cells during the loss of Epo expression.",
+      "funder": [],
+      "identifier": "S-BIAD2492",
+      "keywords": [
+        "kidney",
+        "mouse",
+        "RNAscope",
+        "in situ hybridization",
+        "IF",
+        "Epo"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Zeiss Axio Scan.Z1 (Slidescanner), fluorescent microscopy, whole mouse kidney scans",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2492/68a897cb-366a-4035-b57f-d654a1db2334/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6226-1420",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "olga.lempke@uzh.ch",
+      "name": "Olga Maria Lempke"
+    },
+    {
+      "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Zurich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#e40044aa-9aab-46b0-a3ca-463d018e78a6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole mouse kidney scans",
+      "name": "Zeiss Axio Scan.Z1 (Slidescanner), fluorescent microscopy, whole mouse kidney scans",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#c38a8579-e1b3-4fe2-932a-23b9a087bc25",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fluorescent signals were recorded using a slide scanner (Axio Scan.Z1; Zeiss Microscopy) and objective Plan-Apochromat 20x/0.8 M27 with OrcaFlash imaging device. Channels AF647 (670 - 710 nm), AF555 (578 - 640 nm), AF488 (504 - 546 nm) and AF405 (430 - 470 nm) were used. ",
+      "labEquipment": "Zeiss Axio Scan.Z1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Zeiss Axio Scan.Z1 (Slidescanner), fluorescent microscopy, whole mouse kidney scans"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 70
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 236724341184
+    }
+  ]
+}

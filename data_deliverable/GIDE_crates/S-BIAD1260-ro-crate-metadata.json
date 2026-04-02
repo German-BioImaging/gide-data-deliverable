@@ -1,0 +1,236 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1260"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1260",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e4ba6bfb-d58e-4aac-92da-31452ec37baf"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6e7df217-ce71-4bb1-ac85-079a74b529ea"
+        },
+        {
+          "@id": "obo:NCBITaxon_562"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#19ab8998-359b-4461-a1ca-5f42dc4c31b3"
+        },
+        {
+          "@id": "#7a25237e-1a81-458a-a6ac-91b39d842737"
+        },
+        {
+          "@id": "#6573fb60-dd64-4af2-8709-7a8a3b009ea2"
+        },
+        {
+          "@id": "#c17acc66-16e9-4d79-82aa-f30369e4f1cf"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-04",
+      "description": "This dataset contains the fluorescence microscopy image data underlying the study \"Suppression of bacterial cell death underlies the antagonistic interaction between ciprofloxacin and tetracycline in Escherichia coli\" published as a preprint in BioRxiv (https://doi.org/10.1101/2024.04.18.590101). \n\nThe images were captured using Escherichia coli cells trapped in a mother machine microfluidic device (methods also described here https://doi.org/10.15252/msb.202110441).\nThe aim of these experiments was to evaluate the single-cell physiological response of E coli to exposure to ciprofloxacin (CIP) and tetracycline (TET) combinations using different growth media.\n\nThe data  is divided into \"Compiled_output_data\" and the specific \"Figure\" folders (Figure-1, Figure-2, Figure-3), which contains the image files and data outputs for each experiment separately.  \n\n#Compiled_output_data\": \nContains the compiled output data from the fluorescence microscopy experiments as described above in both CSV and pickle format. This folder contais a specific README file (README-compiled) with instructions on how to open the compiled data file using the pickle function in Python.\n\n# Figure-1.zip, Figure-2.zip, Figure-3.zip: \nWithin each main figure data folder, we separated the datasets into two subfolders: \"Fluorescence_microscopy_images\" and \"BACMMAN_outputs\". Within each of these folders the data is then divided and named according to the specific figure panels where they first appear and the treatment used (e.g., \"1BFI-Glu-aa-control\"). \nDifferent replicates are shown in the next directory level as for example: \"Gluaa-control-1\" and \"Gluaa-control-2\". \n\n -\"Fluorescence_microscopy_images\": contains the raw image data (TIFF format); \n - \"BACMMAN_outputs\" contains: \"Output\" folder which has segmented and pre-processed image files from BACMMAN (TIFF and .db formats), the configuration files used in BACMMAN to perform the segmentation and the measurements  (files named with suffix \"BACMMAN_config\"; JSON format), and the data output files containing the quantification results obtained from the images for mKate2 (detected using mCherry filter) and GFP channels [gene expression reporters for SOS expression PsulA-mGFP) and constitutive expression (Ptet01-mKate2)]. The files are named with the suffix \"Output_data-GFP\" and \"Output_data-mKate2\"; CSV format). \n\nThe same source data that was used in Figs.1-2-3 were also used to produce other analysis, and therefore are related to several other figures in the manuscript. Below we provide the relationship between the source data and publication figures: \n\t\t    \nFigure-1/1BFI-Glu-aa-control: Fig 1 B,F,I; Fig 2 C; Fig 3 C,D; Fig 4 A; Fig 5 G,H; Fig S4 C; Table S1\nFigure-1/1CGJ-Glu-aa-TET: Fig 1 C,G,J; Fig 2 C; Fig 3 C,D; Fig 4 A; Fig 5 G,H; Fig S4 C; Table S1\nFigure-1/1DEK-Glu-aa-CIP: Fig 1 D,E,H,K; Fig 2 C; Fig 3 C,D; Fig 4 A,D,G,J; Fig 5 C,F,G,H,I; Fig S4 C; Fig S5 A-F; Fig S9 A; Fig S10 A; Table S1\nFigure-2/2ABC-Glu-aa-CIP-TET: Fig 2 A,B,C; Fig 3 C,D; Fig 4 A; Fig 5 C,F,G,H,I; Fig S4 C; Fig S5 G-L; Fig S8 D,G; Fig S9 D; Fig S10 D; Table S1\nFigure-3/3BD-Glu-control: Fig 3 B,D; Fig 4 B; Fig 5 G,H; Fig S2 A,E,I; Fig S4 B; Table S1\nFigure-3/3BD-Glu-TET: Fig 3 B,D; Fig 4 B; Fig 5 G,H; Fig S2 B,F,I; Fig S4 B; Table S1\nFigure-3/3BD-Glu-CIP: Fig 3 B,D; Fig 4 B,E,H,K; Fig 5 B,E,G,H,I; Fig S2 C,G,I; Fig S4 B; Fig S6 A-F; Fig S9 B; Fig S10 B; Table S1\nFigure-3/3BD-Glu-CIP-TET:  Fig 3 B,D; Fig 4 B; Fig 5 B,E,G,H,I; Fig S2 D,H,I; Fig S4 B; Fig S6 G-L; Fig S8 E,H; Fig S9 E; Fig S10 E; Table S1\nFigure-3/3AD-Gly-control: Fig 3 A,D; Fig 4 C; Fig 5 G,H; Fig S3 A,E,I; Fig S4 A; Table S1\nFigure-3/3AD-Gly-TET: Fig 3 A,D; Fig 4 C; Fig 5 G,H; Fig S3 B,F,I; Fig S4 A; Table S1\nFigure-3/3AD-Gly-CIP: Fig 3 A,D; Fig 4 C,F,I,L; Fig 5 A,D,G,H,I; Fig S3 C,G,I; Fig S4 A; Fig S7 A-F; Fig S9 C; Fig S10 C; Table S1\nFigure-3/3AD-Gly-CIP-TET: Fig 3 A,D; Fig 4 C; Fig 5 A,D,G,H,I; Fig S3 D,H,I; Fig S4 A; Fig S7 G-L; Fig S8 F,I; Fig S9 F; Fig S10 F; Table S1\n\nPlease refer to the README.txt file for further dataset description and a directory tree.  ",
+      "funder": [],
+      "identifier": "S-BIAD1260",
+      "keywords": [
+        "SOS response",
+        "ciprofloxacin ",
+        "tetracycline",
+        "Microfluidic Devices",
+        "Escherichia coli",
+        "mother machine",
+        "antibiotic combinations"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Dataset for \"Suppression of bacterial cell death underlies the antagonistic interaction between ciprofloxacin and tetracycline in Escherichia coli\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#19ab8998-359b-4461-a1ca-5f42dc4c31b3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "j.broughton@ed.ac.uk",
+      "name": "James Broughton"
+    },
+    {
+      "@id": "#6573fb60-dd64-4af2-8709-7a8a3b009ea2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "A.F.D.Fraisse@sms.ed.ac.uk",
+      "name": "Achille Fraisse"
+    },
+    {
+      "@id": "#7a25237e-1a81-458a-a6ac-91b39d842737",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "Meriem.Elkaroui@ed.ac.uk",
+      "name": "Meriem El Karoui"
+    },
+    {
+      "@id": "#c17acc66-16e9-4d79-82aa-f30369e4f1cf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "livia.scorza@ed.ac.uk",
+      "name": "Livia Scorza"
+    },
+    {
+      "@id": "#de588502-f2ed-4e10-94dc-797256ad666b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_562",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli"
+    },
+    {
+      "@id": "#6e7df217-ce71-4bb1-ac85-079a74b529ea",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli cells in mother machine microfluidic device",
+      "name": "JKB43 strain Escherichia coli",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#e4ba6bfb-d58e-4aac-92da-31452ec37baf",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Perfect-Focus system was used for continuous maintenance of focus. The filter set for imaging mGFP consisted of ET480/40× (excitation), T510LPXR (dichroic), and ET535/50m (emission); whereas for mKate2 the set ET572/35× (excitation), T590LPXR (dichroic), and ET632/60m (emission) was used. Filters used were purchased from Chroma. mGFP fluorescence was measured using 80 ms exposure, whereas mKate fluorescence was imaged for 100 ms, both at minimal camera gain and maximum lamp intensity. Brightfield images were also acquired at each frame using a 20 ms exposure. The microscope and temperature chamber was turned on to 37°C at least 2 hours before imaging. The microscope was controlled from MATLAB via MicroManager (Edelstein et al., 2014) using a custom-made user interface developed by Sebastian Jaramillo-Riveri (Jaramillo-Riveri, 2019). The code is accessible at  https://gitlab.com/MEKlab/MicroscopeControl. Images were saved in tiff format as one file per fluorescence channel per frame.",
+      "labEquipment": "Nikon Ti-E inverted microscope equipped with EMCCD Camera (iXion Ultra 897, Andor), a SpectraX Line engine (Lumencor) and a 100× Nikon TIRF objective (NA 1.49, oil immersion)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 367964542755
+    }
+  ]
+}

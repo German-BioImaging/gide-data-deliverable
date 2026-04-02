@@ -1,0 +1,181 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD822"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD822",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#006317d7-3990-48ca-b2a2-e93dc16cd1e4"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8ebd852e-e1b4-475d-93cb-e6adfe39cfc1"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#bbd69ff4-1772-438d-a9a3-f38c06454762"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-07-18",
+      "description": "First test dataset for setting up WebAtlas on BIA S3",
+      "funder": [],
+      "identifier": "S-BIAD822",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "WebAtlas - human lower limb dataset",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#bbd69ff4-1772-438d-a9a3-f38c06454762",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "name": "Tong Li"
+    },
+    {
+      "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2",
+      "@type": [
+        "Organization"
+      ],
+      "address": "Wellcome Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge, CB10 1SA, UK",
+      "name": "Wellcome Sanger Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#8ebd852e-e1b4-475d-93cb-e6adfe39cfc1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "lower limb",
+      "name": "First biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#006317d7-3990-48ca-b2a2-e93dc16cd1e4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "DAPI (excitation 375 nm, emission 435-480 nm), Atto 425 (ex. 425 nm, em. 463-501 nm), Alexa Fluor 488 (ex. 488 nm, em. 500-550 nm), Cy3 (ex. 561 nm, em. 570-630 nm), Cy5 (ex. 640 nm, em. 650-760 nm).",
+      "labEquipment": "Perkin Elmer Phenix",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "First acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8746171223
+    }
+  ]
+}

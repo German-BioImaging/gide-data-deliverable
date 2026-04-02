@@ -1,0 +1,227 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1824"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1824",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#30fe7899-387d-4a29-9a2c-7f0f3c4df9b1"
+        },
+        {
+          "@id": "#1be45bef-92e3-4e78-8abe-097dff8c0a09"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#03e2234a-f6ab-4901-9eae-b8be38179e16"
+        },
+        {
+          "@id": "#b49b3e55-79c1-4827-bfc6-1f4c6f1a3b13"
+        },
+        {
+          "@id": "obo:NCBITaxon_8090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0838-4155"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "#b29033d3-40a3-44e2-83f7-c6fb9cabb2d6"
+        }
+      ],
+      "datePublished": "2025-09-29",
+      "description": "To investigate phenotypic alterations in the ovaries of miR-187 knockout (KO) fish, we performed 3D imaging of wild-type and mutant ovaries at two key developmental stages: before (104 days post-fertilization, dpf) and during (211 dpf) the reproductive period. Quantitative analysis of follicle diameters was conducted on the 3D image datasets to characterize and compare follicle size distribution profiles between genotypes and time points.",
+      "funder": [],
+      "identifier": "S-BIAD1824",
+      "keywords": [
+        "Ovary",
+        "Follicle",
+        "Medaka",
+        "miR-187",
+        "DL-based 3D semgentation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Unveiling the role of mir-187 in adult ovarian follicle growth in medaka (Oryzias latipes)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1824/ba998291-6cf3-460f-a619-f6374b62d979/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0838-4155",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a33ce252-9a8b-4575-98b0-20b41561dda6"
+        }
+      ],
+      "email": "violette.thermes@inrae.fr",
+      "name": "Thermes"
+    },
+    {
+      "@id": "#a33ce252-9a8b-4575-98b0-20b41561dda6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#b29033d3-40a3-44e2-83f7-c6fb9cabb2d6",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "None",
+      "name": "Unveiling the role of mir-187 in adult ovarian follicle growth and female fecundity in medaka (Oryzias latipes)"
+    },
+    {
+      "@id": "obo:NCBITaxon_8090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Oryzias latipes"
+    },
+    {
+      "@id": "#03e2234a-f6ab-4901-9eae-b8be38179e16",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult ovary. Reproductively active female",
+      "name": "Determining ovarian follicle content at 211 dpf",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_8090"
+      }
+    },
+    {
+      "@id": "#b49b3e55-79c1-4827-bfc6-1f4c6f1a3b13",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult ovary. Non-reproductively active female",
+      "name": "Determining ovarian follicle content at 104 dpf",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_8090"
+      }
+    },
+    {
+      "@id": "#1be45bef-92e3-4e78-8abe-097dff8c0a09",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal imaging: Images were acquired at a resolution of 512×512 pixels, with a scanning speed of 400 Hz (bidirectional), an optical zoom of 0.75, and a z-step of 3 μm (voxel size: 1.8×1.8×3 μm). Line accumulation was set to 2, and frame average to 2. \nLight-sheet imaging: Images were acquired at a resolution of 2048x2048 pixels, with an optical zoom of 1 and a z-step of 4 µm (voxel size: 1.62x1.62x4 µm). Light sheet with a thickness was 3.91 µm.",
+      "labEquipment": "Leica TCS SP8 laser scanning confocal microscope equipped with a 16x/0.6 IMM CORR VISIR HC FLUOTAR objective (15506533, Leica).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition at 104 dpf"
+    },
+    {
+      "@id": "#30fe7899-387d-4a29-9a2c-7f0f3c4df9b1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Agarose-embedded ovaries from 211 dpf females.",
+      "labEquipment": "UltraMicroscope BlazeTM lightsheet microscope equipped with a 4x objective lens.",
+      "measurementTechnique": [],
+      "name": "Image acquisition at 211 dpf"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 52
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 28974114690
+    }
+  ]
+}

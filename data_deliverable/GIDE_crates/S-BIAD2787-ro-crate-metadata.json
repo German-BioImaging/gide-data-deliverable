@@ -1,0 +1,322 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2787"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2787",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#47a0ac55-38f2-474e-a621-eac0a7446b8c"
+        },
+        {
+          "@id": "#2dfc40af-b176-45c0-b048-09e7b4b4c90b"
+        },
+        {
+          "@id": "#d193a7f1-04ad-4165-af14-9559024c5695"
+        },
+        {
+          "@id": "#935120e5-5706-4b7b-ba68-22b8e861e866"
+        },
+        {
+          "@id": "#c8a5c07d-2efc-4064-a820-e34ffcbfd50b"
+        },
+        {
+          "@id": "obo:FBbi_00000349"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5c8495bb-1b02-4d82-bc89-9a4b62801afc"
+        },
+        {
+          "@id": "#4500280f-118e-489f-a349-6f69c83d1afe"
+        },
+        {
+          "@id": "#094f0233-3230-4842-b6b8-c6a833ed3b1d"
+        },
+        {
+          "@id": "#817d8f92-f3ca-4679-a04e-69db276eeea4"
+        },
+        {
+          "@id": "#7f777286-2865-44b1-9e0d-ee6d4fc1b20a"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#18a5b986-2f24-4fa7-ac89-01caf8d0b665"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2026-01-15",
+      "description": "Microscopy image dataset of ANX A5 in cholestasis",
+      "funder": [],
+      "identifier": "S-BIAD2787",
+      "keywords": [
+        "H&E",
+        "Masson",
+        "SR",
+        "TUNEL",
+        "IF"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Microscopy images of ANX A5 in cholestasis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2787/c757b8b7-c19b-4b14-b9d4-3aab6265cc00/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#18a5b986-2f24-4fa7-ac89-01caf8d0b665",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d6dab303-0c9a-4ae0-942e-feefc957b299"
+        }
+      ],
+      "email": "xudongwu@nju.edu.cn",
+      "name": "Xudong Wu"
+    },
+    {
+      "@id": "#d6dab303-0c9a-4ae0-942e-feefc957b299",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Nanjing University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#094f0233-3230-4842-b6b8-c6a833ed3b1d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver tissues - Liver tissues of C57BL/6 mice in Sham, BDL with Leu-rich, BDL+A5 with Leu-rich, BDL with Leu-free, BDL+A5 with Leu-free groups.",
+      "name": "Biosample 3",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#4500280f-118e-489f-a349-6f69c83d1afe",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver tissue - Liver tissues of BDL mice, treated with a series dose of ANX A5",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#5c8495bb-1b02-4d82-bc89-9a4b62801afc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver tissues - Liver tissues of BDL mice, treated with a series dose of ANX A5",
+      "name": "Biosample 2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#7f777286-2865-44b1-9e0d-ee6d4fc1b20a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "fixed mouse hepatocytes - Hepatocytes were treated with Control, BAs+leucine, and BAs+Leucine+A5.  Cells were fixed for immunofluorescence assay.",
+      "name": "Biosample 5",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#817d8f92-f3ca-4679-a04e-69db276eeea4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver tissues - C57BL/6 mice were treated with siCtrl-Sham, sgBcat2-Sham, siCtrl-BDL, sgBcat2-BDL, siCtrl-BDL plus A5, sgBcat2-BDL plus A5. Liver tissues were collected.",
+      "name": "Biosample 4",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#2dfc40af-b176-45c0-b048-09e7b4b4c90b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Following the instructions",
+      "labEquipment": "Olympus BX43",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000349"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "#47a0ac55-38f2-474e-a621-eac0a7446b8c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Following the instructions",
+      "labEquipment": "Confocal Microscope, Leica",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 2"
+    },
+    {
+      "@id": "#935120e5-5706-4b7b-ba68-22b8e861e866",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Following the instructions",
+      "labEquipment": "Olympus BX43",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000349"
+        }
+      ],
+      "name": "Image acquisition 4"
+    },
+    {
+      "@id": "#c8a5c07d-2efc-4064-a820-e34ffcbfd50b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Following the instructions",
+      "labEquipment": "Confocal Microscope, Leica",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 5"
+    },
+    {
+      "@id": "#d193a7f1-04ad-4165-af14-9559024c5695",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Following the instructions",
+      "labEquipment": "Olympus BX43",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000349"
+        }
+      ],
+      "name": "Image acquisition 3"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000349",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "ANSOM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 63
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 218043789
+    }
+  ]
+}

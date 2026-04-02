@@ -1,0 +1,382 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2118"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2118",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b4f40502-d15c-44ef-84e6-b90f4ff90b41"
+        },
+        {
+          "@id": "#d03e92d6-2779-49f6-8748-c048e5d6abd7"
+        },
+        {
+          "@id": "#aeaf8b63-997a-42f4-a2a3-21bf0087e509"
+        },
+        {
+          "@id": "#9c694d04-35a9-48a4-81c3-dbc493807a3a"
+        },
+        {
+          "@id": "#b229d92b-953d-48a1-b993-73b6c20b6406"
+        },
+        {
+          "@id": "#5ca383a6-0c38-4b5f-812d-734f4b12c527"
+        },
+        {
+          "@id": "#0670fbaf-1eb4-4d3b-9395-75ec2cda4502"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f9d99faa-54cb-4c18-87c3-7eead763719e"
+        },
+        {
+          "@id": "#df3b8a97-4314-4e25-80da-78fe510ba325"
+        },
+        {
+          "@id": "#bfd86e22-4a2a-4f04-a396-7a6ff5ec2dfb"
+        },
+        {
+          "@id": "#b3b4d245-df03-4baf-b428-dc4fc0d56333"
+        },
+        {
+          "@id": "#d6c3f9cf-1981-4c30-bdb9-28eaec5eeadf"
+        },
+        {
+          "@id": "#3c85fb1f-1068-4013-a5e3-c2852d9e0ea1"
+        },
+        {
+          "@id": "#8ce7f51d-58ff-45e3-a352-2d17a45db944"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0008-8183-6729"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-26",
+      "description": "This dataset is the training set containing large 3D LSM images of isolated structures without annotations annotations for SELMA3D 2025 challenge. The SELMA3D 2025 challenge focuses on self-supervised learning for 3D light-sheet microscopy (LSM) image segmentation. Its objective is to encourage the development of generalizable models capable of serving multiple 3D LSM image segmentation tasks. This dataset is dedicated to developing self-supervised learning strategies for segmenting isolated structures in 3D light-sheet microscopy images. It contains 30 3D LSM images of different isolated structures, including c-Fos labeled brain cells involved in neural activity(18), cell nuclei(4), and Alzheimer's disease plaques(4), chondrocytes(1), astrocytes(1), dopaminergic neurons(1) and chondrogenic cells(1).",
+      "funder": [],
+      "identifier": "S-BIAD2118",
+      "keywords": [
+        "light-sheet microscopy",
+        "3D image",
+        "deep learning",
+        "self-supervised learning",
+        "isolated structures"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "3D light-sheet microscopy data for SELMA3D 2025 challenge -  isolated structures - training subset with no annotations - large 3D LSM images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-8183-6729",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05591te55"
+        }
+      ],
+      "email": "ying.chen@campus.lmu.de",
+      "name": "Ying Chen"
+    },
+    {
+      "@id": "https://ror.org/05591te55",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ludwig-Maximilians-Universität München"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#3c85fb1f-1068-4013-a5e3-c2852d9e0ea1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain",
+      "name": "Biosamples for brain amyloid plaque images",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#8ce7f51d-58ff-45e3-a352-2d17a45db944",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain",
+      "name": "Biosample for dopaminergic neuron image",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b3b4d245-df03-4baf-b428-dc4fc0d56333",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "PCW7 embryo",
+      "name": "Biosample for chondrogenic cell image",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bfd86e22-4a2a-4f04-a396-7a6ff5ec2dfb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain",
+      "name": "Biosample for astrocyte image",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#d6c3f9cf-1981-4c30-bdb9-28eaec5eeadf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human brain",
+      "name": "Biosamples for brain cell nucleus images",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#df3b8a97-4314-4e25-80da-78fe510ba325",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "PCW7 embryo",
+      "name": "Biosample for chondrocyte image",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f9d99faa-54cb-4c18-87c3-7eead763719e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain",
+      "name": "Biosamples for brain c-Fos-positive cell images",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#0670fbaf-1eb4-4d3b-9395-75ec2cda4502",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 1.866 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 2-μm steps.",
+      "labEquipment": "Wide-field fluorescence imaging was performed on a Keyence BZ-X810 using Chroma ET-mCh/TR and  ET-CY5 NX filter cubes. Images were stitched using Keyence BZ-X810 Analyzer software and compressed and adjusted using ImageJ. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - dopaminergic neuron image"
+    },
+    {
+      "@id": "#5ca383a6-0c38-4b5f-812d-734f4b12c527",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 1.63 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 4-μm steps.",
+      "labEquipment": "Imaging was performed using a 4× objective lens (Olympus XLFLUOR) coupled to an Olympus revolving zoom body unit (U-TVCAC) kept at 1x.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - amyloid plaque images"
+    },
+    {
+      "@id": "#9c694d04-35a9-48a4-81c3-dbc493807a3a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Please refer to https://www.cell.com/cell/fulltext/S0092-8674(23)01230-8 for details about the image acquisition parameters.",
+      "labEquipment": "Please refer to https://www.cell.com/cell/fulltext/S0092-8674(23)01230-8 for details about the imaging instrument.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - chondrogenic cell image"
+    },
+    {
+      "@id": "#aeaf8b63-997a-42f4-a2a3-21bf0087e509",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 1.8 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 2-μm steps.",
+      "labEquipment": "Wide-field fluorescence imaging was performed on a Keyence BZ-X810 using Chroma ET-mCh/TR and  ET-CY5 NX filter cubes. Images were stitched using Keyence BZ-X810 Analyzer software and compressed and adjusted using ImageJ. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - astrocyte image"
+    },
+    {
+      "@id": "#b229d92b-953d-48a1-b993-73b6c20b6406",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 0.54 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 5-μm steps.",
+      "labEquipment": "Imaging was performed using a 12x objective lens ( LaVision BioTec MI PLAN) coupled to an Olympus revolving zoom body unit (U-TVCAC) kept at 1x.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - cell nucleus images"
+    },
+    {
+      "@id": "#b4f40502-d15c-44ef-84e6-b90f4ff90b41",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 1.625 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 6-μm steps while using left- and right-sided illumination.",
+      "labEquipment": "Imaging was performed using a 4× objective lens (Olympus XLFLUOR 340) equipped with an immersion corrected dipping cap mounted on a LaVision UltraII microscope coupled to a white-light laser module (NKT SuperK Extreme EXW-12) for imaging.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - c-Fos-positive cell images"
+    },
+    {
+      "@id": "#d03e92d6-2779-49f6-8748-c048e5d6abd7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Please refer to https://www.cell.com/cell/fulltext/S0092-8674(23)01230-8 for details about the image acquisition parameters.",
+      "labEquipment": "Please refer to https://www.cell.com/cell/fulltext/S0092-8674(23)01230-8 for details about the imaging instrument.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - chondrocyte image"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 35967
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2863645263981
+    }
+  ]
+}

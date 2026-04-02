@@ -1,0 +1,271 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD840"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD840",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6df58830-eee6-445f-bcec-192e946442bd"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#14cb77a0-a2cc-4744-9618-0534a4e06b83"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2763-5244"
+        },
+        {
+          "@id": "#3e9ccea6-dc20-4402-87c3-62b7f49ee847"
+        },
+        {
+          "@id": "#ee378c37-bd78-4fab-ab45-a3d28e439163"
+        },
+        {
+          "@id": "#3bc6a1fb-fbeb-46b7-a811-849689259c88"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-10",
+      "description": "The zebrafish (Danio rerio), is an important biomedical model organism used in many disciplines. The phenomenon of developmental delay in zebrafish embryos has been widely reported as part of a mutant or treatment-induced phenotype. However, the detection and quantification of these delays is often achieved through manual observation with reference to staging guides, which is both time-consuming and subjective. We recently reported a machine learning-based classifier, capable of quantifying the developmental delay between two populations of zebrafish embryos. Here, we build on that work by introducing a deep learning-based model that has been trained to predict the age (hours post fertilisation) of populations of zebrafish embryos. We show that when KimmelNet is tested on 2D brightfield images of zebrafish embryos, the predictions generated agree closely with those expected from established approaches to staging. Random sampling of the test data demonstrate that KimmelNet can be used to detect developmental delay between two populations with high confidence based on as few as 100 images of each population. Finally, we show that KimmelNet generalises to previously unseen data, with limited transfer learning improving this performance significantly. With the ability to analyse tens of thousands of standard brightfield microscopy images on a timescale of minutes, we envisage that KimmelNet will be a valuable resource for the developmental biology community. Furthermore, the approach we have used could easily be adapted to generate models for other organisms.",
+      "funder": [],
+      "identifier": "S-BIAD840",
+      "keywords": [
+        "2D",
+        "brightfield",
+        "deep learning",
+        "machine learning",
+        "staging",
+        "multiwell",
+        "incubation temperature",
+        "development",
+        "embryo",
+        "zebrafish"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Automated staging of zebrafish embryos with deep learning",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD840/5d692469-13f6-4969-aff7-febb89d44ccb/b9171796-e947-4ecc-84d3-b948a6ab6144.png"
+      ]
+    },
+    {
+      "@id": "#3bc6a1fb-fbeb-46b7-a811-849689259c88",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5bf483e0-d0c0-4430-be37-dd8a34215614"
+        }
+      ],
+      "name": "Danelle Devenport"
+    },
+    {
+      "@id": "#3e9ccea6-dc20-4402-87c3-62b7f49ee847",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5bf483e0-d0c0-4430-be37-dd8a34215614"
+        }
+      ],
+      "name": "Rebecca A Jones"
+    },
+    {
+      "@id": "#ee378c37-bd78-4fab-ab45-a3d28e439163",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82"
+        }
+      ],
+      "name": "Matthew J Renshaw"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2763-5244",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82"
+        }
+      ],
+      "email": "david.barry@crick.ac.uk",
+      "name": "David Barry"
+    },
+    {
+      "@id": "#5bf483e0-d0c0-4430-be37-dd8a34215614",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Princeton University"
+    },
+    {
+      "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The Francis Crick Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#14cb77a0-a2cc-4744-9618-0534a4e06b83",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Zebrafish embryos",
+      "name": "Zebrafish embryos",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#6df58830-eee6-445f-bcec-192e946442bd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Zebrafish embryos were maintained at 28°C until 2-3 hpf when they were transferred into a U-bottomed 96-well plate in E3 medium. The plate was covered with an FEP membrane (1 mil Teflon FEP film, American Durafilm) to prevent condensation and allow for gas exchange. Brightfield images of embryos individually seeded in the 96-well plate were acquired every 15 minutes starting at 2.5-3.5 hpf for approximately 43 hours on a Nikon Ti-E inverted microscope with a Hamamatsu BT-Fusion sCMOS camera, using a 4X/0.13 Plan Fluor objective. Sample temperature was maintained at either 25.0 or 28.5°C using a Tokaii Hit stage top incubator. The microscope was controlled with Nikon NIS- Elements Software. Images were manually checked after capture to ensure embryo health.",
+      "labEquipment": "Nikon Ti-E inverted microscope with a Hamamatsu BT-Fusion sCMOS camera",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Microscope"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 33410
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 122622986255
+    }
+  ]
+}

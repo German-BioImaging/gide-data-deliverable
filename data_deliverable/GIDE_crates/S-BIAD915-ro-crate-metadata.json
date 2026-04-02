@@ -1,0 +1,211 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD915"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD915",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bf964106-a741-42db-8c3a-27ec60d83755"
+        },
+        {
+          "@id": "#76761889-6b70-4f8c-aa43-fd0c3c2b9b6c"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#01ab0bf7-f9e2-4e70-9ba1-2fa198d3c86e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3688-1474"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-22",
+      "description": "The shaping of human embryos begins with compaction, during which cells come into close contact. Assisted reproductive technology (ART) studies suggest that human embryos fail compaction primarily because of defective adhesion. Based on our current understanding of animal morphogenesis, other morphogenetic engines, such as cell contractility, could be involved in shaping human embryos. However, the molecular, cellular and physical mechanisms driving human embryo morphogenesis remain uncharacterized. Using micropipette aspiration on human embryos donated to research, we have mapped cell surface tensions during compaction. This reveals a 4-fold increase of tension at the cell-medium interface while cell-cell contacts keep a steady tension. Therefore, increased tension at the cell-medium interface drives human embryo compaction, which is qualitatively similar to compaction in mouse embryos. Further comparison between human and mouse reveals qualitatively similar but quantitively different mechanical strategies, with human embryos being mechanically least efficient. Inhibition of cell contractility and cell-cell adhesion in human embryos reveals that, while both cellular processes are required for compaction, only contractility controls the surface tensions responsible for compaction. Interestingly, cell contractility and cell-cell adhesion exhibit distinct mechanical signatures when faulty. Analyzing the mechanical signature of naturally failing embryos, we find evidence that non-compacting or partially compacting embryos containing excluded cells have defective contractility. Together, our study reveals that an evolutionarily conserved increase in cell contractility is required to generate the forces driving the first morphogenetic movement shaping the human body.",
+      "funder": [],
+      "identifier": "S-BIAD915",
+      "keywords": [
+        "human embryo, preimplantation development"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Mechanics of human embryo compaction",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD915/bfd71f50-4af9-4cf6-94cb-6e40d740dd9f/0967cd82-4d56-46cb-9629-d00b5e1604f7.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3688-1474",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f52a3cb2-20e2-4734-bebe-c0f41aac70dd"
+        }
+      ],
+      "email": "jean-leon.maitre@curie.fr",
+      "name": "Jean-Léon Maître"
+    },
+    {
+      "@id": "#f52a3cb2-20e2-4734-bebe-c0f41aac70dd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "French National Centre for Scientific Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#01ab0bf7-f9e2-4e70-9ba1-2fa198d3c86e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human preimplantation embryos",
+      "name": "Timelapse of embryos during surface tension mapping",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#76761889-6b70-4f8c-aa43-fd0c3c2b9b6c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1 µm z steps",
+      "labEquipment": "Spinning disc microscope\nImmunostainings were imaged on a Zeiss Observer Z1 microscope with a CSU-X1 spinning disc unit (Yokogawa) using 405, 488, 561, and 642 nm laser lines through a 63x/1.2 C Apo Korr water immersion objective; emission was collected through 450/ 50 nm, 525/50 nm, 595/50 band pass or 610 nm low pass filters onto an ORCA-Flash 4.0 camera (C11440, Hamamatsu).\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal imaging of immunostained embryos"
+    },
+    {
+      "@id": "#bf964106-a741-42db-8c3a-27ec60d83755",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Illumination is set to minimum and exposure time to 500-900 ms.",
+      "labEquipment": "Microscopy\nPipette-scope\nSurface tension measurements were performed on a Leica DMI6000 B inverted microscope equipped with a 40x/0.8 DRY HC PL APO Ph2 (11506383) objective. A 0.7x lens is mounted in front of a Retina R3 camera. The microscope is equipped with a custom incubation chamber (EMBLEM) to keep the sample at 37°C and maintain the atmosphere at 5% CO2 and 5% O2.\n\nTime lapse imaging\nFor time-lapse imaging, embryos were placed after thawing within the chamber of a CellDiscoverer 7 (Zeiss) humidified 37C, 5% O2, 5% CO2 atmosphere. Embryos were imaged every 30 min at 5 to 8 focal planes separated by 10 µm using IR-LED (725 nm) transmitted light through a 20x/0.95 objective. Images were acquired using either an ORCA-Flash 4.0 camera (Hamamatsu, C11440) or a 506 axiovert (Zeiss) camera.\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Timelapse imaging of embryos during surface tension mapping"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 106
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 58998126464
+    }
+  ]
+}

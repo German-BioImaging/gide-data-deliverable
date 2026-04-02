@@ -1,0 +1,256 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/222-Dodo-RamanImaging/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/222-Dodo-RamanImaging/",
+      "@type": "Dataset",
+      "identifier": "222-Dodo-RamanImaging",
+      "name": "Raman images of VA-13 cells or WI-38 cells treated with 100 µM all-D-GLA at different time point",
+      "description": "222-Dodo-RamanImaging",
+      "datePublished": "2022-11-23",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Cell Line",
+        "Cell Survival/drug effects",
+        "Deuterium",
+        "Fibroblasts/drug effects",
+        "Humans",
+        "Molecular Structure",
+        "Spectrum Analysis, Raman",
+        "gamma-Linolenic Acid/chemistry[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1039/d0cc07824g"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0008152"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-756"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Mikiko Sodeoka",
+      "email": "sodeoka@riken.jp",
+      "description": "Organization: RIKEN; Department: Cluster for Pioneering Research; Laboratory: Synthetic Organic Chemistry Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Kosuke Dodo",
+      "email": "dodo@riken.jp",
+      "description": "Organization: RIKEN; Department: Cluster for Pioneering Research; Laboratory: Synthetic Organic Chemistry Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Syusuke Egoshi",
+      "email": "egoshi.org@riken.jp",
+      "description": "Organization: RIKEN; Department: Cluster for Pioneering Research; Laboratory: Synthetic Organic Chemistry Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1039/d0cc07824g",
+      "@type": "ScholarlyArticle",
+      "name": "Synthesis of deuterated gamma-linolenic acid and application for biological studies: metabolic tuning and Raman imaging.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ VA-13 cell",
+      "description": "Homo sapiens ~ VA-13 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": "VA-13 cell"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ WI-38 cell",
+      "description": "Homo sapiens ~ WI-38 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": "WI-38 cell"
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ Wi-38 cell",
+      "description": "Homo sapiens ~ Wi-38 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": "Wi-38 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008152",
+      "@type": "DefinedTerm",
+      "name": "metabolic process"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Raman microscopy",
+      "description": "Raman microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-technique-1",
+      "@type": "DefinedTerm",
+      "name": "Raman microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 4851382,
+      "description": "4.9 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 66,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

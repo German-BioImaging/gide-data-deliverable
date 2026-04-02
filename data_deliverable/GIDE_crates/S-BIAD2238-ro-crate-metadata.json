@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2238"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2238",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1e86406b-2b78-4c6b-a720-623ec65efe19"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c6e349a5-dc80-473c-8d0d-09c07a00da8e"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1326-4326"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-22",
+      "description": "It is widely believed that the gliogenic switch during rodent embryonic development is governed by the orchestrated crosstalk between a cohort of genes and extracellular cues. Here we report that ectopic expression of the single bHLH factor, pancreas transcription factor 1α (PTF1A), is sufficient to drive radial glial progenitors (RGPs)—regardless of progenitor heterogeneity and developmental stage—to differentiate into glial cells. Ptf1a-expressing RGPs exhibit progenitor behaviors indicative of a neurogenic-to-gliogenic fate transition, resembling endogenous progenitors at the late stages of embryonic development, and preferentially produce OLIG2+ oligodendrocytes in vivo, some of which are positive for PDGFRα or CC1. This robust gliogenic competency depends on the dosage of stable Ptf1a expression in RGPs. RNAseq reveals ‘the glial transcriptome’, including upregulated expression of several notch signaling components and the endothelin receptors in Ptf1a RGPs. We further identify Ednrb as one of the downstream targets of Ptf1a that directs RGPs toward gliogenesis. In summary, our study uncovers a novel and robust role for Ptf1a in glial fate specification, offering a potential strategy for generating human oligodendrocytes in vitro.",
+      "funder": [],
+      "identifier": "S-BIAD2238",
+      "keywords": [
+        "Ptf1a",
+        "gliogenesis",
+        "cell fate",
+        "oligodendrocyte"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Ptf1a robustly drives the gliogenic switch in the rodent embryonic cortex in a dosage-dependent manner by activating pro-glial gene expression programs",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2238/dd7df056-679e-4434-8549-304758f5e55a/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1326-4326",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38554494-e939-42d1-badf-c3239ed25bf3"
+        }
+      ],
+      "email": "heshj@shanghaitech.edu.cn",
+      "name": "Shuijin"
+    },
+    {
+      "@id": "#38554494-e939-42d1-badf-c3239ed25bf3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "ShanghaiTech University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#c6e349a5-dc80-473c-8d0d-09c07a00da8e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Embryonic, postnatal, adult mouse cortex",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#1e86406b-2b78-4c6b-a720-623ec65efe19",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken using the following laser scanning confocal microscopes: Leica SP8 STED, Zeiss LSM710, Zeiss LSM980 Airyscan2. Images were analyzed using ImageJ (NIH)-Fuji and Photoshop. For quantification of the fraction of NEUN+ or different glial subtypes in EGFP+ glial cells, cell number in the whole cortex of one hemisphere of coronal section was counted.",
+      "labEquipment": "Leica SP8 STED, Zeiss LSM710, Zeiss LSM980 Airyscan2",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 92
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 303073864
+    }
+  ]
+}

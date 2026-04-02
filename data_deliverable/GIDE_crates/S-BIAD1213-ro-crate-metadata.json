@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1213"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1213",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4c1bf585-f339-4569-b0cd-7ff506e633f6"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7d75409a-4a9d-4947-a0de-368cfe77c2f0"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#14f8f0f2-1f08-488c-a7d5-e26cc6f5195f"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-29",
+      "description": "Mouse hepatocytes were treated with INSR antagonist AG1024 which impairs insulin signaling and mimic insulin resistance condition.",
+      "funder": [],
+      "identifier": "S-BIAD1213",
+      "keywords": [
+        "AG1024, lipid accumulation, BODIPY,PK2",
+        "mouse primary hepatocytes",
+        "Insulin resistance"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Bodipy staining in mouse primary hepatocytes to assess the effect of GLP1R agonist drug on lipid accumulation after treatment with INSR antagonist AG1024. ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1213/31428608-be3f-4f3b-aac2-fd772f9bb8bf/c9741bd7-5f5a-4cf7-895a-67075f1fbf35.png"
+      ]
+    },
+    {
+      "@id": "#14f8f0f2-1f08-488c-a7d5-e26cc6f5195f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22"
+        }
+      ],
+      "email": "mondalsiraj@gmail.com",
+      "name": "prosenjit mondal"
+    },
+    {
+      "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Indian Institute of Science Education and Research Berhampur"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#7d75409a-4a9d-4947-a0de-368cfe77c2f0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse primary hepatocytes",
+      "name": "Bodipy staining in mouse primary hepatocytes to assess the effect of GLP1R agonist PK2 on lipid accumulation after treatment with INSR antagonist AG1024. ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#4c1bf585-f339-4569-b0cd-7ff506e633f6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "images were taken at 60X",
+      "labEquipment": "confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Bodipy staining in mouse primary hepatocytes to assess the effect of GLP1R agonist drug on lipid accumulation after treatment with INSR antagonist AG1024. "
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 84
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 134362728
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2324"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2324",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ca54a3d6-de11-4507-a11c-facc4e898b12"
+        },
+        {
+          "@id": "#276212e5-aa84-482d-a1f6-243eb5826628"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c90d2f28-fa7d-4ec0-883e-10eeb8f6f66e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-1726-8161"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.48550/arxiv.2504.18737"
+        }
+      ],
+      "datePublished": "2025-10-01",
+      "description": "Photon Absorption Remote Sensing (PARS) enables label-free imaging of subcellular morphology by observing biomolecule specific absorption interactions. Coupled with deep-learning, PARS produces label-free virtual Hematoxylin and Eosin (H&E) stained images in unprocessed tissues. \nThis set of example of PARS virtual H&E images is from a clinical study available at \nhttps://doi.org/10.48550/arXiv.2504.18737.\n\nThe purpose of this study is to evaluate the diagnostic performance of these PARS-derived virtual H&E images in benign and malignant excisional skin biopsies, including Squamous (SCC), Basal (BCC) Cell Carcinoma, and normal skin. Sixteen unstained formalin-fixed paraffin-embedded skin excisions were PARS imaged, virtually H&E stained, then chemically stained and imaged at 40x. Seven fellowship trained dermatopathologists assessed all 32 images in a masked randomized fashion. A subset of 3 PARS and 3 chemical H&E (BCC, SCC, and benign) are presented here.",
+      "funder": [],
+      "identifier": "S-BIAD2324",
+      "keywords": [
+        "PARS",
+        "absorption microscopy",
+        "virtual histology"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Photon Absorption Remote Sensing Virtual Histopathology: A Preliminary Exploration of Diagnostic Equivalence to Gold-Standard H&E Staining in Skin Cancer Excisional Biopsies",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1726-8161",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01aff2v68"
+        }
+      ],
+      "email": "becclest@uwaterloo.ca",
+      "name": "Benjamin Ecclestone"
+    },
+    {
+      "@id": "https://ror.org/01aff2v68",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Waterloo"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.48550/arxiv.2504.18737",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "None",
+      "name": "Photon Absorption Remote Sensing Virtual Histopathology: Diagnostic Equivalence to Gold-Standard H&E Staining in Skin Cancer Excisional Biopsies"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#c90d2f28-fa7d-4ec0-883e-10eeb8f6f66e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult Human.",
+      "name": "Skin Tissue Samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#276212e5-aa84-482d-a1f6-243eb5826628",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Tissues samples underwent standard chemical H&E staining using standard histopathology protocols. Stained slides were digitized at 40× magnification using a transmission brightfield slide scanner (Morpholens 1; Morphle Digital Pathology, New York, NY, USA). This produced high-resolution images of the chemically stained tissue to serve as ground truth for both training and validation.",
+      "labEquipment": "Morpholens 1,Morphle Digital Pathology",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Chemical H&E Image"
+    },
+    {
+      "@id": "#ca54a3d6-de11-4507-a11c-facc4e898b12",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Label-free PARS images were acquired from the unstained tissue sections using a custom-built transmission mode PARS microscope system. Detailed descriptions of the optical system, and imaging protocol are provided in a recent report by Tweel et al.13 In brief, PARS imaging was performed using a 50 kHz 400 ps 266 nm UV laser (Wedge XF 266, RPMC; Bright Solutions, Pavia, Italy) to excite biomolecules. Following each excitation, three main features were measured representing the major absorption and scattering properties: radiative (fluorescence) emission, non-radiative heating (thermal/pressure effects), and local scattering. \nTo quantify the radiative signal intensity, emitted Stokes shifted photons were spectrally isolated and measured with an avalanche photodiode (APD130A2; Thorlabs, Newton, NJ, USA). The radiative intensity value was recorded as the peak emission amplitude. To measure the scattering and non-radiative relaxation effects, a 405 nm continuous-wave probe beam was co-aligned with the excitation (OBIS-LS405; Coherent, Santa Clara, CA, USA). Non-radiative (photothermal, and photoacoustic) signals were measured by observing heat and pressure induced modulations in the transmitted probe beam intensity following excitation. The time-resolved non-radiative modulation was measured by integrating the modulation to determine a percentage change in probe transmission. Scattering signals were recorded by measuring the 405 nm probe transmission intensity prior to excitation (APD130A2; Thorlabs, Newton, NJ, USA).\nThe three optical contrasts from each excitation event then correspond to one co-registered pixel in the final image. To form images, three-axis mechanical stages moved the sample across the objective lenses in a raster (“s”-shaped) scanning pattern. Pixels or excitation events were spaced 250 nm apart achieving 40× digital imaging magnification. Matching optical resolution was provided using a 0.42 numerical aperture (NA) UV objective lens (NPAL-50-UV-YSTF; OptoSigma, Santa Ana, CA, USA) to focus both excitation and detection beams, while optical signals (probe light and radiative photons) were collected using a 0.7 NA objective lens (278-806-3; Mitutoyo, Aurora, IL, USA). \nWhole slide images were formed by discretizing the ROI into 500 × 500 μm sections which were independently scanned using the highlighted method. At each section, an autofocusing operation was performed prior to scanning. Section data was then contrast matched and stitched together forming a single whole-slide image, using the pipeline outlined in by Tweel et al.13 The result was a complete whole-slide image based on native tissue absorption characteristics without the need for exogenous labels.\n",
+      "labEquipment": "Custom PARS Microscope (described arXiv:2504.18737v1)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "PARS Virtual H&E"
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1012485345
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000068/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000068/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000068",
+      "name": "A set of imaging data of neuronal circuits labeling with fluorescent proteins in M. musculus",
+      "description": "Imaging data of neuronal circuits labeling with fluorescent proteins in M. musculus",
+      "datePublished": "2018-11-07",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Luminescent Proteins/genetics",
+        "Luminescent Proteins/metabolism",
+        "Mice",
+        "Neuroanatomical Tract-Tracing Techniques/methods[major]",
+        "Neuronal Tract-Tracers/metabolism[major]",
+        "Olfactory Bulb/anatomy & histology",
+        "Recombinant Proteins/genetics",
+        "Recombinant Proteins/metabolism",
+        "Staining and Labeling/methods[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.40350"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-401"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takeshi Imai",
+      "description": "Organization: Kyushu University; Department: Department of Developmental Neurophysiology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00p4k0j84"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/00p4k0j84",
+      "@type": "Organization",
+      "name": "Kyushu University"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.40350",
+      "@type": "ScholarlyArticle",
+      "name": "Bright multicolor labeling of neuronal circuits with fluorescent proteins and chemical tags.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 23283875840,
+      "description": "23.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 70,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

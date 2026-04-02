@@ -1,0 +1,228 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1075"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1075",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#14672fdb-4b85-44ab-97c8-409f1abb756f"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c22c87df-46d4-4cb8-ba04-16604f987074"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1451-5967"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3679-7595"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-07",
+      "description": "TRAPP (transport protein particle) tethering complexes are known for their function as Rab-GTPase exchange factors (GEFs). In yeast and animal cells, TRAPPIII is an activator the Rab1 family (RabD in plants) which regulates ER-to-Golgi trafficking and autophagy. In Arabidopsis thaliana, the TRAPPIII complex has been identified and its subunit composition established, but little is known about its functions. We study here the TRAPPC8 subunit of the Arabidopsis thaliana TRAPPIII complex. The purpose of this experiment was to establish whether loss-of-function mutations of TRAPPC8 cause an impairment in autophagy in Arabidopsis thaliana. Methodology described in detail in accompanying preprint (BioRxiv): doi: https://doi.org/10.1101/2024.01.11.575191.",
+      "funder": [],
+      "identifier": "S-BIAD1075",
+      "keywords": [
+        "ATG8",
+        "autophagy",
+        "TRAPPIII",
+        "TRAPPC8",
+        "plant"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Confocal fluorescence microscopy of mCherry-tagged ATG8E in root cells of trappc8 Arabidopsis thaliana (wild-type and atg5 seedlings as control).",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1451-5967",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a350c83c-2b43-4f68-818a-59f49b466b9c"
+        }
+      ],
+      "email": "martah@ibb.waw.pl",
+      "name": "Marta Hoffman-Sommer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3679-7595",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a350c83c-2b43-4f68-818a-59f49b466b9c"
+        }
+      ],
+      "email": "aam@ibb.waw.pl",
+      "name": "Anna Anielska-Mazur"
+    },
+    {
+      "@id": "#a350c83c-2b43-4f68-818a-59f49b466b9c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Biochemistry and Biophysics, Polish Academy of Sciences"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#c22c87df-46d4-4cb8-ba04-16604f987074",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Roots of 5-day old seedlings, images were taken from the elongation cell zone. All lines have stable expression of [mCherry-ATG8E] from UBI promotor.",
+      "name": "mCherry-ATG8E imaging",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#14672fdb-4b85-44ab-97c8-409f1abb756f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal settings: pinhole diameter set to 30 µm, detector gain set to 8.4, time dwell set to 10.08 µs.\nConfocal sections were collected at 0.5 µm intervals, 40 steps, resulting in stacks encompassing the fixed volume of: 120 µm x 75 µm x 20 µm. ",
+      "labEquipment": "Nikon TE-2000E inverted microscope with confocal laser-scanning mode EZ-C1\nNikon CFI Plan Apochromat oil immersion objective, 60 x , NA 1.4\nFluorescence excited with Green He-Ne Laser set at 30% (1.0 mW, 543 nm; Melles Griot, USA), collected with a 605/75 nm single band pass emission filter (BrightLine, Semrock).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "name": "Confocal imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 186
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4871173277
+    }
+  ]
+}

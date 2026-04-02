@@ -1,0 +1,354 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1013"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1013",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#51e64ca6-b69a-410b-b3f6-e18b50800dd3"
+        },
+        {
+          "@id": "#40d2b2f4-ea11-4b4a-9df1-42556aeefdfc"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8a70a7f4-b4bf-4fb2-ba6d-d778bae0f0d7"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6684-8114"
+        },
+        {
+          "@id": "https://orcid.org/0009-0009-9031-1681"
+        },
+        {
+          "@id": "#a36d3231-905c-49c8-82b5-f0e0a0ba47c2"
+        },
+        {
+          "@id": "#20a0632d-2865-4eb4-82fe-58aedcbf10e8"
+        },
+        {
+          "@id": "#5b2ec77d-4328-4192-a73c-cf94bb70b69c"
+        },
+        {
+          "@id": "#f74df9a2-ee6e-4afe-b2e8-89dcf07d5341"
+        },
+        {
+          "@id": "#59fce635-a422-46a5-b354-e3a794e962b0"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2758-1741"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-02-13",
+      "description": "To identify novel secreted proteins that can modulate breast cancer G0 arrest, we performed a secretome-wide, image-based screen for proteins which alter the balance between proliferation and G0 arrest. From a secretome library of 1282 purified proteins, we identified 29 candidates that promote G0 arrest in non-transformed (hTERT-HMEC) and transformed (MCF7) breast epithelial cells. ",
+      "funder": [],
+      "identifier": "S-BIAD1013",
+      "keywords": [
+        "Secretome",
+        "Cell Cycle",
+        "Quiescence",
+        "Cancer",
+        "Screen",
+        "Proliferation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "An image-based screen for secreted proteins involved in breast cancer G0 cell cycle arrest",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#20a0632d-2865-4eb4-82fe-58aedcbf10e8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f4107419-8c06-4036-814e-fcbc916f8956"
+        }
+      ],
+      "email": "annajuliawiecek@gmail.com",
+      "name": "Anna J. Wiecek"
+    },
+    {
+      "@id": "#59fce635-a422-46a5-b354-e3a794e962b0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#546378f7-23d2-45bb-8c04-e2b062281e16"
+        }
+      ],
+      "email": "dave.smith@astrazeneca.com",
+      "name": "David M. Smith"
+    },
+    {
+      "@id": "#5b2ec77d-4328-4192-a73c-cf94bb70b69c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#546378f7-23d2-45bb-8c04-e2b062281e16"
+        }
+      ],
+      "email": "James.Pilling@astrazeneca.com",
+      "name": "James Pilling"
+    },
+    {
+      "@id": "#a36d3231-905c-49c8-82b5-f0e0a0ba47c2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1ba7043f-fcc8-4c41-bc07-2aa74d649202"
+        }
+      ],
+      "email": "jholt2310@gmail.com",
+      "name": "Jordan A. Holt"
+    },
+    {
+      "@id": "#f74df9a2-ee6e-4afe-b2e8-89dcf07d5341",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7b62e961-be3c-4a88-ab0c-d46c47925d83"
+        }
+      ],
+      "email": "Lovisa.Holmberg.Schiavone@astrazeneca.com",
+      "name": "Lovisa Holmberg Schiavone"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6684-8114",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#24be0829-367c-4980-94f4-610247dc214d"
+        }
+      ],
+      "email": "abarr@ic.ac.uk",
+      "name": "Alexis R. Barr"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2758-1741",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f4107419-8c06-4036-814e-fcbc916f8956"
+        }
+      ],
+      "email": "m.secrier@ucl.ac.uk",
+      "name": "Maria Secrier"
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-9031-1681",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#24be0829-367c-4980-94f4-610247dc214d"
+        }
+      ],
+      "email": "w.weston22@imperial.ac.uk",
+      "name": "William A. Weston"
+    },
+    {
+      "@id": "#1ba7043f-fcc8-4c41-bc07-2aa74d649202",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Imperial College London"
+    },
+    {
+      "@id": "#24be0829-367c-4980-94f4-610247dc214d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "MRC London Institute of Medical Sciences"
+    },
+    {
+      "@id": "#546378f7-23d2-45bb-8c04-e2b062281e16",
+      "@type": [
+        "Organization"
+      ],
+      "name": "AstraZeneca (United Kingdom)"
+    },
+    {
+      "@id": "#7b62e961-be3c-4a88-ab0c-d46c47925d83",
+      "@type": [
+        "Organization"
+      ],
+      "name": "AstraZeneca (Sweden)"
+    },
+    {
+      "@id": "#f4107419-8c06-4036-814e-fcbc916f8956",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University College London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#8a70a7f4-b4bf-4fb2-ba6d-d778bae0f0d7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Breast epithelial cells in monolayer culture",
+      "name": "Primary and Secondary Secretome Screen ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#40d2b2f4-ea11-4b4a-9df1-42556aeefdfc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cell monolayers were imaged on an Operetta CLS LIVE (Revvity) high content microscope, using a 20x N.A. 0.8 air objective. The 355-385 nm LED was used to image nuclei (Hoechst H33258), the 460-490 nm LED was used to image phospho-Ser807/811 Rb, the 530-560 nm LED was used to detect either p21 or p27 CDK inhibitory proteins (depending on the specific stain used) and the 615-645nm nm LED was used to detect EdU. ",
+      "labEquipment": "Operetta CLS LIVE (Revvity) high content microscope in widefield mode using a 20x N.A. 0.8 air objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Secondary Screen Image Acquisition"
+    },
+    {
+      "@id": "#51e64ca6-b69a-410b-b3f6-e18b50800dd3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cell monolayers were imaged on a CV7000 (Yokogawa) high content microscope, using a 10x N.A. 0.4 air objective objective. The 405 nm laser was used to image nuclei (Hoechst H33258), the 488 nm laser was used to image phospho-Ser807/811 Rb, the 561 nm laser was used to detect either p21 or p27 CDK inhibitory proteins (depending on the specific stain used) and the 647 nm laser was used to detect EdU. ",
+      "labEquipment": "CV7000 (Yokagawa) high content microscope in confocal mode (pinhole size of 50 um). Four fields of view were taken per well using a 10x air objective, NA 0.4. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Primary Screen Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 328637
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 875558188517
+    }
+  ]
+}

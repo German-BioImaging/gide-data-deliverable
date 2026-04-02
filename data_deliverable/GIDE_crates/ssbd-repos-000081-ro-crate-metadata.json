@@ -1,0 +1,171 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000081/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000081/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000081",
+      "name": "Staining image of the autophagy in the wild-type and Treh mutant drosophila",
+      "description": "ssbd-repos-000081",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Adaptation, Physiological[major]",
+        "Alleles",
+        "Animals",
+        "Central Nervous System/metabolism",
+        "Diet[major]",
+        "Drosophila melanogaster/growth & development",
+        "Drosophila melanogaster/metabolism[major]",
+        "Larva/metabolism",
+        "Mutation/genetics",
+        "Optic Lobe, Nonmammalian/metabolism",
+        "Pupa/metabolism",
+        "Survival Analysis",
+        "Trehalase/genetics",
+        "Trehalose/metabolism[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-017-01754-9"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0006914"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-158"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takashi Nishimura",
+      "email": "t-nishimura@cdb.riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Growth Control Signaling",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-017-01754-9",
+      "@type": "ScholarlyArticle",
+      "name": "Adaptation to dietary conditions by trehalose metabolism in Drosophila.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006914",
+      "@type": "DefinedTerm",
+      "name": "autophagy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 4956160,
+      "description": "5.0 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 4,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

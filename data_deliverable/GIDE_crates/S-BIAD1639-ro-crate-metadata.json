@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1639"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1639",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#aebdc423-35fd-46d0-9eed-b4430867526e"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5387b0ff-0fc3-4bc1-9b45-dbcb17161262"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#14e39b90-c5e5-4be3-9ec2-1c48a5d525c0"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-13",
+      "description": "Sepsis is defined as life-threatening organ dysfunction caused by a dysregulated host response to infection. However, how this dysregulation occurs remains to be elucidated. In this study, we used single-cell RNA sequencing (scRNA-seq) and conventional RNA-seq to analyze the immune landscape of sepsis, and observed that adaptive immunity was acutely and strongly suppressed. This systemic immunosuppression occurred not only in the peripheral blood but also in all other immune compartments, including the spleen, lymph nodes, and bone marrow. Clinical data showed that these adaptive immunity-related genes may be used to distinguish patients with sepsis from those with common infections. CD47 was found to play a pivotal role in this immunosuppression by inducing the production of amyloid-β (Aβ), which interacted with CD74 on B cells, leading to B-cell suppression and subsequent adaptive immunosuppression. Blocking CD47-Aβ signaling significantly reduced organ injury and improved the survival rate of septic mice by restoring phagocytic cell functions and alleviating B-cell suppression and adaptive immunosuppression. Our study may provide translational opportunities for the design of immunotherapy for sepsis.",
+      "funder": [],
+      "identifier": "S-BIAD1639",
+      "keywords": [
+        "Sepsis, Infection, Adaptive immunosuppression, CD47, SIRP, Amyloid-β (Aβ)"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Adaptive immunosuppression in sepsis triggered by CD47-amyloid-β-CD74 signaling cascade",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1639/5f3aadcf-f2bb-4c23-8a9e-8775b1ef0620/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#14e39b90-c5e5-4be3-9ec2-1c48a5d525c0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d006a684-f8b0-484f-bfb2-c88d686888b8"
+        }
+      ],
+      "email": "sicaufengzhongxue@163.com",
+      "name": "Zhongxue Feng"
+    },
+    {
+      "@id": "#d006a684-f8b0-484f-bfb2-c88d686888b8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Sichuan University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#5387b0ff-0fc3-4bc1-9b45-dbcb17161262",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lung, Kidney and Blood",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#aebdc423-35fd-46d0-9eed-b4430867526e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Image acquisition parameters Described in manuscript",
+      "labEquipment": "Imaging instrument Described in manuscript",
+      "measurementTechnique": [],
+      "name": "Image aquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 21
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1602214707
+    }
+  ]
+}

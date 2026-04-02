@@ -1,0 +1,418 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/409-Ichimura-AMATERAS/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/409-Ichimura-AMATERAS/",
+      "@type": "Dataset",
+      "identifier": "409-Ichimura-AMATERAS",
+      "name": "Ultra-large FOV imaging by AMATERAS-2",
+      "description": "409-Ichimura-AMATERAS",
+      "datePublished": "2025-11-26",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Mice",
+        "Imaging, Three-Dimensional/methods[major]",
+        "Quail/embryology[major]",
+        "Brain/embryology[major]",
+        "Brain/cytology[major]",
+        "Embryo, Mammalian/cytology",
+        "Time-Lapse Imaging/methods",
+        "Optical Imaging/methods",
+        "Embryo, Nonmammalian/cytology"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.93633"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_93934"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0015629"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0009790"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "#imaging-technique-2"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "#imaging-technique-3"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        },
+        {
+          "@id": "#imaging-protocol-5"
+        },
+        {
+          "@id": "#imaging-technique-5"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1757"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Taro  Ichimura",
+      "email": "ichimura@otri.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: Institute for Open and Transdisciplinary Research Initiatives; Laboratory: Institute for Open and Transdisciplinary Research Initiatives",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Takeharu Nagai",
+      "email": "ng1@sanken.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: Institute for Open and Transdisciplinary Research Initiatives; Laboratory: Institute for Open and Transdisciplinary Research Initiatives",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Taishi  Kakizuka"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Yoshitsugu Taniguchi"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Satoshi Ejima"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Yuki Sato"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Kaoru Seiriki"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Hitoshi Hashimoto"
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.93633",
+      "@type": "ScholarlyArticle",
+      "name": "Volumetric trans-scale imaging of massive quantity of heterogeneous cell populations in centimeter-wide tissue and embryo.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ hiPSC line 201B7",
+      "description": "Homo sapiens ~ hiPSC line 201B7",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": "hiPSC line 201B7"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "C57BL/6J",
+      "description": "C57BL/6J",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Tg (tie1:H2B-eYFP)",
+      "description": "Tg (tie1:H2B-eYFP)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_93934"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_93934",
+      "@type": "Taxon",
+      "scientificName": "Coturnix japonica"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0015629",
+      "@type": "DefinedTerm",
+      "name": "actin cytoskeleton"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@type": "DefinedTerm",
+      "name": "embryo development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
+      "@type": "DefinedTerm",
+      "name": "cell migration"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "AMATERAS-2w",
+      "description": "AMATERAS-2w",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-2"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "AMATERAS-1",
+      "description": "AMATERAS-1",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-3"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-5",
+      "@type": "LabProtocol",
+      "name": "AMATERAS-2c",
+      "description": "AMATERAS-2c",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-5"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#imaging-technique-2",
+      "@type": "DefinedTerm",
+      "name": "AMATERAS-2w"
+    },
+    {
+      "@id": "#imaging-technique-3",
+      "@type": "DefinedTerm",
+      "name": "AMATERAS-1"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#imaging-technique-5",
+      "@type": "DefinedTerm",
+      "name": "AMATERAS-2c"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 680461207339,
+      "description": "680.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 5124,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

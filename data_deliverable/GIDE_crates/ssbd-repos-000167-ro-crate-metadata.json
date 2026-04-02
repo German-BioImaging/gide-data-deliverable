@@ -1,0 +1,203 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000167/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000167/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000167",
+      "name": "Comparative mapping of crawling-cell morphodynamics in deep learning-based feature space",
+      "description": "Navigation of fast migrating cells such as amoeba Dictyostelium and immune cells are tightly associated with their morphologies that range from steady polarized forms that support high directionality to those more complex and variable when making frequent turns.   Model simulations are essential for quantitative understanding of these features and their origins, however systematic comparisons with real data are underdeveloped.  Here, by employing deep-learning-based feature extraction combined with phase-field modeling framework, we show that a low dimensional feature space for 2D migrating cell morphologies obtained from the shape stereotype of keratocytes, Dictyostelium and neutrophils can be fully mapped by interlinked signaling network of cell-polarization and protrusion dynamics.   Our analysis links the data-driven shape analysis to the underlying causalities by identifying key parameters critical for migratory morphologies both normal and aberrant under genetic and pharmacological perturbations. The results underscore the importance of deciphering self-organizing states and their interplay when characterizing morphological phenotypes.",
+      "datePublished": "2021-05-12",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Movement/physiology[major]",
+        "Cell Polarity/physiology",
+        "Cell Shape/physiology",
+        "Cell Surface Extensions/physiology",
+        "Cells, Cultured",
+        "Cichlids",
+        "Computational Biology",
+        "Computer Simulation",
+        "Deep Learning[major]",
+        "Dictyostelium/cytology",
+        "Dictyostelium/physiology",
+        "Fibroblasts/cytology",
+        "Fibroblasts/physiology",
+        "HL-60 Cells",
+        "Humans",
+        "Models, Biological[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pcbi.1009237"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1903977"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Daisuke Imoto",
+      "email": "dimoto87@gmail.com",
+      "description": "Organization: The University of Tokyo; Department: Department of Basic Science; Laboratory: Sawai Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1009237",
+      "@type": "ScholarlyArticle",
+      "name": "Comparative mapping of crawling-cell morphodynamics in deep learning-based feature space.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Unknown (fish keratocyte)"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "-",
+      "description": "-",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        }
+      ],
+      "hasCellLine": [
+        "HL-60",
+        "fish keratocyte",
+        "AX-4(Dictyostelium)"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "vernacularName": "social amoeba"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1903977",
+      "@type": "DefinedTerm",
+      "name": "Spontaneous cell migration"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 5305188352,
+      "description": "5.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 608039,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

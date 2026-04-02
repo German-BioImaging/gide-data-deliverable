@@ -1,0 +1,273 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000215/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000215/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000215",
+      "name": "Imaging dataset for \"Optogenetic relaxation of actomyosin contractility uncovers mechanistic roles of cortical tension during cytokinesis.\"",
+      "description": "Actomyosin contractility generated cooperatively by nonmuscle myosin II and actin filaments plays essential roles in a wide range of biological processes, such as cell motility, cytokinesis, and tissue morphogenesis. However, subcellular dynamics of actomyosin contractility underlying such processes remains elusive. Here, we demonstrate an optogenetic method to induce relaxation of actomyosin contractility at the subcellular level. The system, named OptoMYPT, combines a protein phosphatase 1c (PP1c)-binding domain of MYPT1 with an optogenetic dimerizer, so that it allows light-dependent recruitment of endogenous PP1c to the plasma membrane. Blue-light illumination was sufficient to induce dephosphorylation of myosin regulatory light chains and a decrease in actomyosin contractile force in mammalian cells and Xenopus embryos. The OptoMYPT system was further employed to understand the mechanics of actomyosin-based cortical tension and contractile ring tension during cytokinesis. We found that the relaxation of cortical tension at both poles by OptoMYPT accelerated the furrow ingression rate, revealing that the cortical tension substantially antagonizes constriction of the cleavage furrow. Based on these results, the OptoMYPT system provides new opportunities to understand cellular and tissue mechanics.",
+      "datePublished": "2021-11-09",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Actin Cytoskeleton/metabolism",
+        "Actomyosin/metabolism[major]",
+        "Animals",
+        "Cell Membrane/metabolism",
+        "Cell Movement",
+        "Cytokinesis/genetics",
+        "Cytokinesis/physiology[major]",
+        "Cytoskeletal Proteins/metabolism",
+        "Dogs",
+        "Female",
+        "Intercellular Junctions",
+        "Madin Darby Canine Kidney Cells",
+        "Male",
+        "Mechanical Phenomena",
+        "Morphogenesis",
+        "Muscle Contraction",
+        "Myosin Type II/metabolism",
+        "Myosin-Light-Chain Phosphatase/metabolism",
+        "Optogenetics[major]",
+        "Synthetic Biology",
+        "Xenopus"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-021-27458-3"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0000910"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0045168"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: National Institute for Basic Biology; Laboratory: Division of Quantitative Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/055n47h92"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/055n47h92",
+      "@type": "Organization",
+      "name": "National Institutes of Natural Sciences"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-021-27458-3",
+      "@type": "ScholarlyArticle",
+      "name": "Optogenetic relaxation of actomyosin contractility uncovers mechanistic roles of cortical tension during cytokinesis.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "hasCellLine": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+        },
+        "NIH-3T3 cell"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355",
+      "@type": "Taxon",
+      "scientificName": "Xenopus laevis",
+      "vernacularName": "african clawed frog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "vernacularName": "dog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000910",
+      "@type": "DefinedTerm",
+      "name": "cytokinesis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0045168",
+      "@type": "DefinedTerm",
+      "name": "cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "laser scanning confocal microscopy",
+      "description": "laser scanning confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
+      "@type": "DefinedTerm",
+      "name": "laser scanning confocal microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 19136196608,
+      "description": "19.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 667,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

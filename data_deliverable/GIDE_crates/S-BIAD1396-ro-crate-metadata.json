@@ -1,0 +1,223 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1396"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1396",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#91c48326-6ce7-4f01-950e-baa0eadf9175"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1eadaed8-3efc-434c-b6b8-99c47832e5fa"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#30d00904-66d3-4d52-9cad-0e89849bf02e"
+        },
+        {
+          "@id": "#cfc758f0-3216-4586-ab04-5ad5d32b0ada"
+        },
+        {
+          "@id": "#e0636f2d-8b6f-4154-8612-2ae8b03bcd24"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-07",
+      "description": "This submission holds the raw data and processed images for a high-content live-cell multiplex screen. The screen is used for chemogenomic compound annotation, i.e. the evaluation of e.g. cytotoxic effects. This submission is about a set of >200 chemogenomic candidate compounds, tested in a pre-screen and a primary screen. Further information about the EUbOPEN project, from which this set and experiment originated can be found in the links section.",
+      "funder": [],
+      "identifier": "S-BIAD1396",
+      "keywords": [
+        "Multiplex, phenotypic screening, live cell, high-content"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "High-Content Live-Cell Multiplex Screen for Chemogenomic Compound Annotation; EUbOPEN wave 5",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1396/74cf0b69-f9f9-4f08-a5ba-0a1e9b278cc8/1500b314-fb75-43ca-b6a1-4ea07aadcc39.png"
+      ]
+    },
+    {
+      "@id": "#30d00904-66d3-4d52-9cad-0e89849bf02e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "elson@pharmchem.uni-frankfurt.de",
+      "name": "Lewis Elson"
+    },
+    {
+      "@id": "#cfc758f0-3216-4586-ab04-5ad5d32b0ada",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#91d17133-8314-4dfc-ba20-8a20576a4d71"
+        }
+      ],
+      "email": "susanne.mueller-knapp@bmls.de",
+      "name": "Susanne Müller"
+    },
+    {
+      "@id": "#e0636f2d-8b6f-4154-8612-2ae8b03bcd24",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "knapp@pharmchem.uni-frankfurt.de",
+      "name": "Stefan Knapp"
+    },
+    {
+      "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Goethe University Frankfurt"
+    },
+    {
+      "@id": "#91d17133-8314-4dfc-ba20-8a20576a4d71",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Structural Genomics Consortium"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#1eadaed8-3efc-434c-b6b8-99c47832e5fa",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293T, U2OS, MRC-9",
+      "name": "Cell Lines",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#91c48326-6ce7-4f01-950e-baa0eadf9175",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "a. Magnification: A 10× objective is used, as it will capture a large surface area while retaining resolution to capture cell morphology. Higher magnifications like 20× can also be used to obtain a more detailed image, but with the consideration that fewer cells can be imaged. Lower magnification of 2× might not detect detailed phenotypic properties.\nb. Five channels are used for image acquisition: Ex 405 nm/Em 447/60 nm, 500 ms, 50%; Ex 561 nm/Em 617/73 nm, 100 ms, 40%; Ex 488/Em 525/50 nm, 50 ms, 40%; Ex 640 nm/Em 685/40, 50 ms, 20%; brightfield, 300 ms, 100% transmission.\nc. Focus and Z-stacks: The area where the Z-stacks will be set can vary from plate to plate. Use 7 Z-stacks for optimal cell imaging with a total of 55 μm spacing to ensure the compensation of potential plate variations and generation of a robust readout. If using the autofocus for your experiment, it may happen that the microscope will sometimes focus on dust and will lose focus, so we recommend to set the focus area for 384-well plates with a height of 14,4±0,1 mm at -15.5 μm for the lowest (-20.2 μm) and highest focus of 39.7 μm (51.6 μm), respectively.\nFor more information see DOI: 10.1016/j.xpro.2022.101791",
+      "labEquipment": "CQ1 Yokogawa",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image Acquisition using CQ1 confocal imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 7399
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1159361606378
+    }
+  ]
+}

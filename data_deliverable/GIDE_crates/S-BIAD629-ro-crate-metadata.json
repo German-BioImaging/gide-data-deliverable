@@ -1,0 +1,257 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD629"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD629",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1081ee47-c235-4cbc-9d59-919138bd42ad"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fe553dd8-d826-42c2-b77c-50e46f0a8a19"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5a6dfd22-0aaf-478c-9a11-3819404c55b0"
+        },
+        {
+          "@id": "#f718c781-6b71-4498-8234-3e1205d811ec"
+        },
+        {
+          "@id": "#03ee79f1-5b63-4a6c-9575-6f6398b2df26"
+        },
+        {
+          "@id": "#1c3146ff-d032-4e6e-ac77-fe9ac2b566ac"
+        },
+        {
+          "@id": "#0b5fb686-5db1-444e-b3ac-99b275fe60a3"
+        },
+        {
+          "@id": "#1187aed2-21b6-4987-acbd-1dd96ab4f4d9"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-02-27",
+      "description": "Stroke Thromboembolism Registry of Imaging and Pathology (STRIP) is a large multicenter project with the aim of histopathologic characterization of thromboemboli of various etiologies and examining clot composition and its relation to mechanical thrombectomy revascularization. STRIP AI is an extension that builds on to provide complete digitization and online access to the labeled whole slide images (WSI) of collected clots. Successful application of image processing and deep learning tools could be useful for accurate prediction of stroke origin, such algorithms could be validated and routinely deployed to histological specimens retrieved during thrombectomy, thus addressing a major public health issue, and helping alleviate stroke burden worldwide.",
+      "funder": [],
+      "identifier": "S-BIAD629",
+      "keywords": [
+        "Stroke",
+        "Whole Slide Imaging",
+        "Digital Pathology",
+        "Clot Composition",
+        "Machine Learning",
+        "Deep Learning",
+        "Artificial Intelligence",
+        "Image Processing"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Stroke Thromboembolism Registry of Imaging and Pathology: Digital Whole Slide Image Set",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD629/e80d35c9-652e-474f-9572-36ae916056ba/009e1509-53d2-4dd2-993a-563cac5869c3.png"
+      ]
+    },
+    {
+      "@id": "#03ee79f1-5b63-4a6c-9575-6f6398b2df26",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03zzw1w08"
+        }
+      ],
+      "email": "white.richard1@mayo.edu",
+      "name": "Richard D. White"
+    },
+    {
+      "@id": "#0b5fb686-5db1-444e-b3ac-99b275fe60a3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03zzw1w08"
+        }
+      ],
+      "email": "brinjikji.waleed@mayo.edu",
+      "name": "Waleed Brinjikji"
+    },
+    {
+      "@id": "#1187aed2-21b6-4987-acbd-1dd96ab4f4d9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03zzw1w08"
+        }
+      ],
+      "email": "erdal.barbaros@mayo.edu",
+      "name": "Barbaros Selnur Erdal"
+    },
+    {
+      "@id": "#1c3146ff-d032-4e6e-ac77-fe9ac2b566ac",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03zzw1w08"
+        }
+      ],
+      "email": "kallmes.david@mayo.edu",
+      "name": "David F. Kallmes"
+    },
+    {
+      "@id": "#5a6dfd22-0aaf-478c-9a11-3819404c55b0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03zzw1w08"
+        }
+      ],
+      "email": "jabal.mohamedsobhi@mayo.edu",
+      "name": "Mohamed Sobhi Jabal"
+    },
+    {
+      "@id": "#f718c781-6b71-4498-8234-3e1205d811ec",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03zzw1w08"
+        }
+      ],
+      "email": "gupta.vikash@mayo.edu",
+      "name": "Vikash Gupta"
+    },
+    {
+      "@id": "https://ror.org/03zzw1w08",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Mayo Clinic"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#fe553dd8-d826-42c2-b77c-50e46f0a8a19",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Ischemic Stroke Thromboemboli",
+      "name": "Stroke Thromboemboli",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1081ee47-c235-4cbc-9d59-919138bd42ad",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The stained samples were scanned using a linear digital whole slide scanner with the following parameters and characteristics:\nObjective type/numerical aperture (NA): 20x/0.75NA Plan Apo\nImage capture magnification (per objective lens): 20x\nImage resolution (μm/pixel) (per image capture magnification): 0.5/0.25 (0.5 µm per pixel is equivalent to 50,000 pixels per inch by using a 20x objective)\nIllumination, scanning methods, and focus modes: Line scanning, brightfield.\nScan speed: 90 seconds for a 15 x 15 mm area of interest (AOI) at 20x magnification utilizing brightfield technique.\nThroughput: Up to 50 slides per hour (Sustained high-throughput rate of 33 slides per hour)",
+      "labEquipment": "Leica - Aperio ScansScope AT-Turbo",
+      "measurementTechnique": [],
+      "name": "Image Aquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1425
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 213400304378
+    }
+  ]
+}

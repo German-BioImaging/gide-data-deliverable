@@ -1,0 +1,227 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000467/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000467/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000467",
+      "name": "Reduction of endocytosis and EGFR signaling is associated with the switch from isolated to clustered apoptosis during epithelial tissue remodeling in Drosophila.",
+      "description": "Epithelial tissues undergo cell turnover both during development and for homeostatic maintenance. Removal of cells is coordinated with the increase in number of newly dividing cells to maintain barrier function of the tissue. In Drosophila metamorphosis, larval epidermal cells (LECs) are replaced by adult precursor cells called histoblasts. Removal of LECs must counterbalance the exponentially increasing adult histoblasts. Previous work showed that the LEC removal accelerates as endocytic activity decreases throughout all LECs. Here, we show that the acceleration is accompanied by a mode switching from isolated single-cell apoptosis to clustered ones induced by the endocytic activity reduction. We identify the epidermal growth factor receptor (EGFR) pathway via extracellular-signal regulated kinase (ERK) activity as the main components downstream of endocytic activity in LECs. The reduced ERK activity, caused by the decrease in endocytic activity, is responsible for the apoptotic mode switching. Initially, ERK is transiently activated in normal LECs surrounding a single apoptotic LEC in a ligand-dependent manner, preventing clustered cell death. Following the reduction of endocytic activity, LEC apoptosis events do not provoke these transient ERK up-regulations, resulting in the acceleration of the cell elimination rate by frequent clustered apoptosis. These findings contrasted with the common perspective that clustered apoptosis is disadvantageous. Instead, switching to clustered apoptosis is required to accommodate the growth of neighboring tissues.",
+      "datePublished": "2025-10-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Endocytosis/physiology[major]",
+        "Apoptosis[major]",
+        "ErbB Receptors/metabolism[major]",
+        "Drosophila Proteins/metabolism[major]",
+        "Drosophila Proteins/genetics[major]",
+        "Signal Transduction[major]",
+        "Drosophila melanogaster/metabolism[major]",
+        "Drosophila melanogaster/genetics[major]",
+        "Extracellular Signal-Regulated MAP Kinases/metabolism",
+        "Larva/metabolism",
+        "Metamorphosis, Biological/physiology",
+        "Receptors, Invertebrate Peptide/metabolism",
+        "Receptors, Invertebrate Peptide/genetics",
+        "Epithelium/metabolism",
+        "Epidermal Cells/metabolism",
+        "Drosophila/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pbio.3002823"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kevin Yuswan",
+      "email": "ykevyus@gmail.com",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01dq60k83"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Daiki Umetsu",
+      "description": "Organization: The University of Osaka; Department: Graduate School of Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Erina Kuranaga",
+      "description": "Organization: Kyoto University; Department: Graduate School of Pharmaceutical Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01dq60k83",
+      "@type": "Organization",
+      "name": "Tohoku University"
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "The University of Osaka"
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by the following grants: Japan Science and Technology Agency - JST SPRING (JPMJSP2114) to K.Y., Core Research for Evolutional Science and Technology - JST CREST (JPMJCR1852), Japan Society for the Promotion of Science - MEXT KAKENHI (JP26114003, JP21H05255), JSPS KAKENHI (JP24687027, JP16H04800), Japan Agency for Medical Research and Development - AMED moonshot (22zf0127001h002) and the research grant for Astellas Foundation for Research on Metabolic Disorders to E. K., JSPS KAKENHI (JP21K06144, JP21H05105, JP24H01405), JST FOREST Program (J210000474), Takeda Science Foundation, and Tohoku University FRIS Program for Creation of Interdisciplinary Research to D. U."
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pbio.3002823",
+      "@type": "ScholarlyArticle",
+      "name": "Reduction of endocytosis and EGFR signaling is associated with the switch from isolated to clustered apoptosis during epithelial tissue remodeling in Drosophila.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fly"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Laser Scanning Confocal Microscopy",
+      "description": "Laser Scanning Confocal Microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
+      "@type": "DefinedTerm",
+      "name": "Laser Scanning Confocal Microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 96934391808,
+      "description": "96.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 18,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1064"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1064",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#143eca78-8a4e-4a03-9498-2e1b1cf27b58"
+        },
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#861d3de1-2ea0-42b0-bc18-98fb5a785e33"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0116-6892"
+        },
+        {
+          "@id": "#e43c2b01-36fc-4347-9804-eb864e92270c"
+        },
+        {
+          "@id": "#491276ac-092c-4e32-ab51-b6292a0eaa8f"
+        },
+        {
+          "@id": "#c1023b3e-9f44-468f-86a7-86971a316388"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-02-28",
+      "description": "Calcium imaging and electrophysiological datasets produced for and analyzed in https://doi.org/10.1101/2022.08.19.504510 ",
+      "funder": [],
+      "identifier": "S-BIAD1064",
+      "keywords": [
+        "Volumetric calcium imaging, neuropixels, inferior colliculus, DCIC, sound location, population code, noise correlations."
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Data supporting \"Noisy neuronal populations effectively encode sound localization in the dorsal inferior colliculus of awake mice\"\nJuan C. Boffi, Brice Bathellier, Hiroki Asari, Robert Prevedel. \nbioRxiv 2022.08.19.504510; \nhttps://doi.org/10.1101/2022.08.19.504510",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1064/6ac90fb3-7558-45bb-acb7-0c4b70cae313/2f00e243-a715-435a-bb97-ed8b0d9ca68e.png"
+      ]
+    },
+    {
+      "@id": "#491276ac-092c-4e32-ab51-b6292a0eaa8f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "hiroki.asari@embl.it",
+      "name": "Hiroki Asari"
+    },
+    {
+      "@id": "#c1023b3e-9f44-468f-86a7-86971a316388",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0495fxg12"
+        }
+      ],
+      "email": "brice.bathellier@cnrs.fr",
+      "name": "Brice Bathellier"
+    },
+    {
+      "@id": "#e43c2b01-36fc-4347-9804-eb864e92270c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "prevedel@embl.de",
+      "name": "Robert Prevedel"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0116-6892",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "juan.boffi@embl.de",
+      "name": "Juan Carlos Boffi"
+    },
+    {
+      "@id": "#5074a07c-1144-4134-96c3-f98335b1653a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://ror.org/0495fxg12",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut Pasteur"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#861d3de1-2ea0-42b0-bc18-98fb5a785e33",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult CBA mouse dorsal cortex from the right inferior colliculus",
+      "name": "Neuronal activity datasets",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#143eca78-8a4e-4a03-9498-2e1b1cf27b58",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "We built a bespoke scanned temporal focusing (sTeFo) 2 photon microscope for fast volumetric in vivo Ca2+ imaging of large IC neuronal populations from awake mice. Technical details and detailed working principle are extensively described elsewhere (Prevedel et al., 2016)⁠. The main difference with respect to the microscope design published by Prevedel et al. (2016) was a higher repetition laser (10 MHz, FemtoTrain, Spectra Physics). Laser power while scanning was kept below 191 mW, measured after the objective, to avoid heating the brain tissue excessively (Prevedel et al., 2016)⁠. 470 μm2 fields of view were imaged at 128 px2 resolution and spaced in 15 μm z steps to cover 570 μm in depth (38 z steps) at a volume rate of 4.01 Hz. Artifacts produced by objective piezo z drive flyback were excluded from analysis.\n\tIn a typical imaging session, cranial window implanted mice were briefly (< 1 min) anesthetized with 5% isoflurane in O2 for quick head fixation at a custom stage, slightly restraining their bodies inside a 5 cm diameter acrylic tube, and positioned under our custom 2P microscope. Mice fully recovered from the brief isoflurane anesthesia, showing a clear blinking reflex, whisking and sniffing behaviors and normal body posture and movements, immediately after head fixation. A pilot group of mice were habituated to the head fixed condition in daily 20 min sessions for 3 days, however we did not observe a marked contrast in the behavior of habituated versus unhabituated mice during our relatively short 25 min imaging sessions. In consequence imaging sessions never surpassed a maximum of 25 min, after which the mouse was returned to its home cage. Typically, mice were imaged a total of 2-11 times (sessions), one to three times a week. Volumetric imaging data was visualized and rendered using FIJI (Schindelin et al., 2012)⁠. Motion correction was performed using NoRMCorre (Pnevmatikakis and Giovannucci, 2017)⁠ on individual imaging planes from the volumetric datasets. jRGECO1a signal was extracted, denoised and neuropil corrected from each individual imaging plane using CaImAn (Giovannucci et al., 2019)⁠. Spike probabilities were estimated using MLSpike (Deneux et al., 2016)⁠. ",
+      "labEquipment": "Custom scanned temporal focusing two photon microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "name": "sTeFo 2P microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000254",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5515
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 280715600792
+    }
+  ]
+}

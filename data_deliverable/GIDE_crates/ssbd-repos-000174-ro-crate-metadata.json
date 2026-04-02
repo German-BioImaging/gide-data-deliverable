@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000174/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000174/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000174",
+      "name": "Redundant and specific roles of EGFR ligands in the ERK activation waves during collective cell migration of MDCK cells",
+      "description": "Epidermal growth factor receptor (EGFR) plays a pivotal role in collective cell migration by mediating cell-to-cell propagation of extracellular signal-regulated kinase (ERK) activation. Here, we aimed to determine which EGFR ligands mediate the ERK activation waves by gene knockout. Four of the seven known EGFR ligands are expressed in MDCK cells. We found that epidermal growth factor (EGF)-deficient cells exhibited lower basal ERK activity than the cells deficient in heparin-binding EGF (HBEGF), transforming growth factor alpha (TGFα) or epiregulin (EREG), but all cell lines deficient in a single EGFR ligand retained the ERK activation waves. Therefore, we knocked out the EGFR ligand genes in decreasing order of expression. ERK activation waves were markedly suppressed, albeit incompletely, only when all four EGFR ligands were knocked-out. Re-expression of the EGFR ligands revealed that all but HBEGF could restore the ERK activation waves. Aiming at complete elimination of the ERK activation waves, we further attempted to knockout Nrg1, a ligand for ErbB3 and ErbB4, and found that Nrg1 deficiency induced growth arrest in the absence of all four EGFR ligand genes expressed in MDCK cells. Collectively, these results showed that EGFR ligands exhibit remarkable redundancy in the propagation of ERK activation waves during collective cell migration.",
+      "datePublished": "2021-10-18",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Animals",
+        "CDC2 Protein Kinase/metabolism",
+        "Cell Line",
+        "Cell Movement[major]",
+        "Epidermal Growth Factor/metabolism",
+        "ErbB Receptors/metabolism",
+        "Extracellular Signal-Regulated MAP Kinases/metabolism[major]",
+        "Gene Expression",
+        "Gene Knockdown Techniques",
+        "Humans",
+        "Ligands",
+        "Mutation",
+        "Protein Binding",
+        "RNA, Messenger",
+        "Single-Cell Analysis"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.26508/lsa.202101206"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005615"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Michiyuki Matsuda",
+      "email": "matsuda.michiyuki.2c@kyoto-u.ac.jp",
+      "description": "Organization: Graduate School of Biostudies; Department: Research Center for Dynamic Living Systems; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04tb1ww30"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04tb1ww30",
+      "@type": "Organization",
+      "name": "Graduate School of Biostudies"
+    },
+    {
+      "@id": "https://doi.org/10.26508/lsa.202101206",
+      "@type": "ScholarlyArticle",
+      "name": "Redundant roles of EGFR ligands in the ERK activation waves during collective cell migration.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        }
+      ],
+      "hasCellLine": "MDCK cells: RIKEN BioResource Center (no. RCB0995)"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "vernacularName": "dog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
+      "@type": "DefinedTerm",
+      "name": "cell migration"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005615",
+      "@type": "DefinedTerm",
+      "name": "extracellular space"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Fluorescence Microscopy",
+      "description": "Fluorescence Microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "Fluorescence Microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 96929533952,
+      "description": "96.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 278,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

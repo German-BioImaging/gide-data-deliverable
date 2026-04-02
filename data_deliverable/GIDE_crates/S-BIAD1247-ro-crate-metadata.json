@@ -1,0 +1,273 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1247"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1247",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bc1ea801-f76c-44a5-a47a-0b580b2c9b20"
+        },
+        {
+          "@id": "#4cb3e0c3-9278-4e2e-822c-8691f096b3fb"
+        },
+        {
+          "@id": "obo:FBbi_00000260"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#db903595-a9c1-43fa-9d3b-8382862d9801"
+        },
+        {
+          "@id": "obo:NCBITaxon_37621"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2902-7664"
+        },
+        {
+          "@id": "#b9eff47b-a0c9-4bac-bc40-6787fba54159"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5258-8043"
+        },
+        {
+          "@id": "#8a8d199e-860a-42c9-8e5e-3ed2ec68852c"
+        },
+        {
+          "@id": "#104d87b6-3872-49b4-89e3-900b04d71805"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-01",
+      "description": "Two X-ray scans of the priapulid worm Priapulus caudatus (specimen 1 and specimen 2) from the collections of The Arctic University Museum of Norway in Tromsø, with collection number TSZY-106. The dataset was used for the exploration of gut contents as part of a master thesis project.",
+      "funder": [],
+      "identifier": "S-BIAD1247",
+      "keywords": [
+        "priapulid",
+        "marine invertebrate",
+        "museum collection",
+        "zoology"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "X-Ray scans of two specimens of Priapulus caudatus",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#104d87b6-3872-49b4-89e3-900b04d71805",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2e1f0470-ea99-40aa-90eb-9a75f54811db"
+        }
+      ],
+      "email": "henrik.lycksam@ltu.se",
+      "name": "Fredrik Forsberg"
+    },
+    {
+      "@id": "#8a8d199e-860a-42c9-8e5e-3ed2ec68852c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2e1f0470-ea99-40aa-90eb-9a75f54811db"
+        }
+      ],
+      "email": "henrik.lycksam@ltu.se",
+      "name": "Henrik Lycksam"
+    },
+    {
+      "@id": "#b9eff47b-a0c9-4bac-bc40-6787fba54159",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2a8d1c74-6ff2-47f9-afed-68cdd54ff2f9"
+        }
+      ],
+      "email": "maren.c.hansen@uit.no",
+      "name": "Maren Christine Hansen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5258-8043",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2a8d1c74-6ff2-47f9-afed-68cdd54ff2f9"
+        }
+      ],
+      "email": "andreas.altenburger@uit.no",
+      "name": "Andreas Altenburger"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2902-7664",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2a8d1c74-6ff2-47f9-afed-68cdd54ff2f9"
+        }
+      ],
+      "email": "joel.v.wernstrom@uit.no",
+      "name": "Joel Vikberg Wernström"
+    },
+    {
+      "@id": "#2a8d1c74-6ff2-47f9-afed-68cdd54ff2f9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "UiT The Arctic University of Norway"
+    },
+    {
+      "@id": "#2e1f0470-ea99-40aa-90eb-9a75f54811db",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Luleå University of Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_37621",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Priapulus caudatus"
+    },
+    {
+      "@id": "#db903595-a9c1-43fa-9d3b-8382862d9801",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole body of the priapulid preserved in EtOH, stained with Lugol's solution, and encased in candle wax (specimen 2) or kept in ethanol (specimen 1) for scanning. ",
+      "name": "Priapulus caudatus",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_37621"
+      }
+    },
+    {
+      "@id": "#4cb3e0c3-9278-4e2e-822c-8691f096b3fb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "50 kV",
+      "labEquipment": "Zeiss Xradia Versa 620",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000260"
+        }
+      ],
+      "name": "X-Ray scan of Priapulus caudatus specimen 2 using Zeiss Xradia Versa 620"
+    },
+    {
+      "@id": "#bc1ea801-f76c-44a5-a47a-0b580b2c9b20",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40 kV",
+      "labEquipment": "Zeiss Xradia Versa 620",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000260"
+        }
+      ],
+      "name": "X-Ray scan of Priapulus caudatus specimen 1 using Zeiss Xradia Versa 620"
+    },
+    {
+      "@id": "obo:FBbi_00000260",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "X-ray microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2047
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 9648322266
+    }
+  ]
+}

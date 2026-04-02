@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1084"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1084",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#070058e1-878c-4cad-9057-d0a23a1d8d64"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e629edfc-042b-4f9e-aa62-47bd115f8019"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9749-3758"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-15",
+      "description": "Polarized vesicular trafficking directs specific receptors and ion channels to cilia, but the underlying mechanisms are poorly understood. Here we describe a role for DLG1, a core component of the Scribble polarity complex, in regulating ciliary protein trafficking in kidney epithelial cells. Conditional knockout of Dlg1 in mouse kidney caused ciliary elongation and cystogenesis, and cell-based proximity labelling proteomics and fluorescence microscopy showed alterations in the ciliary proteome upon loss of DLG1. Specifically, the retromer-associated protein SDCCAG3, IFT20 and polycystin-2 (PC2) were reduced in cilia of DLG1 deficient cells compared to control cells. This phenotype was recapitulated in vivo and rescuable by re-expression of wildtype DLG1, but not a Congenital Anomalies of the Kidney and Urinary Tract (CAKUT)-associated DLG1 variant, p.T489R. Finally, biochemical approaches and Alpha Fold modelling suggested that SDCCAG3 and IFT20 form a complex that associates, at least indirectly, with DLG1. Our work identifies a key role for DLG1 in regulating ciliary protein composition and suggests that ciliary dysfunction of the p.T489R DLG1 variant may contribute to CAKUT.  ",
+      "funder": [],
+      "identifier": "S-BIAD1084",
+      "keywords": [
+        "DLG1, primary cilia, SDCCAG3, IFT20, retromer, polycystin-2, kidney epithelium, CAKUT"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "DLG1 functions upstream of SDCCAG3 and IFT20 to control ciliary targeting of polycystin-2 ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1084/2fc958f5-3326-49ff-984e-955e5229de22/820722b5-e49c-4374-b1c1-f52c17688c13.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9749-3758",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b154dd0c-62be-4e09-99aa-686e0e90795c"
+        }
+      ],
+      "email": "lbpedersen@bio.ku.dk",
+      "name": "Lotte Bang Pedersen"
+    },
+    {
+      "@id": "#b154dd0c-62be-4e09-99aa-686e0e90795c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Copenhagen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#e629edfc-042b-4f9e-aa62-47bd115f8019",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "cultured mCCD or IMCD3 cells (WT, Dlg1 knockout and rescue lines) and mCCD cell lines stably expressing mCherry-DLG1-T507R mutant",
+      "name": "Original representative images (source data) of ciliated wild type, Dlg1 knockout and rescue cell lines, analyzed by IFM ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#070058e1-878c-4cad-9057-d0a23a1d8d64",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "To prepare the images for publication, we used cellSens 1.18 software for constrained iterative deconvolution and assembled montages with Fiji and Adobe Photoshop 2023.",
+      "labEquipment": "Z-stack images of fluorescently stained mCCD and IMCD3 cells were obtained with an Olympus IX83 inverted microscope, equipped with a Yokogawa CSU-W1 confocal scanner unit, ORCA-Flash4.0 V3 Digital CMOS camera (type number: C13440-20CU), and Olympus UPlanSApo 100x oil microscope objective. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image analysis of mCCD and IMCD3 cells"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 62
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8363057682
+    }
+  ]
+}

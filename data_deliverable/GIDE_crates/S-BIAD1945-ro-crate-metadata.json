@@ -1,0 +1,292 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1945"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1945",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#009e79cc-c247-4b6e-a730-88e17be5a8bb"
+        },
+        {
+          "@id": "#11c167b7-c20c-47df-9019-2331b1c037c5"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cb46ac6b-ffb5-4067-b94e-bcabe338b144"
+        },
+        {
+          "@id": "#9710f14f-7bd0-4538-ac4e-4b5687339459"
+        },
+        {
+          "@id": "#b8a351b2-dcb5-4c98-95dc-49a3d2d63dfd"
+        },
+        {
+          "@id": "#61993af4-ad43-415e-9296-7462651eaa10"
+        },
+        {
+          "@id": "#575a8fea-b95b-4bdc-92d3-19eeabcdd617"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2319-6109"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5623-5015"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5094-5270"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-16",
+      "description": "Here we explore Dystroglycan's expression in mouse cerebellar cortex and investigate the mechanism through which Dystroglycan is involved in inhibitory synapse formation.",
+      "funder": [],
+      "identifier": "S-BIAD1945",
+      "keywords": [
+        "Purkinje cell",
+        "cerebellum",
+        "Dystroglycan",
+        "synapse"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Distinct functional domains of Dystroglycan regulate inhibitory synapse formation and maintenance in cerebellar Purkinje cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1945/f23ea437-136b-473a-a88c-ca7f83233049/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5094-5270",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d823530-5755-4658-85eb-2bbb4c78524e"
+        }
+      ],
+      "email": "wrightke@ohsu.edu",
+      "name": "Kevin Wright"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5623-5015",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d823530-5755-4658-85eb-2bbb4c78524e"
+        }
+      ],
+      "email": "schneler@ohsu.edu",
+      "name": "Eric Schnell"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2319-6109",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d823530-5755-4658-85eb-2bbb4c78524e"
+        }
+      ],
+      "email": "jahncke@ohsu.edu",
+      "name": "Jennifer Jahncke"
+    },
+    {
+      "@id": "#0d823530-5755-4658-85eb-2bbb4c78524e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Oregon Health & Science University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#575a8fea-b95b-4bdc-92d3-19eeabcdd617",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Calb1-Cre+;Dag1 Ctrl or ICD deleted mouse cerebellum, P30",
+      "name": "P30 Calb1-Cre;Dag1 ICD",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#61993af4-ad43-415e-9296-7462651eaa10",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Calb1-Cre+;Pomt2 Ctrl or cKO mouse cerebellum, P30",
+      "name": "P30 Calb1-Cre;Pomt2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9710f14f-7bd0-4538-ac4e-4b5687339459",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Calb1-Cre+;Dag1 Ctrl or cKO mouse cerebellum, P12",
+      "name": "P12 Calb1-Cre;Dag1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b8a351b2-dcb5-4c98-95dc-49a3d2d63dfd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Calb1-Cre+;Dag1 Ctrl or cKO mouse cerebellum, P30",
+      "name": "P30 Calb1-Cre;Dag1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#cb46ac6b-ffb5-4067-b94e-bcabe338b144",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Wild-type mouse cerebellum, P60",
+      "name": "WT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#009e79cc-c247-4b6e-a730-88e17be5a8bb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Standard confocal microscopy; z-stacks converted into maximum projection for display",
+      "labEquipment": "Zeiss LSM 980",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Standard Confocal"
+    },
+    {
+      "@id": "#11c167b7-c20c-47df-9019-2331b1c037c5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal microscopy with 1.2x sampling and Weiner deconvolution (LSM Plus)",
+      "labEquipment": "Zeiss LSM 980",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "LSM Plus"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 175
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 14585257344
+    }
+  ]
+}

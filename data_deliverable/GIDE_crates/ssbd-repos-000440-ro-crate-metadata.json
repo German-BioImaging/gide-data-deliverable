@@ -1,0 +1,176 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000440/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000440/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000440",
+      "name": "Immunostaining of phosphorylated ATM in normal human fibroblasts",
+      "description": "Cellular senescence is a stress-induced irreversible cell cycle arrest involved in tumor suppression and aging. Many stresses, such as telomere shortening and oncogene activation, induce senescence by damaging nuclear DNA. However, the mechanisms linking DNA damage to senescence remain unclear. Here, we show that DNA damage response (DDR) signaling to mitochondria triggers senescence. A genome-wide small interfering RNA screen implicated the outer mitochondrial transmembrane protein BNIP3 in senescence induction. We found that BNIP3 is phosphorylated by the DDR kinase ataxia telangiectasia mutated (ATM) and contributes to an increase in the number of mitochondrial cristae. Stable isotope labeling metabolomics indicated that the increase in cristae enhances fatty acid oxidation (FAO) to acetyl-coenzyme A (acetyl-CoA). This promotes histone acetylation and expression of the cyclin-dependent kinase inhibitor p16INK4a. Notably, pharmacological activation of FAO alone induced senescence both in vitro and in vivo. Thus, mitochondrial energy metabolism plays a critical role in senescence induction and is a potential intervention target to control senescence.",
+      "datePublished": "2025-06-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Cellular Senescence[major]",
+        "Fatty Acids/metabolism[major]",
+        "Mitochondria/metabolism[major]",
+        "Oxidation-Reduction[major]",
+        "Humans",
+        "Animals",
+        "Ataxia Telangiectasia Mutated Proteins/metabolism",
+        "DNA Damage",
+        "Membrane Proteins/metabolism",
+        "Membrane Proteins/genetics",
+        "Cyclin-Dependent Kinase Inhibitor p16/metabolism",
+        "Cyclin-Dependent Kinase Inhibitor p16/genetics",
+        "Mice",
+        "Mitochondrial Proteins/metabolism",
+        "Mitochondrial Proteins/genetics",
+        "Phosphorylation",
+        "Signal Transduction",
+        "Acetylation",
+        "Acetyl Coenzyme A/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1126/sciadv.ado5887"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shota Yamauchi",
+      "email": "yamauchi-s@umin.ac.Jp",
+      "description": "Organization: Japanese Foundation for Cancer Research; Department: Cancer Institute; Laboratory: Division of Cellular Senescence",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00bv64a69"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hidenori Ichijo",
+      "description": "Organization: Institute of Science Tokyo; Department: Advanced Research Departments; Laboratory: Cell Signaling and Stress Responses Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05dqf9946"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/00bv64a69",
+      "@type": "Organization",
+      "name": "Japanese Foundation for Cancer Research"
+    },
+    {
+      "@id": "https://ror.org/05dqf9946",
+      "@type": "Organization",
+      "name": "Institute of Science Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1126/sciadv.ado5887",
+      "@type": "ScholarlyArticle",
+      "name": "Mitochondrial fatty acid oxidation drives senescence.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 15564800,
+      "description": "15.6 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

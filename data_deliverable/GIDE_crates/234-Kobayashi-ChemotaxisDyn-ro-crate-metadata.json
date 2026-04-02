@@ -1,0 +1,192 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/234-Kobayashi-ChemotaxisDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/234-Kobayashi-ChemotaxisDyn/",
+      "@type": "Dataset",
+      "identifier": "234-Kobayashi-ChemotaxisDyn",
+      "name": "Time-sereis images and BDML file for quantitative information about chemotaxis behavior of N. humilis treated with or without platytocin.",
+      "description": "234-Kobayashi-ChemotaxisDyn",
+      "datePublished": "2022-11-23",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1126/sciadv.abk0331"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_1641631"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0006935"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-765"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hirotaka Sakamoto",
+      "email": "hsakamo@okayama-u.ac.jp",
+      "description": "Organization: Okayama University; Department: Graduate School of Natural Science and Tech- nology; Laboratory: Ushimado Marine Institute (UMI)",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02pc6pc55"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Aoshi Kobayashi"
+    },
+    {
+      "@id": "https://ror.org/02pc6pc55",
+      "@type": "Organization",
+      "name": "Okayama University"
+    },
+    {
+      "@id": "https://doi.org/10.1126/sciadv.abk0331",
+      "@type": "ScholarlyArticle",
+      "name": "Vasopressin-oxytocin-type signaling is ancient and has a conserved water homeostasis role in euryhaline marine planarians.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Notocomplana humilis",
+      "description": "Notocomplana humilis",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_1641631"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_1641631",
+      "@type": "Taxon",
+      "scientificName": "Notocomplana humilis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006935",
+      "@type": "DefinedTerm",
+      "name": "chemotaxis"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "HDR-CX680/W video recorder",
+      "description": "HDR-CX680/W video recorder",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-technique-1",
+      "@type": "DefinedTerm",
+      "name": "HDR-CX680/W video recorder"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 3600111994,
+      "description": "3.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1570,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

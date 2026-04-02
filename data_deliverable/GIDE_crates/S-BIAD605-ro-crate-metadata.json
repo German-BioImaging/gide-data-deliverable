@@ -1,0 +1,235 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD605"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD605",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c42f79d0-7faa-4187-8612-b61bdf7fa9df"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#26ec3406-1e9b-4efa-a8ec-a87aebaf0668"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0407-7617"
+        },
+        {
+          "@id": "#7cc0f35e-e4e4-4dd4-a42c-7bf45c47747f"
+        },
+        {
+          "@id": "#030cbb8d-5b22-45c9-b772-0adf58a0569f"
+        },
+        {
+          "@id": "#ec9d6929-81d4-4bd4-b52c-9e59dc51ef00"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2022-12-25",
+      "description": "We provide a dataset of 10 whole slide images of clear cell renal cell carcinoma tissue sections that were counterstained with Hoechst 33342, Cy3 and Cy5. The fluorescent images were captured using Zeiss Axio Scan Z1. We used three different fluorescent channels (Hoechst 33342, Cy3 and Cy5) simultaneously to capture individual channel images under 20x object magnification with respective exposure times of 10 ms, 20 ms and 30 ms.\nWe also provide clinical data including age at surgery, gender, disease free months, nuclear grade, and Leibovich score.\nAlongside the WSIs, we provide pre-processed and normalised patches (each 256x256 pixels) from the WSIs in a format that can be readily ingested by deep learning models for their training. For each patch, we provide normalised Hoechst, CD3, and CD8 images, as well as cell masks identified using the StarDist algorithm. Each cell is annotated as CD3, CD8 (a subset of CD3), or neither.",
+      "funder": [],
+      "identifier": "S-BIAD605",
+      "keywords": [
+        "clear cell renal cell carcinoma",
+        "kidney",
+        "cancer",
+        "immunofluorescence"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Whole slide images and patches of clear cell renal cell carcinoma counterstained with multiple immunofluorescence for Hoechst, CD3, and CD8.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD605/ebf3ea68-3271-4df1-a7b6-31da791d6499/56dab8f6-fffb-4b93-b4d7-e1e361d94e1e.png"
+      ]
+    },
+    {
+      "@id": "#030cbb8d-5b22-45c9-b772-0adf58a0569f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "david.harrison@st-andrews.ac.uk",
+      "name": "David Harrison"
+    },
+    {
+      "@id": "#7cc0f35e-e4e4-4dd4-a42c-7bf45c47747f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "#ec9d6929-81d4-4bd4-b52c-9e59dc51ef00",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "oa7@st-andrews.ac.uk",
+      "name": "Ognjen Arandjelović"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0407-7617",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "georg@woelflein.de",
+      "name": "Georg Wölflein"
+    },
+    {
+      "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#26ec3406-1e9b-4efa-a8ec-a87aebaf0668",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Kidney",
+      "name": "Kidney tissue sections",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c42f79d0-7faa-4187-8612-b61bdf7fa9df",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x object magnification with exposure times of 10 ms, 20 ms, and 30 ms for Hoechst 33342, Cy3 and, Cy5 respectively",
+      "labEquipment": "Zeiss Axio Scan Z1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 12
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 172346322903
+    }
+  ]
+}

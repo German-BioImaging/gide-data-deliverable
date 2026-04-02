@@ -1,0 +1,222 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1194"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1194",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9ea818f1-2b7f-41fd-93e5-5f89c633c531"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3989302e-8a57-4735-b348-0553c482b618"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7327-6460"
+        },
+        {
+          "@id": "#ee6067eb-a0e8-46b0-bc05-3e79319c5b8d"
+        },
+        {
+          "@id": "#620234b5-1d68-4001-9254-e81d983cc8cf"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-30",
+      "description": "Tripartite motif-containing 28 (TRIM28) in satellite cell is required for muscle regeneration. In vivo and in vitro analyses further reveal that TRIM28 controls the expression of myomixer and concomitant fusion pore formation during myogenesis.",
+      "funder": [],
+      "identifier": "S-BIAD1194",
+      "keywords": [
+        "myogenesis",
+        "satellite cell"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The role of satellite cell-derived TRIM28 in mechanical load- and injury-induced myogenesis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#620234b5-1d68-4001-9254-e81d983cc8cf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#54c76caf-1e84-41e8-ac54-8038ff500fe0"
+        }
+      ],
+      "email": "troy.hornberger@wisc.edu",
+      "name": "Troy Hornberger"
+    },
+    {
+      "@id": "#ee6067eb-a0e8-46b0-bc05-3e79319c5b8d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cdd16461-ab27-45bc-a52a-8d94f8632292"
+        }
+      ],
+      "email": "klin@fas.harvard.edu",
+      "name": "Kuan-Hung Lin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7327-6460",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#54c76caf-1e84-41e8-ac54-8038ff500fe0"
+        }
+      ],
+      "email": "jhibbert@wisc.edu",
+      "name": "Jamie E Hibbert"
+    },
+    {
+      "@id": "#54c76caf-1e84-41e8-ac54-8038ff500fe0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Wisconsin–Madison"
+    },
+    {
+      "@id": "#cdd16461-ab27-45bc-a52a-8d94f8632292",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Harvard University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#3989302e-8a57-4735-b348-0553c482b618",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse skeletal muscle",
+      "name": "Biosample Section",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9ea818f1-2b7f-41fd-93e5-5f89c633c531",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The image acquisition parameters were selected for each experiment to optimize the image quality.",
+      "labEquipment": "Nikon Microscope\nKeyence Microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image Acquisition Section"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 855065709
+    }
+  ]
+}

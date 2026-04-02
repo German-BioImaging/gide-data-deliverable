@@ -1,0 +1,252 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD647"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD647",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d2c8317e-03b3-49f2-87e1-e4686f73c06f"
+        },
+        {
+          "@id": "#89b53a7d-e616-4b51-a454-85daba7433b3"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cd6db97c-cda4-4a12-90ea-37db33d91ba1"
+        },
+        {
+          "@id": "#894a6478-5884-4f43-805a-907d6172bc3c"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2664-1362"
+        },
+        {
+          "@id": "#f7e5a486-6bb3-4093-b4fc-fc6c3da10ca7"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3348-342X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-07",
+      "description": "Vaginal cytology images from adult Sprague Dawley rats for estrous tracking using Track-by-Day method. Cells are stained with H&E and full smear was imaged at 4x (tiles stitched) on a Keyence BZX700 microscope. Two sets are included in this archive: single-field smear images for four rats (Figure 6a), and full-smear images corresponding to cohort of n=12 (Figure 6b, c). These images correspond to sample dataset in Figure 6b, c in \"The Track-by-day method for monitoring the rodent estrous cycle\" (Raimondi et al., Current Protocols).",
+      "funder": [],
+      "identifier": "S-BIAD647",
+      "keywords": [
+        "estrous",
+        "estrous cytology",
+        "vaginal cytology",
+        "estrous tracking",
+        "Track-by-Day",
+        "estrous cycle"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Estrous Cytology \"The Track-by-day method for monitoring the rodent estrous cycle\" (Figure 6, Raimondi et al. Current Protocols)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD647/0bc15274-cc8f-41ba-9eb8-568a227acb8e/d1b6e348-b582-4718-bca3-609f020a20b5.png"
+      ]
+    },
+    {
+      "@id": "#f7e5a486-6bb3-4093-b4fc-fc6c3da10ca7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1a0d0d65-2ed2-4ca1-a527-0b9d17ae9e5d"
+        }
+      ],
+      "email": "rebecca.tripp@uconn.edu",
+      "name": "Rebecca Tripp"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2664-1362",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1a0d0d65-2ed2-4ca1-a527-0b9d17ae9e5d"
+        }
+      ],
+      "email": "gianna.raimondi@uconn.edu",
+      "name": "Gianna Raimondi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3348-342X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1a0d0d65-2ed2-4ca1-a527-0b9d17ae9e5d"
+        }
+      ],
+      "email": "linnaea.ostroff@uconn.edu",
+      "name": "Linnaea Ostroff, PhD"
+    },
+    {
+      "@id": "#1a0d0d65-2ed2-4ca1-a527-0b9d17ae9e5d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Connecticut"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#894a6478-5884-4f43-805a-907d6172bc3c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Exfoliative vaginal cytology smears, collected via swabbing.",
+      "name": "Single-field smear (H&E, rat vaginal cytology)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#cd6db97c-cda4-4a12-90ea-37db33d91ba1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Exfoliative vaginal cytology smears, collected via swabbing.",
+      "name": "Full smear (H&E, rat vaginal cytology)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#89b53a7d-e616-4b51-a454-85daba7433b3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "10X, single field of smear, brightfield",
+      "labEquipment": "Leica Thunder DM6 B",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Leica Thunder DM6 B (single field smear)"
+    },
+    {
+      "@id": "#d2c8317e-03b3-49f2-87e1-e4686f73c06f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "4X, stitched tiles of full smear on slide, brightfield",
+      "labEquipment": "Keyence BZX700",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Keyence (full smear)"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 127
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 293436482
+    }
+  ]
+}

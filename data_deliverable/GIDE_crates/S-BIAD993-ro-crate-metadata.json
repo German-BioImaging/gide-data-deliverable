@@ -1,0 +1,291 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD993"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD993",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5e05fdfc-be6e-4d7f-9e06-1a5322a2787e"
+        },
+        {
+          "@id": "#e75a293e-8c7e-4cd1-aa70-2bc1e2900f9f"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#54c0c03b-39e4-4e79-91c2-32b3fd8afeac"
+        },
+        {
+          "@id": "#ff85a898-346a-4fd0-80fe-981ea7665e03"
+        },
+        {
+          "@id": "#fe7a509e-2f56-4149-b313-1a17566e6ac6"
+        },
+        {
+          "@id": "#b98fa512-e1eb-41f9-a875-a8d59dd1984c"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0001-3143-3867"
+        },
+        {
+          "@id": "#3d46e829-c89a-4355-826c-3464e363729f"
+        },
+        {
+          "@id": "#9b57d563-83e9-44df-b0dc-dbc7dbcb4101"
+        },
+        {
+          "@id": "#ba1544b3-8cb3-4dc3-aebd-6a3a7f259df4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-01-08",
+      "description": "Matrix assisted Laser Desorption/ Ionization Mass Spectrometry Imaging (MALDI-MSI) has emerged as a powerful analytical tool for various molecules such as small molecule metabolites (SMMs), correlating an analytes mass to charge ratio and its spatial localisation on a tissue surface. Despite the growing interest in this technique, a comprehensive SMM MALDI-imaging gallery is still lacking in literature. Here, we present a Small Molecule Metabolite MALDI imaging gallery, unveiling a comprehensive exploration into the spatial distribution of over 100 metabolites of various pathways and classes sourced from three distinct mouse tissues.",
+      "funder": [],
+      "identifier": "S-BIAD993",
+      "keywords": [
+        "MALDI-MSI",
+        "Imaging",
+        "Mass Spectrometry",
+        "Metabolomics",
+        "small molecules"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Metabolite imaging in mouse organ tissues using mass spectrometry",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD993/9bbfe5c4-eda5-43fc-a29f-157907e92aab/36993e25-942c-48f6-b09f-f34d3df1d7e7.png"
+      ]
+    },
+    {
+      "@id": "#3d46e829-c89a-4355-826c-3464e363729f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b150b7a2-bf5f-4d43-8903-5dcddf1b026c"
+        }
+      ],
+      "email": "karl.smith@isas.de",
+      "name": "Karl W. Smith"
+    },
+    {
+      "@id": "#9b57d563-83e9-44df-b0dc-dbc7dbcb4101",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b150b7a2-bf5f-4d43-8903-5dcddf1b026c"
+        }
+      ],
+      "email": "siva.kasarla@isas.de",
+      "name": "Siva Swapna Kasarla"
+    },
+    {
+      "@id": "#ba1544b3-8cb3-4dc3-aebd-6a3a7f259df4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b150b7a2-bf5f-4d43-8903-5dcddf1b026c"
+        }
+      ],
+      "email": "prasad.phapale@isas.de",
+      "name": "Prasad Phapale"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-3143-3867",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b150b7a2-bf5f-4d43-8903-5dcddf1b026c"
+        }
+      ],
+      "email": "antonia.fecke@isas.de",
+      "name": "Antonia Fecke"
+    },
+    {
+      "@id": "#b150b7a2-bf5f-4d43-8903-5dcddf1b026c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leibniz Institute for Analytical Sciences - ISAS"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#54c0c03b-39e4-4e79-91c2-32b3fd8afeac",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse brain",
+      "name": "Mouse Brain sagittal",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b98fa512-e1eb-41f9-a875-a8d59dd1984c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse liver",
+      "name": "Mouse Liver",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#fe7a509e-2f56-4149-b313-1a17566e6ac6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse kidney",
+      "name": "Mouse Kidney",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ff85a898-346a-4fd0-80fe-981ea7665e03",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse brain",
+      "name": "Mouse Brain coronal",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#5e05fdfc-be6e-4d7f-9e06-1a5322a2787e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Microscopy images were captured using brightfield Keyence VHX-7000N. Serial stitched images were performed using the 200x magnification. \n",
+      "labEquipment": "Keyence VHX-7000N",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Microscopy"
+    },
+    {
+      "@id": "#e75a293e-8c7e-4cd1-aa70-2bc1e2900f9f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The 349-nm MALDI Nd:YLF laser (Explorer One, Spectra Physics, Mountain View, CA) operated at a repetition rate of 500 Hz and a pulse energy of 1-2µJ. The laser was focused to a spot size of 20μm for homogenate and 30x30µm for tissue samples. The high-pressure funnel (HPF) and low-pressure funnel (LPF) were set at 98Vpp and 75Vpp, respectively, achieved through 15% RF drive for 720 kHz and 825 kHz, respectively. The mass spectrometer operated in negative mode with AGC mode turned off, a resolution of 120,000 for m/z 200, and a set inject time of 250ms, resulting in 125 shots/pixel and approximately 3 scans/second. Instrument calibration was conducted with HESI, using a Pierce positive and negative ion calibration solution (Thermo Fisher Scientific) spiked with metabolite standards to cover the low m/z range.",
+      "labEquipment": "Orbitrap QExactive HF mass spectrometer (Thermo Fisher Scientific GmbH, Bremen, Germany) coupled to an elevated pressure MALDI ion source (Spectroglyph LLC, Kennewick, WA, USA)",
+      "measurementTechnique": [],
+      "name": "MALDI data acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 836
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 62664652748
+    }
+  ]
+}

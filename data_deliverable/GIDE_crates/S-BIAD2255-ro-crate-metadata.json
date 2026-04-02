@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2255"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2255",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#673875d3-258e-42fb-bb69-2f42040f842c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#db734852-e6b0-4384-bbc4-82e296a93e8d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#3a63f237-e56d-4ae9-a640-a86941063abb"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-29",
+      "description": "T cells are critical effector cells against infections and malignancies. To achieve this, they produce pro-inflammatory cytokines, including IFN-γ and TNF. Cytokine production is a tightly regulated process. The relative contribution of transcriptional and post-transcriptional regulation to mRNA expression is, however, unknown. We therefore optimized single-molecule FISH for primary human T cells (T-cell smFISH) to simultaneously quantify nascent RNA, mature mRNA levels and its localization with single-cell resolution. T-cell smFISH uncovered heterogeneous cytokine mRNA levels, with high cytokine producers displaying biallelic IFNG/TNF RNA transcription activity. Throughout activation, nuclear cytokine mRNAs accumulated, whereas cytoplasmic cytokine mRNA was degraded through translation-dependent decay. Lastly, T-cell smFISH uncovered cytokine-specific regulation by the RNA-binding protein HuR. Thus, T-cell smFISH provides novel insights in the intricate (post)-transcriptional processes in T cells.  \n",
+      "funder": [],
+      "identifier": "S-BIAD2255",
+      "keywords": [
+        "Post-transcriptional regulation, smFISH, T cells, cytokine regulation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Single molecule imaging of transcription dynamics, RNA localization and fate in T cells ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2255/2f03466a-48f9-42f4-b9ff-544d03b74b23/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#3a63f237-e56d-4ae9-a640-a86941063abb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0de0eb8c-aa0e-4603-a239-a105ff673c54"
+        }
+      ],
+      "email": "v.lattanzio@sanquin.nl",
+      "name": "Maria Valeria Lattanzio"
+    },
+    {
+      "@id": "#0de0eb8c-aa0e-4603-a239-a105ff673c54",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Sanquin"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#db734852-e6b0-4384-bbc4-82e296a93e8d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "primary human T cells",
+      "name": "primary human T cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#673875d3-258e-42fb-bb69-2f42040f842c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Lumencore SOLA FISH light source, Hamamatsu ORCAFusion sCMOS camera (6.5 μm pixel size) mounted using U-CMT C-Mount Adapter, and zero-pixel shift filter sets: F36-500 DAPI HC Brightline Bandpass Filter, F36-502, FITC HC BrightLine Filter, F36-542 Cy3 HC BrightLine Filter, AHF-LED-FISH-R Filter for Cy3.5 and F36-523 Cy5 HCBrightLine Filter. ",
+      "labEquipment": "Briefly, image acquisition was performed using an Olympus BX-63 epifluorescence microscope equipped with Ultrasonic stage and UPLSAPO 100X1.4NA oil immersion objective (Olympus). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Donor_Condition_timepoint_coverslip_channels"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 359
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 642221372180
+    }
+  ]
+}

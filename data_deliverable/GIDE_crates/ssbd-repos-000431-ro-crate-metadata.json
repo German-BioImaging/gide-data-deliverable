@@ -1,0 +1,149 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000431/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000431/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000431",
+      "name": "Immunofluorescence staining data showing histone modification enrichment in medaka embryos.",
+      "description": "Zygotic genome activation (ZGA) is a critical developmental milestone characterized by the rapid and simultaneous activation of genome-widely silenced chromatin. Various active histone modifications accumulate upon ZGA and have long been implicated in ZGA. However, their biological relevance still remains unclear. Here, we comprehensively examined the functional significance of active histone modifications and their writers during ZGA in teleost embryos. Our data propose that developmental genes and housekeeping genes are distinctively regulated during ZGA; CBP/P300 activity is required for developmental gene activation, whereas housekeeping genes depend on non-CBP/P300 histone acetylations H3K9ac/H4K16ac/H3K14ac. Moreover, accumulation of H3K4me2/3 is not prerequisite for activation of all types of genes during ZGA, in contrast to previous reports with cell lines. Finally, temporal accumulation of H3.3S31ph greatly enhances CBP/P300 activity specifically at ZGA, ensuring the activation of developmental genes. Our data demonstrate that multiple histone modifications cooperatively shape ZGA-specific gene activation programs in non-mammalian vertebrates.",
+      "datePublished": "2025-05-20",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hiroto Fukushima",
+      "email": "hiroto.fukushima@riken.jp",
+      "description": "Organization: RIKEN Center for Integrative Medical Science (IMS)",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04mb6s476"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04mb6s476",
+      "@type": "Organization",
+      "name": "RIKEN Center for Integrative Medical Science (IMS)"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by JSPS KAKENHI Grant No. JP23K14121 and 24KJ0236 to HSF, and by Japan Agency for Medical Research and Development (AMED) under Grant No. JP18gm1110007h0001 to HT."
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "dr-R",
+      "description": "dr-R",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033",
+      "@type": "Taxon",
+      "scientificName": "Oryzias latipes",
+      "vernacularName": "medaka"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 378617856,
+      "description": "378.6 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 180,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

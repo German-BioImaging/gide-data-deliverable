@@ -1,0 +1,903 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1891"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1891",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#eac7c97d-505e-4c63-8ced-c3d4c6599f33"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#aed797b5-aeb6-44d2-94df-ef4fa17d1780"
+        },
+        {
+          "@id": "#4496a604-b284-4921-8d13-0143c6e8d1da"
+        },
+        {
+          "@id": "#8c366103-4794-40af-a749-3553af2a0514"
+        },
+        {
+          "@id": "#b0a9104d-c2ec-46e8-a8b2-4b3abf621043"
+        },
+        {
+          "@id": "#06a2ecee-e10c-42a0-ad26-fec999d1194a"
+        },
+        {
+          "@id": "#782996db-dac4-41d7-9e61-16d43cc2e9ab"
+        },
+        {
+          "@id": "#0be08adc-eca8-44c0-8c37-24a178a1f890"
+        },
+        {
+          "@id": "#1b6e32f9-130e-4c28-b4b4-5e7ef894ff7d"
+        },
+        {
+          "@id": "#590556e0-9150-4dc5-8265-f7473b1040e4"
+        },
+        {
+          "@id": "#c61383b1-5549-4908-a0a4-537a362c3604"
+        },
+        {
+          "@id": "#11093ba3-ea3b-4f6a-8703-98d12572b4df"
+        },
+        {
+          "@id": "#50f13d44-206d-4653-90ea-3f4a0475b2fa"
+        },
+        {
+          "@id": "#1b38b199-a388-4785-b86c-6933574870a4"
+        },
+        {
+          "@id": "#a1eeb2e4-3943-40c4-a19d-e0136fbd78a7"
+        },
+        {
+          "@id": "#f97d57a8-9358-41b6-b43b-6e184526876a"
+        },
+        {
+          "@id": "#71ac63e3-3920-4e68-b509-05bbe1c1aa5e"
+        },
+        {
+          "@id": "#1435bc7a-eee1-400a-bfd0-602bef19ddcb"
+        },
+        {
+          "@id": "#22b32ef8-b04b-41b6-998c-f9d1daa39dd5"
+        },
+        {
+          "@id": "#4f1d0adb-f30e-428e-8655-99fbf2f118ef"
+        },
+        {
+          "@id": "#75393938-7aea-45ae-bbc6-70dd4bf932cd"
+        },
+        {
+          "@id": "#6871e2d3-27a4-4f61-a015-077835160bf4"
+        },
+        {
+          "@id": "#c2aed205-7c02-4f5f-a1af-d438c848511e"
+        },
+        {
+          "@id": "#b09df7eb-0fa3-4319-a8b4-da9d5e8cf152"
+        },
+        {
+          "@id": "#2a0ffd66-76be-4aca-b94a-645fff7d3e20"
+        },
+        {
+          "@id": "#69f6e7ab-15d7-4ad8-8875-4d5d7b268c56"
+        },
+        {
+          "@id": "#654f30be-528c-4bc2-a17f-140c9835f294"
+        },
+        {
+          "@id": "#b433813e-0d7c-4019-a82e-3e707630998b"
+        },
+        {
+          "@id": "#bd5c8dc2-b640-4ea4-a0fa-919dcf744c0a"
+        },
+        {
+          "@id": "#947a8eea-12e0-4268-930a-0bff9fdb8181"
+        },
+        {
+          "@id": "#733b47de-a874-4b6b-94b8-145ebb90564a"
+        },
+        {
+          "@id": "#091b6eeb-877c-4650-861f-e11e7e16a5f4"
+        },
+        {
+          "@id": "#d453dfc0-b7f0-48c7-ba23-9cc399308e30"
+        },
+        {
+          "@id": "#ece190ea-c92f-426d-8280-d33397d86c8d"
+        },
+        {
+          "@id": "#e00566d9-a018-4b12-b1f0-018ce007792a"
+        },
+        {
+          "@id": "#4ae64dc9-3273-4528-afaf-8196173c690a"
+        },
+        {
+          "@id": "#52a795fb-55e3-4650-b70c-5da008d99655"
+        },
+        {
+          "@id": "#56cf5da6-2d87-40cd-abc1-33eefa76c475"
+        },
+        {
+          "@id": "#ad47cd41-7c09-45a3-94c3-05fb21970eea"
+        },
+        {
+          "@id": "#d8302ec5-d306-43e9-8cee-0839f24d07d9"
+        },
+        {
+          "@id": "#81f6064f-9062-415a-806f-1d378bfacc35"
+        },
+        {
+          "@id": "#7669cfab-79f7-402b-a2e5-2a2911c1fa8a"
+        },
+        {
+          "@id": "#24fbd033-77e3-42a8-99d2-c0a9384d7c3e"
+        },
+        {
+          "@id": "#3ecbd559-1de0-4f42-82dc-bd758f0dc325"
+        },
+        {
+          "@id": "#1a4229d0-7125-4d46-a459-3a0fababb7c3"
+        },
+        {
+          "@id": "#bcd93187-a76f-462e-a18e-d88b43dc147c"
+        },
+        {
+          "@id": "#2c2198a5-071f-41bc-99be-726e8d50e1a7"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9e3b910f-b60e-4057-b429-9f2ed6197529"
+        },
+        {
+          "@id": "#872496b3-192d-4b71-9858-61c3b2eb001f"
+        },
+        {
+          "@id": "#d2fe17d5-d389-490d-bb8a-8ae6d171ec49"
+        },
+        {
+          "@id": "#6840bd1f-c114-4e93-ae7c-de3e7c81da44"
+        },
+        {
+          "@id": "#35ead365-246e-4748-97d8-95e83296a945"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-01",
+      "description": "The subcellular localization of a protein is important for its function, and its mislocalization is linked to numerous diseases. Existing datasets capture limited pairs of proteins and cell lines, and existing protein localization prediction models either miss cell-type specificity or cannot generalize to unseen proteins. Here we present a method for Prediction of Unseen Proteins’ Subcellular localization (PUPS). PUPS combines a protein language model and an image inpainting model to utilize both protein sequence and cellular images. We demonstrate that the protein sequence input enables generalization to unseen proteins, and the cellular image input captures single-cell variability, enabling cell-type-specific predictions. Experimental validation shows that PUPS can predict protein localization in newly performed experiments outside of the Human Protein Atlas used for training. Collectively, PUPS provides a framework for predicting differential protein localization across cell lines and single cells within a cell line, including changes in protein localization driven by mutations.\nThis dataset provide the immunofluorescence images acquired during this study for the experimentally validation of PUPS. Cells of 5 cell lines were stained with antibody targeting a-tubulin, ER, and one kind of proteins out of 9 proteins that PUPS predicted, then imaged with 60x confocal with Z-stacks.",
+      "funder": [],
+      "identifier": "S-BIAD1891",
+      "keywords": [
+        "Machine learning",
+        "Subcellular location",
+        "Antibody staining",
+        "Immunofluorescence"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Accompanying dataset for \"Prediction of protein subcellular localization in single cells\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#35ead365-246e-4748-97d8-95e83296a945",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e450c313-4c69-4d02-be01-fff6bfe8cd32"
+        }
+      ],
+      "name": "Caroline Uhler"
+    },
+    {
+      "@id": "#6840bd1f-c114-4e93-ae7c-de3e7c81da44",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cdd16461-ab27-45bc-a52a-8d94f8632292"
+        }
+      ],
+      "name": "Fei Chen"
+    },
+    {
+      "@id": "#872496b3-192d-4b71-9858-61c3b2eb001f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e450c313-4c69-4d02-be01-fff6bfe8cd32"
+        }
+      ],
+      "name": "Yitong Tseo"
+    },
+    {
+      "@id": "#9e3b910f-b60e-4057-b429-9f2ed6197529",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e450c313-4c69-4d02-be01-fff6bfe8cd32"
+        }
+      ],
+      "email": "xinyizxx@mit.edu",
+      "name": "Xinyi Zhang"
+    },
+    {
+      "@id": "#d2fe17d5-d389-490d-bb8a-8ae6d171ec49",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3bc729cf-2c38-4d94-89b6-37dc7c474f7f"
+        }
+      ],
+      "email": "yunb@broadinstitute.org",
+      "name": "Yunhao Bai"
+    },
+    {
+      "@id": "#3bc729cf-2c38-4d94-89b6-37dc7c474f7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Broad Institute"
+    },
+    {
+      "@id": "#cdd16461-ab27-45bc-a52a-8d94f8632292",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Harvard University"
+    },
+    {
+      "@id": "#e450c313-4c69-4d02-be01-fff6bfe8cd32",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Massachusetts Institute of Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#06a2ecee-e10c-42a0-ad26-fec999d1194a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375, ATCC (CRL-1619)",
+      "name": "A375",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#091b6eeb-877c-4650-861f-e11e7e16a5f4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.).",
+      "name": "MCF7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#0be08adc-eca8-44c0-8c37-24a178a1f890",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375, ATCC (CRL-1619)",
+      "name": "A375",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#11093ba3-ea3b-4f6a-8703-98d12572b4df",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.)",
+      "name": "GAMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1435bc7a-eee1-400a-bfd0-602bef19ddcb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.)",
+      "name": "GAMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1a4229d0-7125-4d46-a459-3a0fababb7c3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293FT, Thermo Fisher (R70007).",
+      "name": "HEK293FT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1b38b199-a388-4785-b86c-6933574870a4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.)",
+      "name": "GAMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1b6e32f9-130e-4c28-b4b4-5e7ef894ff7d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375, ATCC (CRL-1619)",
+      "name": "A375",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#22b32ef8-b04b-41b6-998c-f9d1daa39dd5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.)",
+      "name": "GAMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#24fbd033-77e3-42a8-99d2-c0a9384d7c3e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293FT, Thermo Fisher (R70007).",
+      "name": "HEK293FT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2a0ffd66-76be-4aca-b94a-645fff7d3e20",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2c2198a5-071f-41bc-99be-726e8d50e1a7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293FT, Thermo Fisher (R70007).",
+      "name": "HEK293FT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3ecbd559-1de0-4f42-82dc-bd758f0dc325",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293FT, Thermo Fisher (R70007).",
+      "name": "HEK293FT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4496a604-b284-4921-8d13-0143c6e8d1da",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375, ATCC (CRL-1619)",
+      "name": "A375",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4ae64dc9-3273-4528-afaf-8196173c690a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.).",
+      "name": "MCF7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4f1d0adb-f30e-428e-8655-99fbf2f118ef",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#50f13d44-206d-4653-90ea-3f4a0475b2fa",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.)",
+      "name": "GAMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#52a795fb-55e3-4650-b70c-5da008d99655",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.).",
+      "name": "MCF7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#56cf5da6-2d87-40cd-abc1-33eefa76c475",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.).",
+      "name": "MCF7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#590556e0-9150-4dc5-8265-f7473b1040e4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375, ATCC (CRL-1619)",
+      "name": "A375",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#654f30be-528c-4bc2-a17f-140c9835f294",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#6871e2d3-27a4-4f61-a015-077835160bf4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#69f6e7ab-15d7-4ad8-8875-4d5d7b268c56",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#71ac63e3-3920-4e68-b509-05bbe1c1aa5e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.)",
+      "name": "GAMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#733b47de-a874-4b6b-94b8-145ebb90564a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.).",
+      "name": "MCF7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#75393938-7aea-45ae-bbc6-70dd4bf932cd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7669cfab-79f7-402b-a2e5-2a2911c1fa8a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293FT, Thermo Fisher (R70007).",
+      "name": "HEK293FT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#782996db-dac4-41d7-9e61-16d43cc2e9ab",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375, ATCC (CRL-1619)",
+      "name": "A375",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#81f6064f-9062-415a-806f-1d378bfacc35",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293FT, Thermo Fisher (R70007).",
+      "name": "HEK293FT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8c366103-4794-40af-a749-3553af2a0514",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375, ATCC (CRL-1619)",
+      "name": "A375",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#947a8eea-12e0-4268-930a-0bff9fdb8181",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.).",
+      "name": "MCF7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a1eeb2e4-3943-40c4-a19d-e0136fbd78a7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.)",
+      "name": "GAMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ad47cd41-7c09-45a3-94c3-05fb21970eea",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293FT, Thermo Fisher (R70007).",
+      "name": "HEK293FT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#aed797b5-aeb6-44d2-94df-ef4fa17d1780",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375, ATCC (CRL-1619)",
+      "name": "A375",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b09df7eb-0fa3-4319-a8b4-da9d5e8cf152",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b0a9104d-c2ec-46e8-a8b2-4b3abf621043",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375, ATCC (CRL-1619)",
+      "name": "A375",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b433813e-0d7c-4019-a82e-3e707630998b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bcd93187-a76f-462e-a18e-d88b43dc147c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293FT, Thermo Fisher (R70007).",
+      "name": "HEK293FT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bd5c8dc2-b640-4ea4-a0fa-919dcf744c0a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c2aed205-7c02-4f5f-a1af-d438c848511e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa, ATCC (CRM-CCL-2)",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c61383b1-5549-4908-a0a4-537a362c3604",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.)",
+      "name": "GAMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d453dfc0-b7f0-48c7-ba23-9cc399308e30",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.).",
+      "name": "MCF7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d8302ec5-d306-43e9-8cee-0839f24d07d9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293FT, Thermo Fisher (R70007).",
+      "name": "HEK293FT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e00566d9-a018-4b12-b1f0-018ce007792a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.).",
+      "name": "MCF7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ece190ea-c92f-426d-8280-d33397d86c8d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.).",
+      "name": "MCF7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f97d57a8-9358-41b6-b43b-6e184526876a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GAMG, Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project (Nature 483.7391 (2012): 603-607.)",
+      "name": "GAMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#eac7c97d-505e-4c63-8ced-c3d4c6599f33",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fluorescent images were acquired with an Andor Dragonfly 200 spinning disk confocal microscope equipped with a Nikon Plan Apo 60×/1.4 oil objective. Here, z-stacks of at least six field-of-views (FOVs) of 205.8×205.8 μm were acquired for each cell line and HPA antibody combination, with pixel size of 0.1005 μm/pixel.\nThe 405 nm laser was used to image nuclei (DAPI), 488 nm laser was used to image Alexa488-2nd Antibody agains HPA primary antibodies, the 561 nm laser was used to image a-tubulin through anti-mouse IgG-Alexa555 and anti-a-tubulin (DM1A, mouse, Ab7291), and the 647 nm laster was used to image ER through anti-chicken IgY-Alexa647 and anti-calreticulin (poly, chicken, Ab2908).",
+      "labEquipment": "Andor Dragonfly 200 spinning disk confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescence image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 277
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 204316142913
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000222/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000222/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000222",
+      "name": "Raman imaging in WI-38/VA-13 cells treated with 100 µM all-D-GLA",
+      "description": "Raman imaging to observe intracellular localization of GLA for analyzing the mechanism of its tumor-selective cytotoxicity",
+      "datePublished": "2022-03-09",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Cell Line",
+        "Cell Survival/drug effects",
+        "Deuterium",
+        "Fibroblasts/drug effects",
+        "Humans",
+        "Molecular Structure",
+        "Spectrum Analysis, Raman",
+        "gamma-Linolenic Acid/chemistry[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1039/d0cc07824g"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051646"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0160077"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0019915"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000370"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kosuke Dodo",
+      "email": "dodo@riken.jp",
+      "description": "Organization: RIKEN; Department: Cluster for Pioneering Research; Laboratory: Synthetic organic chemistry laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Mikiko Sodeoka"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1039/d0cc07824g",
+      "@type": "ScholarlyArticle",
+      "name": "Synthesis of deuterated gamma-linolenic acid and application for biological studies: metabolic tuning and Raman imaging.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "WI-38 cell (Human lung fibroblast), VA-13 cell (SV40-transformed WI-38)",
+      "description": "WI-38 cell (Human lung fibroblast), VA-13 cell (SV40-transformed WI-38)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051646",
+      "@type": "DefinedTerm",
+      "name": "GLA localization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0160077",
+      "@type": "DefinedTerm",
+      "name": "lipid droplets"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019915",
+      "@type": "DefinedTerm",
+      "name": "lipids"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Spontaneous Raman microscopy",
+      "description": "Spontaneous Raman microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000370"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000370",
+      "@type": "DefinedTerm",
+      "name": "Spontaneous Raman microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 4964352,
+      "description": "5.0 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 66,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

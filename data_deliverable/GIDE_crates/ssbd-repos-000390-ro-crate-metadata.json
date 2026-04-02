@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000390/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000390/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000390",
+      "name": "Cells sorted off hiPSC-derived kidney organoids coupled with immortalized cells reliably model the proximal tubule",
+      "description": "Of late, numerous microphysiological systems have been employed to model the renal proximal tubule. Yet there is lack of research on refining the functions of the proximal tubule epithelial layer—selective filtration and reabsorption. In this report, pseudo proximal tubule cells extracted from human-induced pluripotent stem cell-derived kidney organoids are combined and cultured with immortalized proximal tubule cells. It is shown that the cocultured tissue is an impervious epithelium that offers improved levels of certain transporters, extracellular matrix proteins collagen and laminin, and superior glucose transport and P-glycoprotein activity. mRNA expression levels higher than those obtained from each cell type were detected, suggesting an anomalous synergistic crosstalk between the two. Alongside, the improvements in morphological characteristics and performance of the immortalized proximal tubule tissue layer exposed, upon maturation, to human umbilical vein endothelial cells are thoroughly quantified and compared. Glucose and albumin reabsorption, as well as xenobiotic efflux rates through P-glycoprotein were all improved. The data presented abreast highlight the advantages of the cocultured epithelial layer and the non-iPSCbased bilayer. The in vitro models presented herein can be helpful in personalized nephrotoxicity studies.",
+      "datePublished": "2024-09-25",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s42003-023-04862-7"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Ryuji Yokokawa",
+      "email": "yokokawa.ryuji.8c@kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Department of Micro Engineering",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s42003-023-04862-7",
+      "@type": "ScholarlyArticle",
+      "name": "Cells sorted off hiPSC-derived kidney organoids coupled with immortalized cells reliably model the proximal tubule.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1125998592,
+      "description": "1.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 86,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

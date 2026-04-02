@@ -1,0 +1,188 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD817"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD817",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c3f1f562-2b6f-4337-ba9f-e3c9b26a44ac"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7aee4b61-ab43-4b4e-8173-dc6ec821e3d4"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2084-1451"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-07-13",
+      "description": "The raw images of the 3D structured illumination data shown in the Figure 6J of the paper entitled \"The IFT81-IFT74 complex enhances GTP hydrolysis to inactivate RabL2 during intraflagellar transport\"",
+      "funder": [],
+      "identifier": "S-BIAD817",
+      "keywords": [
+        "cilia",
+        "intraflagellar transport",
+        "rabl2",
+        "primary cilia",
+        "IFT"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The IFT81-IFT74 complex enhances GTP hydrolysis to inactivate RabL2 during intraflagellar transport",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD817/dabf476f-4ab8-44c7-8c56-48de9ce343e3/a8fc0f8f-7106-4ded-9a4b-dbc44c93db12.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2084-1451",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0457zbj98"
+        }
+      ],
+      "email": "tomoharu-kanie@ouhsc.edu",
+      "name": "Tomoharu Kanie"
+    },
+    {
+      "@id": "https://ror.org/0457zbj98",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oklahoma Health Sciences Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#7aee4b61-ab43-4b4e-8173-dc6ec821e3d4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "RPE-hTERT cells",
+      "name": "IFT trains in the control or IFT74 knockout cells expressing either IFT74-WT or IFT74 T438R mutant.",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c3f1f562-2b6f-4337-ba9f-e3c9b26a44ac",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Image stacks of appropriate z-steps to cover entire cilium (typically 0.7µm) were taken in 0.1µm increments to ensure Nyquist sampling.",
+      "labEquipment": "Nikon N-SIM-E/STORM super-resolution microscope equipped with a 100×/1.49 NA CFI SR HP Apo TIRF 100XC Oil objective lens (MRD01995, Nikon), LU-N3 compact laser unit (248071, Nikon), and ORCA-Flash4.0 V3 Digital CMOS camera (C13440, HAMAMATSU).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "The IFT81-IFT74 complex enhances GTP hydrolysis to inactivate RabL2 during intraflagellar transport"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 107032576
+    }
+  ]
+}

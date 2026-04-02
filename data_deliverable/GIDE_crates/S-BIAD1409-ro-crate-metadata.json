@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1409"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1409",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#92f65eed-1c24-4e8c-87de-a573833d705b"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d0ac6a02-61fe-495c-a0d3-313bcb500d52"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f8d078e4-4854-4661-bfcb-849d1ff7f8da"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-01",
+      "description": "The source image data for the manuscript: 'BMP-9 mediates fibroproliferation in fibrodysplasia ossificans progressiva through TGF-β signaling'.",
+      "funder": [],
+      "identifier": "S-BIAD1409",
+      "keywords": [
+        "fibrodysplasia ossificans progressiva",
+        "TGF-β signaling"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "BMP-9 mediates fibroproliferation in fibrodysplasia ossificans progressiva through TGF-β signaling",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1409/3fc79aa5-6543-4b11-9ac8-989279d4072f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#f8d078e4-4854-4661-bfcb-849d1ff7f8da",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/017z00e58"
+        }
+      ],
+      "email": "sjchengzhu@live.cn",
+      "name": "sjchengzhu"
+    },
+    {
+      "@id": "https://ror.org/017z00e58",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Chongqing Medical University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#d0ac6a02-61fe-495c-a0d3-313bcb500d52",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse muscle. FOP cells",
+      "name": "Dox+",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#92f65eed-1c24-4e8c-87de-a573833d705b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For immunohistochemistry, the deparaffinized sections were rehydrated and pretreated with Liberate Antibody Binding Solution (COSMO BIO Co., Ltd., Tokyo, Japan) for antigen retrieval. After washing with PBS, the tissue sections were blocked with Blocking One (Nacalai Tesque) for 60 min and then incubated with primary antibodies diluted in Can Get Signal Immunostain Solution B (Toyobo) for 16 to 18 h at 4°C. Next, the samples were washed with 0.2% Tween-20 (Sigma-Aldrich) in PBS and incubated with Alexa Fluor 488-, 555-, or 647-conjugated secondary antibodies (Thermo Fisher Scientific) diluted in Can Get Signal Immunostain Solution B for 1 h at room temperature. DAPI (10 μg/ml) was used to counterstain nuclei. A BZ-X710 (KEYENCE) microscope or a Zeiss 710 confocal microscope was used to image the samples.",
+      "labEquipment": "Zeiss LSM 710",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "BMP-9 mediates fibroproliferation in fibrodysplasia ossificans progressiva through TGF-β signaling"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 127
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 414637651
+    }
+  ]
+}

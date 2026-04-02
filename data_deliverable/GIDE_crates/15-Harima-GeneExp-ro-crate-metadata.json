@@ -1,0 +1,214 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/15-Harima-GeneExp/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/15-Harima-GeneExp/",
+      "@type": "Dataset",
+      "identifier": "15-Harima-GeneExp",
+      "name": "15-Harima-GeneExp",
+      "description": "15-Harima-GeneExp",
+      "datePublished": "2016-01-18",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Animals",
+        "Animals, Newborn",
+        "Basic Helix-Loop-Helix Transcription Factors/genetics[major]",
+        "Biological Clocks/genetics[major]",
+        "Body Patterning/genetics[major]",
+        "Bone and Bones/embryology",
+        "Bone and Bones/metabolism",
+        "Cartilage/embryology",
+        "Cartilage/metabolism",
+        "Cervical Vertebrae/metabolism",
+        "Embryo, Mammalian/metabolism",
+        "Enzyme Assays",
+        "Introns/genetics[major]",
+        "Luciferases/metabolism",
+        "Mice",
+        "Somites/embryology",
+        "Somites/metabolism",
+        "Thoracic Vertebrae/metabolism",
+        "Transgenes/genetics"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.celrep.2012.11.012"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-3"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Ryoichiro Kageyama",
+      "email": "kageyama@virus.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Institute for Virus Research; Laboratory: Kageyama Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Yukiko Harima"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Yoshiki Takashima"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Yuriko Ueda"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Toshiyuki Ohtsuka"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "and Ryoichiro Kageyama"
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.celrep.2012.11.012",
+      "@type": "ScholarlyArticle",
+      "name": "Accelerating the tempo of the segmentation clock by reducing the number of introns in the Hes7 gene.",
+      "datePublished": "2013"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1072646,
+      "description": "1.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 6,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

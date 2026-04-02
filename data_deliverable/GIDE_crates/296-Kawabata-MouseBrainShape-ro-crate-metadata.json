@@ -1,0 +1,333 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/296-Kawabata-MouseBrainShape/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/296-Kawabata-MouseBrainShape/",
+      "@type": "Dataset",
+      "identifier": "296-Kawabata-MouseBrainShape",
+      "name": "Image processing and manual annotation data of mouse brains with neurogenic-tagged neurons from NeuroGT database",
+      "description": "Segmentation results of brain contours and tagged neurons for 168 imaging data sets provided from NeuroGT database and manual annotation data of anatomical regions (isocortex, olfactory area, hippocampal formation, cerebral nuclei, interbrain, midbrain, hindbrain, and cerebellum) for images (131 images for the G2AN_TM11.5_L dataset and 10 images each for the other datasets) targeted mouse brains for evaluation",
+      "datePublished": "2023-05-09",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1145/3620679.3620680"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007399"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0043005"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000002"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000027"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000138"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-728"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yukako Tohsato",
+      "email": "yukako@fc.ritsumei.ac.jp",
+      "description": "Organization: Ritsumeikan University; Department: Faculty of Information Science and Engineering; Laboratory: Laboratory of compubational biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0197nmd03"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hiroto Kawabata"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Yuki Shimojo"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Tatsumi Hirata"
+    },
+    {
+      "@id": "https://ror.org/0197nmd03",
+      "@type": "Organization",
+      "name": "Ritsumeikan University"
+    },
+    {
+      "@id": "https://doi.org/10.1145/3620679.3620680",
+      "@type": "ScholarlyArticle",
+      "name": "Large-scale Image Processing and Three-Dimensional Reconstruction of Mouse Brains with Neurogenic-Tagged Neurons",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6 Neurod1^{CreER}(D1B); Tau^{mGFP-nLacZ}",
+      "description": "C57BL/6 Neurod1^{CreER}(D1B); Tau^{mGFP-nLacZ}",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "C57BL/6 Neurod4^{CreER}(D4A); Tau^{mGFP-nLacZ}",
+      "description": "C57BL/6 Neurod4^{CreER}(D4A); Tau^{mGFP-nLacZ}",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "C57BL/6 Neurog1^{CreER}(G1C); Tau^{mGFP-nLacZ}",
+      "description": "C57BL/6 Neurog1^{CreER}(G1C); Tau^{mGFP-nLacZ}",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-4",
+      "@type": "BioSample",
+      "name": "C57BL/6 neuroG2^{CreER}(G2A); Tau^{mGFP-nLacZ}",
+      "description": "C57BL/6 neuroG2^{CreER}(G2A); Tau^{mGFP-nLacZ}",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007399",
+      "@type": "DefinedTerm",
+      "name": "nervous system development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0043005",
+      "@type": "DefinedTerm",
+      "name": "neuron projection"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "chemically fixed tissue",
+      "description": "chemically fixed tissue",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000002"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "cryostat-sectioned tissue",
+      "description": "cryostat-sectioned tissue",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000027"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "horseradish peroxidase",
+      "description": "horseradish peroxidase",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000138"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000002",
+      "@type": "DefinedTerm",
+      "name": "chemically fixed tissue"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000027",
+      "@type": "DefinedTerm",
+      "name": "cryostat-sectioned tissue"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000138",
+      "@type": "DefinedTerm",
+      "name": "horseradish peroxidase"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 107614351794,
+      "description": "107.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 0,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

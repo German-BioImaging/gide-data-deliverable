@@ -1,0 +1,195 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2271"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2271",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5687ec04-8544-4a4c-a99a-4e5f7c8cb398"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#466bc925-608b-43bc-9e25-b3469c691aca"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3772-9298"
+        },
+        {
+          "@id": "#e749ef2b-05b1-4044-92b5-b2ed6def669b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-08",
+      "description": "This dataset contains transmission electron microscopy (TEM) images and corresponding semantic segmentation masks for mitochondria analysis in triple negative breast cancer samples. The data was used to train artificial intelligence models for automated evaluation of chemotherapy impact on mitochondrial morphology. Images are provided in TIFF format with matching segmentation masks for training deep learning models.\n\n",
+      "funder": [],
+      "identifier": "S-BIAD2271",
+      "keywords": [
+        "breast cancer",
+        "electron microscopy",
+        "mitochondria"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "TEM Mitochondria Segmentation Dataset for Triple Negative Breast Cancer Chemotherapy Analysis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2271/e7334e77-a007-4ecd-8188-a462f821d91e/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#e749ef2b-05b1-4044-92b5-b2ed6def669b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d4814801-23fe-4c88-8046-f1b9b27f586b"
+        }
+      ],
+      "email": "kourosh.zarringhalam@umb.edu",
+      "name": "Kourosh Zarringhalam"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3772-9298",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02pttbw34"
+        }
+      ],
+      "email": "gloria.echeverria@bcm.edu",
+      "name": "Gloria Echeverria"
+    },
+    {
+      "@id": "#d4814801-23fe-4c88-8046-f1b9b27f586b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Massachussets"
+    },
+    {
+      "@id": "https://ror.org/02pttbw34",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Baylor College of Medicine"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#466bc925-608b-43bc-9e25-b3469c691aca",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse skeletal muscle cells and human breast cancer cell lines and xenograft tumors",
+      "name": " Artificial intelligence-enabled automated analysis of transmission electron micrographs to evaluate chemotherapy impact on mitochondrial morphology in triple negative breast cancer",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5687ec04-8544-4a4c-a99a-4e5f7c8cb398",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Variable, see methods section of preprint",
+      "labEquipment": "Transmission electron microscope",
+      "measurementTechnique": [],
+      "name": "Electron micrographs"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 209
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3426989080
+    }
+  ]
+}

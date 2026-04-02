@@ -1,0 +1,251 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1501"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1501",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4b19231e-4302-4b7d-8bac-fde342b91edc"
+        },
+        {
+          "@id": "#edae4bea-2e6a-448a-a0fb-2b58159f9a5d"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#90f63392-b707-4abb-9c76-7a9490b4a293"
+        },
+        {
+          "@id": "#47394b37-97c8-41d0-a06f-6d45bf08e58e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2119-2190"
+        },
+        {
+          "@id": "#4b636c5e-c696-4b79-892e-138646a77890"
+        },
+        {
+          "@id": "#92a24c08-ca81-4f4e-9b43-765a99d6d86f"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-30",
+      "description": "Having observed the accumulation of SRSF7 at nuclear speckles upon CLKs inhibitor T-025 treatment, we further investigated the effect of T-025 on the mobility of SRSF7. We performed fluorescence recovery after photobleaching (FRAP) and fluorescence loss in photobleaching (FLIP) using established BAC-Hs578T-SRSF7-GFP and BAC-MDA-MB-231-SRSF7-GFP reporter cell lines treated with 1 µM T-025. Cells were seeded in glass-bottom Sensoplate 96-well imaging plate coated with 20 mg/ml rat tail collagen I in PBS, and treated with 1 µM T-025 the following day. After 24 hours, cells were stained with Hoechst-33342 and imaged at 37 °C using a PlanApo VC 60×/1.40 NA Oil objective on Nikon A1 confocal microscope equipped with a humidified 5% CO2 incubator. The imaging and photobleaching were conducted using NIS-Elements software. Following photobleaching of SRSF7-GFP in one-half of the nuclei, the fluorescence recovery in the bleached area and the loss of fluorescence in the unbleached area were measured every 5 seconds over 2.5 minutes. Next, we hypothesized that the recovery of SRSF7-GFP in the bleached area was preferentially and mostly coming from the SRSF7-GFP in the nucleoplasm of unbleached area. To demonstrate this, following photobleaching of SRSF7-GFP in one-half of the nuclei, we not only measured the fluorescence recovery in the bleached area but also the loss of fluorescence at SRSF7 accumulated sites (speckles) and the nearby nucleoplasm, instead of the entire unbleached area. ",
+      "funder": [],
+      "identifier": "S-BIAD1501",
+      "keywords": [
+        "SRSF7",
+        "Photobleaching",
+        "confocal microscopy",
+        "Protein mobility",
+        "CLKs inhibitor"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Photobleaching experiment to investigate the effect of T-025 on the dynamic mobility of SRSF7 in triple-negative breast cancer cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1501/3acbe229-d9ff-4672-84d3-7ccec2df3083/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#4b636c5e-c696-4b79-892e-138646a77890",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "email": "water_b@lacdr.leidenuniv.nl",
+      "name": "Bob van de Water"
+    },
+    {
+      "@id": "#92a24c08-ca81-4f4e-9b43-765a99d6d86f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "email": "s.e.ledevedec@lacdr.leidenuniv.nl",
+      "name": "Sylvia Le Dévédec"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2119-2190",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "email": "n.s.liu@lacdr.leidenuniv.nl",
+      "name": "Nasi Liu"
+    },
+    {
+      "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leiden University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#47394b37-97c8-41d0-a06f-6d45bf08e58e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human tripple-negative breast cancer BAC-SRSF7-GFP reporter cell lines",
+      "name": "Hs578T SRSF7-GFP reporter cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#90f63392-b707-4abb-9c76-7a9490b4a293",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human triple-negative breast cancer BAC-SRSF7-GFP cell lines",
+      "name": "MDA-MB-231 SRSF7-GFP cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4b19231e-4302-4b7d-8bac-fde342b91edc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The imaging and photobleaching were conducted using NIS-Elements software. Briefly, half of the nucleus region of cells with medium GFP intensity was selected as “Stimulation ROI” and another half of nucleus region was selected as “Background ROI”. Then the “Stimulation ROI” was bleached for 6 seconds under the highest laser power in A1plus Stimulation panel after a pre-scan to sufficiently remove the soluble SRSF7-GFP. This caused a slight reduction in fluorescence intensity in the remaining unbleached region (Background ROI) as well. After photobleaching, images were acquired every 5 seconds for 2.5 minutes to allow complete equilibration of soluble SRSF7-GFP across the nucleus. Fluorescence intensity in the bleached (Stimulation ROI) and unbleached region (Background ROI) was measured throughout the entire procedure and exported on NIS-Elements software. ",
+      "labEquipment": "Nikon A1 confocal microscope with PlanApo VC 60×/1.40 NA Oil objective, equipped with a humidified 5% CO2 incubator.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image aquisition 1"
+    },
+    {
+      "@id": "#edae4bea-2e6a-448a-a0fb-2b58159f9a5d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The imaging and photobleaching were conducted using NIS-Elements software. Half of the nucleus region of cells with medium GFP intensity was selected as “Stimulation ROI”. Next, instead of the entire unbleached half of the nucleus region, we selected the SRSF7 accumulated sites (speckles) and the nearby nucleoplasm as \"Background ROI\" and monitored their fluorescence loss. Then the “Stimulation ROI” was bleached for 6 seconds under the highest laser power in A1plus Stimulation panel after a pre-scan to sufficiently remove the soluble SRSF7-GFP. After photobleaching, images were acquired every 5 seconds for 2.5 minutes to allow complete equilibration of soluble SRSF7-GFP across the nucleus. Fluorescence intensity in the bleached (Stimulation ROI) and unbleached region (Background ROI) was measured throughout the entire procedure and exported on NIS-Elements software. ",
+      "labEquipment": "Nikon A1 confocal microscope with a PlanApo VC 60×/1.40 NA Oil objective equipped with a humidified 5% CO2 incubator",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "image aquisition 2"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3247
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3477419863
+    }
+  ]
+}

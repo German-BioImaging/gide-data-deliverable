@@ -1,0 +1,183 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2209"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2209",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c77c5ce1-df7d-4a96-8c73-22b6ae542474"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#40379ff9-fca3-4d3f-86f5-ad183942d218"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0003-3218-4473"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5752-5524"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-31",
+      "description": "Wheat Fusarium head blight(FHB) series image acquired with a DJI Mini 3 Pro drone at six time points between 10 and 20 days after inoculation (DAI), with images captured at two-day intervals to support quantitative drone-based phenotyping.",
+      "funder": [],
+      "identifier": "S-BIAD2209",
+      "keywords": [
+        "Fusarium head blight (FHB)",
+        "ultralow-altitude drone phenotyping",
+        "wheat"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Wheat Fusarium head blight(FHB) series image acquired by drone",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2209/38cea2af-2c2f-47df-9edd-9e6c9370a0c3/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5752-5524",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5cda284-b89a-4339-8dbf-00dd73bcbfad"
+        }
+      ],
+      "email": "Ji.Zhou@njau.edu.cn",
+      "name": "Ji Zhou"
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-3218-4473",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#70f471a9-d5e3-4564-8061-fd32efabb3f9"
+        }
+      ],
+      "email": "liushuchen@stu.njau.edu.cn",
+      "name": "Shuchen Liu"
+    },
+    {
+      "@id": "#70f471a9-d5e3-4564-8061-fd32efabb3f9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "College of Agriculture, Academy for Advanced Interdisciplinary Studies, Plant Phenomics Research Centre, Nanjing Agricultural University, Nanjing 210095, China "
+    },
+    {
+      "@id": "#f5cda284-b89a-4339-8dbf-00dd73bcbfad",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Data Sciences, Crop Science Centre (CSC), National Institute of Agricultural Botany (NIAB), Cambridge CB3 0LE, United Kingdom"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#40379ff9-fca3-4d3f-86f5-ad183942d218",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Wheat (Triticum aestivum L.) spikes",
+      "name": "Wheat (Triticum aestivum L.)",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#c77c5ce1-df7d-4a96-8c73-22b6ae542474",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Drone-based aerial imaging was conducted between 11:00 and 13:00 under stable natural illuminance within the polytunnel. A low‐cost DJI Mini 3 Pro (DJI, Shenzhen, China) equipped with an HD image sensor captured Fusarium head blight in wheat at six time points between 10 and 20 days after inoculation (DAI), with 2-day intervals. Flight altitude was maintained at 1.8 m, and the camera angle was fixed at –60° relative to the imaging platform to minimize occlusion of inoculated spikes.",
+      "labEquipment": "DJI Mini 3 Pro ",
+      "measurementTechnique": [],
+      "name": "Wheat Fusarium head blight(FHB) series image acquired by drone"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 742
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 5905016774
+    }
+  ]
+}

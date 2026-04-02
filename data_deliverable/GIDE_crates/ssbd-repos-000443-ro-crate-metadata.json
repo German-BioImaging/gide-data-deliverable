@@ -1,0 +1,230 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000443/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000443/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000443",
+      "name": "Deep Learning Pipeline for Segmentation and Quantification of Overlapping Membranes in 2D Image",
+      "description": "Quantitative morphological analysis is crucial for understanding cellular processes. While 3D Z-stack imaging offers high-resolution data, the complexity of 3D structures makes direct interpretation and manual annotation challenging and time-consuming, especially for large datasets. Maximum Intensity Projection (MIP) is a common strategy to create more interpretable 2D representations, but this inevitably leads to artificial overlaps between structures, significantly hindering accurate automated segmentation of individual instances by conventional methods or standard deep learning tools. To address this critical challenge in 2D projection analysis, we developed DeMemSeg, a deep learning pipeline based on Mask R-CNN, specifically designed to segment overlapping membrane structures, called prospore membranes (PSMs) during yeast sporulation. DeMemSeg was trained on a custom-annotated dataset, leveraging a systematic image processing workflow. Our optimized model accurately identifies and delineates individual, overlapping PSMs, achieving segmentation performance and derived morphological measurements that are statistically indistinguishable from expert manual annotation. Notably, DeMemSeg successfully generalized to segment PSMs from unseen data acquired from gip1∆ mutant cells, capturing the distinct morphological defects in PSMs. DeMemSeg thus provides a robust, automated solution for objective quantitative analysis of complex, overlapping membrane morphologies directly from widely used 2D MIP images, offering a practical tool and adaptable workflow to advance cell biology research.\r\nGitHub repository: https://github.com/MolCellBiol-tsukuba/DeMemSeg",
+      "datePublished": "2025-09-22",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1247/csf.25032"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2025.06.01.656963"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032120"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005628"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shodai Taguchi",
+      "email": "taguchi.shodai.td@gmail.com",
+      "description": "Organization: University of Tsukuba; Department: Ph.D. Program in Humanics; Laboratory: Laboratory of Molecular Cell Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02956yf07"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Yasuyuki Suda",
+      "description": "Department: School of Integrative and Global Majors"
+    },
+    {
+      "@id": "https://ror.org/02956yf07",
+      "@type": "Organization",
+      "name": "University of Tsukuba"
+    },
+    {
+      "@id": "https://doi.org/10.1247/csf.25032",
+      "@type": "ScholarlyArticle",
+      "name": "Deep Learning-Based Segmentation of 2D Projection-Derived Overlapping Prospore Membrane in Yeast",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2025.06.01.656963",
+      "@type": "ScholarlyArticle",
+      "name": "Deep Learning Pipeline for Segmentation and Quantification of Overlapping Membranes in 2D Image",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "SK1",
+      "description": "SK1",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932",
+      "@type": "Taxon",
+      "scientificName": "Saccharomyces cerevisiae",
+      "vernacularName": "baker's yeast"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032120",
+      "@type": "DefinedTerm",
+      "name": "ascospore-type prospore membrane formation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005628",
+      "@type": "DefinedTerm",
+      "name": "prospore membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 11324383232,
+      "description": "11.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 111279,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/82-Ikeda-GeneExp/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/82-Ikeda-GeneExp/",
+      "@type": "Dataset",
+      "identifier": "82-Ikeda-GeneExp",
+      "name": "Immunofluorescence images of different type neural progenitor cells (NPCs)",
+      "description": "82-Ikeda-GeneExp",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Actins/genetics",
+        "Actins/metabolism",
+        "Animals",
+        "Cell Differentiation",
+        "Cellular Reprogramming/genetics",
+        "Chromatin/chemistry[major]",
+        "Chromatin/metabolism",
+        "Colitis, Ulcerative/genetics[major]",
+        "Colitis, Ulcerative/metabolism",
+        "Colitis, Ulcerative/pathology",
+        "Disease Models, Animal",
+        "Female",
+        "Gene Expression Regulation",
+        "Induced Pluripotent Stem Cells/cytology",
+        "Induced Pluripotent Stem Cells/metabolism[major]",
+        "Male",
+        "Metaplasia/genetics[major]",
+        "Metaplasia/metabolism",
+        "Metaplasia/pathology",
+        "Mice",
+        "Mice, Transgenic",
+        "Neural Stem Cells/cytology",
+        "Neural Stem Cells/metabolism[major]",
+        "Pancreas/metabolism[major]",
+        "Pancreas/pathology",
+        "Serum Response Factor/genetics[major]",
+        "Serum Response Factor/metabolism",
+        "Signal Transduction",
+        "Trans-Activators/genetics",
+        "Trans-Activators/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        },
+        {
+          "@id": "#auth-011"
+        },
+        {
+          "@id": "#auth-012"
+        },
+        {
+          "@id": "#auth-013"
+        },
+        {
+          "@id": "#auth-014"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-018-03748-1"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0010467"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-159"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takashi Ikeda",
+      "email": "tikeda@cira.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Keisuke Okita",
+      "email": "okita@cira.kyoto-u.ac.jp",
+      "description": "Department: Center for iPS Cell Research and Application (CiRA)"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Shinji Masui",
+      "email": "smasui@koto.kpu-m.ac.jp"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Takafusa Hikichi"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Hisashi Miura"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Hirofumi Shibata"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Kanae Mitsunaga"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Yosuke Yamada"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Knut Woltjen"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Kei Miyamoto"
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Ichiro Hiratani"
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Yasuhiro Yamada"
+    },
+    {
+      "@id": "#auth-013",
+      "@type": "Person",
+      "name": "Akitsu Hotta"
+    },
+    {
+      "@id": "#auth-014",
+      "@type": "Person",
+      "name": "Takuya Yamamoto"
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-018-03748-1",
+      "@type": "ScholarlyArticle",
+      "name": "Srf destabilizes cellular identity by suppressing cell-type-specific gene expression programs.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0010467",
+      "@type": "DefinedTerm",
+      "name": "gene expression"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 52850270,
+      "description": "52.9 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 10,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

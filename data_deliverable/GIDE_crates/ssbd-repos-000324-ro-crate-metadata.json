@@ -1,0 +1,209 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000324/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000324/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000324",
+      "name": "Mitochondrial dynamics and segregation during the asymmetric division of Arabidopsis zygotes",
+      "description": "ssbd-repos-000324",
+      "datePublished": "2024-12-14",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1017/qpb.2020.4"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0010070"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0048311"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005739"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1358"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Minako Ueda",
+      "email": "minako.ueda.e7@tohoku.ac.jp",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences; Laboratory: Laboratory of Plant Cell Dynamics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01dq60k83"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01dq60k83",
+      "@type": "Organization",
+      "name": "Tohoku University"
+    },
+    {
+      "@id": "https://doi.org/10.1017/qpb.2020.4",
+      "@type": "ScholarlyArticle",
+      "name": "Mitochondrial dynamics and segregation during the asymmetric division of Arabidopsis zygotes.",
+      "datePublished": "2020"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "thale cress"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0010070",
+      "@type": "DefinedTerm",
+      "name": "zygote asymmetric cell division"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048311",
+      "@type": "DefinedTerm",
+      "name": "mitochondrion distribution"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
+      "@type": "DefinedTerm",
+      "name": "mitochondrion"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "two-photon laser scanning microscopy",
+      "description": "two-photon laser scanning microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
+      "@type": "DefinedTerm",
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 16865476608,
+      "description": "16.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 4,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

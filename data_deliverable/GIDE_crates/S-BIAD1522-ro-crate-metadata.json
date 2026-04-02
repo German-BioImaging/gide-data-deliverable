@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1522"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1522",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#fa5c5666-9afd-4b9c-a6d9-e87067f1fd14"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2a3a39ab-b358-4488-9de9-5f3d4c62ccc5"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#21d090eb-cb5b-4bc7-a2b6-6368682f4ccc"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-16",
+      "description": "Live cell imaging dataset of neurons acquired on Incucyte SX1 and SX5 imaging systems. Images taken with 20x objective in the green channel (excitation: 441–481 nm, emission: 503–544 nm) with pixel size 0.62μm. ",
+      "funder": [],
+      "identifier": "S-BIAD1522",
+      "keywords": [
+        "neuron",
+        "live-cell imaging",
+        "neural stem cells"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Optimizing the In Vitro Neuronal Microenvironment to Mitigate Phototoxicity in Live-cell Imaging",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1522/94b719f2-9988-4aea-9125-04b07e34f37d/a96ff610-42d4-4ea1-9899-21f41ba8981c.png"
+      ]
+    },
+    {
+      "@id": "#21d090eb-cb5b-4bc7-a2b6-6368682f4ccc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d4d813f4-571f-47d6-a46b-dc0dfeca3a1c"
+        }
+      ],
+      "email": "crho@student.unimelb.edu.au",
+      "name": "Cassandra Hoffmann"
+    },
+    {
+      "@id": "#d4d813f4-571f-47d6-a46b-dc0dfeca3a1c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Melbourne"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2a3a39ab-b358-4488-9de9-5f3d4c62ccc5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Neuronal reporter line expressing GFP",
+      "name": "Stem cell-derived cortical neurons",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#fa5c5666-9afd-4b9c-a6d9-e87067f1fd14",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Sixty-four fluorescence images were collected per well once every 24 hours, each comprising one contiguous field of view (FOV) that together spanned the entirety of each well. Each image capture consisted of 300 ms acquisition time, totalling 19.2 seconds of non-overlapping captures per well. Images were taken with a 20X objective in the green channel (excitation: 441–481 nm, emission: 503–544 nm), with dimensions 1408 x 1040 pixels and pixel size of 0.62 μm. ",
+      "labEquipment": "Incucyte SX1 and SX5 systems",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Live-cell imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 120786
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 557334166914
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1697"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1697",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c179a7d9-3d1b-44f9-aace-9eac57591b82"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0d6ffc85-6b34-42a8-8faf-e11d402b0705"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0040-0728"
+        },
+        {
+          "@id": "#b9385f8b-dd13-49d2-9b40-b214ebf3f667"
+        },
+        {
+          "@id": "#0e400f3e-7d5f-4de0-a705-a4223e5edb6d"
+        },
+        {
+          "@id": "#aa008b31-5730-4ef5-bdc3-0552305734d4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-12",
+      "description": "Real-time movies of ex vivo-cultured secondary cells from the Drosophila accessory glands of 6-day-old males, expressing different RNAis and transgenes during adulthood that modulate regulated secretion and dense-core granule formation",
+      "funder": [],
+      "identifier": "S-BIAD1697",
+      "keywords": [
+        "Drosophila",
+        "regulated secretion",
+        "dense-core granule",
+        "recycling endosomes",
+        "Rab11-exosomes",
+        "seminal fluid"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Real-time movies for the manuscript: 'Aβ disrupts APP-regulated protein aggregation and dissociation from recycling endosomal membranes'",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1697/404307a5-8375-4d76-9dfb-c2bac8d377d2/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0e400f3e-7d5f-4de0-a705-a4223e5edb6d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "bhavna.verma@dpag.ox.ac.uk",
+      "name": "Bhavna Verma"
+    },
+    {
+      "@id": "#aa008b31-5730-4ef5-bdc3-0552305734d4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "Preman.singh@va.gov",
+      "name": "Preman J Singh"
+    },
+    {
+      "@id": "#b9385f8b-dd13-49d2-9b40-b214ebf3f667",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "adam.wells@ucl.ac.uk",
+      "name": "Adam Wells"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0040-0728",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "clive.wilson@dpag.ox.ac.uk",
+      "name": "Clive Wilson"
+    },
+    {
+      "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#0d6ffc85-6b34-42a8-8faf-e11d402b0705",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Secondary cell",
+      "name": "Secondary cell of Drosophila melanogaster male accessory gland ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#c179a7d9-3d1b-44f9-aace-9eac57591b82",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For time-lapse imaging experiments, samples were prepared using the same method except that incubation with Lysotracker Red (Thermo Fisher Scientific) was typically excluded unless compartment acidification was being assessed. Time-lapse imaging was conducted using the DeltaVision Elite wide-field fluorescence deconvolution microscope (GE Healthcare Life Sciences) using identical methods to those described above with the following exceptions. Firstly, auxillary magnification was not utilised, in order to reduce the effects of cell/tissue drift over time, except for the control, rosy-RNAi cell in Movie S1. Secondly, whilst z-stacks of entire cells were acquired for time-lapse imaging experiments, for all but Movie S2, the z-distance between individual slices was increased from 0.2 m to between 0.5 um and 0.8 um to limit photobleaching and phototoxicity. The gap between timepoints during these experiments was 60 seconds for all videos shown here except Movie S2, where the time interval was 90 seconds; additional videos were acquired with gaps of up to 120 seconds between frames. ",
+      "labEquipment": "DeltaVision Elite wide-field fluorescence deconvolution microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Real-time live-cell wide-field fluorescence imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 28788081664
+    }
+  ]
+}

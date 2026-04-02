@@ -1,0 +1,276 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1327"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1327",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8b4f967d-1e9e-4881-b7f8-c2a5f4ace392"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f0716eda-436e-458f-8270-0ff38e4a9020"
+        },
+        {
+          "@id": "obo:NCBITaxon_155892"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#8dc76ecb-1513-433a-a188-2126d0825f4d"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8366-2998"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8177-5892"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6363-804X"
+        },
+        {
+          "@id": "#81fdafbf-2900-4a54-8154-38b0c8d6e836"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0980-5334"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-20",
+      "description": "Image dataset used in: \"Coupling of cell growth modulation to asymmetric division and cell cycle regulation in Caulobacter crescentus\" by Glenn et al., 2024.",
+      "funder": [],
+      "identifier": "S-BIAD1327",
+      "keywords": [
+        "Caulobacter Crescentus, growth rate, asymmetric division, G1 phase"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Coupling of cell growth modulation to asymmetric division and cell cycle regulation in Caulobacter crescentus",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#81fdafbf-2900-4a54-8154-38b0c8d6e836",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9"
+        }
+      ],
+      "email": "setsukato@hiroshima-u.ac.jp",
+      "name": "Setsu Kato"
+    },
+    {
+      "@id": "#8dc76ecb-1513-433a-a188-2126d0825f4d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "skyeg@stanford.edu",
+      "name": "Skye Glenn"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8177-5892",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#23f694f7-e3f8-4c6e-93e9-0c5d75f8cfce"
+        }
+      ],
+      "email": "whl243@gate.sinica.edu.tw",
+      "name": "Wei-Hsiang Lin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8366-2998",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "fragasso@stanford.edu",
+      "name": "Alessio Fragasso"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6363-804X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "alexpapa@stanford.edu",
+      "name": "Alexandros Papagiannakis"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0980-5334",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "jacobs-wagner@stanford.edu",
+      "name": "Christine Jacobs-Wagner"
+    },
+    {
+      "@id": "#23f694f7-e3f8-4c6e-93e9-0c5d75f8cfce",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Molecular Biology, Academia Sinica"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Yale University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_155892",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caulobacter vibrioides"
+    },
+    {
+      "@id": "#f0716eda-436e-458f-8270-0ff38e4a9020",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Caulobacter crescentus",
+      "name": "Coupling of cell growth modulation to asymmetric division and cell cycle regulation in Caulobacter crescentus",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_155892"
+      }
+    },
+    {
+      "@id": "#8b4f967d-1e9e-4881-b7f8-c2a5f4ace392",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For timelapse imaging, an objective heating ring was used set to 30°C and phase images were collected every 1.5 min. When appropriate, YFP images were collected every 3 min. Chroma filter sets were used to acquire fluorescence images: YFP (excitation ET500/20x, dichroic T515lp, emission ET535/30m), CFP (excitation ET436/20x, dichroic T455lp, emission ET480/40 m), GFP (excitation ET470/40x, dichroic T495lpxr, emission ET525/50m) and mCherry (excitation ET560/40x, dichroic T585lp, emission ET630/75m). The microscope was controlled using NIS-Elements AR. When performing timelapse imaging, cells were imaged on 0.3% agarose pads made with PYE or M2G unless indicated. For snapshot imaging, 1% agarose pads made with PYE were used.   ",
+      "labEquipment": "Phase contrast and epifluorescence images were acquired on a Nikon Ti-E microscope equipped with a Perfect Focus System, a 100x Plan Apo λ 1.45 NA oil immersion objective, a motorized stage, and an Orca-Flash 4.0 V2 142 CMOS camera (Hamamatsu). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Imaging conditions used in: \"Coupling of cell growth modulation to asymmetric division and cell cycle regulation in Caulobacter crescentus\" by Glenn et al., 2024."
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2222
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 487251427731
+    }
+  ]
+}

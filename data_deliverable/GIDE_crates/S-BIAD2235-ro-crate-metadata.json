@@ -1,0 +1,173 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2235"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2235",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a4261d30-144f-474f-bc70-5a1f8ea99534"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c372cb0a-e2e3-4844-b917-86fe6851a86e"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4638-1123"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-13",
+      "description": "TBD",
+      "funder": [],
+      "identifier": "S-BIAD2235",
+      "keywords": [
+        "silicon",
+        "polymethine dye",
+        "shortwave infrared",
+        "fluorescence imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Silicon Flavylium Polymethine Dyes for Shortwave Infrared Imaging",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2235/cdca388e-2427-4489-aee0-12e5ebd30991/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4638-1123",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "emilybrimobley@gmail.com",
+      "name": "Emily Mobley"
+    },
+    {
+      "@id": "#f270c395-b369-47cc-8f34-862290942b7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#c372cb0a-e2e3-4844-b917-86fe6851a86e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live mice and ex vivo dissected mouse organs",
+      "name": "SWIR fluorescence imaging in mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#a4261d30-144f-474f-bc70-5a1f8ea99534",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For whole mouse imaging (see “Animal Procedures”) a custom-built SWIR imaging setup was used. The setup was partially enclosed to avoid excess light pollution, while still allowing for physical manipulation of the field of view during operation. Lumics laser unit LU1064D350- U30AN (35 W) “1064 nm” was used for whole mouse imaging experiments. Excitation wavelength is reported as “1060 nm”, corresponding to the peak wavelength intensity recorded via spectrometer measurement. All lasers were coupled in a fan-out fiber optic bundle with a 600 µm core diameter (Thorlabs BF46LS01) for each optical path. The fiber bundle output was affixed to an excitation cube (ThorLabs KCB1E), reflected off a mirror (Thorlabs BBE-E03), and passed through a positive achromat (Thorlabs AC254-050-AB-ML), SP filters (1100 nm, 2X 25 mm #64-339, Edmund Optics) and an engineered 20˚ square diffuser (Thorlabs ED1-S20-MD) to provide uniform illumination over the imaging stage. This area was covered by a heating pad affixed with a nose cone and non-reflective blackout fabric (Thorlabs BK5) and/or foil (BKF12). The excitation flux at the imaging stage was measured with a digital optical power and energy meter (Thorlabs PM1000D) coupled to a photodiode sensor (S130C). For whole mouse imaging, the power density was set to 160 mW/cm2, in accordance with the ICNIRP guidelines for whole mouse imaging . An InGaAs camera (Allied Vision Goldeye G-032 Cool TEC2) was mounted vertically above the imaging stage to detect emitted SWIR light. The camera used a SWIR C-mount lens (Kowz LM35HC-SW) and a set of longpass (LP) filters. For “1200 nm LP” filtering, 1X 25 mm FELH1200 (Thorlabs) was mounted to a lens tube (SM1L03, Thorlabs) followed by another lens tube (SM1L10) and a 5 mm silicon window (WG81050, Thorlabs) mounted to a lens tube (SM1L03, Thorlabs) and affixed to the camera lens; additionally, 3X lens tubes (SM2L03), followed by 1X 50 mm #89-666 (Edmund Optics) mounted to a lens tube (SM2L05, ThorLabs), a lens tube (SM2L20), and 1X 50 mm #89-666 (Edmund Optics) mounted to a lens tube (SM2L05, ThorLabs) were placed in series below the camera lens filters. For “1300 nm LP” filtering, 1X 25 mm FELH1300 (Thorlabs) was affixed to the camera lens, followed by 1X 50 mm #89-669 (Edmund Optics) mounted by a filter holder (LCFH2-F, Thorlabs), a lens tube (SM2L20), and 1X 50 mm #89-669 (Edmund Optics) mounted to a lens tube (SM2L05, ThorLabs). The camera was set to -30 ˚C and was set to gain = 1. The exposure time property was set for each image. Both the camera and lasers were externally controlled. For image acquisition, the toolbox of MATLAB programming environment was used in combination with a MATLAB script (CCDA V3, https://gitlab.com/brunslab/ccda) to preview and collect image data in 14-bit depth. ",
+      "labEquipment": "Allied Vision Goldeye G-032 Cool TEC2 camera",
+      "measurementTechnique": [],
+      "name": "SWIR fluorescence imaging in mice"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 42
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 27149108
+    }
+  ]
+}

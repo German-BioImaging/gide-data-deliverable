@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1206"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1206",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6ec3aa4f-bb3f-4ecd-819c-258cb61ef1e2"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e350797d-9752-45c6-979f-3917bc9cfbd2"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a0496631-4853-425a-b3ff-e6e53d9bace2"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-29",
+      "description": "data ",
+      "funder": [],
+      "identifier": "S-BIAD1206",
+      "keywords": [
+        "PALMITATE,BODIPY,GLP1RsiRNA,lipid accumulation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": " To check lipid accumulation in HepG2 cells through Bodipy staining  after palmitate with drug (50µM) treatment in GLP1R knock down condition.\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1206/86bdb9ca-3b16-4fec-b03a-e6ef8a6d7d0d/24b4d2f4-5063-489b-89ba-0dab95910777.png"
+      ]
+    },
+    {
+      "@id": "#a0496631-4853-425a-b3ff-e6e53d9bace2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22"
+        }
+      ],
+      "email": "mondalsiraj@gmail.com",
+      "name": "prosenjit mondal"
+    },
+    {
+      "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Indian Institute of Science Education and Research Berhampur"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#e350797d-9752-45c6-979f-3917bc9cfbd2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "cells",
+      "name": "GLP1R agonist attenuates HFD-induced insulin resistance ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#6ec3aa4f-bb3f-4ecd-819c-258cb61ef1e2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "images were taken at 60X lens and 1.0N.A respectively.",
+      "labEquipment": "confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "GLP1R agonist attenuates HFD-induced insulin resistance "
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 51
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 81577164
+    }
+  ]
+}

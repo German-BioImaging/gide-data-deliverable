@@ -1,0 +1,210 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1095"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1095",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e75449d3-608f-493f-8349-8643b1c95500"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a86556fc-cc96-4415-9fcc-0fa4f4f5723c"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#148a7b21-7812-489b-b99d-07449e95e3b5"
+        },
+        {
+          "@id": "#9b8318e2-e4ab-444c-b771-8b0d8af75d53"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-04",
+      "description": "Although mitochondrial morphology changes have been consistently associated with hematopoietic stem cells (HSCs) ageing, the specific molecular and cellular mechanisms at play have remained somewhat obscure. Using a live-cell super-resolution (SR) microscopy technique, we have been able to identify different HSCs subsets that feature mitochondria of distinct morphologies and spatial distributions. Integrating SR microscopy with single-cell RNA sequencing enabled us to classify approximately two hundred HSCs from both young and aged mice into five discrete clusters. These clusters show molecular profiles that mirror the varying states of mitochondria. Our integrated approach of RNA biomarker analysis and potential regulon assessment has unveiled hitherto unrecognized functions of GDF15 in mediating mitochondrial signals and morphologies that direct HSCs fate. Therefore, the combination of SR imaging with bioinformatics pipeline offers a notably effective method for the identification of critical molecular players in specific phases of cellular transition, utilizing a relatively small dataset. ",
+      "funder": [],
+      "identifier": "S-BIAD1095",
+      "keywords": [
+        "super-resolution imaging",
+        "hematopoietic stem cells",
+        "mitochondria",
+        "single-cell"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Super-resolution imaging of mice hematopoietic stem cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1095/5228ec59-cfcd-46dc-88f7-cdd72c82e286/f06a7e12-b1f0-4152-9a48-0e4392548bb6.png"
+      ]
+    },
+    {
+      "@id": "#148a7b21-7812-489b-b99d-07449e95e3b5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05kje8j93"
+        }
+      ],
+      "email": "cheungxuefei@gmail.com",
+      "name": "Xuefei Cheung"
+    },
+    {
+      "@id": "#9b8318e2-e4ab-444c-b771-8b0d8af75d53",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ce9bfeb2-127c-40ec-b9c1-f75aaf360a13"
+        }
+      ],
+      "email": "zyshi@edigene.com",
+      "name": "Zhongyu Shi"
+    },
+    {
+      "@id": "#ce9bfeb2-127c-40ec-b9c1-f75aaf360a13",
+      "@type": [
+        "Organization"
+      ],
+      "name": "EdiGene Inc., Beijing, China."
+    },
+    {
+      "@id": "https://ror.org/05kje8j93",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Center for Life Sciences"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#a86556fc-cc96-4415-9fcc-0fa4f4f5723c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "cell",
+      "name": "hematopoietic stem cells of mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#e75449d3-608f-493f-8349-8643b1c95500",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The exposure time was 400ms and the laster intensity was 80%.",
+      "labEquipment": "SD-SIM(SD-SIM were equipped with 100X, 1.3NA oil objective lens, four laster beams of 405nm, 488nm, 561nm and 640nm. The Live-SR  module was equipped with the SD-SIM, the images were acquired by EMCCD and sCMOS)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "SD-SIM"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 721
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3051837869
+    }
+  ]
+}

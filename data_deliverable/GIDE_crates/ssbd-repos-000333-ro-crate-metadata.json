@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000333/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000333/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000333",
+      "name": "Shoot gravitropism of wild type and myosin xif xik mutant Arabidopsis",
+      "description": "Gravitropism is the plant organ bending in response to gravity, while a straightening mechanism prevents bending beyond the gravitropic set-point angle. The promotion and prevention of bending occur simultaneously around the inflorescence stem tip. How these two opposing forces work together and what part of the stem they affect are unknown. To understand the mechanical forces involved, authors rotated wild type and organ-straightening-deficient mutant (myosin xif xik) Arabidopsis plants to a horizontal position to initiate bending. The mutant stems started to bend before the wild-type stems, which led them to hypothesize that the force preventing bending was weaker in mutant.",
+      "datePublished": "2025-04-21",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-023-38069-x"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0009630"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000240"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1701"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Satoru  Tsugawa",
+      "email": "tsugawa@akita-pu.ac.jp",
+      "description": "Organization: Akita Prefectural University; Department: Department of Mechanical Engineering; Laboratory: Department of Mechanical Engineering",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05b1kx621"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/05b1kx621",
+      "@type": "Organization",
+      "name": "Akita Prefectural University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-023-38069-x",
+      "@type": "ScholarlyArticle",
+      "name": "Shoot gravitropism and organ straightening cooperate to arrive at a mechanically favorable shape in Arabidopsis.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Col-0",
+      "description": "Col-0",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "thale cress"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009630",
+      "@type": "DefinedTerm",
+      "name": "gravitropism"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "macroscopy",
+      "description": "macroscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000240"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000240",
+      "@type": "DefinedTerm",
+      "name": "macroscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1144501248,
+      "description": "1.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 22,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

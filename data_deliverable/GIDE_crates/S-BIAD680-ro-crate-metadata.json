@@ -1,0 +1,207 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD680"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD680",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2edee593-1128-4736-a2c5-af18769a8ec9"
+        },
+        {
+          "@id": "#4a88a475-58fa-4792-bfbf-97cd5d4c54a5"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8f10eb8d-bb4b-49e2-82a9-a6aa9a90c54b"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6132-7793"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5738-0126"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-26",
+      "description": "Extracting biological information from awake and unrestrained mice is imperative to in vivo basic and pre-clinical research. Accordingly, imaging methods which preclude invasiveness, anesthesia, and/or physical restraint enable more physiologically relevant biological data extraction by eliminating these extrinsic confounders. In this article we discuss the recent development of shortwave infrared (SWIR) fluorescent imaging to visualize peripheral organs in freely-behaving mice, as well as propose potential applications of this imaging modality in the neurosciences.",
+      "funder": [],
+      "identifier": "S-BIAD680",
+      "keywords": [
+        "optical imaging",
+        "fluorescence",
+        " in vivo",
+        "awake imaging",
+        "in vivo imaging",
+        "fluorescent dyes",
+        "near infrared (NIR)-II"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Shortwave infrared (SWIR) fluorescence imaging of peripheral organs in awake and freely moving mice",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD680/711ce372-2aae-4912-9b80-2621102e585f/3046ae26-7445-40b4-a5f1-6c4d11dba3e2.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD680/4f2388d5-3393-454f-aae1-7a4831d45a34/47253e3b-0cbe-4bfe-b9f7-4e5ce271a8fd.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD680/bdabd9f1-9c6e-43d2-b77c-a91d1a2aee2c/ec3e3863-d97a-40d1-947c-bdc505e10bdb.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6132-7793",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2b34f54d-991e-43c6-8515-93473ae0815c"
+        }
+      ],
+      "email": "bernardo.arus@nct-dresden.de",
+      "name": "Bernardo A. Arús"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5738-0126",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2b34f54d-991e-43c6-8515-93473ae0815c"
+        }
+      ],
+      "email": "oliver.bruns@nct-dresden.de",
+      "name": "Oliver T. Bruns"
+    },
+    {
+      "@id": "#2b34f54d-991e-43c6-8515-93473ae0815c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Pioneer Campus"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#8f10eb8d-bb4b-49e2-82a9-a6aa9a90c54b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Awake mouse",
+      "name": "Mouse",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#2edee593-1128-4736-a2c5-af18769a8ec9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Excitation: 968 nm\nEmission filter: LP1000\nDetection: InGaAs\nExposure time: 3 ms",
+      "labEquipment": "SWIR wide-field setup",
+      "measurementTechnique": [],
+      "name": "Single channel SWIR imaging"
+    },
+    {
+      "@id": "#4a88a475-58fa-4792-bfbf-97cd5d4c54a5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Excitation: 785, 892, 968, and 1064 nm (pulsed excitation)\nEmission filter: LP1150\nDetection: InGaAs\nExposure time: 7.8 ms",
+      "labEquipment": "SWIR wide-field setup",
+      "measurementTechnique": [],
+      "name": "Four-channel SWIR imaging"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 50
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 19126435236
+    }
+  ]
+}

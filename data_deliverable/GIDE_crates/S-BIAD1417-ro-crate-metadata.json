@@ -1,0 +1,326 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1417"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1417",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7ae5d613-e26c-4f7a-9e35-cb4471b6c631"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#54a0c1f1-8bc2-4746-a459-ba0025b489f0"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0008-5085-0325"
+        },
+        {
+          "@id": "#573762a1-b6f0-4d1f-94f9-b4cf093ecd9a"
+        },
+        {
+          "@id": "#abdd38da-d039-48ea-9f28-143979bab92c"
+        },
+        {
+          "@id": "#4ec6919a-18be-41d6-bef0-1e7edd3a4a22"
+        },
+        {
+          "@id": "#9777800d-46e2-4dc6-95b4-b5cac626aed9"
+        },
+        {
+          "@id": "#c10bc237-87f2-45ed-8a97-d2c098d9e6cb"
+        },
+        {
+          "@id": "#5afc506a-9f69-4f2e-bda9-bf6d318550f9"
+        },
+        {
+          "@id": "#1e7b13d4-a75b-4d7f-9bd3-1a43b79b947e"
+        },
+        {
+          "@id": "#30845238-7df7-4f63-ad16-530698099778"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-14",
+      "description": "Cancer cells often display centrosome amplification, requiring the kinesin KIFC1/HSET for centrosome clustering to prevent multipolar spindles and cell death.  In parallel siRNA screens of deubiquitinase enzymes, we identify OTUD6B as a positive regulator of KIFC1 expression that is required for centrosome clustering in triple-negative breast cancer (TNBC) cells.  OTUD6B can localise to centrosomes and the mitotic spindle and interacts with KIFC1.  In OTUD6B-deficient cells, we see increased KIFC1 poly-ubiquitination and premature KIFC1 degradation during mitosis.  Depletion of OTUD6B increases multipolar spindles without inducing centrosome amplification.  Phenotypic rescue is dependent on OTUD6B catalytic activity and evident upon KIFC1 overexpression.  OTUD6B is commonly overexpressed in breast cancer, correlating with KIFC1 protein expression and worse patient survival.  TNBC cells with centrosome amplification, but not normal breast epithelial cells, depend on OTUD6B to proliferate.  Indeed CRISPR-Cas9 editing resulted in only OTUD6B-/+ TNBC cells which failed to divide and died. As a deubiquitinase that supports KIFC1 expression, allowing pseudo-bipolar cell division and survival of cancer cells with centrosome amplification, OTUD6B has potential as a novel target for cancer-specific therapies.",
+      "funder": [],
+      "identifier": "S-BIAD1417",
+      "keywords": [
+        "centrosome / kinesin / multipolar spindle / OTU deubiquitinase 6B / DUB"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "OTUD6B regulates KIFC1-dependent centrosome clustering and breast cancer cell survival.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1417/471a120a-0adf-402e-93ab-232edd991bca/6e251ee0-e24f-4a8d-9811-a26590bf1ea2.png"
+      ]
+    },
+    {
+      "@id": "#1e7b13d4-a75b-4d7f-9bd3-1a43b79b947e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f3ec48df-247e-4113-8ccd-8d3ba59bacc2"
+        }
+      ],
+      "email": "iprior@liverpool.ac.uk",
+      "name": "Ian Prior"
+    },
+    {
+      "@id": "#30845238-7df7-4f63-ad16-530698099778",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f3ec48df-247e-4113-8ccd-8d3ba59bacc2"
+        }
+      ],
+      "email": "jcoulson@liverpool.ac.uk",
+      "name": "Judy Coulson"
+    },
+    {
+      "@id": "#4ec6919a-18be-41d6-bef0-1e7edd3a4a22",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f3ec48df-247e-4113-8ccd-8d3ba59bacc2"
+        }
+      ],
+      "email": "ahp@liverpool.ac.uk",
+      "name": "Amy Ponsford"
+    },
+    {
+      "@id": "#573762a1-b6f0-4d1f-94f9-b4cf093ecd9a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f3ec48df-247e-4113-8ccd-8d3ba59bacc2"
+        }
+      ],
+      "email": "dorota.sabat@gmail.com",
+      "name": "Dorota Sabat-Pośpiech"
+    },
+    {
+      "@id": "#5afc506a-9f69-4f2e-bda9-bf6d318550f9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f3ec48df-247e-4113-8ccd-8d3ba59bacc2"
+        }
+      ],
+      "email": "mmorgan@liverpool.ac.uk",
+      "name": "Mark Morgan"
+    },
+    {
+      "@id": "#9777800d-46e2-4dc6-95b4-b5cac626aed9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38d7bfa8-613e-4e8f-9a39-ec8b59e4e7f4"
+        }
+      ],
+      "email": "a.thomaz@lancaster.ac.uk",
+      "name": "Amanda Thomaz"
+    },
+    {
+      "@id": "#abdd38da-d039-48ea-9f28-143979bab92c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38d7bfa8-613e-4e8f-9a39-ec8b59e4e7f4"
+        }
+      ],
+      "email": "a.fielding1@lancaster.ac.uk",
+      "name": "Andrew Fielding"
+    },
+    {
+      "@id": "#c10bc237-87f2-45ed-8a97-d2c098d9e6cb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f3ec48df-247e-4113-8ccd-8d3ba59bacc2"
+        }
+      ],
+      "email": "querques@liverpool.ac.uk",
+      "name": "Francesca Querques"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-5085-0325",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d4b84892-8d1c-4e5c-86d2-98abb68475f9"
+        }
+      ],
+      "email": "valeria.marotta@icr.ac.uk",
+      "name": "Valeria Marotta"
+    },
+    {
+      "@id": "#38d7bfa8-613e-4e8f-9a39-ec8b59e4e7f4",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Lancaster University"
+    },
+    {
+      "@id": "#d4b84892-8d1c-4e5c-86d2-98abb68475f9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Cancer Research"
+    },
+    {
+      "@id": "#f3ec48df-247e-4113-8ccd-8d3ba59bacc2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Liverpool"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#54a0c1f1-8bc2-4746-a459-ba0025b489f0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human derived cell lines",
+      "name": "OTUD6B regulates KIFC1-dependent centrosome clustering and breast cancer cell survival.",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7ae5d613-e26c-4f7a-9e35-cb4471b6c631",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A custom designed DUB siRNA library consisting of four pooled oligos for each of 94 human DUBs (Qiagen) was used for the RNAi screens. For the KIFC1 immunoblotting screen, BT549 cells were seeded at 2.1 x 105 cells per 6 cm dish and 24 h later transfected with 40 nM siRNA using Lipofectamine RNAiMax (Life Technologies). 72 h after transfection, cells were lysed in hot Laemmli buffer. For the microscopy screen BT549 cells were seeded at 8 x 103 cells per well in 96-well plates and reverse transfected with 40 nM siRNA using Lipofectamine RNAiMax (Life Technologies).  72 h post-transfection, cells were fixed, stained for immunofluorescence and imaged on a Nikon Eclipse Ti microscope (CFI Super Plan Fluor ELWD ADM 20XC N.A. 0.45). For each condition, a single stitched image (6 x 6 fields of view, 7308 x 5460 pixels) was captured, and all cells were analysed for the presence of multipolar mitoses. Images were scored blind, before well numbers were matched back to the DUBs they represented in the siRNA library. The median number of cells per image was 4503, with a median of 74 mitotic cells. The same format was used for the multipolar mitosis deconvolution experiments.",
+      "labEquipment": "Nikon eclipse",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Dub screening"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 115
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 15059230409
+    }
+  ]
+}

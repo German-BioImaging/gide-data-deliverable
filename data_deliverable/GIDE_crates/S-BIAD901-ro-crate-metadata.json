@@ -1,0 +1,223 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD901"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD901",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#75279175-b90d-4298-a4bf-36642c27003c"
+        },
+        {
+          "@id": "#e4669192-00cf-4444-b78e-b82bc9b4ff40"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#09f19855-c78a-4fc5-9c6f-1a8e9cc24a81"
+        },
+        {
+          "@id": "#6cdef1bf-bbbb-45fb-a9d7-69bd1bc226e2"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2856-3369"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-10-13",
+      "description": "Motile cells encounter microenvironments of locally heterogeneous mechanochemical composition. Individual compositional parameters like chemokines and pore sizes are well known to provide guidance cues for pathfinding. However, motile cells face diverse cues at the same time, raising the question of how they respond to diverse and potentially competing signals on their paths. Here, we reveal that amoeboid cells require nuclear repositioning, termed nucleokinesis, for adaptive pathfinding in heterogeneous mechanochemical micro-environments. Using mammalian immune cells and the amoeba Dictyostelium discoideum, we discover that frequent, rapid and long-distance nucleokinesis is a basic component of amoeboid pathfinding, enabling cells to reorientate quickly between locally competing cues. Amoeboid nucleokinesis comprises a two-step polarity switch and is driven by myosin-II forces, readjusting the nuclear to the cellular path. Impaired nucleokinesis distorts path adaptions and causes cellular arrest in the microenvironment. Our findings establish that nucleokinesis is required for amoeboid cell navigation. Given that many immune cells, amoebae, and some cancer cells utilize an amoeboid migration strategy, these results suggest that nucleokinesis underlies cellular navigation during unicellular biology, immunity, and disease.\ndoi: https://doi.org/10.1101/2023.05.19.540965. Contains image data for Figure 1 and 4. Remaining source data are available on the journal website.",
+      "funder": [],
+      "identifier": "S-BIAD901",
+      "keywords": [
+        "cell migration ",
+        "nucleokinesis",
+        "nuclear positioning",
+        "myosin",
+        "amoeboid migration",
+        "dendritic cell",
+        "Dictyostelium"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Adaptive Pathfinding by Nucleokinesis during Amoeboid Migration",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD901/ab96071c-3bad-466d-aa57-28ef8a643f9b/9b783763-eae7-4dd5-9a9b-e0ed34ca39e8.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD901/8bd1e828-607f-4e6d-b40c-af565d9d89b1/b154fc7c-7b12-468a-98e8-1344285d56de.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD901/3a94e8fe-9ae5-4316-b516-d93c6fde6d87/704ffff9-83ea-4edd-a110-d0e896dd20f3.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2856-3369",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05591te55"
+        }
+      ],
+      "email": "joerg.renkawitz@med.uni-muenchen.de",
+      "name": "Jörg Renkawitz"
+    },
+    {
+      "@id": "https://ror.org/05591te55",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ludwig-Maximilians-Universität München"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#09f19855-c78a-4fc5-9c6f-1a8e9cc24a81",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Hoxb8-derived dendritic cell",
+      "name": "Hoxb8-derived DC",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#6cdef1bf-bbbb-45fb-a9d7-69bd1bc226e2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bone marrow derived dendritic cell",
+      "name": "bmDC",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#75279175-b90d-4298-a4bf-36642c27003c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Live-cell imaging of dendritic cells and T cells was performed at 37°C and with 5 % CO2 in a humidified chamber.",
+      "labEquipment": "wide-field, inverted Leica DMi8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Collagen"
+    },
+    {
+      "@id": "#e4669192-00cf-4444-b78e-b82bc9b4ff40",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Live-cell imaging of dendritic cells and T cells was performed at 37°C and with 5 % CO2 in a humidified chamber. Data were recorded using inverted DMi8 microscopes (Leica) with a HC PL APO 20x/0.80 PH2 air objective. Additionally, the microscope was equipped with an LED5 (Leica) or pE-4000 (CoolLED) light source, an incubation chamber, a heated stage, and a CO2 mixer (Pecon). ",
+      "labEquipment": "wide-field, inverted Leica DMi8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Microchannels"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 24
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1954701676
+    }
+  ]
+}

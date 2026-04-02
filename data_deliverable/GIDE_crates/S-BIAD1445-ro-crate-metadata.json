@@ -1,0 +1,447 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1445"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1445",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c85976f0-8605-49cf-820d-c15d648010c8"
+        },
+        {
+          "@id": "#e8526d51-609a-4613-884c-47325de27d77"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#457c745c-c29e-49ca-b9af-f11d043ca0e6"
+        },
+        {
+          "@id": "#0586bd02-d3e5-4582-b42c-9e12106f265b"
+        },
+        {
+          "@id": "#6ab58d71-a127-4db2-bb52-2c393eb12c44"
+        },
+        {
+          "@id": "#5bc2929e-1180-4fe6-9c6f-f32cd47f26ee"
+        },
+        {
+          "@id": "#15d3a6e3-0352-40c6-a3cc-3e971a4a0be8"
+        },
+        {
+          "@id": "#41d9c0ee-b4ed-493f-b5cb-1f36413a8d71"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2391-0392"
+        },
+        {
+          "@id": "https://orcid.org/0009-0001-6932-5466"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5599-807X"
+        },
+        {
+          "@id": "https://orcid.org/0009-0008-0969-3110"
+        },
+        {
+          "@id": "https://orcid.org/0009-0008-4779-9370"
+        },
+        {
+          "@id": "#8b6cd819-be7d-4225-9d04-002e77aa5f05"
+        },
+        {
+          "@id": "#fd876671-6a70-452d-81cd-9695c144e44b"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0597-4923"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6113-6946"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4099-0278"
+        },
+        {
+          "@id": "#4f1cf0ab-bdf7-4ea5-8e28-345b84985d72"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-29",
+      "description": "Neurons and astrocytes play critical yet divergent roles in brain physiology and neurological conditions. Intracellular organelles are integral to cellular function. However, an in-depth characterization of organelles in live neural cells has not been performed. Here, we used multispectral imaging to simultaneously visualize six organelles – endoplasmic reticulum (ER), lysosomes, mitochondria, peroxisomes, Golgi, and lipid droplets – in live primary rodent neurons and astrocytes. We generated a dataset of 173 Z-stack and 99 time-lapse images accompanied by quantitative analysis of 1418 metrics (“the organelle signature”). Comparative analysis revealed clear cell-type specificity in organelle morphology and interactions. Neurons were characterized by prominent mitochondrial composition and interactions, while astrocytes contained more lysosomes and lipid droplet interactions. Additionally, neurons displayed a more robust organelle response than astrocytes to acute oxidative or ER stress. Our data provide a systems-level characterization of neuron and astrocyte organelles that can be a reference for understanding cell-type-specific physiology and disease.",
+      "funder": [],
+      "identifier": "S-BIAD1445",
+      "keywords": [
+        "Multispectral imaging",
+        "Primary neurons",
+        "Primary astrocytes",
+        "Oxidative stress",
+        "ER stress",
+        "Organelles",
+        "endoplasmic reticulum",
+        "lysosomes",
+        "mitochondria",
+        "peroxisomes",
+        "Golgi",
+        "lipid droplets"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": " Neurons and astrocytes have distinct organelle signatures and responses to stress",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#4f1cf0ab-bdf7-4ea5-8e28-345b84985d72",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "sarahcoh@med.unc.edu",
+      "name": "Sarah Cohen"
+    },
+    {
+      "@id": "#8b6cd819-be7d-4225-9d04-002e77aa5f05",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "michael_ye@med.unc.edu",
+      "name": "Michael Ye"
+    },
+    {
+      "@id": "#fd876671-6a70-452d-81cd-9695c144e44b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a54269f6-4ed6-48bf-b45f-948c8021de06"
+        }
+      ],
+      "email": "henrie@datatecnica.com",
+      "name": "Andy Henrie"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6113-6946",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "graham_diering@med.unc.edu",
+      "name": "Graham H. Diering"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4099-0278",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "toddcohen@neurology.unc.edu",
+      "name": "Todd J. Cohen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5599-807X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "chhsu@email.unc.edu",
+      "name": "Chih-Hsuan Hsu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0597-4923",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "maria_zanellati@med.unc.edu",
+      "name": "Maria Clara Zanellati"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2391-0392",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "srhoads@unc.edu",
+      "name": "Shannon Rhoads"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-6932-5466",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "vdong@ucdavis.edu",
+      "name": "Weizhen Dong "
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-0969-3110",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "nmfulama@unc.edu",
+      "name": "Ngudiankama R. Mfulama"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-4779-9370",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0130frc33"
+        }
+      ],
+      "email": "joey.ragusa@duke.edu",
+      "name": "Joey V. Ragusa"
+    },
+    {
+      "@id": "#a54269f6-4ed6-48bf-b45f-948c8021de06",
+      "@type": [
+        "Organization"
+      ],
+      "name": "DataTecnica, LLC"
+    },
+    {
+      "@id": "https://ror.org/0130frc33",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of North Carolina at Chapel Hill"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#0586bd02-d3e5-4582-b42c-9e12106f265b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Day in vitro (DIV) 16 primary rat cortical neuron cultures produced from embryonic day 18 rats.",
+      "name": "Primary cortical neurons - sodium arsenite",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#15d3a6e3-0352-40c6-a3cc-3e971a4a0be8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Day in vitro (DIV) 10 primary rat cortical astrocyte cultures produced from post-natal day 1-2 rats.",
+      "name": "Primary cortical astrocyte - sodium arsenite",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#41d9c0ee-b4ed-493f-b5cb-1f36413a8d71",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Day in vitro (DIV) 10 primary rat cortical astrocyte cultures produced from post-natal day 1-2 rats.",
+      "name": "Primary cortical astrocytes - thapsigragin",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#457c745c-c29e-49ca-b9af-f11d043ca0e6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Day in vitro (DIV) 16 primary rat cortical neuron cultures produced from embryonic day 18 rats.",
+      "name": "Primary cortical neurons - control",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#5bc2929e-1180-4fe6-9c6f-f32cd47f26ee",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Day in vitro (DIV) 10 primary rat cortical astrocyte cultures produced from post-natal day 1-2 rats.",
+      "name": "Primary cortical astrocytes - control",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#6ab58d71-a127-4db2-bb52-2c393eb12c44",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Day in vitro (DIV) 16 primary rat cortical neuron cultures produced from embryonic day 18 rats.",
+      "name": "Primary cortical neurons - thapsigargin",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#c85976f0-8605-49cf-820d-c15d648010c8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The 458 nm, 514 nm, 561 nm, and 633 nm lasers were used simultaneously to excite cells labeled with one or all of the six organelle markers. Emitted light was collected by the spectral detector in lambda mode, a linear array of 34 photomultiplier tubes (PMT), in 9.7 nm bins from 468 to 690 nm wavelengths, resulting in 26-intensity channels in the output image. A 63x/1.4 NA objective lens was used to image time-lapse images with an XYZ voxel scaling of 0.08 μm x 0.08 μm x 0.41 μm. The time-lapse images included a single Z-plane (pixel density of 1124x1124) imaged with Definite Focus (Carl Zeiss Microscopy) every 5 seconds for 5 minutes (60 frames). All cells (DIV16 neurons or DIV10 astrocytes) were imaged live and maintained at 37°C/5% CO2 for up to 2 hours per dish while imaging.",
+      "labEquipment": "Zeiss LSM 880 laser scanning confocal microscope with a 34-channel GaAsP spectral detector and live cell incubation chamber (Carl Zeiss Microscopy)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "2D time lapse image"
+    },
+    {
+      "@id": "#e8526d51-609a-4613-884c-47325de27d77",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The 458 nm, 514 nm, 561 nm, and 633 nm lasers were used simultaneously to excite cells labeled with one or all of the six organelle markers. Emitted light was collected by the spectral detector in lambda mode, a linear array of 34 photomultiplier tubes (PMT), in 9.7 nm bins from 468 to 690 nm wavelengths, resulting in 26-intensity channels in the output image. A 63x/1.4 NA objective lens was used to image Z-stack images with an XYZ voxel scaling of 0.08 μm x 0.08 μm x 0.41 μm. Z-stacks were acquired at a single time point with a pixel density of 1688x1688 per slice. Slice number was determined on a cell-to-cell basis with the goal of imaging the entire cell from top to bottom. All cells (DIV16 neurons or DIV10 astrocytes) were imaged live and maintained at 37°C/5% CO2 for up to 2 hours per dish while imaging.",
+      "labEquipment": "Zeiss LSM 880 laser scanning confocal microscope with a 34-channel GaAsP spectral detector and live cell incubation chamber (Carl Zeiss Microscopy)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Z-stack images"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2240
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2329250106572
+    }
+  ]
+}

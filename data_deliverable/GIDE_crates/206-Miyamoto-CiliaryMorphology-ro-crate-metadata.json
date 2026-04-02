@@ -1,0 +1,242 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/206-Miyamoto-CiliaryMorphology/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/206-Miyamoto-CiliaryMorphology/",
+      "@type": "Dataset",
+      "identifier": "206-Miyamoto-CiliaryMorphology",
+      "name": "3D FIB-SEM images of a cross section of the ciliary pocket membrane in hTERT-RPE1 cells.",
+      "description": "206-Miyamoto-CiliaryMorphology",
+      "datePublished": "2022-03-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Cells, Cultured",
+        "Cholesterol/genetics",
+        "Cholesterol/metabolism[major]",
+        "Cilia/genetics",
+        "Cilia/metabolism[major]",
+        "Cilia/pathology",
+        "Germinal Center Kinases/genetics",
+        "Germinal Center Kinases/metabolism",
+        "Humans",
+        "Kinesins/genetics",
+        "Kinesins/metabolism",
+        "Microtubules/genetics",
+        "Microtubules/metabolism",
+        "Microtubules/pathology",
+        "Smoothened Receptor/genetics",
+        "Smoothened Receptor/metabolism",
+        "Zellweger Syndrome/genetics",
+        "Zellweger Syndrome/metabolism[major]",
+        "Zellweger Syndrome/pathology",
+        "rab GTP-Binding Proteins/genetics",
+        "rab GTP-Binding Proteins/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.15252/embj.2019103499"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0004290"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005777"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0020018"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000257"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-713"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Tatsuo Miyamoto",
+      "email": "t-miyamoto@hiroshima-u.ac.jp",
+      "description": "Organization: Hiroshima University; Department: Department of Genetics and Cell Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03t78wx29"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Shinya Matsuura",
+      "email": "shinya@hiroshima-u.ac.jp",
+      "description": "Organization: Hiroshima University; Department: Research Institute for Radiation Biology and Medicine",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03t78wx29"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/03t78wx29",
+      "@type": "Organization",
+      "name": "Hiroshima University"
+    },
+    {
+      "@id": "https://doi.org/10.15252/embj.2019103499",
+      "@type": "ScholarlyArticle",
+      "name": "Insufficiency of ciliary cholesterol in hereditary Zellweger syndrome.",
+      "datePublished": "2020"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ hTERT RPE-1 cell",
+      "description": "Homo sapiens ~ hTERT RPE-1 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0004290"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0004290",
+      "@type": "DefinedTerm",
+      "name": "hTERT RPE-1 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005777",
+      "@type": "DefinedTerm",
+      "name": "peroxisome"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0020018",
+      "@type": "DefinedTerm",
+      "name": "ciliary pocket membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "scanning electron microscopy",
+      "description": "scanning electron microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000257"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000257",
+      "@type": "DefinedTerm",
+      "name": "scanning electron microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 181774128,
+      "description": "181.8 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 121,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

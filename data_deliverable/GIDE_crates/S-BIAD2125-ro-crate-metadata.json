@@ -1,0 +1,198 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2125"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2125",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#160f002f-f174-444e-906f-5b0e49bff19d"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000245"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b2320267-1c2f-4897-b929-6021016d1d2b"
+        },
+        {
+          "@id": "obo:NCBITaxon_6347"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2572-1061"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-07",
+      "description": "Original pictures",
+      "funder": [],
+      "identifier": "S-BIAD2125",
+      "keywords": [
+        "spiral cleavage",
+        "annelid development"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Cell fate specification modes shape transcriptome evolution in the highly conserved spiral cleavage",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2125/f219fbac-6f6d-467a-ac4b-979bcf96e3ac/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2572-1061",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/026zzn846"
+        }
+      ],
+      "email": "chema.martin@qmul.ac.uk",
+      "name": "Chema Martin"
+    },
+    {
+      "@id": "https://ror.org/026zzn846",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Queen Mary University of London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6347",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Owenia fusiformis"
+    },
+    {
+      "@id": "#b2320267-1c2f-4897-b929-6021016d1d2b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Owenia fusiformis embryos",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6347"
+      }
+    },
+    {
+      "@id": "#160f002f-f174-444e-906f-5b0e49bff19d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Representative embryos were cleared and mounted in 70% glycerol in phosphate-buffered saline. Whole-mount in situ hybridisation samples were imaged with a Leica DMRA2 upright microscope equipped with an Infinity5 camera (Lumenera) using differential interference contrast (DIC) optics. Confocal laser scanning microscopy (CLSM) images were taken with a Leica Stellaris 8. CLSM Z-stack projections were built with ImageJ2 (Rueden et al, 2017) and Nikon NIS-Elements software. DIC images were digitally stacked with Helicon Focus 7 (HeliconSoft). Brightness and contrast were edited with Adobe Photoshop CC, and figures were built with Adobe Illustrator CC (Adobe Inc.).",
+      "labEquipment": "Leica Stellaris 8 and Leica DMRA2",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000245"
+        }
+      ],
+      "name": "Confocal scanning and DIC"
+    },
+    {
+      "@id": "obo:FBbi_00000245",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "differential interference contrast microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 167
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 652184986
+    }
+  ]
+}

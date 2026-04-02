@@ -1,0 +1,192 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000059/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000059/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000059",
+      "name": "SIM images of tubulin immunofluorescence in Eph4 cells",
+      "description": "ssbd-repos-000059",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "AMP-Activated Protein Kinases/metabolism[major]",
+        "Amino Acid Sequence",
+        "Animals",
+        "Calcium/metabolism",
+        "Cell Polarity",
+        "Centrosome/metabolism",
+        "Epithelial Cells/cytology",
+        "Epithelial Cells/metabolism",
+        "Epithelium/growth & development",
+        "Epithelium/metabolism",
+        "Fluorescence Resonance Energy Transfer",
+        "Fluorescent Antibody Technique",
+        "Gene Knockdown Techniques",
+        "HEK293 Cells",
+        "Humans",
+        "Intercellular Junctions/metabolism",
+        "Membrane Proteins/chemistry",
+        "Membrane Proteins/metabolism[major]",
+        "Mice",
+        "Microtubules/metabolism[major]",
+        "Models, Biological",
+        "Molecular Sequence Data",
+        "Morphogenesis",
+        "Phosphorylation",
+        "Phosphoserine/metabolism",
+        "Protein Structure, Tertiary",
+        "Sus scrofa",
+        "Tight Junctions/metabolism[major]",
+        "Tubulin/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1083/jcb.201304194"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0045216"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-173"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Sachiko Tsukita",
+      "email": "atsukita@biosci.med.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences and Medicine; Laboratory: Laboratory of Biological Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://doi.org/10.1083/jcb.201304194",
+      "@type": "ScholarlyArticle",
+      "name": "The association of microtubules with tight junctions is promoted by cingulin phosphorylation by AMPK.",
+      "datePublished": "2013"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Eph4",
+      "description": "Eph4",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0045216",
+      "@type": "DefinedTerm",
+      "name": "cell cell junction"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1292288,
+      "description": "1.3 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

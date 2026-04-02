@@ -1,0 +1,205 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2076"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2076",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#094f4907-0903-4e90-ab98-93d6c61a4c55"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2855cde1-6e1e-4630-9169-33aa2c42c851"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#59b122ec-70f9-4c91-b4b6-9370de6f2e43"
+        },
+        {
+          "@id": "#e9a2db7d-3f67-480e-bb42-752b97380878"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-14",
+      "description": "The spatial organization of structures within cells constitutes a key level of functional regulation. Pooled CRISPR-Cas9 screens have emerged as powerful functional genomic tools, yet they often rely on aggregate-level outputs, such as bulk selection or sequencing, thereby limiting their capacity to capture finer-grained, spatially resolved phenotypes. Here, we developed spatial phenotype analysis of CRISPR-Cas9 screens (spaCR): a broadly applicable Python-based software package for analyzing pooled CRISPR-Cas9 imaging screens. spaCR provides a flexible toolkit to extract single-cell images and measurements from high content cell painting experiments, train deep-learning/ machine-learning models to classify subcellular phenotypes, map sequencing data, and correlate genotypes to phenotypes. Using spaCR, we integrated well-level genotype annotation with single-cell phenotype data from host cells infected by CRISPR-Cas9 Toxoplasma mutants to determine how the parasite recruits host TSG101 to its intracellular niche. By applying multiple linear regression to estimate the effect size of each genotype on TSG101 recruitment, we uncovered both an established and a previously uncharacterized genetic determinant of this spatial phenotype.",
+      "funder": [],
+      "identifier": "S-BIAD2076",
+      "keywords": [
+        "Morphological Profiling, CRISPR, genetic screen, single-cell, Toxoplasma gondii, spatial phenotype"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "spaCR: Spatial phenotype analysis of CRISPR-Cas9 screens.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#59b122ec-70f9-4c91-b4b6-9370de6f2e43",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cc40378b-fc96-44a1-8500-fbd6db90869f"
+        }
+      ],
+      "email": "olafsson@umich.edu",
+      "name": "Einar Birnir Olafsson"
+    },
+    {
+      "@id": "#e9a2db7d-3f67-480e-bb42-752b97380878",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "email": "einar.olafsson@icm.uu.se",
+      "name": "Einar Birnir Olafsson"
+    },
+    {
+      "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Uppsala University"
+    },
+    {
+      "@id": "#cc40378b-fc96-44a1-8500-fbd6db90869f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Michigan"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2855cde1-6e1e-4630-9169-33aa2c42c851",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Toxoplasma gondii",
+      "name": "spaCR: Spatial phenotype analysis of CRISPR-Cas9 screens.",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#094f4907-0903-4e90-ab98-93d6c61a4c55",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40x water immersion",
+      "labEquipment": "Yokogawa CellVoyager 8000",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "spaCR: Spatial phenotype analysis of CRISPR-Cas9 screens."
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 98288
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 781605243872
+    }
+  ]
+}

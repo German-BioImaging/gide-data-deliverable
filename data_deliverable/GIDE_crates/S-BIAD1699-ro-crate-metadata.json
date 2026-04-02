@@ -1,0 +1,789 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1699"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1699",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6861f44e-c1a2-4977-a380-1a562e8403b5"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c89f780f-0d0e-4bae-8073-75a61a262ee8"
+        },
+        {
+          "@id": "#b53fe767-bcf9-4a9a-8f95-265ba3361c8c"
+        },
+        {
+          "@id": "#8841a487-e852-4c09-a0f6-2f77111169e5"
+        },
+        {
+          "@id": "#1e991ea5-03da-471a-b04e-4e963b42eb10"
+        },
+        {
+          "@id": "#9fd2262a-4f5e-4979-a8d4-17537a6cadd3"
+        },
+        {
+          "@id": "#1779c1be-6061-4bd8-8742-5294d77df387"
+        },
+        {
+          "@id": "#a0328e04-ffe1-438a-a9b6-0449e793b7dc"
+        },
+        {
+          "@id": "#7151a738-c149-41ff-b2c8-0f586ea48692"
+        },
+        {
+          "@id": "#57285d29-b366-4839-a038-506ee1954f94"
+        },
+        {
+          "@id": "#65337ae1-839b-4758-9b0c-d79200326229"
+        },
+        {
+          "@id": "#1573c7b3-edb1-4af7-9e8b-1b3b5de43db7"
+        },
+        {
+          "@id": "#8f64de41-be29-4fb4-9b3a-3d5e964fdbf0"
+        },
+        {
+          "@id": "#df9e5fa1-a201-441e-bebf-7c3a3b0d87d2"
+        },
+        {
+          "@id": "#61ad85c0-07d5-4490-a773-a7e7ce98fd80"
+        },
+        {
+          "@id": "#53b61e4e-edfc-4e5b-b90e-4dd07308b32f"
+        },
+        {
+          "@id": "#63e54170-1991-4092-a4d3-a3d653d4f407"
+        },
+        {
+          "@id": "#5441790a-4628-4687-9b2c-1e113678026b"
+        },
+        {
+          "@id": "#ee710582-4163-4a4e-b7ef-74bb2b39760b"
+        },
+        {
+          "@id": "#82777587-99ed-49e6-b38f-652caa6e1b30"
+        },
+        {
+          "@id": "#3d5c167b-1aa5-48d6-81f6-5abfae7f5d30"
+        },
+        {
+          "@id": "#b37a8891-1507-4e04-b398-9b16da61ba93"
+        },
+        {
+          "@id": "#2dccf031-056f-4548-b150-0ac811590875"
+        },
+        {
+          "@id": "#ae343537-c790-42c9-8b20-c45348d80c33"
+        },
+        {
+          "@id": "#3190156d-98a7-43ab-aa25-60bb488915b7"
+        },
+        {
+          "@id": "#7094ddad-df4c-4f0e-aed8-d595cdf18cdf"
+        },
+        {
+          "@id": "#7cf19ac3-458a-410f-a203-ffdf1752d0c9"
+        },
+        {
+          "@id": "#3ffaee31-a505-4d3f-99be-69764fc47ca5"
+        },
+        {
+          "@id": "#07a7c824-2e1e-4517-ae5d-bcbcd920d55c"
+        },
+        {
+          "@id": "#bdfacbfb-fd52-4982-ad8f-794a873b75f2"
+        },
+        {
+          "@id": "#0c988d54-fb3e-4383-b281-7ccc0ed23fd8"
+        },
+        {
+          "@id": "#1ae91b5d-f024-45fe-9101-12a9ad2037c5"
+        },
+        {
+          "@id": "#a885cfeb-1dde-4587-a667-60d67838f8a9"
+        },
+        {
+          "@id": "#d5a85ad0-9796-42e7-9152-b6cf3141913c"
+        },
+        {
+          "@id": "#9f779611-cbc7-4252-8d71-24622fe1afdf"
+        },
+        {
+          "@id": "#b2b6bb38-8223-4701-8edc-a6086b0d278a"
+        },
+        {
+          "@id": "#8d1b5ac0-8a17-42b3-aff0-55f9d0837184"
+        },
+        {
+          "@id": "#37ce232c-561e-4058-a610-1da23ffe6787"
+        },
+        {
+          "@id": "#c1e41c08-b989-4c57-b9a1-e95043eaf9d9"
+        },
+        {
+          "@id": "#7e5e437d-4e04-483b-86a0-1efe859455eb"
+        },
+        {
+          "@id": "#28bac67b-70c4-4439-ac04-7e4e3bf8a428"
+        },
+        {
+          "@id": "#6161f47a-b814-47b5-be47-f1e4e535bade"
+        },
+        {
+          "@id": "#eb8bb0c1-3788-4ba7-b1b4-513922698686"
+        },
+        {
+          "@id": "#8465d7b4-4bb7-448e-bb29-7ecc53599dc7"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0009-0965-2906"
+        },
+        {
+          "@id": "#401018cc-e3a2-4365-995e-ae4a08fdbf22"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-01",
+      "description": "We performed spatial transcriptomics using Enhanced ELectric single-molecule Fluorescence in situ Hybridization (EEL-FISH) on human glioblastoma samples, one multi-region sample as well as standard resection samples for a total of 27 patient samples. Tissue sections adjacent to EEL-FISH section were used for Hematoxylin and Eosin stainings.",
+      "funder": [],
+      "identifier": "S-BIAD1699",
+      "keywords": [
+        "glioblastoma",
+        "eel-fish"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Deep single cell RNA sequencing of rare human glioblastoma cases where tissue\ncould be sampled from tumor core to macroscopically normal cortex.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1699/04f05c49-0e9a-4f36-ad7b-a579b95c0e78/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#401018cc-e3a2-4365-995e-ae4a08fdbf22",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "email": "sten.linnarsson@ki.se",
+      "name": "Sten Linnarsson"
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-0965-2906",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "email": "peter.lonnerberg@ki.se",
+      "name": "Peter Lönnerberg"
+    },
+    {
+      "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Karolinska Institutet"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#07a7c824-2e1e-4517-ae5d-bcbcd920d55c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL040C",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#0c988d54-fb3e-4383-b281-7ccc0ed23fd8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL040E",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1573c7b3-edb1-4af7-9e8b-1b3b5de43db7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left frontal lobe glioblastoma",
+      "name": "SL014",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1779c1be-6061-4bd8-8742-5294d77df387",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right frontal lobe glioblastoma",
+      "name": "SL006",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1ae91b5d-f024-45fe-9101-12a9ad2037c5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL040F",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1e991ea5-03da-471a-b04e-4e963b42eb10",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Frontal right lobe (operculum frontale) glioblastoma",
+      "name": "SL003",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#28bac67b-70c4-4439-ac04-7e4e3bf8a428",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL057B",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2dccf031-056f-4548-b150-0ac811590875",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL034",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3190156d-98a7-43ab-aa25-60bb488915b7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left temporal lobe glioblastoma",
+      "name": "SL035B",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#37ce232c-561e-4058-a610-1da23ffe6787",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right frontal lobe glioblastoma",
+      "name": "SL047",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3d5c167b-1aa5-48d6-81f6-5abfae7f5d30",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right parietal lobe glioblastoma",
+      "name": "SL029",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3ffaee31-a505-4d3f-99be-69764fc47ca5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL040B",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#53b61e4e-edfc-4e5b-b90e-4dd07308b32f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Parietal lobe glioblastoma",
+      "name": "SL018",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5441790a-4628-4687-9b2c-1e113678026b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left frontal lobe glioblastoma",
+      "name": "SL020",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#57285d29-b366-4839-a038-506ee1954f94",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left frontal lobe glioblastoma",
+      "name": "SL012",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#6161f47a-b814-47b5-be47-f1e4e535bade",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL061A",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#61ad85c0-07d5-4490-a773-a7e7ce98fd80",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right insula glioblastoma",
+      "name": "SL016B",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#63e54170-1991-4092-a4d3-a3d653d4f407",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left frontal lobe (operculum frontale) glioblastoma",
+      "name": "SL019",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#65337ae1-839b-4758-9b0c-d79200326229",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right parietotemporal glioblastoma",
+      "name": "SL013",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7094ddad-df4c-4f0e-aed8-d595cdf18cdf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL037",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7151a738-c149-41ff-b2c8-0f586ea48692",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL011",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7cf19ac3-458a-410f-a203-ffdf1752d0c9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left temporal lobe glioblastoma",
+      "name": "SL038",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7e5e437d-4e04-483b-86a0-1efe859455eb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL057A",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#82777587-99ed-49e6-b38f-652caa6e1b30",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left frontal lobe glioblastoma",
+      "name": "SL027",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8465d7b4-4bb7-448e-bb29-7ecc53599dc7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL061C",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8841a487-e852-4c09-a0f6-2f77111169e5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL002",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8d1b5ac0-8a17-42b3-aff0-55f9d0837184",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right frontal lobe glioblastoma",
+      "name": "SL046C",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8f64de41-be29-4fb4-9b3a-3d5e964fdbf0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL015",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9f779611-cbc7-4252-8d71-24622fe1afdf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right frontal lobe glioblastoma",
+      "name": "SL046A",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9fd2262a-4f5e-4979-a8d4-17537a6cadd3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Parietal lobe glioblastoma",
+      "name": "SL005",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a0328e04-ffe1-438a-a9b6-0449e793b7dc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left temporal lobe glioblastoma",
+      "name": "SL007",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a885cfeb-1dde-4587-a667-60d67838f8a9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL040G",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ae343537-c790-42c9-8b20-c45348d80c33",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left temporal lobe glioblastoma",
+      "name": "SL035A",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b2b6bb38-8223-4701-8edc-a6086b0d278a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right frontal lobe glioblastoma",
+      "name": "SL046B",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b37a8891-1507-4e04-b398-9b16da61ba93",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Left temporal lobe glioblastoma",
+      "name": "SL030",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b53fe767-bcf9-4a9a-8f95-265ba3361c8c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL001B",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bdfacbfb-fd52-4982-ad8f-794a873b75f2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL040D",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c1e41c08-b989-4c57-b9a1-e95043eaf9d9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right parietal lobe glioblastoma",
+      "name": "SL053",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c89f780f-0d0e-4bae-8073-75a61a262ee8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL001A",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d5a85ad0-9796-42e7-9152-b6cf3141913c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL040bulk",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#df9e5fa1-a201-441e-bebf-7c3a3b0d87d2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right insula glioblastoma",
+      "name": "SL016A",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#eb8bb0c1-3788-4ba7-b1b4-513922698686",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right temporal lobe glioblastoma",
+      "name": "SL061B",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ee710582-4163-4a4e-b7ef-74bb2b39760b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Right frontal lobe glioblastoma",
+      "name": "SL023",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#6861f44e-c1a2-4977-a380-1a562e8403b5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fiducial europium beads were imaged using 360/28 bandpass filter (400 mW light source; 30% power), ET667/30m\nemission filter, and T647lpxr dichroic mirror; Cy3 channel was imaged using 534/20 bandpass\nfilter (400 mW light source, 100% power), ET575/40m emission filter, and T550lpxr dichroic\nmirror; Atto 590 channel was imaged using 586/20 bandpass filter (400 mW light source, 100%\npower), 89403X excitation filter, 89403m multiband emission filter, and 89403bs dichroic\nmirror; Alexa Fluor 647 channel was imaged using 631/28 bandpass filter (500 mW light\nsource, 100% power), ET667/30m emission filter, and T647lpxr dichroic mirror, with all\nexposure times set to 100 ms. ",
+      "labEquipment": "EEL-FISH image acquisition was performed on a Nikon Ti2 epifluorescence microscope\nequipped with a Nikon CFI Plan Apo Lambda ×60 oil immersion objective with a numerical\naperture (NA) of 1.4, CFI Plan Apo Lambda ×40 objective with NA 0.95, CFI Plan Apo\nLambda ×10 with NA 0.45, Nikon motorized stage, Nikon Perfect Focus system, Sona 4.2B-\n11 back-illuminated sCMOS camera with a pixel size of 11 μm (Andor). We used Lumencor\nSpectra light engine and matching filter cubes from Chroma.\nHistology image acquisition was performed at Karolinska Institutet’s Biomedicum Imaging\nCore facility on a Zeiss Axio Scan.Z1 slide scanner.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "EEL & H&E"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 41
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 214455431028
+    }
+  ]
+}

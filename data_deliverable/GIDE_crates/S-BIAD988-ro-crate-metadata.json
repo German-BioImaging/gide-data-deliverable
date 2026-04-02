@@ -1,0 +1,237 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD988"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD988",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#45326958-bb55-4277-ac30-8d28601a32af"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#822c4cd7-8549-4bee-94a7-b42de5510014"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5327-8466"
+        },
+        {
+          "@id": "#ae470729-bfe2-4e28-bdf9-1b7d0b86ad35"
+        },
+        {
+          "@id": "#d81a3728-c0c9-4344-adff-12d61dd601e0"
+        },
+        {
+          "@id": "#ce5664db-e226-45cd-91dd-b3c94d3929de"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-01-08",
+      "description": "This dataset comprises the raw data associated with Wong et al., EMBO J., 2024. \"Regulation of centrosome size by the cell cycle oscillator in Drosophila embryos\". This dataset (approximately 900Gb in total) tracks the behavior of individual centrosomes (labelled with different centrosome markers) in early Drosophila embryos during nuclear cycles 11-13 under various conditions. The datasets are organised to align with each individual Figure shown in the paper. \n\nThe paper abstract is: Mitotic centrosomes assemble when centrioles recruit large amounts of pericentriolar material (PCM) around themselves. In early C. elegans embryos, mitotic centrosome size appears to be set by the limiting amount of a key component. In Drosophila syncytial embryos, thousands of mitotic centrosomes are assembled as the embryo proceeds through 13 rounds of rapid nuclear division, driven by a core cell-cycle oscillator. These divisions slow during nuclear cycles 11-13, and we find that centrosomes respond by reciprocally decreasing their growth rate, but increasing their growth period—so that they grow to a relatively consistent size at each cycle. At the start of each cycle, moderate CCO activity initially promotes centrosome growth, in part by stimulating Polo/PLK1 recruitment to centrosomes. Later in each cycle, high CCO activity inhibits centrosome growth by suppressing the centrosomal recruitment and/or maintenance of centrosome proteins. Thus, in fly embryos, mitotic centrosome size appears to be regulated predominantly by the core cell-cycle oscillator, rather than by the depletion of a limiting component.",
+      "funder": [],
+      "identifier": "S-BIAD988",
+      "keywords": [
+        "centriole",
+        "centrosome",
+        "cell cycle",
+        "mitosis",
+        "organelle size",
+        "Drosophile embryo"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Regulation of centrosome size by the cell-cycle oscillator in Drosophila embryos",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD988/a04f4870-5c5b-458c-9e9e-2b462a9abcea/dd4e1259-a13e-4035-a53c-a69f87cb9c91.png"
+      ]
+    },
+    {
+      "@id": "#ae470729-bfe2-4e28-bdf9-1b7d0b86ad35",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "alan.wainman@path.ox.ac.uk",
+      "name": "Alan Wainman"
+    },
+    {
+      "@id": "#ce5664db-e226-45cd-91dd-b3c94d3929de",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "jordan.raff@path.ox.ac.uk",
+      "name": "Jordan Raff"
+    },
+    {
+      "@id": "#d81a3728-c0c9-4344-adff-12d61dd601e0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "saroj.saurya@path.ox.ac.uk",
+      "name": "Saroj Saurya"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5327-8466",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "isaac.wong@path.ox.ac.uk",
+      "name": "Siu-Shing Wong"
+    },
+    {
+      "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#822c4cd7-8549-4bee-94a7-b42de5510014",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Embryos laid by females of various genotypes that expressed various fluorescently-tagged centrosomal markers were analysed. Full details for each experiment can be found in Wong et al., EMBO J., 2024.",
+      "name": "All data were obtained from imaging Drosophila embryos during nuclear cycles 11-13",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#45326958-bb55-4277-ac30-8d28601a32af",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The acquisition parameters for each experiment are described in Wong et al., EMBO J., 2024.",
+      "labEquipment": "Images were largely collected on a Perkin Elmer Spinning disc system. Full details are described in Wong et al., EMBO J., 2024.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Details of image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 994
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 861637956056
+    }
+  ]
+}

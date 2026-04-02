@@ -1,0 +1,217 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000221/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000221/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000221",
+      "name": "Imaging data sets of ATDC5 cells and fetal growth plates",
+      "description": "Cross-talk between cGMP and cAMP signaling in endochondral bone formation and the physiological role of the CNP/GC-B system were demonstrated using ATDC5 cells and fetal growth plates expressing cGMP, PKA, or Ca2+ biosensors.",
+      "datePublished": "2022-01-31",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Differentiation",
+        "Cell Line",
+        "Chondrocytes/physiology[major]",
+        "Cyclic AMP/metabolism",
+        "Cyclic AMP-Dependent Protein Kinases/antagonists & inhibitors",
+        "Cyclic AMP-Dependent Protein Kinases/metabolism[major]",
+        "Cyclic GMP/metabolism",
+        "Enzyme Activation/drug effects",
+        "Fluorescence Resonance Energy Transfer",
+        "Growth Plate/growth & development",
+        "Mice",
+        "Mice, Transgenic",
+        "Natriuretic Peptide, C-Type/pharmacology[major]",
+        "Osteogenesis/drug effects",
+        "Osteogenesis/physiology[major]",
+        "Signal Transduction/drug effects",
+        "Signal Transduction/physiology"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1210/endocr/bqac005"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Keisho Hirota",
+      "email": "hirota.keisho.6w@kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Department of Pathology and Biology of Diseases",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1210/endocr/bqac005",
+      "@type": "ScholarlyArticle",
+      "name": "C-type Natriuretic Peptide-induced PKA Activation Promotes Endochondral Bone Formation in Hypertrophic Chondrocytes.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "hasCellLine": "ATDC5 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Confocal microscopy",
+      "description": "Confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "Two-photon microscopy",
+      "description": "Two-photon microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "Confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
+      "@type": "DefinedTerm",
+      "name": "Two-photon microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 30960091136,
+      "description": "31.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 64211,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

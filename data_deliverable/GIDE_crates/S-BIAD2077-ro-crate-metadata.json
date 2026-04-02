@@ -1,0 +1,343 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2077"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2077",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#419aba7a-61b1-4d61-96d7-1df54dcbedbd"
+        },
+        {
+          "@id": "#77dc3a88-029e-4e51-b0c2-71fc2289afdb"
+        },
+        {
+          "@id": "#5ffb7f9b-4528-4141-abbd-999bbb7c4f0d"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000245"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c2c1eb3e-6b95-4862-8267-3d256dcdfb9a"
+        },
+        {
+          "@id": "#f2ea0661-3fc1-4b16-bc5f-7bc297d1e937"
+        },
+        {
+          "@id": "#2874f9f5-2679-4759-a14f-df7e944c5caa"
+        },
+        {
+          "@id": "#776ae430-63e6-4aac-8eec-3c019674a99e"
+        },
+        {
+          "@id": "#c9e43c5c-d042-4e24-9a65-6abaf1db0a11"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0002-1572-598X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6463-6997"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4608-7669"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1233-668X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1542-6218"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-04",
+      "description": "Light Microscopy Imaging Workflow\n\nResin-embedded tissue blocks were imaged using a custom-built imaging chamber. Low-magnification imaging datasets (Block FMs) were acquired with an air objective and DIC optics (Surface DIC map), utilizing 405, 488, 543, and/or 650 nm laser lines. Higher-resolution imaging datasets (ROI FMs) were collected with oil- or silicon-immersion objectives. Ultramicrotome camera images of the blocks were also captured. Ultrathin sections (200–300 nm) were prepared on glass slides or slot grids, placed in PBS, and imaged on an inverted Nikon AX-R NSPARC confocal microscope (Section FMs).\n\nFile Naming Convention\n\nFormat: {ExperimentID}_{AcquisitionDate}_{Microscope}_{SampleType}_{ObjectiveLens}.{FileType}\n\nExperimentID: Unique identifier for the experiment\nAcquisitionDate: Date of image acquisition (YYMMDD)\nMicroscope:\n A1: Nikon A1 confocal microscope\n AX: Nikon AX confocal microscope\n SoRa: Nikon SoRa spinning disk confocal microscope\n DIC: Transmitted light image acquired with a Nikon confocal microscope\n UC7: Leica UC7 ultramicrotome\nSampleType:\n Blk: Entire block\n Reg: Block region\n Section: Tissue section\nObjectiveLens:\n 40x: 40× air objective\n 20x1x: 20× air objective, 1× zoom\n 25xOil: 25× silicon oil-immersion objective\nFileType:\n nd2: Nikon image format\n tif: Image file\n png: UC7 camera view",
+      "funder": [],
+      "identifier": "S-BIAD2077",
+      "keywords": [
+        "correlative imaging",
+        "confocal microscopy",
+        "DIC microscopy",
+        "Ultramicrotome camera view"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Benchmark light microscopy images matching TEM images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2077/a51c34f3-98cb-4c1b-850e-7d5a7e1cd5a0/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6463-6997",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba"
+        }
+      ],
+      "name": "Guilherme Neves"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1233-668X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba"
+        }
+      ],
+      "name": "Juan Burrone"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1542-6218",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba"
+        }
+      ],
+      "name": "Roland Fleck"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4608-7669",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba"
+        }
+      ],
+      "name": "Matthew Russell"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-1572-598X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba"
+        }
+      ],
+      "email": "kohki.konishi@kcl.ac.uk",
+      "name": "Kohki Konishi"
+    },
+    {
+      "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba",
+      "@type": [
+        "Organization"
+      ],
+      "name": "King's College London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#2874f9f5-2679-4759-a14f-df7e944c5caa",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse brain tissue block.",
+      "name": "Surface DIC map",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#776ae430-63e6-4aac-8eec-3c019674a99e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Moues brain tissue block.",
+      "name": "UC camera view",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#c2c1eb3e-6b95-4862-8267-3d256dcdfb9a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse brain tissue block",
+      "name": "Block FM",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#c9e43c5c-d042-4e24-9a65-6abaf1db0a11",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse brain tissue section",
+      "name": "Section FM",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#f2ea0661-3fc1-4b16-bc5f-7bc297d1e937",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse brain tissue block",
+      "name": "ROI FM",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#419aba7a-61b1-4d61-96d7-1df54dcbedbd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x or higher magnification objective",
+      "labEquipment": "Nikon A1, AX-R NSPARC or a SoRA confocal microscope.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Fluorescence microscopy"
+    },
+    {
+      "@id": "#5ffb7f9b-4528-4141-abbd-999bbb7c4f0d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "An ultramicrotome camera.",
+      "labEquipment": "UC7 (Leica, Wetzlar, Germany).",
+      "measurementTechnique": [],
+      "name": "UC camera"
+    },
+    {
+      "@id": "#77dc3a88-029e-4e51-b0c2-71fc2289afdb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x objective.",
+      "labEquipment": "Low-magnification reference stacks (Block FMs) were acquired with 20X air objectives and DIC optics, along with fluorescence imaging using 405, 488, 543, and 650 nm laser lines and the appropriate emission filters.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000245"
+        }
+      ],
+      "name": "DIC imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000245",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "differential interference contrast microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 7
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12032490594
+    }
+  ]
+}

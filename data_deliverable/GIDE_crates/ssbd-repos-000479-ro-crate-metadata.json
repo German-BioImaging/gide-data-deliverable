@@ -1,0 +1,162 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000479/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000479/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000479",
+      "name": "The morphology of some kinds of Escherichia coli resistant to various antibiotics",
+      "description": "Although it is well known that the morphology of Gram-negative rods changes on exposure to antibiotics, the morphology of antibiotic-resistant bacteria in the absence of antibiotics has not been widely investigated. Here, we studied the morphologies of 10 antibiotic-resistant strains of Escherichia coli and used bioinformatics tools to classify the resistant cells under light microscopy in the absence of antibiotics. The antibiotic-resistant strains showed differences in morphology from the sensitive parental strain, and the differences were most prominent in the quinolone-and β-lactam-resistant bacteria. A cluster analysis revealed increased proportions of fatter or shorter cells in the antibiotic-resistant strains. A correlation analysis of morphological features and gene expression suggested that genes related to energy metabolism and antibiotic resistance were highly correlated with the morphological characteristics of the resistant strains. Our newly proposed deep learning method for single-cell classification achieved a high level of performance in classifying quinolone-and β-lactam-resistant strains.",
+      "datePublished": "2025-12-04",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.3389/fmicb.2024.1450804"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kota Aoki",
+      "email": "aoki.k@tottori-u.ac.jp",
+      "description": "Organization: Osaka University; Department: SANKEN (Institute of Scientific and Industrial Research)",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Mitsuko Hayashi-Nishino"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Kunihiko Nishino"
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "MEXT/JSPS (21H03542, 23K21717, 22K19831), JST (PMJSP2138)"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fmicb.2024.1450804",
+      "@type": "ScholarlyArticle",
+      "name": "Bioinformatic analysis reveals the association between bacterial morphology and antibiotic resistance using light microscopy with deep learning.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562",
+      "@type": "Taxon",
+      "scientificName": "Escherichia coli",
+      "vernacularName": "e. coli"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 107313868800,
+      "description": "107.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 313442,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

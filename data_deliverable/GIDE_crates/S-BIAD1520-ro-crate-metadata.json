@@ -1,0 +1,243 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1520"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1520",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8fe82ef0-0292-4390-bc5f-509af7322de9"
+        },
+        {
+          "@id": "#77239291-a848-42f5-a339-690372071be4"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4e379d07-7d20-468e-9db1-5580961fe8ae"
+        },
+        {
+          "@id": "#43b13694-77b2-4ca3-b985-04b005bff59d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3794-1309"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1186-2517"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-16",
+      "description": "Idiopathic pulmonary fibrosis (IPF) is a progressive and lethal disease characterized by excessive extracellular matrix (ECM) deposition. Current IPF therapies slow disease progression but do not stop or reverse it. The (myo)fibroblasts are thought to be the main cellular contributors to excessive ECM production in IPF. Here we report that fibrotic AT2 cells regulate production and crosslinking of ECM via the co-transcriptional activator YAP. YAP leads to increased expression of Lysyl oxidase (LOX) and subsequent LOX mediated crosslinking by fibrotic AT2 cells. Pharmacological YAP inhibition via verteporfin reverses fibrotic AT2 cell reprogramming and LOX expression in experimental lung fibrosis in vivo and in human fibrotic tissue ex vivo. We thus identify YAP-TEAD/LOX inhibition in AT2 cells as a promising potential new therapy for IPF patients. ",
+      "funder": [],
+      "identifier": "S-BIAD1520",
+      "keywords": [
+        "Fibrosis",
+        "respiratory disorder",
+        "epithelial cell reprogramming",
+        "YAP/TAZ",
+        "Hippo",
+        "extracellular matrix",
+        "LOX "
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Inhibition of epithelial cell YAP-TEAD/LOX signaling attenuates pulmonary fibrosis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1520/2f7c28aa-8ee2-4d47-a6d4-e155ce683057/4aecbcfb-ec25-455c-b4ce-7452639e3179.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1186-2517",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6"
+        }
+      ],
+      "email": "hani.alsafadi@med.lu.se",
+      "name": "Hani Alsafadi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3794-1309",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6"
+        }
+      ],
+      "email": "darcy.wagner@mcgill.ca",
+      "name": "Darcy Wagner"
+    },
+    {
+      "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Lund University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#43b13694-77b2-4ca3-b985-04b005bff59d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Collagen fiber network",
+      "name": "Scanning electron microscopy images ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#4e379d07-7d20-468e-9db1-5580961fe8ae",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Control and IPF lung tissue sections",
+      "name": "Human Immunofluorescence of YAP, LOX, HTII280",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#77239291-a848-42f5-a339-690372071be4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "10000 magnification",
+      "labEquipment": "Scanning electron microscopy",
+      "measurementTechnique": [],
+      "name": "SEM Images"
+    },
+    {
+      "@id": "#8fe82ef0-0292-4390-bc5f-509af7322de9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x UPLXAPO objective with an NA of 0.8",
+      "labEquipment": "Olympus IX83 P2ZF",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Whole slide scanning following immunofluorescent staining"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 28
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 13298553034
+    }
+  ]
+}

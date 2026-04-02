@@ -1,0 +1,201 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2072"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2072",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ffaa101e-6e7e-434b-bf36-10415624f4c7"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0fd36f43-0cdd-47c2-a080-2aac828b38a2"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5666-5173"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2569-4200"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-29",
+      "description": "We observed a decrease in the density of bassoon+ clusters in the vulnerable Aldh1a1+ but not in the resilient Aldh1a1- axons of Lrrk2G2019S as compared to Lrrk2WT mice. Furthermore, we noted an increase in the volume of the remaining bassoon clusters in Aldh1a1+ but not Aldh1a1- dopamine axons in mutant LRRK2 compared to wildtype control mice. Since the observed active zone changes may be due to the loss of Th fibers or dopamine vesicle clustering alterations, we employed confocal imaging to assess Th+ fibers in the dorsolateral striatum. ",
+      "funder": [],
+      "identifier": "S-BIAD2072",
+      "keywords": [
+        "LRRK2",
+        "Th fiber"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Th fibers and dopamine vesicle clustering alterations. ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2072/4362799f-7406-4db1-b900-23d4a8e09870/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5666-5173",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ef4d9a37-c8d4-429e-bf6b-2c591dc6541e"
+        }
+      ],
+      "email": "chuyu.chen@northwestern.edu",
+      "name": "Chuyu Chen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2569-4200",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ef4d9a37-c8d4-429e-bf6b-2c591dc6541e"
+        }
+      ],
+      "email": "loukia.parisiadou@northwestern.edu",
+      "name": "Loukia Parisiadou "
+    },
+    {
+      "@id": "#ef4d9a37-c8d4-429e-bf6b-2c591dc6541e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Aligning Science Across Parkinson's"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#0fd36f43-0cdd-47c2-a080-2aac828b38a2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "TH axon ",
+      "name": "Striatum",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ffaa101e-6e7e-434b-bf36-10415624f4c7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "a.Volume measurements of Th fibers.  Nikon CSU-W1 SoRa with a 60x objective at 0.1 m intervals at  1,024 x 1,024 pixel resolution. \nb. Intensity and area of Th expressing axons. For the high magnification analysis (Figure 5), we utilized a Nikon A1R microscope with a 100x oil immersion objective (Numerical Aperture = 1.45) and a resolution of 1,024 x 1,024 pixels to assess the intensity of Th axons in the striatum across different genotypes. For the low magnification analysis, images were captured using the same Nikon A1R microscope witha low magnification (20x) objective (NA=0.75), with a 1,024 x 1,024 pixel resolution. Stitched images of the whole striatum were automatically generated with Nikon Element.",
+      "labEquipment": "Nikon CSU-W1 SoRa and Nikon A1R microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Striatal Th expressing fibers acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 336
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 182520774504
+    }
+  ]
+}

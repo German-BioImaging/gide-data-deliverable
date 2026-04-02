@@ -1,0 +1,236 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1480"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1480",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a4c363af-c43d-49bc-8229-2a4fc35704bc"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#359d8d70-d674-4c91-989a-64f5e18fa49d"
+        },
+        {
+          "@id": "#5347acc8-4768-4ae4-ae49-d2b991e9964b"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9850-6971"
+        },
+        {
+          "@id": "#794079c5-1625-460e-9cc1-12afa930e566"
+        },
+        {
+          "@id": "#bb5fbeb1-1c94-4502-8c5d-3b6775b12507"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-30",
+      "description": "DNA-FISH and BRD4 immunofluorescence confocal stacks targeting PTC regions described in Klonizakis et al. 2023",
+      "funder": [],
+      "identifier": "S-BIAD1480",
+      "keywords": [
+        "DNA - FISH",
+        "BRD4 immunostaining"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "DNA-FISH and BRD4 immunostaining images from \"Synergistic and antagonistic activities of IRF8 and FOS enhancer pairs during an immune cell fate switch\".",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#794079c5-1625-460e-9cc1-12afa930e566",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7caaf0c9-34ad-4427-8fe0-10abb0348e62"
+        }
+      ],
+      "email": "thomas.graf@crg.eu",
+      "name": "Thomas Graf"
+    },
+    {
+      "@id": "#bb5fbeb1-1c94-4502-8c5d-3b6775b12507",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b6b5bde4-3a6e-4010-8f1f-67a17edbd056"
+        }
+      ],
+      "email": "cnikolaou@fleming.gr",
+      "name": "Christoforos Nikolaou"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9850-6971",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7caaf0c9-34ad-4427-8fe0-10abb0348e62"
+        }
+      ],
+      "email": "antonis.klonizakis@crg.eu",
+      "name": "Antonios Klonizakis"
+    },
+    {
+      "@id": "#7caaf0c9-34ad-4427-8fe0-10abb0348e62",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre for Genomic Regulation"
+    },
+    {
+      "@id": "#b6b5bde4-3a6e-4010-8f1f-67a17edbd056",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Alexander Fleming Biomedical Sciences Research Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#359d8d70-d674-4c91-989a-64f5e18fa49d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "BLAER cells established in Rapino et al. 2013 at Day 0 and 1 of transdifferentiation.",
+      "name": "BLAER",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5347acc8-4768-4ae4-ae49-d2b991e9964b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "BLAER cells harboring two IRF8 enhancer deletions",
+      "name": "IRF8 DKO",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a4c363af-c43d-49bc-8229-2a4fc35704bc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Samples were imaged using a Leica TCS SP5 inverted microscope. The following parameters were used as a starting point in each imaging session:\n\nArgon Laser -> 30%\nObjective -> 63X, 1.4, OIL\nFrequency -> 600Hz\nAverage from frame -> 2 \nPixel resolution -> 1024x1024\nDNA FISH Laser -> 633 laser, 40% \nFISH PMT -> PMT4, 644-725nm, 792,9V\nBRD4 Laser -> 488 (for IKZF1 Day 0 samples only)/561, 15%\nBRD4 PMT -> PMT 3, 501-572nm (for IKZF1 Day 0 samples only)/574-636nm, 753,1V/736,4V\nDAPI Laser -> 405 UV laser, 12%\nDAPI PMT -> PMT1, 417-484nm, 618,8 gain\n\nPlease note that in certain instances, the intensity of the lasers was adjusted, as DNA-FISH probes were made in-house, and the efficiency of antibody staining was subject to changes. Thus, images between experiments were NOT compared in any way in our manuscript. Images were processed and normalized internally using a custom R-script deposited with the source image files. For the complete metadata associated with each experiment, please refer to the metadata information stored in the .lif files. \n",
+      "labEquipment": "Leica SP5 inverted",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "DNA-FISH AND BRD4 immunostaining"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 14
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3118051761
+    }
+  ]
+}

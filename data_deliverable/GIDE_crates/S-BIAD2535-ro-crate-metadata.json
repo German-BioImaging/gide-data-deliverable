@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2535"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2535",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0af9cc3c-56cd-4026-ac21-577f946e4f12"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3c4e4aec-73db-47a7-97e7-eb6d4bd71284"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9456-5990"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-24",
+      "description": "Background: Beta-thalassemia is among the most common monogenic disorders, posing a major global health challenge. Editing of genetic modifiers, such as BCL11A erythroid enhancer and HBG promoters, enhances fetal hemoglobin expression and confers major therapeutic potential. Double-strand-break (DSB)-independent genome editing tools, such as base editors (BE), are potentially safer and better suited for multiplexed application than DSB-dependent CRISPR/Cas technology. However, harmful on- and off-target events remain a concern and must be excluded before clinical application, including chromosomal rearrangements invisible to standard detection technologies.\nResults: Using primary patient-derived CD34+ cells from three donors, we investigate simplex and duplex BE-based disruption of the BCL11A erythroid enhancer and the BCL11A binding site (-115 bp) on the HBG promoter for DNA-level and functional studies at the RNA, protein, and morphological level. Analyses include direct comparison to DSB-based editing, the current clinically applied standard, and CAST-seq to assess recombination events, allowing wider inferences on relative safety. RNA-seq analyses for clones of primary CD34+ cells across all treatments confirm peak HBG induction for duplex BE and comparable effects on apoptotic and immune response signatures. Overall, duplex BE produces robust γ-globin and fetal hemoglobin induction, improves functional correction over simplex editing and results in low incidence of genomic alterations in both target loci.\nConclusions: Duplex BE targeting both BCL11A erythroid enhancer and HBG promoter enables functional correction and genome integrity. Our study highlights the efficacy, safety, and therapeutic potential of the present duplex BE approach.\n",
+      "funder": [],
+      "identifier": "S-BIAD2535",
+      "keywords": [
+        "base editing",
+        "thalassemia",
+        "genetherapy"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Functional correction and genome integrity with duplex base editing of β-thalassemic hematopoietic stem cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2535/259df922-2884-4be3-b8a8-bf812b2b7b87/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9456-5990",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#96c3737f-e3a8-42bf-ab52-486edc9b05ba"
+        }
+      ],
+      "email": "nikolettap@cing.ac.cy",
+      "name": "Nikoletta Papaioannou"
+    },
+    {
+      "@id": "#96c3737f-e3a8-42bf-ab52-486edc9b05ba",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The Cyprus Institute of Neurology and Genetics"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#3c4e4aec-73db-47a7-97e7-eb6d4bd71284",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "This dataset contains light microscopy images of CD34⁺ hematopoietic stem and progenitor cells undergoing erythroid differentiation. Images were acquired at day 3 and day 6 of differentiation from unedited control samples and genome-edited samples. Cells were stained using May–Grünwald–Giemsa staining to enable morphological assessment of erythroid maturation.\n\nMicroscopy images were used to evaluate cellular morphology and differentiation status at each time point. Cells were manually counted and classified according to differentiation stage based on established morphological criteria, allowing quantitative assessment of erythroid progression between unedited and edited conditions.",
+      "name": "Microscopy images of differentiated CD34+ cells (DAY 3 and DAY 6) of unedited and edited samples ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#0af9cc3c-56cd-4026-ac21-577f946e4f12",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "IX73P1F inverted microscope, LED illumination, a 40× lens, and CellSens 1.7 imaging software ",
+      "labEquipment": "The IX73P1F inverted microscope, LED illumination, a 40× lens, and CellSens 1.7 imaging software (all Olympus Corporation) were used for capturing slide images",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Slide images of differentiated CD34+ cells"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 87
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 897209474
+    }
+  ]
+}

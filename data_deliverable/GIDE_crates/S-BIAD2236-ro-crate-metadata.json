@@ -1,0 +1,227 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2236"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2236",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e118d64f-d662-419d-98fa-a60174f8ec90"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6f52b52e-ed71-4947-b8a7-8cb005b9a7fe"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0503-4360"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4182-5159"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2605-1597"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-14",
+      "description": "Loss of pluripotency is an essential step in postimplantation development that facilitates the emergence of somatic cell identities essential for gastrulation. Before implantation, pluripotent cell identity is governed by a gene regulatory network that includes the key transcription factors SOX2 and NANOG. However, it is unclear how the pluripotency gene regulatory network is dissolved to enable lineage restriction. Here we show that SOX2 is required for postimplantation pluripotent identity and cells that lose SOX2 expression in the posterior epiblast are no longer pluripotent. Using in vitro and in vivo analyses we demonstrate anticorrelated expression of Nanog and Sox2 preceding gastrulation, culminating in an early disappearance of pluripotent identity from posterior NANOGhigh/SOX2low epiblast. Surprisingly, Sox2 expression is repressed by NANOG and embryos with post-implantation deletion of Nanog maintain posterior SOX2 expression. Our results demonstrate that the distinctive features of post-implantation pluripotency are underpinned by altered functionality of pluripotency transcription factors, ensuring correct spatio-temporal loss of embryonic pluripotency. ",
+      "funder": [],
+      "identifier": "S-BIAD2236",
+      "keywords": [
+        "SOX2",
+        "NANOG",
+        "Embryo",
+        "Pluripotency",
+        "Postimplantation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Nanog is repurposed after implantation to repress Sox2 and begin pluripotency extinction",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2236/98a1c05e-c615-4a90-9a46-43a32b330606/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0503-4360",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05cy4wa09"
+        }
+      ],
+      "email": "freddy.wong@sanger.ac.uk",
+      "name": "Freddy Wong"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2605-1597",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01nrxwf90"
+        }
+      ],
+      "email": "ichambers@ed.ac.uk",
+      "name": "Ian Chambers"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4182-5159",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01nrxwf90"
+        }
+      ],
+      "email": "v.wilson@ed.ac.uk",
+      "name": "Valerie Wilson"
+    },
+    {
+      "@id": "https://ror.org/01nrxwf90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://ror.org/05cy4wa09",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Wellcome Sanger Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#6f52b52e-ed71-4947-b8a7-8cb005b9a7fe",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Postimplantation E7.5 mouse embryos",
+      "name": "Embryo whole-mount immunofluorescence",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#e118d64f-d662-419d-98fa-a60174f8ec90",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was done with a standard setup of 405, 488, 561 and 633nm lasers. 4 channels were setup to acquire sequentially for every Z-plane before moving to the next Z-plane to make up the Z-stack. Bi-directional scanning was used with a frame averaging of 3. Each channel's exposure was set to the brightest nuclei at the Z-plane closest to the objective per embryo sample so further Z-planes will not be saturated.",
+      "labEquipment": "Embryos were imaged using the TCS SP8 inverted confocal microscope (Leica) equipped with HCX IRAPO L 25×/0.95 W (E3.5 to E5.5 embryos) or HC PL APO 20×/0.70 IMM (E6.5 to E7.75 embryos) objectives.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Whole-mount confocal imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 6664259119
+    }
+  ]
+}

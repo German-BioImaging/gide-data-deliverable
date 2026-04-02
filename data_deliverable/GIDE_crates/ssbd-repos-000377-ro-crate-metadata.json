@@ -1,0 +1,193 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000377/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000377/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000377",
+      "name": "Beta-tubulin dynamics during cell cycles of red algae",
+      "description": "ssbd-repos-000377",
+      "datePublished": "2025-01-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Cell Cycle/physiology[major]",
+        "Microscopy, Fluorescence/methods[major]",
+        "Plants/chemistry[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1007/s00709-020-01592-z"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051301"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007049"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1505"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Atsuko H Iwane",
+      "email": "atsuko.iwane@riken.jp",
+      "description": "Organization: RIKEN BDR; Department: Laboratory for Cell Field Structure; Laboratory: Laboratory for Cell Field Structure",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04j1n1c04"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04j1n1c04",
+      "@type": "Organization",
+      "name": "RIKEN BDR"
+    },
+    {
+      "@id": "https://doi.org/10.1007/s00709-020-01592-z",
+      "@type": "ScholarlyArticle",
+      "name": "Long-term live cell cycle imaging of single Cyanidioschyzon merolae cells.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Cyanidioschyzon merolae"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "T1",
+      "description": "T1"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
+      "@type": "DefinedTerm",
+      "name": "cell division"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007049",
+      "@type": "DefinedTerm",
+      "name": "cell cycle"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 975437824,
+      "description": "975.4 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 465,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

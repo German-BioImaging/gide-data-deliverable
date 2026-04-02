@@ -1,0 +1,230 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2027"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2027",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e7961dec-edad-456f-8fa8-f3b2ae55d61b"
+        },
+        {
+          "@id": "#49f263ec-51c4-4dde-9282-26e5fa5adb05"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#eb880870-0828-47c3-ba3c-f32b561c3214"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2021-8379"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2877-0133"
+        },
+        {
+          "@id": "#104806a3-386d-4c2e-b998-86270b89c079"
+        },
+        {
+          "@id": "#aecc6019-c8b3-49c9-bb2e-1826377d4a96"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-30",
+      "description": "Human triple negative breast cancer tissue samples including cores and resections from Neoadjuvant Chemotherapy (NACT) responders and non-responders. Samples were acquired as part of the Wellcome Leap DeltaTissue project and were stained with a panel of 35 metal-tagged antibodies plus nuclear stain.",
+      "funder": [],
+      "identifier": "S-BIAD2027",
+      "keywords": [
+        "IMC",
+        "cancer",
+        "TNBC",
+        "human"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Imaging Mass Cytometry (IMC) of human triple negative breast cancer tissue samples",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#104806a3-386d-4c2e-b998-86270b89c079",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba"
+        }
+      ],
+      "name": "Claudia Owczarek"
+    },
+    {
+      "@id": "#aecc6019-c8b3-49c9-bb2e-1826377d4a96",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba"
+        }
+      ],
+      "name": "Thomas A Phillips"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2021-8379",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba"
+        }
+      ],
+      "email": "maddy.parsons@kcl.ac.uk",
+      "name": "Maddy Parsons"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2877-0133",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba"
+        }
+      ],
+      "email": "stefania.marcotti@kcl.ac.uk",
+      "name": "Stefania Marcotti"
+    },
+    {
+      "@id": "#865eb045-c28f-4843-b8ab-484d11db08ba",
+      "@type": [
+        "Organization"
+      ],
+      "name": "King's College London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#eb880870-0828-47c3-ba3c-f32b561c3214",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human cancer tissue",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#49f263ec-51c4-4dde-9282-26e5fa5adb05",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Slides were inserted into the Hyperion XTi Imaging System and photographed to aid region selection (Panorama, see panoramas_list.xlsx for more details). ROIs of ~1 mm2 were selected and laser-ablated at 200-Hz frequency at 1 μm/pixel resolution on the IMC instrument (see antibody_list.xlsx for details on the antibody panel and associated channels and annotations_list.xlsx for details on ROIs). ROIs were selected based on pathologist-guided annotations of tissues (tumour or immune/stroma of pathological interest/importance).",
+      "labEquipment": "Standard BioTools Hyperion XTi",
+      "measurementTechnique": [],
+      "name": "Image acquisition 2"
+    },
+    {
+      "@id": "#e7961dec-edad-456f-8fa8-f3b2ae55d61b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Slides were inserted into the Hyperion Imaging System and photographed to aid region selection (Panorama, see panoramas_list.xlsx for more details). ROIs of ~1 mm2 were selected and laser-ablated at 200-Hz frequency at 1 μm/pixel resolution on the IMC instrument (see antibody_list.xlsx for details on the antibody panel and associated channels and annotations_list.xlsx for details on ROIs). ROIs were selected based on pathologist-guided annotations of tissues (tumour or immune/stroma of pathological interest/importance).",
+      "labEquipment": "Standard BioTools Hyperion",
+      "measurementTechnique": [],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 123
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 362691305444
+    }
+  ]
+}

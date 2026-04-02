@@ -1,0 +1,263 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000330/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000330/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000330",
+      "name": "Dataset of actin nanocluster dynamics during Drosophila tracheal tubulogenesis",
+      "description": "The periodic circumferential cytoskeleton supports various tubular tissues. Radial expansion of the tube lumen causes anisotropic tensile stress, which can be exploited as a geometric cue. However, the molecular machinery linking anisotropy to robust circumferential patterning is poorly understood. Here, we aim to reveal the emergent process of circumferential actin cable formation in a Drosophila tracheal tube. During luminal expansion, sporadic actin nanoclusters emerge and exhibit circumferentially biased motion and fusion. RNAi screening reveals the formin family protein, DAAM, as an essential component responding to tissue anisotropy, and non-muscle myosin II as a component required for nanocluster fusion. An agent-based model simulation suggests that crosslinkers play a crucial role in nanocluster formation and cluster-to-cable transition occurs in response to mechanical anisotropy. Altogether, we propose that an actin nanocluster is an organizational unit that responds to stress in the cortical membrane and builds a higher-order cable structure.",
+      "datePublished": "2024-06-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Actins[major]",
+        "Anisotropy",
+        "Cytoskeleton",
+        "Computer Simulation",
+        "Drosophila",
+        "Margins of Excision",
+        "Drosophila Proteins/genetics[major]",
+        "Adaptor Proteins, Signal Transducing"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-023-44684-z"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0030036"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0009612"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001944"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1904530"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016460"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1904530"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0090337"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Sayaka Sekine",
+      "email": "sayaka.sekine.d7@tohoku.ac.jp",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences; Laboratory: Laboratory for Histogenetic Dynamics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01dq60k83"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01dq60k83",
+      "@type": "Organization",
+      "name": "Tohoku University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-023-44684-z",
+      "@type": "ScholarlyArticle",
+      "name": "Emergence of periodic circumferential actin cables from the anisotropic fusion of actin nanoclusters during tubulogenesis.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "w; btl-Gal4, UAS-lifeact::GFP, UAS-lifeact::mScarletx2, etc./ Drosphila melanogaster",
+      "description": "w; btl-Gal4, UAS-lifeact::GFP, UAS-lifeact::mScarletx2, etc./ Drosphila melanogaster",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030036",
+      "@type": "DefinedTerm",
+      "name": "actin cytoskeleton organization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009612",
+      "@type": "DefinedTerm",
+      "name": "response to mechanical stimulus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001944",
+      "@type": "DefinedTerm",
+      "name": "tubular tissue development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1904530",
+      "@type": "DefinedTerm",
+      "name": "Actin"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016460",
+      "@type": "DefinedTerm",
+      "name": "myosin II complex"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1904530",
+      "@type": "DefinedTerm",
+      "name": "actin crosslinker"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0090337",
+      "@type": "DefinedTerm",
+      "name": "formin"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Confocal microscopy with Airyscan detector",
+      "description": "Confocal microscopy with Airyscan detector",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time-lapse imaging",
+      "description": "time-lapse imaging",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000241",
+      "@type": "DefinedTerm",
+      "name": "Confocal microscopy with Airyscan detector"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
+      "@type": "DefinedTerm",
+      "name": "time-lapse imaging"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 10803974144,
+      "description": "10.8 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 970,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

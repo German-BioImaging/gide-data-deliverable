@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2480"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2480",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#16ee185b-f493-462b-94c2-c3beb6242776"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b2ecf58a-2c94-43d0-b741-96114f1125da"
+        },
+        {
+          "@id": "obo:NCBITaxon_5702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#55b5209c-c19d-4225-a84f-7c3513be1395"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.7554/elife.107191.1"
+        }
+      ],
+      "datePublished": "2025-12-12",
+      "description": "Raw data corresponding to the publication, \"Cell surface localisation of GPI-anchored receptors in Trypanosoma brucei\", published in eLife (https://doi.org/10.7554/eLife.107191.1)",
+      "funder": [],
+      "identifier": "S-BIAD2480",
+      "keywords": [
+        "Fluorescence Microscopy, super resolution SIM"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Cell surface localisation of GPI-anchored receptors in Trypanosoma brucei",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2480/08db0715-b0fc-4b88-9050-2defc642755c/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#55b5209c-c19d-4225-a84f-7c3513be1395",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "souravbanerjee167@gmail.com",
+      "name": "Sourav Banerjee, Mark Carrington"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.7554/elife.107191.1",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "Cell surface localisation of GPI-anchored receptors in Trypanosoma brucei"
+    },
+    {
+      "@id": "obo:NCBITaxon_5702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Trypanosoma brucei brucei"
+    },
+    {
+      "@id": "#b2ecf58a-2c94-43d0-b741-96114f1125da",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bloodstream form cells",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_5702"
+      }
+    },
+    {
+      "@id": "#16ee185b-f493-462b-94c2-c3beb6242776",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See the materials methods section in the publication",
+      "labEquipment": "See the materials methods section in the publication\n",
+      "measurementTechnique": [],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 260
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3619643380
+    }
+  ]
+}

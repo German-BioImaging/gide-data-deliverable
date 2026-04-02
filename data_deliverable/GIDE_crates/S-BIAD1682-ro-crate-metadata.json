@@ -1,0 +1,205 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1682"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1682",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#97f8114b-2bee-4896-a18a-cebe5d9db407"
+        },
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d3104697-09ad-4b74-927a-73b06f04e1c4"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4706-7686"
+        },
+        {
+          "@id": "#012d5792-7a10-4b05-9ea3-4d6cb41a32b8"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-31",
+      "description": "Image files and Tracking data underlying the study “Early coordination of Cell migration and Cardiac fate Determination during Mammalian Gastrulation” by Abukar et. al. Using light sheet imaging of live mouse embryos between gastrulation and heart tube formation, we tracked mesodermal cells and reconstructed lineage trees and 3D migration paths for up to five cell divisions. We found independent progenitors emerging at specific times, contributing exclusively to left ventricle/atrioventricular canal (LV/AVC) or atrial myocytes. LV/AVC progenitors differentiated early to form the cardiac crescent while atrial progenitors later generated the heart tube’s inflow tract during morphogenesis. We also identified short-lived multi-potent progenitors with broad potential, illustrating early developmental plasticity. Multi-potent progenitors’ descendants displayed greater dispersion and more diverse migratory trajectories within the anterior mesoderm than uni-fated progenitor’s descendants. Progenitors contributing to extraembryonic mesoderm (ExEm) exhibited the fastest and most dispersed migrations. In contrast, those giving rise to endocardial, LV/AVC, and pericardial cells showed a more gradual divergence, with late-stage behavioural shifts: endocardial cells increased in speed, while pericardial cells slowed relative to LV/AVC cells. Together the data reveal the regulation of individual cell directionality and cardiac fate allocation within the seemingly unorganised migratory pattern of mesoderm cells.",
+      "funder": [],
+      "identifier": "S-BIAD1682",
+      "keywords": [
+        "cardiac progenitors",
+        "heart",
+        "mouse embryos",
+        "gastrulation",
+        "mesoderm",
+        "lineage analysis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Early coordination of Cell migration and Cardiac fate Determination during Mammalian Gastrulation.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1682/ab62bad8-d10c-46ac-b74f-290e4093751f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#012d5792-7a10-4b05-9ea3-4d6cb41a32b8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f4107419-8c06-4036-814e-fcbc916f8956"
+        }
+      ],
+      "email": "shayma.abukar.22@ucl.ac.uk",
+      "name": "Shayma Abukar"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4706-7686",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f4107419-8c06-4036-814e-fcbc916f8956"
+        }
+      ],
+      "email": "k.ivanovitch@ucl.ac.uk",
+      "name": "Kenzo Ivanovitch"
+    },
+    {
+      "@id": "#f4107419-8c06-4036-814e-fcbc916f8956",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University College London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#d3104697-09ad-4b74-927a-73b06f04e1c4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Gastrulating mouse embryos",
+      "name": "LSM Movies from \"Early coordination of Cell migration and Cardiac fate Determination during Mammalian Gastrulation\".",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#97f8114b-2bee-4896-a18a-cebe5d9db407",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was conducted using the Viventis LS1 light sheet microscope with a single-view, dual illumination configuration. Detection was performed using a Nikon 25x NA 1.1 water immersion objective (final magnification: 18.7x), yielding an 800 × 800 μm field of view. Sequential illumination was applied with 488 nm and 561 nm lasers. Image acquisition was performed every 2 minutes with z-stacks spanning 500 μm. The voxel size was 2 μm (z) × 0.347 μm (x, y), and the light sheet thickness was 3.3 μm. Exposure times for GFP and tdTomato channels were set to 50 ms and 50 to 100 ms, respectively. Embryos were maintained at 37°C in an 8% CO2 humidified environment throughout the imaging session.",
+      "labEquipment": "Viventis LS1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "LSM_acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000369",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "SPIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4852
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 9720610041059
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2350"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2350",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bf8451c4-8017-4158-9ec5-174ee012bf7b"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#37138606-fc80-486e-96d9-2a23a55bd2a7"
+        },
+        {
+          "@id": "obo:NCBITaxon_1415167"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0006-7031-6213"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8907-502X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2579-5546"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-23",
+      "description": "Training and benchmarking data for custom instance segmentation model for FM 4-64 membranes. The model was trained using Omnipose.\n",
+      "funder": [],
+      "identifier": "S-BIAD2350",
+      "keywords": [
+        "segmentation",
+        "fm 4-64",
+        "bacillus subtilis",
+        "model training"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Data for training custom instance segmentation model for FM 4-64 membranes.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2350/78e10fc1-7250-4462-ace5-1e07c0b0665e/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2579-5546",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0534re684"
+        }
+      ],
+      "email": "carsten.fortmann-grote@evolbio.mpg.de",
+      "name": "Carsten Fortmann-Grote"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8907-502X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0534re684"
+        }
+      ],
+      "email": "lopezgarrido@evolbio.mpg.de",
+      "name": "Javier Lopez-Garrido"
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-7031-6213",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0534re684"
+        }
+      ],
+      "email": "reyesmatte@evolbio.mpg.de",
+      "name": "Octavio Reyes-Matte"
+    },
+    {
+      "@id": "https://ror.org/0534re684",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute for Evolutionary Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_1415167",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Bacillus subtilis PY79"
+    },
+    {
+      "@id": "#37138606-fc80-486e-96d9-2a23a55bd2a7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Exponentially growing Bacillus subtilis PY79. Lab strain Bacillus subtilis PY79",
+      "name": "Bacillus subtilis strain",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1415167"
+      }
+    },
+    {
+      "@id": "#bf8451c4-8017-4158-9ec5-174ee012bf7b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FM 4-64 images were visualized using an excitation filter of 542 nm and an emission filter 679 nm transmission at 100% and an exposure time of 0.2 s. SoftWorx (Cytiva Life Sciences) was used to deconvolve FM 4-64 images.",
+      "labEquipment": "DeltaVision Ultra microscope with a PCO Edge sCMOS camera and an Olympus 100X UPLX APO objective (Numerical aperture 1.45, Refractive index 1.518 Ph3)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 414
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8973929838
+    }
+  ]
+}

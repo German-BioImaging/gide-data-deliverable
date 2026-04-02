@@ -1,0 +1,221 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1414"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1414",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d415476a-6809-4aca-a1ed-a0c13d0d2302"
+        },
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c482bb2b-1394-461d-b96d-dcd7be611939"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3911-0747"
+        },
+        {
+          "@id": "https://orcid.org/0009-0004-6459-7958"
+        },
+        {
+          "@id": "#c122445f-888d-4b1d-8770-2b3b2f12446b"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7809-062X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-11",
+      "description": "This upload contains photographs taken by Eva van der Heijden at the Butterfly Genetics Group at the University of Cambridge, from a collection of Hypolimnas misippus and Danaus chrysippus wings collected across Africa between 2011 and 2019. Individual sample names can be found in the information sheet. Further Information on individual samples (and other samples from the Butterfly Genetics Group Collection) can be found on the public database, Earthcape (https://heliconius.ecdb.io/). Please contact Chris Jiggins (c.jiggins[at]zoo.cam.ac.uk) or Anna Orteu (afarreo[at[gmail.com) for further information.",
+      "funder": [],
+      "identifier": "S-BIAD1414",
+      "keywords": [
+        "butterfly",
+        "wings"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Collection of Hypolimnas bolina (and some Danaus chrysippus) wing photographs",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1414/6b166b40-c8dd-4a4f-b40f-92175d0c4b23/56492a7d-aae7-4f84-bd0e-3730cfb646b1.png"
+      ]
+    },
+    {
+      "@id": "#c122445f-888d-4b1d-8770-2b3b2f12446b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "iaw22@cam.ac.uk",
+      "name": "Ian Warren"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3911-0747",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "afarreo@gmail.com",
+      "name": "Anna Orteu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7809-062X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "cj107@cam.ac.uk",
+      "name": "Chris Jiggins"
+    },
+    {
+      "@id": "https://orcid.org/0009-0004-6459-7958",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "ev346@cam.ac.uk",
+      "name": "Eva van der Heijden"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#c482bb2b-1394-461d-b96d-dcd7be611939",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Wings of Danaus chryisippus",
+      "name": "Butterfly wings",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#d415476a-6809-4aca-a1ed-a0c13d0d2302",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Camera was held in place above the wings inside a dark box with a colour checker and ruler. Extra lighting was added. Each wing was placed in a separate quadrant.",
+      "labEquipment": "Photography camera (various models).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "name": "Photography camera (various models)."
+    },
+    {
+      "@id": "obo:FBbi_00000240",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "macroscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1378
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 24332216615
+    }
+  ]
+}

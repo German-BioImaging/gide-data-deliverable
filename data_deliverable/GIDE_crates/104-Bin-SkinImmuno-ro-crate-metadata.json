@@ -1,0 +1,370 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/104-Bin-SkinImmuno/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/104-Bin-SkinImmuno/",
+      "@type": "Dataset",
+      "identifier": "104-Bin-SkinImmuno",
+      "name": "Immunocytochemistry images of ZIP10 (red) and E-cadherin (green) in skin from mouse embryos or postnatal day 2 (P2) mice.",
+      "description": "104-Bin-SkinImmuno",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cation Transport Proteins/genetics[major]",
+        "Cation Transport Proteins/metabolism",
+        "Cations, Divalent",
+        "Cell Differentiation",
+        "Cell Proliferation",
+        "Embryo, Mammalian",
+        "Gene Expression Profiling",
+        "Gene Expression Regulation, Developmental",
+        "Hair Follicle/growth & development",
+        "Hair Follicle/metabolism[major]",
+        "HeLa Cells",
+        "Homeostasis/genetics[major]",
+        "Humans",
+        "Ion Transport",
+        "Mice",
+        "Mice, Transgenic",
+        "Phosphoproteins/genetics[major]",
+        "Phosphoproteins/metabolism",
+        "Receptors, G-Protein-Coupled/genetics",
+        "Receptors, G-Protein-Coupled/metabolism",
+        "Signal Transduction",
+        "Skin/cytology",
+        "Skin/growth & development",
+        "Skin/metabolism[major]",
+        "Tissue Culture Techniques",
+        "Trans-Activators/genetics[major]",
+        "Trans-Activators/metabolism",
+        "Zinc/metabolism[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        },
+        {
+          "@id": "#auth-011"
+        },
+        {
+          "@id": "#auth-012"
+        },
+        {
+          "@id": "#auth-013"
+        },
+        {
+          "@id": "#auth-014"
+        },
+        {
+          "@id": "#auth-015"
+        },
+        {
+          "@id": "#auth-016"
+        },
+        {
+          "@id": "#auth-017"
+        },
+        {
+          "@id": "#auth-018"
+        },
+        {
+          "@id": "#auth-019"
+        },
+        {
+          "@id": "#auth-020"
+        },
+        {
+          "@id": "#auth-021"
+        },
+        {
+          "@id": "#auth-022"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.1710726114"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042592"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0006829"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-303"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Toshiyuki Fukada",
+      "email": "fukada@ph.bunri-u.ac.jp",
+      "description": "Organization: Showa University; Department: Division of Pathology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04mzk4q39"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Bum-Ho Bin",
+      "description": "Department: Department of Oral Diagnostic Sciences"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Jinhyuk Bhin",
+      "description": "Department: School of Dentistry"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Mikiro Takaishi"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Koh-ei Toyoshima"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Saeko Kawamata"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Kana Ito"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Takafumi Hara"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Takashi Watanabe"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Tarou Irié"
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Teruhisa Takagishi"
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Su-Hyon Lee"
+    },
+    {
+      "@id": "#auth-013",
+      "@type": "Person",
+      "name": "Haeng-Sun Jung"
+    },
+    {
+      "@id": "#auth-014",
+      "@type": "Person",
+      "name": "Sangchul Rho"
+    },
+    {
+      "@id": "#auth-015",
+      "@type": "Person",
+      "name": "Juyeon Seo"
+    },
+    {
+      "@id": "#auth-016",
+      "@type": "Person",
+      "name": "Dong-Hwa Choi"
+    },
+    {
+      "@id": "#auth-017",
+      "@type": "Person",
+      "name": "Daehee Hwang"
+    },
+    {
+      "@id": "#auth-018",
+      "@type": "Person",
+      "name": "Haruhiko Koseki"
+    },
+    {
+      "@id": "#auth-019",
+      "@type": "Person",
+      "name": "Osamu Ohara"
+    },
+    {
+      "@id": "#auth-020",
+      "@type": "Person",
+      "name": "Shigetoshi Sano"
+    },
+    {
+      "@id": "#auth-021",
+      "@type": "Person",
+      "name": "Takashi Tsuji"
+    },
+    {
+      "@id": "#auth-022",
+      "@type": "Person",
+      "name": "Kenji Mishima"
+    },
+    {
+      "@id": "https://ror.org/04mzk4q39",
+      "@type": "Organization",
+      "name": "Showa University"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.1710726114",
+      "@type": "ScholarlyArticle",
+      "name": "Requirement of zinc transporter ZIP10 for epidermal development: Implication of the ZIP10-p63 axis in epithelial homeostasis.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042592",
+      "@type": "DefinedTerm",
+      "name": "homeostasis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006829",
+      "@type": "DefinedTerm",
+      "name": "zinc transport"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 21144252,
+      "description": "21.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 5,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

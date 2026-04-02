@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000087/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000087/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000087",
+      "name": "Images and time-lapse images of spine formation in wild type and CaMKIIaKI hippocampal neurons.",
+      "description": "ssbd-repos-000087",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Biomarkers",
+        "Calcium/metabolism",
+        "Calcium-Calmodulin-Dependent Protein Kinase Type 2/genetics[major]",
+        "Calcium-Calmodulin-Dependent Protein Kinase Type 2/metabolism",
+        "Cell Differentiation/genetics[major]",
+        "Dendritic Spines/metabolism[major]",
+        "Fluorescent Antibody Technique",
+        "Hippocampus",
+        "Mice",
+        "Models, Biological",
+        "Neuronal Plasticity",
+        "Neurons/cytology[major]",
+        "Neurons/metabolism[major]",
+        "Phosphorylation",
+        "Protein Binding",
+        "Pyramidal Cells/cytology",
+        "Pyramidal Cells/metabolism",
+        "rap1 GTP-Binding Proteins/genetics[major]",
+        "rap1 GTP-Binding Proteins/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-017-13728-y"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1905355"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0044309"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0106033"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-172"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shigeo Okabe",
+      "email": "okabe@m.u-tokyo.ac.jp",
+      "description": "Organization: University of Tokyo; Department: Department of Cellular Neurobiology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-017-13728-y",
+      "@type": "ScholarlyArticle",
+      "name": "Developmental stage-dependent regulation of spine formation by calcium-calmodulin-dependent protein kinase IIalpha and Rap1.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1905355",
+      "@type": "DefinedTerm",
+      "name": "spine apparatus formation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0044309",
+      "@type": "DefinedTerm",
+      "name": "neuron spine"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0106033",
+      "@type": "DefinedTerm",
+      "name": "spine synapse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 214873088,
+      "description": "214.9 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 48,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

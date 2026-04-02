@@ -1,0 +1,241 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD43"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD43",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9fd0b8c6-4240-49b7-9a26-afa15bcb8b5d"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#34d3c091-d56d-4ac5-8f7f-83c0e78e92c6"
+        },
+        {
+          "@id": "#9cc4b8a3-3bb2-4cfd-b9bc-e94a1bfd5b44"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_5833"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4569-1493"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8017-9669"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4611-9205"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2022-01-01",
+      "description": "\"This dataset comprises processed images and class labels of UV microscopy images of human red blood cells infected with malaria at various degrees of parasitemia. The microscope used to caputure the images is a custom-built UV microscope employing a quartz Zeiss Ultrafluar 100x/0.85 finite conjugate objective. The cells are imaged at either one wavelength in deep UV (285 nm) or three simultaneous wavelengths (285 nm, 365 nm, 565 nm). Each condition contains many fields of view, extensive z-stacks, and a single time point. The directory structure is organized first by category: 'Training and validation', or 'Titration 2020-06-20'. Training and Validation is a collection of time-stamped data collection sessions acquired during development of the method. 'Titration 2020-06-20' is an experiment whereby a high parasitemia malaria culture was diluted serially into healthy red blood cells. Each dilution point was imaged and resides in a time-stamped directory.\"",
+      "funder": [],
+      "identifier": "S-BIAD43",
+      "keywords": [
+        "Label-free microscopy",
+        "Deep learning"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Label-free imaging and classification of live P. falciparum: processed UV dataset",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8017-9669",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6341e03b-eca8-42c8-a61f-6c73a0bae6f8"
+        }
+      ],
+      "email": "rafael.gomez@czbiohub.org",
+      "name": "Rafael Gómez-Sjöberg"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4611-9205",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6341e03b-eca8-42c8-a61f-6c73a0bae6f8"
+        }
+      ],
+      "email": "joe.derisi@czbiohub.org",
+      "name": "Joseph DeRisi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4569-1493",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6341e03b-eca8-42c8-a61f-6c73a0bae6f8"
+        }
+      ],
+      "email": "paul.lebel@czbiohub.org",
+      "name": "Paul Lebel"
+    },
+    {
+      "@id": "#6341e03b-eca8-42c8-a61f-6c73a0bae6f8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Chan Zuckerberg Biohub"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_5833",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Plasmodium falciparum",
+      "vernacularName": "malaria parasite P. falciparum"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#34d3c091-d56d-4ac5-8f7f-83c0e78e92c6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human red blood cells",
+      "name": "Human red blood cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9cc4b8a3-3bb2-4cfd-b9bc-e94a1bfd5b44",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Plasmodium falciparum",
+      "name": "Plasmodium falciparum",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_5833"
+      }
+    },
+    {
+      "@id": "#9fd0b8c6-4240-49b7-9a26-afa15bcb8b5d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "",
+      "labEquipment": "Deep UV microscopy was performed on a custom-built microscope using a 100 × /0.85 Ultrafluar quartz objective lens (Zeiss, Oberkochen, Germany) to form images onto a UV-sensitive camera (PCO.Ultraviolet, Kelheim, Germany). A multi-wavelength condenser was built for transmitted light excitation using commercially-available UV LEDs to illuminate the sample with 285 nm (Thorlabs #M285L5, Newton, USA), 365 nm (Thorlabs #M365FP1), or 565 nm (Thorlabs #M565L3) light. The condenser used one dichroic mirror to combine the two UV wavelengths, and a second dichroic mirror to merge visible light from the third LED, or alternatively, any standard microscopy source. Each UV LED was collimated with an off-axis parabolic UV-enhanced aluminum mirror (Thorlabs #MPD129-F01) before being combined. An adjustable iris set fully open to 12 mm diameter limited the numerical aperture of the illumination to 0.23.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "UV Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 680977
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 45540159493
+    }
+  ]
+}

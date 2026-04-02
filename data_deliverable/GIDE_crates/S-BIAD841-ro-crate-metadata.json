@@ -1,0 +1,300 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD841"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD841",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1e63aab7-5cb4-4224-bb53-61945acb5889"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#987cec17-1721-4360-be2a-5bfa8a85b9e1"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6285-8959"
+        },
+        {
+          "@id": "#b656a9c2-919c-4e6f-a6e1-04ea088f5e3d"
+        },
+        {
+          "@id": "#db9b6bb1-6897-4868-880e-ade278a70ee4"
+        },
+        {
+          "@id": "#d33c567b-839b-4677-938f-8a87d2546eb9"
+        },
+        {
+          "@id": "#fb772201-e1ac-450e-8c0d-191df70b4616"
+        },
+        {
+          "@id": "#02618a7d-b2a2-4bdc-bd1f-c812a842d13d"
+        },
+        {
+          "@id": "#ff4b622c-9229-4e78-8445-4846f410327c"
+        },
+        {
+          "@id": "#d6e44937-96ce-4c73-a3a0-7c52c1862a6a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-11",
+      "description": "In vivo imaging using shortwave infrared light (SWIR, 1000-2000 nm) benefits from deeper penetration and higher resolution compared to using visible and near-infrared wavelengths. However, the development of biocompatible SWIR contrast agents remains challenging. Despite recent advancements, small molecule SWIR fluorophores are often hindered by their significant hydrophobicity. We report a platform for generating a panel of soluble and functional dyes for SWIR imaging by late-stage functionalization of a versatile fluorophore intermediate, affording water-soluble dyes with bright SWIR fluorescence in serum. Specifically, a tetra-sulfonate derivative enables clear video-rate imaging of vasculature with only 0.05 nmol dye, and a tetra-ammonium dye shows strong cellular retention for tracking of tumor growth. Additionally, incorporation of phosphonate functionality enables imaging of bone in awake mice. This modular design provides insights for facile derivatization of existing SWIR fluorophores to introduce both solubility and bioactivity towards in vivo bioimaging.",
+      "funder": [],
+      "identifier": "S-BIAD841",
+      "keywords": [
+        "fluorescence imaging",
+        "shortwave infrared",
+        "water solubility",
+        "click chemistry",
+        "cell tracking",
+        "bone imaging"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Water-soluble chromenylium dyes for shortwave infrared imaging in mice",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD841/719c00d4-22d9-4da2-9477-42a4f4b1c89b/dee60d10-35cf-4378-af7f-3ed89ed00bc6.png"
+      ]
+    },
+    {
+      "@id": "#02618a7d-b2a2-4bdc-bd1f-c812a842d13d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e07507c8-8df8-4202-a389-5a6854b99fa0"
+        }
+      ],
+      "email": "skallep@purdue.edu",
+      "name": "Shivakrishna Kallepu"
+    },
+    {
+      "@id": "#b656a9c2-919c-4e6f-a6e1-04ea088f5e3d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "EYLin@mednet.ucla.edu",
+      "name": "Eric Y Lin"
+    },
+    {
+      "@id": "#d33c567b-839b-4677-938f-8a87d2546eb9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "lim.irene.16@gmail.com",
+      "name": "Irene Lim"
+    },
+    {
+      "@id": "#d6e44937-96ce-4c73-a3a0-7c52c1862a6a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "sletten@chem.ucla.edu",
+      "name": "Ellen M. Sletten"
+    },
+    {
+      "@id": "#db9b6bb1-6897-4868-880e-ade278a70ee4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "name": "Emily B. Mobley"
+    },
+    {
+      "@id": "#fb772201-e1ac-450e-8c0d-191df70b4616",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#11e4cb8a-554e-46f6-b085-6771d2e96aee"
+        }
+      ],
+      "email": "leiguo@uark.edu",
+      "name": "Lei Guo"
+    },
+    {
+      "@id": "#ff4b622c-9229-4e78-8445-4846f410327c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e07507c8-8df8-4202-a389-5a6854b99fa0"
+        }
+      ],
+      "email": "plow@purdue.edu",
+      "name": "Philip S. Low"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6285-8959",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#11e4cb8a-554e-46f6-b085-6771d2e96aee"
+        }
+      ],
+      "email": "sjia@uark.edu",
+      "name": "Shang Jia"
+    },
+    {
+      "@id": "#11e4cb8a-554e-46f6-b085-6771d2e96aee",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Arkansas at Fayetteville"
+    },
+    {
+      "@id": "#e07507c8-8df8-4202-a389-5a6854b99fa0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Purdue University West Lafayette"
+    },
+    {
+      "@id": "#f270c395-b369-47cc-8f34-862290942b7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#987cec17-1721-4360-be2a-5bfa8a85b9e1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live mouse and dissected mouse organs",
+      "name": "Mouse fluorescence imaging with SWIR light",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#1e63aab7-5cb4-4224-bb53-61945acb5889",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging instrument was installed according to published procedure, using an Allied Vision Goldeye G-032 Cool TEC2 camera with illumination from LU0975DLU350-S30AN03 (35 W, 975 nm laser) and LU0785D250-U70AN (25 W, 785 nm laser) Lumics laser units to record images at 14-bit depth. Illumination was adjusted to 100 mW/cm2 for 975 nm and 50 mW/cm2 for 785 mm. Excitation was provided at 975 nm for Sulfo-, Ammon-, Zwit- and PhosphoChrom7, and at 785 nm for ICG. Fluorescence images were recorded with an 1100 nm long-pass filter unless otherwise noted. Dual-channel imaging of SulfoChrom7/ICG was performed with alternating 785 nm / 975 nm excitation. Dual-channel imaging of fluorescent image/bright field image was performed with alternating laser illumination under ambient fluorescent lighting, where laser off images were used as bright field images and as background to be subtracted in the fluorescence channel.",
+      "labEquipment": "Allied Vision Goldeye G-032 Cool TEC2 camera",
+      "measurementTechnique": [],
+      "name": "Mouse fluorescence imaging with SWIR light"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 178
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 70370245030
+    }
+  ]
+}

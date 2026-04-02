@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1350"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1350",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8aeed63f-b980-480d-94e7-1407cd7f9843"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#084d125e-04fa-4700-90ec-77e13aa1e79b"
+        },
+        {
+          "@id": "obo:NCBITaxon_562"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9f5e0828-1c57-421a-9fd9-a623fad80a69"
+        },
+        {
+          "@id": "#3e140418-28a9-48c6-9138-36688a529d83"
+        },
+        {
+          "@id": "#84696c0f-3c95-4062-85d3-ccffb098e06b"
+        },
+        {
+          "@id": "#badb97a1-29d0-46d0-aaf9-81443c8c20d7"
+        },
+        {
+          "@id": "#89dc5ba1-d3c2-4383-b2e2-2cb708898d75"
+        },
+        {
+          "@id": "#e7d1fd23-8a79-49d6-85b8-c08f1cadf964"
+        },
+        {
+          "@id": "#6aeb7d98-7f8b-4883-8ab0-cb70bd7aafba"
+        },
+        {
+          "@id": "#bda66cec-acd4-483a-9ecf-77713114b5aa"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0980-5334"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-26",
+      "description": "Image dataset used in: \"Genome concentration limits cell growth and modulates proteome composition in Escherichia coli\" by Makela J., Papagiannakis A., et al., 2024.",
+      "funder": [],
+      "identifier": "S-BIAD1350",
+      "keywords": [
+        "DNA, ribosomes, mRNA, transcription, translation, genome, central dogma, Escherichia coli, growth"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Genome concentration limits cell growth and modulates proteome composition in Escherichia coli",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#3e140418-28a9-48c6-9138-36688a529d83",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5525fe78-0df3-4a00-8b3c-45273bd8c01c"
+        }
+      ],
+      "email": "alexpapa@stanford.edu",
+      "name": "Alexandros Papagiannakis"
+    },
+    {
+      "@id": "#6aeb7d98-7f8b-4883-8ab0-cb70bd7aafba",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "marinovg@stanford.edu",
+      "name": "Georgi Marinov"
+    },
+    {
+      "@id": "#84696c0f-3c95-4062-85d3-ccffb098e06b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "whl243@gate.sinica.edu.tw",
+      "name": "Wei-Hsiang Lin"
+    },
+    {
+      "@id": "#89dc5ba1-d3c2-4383-b2e2-2cb708898d75",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "skyeg@stanford.edu",
+      "name": "Skye Glenn"
+    },
+    {
+      "@id": "#9f5e0828-1c57-421a-9fd9-a623fad80a69",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5525fe78-0df3-4a00-8b3c-45273bd8c01c"
+        }
+      ],
+      "email": "jarno.p.makela@helsinki.fi",
+      "name": "Jarno Mäkelä"
+    },
+    {
+      "@id": "#badb97a1-29d0-46d0-aaf9-81443c8c20d7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "email": "mikelanz@stanford.edu",
+      "name": "Michael C. Lanz"
+    },
+    {
+      "@id": "#bda66cec-acd4-483a-9ecf-77713114b5aa",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "email": "skotheim@stanford.edu",
+      "name": "Jan M. Skotheim"
+    },
+    {
+      "@id": "#e7d1fd23-8a79-49d6-85b8-c08f1cadf964",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "matthew.swaffer@ed.ac.uk",
+      "name": "Matthew Swaffer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0980-5334",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "jacobs-wagner@stanford.edu",
+      "name": "Christine Jacobs-Wagner"
+    },
+    {
+      "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Chan Zuckerberg Biohub San Francisco"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#5525fe78-0df3-4a00-8b3c-45273bd8c01c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Howard Hughes Medical Institute"
+    },
+    {
+      "@id": "#de588502-f2ed-4e10-94dc-797256ad666b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_562",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli"
+    },
+    {
+      "@id": "#084d125e-04fa-4700-90ec-77e13aa1e79b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Single Escherichia coli cells",
+      "name": "Live or fixed Escherichia coli cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#8aeed63f-b980-480d-94e7-1407cd7f9843",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Epi-fluorescence exposure: 100 to 500 ms exposure.\nTime-lapse frame interval: 5 min\nLive cell PALM frame rate: 10.7 ms",
+      "labEquipment": "For E. coli, phase contrast and fluorescence imaging (except for the RpoC-HaloTag-JF549 epifluorescence experiment), were performed on a Nikon Ti2 microscope equipped with a Perfect Focus System, a 100x Plan Apo λ 1.45 NA oil immersion objective, a motorized stage, a Prime BSI sCMOS camera (Photometrics), and a temperature chamber (Okolabs). Fluorescence emission was collected during a 100 or 200 ms exposure time provided by a Spectra III Light Engine LED excitation source (Lumencor): mCherry – 594 nm excitation, DAPI/FITC/TxRed filter cube (polychroic FF-409/493/596-Di02, triple-pass emitter FF-1-432/523/702-25); GFP and SYTO RNASelect – 488 nm excitation, DAPI/FITC/TxRed polychroic filter cube, and an ET525/50M emission filter; YFP – 514 nm excitation, CFP/YFP/mCherry filter cube (polychroic FF-459/526/596-Di01, triple-pass emitter FF-1-475/543/702-25), and a FF02-525/40-25 emission filter. The microscope was controlled using NIS-Elements AR. For time-lapse imaging, phase images were collected every 5 min.\n\nEpifluorescence snapshots of RpoC-HaloTag-JF549 were taken using a Nikon Ti microscope, equipped with a Perfect Focus System, a 100x Plan Apo λ 1.45 NA oil immersion objective, a motorized stage and an ORCA Flash 4.0 camera (Hamamatsu). Fluorescence emission was collected during a 200 ms exposure time provided by a Sola solid state white light source (Lumencor) and a Cy3 filter cube (excitation AT545/25x, dichroic T565lpxr, emission ET605/70m). The microscope was controlled using NIS-Elements AR. The same microscope and filters were used to capture the EUB338-Cy3 fluorescence, but using a 100-ms exposure time. The same microscope, with a DAPI filter cube (excitation ET395/25x, dichroic T425lpxr, emission ET460/50m) and 500-ms exposure time, was used to capture the DAPI fluorescence in fixed 1N and multi-N cells.\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "name": "Epi-fluorescence and single molecule microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1223608162931
+    }
+  ]
+}

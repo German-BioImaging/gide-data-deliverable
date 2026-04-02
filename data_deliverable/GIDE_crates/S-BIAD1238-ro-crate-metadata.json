@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1238"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1238",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ced887c5-6b4b-49dd-bc71-3592a6cae11c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a9fb570e-3753-423e-acf8-3e4eb28960c3"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#78636c4a-44d9-4dc1-b1ee-6569225542cf"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-20",
+      "description": "our results reveal dual mechanisms for the translocation and degradation of Hdc to ensure that histamine synthesis is restricted to axonal terminals and that histamine is rapidly loaded into synaptic vesicles. This is crucial for sustaining neurotransmission and protecting against cytotoxic monoamines.",
+      "funder": [],
+      "identifier": "S-BIAD1238",
+      "keywords": [
+        "histamine, synaptic vesicle, synaptic transmission, Hdc, NSF1, POE."
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Histamine Synthesis and Transport are Coupled in Axon Terminals via Double Quality Control System",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#78636c4a-44d9-4dc1-b1ee-6569225542cf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04v3ywz14"
+        }
+      ],
+      "email": "penglei@nibs.ac.cn",
+      "name": "penglei"
+    },
+    {
+      "@id": "https://ror.org/04v3ywz14",
+      "@type": [
+        "Organization"
+      ],
+      "name": "China Agricultural University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#a9fb570e-3753-423e-acf8-3e4eb28960c3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila photoreceptors",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#ced887c5-6b4b-49dd-bc71-3592a6cae11c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The 488 nm laser was used to image GFP, and the 561 nm laser was used to image mCherry",
+      "labEquipment": "Zeiss 800",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 220
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1730404366
+    }
+  ]
+}

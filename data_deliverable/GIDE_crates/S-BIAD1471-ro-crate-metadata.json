@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1471"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1471",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9e91a6e7-c5b2-4fc0-bdea-977c5874efbb"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#04deadc8-c405-4ccd-919c-20d6271bfac6"
+        },
+        {
+          "@id": "#99f182dd-63ca-47f8-8fae-cb4b683e49d4"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1665-184X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3927-5944"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-15",
+      "description": "Control and Elongator depleted S2 cells stained for total tubulin, poly-Glutamylated tubulin and K40 Acetylated tubulin",
+      "funder": [],
+      "identifier": "S-BIAD1471",
+      "keywords": [
+        "S2 cells",
+        "Microtubules",
+        "Tubulin"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Drosophila S2 cells treated with RNAi",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1471/a2cc646f-7c2a-455a-a5f0-9b0ba1579c1f/f7ea14ee-1e15-4e54-b60e-fecdd975b5c2.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1665-184X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#833de045-c952-4ca3-8379-3235aaf39273"
+        }
+      ],
+      "email": "vicente@mrc-lmb.cam.ac.uk",
+      "name": "Vicente Jose Planelles Herrero"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3927-5944",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#833de045-c952-4ca3-8379-3235aaf39273"
+        }
+      ],
+      "email": "derivery@mrc-lmb.cam.ac.uk",
+      "name": "Emmanuel Derivery"
+    },
+    {
+      "@id": "#833de045-c952-4ca3-8379-3235aaf39273",
+      "@type": [
+        "Organization"
+      ],
+      "name": "MRC Laboratory of Molecular Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#04deadc8-c405-4ccd-919c-20d6271bfac6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "S2 cells",
+      "name": "S2 Control",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#99f182dd-63ca-47f8-8fae-cb4b683e49d4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "S2 cells",
+      "name": "S2 Elp234 RNAi",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#9e91a6e7-c5b2-4fc0-bdea-977c5874efbb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was performed using a custom Spinning disk/ Total Internal Reflection Fluorescence (TIRF) microscope composed of a Nikon Ti stand equipped with perfect focus, a fast piezo z-stage (ASI) and a Plan Apochromat lambda 100X NA 1.45 objective. TIRF illumination was achieved with an azimuthal TIRF illuminator (iLas2, Roper France) modified to have an extended field of view to match the size of the camera (Cairn). Images were recorded with a Photometrics Prime 95B back-illuminated sCMOS camera run in pseudo-global shutter mode and synchronized with the rotation of the azimuthal illumination. TIRF angle was set independently for all channels so that the depth of the TIRF field was identical for all channels. Confocal illumination is achieved using a Yokogawa CSU-X1 spinning disk head and a Photometrics 95B back-illuminated sCMOS camera operated in global shutter mode and synchronized with the spinning disk rotation. Excitation was performed using 405 nm (100 mW OBIS LX), 488 nm (150 mW OBIS LX), 561 nm (100 mW OBIS LS) and 637 nm (140 mW OBIS LX) lasers fibered within a Cairn laser launch. To minimize bleedthrough, single band emission filters were used (Chroma 525/50 for Alexa 488/GFP/Alexa514; Chroma 595/50 for mScarlet/rhodamine/mRFP/mCherry and Chroma 655LP for HiLyte647/Alexa647/ATTO647N) and acquisition of each channel was performed sequentially using a fast filter wheel (Cairn Optospin). To enable fast acquisition, the entire setup is synchronized at the hardware level by a Zynq-7020 Field Programmable Gate Array (FPGA) stand-alone card (National Instrument sbrio 9637) running custom code. Sample temperature was maintained at 25°C (or 37°C for microtubule dynamics) using a heating enclosure (MicroscopeHeaters.com, Brighton, UK). Acquisition was controlled by Metamorph software (v7.10.1.161).",
+      "labEquipment": "Custom build microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 298
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1260833551
+    }
+  ]
+}

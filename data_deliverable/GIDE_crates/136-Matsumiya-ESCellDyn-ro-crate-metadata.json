@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/136-Matsumiya-ESCellDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/136-Matsumiya-ESCellDyn/",
+      "@type": "Dataset",
+      "identifier": "136-Matsumiya-ESCellDyn",
+      "name": "Time-lapse imaging of Hes7 promoter-driven luciferase activity in mouse embryos or presomitic mesoderm-like tissues (iPSM) induced from mouse ES cells",
+      "description": "136-Matsumiya-ESCellDyn",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Basic Helix-Loop-Helix Transcription Factors/metabolism[major]",
+        "Biological Clocks",
+        "Body Patterning/genetics[major]",
+        "Cell Culture Techniques",
+        "Embryonic Stem Cells/metabolism[major]",
+        "Embryonic Stem Cells/physiology",
+        "Gene Expression Regulation, Developmental",
+        "In Situ Hybridization",
+        "Luminescent Measurements",
+        "Mesoderm/metabolism[major]",
+        "Mice",
+        "Real-Time Polymerase Chain Reaction",
+        "Signal Transduction",
+        "Somites/metabolism[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1242/dev.156836"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0035282"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0061053"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-501"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Ryoichiro Kageyama",
+      "email": "rkageyam@infront.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Institute for Frontier Life and Medical Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Marina Matsumiya"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Takehito Tomita"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Kumiko Yoshioka-Kobayashi"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Akihiro Isomura"
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1242/dev.156836",
+      "@type": "ScholarlyArticle",
+      "name": "ES cell-derived presomitic mesoderm-like tissues for analysis of synchronized oscillations in the segmentation clock.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "mouse embryonic stem cells (E14TG2a)",
+      "description": "mouse embryonic stem cells (E14TG2a)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0035282",
+      "@type": "DefinedTerm",
+      "name": "segmentation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0061053",
+      "@type": "DefinedTerm",
+      "name": "somite development"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 227134228,
+      "description": "227.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 9,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

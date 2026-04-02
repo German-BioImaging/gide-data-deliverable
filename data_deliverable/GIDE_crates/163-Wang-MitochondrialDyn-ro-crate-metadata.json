@@ -1,0 +1,303 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/163-Wang-MitochondrialDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/163-Wang-MitochondrialDyn/",
+      "@type": "Dataset",
+      "identifier": "163-Wang-MitochondrialDyn",
+      "name": "Time-lapse STED imaging of mitochondrial dynamics in MitoPB Yellow-labeled cells",
+      "description": "163-Wang-MitochondrialDyn",
+      "datePublished": "2022-11-23",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Cell Line",
+        "Fluorescent Dyes/chemistry[major]",
+        "Humans",
+        "Imaging, Three-Dimensional[major]",
+        "Light[major]",
+        "Mitochondria/chemistry[major]",
+        "Mitochondrial Membranes/metabolism",
+        "Time-Lapse Imaging"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.1905924116"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0008053"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005739"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0030061"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005743"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005741"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0031966"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000334"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-768"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Taki Masayasu",
+      "email": "taki@itbm.nagoya-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules; Laboratory: Functional Organic Materials Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04chrp450"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Yasushi Okada",
+      "email": "y.okada@ riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Shigehiro Yamaguchi",
+      "email": "yamaguchi@chem.nagoya-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules; Laboratory: Functional Organic Materials Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04chrp450"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04chrp450",
+      "@type": "Organization",
+      "name": "Nagoya University"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.1905924116",
+      "@type": "ScholarlyArticle",
+      "name": "A photostable fluorescent marker for the superresolution live imaging of the dynamic structure of the mitochondrial cristae.",
+      "datePublished": "2019"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ HeLa cell",
+      "description": "Homo sapiens ~ HeLa cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008053",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial fusion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
+      "@type": "DefinedTerm",
+      "name": "mitochondrion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030061",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial crista"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005743",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial inner membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005741",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial outer membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0031966",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "Stimulation emission depletion",
+      "description": "Stimulation emission depletion",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000334"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000334",
+      "@type": "DefinedTerm",
+      "name": "Stimulation emission depletion"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 407601270,
+      "description": "407.6 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 10,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

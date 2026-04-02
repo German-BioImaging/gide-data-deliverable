@@ -1,0 +1,178 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1514"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1514",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9722366b-328c-4b01-93ed-56a24e3de8fc"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6402d849-fe96-4514-9dd9-bf6e148f4c30"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4638-1123"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-13",
+      "description": "Fluorescence imaging in the near infrared (NIR 700–1000 nm) and shortwave infrared (SWIR, 1000–2000 nm) is advantageous for studying mammals. This applies established palladium-catalyzed cross coupling chemistries, Suzuki-Miyaura and Sonogashira, and develops an unprecedented coupling of alcohol substrates to achieve a panel of C–CAr, C–Csp, and C–Oalkyl functionalized SWIR fluorescent heptamethine dyes. The photophysical properties of the resulting fluorophores are analyzed against Hammett parameters to produce predictive metrics which are strategically applied in the design of laser-matched, SWIR emissive, chromenylium heptamethine dyes. These added functionalities advance the utility of SWIR fluorophores by increasing brightness in delivery vehicles, modulating lipophilicity for alternative delivery vehicles, and enabling bioconjugation to targeting moieties. There three probes are used in concert to achieve excitation-multiplexed imaging in murine cancer models.",
+      "funder": [],
+      "identifier": "S-BIAD1514",
+      "keywords": [
+        "bioconjugation",
+        "cross-coupling",
+        "multiplexed imaging",
+        "NIR ",
+        "NIR-II ",
+        "polymethine dyes",
+        "SWIR",
+        "in vivo imaging",
+        "non-invasive imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Palladium-Catalyzed Functionalization of Shortwave Infrared Heptamethine Fluorophores Expands their In vivo Utility",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1514/6ee39713-006f-428c-b5b7-195ce4e9f810/5bb58342-b6e0-4b0e-97e2-05c4c7e693cf.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4638-1123",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "emilybrimobley@gmail.com",
+      "name": "Emily Mobley"
+    },
+    {
+      "@id": "#f270c395-b369-47cc-8f34-862290942b7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#6402d849-fe96-4514-9dd9-bf6e148f4c30",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live mice and ex vivo dissected mouse organs, carcass ",
+      "name": "SWIR fluorescence imaging in mice: biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9722366b-328c-4b01-93ed-56a24e3de8fc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A custom-built SWIR imaging setup was used. Lumics laser units: LU1064D350- U30AN (35 W) “1060 nm”; LU0975DLU350-S30AN03 (35 W) “975 nm”; LU0890D280-U10AN (28 W) “890 nm” were used for excitation. Individual laser outputs were coupled in a 4x1 fan-out fiber-optic bundle (Thorlabs BF46LS01) with a 600 μm core diameter for each optical path. The output from the fiber bundle was affixed to an excitation cube (Thorlabs KCB1E), reflected off of a mirror (Thorlabs BBE1- E03), and passed through a positive achromat (Thorlabs AC254-050-AB-ML), short pass (SP) filter (1100 nm, Edmund Optics #84-768) and an engineered diffuser (Thorlabs ED1-S20-MD) to provide uniform illumination over the working area. The excitation flux (mW/cm2) at the field of illumination was measured with a digital optical power sensor (Thorlabs PM100D), and set in accordance with the International Commision on Non-Ionizing Raditation Protection.4 An InGaAs (Allied Vision Goldeye G-032 Cool TEC2) camera with a sensor temperature set point of -30 °C and gain = 1 was used to detect SWIR emission. The camera was placed vertically above the field of illumination, with emitted light passed through a set of longpass (LP) detection filters (see below) and a C-mount camera lens (Kowa LM35HC-SW). The assembly was partially enclosed to minimize extraneous light while enabling manipulation of the field of view during operation. The camera and lasers were externally controlled and synchronized by delivering trigger pulses of 5 V Transistor-Transistor Logic to the laser drivers and camera using a programmable trigger controller with pulses generated with an Atmel Atmega328 micro-controller unit and programmed using Arduino Nano Rev 3 MCU (A000005) in the Arduino integrated development environment. Imaging data acquired from this system was then transferred to the PC via either a Gigabit Ethernet or CameraLink interface. For image acquisition, the toolbox of MATLAB programming environment was used in combination with a MATLAB script (CCDA V3, https://gitlab.com/brunslab/ccda) to preview and collect the required image data in 14-bit depth.\nFor “1100 nm LP” filtering, three optical filters were placed in series before the camera lens: 2x High Performance OD 4.0 1100 nm LP, #84-768 Edmund Optics; 1x FELH1100, Thorlabs.\nFor “1300 nm LP” filtering, three optical filters were placed in series before the camera lens: 1x High Performance OD 4.0 1300 nm LP, #89-668 Edmund Optics; 1x High Performance OD 4.0 1100 nm LP, #84-768 Edmund Optics; 1x FELH1300, Thorlabs.",
+      "labEquipment": "Allied Vision Goldeye G-032 Cool TEC2 camera",
+      "measurementTechnique": [],
+      "name": "SWIR fluorescence imaging in mice: imaging acquisition "
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 58
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 47852901
+    }
+  ]
+}

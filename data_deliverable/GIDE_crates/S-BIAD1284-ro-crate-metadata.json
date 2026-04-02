@@ -1,0 +1,207 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1284"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1284",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#16b894e6-ed4a-4bd4-9ff0-ed1901ae85e2"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7ce698d9-9e62-4c0e-b305-681c551d3db8"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8586-2192"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3794-1309"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-22",
+      "description": "Precision cut lung slices (PCLS) are increasingly being utilized to reduce animal usage (as more experiments can be performed on complex and multicellular tissues from a single animal) but also offer the potential to study cellular and tissue level processes directly in human tissue ex vivo. PCLS can be generated using several different techniques including a vibrating microtome (vibratome) or other commercial devices such as a Krumdieck slicer or Compresstome. Due to the potential damage from mechanical cutting of the tissue and from the cold ischemic time associated with tissue preparation, some labs report letting PCLS rest overnight or for 24 hours prior to starting experiments. However, there is limited data on what occurs immediately after slicing and what time window is optimal for PCLS recovery prior to the start of experiments. This is particularly important to determine if PCLS are to be used for evaluation of targeted therapies, such as nanoparticle therapies. Non-specific uptake due to cell membrane damage may obfuscate the interpretation of results. Previous papers in the PCLS field have utilized live/dead staining which relies on Calcein AM staining which is cleaved cleaved by intracellular esterases to yield Calcein fluorescence, which is only retained in live cells. In parallel, Ethidium homodimer I (or III) are used to label dead or dying cells as this dye is impermeant to intact cell membranes. Ethidium homodimer is weakly fluorescent at baseline but becomes highly fluorescent when complexed with nucleic acids. However, this approach has several drawbacks. 1) It does not yield insight into whether cell damage detected with Calcein AM is due to apoptosis or necrosis 2) Both dyes have excitation and emission spectra in ranges that overlap with lung tissue autofluorescence (Calcein AM ex=494nm and em=514nm; EtHD ex 527nm and em=624nm). Therefore, we sought to establish the feasibility of utilizing an active caspase3/7 sensitive dye (NucView®488) and a far red cell impermeable dye which more specifically labels nuclei (RedDot™2) to complement the information available in the literature to better understand the early dynamics in PCLS. These results help to establish suitable time windows for letting PCLS recover prior to beginning experiments, provide insight into the potential for apoptotic pathways to be initiated after slicing and help to establish when such live staining agents should be administered to evaluate potential cell death. We generated 300μm thick PCLS from agarose filled murine lungs and either immediately administered apoptosis/necrosis dyes or administered them 24 hours later. To test for dye stability and as a positive control for cellular damage, we administered 150μM hydrogen peroxide to some slices. Images were acquired using confocal microscopy using identical laser and microscope settings over multiple days. There was no internal calibration performed between days. ",
+      "funder": [],
+      "identifier": "S-BIAD1284",
+      "keywords": [
+        "PCLS, lung tissue, precision cut lung slicing, membrane damage, apoptosis"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Visualization of cellular membrane damage and apoptosis in murine precision cut lung slices after vibratome slicing",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1284/122a29f2-b43e-4c5a-9447-8e0ab33f7776/94f0812d-6cfc-4cef-aafa-08ed40ac45cf.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8586-2192",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6"
+        }
+      ],
+      "email": "nika.gvazava@med.lu.se",
+      "name": "Nika Gvazava"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3794-1309",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#28bbf44d-e6ef-40cc-bbf6-69a9362410fc"
+        }
+      ],
+      "email": "darcy.wagner@med.lu.se",
+      "name": "Darcy Wagner"
+    },
+    {
+      "@id": "#28bbf44d-e6ef-40cc-bbf6-69a9362410fc",
+      "@type": [
+        "Organization"
+      ],
+      "name": "McGill University"
+    },
+    {
+      "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Lund University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#7ce698d9-9e62-4c0e-b305-681c551d3db8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Murine precision cut lung slices",
+      "name": "Precision cut lung slice from mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#16b894e6-ed4a-4bd4-9ff0-ed1901ae85e2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FITC and Cy5 laser settings of 15% and 6% excitation intensity and 107 and 29 gain, respectively. Z-stacks of ∼140 μm total were acquired with a z-step of 5 μm. FITC and Cy5 channels were collected sequentially to avoid any spectral overlap. ",
+      "labEquipment": "Leica STELLARIS 5 confocal microscope (Leica,Germany)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 68
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 30093463665
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2411"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2411",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1d81c14d-2823-445a-907f-cdaba283074b"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#da7d6a97-c088-48cb-bc77-e0a1abcb685f"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8530-2782"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-18",
+      "description": "Research utilising exercise therapeutically to enhance neuroplasticity mainly reports enhanced expression of neurotrophic (neural growth) factors which are associated with increased neurogenesis, structural changes, and improved memory.  \n\nHowever, these neural changes are tightly regulated by both promotors and inhibitors of neuroplasticity, and the effect of exercise on inhibitory pathways is currently understudied. \n\nWe show that exercise also modulates inhibitors of neuroplasticity. Six weeks of treadmill training reduced the gene expression of aggrecan, a chondroitin sulphate proteoglycan (CSPG), and altered the composition of CSPG containing structures, perineuronal nets, in the rodent hippocampus.  Genetically manipulating chondroitin-4-sulphation of CSPGs by overexpressing hippocampal Chst11 impaired memory performance, which was mitigated by treadmill training.  \n\nWe provide evidence that hippocampal CSPGs are involved in object recognition memory, and that there is a link between exercise, modulating hippocampal inhibitors of neuroplasticity, and memory performance. ",
+      "funder": [],
+      "identifier": "S-BIAD2411",
+      "keywords": [
+        "exercise",
+        "neuroplasticity",
+        "perineuronal nets",
+        "chondroitin sulphate glycosaminoglycans"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Exercise remodels hippocampal extracellular matrix to alleviate chondroitin-4-sulphate–induced memory impairment.  ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2411/0e3f27ce-d540-4ad1-a1bd-617dd360a3be/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8530-2782",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "ned3@st-andrews.ac.uk",
+      "name": "Natalie Doody"
+    },
+    {
+      "@id": "https://ror.org/02wn5qz54",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#da7d6a97-c088-48cb-bc77-e0a1abcb685f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Brain images (hippocampal tile scans) sampled from Male Wistar rats.",
+      "name": "Male wistar rat brains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#1d81c14d-2823-445a-907f-cdaba283074b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired in the Bio-Imaging Facility at the University of Leeds. Full tile scans of the dorsal hippocampus (between Bregma -3.14 and -3.80 mm) were taken at 20X magnification on an Axio Scan Z1 slide scanner (Zeiss, UK). ",
+      "labEquipment": "Zeiss Axio Scan Z1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Slide scanner brain images"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 354
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 18556424092
+    }
+  ]
+}

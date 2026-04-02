@@ -1,0 +1,297 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1410"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1410",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bd6bc985-f444-4451-a8d1-0e050835f958"
+        },
+        {
+          "@id": "#fca79910-db9e-4cee-8fe6-d9785e9496c7"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b1732b4d-e027-4584-ac92-c2296cf0edd6"
+        },
+        {
+          "@id": "#1f06a200-0204-4d21-b538-b5b2a6e70103"
+        },
+        {
+          "@id": "#9e2c4e6e-97d6-4477-88fe-11a2eddedbad"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8644-6633"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5204-3227"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8191-7528"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6495-8598"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0770-744X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-30",
+      "description": "Segmenting multi-dimensional microscopy data requires high accuracy across many images (e.g. timepoints) and is thus a labour-intensive part of biological image processing pipelines. We present ReSCU-Nets, recurrent convolutional neural networks that use the segmentation results from the previous frame as a prompt to segment the current frame. We demonstrate that ReSCU-Nets outperform state-of-the-art image segmentation models in different segmentation tasks on time-lapse microscopy sequences. \n\nThis study contains three datasets containing timelapse fluorescence microscopy videos of cell migration processes during Drosophila embryonic development, with accompanying ground truth segmentations. The first dataset shows the nuclei of cardioblasts as they migrate to form the early heart tube. The second and third datasets show epithelial cell outlines during embryonic wound healing. The second dataset provides ground truth segmentations of the wound itself, while the third dataset contains ground truth segmentations of cell areas around the wound.",
+      "funder": [],
+      "identifier": "S-BIAD1410",
+      "keywords": [
+        "fluorescence microscopy",
+        "developmental biology",
+        "cell migration"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "ReSCU-Nets: recurrent U-Nets for segmentation of multidimensional microscopy data",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1410/2c43429c-f314-4734-bf52-d5e0950f1450/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1410/8b17a724-0c47-43bf-ab0c-321f0d7b6231/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1410/464d0759-7720-481a-8786-feaed22a08be/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8644-6633",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e7bb15e9-b5c8-4bb3-ab34-d8dc5b08d990"
+        }
+      ],
+      "email": "raymond.hawkins@mail.utoronto.ca",
+      "name": "Raymond Hawkins"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5204-3227",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e7bb15e9-b5c8-4bb3-ab34-d8dc5b08d990"
+        }
+      ],
+      "email": "negar.balaghi@mail.utoronto.ca",
+      "name": "Negar Balaghi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6495-8598",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e7bb15e9-b5c8-4bb3-ab34-d8dc5b08d990"
+        }
+      ],
+      "email": "michelle.ly@createivf.com",
+      "name": "Michelle Ly"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8191-7528",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e7bb15e9-b5c8-4bb3-ab34-d8dc5b08d990"
+        }
+      ],
+      "email": "katheryn-rothenberg@uiowa.edu",
+      "name": "Katheryn Rothenberg"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0770-744X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e7bb15e9-b5c8-4bb3-ab34-d8dc5b08d990"
+        }
+      ],
+      "email": "rodrigo.fernandez.gonzalez@utoronto.ca",
+      "name": "Rodrigo Fernandez-Gonzalez"
+    },
+    {
+      "@id": "#e7bb15e9-b5c8-4bb3-ab34-d8dc5b08d990",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Toronto"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#1f06a200-0204-4d21-b538-b5b2a6e70103",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Stage 14 embryo expressing MidE19:GFP to label the nucleus of cardioblasts.",
+      "name": "Cardioblasts",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#9e2c4e6e-97d6-4477-88fe-11a2eddedbad",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Stage 14 embryo expressing E-cadherin endogenously tagged with tdTomato.",
+      "name": "Embryonic Epithelium - E-cadherin:tdTomato",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#b1732b4d-e027-4584-ac92-c2296cf0edd6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Stage 14 embryo expressing E-cadherin endogenously tagged with GFP.",
+      "name": "Embryonic Epithelium - E-cadherin:GFP",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#bd6bc985-f444-4451-a8d1-0e050835f958",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "16-bit Z-stacks were acquired in 0.50 μm steps with 11 slices per stack every 30 s. Maximum intensity projections of the Z-stacks at each time point were used for network training and testing. ",
+      "labEquipment": "Revolution XD spinning disk confocal microscope equipped with an iXon Ultra 897 camera (Andor), using a 60x oil immersion lens (Olympus, Shinjuku, Japan; NA 1.35)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Epithelial wound imaging protocol"
+    },
+    {
+      "@id": "#fca79910-db9e-4cee-8fe6-d9785e9496c7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "16-bit Z-stacks were acquired in 0.75 μm steps with 21-27 slices per stack every 15 s. Maximum intensity projections of the Z-stacks at each time point were used for network training and testing. ",
+      "labEquipment": "Revolution XD spinning disk confocal microscope equipped with an iXon Ultra 897 camera (Andor), using a 60x oil immersion lens (Olympus, Shinjuku, Japan; NA 1.35)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Cardioblast imaging protocol"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 138
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7280399518
+    }
+  ]
+}

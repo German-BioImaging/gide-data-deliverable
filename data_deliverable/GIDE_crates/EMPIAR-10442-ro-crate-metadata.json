@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10442"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10442",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1d4adadd-99d1-4a6a-a314-2940d409d618"
+        },
+        {
+          "@id": "obo:FBbi_00000585"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d703b208-8cb6-48ba-841a-09228bec2c1d"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1777-3160"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2190-4909"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4159-6934"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7287-8459"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2020-10-23",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-10442",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "170314, Five-day-old Col-0 Arabidopsis thaliana root, phloem pole unloading zone (339-381 um from the root tip)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10442/1acbf84b-5f05-4746-b85f-c70d140b6440/c6b8bd48-ae84-47fa-bc50-ee532a2dc1f8.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1777-3160",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Paterlini A"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4159-6934",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Jokitalo E"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7287-8459",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Helariutta Y"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2190-4909",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Belevich I"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "mouse-ear cress"
+    },
+    {
+      "@id": "#d703b208-8cb6-48ba-841a-09228bec2c1d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Five-day-old root tips from wild-type Col-0 and plm-2 mutant Arabidopsis seedlings",
+      "name": "Arabidopsis root",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#1d4adadd-99d1-4a6a-a314-2940d409d618",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired with an FEG-SEM Quanta 250 using a backscattered electron detector with a 2.5-kV beam voltage, a spot size of 3 and pressure between 0.1 and 0.3 Torr. Images were collected moving away from the stumped root tip in 40-nm steps.",
+      "labEquipment": "FEG-SEM Quanta 250, FEI",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000585"
+        }
+      ],
+      "name": "Serial Block Face SEM"
+    },
+    {
+      "@id": "obo:FBbi_00000585",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "serial block face SEM (SBFSEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 23178301863
+    }
+  ]
+}

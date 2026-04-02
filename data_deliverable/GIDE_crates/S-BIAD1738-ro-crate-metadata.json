@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1738"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1738",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#75674148-5167-480f-91cb-b76daf14c0fe"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7aa32ef2-2b5b-4a52-b5f6-70731dc3ac9b"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ddaa1e11-e941-4016-b70a-81377f77b53b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-26",
+      "description": "High-throughput pooled imaging of fluorescently tagged synthetic protein sequences to identify the protein sequence determinants of nuclear condensate formation.",
+      "funder": [],
+      "identifier": "S-BIAD1738",
+      "keywords": [
+        "CondenSeq",
+        "pooled imaging",
+        "fluorescent imaging",
+        "nuclear condensates"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Characterizing protein sequence determinants of nuclear condensates by high-throughput pooled imaging with CondenSeq",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#ddaa1e11-e941-4016-b70a-81377f77b53b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3bc729cf-2c38-4d94-89b6-37dc7c474f7f"
+        }
+      ],
+      "email": "kappellab@gmail.com",
+      "name": "Kalli Kappel"
+    },
+    {
+      "@id": "#3bc729cf-2c38-4d94-89b6-37dc7c474f7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Broad Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#7aa32ef2-2b5b-4a52-b5f6-70731dc3ac9b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa or U2OS cells expressing fluorescently tagged synthetic protein sequences.",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#75674148-5167-480f-91cb-b76daf14c0fe",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Phenotype imaging parameters:\nDAPI images were taken with 405 nm excitation at 60% power, a 435-480nm emission filter, and 40 ms exposure time. GFP/SNAP-tag images were taken with 488 nm excitation at 15% power, a 435-550nm emission filter, and 40 ms exposure time. For live-cell time lapse experiments, we collected images for eight z-slices, spaced 1 µm apart, at each position. For all other screens, we collected images at a single z-plane.\n\nSBS imaging parameters:\nDAPI images were taken with 405 nm laser excitation, 10% power, 70 ms exposure time, with a custom Chroma polychroic (ZT408/473/545/635/750/RPC_UF2), and custom Magnatron penta barrier filter for Celesta (ZET408/473/545/635/750m). MiSeq G images were taken with 518 nm laser excitation, 25% laser power, 200 ms exposure time, with a Chroma T525LPXR dichroic, and Chroma ET560/40x filter. MiSeq T images were taken with 545 nm laser excitation, 22% laser power, 200 ms exposure time, with a custom Chroma polychroic (ZT408/473/545/635/750/RPC_UF2), and custom Magnatron penta barrier filter for Celesta (ZET408/473/545/635/750m). MiSeq A images were taken with 640 nm laser excitation, 19% laser power, 200 ms exposure time, with a custom Chroma polychroic (ZT408/473/545/635/750/RPC_UF2), and custom Magnatron penta barrier filter for Celesta (ZET408/473/545/635/750m). MiSeq C images were taken with 640 nm laser excitation, 30% laser power, 200 ms exposure time, with a Chroma T647ILPXR dichroic, and Chroma ET720/60m filter. For the final SBS cycle, images were also collected in the GFP channel (475 nm laser excitation, 15%/4% (SNAP-tag/GFP) laser power, 300/100 ms (SNAP-tag/GFP) exposure time, green filter) to assist with matching SBS images to phenotype images. All images were collected with 2x2 pixel binning, with a 10x CFI Plan Apo Lambda objective (Nikon MRD00105).",
+      "labEquipment": "All phenotype imaging was performed on an Opera Phenix High-Content Screening System (PerkinElmer) with a 40x water immersion objective in confocal mode. In situ SBS imaging was performed on a Nikon Ti2-E inverted microscope with automated stage control, a Photometrics Iris 9 camera, and fluorescence illumination with a Lumencor Celesta light engine coupled with a liquid light guide to a 0.9 mm2 illumination at the rear port of the scope. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 31906
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 11851852258039
+    }
+  ]
+}

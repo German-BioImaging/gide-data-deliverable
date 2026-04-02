@@ -1,0 +1,169 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2479"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2479",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#72ffaf2f-8780-4d27-963c-59b1e37d6b7b"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#20a892d9-f4ba-4ed0-99b0-1f7cc8e8e3d0"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0000-7443-5718"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-06",
+      "description": "Glioblastomas function as intricate cellular networks that extend into the surrounding brain tissue facilitating long distance communication. This malignant connectivity spans from the tumor core to remote infiltration zones, supporting the concept of glioblastoma as a whole-brain disease. With growing ethical concerns in biomedical research and the inherent limitations of animal models in recapitulating human glioblastoma biology, there is an increasing demand for human ex vivo platforms capable of capturing the full infiltration spectrum from the tumor core to single-cell dispersion.\nHere, we present a three-dimensional (3D), fully human ex vivo glioblastoma model (”Core2Edge”) that replicates this extensive infiltration range while preserving the intratumoral heterogeneity of the original tumor. This model involves implanting fluorescently labeled human glioblastoma organoids (GBOs) into organotypic human brain slices, maintaining the genetic integrity and cytoarchitecture of both brain and tumor. By combining tissue expansion with light-sheet fluorescence microscopy, we achieve super-resolution, 3D imaging of the entire GBO-brain slice model. This approach allows for the study of initial infiltration steps, in-depth analysis of the invasive front, exploration of cell-cell interactions between tumor cells and the tumor microenvironment, and offers a platform for drug screening and testing, reducing the need for animal models.\nOnce GBOs are prepared, the protocol takes approximately 7-12 days. Key steps include brain slice preparation (~4-6 h, depending on quantity), one day for initial culture before GBO staining and transplantation, a variable culture period (up to 10 days), and fixation (~8 h). Additional time is required for downstream analyses, including imaging, sequencing, and proteomics.\n",
+      "funder": [],
+      "identifier": "S-BIAD2479",
+      "keywords": [
+        "glioblastoma",
+        "light sheet fluorescence expansion microscopy"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Core2Edge: A human glioblastoma organoid and brain slice co-culture model capturing tumor infiltration and transcriptional heterogeneity from core to single-cell dispersion",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0009-0000-7443-5718",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#609b1174-3373-4886-b0e1-95825073f2b0"
+        }
+      ],
+      "email": "ahmad.melhem112@gmail.com",
+      "name": "Ahmad"
+    },
+    {
+      "@id": "#609b1174-3373-4886-b0e1-95825073f2b0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Uniklinikum bonn"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#20a892d9-f4ba-4ed0-99b0-1f7cc8e8e3d0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Patient derived glioblastoma organoids transplanted into human cortical brain slices.",
+      "name": "Core2Edge: fully human ex vivo glioblastoma model",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#72ffaf2f-8780-4d27-963c-59b1e37d6b7b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was performed using the Ultramicroscope Blaze™ (LaVision BioTec) controlled by Imspector software, with samples immersed in PBS containing 0.02% (vol/vol) sodium azide. Excitation was provided by four fiber-coupled lasers (405, 488, 561, and 638 nm) delivered through a laser beam combiner. For mesoscale imaging, dual-sided illumination was used with a light-sheet thickness of 9 µm (1/e² diameter) across all wavelengths, and detection was achieved using a 4× objective (MI PLAN 4×/0.35 NA, WD 15 mm, water-dipping cap). High-resolution imaging employed a single-sided illumination arm with a 5 µm light sheet and a 12× objective (12X/0.53 NA, WD 8.5 mm, water-dipping cap) for subcellular detail. Images were acquired using a sCMOS camera (2048 × 2048 pixels, 6.5 µm pixel size) operating in rolling shutter mode, yielding a field of view of 3328 × 3328 µm with the 4× objective.",
+      "labEquipment": "UltraMicroscope Blaze™",
+      "measurementTechnique": [],
+      "name": "Core2Edge light sheet expansion microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 556033671646
+    }
+  ]
+}

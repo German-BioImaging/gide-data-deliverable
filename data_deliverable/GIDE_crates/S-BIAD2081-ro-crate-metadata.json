@@ -1,0 +1,234 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2081"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2081",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#910d5919-ecff-468b-a77b-fd4c607c01bb"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d9a89024-b40b-4d99-94bb-76919a83e445"
+        },
+        {
+          "@id": "obo:NCBITaxon_72019"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#2944f4d0-74e8-4657-af3e-b68fd222bd59"
+        },
+        {
+          "@id": "#0b057061-c320-4b1a-9147-cfc83f294b0d"
+        },
+        {
+          "@id": "#9ed3b5a5-486c-49b9-bc6e-d1151e43ae40"
+        },
+        {
+          "@id": "#4284eba6-2071-48a8-b5c1-4a31f65304be"
+        },
+        {
+          "@id": "#432a8fd1-9c67-466e-9803-6d41a36e976c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-17",
+      "description": "This is a dataset of ultrastructure expansion microscopy images of Sphaeroforma arctica nuclei. The cells were labelled for DNA, nuclear pore complex, lipids and tubulin. The images were acquired using airyscan confocal microscopy. Detailed protocols are provided in the specimen and  image acquisition section.",
+      "funder": [],
+      "identifier": "S-BIAD2081",
+      "keywords": [
+        "Information processing, cellular interfaces, nuclear pore complex patterning, nuclear envelope"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Image dataset used in 'Repulsive particle interactions enable selective information processing at cellular interfaces'",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2081/aa53e849-f0d2-49d0-bf6e-0f32b8ea8f7e/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0b057061-c320-4b1a-9147-cfc83f294b0d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "hiral.shah@embl.de",
+      "name": "Hiral Shah"
+    },
+    {
+      "@id": "#2944f4d0-74e8-4657-af3e-b68fd222bd59",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "jenna.elliot@embl.de",
+      "name": "Jenna Elliott"
+    },
+    {
+      "@id": "#4284eba6-2071-48a8-b5c1-4a31f65304be",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "gautam.dey@embl.de",
+      "name": "Gautam Dey"
+    },
+    {
+      "@id": "#432a8fd1-9c67-466e-9803-6d41a36e976c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "anna.erzberger@embl.de",
+      "name": "Anna Erzberger"
+    },
+    {
+      "@id": "#9ed3b5a5-486c-49b9-bc6e-d1151e43ae40",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "roman.belousov@embl.de",
+      "name": "Roman Belousov"
+    },
+    {
+      "@id": "#5074a07c-1144-4134-96c3-f98335b1653a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_72019",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Sphaeroforma arctica"
+    },
+    {
+      "@id": "#d9a89024-b40b-4d99-94bb-76919a83e445",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Sphaeroforma arctica coenocytes",
+      "name": "Ichthyosporea Sphaeroforma arctica",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_72019"
+      }
+    },
+    {
+      "@id": "#910d5919-ecff-468b-a77b-fd4c607c01bb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Gels were cut to an appropriate size to fit the Ibidi chambers and added onto the wells. The gels were overlaid with water to prevent drying or shrinkage during imaging. The gels were imaged using the Zeiss LSM 880 with the Airy fast mode using a Plan-Apochromat 63×/1.4 Oil DIC M27. The images were processed with the default 3D airyscan processing on the ZEN software prior to further analysis.",
+      "labEquipment": "LSM 880",
+      "measurementTechnique": [],
+      "name": "Image acquisition of immune-labelled U-ExM gels"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 20
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 94601658176
+    }
+  ]
+}

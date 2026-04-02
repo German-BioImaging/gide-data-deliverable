@@ -1,0 +1,180 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000013/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000013/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000013",
+      "name": "ssbd-repos-000013",
+      "description": "ssbd-repos-000013",
+      "datePublished": "2016-01-18",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Computer Simulation[major]",
+        "Microscopy, Fluorescence/methods",
+        "Models, Biological[major]",
+        "Models, Theoretical[major]",
+        "Photons"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pone.0130089"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0008104"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-2"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Koichi Takahashi",
+      "email": "ktakahashi@riken.jp",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0130089",
+      "@type": "ScholarlyArticle",
+      "name": "A Computational Framework for Bioimaging Simulation.",
+      "datePublished": "2015"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "PC-12",
+      "description": "PC-12",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "vernacularName": "social amoeba"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116",
+      "@type": "Taxon",
+      "scientificName": "Rattus norvegicus",
+      "vernacularName": "rat"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008104",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 162541120512,
+      "description": "162.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 103,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

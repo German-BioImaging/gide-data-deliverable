@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2247"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2247",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6fd84c51-492e-44d8-ae3e-93def2350a67"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#44376537-6e95-4967-9bc5-e9448ce5a969"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1953-3902"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-08",
+      "description": "In most somatic cells, heterochromatin localizes at the nuclear periphery while euchromatin is broadly distributed within the nucleus. However, the nuclear pore vicinity is devoid of heterochromatin, forming striking exclusion zones within the peripheral heterochromatin layer. Whether and how these exclusion zones affect global chromatin organization is unknown. Here we demonstrate that the main nuclear pore basket component, Translocated Promoter Region (TPR), forms biomolecular condensates which are necessary and sufficient to exclude heterochromatin. We further demonstrate that this mechanism controls chromatin organization locally, at nuclear pores, and regulates heterochromatin positioning in the entire nucleus. Our study therefore highlights a new mechanism of global chromatin organization through condensate-mediated mechanical exclusion of heterochromatin at nuclear pore baskets.",
+      "funder": [],
+      "identifier": "S-BIAD2247",
+      "keywords": [
+        "TPR",
+        "chromatin organization",
+        "nucleus"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Biomolecular condensates at the nuclear pore basket maintain global chromatin organization ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2247/ef365114-9b93-41b8-a1d0-32a4196e940f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1953-3902",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02feahw73"
+        }
+      ],
+      "email": "charlene.boumendil@igh.cnrs.fr",
+      "name": "Charlene Boumendil"
+    },
+    {
+      "@id": "https://ror.org/02feahw73",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre National de la Recherche Scientifique"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#44376537-6e95-4967-9bc5-e9448ce5a969",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Biomolecular condensates formation of the transfected protein in NIH3T3 cells ",
+      "name": "TPR*-GFP over expression in NIH3T3 cells ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#6fd84c51-492e-44d8-ae3e-93def2350a67",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "GFP tagged proteins were excited with 488 nm and their emission detected with 400-550nm, mRFP tagged proteins were excited with 555 nm and detected with 525-720nm, and DAPI was excited with 647 nm and detected with 400-505nm. A single image per cell was acquired around the middle plan of the cell with the following airyscan settings: dual time of 1.15 μs and a size of 0.31 μm. Airyscan image processing was applied automatically after imaging using Zeiss ZEN software (version blue 3.6) to obtain the final processed images. ",
+      "labEquipment": "Zeiss LSM980 confocal inverted microscope equipped with an Airyscan 2 module in super-resolution mode with a 63×/1.4 oil immersion objective",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "name": "TPR*-GFP over expression in NIH3T3 cells "
+    },
+    {
+      "@id": "obo:FBbi_00000393",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "array-scan confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 93
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3597901536
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000331/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000331/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000331",
+      "name": "Semantic segmentation data of eight anatomical regions for mouse brain slices with neurogenic-tagged neurons from NeuroGT database",
+      "description": "ssbd-repos-000331",
+      "datePublished": "2023-12-24",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.2197/ipsjtbio.17.33"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007399"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0043005"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-728"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yukako Tohsato",
+      "email": "yukako@fc.ritsumei.ac.jp",
+      "description": "Organization: Ritsumeikan University; Department: Faculty of Information Science and Engineering; Laboratory: Laboratory of compubational biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0197nmd03"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/0197nmd03",
+      "@type": "Organization",
+      "name": "Ritsumeikan University"
+    },
+    {
+      "@id": "https://doi.org/10.2197/ipsjtbio.17.33",
+      "@type": "ScholarlyArticle",
+      "name": "Segmentation of Mouse Brain Slices with Unsupervised Domain Adaptation Considering Cross-sectional Locations",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6 Neurog1^{CreER}(G1C); Tau^{mGFP-nLacZ}, C57BL/6 Neurod1^{CreER}(D1B); Tau^{mGFP-nLacZ}, C57BL/6 neuroG2^{CreER}(G2A); Tau^{mGFP-nLacZ}, C57BL/6 Neurod4^{CreER}(D4A); Tau^{mGFP-nLacZ}",
+      "description": "C57BL/6 Neurog1^{CreER}(G1C); Tau^{mGFP-nLacZ}, C57BL/6 Neurod1^{CreER}(D1B); Tau^{mGFP-nLacZ}, C57BL/6 neuroG2^{CreER}(G2A); Tau^{mGFP-nLacZ}, C57BL/6 Neurod4^{CreER}(D4A); Tau^{mGFP-nLacZ}",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007399",
+      "@type": "DefinedTerm",
+      "name": "nervous system development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0043005",
+      "@type": "DefinedTerm",
+      "name": "neuron projection"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 56272007168,
+      "description": "56.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 168,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

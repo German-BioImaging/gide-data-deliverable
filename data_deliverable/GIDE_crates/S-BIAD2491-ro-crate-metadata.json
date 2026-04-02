@@ -1,0 +1,468 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2491"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2491",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b5666756-c406-44f5-9300-13e22f29f9bd"
+        },
+        {
+          "@id": "#19d73bb6-c26c-4a61-8655-6674cf69997a"
+        },
+        {
+          "@id": "#11e477fe-39a7-49d9-904d-5d78a647cd00"
+        },
+        {
+          "@id": "#860a8cca-a9f7-4b06-a01b-372637c20358"
+        },
+        {
+          "@id": "#13f764a3-8e9f-4284-b3fe-47c14ad8b6a0"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#eafae863-829d-48fa-a2c6-846bfccaad6f"
+        },
+        {
+          "@id": "#b65354c2-80c3-4673-a201-7f86e21f63f8"
+        },
+        {
+          "@id": "#15ab64e4-da85-47c6-afe9-7f3e5ce536f2"
+        },
+        {
+          "@id": "#31d1b286-4212-451e-8b53-e075f24376b6"
+        },
+        {
+          "@id": "#34399d35-1ae1-4344-8665-ed4cf0d9364c"
+        },
+        {
+          "@id": "#c069df9b-69c1-4380-a371-066efdc097b7"
+        },
+        {
+          "@id": "#a786e12e-2d49-411a-9b6b-e999f1f5bb8b"
+        },
+        {
+          "@id": "#f9aec54e-52c1-4f39-9d68-f9c8b1994c53"
+        },
+        {
+          "@id": "#4eedb666-264c-4945-a480-30a25ccfc04e"
+        },
+        {
+          "@id": "#55fedc4a-f3e9-4c85-a146-050df8a45ebf"
+        },
+        {
+          "@id": "#7d5351a5-b06f-4392-8958-1b989d6b3131"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1600-6437"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1689-1648"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0225-9855"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6149-3142"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-23",
+      "description": "The advent of multiplexed protein imaging, also known as spatial proteomics, has enabled the simultaneous detection of over 50 protein markers at the single-cell level. These approaches have revolutionized the study of biological processes within the native tissue context across fields from developmental biology to viral pathogenesis and cancer. With the increased adoption of multiplexed protein imaging to formalin-fixed paraffin-embedded (FFPE) tissues, a robust assessment of various tissue preparation steps on antibody performance is essential to support standardized and robust protocols for maximal performance and reduced batch-to-batch variability. Here we performed a large-scale, multi-site, multi-platform assessment of tissue preparation and staining conditions for multiplexed protein imaging of FFPE tissue samples. 24 antigen retrieval and antibody staining conditions were first tested using a commercial-grade 27-plex immune panel on serial tissue sections imaged with the Akoya PhenoCycler-Fusion. In parallel at two different sites, 12 of these conditions were evaluated on the RareCyte Orion and 6 conditions were tested with  automated staining on the Leica BOND RX followed by imaging on the Akoya PhenoCycler-Fusion. The 24 conditions were ranked based on their average coefficient of variation (CV) of marker signal distributions paired with assignment of penalty scores for markers that failed for specific conditions. The top-ranked protocol was 20 minutes heat-induced epitope retrieval (HIER) with a Tris/EDTA (pH 9) buffer and overnight antibody staining at 4°C, followed by 40 and 10 minutes Tris/EDTA HIER with 4°C overnight antibody staining respectively. Conversely, the bottom-ranked protocol was 20 minutes HIER with citraconic anhydride (pH 7.4) and a 1 hour room temperature (25°C) antibody staining. Validation across seven additional academic and industry labs using platforms including imaging mass cytometry, MIBI, Orion, and Lunaphore COMET confirmed the robustness of the 20-minute Tris/EDTA HIER plus overnight 4°C staining (where applicable) across tissue types and technologies. While staining intensity did not correlate with spatial sampling or annotation efficiency, it positively correlated with spatial heterogeneity, suggesting that more robust spatial proteomics data improves sensitivity for diverse cell cluster identification. This work provides a resource for optimizing experimental design, reagent selection, and standardized best practices for generating and evaluating highly multiplexed imaging data.",
+      "funder": [],
+      "identifier": "S-BIAD2491",
+      "keywords": [
+        "Spatial Proteomics ",
+        "Multiplexed Imaging",
+        "Heat-Induced Epitope Retrieval",
+        "Antibody Staining Conditions"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Large-scale Quantitative Assessment of Tissue Preparation and Staining Conditions for Robust Multiplexed Imaging of FFPE Tissue Samples",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2491/dc9b1e72-c94c-49c7-b748-2da00ae6116a/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6149-3142",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04drvxt59"
+        },
+        {
+          "@id": "#fb6f44ea-8cfe-48cb-b104-9f73cd54c18b"
+        }
+      ],
+      "email": "sjiang3@bidmc.harvard.edu",
+      "name": "Sizun Jiang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0225-9855",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00rs6vg23"
+        }
+      ],
+      "email": "Cankun.Wang@osumc.edu",
+      "name": "Cankun Wang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1600-6437",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04drvxt59"
+        },
+        {
+          "@id": "#fb6f44ea-8cfe-48cb-b104-9f73cd54c18b"
+        }
+      ],
+      "email": "jlee104@bidmc.harvard.edu",
+      "name": "Jia Le Lee"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1689-1648",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04drvxt59"
+        },
+        {
+          "@id": "#3c3cd0e4-75b3-48b6-850d-12ce5ac047ca"
+        },
+        {
+          "@id": "#fb6f44ea-8cfe-48cb-b104-9f73cd54c18b"
+        }
+      ],
+      "email": "johanna.schaffenrath@roche.com",
+      "name": "Johanna Schaffenrath"
+    },
+    {
+      "@id": "#3c3cd0e4-75b3-48b6-850d-12ce5ac047ca",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Roche"
+    },
+    {
+      "@id": "#fb6f44ea-8cfe-48cb-b104-9f73cd54c18b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Harvard Medical School"
+    },
+    {
+      "@id": "https://ror.org/00rs6vg23",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The Ohio State University"
+    },
+    {
+      "@id": "https://ror.org/04drvxt59",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Beth Israel Deaconess Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#15ab64e4-da85-47c6-afe9-7f3e5ce536f2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tonsil",
+      "name": "Roche",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#31d1b286-4212-451e-8b53-e075f24376b6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tonsil and Oral Squamous Cell Carcinoma",
+      "name": "Stanford University_IMC_Validation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#34399d35-1ae1-4344-8665-ed4cf0d9364c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lymph Node, Colon, Liver",
+      "name": "Stanford University_MIBI_Validation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4eedb666-264c-4945-a480-30a25ccfc04e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tonsil and Intestine",
+      "name": "Roche_Validation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#55fedc4a-f3e9-4c85-a146-050df8a45ebf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tonsil and CRC",
+      "name": "A*STAR_Validation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7d5351a5-b06f-4392-8958-1b989d6b3131",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lymph Node and Endometrial Cancer",
+      "name": "Stanford_Orion_Validation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a786e12e-2d49-411a-9b6b-e999f1f5bb8b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tonsil and Lung Cancer",
+      "name": "Novartis_Validation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b65354c2-80c3-4673-a201-7f86e21f63f8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lymph Node",
+      "name": "Stanford University_Orion",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c069df9b-69c1-4380-a371-066efdc097b7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tonsil and Squamous Cell Carcinoma of Tonsil",
+      "name": "University of Kentucky_Validation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#eafae863-829d-48fa-a2c6-846bfccaad6f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tonsil",
+      "name": "BIDMC-Harvard",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f9aec54e-52c1-4f39-9d68-f9c8b1994c53",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tonsils and Diffuse Large B-cell Lymphoma",
+      "name": "BIDMC-Harvard_Validation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#11e477fe-39a7-49d9-904d-5d78a647cd00",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Refer to Supplementary Table 12.",
+      "labEquipment": "IMC (Standard BioTools)",
+      "measurementTechnique": [],
+      "name": "IMC (Standard BioTools)"
+    },
+    {
+      "@id": "#13f764a3-8e9f-4284-b3fe-47c14ad8b6a0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Refer to Supplementary Table 12.",
+      "labEquipment": "COMET (Lunaphore)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "COMET (Lunaphore)"
+    },
+    {
+      "@id": "#19d73bb6-c26c-4a61-8655-6674cf69997a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Refer to Materials and Methods of manuscript.",
+      "labEquipment": "Orion (RareCyte)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Orion (RareCyte)"
+    },
+    {
+      "@id": "#860a8cca-a9f7-4b06-a01b-372637c20358",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Refer to Supplementary Table 12.",
+      "labEquipment": "MIBI (Ionpath)",
+      "measurementTechnique": [],
+      "name": "MIBI (Ionpath)"
+    },
+    {
+      "@id": "#b5666756-c406-44f5-9300-13e22f29f9bd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Refer to Materials and Methods of manuscript.",
+      "labEquipment": "PhenoCycler-Fusion (Akoya)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "PhenoCycler-Fusion (Akoya)"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 129
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2949682559732
+    }
+  ]
+}

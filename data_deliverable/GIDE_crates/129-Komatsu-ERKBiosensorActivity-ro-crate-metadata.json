@@ -1,0 +1,272 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/129-Komatsu-ERKBiosensorActivity/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/129-Komatsu-ERKBiosensorActivity/",
+      "@type": "Dataset",
+      "identifier": "129-Komatsu-ERKBiosensorActivity",
+      "name": "Timelapse images and BDML file for quantitative information about the extracellular signal-regulated kinase (ERK) biosensor activity in HeLa cells, or 4T1 cancer cells or the transgenic mice ",
+      "description": "129-Komatsu-ERKBiosensorActivity",
+      "datePublished": "2021-09-30",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Culture Techniques",
+        "Cell Transformation",
+        "Neoplastic",
+        "Neoplastic/genetics",
+        "Epithelial Cells",
+        "Epithelial Cells/metabolism",
+        "Extracellular Signal-Regulated MAP Kinases",
+        "Extracellular Signal-Regulated MAP Kinases/genetics",
+        "Extracellular Signal-Regulated MAP Kinases/metabolism",
+        "Gene Expression Profiling",
+        "Intestines",
+        "Intestines/cytology",
+        "Kinetics",
+        "MAP Kinase Signaling System",
+        "MAP Kinase Signaling System/genetics",
+        "Mice",
+        "Inbred C57BL (MeSH UniqMeSH Unique ID:ue ID:D008810)",
+        "Transgenic",
+        "Microscopy",
+        "Fluorescence",
+        "Multiphoton",
+        "Organoids",
+        "Organoids/cytology",
+        "Organoids/metabolism",
+        "Time-Lapse Imaging",
+        "Time-Lapse Imaging/methods"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-018-27174-x"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0001401"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0000186"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-655"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Michiyuki Matsuda",
+      "email": "matsuda.michiyuki.2c@kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-018-27174-x",
+      "@type": "ScholarlyArticle",
+      "name": "A platform of BRET-FRET hybrid biosensors for optogenetics, chemical screening, and in vivo imaging.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus ~ HeLa cell",
+      "description": "Mus musculus ~ HeLa cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Mus musculus ~ 4T1 cell",
+      "description": "Mus musculus ~ 4T1 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0001401"
+      }
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001401",
+      "@type": "DefinedTerm",
+      "name": "4T1 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000186",
+      "@type": "DefinedTerm",
+      "name": "activation of MAPERK kinase"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 6918044530,
+      "description": "6.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 6556,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

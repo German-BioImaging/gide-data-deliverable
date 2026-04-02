@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000077/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000077/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000077",
+      "name": "Time-lapse imgaes and quantitative information of propagating wave of ERK activation orients collective cell migration",
+      "description": "ssbd-repos-000077",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Actomyosin/metabolism",
+        "Animals",
+        "Cell Movement/physiology[major]",
+        "Dogs",
+        "Enzyme Activation",
+        "Epithelial Cells/cytology[major]",
+        "Kidney/metabolism",
+        "MAP Kinase Signaling System/physiology[major]",
+        "Mitogen-Activated Protein Kinases/metabolism[major]",
+        "Phosphorylation",
+        "Wound Healing/physiology"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.devcel.2017.10.016"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0004708"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-155"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: National Institute for Basic Biology; Laboratory: Division of Quantitative Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/055n47h92"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/055n47h92",
+      "@type": "Organization",
+      "name": "National Institutes of Natural Sciences"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.devcel.2017.10.016",
+      "@type": "ScholarlyArticle",
+      "name": "Propagating Wave of ERK Activation Orients Collective Cell Migration.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "vernacularName": "dog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004708",
+      "@type": "DefinedTerm",
+      "name": "activation of MAP ERK kinase kinase"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1472942080,
+      "description": "1.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 21,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2105"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2105",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5ed3c23f-c8c3-4ef0-b51b-25368940be58"
+        },
+        {
+          "@id": "#f9cd1671-90b9-4055-9792-38b3a428a594"
+        },
+        {
+          "@id": "#95d34b79-f2cd-4647-921f-bc2a2d5be4bd"
+        },
+        {
+          "@id": "#712a899a-b4cd-41ac-a1d5-b4f83f960e73"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d5c15b64-9a87-482c-9ddd-c1b609915517"
+        },
+        {
+          "@id": "#80302aa6-4a93-41fd-82d3-bf0ce680d921"
+        },
+        {
+          "@id": "#89562889-df28-497d-bfcf-dbce74ffe571"
+        },
+        {
+          "@id": "#aaa90c56-500b-48be-af32-bbf829150a5b"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#aca551fa-bb96-4043-bf49-b7b9e693d48b"
+        },
+        {
+          "@id": "#e41a1aa1-1683-4ce5-a0a4-aaadd99180de"
+        },
+        {
+          "@id": "#0f8ef733-bf16-4b38-b2fd-1d31f55ab598"
+        },
+        {
+          "@id": "#797589eb-5a72-4e2f-b67e-bd99dd16bd67"
+        },
+        {
+          "@id": "#e66e283e-ba75-42b1-8001-46ae5eb86d92"
+        },
+        {
+          "@id": "#64b46df9-4713-4e14-8231-7213aa9302c8"
+        },
+        {
+          "@id": "#9585e82b-39d0-4cdc-b6e7-e7187814375c"
+        },
+        {
+          "@id": "#e929be84-1a57-41d7-84bb-6ea3d0a7d0b6"
+        },
+        {
+          "@id": "#87b8c27e-b1ba-4ea5-aa73-294a335b69c5"
+        },
+        {
+          "@id": "#fe0c8027-acb2-439a-ada5-871974def9d7"
+        },
+        {
+          "@id": "#8d7912e4-dea6-4b70-8c10-c0c3431bc02d"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-18",
+      "description": "We present cloneXplorer, a fully automated live cell analysis and clone picking platform that uses time lapse monitoring of cell proliferation, cytokine secretion, and surface marker expression in ~100,000 single cell co-cultures to identify and isolate desired cells for clonal expansion or sequence analysis. We employ this platform in a cell line development workflow, in which single cells are selected from a heterogeneous source population based on cell proliferation rate and a fluorescent reporter, and are successfully expanded into monoclonal cell lines in >95% of attempts. Next, we devise a TCR epitope matching workflow by engineering Jurkat cells to express NFAT-GFP, CD8, and a TCR that recognizes a specific antigen. When Jurkat cells are co-cultured with a K562 library of 100 antigen presenting cells (APC), we show that the molecules recovered from microwells with positive GFP expression have the correct antigen in ~80% of attempts, determined by sequencing. To monitor immune activation in mouse and human primary samples, we implement a fluorescent sandwich assay to detect IFN-γ secretion in individual co-cultures. Finally, we combine these capabilities in a proof-of-concept demonstration, which uses IFN-γ secretion and the presence of CD8 surface markers as hierarchical gates to isolate and expand single T cells, and we verify their antigen-specificity by tetramer staining. Together, these results showcase potential applications of the cloneXplorer platform in cell line development and immune discovery applications.",
+      "funder": [],
+      "identifier": "S-BIAD2105",
+      "keywords": [
+        "T cell",
+        "antigen presenting cell",
+        "IFN-γ",
+        "IFNγ",
+        "interferon gamma",
+        "time lapse",
+        "cytokine",
+        "secretion",
+        "MC38",
+        "OTI",
+        "mouse",
+        "OT-I",
+        "SIINFEKL",
+        "microwells",
+        "T cell activation",
+        "fluorescence",
+        "live cell assay",
+        "coculture",
+        "C57BL/6",
+        "proliferation",
+        "spheroid",
+        "Jurkat",
+        "K562",
+        "NFAT",
+        "PBMC",
+        "MART1",
+        "CD3",
+        "CD28",
+        "CD4",
+        "CD8",
+        "CMV",
+        "single cell",
+        "HLA",
+        "clonal expansion",
+        "cell line development",
+        "CLD",
+        "monocyte",
+        "dendritic"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "cloneXplorer: A high throughput clone discovery platform based on conical microwell arrays",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#0f8ef733-bf16-4b38-b2fd-1d31f55ab598",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ebad3383-b8d2-491a-95ab-4180dbd38f86"
+        }
+      ],
+      "email": "oscar@celldom.com",
+      "name": "Oscar Neri"
+    },
+    {
+      "@id": "#64b46df9-4713-4e14-8231-7213aa9302c8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e9b090b0-b3c0-4c13-b88a-cebc038a0262"
+        }
+      ],
+      "email": "ssteele@mdanderson.org",
+      "name": "Shaun Steele"
+    },
+    {
+      "@id": "#797589eb-5a72-4e2f-b67e-bd99dd16bd67",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ebad3383-b8d2-491a-95ab-4180dbd38f86"
+        }
+      ],
+      "email": "mz@celldom.com",
+      "name": "Michael Zakharov"
+    },
+    {
+      "@id": "#87b8c27e-b1ba-4ea5-aa73-294a335b69c5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3dc6202-abe4-4651-9696-1f0693c84bab"
+        }
+      ],
+      "email": "kparaiso@cellecta.com",
+      "name": "Kitt Paraiso"
+    },
+    {
+      "@id": "#8d7912e4-dea6-4b70-8c10-c0c3431bc02d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ebad3383-b8d2-491a-95ab-4180dbd38f86"
+        }
+      ],
+      "email": "yellen@celldom.com",
+      "name": "Benjamin Yellen"
+    },
+    {
+      "@id": "#9585e82b-39d0-4cdc-b6e7-e7187814375c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e9b090b0-b3c0-4c13-b88a-cebc038a0262"
+        }
+      ],
+      "email": "XShen3@mdanderson.org",
+      "name": "Xiling Shen"
+    },
+    {
+      "@id": "#aca551fa-bb96-4043-bf49-b7b9e693d48b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ebad3383-b8d2-491a-95ab-4180dbd38f86"
+        }
+      ],
+      "email": "g.stadler@cellldom.com",
+      "name": "Guido Stadler"
+    },
+    {
+      "@id": "#e41a1aa1-1683-4ce5-a0a4-aaadd99180de",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ebad3383-b8d2-491a-95ab-4180dbd38f86"
+        }
+      ],
+      "email": "eugene@celldom.com",
+      "name": "Eugene Tkachenko"
+    },
+    {
+      "@id": "#e66e283e-ba75-42b1-8001-46ae5eb86d92",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e9b090b0-b3c0-4c13-b88a-cebc038a0262"
+        }
+      ],
+      "email": "HRajaei@mdanderson.org",
+      "name": "Hajar Rajaei"
+    },
+    {
+      "@id": "#e929be84-1a57-41d7-84bb-6ea3d0a7d0b6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3dc6202-abe4-4651-9696-1f0693c84bab"
+        }
+      ],
+      "email": "dxdeng@cellecta.com",
+      "name": "Debbie Deng"
+    },
+    {
+      "@id": "#fe0c8027-acb2-439a-ada5-871974def9d7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3dc6202-abe4-4651-9696-1f0693c84bab"
+        }
+      ],
+      "email": "achenchik@cellecta.com",
+      "name": "Alex Chenchik"
+    },
+    {
+      "@id": "#a3dc6202-abe4-4651-9696-1f0693c84bab",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Cellecta"
+    },
+    {
+      "@id": "#e9b090b0-b3c0-4c13-b88a-cebc038a0262",
+      "@type": [
+        "Organization"
+      ],
+      "name": "MD Anderson"
+    },
+    {
+      "@id": "#ebad3383-b8d2-491a-95ab-4180dbd38f86",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Celldom"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#80302aa6-4a93-41fd-82d3-bf0ce680d921",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "peripheral blood mononuclear cells - Stemcell Technologies (Catalog # 70024)\nDonor ID RG3594 batch 221272803C\nDonor ID RG3758 batch 221172801C",
+      "name": "PBMC-CD3/CD28",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#89562889-df28-497d-bfcf-dbce74ffe571",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "peripheral blood mononuclear cells - Stemcell Technologies (Catalog # 70025)\nDonor ID RG4114 batch 230771804C",
+      "name": "PBMC-MART1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#aaa90c56-500b-48be-af32-bbf829150a5b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cellecta\nCell Line Name:​ Jurkat CMV-TCR NFAT-GFP\nCatalog #:​  YJUR-TCMV-GPBle\nParental Cell Line Name:​Jurkat\nClonal / Polyclonal:​Polyclonal\nSelection Marker:​Puromycin and Bleomycin\n\nCellecta\nCell Line Name: K562 expressing an epitope in HLA-A-02:01 cell line \t\nCatalog #: YK562-MH-A0201-P transduced with a lentiviral pool of 100 cancer antigens using Catalog #: CPLVPL-P \nParental Cell Line Name: K562\nClonal / Polyclonal: Polyclonal - Jurkat\nK562",
+      "name": "JURKAT-NFAT/K562-APC",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d5c15b64-9a87-482c-9ddd-c1b609915517",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C57BL/6-Tg(TcraTcrb)1100Mjb/J\nStrain #:003831\nRRID:IMSR_JAX:003831Info\nCommon Name: OT-1\nThese mice contain transgenic inserts for mouse Tcra-V2 and Tcrb-V5 genes. The transgenic T cell receptor was designed to recognize ovalbumin peptide residues 257-264 (OVA257-264) in the context of H2Kb (CD8 co-receptor interaction with MHC class I). This results in MHC class I-restricted, ovalbumin-specific, CD8+ T cells (OT-I cells). That is, the CD8 T cells of this mouse primarily recognize OVA257-264 when presented by the MHC I molecule. Immune response dynamics can be studied by in vivo adoptive transfer or in vitro co-culture with cells transgenic for ovalbumin or by direct administration of ovalbumin. These mice are often used to study CD8+ T cell response to antigen, positive selection, and in any research requiring CD8+ T cells of defined specificity. Like most TCR transgenics, these mice are somewhat immunodeficient.\n\nC57BL/6J\nStrain #:000664\nRRID:IMSR_JAX:000664Info\nCommon Name: B6 | Also Known As: B6J, B6/J\nC57BL/6J is the most widely used inbred strain and the first to have its genome sequenced. Although this strain is refractory to many tumors, it is a permissive background for maximal expression of most mutations. C57BL/6J mice are resistant to audiogenic seizures, have a relatively low bone density, and develop age related hearing loss. They are also susceptible to diet-induced obesity, type 2 diabetes, and atherosclerosis. Macrophages from this strain are resistant to the effects of anthrax lethal toxin.\n\nMC-38 Cell Line derived from C57BL6 murine colon adenocarcinoma cells.\nCommon Name: MC-38\nFrom the laboratories of James W. Hodge, PhD, MBA and Jeffrey Schlom, PhD, National Cancer Institute/NIH.\n\nMC38-OVA\nCVCL_XJ96\nRRID:CVCL_XJ96\nTransduced with a OVA-IRES-EGFP construct (PubMed=26453748).\nGenetic integration: Method=Transduction; Gene=CGNC; 49631; OVAL/SERPINB14.\nGenetic integration: Method=Transduction; Gene=FPbase; R9NL8; eGFP (Note=Enhanced GFP).\nDerived from site: In situ; Colon; UBERON=UBERON_0001155.\nDisease\tMouse colon adenocarcinoma (NCIt: C120044)",
+      "name": "Mouse panT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#5ed3c23f-c8c3-4ef0-b51b-25368940be58",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Three imaging schedules were used.  \n\nSchedule 1.  (t000)\n1.5ms exposure transmitted light brightfield\n\nSchedule 2.  (t001 - t012)\n1.5ms exposure transmitted light brightfield\n600ms exposure, gain 20, wavelengths 565nm/600nm  ex/em\n300ms exposure, gain 20, wavelengths 488nm/520nm   ex/em for columns 4 and 10",
+      "labEquipment": "Celldom cloneXplorer",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Mouse panT"
+    },
+    {
+      "@id": "#712a899a-b4cd-41ac-a1d5-b4f83f960e73",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Three imaging schedules were used.  \n\nSchedule 1.  (t000) Cell Type 1 Loaded\n1.5ms exposure transmitted light brightfield\n\nSchedule 2.  (t001 - t006) Cocultures\n1.5ms exposure transmitted light brightfield\n600ms exposure, gain 20, wavelengths 488nm/520nm  ex/em\n\nSchedule 3.  (t007) After cell picking\n1.5ms exposure transmitted light brightfield\n600ms exposure, gain 20, wavelengths 488nm/520nm  ex/em",
+      "labEquipment": "Celldom cloneXplorer",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "JURKAT-NFAT/K562-APC"
+    },
+    {
+      "@id": "#95d34b79-f2cd-4647-921f-bc2a2d5be4bd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Three imaging schedules were used.  \n\nSchedule 1.  (t000)\n1.5ms exposure transmitted light brightfield\n1200ms exposure, gain 22, wavelengths 565nm/600nm  ex/em\n600ms exposure, gain 30, wavelengths 625nm/660nm  ex/em\n\nSchedule 2.  (t001 - t007)\n1.5ms exposure transmitted light brightfield\n1200ms exposure, gain 22, wavelengths 565nm/600nm  ex/em\n\nSchedule 3.  (t008 - t025)\n1.5ms exposure transmitted light brightfield\n\nSchedule 4. (t026)\n1.5ms exposure transmitted light brightfield\n800ms exposure, gain 22, wavelengths 565nm/600nm  ex/em\n600ms exposure, gain 30, wavelengths 625nm/660nm  ex/em",
+      "labEquipment": "Celldom cloneXplorer",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "PBMC-MART1"
+    },
+    {
+      "@id": "#f9cd1671-90b9-4055-9792-38b3a428a594",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1.5ms exposure transmitted light brightfield",
+      "labEquipment": "Celldom cloneXplorer",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "PBMC-CD3/CD28"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 49
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1158945073188
+    }
+  ]
+}

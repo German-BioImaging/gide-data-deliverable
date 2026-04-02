@@ -1,0 +1,408 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2396"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2396",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#898f716f-544e-4ea2-8cd0-e1ad5a0b2bc1"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#28fc2f15-9b43-407f-98d4-3771bccbd9eb"
+        },
+        {
+          "@id": "obo:NCBITaxon_511693"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0007-2900-9550"
+        },
+        {
+          "@id": "https://orcid.org/0009-0001-8509-9163"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5969-4471"
+        },
+        {
+          "@id": "https://orcid.org/0009-0007-1343-0068"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0096-8084"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7060-4879"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1164-1914"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4701-8254"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6209-7950"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8613-1447"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7734-3771"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0780-9251"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9562-7708"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1021/acssensors.5c02481"
+        }
+      ],
+      "datePublished": "2026-01-13",
+      "description": "The dataset contains the original confocal fluorescence microscopy images of E. coli BL21(DE3) expressing the iron biosensor MDtxRG149GA (IronSenseR) and its binding deficient mutants used in the publication \"A novel biosensor for ferrous iron developed via CoBiSe: A computational method for rapid biosensor design\". Images contain a channel for cpsfGFP fluorescence, LSSmApple fluorescence and transmitted light. Prior to imaging, cells were either incubated in PBS buffer only, PBS buffer containing 20 µM 2,2′-Bipyridine (BPD) or 250 µM BPD.",
+      "funder": [],
+      "identifier": "S-BIAD2396",
+      "keywords": [
+        "Biosensor",
+        "Fluorescence",
+        "Microscopy",
+        "Bacteria",
+        "Iron"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "A novel biosensor for ferrous iron developed via CoBiSe: A computational method for rapid biosensor design",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2396/fef03571-6c0a-4df5-9487-9219c585f74e/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5969-4471",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024z2rq82"
+        }
+      ],
+      "email": "jens.reiners@hhu.de",
+      "name": "Jens Reiners"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6209-7950",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02nv7yv05"
+        }
+      ],
+      "email": "j.frunzke@fz-juelich.de",
+      "name": "Julia Frunzke"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7060-4879",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02nv7yv05"
+        }
+      ],
+      "email": "ai.krueger@fz-juelich.de",
+      "name": "Aileen Krüger"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7734-3771",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024z2rq82"
+        }
+      ],
+      "email": "stefanie.weidtkamp-peters@hhu.de",
+      "name": "Stefanie Weidtkamp-Peters"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8613-1447",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024z2rq82"
+        },
+        {
+          "@id": "https://ror.org/02nv7yv05"
+        }
+      ],
+      "email": "gohlke@hhu.de",
+      "name": "Holger Gohlke"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0096-8084",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02nv7yv05"
+        },
+        {
+          "@id": "https://ror.org/024z2rq82"
+        }
+      ],
+      "email": "t.drepper@fz-juelich.de",
+      "name": "Thomas Drepper"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4701-8254",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02nv7yv05"
+        }
+      ],
+      "email": "m.bott@fz-juelich.de",
+      "name": "Michael Bott"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9562-7708",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024z2rq82"
+        }
+      ],
+      "email": "christoph.gertzen@hhu.de",
+      "name": "Christoph G.W. Gertzen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0780-9251",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024z2rq82"
+        }
+      ],
+      "email": "sander.smits@hhu.de",
+      "name": "Sander H.J. Smits"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1164-1914",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02nv7yv05"
+        }
+      ],
+      "email": "b.lueckel@fz-juelich.de",
+      "name": "Benita Lückel"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-8509-9163",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024z2rq82"
+        }
+      ],
+      "email": "manuel.anlauf@hhu.de",
+      "name": "Manuel T. Anlauf"
+    },
+    {
+      "@id": "https://orcid.org/0009-0007-1343-0068",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02nv7yv05"
+        },
+        {
+          "@id": "https://ror.org/024z2rq82"
+        }
+      ],
+      "email": "s.paik@fz-juelich.de",
+      "name": "Seung-Hyun Paik"
+    },
+    {
+      "@id": "https://orcid.org/0009-0007-2900-9550",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024z2rq82"
+        }
+      ],
+      "email": "athanasios.papadopoulos@hhu.de",
+      "name": "Athanasios Papadopoulos"
+    },
+    {
+      "@id": "https://ror.org/024z2rq82",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Heinrich Heine University Düsseldorf"
+    },
+    {
+      "@id": "https://ror.org/02nv7yv05",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Forschungszentrum Jülich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acssensors.5c02481",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2026",
+      "name": "A novel biosensor for ferrous iron developed via CoBiSe: A computational method for rapid biosensor design"
+    },
+    {
+      "@id": "obo:NCBITaxon_511693",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli BL21"
+    },
+    {
+      "@id": "#28fc2f15-9b43-407f-98d4-3771bccbd9eb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli BL21(DE3) whole cells",
+      "name": "E. coli BL21(DE3) pRSETb-MDtxRGA-G149",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_511693"
+      }
+    },
+    {
+      "@id": "#898f716f-544e-4ea2-8cd0-e1ad5a0b2bc1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Whole E.coli BL21(DE3) cells expressing IronSenseR were excited with a 488 nm laser (0.5% laser power). Pixel dwell time was set to 2 µs with a line averaging of 2 and a pinhole diameter of 1 AU. Detector range was set to 500-530 nm for cpsfGFP. Fluorescence of LSSmApple was collected at 600-700 nm.",
+      "labEquipment": "Olympus Fluoview 3000 confocal laser scanning microscope equipped with a 60x UPLSAPO water objective (NA 1.2) and a 488 nm laser.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "E. coli BL21(DE3) IronSenseR confocal imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 336
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3696034472
+    }
+  ]
+}

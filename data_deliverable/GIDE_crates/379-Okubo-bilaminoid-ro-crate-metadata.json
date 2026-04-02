@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/379-Okubo-bilaminoid/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/379-Okubo-bilaminoid/",
+      "@type": "Dataset",
+      "identifier": "379-Okubo-bilaminoid",
+      "name": "3D images of bilaminar organoid generated from co-culture of human pluripotent stem cells (hPSC) and hPSC-derived hypoblast-like cells",
+      "description": "Recently, several studies using cultures of human embryos together with single-cell RNA-seq analyses have revealed differences between humans and mice, necessitating the study of human embryos. Despite the importance of human embryology, ethical and legal restrictions have limited post-implantation-stage studies. Thus, recent efforts have focused on developing in vitro self-organizing models using human stem cells. In this paper, the authors report genetic and non-genetic approaches to generate authentic hypoblast cells (naive hPSC-derived hypoblast-like cells (nHyCs))-known to give rise to one of the two extraembryonic tissues essential for embryonic development-from naive human pluripotent stem cells (hPSCs). Their nHyCs spontaneously assemble with naive hPSCs to form a three-dimensional bilaminar structure (bilaminoids) with a pro-amniotic-like cavity. In the presence of additional naive hPSC-derived analogues of the second extraembryonic tissue, the trophectoderm, the efficiency of bilaminoid formation increases from 20% to 40%, and the epiblast within the bilaminoids continues to develop in response to trophectoderm-secreted IL-6. Furthermore, they show that bilaminoids robustly recapitulate the patterning of the anterior-posterior axis and the formation of cells reflecting the pregastrula stage, the emergence of which can be shaped by genetically manipulating the DKK1/OTX2 hypoblast-like domain. ",
+      "datePublished": "2025-04-21",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41586-023-06871-2"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0009790"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1702"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takuya Yamamoto",
+      "email": "takuya@cira.kyoto-u.ac.jp.",
+      "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application; Laboratory: Center for iPS Cell Research and Application",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Yasuhiro Takashima",
+      "email": "y.takashima@cira.kyoto-u.ac.jp.",
+      "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application; Laboratory: Center for iPS Cell Research and Application",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41586-023-06871-2",
+      "@type": "ScholarlyArticle",
+      "name": "Hypoblast from human pluripotent stem cells regulates epiblast development.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens",
+      "description": "Homo sapiens",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@type": "DefinedTerm",
+      "name": "embryo development"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 2014571887,
+      "description": "2.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 8,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

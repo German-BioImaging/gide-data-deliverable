@@ -1,0 +1,175 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000159/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000159/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000159",
+      "name": "Time-lapse images of ERK activity in MDCK cells published in (2020, Boocock et al., Nat Phys)",
+      "description": "\"Time-lapse images of ERK activity in MDCK cells published in (2020, Boocock et al., Nat Phys). Please see the \"\"readme.txt\"\" in each directory for the image conditions. For the experiment conditions, please see the papers (2020, Boocock et al., Nat Phys) and (2020, Hino et al., Dev Cell).\r\n\r\n\"\"Figure1-ERK_in_confluent\"\" includes the FRET/CFP images for the ERK activity in a confluent condition of MDCK cells.\r\n\"\"Figure2-ERK_Response_to_Stretch\"\" includes the FRET/CFP images for the ERK activity in response to the mechanical stretch of MDCK cells.\r\n\"\"Figure2-Optogenetic_ERK_Activation\"\" includes a boundary displacement of the cell clusters in response to the optogenetic ERK activation of MDCK cells.\r\n\"\"Figure3-ERK_TractionForce\"\" includes the FRET/CFP images for the ERK activity and beads images for the traction force calculation on a polyacrylamide gel.\r\n\"\"Figure4-ERK_Wildtype\"\" includes the FRET/CFP images for the ERK activity in the expansion assay of wildtype MDCK cells.\r\n\"\"Figure4-ERK_MerlinKO\"\" includes the FRET/CFP images for the ERK activity in the expansion assay of Merlin KO MDCK cells.\"",
+      "datePublished": "2020-07-22",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41567-020-01037-7"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000288"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Tsuyoshi Hirashima",
+      "email": "hirashima.tsuyoshi.2m@kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41567-020-01037-7",
+      "@type": "ScholarlyArticle",
+      "name": "Theory of mechanochemical patterning and optimal migration in cell monolayers",
+      "datePublished": "2020"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        }
+      ],
+      "hasCellLine": "Madin-Darby canine kidney cells"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "vernacularName": "dog"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Widefield fluorescence microscope",
+      "description": "Widefield fluorescence microscope",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000288"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000288",
+      "@type": "DefinedTerm",
+      "name": "Widefield fluorescence microscope"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 52449357824,
+      "description": "52.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 5544,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

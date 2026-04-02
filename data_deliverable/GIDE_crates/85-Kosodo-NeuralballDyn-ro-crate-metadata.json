@@ -1,0 +1,209 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/85-Kosodo-NeuralballDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/85-Kosodo-NeuralballDyn/",
+      "@type": "Dataset",
+      "identifier": "85-Kosodo-NeuralballDyn",
+      "name": "TimeLapse images of Tbr2-EGFP expression in a neural ball",
+      "description": "85-Kosodo-NeuralballDyn",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Brain/cytology",
+        "Brain/embryology[major]",
+        "Brain/metabolism",
+        "Cerebral Cortex/cytology",
+        "Cerebral Cortex/embryology",
+        "Cerebral Cortex/metabolism",
+        "Embryonic Stem Cells/cytology",
+        "Embryonic Stem Cells/metabolism",
+        "Green Fluorescent Proteins/genetics",
+        "Green Fluorescent Proteins/metabolism",
+        "Mice",
+        "Mice, Transgenic",
+        "Neural Stem Cells/cytology",
+        "Neural Stem Cells/metabolism",
+        "Neurogenesis/physiology[major]",
+        "Organ Culture Techniques/instrumentation",
+        "Organ Culture Techniques/methods",
+        "Organoids/cytology",
+        "Organoids/embryology[major]",
+        "Organoids/metabolism",
+        "Time-Lapse Imaging"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.bbrc.2016.12.187"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0022008"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-162"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yoichi Kosodo",
+      "email": "kosodo@kbri.re.kr",
+      "description": "Organization: Korea Brain Research Institute; Laboratory: Neural Regeneration Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/055zd7d59"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Taeko Suetsugu"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Tetsuya J. Kobayashi"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Fumio Matsuzaki"
+    },
+    {
+      "@id": "https://ror.org/055zd7d59",
+      "@type": "Organization",
+      "name": "Korea Brain Research Institute"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.bbrc.2016.12.187",
+      "@type": "ScholarlyArticle",
+      "name": "Systematic time-dependent visualization and quantitation of the neurogenic rate in brain organoids.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0022008",
+      "@type": "DefinedTerm",
+      "name": "neurogenesis"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1977439103,
+      "description": "2.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1602,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

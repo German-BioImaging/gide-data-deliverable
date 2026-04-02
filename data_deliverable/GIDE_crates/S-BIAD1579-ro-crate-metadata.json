@@ -1,0 +1,220 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1579"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1579",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e6f0d7da-def4-46ca-a3be-845347b00d34"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2d05c8c1-37f8-40a9-a75f-86ef53963b64"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#8df09f68-4978-4d20-bbdf-a4077aff8dba"
+        },
+        {
+          "@id": "#d4877d51-1096-43c8-ba0d-84c6955793b9"
+        },
+        {
+          "@id": "#52e7f083-c335-4fec-b981-61c7a653c707"
+        },
+        {
+          "@id": "#c06b6ac3-9079-42e2-964c-55a44e69d166"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-22",
+      "description": "Gliomas remain among the most lethal cancers, with limited treatment options and suboptimal clinical outcomes. To better understand the factors that drive glioma progression and resistance to immunotherapy, we assembled a clinically annotated cohort of 310 adult and pediatric glioma patients across multiple institutions. By combining multiplexed ion beam imaging, spatial transcriptomics, and spatial glycomics, we characterized over 1.2 million cells at single-cell resolution, profiling key immune subsets, tumor antigens (TAs), transcriptome, and glycan structures. Our analyses revealed grade- and tumor type–specific architectures, highlighting the prevalence of immunosuppressive myeloid populations that varied across glioma subtypes. We systematically quantified eight clinically actionable TAs, finding that B7H3 and EGFR are the most abundant in high-grade tumors but also exhibit considerable cell-to-cell variability. Our data shows that multi-antigen strategies could further improve tumor coverage, though cells lacking any measured TA remain significant in many patients, underscoring challenges for targeted therapy.  Consistent with the modest clinical improvements seen to date, comparing LGG lesions from patients who received immunotherapy versus standard of care revealed only minor differences in immune function and tumor architecture. However, longitudinal comparisons of LGG uncovered dynamic shifts in tumor-immune cell organization and altered functional states. To better understand the apparent stalling of anti-tumor immune activation, we characterized the glioma glycome using mass spectrometry to image 71 N-glycans and integrated with spatial proteomics and transcriptomics, identified sialylation as a key feature of high-grade lesions linked to immune pathways. Finally, a multi-omic machine-learning model revealed that glycan features were most predictive of glioma grade, whereas transcriptomic signatures in immune-rich regions better distinguished survival in glioblastoma. Collectively, these data underscore the importance of spatial multi-omics for identifying new therapeutic strategies and serve as a valuable resource to guide next-generation glioma interventions.",
+      "funder": [],
+      "identifier": "S-BIAD1579",
+      "keywords": [
+        "Gliomas",
+        "Glioblastoma",
+        "MIBI",
+        "Mass spectrometry",
+        "Brain"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Multiomic landscape of human gliomas from diagnosis to treatment and recurrence",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#52e7f083-c335-4fec-b981-61c7a653c707",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "mangelo0@stanford.edu",
+      "name": "Mike Angelo"
+    },
+    {
+      "@id": "#8df09f68-4978-4d20-bbdf-a4077aff8dba",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "hadeesha.piyadasa@gmail.com",
+      "name": "Hadeesha Piyadasa"
+    },
+    {
+      "@id": "#c06b6ac3-9079-42e2-964c-55a44e69d166",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "bendall@stanford.edu",
+      "name": "Sean Bendall"
+    },
+    {
+      "@id": "#d4877d51-1096-43c8-ba0d-84c6955793b9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "boberlto@stanford.edu",
+      "name": "Benjamin Oberlton"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2d05c8c1-37f8-40a9-a75f-86ef53963b64",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Brain Cells",
+      "name": "Human Brain Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e6f0d7da-def4-46ca-a3be-845347b00d34",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "MIBI run setup\nMIBI data was acquired using the MIBIScope instrument (IonPath, Menlo Park, USA). TMA cores were labeled by row and column for easy mapping to metadata. Each core was acquired on two slides—one for the tumor panel and one for the immune panel—with screen captures taken to align regions between slides. Automated checks, with user confirmation, corrected naming errors in row and column assignments. Core order was randomized before acquisition to minimize batch effects from instrument drift.\n\nAcquisition settings\nConsistent settings were applied across all MIBI data acquired in this study. Field of view (FOV) size was selected based on sample availability. When feasible, FOVs measuring (800 µm)2 and (2048 pixels)2 were captured. In cases of limited tissue, an FOV size of (400 µm)2 and (1024 pixels)2 was used instead. A custom preset with a beam current of 8.5nA and dwell time of 0.58ms was applied to optimize acquisition speed and image clarity. All default background correction and noise removal settings were disabled.\n",
+      "labEquipment": "MIBIScope Instrument (IonPath, Menlo Park, USA)",
+      "measurementTechnique": [],
+      "name": "MIBI Acquisition "
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4593
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 360681216483
+    }
+  ]
+}

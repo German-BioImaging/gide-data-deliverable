@@ -1,0 +1,305 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1661"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1661",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7dc0014a-9584-4274-add7-7b3d3a9be50d"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b5fe530b-6fbf-433a-96b9-53cd4f2d8f73"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0001-2320-0318"
+        },
+        {
+          "@id": "#ff2fb993-c157-442c-beb5-8907f2de8869"
+        },
+        {
+          "@id": "#9d258f74-d302-4de3-a5f6-df4cccdcf9b3"
+        },
+        {
+          "@id": "#49bcf519-6d5d-474b-a483-88c91225e849"
+        },
+        {
+          "@id": "#de5d1ded-2d57-4b74-8be7-536b7af508d2"
+        },
+        {
+          "@id": "#da0eb800-afc5-412b-bcc8-6829e86c2601"
+        },
+        {
+          "@id": "#456d5e2d-76ff-4813-a38f-de8d45bbe170"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-22",
+      "description": "The dataset consists of 27 brightfield and 27 immunofluorescent images of clear cell renal cell carcinoma (ccRCC), a type of kidney cancer, along with patient-derived tumoroids. The brightfield images include 18 haematoxylin and eosin (H&E)-stained samples from eight patient tissues and their corresponding tumoroids, as well as seven ICOS immunohistochemical-stained sections from three patients, analysed as part of an immune panel to characterize tumoroids. Additionally, the dataset contains multiplex immunofluorescence (mIF) images to identify key features such as cell proliferation (KI67), endothelial cells (CD105), heterogeneity (PCK), and immune cell presence (CD45). Further analysis was conducted to investigate immune subtypes using a high-plex panel. This panel involved four consecutive staining cycles on the same tissue section to detect proteins including CD56, CD20, CD68, CD3, PCK, and CD11b, with Hoechst used as a nuclear counterstain. Tumoroids are a 3D model system that serve as an innovative model derived from primary cancer tissue, maintaining critical components of the tumour microenvironment. The tumoroid system presents a novel approach to studying Renal Cell Carcinoma (RCC), offering a valuable platform to investigate tumor heterogeneity and immune cell interactions within the tumor microenvironment. Its diverse cellular composition makes it particularly useful for exploring key histological characteristics.\nA second part of the dataset includes 11 whole slide images of snap-frozen ccRCC tumoroids and 1 WSI of ccRCC tissue. These WSIs are desorption electrospray ionization mass spectrometry imaging (DESI-MSI) raw data files, haematoxylin and eosin (H&E) and multiplex immunofluorescent (mIF) images. The dataset comprises 5 different patient samples that were analysed by DESI-MSI and H&E and mIF were performed on the same slide. DESI-MSI images were acquired in the range of m/z 50-1200 Da with parameters set for sensitive detection of lipids, specially in the range m/z 600-900 Da. H&E images allow the identification of structurual features of the tissue. mIF images have been labeled using a pannel of protein markers to allow simultaneous visualisation of multiple targets withing the same tissue sample. Panel includes markers Ki67, CD45, CD105 and PanCK with a DNA counterstain (NucBlue). These markers enable the identification of proliferative, immune cells, endothelial and stem-cell like cancer cells, and epithelial cells within cancer. This dataset is expected to be highly valuabe for characterising the metabolic, lipidomic and phenotypical features of 3D-cultured models of ccRCC. Since DESI-MSI, H&E and mIF images were acquired from the same tumoroid a direct and unbiased correlation can be established between the results of each technique. The integration of data from these different imaging modalities can help researchers gain deeper insights into the metabolic phenotype of cancer cells within the tumour microenvironment of ccRCC.\n",
+      "funder": [],
+      "identifier": "S-BIAD1661",
+      "keywords": [
+        "Mass Spectrometry Imaging, ",
+        "clear cell renal cell carcinoma ",
+        "H&E",
+        "Immunofluorescence",
+        "Mass Spectrometry",
+        "MSI"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Clear Cell Renal Cell Carcinoma Patient-Derived Tumoroids characterisation by Spatial Mass Spectrometry, Histology and Multiplex Immunofluorescence",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1661/5448c444-3ccb-45e3-aa0e-a03486ca19c6/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#456d5e2d-76ff-4813-a38f-de8d45bbe170",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "ald24@st-andrews.ac.uk",
+      "name": "Alison L. Dickson"
+    },
+    {
+      "@id": "#49bcf519-6d5d-474b-a483-88c91225e849",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "alex.laird@ed.ac.uk",
+      "name": "Alexander Laird"
+    },
+    {
+      "@id": "#9d258f74-d302-4de3-a5f6-df4cccdcf9b3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "#da0eb800-afc5-412b-bcc8-6829e86c2601",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "djh20@st-andrews.ac.uk",
+      "name": "David J. Harrison"
+    },
+    {
+      "@id": "#de5d1ded-2d57-4b74-8be7-536b7af508d2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "pm72@st-andrews.ac.uk",
+      "name": "Peter Mullen"
+    },
+    {
+      "@id": "#ff2fb993-c157-442c-beb5-8907f2de8869",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "ha82@st-andrews.ac.uk",
+      "name": "Hazem Abdullah"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-2320-0318",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "gmz1@st-andrews.ac.uk",
+      "name": "Greice Michele Zickuhr"
+    },
+    {
+      "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "#de588502-f2ed-4e10-94dc-797256ad666b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#b5fe530b-6fbf-433a-96b9-53cd4f2d8f73",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Renal cell carcinoma",
+      "name": "FFPE and snap-frozen ccRCC Tumoroid and ccRCC tumour tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7dc0014a-9584-4274-add7-7b3d3a9be50d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1. DESI-MSI: The Xevo G2-XS Q-ToF equipped with a DESI-XS ion source and heated transfer line (Waters, Milford USA) was operated at 20,000 resolving power in negative ionization mode between m/z 50–1200. A solvent mixture of 98% methanol and 2% water was delivered at 2 µL/min and nebulized with nitrogen at a backpressure of 1 bar. Spatial resolution was set at 20×20 µm at 10 scans/sec. The heated transfer line temperature was set to maintain 450 oC and ion source 150 oC.\n\n2. Zeiss Axio Z1 Scanner - FL images -PostDESI images - NucBlue (DAPI Channel), Ki67 (FITC Channel), CD45 (Cy3 Channel), CD105 (Cy5 Channel) and PanCK (Alexa Fluor 750 channel).\nZeiss Axio Z1 Scanner - FL images - FFPE- HOECHST (DAPI Channel), CD45 (FITC Channel), Vimentin (Cy3 Channel), P53DO1 (Cy5 Channel).\nZeiss Axio Z1 Scanner - FL images - FFPE - HOECHST (DAPI Channel), Ki67 (FITC Channel), CD45 (Cy3 Channel), CD105 (Cy5 Channel) and PanCK (Alexa Fluor 750 channel).\nImmune Panel:\nZeiss Axio Z1 Scanner - FL images - FFPE- HOECHST (DAPI Channel), CD20 (AF488 Channel), CD3 (AF555 Channel)\nZeiss Axio Z1 Scanner - FL images - FFPE- HOECHST (DAPI Channel), CD68 (FITC Channel), CD56 (Cy3 Channel), CD11B (Cy5 Channel).\nZeiss Axio Z1 Scanner - FL images - FFPE- HOECHST (DAPI Channel), RCK(AF555)\n\n3. Zeiss Axio Z1 Scanner – Brightfield images – FFPE and Snap-frozen – Haematoxylin, ICOS (DAB)\n",
+      "labEquipment": "1. DESI-MSI - Xevo G2-XS Q-ToF equipped with a DESI-XS ion source and heated transfer line (Waters, Milford USA)\n2. Zeiss Axio Z1 scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Mass Spectrometry Imaging, H&E and mIF"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 100
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 113944282132
+    }
+  ]
+}

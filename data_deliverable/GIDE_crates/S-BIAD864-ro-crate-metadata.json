@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD864"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD864",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c642122b-1736-4d1e-9f82-879e7a0e8450"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#12df9f2c-ccc0-4865-a482-eaffa5bd3242"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9719-5446"
+        },
+        {
+          "@id": "#ad783e2d-3ce1-40ad-98e2-a0b5481de3e8"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9821-3578"
+        },
+        {
+          "@id": "#103e4685-61da-4b49-b177-45dd77ed3e1a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-28",
+      "description": "CalR-KDEL tagged with HaloTag7 was measured using point accumulation in nanoscale topography (PAINT) in living U-2 OS cells in total internal reflection (TIRF) microscopy. JF635-S5, one of the exchangeable HaloTag Ligands (xHTLs) which targeting HaloTag7 was used to label the ER structure.   ",
+      "funder": [],
+      "identifier": "S-BIAD864",
+      "keywords": [
+        "single-molecule",
+        "super-resolution",
+        "microscopy",
+        "live-cell"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Neural network-assisted single-molecule localization microscopy with a weak-affinity protein tag",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#103e4685-61da-4b49-b177-45dd77ed3e1a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "heilemann@chemie.uni-frankfurt.de",
+      "name": "Mike Heilemann"
+    },
+    {
+      "@id": "#ad783e2d-3ce1-40ad-98e2-a0b5481de3e8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "name": "Johanna V. Rahm"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9719-5446",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "jang@chemie.uni-frankfurt.de",
+      "name": "Soohyen Jang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9821-3578",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "dietz@chemie.uni-frankfurt.de",
+      "name": "Marina S. Dietz"
+    },
+    {
+      "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Goethe University Frankfurt"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#12df9f2c-ccc0-4865-a482-eaffa5bd3242",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U-2 OS",
+      "name": "U-2 OS stable cell lines",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c642122b-1736-4d1e-9f82-879e7a0e8450",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For live-cell imaging\nexposure time: 50ms\nexcitation with 647 nm laser with an irradiation intensity of 0.32 kW/cm2 (measured at the objective lens).\nImage size: 128 x 128 px with 157 nm of pixel size",
+      "labEquipment": "commercial widefield microscope (N-STORM by Nikon) operated in TIRF illumination",
+      "measurementTechnique": [],
+      "name": "High-density HT-PAINT"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 11
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 13528223830
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000435/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000435/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000435",
+      "name": "Images of coronary vessels and Wnt/βcatenin signaling-activated cardiomyocytes in zebrafish.",
+      "description": "Cells functioning at a specific zone by clustering according to gene expression are recognized as zonated cells. Here, we demonstrate anatomical and functional zones in the zebrafish heart. The cardiomyocytes (CMs) at the atrioventricular canal between the atrium and ventricle could be grouped into three zones according to the localization of signal-activated CMs: Wnt/β-catenin signal+, Bmp signal+, and Tbx2b+ zones. Endocardial endothelial cells changed their characteristics, penetrated the Wnt/β-catenin signal+ CM zone, and became coronary ECs covering the heart. Coronary vessel length was reduced when the Wnt/β-catenin signal+ CMs were depleted. Collectively, we demonstrate the importance of anatomical and functional zonation of CMs in the zebrafish heart.",
+      "datePublished": "2025-05-19",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.devcel.2024.09.012"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0060070"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Ayano Chiba",
+      "email": "achiba@med.id.yamagata-u.ac.jp",
+      "description": "Organization: Yamagata University; Department: Department of Pharmacology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00xy44n04"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/00xy44n04",
+      "@type": "Organization",
+      "name": "Yamagata University"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "JSPS KAKENHI (No. 18K15025, 22K15156 to A. C. and 19H01022 to N.M.), JST grant (JPMJPF2018 and JPMJMS2024-3 to N.M.) and Takeda Science Foundation to N.M.."
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.devcel.2024.09.012",
+      "@type": "ScholarlyArticle",
+      "name": "Zonated Wnt/beta-catenin signal-activated cardiomyocytes at the atrioventricular canal promote coronary vessel formation in zebrafish.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Tg(5xUAS:EGFP)nkuasgfp1a, Tg(myl7:NLS-mCherry)ncv11, Tg(BRE:EGFP)mw29, Tg(fli1:EGFP)y1, Tg(fli1:mCherry)ncv501, Tg(kdrl:TagBFP)mu293, Tg(fli1:GAL4db-Hsa.TCF7L2ΔC-2A-mCherry)ncv15, Tg(actb2:GAL4db-Hsa.TCF7L2ΔC-2A-mCherry)ncv538, Tg(Hsa.DLL4:EGFP)ncv513, Tg(myl7:GAL4db-Hsa.TCF7L2ΔC-2A-mCherry)ncv539, Tg(myl7:GAL4db-Hsa.TCF7L2ΔC,cryaa:EGFP)ncv82, Tg(myl7:GAL4-VP16-Bmo.Ecr)ncv77, Tg(5xUAS:NTR-mCherry)ncv84, Tg(5xUAS:tcf7l1aΔN-mCherry)ncv540, Tg(5xUAS:dEGFP)ncv549, Tg(5xUAS:tagBFP-P2A-NTR2.0)ncv551, TgBAC(tbx2b:EGFP)ncv83, TgBAC(tbx2b:GAL4FF)ncv542, TgBAC(esm1:dEGFP)ncv543",
+      "description": "Tg(5xUAS:EGFP)nkuasgfp1a, Tg(myl7:NLS-mCherry)ncv11, Tg(BRE:EGFP)mw29, Tg(fli1:EGFP)y1, Tg(fli1:mCherry)ncv501, Tg(kdrl:TagBFP)mu293, Tg(fli1:GAL4db-Hsa.TCF7L2ΔC-2A-mCherry)ncv15, Tg(actb2:GAL4db-Hsa.TCF7L2ΔC-2A-mCherry)ncv538, Tg(Hsa.DLL4:EGFP)ncv513, Tg(myl7:GAL4db-Hsa.TCF7L2ΔC-2A-mCherry)ncv539, Tg(myl7:GAL4db-Hsa.TCF7L2ΔC,cryaa:EGFP)ncv82, Tg(myl7:GAL4-VP16-Bmo.Ecr)ncv77, Tg(5xUAS:NTR-mCherry)ncv84, Tg(5xUAS:tcf7l1aΔN-mCherry)ncv540, Tg(5xUAS:dEGFP)ncv549, Tg(5xUAS:tagBFP-P2A-NTR2.0)ncv551, TgBAC(tbx2b:EGFP)ncv83, TgBAC(tbx2b:GAL4FF)ncv542, TgBAC(esm1:dEGFP)ncv543",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955",
+      "@type": "Taxon",
+      "scientificName": "Danio rerio",
+      "vernacularName": "zebrafish"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060070",
+      "@type": "DefinedTerm",
+      "name": "canonical Wnt signaling pathway"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "light microscopy",
+      "description": "light microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000345",
+      "@type": "DefinedTerm",
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 133022871552,
+      "description": "133.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 69004,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

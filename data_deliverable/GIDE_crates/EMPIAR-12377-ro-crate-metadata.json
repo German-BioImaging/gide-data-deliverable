@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-12377"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-12377",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b0b043a9-8b10-4380-906b-5e00d624264b"
+        },
+        {
+          "@id": "obo:FBbi_00000257"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7e9cfe36-d7fe-462a-8181-6d3c86e19b52"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2845-9708"
+        },
+        {
+          "@id": "https://orcid.org/0009-0009-2642-5393"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7982-6494"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4136-4962"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-06",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-12377",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Array Tomography of zebrafish axillary lymphoid organ - an external, experimentally accessible immune organ in the zebrafish",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-12377/42db9fb5-0f2a-4310-b40b-bc358a6e48b9/7fb63269-13bc-49ff-a31e-9e5171f74cc1.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7982-6494",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Narayan K"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2845-9708",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Castranova D"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4136-4962",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Weinstein BM"
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-2642-5393",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Dell CW"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio",
+      "vernacularName": "leopard danio"
+    },
+    {
+      "@id": "#7e9cfe36-d7fe-462a-8181-6d3c86e19b52",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "External lymphoid organ located bilaterally posterior to the operculum and dorsal to the base of the pectoral fin in adult zebrafish, containing immune cells, blood vessels, and lymphatic vessels",
+      "name": "Zebrafish axillary lymphoid organ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#b0b043a9-8b10-4380-906b-5e00d624264b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Wafers were affixed to a 4-inch stage-decel holder in a Zeiss SEM (GeminiSEM 450) and imaged using ATLAS 5 Array Tomography software. Five wafers were imaged using a four-quadrant backscatter detector, with the electron beam operated at 3 kV EHT with 1 kV beam deceleration and 800pA probe current. Low-resolution overview scans were collected at 3000 nm pixel resolution, medium-resolution section sets were collected at 150 nm pixel resolution, and high-resolution sites were collected at 25 and 10 nm pixel resolution. Once image acquisition was complete, the image stack was locally cropped and aligned using the ATLAS 5 software. The resulting image stack was processed using python-based scripts to produce two aligned and contrast/brightness adjusted image datasets: a stack of images at 10 or 25 nm (xy) x 100 nm (z), and a final binned 100x100x100nm isotropic volume.",
+      "labEquipment": "Zeiss GeminiSEM 450, Carl Zeiss",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000257"
+        }
+      ],
+      "name": "Array Tomography SEM"
+    },
+    {
+      "@id": "obo:FBbi_00000257",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "scanning electron microscopy (SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 837
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12188077457
+    }
+  ]
+}

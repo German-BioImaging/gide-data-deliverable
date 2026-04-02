@@ -1,0 +1,266 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1698"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1698",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#fe5e1818-7497-46fa-8785-d7844951dc29"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1af0cf3b-b58a-45ad-a34c-3d39d108266c"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6308-346X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8220-0724"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3629-9302"
+        },
+        {
+          "@id": "https://orcid.org/0009-0007-4153-6652"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5607-3845"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-22",
+      "description": "Fluorescent images of nuclear RelA and cRel dynamics upon CD40 and BCR activation.\nThis is the data set behind figures 3L, 3M, 4F, and 4H.",
+      "funder": [],
+      "identifier": "S-BIAD1698",
+      "keywords": [
+        "Systems Immunology",
+        "B-cell selection",
+        "CD40 signaling",
+        "BCR signaling",
+        "NFκB",
+        "Mathematical Modeling"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Synergy and antagonism in the integration of BCR and CD40 signals that control B-cell population expansion  ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1698/31a36cb8-dd59-409e-b2bd-c36c04ebd800/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8220-0724",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "haripriyavn@g.ucla.edu",
+      "name": "Haripriya Vaidehi Narayanan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3629-9302",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "markxiang@g.ucla.edu",
+      "name": "Mark Yankai Xiang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5607-3845",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "ahoffmann@g.ucla.edu",
+      "name": "Alexander Hoffmann"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6308-346X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "helenhuang@g.ucla.edu",
+      "name": "Helen Huang"
+    },
+    {
+      "@id": "https://orcid.org/0009-0007-4153-6652",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "vibhuk703@g.ucla.edu",
+      "name": "Vaibhava Kesarwani"
+    },
+    {
+      "@id": "#f270c395-b369-47cc-8f34-862290942b7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#1af0cf3b-b58a-45ad-a34c-3d39d108266c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Splenic B cells",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#fe5e1818-7497-46fa-8785-d7844951dc29",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "At each time point, cells were harvested from the original plate, spun down and resuspended in 100μL Fluorobrite media, and introduced into single wells of a black 96-well plate with #1.5 coverslip glass bottom (Cellvis P96-1.5H-N) to fill up a total of 1 mL Fluorobrite media. Cells were spun down at 500rcf for 5 minutes to ensure settling at even density across the glass bottom, and 1μL DRAQ7 was added as a viability indicator.\n\nThe plate was placed on a stage insert in the incubation chamber at 37C of a Zeiss Axio Observer wide-field epifluorescence microscope. Immersol 518F/37C was applied to a 63X/NA1.4 Plan Apo oil immersion objective, and contact was made with the glass bottom of the plate. Automated tiling was performed to acquire 49 tiles of 200μm x 200μm across each well in a 7 x 7 pattern, separated by a gap of about 40μm between each tile to avoid overlaps and dual counting of cells. Fluorescence images were collected in 4 channels to measure mTFP1-cRel and mVenus-RelA activity, H2B-mCherry as a nuclear marker, and DRAQ7 for viability, with the following settings:\nTarget\tFilter\tIllumination\tExcitation\tDichroic\tEmission\tPow\tTexp\ncRel- mTFP1\tSemrock CFP\tColibri 430nm\t426-443nm\t452nm\t460-499nm\t100%\t700ms\nRelA-mVenus\tSemrock YFP\tColibri 505nm\t488-512nm\t520nm\t529-556nm\t100%\t700ms\nH2B-mCherry\tSemrock mCherry\tColibri 590nm\t542-582nm\t593nm\t604-679nm\t100%\t300ms\nDRAQ7\tChroma Far Red\tXCite HXP-120 lamp\t610-650nm\t647nm\t637-697nm\tMax\t100ms\n",
+      "labEquipment": "Zeiss Axio Observer wide-field epifluorescence microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 186
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 14186949336
+    }
+  ]
+}

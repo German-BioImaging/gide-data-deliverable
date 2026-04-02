@@ -1,0 +1,172 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2062"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2062",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6d64ee44-f70a-4389-bfbd-c7ef1b273baf"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4803844e-67d1-44a8-b570-3a40d2ded05b"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ee66dc62-5f34-4e99-acc3-3acf194ccc22"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-30",
+      "description": "In this study, we investigated the effects of maternal hyperglycemia on the deposition patterns of extracellular matrix (ECM) proteins in the fetal endocrine pancreas. The ECM plays a critical role in the proper organization and function of endocrine pancreatic cells. We observed that hyperglycemia altered the deposition pattern of key ECM proteins. These changes were accompanied by an increased presence of immature islets of Langerhans and a disrupted distribution of endocrine cell types. Additionally, we noted abnormalities in the expression of specific transcription factor proteins that regulate gene expression involved in endocrine cell proliferation and maturation. Together, these findings suggest that ECM alterations contribute to the dysfunction of the endocrine pancreas induced by maternal hyperglycemia, with potential long-term effects on the metabolic health of the offspring.",
+      "funder": [],
+      "identifier": "S-BIAD2062",
+      "keywords": [
+        "diabetes mellitus; extracellular matrix; fetal reprogramming"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Effect of Maternal Hyperglycemia on Fetal Pancreatic Islet Development",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2062/1a5b9127-2975-4764-83ae-9fc2449ebb0f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#ee66dc62-5f34-4e99-acc3-3acf194ccc22",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e03bd4db-a5de-4e11-bb17-3999edf691bb"
+        }
+      ],
+      "email": "carina.diasws@yahoo.com.br",
+      "name": "Carina Pereira Dias"
+    },
+    {
+      "@id": "#e03bd4db-a5de-4e11-bb17-3999edf691bb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universidade de São Paulo"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#4803844e-67d1-44a8-b570-3a40d2ded05b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Fetal endocrine pancreas",
+      "name": "Effect of Maternal Hyperglycemia on Fetal Pancreatic Islet Development",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#6d64ee44-f70a-4389-bfbd-c7ef1b273baf",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The reaction was revealed with 0.03% 3,3-diaminobenzidine (DAB) in PBS/0.03% containing 0.03% hydrogen peroxide, and counterstained with Harris hematoxylin. Images of the sections were obtained under 400x or 600x magnifications and analyzed with the help of the Image Pro software Media Cybernetics. Each islet were evaluated by the Axion Vision s40 4.8 2.0 software (Axion Vs40 4.8 2.0 Carl Zeiss MicroImaging Gmbh).",
+      "labEquipment": "Pancreatic sections of 19-day fetuses were photographed at a magnification of 400 × OR 600x under an optical microscope (Nikon’s Eclipse E600) equipped with a Nikon DP72 CCD digital camera.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Immunohistochemistry for laminin alpha 1"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 59
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 28506350
+    }
+  ]
+}

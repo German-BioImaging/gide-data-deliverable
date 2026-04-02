@@ -1,0 +1,196 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD617"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD617",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#94dd9cc1-868e-401c-888f-d841146e12e0"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#abab5d9e-33d0-4549-8bd0-17b7d483e309"
+        },
+        {
+          "@id": "#9e86cc26-4402-4266-a727-cf9377b7a8a9"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9527-7162"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6976-3004"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-31",
+      "description": "Imaging flow cytometry data of Emiliana huxleyi infected with its specific large double-stranded DNA Emiliana huxleyi virus. Cells were stained with single-molecule fluorescence in situ hybridization to measure viral infection and metabolic activity.",
+      "funder": [],
+      "identifier": "S-BIAD617",
+      "keywords": [
+        "imaging flow cytometry",
+        "phytoplankton",
+        "Emiliana Huxleyi",
+        "EhV",
+        "viral infection",
+        "FISH"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Uncovering heterogeneity in infected E. Huxleyi cultures by morphological profiling of imaging flow cytometry data",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6976-3004",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "flora.vincent@embl.de",
+      "name": "Flora Vincent"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9527-7162",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#46497652-9659-4671-8563-e65813813ed3"
+        }
+      ],
+      "email": "maxim.lippeveld@ugent.be",
+      "name": "Maxim Lippeveld"
+    },
+    {
+      "@id": "#46497652-9659-4671-8563-e65813813ed3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "VIB-UGent Center for Inflammation Research"
+    },
+    {
+      "@id": "#5074a07c-1144-4134-96c3-f98335b1653a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#9e86cc26-4402-4266-a727-cf9377b7a8a9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Single-cell coccolitophore Emiliana Huxleyi",
+      "name": "Emiliana Huxleyi phytoplankton",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#abab5d9e-33d0-4549-8bd0-17b7d483e309",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Single-cell coccolitophore Emiliana Huxleyi",
+      "name": "Emiliana Huxleyi phytoplankton",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#94dd9cc1-868e-401c-888f-d841146e12e0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Three excitation wavelengths were used: 405 nm (DAPI: channel 7 to 50 mW), 561 nm (TMR: channel 3 to 200 mW), and 642 nm (Cy5: channel 11 to 120 mW). For each sample, at least 50,000 cells were acquired and imaged with 60× magnification.",
+      "labEquipment": "Amnis ImageStream MK-II",
+      "measurementTechnique": [],
+      "name": "Imaging flow cytometry"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 66
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4806203232
+    }
+  ]
+}

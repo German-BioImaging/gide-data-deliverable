@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000459/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000459/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000459",
+      "name": "TIRF imaging of EGFR and PIP2 on Hela cells",
+      "description": "Anionic lipid molecules, including phosphatidylinositol-­ 4,5-­ bisphosphate (PI(4,5)P2),\r\nare implicated in the regulation of epidermal growth factor receptor (EGFR). However, the role of\r\nthe spatiotemporal dynamics of PI(4,5)P2 in the regulation of EGFR activity in living cells is not fully\r\nunderstood, as it is difficult to visualize the local lipid domains around EGFR. Here, we visualized\r\nboth EGFR and PI(4,5)P2 nanodomains in the plasma membrane of HeLa cells using super-­ resolution\r\nsingle-­ molecule microscopy. The EGFR and PI(4,5)P2 nanodomains aggregated before stimulation\r\nwith epidermal growth factor (EGF) through transient visits of EGFR to the PI(4,5)P2 nanodomains.\r\nThe degree of coaggregation decreased after EGF stimulation and depended on phospholipase\r\nCγ, the EGFR effector hydrolyzing PI(4,5)P2. Artificial reduction in the PI(4,5)P2 content of the\r\nplasma membrane reduced both the dimerization and autophosphorylation of EGFR after stimula-\r\ntion with EGF. Inhibition of PI(4,5)P2 hydrolysis after EGF stimulation decreased phosphorylation of\r\nEGFR-­ Thr654. Thus, EGFR kinase activity and the density of PI(4,5)P2 around EGFR molecules were\r\nfound to be mutually regulated.",
+      "datePublished": "2025-08-22",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "ErbB Receptors/metabolism[major]",
+        "Humans",
+        "Phosphatidylinositol 4,5-Diphosphate/metabolism[major]",
+        "HeLa Cells",
+        "Cell Membrane/metabolism[major]",
+        "Epidermal Growth Factor/metabolism[major]",
+        "Epidermal Growth Factor/pharmacology[major]",
+        "Phosphorylation",
+        "Phospholipase C gamma/metabolism",
+        "Single Molecule Imaging/methods",
+        "Microscopy/methods"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.101652"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yasushi Sako",
+      "email": "sako@riken.jp",
+      "description": "Organization: RIKEN; Department: Cluster for Pioneering Research",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This research was supported by Grants-­ in-­ Aid from the Ministry of Education, Culture, Sports, Science, and Technology of Japan (22K06609 to MA, 19H05647 to YS); Japan Science and Technology Agency (JST), PRESTO, JPMJPR20EF (MY); and the Glycolipidologue Program of RIKEN (to YS and TK)."
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.101652",
+      "@type": "ScholarlyArticle",
+      "name": "Bilateral regulation of EGFR activity and local PI(4,5)P(2) dynamics in mammalian cells observed with superresolution microscopy.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1277947904,
+      "description": "1.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 49,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

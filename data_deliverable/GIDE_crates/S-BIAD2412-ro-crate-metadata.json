@@ -1,0 +1,290 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2412"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2412",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7a77977b-15c1-48fb-b437-c6cf6d6f528a"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#68a8c8d5-6ddd-41de-9fb9-359b82f89dcd"
+        },
+        {
+          "@id": "#fd296aad-98c7-4a5b-99b8-04c2004160d3"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0004-2199-2907"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1102-8602"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7985-142X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2494-2193"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8257-0493"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-01",
+      "description": "Phase separation (PS) of biomolecular condensates is often assumed to be driven by interactions involving nucleic acids and intrinsically disordered regions (IDRs) of proteins. PGL-3 is a component of P granules, biomolecular condensates in C. elegans, that contains two structured domains in tandem (D1-D2), an internal IDR, and a C-terminal IDR rich with RGG motifs. Theoretical and in vitro studies have implicated the internal IDR and RGG motifs in driving PGL-3 PS via self-interactions and binding to RNA. Studies in cells, however, have implicated the D1 and D2 domains. Here, we investigate the molecular basis of PGL-3 PS in vitro using microscopy, crosslinking mass spectrometry and biophysical measurements. We find that D1-D2 oligomerizes and is necessary and sufficient for PS. The terminal RGG domain interacts with D1-D2 in a manner that enhances PS even in the absence of RNA.. In contrast, the internal IDR is neither necessary nor sufficient for PS. These findings support a new model for PGL-3 PS that is driven by oligomerization of structured domains and enhanced by RGG repeats. ",
+      "funder": [],
+      "identifier": "S-BIAD2412",
+      "keywords": [
+        "Phase separation",
+        "RGG motif"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Phase separation of PGL-3 driven by structured domains that oligomerize and interact with RGG motifs",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2412/3038bdfb-5da6-4f10-9b4a-d82e958fbf88/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7985-142X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01y2jtd41"
+        }
+      ],
+      "email": "aaputnam@wisc.edu",
+      "name": "Andrea Putnam"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8257-0493",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00za53h95"
+        },
+        {
+          "@id": "https://ror.org/006w34k90"
+        }
+      ],
+      "email": "gseydoux@jhmi.edu",
+      "name": "Geraldine Seydoux"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1102-8602",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01yc7t268"
+        }
+      ],
+      "email": "piyoosh@wustl.edu",
+      "name": "Piyoosh Sharma"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2494-2193",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00za53h95"
+        }
+      ],
+      "email": "sdfried@jhu.edu",
+      "name": "Stephen D. Fried"
+    },
+    {
+      "@id": "https://orcid.org/0009-0004-2199-2907",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00za53h95"
+        },
+        {
+          "@id": "https://ror.org/006w34k90"
+        }
+      ],
+      "email": "rimpeikuroiwa@gmail.com",
+      "name": "Rimpei Kuroiwa"
+    },
+    {
+      "@id": "https://ror.org/006w34k90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Howard Hughes Medical Institute"
+    },
+    {
+      "@id": "https://ror.org/00za53h95",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Johns Hopkins University"
+    },
+    {
+      "@id": "https://ror.org/01y2jtd41",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Wisconsin–Madison"
+    },
+    {
+      "@id": "https://ror.org/01yc7t268",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Washington University in St. Louis"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#68a8c8d5-6ddd-41de-9fb9-359b82f89dcd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Purified recombinant protein expressed in E. coli. Full-length PGL-3.",
+      "name": "PGL-3(FL)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#fd296aad-98c7-4a5b-99b8-04c2004160d3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Purified recombinant protein expressed in E. coli. D1-D2 domains (residues 1-447) of PGL-3.",
+      "name": "PGL-3(D1-D2)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#7a77977b-15c1-48fb-b437-c6cf6d6f528a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100x objective lens with a 2.8 relay lens. 3 ms expose and 150 ms interval",
+      "labEquipment": "AXIO Observer (Zeiss), CSU-W1 SoRA spinning disk confocal system (Yokogawa), iXon Life 888 EMCCD camera (Andor) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "IA1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 764401213
+    }
+  ]
+}

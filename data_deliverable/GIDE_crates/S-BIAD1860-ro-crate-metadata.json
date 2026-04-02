@@ -1,0 +1,197 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1860"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1860",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8a31739a-97fe-4a9c-94c5-0897600da27c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#096d5abb-0ad7-4caa-a462-c9f554378b83"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9006-984X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-03",
+      "description": "Mitochondrial gene expression regulation is required for the biogenesis of oxidative phosphorylation (OXPHOS) complexes, yet the spatial organization of mitochondrial RNAs (mt-RNAs) remains unknown. Here, we investigated the spatial distribution of mt-RNAs during various cellular stresses using single-molecule RNA-FISH. We discovered that transcription inhibition leads to the formation of distinct RNA granules within mitochondria, which we term inhibition granules. These structures differ from canonical mitochondrial RNA granules (MRGs) and form in response to multiple transcription arrest conditions, including ethidium bromide treatment, specific inhibition or stalling of the mitochondrial RNA polymerase and depletion of the SUV3 helicase. Inhibition granules appear to stabilize certain mt-mRNAs during prolonged transcription inhibition. This phenomenon coincides with an imbalance in OXPHOS complex expression, where mitochondrial-encoded transcripts decrease while nuclear-encoded subunits remain stable. We found that cells recover from transcription inhibition via resolving the granules, restarting transcription and repopulating the mitochondrial network with mt-mRNAs within hours. We suggest that inhibition granules may act as a reservoir to help overcome OXPHOS imbalance during recovery from transcription arrest. \n",
+      "funder": [],
+      "identifier": "S-BIAD1860",
+      "keywords": [
+        "RNA-FISH, mitochondria, RNA granules, mitochondrial gene expression"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Transcription arrest induces formation of RNA granules in mitochondria",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1860/c78bb38e-274c-4ab2-9347-e2728c2a8c04/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9006-984X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d2a298f5-f6c6-4172-81f2-cf4b0b9744bf"
+        }
+      ],
+      "email": "khansen@rptu.de",
+      "name": "Katja Hansen"
+    },
+    {
+      "@id": "#d2a298f5-f6c6-4172-81f2-cf4b0b9744bf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#096d5abb-0ad7-4caa-a462-c9f554378b83",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "RNAs and proteins per RNA-FISH or IF.",
+      "name": "Tissue cell culture",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8a31739a-97fe-4a9c-94c5-0897600da27c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Samples were imaged on a Nikon Ti inverted microscope with a W1 Yokogawa Spinning disk with 50 µm pinhole disk, a Nikon motorized stage, a Physik Instrument Piezo Z motor, an Andor Zyla 4.2 Plus sCMOS monochrome camera VSC-06522 or VSC-10150 (used for quantification images of replicates 2 of IMT1B treatment and MT-ND5 of EtBr treatment) and OKO Lab Heated enclosure with CO2 control at room temperature. For imaging the Nikon Elements Acquisition Software AR 5.02 was used. All files were saved in .ND2 format. Before each imaging, slides were cleaned first with Sparkle and water to remove salts and finally with 70% EtOH to remove any oils. Samples for quantifications were imaged with a Plan Apo λ 60x/1.4 Oil DIC objective in combination with immersion oil (Cargille, non-drying immersion oil Type 37, #16237) and with a laser device of Digital Mirror Device lines (Aura/LED), 350, 380, 488 and 561 with emission filter 455/50, 480/40, 525/36, 605/52, 630/75 and 705/72 or with laser lines 405, 488, 561, 640 (Nikon Instruments, Laser Unit model Lun-F) and emission filters (455/50, 480/40, 525/36, 605/52, 630/75, 705/72). For each image set, 10 field of views of an empty ibidi glass chamber well were imaged with the same laser settings used for sample acquisition for flatfield correction. z-stacks of 37 planes with a size of 200 nm were imaged, with no binning and dual-gain ¼ setting. For all images, z-stacks were imaged in the following order: first all laser lines were imaged before the next z-plane. The final pixel size was 0.108 µm x 0.108 µm. Exposure times (usually between 500 and 700 ms) and laser power varied between experiments due to different probe sets used in SABER-FISH. If not stated differently, images of the residual experiment were taken with no binning, dual gain ¼ settings and by using a silicon oil objective with correction collar (Plan Apo λS SR HP 100xC/1.45 Silicon DIC) in combination with silicon immersion oil 30cc (Nikon, #MXA22179). For collar correction of the silicon oil objective, fluorescent beads were prepared as described in (Isaac et al. 2024). Z-stacks with varying plain number to image full volumes of cells and sizes of 200 nm or 300 nm were taken. The final pixel size was 0.065 µm x 0.065 µm. RNase and DNase treated samples were imaged with a Plan Fluor 40x Oil DIC H/N2 objective in combination with immersion oil, 12-bit and no binning settings. The final pixel size was 332.8 µm x 332.8 µm.\n\nCells were treated for 24 h with IMT1B, DMSO or for 5 h with EtBr. Cells were fixed in 2.5% glutaraldehyde, 1.25% paraformaldehyde and 0.03% picric acid in 0.1 M sodium cacodylate buffer pH 7.4 for 1 hour. The cells were then postfixed for 30 min in 1% osmium tetroxide (OsO4)/1.5% potassiumferrocyanide (KFeCN6), washed in water 3x and incubated in 1% aqueous uranyl acetate for 30 min followed by 2 washes in water and subsequent dehydration in grades of alcohol (5 min each; 50%, 70%, 95%, 2x 100%). Cells were removed from the dish in propyleneoxide, pelleted at 3000 rpm for 3min and infiltrated for 2 h to ON in a 1:1 mixture of propyleneoxide and TAAB Epon (TAAB Laboratories Equipment Ltd, https://taab.co.uk). The samples were subsequently embedded in TAAB Epon and polymerized at 60ºC for 48 h.\nUltrathin sections (about 80 nm) were cut on a Reichert Ultracut-S microtome, picked up on to copper grids stained with lead citrate and examined in a JEOL 1200EX Transmission electron microscope or a TecnaiG² Spirit BioTWIN and images were recorded with an AMT 2k CCD camera.\n",
+      "labEquipment": "Nikon Ti inverted microscope with a W1 Yokogawa Spinning disk with 50 µm pinhole disk, a Nikon motorized stage, a Physik Instrument Piezo Z motor, an Andor Zyla 4.2 Plus sCMOS monochrome camera VSC-06522 or VSC-10150, OKO Lab Heated enclosure with CO2 control at room temperature, Plan Apo λ 60x/1.4 Oil DIC,  Plan Apo λS SR HP 100xC/1.45 Silicon DIC, Plan Fluor 40x Oil DIC H/N2, laser device of Digital Mirror Device lines (Aura/LED), 350, 380, 488 and 561 with emission filter 455/50, 480/40, 525/36, 605/52, 630/75 and 705/72 or with laser lines 405, 488, 561, 640 (Nikon Instruments, Laser Unit model Lun-F) and emission filters (455/50, 480/40, 525/36, 605/52, 630/75, 705/72).\n\n JEOL 1200EX Transmission electron microscope or a TecnaiG² Spirit BioTWIN and images were recorded with an AMT 2k CCD camera.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image aquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 255
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 45887154577
+    }
+  ]
+}

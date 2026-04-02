@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1926"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1926",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#973072e5-bc85-455b-861c-025a9512c374"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a2ffa8ac-73b7-45ff-801c-8e72947701fb"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#37905b9b-4fdb-4fa3-91b3-0448254d51fe"
+        },
+        {
+          "@id": "#5a694dae-e215-4a7f-9d05-49276031ec65"
+        },
+        {
+          "@id": "#d52e32f3-a96a-4478-a814-ae9b5279fbe5"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1101/2025.04.08.647723"
+        }
+      ],
+      "datePublished": "2025-05-09",
+      "description": "This dataset accompanies the preprint \"LimbLab: Pipeline for 3D Analysis and Visualisation of Limb Bud Gene Expression\". It contains 3D lightsheet images of cleared tissue labeled with HCR probes for Sox9, Hoxa11, and Hoxa13.",
+      "funder": [],
+      "identifier": "S-BIAD1926",
+      "keywords": [
+        "HCR",
+        "Limb Development",
+        "Sox9",
+        "Hoxa11",
+        "Hoxa13"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Limb bud HCR for Sox9, Hoxa11 and Hoxa13 for \"LimbLab: Pipeline for 3D Analysis and Visualisation of Limb Bud Gene Expression\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1926/55c39050-5a1a-4520-b2fe-70cbd93dd0ec/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#37905b9b-4fdb-4fa3-91b3-0448254d51fe",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01yr73893"
+        }
+      ],
+      "email": "laura.avino@embl.es",
+      "name": "Laura"
+    },
+    {
+      "@id": "#5a694dae-e215-4a7f-9d05-49276031ec65",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01yr73893"
+        }
+      ],
+      "email": "heura.cardona@embl.es",
+      "name": "Heura"
+    },
+    {
+      "@id": "#d52e32f3-a96a-4478-a814-ae9b5279fbe5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01yr73893"
+        }
+      ],
+      "email": "james.sharpe@embl.es",
+      "name": "James"
+    },
+    {
+      "@id": "https://ror.org/01yr73893",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2025.04.08.647723",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "None",
+      "name": "LimbLab: Pipeline for 3D Analysis and Visualisation of Limb Bud Gene Expression"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#a2ffa8ac-73b7-45ff-801c-8e72947701fb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Limb Bud",
+      "name": "Volume 2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#973072e5-bc85-455b-861c-025a9512c374",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Light sheet imaging was performed using MuViSPIM from\nLuxendo. Dual side illumination was performed with the\nillumination objectives Nikon CFI Plan Apo Lambda 4× and collar\nwas adjusted to 1.47, matching the refractive index from GlycerolFructose clearing solution. Fluorescence was then captured with\nimmersion 10X Refractive Index adjustment 1.33-1.51 0.5NA glyc\nWD 5.5 objective. The block of agarose containing the sample was\nattached to a 3D printed holder and afterwards was immersed in\nthe cuvette containing Fructose-Glycerol clearing solution.",
+      "labEquipment": "Luxendo MuViSPIM light-sheet microscope",
+      "measurementTechnique": [],
+      "name": "Image Acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 9764500628
+    }
+  ]
+}

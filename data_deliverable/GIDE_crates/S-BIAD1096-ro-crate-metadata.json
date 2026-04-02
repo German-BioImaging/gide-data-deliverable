@@ -1,0 +1,351 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1096"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1096",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#983b6366-a5c1-430c-8348-03688290f994"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e6d436bc-dfdc-4008-bb39-ac7489a827ca"
+        },
+        {
+          "@id": "#b48bf303-e199-4881-b2a2-6443bcaa295d"
+        },
+        {
+          "@id": "#3c6edd06-6f2b-4946-b126-8244a9d385ef"
+        },
+        {
+          "@id": "#f2c56a8c-6587-4e7d-a380-4bcacbaf6113"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1763-2528"
+        },
+        {
+          "@id": "#e97a4986-04f9-453f-a8e2-81bec69a811e"
+        },
+        {
+          "@id": "#3c5a9103-7653-41b4-b325-1e8c0b0ee94a"
+        },
+        {
+          "@id": "#1bc12afd-0ed5-408b-9d65-85015ad092c8"
+        },
+        {
+          "@id": "#62609055-6d54-4573-906e-11ca2ce365a9"
+        },
+        {
+          "@id": "#4cb6ce4d-2d27-40ff-bf4b-e0b72e4207e1"
+        },
+        {
+          "@id": "#4ef62b5f-78cf-4d77-ae7a-993f9722800f"
+        },
+        {
+          "@id": "#6fdebe2c-f4b4-4f75-b67e-30ec4096df1b"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3855-9662"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-03",
+      "description": "Fast, accurate and affordable bacterial identification methods are paramount for timely treatment of infections, especially in resource-limited settings (RLS). However, today only 1.3% of the sub-Saharan African diagnostic laboratories are performing clinical bacteriology. To improve this, diagnostic tools for RLS should prioritize simplicity, affordability, and ease of maintenance, as opposed to the costly equipment utilized for bacterial identification in high-income countries, such as such as Matrix-Assisted Laser Desorption/Ionization Time-Of-Flight Mass Spectrometry (MALDI-TOF MS). In this work, we present a new high-throughput approach based on a simple wide field (864 mm2) lensless imaging system allowing for the acquisition of a large portion of a Petri dish coupled with a supervised deep learning algorithm for identification at the bacterial colony scale. This wide-field imaging system is particularly well suited to RLS since it includes neither moving mechanical parts nor optics. We validated this approach by the acquisition and the subsequent analysis comprising 257 clinical isolates from five species, encompassing some of the most prevalent pathogens. The resulting optical morphotypes exhibited intra- and inter- species variability, a scenario more akin to the real-world clinical practice rather than the one achievable solely concentrating on reference strains. Despite the variability, high identification performance was achieved with a correct species identification rate of 91.7 %. These results open up some new prospects for identification in RLS.",
+      "funder": [],
+      "identifier": "S-BIAD1096",
+      "keywords": [
+        "lensless imaging",
+        "bacteria identification",
+        "microbiology",
+        "deep learning",
+        "bacteria colony"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Simple imaging system for label-free identification of bacterial pathogens in resource-limited settings",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1096/79e5de40-91a1-4719-af70-a18d7a96647a/89100f99-4726-4791-82cb-a7bd32c7c31f.png"
+      ]
+    },
+    {
+      "@id": "#1bc12afd-0ed5-408b-9d65-85015ad092c8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3c0a70c-c8ed-4c85-a42a-948b31ed0472"
+        }
+      ],
+      "name": "PICARD Emmanuel"
+    },
+    {
+      "@id": "#3c5a9103-7653-41b4-b325-1e8c0b0ee94a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fc34c62a-5d22-47fe-a9c4-dabfea8a83f8"
+        }
+      ],
+      "name": "FANGAZIO Marco"
+    },
+    {
+      "@id": "#4cb6ce4d-2d27-40ff-bf4b-e0b72e4207e1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fc34c62a-5d22-47fe-a9c4-dabfea8a83f8"
+        }
+      ],
+      "name": "VANDENBERG Olivier"
+    },
+    {
+      "@id": "#4ef62b5f-78cf-4d77-ae7a-993f9722800f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#13a4aec5-5b7d-442a-9046-cdc428eccacd"
+        }
+      ],
+      "name": "BARBE Barbara"
+    },
+    {
+      "@id": "#62609055-6d54-4573-906e-11ca2ce365a9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3c0a70c-c8ed-4c85-a42a-948b31ed0472"
+        }
+      ],
+      "name": "HADJI Emmanuel"
+    },
+    {
+      "@id": "#6fdebe2c-f4b4-4f75-b67e-30ec4096df1b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#13a4aec5-5b7d-442a-9046-cdc428eccacd"
+        }
+      ],
+      "name": "HARDY Liselotte"
+    },
+    {
+      "@id": "#e97a4986-04f9-453f-a8e2-81bec69a811e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3c0a70c-c8ed-4c85-a42a-948b31ed0472"
+        }
+      ],
+      "name": "DAVID Dylan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1763-2528",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3c0a70c-c8ed-4c85-a42a-948b31ed0472"
+        }
+      ],
+      "email": "clement.douarre@cea.fr",
+      "name": "DOUARRE Clément"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3855-9662",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3c0a70c-c8ed-4c85-a42a-948b31ed0472"
+        }
+      ],
+      "email": "pierre.marcoux@cea.fr",
+      "name": "MARCOUX Pierre R."
+    },
+    {
+      "@id": "#13a4aec5-5b7d-442a-9046-cdc428eccacd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Tropical Medecine Antwerp"
+    },
+    {
+      "@id": "#a3c0a70c-c8ed-4c85-a42a-948b31ed0472",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Atomic Energy and Alternative Energies Commission"
+    },
+    {
+      "@id": "#fc34c62a-5d22-47fe-a9c4-dabfea8a83f8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université Libre de Bruxelles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#3c6edd06-6f2b-4946-b126-8244a9d385ef",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bacterial colonies : Escherichia coli, Klebsiella pneumoniae, Pseudomonas aeruginosa, Staphylococcus aureus, Staphylococcus epidermidis",
+      "name": "bacteria from urine / genital Tract samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b48bf303-e199-4881-b2a2-6443bcaa295d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bacterial colonies : Escherichia coli, Klebsiella pneumoniae, Pseudomonas aeruginosa, Staphylococcus aureus, Staphylococcus epidermidis",
+      "name": "Bacteria from wound / skin samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e6d436bc-dfdc-4008-bb39-ac7489a827ca",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bacterial colonies : Escherichia coli, Klebsiella pneumoniae, Pseudomonas aeruginosa, Staphylococcus aureus, Staphylococcus epidermidis",
+      "name": "Bacteria from respiratory samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f2c56a8c-6587-4e7d-a380-4bcacbaf6113",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bacterial colonies : Escherichia coli, Klebsiella pneumoniae, Pseudomonas aeruginosa, Staphylococcus aureus, Staphylococcus epidermidis",
+      "name": "bacteria from blood cultures samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#983b6366-a5c1-430c-8348-03688290f994",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "null",
+      "labEquipment": "lensless imaging system.  It is composed of an imaging module and an illumination module. The imaging module is adapted from an fp L Interchangeable-lens Mirrorless Type Digital Camera (SIGMA, Aizu, Japan). The image sensor is a full frame (36.0 mm × 24.0 mm) back-illuminated Bayer CMOS sensor, with 62.4 million pixels: an array of 9 520 × 6 328 pixels at 3.8 µm pitch. We designed and manufactured the electronic system to operate this sensor. The Petri dish is set directly on the sensor and illuminated from above by the illumination module. That module consists of two monochromatic light sources coupled into a multimode optical fibre via a Y fiber SMA (Thorlabs BFY105LS02): a green LED (550 nm) Thorlabs MINTF4 and a near-infrared LED (940 nm) Thorlabs M940F3.",
+      "measurementTechnique": [],
+      "name": "lensless imaging"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 504
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 5751750916
+    }
+  ]
+}

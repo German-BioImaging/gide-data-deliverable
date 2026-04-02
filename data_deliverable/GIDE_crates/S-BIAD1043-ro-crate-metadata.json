@@ -1,0 +1,421 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1043"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1043",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6225cb10-a13b-4f95-b963-5ad251244640"
+        },
+        {
+          "@id": "#41240b84-07e8-44f2-8adc-8857f4375b66"
+        },
+        {
+          "@id": "#35c60838-5b29-4867-b8dd-54aae7359d7f"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e0f5286f-ea34-49bd-92b5-0810d4010522"
+        },
+        {
+          "@id": "#63ba5a9e-8bd5-4854-8296-09d2fd0ceea0"
+        },
+        {
+          "@id": "#a31f38f3-10cb-468d-942b-14cb9042dcec"
+        },
+        {
+          "@id": "#de1f83c6-941d-4dc8-9079-d4c06622cb27"
+        },
+        {
+          "@id": "#a90f5c2f-8867-415a-bcad-071827ae0c97"
+        },
+        {
+          "@id": "#a63d11a1-9460-4c42-b133-2b00479e3f0a"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#8d0a417e-b071-4674-9101-ab51131dda36"
+        },
+        {
+          "@id": "#2151b4e1-a1b9-4975-adb6-7eae6e01231d"
+        },
+        {
+          "@id": "#810efb37-991e-41a6-820c-70ffb76c4882"
+        },
+        {
+          "@id": "#a0413301-6ec3-4c7b-a26e-3bd7f996cc66"
+        },
+        {
+          "@id": "#822bc1bc-7929-4454-9885-ba0a392ea52c"
+        },
+        {
+          "@id": "#d0f8b988-bfaf-4b22-bb5e-b8be131ac28c"
+        },
+        {
+          "@id": "#1ffd73ad-0b0c-4f9e-82cc-ac6d7edccbac"
+        },
+        {
+          "@id": "#a3901eba-6b24-45ef-bcce-53df10358c7a"
+        },
+        {
+          "@id": "#514b3ac4-ed96-4592-b4b9-18cc962275dd"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-024-66600-1"
+        }
+      ],
+      "datePublished": "2024-03-01",
+      "description": "High-throughput imaging (HTI) generates complex imaging datasets from a large number of\nexperimental perturbations. Commercial HTI software for image analysis workflows does not\nallow full customization and adoption of new image processing algorithms in the analysis modules.\nWhile open-source HTI analysis platforms provide individual modules in the workflow, like nuclei\nsegmentation, spot detection, or cell tracking, they are often limited in integrating novel analysis\nmodules or algorithms. Here, we introduce the High-Throughput Image Processing Software\n(HiTIPS) to expand the range and customization of existing HTI analysis capabilities. HiTIPS\nincorporates advanced image processing and machine learning algorithms for automated cell and\nnuclei segmentation, spot signal detection, nucleus tracking, spot tracking, and quantification of\nspot signal intensity. Furthermore, HiTIPS features a graphical user interface that is open to\nintegration of new algorithms for existing analysis pipelines and to adding new analysis pipelines\nthrough separate plugins. To demonstrate the utility of HiTIPS, we present three examples of\nimage analysis workflows for high-throughput DNA FISH, immunofluorescence (IF), and live-\ncell imaging of transcription in single cells. Altogether, we demonstrate that HiTIPS is a user-\nfriendly, flexible, and open-source HTI analysis platform for a variety of cell biology applications",
+      "funder": [],
+      "identifier": "S-BIAD1043",
+      "keywords": [
+        "Microscopy",
+        "Image Analysis",
+        "High-throughput imaging"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "HiTIPS: High-Throughput Image Processing Software for the Study of Nuclear Architecture and Gene Expression",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#1ffd73ad-0b0c-4f9e-82cc-ac6d7edccbac",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb"
+        }
+      ],
+      "name": "Tom Misteli"
+    },
+    {
+      "@id": "#2151b4e1-a1b9-4975-adb6-7eae6e01231d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb"
+        }
+      ],
+      "name": "Faisal Almansour"
+    },
+    {
+      "@id": "#514b3ac4-ed96-4592-b4b9-18cc962275dd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb"
+        }
+      ],
+      "email": "gianluca.pegoraro@nih.gov",
+      "name": "Gianluca Pegoraro"
+    },
+    {
+      "@id": "#810efb37-991e-41a6-820c-70ffb76c4882",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb"
+        }
+      ],
+      "name": "Christopher H. Bohrer"
+    },
+    {
+      "@id": "#822bc1bc-7929-4454-9885-ba0a392ea52c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb"
+        }
+      ],
+      "name": "Krishnendu Guin"
+    },
+    {
+      "@id": "#8d0a417e-b071-4674-9101-ab51131dda36",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb"
+        }
+      ],
+      "email": "adib.keikhosravi@nih.gov",
+      "name": "Adib Keikhosravi"
+    },
+    {
+      "@id": "#a0413301-6ec3-4c7b-a26e-3bd7f996cc66",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb"
+        }
+      ],
+      "name": "Nadezda A. Fursova"
+    },
+    {
+      "@id": "#a3901eba-6b24-45ef-bcce-53df10358c7a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb"
+        }
+      ],
+      "name": "Daniel R. Larson"
+    },
+    {
+      "@id": "#d0f8b988-bfaf-4b22-bb5e-b8be131ac28c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb"
+        }
+      ],
+      "name": "Varun Sood"
+    },
+    {
+      "@id": "#aa048e23-fd03-48a0-929a-26ab8c57f3bb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National Cancer Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-024-66600-1",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2024",
+      "name": "HiTIPS: High-Throughput Image Processing Software for the Study of Nuclear Architecture and Gene Expression"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#63ba5a9e-8bd5-4854-8296-09d2fd0ceea0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bronchial epithelial cell lines (HBEC3-KT)",
+      "name": "Biosample Live KPNB1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a31f38f3-10cb-468d-942b-14cb9042dcec",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HCT116 RAD21-mAID-mClover (RAD21-mAC) cells",
+      "name": "DNA FISH DMSO",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a63d11a1-9460-4c42-b133-2b00479e3f0a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HCT116-Cas9 cells",
+      "name": "Biosample IF siScrambled",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a90f5c2f-8867-415a-bcad-071827ae0c97",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HCT116-Cas9 cells",
+      "name": "Biosample IF siNCAPH2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#de1f83c6-941d-4dc8-9079-d4c06622cb27",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HCT116 RAD21-mAID-mClover (RAD21-mAC) cells",
+      "name": "DNA FISH AUXIN",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e0f5286f-ea34-49bd-92b5-0810d4010522",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bronchial epithelial cell line (HBEC3-KT)",
+      "name": "Biosample Live ERRFI1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#35c60838-5b29-4867-b8dd-54aae7359d7f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "we used 405 nm (DAPI Channel) or 488 nm (CENPC channel) excitation\nlasers, a 405/488/561/640 nm excitation dichroic mirror, a 60X water objective (NA 1.2), 445/45\n(DAPI Channel) or 525/50 nm (CENPC Channel) bandpass emission mirrors, and a 16-bit sCMOS\ncamera (2048 X 2048 pixels, binning 1X1, pixel size: 0.108 microns). Z-stacks of 14 microns were\nacquired at 1 micron intervals and maximally projected on the fly. Images were acquired in 22\nFOV per well.",
+      "labEquipment": "CellVoyager CV7000/CV8000",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Figure 4 Image acquisition"
+    },
+    {
+      "@id": "#41240b84-07e8-44f2-8adc-8857f4375b66",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For DNA FISH experiments, we used 405 nm (DAPI Channel), 561 nm (Probe A channel), or 640\nnm (Probe B channel) excitation lasers. In addition, we used a 405/488/561/640 nm excitation\ndichroic mirror, a 60X water objective (NA 1.2), and 445/45 nm (DAPI Channel), 600/37 nm\n(Probe A channel), or 676/29 nm (Probe B channel) bandpass emission mirrors in front of a 16-bit\nsCMOS camera (2048 X 2048 pixels, binning 1X1, pixel size: 0.108 microns). Z-stacks of 7\nmicrons were acquired at 1 micron intervals and maximally projected on the fly. Images were\nacquired in 32 fields of view (FOV) per well.",
+      "labEquipment": "CellVoyager CV7000/CV8000",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Figure 3 Image acquisition"
+    },
+    {
+      "@id": "#6225cb10-a13b-4f95-b963-5ad251244640",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "We used a 488 nm excitation laser, a 405/488/561/640 nm excitation dichroic mirror, either a 40X air objective (NA 0.95) or a 40X water objective (NA 1.15), a 525/50 nm bandpass emission mirror, and a 16-bit sCMOS camera (2048 X 2048 pixels, binning 2X2, pixel size: 0.325 microns). Z-stacks of 0.5 microns were acquired at 100 sec intervals and maximally projected on the fly, every 100s for 10 hours.",
+      "labEquipment": "CellVoyager CV7000/CV8000",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Figure 5 Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 16957
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 49637376000
+    }
+  ]
+}

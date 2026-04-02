@@ -1,0 +1,183 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD866"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD866",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1c82a465-9f65-453b-a692-147b01ea98b0"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f7d2ef4d-5c17-40e4-bd8f-f6dfd23c526a"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a9ba7a0a-abc2-4b10-979c-767d0fdbdeee"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-30",
+      "description": "OME-NGFF converted study from idr0011.  Kinetochores serve both a structural role linking chromosomes to the mitotic spindle and a regulatory role, controlling the timing of mitosis via the spindle assembly checkpoint. To identify proteins that regulate the kinetochore we used a genome-wide fluorescence microscopy approach. We combined an array of mutants of either non-essential gene deletions or essential temperature-sensitive alleles with fluorescently tagged spindle pole bodies (centrosome) and outer kinetochores. Quantitative and qualitative analysis revealed mutants that affect the levels and distribution of kinetochores respectively. These mutants are enriched for those involved in mRNA processing, chromatin organization, DNA replication/repair and mitosis. Our data show that the Pkc1 kinase maintains the kinetochore focus via its ability to prevent cell stress and this phenotype is rescued by an osmotic stabilizer. These data support the notion that kinetochore and microtubule homeostasis are perturbed by the stress response pathways. Hence this observation provides a candidate mechanism for extracellular stress leading to chromosome segregation defects.",
+      "funder": [],
+      "identifier": "S-BIAD866",
+      "keywords": [
+        "kinetochore",
+        "stress response pathways"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Protein Kinase C and the stress response pathways are required for kinetochore homeostasis (OME-NGFF)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#a9ba7a0a-abc2-4b10-979c-767d0fdbdeee",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "email": "idr-support@openmicroscopy.org",
+      "name": "Image Data Resource (IDR)"
+    },
+    {
+      "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#f7d2ef4d-5c17-40e4-bd8f-f6dfd23c526a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Yeast strains",
+      "name": "Yeast strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#1c82a465-9f65-453b-a692-147b01ea98b0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were prepared for imaging by growth in liquid synthetic medium containing 120 mg/litre adenine at 23°C for ~5 hours in 96 well plates. The cells were then collected by centrifugation and placed onto an 8×6 grid of agar pedestals (Werner et al, 2009). These 48 pad arrays were covered with a custom-sized 175 µm thick coverslip and imaged on an upright epifluoresence microscope (Zeiss Axiovision Z2), using a 63x 1.4NA plan apochromat oil immersion lens. Zeiss Immersol 518F immersion oil was used with a refractive index of 1.5181. Fluorescence illumination for the screen was provided by a 100W mercury bulb. Fluorescence filter cubes were as follows: YFP imaging used Zeiss filter set 46 (excitation BP 500/20; dichroic FT 515, emission BP 535/30), RFP imaging used Zeiss filter set 63HE (excitation BP 572/25; dichroic FT 590, emission BP 629/62), GFP imaging used Zeiss filter set 38HE (excitation BP 470/40; dichroic FT 495, emission BP 525/50) and CFP imaging used Zeiss filter set 47HE (excitation BP 436/25; dichroic FT455, emission BP 480/40). Later experiments employed a Zeiss Colibri LED illumination system (445 nm for CFP excitation, 470 nm for GFP excitation, 505 nm for YFP excitation and 590nm for RFP excitation), with the filter cubes outlined above. A z stack of 21 images with a vertical separation of 350 nm was acquired for each strain. Brightfield contrast was enhanced with differential interference contrast (DIC) prisms. The resulting light was captured using a Hamamatsu ORCA ERII CCD camera with 6.45 µm pixels, binned 2×2 or a Flash 4.0 Lte CMOS camera with 6.5 µm pixels, binned 2×2 (Hamamatsu Photonics, Japan). The exposure times were set to ensure that pixels were not saturated, typically < 200 msec – for the genome-wide screen Dad4-YFP exposure times were 40 msec and Spc42-RFP 50 msec. Images shown in the figures were prepared using Volocity imaging software (Perkin Elmer Inc., USA).",
+      "labEquipment": "Epifluoresence microscope (Zeiss Axiovision Z2)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescence imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 182
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 323231062595
+    }
+  ]
+}

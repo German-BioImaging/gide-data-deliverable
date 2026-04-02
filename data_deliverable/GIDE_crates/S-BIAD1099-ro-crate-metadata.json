@@ -1,0 +1,227 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1099"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1099",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8cc07854-7237-4271-83ce-4f9f7a9d950e"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#581c4a5e-f690-4170-a3dc-0939d79d444d"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a0a488d8-4f77-4ead-8efa-5d0ea982a6bf"
+        },
+        {
+          "@id": "#33bd32da-a500-48ff-9dc7-edb6de803385"
+        },
+        {
+          "@id": "#c32ba6e1-d832-49dc-aa72-d9fb8dfc57b6"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-05",
+      "description": "Source image data",
+      "funder": [],
+      "identifier": "S-BIAD1099",
+      "keywords": [
+        "mammary stem cells",
+        "embryonic explants",
+        "RNAscope",
+        "IHC",
+        "Timelapse microscopy",
+        "branching morphogenesis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Single cell analysis reveals spatially distinct epithelial and mesenchymal cell subsets in the branching embryonic mammary gland",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1099/d614c80d-3a9a-49b7-867d-3428dfb610a9/1391190b-3cdb-48af-9858-d6aceb68d91b.png"
+      ]
+    },
+    {
+      "@id": "#33bd32da-a500-48ff-9dc7-edb6de803385",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1d7e00f3-5644-4b2a-a4e4-05fa1d4315e8"
+        }
+      ],
+      "name": "S Fre"
+    },
+    {
+      "@id": "#a0a488d8-4f77-4ead-8efa-5d0ea982a6bf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a8a70ec3-60b9-47c8-8716-25f068600bc1"
+        }
+      ],
+      "email": "bethan.lloyd-lewis@bristol.ac.uk",
+      "name": "B Lloyd-Lewis"
+    },
+    {
+      "@id": "#c32ba6e1-d832-49dc-aa72-d9fb8dfc57b6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1d7e00f3-5644-4b2a-a4e4-05fa1d4315e8"
+        }
+      ],
+      "email": "claudiacarabana@hotmail.com",
+      "name": "C Carabana"
+    },
+    {
+      "@id": "#1d7e00f3-5644-4b2a-a4e4-05fa1d4315e8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute Curie"
+    },
+    {
+      "@id": "#a8a70ec3-60b9-47c8-8716-25f068600bc1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Bristol"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#581c4a5e-f690-4170-a3dc-0939d79d444d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Embryonic mouse mammary gland ",
+      "name": "Embryonic mammary gland",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#8cc07854-7237-4271-83ce-4f9f7a9d950e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "3D imaging: Images were acquired using a LSM780 or LSM880 inverted laser scanning confocal microscope (Carl Zeiss) equipped with 25x/0,8 OIL LD LCI PL APO or 40x/1,3 OIL DICII PL APO. For standard 4-color imaging, laser power and gain were adjusted manually to give optimal fluorescence for each fluorophore with minimal photobleaching. Images were captured using the ZEN Imaging Software and processed in Fiji (ImageJ v1.53). \n\nsmRNA-FISH: images were acquired using a LSM880 confocal microscope with an Airyscan system. The Airyscan system has 32-channel GaAsP (Gallium Arsenide Phosphide) detectors, which allow to obtain images with enhanced spatial resolution and improved signal-to-noise ratio (SNR) than in traditional LSM systems (Huff 2015). A 63x/1,4 OIL DICII PL APO objective was used. Images were processed in Fiji (ImageJ v1.53).\n\nLive imaging: time-lapse images were acquired using an LSM780 or LSM880 inverted laser scanning confocal microscope (Carl Zeiss) equipped with 10x/0,3 DICI EC PL NEOFLUAR, for imaging at the tissue scale. Explants were cultured in a humidified chamber at 37°C with 5% CO2 during imaging. To analyze branching morphogenesis in embryonic mammary buds, images were acquired at 8 mm Z intervals over approximately 80 mm thickness and 60 min intervals for 12-48 hr.\n",
+      "labEquipment": "LSM780 or LSM880 inverted laser scanning confocal microscope (Carl Zeiss) \n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 74
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12465793109
+    }
+  ]
+}

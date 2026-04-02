@@ -1,0 +1,241 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD44"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD44",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f21963f3-131d-46e4-882f-740faf54dbf0"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#20311021-ee37-4fbc-9b9a-f26667b1d3f2"
+        },
+        {
+          "@id": "#bf282b6b-c83c-4551-8dbf-bf5c13c69ec5"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_5833"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4569-1493"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8017-9669"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4611-9205"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2022-01-01",
+      "description": "This dataset comprises raw, 16-bit monochrome microscopy images of human red blood cells infected with malaria at various degrees of parasitemia. The microscope used to caputure the images is a Leica DMi8 inverted brightfield microscope, using a 40x/1.3 oil immersion apochromatic objective. The cells are imaged at either one wavelength (at 405 nm) or three simultaneous wavelengths (365 nm, 405 nm, and broadband lamp). Each condition contains many fields of view for a single time point. \nThe directory structure is organized into four date-stamped folders. Three folders contain experiments used for training and validation data collection, including two folders with images of infected cells ('SCP-2019-10-24 Malaria' and 'SCP-2019-11-12 Malaria'), and one folder containing a healthy control dataset ('SCP-2020-01-08 Healthy RBC conditions'). \n'SCP-2020-06-20 Titration' is an experiment whereby a high parasitemia malaria culture was diluted serially into healthy red blood cells. Dilution points are contained within subfolders labelled by the dilution point. ",
+      "funder": [],
+      "identifier": "S-BIAD44",
+      "keywords": [
+        "Label-free microscopy",
+        "Deep learning"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Label-free imaging and classification of live P. falciparum: processed Leica dataset",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8017-9669",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6341e03b-eca8-42c8-a61f-6c73a0bae6f8"
+        }
+      ],
+      "email": "rafael.gomez@czbiohub.org",
+      "name": "Rafael Gómez-Sjöberg"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4611-9205",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6341e03b-eca8-42c8-a61f-6c73a0bae6f8"
+        }
+      ],
+      "email": "joe.derisi@czbiohub.org",
+      "name": "Joseph DeRisi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4569-1493",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6341e03b-eca8-42c8-a61f-6c73a0bae6f8"
+        }
+      ],
+      "email": "paul.lebel@czbiohub.org",
+      "name": "Paul Lebel"
+    },
+    {
+      "@id": "#6341e03b-eca8-42c8-a61f-6c73a0bae6f8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Chan Zuckerberg Biohub"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_5833",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Plasmodium falciparum",
+      "vernacularName": "malaria parasite P. falciparum"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#20311021-ee37-4fbc-9b9a-f26667b1d3f2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human red blood cells",
+      "name": "Human red blood cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bf282b6b-c83c-4551-8dbf-bf5c13c69ec5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Plasmodium falciparum",
+      "name": "Plasmodium falciparum",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_5833"
+      }
+    },
+    {
+      "@id": "#f21963f3-131d-46e4-882f-740faf54dbf0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "",
+      "labEquipment": "All commercial microscope experiments were performed on a DMi8 (Leica Microsystems, Buffalo Grove, USA) equipped with a Plan Apochromatic 40 × /1.30 oil immersion objective (Leica #11506358), motorized XY and focus stages, and custom automated image acquisition software. To facilitate near-UV wavelengths, we constructed a fiber-coupled equivalent of a commercial pre-built microscopy light source (Thorlabs #M405L3-C2) and attached it to the TL-port of the microscope. Our custom source used a multimode fiber which could be moved between multiple LED sources. The microscope’s standard broadband trans-illumination LED was used for visible light experiments as a comparison.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Leica Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 68843
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 19555542658
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2822"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2822",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#902df31e-4c23-4c0c-a532-48b165644a10"
+        },
+        {
+          "@id": "#a6eda8a6-e04b-4f9d-bee1-a6f7df683766"
+        },
+        {
+          "@id": "FBbi:00000257"
+        },
+        {
+          "@id": "FBbi:00050000"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#989af5d8-111d-45ca-97e8-78ead21e80c0"
+        },
+        {
+          "@id": "#3a7b0bc1-74e8-42a2-8db1-5fc851d02c1c"
+        },
+        {
+          "@id": "#6a0970f2-9d35-439c-8abb-fb6ada41d1a2"
+        },
+        {
+          "@id": "#4949c4e1-a654-4f5e-8dca-064d1d2d8f15"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#93397787-b776-4db7-8224-f54817ddf46c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2026-02-03",
+      "description": "2D and 3D instance segmentation of nuclei from array tomography (AT) and FIB-SEM datasets, respectively. In this deposition, 10 AT and 2 FIB-SEM datasets and paired annotations are included. Note: in several datasets, partial annotations of nuclei at image edges have been deleted. These are indicated in the annotation metadata.",
+      "funder": [],
+      "identifier": "S-BIAD2822",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "2D and 3D instance segmentation of nuclei from volume electron microscopy data",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2822/de2d9bfc-dce0-455c-a7be-33b06bb98bbb/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2822/21109fdd-8eb3-45cf-b677-c1401b6d0ee8/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#93397787-b776-4db7-8224-f54817ddf46c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d118837a-bc38-478c-86af-58b6e53e186e"
+        }
+      ],
+      "name": "Kedar Narayan"
+    },
+    {
+      "@id": "#d118837a-bc38-478c-86af-58b6e53e186e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Frederick National Laboratory. National Cancer Institute. NIH"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus",
+      "vernacularName": "house mouse"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#3a7b0bc1-74e8-42a2-8db1-5fc851d02c1c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "SUM149 breast cancer cells (Asterand Bioscience)",
+      "name": "Human breast cancer cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4949c4e1-a654-4f5e-8dca-064d1d2d8f15",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mammary gland",
+      "name": "Mouse 4T1 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#6a0970f2-9d35-439c-8abb-fb6ada41d1a2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lung tumor",
+      "name": "Mouse lung tumor",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#989af5d8-111d-45ca-97e8-78ead21e80c0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "MB-231 cells",
+      "name": "Human MB-231 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#902df31e-4c23-4c0c-a532-48b165644a10",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "SEM 1.5kV accelerating voltage, 1.1 nA beam current. FIB: 30 kV, 1.5 nA 2.1 us total dwell",
+      "labEquipment": "Zeiss Xbeam550",
+      "measurementTechnique": [
+        {
+          "@id": "FBbi:00050000"
+        }
+      ],
+      "name": "FIB-SEM"
+    },
+    {
+      "@id": "#a6eda8a6-e04b-4f9d-bee1-a6f7df683766",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "2-2.5 kV net accelerating voltage, 800 pA- 2 nA beam current. 3.2-6 us total dwell",
+      "labEquipment": "Zeiss SEM450",
+      "measurementTechnique": [
+        {
+          "@id": "FBbi:00000257"
+        }
+      ],
+      "name": "Array tomography (AT) SEM"
+    },
+    {
+      "@id": "FBbi:00000257",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "scanning electron microscopy (SEM)"
+    },
+    {
+      "@id": "FBbi:00050000",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 24
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1954930172
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD796"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD796",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4ed50d40-098e-4156-bb13-f96c176491e5"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#683a36da-7341-4544-bae6-fe4b02d328c6"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3067-2874"
+        },
+        {
+          "@id": "#eb1fcd8e-4ea1-45d1-8fda-eb5ed2cde027"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-07-04",
+      "description": "The datasets contains all raw data sets used for the publication: The Opto-inflammasome in zebrafish: a tool to study cell and tissue responses to speck formation and cell death. All images are confocal images and are taken from living zebrafish larvae of different transgenic lines.",
+      "funder": [],
+      "identifier": "S-BIAD796",
+      "keywords": [
+        "Inflammasome, cell death, Zebrafish, Periderm, Keratinocyte, ASC, apoptosis, Extrusion"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "The Opto-inflammasome in zebrafish: a tool to study cell and tissue responses to speck formation and cell death ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#eb1fcd8e-4ea1-45d1-8fda-eb5ed2cde027",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "Maria.leptin@embl.de",
+      "name": "Maria Leptin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3067-2874",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "eva.hasel@cos.uni-heidelberg.de",
+      "name": "Eva Hasel de Carvalho"
+    },
+    {
+      "@id": "#5074a07c-1144-4134-96c3-f98335b1653a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#683a36da-7341-4544-bae6-fe4b02d328c6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "3 days post fertilization zebrafish larva",
+      "name": "zebrafish larva",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#4ed50d40-098e-4156-bb13-f96c176491e5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40x Objective ",
+      "labEquipment": "Zeiss NLO- confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Microscope"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1626
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3203502148594
+    }
+  ]
+}

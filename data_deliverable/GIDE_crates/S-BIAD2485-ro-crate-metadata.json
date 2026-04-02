@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2485"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2485",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c37776ea-060d-4f1d-8f09-679b617784cb"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6ce34609-551d-4811-bb0b-6532d2508c89"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#4dd2e7a9-208c-4976-911f-7377c4da696c"
+        },
+        {
+          "@id": "#a977807c-849f-4f57-9658-b2ed592473cc"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-12",
+      "description": "Parkinson’s disease is considered biologically a neuronal alpha-synuclein disease, largely ignoring the more widespread alpha-synuclein deposition that occurs in astrocytes. Recent single cell transcriptomics have identified early astrocytic differences in both Parkinson’s disease and mouse models with an increase in reactive astrocytes associated with proteostasis. To identify whether astrocytes accumulate alpha-synuclein before or after neurons, the present study histologically assessed astrocytes and alpha-synuclein accumulation in the M83 A53T transgenic mouse model of Parkinson’s disease prior to significant neuronal alpha-synuclein accumulation.\nThe brains of M83 A53T transgenic (n=5) and wild-type (n=4) mice were perfusion fixed and serial sections of the midbrain and striatum processed for multiplex labelling. Digital images were captured from standardised sampling regions and astrocyte quantitation performed using QuPath software. Multivariate linear region models with Turkey posthoc tests were used to evaluate the effects of genotype on regional astrocyte morphology and numbers.\nThe density of astrocytes within the substantia nigra pars compacta was approximately 30% greater compared with other sampled regions (P<0.005). Small aggregates of alpha-synuclein were observed in astrocytic processes, including in wild-type mice where a quarter of all astrocytes had an obvious alpha-synuclein aggregate. Compared to wild-type, A53T transgenic astrocytes had significantly enlarged somas (P<0.001) with more processes (P<0.001) consistent with a reactive phenotype. The expression of vascular endothelial growth factor A was present in analysed astrocytes, but not the synthesising enzyme for vitamin D CYP27B1. The A53T transgenic mice had more than double the numbers of astrocytes (P<0.001) and 2.5 times more astrocytes with alpha-synuclein aggregates compared to wild-type mice (P<0.001). \nThese data suggest that -synuclein is normally cleared by astrocytes and that the substantia nigra pars compacta requires more astrocytic support than other midbrain dopaminergic regions or the striatum. This adds another vulnerability factor to those already known for the substantia nigra. In the A53T transgenic mouse model, astrocytes have an early upregulation of their clearance of alpha-synuclein aggregates. While speculative, a loss of this ability to take up alpha-synuclein in these regions may precipitate the selective neuronal degeneration and pathologies observed in Parkinson’s disease. As we move to a biological definition for this disease, understanding this early role of astrocytes needs to be considered further.",
+      "funder": [],
+      "identifier": "S-BIAD2485",
+      "keywords": [
+        "alpha-synuclein",
+        "astrocyte",
+        "striatum",
+        "substantia nigra",
+        "ventral tegmental area"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Transgenic A53T mice have astrocytic α-synuclein aggregates in dopamine and striatal regions",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2485/8c09c794-45cb-4ea5-8620-6c3426cd8c5d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#4dd2e7a9-208c-4976-911f-7377c4da696c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0384j8v12"
+        }
+      ],
+      "email": "heidi.cartwright@sydney.edu.au",
+      "name": "Heidi Cartwright"
+    },
+    {
+      "@id": "#a977807c-849f-4f57-9658-b2ed592473cc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0384j8v12"
+        }
+      ],
+      "email": "glenda.halliday@sydney.edu.au",
+      "name": "Glenda Halliday"
+    },
+    {
+      "@id": "https://ror.org/0384j8v12",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Sydney"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#6ce34609-551d-4811-bb0b-6532d2508c89",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse brain sections from the ventral tegmental area, substantia nigra and striatum - Brain tissue sections from 6-month-old M83 A53T transgenic mice (n=5) and age matched wild type controls (n=4) were provided by the Florey Institute of Neuroscience and Mental Health at University of Melbourne and used for analysis. Mice that carry the human A53T mutation driven by the mouse prion promoter (Jax Stock No: 004479; B6;C3-Tg (Prnp-SNCA*A53T)83Vle/J; A53T alpha-synuclein transgenic line M83) were obtained from Jackson Laboratories (Bar Harbor, ME) and a stable breeding colony generated in house (genotype of all mice used in the study confirmed by qPCR)",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#c37776ea-060d-4f1d-8f09-679b617784cb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Z stack images of these regions were captured at 1μm intervals for 10μm at 40X/NA1.1 magnification (this z distance separated overlapping astrocytes). In the entire ROI images, the widefield fluorescence Z stack images were exported as tiffs. For the midbrain slide, one region in the SNC and one region in the VTA was captured at the three levels in the series - Rostral, Middle and Caudal. For the larger striatum, standardised rostral, mid and caudal levels were selected, and four regions captured per level in the series.  The brightness and contrast of the images was standardised. ",
+      "labEquipment": "Leica THUNDER 3D Imager\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 165
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2055613300
+    }
+  ]
+}

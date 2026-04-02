@@ -1,0 +1,152 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000404/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000404/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000404",
+      "name": "in vivo imaging of spinal cord",
+      "description": "In vivo imaging was performed to detect changes over time after spinal cord injury using CX3CR1-GFP mice.",
+      "datePublished": "2025-01-10",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Spinal Cord Injuries/therapy[major]",
+        "Spinal Cord Injuries/physiopathology[major]",
+        "Animals",
+        "Microglia/metabolism[major]",
+        "Transcranial Direct Current Stimulation/methods[major]",
+        "Mice",
+        "Motor Cortex/physiopathology[major]",
+        "Recovery of Function[major]",
+        "Mice, Inbred C57BL[major]",
+        "Disease Models, Animal",
+        "Male",
+        "Spinal Cord/physiopathology",
+        "Spinal Cord/pathology",
+        "Female"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-024-69127-7"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hiroaki Wake",
+      "email": "hirowake@med.nagoya-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Department of Anatomy and Molecular Cell Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04chrp450"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04chrp450",
+      "@type": "Organization",
+      "name": "Nagoya University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-024-69127-7",
+      "@type": "ScholarlyArticle",
+      "name": "Neuromodulation with transcranial direct current stimulation contributes to motor function recovery via microglia in spinal cord injury.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 470089322496,
+      "description": "470.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 3757,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

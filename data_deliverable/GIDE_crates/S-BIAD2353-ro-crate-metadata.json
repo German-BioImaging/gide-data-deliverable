@@ -1,0 +1,220 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2353"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2353",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a4f454ca-b36b-473d-a9a4-fee02cd68179"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ed7816e9-5501-432e-9678-07864c41f4e1"
+        },
+        {
+          "@id": "obo:NCBITaxon_1415167"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0006-7031-6213"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8907-502X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2579-5546"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-23",
+      "description": "Training and benchmarking data for custom deconvolution model for FM 4-64 membranes or prediction of deconvolved membranes from a cytoplasmic fluorescent protein",
+      "funder": [],
+      "identifier": "S-BIAD2353",
+      "keywords": [
+        "image deconvolution",
+        "fm 4-64",
+        "gfp",
+        "membranes",
+        "model training"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Data for training custom deconvolution prediction model",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2353/dc6a87f0-671a-4553-9f48-1b7f5b4d2b21/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2579-5546",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0534re684"
+        }
+      ],
+      "email": "carsten.fortmann-grote@evolbio.mpg.de",
+      "name": "Carsten Fortmann-Grote"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8907-502X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0534re684"
+        }
+      ],
+      "email": "lopezgarrido@evolbio.mpg.de",
+      "name": "Javier Lopez-Garrido"
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-7031-6213",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0534re684"
+        }
+      ],
+      "email": "reyesmatte@evolbio.mpg.de",
+      "name": "Octavio Reyes-Matte"
+    },
+    {
+      "@id": "https://ror.org/0534re684",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute for Evolutionary Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_1415167",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Bacillus subtilis PY79"
+    },
+    {
+      "@id": "#ed7816e9-5501-432e-9678-07864c41f4e1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Exponentially growing Bacillus subtilis PY79.",
+      "name": "Bacillus subtilis strain",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1415167"
+      }
+    },
+    {
+      "@id": "#a4f454ca-b36b-473d-a9a4-fee02cd68179",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FM 4-64 and mVenusQ69M were visualized with the following filters: excitation 542 nm and emission 679 nm for FM 4-64, and excitation 475 nm and emission 525 nm for mVenusQ69M, with light transmission at 100% and an exposure time of 0.2 s for both channels",
+      "labEquipment": "DeltaVision Ultra microscope with a PCO Edge sCMOS camera and an Olympus 100X UPLX APO objective (Numerical aperture 1.45, Refractive index 1.518 Ph3)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": " Image acquisition "
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 540
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7100094800
+    }
+  ]
+}

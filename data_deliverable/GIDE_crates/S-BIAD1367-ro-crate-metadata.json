@@ -1,0 +1,257 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1367"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1367",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ffc28433-4bb9-4836-b265-df21f033ca8d"
+        },
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2253dc1e-44ad-4dc7-b093-57065f515c0a"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#15717434-fd41-4fcb-9bb1-42bd178fa1f0"
+        },
+        {
+          "@id": "#0baf262d-cdf8-4af9-bcf5-e7d32f0a0597"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2794-4266"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1334-6388"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0456-6912"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-19",
+      "description": "This submission includes 3D images from three time-lapse videos showing the development of Arabidopsis thaliana lateral root primordia (LRP), and the corresponding segmentation masks for cell boundaries. The ground truth was generated for images depicting different developmental stages of LRP coming from the three movies.",
+      "funder": [],
+      "identifier": "S-BIAD1367",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "PlantSeg core datasets: Lateral Root Primordia of Arabidopsis thaliana",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1367/26f71558-abee-42c9-a718-723c737af8a5/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1367/29e48c56-5a13-4646-81c2-1e7b8f53ae26/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0baf262d-cdf8-4af9-bcf5-e7d32f0a0597",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#575de036-d3b7-4da9-8a87-7af7b93b3401"
+        }
+      ],
+      "name": "Alexis Maizel"
+    },
+    {
+      "@id": "#15717434-fd41-4fcb-9bb1-42bd178fa1f0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#575de036-d3b7-4da9-8a87-7af7b93b3401"
+        }
+      ],
+      "name": "Marion Louveaux"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0456-6912",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8"
+        }
+      ],
+      "name": "Teresa Zulueta-Coarasa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1334-6388",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#75817f88-c2dd-4bf3-888a-6cfe06abd1f9"
+        }
+      ],
+      "name": "Anna Kreshuk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2794-4266",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#75817f88-c2dd-4bf3-888a-6cfe06abd1f9"
+        }
+      ],
+      "name": "Adrian Wolny"
+    },
+    {
+      "@id": "#575de036-d3b7-4da9-8a87-7af7b93b3401",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre for Organismal Studies, Heidelberg University, Heidelberg, Germany"
+    },
+    {
+      "@id": "#75817f88-c2dd-4bf3-888a-6cfe06abd1f9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "EMBL, Heidelberg, Germany"
+    },
+    {
+      "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Bioinformatics Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "mouse-ear cress"
+    },
+    {
+      "@id": "#2253dc1e-44ad-4dc7-b093-57065f515c0a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "lateral root primordia",
+      "name": "Arabidopsis thaliana lateral root",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#ffc28433-4bb9-4836-b265-df21f033ca8d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was performed on a Luxendo MuViSPIM equipped with two 10×NA=0.3for illumination and 40×NA=0.8for detection. The following settings were used for imaging: image size 2048×2048, exposure time 75 ms, channel #1 illumination 488 nm 10% power, detection 497–553 nm band pass filter, channel #2 illumination 561 nm 10% power, detection 610–628 nm band pass filter. Stacks encompassing the whole volume of the root were acquired every 30 min. Images from the two cameras were fused using the Luxendo Image processing tool and registered to correct any 3D drift using the BigDataProcessor (Tischer et al., 2019) in Fiji (Schindelin et al., 2012).",
+      "labEquipment": "Luxendo MuViSPIM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "SPIM imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000369",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "SPIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 56
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1988765330
+    }
+  ]
+}

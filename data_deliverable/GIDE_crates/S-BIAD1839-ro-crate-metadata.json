@@ -1,0 +1,190 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1839"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1839",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#89615f03-363b-4552-8556-94856b875208"
+        },
+        {
+          "@id": "obo:FBbi_00001004"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5f902e93-fa5a-4781-81b2-2fa5bb7fd204"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6205-0327"
+        },
+        {
+          "@id": "#82d06090-a463-49f2-af5e-233a5b350c2a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-15",
+      "description": "Raw tilt series and reconstructed serial tomograms of the whole cell of Solarion Arienae and its extrusome in detail",
+      "funder": [],
+      "identifier": "S-BIAD1839",
+      "keywords": [
+        "Electron tomography",
+        "Extrusome",
+        "VolumeEM"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Electron tomography of Solarion Arienae",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1839/bf182ebb-b837-44b6-a5f7-84a184a7530d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#82d06090-a463-49f2-af5e-233a5b350c2a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c9c5f95-0202-4a0e-91de-032803649bfb"
+        }
+      ],
+      "email": "marek.valt@natur.cuni.cz",
+      "name": "Marek Valt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6205-0327",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c9c5f95-0202-4a0e-91de-032803649bfb"
+        }
+      ],
+      "email": "jiri.miksatko@natur.cuni.cz",
+      "name": "Jiri Miksatko"
+    },
+    {
+      "@id": "#6c9c5f95-0202-4a0e-91de-032803649bfb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Charles University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#5f902e93-fa5a-4781-81b2-2fa5bb7fd204",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Newly discovered protist Solarion Arienae",
+      "name": "Solarion Arienae",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#89615f03-363b-4552-8556-94856b875208",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Tilt series images were captured over a ±60° range with 2° increments using a JEOL JEM-2100Plus transmission electron microscope operating at 200kV, equipped with TVIPS CMOS camera (XF-416). The acquisition process was automated using SerialEM v4.1.0beta. Electron tomograms were reconstructed by tracking fiducial markers with the eTomo module of the IMOD v4.11.4. The reconstructed tomograms underwent noise reduction filtering using Bandpass and Median 3D filters in Fiji v1.53i. Final data segmentation, volume rendering, and 3D-model reconstruction were done in IMOD.",
+      "labEquipment": "Jeol JEM2100-Plus",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00001004"
+        }
+      ],
+      "name": "Electron tomography"
+    },
+    {
+      "@id": "obo:FBbi_00001004",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "tomography"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 53
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 92104295194
+    }
+  ]
+}

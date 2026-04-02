@@ -1,0 +1,238 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1223"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1223",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f9221f72-c617-4a98-8e5e-b72d2ecbcb76"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#91db3b42-7139-442f-ae34-12d392810d83"
+        },
+        {
+          "@id": "#473f08e3-5771-41b2-b720-2b5d637f2987"
+        },
+        {
+          "@id": "#2d93ad75-6955-4690-857e-2966b94ddd24"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3179-4635"
+        },
+        {
+          "@id": "#1b891f25-2f62-403c-9994-f17b92e9c454"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-13",
+      "description": "Fiji 3Dprojections of Z-stacks recorded on a LSM700 confocal microscopy (Zeiss) represented in Figure 5H and I and Appendix Figure 8-11, Kliche et al., (2024). DAPI was visualised with the 405 nm laser and GFP with the 488 nm laser.",
+      "funder": [],
+      "identifier": "S-BIAD1223",
+      "keywords": [
+        "Nuclear localisation",
+        "CDC45",
+        "ABRAXAS1",
+        "Disease mutations"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Fiji 3Dprojections of Z-stacks of confocal fluorescence microscopy to assess the cellular localisation of EGFP-ABRAXAS1 wild-type/mutant and EGFP-CDC45 wild-type/mutant",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1223/528a8804-0bed-4335-913e-67f4784fbf65/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#1b891f25-2f62-403c-9994-f17b92e9c454",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "email": "ylva.ivarsson@kemi.uu.se",
+      "name": "Ylva Ivarsson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3179-4635",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b154dd0c-62be-4e09-99aa-686e0e90795c"
+        }
+      ],
+      "email": "johanna.kliche@cpr.ku.dk",
+      "name": "Johanna Kliche"
+    },
+    {
+      "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Uppsala University"
+    },
+    {
+      "@id": "#b154dd0c-62be-4e09-99aa-686e0e90795c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Copenhagen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2d93ad75-6955-4690-857e-2966b94ddd24",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Embryonic Kidney 293 Cells",
+      "name": "ABRAXAS1 mutant",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#473f08e3-5771-41b2-b720-2b5d637f2987",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Embryonic Kidney 293 Cells",
+      "name": "CDC45 mutant",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#91db3b42-7139-442f-ae34-12d392810d83",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Embryonic Kidney 293 Cells",
+      "name": "CDC45 wild-type",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f9221f72-c617-4a98-8e5e-b72d2ecbcb76",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Z-stacks were recorded using the 63x/1.4 oil objective, 405 nm and 488 nm laser",
+      "labEquipment": "LSM700 confocal microscope (Zeiss) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Z-stacks obtained by confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 20
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2394787592
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2230"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2230",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b068f113-0389-4612-a8a7-35c9bf5dbc7b"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9be625f5-76bf-4c71-acea-0950da48aed4"
+        },
+        {
+          "@id": "obo:NCBITaxon_5476"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-1283-2130"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-08",
+      "description": "Candida albicans is an emerging multidrug-resistant opportunistic pathogen representing an important source of invasive disease in humans and generating high healthcare costs worldwide. The development of a rapid and simple antifungal susceptibility test (AFST) could limit the spread of this disease, increase the efficiency of treatment, and lower the risk of developing resistant strains. We developed a microfluidic chip containing an array of microwells that were designed to trap the cells and perform rapid antifungal susceptibility tests using optical nanomotion detection (ONMD). Yeast cell entrapment in a microwell allows for a very rapid exchange of growth medium with the antifungal, which enables performing single-cell ONMD measurements on the same cell before and after antifungal treatment. The exposure to a low concentration of the antifungal caspofungin or flucanozole induced a significant decrease in the nanomotion signal, demonstrating the high sensitivity of this technique. We used this chip to quantify the real-time response of individual C. albicans cells to the antifungal treatment in as fast as 10 min. This simple and label-free technique could be further developed into a simple-to-use device that allows the performance of fast AFST as part of a routine hospital procedure in developed and also eventually developing world countries.",
+      "funder": [],
+      "identifier": "S-BIAD2230",
+      "keywords": [
+        "cellular nanomotion",
+        "single cell",
+        "optical nanomotion detection",
+        " microfluidic chip",
+        "microwells",
+        "yeast",
+        "Candida albicans",
+        " antifungal",
+        "antifungal susceptibility testing"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Single-Cell Optical Nanomotion of Candida albicans in Microwells for Rapid Antifungal Susceptibility Testing",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1283-2130",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/006e5kg04"
+        }
+      ],
+      "email": "vjera.radonicic@vub.be",
+      "name": "Vjera Radonicic"
+    },
+    {
+      "@id": "https://ror.org/006e5kg04",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vrije Universiteit Brussel"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_5476",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Candida albicans"
+    },
+    {
+      "@id": "#9be625f5-76bf-4c71-acea-0950da48aed4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cells",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_5476"
+      }
+    },
+    {
+      "@id": "#b068f113-0389-4612-a8a7-35c9bf5dbc7b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cellular nanomotion was monitored by recording bright-field movies of 300 frames at a framerate of 21 fps with an EMCCD camera (Andor) using a 40× objective (1 pixel corresponded to 0.2 µm).",
+      "labEquipment": "EMCCD camera (Andor)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 24
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1575881133
+    }
+  ]
+}

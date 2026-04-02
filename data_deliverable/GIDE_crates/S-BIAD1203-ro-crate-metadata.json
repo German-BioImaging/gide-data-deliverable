@@ -1,0 +1,235 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1203"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1203",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9f4170d8-5753-42fa-a2e9-666a21b21870"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#552a6b5d-9c1d-404e-b894-5e66d0696f07"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a8757222-3d25-4292-935f-a1714794a955"
+        },
+        {
+          "@id": "#4d4195c5-7d31-4a16-ac58-045db4096db0"
+        },
+        {
+          "@id": "#faf8c6e1-3d20-4243-a4c8-d9dc43669ca6"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-07",
+      "description": "Figures and data from EMBOR-2024-59195 - Robust tissue pattern formation by coupling morphogen signal and cell adhesion",
+      "funder": [],
+      "identifier": "S-BIAD1203",
+      "keywords": [
+        "synthetic biology",
+        "morphogen",
+        "cell adhesion",
+        "cadherin",
+        "pattern formation ",
+        "spheroid"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "EMBOR-2024-59195 - Robust tissue pattern formation by coupling morphogen signal and cell adhesion",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1203/ab1b2b68-a8b1-4ff3-81df-30bfc82997f8/74d09a42-fe58-440c-849d-3a2213968900.png"
+      ]
+    },
+    {
+      "@id": "#4d4195c5-7d31-4a16-ac58-045db4096db0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01tgyzw49"
+        }
+      ],
+      "email": "thira@nus.edu.sg",
+      "name": "Tsuyoshi Hirashima"
+    },
+    {
+      "@id": "#a8757222-3d25-4292-935f-a1714794a955",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ],
+      "email": "k.mizuno1996@gmail.com",
+      "name": "Kosuke Mizuno"
+    },
+    {
+      "@id": "#faf8c6e1-3d20-4243-a4c8-d9dc43669ca6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02hwp6a56"
+        }
+      ],
+      "email": "satoshi.toda@protein.osaka-u.ac.jp",
+      "name": "Satoshi Toda"
+    },
+    {
+      "@id": "https://ror.org/01tgyzw49",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National University of Singapore"
+    },
+    {
+      "@id": "https://ror.org/02hwp6a56",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Kanazawa University"
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#552a6b5d-9c1d-404e-b894-5e66d0696f07",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Images of L929 cells",
+      "name": "EMBOR-2024-59195 - Robust tissue pattern formation by coupling morphogen signal and cell adhesion",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9f4170d8-5753-42fa-a2e9-666a21b21870",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon AX-R confocal microscope with a CFI Apochromat LWD Lambda S 20XC WI objective (0.95 NA) (Nikon). Time-lapse images were captured using a CFI Plan Apochromat Lambda D 20X objective (0.80 NA) (Nikon). \nCells were kept in a precise incubation system (STXG-WSKMX-SET, TOKAI HIT) at 37 ºC in a humidified atmosphere 5% CO2.\nGalvano scanner, images were acquired every 30 min for 48 h.\nResonant scanner, images were acquired every 10 min for 48 h (289 images - Figure 4A-B), every 20 min for 48 h (145 images - Figure 5A and), or every 5 min for 24 h (289 images - Figure 5B). \nMicroscopy and image acquisition were performed using NIS-Elements (Nikon). A high-content imaging system, JOBS (Nikon), was utilized to automatically scan the 384-well plates.",
+      "labEquipment": "Nikon AX-R confocal microscope with a CFI Apochromat LWD Lambda S 20XC WI objective (0.95 NA) (Nikon). Time-lapse images were captured using a CFI Plan Apochromat Lambda D 20X objective (0.80 NA) (Nikon). \nCells were kept in a precise incubation system (STXG-WSKMX-SET, TOKAI HIT) at 37 ºC in a humidified atmosphere 5% CO2.\nGalvano scanner, images were acquired every 30 min for 48 h.\nResonant scanner, images were acquired every 10 min for 48 h (289 images - Figure 4A-B), every 20 min for 48 h (145 images - Figure 5A and), or every 5 min for 24 h (289 images - Figure 5B). \nMicroscopy and image acquisition were performed using NIS-Elements (Nikon). A high-content imaging system, JOBS (Nikon), was utilized to automatically scan the 384-well plates.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "EMBOR-2024-59195 - Robust tissue pattern formation by coupling morphogen signal and cell adhesion"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 67
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 20151864714
+    }
+  ]
+}

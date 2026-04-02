@@ -1,0 +1,214 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2348"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2348",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#22270bdc-85d3-4af3-a6a9-2a4d159f0bbc"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#96249f08-8641-41aa-af06-86a3b1463179"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3940-0760"
+        },
+        {
+          "@id": "#7f0bd69f-bcd9-4a6d-8625-90926bb2859d"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-20",
+      "description": "Representative electron micrographs of the GAS muscle in Floxed and mLDHA KO mice",
+      "funder": [],
+      "identifier": "S-BIAD2348",
+      "keywords": [
+        "GAS muscl",
+        "mLDHA KO mice"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "microscopy images related to article Lactylation of mTOR enhances autophagy in skeletal muscle during exercise",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2348/b17eda37-487d-49b4-891b-c08ce7aebf04/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#7f0bd69f-bcd9-4a6d-8625-90926bb2859d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#74f99f81-8335-49d8-8fb7-3747ef2024fa"
+        }
+      ],
+      "email": "liyan0520@jiangnan.edu.cn",
+      "name": "yan li"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3940-0760",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#74f99f81-8335-49d8-8fb7-3747ef2024fa"
+        }
+      ],
+      "email": "7230112035@stu.jiangnan.edu.cn",
+      "name": "sun yujie"
+    },
+    {
+      "@id": "#74f99f81-8335-49d8-8fb7-3747ef2024fa",
+      "@type": [
+        "Organization"
+      ],
+      "name": "jiangnan university"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#96249f08-8641-41aa-af06-86a3b1463179",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse skeletal muscle.",
+      "name": "microscopy imaging ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#22270bdc-85d3-4af3-a6a9-2a4d159f0bbc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The skeletal muscle was rapidly fixed in 2.5 % glutaraldehyde and 0.1 M cacodylate buffer for primary fixation. After rinsing with sodium phosphate buffer (PB, 100 mM, pH7.4), fixed tissues were then post-fixed with 1% osmium tetraoxide in PB. After rinsing with high-purity water, water was removed from the tissue in successive gradient washes ethanol (25%, 50%, 75%, and 95%) and embedded in epoxy resin overnight (60 °C). Ultrathin sections were cut using Leica EM UC7 and collected on carbon-coated copper grids. Staining the sections with 2 % uranyl acetate and lead citrate, and Images were taken on a Talos F200X G2 electron microscope in a double-blind manner.",
+      "labEquipment": "The skeletal muscle was rapidly fixed in 2.5 % glutaraldehyde and 0.1 M cacodylate buffer for primary fixation. After rinsing with sodium phosphate buffer (PB, 100 mM, pH7.4), fixed tissues were then post-fixed with 1% osmium tetraoxide in PB. After rinsing with high-purity water, water was removed from the tissue in successive gradient washes ethanol (25%, 50%, 75%, and 95%) and embedded in epoxy resin overnight (60 °C). Ultrathin sections were cut using Leica EM UC7 and collected on carbon-coated copper grids. Staining the sections with 2 % uranyl acetate and lead citrate, and Images were taken on a Talos F200X G2 electron microscope in a double-blind manner.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Immunofluorescence "
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 71655104
+    }
+  ]
+}

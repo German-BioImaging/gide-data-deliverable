@@ -1,0 +1,262 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD767"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD767",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#465bd4e4-c9e9-4dac-a45c-701ee9d2e083"
+        },
+        {
+          "@id": "#5419e8a7-b230-48ce-9bb3-4d832ea7e92f"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#45b27fd0-f62d-4d9c-bf93-e0847733ccb0"
+        },
+        {
+          "@id": "#e6b3e17b-16c5-43eb-8632-efc6b86c6287"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6553-7883"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6661-680X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0159-2055"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-06-26",
+      "description": "Light microscopy and scanning electron microscopy images of snow algae field samples containing Rosetta gen. nov., including type material. ",
+      "funder": [],
+      "identifier": "S-BIAD767",
+      "keywords": [
+        "snow algae",
+        "SEM",
+        "light microscopy",
+        "DIC",
+        "field samples",
+        "environmental",
+        "snow"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Rosetta gen. nov. holotype and isotype LM and SEM",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD767/e739501f-52b4-43db-be09-6241dea42daf/c3ca2293-83f9-49d9-a15c-751006c96f77.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6661-680X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0213rcc28"
+        }
+      ],
+      "email": "quarmby@sfu.ca",
+      "name": "Lynne Quarmby"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6553-7883",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0213rcc28"
+        }
+      ],
+      "email": "casey.engstrom@gmail.com",
+      "name": "Casey Engstrom"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0159-2055",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0213rcc28"
+        }
+      ],
+      "email": "breanna_raymond@sfu.ca",
+      "name": "Breanna Raymond"
+    },
+    {
+      "@id": "https://ror.org/0213rcc28",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Simon Fraser University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#45b27fd0-f62d-4d9c-bf93-e0847733ccb0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Snow algae field samples",
+      "name": "Snow algae field samples",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#e6b3e17b-16c5-43eb-8632-efc6b86c6287",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Snow algae field samples",
+      "name": "Snow algae field samples",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#465bd4e4-c9e9-4dac-a45c-701ee9d2e083",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "NA",
+      "labEquipment": "Nova NanoSEM 430",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "SEM"
+    },
+    {
+      "@id": "#5419e8a7-b230-48ce-9bb3-4d832ea7e92f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "DIC",
+      "labEquipment": "Axioskop 2+",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        },
+        {
+          "@id": "obo:FBbi_00000245"
+        }
+      ],
+      "name": "LM"
+    },
+    {
+      "@id": "obo:FBbi_00000245",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "differential interference contrast microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 539
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3792660641
+    }
+  ]
+}

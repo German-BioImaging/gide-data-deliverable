@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1555"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1555",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#90261234-ec44-4c5b-bf3a-59f8e9891ff8"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c575d09a-c3ed-49e4-8bc0-2a7573c32fab"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2281-5780"
+        },
+        {
+          "@id": "#fe88cfdc-3ceb-4b4e-a2b1-5dbdab8f9ce2"
+        },
+        {
+          "@id": "#3328b7fb-f088-4019-b4c6-4c454fb9f315"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-29",
+      "description": "Imaging Mass Cytometry data of 14 undifferentiated pleomorphic sarcoma and 15 myxofibrosarcoma patients, including treatment-naive and radiotherapy-treated primary tumors, local recurrences and metastases.",
+      "funder": [],
+      "identifier": "S-BIAD1555",
+      "keywords": [
+        "Undifferentiated pleomorphic sarcoma",
+        "Myxofibrosarcoma",
+        "Immune microenvironment",
+        "Radiotherapy",
+        "Metastasis-free survival"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Divergent therapeutic and prognostic impacts of immunogenic features in undifferentiated pleomorphic sarcoma and myxofibrosarcoma",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#3328b7fb-f088-4019-b4c6-4c454fb9f315",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a"
+        }
+      ],
+      "email": "n.f.de_miranda@lumc.nl",
+      "name": "Noel de Miranda"
+    },
+    {
+      "@id": "#fe88cfdc-3ceb-4b4e-a2b1-5dbdab8f9ce2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a"
+        }
+      ],
+      "email": "j.v.m.g.bovee@lumc.nl",
+      "name": "Judith Bovee"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2281-5780",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a"
+        }
+      ],
+      "email": "s.van_oost@lumc.nl",
+      "name": "Siddh van Oost"
+    },
+    {
+      "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leiden University Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#c575d09a-c3ed-49e4-8bc0-2a7573c32fab",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Undifferentiated pleomorphic sarcoma & Myxofibrosarcoma",
+      "name": "Four tissue microarrays constructed with FFPE archival tissue of 14 UPS and 15 myxofibrosarcoma patients",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#90261234-ec44-4c5b-bf3a-59f8e9891ff8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1000x1000 pixel ROIs acquired with CyTOF Software",
+      "labEquipment": "Hyperion mass cytometry imaging system ",
+      "measurementTechnique": [],
+      "name": "Image acquisition with imaging mass cytometry"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 45837073329
+    }
+  ]
+}

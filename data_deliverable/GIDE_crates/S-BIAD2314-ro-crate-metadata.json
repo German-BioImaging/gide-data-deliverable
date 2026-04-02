@@ -1,0 +1,901 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2314"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2314",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#905b9c96-41b5-431e-a33c-5cd82ddd2cd4"
+        },
+        {
+          "@id": "#98fc6ce9-c014-4186-8638-f24dc0741125"
+        },
+        {
+          "@id": "#a6ee3e95-6b4a-4c5e-9139-12bffe5fea86"
+        },
+        {
+          "@id": "#a387e781-19ec-463c-8981-934206af2335"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d95a0d1a-0a09-4584-a6fd-ec199e750801"
+        },
+        {
+          "@id": "#17e19b91-4768-428a-b718-aa2ef585d788"
+        },
+        {
+          "@id": "#b019c9fb-9959-4d36-b952-1b575bea8dd5"
+        },
+        {
+          "@id": "#3a82df6b-c78a-44b7-88f4-08898bb02502"
+        },
+        {
+          "@id": "#bfa190e8-ab56-498a-815e-1838043b4b8f"
+        },
+        {
+          "@id": "#fbb117ca-3d4d-45e0-8a62-8ce11788ec19"
+        },
+        {
+          "@id": "#197a65e0-12a9-48cf-bfdb-1e353c78477b"
+        },
+        {
+          "@id": "#78551955-8138-4ab8-b886-308a5bf7ec09"
+        },
+        {
+          "@id": "#4209e4d6-ec3c-4f47-9606-28314a25756f"
+        },
+        {
+          "@id": "#1de096a4-5cde-48c1-aac3-d4764e80b59d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9900-6610"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0104-8052"
+        },
+        {
+          "@id": "#128579a0-ed98-492a-8dc9-4738b1fa83cd"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2369-1679"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9020-8862"
+        },
+        {
+          "@id": "#31efaf09-e92e-49e8-b05f-eff302c4d18b"
+        },
+        {
+          "@id": "https://orcid.org/0009-0002-5024-4460"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6529-5784"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4464-4089"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4707-8326"
+        },
+        {
+          "@id": "https://orcid.org/0009-0002-2682-7615"
+        },
+        {
+          "@id": "#773f9333-e2df-4d66-badb-afc7332a26f3"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0130-1107"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5600-9181"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0380-9772"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9174-044X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3477-4322"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8781-8627"
+        },
+        {
+          "@id": "#5384f652-3530-4f94-9fdb-1e2478adcaf4"
+        },
+        {
+          "@id": "https://orcid.org/0009-0002-6667-4828"
+        },
+        {
+          "@id": "#8bccf247-8f05-401a-8869-3e525566ffae"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1016-9059"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2422-0326"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2784-4276"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2021-8379"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0413-6744"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5541-9747"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3932-5086"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8782-0885"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-30",
+      "description": "Oblique plane microscopy (OPM) is a form of light-sheet fluorescence microscopy (LSFM) employing a single microscope objective at the sample for both fluorescence excitation and detection. Dual-view OPM (dOPM) is an optically folded form of OPM. We present an improved dOPM system employing a 60×/1.2NA water immersion primary objective and measure the spatial resolution and fluorescence collection efficiency for illumination angles of 35° and 45° with respect to the coverslip. Illumination at 35° provides slightly better lateral resolution and collection efficiency. Collection efficiency measurements are compared to a full vectorial raytracing simulation of the system. Using a light-sheet angle of 35°, the median bead FWHM for 100 nm diameter fluorescent beads in x, y and z and the optical sectioning strength were measured over a volume of 100×100×100 μm³, to be 0.29, 0.31, 0.83 and 2.45-3.00 μm respectively when the two dOPM views are fused. We demonstrate less photobleaching in time-lapse dOPM of live mEmerald-expressing organoids compared to widefield epi-fluorescence z-stack imaging under the condition of equal detected fluorescence signal from a point object in focus. We demonstrate dOPM for multi-field-of-view 3D imaging of biological samples in 96-well plates and apply it to imaging cells in collagen gel and quantifying the FUCCI cell-cycle reporter to provide drug dose-response curves in spheroids. We also use it to perform time-lapse multi-field-of-view imaging and demonstrate the detection of organoid lumen closure and reopening, organoid migration within a collagen gel and observing dynamic events in arrays of ex vivo tissue slices.",
+      "funder": [],
+      "identifier": "S-BIAD2314",
+      "keywords": [
+        " light-sheet microscopy, high-content microscopy, Oblique plane microscopy, 3D imaging, fluorescence microscopy"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "High Content 3D Imaging by Dual-View Oblique Plane Microscopy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2314/50437d27-07bd-4fa7-a6ff-4504cc36a795/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#128579a0-ed98-492a-8dc9-4738b1fa83cd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "y.alexandrov@imperial.ac.uk",
+      "name": "Yuriy Alexandrov"
+    },
+    {
+      "@id": "#31efaf09-e92e-49e8-b05f-eff302c4d18b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "nathan.curry08@imperial.ac.uk",
+      "name": "Nathan Curry"
+    },
+    {
+      "@id": "#5384f652-3530-4f94-9fdb-1e2478adcaf4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "edwin.garciacastano@crick.ac.uk",
+      "name": "Edwin Garcia"
+    },
+    {
+      "@id": "#773f9333-e2df-4d66-badb-afc7332a26f3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ead0ac5-619e-43d8-9201-fdedac41c46f"
+        }
+      ],
+      "email": "claudia.owczarek@kcl.ac.uk",
+      "name": "Claudia Owczarek"
+    },
+    {
+      "@id": "#8bccf247-8f05-401a-8869-3e525566ffae",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "shengjie.zhang22@imperial.ac.uk",
+      "name": "Shengjie Zhang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5541-9747",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bf9ffb8d-596b-4bcf-b3c6-bf33cbad2025"
+        },
+        {
+          "@id": "#41d067e1-47b0-4bff-9e94-8c0f4ce13d5d"
+        },
+        {
+          "@id": "#22a6fcd7-145e-447a-8c63-a3387a4904d5"
+        }
+      ],
+      "email": "n.carragher@ed.ac.uk",
+      "name": "Neil O. Carragher"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6529-5784",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bf9ffb8d-596b-4bcf-b3c6-bf33cbad2025"
+        },
+        {
+          "@id": "#41d067e1-47b0-4bff-9e94-8c0f4ce13d5d"
+        },
+        {
+          "@id": "#22a6fcd7-145e-447a-8c63-a3387a4904d5"
+        }
+      ],
+      "email": "martin.lee@ed.ac.uk",
+      "name": "Martin Lee"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8782-0885",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "christopher.dunsby@imperial.ac.uk",
+      "name": "Chris Dunsby"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9174-044X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9808bb1e-a7f6-4dbd-b187-480b0e86c39a"
+        }
+      ],
+      "email": "joffrey.pelletier@irbbarcelona.org",
+      "name": "Joffrey Pelletier"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9900-6610",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "hugh.sparks10@imperial.ac.uk",
+      "name": "Hugh Sparks"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0104-8052",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "l.rowe-brown19@imperial.ac.uk",
+      "name": "Leo Rowe-Brown"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0413-6744",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fee439f1-0b4e-4848-96ca-240a0d8736fc"
+        }
+      ],
+      "email": "chris.bakal@icr.ac.uk",
+      "name": "Chris Bakal"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1016-9059",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6462cda8-51cf-4ad0-bbd8-e701308700da"
+        },
+        {
+          "@id": "#11a5be38-be95-4a58-b955-6e472c1650f0"
+        }
+      ],
+      "email": "giorgio.stassi@unipa.it",
+      "name": "Giorgio Stassi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2021-8379",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ead0ac5-619e-43d8-9201-fdedac41c46f"
+        }
+      ],
+      "email": "maddy.parsons@kcl.ac.uk",
+      "name": "Maddy Parsons"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2784-4276",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c3327ca4-d6ce-47f9-968c-49ff87909aa6"
+        }
+      ],
+      "email": "julien.colombelli@irbbarcelona.org",
+      "name": "Julien Colombelli"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3932-5086",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#10ea2dd4-4093-42ab-b962-e75d0528ff0f"
+        }
+      ],
+      "email": "Erik.Sahai@crick.ac.uk",
+      "name": "Erik Sahai"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5600-9181",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c3327ca4-d6ce-47f9-968c-49ff87909aa6"
+        }
+      ],
+      "email": "montse.llanses@irbbarcelona.org",
+      "name": "Montserrat Llanses"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8781-8627",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "wenzhi.hong19@imperial.ac.uk",
+      "name": "Wenzhi Hong"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9020-8862",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "lad62@cam.ac.uk",
+      "name": "Liuba Dvinskikh"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0130-1107",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fee439f1-0b4e-4848-96ca-240a0d8736fc"
+        }
+      ],
+      "email": "mar.ariasgarcia@icr.ac.uk",
+      "name": "Mar Arias Garcia"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0380-9772",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c3327ca4-d6ce-47f9-968c-49ff87909aa6"
+        }
+      ],
+      "email": "theresa.suckert@irbbarcelona.com",
+      "name": "Theresa Suckert"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2369-1679",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "nils.gustafsson@ftf.lth.se",
+      "name": "Nils Gustafsson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2422-0326",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c3327ca4-d6ce-47f9-968c-49ff87909aa6"
+        },
+        {
+          "@id": "#9009461e-d5a1-4572-8f11-bbfa14411f34"
+        },
+        {
+          "@id": "#5403192d-b4e4-4192-964e-847caec5d9d9"
+        }
+      ],
+      "email": "eduard.batlle@irbbarcelona.org",
+      "name": "Eduard Batlle"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3477-4322",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c3327ca4-d6ce-47f9-968c-49ff87909aa6"
+        },
+        {
+          "@id": "#9009461e-d5a1-4572-8f11-bbfa14411f34"
+        }
+      ],
+      "email": "carme.cortina@irbbarcelona.org",
+      "name": "Carme Cortina"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4464-4089",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#10ea2dd4-4093-42ab-b962-e75d0528ff0f"
+        }
+      ],
+      "email": "alix.lemarois@crick.ac.uk",
+      "name": "Alix Le Marois"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4707-8326",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#10ea2dd4-4093-42ab-b962-e75d0528ff0f"
+        }
+      ],
+      "email": "colin.ratcliffe@crick.ac.uk",
+      "name": "Colin D. H. Ratcliffe"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-2682-7615",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ead0ac5-619e-43d8-9201-fdedac41c46f"
+        }
+      ],
+      "email": "thomas.a.phillips@kcl.ac.uk",
+      "name": "Thomas A. Phillips"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-5024-4460",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bf9ffb8d-596b-4bcf-b3c6-bf33cbad2025"
+        },
+        {
+          "@id": "#41d067e1-47b0-4bff-9e94-8c0f4ce13d5d"
+        },
+        {
+          "@id": "#22a6fcd7-145e-447a-8c63-a3387a4904d5"
+        }
+      ],
+      "email": "jayne.culley@ed.ac.uk",
+      "name": "Jayne Culley"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-6667-4828",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb"
+        }
+      ],
+      "email": "freya.xu21@imperial.ac.uk",
+      "name": "Zhizhen Xu"
+    },
+    {
+      "@id": "#0ee3bb8d-ae15-4716-9cbc-3d0d314fd4eb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Imperial College London, London, UK"
+    },
+    {
+      "@id": "#10ea2dd4-4093-42ab-b962-e75d0528ff0f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The Francis Crick Institute, London, UK"
+    },
+    {
+      "@id": "#11a5be38-be95-4a58-b955-6e472c1650f0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "IRCCS SYNLAB SDN, Naples, Italy"
+    },
+    {
+      "@id": "#22a6fcd7-145e-447a-8c63-a3387a4904d5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh, Edinburgh, UK"
+    },
+    {
+      "@id": "#41d067e1-47b0-4bff-9e94-8c0f4ce13d5d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Genetics and Cancer, Edinburgh, UK"
+    },
+    {
+      "@id": "#5403192d-b4e4-4192-964e-847caec5d9d9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institució Catalana de Recerca i Estudis Avançats (ICREA), Barcelona, Spain"
+    },
+    {
+      "@id": "#6462cda8-51cf-4ad0-bbd8-e701308700da",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Palermo, Palermo, Italy"
+    },
+    {
+      "@id": "#8ead0ac5-619e-43d8-9201-fdedac41c46f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Kings College London, London, UK"
+    },
+    {
+      "@id": "#9009461e-d5a1-4572-8f11-bbfa14411f34",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centro de Investigación Biomédica en Red de Cáncer (CIBERONC), Barcelona, Spain"
+    },
+    {
+      "@id": "#9808bb1e-a7f6-4dbd-b187-480b0e86c39a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Bellvitge Biomedical Research Institute, Barcelona, Spain"
+    },
+    {
+      "@id": "#bf9ffb8d-596b-4bcf-b3c6-bf33cbad2025",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Cancer Research UK Scotland Centre, Edinburgh, UK"
+    },
+    {
+      "@id": "#c3327ca4-d6ce-47f9-968c-49ff87909aa6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute for Research in Biomedicine, Barcelona, Spain"
+    },
+    {
+      "@id": "#fee439f1-0b4e-4848-96ca-240a0d8736fc",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The Institute of Cancer Research, London, UK"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#17e19b91-4768-428a-b718-aa2ef585d788",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Patient-derived TNBC organoids - Patient-derived organoids were grown from 1 mm core biopsies taken from triple negative breast cancer patients participating in a non-interventional prospective clinical trial (NCT03238144; https://pubs.rsna.org/doi/10.1148/rycan.240138) approved by an independent review board (reference no. 16/LO/1303). Samples were acquired prior to chemotherapy, and all participants provided written informed consent.",
+      "name": "Patient-derived TNBC organoids",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#197a65e0-12a9-48cf-bfdb-1e353c78477b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Fixed triple-negative breast cancer (TNBC) cells: MDA-MB-231, MDA-MB-468, SUM159 - The dOPM system was used in stage-scanning mode to study human TNBC cells embedded in 3D matrices across extended fields of view in a 96-well plate. Three TNBC cell lines were treated with the BRAF inhibitor Vemurafenib and the MEK1/2 inhibitor Binimetinib at two different concentrations, alongside a DMSO vehicle control.",
+      "name": "Fixed triple-negative breast cancer (TNBC) cells: MDA-MB-231, MDA-MB-468, SUM159",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1de096a4-5cde-48c1-aac3-d4764e80b59d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GCRC1915 patient-derived xenograft organoid (PDXO)",
+      "name": "GCRC1915 patient-derived xenograft organoid (PDXO)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3a82df6b-c78a-44b7-88f4-08898bb02502",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "TetraSpeck™ Microspheres, 0.2 µm (T7280, Thermofisher)",
+      "name": "200 nm fluorescent beads",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#4209e4d6-ec3c-4f47-9606-28314a25756f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Patient-derived GS605-PD07 organoids - Patient tissues were obtained in accordance with the European Network of Research Ethics Committees, following European, national and local laws. Patient-derived GS605-PD07 organoids were modified to express Krt20-iRFP using the CRISPR-Krt20-iRFP fusion protein knock-in and histone-H2B-EGFP fusion protein using lentivirus transfection.",
+      "name": "Patient-derived GS605-PD07 organoids",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#78551955-8138-4ab8-b886-308a5bf7ec09",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GCRC1915 patient-derived xenograft organoid (PDXO)",
+      "name": "GCRC1915 patient-derived xenograft organoid (PDXO)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b019c9fb-9959-4d36-b952-1b575bea8dd5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Murine NF1-/-; PTEN-/-; EGFRVIII (NPE) glioblastoma spheroids. - Live murine NF1-/-; PTEN-/-; EGFRVIII (NPE) glioblastoma spheroids [1] expressing a FUCCI cell cycle reporter system (Cdt1-mCherry and Geminin-mVenus) [2] as well as a Histone H2B marker (mCerulean) and cytoplasmic GFP and treated with varying concentrations of 6 drug compounds.\n\n[1]. E. Gangoso et al., Glioblastomas acquire myeloid-affiliated transcriptional programs via epigenetic immunoediting to elicit immune evasion. Cell 184, 2454-2470.e2426 (2021).\n[2]. R. L. Mort et al., Fucci2a:A bicistronic cell cycle reporter that allows Cre mediated tissue specific expression in mice. Cell Cycle 13, 2681-2696 (2014).",
+      "name": "Live murine NF1-/-; PTEN-/-; EGFRVIII (NPE) glioblastoma spheroids",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#bfa190e8-ab56-498a-815e-1838043b4b8f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Alexa Fluor 488 thin fluorescent sheet - The glass was coated by adding 100 μL of poly-L-lysine (P8920 Sigma-Aldrich) then coated with Alexa Fluor 488-conjugated antibody (A21121 goat anti-mouse AF488 Invitrogen, 2 mg/mL).",
+      "name": "Alexa Fluor 488 thin fluorescent sheet",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#d95a0d1a-0a09-4584-a6fd-ec199e750801",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "TetraSpeck™ Microspheres, 0.1 µm (T7279, Thermofisher)",
+      "name": "100 nm fluorescent beads",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#fbb117ca-3d4d-45e0-8a62-8ce11788ec19",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human H1975 cells - Ex-vivo non-small cell lung tumour xenografts in precision-cut lung slices: H1975 cells expressing nuclear CFP were injected in the tail-vein of NSG mice and allowed to form tumours for 4 weeks before lung extraction.",
+      "name": "Mouse model of lung cancer",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#905b9c96-41b5-431e-a33c-5cd82ddd2cd4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "17.5 degree mirror tilt in refocus space.\nSee Supplementary Table 4: Summary of image acquisition parameters.",
+      "labEquipment": "Dual-View Oblique Plane Microscopy",
+      "measurementTechnique": [],
+      "name": "17.5 degree mirror tilt in refocus space with Multi-view light-sheet fluorescence microscopy with dual-view oblique plane microscopy (dOPM)"
+    },
+    {
+      "@id": "#98fc6ce9-c014-4186-8638-f24dc0741125",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "22.5 degree mirror tilt in refocus space.\nSee Supplementary Table 4: Summary of image acquisition parameters.",
+      "labEquipment": "Dual-View Oblique Plane Microscopy",
+      "measurementTechnique": [],
+      "name": "22.5 degree mirror tilt in refocus space with Multi-view light-sheet fluorescence microscopy with dual-view oblique plane microscopy (dOPM)"
+    },
+    {
+      "@id": "#a387e781-19ec-463c-8981-934206af2335",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "0 degree mirror tilt in refocus space.\nSee Supplementary Table 4: Summary of image acquisition parameters.",
+      "labEquipment": "Dual-View Oblique Plane Microscopy",
+      "measurementTechnique": [],
+      "name": "0 degree mirror tilt in refocus space with Multi-view light-sheet fluorescence microscopy with dual-view oblique plane microscopy (dOPM)"
+    },
+    {
+      "@id": "#a6ee3e95-6b4a-4c5e-9139-12bffe5fea86",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Supplementary Table 5: parameters used for comparing photobleaching between dOPM and epi-fluorescence imaging.",
+      "labEquipment": "Nikon Eclipse Ti2",
+      "measurementTechnique": [],
+      "name": "Wide field epifluorescence microscopy compared to dOPM for photobleaching experiment"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 47363
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8033314380176
+    }
+  ]
+}

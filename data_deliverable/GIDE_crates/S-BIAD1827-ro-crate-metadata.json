@@ -1,0 +1,188 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1827"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1827",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1ed3283d-d0e4-4151-8a52-8d7c1b762378"
+        },
+        {
+          "@id": "obo:FBbi_00000367"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9cea29e1-85ae-4d6f-b717-031554b476c4"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4009-5601"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-11",
+      "description": "Fluorescence microscopy images acquired to quantify activation state oscillations of p38 MAPK and its substrate PerKy-38",
+      "funder": [],
+      "identifier": "S-BIAD1827",
+      "keywords": [
+        "FRET",
+        "MAPK",
+        "Stress Signaling",
+        "Human Stress Response",
+        "Bioresonance"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Human Stress Response Specificity through Bioresonance Selectivity",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1827/7d08e911-43bc-41bb-8e4e-45e2439a47ef/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4009-5601",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c8060c79-54a3-441c-9821-d790242cc10e"
+        }
+      ],
+      "email": "thomask@ucr.edu",
+      "name": "Tom Kuhlman"
+    },
+    {
+      "@id": "#c8060c79-54a3-441c-9821-d790242cc10e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Riverside"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9cea29e1-85ae-4d6f-b717-031554b476c4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human HEK- 293T cells stably transfected to express VPC protein or to express PerKy-38 protein. The left panel in each image is blue fluorescence signal, and the right is yellow",
+      "name": "VPC293 and PerKy-38 cells response to stimulations or stress (IL1B, SB203580, Sorbitol, TNF, SARS-Cov-2 Spikes, )",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1ed3283d-d0e4-4151-8a52-8d7c1b762378",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100 ms exposure, imaged using CFP YFP filter set in Photometrics DualView. Left side is blue channel, right side is yellow channel",
+      "labEquipment": "Nikon Ti-E",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000367"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000367",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRET"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1475
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 166370755788
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1900"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1900",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b67c7b99-e57b-40ec-a269-2e0abca14a5a"
+        },
+        {
+          "@id": "#82472204-e979-40f9-a8de-27c68ac8cc28"
+        },
+        {
+          "@id": "#3aec0968-64d3-4da7-a8d9-e975b3104e45"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2ded3b31-5269-4ecc-aba1-78013fd91638"
+        },
+        {
+          "@id": "#882aadbd-ebe1-40e8-94f7-d11fb52867f1"
+        },
+        {
+          "@id": "#258b0c18-c76e-471f-806c-6f94f1ed81dd"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#7d8c4404-c7d5-4456-9cdb-6cacf7ecdd92"
+        },
+        {
+          "@id": "#959a6e09-922d-4822-a520-d8bf1dbc655b"
+        },
+        {
+          "@id": "#139eb3d0-c87d-46c9-ac44-42bb54ee186e"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-05",
+      "description": "We benchmarked five advanced spatial transcriptomics (ST) platforms: Stereo-seq v1.3, Visium HD FF, Visium HD FFPE, CosMx 6K, and Xenium 5K. These platforms were selected for their high-throughput gene capture (>5,000 genes), subcellular resolution (<=2um), and commercial availability. Samples from three treatment-naive tumors (colon adenocarcinoma, hepatocellular carcinoma, and ovarian cancer) were processed into FFPE blocks, fresh frozen blocks with OCT compound, and single-cell suspensions. Serial tissue sections were generated for consistent evaluation. For ground truth datasets, we profiled proteins from adjacent sections using CODEX and performed scRNA-seq on the same samples, enabling integrative cross-modal comparisons. Note that Visium HD FF protocol became available three months after initial sample preparation, possibly resulting in RNA degradation.",
+      "funder": [],
+      "identifier": "S-BIAD1900",
+      "keywords": [
+        "spatial transcriptomics",
+        "solid tumor study"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Systematic Benchmarking of High-Throughput Subcellular Spatial Transcriptomics Platforms",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1900/a3dfd204-b083-4a75-adee-523cd6b306bb/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#139eb3d0-c87d-46c9-ac44-42bb54ee186e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8e1609b1-74ce-4e31-916a-60747a720701"
+        }
+      ],
+      "email": "zexianzeng@pku.edu.cn",
+      "name": "Zexian Zeng"
+    },
+    {
+      "@id": "#7d8c4404-c7d5-4456-9cdb-6cacf7ecdd92",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8e1609b1-74ce-4e31-916a-60747a720701"
+        }
+      ],
+      "email": "pfren@stu.pku.edu.cn",
+      "name": "Pengfei Ren"
+    },
+    {
+      "@id": "#959a6e09-922d-4822-a520-d8bf1dbc655b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8e1609b1-74ce-4e31-916a-60747a720701"
+        }
+      ],
+      "email": "yunfeng404@gmail.com",
+      "name": "Yunfeng Wang"
+    },
+    {
+      "@id": "#8e1609b1-74ce-4e31-916a-60747a720701",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Peking University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#258b0c18-c76e-471f-806c-6f94f1ed81dd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Colon carcinoma",
+      "name": "COAD",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2ded3b31-5269-4ecc-aba1-78013fd91638",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Hepatocellular carcinoma",
+      "name": "HCC",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#882aadbd-ebe1-40e8-94f7-d11fb52867f1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Ovarian cancer",
+      "name": "OV",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3aec0968-64d3-4da7-a8d9-e975b3104e45",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "DNBSEQ-T7/Illumina NovaSeq 6000",
+      "labEquipment": "Stereo-seq v1.3, Visium HD for FFPE, Visium HD for FF, Xenium, CosMx",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "COAD"
+    },
+    {
+      "@id": "#82472204-e979-40f9-a8de-27c68ac8cc28",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "DNBSEQ-T7/Illumina NovaSeq 6000",
+      "labEquipment": "Stereo-seq v1.3, Visium HD for FFPE, Visium HD for FF, Xenium, CosMx",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "OV"
+    },
+    {
+      "@id": "#b67c7b99-e57b-40ec-a269-2e0abca14a5a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "DNBSEQ-T7/Illumina NovaSeq 6000",
+      "labEquipment": "Stereo-seq v1.3, Visium HD for FFPE, Visium HD for FF, Xenium, CosMx",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "HCC"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 36
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 90704982527
+    }
+  ]
+}

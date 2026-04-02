@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD903"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD903",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5981d7d4-dca6-421b-8d56-4fe60b8d59e8"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#241c0abd-37c4-4dca-beab-13186951786e"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2678-6246"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-10-18",
+      "description": "Z-stacks and images were recorded with a LSM780/880 (Zeiss CLSM) from the top of inflorescence or vegetative meristems and root meristems of Arabidopsis thaliana.\nFiles can be opened either with the Zen Software (Zeiss) or ImageJ.",
+      "funder": [],
+      "identifier": "S-BIAD903",
+      "keywords": [
+        " Arabidopsis thaliana",
+        "Shoot apical meristem ",
+        "SHR network "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The Arabidopsis SHORTROOT network coordinates shoot apical meristem development with auxin dependent lateral organ initiation\n\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2678-6246",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#72b70930-be24-4bcc-a720-3a31c2b432b1"
+        }
+      ],
+      "email": "elmehdi.bahafid@hhu.de",
+      "name": "Elmehdi Bahafid"
+    },
+    {
+      "@id": "#72b70930-be24-4bcc-a720-3a31c2b432b1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Heinrich Heine University Düsseldorf"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#241c0abd-37c4-4dca-beab-13186951786e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Z-stacks and image were recorded with a LSM780/880 (Zeiss CLSM) from the top of inflorescence or vegetative meristems and root meristems of Arabidopsis thaliana",
+      "name": "Inflorescence meristems ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#5981d7d4-dca6-421b-8d56-4fe60b8d59e8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All confocal images were obtained by using a Zeiss LSM780 confocal microscope (40x water immersion objective, Zeiss C‐PlanApo, NA1.2). For time series analysis, settings were established in the beginning on mock samples and were kept standard during the experiment. \nGreen fluorescence was excited with an argon laser at 488 nm and emission was detected at 490 – 530nm, yellow was excited with an argon laser at 514 nm and emission was detected at 520 – 550nm, and red was excited with Diode-pumped solid state (DPSS) lasers at 514nm and detected at 570 – 650nm. PI was excited at 561nm by DPSS lasers and detected by PMTs at 590 – 650nm. DAPI was excited at 405nm with a laser diode and detected at 410 – 480nm. \n",
+      "labEquipment": "LSM780/880 (Zeiss CLSM)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Fluorescence imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 22
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 334515356762
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000169/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000169/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000169",
+      "name": "Sets of image data of mouse mitral cells genetically labeled with utero electroporation.",
+      "description": "Morphology and FRET/Ca2+ imaging data of mitral cells in the mouse olfactory bulb.",
+      "datePublished": "2020-10-30",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Actin Cytoskeleton/metabolism",
+        "Actin Depolymerizing Factors/metabolism",
+        "Actins/metabolism",
+        "Animals",
+        "Bone Morphogenetic Protein Receptors, Type II/chemistry",
+        "Bone Morphogenetic Protein Receptors, Type II/metabolism[major]",
+        "Bone Morphogenetic Proteins/metabolism",
+        "Dendrites/metabolism[major]",
+        "Glutamic Acid/metabolism",
+        "Ligands",
+        "Lim Kinases/metabolism",
+        "Mice, Inbred C57BL",
+        "Olfactory Bulb/cytology[major]",
+        "Protein Domains",
+        "Receptors, N-Methyl-D-Aspartate/metabolism",
+        "Structure-Activity Relationship",
+        "p21-Activated Kinases/metabolism",
+        "rac1 GTP-Binding Protein/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.celrep.2021.109276"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takashi Imai",
+      "email": "imai.takeshi.457@m.kyushu-u.ac.jp",
+      "description": "Organization: Kyushu University; Department: Department of Developmental Neurophysiology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00p4k0j84"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/00p4k0j84",
+      "@type": "Organization",
+      "name": "Kyushu University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.celrep.2021.109276",
+      "@type": "ScholarlyArticle",
+      "name": "BMPR-2 gates activity-dependent stabilization of primary dendrites during mitral cell remodeling.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "ICR, C57BL/6N",
+      "description": "ICR, C57BL/6N",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 174159159296,
+      "description": "174.2 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 93,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

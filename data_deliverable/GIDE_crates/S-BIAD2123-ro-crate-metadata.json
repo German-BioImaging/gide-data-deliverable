@@ -1,0 +1,208 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2123"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2123",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8fdb727f-0aeb-4720-9d01-9bbfd01b9efd"
+        },
+        {
+          "@id": "obo:FBbi_00000366"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#758acc4a-90b8-4a11-80bc-4d0b4f2bdf5c"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6437-8879"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-30",
+      "description": "Source data for Main Figures and Expanded View and Appendix figures (both image and numerical).",
+      "funder": [],
+      "identifier": "S-BIAD2123",
+      "keywords": [
+        "Source Data"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "EMBOJ-2024-118442_Level 4 (Source Data)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6437-8879",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1d28e13e-f72e-4133-b959-a12f65fb8ea6"
+        }
+      ],
+      "email": "francesca.simonetti@dzne.de",
+      "name": "Francesca Simonetti"
+    },
+    {
+      "@id": "#1d28e13e-f72e-4133-b959-a12f65fb8ea6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Deutsches Zentrum für Neurodegenerative"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#758acc4a-90b8-4a11-80bc-4d0b4f2bdf5c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cells and human brain tissue",
+      "name": "Level 4 (Source Data)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8fdb727f-0aeb-4720-9d01-9bbfd01b9efd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Material and Methods section",
+      "labEquipment": "See Material and Methods section",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000366"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Level 4 (Source Data)"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000366",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRAP"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 672
+    }
+  ]
+}

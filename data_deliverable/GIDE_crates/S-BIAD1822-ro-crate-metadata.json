@@ -1,0 +1,250 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1822"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1822",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#65a302e5-bad6-4791-82bb-55ff5c66862b"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#420d7197-3fd6-4237-b099-606daf4f9f81"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4700-5971"
+        },
+        {
+          "@id": "#e6348d24-cd07-420a-8b71-2cbe039c55cb"
+        },
+        {
+          "@id": "#15e24d47-61cd-4e65-af9a-e40d5fae8401"
+        },
+        {
+          "@id": "#4530bb5f-aaae-4847-aa0a-fdab0cbebf51"
+        },
+        {
+          "@id": "#a62c730a-6a51-48ce-b47a-b4eade4877c8"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-01",
+      "description": "During ovariogenesis, more than two-thirds of germ cells are sacrificed to improve the quality of the remaining oocytes. However, the detailed mechanisms behind this selection process are not fully understood in mammals. Here, we developed a high-resolution, four-dimensional ovariogenesis imaging system to track the progression of oocyte fate determination in live mouse ovaries. Through this, we identified a cyst-independent oocyte phagocytosis mechanism that plays a key role in determining oocyte survival. We found that oocytes act as individual cells, rather than connected cyst structures, during ovarian reserve construction. In this process, dominant oocytes capture and absorb cell debris from sacrificed oocytes to enrich their cytoplasm and support their survival. Single-cell sequencing indicated that the sacrificed oocytes are regulated by autophagy. When oocyte sacrifice was inhibited using autophagy inhibitors, the pool of surviving oocytes expanded, but they failed to fully develop and contribute to fertility. Our study suggests that mammals have evolved a cyst-independent selection system to improve oocyte quality, which is essential for sustaining a long reproductive lifespan.",
+      "funder": [],
+      "identifier": "S-BIAD1822",
+      "keywords": [
+        "four-dimensional ovariogenesis imaging",
+        "oocyte",
+        "female reproductive reserve"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Cyst-independent oocyte phagocytosis builds the female reproductive reserve in mice",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1822/e31caacb-c9ed-4ad3-835a-f94853217c52/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#15e24d47-61cd-4e65-af9a-e40d5fae8401",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6940fcdd-aa3a-4180-a840-62ac3b0e28b7"
+        }
+      ],
+      "email": "bo_nanan@163.com",
+      "name": "Yingnan Bo"
+    },
+    {
+      "@id": "#4530bb5f-aaae-4847-aa0a-fdab0cbebf51",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6940fcdd-aa3a-4180-a840-62ac3b0e28b7"
+        }
+      ],
+      "email": "ajaxasjckx@163.com",
+      "name": "Kaixin Cheng"
+    },
+    {
+      "@id": "#a62c730a-6a51-48ce-b47a-b4eade4877c8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6940fcdd-aa3a-4180-a840-62ac3b0e28b7"
+        }
+      ],
+      "email": "zb20213020142@cau.edu.cn",
+      "name": "Ge Wang"
+    },
+    {
+      "@id": "#e6348d24-cd07-420a-8b71-2cbe039c55cb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6940fcdd-aa3a-4180-a840-62ac3b0e28b7"
+        }
+      ],
+      "email": "yanzhang1011@cau.edu.cn",
+      "name": "Yan Zhang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4700-5971",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6940fcdd-aa3a-4180-a840-62ac3b0e28b7"
+        }
+      ],
+      "email": "huazhang@cau.edu.cn",
+      "name": "Hua Zhang"
+    },
+    {
+      "@id": "#6940fcdd-aa3a-4180-a840-62ac3b0e28b7",
+      "@type": [
+        "Organization"
+      ],
+      "name": "China Agricultural University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#420d7197-3fd6-4237-b099-606daf4f9f81",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "fetal musculus ovaries - The Rosa26rbw/+ and mTmG mice (007576, Jackson Laboratory) were generated as previously reported (Zhang et al, 2012; Zheng et al, 2014), and Rosa26rbw/+ mice as a gift from Dr. Kui Liu. The Oct4-CreERT2 mice (Greder et al, 2012) were gifted from Dr. Ping Zheng at Yunnan Key Laboratory of Animal Reproduction, Kunming Institute of Zoology, Chinese Academy of Sciences, Kunming, China.",
+      "name": "Animals",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#65a302e5-bad6-4791-82bb-55ff5c66862b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "To observe the detailed behaviors and development of oocytes in ovaries during the perinatal period, images were acquired by an Andor Dragonfly 502 spinning-disc confocal microscope equipped with a 40× 1.3 NA, a sCMOS camera (Andor Zyla 4.2), and 488-nm (mG) and 568-nm (mT) lines of the Andor ILE system with a spinning-disc confocal scan head (Andor Dragonfly 502)(Zhang et al, 2021). The ovaries were acquired through Z-step mode with the index. In detail, images were acquired with laser 488-nm around 15 to 25%, laser 568-nm around 15 to 20%, exposure time 100 to 200 ms, and Z-step 0.7 μm for 30 to 50 μm by Fusion 2.1 software (https://andor.oxinst.com/products/dragonfly#fusion). To record the developmental dynamics of oocytes, 10-12 fields (308.72 x 308.72 μm2/field) in 4-6 ovaries were acquired at 1.5 interval hours for 162 continuous hours (Fig 2A-F, Appendix Fig S2, Fig 6A) or at 15 interval min for 12 hours staring from c-PD1 (Fig 3D and Appendix Fig S4B-E) or for capturing the static images at c-PD1, c-PD2 or c-PD4 (Appendix Fig S7A-C and Fig EV4A). Then, the z-stack images were merged and analyzed by Imaris software (https://imaris.oxinst.com) to reconstitute 3D or 4D live oocyte developmental images.",
+      "labEquipment": "Andor Dragonfly 502",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "High-resolution 4D ovaries live-cell long term imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 94
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2659059723
+    }
+  ]
+}

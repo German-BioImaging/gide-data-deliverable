@@ -1,0 +1,298 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000410/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000410/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000410",
+      "name": "Animal Brain Collection",
+      "description": "The variation in the structure of animal brain greatly depends on the genetic and molecular makeup of the neuronal system as well as the natural environment. The passage of genes during evolution facilitates the specification of unique neural pathways optimized for the adaptation of each animal to their specific environment. These genetic changes are manifested in the brain through a sensory-dependent mechanism, wherein the changes in brain morphology relates to neuronal processing of information that becomes optimized for each species. For instance, neuronal length, the abundance of functional or structural neurons, and neuronal positioning contribute to the alteration of the brain morphology. When discussing brain evolution, understanding the morphological properties of the brains of various species is crucial. However, the comparative anatomical description of specific animal brain morphologies is scarce. Specifically, descriptions of certain cellular structures and brain cellular architectures are limit, with some exceptions for a few animal models. To bridge this knowledge gap, we collected post-mortem brain samples of vertebrates, mainly small amniotes, and performed magnetic resonance imaging and histological staining. Herein, we report a new freely accessible database called “Animal Brain Collection (ABC).” Using the ABC database, researchers can compare the cellular and tissue architectures of the brain and neural circuit formation among interested species. Therefore, the ABC database will be an essential resource for brain evolution research in the future.",
+      "datePublished": "2025-07-12",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Brain/anatomy & histology[major]",
+        "Brain/diagnostic imaging[major]",
+        "Magnetic Resonance Imaging[major]",
+        "Vertebrates/anatomy & histology[major]",
+        "Databases, Factual[major]",
+        "Biological Evolution"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41597-025-05540-5"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "#biosample-5"
+        },
+        {
+          "@id": "#biosample-6"
+        },
+        {
+          "@id": "#biosample-7"
+        },
+        {
+          "@id": "#biosample-8"
+        },
+        {
+          "@id": "#biosample-9"
+        },
+        {
+          "@id": "#biosample-10"
+        },
+        {
+          "@id": "#biosample-11"
+        },
+        {
+          "@id": "#biosample-12"
+        },
+        {
+          "@id": "#biosample-13"
+        },
+        {
+          "@id": "#biosample-14"
+        },
+        {
+          "@id": "#biosample-15"
+        },
+        {
+          "@id": "#biosample-16"
+        },
+        {
+          "@id": "#biosample-17"
+        },
+        {
+          "@id": "#biosample-18"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takuma Kumamoto",
+      "email": "kumamoto-tk@igakuken.or.jp",
+      "description": "Organization: Tokyo Metoropollitan Institute of Medical Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00vya8493"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/00vya8493",
+      "@type": "Organization",
+      "name": "Tokyo Metoropollitan Institute of Medical Science"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41597-025-05540-5",
+      "@type": "ScholarlyArticle",
+      "name": "A Cross-Species Brain Magnetic Resonance Imaging and Histology Database of Vertebrates.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Lethenteron camtschaticum"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Himantopus mexicanus"
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Vanellus armatus"
+    },
+    {
+      "@id": "#biosample-4",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Gallus gallus"
+    },
+    {
+      "@id": "#biosample-5",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Pelodiscus sinensis"
+    },
+    {
+      "@id": "#biosample-6",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Rollulus rouloul"
+    },
+    {
+      "@id": "#biosample-7",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Rousettus aegyptiacus"
+    },
+    {
+      "@id": "#biosample-8",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Pygoscelis papua"
+    },
+    {
+      "@id": "#biosample-9",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Eptatretus burgeri"
+    },
+    {
+      "@id": "#biosample-10",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Sciurus lis"
+    },
+    {
+      "@id": "#biosample-11",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Apodemus speciosus"
+    },
+    {
+      "@id": "#biosample-12",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Paroedura picta"
+    },
+    {
+      "@id": "#biosample-13",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Anas platyrhynchos"
+    },
+    {
+      "@id": "#biosample-14",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Aix galericulata"
+    },
+    {
+      "@id": "#biosample-15",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Callithrix jacchus"
+    },
+    {
+      "@id": "#biosample-16",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Tockus erythrorhynchus"
+    },
+    {
+      "@id": "#biosample-17",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Oryctolagus cuniculus"
+    },
+    {
+      "@id": "#biosample-18",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Ramphastos toco"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 3644723200,
+      "description": "3.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 118,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

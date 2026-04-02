@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2338"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2338",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b7add6c2-8584-46ac-a687-aa3c4ca18352"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9c200c9e-d06d-4635-b91e-d1513afa0163"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1068-2549"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2394-5387"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-10",
+      "description": "This dataset provides a comprehensive, time-resolved view of autophagy regulation across thousands of genetic backgrounds, enabling deep learning, feature extraction, and predictive modeling of autophagy dynamics. It serves as a valuable resource for exploring genome-wide influences on autophagy, identifying novel regulatory mechanisms, and enhancing our understanding of cellular responses to nutrient fluctuations.\n\nThis dataset consists of high-content fluorescence microscopy images capturing the genome-wide regulation of autophagy in Saccharomyces cerevisiae. The dataset includes an arrayed library of 4,760 deletion mutants and 1,159 Decreased Abundance by mRNA Perturbation (DAmP) mutants, all expressing the autophagosome marker mNeonGreen-Atg8 and the vacuole-resident protease Pep4-mCherry. Mutants were grown to log-phase in nitrogen-containing medium (+N) and imaged every hour for 12 hours during nitrogen starvation (-N), followed by 7 hours after nitrogen replenishment (+N), resulting in a total of 20 time points per mutant. The dataset is systematically organized into libraries: KO, DAmP, Mix, Rec, Rep and Val plates, each serving specific experimental needs such as validation, reproducibility, and treatment response variation.\n\nEach image in the dataset is categorized by well position (row + column), time point (starvation or replenishment), and image within the well (s1, s2, s3). Additionally, images are captured across three channels: w1 for brightfield (BF), w2 for green fluorescence (mNeonGreen-Atg8), and w3 for red fluorescence (Pep4-mCherry). Each array includes triplicate control wells of wild-type (WT) cells and atg1Δ mutants, which are deficient in autophagy induction, and vam6Δ which display defects in Gtr1-dependent TORC1 activation and vacuole fusion, leading to an accumulation of uncleared autophagosomes.\n\nThe corresponding plate maps detailing strain distributions are provided in DRYAD.\n\nThis dataset provides a comprehensive, time-resolved view of autophagy regulation across thousands of genetic backgrounds, enabling deep learning, feature extraction, and predictive modeling of autophagy dynamics. It serves as a valuable resource for exploring genome-wide influences on autophagy, identifying novel regulatory mechanisms, and enhancing our understanding of cellular responses to nutrient fluctuations.",
+      "funder": [],
+      "identifier": "S-BIAD2338",
+      "keywords": [
+        "Autophagy, genome-wide profiling, nitrogen starvation, nitrogen replenishment, nutrient sensing, high-content imaging, deep learning, functional genomics, dynamic cellular processes, systems biology."
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Genome-wide profiling of autophagy in Saccharomyces cerevisiae\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2338/ae5a6074-3f23-4c05-87c6-2235e2c2233d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1068-2549",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00j9c2840"
+        }
+      ],
+      "email": "nathac@uio.no",
+      "name": "Nathalia Chica"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2394-5387",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00j9c2840"
+        }
+      ],
+      "email": "j.m.enserink@ibv.uio.no",
+      "name": "Jorrit M. Enserink "
+    },
+    {
+      "@id": "https://ror.org/00j9c2840",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Oslo University Hospital"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#9c200c9e-d06d-4635-b91e-d1513afa0163",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Haploid cells.",
+      "name": "Saccharomyces cerevisiae ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#b7add6c2-8584-46ac-a687-aa3c4ca18352",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The images were acquired using automated acquisition in wide-field, utilizing the Nikon Plan Apochromat 60x/0.95 Air objective coupled to a 16-bit 4MPix scientific CMOS camera and a laser-based autofocusing unit. Image acquisition was controlled by the ImageXpress Analysis Software (Molecular Devices). Live cell imaging was conducted at 30 °C ± 2 °C. Fluorescence signals were captured using specific filter sets for FITC and TexRed, with exposure times of 200 ms and 800 ms, respectively. For transmitted light (TL) images, an exposure time of 10 ms was used. The same cells were imaged every hour for 19 hours with 2-3 images per well by selecting adjacent imaging sites near the center of the well and employing modus focus on the plate and bottom to maintain the same plane.\n",
+      "labEquipment": "ImageXpress® Micro Confocal microscope (Molecular deivces)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "High-content microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 940517
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7880171917321
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000302/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000302/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000302",
+      "name": "Nuclear shape of excitatory neurons in the visual cortex upon visual stimulation of young and aged mice",
+      "description": "We performed live imaging of the nuclear shape of the upper layer neurons of the visual cortex in young and aged NexCre;SUN1-GFP mice in vivo with two-photon microscopy before, during, and after visual light exposure following the prior preparations of craniotomy on the visual cortex for time-lapse imaging. NexCre;SUN1-GFP mice expressed the GFP-fused SUN1 protein, a protein on the outer nuclear membrane, in the excitatory neurons under the control of the NeuroD6/Nex gene locus.\r\nKeywords; time-lapse imaging, two-photon microscopy, nucleus, excitatory neuron, visual cortex, visual stimulation, aging.",
+      "datePublished": "2023-06-09",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1111/acel.13925"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2022.08.22.504704"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yusuke Kishi",
+      "email": "ykisi@iqb.u-tokyo.ac.jp",
+      "description": "Organization: The University of Tokyo; Department: Institute for Quantitative Biosciences; Laboratory: Laboratory of Molecular Neurobiology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1111/acel.13925",
+      "@type": "ScholarlyArticle",
+      "name": "Age-associated reduction of nuclear shape dynamics in excitatory neurons of the visual cortex.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2022.08.22.504704",
+      "@type": "ScholarlyArticle",
+      "name": "Age-associated reduction of nuclear shape dynamics in excitatory neurons of the visual cortex",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 2655862784,
+      "description": "2.7 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 46,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,678 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1478"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1478",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3f868fab-e327-4bbe-9463-fd311a99313f"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4f383a8e-d4bc-4e3f-aaf2-10cec5c524f8"
+        },
+        {
+          "@id": "obo:NCBITaxon_7157"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3444-7380"
+        },
+        {
+          "@id": "#14641f6f-be1d-429c-8141-e278ab0a1892"
+        },
+        {
+          "@id": "#7a0bc1ce-a599-40e0-8f7f-9a30ed230635"
+        },
+        {
+          "@id": "#e12c4ed1-083f-4c5a-b9a4-02acf4f20eee"
+        },
+        {
+          "@id": "#80d3c3ce-0f18-40f2-8c46-97b30852f8ab"
+        },
+        {
+          "@id": "#abc93314-04b3-4e87-99bc-a99793c4fcb2"
+        },
+        {
+          "@id": "#fb7b6763-8589-47d4-b92a-85a6635e7c82"
+        },
+        {
+          "@id": "#24a8b667-50a0-4de3-b694-4ec4c52b1b2a"
+        },
+        {
+          "@id": "#ab8653c9-f0e9-4398-b99a-5afb4d197b36"
+        },
+        {
+          "@id": "#e59fb404-56eb-4b4f-b598-cb407613851c"
+        },
+        {
+          "@id": "#8dc79d5f-dd20-42ac-8837-fb657616eb3f"
+        },
+        {
+          "@id": "#14138752-aacc-4724-a5f8-d68a96efe30b"
+        },
+        {
+          "@id": "#5937eda1-8e94-406e-b4f6-34b09181e861"
+        },
+        {
+          "@id": "#cb520b4e-ab47-4fd4-910a-8ee7a159bb87"
+        },
+        {
+          "@id": "#b5f93e16-c1ef-4eb6-bb00-4f23702abca6"
+        },
+        {
+          "@id": "#04a5fe89-206b-44cd-8c97-09e3e2026f3d"
+        },
+        {
+          "@id": "#a79374fd-1289-4776-b05a-92ba80b50b9a"
+        },
+        {
+          "@id": "#3399fea2-f996-4a96-b02a-99cd69977f01"
+        },
+        {
+          "@id": "#cfdef217-d663-4b02-95e5-765fa99e5f97"
+        },
+        {
+          "@id": "#8351c9f2-7d00-40a4-83b8-9b044c4a91a4"
+        },
+        {
+          "@id": "#64ce261f-2813-480c-8755-24955aec31d5"
+        },
+        {
+          "@id": "#35f21150-1186-4072-9f6e-f6898ec51eb7"
+        },
+        {
+          "@id": "#ce185bda-121e-494b-9fd9-c7f71fbde378"
+        },
+        {
+          "@id": "#70b4ff2c-1b3f-4b70-aa75-070264f7257c"
+        },
+        {
+          "@id": "#c94cc2ac-1daa-4bfa-839a-85eeb10a7dc0"
+        },
+        {
+          "@id": "#ad4e5eb8-3034-4507-8b50-a4e732c4b7bb"
+        },
+        {
+          "@id": "#88b6b40d-8c69-4470-9d4c-075099be8db8"
+        },
+        {
+          "@id": "#11d3945b-e7f2-4b65-a2a0-3f812d2eadbd"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-12",
+      "description": "This dataset contains 18,104 images of mosquito wings collected from 10,500 mosquito specimens, representing 72 distinct taxa. Each image is accompanied by extensive metadata, accessible in the 00_metadata.* files. The dataset aims to facilitate research in wing geometric morphometry and support the development of machine learning models for advancing vector surveillance and research. It is a retrospective collection, harmonizing contributions from 22 research projects conducted between 2008 and 2024.\n\nThe detailed metadata on each sample and image is available in the 00_metadata.*. This table below will provide an overview of the scope and range of the collected metadata. Due to the retrospective nature of the dataset, images may vary significantly in aspects such as lighting, background, and capture conditions across different projects. Although extensive efforts were made to ensure comprehensive metadata, some entries remain incomplete. Missing metadata entries are marked as \"MISSING VALUE,\" while fields intentionally left blank are indicated with \"-\". For the full description of the dataset we refer to the associated publication: https://www.biorxiv.org/content/10.1101/2024.11.13.623340v1\n\nThe dataset will be regularly updated with new image data as additional mosquito and dipteran wing images become available. Contributions from the scientific community are welcome to further enrich this collection. Interested researchers are encouraged to contact the authors to discuss potential collaboration.\n\nTo download the complete dataset we advice you to use ftp as the size of the dataset does make it unfeasible to download via browser. To download the complete dataset via terminal please follow the instructions below. \n\nFor Mac Users:\n1. Install wget (if not installed)  \nOpen the Terminal and run: brew install wget\nIf you don't have Homebrew installed, first install it using:  \n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\n2. Download the dataset  \nRun the following command in the Terminal:  \nwget -r -np -nH --cut-dirs=5 --ftp-user=anonymous --ftp-password=anonymous -P ~/Documents/WingImages ftp://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/478/S-BIAD1478/Files/Wings/Zipped/\nThis will download the dataset to the `WingImages` folder in your Documents.\n\nFor Windows Users:\n1. Install `wget`  \nDownload and install GnuWin32 wget: http://gnuwin32.sourceforge.net/packages/wget.htm  \n\n2. Download the dataset  \nOpen Command Prompt (Press `Win + R`, type `cmd`, and press Enter).\nRun the following command:  \nwget -r -np -nH --cut-dirs=5 --ftp-user=anonymous --ftp-password=anonymous -P C:\\Users\\YourUsername\\Documents\\MosquitoWingImages ftp://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/478/S-BIAD1478/Files/ Wings/Zipped/\nReplace `YourUsername` with your actual Windows username.\n\nThis will download the dataset to\nC:\\Users\\YourUsername\\Documents\\WingImages",
+      "funder": [],
+      "identifier": "S-BIAD1478",
+      "keywords": [
+        "Mosquito",
+        "Culicidae",
+        "Wing",
+        "Landmark",
+        "Morphology",
+        "Morphometric Analysis"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Comprehensive Mosquito Wing Image Repository for Advancing Research on Geometric Morphometric- and AI-Based Identification ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1478/bee8bca4-ff4e-452e-b903-7ae05db54315/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#04a5fe89-206b-44cd-8c97-09e3e2026f3d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6f4b3ecf-d281-44b3-97fc-fa2fa65e8ccc"
+        }
+      ],
+      "name": "Ellen Kiel"
+    },
+    {
+      "@id": "#11d3945b-e7f2-4b65-a2a0-3f812d2eadbd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Renke Lühken"
+    },
+    {
+      "@id": "#14138752-aacc-4724-a5f8-d68a96efe30b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#18e27443-537c-449b-b18b-5de3bda91fba"
+        }
+      ],
+      "name": "Stephanie Jansen"
+    },
+    {
+      "@id": "#14641f6f-be1d-429c-8141-e278ab0a1892",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Eric Agboli"
+    },
+    {
+      "@id": "#24a8b667-50a0-4de3-b694-4ec4c52b1b2a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b5155d10-c514-4934-ab91-c23c780518a9"
+        }
+      ],
+      "name": "Albert Eisenbarth"
+    },
+    {
+      "@id": "#3399fea2-f996-4a96-b02a-99cd69977f01",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5857951e-2e7a-49fd-aa25-c1a34989a8cf"
+        }
+      ],
+      "name": "Wolf-Peter Pfitzner"
+    },
+    {
+      "@id": "#35f21150-1186-4072-9f6e-f6898ec51eb7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#41c25c94-181d-4680-abe2-9127478d8a63"
+        }
+      ],
+      "name": "Artin Tokatlian"
+    },
+    {
+      "@id": "#5937eda1-8e94-406e-b4f6-34b09181e861",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Artur Jöst"
+    },
+    {
+      "@id": "#64ce261f-2813-480c-8755-24955aec31d5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Tatiana Sulesco"
+    },
+    {
+      "@id": "#70b4ff2c-1b3f-4b70-aa75-070264f7257c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Carmen Villacañas de Castro"
+    },
+    {
+      "@id": "#7a0bc1ce-a599-40e0-8f7f-9a30ed230635",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#199e483a-4657-4189-8a4b-09339d5cd39f"
+        }
+      ],
+      "name": "Gabriela Azambuja Garcia "
+    },
+    {
+      "@id": "#80d3c3ce-0f18-40f2-8c46-97b30852f8ab",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#41c25c94-181d-4680-abe2-9127478d8a63"
+        }
+      ],
+      "name": "Norbert Becker"
+    },
+    {
+      "@id": "#8351c9f2-7d00-40a4-83b8-9b044c4a91a4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#18e27443-537c-449b-b18b-5de3bda91fba"
+        }
+      ],
+      "name": "Jonas Schmidt-Chanasit"
+    },
+    {
+      "@id": "#88b6b40d-8c69-4470-9d4c-075099be8db8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Felix Gregor Sauer"
+    },
+    {
+      "@id": "#8dc79d5f-dd20-42ac-8837-fb657616eb3f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Anna Heitmann"
+    },
+    {
+      "@id": "#a79374fd-1289-4776-b05a-92ba80b50b9a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Alexandra Meyer"
+    },
+    {
+      "@id": "#ab8653c9-f0e9-4398-b99a-5afb4d197b36",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#39217cae-de40-4b4c-9b71-6865de0233a8"
+        }
+      ],
+      "name": "Rafael Maciel de Freitas"
+    },
+    {
+      "@id": "#abc93314-04b3-4e87-99bc-a99793c4fcb2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#721d6efb-0340-4564-822e-d33a657647d0"
+        }
+      ],
+      "name": "Do Huy Loc"
+    },
+    {
+      "@id": "#ad4e5eb8-3034-4507-8b50-a4e732c4b7bb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#24d5163a-6f85-4690-88dd-9afdf62483be"
+        }
+      ],
+      "name": "Julien Zahouli"
+    },
+    {
+      "@id": "#b5f93e16-c1ef-4eb6-bb00-4f23702abca6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6f4b3ecf-d281-44b3-97fc-fa2fa65e8ccc"
+        }
+      ],
+      "name": "Jacqueline Eguchi"
+    },
+    {
+      "@id": "#c94cc2ac-1daa-4bfa-839a-85eeb10a7dc0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Magdalena Laura Wehmeyer"
+    },
+    {
+      "@id": "#cb520b4e-ab47-4fd4-910a-8ee7a159bb87",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Hanna Jöst"
+    },
+    {
+      "@id": "#ce185bda-121e-494b-9fd9-c7f71fbde378",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4b86e21b-a447-4b07-95b0-0582fccde809"
+        }
+      ],
+      "name": " Thirumalaisamy P. Velavan"
+    },
+    {
+      "@id": "#cfdef217-d663-4b02-95e5-765fa99e5f97",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Joy Saathoff"
+    },
+    {
+      "@id": "#e12c4ed1-083f-4c5a-b9a4-02acf4f20eee",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#79914c99-7550-4b3c-87b5-f0766c97d8e0"
+        }
+      ],
+      "name": "Athanase Badolo"
+    },
+    {
+      "@id": "#e59fb404-56eb-4b4f-b598-cb407613851c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#50249b22-eb32-450b-b516-ed997b31c80f"
+        }
+      ],
+      "name": "Ange Gatien Doumna-Ndalembouly"
+    },
+    {
+      "@id": "#fb7b6763-8589-47d4-b92a-85a6635e7c82",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "name": "Tarja Viviane Dworrak"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3444-7380",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46"
+        }
+      ],
+      "email": "kristopher.nolte@bnitm.de",
+      "name": "Kristopher Nolte"
+    },
+    {
+      "@id": "#18e27443-537c-449b-b18b-5de3bda91fba",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universität Hamburg"
+    },
+    {
+      "@id": "#199e483a-4657-4189-8a4b-09339d5cd39f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Fundação Oswaldo Cruz"
+    },
+    {
+      "@id": "#24d5163a-6f85-4690-88dd-9afdf62483be",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre Suisse De Recherches Scientifiques En Côte D'Ivoire"
+    },
+    {
+      "@id": "#39217cae-de40-4b4c-9b71-6865de0233a8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Instituto Nacional de Ciência e Tecnologia em Entomologia Molecular"
+    },
+    {
+      "@id": "#41c25c94-181d-4680-abe2-9127478d8a63",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute for Dipterology"
+    },
+    {
+      "@id": "#4b86e21b-a447-4b07-95b0-0582fccde809",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Duy Tan University"
+    },
+    {
+      "@id": "#50249b22-eb32-450b-b516-ed997b31c80f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre de Recherche Médicales de Lambaréné"
+    },
+    {
+      "@id": "#5857951e-2e7a-49fd-aa25-c1a34989a8cf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Kommunale Aktionsgemeinschaft zur Bekämpfung der Schnackenplage e.V."
+    },
+    {
+      "@id": "#6f4b3ecf-d281-44b3-97fc-fa2fa65e8ccc",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Carl von Ossietzky Universität Oldenburg"
+    },
+    {
+      "@id": "#721d6efb-0340-4564-822e-d33a657647d0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universitätsklinikum Tübingen"
+    },
+    {
+      "@id": "#79914c99-7550-4b3c-87b5-f0766c97d8e0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université Joseph Ki-Zerbo"
+    },
+    {
+      "@id": "#b5155d10-c514-4934-ab91-c23c780518a9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Bundeswehr Hospital Hamburg"
+    },
+    {
+      "@id": "#e4af46d3-32f8-4e2a-b9ca-0a654af83d46",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Bernhard Nocht Institute for Tropical Medicine"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7157",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Culicidae"
+    },
+    {
+      "@id": "#4f383a8e-d4bc-4e3f-aaf2-10cec5c524f8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Culicidae Wing mounted on glas slides in Euparal",
+      "name": "Mosquito Wing",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7157"
+      }
+    },
+    {
+      "@id": "#3f868fab-e327-4bbe-9463-fd311a99313f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The images were captured in TIF format, with resolutions of 3024x3024 for smartphone images, 3088x2076 for Olympus DP23 images and 2560x1920 for images captured using the Leica M205c. Imaging settings were not standardized and thus varied between image collection projects in parameters not further recorded, e.g. exposure time or lighting conditions.",
+      "labEquipment": "Olympus SZ61 (Olympus, Tokyo, Japan) in conjunction with the Olympus DP23 camera (Olympus, Tokyo, Japan),  Leica M205c microscope (Leica Microsystems, Wetzlar, Germany),  iPhone SE 3rd generation (Apple Inc., Cupertino, USA) in combination with a macro-lens taken at 24x magnification (Apexel-24XMH, Apexel, Shenzhen, China). Refer to the file list for detailed information in the image capture device.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "General Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 18116
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 490944316778
+    }
+  ]
+}

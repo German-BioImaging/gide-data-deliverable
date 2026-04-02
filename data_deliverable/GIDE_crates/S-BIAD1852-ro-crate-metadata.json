@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1852"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1852",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#acc81061-c651-44a7-81f2-28d7d19dc520"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#495ed8c5-ea00-4a0b-9e81-c254b679cfdc"
+        },
+        {
+          "@id": "#bc45e4d9-bae1-41b0-9056-cb0941a83308"
+        },
+        {
+          "@id": "obo:NCBITaxon_4530"
+        },
+        {
+          "@id": "obo:NCBITaxon_4565"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3941-576X"
+        },
+        {
+          "@id": "#d34efda7-9e7c-49b1-9eab-e1f360b95889"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-18",
+      "description": "Time-lapse images of the seed germination procedure for 21 wheat genotypes, 12 barley genotypes, and 6 rice genotypes. ",
+      "funder": [],
+      "identifier": "S-BIAD1852",
+      "keywords": [
+        "seed germination",
+        "wheat",
+        "rice",
+        "barley"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "SeedGerm-VIG Image Series",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#d34efda7-9e7c-49b1-9eab-e1f360b95889",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/010jx2260"
+        }
+      ],
+      "email": "Ji.Zhou@niab.com",
+      "name": "Ji Zhou"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3941-576X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9b3b51fb-712a-408d-bb28-e693d25abe1c"
+        }
+      ],
+      "email": "daijie@stu.njau.edu.cn",
+      "name": "Jie Dai"
+    },
+    {
+      "@id": "#9b3b51fb-712a-408d-bb28-e693d25abe1c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Nanjing Agricultural University"
+    },
+    {
+      "@id": "https://ror.org/010jx2260",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National Institute of Agricultural Botany"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4530",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Oryza sativa"
+    },
+    {
+      "@id": "obo:NCBITaxon_4565",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Triticum aestivum"
+    },
+    {
+      "@id": "#495ed8c5-ea00-4a0b-9e81-c254b679cfdc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Triticum aestivum seed germination",
+      "name": "Wheat seed germination dataset",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4565"
+      }
+    },
+    {
+      "@id": "#bc45e4d9-bae1-41b0-9056-cb0941a83308",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Oryza sativa seeds germination",
+      "name": "Rice seed germination dataset",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4530"
+      }
+    },
+    {
+      "@id": "#acc81061-c651-44a7-81f2-28d7d19dc520",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Two types of low-cost SeedGerm devices were built for time-lapse imaging: (1) a small translucent plastic germination box (dimensions: 31 × 39 × 48 cm) mounted with fixed second-hand Android smartphones (equipped with Sony IMX278 or IMX319 image sensors; a maximum of 3,840×2,160 pixels per image, roughly 5,000 pixels per seed), and (2) a big germination box (dimensions: 31 × 44 × 71cm) mounted with two types of Raspberry Pi cameras (i.e. Sony IMX477 or IMX219, with a maximum of 3,280×2,464 pixels per image; roughly 5,500 pixels per seeds). Different RGB sensors acquired HD images with different resolutions for a flexible hardware design. Seed germination experiments were carried out on blue (Bärenstein, Germany) and black (Crown Supplies, UK) seed testing paper under an ambient temperature of 20-22 °C, for 4-7 days depending on the duration of the cold treatments (i.e. 24, 48 and 72 hours). Time-lapse imaging was conducted at regular intervals of one hour, covering from imbibition to seedling emergence, after chloroplast biogenesis when at least 10 mm green seedlings were visible.",
+      "labEquipment": "SeedGerm imaging devices",
+      "measurementTechnique": [],
+      "name": "Time-lapse imaging with different SeedGerm settings"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3430
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8562072813
+    }
+  ]
+}

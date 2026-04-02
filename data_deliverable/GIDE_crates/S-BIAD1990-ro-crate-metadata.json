@@ -1,0 +1,356 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1990"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1990",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4d072221-8775-4735-bcab-706b5a9bbcc1"
+        },
+        {
+          "@id": "#e0b959eb-993c-45d6-bbb4-a0f681cb0b67"
+        },
+        {
+          "@id": "#2f623587-df7a-414d-80c2-bf4ab26ca5c6"
+        },
+        {
+          "@id": "#8248f3e4-c5a8-4238-884c-067a4ba7b204"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#183a6466-dd7c-41ee-bd71-988204cac5c1"
+        },
+        {
+          "@id": "#cc927d31-fe66-4d3a-a037-810c5e9d5d35"
+        },
+        {
+          "@id": "#84d9cdf9-05b4-4dd4-b71c-c127a4739b43"
+        },
+        {
+          "@id": "#e0ae8ed4-fd90-4e5b-ac9a-0adae5f86d64"
+        },
+        {
+          "@id": "#d1fe056e-e161-4a3c-a774-034f7cd27966"
+        },
+        {
+          "@id": "#7c0f3a4a-c6ff-4b98-8976-52a46247db92"
+        },
+        {
+          "@id": "#75950d34-69ee-4628-9b50-55303c88d1c2"
+        },
+        {
+          "@id": "#28581595-2155-4d58-a397-f8ff3d05fcb2"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3393-4075"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-27",
+      "description": "Recent advances in isolating cells based on visual phenotypes have transformed our ability to identify the mechanisms and consequences of complex traits. Micronucleus (MN) formation is a frequent outcome of genome instability, triggers extensive changes in genome structure and signaling coincident with MN rupture, and is almost exclusively defined by visual analysis. Automated MN detection in microscopy images has proved challenging, limiting discovery of the mechanisms and consequences of MN. In this study we describe two new MN segmentation modules: a rapid model for classifying micronucleated cells and their rupture status (VCS MN), and a robust model for accurate MN segmentation (MNFinder) from a broad range of cell lines. As proof-of-concept, we define the transcriptome of non-transformed human cells with intact or ruptured MN after chromosome missegregation by combining VCS MN with photoactivation-based cell isolation and RNASeq. Surprisingly, we find that neither MN formation nor rupture triggers a strong unique transcriptional response. Instead, transcriptional changes appear correlated with small increases in aneuploidy in these cell classes. Our MN segmentation modules overcome a significant challenge with reproducible MN quantification, and, joined with visual cell sorting, enable the application of powerful functional genomics assays to a wide-range of questions in MN biology.",
+      "funder": [],
+      "identifier": "S-BIAD1990",
+      "keywords": [
+        "Micronuclei",
+        "Neural net",
+        " nuclear membrane rupture",
+        "image segmentation",
+        "aneuploidy",
+        "transcriptome"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Image-based identification and isolation of micronucleated cells to dissect cellular consequences ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3393-4075",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cbfb9899-4db5-42b2-9a3f-efe4655e16d3"
+        }
+      ],
+      "email": "ehatch@fredhutch.org",
+      "name": "Emily Hatch"
+    },
+    {
+      "@id": "#cbfb9899-4db5-42b2-9a3f-efe4655e16d3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Fred Hutch Cancer Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#183a6466-dd7c-41ee-bd71-988204cac5c1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "hTERT-RPE1 cells, human",
+      "name": "ATF3 expression analysis",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#28581595-2155-4d58-a397-f8ff3d05fcb2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "hTERT RPE-1 cells",
+      "name": "RPE1 Dendra H2B for VCS",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#75950d34-69ee-4628-9b50-55303c88d1c2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "hTERT-RPE1 cells, human",
+      "name": "CellTrace VCS experiment",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7c0f3a4a-c6ff-4b98-8976-52a46247db92",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "hTERT RPE-1 cells",
+      "name": "RPE1 Dendra H2B for VCS",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#84d9cdf9-05b4-4dd4-b71c-c127a4739b43",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "hTERT-RPE1 cells, human",
+      "name": "EGR1 expression analysis",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#cc927d31-fe66-4d3a-a037-810c5e9d5d35",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "hTERT-RPE1 cells, human",
+      "name": "Aneuploidy frequency after Mps1 inhibition",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d1fe056e-e161-4a3c-a774-034f7cd27966",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U2OS human cancer cells",
+      "name": "U2OS Dendra H2B for VCS",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e0ae8ed4-fd90-4e5b-ac9a-0adae5f86d64",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "hTERT-RPE1 cells, human",
+      "name": "MN centromere enumeration",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2f623587-df7a-414d-80c2-bf4ab26ca5c6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Camera binning was set to 2 and single section images were acquired with a multipoint imaging script for 6-well plates (Hasle et al., 2020).\nInitial images were acquired for Dendra2-Green and H2B-emiRFP703. \"Post\" and \"end\" images were acquired for both these channels and Dendra2-Red.",
+      "labEquipment": "Live cell imaging was performed on a Leica DMi8 widefield fluorescence microscope with Adaptive Focus outfitted with an i8 incubation chamber (Leica) with temperature (PeCon: TempController 2000-1) and gas control (Oko) and a Mosaic 3 Digital Micromirror (Andor). Images were acquired with a 20x 0.8 NA apochromatic objective (Leica) using an iXon Ultra 888 EMCCD camera (Andor) and MetaMorph v7.1.0.1.161 (Molecular Devices). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "VCS acquisition"
+    },
+    {
+      "@id": "#4d072221-8775-4735-bcab-706b5a9bbcc1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Multichannel images were acquired using the tilescan function in conjunction with z-stacks of 0.44 um step size to capture the entire volume of nuclei and micronuclei across the field of view. Tilescan areas ranged from 4x4 to 20x20 with a 10% overlap and focal positioning was maintained using the focus map function.\n\nFor EGR1 and ATF3: images were acquired for 647 (gH2AX), 568 (2xRFP-NLS), 488 (EGR1 or ATF3), and 405 (DAPI) in that order.\nFor XCE probes: images were acquired for 568 (XCE-Orange), 488 (H3K27Ac), and 405 (DAPI) in that order. ",
+      "labEquipment": "Leica DMi8 laser scanning confocal microscope using the Leica Application Suite (LAS X) software and a 40x/1.3 NA Oil APO CS objective (Leica).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal tile scan"
+    },
+    {
+      "@id": "#8248f3e4-c5a8-4238-884c-067a4ba7b204",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Camera binning was set to 2 and multichannel single section images were acquired. Five fields per experiment were imaged every hour for 11 hours. \nImages were acquired for Dendra2-Green, H2B-emiRFP703, and Dendra2-Red.",
+      "labEquipment": "Leica DMi8 widefield fluorescence microscope with Adaptive Focus outfitted with an i8 incubation chamber (Leica) with temperature (PeCon: TempController 2000-1) and gas control (Oko) and a Mosaic 3 Digital Micromirror (Andor). Images were acquired with a 20x 0.8 NA apochromatic objective (Leica) using an iXon Ultra 888 EMCCD camera (Andor) and MetaMorph v7.1.0.1.161 (Molecular Devices). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Time lapse imaging"
+    },
+    {
+      "@id": "#e0b959eb-993c-45d6-bbb4-a0f681cb0b67",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired as a multichannel z-stack using a 0.44 um step size with a step number sufficient to capture the entire nucleus and MN volume.\nFor centromere enumeration: coverslips were imaged on 405 (DAPI), 488 (H3K27Ac), and 647 (CENPB-Cy5).",
+      "labEquipment": "Coverslips were imaged on a Leica DMi8 laser scanning confocal microscope using the Leica Application Suite (LAS X) software and a 40x/1.3 NA Oil APO CS objective (Leica).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Leica LSM - 40x"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1792
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8124319487
+    }
+  ]
+}

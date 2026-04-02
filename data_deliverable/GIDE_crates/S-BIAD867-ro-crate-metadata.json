@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD867"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD867",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#613eef1f-29cc-4d2d-a107-7ce66e9de9fa"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#22b0e62a-4e79-4ca0-bb7f-bebe0f1e360e"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#e53f96a2-eb2c-437b-b1f7-34883ea445bd"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-09-01",
+      "description": "OME-NGFF converted study from idr0004.  To investigate the DNA damage response, we undertook a genome-wide study in Saccharomyces cerevisiae and identified 86 gene deletions that lead to increased levels of spontaneous Rad52 foci in proliferating diploid cells. More than half of the genes are conserved across species ranging from yeast to humans. Along with genes involved in DNA replication, repair, and chromatin remodeling, we found 22 previously uncharacterized open reading frames. Analysis of recombination rates and synthetic genetic interactions with rad52Delta suggests that multiple mechanisms are responsible for elevated levels of spontaneous Rad52 foci, including increased production of recombinogenic lesions, sister chromatid recombination defects, and improper focus assembly/disassembly. Our cell biological approach demonstrates the diversity of processes that converge on homologous recombination, protect against spontaneous DNA damage, and facilitate efficient repair.",
+      "funder": [],
+      "identifier": "S-BIAD867",
+      "keywords": [
+        "Rad52",
+        "DNA damage",
+        "Homologous recombination"
+      ],
+      "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "name": "Genome-wide analysis of Rad52 foci reveals diverse mechanisms impacting recombination (OME-NGFF)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#e53f96a2-eb2c-437b-b1f7-34883ea445bd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "email": "idr-support@openmicroscopy.org",
+      "name": "Image Data Resource (IDR)"
+    },
+    {
+      "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#22b0e62a-4e79-4ca0-bb7f-bebe0f1e360e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Yeast Strains",
+      "name": "Yeast Strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#613eef1f-29cc-4d2d-a107-7ce66e9de9fa",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Examination of Rad52-YFP focus levels by microscopy was performed as previously described [66]. Briefly, cells were grown overnight in SC-Leu media at 23 C and exponentially growing cultures were prepared for microscopy. A single DIC image and 11 YFP images obtained at 0.3-_m intervals along the z-axis were captured for each frame, and Rad52-YFP foci were counted by inspecting all focal planes intersecting each cell. For each gene deletion strain in the screen, 200-400 cells were scored for Rad52-YFP foci.",
+      "labEquipment": "Orca-ER CCD camera (Hamamatsu, Japan) mounted on a Zeiss Axioplan II microscope (Carl Zeiss, Thornwood,\nNY)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 46
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 16324452677
+    }
+  ]
+}

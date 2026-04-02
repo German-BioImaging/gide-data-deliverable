@@ -1,0 +1,271 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1242"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1242",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2274c7dc-c2bf-4c8a-9f46-a446a4737369"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7ded848c-2820-413c-9e8e-f7da71700abf"
+        },
+        {
+          "@id": "obo:NCBITaxon_4100"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#be8ccdda-1cd8-4ed4-bf97-f4bf054e216d"
+        },
+        {
+          "@id": "#8f7dbc33-8edb-4caa-8415-65bfe96281e4"
+        },
+        {
+          "@id": "#3293434f-16a7-4981-b4f2-c2865f6ac9a0"
+        },
+        {
+          "@id": "#0b6de185-405a-440e-aedf-aca5ed0956a6"
+        },
+        {
+          "@id": "#b8d14aa0-8f0b-4122-88e5-cf134b17fb9a"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3873-0650"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-07",
+      "description": "Raw imaging data associated with a study describing a new live-cell RNA imaging system based on enzymatically inactive bacterial RNA endonuclease Csy4, and it suse to study plant RNA virus cell-to-cell transport through plasmodesmata nano-channels.",
+      "funder": [],
+      "identifier": "S-BIAD1242",
+      "keywords": [
+        "RNA imaging, Csy4, pant virus, plasmodesma, Potato virus X, Tobacco mosaic virus"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Live-cell RNA imaging with the inactivated endonuclease Csy4 enables new insights into plant virus transport through plasmodesmata",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1242/d387370e-4b2e-40bd-adac-b77b003f6bec/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0b6de185-405a-440e-aedf-aca5ed0956a6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "nather.laura@googlemail.com",
+      "name": "Laura Newsha Näther"
+    },
+    {
+      "@id": "#3293434f-16a7-4981-b4f2-c2865f6ac9a0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "zkb1@st-andrews.ac.uk",
+      "name": "Zoe Kathleen Barr"
+    },
+    {
+      "@id": "#8f7dbc33-8edb-4caa-8415-65bfe96281e4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "botamoh@gmail.com",
+      "name": "Mohamed Hussein"
+    },
+    {
+      "@id": "#b8d14aa0-8f0b-4122-88e5-cf134b17fb9a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#041f4bdd-a6e4-4ee8-a4a4-56e856d1d1cd"
+        }
+      ],
+      "email": "kath.wright@hutton.ac.uk",
+      "name": "Kathryn M. Wright"
+    },
+    {
+      "@id": "#be8ccdda-1cd8-4ed4-bf97-f4bf054e216d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "davidalexanderburnett@gmail.com",
+      "name": "David Burnett"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3873-0650",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "jt58@st-andrews.ac.uk",
+      "name": "Jens Tilsner"
+    },
+    {
+      "@id": "#041f4bdd-a6e4-4ee8-a4a4-56e856d1d1cd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "James Hutton Institute"
+    },
+    {
+      "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4100",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Nicotiana benthamiana"
+    },
+    {
+      "@id": "#7ded848c-2820-413c-9e8e-f7da71700abf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Leaf epidermal pavement cells",
+      "name": "Figure 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4100"
+      }
+    },
+    {
+      "@id": "#2274c7dc-c2bf-4c8a-9f46-a446a4737369",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "3-14 days after inoculation, leaves or leaf pieces were detached from plant, placed on slide using double-sided sticky tape, and imaged using 2.5x or 10x long-distance air, or 40x water-dipping lenses. Excitation/detection wavelengths were 488/499 – 530 nm for GFP/YFP, 561/587 – 626 nm for RFP and 405/453-499 nm for CFP/aniline blue, respectively.",
+      "labEquipment": "Zeiss 710Meta confocal laser scanning microscope; Nikon A1R confocal laser scanning microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 654
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 93081381534
+    }
+  ]
+}

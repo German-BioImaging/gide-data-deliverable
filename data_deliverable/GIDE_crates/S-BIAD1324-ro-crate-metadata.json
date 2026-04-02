@@ -1,0 +1,271 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1324"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1324",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b5606a60-0e1c-4aa6-9d3d-afa2e8d5fa0b"
+        },
+        {
+          "@id": "#5404cd5e-4ef9-4ecc-a850-601dcf5f3830"
+        },
+        {
+          "@id": "#7289aa99-3074-49f3-b200-7c74658a0a6a"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2d8d5459-e4a2-4f16-96dd-cc0414ae73e1"
+        },
+        {
+          "@id": "#28575f29-9c3d-4fe8-a6e6-6d636bf84fee"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#3502f06d-2096-41d2-865b-058ec3ce783d"
+        },
+        {
+          "@id": "#b93d2f46-0bc0-4b7d-b529-df4b6b566280"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-29",
+      "description": "A hallmark feature of pancreatic ductal adenocarcinoma (PDAC) is massive intratumoral fibrosis, designated as desmoplasia. Desmoplasia is characterized by the expansion of cancer-associated fibroblasts (CAFs) and a massive increase in extracellular matrix (ECM). During fibrogenesis, distinct genes become reactivated specifically in fibroblasts, e.g., the disintegrin metalloprotease, ADAM12. Previous studies have shown that immunotherapeutic ablation of ADAM12+ cells reduces fibrosis in various organs. In preclinical mouse models of PDAC, we observe ADAM12 expression in CAFs as well as in tumor cells but not in healthy mouse pancreas. Therefore, we tested prophylactic and therapeutic vaccination against ADAM12 in murine PDAC and observed delayed tumor growth along with a reduction in CAFs and tumor desmoplasia. This is furthermore associated with vascular normalization and alleviated tumor hypoxia. The ADAM12 vaccine induces a redistribution of CD8+ T cells within the tumor and cytotoxic responses against ADAM12+ cells. In summary, vaccination against the endogenous fibroblast target ADAM12 effectively depletes CAFs, reduces desmoplasia and delays the growth of murine PDACs. These results provide proof-of-principle for the development of vaccination-based immunotherapies to treat tumor desmoplasia.",
+      "funder": [],
+      "identifier": "S-BIAD1324",
+      "keywords": [
+        "pancreatic cancer, cancer-associated fibroblasts, vaccine, immunotherapy"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Fibrolytic vaccination against ADAM12 reduces desmoplasia in preclinical pancreatic adenocarcinomas",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1324/bff677e4-1d50-4289-a1f0-6d6f2e9b1c06/e2335bc7-c388-4fbf-b37c-4f7ae22cb035.png"
+      ]
+    },
+    {
+      "@id": "#3502f06d-2096-41d2-865b-058ec3ce783d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "jing.chen@anatomy.uzh.ch",
+      "name": "Jing Chen"
+    },
+    {
+      "@id": "#b93d2f46-0bc0-4b7d-b529-df4b6b566280",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "chrisitan.stockmann@anatomy.uzh.ch",
+      "name": "Christian Stockmann"
+    },
+    {
+      "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Zurich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#28575f29-9c3d-4fe8-a6e6-6d636bf84fee",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "KPC PDAC tumor grew in C57Bl/6j female mice",
+      "name": "Orthotopic PDAC sample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#2d8d5459-e4a2-4f16-96dd-cc0414ae73e1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "PDAC tumor tissue grew in C57Bl/6j female mice ",
+      "name": "Subcutaneous PDAC sample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#5404cd5e-4ef9-4ecc-a850-601dcf5f3830",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For bright field microscope: 20x magnification was used, the whole tissue was scanned with tilescan via Zeiss Axio Scan.Z1. \n\n",
+      "labEquipment": "Zeiss Axio Scan.Z1 microscope,\n\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "Sirius red staining Images"
+    },
+    {
+      "@id": "#7289aa99-3074-49f3-b200-7c74658a0a6a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Whole tissue scanning was performed at 20x magnification with Zeiss Axio Scan.Z1. The 355 nm laser was used to image nuclei (DAPI), at 5% laser power, and the 488 nm laser was used to image Alexa Flour 488, at 10% laser power. ",
+      "labEquipment": "Zeiss Axio Scan.Z1 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Immunofluorescence imaging_Scanning"
+    },
+    {
+      "@id": "#b5606a60-0e1c-4aa6-9d3d-afa2e8d5fa0b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For immunofluorescence staining:  The 355 nm laser was used to image nuclei (DAPI), the 488 nm laser was used to image Alexa Fluor 488, and Y3 channel was used to image -CY3 or 568 Fluor.\n",
+      "labEquipment": "Leica DM6000B",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescence Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1024
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 29613376642
+    }
+  ]
+}

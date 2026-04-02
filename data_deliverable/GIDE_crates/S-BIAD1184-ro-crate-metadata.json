@@ -1,0 +1,241 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1184"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1184",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ab5adc6a-84f4-4d6e-a577-1fc7b24b6b73"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cc43c164-2b51-4d6b-9c7d-d8f011bb3fd6"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8089-5638"
+        },
+        {
+          "@id": "#a15d83d8-89e1-453d-83af-86f7ae617be9"
+        },
+        {
+          "@id": "#847351ba-686d-46ad-a5bd-ee6d17315d5b"
+        },
+        {
+          "@id": "#16757af5-8490-4a57-a523-4e2f9779f2cf"
+        },
+        {
+          "@id": "#6ff92b60-6819-47e2-af79-a1e4163e959e"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-23",
+      "description": "We provide a dataset of 11 whole-slide images of pancreatic cross-sections of non-obese diabetic (NOD) mice that were stained for CD11c (for myeloid cells), CD3 (for T-cells), DAPI (for nuclei), F4/80 (for macrophages), glucagon (for α-cells), insulin (for β-cells), and IL-1β. We performed 7 color multispectral imaging using the Akoya Biosciences Vectra Polaris instrument under 20X magnification and a pixel size of 0.5 μm/px. We also provide clinical data including the age of surgery, highest blood glucose recording, number of intact islets in the cross section, and the range of insulitis degrees (T-/β-cell count ratios - calculated for each islet).  ",
+      "funder": [],
+      "identifier": "S-BIAD1184",
+      "keywords": [
+        "alpha-cells",
+        "beta-cells",
+        "NOD mice",
+        "type-1 diabetes",
+        "network analysis",
+        "t-cells",
+        "macrophages",
+        "myeloid cells",
+        "islet physiology"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Whole slide images of pancreatic cross-sections of NOD mice stained with antibodies: CD11c, CD113, DAPI, F4/80, glucagon, insulin and IL-1β.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1184/cb77d565-c6f3-42b5-9c7b-9cc5cbba1453/9d297686-20e5-460a-b2d3-c82ebbdf738f.png"
+      ]
+    },
+    {
+      "@id": "#16757af5-8490-4a57-a523-4e2f9779f2cf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c960db45-1073-4d66-97f8-9a4ffaa44907"
+        }
+      ],
+      "name": "Rachel S. Friedman"
+    },
+    {
+      "@id": "#6ff92b60-6819-47e2-af79-a1e4163e959e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bf7ffba4-81d9-4865-aa4c-0d70066c0e26"
+        }
+      ],
+      "email": "vkravets@ucsd.edu",
+      "name": "Vira Kravets"
+    },
+    {
+      "@id": "#847351ba-686d-46ad-a5bd-ee6d17315d5b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ba2c7e1e-c187-41c8-8572-62149494d141"
+        }
+      ],
+      "name": "Laura Pyle"
+    },
+    {
+      "@id": "#a15d83d8-89e1-453d-83af-86f7ae617be9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c960db45-1073-4d66-97f8-9a4ffaa44907"
+        }
+      ],
+      "name": "Jennifer C. Whitesell"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8089-5638",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bf7ffba4-81d9-4865-aa4c-0d70066c0e26"
+        }
+      ],
+      "email": "nvb223@ucsd.edu",
+      "name": "Nirmala V. Balasenthilkumaran"
+    },
+    {
+      "@id": "#ba2c7e1e-c187-41c8-8572-62149494d141",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Colorado School of Public Health"
+    },
+    {
+      "@id": "#bf7ffba4-81d9-4865-aa4c-0d70066c0e26",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, San Diego"
+    },
+    {
+      "@id": "#c960db45-1073-4d66-97f8-9a4ffaa44907",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Colorado Anschutz Medical Campus"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#cc43c164-2b51-4d6b-9c7d-d8f011bb3fd6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "4 µm thick pancreatic cross sections ",
+      "name": "Biosample",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#ab5adc6a-84f4-4d6e-a577-1fc7b24b6b73",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Objective of 0.75, and a pixel size of 0.5 microns/pixel. ",
+      "labEquipment": "Akoya Biosciences Vectra Polaris instrument",
+      "measurementTechnique": [],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 13
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 71588277782
+    }
+  ]
+}

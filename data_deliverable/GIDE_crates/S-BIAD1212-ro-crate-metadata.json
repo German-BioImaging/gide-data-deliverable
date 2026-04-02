@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1212"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1212",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#22287067-784e-4e9d-a6dd-d6f4916f37b1"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#71c3472a-3cb4-4883-ac15-e337808cf8c1"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#885fdcde-60cd-4829-bab5-330a4a1f6554"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-29",
+      "description": "Oil Red O staining was done in mice liver tissue obtained from mice liver to check the lipid accumulation in high fat diet mice .",
+      "funder": [],
+      "identifier": "S-BIAD1212",
+      "keywords": [
+        "HFD"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "ORO staining in liver tissue from RCD,HFD,HFD_drug",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1212/db6dd53b-d364-4d5f-aee4-afb237181173/eb1878d6-8bf6-4cf2-9d82-4f2e0656032a.png"
+      ]
+    },
+    {
+      "@id": "#885fdcde-60cd-4829-bab5-330a4a1f6554",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22"
+        }
+      ],
+      "email": "mondalsiraj@gmail.com",
+      "name": "prosenjit mondal"
+    },
+    {
+      "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Indian Institute of Science Education and Research Berhampur"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#71c3472a-3cb4-4883-ac15-e337808cf8c1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "liver tissue",
+      "name": "ORO staining in liver tissue from RCD,HFD,HFD_drug",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#22287067-784e-4e9d-a6dd-d6f4916f37b1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "images were taken at 40x objective lens",
+      "labEquipment": "OPTIKA phase contrast Digital microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "name": "ORO staining in liver tissue from RCD,HFD,HFD_drug"
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 94356794
+    }
+  ]
+}

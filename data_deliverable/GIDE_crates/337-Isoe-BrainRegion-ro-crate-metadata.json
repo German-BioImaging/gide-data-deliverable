@@ -1,0 +1,222 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/337-Isoe-BrainRegion/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/337-Isoe-BrainRegion/",
+      "@type": "Dataset",
+      "identifier": "337-Isoe-BrainRegion",
+      "name": "3D medaka brain visualized clonally related units in the pallium",
+      "description": "337-Isoe-BrainRegion",
+      "datePublished": "2024-12-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.85093"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08091"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0022008"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001764"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1362"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yasuko Isoe",
+      "email": "yasuko_isoe@fas.harvard.edu",
+      "description": "Organization: Harvard University; Department: Department of Molecular and Cellular Biology; Laboratory: Department of Molecular and Cellular Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03vek6s52"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Ryohei Nakamura"
+    },
+    {
+      "@id": "https://ror.org/03vek6s52",
+      "@type": "Organization",
+      "name": "Harvard University"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.85093",
+      "@type": "ScholarlyArticle",
+      "name": "Epigenetically distinct synaptic architecture in clonal compartments in the teleostean dorsal pallium.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Oryzias latipes",
+      "description": "Oryzias latipes",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "HuC:loxp-DsRed-loxp-GFP, HSP-Cre",
+      "description": "HuC:loxp-DsRed-loxp-GFP, HSP-Cre",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08091"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08090",
+      "@type": "Taxon",
+      "scientificName": "Oryzias latipes"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08091",
+      "@type": "Taxon",
+      "scientificName": "Oryzias latipes"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0022008",
+      "@type": "DefinedTerm",
+      "name": "neurogenesis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001764",
+      "@type": "DefinedTerm",
+      "name": "neuron migration"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "light-sheet microscopy",
+      "description": "light-sheet microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000345",
+      "@type": "DefinedTerm",
+      "name": "light-sheet microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 13264393672,
+      "description": "13.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 93,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

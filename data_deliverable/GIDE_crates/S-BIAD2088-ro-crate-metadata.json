@@ -1,0 +1,957 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2088"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2088",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5ee64d3c-6539-4ae0-b000-ceca18174dbd"
+        },
+        {
+          "@id": "#a5e3af05-8407-4546-b463-367c0b88aef3"
+        },
+        {
+          "@id": "#346243db-6ee7-430b-92d0-089a3d355684"
+        },
+        {
+          "@id": "#e623f0bf-ae04-4255-942a-58ea056845fb"
+        },
+        {
+          "@id": "#84009366-4ee0-4961-81e3-a2a8e7ed6f7d"
+        },
+        {
+          "@id": "#330da345-db1a-4f0a-b289-1b31e64a0b95"
+        },
+        {
+          "@id": "#2235b876-f8f3-4fa1-9521-b493b0f19f2b"
+        },
+        {
+          "@id": "#858c8a79-e5d8-45f1-9332-7375d0b3f306"
+        },
+        {
+          "@id": "#3c981e76-fcfa-40be-97ff-caeb9a3d810f"
+        },
+        {
+          "@id": "#a5cc04f6-a6d2-42f2-a8fb-e238d0f351fa"
+        },
+        {
+          "@id": "#6c48ac1b-80de-4249-86ef-32d1fa48f3c9"
+        },
+        {
+          "@id": "#578d74c1-d595-4f42-8343-beccd4628374"
+        },
+        {
+          "@id": "#bbd3ba34-0eb2-4701-a7c0-86ba9b607a20"
+        },
+        {
+          "@id": "#1392c3fb-987a-43d0-8aa5-1da6ae4450c2"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000259"
+        },
+        {
+          "@id": "obo:FBbi_00000366"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#38016303-3115-4f4f-b2c4-95a4f8fbf9a7"
+        },
+        {
+          "@id": "#767e6120-12be-4438-b2a3-62d9be41a0a5"
+        },
+        {
+          "@id": "#0d306160-daea-4656-9c7d-27199fcdabd5"
+        },
+        {
+          "@id": "#3fab765c-2dac-4793-a713-b013b9d4835a"
+        },
+        {
+          "@id": "#f2516878-5985-4d45-9922-fb221e3fd510"
+        },
+        {
+          "@id": "#ee8e0842-23fb-454c-9317-b6cf1d7906f4"
+        },
+        {
+          "@id": "#c138f7a8-e3f3-4c6b-bae1-e6f677f0a3c8"
+        },
+        {
+          "@id": "#90f0adaa-4bd8-47c1-ac84-9406f87c55cc"
+        },
+        {
+          "@id": "#b23fb3f5-9665-430a-8d4b-4fb4bfb68e7d"
+        },
+        {
+          "@id": "#928a7e82-ad3a-40f8-a5fa-d5880c3c887f"
+        },
+        {
+          "@id": "#25512f68-2f51-4308-b7a6-c2fa952b547b"
+        },
+        {
+          "@id": "#ed328037-9700-47ac-aaa4-aed843e04b8a"
+        },
+        {
+          "@id": "#165942a6-f684-4691-8d05-da790b6050f9"
+        },
+        {
+          "@id": "#baaf4648-a368-4c6b-9bd9-f6379b3fb6ba"
+        },
+        {
+          "@id": "#14682651-50ca-4a72-9009-a79804184606"
+        },
+        {
+          "@id": "#b794c715-b1cc-4025-b835-5e598d391df4"
+        },
+        {
+          "@id": "#f1639db7-b825-41bc-afdd-7037c7a7dd62"
+        },
+        {
+          "@id": "#580abef3-0128-4041-a739-d8500cb8a39a"
+        },
+        {
+          "@id": "#55d1aa18-78fc-417d-bbdc-c36c954eb2a6"
+        },
+        {
+          "@id": "#bc3464ad-eeac-4f8a-94d7-7961f3c67e87"
+        },
+        {
+          "@id": "#7c83bb61-c668-49b5-a8db-a729eef5ec50"
+        },
+        {
+          "@id": "#4f3e5dc6-bbd2-4a27-b5d4-85f8e166dbaa"
+        },
+        {
+          "@id": "#f50d8eb3-4ef0-45b4-9b10-72ec645179ff"
+        },
+        {
+          "@id": "#d8cdb241-8253-4bd6-918e-91beaf121ac0"
+        },
+        {
+          "@id": "#f8ca5a97-18cd-4ef1-a3f9-15f42b6b2a87"
+        },
+        {
+          "@id": "#f25d842c-9863-4992-a80a-40de42236a5e"
+        },
+        {
+          "@id": "#0eff5708-43ef-47c7-8799-11126b077413"
+        },
+        {
+          "@id": "#daa2860c-ceca-4974-8af6-200d3730fd93"
+        },
+        {
+          "@id": "obo:NCBITaxon_562"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#bceb084b-8c87-4737-ad16-8871f4ebe8b9"
+        },
+        {
+          "@id": "#40ff8216-5a25-4ded-9571-e62c5f1c2971"
+        },
+        {
+          "@id": "#6c989df0-edec-45a6-9705-5f6304e2c2f6"
+        },
+        {
+          "@id": "#768828f0-cfd3-4062-a75c-5c13690966fa"
+        },
+        {
+          "@id": "#d1fb813d-d37a-4967-bbb6-089caf3f1ea9"
+        },
+        {
+          "@id": "#2d68bd76-c051-4c73-8b85-98c8de802e2e"
+        },
+        {
+          "@id": "#41ffa740-3270-4118-98e2-d1e428092a6e"
+        },
+        {
+          "@id": "#9262de86-53d3-4a1c-a309-6e3fb676ca36"
+        },
+        {
+          "@id": "#85b31a8d-b104-48c9-aa0a-0b1db55a9c58"
+        },
+        {
+          "@id": "#4ee0b78e-57c8-4c9a-9f74-073403d7dc7f"
+        },
+        {
+          "@id": "#02b6bcb1-d328-4dc7-9b3f-f5b3f97f0d54"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-05",
+      "description": "Bacteria often experience nutrient limitation. While exponential and stationary growth phases are well characterized in the model bacterium Escherichia coli, little is known about what transpires inside individual cells during the transition between these two phases. Through quantitative cell imaging, we found that the positions of nucleoids and cell division sites become increasingly asymmetric during transition phase. These asymmetries were coupled with spatial reorganization of proteins, ribosomes, and RNAs to nucleoid-centric localizations. Results from live-cell imaging experiments, complemented with genetic and 13C whole-cell nuclear magnetic resonance spectroscopy studies, show that preferential accumulation of the storage polymer glycogen at the old cell pole leads to the observed rearrangements and asymmetric divisions. Live-cell atomic force microscopy analysis, along with in vitro biochemical experiments, suggests that these phenotypes are due to the propensity of glycogen to phase separate into soft condensates in the crowded cytoplasm. Glycogen-associated differences in cell sizes between strains and future daughter cells suggest that glycogen phase separation allows cells to store large glucose reserves without counting them as cytoplasmic space.",
+      "funder": [],
+      "identifier": "S-BIAD2088",
+      "keywords": [
+        "Bacteria",
+        "Phase separation",
+        "Glycogen",
+        "Nutrient limitation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Glycogen phase separation drives macromolecular rearrangement and asymmetric division in E. coli",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#02b6bcb1-d328-4dc7-9b3f-f5b3f97f0d54",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/006w34k90"
+        }
+      ],
+      "email": "jacobs-wagner@stanford.edu",
+      "name": "Christine Jacobs-Wagner"
+    },
+    {
+      "@id": "#2d68bd76-c051-4c73-8b85-98c8de802e2e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03v76x132"
+        }
+      ],
+      "email": "yingjie.xiang@aya.yale.edu",
+      "name": "Yingjie Xiang"
+    },
+    {
+      "@id": "#40ff8216-5a25-4ded-9571-e62c5f1c2971",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/006w34k90"
+        }
+      ],
+      "email": "sjcd15@stanford.edu",
+      "name": "Silvia Canas-Duarte"
+    },
+    {
+      "@id": "#41ffa740-3270-4118-98e2-d1e428092a6e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03v76x132"
+        }
+      ],
+      "email": "wtgrayunc12@gmail.com",
+      "name": "William Gray"
+    },
+    {
+      "@id": "#4ee0b78e-57c8-4c9a-9f74-073403d7dc7f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00f54p054"
+        }
+      ],
+      "email": "cegelski@stanford.edu",
+      "name": "Lynette Cegelski"
+    },
+    {
+      "@id": "#6c989df0-edec-45a6-9705-5f6304e2c2f6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/006w34k90"
+        }
+      ],
+      "email": "hwang92@stanford.edu",
+      "name": "Haozhen Wang"
+    },
+    {
+      "@id": "#768828f0-cfd3-4062-a75c-5c13690966fa",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00f54p054"
+        }
+      ],
+      "email": "tkallem@stanford.edu",
+      "name": "Till Kallem"
+    },
+    {
+      "@id": "#85b31a8d-b104-48c9-aa0a-0b1db55a9c58",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/013meh722"
+        }
+      ],
+      "email": "gh464@cam.ac.uk",
+      "name": "Georgeos Hardo"
+    },
+    {
+      "@id": "#9262de86-53d3-4a1c-a309-6e3fb676ca36",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03v76x132"
+        }
+      ],
+      "email": "cheyenne.lee@duke.edu",
+      "name": "Cheyenne Lee"
+    },
+    {
+      "@id": "#bceb084b-8c87-4737-ad16-8871f4ebe8b9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00f54p054"
+        }
+      ],
+      "email": "yashna.thappeta@gmail.com",
+      "name": "Yashna Thappeta"
+    },
+    {
+      "@id": "#d1fb813d-d37a-4967-bbb6-089caf3f1ea9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/006w34k90"
+        }
+      ],
+      "email": "fragasso@stanford.edu",
+      "name": "Alessio Fragasso"
+    },
+    {
+      "@id": "https://ror.org/006w34k90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Howard Hughes Medical Institute"
+    },
+    {
+      "@id": "https://ror.org/00f54p054",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "https://ror.org/013meh722",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://ror.org/03v76x132",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Yale University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_562",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli"
+    },
+    {
+      "@id": "#0d306160-daea-4656-9c7d-27199fcdabd5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Atomic force microscope (AFM) of live E. coli with glycogen condensates and proteins aggregates",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#0eff5708-43ef-47c7-8799-11126b077413",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli MG1655",
+      "name": "Agarose pad growth curve of strain CJW4677",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#14682651-50ca-4a72-9009-a79804184606",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Localization patterns of a panel of cytoplasmic GFP with different net charges",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#165942a6-f684-4691-8d05-da790b6050f9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Localization patterns of a panel of cytoplasmic GFP with different net charges",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#25512f68-2f51-4308-b7a6-c2fa952b547b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Localization patterns of a panel of cytoplasmic GFP with different net charges",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#38016303-3115-4f4f-b2c4-95a4f8fbf9a7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "In vitro ",
+      "name": "In vitro analysis of Glycogen phase separation",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#3fab765c-2dac-4793-a713-b013b9d4835a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Atomic force microscope (AFM) of live E. coli with glycogen condensates and proteins aggregates",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#4f3e5dc6-bbd2-4a27-b5d4-85f8e166dbaa",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Ribosome localization patterns in transition phase",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#55d1aa18-78fc-417d-bbdc-c36c954eb2a6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli MG1655",
+      "name": "Agarpad single cell imaging of intracellular macromolecules in exponential and transition phase",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#580abef3-0128-4041-a739-d8500cb8a39a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Glycogen accumulation in Transition phase (Agarpad)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#767e6120-12be-4438-b2a3-62d9be41a0a5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli MG1655",
+      "name": "Agarpad single cell imaging of intracellular macromolecules in exponential and transition phase",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#7c83bb61-c668-49b5-a8db-a729eef5ec50",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Ribosome localization patterns in transition phase",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#90f0adaa-4bd8-47c1-ac84-9406f87c55cc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Localization patterns of a panel of cytoplasmic GFP with different net charges",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#928a7e82-ad3a-40f8-a5fa-d5880c3c887f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Localization patterns of a panel of cytoplasmic GFP with different net charges",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#b23fb3f5-9665-430a-8d4b-4fb4bfb68e7d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Localization patterns of a panel of cytoplasmic GFP with different net charges",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#b794c715-b1cc-4025-b835-5e598d391df4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Agarpad imaging of co-cultures of WT and ∆glgBXCAP",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#baaf4648-a368-4c6b-9bd9-f6379b3fb6ba",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Localization patterns of a panel of cytoplasmic GFP with different net charges",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#bc3464ad-eeac-4f8a-94d7-7961f3c67e87",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli MG1655",
+      "name": "Agarpad single cell imaging of intracellular macromolecules in exponential and transition phase",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#c138f7a8-e3f3-4c6b-bae1-e6f677f0a3c8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "FRAP of glycogen condensates in transition phase CJW7605",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#d8cdb241-8253-4bd6-918e-91beaf121ac0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Agarpad imaging of co-cultures of WT and ∆glgBXCAP",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#daa2860c-ceca-4974-8af6-200d3730fd93",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli MG1655",
+      "name": "Agarpad single cell imaging of intracellular macromolecules in exponential and transition phase",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#ed328037-9700-47ac-aaa4-aed843e04b8a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Localization patterns of a panel of cytoplasmic GFP with different net charges",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#ee8e0842-23fb-454c-9317-b6cf1d7906f4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli MG1655",
+      "name": "Microfluidics analysis along the growth curve ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#f1639db7-b825-41bc-afdd-7037c7a7dd62",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli MG1655",
+      "name": "Microfluidics analysis along the growth curve ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#f2516878-5985-4d45-9922-fb221e3fd510",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Atomic force microscope (AFM) of live E. coli with glycogen condensates and proteins aggregates",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#f25d842c-9863-4992-a80a-40de42236a5e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Agarpad imaging of co-cultures of WT and ∆glgBXCAP",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#f50d8eb3-4ef0-45b4-9b10-72ec645179ff",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Ribosome localization patterns in transition phase",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#f8ca5a97-18cd-4ef1-a3f9-15f42b6b2a87",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli MG1655",
+      "name": "Agarpad imaging of co-cultures of WT and ∆glgBXCAP",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#1392c3fb-987a-43d0-8aa5-1da6ae4450c2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [],
+      "name": "Snapshots of CJW7324 in exponential and transition phase with RNASelect"
+    },
+    {
+      "@id": "#2235b876-f8f3-4fa1-9521-b493b0f19f2b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Hamamatsu ORCA-Flash 4.0 camera, a 100X objective (Nikon, OFN Ph3 DM, N.A. 1.45) and a Spectra X light engine (Lumencor). The following Chroma filter sets were used to acquire fluorescence images: DAPI (excitation ET350/50x, dichroic T400lp, emission ET460/50 m), GFP (excitation ET470/40x, dichroic T425lpxr, emission ET525/50 m) and mCherry/TexasRed (excitation ET560/40x, dichroic T585lpxr, emission ET630/75 m). Temperature was maintained at 30°C using a customized enclosure and temperature controller (Air-Therm SWT, World Precision Instrument) for timelapse imaging. ",
+      "labEquipment": "Nikon Ti Eclipse",
+      "measurementTechnique": [],
+      "name": "Snapshots of transition phase E. coli with different cytoplasmic GFPs with different net charges "
+    },
+    {
+      "@id": "#330da345-db1a-4f0a-b289-1b31e64a0b95",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Growth curve in Microfluidics of CJW7605"
+    },
+    {
+      "@id": "#346243db-6ee7-430b-92d0-089a3d355684",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Depth-resolved stiffness map and stiffness tomography data were collected using the Quantitative Imaging (QI) mode with a force setpoint of 20 nN. SCANASYST-FLUID cantilevers (Bruker, USA) with a nominal spring constant of 0.35 N/m and a nominal tip radius of 20 nm were used in depth-resolved stiffness map and stiffness tomography experiments.\nSCANASYST-FLUID+ cantilevers (Bruker, USA) with a nominal spring constant of 0.35 N/m and a nominal tip radius of 2 nm were used for stiffness measurements of the intracellular content. AFM height images were first collected in QI mode with a minimal force setpoint (0.5 nN).",
+      "labEquipment": "JPK NanoWizard V instrument (Bruker, USA) mounted on the inverted optical microscope Axio Observer (Zeiss, Germany)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000259"
+        }
+      ],
+      "name": "AFM analysis of glycogen condensates and protein aggregates "
+    },
+    {
+      "@id": "#3c981e76-fcfa-40be-97ff-caeb9a3d810f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [],
+      "name": "Snapshots of CJW7325 in exponential and transition phase"
+    },
+    {
+      "@id": "#578d74c1-d595-4f42-8343-beccd4628374",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Hamamatsu ORCA-Flash 4.0 camera, a 100X objective (Nikon, OFN Ph3 DM, N.A. 1.45) and a Spectra X light engine (Lumencor). The following Chroma filter sets were used to acquire fluorescence images: DAPI (excitation ET350/50x, dichroic T400lp, emission ET460/50 m), GFP (excitation ET470/40x, dichroic T425lpxr, emission ET525/50 m) and mCherry/TexasRed (excitation ET560/40x, dichroic T585lpxr, emission ET630/75 m). Temperature was maintained at 30°C using a customized enclosure and temperature controller (Air-Therm SWT, World Precision Instrument) for timelapse imaging. ",
+      "labEquipment": "Nikon Ti Eclipse",
+      "measurementTechnique": [],
+      "name": "Snapshots of transition phase E. coli with different ribosomal labels "
+    },
+    {
+      "@id": "#5ee64d3c-6539-4ae0-b000-ceca18174dbd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "In vitro Glycogen phase separation"
+    },
+    {
+      "@id": "#6c48ac1b-80de-4249-86ef-32d1fa48f3c9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [],
+      "name": "Snapshots of CJW7877 in exponential and transition phase with DAPI"
+    },
+    {
+      "@id": "#84009366-4ee0-4961-81e3-a2a8e7ed6f7d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000366"
+        }
+      ],
+      "name": "FRAP of CJW7605"
+    },
+    {
+      "@id": "#858c8a79-e5d8-45f1-9332-7375d0b3f306",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [],
+      "name": "Agarpad imaging of co-culture of WT and ∆glgBXCAP strains"
+    },
+    {
+      "@id": "#a5cc04f6-a6d2-42f2-a8fb-e238d0f351fa",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [],
+      "name": "Snapshots of CJW5685 in exponential and transition phase"
+    },
+    {
+      "@id": "#a5e3af05-8407-4546-b463-367c0b88aef3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [],
+      "name": "Snapshots of CJW7878 in exponential and transition phase with DAPI"
+    },
+    {
+      "@id": "#bbd3ba34-0eb2-4701-a7c0-86ba9b607a20",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Hamamatsu ORCA-Flash 4.0 camera, a 100X objective (Nikon, OFN Ph3 DM, N.A. 1.45) and a Spectra X light engine (Lumencor). The following Chroma filter sets were used to acquire fluorescence images: DAPI (excitation ET350/50x, dichroic T400lp, emission ET460/50 m), GFP (excitation ET470/40x, dichroic T425lpxr, emission ET525/50 m) and mCherry/TexasRed (excitation ET560/40x, dichroic T585lpxr, emission ET630/75 m). Temperature was maintained at 30°C using a customized enclosure and temperature controller (Air-Therm SWT, World Precision Instrument) for timelapse imaging. ",
+      "labEquipment": "Nikon Ti Eclipse ",
+      "measurementTechnique": [],
+      "name": "Snapshots of CJW4677 along the growth curve"
+    },
+    {
+      "@id": "#e623f0bf-ae04-4255-942a-58ea056845fb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Nikon Ti2-E inverted microscope equipped with a Perfect Focus System (PFS), a motorized stage, a 100x Plan Apo 1.45NA Ph3 oil objective, a Photometrics Prime BSI back-illuminated sCMOS camera, a Lumencor Spectra III LED light engine excitation source, a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for GFP/DAPI/mCherry, and a polychroic mirror (FF-459/526/596-Di01 by Shemrock) combined with a triple-pass emitter (FF01-475/543/702-25 by Shemrock) for CFP/YFP/mCherry. The temperature was set and maintained at the indicated value using a temperature chamber (Okolabs). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Growth curve in Microfluidics of CJW7668"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000259",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "atomic force microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000366",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRAP"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 0
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 0
+    }
+  ]
+}

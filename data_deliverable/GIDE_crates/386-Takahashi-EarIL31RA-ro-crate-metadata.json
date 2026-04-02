@@ -1,0 +1,239 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/386-Takahashi-EarIL31RA/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/386-Takahashi-EarIL31RA/",
+      "@type": "Dataset",
+      "identifier": "386-Takahashi-EarIL31RA",
+      "name": "Immunofluorescence images of nerve fiber and IL-31 receptors in the mouse ear skin",
+      "description": "IL-31 receptor blockade suppresses pruritus of atopic dermatitis. However, cell-type-specific contributions of IL-31 receptor to itch, its expression mechanism, and the downstream signaling pathway to induce itch remain unknown. In this report, using conditional knockout mice, the authors demonstrate that IL-31-induced itch requires sensory neuronal IL-31 receptor and STAT3. They find that IL-31 receptor expression is dependent on STAT3 in sensory neurons. In addition, pharmacological experiments suggest that STAT3 activation is important for the itch-inducing signaling downstream of the IL-31 receptor. A cutaneous IL-31 injection induces the nuclear accumulation of activated STAT3 first in sensory neurons that abundantly express IL-31 receptor and then in other itch-transmitting neurons. IL-31 enhances itch induced by various pruritogens including even chloroquine. Finally, pruritus associated with dermatitis is partially dependent on sensory neuronal IL-31 receptor and strongly on sensory neuronal STAT3. Thus, sensory neuronal STAT3 is essential for IL-31-induced itch and further contributes to IL-31-independent inflammatory itch.",
+      "datePublished": "2025-11-28",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.celrep.2023.113433"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0030424"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1804"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takaharu Okada",
+      "email": "takaharu.okada@riken.jp",
+      "description": "Organization: RIKEN  IMS; Department: Laboratory for Tissue Dynamics; Laboratory: Laboratory for Tissue Dynamics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01rnr2315"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Sonoko Takahashi"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Sotaro Ochiai"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Noriko Takahashi"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Manabu Nakayama"
+    },
+    {
+      "@id": "https://ror.org/01rnr2315",
+      "@type": "Organization",
+      "name": "RIKEN  IMS"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.celrep.2023.113433",
+      "@type": "ScholarlyArticle",
+      "name": "Sensory neuronal STAT3 is critical for IL-31 receptor expression and inflammatory itch.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "B6.129-Scn10a^{tm2(cre)Jwo}/H,  B6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J",
+      "description": "B6.129-Scn10a^{tm2(cre)Jwo}/H,  B6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "B6.129-Scn10a^{tm2(cre)Jwo}/H,  B6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J, Il31ra-flox",
+      "description": "B6.129-Scn10a^{tm2(cre)Jwo}/H,  B6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J, Il31ra-flox",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030424",
+      "@type": "DefinedTerm",
+      "name": "axon"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 3802476020,
+      "description": "3.8 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,1596 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1047"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1047",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#127c8c71-094d-49bc-a991-0d0729a2b1e1"
+        },
+        {
+          "@id": "#4d3ef074-01ef-4c1e-b1a0-bd80832b30cd"
+        },
+        {
+          "@id": "#5b56a361-0d33-4e2f-af2d-282570f848f8"
+        },
+        {
+          "@id": "#f8918041-20b6-4239-8030-a51da7f6539f"
+        },
+        {
+          "@id": "#3b0c141a-da6d-4e7a-a748-ea033aae949a"
+        },
+        {
+          "@id": "#d14dae4d-d1c0-41cc-af36-465aae36c5af"
+        },
+        {
+          "@id": "#7507afff-a014-4fe7-a6f9-5f1745eb2068"
+        },
+        {
+          "@id": "#f01e455e-8e53-4b7e-9aed-5d627ef210d0"
+        },
+        {
+          "@id": "#62cd61e2-5264-4b96-85d8-1e03b8dddec9"
+        },
+        {
+          "@id": "#a3ea7abe-2570-401e-a945-0326d47f7b71"
+        },
+        {
+          "@id": "#fcb61f9a-0ec1-4520-8d03-9fd2fcf6fa0d"
+        },
+        {
+          "@id": "#dd646bb9-e0dd-4d60-870a-a1288625ddbe"
+        },
+        {
+          "@id": "#c1e48671-c5cd-4ced-9f79-626102b9c454"
+        },
+        {
+          "@id": "#b3d84197-b603-41dd-a8d9-41098b6cecc6"
+        },
+        {
+          "@id": "#cf3fb62e-0967-4a8a-8fdf-b52118f6253d"
+        },
+        {
+          "@id": "#dea443a3-c37e-4388-a044-86e90fb4571a"
+        },
+        {
+          "@id": "#a588de2e-2f9c-45b2-a22b-94ff6b9e750c"
+        },
+        {
+          "@id": "#fe9a40b9-20e3-44ba-8201-6e72f1f54397"
+        },
+        {
+          "@id": "#085375d5-d138-4e6b-a0c8-216121e47da2"
+        },
+        {
+          "@id": "#dce43c1f-44ff-4de0-b711-ce644273ff52"
+        },
+        {
+          "@id": "#b3edd654-a230-4311-92a8-a694bb2d01f1"
+        },
+        {
+          "@id": "#b12381fd-7998-47be-a903-2c7de86710f7"
+        },
+        {
+          "@id": "#863defee-6090-42f7-b206-bb332920411b"
+        },
+        {
+          "@id": "#2ff4a682-fbd6-44c9-b8b3-6149cbea7030"
+        },
+        {
+          "@id": "#8a91df36-d06d-4e4e-b458-c6d725d472f3"
+        },
+        {
+          "@id": "#e1090385-78e9-430b-ae6f-478bb56894d9"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f73bfdee-93bc-4753-9357-50a8a92cb393"
+        },
+        {
+          "@id": "#d2114fbe-0553-420a-aa51-8ea9a7c3f4ba"
+        },
+        {
+          "@id": "#73c02430-7d45-4291-8d11-ea51ad1b12b5"
+        },
+        {
+          "@id": "#1941e288-9420-4ac5-84b9-c24f18b15fb7"
+        },
+        {
+          "@id": "#515646c2-2e5c-478d-9b35-f928867caa1f"
+        },
+        {
+          "@id": "#354d31c2-70be-4457-8dcc-e40e89ad4154"
+        },
+        {
+          "@id": "#9f3eb450-df19-4649-8715-072783988ae9"
+        },
+        {
+          "@id": "#0e08538c-f828-4715-abf9-66427b829484"
+        },
+        {
+          "@id": "#dd604b62-ec9c-46e4-88f9-75000d6c712c"
+        },
+        {
+          "@id": "#34f4c00f-5113-4931-9ac4-e006dc9077c0"
+        },
+        {
+          "@id": "#8aecd3c6-4b21-46c9-a7b5-7621a2bdd30b"
+        },
+        {
+          "@id": "#49c7368e-1f44-4ede-90f2-825841da9164"
+        },
+        {
+          "@id": "#cf053f24-c8b9-41b2-bc19-0f16608129e4"
+        },
+        {
+          "@id": "#4d8158f7-9590-4f59-beae-96fde016eb35"
+        },
+        {
+          "@id": "#52bba5f8-30dd-4755-adfb-ba52656522f1"
+        },
+        {
+          "@id": "#f11990f9-f949-4804-a1cb-356c481fa596"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_9615"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0008-2099-0829"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5444-5246"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2787-0885"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1579-0773"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0659-2778"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6998-3100"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8538-1567"
+        },
+        {
+          "@id": "#f0b197bc-a7dc-414c-8542-12a1e3e88e09"
+        },
+        {
+          "@id": "https://orcid.org/0009-0008-0675-8767"
+        },
+        {
+          "@id": "#eb1ba98f-885c-4a46-9649-b7029d0cfdf7"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5564-0457"
+        },
+        {
+          "@id": "#becc24b0-4594-4ad8-a28d-1f28aaa45c9d"
+        },
+        {
+          "@id": "#224459bc-126a-48b8-81b4-9be55cd622e2"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7403-4447"
+        },
+        {
+          "@id": "#b25a5146-e735-4168-96ac-24ae651de670"
+        },
+        {
+          "@id": "#7e3e43fc-e96b-4c03-8a53-c79eddc259a4"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8200-6446"
+        },
+        {
+          "@id": "#912f49a4-d22a-4333-95ef-661cb78013f8"
+        },
+        {
+          "@id": "#d589eaaa-03cd-44d9-aeb1-82746e95bbd6"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8658-1069"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1630-8758"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1611-8279"
+        },
+        {
+          "@id": "https://orcid.org/0009-0002-6214-8417"
+        },
+        {
+          "@id": "#fdc9f1c0-fb57-487c-843b-de5294c48c84"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7843-3872"
+        },
+        {
+          "@id": "#b082476f-c022-4cc9-8831-ff66589ab8e8"
+        },
+        {
+          "@id": "https://orcid.org/0009-0005-5015-9911"
+        },
+        {
+          "@id": "#f3de831b-7ce2-4cc3-84cd-8c3a0fe06f0f"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2813-3812"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7278-448X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9642-7994"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-26",
+      "description": "We present the Light My Cells Challenge Database, a large-scale open-access collection of 56,981 microscopy images designed to support the development of machine learning models for fluorescence prediction from transmitted light images. Acquired across 30 independent studies from 8 national imaging centers, the dataset captures a wide diversity of biological samples, imaging modalities, and acquisition systems. Each transmitted light image—recorded in bright-field, phase contrast, or differential interference contrast—is paired with at least one fluorescence image labeling key subcellular structures: nucleus, mitochondria, tubulin, or actin. All images are standardized in the OME-TIFF format and annotated with rich metadata following the REMBI guidelines. A dedicated preprocessing pipeline ensures dimensional harmonization, best-focus plane selection, and consistent file naming. The database reflects the variability encountered in real-life microscopy experiments, making it ideally suited for training and benchmarking generalizable deep learning models. It is accessible via the BioImage Archive and supports a range of downstream applications, including in silico labeling, segmentation, and cell profiling from label-free imaging.",
+      "funder": [],
+      "identifier": "S-BIAD1047",
+      "keywords": [
+        "deep learning",
+        "fluorescence"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Light My Cells : Bright Field to Fluorescence Imaging Challenge",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#224459bc-126a-48b8-81b4-9be55cd622e2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b242f2d4-810e-4efd-a74a-3c825db0f366"
+        },
+        {
+          "@id": "#8462f9da-0e75-43aa-9c9d-7d80cae8699b"
+        }
+      ],
+      "email": "valentin.asei-ceschino@igh.cnrs.fr",
+      "name": "Valentin Asei-Ceschino"
+    },
+    {
+      "@id": "#7e3e43fc-e96b-4c03-8a53-c79eddc259a4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1d5f0489-404e-48db-9b62-aaeba7b10e2a"
+        }
+      ],
+      "email": "youssef.elhabouz@univ-rennes.fr",
+      "name": "Youssef Elhabouz"
+    },
+    {
+      "@id": "#912f49a4-d22a-4333-95ef-661cb78013f8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1d5f0489-404e-48db-9b62-aaeba7b10e2a"
+        }
+      ],
+      "email": "jacques.pecreaux@univ-rennes1.fr",
+      "name": "Jacques Pécréaux"
+    },
+    {
+      "@id": "#b082476f-c022-4cc9-8831-ff66589ab8e8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7e86221-cabd-453d-9ff7-9f7ee370bec1"
+        },
+        {
+          "@id": "#5ef32854-6462-43e5-aa59-6cdeb8643541"
+        }
+      ],
+      "email": "stockho@genethon.fr",
+      "name": "Daniel Stockholm"
+    },
+    {
+      "@id": "#b25a5146-e735-4168-96ac-24ae651de670",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1d5f0489-404e-48db-9b62-aaeba7b10e2a"
+        }
+      ],
+      "email": "julia.bonnet-gelebart@univ-rennes.fr",
+      "name": "Julia Bonnet-Gelebart"
+    },
+    {
+      "@id": "#becc24b0-4594-4ad8-a28d-1f28aaa45c9d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fa8ad1a-bbb3-4154-8ec3-67c2ce5d1d5f"
+        }
+      ],
+      "email": "laura.ruiz@univ-amu.fr",
+      "name": "Laura Ruiz"
+    },
+    {
+      "@id": "#d589eaaa-03cd-44d9-aeb1-82746e95bbd6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1d5f0489-404e-48db-9b62-aaeba7b10e2a"
+        }
+      ],
+      "email": "louis.ruel@univ-rennes.fr",
+      "name": "Louis Ruel"
+    },
+    {
+      "@id": "#eb1ba98f-885c-4a46-9649-b7029d0cfdf7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fa8ad1a-bbb3-4154-8ec3-67c2ce5d1d5f"
+        }
+      ],
+      "email": "elsa.castellani@univ-amu.fr",
+      "name": "Elsa Castellani"
+    },
+    {
+      "@id": "#f0b197bc-a7dc-414c-8542-12a1e3e88e09",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a8788920-cc9f-42d4-bce6-93514d7926ae"
+        }
+      ],
+      "email": "juliette.van-dijk@crbm.cnrs.fr",
+      "name": "Juliette Van Dijk"
+    },
+    {
+      "@id": "#f3de831b-7ce2-4cc3-84cd-8c3a0fe06f0f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ba603505-9d00-4390-8d1f-fda1e51a73ac"
+        }
+      ],
+      "email": "aude.moret@inserm.fr",
+      "name": "Aude Moret"
+    },
+    {
+      "@id": "#fdc9f1c0-fb57-487c-843b-de5294c48c84",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8322813d-2a7c-444e-992e-5162d8913a54"
+        }
+      ],
+      "email": "lutz@igbmc.fr",
+      "name": "Yves Lutz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7278-448X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#df3914c0-7b4a-48d6-bede-36d5d27405d3"
+        }
+      ],
+      "email": "monica.fernandez-monreal@u-bordeaux.fr",
+      "name": "Mónica Fernández-Monreal"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7403-4447",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8e8fc949-ab9b-4b03-877d-5826cde9a73d"
+        }
+      ],
+      "email": "tudor.manoliu@gustaveroussy.fr",
+      "name": "Tudor Manoliu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8200-6446",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1d5f0489-404e-48db-9b62-aaeba7b10e2a"
+        }
+      ],
+      "email": "marc.tramier@univ-rennes1.fr",
+      "name": "Marc Tramier"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8538-1567",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a50c944f-a0b3-4211-8b59-727a0a426ea2"
+        },
+        {
+          "@id": "#bf6be356-249a-4858-904f-ef89162ce855"
+        }
+      ],
+      "email": "maelle.carraz@ird.fr",
+      "name": "Maëlle Carraz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8658-1069",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cc158a0-87ff-4b06-b7cd-a8c05ed3a91e"
+        }
+      ],
+      "email": "fiche@cbs.cnrs.fr",
+      "name": "Jean-Bernard Fiche"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0659-2778",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b242f2d4-810e-4efd-a74a-3c825db0f366"
+        }
+      ],
+      "email": "oriane.pourcelot@igh.cnrs.fr",
+      "name": "Oriane Pourcelot"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1611-8279",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cc158a0-87ff-4b06-b7cd-a8c05ed3a91e"
+        }
+      ],
+      "email": "doucet@cbs.cnrs.fr",
+      "name": "Christine Doucet"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2813-3812",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c0b8e4b9-bca0-4ff6-b1e6-1307429d247c"
+        }
+      ],
+      "email": "romain.morichon@sorbonne-universite.fr",
+      "name": "Romain Morichon"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5444-5246",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5d620f97-a515-4aba-bfae-97fc1736fe40"
+        },
+        {
+          "@id": "#5780c40c-8eff-4a68-a42d-0dad6d19e6be"
+        }
+      ],
+      "email": "guillaume.gay@france-bioimaging.org",
+      "name": "Guillaume Gay"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5564-0457",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fa8ad1a-bbb3-4154-8ec3-67c2ce5d1d5f"
+        }
+      ],
+      "email": "qiyan.mao@univ-amu.fr",
+      "name": "Qiyan Mao"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6998-3100",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8462f9da-0e75-43aa-9c9d-7d80cae8699b"
+        },
+        {
+          "@id": "#a8788920-cc9f-42d4-bce6-93514d7926ae"
+        }
+      ],
+      "email": "virginie.georget@mri.cnrs.fr",
+      "name": "Virginie Georget"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7843-3872",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8322813d-2a7c-444e-992e-5162d8913a54"
+        }
+      ],
+      "email": "vernayb@igbmc.fr",
+      "name": "Bertrand Vernay"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9642-7994",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#eeda0f4f-ac85-409c-a0ce-b5b8d7835f87"
+        },
+        {
+          "@id": "#9846575b-0b3f-4ce8-92fb-85d337de3c89"
+        }
+      ],
+      "email": "edouard.bertrand@igmm.cnrs.fr",
+      "name": "Edouard Bertrand"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1579-0773",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b242f2d4-810e-4efd-a74a-3c825db0f366"
+        },
+        {
+          "@id": "#8462f9da-0e75-43aa-9c9d-7d80cae8699b"
+        }
+      ],
+      "email": "julio.mateos-langerak@igh.cnrs.fr",
+      "name": "Julio Mateos-Langerak"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1630-8758",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cc158a0-87ff-4b06-b7cd-a8c05ed3a91e"
+        }
+      ],
+      "email": "david.lleres@cbs.cnrs.fr",
+      "name": "David Lleres"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2787-0885",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5d620f97-a515-4aba-bfae-97fc1736fe40"
+        },
+        {
+          "@id": "#5780c40c-8eff-4a68-a42d-0dad6d19e6be"
+        }
+      ],
+      "email": "emmanuel.faure@france-bioimaging.org",
+      "name": "Emmanuel Faure"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-6214-8417",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8322813d-2a7c-444e-992e-5162d8913a54"
+        }
+      ],
+      "email": "erwan.gandon@nikon.com",
+      "name": "Erwan Gandon"
+    },
+    {
+      "@id": "https://orcid.org/0009-0005-5015-9911",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bceccd46-fcf3-4928-8aeb-f92dee66d6a5"
+        }
+      ],
+      "email": "ajaber@genethon.fr",
+      "name": "Abbass Jaber"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-0675-8767",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#94ca0c46-0e60-4f8a-b297-de8c21070511"
+        }
+      ],
+      "email": "stephanie.bosch@univ-tlse3.fr",
+      "name": "Stéphanie Bosch"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-2099-0829",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5d620f97-a515-4aba-bfae-97fc1736fe40"
+        },
+        {
+          "@id": "#5780c40c-8eff-4a68-a42d-0dad6d19e6be"
+        }
+      ],
+      "email": "dorian.kauffmann@france-bioimaging.org",
+      "name": "Dorian Kauffmann"
+    },
+    {
+      "@id": "#1d5f0489-404e-48db-9b62-aaeba7b10e2a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut de Génétique et de Développement de Rennes, IGDR, CNRS, University of Rennes, Rennes, France."
+    },
+    {
+      "@id": "#4fa8ad1a-bbb3-4154-8ec3-67c2ce5d1d5f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut de Biologie du Développement de Marseille, IBDM, CNRS, Marseille, France."
+    },
+    {
+      "@id": "#5780c40c-8eff-4a68-a42d-0dad6d19e6be",
+      "@type": [
+        "Organization"
+      ],
+      "name": "France BioImaging, FBI-Core, University of Montpellier, CNRS, Paris, France."
+    },
+    {
+      "@id": "#5d620f97-a515-4aba-bfae-97fc1736fe40",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Laboratoire d’informatique, de robotique et de microélectronique de Montpellier, LIRMM, University of Montpellier CNRS, Montpellier, France."
+    },
+    {
+      "@id": "#5ef32854-6462-43e5-aa59-6cdeb8643541",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Genethon’s Imaging Cytometry Platform, ImCy, Genethon, Évry, France."
+    },
+    {
+      "@id": "#8322813d-2a7c-444e-992e-5162d8913a54",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Light Microscopy Facility, Institut de Génétique et de Biologie Moléculaire et Cellulaire, IGBMC, INSERM, CNRS, University of Strasbourg, Illkirch, France."
+    },
+    {
+      "@id": "#8462f9da-0e75-43aa-9c9d-7d80cae8699b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Montpellier Ressources Imagerie, BioCampus, University of Montpellier, CNRS, INSERM, Montpellier, France."
+    },
+    {
+      "@id": "#8cc158a0-87ff-4b06-b7cd-a8c05ed3a91e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre de Biologie Structurale, CBS,University of Montpellier, CNRS, INSERM, Montpellier, France."
+    },
+    {
+      "@id": "#8e8fc949-ab9b-4b03-877d-5826cde9a73d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Imaging and Cytometry Platform, PFIC, Gustave Roussy Cancer Campus, Villejuif, France."
+    },
+    {
+      "@id": "#94ca0c46-0e60-4f8a-b297-de8c21070511",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre de Biologie Intégrative, CBI, Toulouse Réseau Imagerie, TRI - Light imaging Toulouse, LITC,  CNRS, University of Toulouse, Toulouse, France."
+    },
+    {
+      "@id": "#9846575b-0b3f-4ce8-92fb-85d337de3c89",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut de Génétique Humaine, IGH, University of Montpellier CNRS, Montpellier, France."
+    },
+    {
+      "@id": "#a50c944f-a0b3-4211-8b59-727a0a426ea2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Molecular Cellular and Developmental Biology Unit (MCD), Centre de Biologie Integrative (CBI), University of Toulouse, CNRS"
+    },
+    {
+      "@id": "#a8788920-cc9f-42d4-bce6-93514d7926ae",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre de Recherche en Biologie cellulaire de Montpellier, CRBM, University of Montpellier, CNRS, Montpellier, France."
+    },
+    {
+      "@id": "#b242f2d4-810e-4efd-a74a-3c825db0f366",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut de Génétique Humaine, IGH, University of Montpellier, CNRS, Montpellier, France."
+    },
+    {
+      "@id": "#ba603505-9d00-4390-8d1f-fda1e51a73ac",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre de Recherche Saint-Antoine, CRSA, INSERM Paris, France."
+    },
+    {
+      "@id": "#bceccd46-fcf3-4928-8aeb-f92dee66d6a5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Genethon, University of Paris-Saclay, University of Évry, INSERM, Évry-Courcouronnes, France."
+    },
+    {
+      "@id": "#bf6be356-249a-4858-904f-ef89162ce855",
+      "@type": [
+        "Organization"
+      ],
+      "name": "UMR 152 Pharma Dev, Université de Toulouse, IRD, 31062 Toulouse, France."
+    },
+    {
+      "@id": "#c0b8e4b9-bca0-4ff6-b1e6-1307429d247c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Cytométrie Imagerie Saint-Antoine, Sorbonne University, CRSA, Paris, France."
+    },
+    {
+      "@id": "#df3914c0-7b4a-48d6-bede-36d5d27405d3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Bordeaux Imaging Center, BIC, University of Bordeaux, CNRS, INSERM, Bordeaux, France."
+    },
+    {
+      "@id": "#eeda0f4f-ac85-409c-a0ce-b5b8d7835f87",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut de Génétique Moléculaire de Montpellier, IGMM, University of Montpellier CNRS, Montpellier, France."
+    },
+    {
+      "@id": "#f7e86221-cabd-453d-9ff7-9f7ee370bec1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Paris Sciences & Lettres Research University, PSL, École Pratique des Hautes Études, EPHE, Paris, France."
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "obo:NCBITaxon_9615",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Canis lupus familiaris"
+    },
+    {
+      "@id": "#0e08538c-f828-4715-abf9-66427b829484",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells expressing stably histone H2B fused to EGFP - HeLa cells are derived from Human papillomavirus-related cervical adenocarcinoma. This cell line is expressing stably histone H2B fused to EGFP. (see Lleres et al, JCB, 2009 as reference).",
+      "name": "Scan Hela H2B GFP",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1941e288-9420-4ac5-84b9-c24f18b15fb7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEP3B human liver carcinoma",
+      "name": "Human Liver Carcinoma",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#34f4c00f-5113-4931-9ac4-e006dc9077c0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human muscle fiber, dapi for nucleii, Alexa488-YAP (transcriptional coactivator)\nAlexa568-Titin (Sarcomere), Atto647-phalloidin (myofibrils)",
+      "name": "Human muscle AMU",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#354d31c2-70be-4457-8dcc-e40e89ad4154",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Fibroblast from Dermis",
+      "name": "Fibroblast CRSA",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#49c7368e-1f44-4ede-90f2-825841da9164",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U2OS stably expressing histone H2B fused to EGFP - Cells not really healthy. Cells thawed the week before. Not dense.",
+      "name": "U2OS IGH",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4d8158f7-9590-4f59-beae-96fde016eb35",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "\"Human muscle fiber, dapi for nucleii, Alexa488-YAP (transcriptional coactivator)\nAlexa568-Titin (Sarcomere)\nAtto647-phalloidin (myofibrils)\"",
+      "name": "Human intestine AMU",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#515646c2-2e5c-478d-9b35-f928867caa1f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "MDCK expressing stably the EB3 protein fused to Cherry. - Cells isolated from normal kidney tissue.",
+      "name": "Cocker",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9615"
+      }
+    },
+    {
+      "@id": "#52bba5f8-30dd-4755-adfb-ba52656522f1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U2OS",
+      "name": "U2OS",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#73c02430-7d45-4291-8d11-ea51ad1b12b5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa stably epxressing RAB6A fused with EGFP",
+      "name": "HeLa IGH",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8aecd3c6-4b21-46c9-a7b5-7621a2bdd30b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa Cells GFP-alpha tubuline/mCherry -H2B",
+      "name": "Hela Vienna",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9f3eb450-df19-4649-8715-072783988ae9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "T24 Urinary bladder transitional cell carcinoma",
+      "name": "Urinary bladder transitional cell carcinoma",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#cf053f24-c8b9-41b2-bc19-0f16608129e4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C4-2B human prostate cancer - High morphology variability in the same plate. Sometimes cells were adherent, or rounded, or rounded but attached by 2 corners.",
+      "name": "Human Prostate Cancer",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d2114fbe-0553-420a-aa51-8ea9a7c3f4ba",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HELA cells",
+      "name": "HeLa Roussy",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#dd604b62-ec9c-46e4-88f9-75000d6c712c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa Walter Schaffner",
+      "name": "HeLa Shaffner",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f11990f9-f949-4804-a1cb-356c481fa596",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Immortalised Myoblast",
+      "name": "Myoblast Genethon",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f73bfdee-93bc-4753-9357-50a8a92cb393",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U2OS stably expressing histone H2B fused to EGFP - Cells not really healthy. Cells thawed the week before. Not dense.",
+      "name": "U2OS H2B GFP",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#085375d5-d138-4e6b-a0c8-216121e47da2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Pixel size 100 nm",
+      "labEquipment": "Inverted Leica DMi8 stand, equipped with environmental control (37°C and CO2) controlled by Inscoper software. 63x, NA 0,8, dry (air) immersion Leica objective and Hamamatsu OrcaFlash4.0 detector.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "U2OS"
+    },
+    {
+      "@id": "#127c8c71-094d-49bc-a991-0d0729a2b1e1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": " pixel size : 110 nm\n100X/1.45 NA",
+      "labEquipment": "Inverted Nikon Ti2 microscope with temperature and CO2 controlled chamber, CMOS back-illuminated Prime95B Photometrics camera. Motorized Z of the microscope for the Z-stack.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "U2OS H2BGFP 100x"
+    },
+    {
+      "@id": "#2ff4a682-fbd6-44c9-b8b3-6149cbea7030",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "63x/1.40 OIL",
+      "labEquipment": "Leica - TCS SP8 STED 3X.\ndetector model : Leica HyD\nobjective model : HC PL APO CS2 63x",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Myoblast Genethon"
+    },
+    {
+      "@id": "#3b0c141a-da6d-4e7a-a748-ea033aae949a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 110 nm\n100X/1.4 NA",
+      "labEquipment": "Inverted Nikon Ti2 microscope with temperature and CO2 controlled chamber, CMOS back-illuminated Prime95B Photometrics camera. Motorized Z of the microscope for the Z-stack.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Cocker"
+    },
+    {
+      "@id": "#4d3ef074-01ef-4c1e-b1a0-bd80832b30cd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 60 nm",
+      "labEquipment": "Inverted Leica DMI8 video-microscope, temperature and gas controled. 63x/1.4 oil immersion objective.\ndetector model : DFC 3000G - Leica CCD\nobjective model :  Leica HC PL APO",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "HeLa Roussy"
+    },
+    {
+      "@id": "#5b56a361-0d33-4e2f-af2d-282570f848f8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 102 nm\n60x/1,42\n",
+      "labEquipment": "Home-made microscope, OMX-t. Temperature and gas controlled.\ndetector model : Andor ZYLA-4.2-CL10-W (for SIR-DNA), Andor ZYLA-4.2P-CL10-W (for BF)\nobjective model : Olympus 60 UPLSAPO 60xO",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "HeLa IGH 2"
+    },
+    {
+      "@id": "#62cd61e2-5264-4b96-85d8-1e03b8dddec9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size = 106nm \nFor each channel, 20 planes were acquired separated by 400nm each.",
+      "labEquipment": "Home-made setup equipped with a ORCA Flash 4 sCMOS (Hamamatsu) and a 60x Olympus phase contrast objective. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Scan Hela H2B GFP"
+    },
+    {
+      "@id": "#7507afff-a014-4fe7-a6f9-5f1745eb2068",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 65 nm\n100x/1.3 Oil immersion objective.\nz acquisition of 5µm with 0,2µm step size.",
+      "labEquipment": "Inverted Nikon Ti eclipse with NIS software and environmental control. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Urinary bladder transitional cell carcinoma 100x (BF)"
+    },
+    {
+      "@id": "#863defee-6090-42f7-b206-bb332920411b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 182 nm \n60X/1.4 NA",
+      "labEquipment": "Inverted Nikon Ti2 microscope with temperature and CO2 controlled chamber, CMOS back-illuminated Prime95B Photometrics camera. Motorized Z of the microscope for the Z-stack with Prime 95B A17F203017 detector model and  Luminencor Led objective model.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "U2OS H2BGFP 60x"
+    },
+    {
+      "@id": "#8a91df36-d06d-4e4e-b458-c6d725d472f3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 65 nm\n100x/1.4, Oil immersion objective.",
+      "labEquipment": "Leica THUNDER microscope. \ndetector model : Camera Leica K8 sCMOS - 4.2MP\nobjective model : Leica 100X/1.4 Oil HC PL APO DIC Ph",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "HeLa IGH 3"
+    },
+    {
+      "@id": "#a3ea7abe-2570-401e-a945-0326d47f7b71",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 103  nm",
+      "labEquipment": "Inverted Zeiss Axio Observer stand, equipped with environmental control (37°C and CO2) controlled by ZEN software",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "HeLa Schaffner"
+    },
+    {
+      "@id": "#a588de2e-2f9c-45b2-a22b-94ff6b9e750c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "63x/1,4 Oil immersion objective",
+      "labEquipment": "Zeiss AxioObserverZ1, Plan Apochromat, 6,5µm\ndetector model : Hamamatsu HDCamC11440-42U\nobjective model : Hamamatsu OrcaFlash4LT",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human intestine AMU"
+    },
+    {
+      "@id": "#b12381fd-7998-47be-a903-2c7de86710f7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 65 nm\nz acquisition of 5µm with 0,2µm step size.",
+      "labEquipment": "Inverted Nikon Ti eclipse with NIS software and environmental control. \n 100X/1,4. Oil immersion with Nikon Plan Apo objective and Hamamatsu orcaFlash 4.0. dectector.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human Liver Carcinoma (BF)"
+    },
+    {
+      "@id": "#b3d84197-b603-41dd-a8d9-41098b6cecc6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 110 nm\n63x/1.4",
+      "labEquipment": "nverted Zeiss Axio Observer 7, with temperature 37°C CO2 chamber. Zeiss Apo Plan. ORCA-Flash4 Hamamatsu monochrome camera( pixels, 6.5µm pixel size).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "U2OS IGH BF"
+    },
+    {
+      "@id": "#b3edd654-a230-4311-92a8-a694bb2d01f1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 65 nm\n100x/1,3 Oil Ph3",
+      "labEquipment": "Zeiss AxioObserverZ1, EC Plan Neofluar Ph3\ndetector model : Hamamatsu HDCamC11440-42U\nobjective model : Hamamatsu OrcaFlash4LT",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human muscle AMU 2"
+    },
+    {
+      "@id": "#c1e48671-c5cd-4ced-9f79-626102b9c454",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 103 nm",
+      "labEquipment": "Inverted Zeiss Axio Observer stand, equipped with environmental control (37°C and CO2) controlled by ZEN software",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "HeLa Vienna"
+    },
+    {
+      "@id": "#cf3fb62e-0967-4a8a-8fdf-b52118f6253d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 79 nm\n100x/1.4, Oil immersion objective\nMitoTracker far red, BF, Hoechst",
+      "labEquipment": "Deltavision OMX-V4, temperature and gas controlled.\ndetector model : EMCCD Evolve 512B photometric camera\nobjective model : Olympus 1-U2B836",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "HeLa IGH"
+    },
+    {
+      "@id": "#d14dae4d-d1c0-41cc-af36-465aae36c5af",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 103 nm\n60X/1,42, Oil objective immersion",
+      "labEquipment": "Confocal Olympus Fluoview FV3000, Plan Apo 60X/1,35 oil, 1024*1024 pixels with zoom 2\ndetector model : High sensitivity spectral detector (HSD)\nobjective model : UPLXAPO 60XO ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000245"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Fibroblast CRSA"
+    },
+    {
+      "@id": "#dce43c1f-44ff-4de0-b711-ce644273ff52",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 162 nm\n40x/1.3 Oil immersion objective.\nz acquisition of 5µm with 0,3µm step size.",
+      "labEquipment": "Inverted Nikon Ti eclipse with NIS software and environmental control. \ndetector model : Hamamatsu OrcaFlash4 C11440-22C SN:000242\nobjective model : Nikon Plan Fluor\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Urinary bladder transitional cell carcinoma 40x"
+    },
+    {
+      "@id": "#dd646bb9-e0dd-4d60-870a-a1288625ddbe",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 162 nm\n40xLD/0.6, Air immersion objective.",
+      "labEquipment": "Zeiss AxioObserverZ1, LD PlnN, 6,5µm\ndetector model : Hamamatsu HDCamC11440-42U\nobjective model : Hamamatsu OrcaFlash4LT \n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human muscle AMU"
+    },
+    {
+      "@id": "#dea443a3-c37e-4388-a044-86e90fb4571a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 65 nm\nz acquisition of 5µm with 0,2µm step size.\nMitoTracker Green FM : Green channel : Ex 475/34 Em 536/40\nDraq5 : Far Red channel : Ex 628/40 Em 676/29\"",
+      "labEquipment": "Inverted Nikon Ti eclipse with NIS software and environmental control. 100X, NA 1,3, Oil immersion Nikon Plan Fluor Ph3 DLL objective and Hamamatsu orcaFlash 4.0. detector.\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human Prostate Cancer (PC)"
+    },
+    {
+      "@id": "#e1090385-78e9-430b-ae6f-478bb56894d9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 110 nm\n63x/1.4",
+      "labEquipment": "Inverted Zeiss Axio Observer 7, with temperature 37°C CO2 chamber. Zeiss Apo Plan. ORCA-Flash4 Hamamatsu monochrome camera( pixels, 6.5µm pixel size).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "U2OS IGH PC"
+    },
+    {
+      "@id": "#f01e455e-8e53-4b7e-9aed-5d627ef210d0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 65 nm\n100X/1,4 oil immersion objective. Camera Hamamatsu orcaFlash 4.0. z acquisition of 5µm with 0,2µm step size.",
+      "labEquipment": " Inverted Nikon Ti eclipse with NIS software and environmental control. z acquisition of 5µm with 0,2µm step size.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human Liver Carcinoma (PC)"
+    },
+    {
+      "@id": "#f8918041-20b6-4239-8030-a51da7f6539f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 162 nm",
+      "labEquipment": "Inverted Nikon Ti eclipse with NIS software and environmental control. 40X/1,3 oil immersion with Nikon Plan Fluor objective and Camera Hamamatsu orcaFlash 4.0 detector.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human Liver Carcinoma"
+    },
+    {
+      "@id": "#fcb61f9a-0ec1-4520-8d03-9fd2fcf6fa0d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "detector model : Hamamatsu orcaFlash 4.0  C11440-22C SN:000242\nobjective model : Nikon Plan Apo Ph3 DM\n100x/1.4, Oil immersion objective.",
+      "labEquipment": "Inverted Nikon Ti eclipse with NIS software and environmental control. z acquisition of 5µm with 0,2µm step size.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Urinary bladder transitional cell carcinoma 100x (PC)"
+    },
+    {
+      "@id": "#fe9a40b9-20e3-44ba-8201-6e72f1f54397",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pixel size : 65 nm\nz acquisition of 5µm with 0,2µm step size.\nMitoTracker Green FM : Green channel : Ex 475/34 Em 536/40\nDraq5 : Far Red channel : Ex 628/40 Em 676/29\"",
+      "labEquipment": "Inverted Nikon Ti eclipse with NIS software and environmental control. 100X with NA1,4, Oil immersion Nikon Plan Apo objective and Hamamatsu OrcaFlash 4.0 detector.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human Prostate Cancer BF"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000245",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "differential interference contrast microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 0
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 0
+    }
+  ]
+}

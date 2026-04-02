@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1185"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1185",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ecae316e-a852-480a-9d1e-612093c19881"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2a067d0c-5380-41db-a76b-d34bbf65c8ed"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4890-2647"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-03",
+      "description": "figures and data from EMBOR-2023-58638V2 - Spermatocytes have the capacity to segregate chromosomes despite centriole duplication failure",
+      "funder": [],
+      "identifier": "S-BIAD1185",
+      "keywords": [
+        "Centriole, Centrosome, Meiosis, Chromosome Segregation, Spermatogenesis, PLK4, Polo-like Kinase"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "EMBOR-2023-58638V2 - Spermatocytes have the capacity to segregate chromosomes despite centriole duplication failure",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1185/c59b2e97-302b-44df-9da9-62d52c2d31c9/a3f1f55a-ec14-4bf1-af7a-8b295a86c473.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4890-2647",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#deb54d08-8dae-4eb3-ac46-f08efa8d430c"
+        }
+      ],
+      "email": "philip.jordan@usuhs.edu",
+      "name": "Philip Jordan"
+    },
+    {
+      "@id": "#deb54d08-8dae-4eb3-ac46-f08efa8d430c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Uniformed Services University of the Health Sciences"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#2a067d0c-5380-41db-a76b-d34bbf65c8ed",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse spermatocyte images",
+      "name": "EMBOR-2023-58638V2 - Spermatocytes have the capacity to segregate chromosomes despite centriole duplication failure",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ecae316e-a852-480a-9d1e-612093c19881",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Microscope image acquisition\nTubule squash and chromatin spread images were captured using a Zeiss CellObserver Z1 linked to an ORCA-Flash 4.0 CMOS camera (Hamamatsu). Histology and cryo-sectioning images were captured using a Keyence BZ-800 and BZ-X800 Viewer and Analyzer software. Images were processed using ZEN 2012 blue edition imaging software (Zeiss) or BZ-X800 Viewer and Analyzer software (Keyence). Images were analyzed using the Zeiss ZEN 2012 blue edition image software, and Photoshop (Adobe) was used to prepare the figure images.\n\nMicrotubule length and width measurements\nSpindle measurements were made using ZEN 2012 blue edition imaging software (Zeiss). The spindle length was obtained by measuring from where microtubule nucleation began at an MTOC to the aligned chromosomes on the metaphase I spindle. The width of the spindle was measured proximal to aligned chromosomes on the metaphase I spindle. The width and length of both spindles of a metaphase I spermatocyte were measured and reported as a ratio of A:B, with A being the smaller of the two length or width measurements (Fig 6B and D).\n\nData and statistical analysis\nAll graphics and statistical analyses were performed with GraphPad Prism 9.0 software. Each figure legend provides details of cell and animal counts and statistical analyses.\n",
+      "labEquipment": "Microscope image acquisition\nTubule squash and chromatin spread images were captured using a Zeiss CellObserver Z1 linked to an ORCA-Flash 4.0 CMOS camera (Hamamatsu). Histology and cryo-sectioning images were captured using a Keyence BZ-800 and BZ-X800 Viewer and Analyzer software. Images were processed using ZEN 2012 blue edition imaging software (Zeiss) or BZ-X800 Viewer and Analyzer software (Keyence). Images were analyzed using the Zeiss ZEN 2012 blue edition image software, and Photoshop (Adobe) was used to prepare the figure images.\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "EMBOR-2023-58638V2 - Spermatocytes have the capacity to segregate chromosomes despite centriole duplication failure"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 476
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2519949492
+    }
+  ]
+}

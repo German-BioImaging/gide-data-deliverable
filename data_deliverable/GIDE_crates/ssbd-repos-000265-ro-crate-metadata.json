@@ -1,0 +1,207 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000265/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000265/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000265",
+      "name": "All four knockout of ErbB-family genes delineates their roles in proliferation, survival, and collective cell migration of epithelial cells.",
+      "description": "The ErbB-family receptors, consisting of the epidermal growth factor receptor (EGFR/ErbB1/HER1), ErbB2/HER2, ErbB3/HER3, and ErbB4/HER4, play pivotal roles in cell proliferation, migration, and survival of the epithelial cells. However, due to their functional redundancy, it remains unknown to which extent each of the four ErbB proteins contributes to these biological outputs. We here knocked out each, combination, or all of the four ErbB genes in Madin-Darby canine kidney (MDCK) cells to delineate the contribution of each ErbB gene. During collective cell migration of MDCK cells, activation of extracellular signal-regulated kinase (ERK) is propagated from the leader cells to the follower cells. These ERK activation waves were mediated primarily by ErbB1 and auxiliary by the ErbB2/ErbB3 heterodimer. Either ErbB1 or the ErbB2/ErbB3 complex was sufficient for the G1/S progression of MDCK cells. The saturation cell density was markedly reduced in cells deficient from all ErbB proteins due to apoptosis. ErbB1 or ErbB2 alone is sufficient to prevent apoptosis at high cell density. Because ErbB2 does not bind to any ErbB ligands, these observations indicate that the ligand-independent ErbB2 activity is sufficient for preventing apoptosis at high cell density, but not for cell proliferation. Thus, systematic knockout of ErbB-family genes delineated the roles of each ErbB receptor in collective cell migration, cell proliferation, and survival at high cell density.",
+      "datePublished": "2023-08-07",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1242/jcs.261199"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1904699"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097194"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kenta Terai",
+      "email": "terai.kenta.5m@kyoto-u.ac.jp",
+      "description": "Organization: Graduate School of Medicine; Department: Department of Pathology and Biology of Diseases",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02ets8c94"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02ets8c94",
+      "@type": "Organization",
+      "name": "Graduate School of Medicine"
+    },
+    {
+      "@id": "https://doi.org/10.1242/jcs.261199",
+      "@type": "ScholarlyArticle",
+      "name": "Knockout of all ErbB-family genes delineates their roles in proliferation, survival, and migration.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        }
+      ],
+      "hasCellLine": "MDCK cells: RIKEN BioResource Center (no. RCB0995)"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "vernacularName": "dog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
+      "@type": "DefinedTerm",
+      "name": "cell migration"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1904699",
+      "@type": "DefinedTerm",
+      "name": "cell proliferation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097194",
+      "@type": "DefinedTerm",
+      "name": "apoptosis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Fluorescence Microscopy",
+      "description": "Fluorescence Microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "Fluorescence Microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 69166989312,
+      "description": "69.2 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 147415,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

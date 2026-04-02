@@ -1,0 +1,334 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2232"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2232",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f209b1c7-5fe9-4eba-b816-f1266ccdca07"
+        },
+        {
+          "@id": "#bf82524a-2865-47bf-9c0e-f3737d03b779"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0aa2d0bf-faa7-4843-859a-8ea0e8b8ee10"
+        },
+        {
+          "@id": "#fd70f175-c6d6-476b-99ba-08c4a2fc98d8"
+        },
+        {
+          "@id": "#1fb926b0-90b8-46b2-a37f-4082216a1454"
+        },
+        {
+          "@id": "#4c1a918b-fe12-46a4-9012-11cdae38f994"
+        },
+        {
+          "@id": "#2acb491a-546b-4cb2-a358-47b8b30d5b53"
+        },
+        {
+          "@id": "#d9064f67-444d-477b-a441-eb90d5452b38"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0008-0410-0048"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1726-8161"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2431-2477"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4928-6244"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-07",
+      "description": "This dataset contains paired virtual whole-slide images (WSIs) and their corresponding chemically stained WSIs. Virtual staining uses deep learning to digitally reproduce the appearance of histochemical stains from label-free images, offering a non-destructive alternative to conventional staining that preserves tissue for additional analysis. In this dataset, the virtual WSIs were generated from label-free dual-excitation Photon Absorption Remote Sensing (PARS) microscopy data using the RegGAN image-to-image translation framework. Stain types include hematoxylin & eosin (H&E), Masson’s trichrome, periodic acid–Schiff (PAS), and Jones silver, spanning diverse healthy and pathological human and murine tissues. The dataset enables quantitative and qualitative evaluation of virtual staining performance, providing pixel-aligned comparisons between AI-generated stains and their real histochemical counterparts.",
+      "funder": [],
+      "identifier": "S-BIAD2232",
+      "keywords": [
+        "Virtual staining",
+        "Label-free histology",
+        "Photon Absorption Remote Sensing (PARS) microscopy",
+        "UV imaging",
+        "Deep learning",
+        "Whole-slide imaging (WSI)",
+        "Histochemical stains",
+        "Digital pathology",
+        "Non-destructive microscopy",
+        "absorption microscopy "
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Label-Free Whole Slide Virtual Multi-Staining Using Dual-Excitation Photon Absorption Remote Sensing Microscopy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2232/06e62959-9856-4e0d-b8e3-3a150b1890e3/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2431-2477",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f2418db6-160e-406e-a089-e553b6f09d12"
+        }
+      ],
+      "email": "jatummonsimmons@uwaterloo.ca",
+      "name": "James A. Tummon Simmons"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4928-6244",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f2418db6-160e-406e-a089-e553b6f09d12"
+        }
+      ],
+      "email": "phajirez@uwaterloo.ca",
+      "name": "Parsin Haji Reza"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1726-8161",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f2418db6-160e-406e-a089-e553b6f09d12"
+        }
+      ],
+      "email": "benjamin.ecclestone@uwaterloo.ca",
+      "name": "Benjamin R. Ecclestone"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-0410-0048",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f2418db6-160e-406e-a089-e553b6f09d12"
+        }
+      ],
+      "email": "james.tweel@uwaterloo.ca",
+      "name": "James E.D. Tweel"
+    },
+    {
+      "@id": "#f2418db6-160e-406e-a089-e553b6f09d12",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Waterloo"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0aa2d0bf-faa7-4843-859a-8ea0e8b8ee10",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human kidney, clear cell renal cell carcinoma",
+      "name": "Human kidney – clear cell renal cell carcinoma",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1fb926b0-90b8-46b2-a37f-4082216a1454",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human skin, fungal infection.",
+      "name": "Human skin – fungal infection",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2acb491a-546b-4cb2-a358-47b8b30d5b53",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse brain, healthy",
+      "name": "Mouse brain – healthy",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#4c1a918b-fe12-46a4-9012-11cdae38f994",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse kidney",
+      "name": "Mouse kidney",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#d9064f67-444d-477b-a441-eb90d5452b38",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse intestine, healthy",
+      "name": "Mouse intestine – healthy",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#fd70f175-c6d6-476b-99ba-08c4a2fc98d8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human skin, nodular melanoma",
+      "name": "Human skin – nodular melanoma",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bf82524a-2865-47bf-9c0e-f3737d03b779",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Brightfield scanning at 40× equivalent magnification.",
+      "labEquipment": "Leica Aperio AT2 brightfield slide scanner.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Brightfield whole-slide imaging of histochemically stained sections"
+    },
+    {
+      "@id": "#f209b1c7-5fe9-4eba-b816-f1266ccdca07",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Dual-excitation at 266 nm (pulse width 400 ps, pulse energy 163 pJ) and 355 nm (pulse width 1.5 ns, pulse energy 808 pJ) using pulsed, spatially interlaced excitation spots. The system acquires simultaneous non-radiative and radiative (autofluorescence) relaxation following absorption. A low-power 405 nm continuous-wave laser measures non-radiative relaxation via scattering changes, while radiative autofluorescence is broadly collected. System photodiodes record responses, and a high-speed digitizer captures the data. Whole-slide imaging is achieved via automated autofocus using the scattering signal and stitched mosaics (~40× equivalent resolution).",
+      "labEquipment": "Custom-built dual-excitation PARS laser scanning microscope with 266 nm and 355 nm pulsed lasers, low-power 405 nm continuous-wave (CW) laser for scattering measurements.",
+      "measurementTechnique": [],
+      "name": "Label-free dual-excitation Photon Absorption Remote Sensing (PARS) microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 30
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12773002722
+    }
+  ]
+}

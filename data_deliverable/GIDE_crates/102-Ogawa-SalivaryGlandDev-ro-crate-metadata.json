@@ -1,0 +1,256 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/102-Ogawa-SalivaryGlandDev/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/102-Ogawa-SalivaryGlandDev/",
+      "@type": "Dataset",
+      "identifier": "102-Ogawa-SalivaryGlandDev",
+      "name": "Phase contrast images of natural and bioengineered salivary gland germs including the ED13.5 submandibular gland, the ED14.5 sublingual gland and the ED14.5 parotid gland on days 0,1,2,3 of organ cultures",
+      "description": "102-Ogawa-SalivaryGlandDev",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Citric Acid/pharmacology",
+        "Embryo, Mammalian",
+        "Embryonic Stem Cells/cytology[major]",
+        "Epithelial Cells/pathology",
+        "Graft Survival/physiology",
+        "Mesenchymal Stem Cells/cytology[major]",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "Pilocarpine/pharmacology",
+        "Recovery of Function[major]",
+        "Regeneration[major]",
+        "Stem Cell Transplantation[major]",
+        "Submandibular Gland/innervation",
+        "Submandibular Gland/pathology",
+        "Submandibular Gland/surgery[major]",
+        "Tissue Engineering",
+        "Transplantation, Homologous",
+        "Xerostomia/pathology",
+        "Xerostomia/surgery",
+        "Xerostomia/therapy[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/ncomms3498"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007431"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-253"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takashi Tsuji",
+      "email": "t-tsuji@rs.noda.tus.ac.jp",
+      "description": "Organization: Tokyo University of Science; Department: Research Institute for Science and Technology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05sj3n476"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Miho Ogawa"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Masamitsu Oshima"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Aya Imamura"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Yurie Sekine"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Kentaro Ishida"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Kentaro Yamashita"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Kei Nakajima"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Masatoshi Hirayama"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Tetsuhiko Tachikawa"
+    },
+    {
+      "@id": "https://ror.org/05sj3n476",
+      "@type": "Organization",
+      "name": "Tokyo University of Science"
+    },
+    {
+      "@id": "https://doi.org/10.1038/ncomms3498",
+      "@type": "ScholarlyArticle",
+      "name": "Functional salivary gland regeneration by transplantation of a bioengineered organ germ.",
+      "datePublished": "2013"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007431",
+      "@type": "DefinedTerm",
+      "name": "salivary gland development"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 175630426,
+      "description": "175.6 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 24,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

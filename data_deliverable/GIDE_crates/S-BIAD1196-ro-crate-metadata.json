@@ -1,0 +1,386 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1196"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1196",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#14458f59-a72d-46c3-b2da-b5c0745d9259"
+        },
+        {
+          "@id": "#4363ceee-8e71-498c-a78e-665b703ddb90"
+        },
+        {
+          "@id": "#4938d790-4b34-481d-ae99-131f333d1a09"
+        },
+        {
+          "@id": "#93395387-9400-4ed2-b024-1bcb4398bb41"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#287d2588-9710-4a26-995b-b93c94a96303"
+        },
+        {
+          "@id": "#346dac30-41f0-4bba-9100-4f2718307967"
+        },
+        {
+          "@id": "#112045bf-151d-4b2a-b6a0-b3f6385b6d48"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0008-8183-6729"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4844-6955"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5163-5100"
+        },
+        {
+          "@id": "#486c95d3-b64b-4959-9e9a-e8c7941feb43"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8627-1260"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9912-8263"
+        },
+        {
+          "@id": "#38912fe4-9d42-421f-8891-11fb109ce3f6"
+        },
+        {
+          "@id": "#cb016e44-6a27-4936-91a4-2ed0b6376902"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-05",
+      "description": "This dataset is the training set with annotations for the SELMA3D challenge. The SELMA3D challenge focuses on self-supervised learning for 3D light-sheet microscopy image segmentation. Its objective is to encourage the development of self-supervised learning methods for general segmentation of various structures in 3D light-sheet microscopy images. The dataset comtains 3D image patches of different labeled biological structures in the brain, including blood vessels, c-Fos labeled brain cells involved in neural activity, cell nuclei, and Alzheimer's disease plaques. Each patch includes corresponding pixel-wise annotations for the labeled structures.",
+      "funder": [],
+      "identifier": "S-BIAD1196",
+      "keywords": [
+        "Light-sheet microscopy",
+        "image segmentation",
+        " fluorescence microscopy",
+        "3D microscopic image",
+        "deep learning"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "3D light-sheet microscopy data for SELMA3D 2024 challenge - Training subset with annotations",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#38912fe4-9d42-421f-8891-11fb109ce3f6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2"
+        }
+      ],
+      "name": "Shan Zhao"
+    },
+    {
+      "@id": "#486c95d3-b64b-4959-9e9a-e8c7941feb43",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Doris Kaltenecker"
+    },
+    {
+      "@id": "#cb016e44-6a27-4936-91a4-2ed0b6376902",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Luciano Höher"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5163-5100",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "email": "ali.erturk@helmholtz-munich.de",
+      "name": "Ali Erturk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9912-8263",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Harsharan Singh Bhatia"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4844-6955",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1ba7043f-fcc8-4c41-bc07-2aa74d649202"
+        }
+      ],
+      "email": "j.paetzold@ic.ac.uk",
+      "name": "Johannes C. Paetzold"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8627-1260",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2"
+        }
+      ],
+      "name": "Mihail Todorov"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-8183-6729",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2"
+        }
+      ],
+      "email": "ying.chen@campus.lmu.de",
+      "name": "Ying Chen"
+    },
+    {
+      "@id": "#1ba7043f-fcc8-4c41-bc07-2aa74d649202",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Imperial College London"
+    },
+    {
+      "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ludwig-Maximilians-Universität München"
+    },
+    {
+      "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Zentrum München"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#112045bf-151d-4b2a-b6a0-b3f6385b6d48",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain",
+      "name": "Biosample for brain c-Fos-positive cell patches",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#287d2588-9710-4a26-995b-b93c94a96303",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain",
+      "name": "Biosample for brain amyloid plaque patches",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#346dac30-41f0-4bba-9100-4f2718307967",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain",
+      "name": "Biosample for brain blood vessel patches",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#14458f59-a72d-46c3-b2da-b5c0745d9259",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 1.63 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 4-μm steps. ",
+      "labEquipment": "Imaging was performed using a 4× objective lens (Olympus XLFLUOR) coupled to an Olympus revolving zoom body unit (U-TVCAC) kept at 1x.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - amyloid plaque"
+    },
+    {
+      "@id": "#4363ceee-8e71-498c-a78e-665b703ddb90",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 1.625 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 3-μm steps while using left- and right-sided illumination. ",
+      "labEquipment": "Imaging was performed using a 4× objective lens (Olympus XLFLUOR 340) equipped with an immersion corrected dipping cap mounted on a LaVision UltraII microscope coupled to a white-light laser module (NKT SuperK Extreme EXW-12) for imaging. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - blood vessel"
+    },
+    {
+      "@id": "#4938d790-4b34-481d-ae99-131f333d1a09",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 1.625μm per voxel on the x and y axes. In the z dimension, we took sectional images in 6-μm steps while using left- and right-sided illumination. ",
+      "labEquipment": "Imaging was performed using a 4× objective lens (Olympus XLFLUOR 340) equipped with an immersion corrected dipping cap mounted on a LaVision UltraII microscope coupled to a white-light laser module (NKT SuperK Extreme EXW-12) for imaging. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - c-Fos-positive cell"
+    },
+    {
+      "@id": "#93395387-9400-4ed2-b024-1bcb4398bb41",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 0.54 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 5-μm steps.",
+      "labEquipment": "Imaging was performed using a12x objective lens ( LaVision BioTec MI PLAN) coupled to an Olympus revolving zoom body unit (U-TVCAC) kept at 1x. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - brain cell nucleus"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 202
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2698007496
+    }
+  ]
+}

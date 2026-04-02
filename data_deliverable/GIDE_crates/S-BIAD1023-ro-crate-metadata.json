@@ -1,0 +1,262 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1023"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1023",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9ab03244-c1df-4a80-9f84-5011d8b53e4b"
+        },
+        {
+          "@id": "#77b9ea5a-1a38-454f-861b-45b9fa69e424"
+        },
+        {
+          "@id": "#1be4cfcd-9523-4ace-87cc-cd9f273b4e83"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#65d5c5b2-2f21-4ea4-b764-e5c9078420a7"
+        },
+        {
+          "@id": "#fe124931-f5e9-4b76-929c-352c666ab939"
+        },
+        {
+          "@id": "#995298ce-850a-44d1-84b6-70ddc88bb4aa"
+        },
+        {
+          "@id": "#804364d6-c981-4a39-ae0a-37345cc5278d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3392-2250"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-31",
+      "description": "Conserved signaling cascades monitor protein-folding homeostasis to ensure proper cellular function. One of these evolutionary conserved key players is IRE1, which maintains endoplasmic reticulum (ER) homeostasis through the unfolded protein response (UPR). Upon accumulation of misfolded proteins in the ER, IRE1 forms clusters on the ER membrane to initiate UPR signaling. What regulates IRE1 cluster formation remains largely unknown. Here we show that the ER lumenal domain (LD) of human IRE1α forms biomolecular condensates in vitro. Tethering IRE1α LD to model membranes and its binding to unfolded polypeptides stabilized IRE1α LD condensates suggesting their role in assembling IRE1α into signaling-competent stable clusters. Molecular dynamics simulations indicated that weak multivalent interactions drive IRE1α LD clustering. Mutagenesis experiments identified disordered regions in IRE1α LD to control its clustering in vitro and in cells. Importantly, dysregulated clustering of IRE1α mutants led to defects in IRE1α signaling. Our results revealed that disordered regions in IRE1α LD control its clustering and suggest their role as a common strategy in regulating protein assembly on membranes. ",
+      "funder": [],
+      "identifier": "S-BIAD1023",
+      "keywords": [
+        "IRE1, unfolded protein response"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "“Disordered regions in its ER lumenal domain drive stress-induced clustering of the UPR sensor IRE1α”",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1023/7d7e9dfe-ae66-40e8-9dc4-6dc3a942510c/d7e1f455-608c-4a1b-821b-cece782d4e45.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3392-2250",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1bc97290-ca77-4d03-8abf-8c1718f20cfd"
+        }
+      ],
+      "email": "guelsuen.karagoez@meduniwien.ac.at",
+      "name": "Gulsun Elif Karagoz"
+    },
+    {
+      "@id": "#1bc97290-ca77-4d03-8abf-8c1718f20cfd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Perutz Labs"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#65d5c5b2-2f21-4ea4-b764-e5c9078420a7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Wild type mCherry-human IRE1a  purified from bacteria ",
+      "name": "IRE1a lumenal domain (LD) reconstituted on supported lipid bilayers (SLB)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#804364d6-c981-4a39-ae0a-37345cc5278d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human IRE1a LD (aa 24-443) condensates formed upon molecular crowding and binding of unfolded polypeptide ligands imaged by DIC Microscopy",
+      "name": "human IRE1a LD (aa 24-443) condensates formed in solution ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#995298ce-850a-44d1-84b6-70ddc88bb4aa",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "IRE1a/b knockout MEFs stably expressing hIRE1a-mNeonGreen and its mutants reconstituted by lentiviral transduction. ",
+      "name": "Mouse Embryonic Fibroblasts( MEF) expressing hIRE1a-mNeonGreen and its mutants ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#fe124931-f5e9-4b76-929c-352c666ab939",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Recombinantly produced human IRE1a core lumenal domain lacking linker region",
+      "name": "Human IRE1a cLD ( 24-389)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1be4cfcd-9523-4ace-87cc-cd9f273b4e83",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The sample was imaged in PBS on a Zeiss LSM 980 inverse point scanning confocal microscope with a Plan-Apochromat 63x/1.4 Oil DIC, WD 0.19 mm objective. The microscope is operated by the Zeiss ZEN 3.3 microscope software. mNG and Atto549 were excited by the 488 nm and 561 nm laser diodes of the microscope, respectively. Image processing was performed in ImageJ",
+      "labEquipment": "Zeiss LSM 980 inverse point scanning confocal microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Imaging of Mouse Embryonic Fibroblasts expressing human IRE1a and its mutants tagged with mNeonGreen"
+    },
+    {
+      "@id": "#77b9ea5a-1a38-454f-861b-45b9fa69e424",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Experiments were performed on a Zeiss Axio Observer inverted microscope equipped with a Yokogawa CSU-X1-A1 Nipkow spinning disc unit (Visitron Systems; pinhole diameter 50 μm, spacing 253 μm), sCMOS camera (Pco.edge 4.2) and a Plan-Apochromat 63x/1.4 Oil DIC objective. Images were conducted every 5 s for a time course of 10 min with 80 % HX, 50 ms exposure and 10 % 561 nm laser intensity exposed for 100 ms. Per condition, 3 condensates were bleached after 2 frames with 100 % 561 nm laser power for 10 ms per pixel. Image processing was performed in ImageJ selecting the FRAP ROI and two ROIs of the same size within a non FRAPed condensate for bleaching correction and an area without condensate for background correction for every FRAPed condensate. The background value was subtracted from the FRAP and bleaching value, followed by calculating the bleaching factor to correct the FRAP values leading to the final normalization. The normalized FRAP values were fitted to the One-phase association in PRISM.",
+      "labEquipment": "Zeiss Axio Observer inverted microscope",
+      "measurementTechnique": [],
+      "name": "Differential Interference Contrast Microscopy to image hIRE1a LD( 24-443) and core LD ( 24-389)"
+    },
+    {
+      "@id": "#9ab03244-c1df-4a80-9f84-5011d8b53e4b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was conducted on an Olympus cellSens Live Imaging TIRF system with an Olympus 100 × 1.49 NA high-performance TIRF objective with 7 % 488, 100 ms exposure and 10 % 561, 100 ms exposure via a Hamamatsu ImagEM X2 EM-CCD camera operated by Olympus cellSens 3.1.1. The fluidity of the membrane was confirmed via FRAP experiments. A 2 s 50 % single-point laser pulse of 405 nm was used to bleach the fluorescence of the membrane and protein and the fluorescence recovery was followed over 100 frames every 2 s. Image processing was performed in ImageJ by selecting the FRAP ROI and another ROI of the same size on a non-FRAPed area as bleaching background and was kept the same within an experiment. The bleaching ROI was used to obtain bleaching factors by which the FRAP values were corrected with, followed by normalization. ",
+      "labEquipment": "an Olympus cellSens Live Imaging TIRF system with an Olympus 100 × 1.49 NA high-performance TIRF objective",
+      "measurementTechnique": [],
+      "name": "TIRF microscopy on Supported Lipid Bilayers"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 12696
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 61400180250
+    }
+  ]
+}

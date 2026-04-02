@@ -1,0 +1,206 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2156"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2156",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f627f814-e0ea-4693-9072-d3e7d34b18ab"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1c8b425b-976e-4954-9f5d-03edd3c905b9"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5b6a9341-aab1-40c1-9005-38837bf3e5d6"
+        },
+        {
+          "@id": "#7fbf7a70-e61f-455c-a5a0-5e8cb9fb15cb"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-19",
+      "description": "In silico labeling prediction of organelle fluorescence from label-free microscopy images has the potential to revolutionize our understanding of cells as integrated complex systems. However, out-of-distribution data caused by changes in the intracellular organization across cell types, cellular processes or perturbations, can lead to altered label-free images and impaired in silico labeling. We demonstrated that incorporating biological meaningful cell contexts, via a context-dependent model that we call CELTIC, enhanced in silico labeling prediction and enabled downstream analysis of out-of-distribution data such as cells undergoing mitosis, and cells located at the edge of the colony. These results suggest a link between cell context and intracellular organization. Using CELTIC to generate single cell images transitioning between different contexts enabled us to overcome inter-cell variability toward integrated characterization of organelles’ alterations in cellular organization. The explicit inclusion of context has the potential to harmonize multiple datasets, paving the way for generalized in silico labeling foundation models.",
+      "funder": [],
+      "identifier": "S-BIAD2156",
+      "keywords": [
+        "in silico labeling ",
+        "context",
+        "organelle",
+        "single cell",
+        "label-free",
+        "CELTIC",
+        "out-of-distribution",
+        "intracellular organization",
+        "generative"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Cell-context dependent in silico organelle localization in label-free microscopy images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#5b6a9341-aab1-40c1-9005-38837bf3e5d6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05tkyf982"
+        }
+      ],
+      "email": "enitsan8@gmail.com",
+      "name": "Nitsan Elmalam"
+    },
+    {
+      "@id": "#7fbf7a70-e61f-455c-a5a0-5e8cb9fb15cb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05tkyf982"
+        }
+      ],
+      "email": "assafzar@gmail.com",
+      "name": "Assaf Zaritsky"
+    },
+    {
+      "@id": "https://ror.org/05tkyf982",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ben-Gurion University of the Negev"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#1c8b425b-976e-4954-9f5d-03edd3c905b9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "pluripotent stem cell",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f627f814-e0ea-4693-9072-d3e7d34b18ab",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "From Viana, Matheus P., et al. \"Integrated intracellular organization and its variations in human iPS cells.\" Nature 613.7943 (2023): 345-354.:\n\"Imaging was performed on three identical ZEISS spinning-disk confocal microscopes with 10×/0.45 NA Plan-Apochromat or 100×/1.25 W C-Apochromat Korr UV Vis IR objectives (Zeiss) and ZEN 2.3 software (blue edition; ZEISS) unless otherwise specified. The spinning-disk confocal microscopes were equipped with a 1.2× tube lens adapter for a final magnification of 12× or 120×, respectively, a CSU-X1 spinning-disk scan head (Yokogawa) and two Orca Flash 4.0 cameras (Hamamatsu). Standard laser lines were used at the following laser powers measured with 10× objectives; 405 nm at 0.28 mW, 488 nm at 2.3 mW, 561 nm at 2.4 mW and 640 nm at 2.4 mW unless otherwise specified. An Acousto-Optic Tunable Filter (AOTF) was used to simultaneously modulate the intensity of the four laser lines. The following Band Pass (BP) filter sets (Chroma) were used to collect emission from the specified fluorophore: 450/50 nm for detection of DNA dye, 525/50 nm for detection of mEGFP tag, 600/50 nm for detection of mTagRFP-T tag and 706/95 nm for detection of cell-membrane dye. Images were acquired with an exposure time of 200 ms unless otherwise specified. Cells were imaged in phenol red-free mTeSR1 medium on the stage of microscopes outfitted with a humidified environmental chamber to maintain cells at 37 °C with 5% O2 during imaging. Transmitted light (bright-field) images were acquired using a white LED light source with broad emission spectrum (pipeline 4.0–4.2) or a red LED light source with peak emission of 740 nm with narrow range and a BP filter 706/95 nm for bright-field light collection (Pipeline 4.4 only). A Prior NanoScan Z 100 mm piezo z stage (ZEISS) was used for fast acquisition in z (Pipeline 4.4 only). Optical control images were acquired daily at the start of each data acquisition to monitor microscope performance. Laser power was measured monthly and the corresponding percentage adjusted accordingly for each wavelength.....\nThe image acquisition workflow and experimental set-up evolved over the three years of dataset collection and was versioned into four pipelines. Adjustments included single versus dual camera, filter and light sources, as well as addition of a photoprotective cocktail. Low magnification (12×), 2D bright-field overview images of cells in wells were collected for cell morphology assessment and for selection of imaging positions for high-magnification (120×), 3D, multichannel imaging. Cells were imaged in three modes to acquire a variation of locations within hiPS cell colonies. Selection of FOV position was performed manually using the stage function in ZEN software or using an automated method, depending on the mode and the cell line. After the selection of FOV position from the well overview acquisition, the DNA of cells was first stained for 20 min with NucBlue Live (Thermo Fisher Scientific). Then the cell membrane was stained with CellMask Deep Red (CMDR, Thermo Fisher Scientific) in the continued presence of NucBlue Live for an additional 10 min, and cells were washed once before imaging for a maximum of 2.5 h. Three-dimensional FOVs at 120× were acquired at the pre-selected positions. Four channels were acquired at each z-step (interwoven channels) in the following order: bright field, mEGFP or mTagRFP-T, CMDR and NucBlue Live. Further details are provided in the Supplementary Methods.\"\n",
+      "labEquipment": "From Viana, Matheus P., et al. \"Integrated intracellular organization and its variations in human iPS cells.\" Nature 613.7943 (2023): 345-354.:\n\"Imaging was performed on three identical ZEISS spinning-disk confocal microscopes\"",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 33221
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 99285790942
+    }
+  ]
+}

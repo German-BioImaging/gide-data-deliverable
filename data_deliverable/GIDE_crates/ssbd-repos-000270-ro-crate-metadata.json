@@ -1,0 +1,154 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000270/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000270/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000270",
+      "name": "Image-based parameter inference for epithelial mechanics",
+      "description": "Measuring mechanical parameters in tissues, such as the elastic modulus of cell-cell junctions, is essential to decipher the mechanical control of morphogenesis. However, their in vivo measurement is technically challenging. Here, the authors formulated an image-based statistical approach to estimate the mechanical parameters of epithelial cells. Candidate mechanical models are constructed based on force-cell shape correlations obtained from image data. Substitution of the model functions into force-balance equations at the cell vertex leads to an equation with respect to the parameters of the model, by which one can estimate the parameter values using a least-squares method. A test using synthetic data confirmed the accuracy of parameter estimation and model selection. By applying this method to Drosophila epithelial tissues, they found that the magnitude and orientation of feedback between the junction tension and shrinkage, which are determined by the spring constant of the junction, were correlated with the elevation of tension and myosin-II on shrinking junctions during cell rearrangement. Further, this method clarified how alterations in tissue polarity and stretching affect the anisotropy in tension parameters.",
+      "datePublished": "2024-10-01",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Drosophila[major]",
+        "Drosophila melanogaster",
+        "Epithelial Cells",
+        "Epithelium",
+        "Intercellular Junctions[major]",
+        "Morphogenesis"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pcbi.1010209"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kaoru Sugimura",
+      "email": "sugimura@bs.s.u-tokyo.ac.jp",
+      "description": "Organization: The University of Tokyo; Department: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Shuji Ishihara",
+      "description": "Department: Graduate School of Science"
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1010209",
+      "@type": "ScholarlyArticle",
+      "name": "Image-based parameter inference for epithelial mechanics.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fly"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 6275072,
+      "description": "6.3 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 167,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

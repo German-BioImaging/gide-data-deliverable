@@ -1,0 +1,277 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1654"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1654",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d24e0cc9-a871-439e-b294-c194ae5fff14"
+        },
+        {
+          "@id": "#f9635e21-1339-4e75-a0ec-665a15a371fa"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a5b23fcb-4e72-43ee-851f-ac8fa29a2827"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0005-5092-7562"
+        },
+        {
+          "@id": "https://orcid.org/0009-0004-0752-0866"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7927-1636"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6825-1573"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-19",
+      "description": "Animal growth is driven by the collective actions of cells, which are reciprocally influenced in real-time by the animal’s overall growth state. While cell behavior and animal growth state are expected to be tightly coupled, it is not yet determined whether local cellular features at the micrometer scale might correlate with the body size of an animal at the macroscopic level. Here, we report the use of a deep learning model to link single-cell resolution images of live zebrafish larvae with whole-animal size. Using a skin cell barcoding system termed palmskin, we labeled superficial epithelial cells (SECs) in developing zebrafish larvae with multicolor fluorescent markers. By inputting 722 skin cell images and corresponding size data for each larva into machine learning models, we determined that the Vision Transformer (ViT)-based model with a random cropping and voting strategy was able to achieve high predictive performance (F-score of 0.91). Remarkably, analyzing as few as 27 skin cells within a single image of 0.01 mm^2 (approximately 0.6% of the animal’s trunk surface area) was sufficient to reach an F-score of 0.79 for prediction of the individual’s overall size, ranging from 0.9 to 3.1 mm^2. Using a gradient-weighted class activation map (Grad-CAM) approach, we further identified that growth-driven clonal expansion of SECs is among the most important cellular features influencing the model’s decisions. Together, these findings provide a proof-of-concept that organismic information at a macroscopic length scale may be de-encrypted from a snapshot of only a few dozen cells using deep-learning approaches.",
+      "funder": [],
+      "identifier": "S-BIAD1654",
+      "keywords": [
+        "deep learning",
+        "artificial intelligence",
+        "brainbow",
+        "skin epithelial cells",
+        "palmskin",
+        "asynthetic fission",
+        "zebrafish"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Deep learning models link local cellular features with whole-animal growth dynamics in developing zebrafish",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7927-1636",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#43c7d857-340b-4028-81da-22fb2a666289"
+        }
+      ],
+      "email": "acwei86@ntu.edu.tw",
+      "name": "An-Chi Wei"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6825-1573",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#79a6deca-ec74-4f1a-8dad-ce011a5dcf49"
+        }
+      ],
+      "email": "chcchen@gate.sinica.edu.tw",
+      "name": "Chen-Hui Chen"
+    },
+    {
+      "@id": "https://orcid.org/0009-0004-0752-0866",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#79a6deca-ec74-4f1a-8dad-ce011a5dcf49"
+        }
+      ],
+      "email": "meganliaw@gmail.com",
+      "name": "Megan Liaw"
+    },
+    {
+      "@id": "https://orcid.org/0009-0005-5092-7562",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2755256c-760e-415d-966a-f1dea1f280a8"
+        }
+      ],
+      "email": "rime97410000@gmail.com",
+      "name": "Shang-Ru Yang"
+    },
+    {
+      "@id": "#2755256c-760e-415d-966a-f1dea1f280a8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Graduate Institute of Biomedical Electronics and Bioinformatics, National Taiwan University"
+    },
+    {
+      "@id": "#43c7d857-340b-4028-81da-22fb2a666289",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Department of Electrical Engineering, National Taiwan University"
+    },
+    {
+      "@id": "#79a6deca-ec74-4f1a-8dad-ce011a5dcf49",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Cellular and Organismic Biology, Academia Sinica"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#a5b23fcb-4e72-43ee-851f-ac8fa29a2827",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Superficial epithelial cells (SECs) of Palmskin transgenic larvae and bright-field images of corresponding larvae.",
+      "name": "Zebrafish",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#d24e0cc9-a871-439e-b294-c194ae5fff14",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Three lasers were used for excitation: 448 nm, 514 nm and 552 nm. Image resolution was set at 1024 x 1024 pixels, and the image was taken in bidirectional mode. Other imaging settings include: scanning speed of 600Hz, zoom factor of 1, line average of 2, pinhole size of 2 AU and Z-stack of 2-μm optical sections.",
+      "labEquipment": "All SEC palmskin images were captured using an upright SP8 confocal microscope (Leica) equipped with a 25x water-immersion lens (25x/0.95 NA HCXIRAPO). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "SEC Palmskin image acquisition"
+    },
+    {
+      "@id": "#f9635e21-1339-4e75-a0ec-665a15a371fa",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Image resolution was set as 2048 x 2048 pixels and imaged on 1X objective.",
+      "labEquipment": "Bright-field images for trunk surface area and standard length measurements of each larva were captured using an M205 stereomicroscope (Leica). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Bright-field Palmskin image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 88260542735
+    }
+  ]
+}

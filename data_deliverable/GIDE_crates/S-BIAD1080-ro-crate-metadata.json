@@ -1,0 +1,214 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1080"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1080",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#82c336b3-ddc6-4ee6-8820-7fed3ac288c4"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#942aa982-aa86-415d-915d-9cd7dd9c09c8"
+        },
+        {
+          "@id": "obo:NCBITaxon_5702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9828-2012"
+        },
+        {
+          "@id": "#9a9a7a5b-09a2-4106-8728-982d735a6b9d"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-11",
+      "description": "Raw data corresponding to the publication \"Continuous endosomes form functional subdomains and orchestrate rapid membrane trafficking in trypanosomes\" published in eLife (https://doi.org/10.7554/eLife.91194.2).",
+      "funder": [],
+      "identifier": "S-BIAD1080",
+      "keywords": [
+        "electron microscopy",
+        "widefield microscopy",
+        "expansion microscopy",
+        "dSTORM"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Continuous endosomes form functional subdomains and orchestrate rapid membrane trafficking in trypanosomes",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#9a9a7a5b-09a2-4106-8728-982d735a6b9d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00fbnyb24"
+        }
+      ],
+      "email": "markus.engstler@uni-wuerzburg.de",
+      "name": "Markus Engstler"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9828-2012",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00fbnyb24"
+        }
+      ],
+      "email": "fabian.link@uni-wuerzburg.de",
+      "name": "Fabian Link"
+    },
+    {
+      "@id": "https://ror.org/00fbnyb24",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Würzburg"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_5702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Trypanosoma brucei brucei"
+    },
+    {
+      "@id": "#942aa982-aa86-415d-915d-9cd7dd9c09c8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bloodstream form cells",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_5702"
+      }
+    },
+    {
+      "@id": "#82c336b3-ddc6-4ee6-8820-7fed3ac288c4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Material and Methods section in publication",
+      "labEquipment": "See Material and Methods section in publication",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 280
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 467051839403
+    }
+  ]
+}

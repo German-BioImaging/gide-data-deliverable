@@ -1,0 +1,177 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000103/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000103/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000103",
+      "name": "Phase images of the development of natural and bioengineered lacrimal gland germ and harderian gland germ in time schedule",
+      "description": "ssbd-repos-000103",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cornea/pathology",
+        "Dry Eye Syndromes/pathology",
+        "Dry Eye Syndromes/surgery",
+        "Dry Eye Syndromes/therapy[major]",
+        "Embryo, Mammalian",
+        "Embryonic Stem Cells/cytology[major]",
+        "Epithelial Cells/pathology",
+        "Graft Survival",
+        "Harderian Gland/transplantation[major]",
+        "Lacrimal Apparatus/pathology",
+        "Lacrimal Apparatus/surgery[major]",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "Polyglycolic Acid/chemistry",
+        "Recovery of Function[major]",
+        "Regeneration[major]",
+        "Tears/metabolism",
+        "Tissue Engineering",
+        "Transplantation, Homologous"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/ncomms3497"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0070384"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032808"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-254"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takashi Tsuji",
+      "email": "t-tsuji@rs.noda.tus.ac.jp",
+      "description": "Organization: Tokyo University of Science; Department: Research Institute for Science and Technology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05sj3n476"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/05sj3n476",
+      "@type": "Organization",
+      "name": "Tokyo University of Science"
+    },
+    {
+      "@id": "https://doi.org/10.1038/ncomms3497",
+      "@type": "ScholarlyArticle",
+      "name": "Functional lacrimal gland regeneration by transplantation of a bioengineered organ germ.",
+      "datePublished": "2013"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0070384",
+      "@type": "DefinedTerm",
+      "name": "harderian gland development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032808",
+      "@type": "DefinedTerm",
+      "name": "lacrimal gland development"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 35961856,
+      "description": "36.0 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 24,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

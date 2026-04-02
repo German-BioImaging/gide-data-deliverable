@@ -1,0 +1,190 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000236/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000236/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000236",
+      "name": "Cell membrane images, restored images, and segmentation results of 52 C. elegans embryos.",
+      "description": "We performed 3D timelapse imaging of 52 embryos, in which the cell membrane is labeled with green fluorescent protein (GFP), for two hours from the two-cell stage. An image restoration method based on deep learning was applied to improve the image quality. An image processing method called BCOMS (Biologically Constrained Optimization-based cell Membrane Segmentation) was applied and the cellular regions were segmented.",
+      "datePublished": "2022-06-30",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.3389/fbinf.2023.1082531"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032502"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1904199"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shuichi Onami",
+      "email": "sonami@riken.jp",
+      "description": "Organization: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Developmental Dynamics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/023rffy11"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/023rffy11",
+      "@type": "Organization",
+      "name": "RIKEN Center for Biosystems Dynamics Research"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fbinf.2023.1082531",
+      "@type": "ScholarlyArticle",
+      "name": "Systematic analysis of cell morphodynamics in C. elegans early embryogenesis.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "OD95",
+      "description": "OD95",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "vernacularName": "nematode"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032502",
+      "@type": "DefinedTerm",
+      "name": "Developmental process"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1904199",
+      "@type": "DefinedTerm",
+      "name": "Cell membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Spinning disk confocal microscopy",
+      "description": "Spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "Spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 253756080128,
+      "description": "253.8 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1812583,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

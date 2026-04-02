@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD769"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD769",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#06ae6e88-bcef-40f1-98ba-68b02dcf7d32"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#72d62e9a-1a47-45b2-8f9e-dc66095ef3b0"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0368-9512"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-06-29",
+      "description": "Nix is a membrane-anchored outer mitochondrial protein than induces mitophagy.  While Nix has a LIR motif for binding to ATG8 proteins, it also contains a MER (minimal essential region) that induces mitophagy through an unknown mechanism.  We use chemically induced dimerization (CID) to probe the mechanism of Nix-mediated mitophagy and find that both the LIR and MER are required for robust mitophagy.  We find that the Nix MER interacts with WIPI2 and recruits WIPI2 to mitochondria.  The Nix LIR motif is also required for robust mitophagy and converting WIPI2 coating the mitochondria into puncta, independently of Atg8s. Together this work reveals unanticipated mechanisms in Nix-induced mitophagy and the elusive role of the MER, while also revealing an interesting example of autophagy induction downstream of the Ulk1 initiation and PI3K complexes.",
+      "funder": [],
+      "identifier": "S-BIAD769",
+      "keywords": [
+        "Nix",
+        "BNIP3L",
+        "WIPI2",
+        "LIR"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Nix Interacts with WIPI2 to Induce Mitophagy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD769/adec4b4d-4b77-4e7c-ae60-ff7e9aa7103f/cd49f04a-cd71-4ec1-82bb-1334ac2289b1.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0368-9512",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01s5ya894"
+        }
+      ],
+      "email": "ericbunker88@gmail.com",
+      "name": "Eric Bunker"
+    },
+    {
+      "@id": "https://ror.org/01s5ya894",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National Institute of Neurological Disorders and Stroke"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#72d62e9a-1a47-45b2-8f9e-dc66095ef3b0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa Cells\nU2OS Cells",
+      "name": "Imaging data for 'Nix Interacts with WIPI2 to Induce Mitophagy'",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#06ae6e88-bcef-40f1-98ba-68b02dcf7d32",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were imaged on a Nikon Ti-2 CSU-W1 spinning disk confocal system operated by Nikon elements AR microscope imaging software either using a 20× air objective (NA 0.75) or a 40x water objective (NA 1.15) with the automated TI2-N-WID water immersion dispenser.  The microscope is equipped with a live cell chamber that was set to 37°C and 50% CO2 with constant humidity.  Cells were imaged in MGB096-1-2-LG-L 96-well imaging plates (DOT Scientific Inc).  mKeima was excited with 488 and 561 lasers for neutral and acidic pH compartments, respectively, and each assessed with a 698/70nm emission filter.",
+      "labEquipment": "Nikon Ti-2 CSU-W1 spinning disk confocal system ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Nix Interacts with WIPI2 to Induce Mitophagy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 47
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 928119362
+    }
+  ]
+}

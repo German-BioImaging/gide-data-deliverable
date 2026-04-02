@@ -1,0 +1,211 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1489"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1489",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#87e74f40-fcc2-478e-8982-6b82b025fc64"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4434875a-715a-4b89-8dee-5d2feaf740dd"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5169-5488"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7838-839X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-10",
+      "description": "Early embryos display a remarkable ability to regulate tissue patterning in response to changes in tissue size. However, it is not clear whether this ability continues into post-gastrulation stages. Here, we performed targeted removal of dorsal progenitors in the zebrafish tailbud using multiphoton ablation. This led to a proportional reduction in the length of the spinal cord and paraxial mesoderm in the tail, revealing a capacity for the regulation of tissue morphogenesis during tail formation. Following analysis of cell proliferation, gene expression, signalling and cell movements, we found no evidence of cell fate switching from mesoderm to neural fate to compensate for neural progenitor loss. Furthermore, tail paraxial mesoderm length is not reduced upon direct removal of an equivalent number of mesoderm progenitors, ruling out the hypothesis that neuromesodermal competent cells enable proportional regulation. Instead, reduction in cell number across the spinal cord reduces both spinal cord and paraxial mesoderm length. We conclude that spinal cord elongation is a driver of paraxial mesoderm elongation in the zebrafish tail and that this can explain proportional regulation upon neural progenitor reduction. ",
+      "funder": [],
+      "identifier": "S-BIAD1489",
+      "keywords": [
+        "zebrafish",
+        "fluorescent in situ hybridisation",
+        "bioimage analysis",
+        "stardist",
+        "nmp",
+        "neuromesodermal progenitors",
+        "neuromesodermal competence",
+        "sox2",
+        "tbxta",
+        "tbx16",
+        "tailbud",
+        "3D single nuclear segmentation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Spinal cord elongation enables proportional regulation of the zebrafish posterior body: sox2/tbxta/tbx16 in situ hybridisation dataset",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1489/1ffce861-5406-4bf0-87ab-4df9b471487d/e748c462-0a1e-4d8a-af06-7b8ae67be293.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5169-5488",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "ddzs2@cam.ac.uk",
+      "name": "Dillan Saunders"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7838-839X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "bjs57@cam.ac.uk",
+      "name": "Benjamin Steventon"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#4434875a-715a-4b89-8dee-5d2feaf740dd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "zebrafish tailbud nuclei and gene expression",
+      "name": "zebrafish tailbud in situ hybridisation dataset",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#87e74f40-fcc2-478e-8982-6b82b025fc64",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "VoxelSizeX = 0.15629243164055615\nVoxelSizeY = 0.15629243164055615\nVoxelSizeZ = 0.965\nDimension lengths = 1024,1024,4,z-slices\nDetectionChannel Detector Gain #1 = 550.0\nDetectionChannel Detector Gain #2 = 700.0\nDetectionChannel Detector Gain #3 = 575.0\nDetectionChannel Detector Gain #4 = 550.0\nBitDepth = 12-bit\nDetectionChannel Detector Name #1 = Pmt1\nDetectionChannel Detector Name #2 = Pmt2\nDetectionChannel Detector Name #3 = Pmt2\nDetectionChannel Detector Name #4 = Pmt1\nDetectionChannel Dye Name #1 = DAPI\nDetectionChannel Dye Name #2 = Alexa Fluor 647\nDetectionChannel Dye Name #3 = Alexa Fluor 546\nDetectionChannel Dye Name #4 = Alexa Fluor 488\nDetectionChannel Filter Name #1 = SP 555\nDetectionChannel Filter Name #2 = LP 640\nDetectionChannel Filter Name #3 = LP 560\nDetectionChannel Filter Name #4 = SP 555\nDetectionChannel Pinhole Diameter #1 = 70.29457\nDetectionChannel Pinhole Diameter #2 = 70.29457\nDetectionChannel Pinhole Diameter #3 = 70.29457\nDetectionChannel Pinhole Diameter #4 = 70.3428\nDetectionChannel SPI Wavelength End #1 = 555.0000000000005\nDetectionChannel SPI Wavelength End #2 = 1000.0000000000001\nDetectionChannel SPI Wavelength End #3 = 1000.0000000000001\nDetectionChannel SPI Wavelength End #4 = 735.0\nDetectionChannel SPI Wavelength Start #1 = 0.0\nDetectionChannel SPI Wavelength Start #2 = 640.0\nDetectionChannel SPI Wavelength Start #3 = 560.0\nDetectionChannel SPI Wavelength Start #4 = 415.00000000000006\nIlluminationChannel Power #1 = 20.0\nIlluminationChannel Power #2 = 20.0\nIlluminationChannel Power #3 = 24.0\nIlluminationChannel Power #4 = 18.0\nLaser Name #1 = Diode 405-5\nLaser Name #2 = Diode488\nLaser Name #3 = Diode555\nLaser Name #4 = Diode639\nRecording Objective = EC Plan-Neofluar 40x/1.30 Oil Ph3\nLine averaging = 2\nbidirectional-scanning",
+      "labEquipment": "Zeiss LSM700 laser scanning confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "zebrafish tailbud imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 424
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 150872651580
+    }
+  ]
+}

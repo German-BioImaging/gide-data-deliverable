@@ -1,0 +1,155 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000272/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000272/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000272",
+      "name": "Epidermal growth factor receptor signaling protects epithelia from morphogenetic instability and tissue damage in Drosophila",
+      "description": "Original image data of the manuscript by Yoshida and Hayashi (in press, preprint available  https://doi.org/10.1101/2022.08.28.505615).",
+      "datePublished": "2023-03-09",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Drosophila/metabolism[major]",
+        "Signal Transduction[major]",
+        "ErbB Receptors/metabolism",
+        "Epithelium/metabolism",
+        "Extracellular Signal-Regulated MAP Kinases/metabolism",
+        "Epidermal Growth Factor/metabolism",
+        "Phosphorylation"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1242/dev.201231"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2022.08.28.505615"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shigeo Hayashi",
+      "email": "shigeo.hayashi@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Morphogenetic Signaling",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1242/dev.201231",
+      "@type": "ScholarlyArticle",
+      "name": "Epidermal growth factor receptor signaling protects epithelia from morphogenetic instability and tissue damage in Drosophila.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2022.08.28.505615",
+      "@type": "ScholarlyArticle",
+      "name": "Epidermal growth factor receptor signaling protects epithelia from morphogenetic instability and tissue damage in &lt;em&gt;Drosophila&lt;/em&gt;",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fly"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 157047459840,
+      "description": "157.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1231,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

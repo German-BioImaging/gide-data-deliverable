@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1599"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1599",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#86322b9d-46b7-4091-a3db-c1e66ea25ddd"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3b51a9aa-4c0b-4b4e-9fe5-e87e75dacccf"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#da725131-7f07-446b-b368-7bd4bad24519"
+        },
+        {
+          "@id": "#f3e0a5b0-ffef-474a-82e5-b51966ab9447"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-30",
+      "description": "To ensure the accurate segregation of homologous chromosomes and enhance the genetic diversity in the progeny, meiosis depends on the formation of crossovers between homologous chromosomes. The number and distribution of these crossovers\nmust be precisely regulated through crossover assurance and interference to prevent chromosome missegregation and genomic instability. Here we show that the regulation of crossovers depends on a disordered and conserved domain within the synaptonemal complex. This domain is located at the C-terminus of the central element protein SYP-4 in Caenorhabditis elegans. While not necessary for synapsis, the C-terminus of SYP-4 is crucial for both crossover assurance and interference. Although the SYP-4 C-terminus contains many potential phosphorylation sites, we found that phosphorylation is not the primary regulator of crossover events. Instead, we discovered that nine conserved phenylalanines are required to recruit a pro-crossover factor predicted to be an E3 ligase and regulate the physical properties of the synaptonemal complex. We propose that this conserved and disordered domain plays a crucial role in maintaining the synaptonemal complex in a state that allows for the transmission of signals to regulate crossover formation. While the underlying mechanisms remain to be fully understood, our findings align with existing models suggesting that the synaptonemal complex  plays a critical role in determining the number and distribution of crossovers along  chromosomes, thereby safeguarding the genome for future generations.",
+      "funder": [],
+      "identifier": "S-BIAD1599",
+      "keywords": [
+        "crossover regulation,  synaptonemal complex, C. elegans, meiosis"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Crossovers are regulated by a conserved and disordered synaptonemal complex domain",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1599/c565b8a5-0679-4dc2-b5da-d6b4e3b246fa/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#da725131-7f07-446b-b368-7bd4bad24519",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "simone.koehler@embl.de",
+      "name": "Simone Köhler"
+    },
+    {
+      "@id": "#f3e0a5b0-ffef-474a-82e5-b51966ab9447",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "ana.neves@embl.de",
+      "name": "Ana Rita Rodrigues Neves"
+    },
+    {
+      "@id": "#5074a07c-1144-4134-96c3-f98335b1653a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#3b51a9aa-4c0b-4b4e-9fe5-e87e75dacccf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Germline",
+      "name": "Samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#86322b9d-46b7-4091-a3db-c1e66ea25ddd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For quantification of COSA-1 foci and DAPI-staining bodies, 0.16 µm-spaced z-stacks were acquired on a Zeiss LSM 880 Airyscan laser scanning confocal microscope with a 63X 1.4 NA DIC M27 oil plan-apochromat objective using the FastAiryScan mode. The images were deconvolved using the 3D auto mode from the Airyscan processing tool available in the Zen Black v14.0.15.201 software (Zeiss).\nFor all other experiments, 0.16-0.20 µm-spaced z-stacks were acquired on an Olympus spinning disk confocal system IXplore SpinSR with a 60X 1.42 NA oil plan-apochromat objective using the cellSens software (Olympus). For quantification of SYP-4, SYP-5, or ZHP-3 loading throughout pachytene and hexanediol experiments, images were acquired using the higher resolution SoRa disk with a 3.2X magnification. For synapsis zone quantification, images were acquired using a 50 µm disk with a 1X magnification. Both disks were used for quantification of RAD-51 foci.",
+      "labEquipment": "Zeiss LSM 880 Airyscan, Olympus spinning disk confocal system IXplore SpinSR ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "ImageAcquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 233
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 173140594768
+    }
+  ]
+}

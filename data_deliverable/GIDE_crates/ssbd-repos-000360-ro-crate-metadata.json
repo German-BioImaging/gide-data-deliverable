@@ -1,0 +1,172 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000360/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000360/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000360",
+      "name": "Dataset for \"Cytoplasmic fluidization contributes to breaking spore dormancy in fission yeast.\"",
+      "description": "The cytoplasm is a complex, crowded environment that influences myriad cellular processes including protein folding and metabolic reactions. Recent studies have suggested that changes in the biophysical properties of the cytoplasm play a key role in cellular homeostasis and adaptation. However, it still remains unclear how cells control their cytoplasmic properties in response to environmental cues. Here, we used fission yeast spores as a model system of dormant cells to elucidate the mechanisms underlying regulation of the cytoplasmic properties. By tracking fluorescent tracer particles, we found that particle mobility decreased in spores compared to vegetative cells, and rapidly increased at the onset of dormancy breaking upon glucose addition. This cytoplasmic fluidization depended on glucose sensing via the cAMP-PKA pathway. PKA activation led to trehalose degradation through trehalase Ntp1, thereby increasing particle mobility as the amount of trehalose decreased. In contrast, the rapid cytoplasmic fluidization did not require de novo protein synthesis, cytoskeletal dynamics, or cell volume increase. Furthermore, the measurement of diffusion coefficients with tracer particles of different sizes suggests that the spore cytoplasm impedes the movement of larger protein complexes (40–150 nm) such as ribosomes, while allowing free diffusion of smaller molecules (~3 nm) such as second messengers and signaling proteins. Our experiments have thus uncovered a series of signaling events that enable cells to quickly fluidize the cytoplasm at the onset of dormancy breaking. All imaging raw data and quantifications are available in the dataset.",
+      "datePublished": "2024-06-25",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Spores, Fungal/metabolism[major]",
+        "Spores, Fungal/physiology[major]",
+        "Schizosaccharomyces/metabolism[major]",
+        "Schizosaccharomyces/physiology[major]",
+        "Cytoplasm/metabolism[major]",
+        "Trehalose/metabolism[major]",
+        "Glucose/metabolism",
+        "Cyclic AMP-Dependent Protein Kinases/metabolism",
+        "Schizosaccharomyces pombe Proteins/metabolism",
+        "Schizosaccharomyces pombe Proteins/genetics",
+        "Signal Transduction"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.2405553121"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2023.09.27.559686"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yuhei  Goto",
+      "email": "y-goto@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: National Institute for Basic Biology; Laboratory: Division of Quantitative Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/055n47h92"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/055n47h92",
+      "@type": "Organization",
+      "name": "National Institutes of Natural Sciences"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.2405553121",
+      "@type": "ScholarlyArticle",
+      "name": "Cytoplasmic fluidization contributes to breaking spore dormancy in fission yeast.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2023.09.27.559686",
+      "@type": "ScholarlyArticle",
+      "name": "Cytoplasmic fluidization triggers breaking spore dormancy in fission yeast",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "See details in Sakai et al., bioRxiv, 2024",
+      "description": "See details in Sakai et al., bioRxiv, 2024",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853",
+      "@type": "Taxon",
+      "scientificName": "Schizosaccharomyces pombe",
+      "vernacularName": "fission yeast"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 315833749504,
+      "description": "315.8 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 102039,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

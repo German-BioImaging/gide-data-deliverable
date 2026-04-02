@@ -1,0 +1,338 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1157"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1157",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1d54991b-2bed-4128-b976-c974d074460f"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8298f060-79ca-44e1-8a1b-fe2546644c7b"
+        },
+        {
+          "@id": "#cb8cda8c-dc57-469b-9977-4e2ffa079929"
+        },
+        {
+          "@id": "#13ed9b71-21fb-4750-b305-72f6582d2614"
+        },
+        {
+          "@id": "#686c3a57-5a7c-41f7-abfb-52e9c3e725ca"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6307-2229"
+        },
+        {
+          "@id": "#7bf68be8-3a89-4e6e-a3ea-de7ebd1e71e0"
+        },
+        {
+          "@id": "#c4b9f7de-fb50-482a-baf6-af430fa10b29"
+        },
+        {
+          "@id": "#c0a352dd-9aa0-455a-8ab1-11ddef57bc0d"
+        },
+        {
+          "@id": "#2fb5908d-5c8f-47a6-90db-a18e170a1b82"
+        },
+        {
+          "@id": "#37a90ffc-fc69-49ff-b540-67af30a26739"
+        },
+        {
+          "@id": "#24ff95a4-612e-48c2-9e09-926e6e96cd58"
+        },
+        {
+          "@id": "#bf8f4b68-763c-4fc4-908f-2097d2f2457f"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-14",
+      "description": "This image dataset accompanies the publication \"Multiscale chromatin dynamics and high entropy in plant iPSC ancestors\" by Rutowicz et al. published in the Journal of Cell Science (2024)\nThe images are maximum projections of z-series acquired by Cell Voyager. One image corresponds to one region of interest (ROI) and one channel. Six ROIs were imaged per well (culture). Cultures were imaged at different days and segmented as described in the publication. Three families of image features were extracted from the segmented nuclei (Intensity features, Morphology features, Texture features) and used for multivariate analysis and entropy analysis. See Manuscript and Table S4 for more explanations on the dataset.",
+      "funder": [],
+      "identifier": "S-BIAD1157",
+      "keywords": [
+        "Arabidopsis",
+        "Protoplast",
+        "iPSC",
+        "H1 linker histone",
+        "High-throughput imaging",
+        "Cell Voyager",
+        "Texture",
+        "Entropy",
+        "Chromatin",
+        "dedifferentiation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "High Throughput imaging of Chromatin Features in Arabidopsis leaf protoplast cultures",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#24ff95a4-612e-48c2-9e09-926e6e96cd58",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Pelkmans Lucas "
+    },
+    {
+      "@id": "#2fb5908d-5c8f-47a6-90db-a18e170a1b82",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Holtackers René"
+    },
+    {
+      "@id": "#37a90ffc-fc69-49ff-b540-67af30a26739",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Yakimovich Yauhen"
+    },
+    {
+      "@id": "#7bf68be8-3a89-4e6e-a3ea-de7ebd1e71e0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Rutowicz Kinga"
+    },
+    {
+      "@id": "#bf8f4b68-763c-4fc4-908f-2097d2f2457f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Pazmino Diana"
+    },
+    {
+      "@id": "#c0a352dd-9aa0-455a-8ab1-11ddef57bc0d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "de Groot Reinoud"
+    },
+    {
+      "@id": "#c4b9f7de-fb50-482a-baf6-af430fa10b29",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Lüthi Joël"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6307-2229",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "cbaroux@botinst.uzh.ch",
+      "name": "Baroux Celia"
+    },
+    {
+      "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Zurich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#13ed9b71-21fb-4750-b305-72f6582d2614",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Arabidopsis leaf protoplasts",
+      "name": "Experiment HTI004",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#686c3a57-5a7c-41f7-abfb-52e9c3e725ca",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Arabidopsis leaf protoplasts",
+      "name": "Experiment HTI005",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#8298f060-79ca-44e1-8a1b-fe2546644c7b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Arabidopsis leaf protoplasts",
+      "name": "Experiment HTI001",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#cb8cda8c-dc57-469b-9977-4e2ffa079929",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Arabidopsis leaf protoplasts",
+      "name": "Experiment HTI002",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#1d54991b-2bed-4128-b976-c974d074460f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "leaf protoplasts cultured in coverglass-bottom 96-well plates were imaged using a confocal microscope Cell Voyager (CV7000, Yokogawa), equipped with a 60x water immersion objective (Nikon, NA1.2) using a illumination by 100-200 mW lasers from Coherent (depending on the channel) and filters from Chroma. Images were acquired as 16-bit images using two Neo sCMOS cameras (Andor), pixel size 6.5 µm/M.\nFor each well, six regions of interest (ROI) corresponding to a field of view of 277 µm x 234 µm with an image format of 2560 x 2160 pixels over 16 z planes with a step of 1 µm. ROIs were randomly chosen without overlap. Imaging time for one well = 90 seconds; Imaging time for one plate (60 wells) = 90 minutes. ",
+      "labEquipment": "Cell Voyager",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "High throughput images of leaf protoplasts cultured in multi-well plates"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1718
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8378235003
+    }
+  ]
+}

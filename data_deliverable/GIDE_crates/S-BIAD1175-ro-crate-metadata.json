@@ -1,0 +1,212 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1175"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1175",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1dcc8b21-7f38-47fc-ad97-a65c4012c85e"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#606bf45e-dd32-47fc-9b62-6e59271d20a2"
+        },
+        {
+          "@id": "obo:NCBITaxon_7070"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2068-9856"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0063-2297"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-24",
+      "description": "This dataset comprises 200 multichannel images of gap and gap-like gene expression (visualised using Hybridisation Chain Reaction fluorescent in situ hybridisation, HCR FISH) in Tribolium castaneum embryos spanning from the beginning to the end of axial segmentation. More information is available in the Readme file. ",
+      "funder": [],
+      "identifier": "S-BIAD1175",
+      "keywords": [
+        "segmentation",
+        "gap gene",
+        "HCR",
+        "gene expression",
+        "Tribolium castaneum",
+        "insect"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Expression of gap and gap-like genes during segmentation in Tribolium castaneum",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1175/f4535300-2bfe-49d8-93e3-1e0ce5cf2396/ad1b96eb-6813-473b-9173-50cb40bf14a3.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0063-2297",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/013meh722"
+        }
+      ],
+      "email": "mea2@cam.ac.uk",
+      "name": "Michael Akam"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2068-9856",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#155d4849-2746-424b-927b-d3303f5865bd"
+        }
+      ],
+      "email": "oliviatidswell@gmail.com",
+      "name": "Olivia Tidswell"
+    },
+    {
+      "@id": "#155d4849-2746-424b-927b-d3303f5865bd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Royal Society Te Apārangi"
+    },
+    {
+      "@id": "https://ror.org/013meh722",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7070",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Tribolium castaneum"
+    },
+    {
+      "@id": "#606bf45e-dd32-47fc-9b62-6e59271d20a2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tribolium castaneum embryos 8-22 hours after egg lay",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7070"
+      }
+    },
+    {
+      "@id": "#1dcc8b21-7f38-47fc-ad97-a65c4012c85e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "16 bit images were taken using an Olympus FV3000 confocal microscope using a UPLSAPO 20X objective (NA=0.75). The pixel and Z step size used for each imaging batch are detailed in the Excel file “Experiments_and_Imaging_Settings.xlsx”. ",
+      "labEquipment": "Olympus FV3000 confocal microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 202
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 87687561024
+    }
+  ]
+}

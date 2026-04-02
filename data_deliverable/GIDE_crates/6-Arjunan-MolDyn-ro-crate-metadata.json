@@ -1,0 +1,166 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/6-Arjunan-MolDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/6-Arjunan-MolDyn/",
+      "@type": "Dataset",
+      "identifier": "6-Arjunan-MolDyn",
+      "name": "6-Arjunan-MolDyn",
+      "description": "6-Arjunan-MolDyn",
+      "datePublished": "2013-09-02",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1007/s11693-009-9047-2"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Satya Nanda Vel Arjunan",
+      "email": "satya@sfc.keio.ac.jp",
+      "description": "Organization: Keio University; Department: Institute for Advanced Biosciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kn6nx58"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Masaru Tomita"
+    },
+    {
+      "@id": "https://ror.org/02kn6nx58",
+      "@type": "Organization",
+      "name": "Keio University"
+    },
+    {
+      "@id": "https://doi.org/10.1007/s11693-009-9047-2",
+      "@type": "ScholarlyArticle",
+      "name": "A new multicompartmental reaction-diffusion modeling method links transient membrane attachment of E. coli MinE to E-ring formation.",
+      "datePublished": "2010"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Escherichia coli",
+      "description": "Escherichia coli",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562",
+      "@type": "Taxon",
+      "scientificName": "Escherichia coli",
+      "vernacularName": "e. coli"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 200075260,
+      "description": "200.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

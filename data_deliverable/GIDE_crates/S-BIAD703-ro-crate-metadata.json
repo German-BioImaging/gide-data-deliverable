@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD703"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD703",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#de9de341-970a-4a67-96a2-ec11c0480382"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e8b8b40e-6917-4425-a26f-da6fb2091d7f"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#adc70c67-a4a3-4407-94e3-7a4dba170f85"
+        },
+        {
+          "@id": "#538e963a-2046-4473-bd8c-fa989f5d5f81"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-17",
+      "description": "Single molecule tracking data",
+      "funder": [],
+      "identifier": "S-BIAD703",
+      "keywords": [
+        "Single molecule tracking",
+        "Imaging"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "An engineered SOX17 induces somatic to neural stem cell fate transition independently from pluripotency reprogramming manuscript.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD703/094b67f6-aaaf-4948-9184-108d3e6b525d/45307c06-d073-4fce-87c7-20e71a840a32.png"
+      ]
+    },
+    {
+      "@id": "#538e963a-2046-4473-bd8c-fa989f5d5f81",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9659b0bc-b69f-4b2a-934a-15e1ba34d4ff"
+        }
+      ],
+      "email": "m.francois@centenary.org.au",
+      "name": "Mathias Francois"
+    },
+    {
+      "@id": "#adc70c67-a4a3-4407-94e3-7a4dba170f85",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9659b0bc-b69f-4b2a-934a-15e1ba34d4ff"
+        }
+      ],
+      "email": "m.graus@centenary.org.au",
+      "name": "Matthew Graus"
+    },
+    {
+      "@id": "#9659b0bc-b69f-4b2a-934a-15e1ba34d4ff",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centenary Institute of Cancer Medicine and Cell Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#e8b8b40e-6917-4425-a26f-da6fb2091d7f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cells transfected with eSOX17 or SOX17 or SOX2",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#de9de341-970a-4a67-96a2-ec11c0480382",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired on a Nikon TIRF microscope at a TIRF angle of 60.18 degrees to achieve HILO illumination, an iXon Ultra 888 EMCCD camera with filter cube TRF49909-ET-561 laser bandpass filter and a 100 X oil 1.49 NA TIRF objective. Cells were imaged using a 561nm excitation laser at a power density of 10.3μW to perform two different acquisition techniques. A fast frame rate which uses a 50 Hz (20 ms frame rate) to acquire 6000 frames without intervals to measure displacement distribution and fraction bound, and a slow frame rate which uses a 2 Hz (500 ms frame rate) to acquire 500 frames without intervals to measure residence times. ",
+      "labEquipment": "Nikon TIRF",
+      "measurementTechnique": [],
+      "name": "Image acquisitions"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 163
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 47619391488
+    }
+  ]
+}

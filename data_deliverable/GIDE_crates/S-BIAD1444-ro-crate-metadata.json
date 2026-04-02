@@ -1,0 +1,193 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1444"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1444",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6213e5f2-3e12-43ad-85ce-508f091b9901"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0d7d09cf-2bc9-48c1-bb55-bc98805f91cd"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1451-5967"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9458-1779"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-31",
+      "description": "TRAPP (transport protein particle) tethering complexes are known for their function as Rab-GTPase exchange factors (GEFs). In yeast and animal cells, TRAPPIII is an activator the Rab1 family (RabD in plants) which regulates ER-to-Golgi trafficking and autophagy. In Arabidopsis thaliana, the TRAPPIII complex has been identified and its subunit composition established, but little is known about its functions. We study here the TRAPPC8 subunit of the Arabidopsis thaliana TRAPPIII complex. The purpose of this experiment was to establish whether a loss-of-function mutation of TRAPPC8 causes changes in ER or Golgi morphology in Arabidopsis thaliana. Methodology described in detail in accompanying preprint (BioRxiv): doi: https://doi.org/10.1101/2024.01.11.575191.",
+      "funder": [],
+      "identifier": "S-BIAD1444",
+      "keywords": [
+        "TRAPPIII, TRAPPC8, plant, endoplasmic reticulum"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Transmission electron microscopy (TEM) images of root cells of trappc8-1 and wild-type Arabidopsis thaliana seedlings",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1444/c7ec5a31-6222-489b-b609-9b11e64d1390/079f4085-7afe-4bc8-835b-228d5c65929d.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1451-5967",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a350c83c-2b43-4f68-818a-59f49b466b9c"
+        }
+      ],
+      "email": "martah@ibb.waw.pl",
+      "name": "Marta Hoffman-Sommer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9458-1779",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#577a737f-d3d9-4032-b3cd-abff2eedceb1"
+        }
+      ],
+      "email": "malgorzata.kozieradzka-kiszkurno@ug.edu.pl",
+      "name": "Małgorzata Kozieradzka-Kiszkurno"
+    },
+    {
+      "@id": "#577a737f-d3d9-4032-b3cd-abff2eedceb1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Gdańsk"
+    },
+    {
+      "@id": "#a350c83c-2b43-4f68-818a-59f49b466b9c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Biochemistry and Biophysics, Polish Academy of Sciences"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#0d7d09cf-2bc9-48c1-bb55-bc98805f91cd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Sections of root seedlings.",
+      "name": "TEM imaging of wild-type and trappc8-1 seedling roots",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#6213e5f2-3e12-43ad-85ce-508f091b9901",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Accelerating voltage: 120 kV. Camera: Veleta CCD camera (Olympus Soft Imaging Solutions) and Radius software.",
+      "labEquipment": "Tecnai G2 Spirit BioTWIN (FEI, United States) transmission electron microscope",
+      "measurementTechnique": [],
+      "name": "Transmission electron microscopy (TEM) imaging"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 108
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 75684320
+    }
+  ]
+}

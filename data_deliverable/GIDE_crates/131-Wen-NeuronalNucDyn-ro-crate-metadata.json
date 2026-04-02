@@ -1,0 +1,244 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/131-Wen-NeuronalNucDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/131-Wen-NeuronalNucDyn/",
+      "@type": "Dataset",
+      "identifier": "131-Wen-NeuronalNucDyn",
+      "name": "Time-lapse images of tracking cell nuclei during movements or the dynamics and movements of GCaMP signals in dataset worm 1a of C. elegans",
+      "description": "131-Wen-NeuronalNucDyn",
+      "datePublished": "2022-03-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Brain/diagnostic imaging",
+        "Caenorhabditis elegans/cytology",
+        "Cell Tracking/instrumentation",
+        "Cell Tracking/methods[major]",
+        "Deep Learning[major]",
+        "Heart/diagnostic imaging",
+        "Image Processing, Computer-Assisted/instrumentation",
+        "Image Processing, Computer-Assisted/methods[major]",
+        "Imaging, Three-Dimensional/instrumentation",
+        "Imaging, Three-Dimensional/methods[major]",
+        "Spheroids, Cellular",
+        "Time-Lapse Imaging/instrumentation",
+        "Time-Lapse Imaging/methods[major]",
+        "Tumor Cells, Cultured",
+        "Zebrafish"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.59187"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051647"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-701"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Chentao Wen",
+      "email": "chentao-wen@umin.ac.jp",
+      "description": "Organization: Graduate School of Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04n835f38"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Chentao WenChentao Wen",
+      "description": "Organization: Nagoya City University",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04wn7wc95"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04n835f38",
+      "@type": "Organization",
+      "name": "Graduate School of Science"
+    },
+    {
+      "@id": "https://ror.org/04wn7wc95",
+      "@type": "Organization",
+      "name": "Nagoya City University"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.59187",
+      "@type": "ScholarlyArticle",
+      "name": "3DeeCellTracker, a deep learning-based pipeline for segmenting and tracking cells in 3D time lapse images.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "KDK54165",
+      "description": "KDK54165",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "AML14 (WormBase ID:WBStrain00000190)",
+      "description": "AML14 (WormBase ID:WBStrain00000190)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "vernacularName": "nematode"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051647",
+      "@type": "DefinedTerm",
+      "name": "nucleus localization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 9861701991,
+      "description": "9.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 18776,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

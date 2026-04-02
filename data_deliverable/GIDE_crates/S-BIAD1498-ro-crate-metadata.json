@@ -1,0 +1,219 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1498"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1498",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#91c9486c-75f8-4b2c-b45f-0f4eb81d715e"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#17b8bb6c-c537-40ec-940f-75b1d0be29d8"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2119-2190"
+        },
+        {
+          "@id": "#286ee3c1-0eec-4484-9ec8-81074570a05c"
+        },
+        {
+          "@id": "#d0f1ee22-35bf-4e86-b179-6106a80d721b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-31",
+      "description": "The CLK family plays a crucial role in regulating the phosphorylation of SR proteins. Therefore, to explore the dynamic effect of T-025 on the subnuclear localization of SRSF7 in triple-negative breast cancer cells, we performed time-lapse live cell imaging over 24 hours, with a 30-minute imaging interval. This was done using an established bacteria artificial chromosome (BAC) green fluorescent protein (GFP) Hs578T cell line that expressed SRSF7-GFP fusion product under the control of the endogenous promoter. BAC-Hs578T-SRSF7-GFP reporter cells were seeded with the seeding density of 15,000/well in glass-bottom Sensoplate 96-well imaging plate coated with 20 mg/ml rat tail collagen I in PBS. The following day, cells were stained with Hoechst-33342 and treated with 1 µM T-025. Live cell imaging was performed using a 20x objective (0.75 NA, 1.00 WD) on a Nikon Eclipse Ti microscope, equipped with a humidified 37 °C incubation chamber and 5% CO2 flow.  Images were captured with a DS-Qi1MC CCD camera at 30-minute intervals for 25 hours, with 4 positions per well being recorded using NIS-Elements software.",
+      "funder": [],
+      "identifier": "S-BIAD1498",
+      "keywords": [
+        "SRSF7",
+        "CLKs inhibitor",
+        "Live-cell imaging",
+        "Triple-negative breast cancer"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Time-lapse live cell imaging to determine the effect of T-025 on SRSF7 subnuclear localization",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1498/0b1e5b42-1f78-4b1f-9094-b5f6dd3aadbf/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#286ee3c1-0eec-4484-9ec8-81074570a05c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "email": "water_b@lacdr.leidenuniv.nl",
+      "name": "Bob van de Water"
+    },
+    {
+      "@id": "#d0f1ee22-35bf-4e86-b179-6106a80d721b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "email": "s.e.ledevedec@lacdr.leidenuniv.nl",
+      "name": "Sylvia Le Dévédec"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2119-2190",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "email": "n.s.liu@lacdr.leidenuniv.nl",
+      "name": "Nasi Liu"
+    },
+    {
+      "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leiden University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#17b8bb6c-c537-40ec-940f-75b1d0be29d8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human triple-negative breast cancer cells.",
+      "name": "Hs578T BAC-SRSF7-GFP reporter cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#91c9486c-75f8-4b2c-b45f-0f4eb81d715e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Live cell imaging was performed using a 20x objective (0.75 NA, 1.00 WD) on a Nikon Eclipse Ti microscope, equipped with a humidified 37 °C incubation chamber and 5% CO2 flow.  Images were captured with a DS-Qi1MC CCD camera at 30-minute intervals for 25 hours, with 4 positions per well being recorded using NIS-Elements software. ",
+      "labEquipment": "Nikon Eclipse Ti microscope with a 20x objective (0.75 NA, 1.00 WD), equipped with a humidified 37 °C incubation chamber and 5% CO2 flow.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Time-lapse live-cell imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3524
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7644105744
+    }
+  ]
+}

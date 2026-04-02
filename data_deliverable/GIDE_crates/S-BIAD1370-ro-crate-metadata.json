@@ -1,0 +1,234 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1370"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1370",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e2edcc26-85dc-4ce7-8dba-6503109a4284"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0859336a-7cf4-4c35-b19c-4f76ba7b06ca"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#c3daa07b-1c7b-4621-aa17-314d784784f8"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7466-8589"
+        },
+        {
+          "@id": "#0cd662d5-e8ac-4ff4-9eeb-99347460fa9f"
+        },
+        {
+          "@id": "#3220a1b2-6f97-4a54-b89e-cd07fb4fe7f5"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-27",
+      "description": "Image dataset for figure 1 of the manuscript \"Comparative Analysis of AAV Serotypes for Transduction of Olfactory Sensory Neurons \". This dataset is the complete raw imaging data for each AAV serotype examined in the study, in .lif format. ",
+      "funder": [],
+      "identifier": "S-BIAD1370",
+      "keywords": [
+        "AAV",
+        "Olfactory sensory neuron",
+        "Olfactory bulb"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Comparative Analysis of AAV Serotypes for Transduction of Olfactory Sensory Neurons  ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1370/bc396a65-94d1-4701-8dbe-334f09af3a6a/31db9546-ff74-4e77-94cb-b104f88e58b7.png"
+      ]
+    },
+    {
+      "@id": "#0cd662d5-e8ac-4ff4-9eeb-99347460fa9f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9181eecd-893a-4c9b-b4f5-215de29e8fc8"
+        }
+      ],
+      "email": "Arenkiel@bcm.edu",
+      "name": "Benjamin Arenkiel"
+    },
+    {
+      "@id": "#3220a1b2-6f97-4a54-b89e-cd07fb4fe7f5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9181eecd-893a-4c9b-b4f5-215de29e8fc8"
+        }
+      ],
+      "email": "zhandonl@bcm.edu",
+      "name": "Zhandong Liu"
+    },
+    {
+      "@id": "#c3daa07b-1c7b-4621-aa17-314d784784f8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9181eecd-893a-4c9b-b4f5-215de29e8fc8"
+        }
+      ],
+      "email": "benjamin.belfort@bcm.edu",
+      "name": "Benjamin Belfort"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7466-8589",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9181eecd-893a-4c9b-b4f5-215de29e8fc8"
+        }
+      ],
+      "email": "johnathan.jia@bcm.edu",
+      "name": "Johnathan Jia"
+    },
+    {
+      "@id": "#9181eecd-893a-4c9b-b4f5-215de29e8fc8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Texas Children's Hospital"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#0859336a-7cf4-4c35-b19c-4f76ba7b06ca",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Olfactory bulb tissue collected following AAV nasal inoculation of 11 distinct AAV serotypes (each introduced into individual mice separately) for the purpose of identifying top candidates for AAV transduction of OSNs.",
+      "name": "Olfactory Bulb Tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#e2edcc26-85dc-4ce7-8dba-6503109a4284",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x/.75 objective; to obtain the entire volume of each OB section, Z-stacks of ~30-40um per sample were collected at 1024x1024 resolution with 4x line averaging and 2x frame averaging. ",
+      "labEquipment": "Leica TCS SP8 confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2524
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4563405980032
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000131/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000131/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000131",
+      "name": "Time-lapse 3D imaging data of cell nuclei",
+      "description": "Optical monitoring of cell movement and activity in three-dimensional space over time (3D + T imaging) has become remarkably easier. However, the development of software for segregating cell regions from the background and for tracking their dynamic positions has lagged. Individual laboratories still need to develop their own software due to different optical systems and imaging conditions. We have developed a deep learning-based software pipeline, 3DeeCellTracker, for flexible segmentation and tracking of cells in 3D + T images of deforming organs. The data was used to evaluate the performance of 3DeeCellTracker.",
+      "datePublished": "2019-06-13",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Brain/diagnostic imaging",
+        "Caenorhabditis elegans/cytology",
+        "Cell Tracking/instrumentation",
+        "Cell Tracking/methods[major]",
+        "Deep Learning[major]",
+        "Heart/diagnostic imaging",
+        "Image Processing, Computer-Assisted/instrumentation",
+        "Image Processing, Computer-Assisted/methods[major]",
+        "Imaging, Three-Dimensional/instrumentation",
+        "Imaging, Three-Dimensional/methods[major]",
+        "Spheroids, Cellular",
+        "Time-Lapse Imaging/instrumentation",
+        "Time-Lapse Imaging/methods[major]",
+        "Tumor Cells, Cultured",
+        "Zebrafish"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.59187"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Chentao Wen",
+      "email": "wen@nsc.nagoya-cu.ac.jp",
+      "description": "Organization: Nagoya City University; Department: Graduate School of Natural Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04wn7wc95"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04wn7wc95",
+      "@type": "Organization",
+      "name": "Nagoya City University"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.59187",
+      "@type": "ScholarlyArticle",
+      "name": "3DeeCellTracker, a deep learning-based pipeline for segmenting and tracking cells in 3D time lapse images.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "vernacularName": "nematode"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 3351203840,
+      "description": "3.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 10,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

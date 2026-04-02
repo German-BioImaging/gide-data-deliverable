@@ -1,0 +1,476 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1536"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1536",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2f2a4cd7-7719-4e44-8912-e7f7d05a56f9"
+        },
+        {
+          "@id": "#78750b5f-4b04-4f81-9e40-a4ef19f554de"
+        },
+        {
+          "@id": "#fc03e5fa-74df-48df-8d6b-143269dec80e"
+        },
+        {
+          "@id": "#f95bcd77-6838-43a2-86fe-175e6682d71d"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a5947906-11f6-48ce-b239-31363604bce4"
+        },
+        {
+          "@id": "#f4522c99-f424-4d40-bf25-2d620868f35c"
+        },
+        {
+          "@id": "#ec8caa9e-8f7a-415c-a5fe-2319cf00c105"
+        },
+        {
+          "@id": "#747d7a80-ff93-41c5-8cf5-0d2797038262"
+        },
+        {
+          "@id": "#0ff87c67-3669-48d2-8b05-4cd6951b0c62"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0002-5820-9897"
+        },
+        {
+          "@id": "#8bbdc626-6f2a-43ab-aed6-6f48fb681511"
+        },
+        {
+          "@id": "#ff88035e-13e7-44c0-aed6-232ba9521601"
+        },
+        {
+          "@id": "#199b1f16-577c-4300-8260-968d37ffc916"
+        },
+        {
+          "@id": "#845f7ce1-1197-460a-988a-6ae96e7d10a1"
+        },
+        {
+          "@id": "#0ac89163-06ec-4cc4-acf2-83732d55a4cc"
+        },
+        {
+          "@id": "#5a96a10d-3426-4545-b7c9-de0f23027e31"
+        },
+        {
+          "@id": "#19a87cfa-8fa8-4743-ad24-0dd85afd05af"
+        },
+        {
+          "@id": "#2b8bd425-463b-4a8e-af7a-65458cfbd324"
+        },
+        {
+          "@id": "#4c81b52c-ae66-459f-8486-c5f2fe3d6334"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-30",
+      "description": "The cGAS-STING signalling pathway acts as gatekeeper in the innate immune response towards extrinsic and intrinsic sources of cytoplasmic double stranded DNA (dsDNA). At the core of this pathway is the cGAS-dependent production of the intra- and extra-cellular messenger 2’3’-cyclic GMP-AMP (cGAMP), which activates STING and leads to IRF3-dependent expression of cytokines and interferon. Despite its relevance to monitor viral and bacterial infections, cell death, and genome instability, the lack of specific live reporters has precluded spatio-temporal analyses of cGAS-STING signalling. Here, we generate a fluorescent biosensor by engineering the functional interaction of activated STING and IRF3 at the Golgi, which we termed SIRF (STING-IRF3). We show that cells encoding for the SIRF biosensor react within 45 minutes, and in a time- and concentration-dependent manner to STING agonists and cGAMP. We demonstrate that this biosensor is suitable for single cell characterisation of the dynamics of Herpes Simplex Virus 1 infection, mtDNA release upon apoptosis, and other sources of cytoplasmic dsDNA. Intriguingly, we show that STING signalling is not activated by ruptured micronuclei, suggesting that other cytosolic pattern recognition receptors underlie the interferon response upon chromosomal instability. Furthermore, we demonstrate that the biosensor sensitivity is sufficient to report microenvironmental cGAMP, allowing to analyse how STING signalling spreads across neighbouring cells, including upon viral infection. Taken together, we provide a tool to easily monitor the activation cGAS-STING signalling pathway by live cell imaging or immunofluorescence analyses; and to capture the spatio-temporal and heterogenous dynamics of the response to cGAMP.",
+      "funder": [],
+      "identifier": "S-BIAD1536",
+      "keywords": [
+        "STING",
+        "Micronuclei",
+        "Biosensor",
+        "cGAMP",
+        "innate immune response"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Spatio-temporal analysis of the innate immune response to cytoplasmic dsDNA and microenvironmental cGAMP using a novel STING-IRF3 biosensor",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#0ac89163-06ec-4cc4-acf2-83732d55a4cc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#66c74268-b9ef-411d-b499-fe0fb1d40e8a"
+        }
+      ],
+      "name": "Anja Ciprianidis"
+    },
+    {
+      "@id": "#199b1f16-577c-4300-8260-968d37ffc916",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4ed2ee5-5c6e-4275-b06c-b504478f6e70"
+        }
+      ],
+      "name": "Shashank Dadsena"
+    },
+    {
+      "@id": "#19a87cfa-8fa8-4743-ad24-0dd85afd05af",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d2bc86bd-c5f0-4513-ad65-5860aaada1c1"
+        }
+      ],
+      "name": "Marco Binder"
+    },
+    {
+      "@id": "#2b8bd425-463b-4a8e-af7a-65458cfbd324",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d0cd3ba3-888a-4006-98e8-3c2292d0d391"
+        }
+      ],
+      "name": "Ana Garcia-Saez"
+    },
+    {
+      "@id": "#4c81b52c-ae66-459f-8486-c5f2fe3d6334",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ff8475c4-b3d0-408c-816f-5420ed097708"
+        }
+      ],
+      "email": "sergio.acebron@cos.uni-heidelberg.de",
+      "name": "Sergio P. Acebron"
+    },
+    {
+      "@id": "#5a96a10d-3426-4545-b7c9-de0f23027e31",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d2bc86bd-c5f0-4513-ad65-5860aaada1c1"
+        }
+      ],
+      "name": "Gislene Pereira"
+    },
+    {
+      "@id": "#845f7ce1-1197-460a-988a-6ae96e7d10a1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#66c74268-b9ef-411d-b499-fe0fb1d40e8a"
+        }
+      ],
+      "name": "Ryan Morant"
+    },
+    {
+      "@id": "#8bbdc626-6f2a-43ab-aed6-6f48fb681511",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#66c74268-b9ef-411d-b499-fe0fb1d40e8a"
+        }
+      ],
+      "name": "Sergio David Moreno-Velasquez"
+    },
+    {
+      "@id": "#ff88035e-13e7-44c0-aed6-232ba9521601",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d2bc86bd-c5f0-4513-ad65-5860aaada1c1"
+        }
+      ],
+      "name": "Doroteja Ilic"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-5820-9897",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#66c74268-b9ef-411d-b499-fe0fb1d40e8a"
+        }
+      ],
+      "email": "steve.smarduch@cos.uni-heidelberg.de",
+      "name": "Steve Smarduch"
+    },
+    {
+      "@id": "#66c74268-b9ef-411d-b499-fe0fb1d40e8a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Heidelberg University"
+    },
+    {
+      "@id": "#d0cd3ba3-888a-4006-98e8-3c2292d0d391",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute of Biophysics"
+    },
+    {
+      "@id": "#d2bc86bd-c5f0-4513-ad65-5860aaada1c1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "German Cancer Research Center"
+    },
+    {
+      "@id": "#e4ed2ee5-5c6e-4275-b06c-b504478f6e70",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cologne"
+    },
+    {
+      "@id": "#ff8475c4-b3d0-408c-816f-5420ed097708",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ikerbasque"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0ff87c67-3669-48d2-8b05-4cd6951b0c62",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Polyclonal WT HeLa cells stably transfected with the SIRF biosensor mutant plasmid. Mutations include R238A/Y240A on the STING component and S386A on the IRF3 component.",
+      "name": "HeLa-SIRF(mutant)-Biosensor",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#747d7a80-ff93-41c5-8cf5-0d2797038262",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Monoclonal HEK293T cells stably transfected with SIRF biosensor",
+      "name": "HEK293T-SIRF-Biosensor",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a5947906-11f6-48ce-b239-31363604bce4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Monoclonal HeLa-SIRF-Biosensor cells stably transfected with H2B-mCherry",
+      "name": "HeLa-SIRF-Biosensor-H2B-mCherry",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ec8caa9e-8f7a-415c-a5fe-2319cf00c105",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Monoclonal HeLa cells stably transfected with SIRF Biosensor",
+      "name": "HeLa-SIRF-Biosensor",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f4522c99-f424-4d40-bf25-2d620868f35c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "WT HeLa Cells",
+      "name": "WT HeLa Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2f2a4cd7-7719-4e44-8912-e7f7d05a56f9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Xy positions were first predetermined and then treatments were added before live cell imaging experiment was initiated.  Live cell imaging was performed using a 20x dry objective (NA 0.75) or 40x dry objective (NA 0.95) and a Nikon DS-Qi2 high-sensitive CMOS monochrome camera. Multipoint acquisition was controlled by NIS-Elements 5.1 software. Image stacks were recorded every 1 hour or 15 minutes for up to 18-24 hours or 2 hours respectively in an OkoLab environmental chamber at 37 °C and 5% CO2. Where used, the cells were imaged with brightfield with an exposure time of 40 ms and lamp intensity of 10%. The H2B-mCherry (where used) was imaged using a TRITC filter at an exposure time of 500 ms and analog gain of 1x, the SIRF biosensor was imaged using a FITC filter at an exposure time of 1 second and analog gain of 1x and the TOTO3/pCS2+ vector was imaged using a Cy5 filter at an exposure time of 1 second and analog gain of 1x.",
+      "labEquipment": "Automated Nikon Eclipse Ti2 microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "TiHCS"
+    },
+    {
+      "@id": "#78750b5f-4b04-4f81-9e40-a4ef19f554de",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Coverslips were imaged with a Nikon Eclipse Ti using a Nikon Plan Apo λ 60x NA 1.40 with oil immersion or Nikon Plan Apo λ 20x NA 0.75 dry objective and the NIS Elements software. DAPI was imaged with DAPI filter (EX 390/18 DM 416 EM 460/60) with exposure time of 500 ms and analog gain of 1x. SIRF biosensor was imaged with EGFP filter (EX 472/39 DM 495 EM 520/35) with exposure time of 1 s and analog gain of 1x. Alexa594 stained proteins were imaged with TexasRED filter (EX 562/40 DM 593 EM 624/40) at 500 ms and analog gain of 1x. Alexa647 stained proteins were imaged with Cy5 filter (EX 632/22 DM 660 EM 692/40) at 1 s and analog gain of 1x. EX = excitation wavelength; DM = dichroic mirror; EM = emission wavelength. Notation: center wavelength [nm]/bandwidth [nm].",
+      "labEquipment": "Inverted Nikon Ti2",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Inverted Nikon Ti2"
+    },
+    {
+      "@id": "#f95bcd77-6838-43a2-86fe-175e6682d71d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Live cell imaging was performed with an on-stage incubation (temperature and CO2) from OkoLab equipped with Crest X-Light V3 confocal scanning unit, Lumencor Celesta Light Engine and Andor Zyla-4.2P camera. Imaging was done with a 20x dry objective (NA 0.75). Image stacks were recorded every 1 hour or 15 minutes for up to 18-24 hours or 2 hours respectively in an OkoLab environmental chamber at 37 °C and 5% CO2. Where used, the cells were imaged with brightfield with an exposure time of 40 ms and lamp intensity of 10%. H2B-mCherry (where used) was imaged with a 561 nm laser at 8.72% laser power and an exposure of 1 s. SIRF biosensor was imaged with a 488 nm laser at 2.78% laser power and an exposure of 300 ms. Multipoint acquisition was controlled by NIS-Elements 5.1 software ",
+      "labEquipment": "Automated Nikon Eclipse Ti2 microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "CREST"
+    },
+    {
+      "@id": "#fc03e5fa-74df-48df-8d6b-143269dec80e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For figure 5, after adding treatments, plate was inserted in IncuCyte chamber and 3 images per well were acquired every 1 h for 22 h. Images were analyzed using IncuCyte analysis software module. Images were taken with 20x magnification and analysed in the Basic Analyzer mode quantifying the percentage of total green area (units in um2/image). Parameters of IncuCyte® analyses: Green channel, Segmentation Top-Hat, Radius 100 uM, Threshold 2.3 GCU, Edge Split Off, Cleanup, Hole Fill 0, Adjust Size 1 px. Filters: Mean Intensity Min 1.2 uM2; Integrated Intensity: Min 18 uM2/ Max 1200 uM2.",
+      "labEquipment": "Incucyte S3",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Incucyte S3"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 17
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 14465649895
+    }
+  ]
+}

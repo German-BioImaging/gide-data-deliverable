@@ -1,0 +1,159 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000308/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000308/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000308",
+      "name": "Photometry traces showing the activities of oxytocin neurons in lactating mice",
+      "description": "Breastfeeding, which is essential for the survival of mammalian infants, is critically mediated by pulsatile secretion of the pituitary hormone oxytocin from the central oxytocin neurons located in the paraventricular and supraoptic hypothalamic nuclei of mothers. Despite its importance, the molecular and neural circuit mechanisms of the milk ejection reflex remain poorly understood, in part because a mouse model to study lactation was only recently established. In our previous study, we successfully introduced fiber photometry-based chronic imaging of the pulsatile activities of oxytocin neurons during lactation. However, the necessity of Cre recombinase-based double knock-in mice substantially compromised the use of various Cre-dependent neuroscience toolkits. To overcome this obstacle, we developed a simple Cre-free method for monitoring oxytocin neurons by an adeno-associated virus vector driving GCaMP6s under a 2.6 kb mouse oxytocin mini-promoter. Using this method, we monitored calcium ion transients of oxytocin neurons in the paraventricular nucleus in wild-type C57BL/6N and ICR mothers without genetic crossing. By combining this method with video recordings of mothers and pups, we found that the pulsatile activities of oxytocin neurons require physical mother–pup contact for the milk ejection reflex. Notably, the frequencies of photometric signals were dynamically modulated by mother–pup reunions after isolation and during natural weaning stages. Collectively, the present study illuminates the temporal dynamics of pulsatile activities of oxytocin neurons in wild-type mice and provides a tool to characterize maternal oxytocin functions.",
+      "datePublished": "2025-04-08",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Female",
+        "Mice",
+        "Animals",
+        "Lactation/physiology[major]",
+        "Oxytocin/physiology[major]",
+        "Mice, Inbred C57BL",
+        "Mice, Inbred ICR",
+        "Neurons/physiology",
+        "Supraoptic Nucleus/physiology",
+        "Paraventricular Hypothalamic Nucleus",
+        "Mammals"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pone.0285589"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazunari Miyamichi",
+      "email": "kazunari.miyamichi@riken.jp",
+      "description": "Organization: Riken; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Comparative Connectomics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "Riken"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This study was supported by the program for Brain Mapping by Integrated Neurotechnologies for Disease Studies (Brain/ MINDS, JP21dm027111) from Japan Agency for Medical Research and Development (AMED, https://brainminds.jp/en/) to H.H. and by KAKENHI (20K20589 and 21H02587) from the Japan Society for the Promotion of Science (JSPS, https://www. jsps.go.jp/english/e-grants/index.html) to K.M. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript."
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0285589",
+      "@type": "ScholarlyArticle",
+      "name": "Dynamic modulation of pulsatile activities of oxytocin neurons in lactating wild-type mice.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 18413568000,
+      "description": "18.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 223,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

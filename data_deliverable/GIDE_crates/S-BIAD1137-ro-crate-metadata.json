@@ -1,0 +1,372 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1137"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1137",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3c14f600-f723-4b7e-8895-46519401c2e1"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#760c3279-c249-4f2c-aa32-8d5c5c87e292"
+        },
+        {
+          "@id": "#bbeced34-7912-4870-8aef-cccf815e0531"
+        },
+        {
+          "@id": "#bca83333-4415-4797-9475-caa0f811afa0"
+        },
+        {
+          "@id": "#76d7a400-5fdc-4c63-8721-318f5161c491"
+        },
+        {
+          "@id": "#3017a700-bae9-4ee6-8ebe-d81ab144f43c"
+        },
+        {
+          "@id": "#39c17079-08a0-420c-9ebe-003a713d5157"
+        },
+        {
+          "@id": "#4e6a79d4-6fa9-4ce9-8cfb-f0631180b333"
+        },
+        {
+          "@id": "#54e5eadb-2210-4258-963b-7f928d9429c5"
+        },
+        {
+          "@id": "#1c12865c-5e0e-4232-8b72-3cffccd0c5ef"
+        },
+        {
+          "@id": "obo:NCBITaxon_4896"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#704e47c7-768d-4228-8c8c-1f12b3c393a7"
+        },
+        {
+          "@id": "#d01cf8d5-96c4-405d-8aa7-189bf695d0f6"
+        },
+        {
+          "@id": "#42ef58c4-14fe-4d66-8983-08c908a75b79"
+        },
+        {
+          "@id": "#3584140c-e433-4fcd-887f-ddb408a5e43d"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2896-3039"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-02",
+      "description": "Single-molecule imaging and tracking (SMT) of proteins in live cells provides robust quantification of the biophysical parameters of protein dynamics. Fission yeast Schizosaccharomyces pombe is extensively used as a model system in cell and molecular biology research, however, SMT was not optimized for this model system. Here, we have optimized SMT for tracking protein dynamics in live cells of the yeast S. pombe. For SMT data analysis and to differentiate between bound and unbound molecules, it is essential to quantify the dynamic behavior of chromatin-bound proteins (histones) and free protein (GFP) in the nucleus to benchmark the diffusion parameters. In this dataset, we have provided the time-lapse movies for tracking histone H3 (Hht1) in live and fixed cells. Histone H3 gene (hht1) was endogenously fused with -HaloTag and fluorescently labeled with a HaloTag Ligand (JF646-HTL). For tracking free GFP in the nucleus, it was N-terminally fused with NLS(Nuclear Localization Signal)-HaloTag and expressed from a plasmid under the NMT1 promoter. Time-lapse movies were acquired with two imaging regimes: 1) fast imaging (15 ms time interval) to quantify the diffusion parameters (mean squared displacements, diffusion coefficient, fraction of bound and unbound molecules, jump angles, jump distances), 2) slow imaging (200 ms time interval) to quantify the residence time. This dataset stands as a valuable resource for researchers aiming to quantify the dynamics of any other protein in S. pombe using SMT. Additionally, this dataset can be used as a training dataset for machine learning-based automated tracking and also for validating the performance of various tracking software/algorithms. ",
+      "funder": [],
+      "identifier": "S-BIAD1137",
+      "keywords": [
+        "Single-Molecule Tracking",
+        "Schizosaccharomyces pombe",
+        "Histone",
+        "Microscopy",
+        "DNA-Protein Interaction"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Single-molecule imaging and tracking of chromatin-bound histone H3 (Hht1, in live and fixed cells) and free GFP in the nucleus of S. pombe.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1137/aca04fbf-51b3-4a62-a7e3-6e9c6f2c2f4e/c6c6ba3d-3998-4157-8a72-ff63d711d23f.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1137/25149e82-632b-45db-a734-7b416dbd360e/ad2bc52c-8da7-4585-9fe1-bc4bfc2cdaa9.png"
+      ]
+    },
+    {
+      "@id": "#3584140c-e433-4fcd-887f-ddb408a5e43d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b47b2a40-1885-4b5c-81b2-b51076149ec5"
+        }
+      ],
+      "email": "mridula@iiserpune.ac.in",
+      "name": "Dr. Mridula Nambiar"
+    },
+    {
+      "@id": "#42ef58c4-14fe-4d66-8983-08c908a75b79",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b47b2a40-1885-4b5c-81b2-b51076149ec5"
+        }
+      ],
+      "email": "sen.sucharita@students.iiserpune.ac.in",
+      "name": "Sucharita Sen"
+    },
+    {
+      "@id": "#704e47c7-768d-4228-8c8c-1f12b3c393a7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0f6cba85-92b6-4d7b-883f-bb82710406b1"
+        }
+      ],
+      "email": "bo20resch11009@iith.ac.in",
+      "name": "Akriti Kumari"
+    },
+    {
+      "@id": "#d01cf8d5-96c4-405d-8aa7-189bf695d0f6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0f6cba85-92b6-4d7b-883f-bb82710406b1"
+        }
+      ],
+      "email": "bo21resch11008@iith.ac.in",
+      "name": "Nitesh Kumar Podh"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2896-3039",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0f6cba85-92b6-4d7b-883f-bb82710406b1"
+        }
+      ],
+      "email": "gunjanmehta@bt.iith.ac.in",
+      "name": "Dr. Gunjan Mehta"
+    },
+    {
+      "@id": "#0f6cba85-92b6-4d7b-883f-bb82710406b1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Indian Institute of Technology Hyderabad"
+    },
+    {
+      "@id": "#b47b2a40-1885-4b5c-81b2-b51076149ec5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Indian Institute of Science Education and Research Pune"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4896",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Schizosaccharomyces pombe"
+    },
+    {
+      "@id": "#1c12865c-5e0e-4232-8b72-3cffccd0c5ef",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live cells of yeast S. pombe with Hht1-HaoTag-JF646-HTL",
+      "name": "JF646-HTL concentration vs Hht1-HaloTag labeling density",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#3017a700-bae9-4ee6-8ebe-d81ab144f43c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live cells of yeast S. pombe with fluorescently labeled NLS-HaloTag(JF646-HTL)-GFP",
+      "name": "Slow imaging movies of NLS-HaloTag(JF646-HTL)-GFP tracked using MatlabTrack",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#39c17079-08a0-420c-9ebe-003a713d5157",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live cells of yeast S. pombe with fluorescently labeled histone H3 (hht1-HaloTag-JF646)",
+      "name": "Fast imaging movies of Hht1-HaloTag-JF646-HTL tracked using TrackIt",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#4e6a79d4-6fa9-4ce9-8cfb-f0631180b333",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live cells of yeast S. pombe with fluorescently labeled histone H3 (hht1-HaloTag-JF646)",
+      "name": "Slow imaging movies of Hht1-HaloTag-JF646-HTL tracked using TrackIt",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#54e5eadb-2210-4258-963b-7f928d9429c5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live cells of yeast S. pombe with fluorescently labeled histone H3 (Hht1-HaloTag-JF646-HaloTag Ligand)",
+      "name": "Slow imaging movies of Hht1-HaloTag-JF646-HTL tracked using MatlabTrack",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#760c3279-c249-4f2c-aa32-8d5c5c87e292",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live cells of yeast S. pombe with fluorescently labeled histone H3 (Hht1-HaloTag-JF646-HTL)",
+      "name": "Comparision of filtered images with raw images",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#76d7a400-5fdc-4c63-8721-318f5161c491",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live cells of yeast S. pombe with fluorescently labeled NLS-HaloTag(JF646-HTL)-GFP",
+      "name": "Fast imaging movies of NLS-HaloTag(JF646-HTL)-GFP tracked using TrackIt",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#bbeced34-7912-4870-8aef-cccf815e0531",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Fixed cells of yeast S. pombe with fluorescently labeled histone H3 (hht1-HaloTag-JF646)",
+      "name": "Fast imaging movies of Hht1-HaloTag-JF646-HTL (from fixed cells) tracked using TrackIt",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#bca83333-4415-4797-9475-caa0f811afa0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Fixed cells of yeast S. pombe with fluorescently labeled histone H3 (hht1-HaloTag-JF646)",
+      "name": "Slow imaging movies of Hht1-HaloTag-JF646-HTL (from fixed cells) tracked using MatlabTrack",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#3c14f600-f723-4b7e-8895-46519401c2e1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The time-lapse movies were acquired (in a single focal plane of 256x256 pixels) with two imaging regimes: 1) fast imaging regime (10 ms exposure, 5 ms camera processing time, 1000 frames, 100% laser power) and 2) slow imaging regime (200 ms time interval, 50 ms exposure, 200 frames, 30% laser power). For imaging Hht1-HaloTag, we focussed the cells using bright field illumination and the region of interests (ROIs) were made against nuclei for tracking from the maximum intensity projection (MIP) images of the time-lapse movies. For imaging NLS-HaloTag-GFP, we used the FITC channel for focussing the cells and making nuclear ROIs. ",
+      "labEquipment": "Single-molecule imaging was performed using a Leica DMi8 infinity TIRF microscope, equipped with a 100X/1.47 NA oil immersion TIRF objective lens, Prime 95B (Photometrics) sCMOS camera (camera pixel size: 11x11 µm, image pixel size: 110 nm/pixel). We used HILO (Highly Inclined and Laminated Optical) sheet illumination for single-molecule imaging. The HILO illumination was achieved on a TIRF microscope by adjusting the angle of the incident laser beam (~56° to 59°). The HILO illumination can achieve an imaging depth of up to ~10 μm, which makes the molecules in the nucleus visible. We used a 150 mW 638 nm laser for illumination and a quad band filter with excitation (640/20), dichroic (658 nm), and emission (705/90).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition parameters"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 489
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 19099742852
+    }
+  ]
+}

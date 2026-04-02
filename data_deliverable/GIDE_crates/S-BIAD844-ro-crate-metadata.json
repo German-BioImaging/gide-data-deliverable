@@ -1,0 +1,220 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD844"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD844",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#27940be4-75dd-452a-ae9b-bdc747bd3b42"
+        },
+        {
+          "@id": "obo:FBbi_00000248"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2b224e03-ffa7-46ef-98f0-71e4adf3836c"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5b8aa5bd-a07d-4537-b748-896f10ac7245"
+        },
+        {
+          "@id": "#76630e7c-3589-4fee-95ed-d4e9fcd4133d"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3195-0565"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-12",
+      "description": "Source Data for Microscopic Images from Pecharroman&Solé et al EMBO Journal.",
+      "funder": [],
+      "identifier": "S-BIAD844",
+      "keywords": [
+        "colorectal cancer",
+        "IKKα",
+        "BRD4",
+        "STAT3",
+        "LIF"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Pecharroman&Solé_et_al_Microscopic_Images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD844/32be2aca-5fb9-4f8a-a672-3046bb0a7818/5b99f96e-bd04-4522-9084-86386d9a09c3.png"
+      ]
+    },
+    {
+      "@id": "#5b8aa5bd-a07d-4537-b748-896f10ac7245",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#51137c99-0b49-4667-86b8-501c8c9c54eb"
+        }
+      ],
+      "email": "lespinosa@imim.es",
+      "name": "Lluís Espinosa Blay"
+    },
+    {
+      "@id": "#76630e7c-3589-4fee-95ed-d4e9fcd4133d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#51137c99-0b49-4667-86b8-501c8c9c54eb"
+        }
+      ],
+      "email": "abigas@imim.es",
+      "name": "Anna Bigas Salvans"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3195-0565",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#51137c99-0b49-4667-86b8-501c8c9c54eb"
+        }
+      ],
+      "email": "lsole@imim.es",
+      "name": "Laura Solé Font"
+    },
+    {
+      "@id": "#51137c99-0b49-4667-86b8-501c8c9c54eb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut Hospital del Mar d'Investigacions Mèdiques"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#2b224e03-ffa7-46ef-98f0-71e4adf3836c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human colorectal cancer tumors from xenograft mice",
+      "name": "Colorectal cancer samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#27940be4-75dd-452a-ae9b-bdc747bd3b42",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Paraffin blocks were obtained from tumor samples, previous fixation in 4% formaldehyde overnight at room temperature. Paraffin-embedded sections were de-paraffinized, rehydrated and endogenous peroxidase activity was quenched (20 min, 1.5% H2O2). Citrate‐based antigen retrieval was used. All primary antibodies were diluted in PBS containing 0.05% BSA, incubated overnight at 4 °C and developed with the Envision+ System HRP Labelled Polymer anti-Rabbit or anti-Mouse and 3,3′-diaminobenzidine (DAB). Samples were mounted in DPX and images were obtained with an Olympus BX61 microscope.",
+      "labEquipment": "Olympus BX61 microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000248"
+        }
+      ],
+      "name": "Microscopic images"
+    },
+    {
+      "@id": "obo:FBbi_00000248",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "polarization microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 17
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 456008607
+    }
+  ]
+}

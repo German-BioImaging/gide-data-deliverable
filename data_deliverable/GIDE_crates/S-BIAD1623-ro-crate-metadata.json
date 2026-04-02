@@ -1,0 +1,232 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1623"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1623",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f3afea15-130f-4ed3-9d78-b1328d898f64"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1977c0ce-0d58-4a7f-8d2e-c44c4e1f6fdd"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6973-9167"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4569-1493"
+        },
+        {
+          "@id": "#6cb709a2-0ba3-403e-99fb-3698600a0625"
+        },
+        {
+          "@id": "#0d56ede1-7d4b-4836-a0f0-7a473de2ba11"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-06",
+      "description": "Remoscope is a label-free imaging cytometer which was developed at the CZ Biohub SF and has been field-deployed in Tororo, Uganda to assess its efficacy at detecting Plasmodium falciparum parasites in whole human blood. Remoscope images blood without fixation or staining, i.e using a label-free imaging modality. This dataset comprises ~14TB of image data collected on Remoscope.\n\nThe image data consists of:\n1. Clinical data from Tororo, Uganda. This includes data from healthy participants and participants with parasite loads varying from below 1 parasite/uL up to ~600,000 parasites/uL.\n2. Cultured Plasmodium falciparum data (including a titration series, images of CQ treated parasites, and a life stage time course)\n3. Known healthy donor samples from a non-endemic region\n4. Synthetic images generated using combinations of thumbnails taken from the above three sets\n\nAdditionally, human annotation of cultured and clinical parasites were done to a train an object detection model. These annotation labels are provided as well (under the `labels` and `synthetic_data` folders). These labels follow YOLO-format. There are an additional set of identical labels under folders called `labels_plus` which have one additional column at the end, denoting whether the given label was machine-generated (using the result from the object detection model after it had been trained) or whether that label was human-verified.",
+      "funder": [],
+      "identifier": "S-BIAD1623",
+      "keywords": [
+        "Malaria",
+        "Plasmodium falciparum",
+        "Label-free"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Remoscope label-free images of live P. Falciparum in whole human blood, cultured and clinical samples",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#0d56ede1-7d4b-4836-a0f0-7a473de2ba11",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "email": "joe@czbiohub.org",
+      "name": "Joseph DeRisi"
+    },
+    {
+      "@id": "#6cb709a2-0ba3-403e-99fb-3698600a0625",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "email": "rafael.gomez@czbiohub.org",
+      "name": "Rafael Gómez-Sjöberg"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6973-9167",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "email": "ilakkiyan.jeyakumar@czbiohub.org",
+      "name": "Ilakkiyan Jeyakumar"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4569-1493",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "email": "paul.lebel@czbiohub.org",
+      "name": "Paul Lebel"
+    },
+    {
+      "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Chan Zuckerberg Biohub San Francisco"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#1977c0ce-0d58-4a7f-8d2e-c44c4e1f6fdd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human red blood cells",
+      "name": "Label-free images of red blood cells (healthy and infected with Plasmodium falciparum, clinical and cultured samples)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f3afea15-130f-4ed3-9d78-b1328d898f64",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The near-UV brightfield microscope comprises a 405 nm LED light source coupled to a plastic homogenizer rod, a finite conjugate image-forming objective, and a monochrome machine vision camera. We previously found that the excitation wavelength of 405 nm works well for parasite classification due to a lower dependency on focal error and the fact that it coincides with the maximum absorption peak of hemoglobin. Crucially, the LED source provides adequate illumination intensity in order to use sufficiently short exposure times required for capturing images of fast-moving cells without inducing motion blur. A monochrome, global shutter machine vision camera is used to capture images of the moving cells at a fixed rate of 30 frames per second.\n\nSee pre-print for further details.",
+      "labEquipment": "Remoscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Remoscope image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 289773
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 15937506758276
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2250"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2250",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d9847bbc-7ce4-4ee8-836a-552a33b560f2"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        },
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#81c9f41e-ae36-4d8b-b85f-31772a5499f4"
+        },
+        {
+          "@id": "obo:NCBITaxon_8296"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7878-5272"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-28",
+      "description": "The expression of fibroblast growth factors (Fgf) ligands in a specialized epithelial compartment, the Apical Ectodermal Ridge (AER), is a conserved feature of limb development across vertebrate species. In vertebrates, Fgf 4, 8, 9, and 17 are all expressed in the AER. An exception to this paradigm is the salamander (axolotl) developing and regenerating limb, where key Fgf ligands are expressed in the mesenchyme. The mesenchymal expression of Amex.Fgf8 in axolotl has been suggested to be critical for regeneration. To date, there is little knowledge regarding what controls Amex.Fgf8 expression in the axolotl limb mesenchyme. A large body of mouse and chick studies have defined a set of transcription factors and canonical Wnt signaling as the main regulators of epidermal Fgf8 expression in these organisms. In this study, we address the hypothesis that alterations to one or more of these components during evolution has resulted in mesenchymal Amex.Fgf8 expression in the axolotl. To sensitively quantify gene expression with spatial precision, we combined optical clearing of whole-mount axolotl limb tissue with single molecule fluorescent in situ hybridization and a semiautomated quantification pipeline. Several candidate upstream components were found expressed in the axolotl ectoderm, indicating that they are not direct regulators of Amex.Fgf8 expression. We found that Amex.Wnt3a is expressed in axolotl limb epidermis, similar to chicken and mouse. However, unlike in amniotes, Wnt target genes are activated preferentially in limb mesenchyme rather than in epidermis. Inhibition and activation of Wnt signaling results in downregulation and upregulation of mesenchymal Amex.Fgf8 expression, respectively. These results implicate a shift in tissue responsiveness to canonical Wnt signaling from epidermis to mesenchyme as one step contributing to the unique mesenchymal Amex.Fgf8 expression seen in the axolotl.",
+      "funder": [],
+      "identifier": "S-BIAD2250",
+      "keywords": [
+        "Axolotl",
+        "Fgf8",
+        "WNT"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Canonical Wnt signaling and the regulation of divergent mesenchymal Fgf8 expression in axolotl limb development and regeneration",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2250/2f32a5ed-f743-4873-a49c-5205198354f6/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7878-5272",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04khwmr87"
+        }
+      ],
+      "email": "pietro.tardivo@imba.oeaw.ac.at",
+      "name": "Pietro Tardivo"
+    },
+    {
+      "@id": "https://ror.org/04khwmr87",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vienna Biocenter"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_8296",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Ambystoma mexicanum"
+    },
+    {
+      "@id": "#81c9f41e-ae36-4d8b-b85f-31772a5499f4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "axolotl limb buds and blastemas. ",
+      "name": "All raw data",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_8296"
+      }
+    },
+    {
+      "@id": "#d9847bbc-7ce4-4ee8-836a-552a33b560f2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Whole-mount imaging was performed using a Z1 lightsheet microscope equipped with a ×20 detection clearing objective (×20/1.53: Clr Plan-Neofluar ×20/1.0 Corr DIC; nd = 1.53, WD = 6.4 mm) and ×10/0.2 illumination objectives. The detection objective was set to match the RI of the clearing media (1.501) prior to imaging. HCR signal was excited using the 647 and 561 nm excitation wavelength lasers, while 488 nm illumination was used to detect autofluorescence. DAPI was illuminated with the 405 nm laser.\n\nSlides were imaged with a Zeiss microscope LSM 980 (inverted Axio Observer with Airyscan) using a ×20/0.8 plan-apochromat air objective and the MPLX SR-4Y mode. Raw images were Airyscan processed and stitched using standard parameters in Zen software.",
+      "labEquipment": "Z1 light sheet, Airyscan confocal",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "name": "Lightsheet(whole mount samples), airy-scan(sections samples)"
+    },
+    {
+      "@id": "obo:FBbi_00000369",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "SPIM"
+    },
+    {
+      "@id": "obo:FBbi_00000393",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "array-scan confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 126
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 343978367680
+    }
+  ]
+}

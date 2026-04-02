@@ -1,0 +1,205 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1925"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1925",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#427ff240-565b-40e9-9837-64870d29a7c1"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2b83485e-920a-4b6a-b3c1-a5047c16c1b6"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#8817f5cd-5171-4e4c-be38-4974f761cd9c"
+        },
+        {
+          "@id": "#93e65640-e178-414f-989c-de3599e5b8a0"
+        },
+        {
+          "@id": "#55dbd72a-6a8d-442c-b340-16e55b611df8"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-09",
+      "description": "This dataset accompanies the preprint \"LimbLab: Pipeline for 3D Analysis and Visualisation of Limb Bud Gene Expression\". It contains 3D lightsheet images of cleared tissue labeled with HCR probes for Sox9, BMP2, and Dapi.",
+      "funder": [],
+      "identifier": "S-BIAD1925",
+      "keywords": [
+        "HCR",
+        "Limb Development",
+        "Sox9",
+        "BMP2"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Limb bud HCR for Sox9, BMP2 and DAPI for \"LimbLab: Pipeline for 3D Analysis and Visualisation of Limb Bud Gene Expression\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1925/cb2333df-086a-4f8f-8042-19ade00397d5/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#55dbd72a-6a8d-442c-b340-16e55b611df8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "james.sharpe@embl.es",
+      "name": "James"
+    },
+    {
+      "@id": "#8817f5cd-5171-4e4c-be38-4974f761cd9c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "laura.avino@embl.es",
+      "name": "Laura"
+    },
+    {
+      "@id": "#93e65640-e178-414f-989c-de3599e5b8a0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "heura.cardona@embl.es",
+      "name": "Heura"
+    },
+    {
+      "@id": "#5074a07c-1144-4134-96c3-f98335b1653a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#2b83485e-920a-4b6a-b3c1-a5047c16c1b6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Limb bud",
+      "name": "Volume 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#427ff240-565b-40e9-9837-64870d29a7c1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Light sheet imaging was performed using MuViSPIM from\nLuxendo. Dual side illumination was performed with the\nillumination objectives Nikon CFI Plan Apo Lambda 4× and collar\nwas adjusted to 1.47, matching the refractive index from GlycerolFructose clearing solution. Fluorescence was then captured with\nimmersion 10X Refractive Index adjustment 1.33-1.51 0.5NA glyc\nWD 5.5 objective. The block of agarose containing the sample was\nattached to a 3D printed holder and afterwards was immersed in\nthe cuvette containing Fructose-Glycerol clearing solution.",
+      "labEquipment": "Luxendo MuViSPIM light-sheet microscope",
+      "measurementTechnique": [],
+      "name": "Image Acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12784449206
+    }
+  ]
+}

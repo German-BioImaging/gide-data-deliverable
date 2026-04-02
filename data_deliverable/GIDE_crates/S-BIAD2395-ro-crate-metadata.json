@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2395"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2395",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#40ca4a30-9cf2-4f51-ab5d-6cf26608630d"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#66c9ab7d-5829-426f-9342-2e6b26fc69fb"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0065-2239"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-09",
+      "description": "External genital RGB images of conscious female ICR mice were recorded under normal fluorescent room lighting and annotated with estrous stage labels determined by vaginal smear cytology; these data were used to train and evaluate convolutional neural network models for non-invasive estrous staging.",
+      "funder": [],
+      "identifier": "S-BIAD2395",
+      "keywords": [
+        "estrous cycle, mouse, external genital imaging, brightfield, CNN, deep learning, non-invasive staging"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Non-invasive estrous staging from external genital images of female mice",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2395/8938b2dd-85a7-4c84-9bd3-ab2f95764630/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0065-2239",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05bhada84"
+        }
+      ],
+      "email": "saku@bs.naist.jp",
+      "name": "Yuichi Sakumura"
+    },
+    {
+      "@id": "https://ror.org/05bhada84",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Nara Institute of Science and Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#66c9ab7d-5829-426f-9342-2e6b26fc69fb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "adult female reproductive tract (external genital region).",
+      "name": "External genital image for estrous staging",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#40ca4a30-9cf2-4f51-ab5d-6cf26608630d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "RGB still images (5472 × 3648 pixels JPEG) acquired at ~20–40 cm working distance toward the perivaginal region under normal fluorescent room lighting; acquisition windows were 08:00–11:00 and 14:00–16:00 (to minimize circadian and illumination variability)",
+      "labEquipment": "Canon PowerShot G9 X Mark II digital camera + normal fluorescent room lighting",
+      "measurementTechnique": [],
+      "name": "External genital image for estrous staging"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 758
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 11616210
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000141/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000141/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000141",
+      "name": "FIB-SEM images of spine synapses morphology in spectrum disorder (ASD) model mice with human 15q11-13 chromosomal duplication (15q dup mice)",
+      "description": "ssbd-repos-000141",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Astrocytes/cytology",
+        "Autistic Disorder/pathology[major]",
+        "Chromosome Aberrations",
+        "DNA Copy Number Variations/genetics",
+        "Dendritic Spines/ultrastructure[major]",
+        "Disease Models, Animal",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "Microscopy, Electron, Scanning/methods[major]",
+        "Somatosensory Cortex/cytology",
+        "Somatosensory Cortex/diagnostic imaging[major]",
+        "Synapses/ultrastructure[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1093/jmicro/dfy128"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0044309"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0106033"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-451"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shigeo Okabe",
+      "email": "okabe@m.u-tokyo.ac.jp",
+      "description": "Organization: Graduate School of Medicine; Department: Department of Cellular Neurobiology; Laboratory: Okabe Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02ets8c94"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02ets8c94",
+      "@type": "Organization",
+      "name": "Graduate School of Medicine"
+    },
+    {
+      "@id": "https://doi.org/10.1093/jmicro/dfy128",
+      "@type": "ScholarlyArticle",
+      "name": "Nano-scale analysis of synapse morphology in an autism mouse model with 15q11-13 copy number variation using focused ion beam milling and scanning electron microscopy.",
+      "datePublished": "2019"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0044309",
+      "@type": "DefinedTerm",
+      "name": "neuron spine"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0106033",
+      "@type": "DefinedTerm",
+      "name": "spine synapse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 53551104,
+      "description": "53.6 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 17,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

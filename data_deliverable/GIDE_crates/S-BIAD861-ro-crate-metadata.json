@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD861"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD861",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#206a1e48-8cf9-44fd-af24-64697e29d8cf"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#07b872f3-d3bd-4d2b-b4be-8b258b4eef39"
+        },
+        {
+          "@id": "obo:NCBITaxon_1427524"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9c928c0b-0417-4fce-bfad-419b2531b47c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-25",
+      "description": "OME-NGFF converted study from idr0015.  We present a 3D-fluorescence imaging and classification tool for high throughput analysis of microbial eukaryotes in environmental samples. It entails high-content feature extraction that permits accurate automated taxonomic classification and quantitative data about organism ultrastructures and interactions. Using plankton samples from the Tara Oceans expeditions, we validate its applicability to taxonomic profiling and ecosystem analyses, and discuss its potential for future integration of eukaryotic cell biology into evolutionary and ecological studies. This study is subject to the data release policy described here: http://www.embl.de/tara-oceans/start/Tara-Oceans-Data-Release-Policy.pdf",
+      "funder": [],
+      "identifier": "S-BIAD861",
+      "keywords": [
+        "Microbial eukaryotes",
+        "Automated microscopy",
+        "Marine plankton biodiversity",
+        "Environmental cell biology",
+        "Machine learning",
+        "Symbioses"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Quantitative 3D-imaging for cell biology and ecology of environmental microbial eukaryotes (OME-NGFF)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#9c928c0b-0417-4fce-bfad-419b2531b47c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "email": "idr-support@openmicroscopy.org",
+      "name": "Image Data Resource (IDR)"
+    },
+    {
+      "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_1427524",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "mixed sample"
+    },
+    {
+      "@id": "#07b872f3-d3bd-4d2b-b4be-8b258b4eef39",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Plankton samples",
+      "name": "Plankton samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1427524"
+      }
+    },
+    {
+      "@id": "#206a1e48-8cf9-44fd-af24-64697e29d8cf",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Microscopy was conducted using a commercially available inverted SP8 laser scanning confocal microscope (Leica Microsystem, Germany) equipped with a compact supply unit which integrates a LIAchroic scan head and several laser lines (405 nm, 488 nm, 552 nm, 638 nm).",
+      "labEquipment": "SP8 laser scanning confocal microscope (Leica Microsystem, Germany)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Automated 3D fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 84
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4676208975557
+    }
+  ]
+}

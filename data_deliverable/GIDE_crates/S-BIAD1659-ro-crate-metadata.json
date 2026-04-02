@@ -1,0 +1,250 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1659"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1659",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e0a606d1-afcc-4786-999e-1c389f86ce28"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#91e31819-57e6-44bd-a3e5-4f5956183461"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#72694c62-85e0-42c9-b1d4-d060d87b0c26"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5851-5117"
+        },
+        {
+          "@id": "#e1ff1356-f62c-4b55-b17b-8d27314ebefc"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9642-7994"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-16",
+      "description": "The cell cycle is a fundamental process in cell biology. It consists of four phases: G1, S, G2, and M, each with distinct transcriptional programs. Its study requires a robust method to determine the cell cycle phase for a given cell. In imaging, the use of PIP-FUCCI (Fluorescent Ubiquitination-based Cell Cycle Indicator) fluorescent markers enables this characterisation, by providing images whose signal intensity is strongly correlated with the cell cycle phase. However, such markers hinder the use of other fluorescent markers that may be necessary to study the presence and/or spatial distribution of other proteins or RNAs dependent on the cell cycle phase. To address the limitations of PIP-FUCCI fluorescence, the cell cycle phase may instead be determined using an alternative fluorescent marker, such as a DNA marker like SiR-DNA. \nThis dataset includes 982,332 images of HeLa nuclei, featuring three channels: two for PIP-FUCCI and one for SiR-DNA. Additionally, binary segmentation masks for nuclei are provided. Furthermore, 636,304 images are labeled into one of three classes — G1, S, or G2/M — enabling direct evaluation of cell cycle phase prediction models based on SiR-DNA images.",
+      "funder": [],
+      "identifier": "S-BIAD1659",
+      "keywords": [
+        "HeLa Kyoto",
+        "Cell cycle",
+        "PIP-FUCCI",
+        "SiR-DNA"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Fluorescent microscopy of HeLa Kyoto nuclei (PIP-FUCCI and SiR-DNA)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1659/1e02db9b-d273-4562-a95e-e78d78c26fd7/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1659/cb06d5dc-cb93-4891-94bb-bd68ace22190/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#72694c62-85e0-42c9-b1d4-d060d87b0c26",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fc7207c9-2ed7-4d87-a64b-3695f8d1b90f"
+        }
+      ],
+      "email": "oriane.pourcelot@igh.cnrs.fr",
+      "name": "Oriane Pourcelot"
+    },
+    {
+      "@id": "#e1ff1356-f62c-4b55-b17b-8d27314ebefc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e5d8a93e-08a6-45e2-be7e-3b461c453284"
+        }
+      ],
+      "email": "thomas.walter@minesparis.psl.eu",
+      "name": "Thomas Walter"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5851-5117",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c81eafd8-4d12-4f23-af70-ba665eea757e"
+        }
+      ],
+      "email": "thomas.bonte@minesparis.psl.eu",
+      "name": "Thomas Bonte"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9642-7994",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fc7207c9-2ed7-4d87-a64b-3695f8d1b90f"
+        }
+      ],
+      "email": "edouard.bertrand@igh.cnrs.fr",
+      "name": "Edouard Bertrand"
+    },
+    {
+      "@id": "#c81eafd8-4d12-4f23-af70-ba665eea757e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "INSERM, U1331, 75005 Paris, France"
+    },
+    {
+      "@id": "#e5d8a93e-08a6-45e2-be7e-3b461c453284",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut Curie, PSL University, 75005 Paris, France"
+    },
+    {
+      "@id": "#fc7207c9-2ed7-4d87-a64b-3695f8d1b90f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut de Génétique Humaine"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#91e31819-57e6-44bd-a3e5-4f5956183461",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa Kyoto cells",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e0a606d1-afcc-4786-999e-1c389f86ce28",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "One day after seeding, we performed time-lapse microscopy via live-cell fluorescence imaging of HeLa kyoto cells during 40 hours, capturing images every 20 minutes. A total of 159 fields-of-view were acquired, with 5 focal planes per field spaced 1 µm apart. 3 channels (488 nm, 561 nm and 640 nm) were acquired, each with 20% laser power and 100 ms exposure time. The temperature and CO2 level were maintained at 37°C and 5%, respectively. One pixel corresponds to 0.102 µm.",
+      "labEquipment": "Opera Phenix™ Plus High-Content Screening System (Perkin Elmer) with a 63X water immersion objective (1.15 NA)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 982332
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1692839720
+    }
+  ]
+}

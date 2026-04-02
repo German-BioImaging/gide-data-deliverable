@@ -1,0 +1,611 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1559"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1559",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bd2c32bf-ae7f-491d-a5f2-5ee4c3c4dc70"
+        },
+        {
+          "@id": "#f447bb06-9556-499a-91bf-df0b7eab1f82"
+        },
+        {
+          "@id": "#f680f721-9d23-46b1-bf57-286f4343fa04"
+        },
+        {
+          "@id": "#661728c0-4874-46d3-ba54-cd6267856992"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#aa1b366d-fc7b-4d0e-a631-f8ce0d136941"
+        },
+        {
+          "@id": "#1fa0c8b7-0314-4a59-b5bb-e4d5f84cfb54"
+        },
+        {
+          "@id": "#ceeb4f3a-314a-4bbe-99ba-2932fe94acec"
+        },
+        {
+          "@id": "#f1490b39-1c2e-42b4-9121-81c0a8911050"
+        },
+        {
+          "@id": "#cf201e9c-263a-41a1-8086-862e9f3988f0"
+        },
+        {
+          "@id": "#f680d137-772d-4167-9b92-92cf319470cc"
+        },
+        {
+          "@id": "#e8bd980b-0b44-4ff5-b20a-341f838ae626"
+        },
+        {
+          "@id": "#fdd44f89-cd15-4e1c-ad2c-bb1b117fa554"
+        },
+        {
+          "@id": "#1ce45908-0292-4a2b-8b51-3ee7a26565c6"
+        },
+        {
+          "@id": "#9a0bb9f9-7fae-49e4-8d91-74a169d64392"
+        },
+        {
+          "@id": "#c210467e-ead5-4eb2-b7c6-59ab4af0c25e"
+        },
+        {
+          "@id": "#80686d2e-0b5d-4b89-9121-1edec4bfb09e"
+        },
+        {
+          "@id": "#cbbc7f05-9893-4481-a444-c1acc45ab40e"
+        },
+        {
+          "@id": "#ebc9fbf2-9992-4a1e-b90f-9605c4d3514d"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1392-5921"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0529-4402"
+        },
+        {
+          "@id": "#654bff10-ac6e-4a2a-8040-8200a9e0401b"
+        },
+        {
+          "@id": "#5550722c-cd95-4c31-b07c-a0c4a4fad02b"
+        },
+        {
+          "@id": "#52874bf3-95e6-4ae8-bd4a-62bc7cb13996"
+        },
+        {
+          "@id": "#a1750fb3-b2ef-48ca-8893-58fe8b9eee89"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4681-9348"
+        },
+        {
+          "@id": "https://orcid.org/0009-0009-8480-7701"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8214-0546"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2793-7624"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0931-2399"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6837-8355"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-07",
+      "description": "Whole-genome duplication (WGD) is widespread across eukaryotes and can promote adaptive evolution. However, given the instability of newly-formed polyploid genomes, understanding how WGDs arise in a population, persist, and underpin adaptations remains a challenge. Using our ongoing Multicellularity Long Term Evolution Experiment (MuLTEE), we show that diploid snowflake yeast (Saccharomyces cerevisiae) under selection for larger multicellular size rapidly evolve to be tetraploid. From its origin within the first 50 days of the experiment, tetraploids persist for the next 950 days (nearly 5,000 generations, the current leading edge of our experiment) in ten replicate populations, despite being genomically unstable. Using synthetic reconstruction, biophysical modeling, and counter-selection, we found that tetraploidy evolved because it confers immediate fitness benefits under this selection, by producing larger, longer cells that yield larger clusters. The same selective benefit also maintained tetraploidy over long evolutionary timescales, inhibiting the reversion to diploidy that is typically seen in laboratory evolution experiments. Once established, tetraploidy facilitated novel genetic routes for adaptation, playing a key role in the evolution of macroscopic multicellular size via the origin of evolutionarily-conserved aneuploidy. These results provide unique empirical insights into the evolutionary dynamics and impacts of WGD, showing how it can initially arise due to its immediate adaptive benefits, be maintained by selection, and fuel long-term innovations by creating additional dimensions of heritable genetic variation.",
+      "funder": [],
+      "identifier": "S-BIAD1559",
+      "keywords": [
+        "Whole-genome duplication",
+        "Multicellularity",
+        "Experimental evolution",
+        "Polyploidy",
+        "Aneuploidy",
+        "Yeast",
+        "Snowflake yeast",
+        "Multicellularity Long Term Evolution Experiment"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Genome duplication in a long-term multicellularity evolution experiment",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1559/3c95f921-e174-4b30-a87d-01dccaf30272/6d603630-c8c7-4572-95bf-be56dc71759c.png"
+      ]
+    },
+    {
+      "@id": "#52874bf3-95e6-4ae8-bd4a-62bc7cb13996",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "name": "Saranya Gourisetti"
+    },
+    {
+      "@id": "#5550722c-cd95-4c31-b07c-a0c4a4fad02b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "name": "Daniella J. Haas"
+    },
+    {
+      "@id": "#654bff10-ac6e-4a2a-8040-8200a9e0401b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "name": "Vivian Cheng"
+    },
+    {
+      "@id": "#a1750fb3-b2ef-48ca-8893-58fe8b9eee89",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "name": "Harley L. Yopp"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0529-4402",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "name": "Sayantan Datta"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0931-2399",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "name": "G. Ozan Bozdag"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1392-5921",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "email": "kaitong@bu.edu",
+      "name": "Kai Tong"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2793-7624",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "name": "Peter L. Conlin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6837-8355",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "email": "william.ratcliff@biology.gatech.edu",
+      "name": "William Ratcliff"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8214-0546",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#807acc53-909b-419a-be5e-4aa4a56cb965"
+        }
+      ],
+      "email": "khalil@bu.edu",
+      "name": "Ahmad S. Khalil"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4681-9348",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "name": "Thomas C. Day"
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-8480-7701",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55"
+        }
+      ],
+      "name": "Dung T. Lac"
+    },
+    {
+      "@id": "#67eceeba-8f19-4ab5-b5a8-2d4e5d5f6c55",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Georgia Institute of Technology"
+    },
+    {
+      "@id": "#807acc53-909b-419a-be5e-4aa4a56cb965",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Boston University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#1ce45908-0292-4a2b-8b51-3ee7a26565c6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "PM/PA t0 and PM/PA1-5 t50/t100 populations",
+      "name": "MuLTEE early populations",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#1fa0c8b7-0314-4a59-b5bb-e4d5f84cfb54",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Donut-spread pairs derived from macroscopic PA t600/t1000 isolates",
+      "name": "Donut-spread strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#80686d2e-0b5d-4b89-9121-1edec4bfb09e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Engineered mixotrophic/anaerobic 2N/4N snowflake yeast clusters",
+      "name": "Engineered ploidy strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#9a0bb9f9-7fae-49e4-8d91-74a169d64392",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Engineered mixotrophic/anaerobic 2N/4N snowflake yeast clusters",
+      "name": "Engineered ploidy strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#aa1b366d-fc7b-4d0e-a631-f8ce0d136941",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "PM/PA t0 and PM/PA1-5 t200/t400/t600/t1000 isolates",
+      "name": "MuLTEE isolates",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#c210467e-ead5-4eb2-b7c6-59ab4af0c25e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "PM/PA t0 and PM/PA1-5 t200/t400/t600/t1000 isolates",
+      "name": "MuLTEE isolates",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#cbbc7f05-9893-4481-a444-c1acc45ab40e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Ancestral and evolved populations of PM/PA t0, PM/PA1-5 t1000 isolates, and engineered 4N evolving with near-absence of selection for 56 days (i.e., mutation accumulation experiment)",
+      "name": "MA populations",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#ceeb4f3a-314a-4bbe-99ba-2932fe94acec",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Ancestral and evolved populations of PM/PA t0 and PM/PA1-5 t1000 isolates evolving under selection against larger size for 70 days",
+      "name": "Counter-selection populations",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#cf201e9c-263a-41a1-8086-862e9f3988f0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Ancestral and evolved populations of PM/PA t0 and PM/PA1-5 t1000 isolates evolving under selection against larger size for 70 days",
+      "name": "Counter-selection populations",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#e8bd980b-0b44-4ff5-b20a-341f838ae626",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Donut-spread pairs derived from macroscopic PA t600/t1000 isolates",
+      "name": "Donut-spread strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#ebc9fbf2-9992-4a1e-b90f-9605c4d3514d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Donut-spread pairs derived from macroscopic PA t600/t1000 isolates",
+      "name": "Donut-spread strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#f1490b39-1c2e-42b4-9121-81c0a8911050",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Engineered mixotrophic 2N/4N snowflake yeast clusters",
+      "name": "Engineered mixotrophic ploidy strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#f680d137-772d-4167-9b92-92cf319470cc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "PM/PA t0 and PM/PA1-5 t200/t400/t600/t1000 isolates",
+      "name": "MuLTEE isolates",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#fdd44f89-cd15-4e1c-ad2c-bb1b117fa554",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Engineered mixotrophic 2N/4N snowflake yeast clusters",
+      "name": "Engineered mixotrophic ploidy strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#661728c0-4874-46d3-ba54-cd6267856992",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Methods section of the associated publication",
+      "labEquipment": "See Methods section of the associated publication",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image acquisition for measuring selection rate"
+    },
+    {
+      "@id": "#bd2c32bf-ae7f-491d-a5f2-5ee4c3c4dc70",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Methods section of the associated publication",
+      "labEquipment": "See Methods section of the associated publication",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition for measuring cell size and aspect ratio"
+    },
+    {
+      "@id": "#f447bb06-9556-499a-91bf-df0b7eab1f82",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Methods section of the associated publication",
+      "labEquipment": "See Methods section of the associated publication",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image acquisition for measuring cluster size"
+    },
+    {
+      "@id": "#f680f721-9d23-46b1-bf57-286f4343fa04",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Methods section of the associated publication",
+      "labEquipment": "See Methods section of the associated publication",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition for measuring ploidy"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4296
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 843842571280
+    }
+  ]
+}

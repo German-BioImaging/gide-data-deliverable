@@ -1,0 +1,224 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2257"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2257",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#342858d2-a19f-4204-8b1e-c7c6849a9ad9"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#32078202-c375-4f02-9f7a-3ea8cb2e7267"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2540-8240"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5790-5204"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5734-7345"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-01",
+      "description": "Raw and analysed microscopy data for Kukhtevich, Persson et al. 2025",
+      "funder": [],
+      "identifier": "S-BIAD2257",
+      "keywords": [
+        "Cdc42 polarization",
+        "septin ring",
+        "cell size",
+        "exocytosis",
+        "budding yeast",
+        "single-cell imaging",
+        "Cell-ACDC",
+        "microfluidics",
+        "computational modeling"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The origin of septin ring size control in budding yeast",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2257/7304569b-67e1-4535-9dfa-92da5c63fd61/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5734-7345",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5ba86103-82e4-4729-a3f2-595d9bb37ae9"
+        }
+      ],
+      "email": "igor.kukhtevich@helmholtz-munich.de",
+      "name": "Igor Kukhtevich"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5790-5204",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5ba86103-82e4-4729-a3f2-595d9bb37ae9"
+        }
+      ],
+      "email": "kurt.schmoller@helmholtz-munich.de",
+      "name": "Kurt M. Schmoller"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2540-8240",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5ba86103-82e4-4729-a3f2-595d9bb37ae9"
+        }
+      ],
+      "email": "francesco.padovani@helmholtz-munich.de",
+      "name": "Francesco Padovani"
+    },
+    {
+      "@id": "#5ba86103-82e4-4729-a3f2-595d9bb37ae9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Zentrum Muenchen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#32078202-c375-4f02-9f7a-3ea8cb2e7267",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tagged septins, tagged Exo84, Cdc42-GTP reporter, F-Actin (Abp140) reporter",
+      "name": "Various budding yeast strains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#342858d2-a19f-4204-8b1e-c7c6849a9ad9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A plan-apo λ 100x/1.45NA Ph3 oil immersion objective was used to take phase contrast and fluorescence images. mCitrine fluorescence was imaged by exposure for 400 ms, illuminating with the SPECTRA X light engine at 504 nm and about 12 mW (20%) power for all experiments, except for experiments imaging Abp140-mCitrine, for which the exposure time was set to 300 ms and the power to about 24 mW (40%). tdTomato fluorescence was imaged by exposure for 200 ms, illuminating with the SPECTRA X light engine at 555 nm and about 26 mW (10%) power. mCherry fluorescence was imaged by exposure for 200 ms, illuminating with the SPECTRA X light engine at 555 nm and about 26 mW (10%) power. mNeptune2.5 fluorescence was imaged by exposure for 400 ms, illuminating with the SPECTRA X light engine at 556 nm and about 26 mW (10%) power for all experiments except for experiments imaging Abp140-mCitrine for which the exposure time was set to 300 ms. GFP fluorescence was imaged by exposure for 300 ms, illuminating with the SPECTRA X light engine at 470 nm and about 39 mW (20%) power. mScarlet-I fluorescence was imaged by exposure for 300 ms, illuminating with the SPECTRA X light engine at 555 nm and about 39 mW (15%) power.\n\nFluorescence of all fluorescent proteins was detected using suitable emission wavelength filters.",
+      "labEquipment": "Nikon Eclipse Ti-E with SPECTRA X light engine illumination and an Andor iXon Ultra 888 camera",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Imaging budding yeast"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6938
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 721567385101
+    }
+  ]
+}

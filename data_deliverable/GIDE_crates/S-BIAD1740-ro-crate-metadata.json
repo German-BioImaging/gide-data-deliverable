@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1740"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1740",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ae973642-d9b6-46f1-bb17-c617a46b4441"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#368cc06b-9bf5-4bcf-8d86-f52b251ffcd1"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5666-5173"
+        },
+        {
+          "@id": "#62e64c2b-8905-40b9-b16c-211a7a9f513a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-26",
+      "description": "Haloperidol is used to manage psychotic symptoms in several neurological disorders through mechanisms that involve antagonism of dopamine D2Rs that are highly expressed in the striatum. Significant side effects of haloperidol, known as extrapyramidal symptoms, lead to motor deficits similar to those seen in Parkinson's disease and present a major challenge in clinical settings. The underlying molecular mechanisms responsible for these side effects remain poorly understood. Parkinson's disease associated LRRK2 kinase has a critical role in striatal physiology and a known link to D2R signaling. Here, we systematically explore convergent signaling of haloperidol and LRRK2 through pharmacological or genetic inhibition of LRRK2 kinase, as well as knock-in mouse models expressing pathogenic mutant LRRK2 with increased kinase activity. Behavioral assays show that LRRK2 kinase inhibition ameliorates haloperidol-induced motor changes in mice. A combination of electrophysiological and anatomical approaches reveals that LRRK2 kinase inhibition interferes with haloperidol-induced changes, specifically in striatal neurons of the indirect pathway. Proteomic studies and targeted intracellular pathway analyses demonstrate that haloperidol induces a similar pattern of intracellular signaling as increased LRRK2 kinase activity. Our study suggests that LRRK2 kinase plays a key role in striatal D2R signaling underlying the undesirable motor side effects of haloperidol. This work opens up new therapeutic avenues for dopamine-related disorders, such as psychosis, also furthering our understanding of Parkinson's disease pathophysiology.",
+      "funder": [],
+      "identifier": "S-BIAD1740",
+      "keywords": [
+        "LRRK2",
+        "Haloperidol",
+        "rpS6",
+        "iSPN",
+        "MLi2"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "LRRK2 kinase inhibition restores haloperidol effects on rpS6 signaling in iSPNs",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1740/e5239d2e-8682-4710-8a7b-f3a2eb660d24/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#62e64c2b-8905-40b9-b16c-211a7a9f513a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3b97d1bb-c187-4bae-90ab-183d8b03130b"
+        }
+      ],
+      "email": "loukia.parisiadou@northwestern.edu",
+      "name": "Loukia Parisiadou"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5666-5173",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3b97d1bb-c187-4bae-90ab-183d8b03130b"
+        }
+      ],
+      "email": "chuyu.chen@northwestern.edu",
+      "name": "Chuyu Chen"
+    },
+    {
+      "@id": "#3b97d1bb-c187-4bae-90ab-183d8b03130b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Northwestern University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#368cc06b-9bf5-4bcf-8d86-f52b251ffcd1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "iSPNs",
+      "name": "rPS6-iSPN",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ae973642-d9b6-46f1-bb17-c617a46b4441",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fluorescence images were acquired with a 20x objective at 1,024 x1,024 pixel resolution. Stitched images of the whole striatum were automatically acquired with Nikon",
+      "labEquipment": "Nikon A1R microscope.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Confocal images"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 85
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8175787366
+    }
+  ]
+}

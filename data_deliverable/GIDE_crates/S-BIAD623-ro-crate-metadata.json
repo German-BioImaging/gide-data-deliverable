@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD623"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD623",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a3c1be4a-bee5-4362-b302-7708ba83e075"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e18cefd1-c0ff-42d5-9269-c19e6666e48e"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f7007223-f9a1-46ca-ac45-3c2af6c2f68c"
+        },
+        {
+          "@id": "#895ec6a2-7a5c-4ce0-8674-9dd8ad6a09e5"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-09",
+      "description": "The DrugMatrix® database is a unique toxicogenomic reference database that contains data on over 600 drugs, chemicals, toxicants, and biochemical reagents. These compounds have been extensively curated and profiled using large-scale gene expression analysis as well as pharmacologic activity (MDS Pharma assays) and in-life evaluations, including haematology, clinical chemistry and histopathology. This is the dataset of histopathology images with links to ChEMBL DrugMatrix entries.",
+      "funder": [],
+      "identifier": "S-BIAD623",
+      "keywords": [
+        "DrugMatrix",
+        "ChEMBL"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "DrugMatrix Pathology Images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD623/2e3535ca-3112-44cb-b4de-7e228fccafd0/a4d7e1f7-d015-4d8c-927f-76296fff6126.png"
+      ]
+    },
+    {
+      "@id": "#895ec6a2-7a5c-4ce0-8674-9dd8ad6a09e5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8"
+        }
+      ],
+      "email": "aybuke@ebi.ac.uk",
+      "name": "Aybuke Kupcu Yoldas"
+    },
+    {
+      "@id": "#f7007223-f9a1-46ca-ac45-3c2af6c2f68c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8"
+        }
+      ],
+      "email": "fmih@ebi.ac.uk",
+      "name": "Fiona Hunter"
+    },
+    {
+      "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Bioinformatics Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#e18cefd1-c0ff-42d5-9269-c19e6666e48e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Rat organ tissue",
+      "name": "Rat organ tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#a3c1be4a-bee5-4362-b302-7708ba83e075",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Laser setting: 635 nm\nPMT Gain: 600\nPixel/size (μm): 10 microns",
+      "labEquipment": "Axon GenePix Scanner",
+      "measurementTechnique": [],
+      "name": "Scanner"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 166
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 41554186
+    }
+  ]
+}

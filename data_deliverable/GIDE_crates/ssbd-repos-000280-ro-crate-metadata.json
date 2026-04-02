@@ -1,0 +1,208 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000280/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000280/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000280",
+      "name": "Images of OCT and FAG after transplantation of monkey iPSC-retina",
+      "description": "ssbd-repos-000280",
+      "datePublished": "2024-12-14",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.stemcr.2022.09.014"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09541"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001895"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000371"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000451"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1354"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hirofumi Uyama",
+      "email": "hirofumi_uyama@kcho.jp",
+      "description": "Organization: Kobe City Eye Hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01spx4y35"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Michiko Mandai",
+      "email": "e_lab.mandai@kcho.jp",
+      "description": "Organization: Kobe City Eye Hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01spx4y35"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01spx4y35",
+      "@type": "Organization",
+      "name": "Kobe City Eye Hospital"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.stemcr.2022.09.014",
+      "@type": "ScholarlyArticle",
+      "name": "Competency of iPSC-derived retinas in MHC-mismatched transplantation in non-human primates.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09541",
+      "@type": "Taxon",
+      "scientificName": "Macaca fascicularis",
+      "vernacularName": "crab-eating macaque"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001895",
+      "@type": "DefinedTerm",
+      "name": "retina homeostasis"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "OCT",
+      "description": "OCT",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000371"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescein leakage on fluorescein angiography",
+      "description": "fluorescein leakage on fluorescein angiography",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000451"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000371",
+      "@type": "DefinedTerm",
+      "name": "OCT"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000451",
+      "@type": "DefinedTerm",
+      "name": "fluorescein leakage on fluorescein angiography"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 134728704,
+      "description": "134.7 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 62,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

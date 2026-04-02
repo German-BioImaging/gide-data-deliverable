@@ -1,0 +1,336 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2387"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2387",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f3584396-e314-48e0-b432-b8aa8645921f"
+        },
+        {
+          "@id": "obo:FBbi_00000455"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fc94eeff-eea8-4a99-949f-4e0fd48d25b5"
+        },
+        {
+          "@id": "#eb167e3b-70da-4302-82b9-c81a5994570b"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0007-3019-2479"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5322-3249"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1001-0064"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3917-6965"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5917-5380"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4192-1274"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6727-5883"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7137-2512"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1126/science.adr9109"
+        }
+      ],
+      "datePublished": "2026-01-01",
+      "description": "Optical nanoscopy of intact biological specimens has been transformed by recent advancements in hydrogel-based tissue clearing and expansion, enabling the imaging of cellular and subcellular structures with molecular contrast. However, existing high-resolution fluorescence microscopes are physically limited by objective-to-specimen distance, which prevents the study of whole-mount specimens without physical sectioning. To address this challenge, we developed a photochemical strategy for spatially precise sectioning of specimens. By combining serial photochemical sectioning with lattice light-sheet imaging and petabyte-scale computation, we imaged and reconstructed axons and myelin sheaths across entire mouse olfactory bulbs at nanoscale resolution. An olfactory-bulb-wide analysis of myelinated and unmyelinated axons revealed distinctive patterns of axon degeneration and de-/dysmyelination in the neurodegenerative brain, highlighting the potential for peta- to exabyte-scale super-resolution studies using this approach.",
+      "funder": [],
+      "identifier": "S-BIAD2387",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Mesoscale volumetric fluorescence imaging at nanoscale resolution by photochemical sectioning",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5322-3249",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6cde08dc-58cc-40ce-b02f-9b4808ee3a0f"
+        }
+      ],
+      "email": "xruan@berkeley.edu",
+      "name": "Xiongtao Ruan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5917-5380",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#04333a71-0891-48a3-864a-2e964e45a33f"
+        }
+      ],
+      "email": "jklwp007@uic.edu",
+      "name": "Wenping Li"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6727-5883",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6cde08dc-58cc-40ce-b02f-9b4808ee3a0f"
+        }
+      ],
+      "email": "sup@berkeley.edu",
+      "name": "Srigokul Upadhyayula"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7137-2512",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#04333a71-0891-48a3-864a-2e964e45a33f"
+        }
+      ],
+      "email": "gaor@uic.edu",
+      "name": "Ruixuan Gao"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1001-0064",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6cde08dc-58cc-40ce-b02f-9b4808ee3a0f"
+        }
+      ],
+      "email": "gaoxiangliu@berkeley.edu",
+      "name": "Gaoxiang Liu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3917-6965",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b5a699f-5b8f-4f08-88a2-ef726ecc769e"
+        }
+      ],
+      "email": "milkied10@janelia.hhmi.org",
+      "name": "Daniel Milkie"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4192-1274",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6cde08dc-58cc-40ce-b02f-9b4808ee3a0f"
+        }
+      ],
+      "email": "betzige@janelia.hhmi.org",
+      "name": "Eric Betzig"
+    },
+    {
+      "@id": "https://orcid.org/0009-0007-3019-2479",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#04333a71-0891-48a3-864a-2e964e45a33f"
+        }
+      ],
+      "email": "wwang212@uic.edu",
+      "name": "Wei Wang"
+    },
+    {
+      "@id": "#04333a71-0891-48a3-864a-2e964e45a33f",
+      "@type": [
+        "Organization"
+      ],
+      "address": "Department of Chemistry, University of Illinois Chicago; Chicago, IL 60607, USA",
+      "name": "University of Illinois Chicago"
+    },
+    {
+      "@id": "#5b5a699f-5b8f-4f08-88a2-ef726ecc769e",
+      "@type": [
+        "Organization"
+      ],
+      "address": "Howard Hughes Medical Institute, Janelia Research Campus; Ashburn, VA 20417, USA",
+      "name": "Howard Hughes Medical Institute, Janelia Research Campus"
+    },
+    {
+      "@id": "#6cde08dc-58cc-40ce-b02f-9b4808ee3a0f",
+      "@type": [
+        "Organization"
+      ],
+      "address": "Department of Molecular and Cell Biology, University of California, Berkeley; Berkeley, CA 94720, USA",
+      "name": "University of California, Berkeley"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1126/science.adr9109",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "Mesoscale volumetric fluorescence imaging at nanoscale resolution by photochemical sectioning"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus",
+      "vernacularName": "house mouse"
+    },
+    {
+      "@id": "#eb167e3b-70da-4302-82b9-c81a5994570b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "olfactory bulb - 7-week-old male Balb/c mice (Npc1+/+).",
+      "name": "7-week-old wild-type mouse olfactory bulb",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#fc94eeff-eea8-4a99-949f-4e0fd48d25b5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "olfactory bulb - 7-week-old male Balb/c mice (Npc1-/-).",
+      "name": "7-week-old Niemann-Pick type C1 (NPC1) disease mouse olfactory bulb",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#f3584396-e314-48e0-b432-b8aa8645921f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Serial photochemical sectioning was combined with on-block lattice light-sheet imaging to acquire volumetric data across the entire mouse olfactory bulb.",
+      "labEquipment": "Custom-built lattice light-sheet microscope equipped for photochemical sectioning.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000455"
+        }
+      ],
+      "name": "First acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000455",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescent label"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 128
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 138915384121379
+    }
+  ]
+}

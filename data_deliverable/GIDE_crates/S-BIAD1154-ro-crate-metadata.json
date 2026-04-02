@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1154"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1154",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#483a864e-7cbb-4464-8d33-883a02eb83c0"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#756927f2-06c8-4bf3-ac8e-280d3da8d596"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0108-6080"
+        },
+        {
+          "@id": "#0566bb35-b923-4871-8de5-119754464de0"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-20",
+      "description": "Our understanding of the functional requirements underpinning biomolecular condensation in vivo is still relatively poor. The Arabidopsis RNA binding protein FCA is found in liquid-like nuclear condensates that function in transcription termination, promoting proximal polyadenylation at many targets in the Arabidopsis genome. To further understand the properties of these condensates in vivo we used single particle tracking experiments on FCA reporters stably expressed at endogenous levels in plant nuclei. These revealed FCA forms a core oligomer of ~4 molecules that multimerizes into higher-order particles. This assembles into macromolecular condensates through the function of the coiled-coil protein FLL2, which is genetically required for FCA function. FLL2 predominately co-localizes with FCA in larger sized condensates. A missense mutation in the FCA RRM domain, also genetically required for FCA function, reduced both average FCA particle and condensate size but did not perturb the core oligomer. Our work points to a modular structure for FCA condensates involving multimerization of core oligomers that assemble into functional macromolecular condensates via associated RNA and FLL2 interactions.",
+      "funder": [],
+      "identifier": "S-BIAD1154",
+      "keywords": [
+        "biomolecular condensate",
+        "RNA processing",
+        "FLC",
+        "noncoding RNA"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "In vivo properties of Arabidopsis FCA condensates involved in RNA 3’ processing ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1154/58b4e78d-3988-4f83-b28b-f81a0b0e7870/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0566bb35-b923-4871-8de5-119754464de0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "caroline.dean@jic.ac.uk",
+      "name": "Caroline Dean"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0108-6080",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "geng-jen.jang@jic.ac.uk",
+      "name": "Geng-Jen Jang"
+    },
+    {
+      "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "John Innes Centre"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#756927f2-06c8-4bf3-ac8e-280d3da8d596",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Root samples",
+      "name": "FCA condensate imaging and quantification",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#483a864e-7cbb-4464-8d33-883a02eb83c0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FCA-mScarletI-I was excited with a 561 nm laser. The fluorescence emission arrived at the detector after passing through a filter that allowed wavelengths between 495-550 nm and above 570 nm to pass through.\nFCA-mTurquoise and FLL2-EYFP were excited at 458 (mTurquoise) and 514 nm (eYFP). The fluorescence emission of the samples passed through a filter that only allowed wavelengths in the 465-505 nm range and above 525 nm to reach the Airyscan detector, which was operating in super resolution mode.\nFCA-mScarlet-I and FLC-lacO-lacI-eYFP were acquired on a Zeiss LSM980 using LD C-Apochromat 40x/NA 1.1 water-immersion objective. The fluorescent probes, eYFP and mScarlet-I, were excited at 488 and 561 nm,",
+      "labEquipment": "Confocal images were acquired on a Zeiss LSM 880 or Zeiss LSM 980 upright microscope equipped with an Airyscan detector and a C-Apochromat 63x/NA 1.2 water-immersion objective or LD C-Apochromat 40x/NA 1.1 water-immersion objective.",
+      "measurementTechnique": [],
+      "name": "Image acquisition of FCA condensates"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 112
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 26779207360
+    }
+  ]
+}

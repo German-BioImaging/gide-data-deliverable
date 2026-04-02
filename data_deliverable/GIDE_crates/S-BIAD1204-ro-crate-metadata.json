@@ -1,0 +1,360 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1204"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1204",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3a332567-bb23-4e78-9fab-b31ad2eac1be"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e7a0962d-27cd-4017-844a-39d2182789f1"
+        },
+        {
+          "@id": "#43c91405-88fe-4591-a5de-89e084b1c41b"
+        },
+        {
+          "@id": "#f5b12582-dbdc-4c12-bc96-e93e8d93e99b"
+        },
+        {
+          "@id": "#f7641dd0-8402-44ad-975b-286b0d3b2608"
+        },
+        {
+          "@id": "#77b56af6-0563-4e78-9e37-57295d6d9d35"
+        },
+        {
+          "@id": "#83323ac6-3bfd-45a9-bd2d-cfb160e50a22"
+        },
+        {
+          "@id": "#3b39a989-b4d8-41c3-b1ec-12cdcf718029"
+        },
+        {
+          "@id": "obo:NCBITaxon_184650"
+        },
+        {
+          "@id": "obo:NCBITaxon_2998295"
+        },
+        {
+          "@id": "obo:NCBITaxon_53008"
+        },
+        {
+          "@id": "obo:NCBITaxon_53005"
+        },
+        {
+          "@id": "obo:NCBITaxon_95766"
+        },
+        {
+          "@id": "obo:NCBITaxon_53011"
+        },
+        {
+          "@id": "obo:NCBITaxon_115594"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#bed63d23-7519-4734-bc60-3c3e4ac05dca"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-02",
+      "description": "The following data includes raw images, metadata, measurements and processed images as well as classifiers for image segmentations and masks created with the ImageJ/Fiji plugin Labkit to measure the leaf area. This dataset provides all acquired information for my Bachelor's thesis about leaf traits of Bryophyta related moss species. \n",
+      "funder": [],
+      "identifier": "S-BIAD1204",
+      "keywords": [
+        "Bryophyta",
+        "leaf trait",
+        "cells",
+        "leaf",
+        "plant",
+        "microscopy",
+        "Bryophytes",
+        "Brachythecium rutabulum",
+        "Hypnum cupressiforme",
+        "Plagiomnium undulatum",
+        "Homalothecium lutescens",
+        "Bryum mildeanum",
+        "Grimmia pulvinata",
+        "Rhytidiadelphus squarrosus",
+        "ImageJ",
+        "Fiji",
+        "Labkit",
+        "weight measurements",
+        "LDMC",
+        "SLA"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Leaf trait measurements of bryophytes, including weight specific traits",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1204/82c1de00-f8da-4d11-80dc-c7709644de58/50b7b4eb-40ee-43e7-8404-49e53a87038b.png"
+      ]
+    },
+    {
+      "@id": "#bed63d23-7519-4734-bc60-3c3e4ac05dca",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#62dd8a4f-a8c9-4acf-bcf1-10d60e32f9e2"
+        }
+      ],
+      "email": "a.wolf.0625@gmail.com",
+      "name": "André Wolf"
+    },
+    {
+      "@id": "#62dd8a4f-a8c9-4acf-bcf1-10d60e32f9e2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Martin Luther University Halle-Wittenberg"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_115594",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Grimmia pulvinata"
+    },
+    {
+      "@id": "obo:NCBITaxon_184650",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homalothecium lutescens"
+    },
+    {
+      "@id": "obo:NCBITaxon_2998295",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Bryum sp."
+    },
+    {
+      "@id": "obo:NCBITaxon_53005",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Brachythecium rutabulum"
+    },
+    {
+      "@id": "obo:NCBITaxon_53008",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rhytidiadelphus squarrosus"
+    },
+    {
+      "@id": "obo:NCBITaxon_53011",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Hypnum cupressiforme"
+    },
+    {
+      "@id": "obo:NCBITaxon_95766",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Plagiomnium undulatum"
+    },
+    {
+      "@id": "#3b39a989-b4d8-41c3-b1ec-12cdcf718029",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Plagiomnium undulatum female and male plants. Whole leaf, lamina cells and cross section images. ",
+      "name": "Plagiomnium undulatum",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_95766"
+      }
+    },
+    {
+      "@id": "#43c91405-88fe-4591-a5de-89e084b1c41b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Rhytidiadelphus squarrosus whole leaf, lamina cells and cross section images. ",
+      "name": "Rhytidiadelphus squarrosus",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_53008"
+      }
+    },
+    {
+      "@id": "#77b56af6-0563-4e78-9e37-57295d6d9d35",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Grimmia pulvinata whole leaf, lamina cells and cross section images. ",
+      "name": "Grimmia pulvinata",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_115594"
+      }
+    },
+    {
+      "@id": "#83323ac6-3bfd-45a9-bd2d-cfb160e50a22",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Hypnum cupressiforme whole leaf, lamina cells and cross section images. ",
+      "name": "Hypnum cupressiforme",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_53011"
+      }
+    },
+    {
+      "@id": "#e7a0962d-27cd-4017-844a-39d2182789f1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Brachythecium rutabulum whole leaf, lamina cells and cross section images. ",
+      "name": "Brachythecium rutabulum",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_53005"
+      }
+    },
+    {
+      "@id": "#f5b12582-dbdc-4c12-bc96-e93e8d93e99b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bryum sp. whole leaf, lamina cells and cross section images. ",
+      "name": "Bryum sp.",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_2998295"
+      }
+    },
+    {
+      "@id": "#f7641dd0-8402-44ad-975b-286b0d3b2608",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Homalothecium lutescens whole leaf, lamina cells and cross section images. ",
+      "name": "Homalothecium lutescens",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_184650"
+      }
+    },
+    {
+      "@id": "#3a332567-bb23-4e78-9fab-b31ad2eac1be",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All specific parameters are available in the metadata folder of each specimen. Each acquired image is available as .nd2 and .tif file format.",
+      "labEquipment": "Microscope: Nikon AZ100\nCamera: Nikon DS-Fi1c\nThe microscope is equipped with 0.5x, 1x and 4x lenses and the camera is attached to the microscope via a 0.6x ocular adapter.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "Microscope Setup"
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1283
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 20171586356
+    }
+  ]
+}

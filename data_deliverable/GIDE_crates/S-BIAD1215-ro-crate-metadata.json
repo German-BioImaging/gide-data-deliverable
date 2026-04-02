@@ -1,0 +1,199 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1215"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1215",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c0cddaee-535e-444e-b92f-1544d13de0a8"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5cc96d72-f986-4e61-8fc0-3fe31647afe2"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2084-1451"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-10",
+      "description": "This project contains raw image data that are presented in the Figure 2 of the paper entitled \"A hierarchical pathway for assembly of the distal appendages that organize primary cilia\".",
+      "funder": [],
+      "identifier": "S-BIAD1215",
+      "keywords": [
+        "RPE-hTERT",
+        "Cilia",
+        "Centriole",
+        "Distal Appendage",
+        "CEP164",
+        "CEP83",
+        "SCLT1",
+        "CEP89",
+        "FBF1",
+        "ANKRD26",
+        "TTBK2",
+        "KIZ",
+        "LRRC45",
+        "PIDD1",
+        "CEP170",
+        "NINEIN"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A hierarchical pathway for assembly of the distal appendages that organize primary cilia",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1215/6ac7bb95-a00b-495e-9fd3-970e659593fc/78df80b3-68cf-4070-9987-1c627a7c33c5.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2084-1451",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8c2e0a71-ec9e-4dde-bf82-c18e81aafef8"
+        }
+      ],
+      "email": "tomoharu-kanie@ouhsc.edu",
+      "name": "Tomoharu Kanie"
+    },
+    {
+      "@id": "#8c2e0a71-ec9e-4dde-bf82-c18e81aafef8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oklahoma Health Sciences Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#5cc96d72-f986-4e61-8fc0-3fe31647afe2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Immortalized Retinal Pigmental Epithelial cells (RPE-hTERT: CRL-4000 from ATCC) expressing BFP-Cas9.\n",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c0cddaee-535e-444e-b92f-1544d13de0a8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired on an Everest deconvolution workstation (Intelligent Imaging Innovations) equipped with a Zeiss Axio Imager Z1 microscope and a CoolSnap HQ cooled CCD camera (Roper Scientific). A 63x NA1.4 plan-apochromat objective lens (420780-9900, Zeiss) was used for image acquisition. ",
+      "labEquipment": "Zeiss Axio Imager Z1 microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3529
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 51761732698
+    }
+  ]
+}

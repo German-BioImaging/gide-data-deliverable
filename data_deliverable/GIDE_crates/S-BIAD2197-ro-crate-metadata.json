@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2197"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2197",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7c12a491-f670-4677-b4ce-1adcec89d6a7"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8a36d24f-c1c9-4186-a8c4-648f55f182c9"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#c661a790-f07b-410a-950f-0818ff5e98cd"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-12",
+      "description": "Cytotoxic T cell (CTL) dysfunction is a key feature of immune paralysis following major surgery, significantly increasing the risk of severe nosocomial infections and contributing to elevated mortality in critically ill patients. The pathomechanisms of CTL dysfunction remain unclear. We report that reactive oxygen species (ROS) release by Myeloid-Derived Suppressor Cells, which transiently and unexpectedly emerge after major surgery, drives perioperative CTL immunoparalysis. This ROS release causes a critical accumulation of ROS within CTL, overwhelming their antioxidative defenses and severely compromising mitochondrial membrane potential. Consequently, oxidative phosphorylation is impaired, and CTL effector functions are inhibited. Additionally, stress-induced mitochondrial hyperfusion occurs, which disrupts fission-dependent mitochondrial translocation to the immunological synapse, exacerbating the bioenergetic failure. These processes result in substantial mitochondrial dysfunction, which could be partially reversed by treatment with the mitochondria-targeting antioxidant MitoTEMPO. Stabilizing mitochondrial function could serve as a promising clinical strategy for preventing and treating perioperative immune dysfunction.\n",
+      "funder": [],
+      "identifier": "S-BIAD2197",
+      "keywords": [
+        "ROS, T Cells, Mitochondria"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Mitochondrial damage drives T-cell immunometabolic paralysis after major surgery",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2197/2547b76e-2950-4e19-a8d5-c5a146987e3d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#c661a790-f07b-410a-950f-0818ff5e98cd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cdea4dc4-9980-4c16-a225-8e84d323d052"
+        }
+      ],
+      "email": "max.huebner@med.uni-muenchen.de",
+      "name": "Max B Hübner"
+    },
+    {
+      "@id": "#cdea4dc4-9980-4c16-a225-8e84d323d052",
+      "@type": [
+        "Organization"
+      ],
+      "name": "LMU"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#8a36d24f-c1c9-4186-a8c4-648f55f182c9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human T cells",
+      "name": "T cells before and after major surgery",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7c12a491-f670-4677-b4ce-1adcec89d6a7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal images were recorded on a Leica SP8 microscope based on an upright DM6 stand using solid state laser excitation at 488 and 638 nm with a Leica DFC365FX with Sony ICX285 interline CCD chip. Hybrid photo detectors with detection bands of 500 - 550 nm and 650 - 700 nm were used. Images were acquired with a 63x1.4 or a 40x PL APO oil immersion objective at a scan speed of 200 or 400 Hz with a pixel size of of 0.075μm and a frame size of 1024 x 1024 (for measuring mitochondrial length) or with a pixel size of 0.4μm and a frame size of 512 x 512 (for determining mitochondrial translocation to the immune synapse). For each image, 3D stacks were recorded (Z-Stack size: 0.3 - 0.5μm). Analysis was performed on projections of the image stacks. For image visualization, Leica Application Suite X (LASX) was used.",
+      "labEquipment": "Leica SP8",
+      "measurementTechnique": [],
+      "name": "Image Aquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1252784137
+    }
+  ]
+}

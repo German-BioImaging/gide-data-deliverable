@@ -1,0 +1,201 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2001"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2001",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1dbc094c-de71-4d4c-bd2c-4f4868ddea49"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6fbfe4a4-7437-4a45-8c6d-c4e1a226e1a4"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5968-3606"
+        },
+        {
+          "@id": "#a39431e6-0270-44a4-80d1-4c317f94ad8a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-04",
+      "description": "RASA2KO and WT TCR T cells co-cultured with A375 melanoma cell line. The A375 cells express RFP which has the highest intensity in the nucleus. The TCR T cells are engineered to target the NY-ESO-1 antigen that is expressed by the A375 cells. Each well is imaged once every 2hrs using the automated Incucyte Zoom live-cell imaging machine. Phase and red channels are collected for each image. Spatial resolution is 4.975 μm/pixel. Plate maps of RASA2KO vs WT titrations and E:T ratios can be found here: https://github.com/bee-hive/sflcba/tree/main. ",
+      "funder": [],
+      "identifier": "S-BIAD2001",
+      "keywords": [
+        "TCR T cells",
+        "A375 cell line",
+        "T cells",
+        "Live cell imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Live-cell analyses with unsegmented images to study cancer cell response to modified T cell therapy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#a39431e6-0270-44a4-80d1-4c317f94ad8a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/038321296"
+        }
+      ],
+      "email": "barbara.engelhardt@gladstone.ucsf.edu",
+      "name": "Barbara Engelhardt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5968-3606",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/038321296"
+        }
+      ],
+      "email": "adam.weiner@gladstone.ucsf.edu",
+      "name": "Adam Weiner"
+    },
+    {
+      "@id": "https://ror.org/038321296",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Gladstone Institutes"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#6fbfe4a4-7437-4a45-8c6d-c4e1a226e1a4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "TCR T cells and A375 melanoma cells",
+      "name": "TCR T vs A375 co-culture",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1dbc094c-de71-4d4c-bd2c-4f4868ddea49",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Each well is imaged once every 2hrs using the automated Incucyte Zoom live-cell imaging machine. Phase and red channels are collected for each image. Spatial resolution is 4.975 μm/pixel.",
+      "labEquipment": "Incucyte Zoom",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Incucyte"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 165737
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1000632507824
+    }
+  ]
+}

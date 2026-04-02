@@ -1,0 +1,178 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000399/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000399/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000399",
+      "name": "Fate specification triggers a positive feedback loop of TEAD–YAP and NANOG to promote epiblast formation in preimplantation embryos",
+      "description": "In preimplantation embryos, epiblast (EPI) fate specification from the inner cell mass is controlled by the segregation of NANOG and GATA6 expression. TEAD–YAP interaction is activated during EPI formation, and is required for pluripotency factor expression. These events occur asynchronously with similar timing during EPI formation, and their relationship remains elusive. Here, we examined the relationship between NANOG–GATA6 and TEAD–YAP. The nuclear accumulation of YAP takes place only in EPI-specified cells, and a positive feedback loop operates between NANOG and TEAD–YAP. The effects of TEAD–YAP on SOX2 upregulation in EPI-specified cells are likely indirect. EPI fate specification also alters the response of Nanog, Sox2 and Cdx2 to TEAD–YAP. These results suggest that EPI-fate specification alters the transcriptional network from the morula-like to the EPI-specified state and activates TEAD–YAP to trigger a positive feedback loop with NANOG, which stabilizes the EPI fate. The coordinated occurrence of these processes in individual cells likely supports proper EPI formation under the condition of asynchronous EPI-fate specification.",
+      "datePublished": "2025-01-09",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Nanog Homeobox Protein/metabolism[major]",
+        "Nanog Homeobox Protein/genetics[major]",
+        "Germ Layers/metabolism[major]",
+        "Germ Layers/cytology[major]",
+        "YAP-Signaling Proteins/metabolism[major]",
+        "Blastocyst/metabolism[major]",
+        "Blastocyst/cytology[major]",
+        "Mice",
+        "Gene Expression Regulation, Developmental[major]",
+        "Transcription Factors/metabolism[major]",
+        "Transcription Factors/genetics[major]",
+        "Feedback, Physiological[major]",
+        "Adaptor Proteins, Signal Transducing/metabolism",
+        "Adaptor Proteins, Signal Transducing/genetics",
+        "GATA6 Transcription Factor/metabolism",
+        "GATA6 Transcription Factor/genetics",
+        "SOXB1 Transcription Factors/metabolism",
+        "SOXB1 Transcription Factors/genetics",
+        "CDX2 Transcription Factor/metabolism",
+        "CDX2 Transcription Factor/genetics",
+        "Female",
+        "Phosphoproteins/metabolism",
+        "Phosphoproteins/genetics",
+        "Cell Cycle Proteins/metabolism",
+        "Cell Cycle Proteins/genetics",
+        "DNA-Binding Proteins/metabolism",
+        "DNA-Binding Proteins/genetics",
+        "TEA Domain Transcription Factors/metabolism",
+        "Cell Differentiation"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1242/dev.203091"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Naoki Hirono",
+      "email": "naoki0825777@gmail.com",
+      "description": "Organization: Laboratory for Embryogenesis",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/006rjbv46"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/006rjbv46",
+      "@type": "Organization",
+      "name": "Laboratory for Embryogenesis"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "JSPS KAKENHI (grant numbers JP19H04778, JP20H03261, and JP21H05288), JST SPRING (grant number JPMJSP2138)"
+    },
+    {
+      "@id": "https://doi.org/10.1242/dev.203091",
+      "@type": "ScholarlyArticle",
+      "name": "Fate specification triggers a positive feedback loop of TEAD-YAP and NANOG to promote epiblast formation in preimplantation embryos.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 6830055424,
+      "description": "6.8 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 79,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

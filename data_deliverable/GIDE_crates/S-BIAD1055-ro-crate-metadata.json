@@ -1,0 +1,596 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1055"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1055",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f4496863-d323-49ad-a44a-36411c4aa78a"
+        },
+        {
+          "@id": "#188f9702-9f1b-4bb5-8d98-be6172720c88"
+        },
+        {
+          "@id": "#f5791187-1a9d-4eb5-b1b0-af6ff2f6f9db"
+        },
+        {
+          "@id": "obo:FBbi_00000603"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#44de0f2c-c4be-4fa1-a80f-ba49e6689e91"
+        },
+        {
+          "@id": "#0ea3c163-2b4e-4143-8644-10d9c86398af"
+        },
+        {
+          "@id": "#806a8db2-60b3-4adf-b7b7-c4e763175a78"
+        },
+        {
+          "@id": "#5d896206-8d1b-4bac-b139-5d7e61509553"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        },
+        {
+          "@id": "obo:NCBITaxon_4097"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3033-674X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2093-8771"
+        },
+        {
+          "@id": "https://orcid.org/0009-0001-4630-7863"
+        },
+        {
+          "@id": "#3555fb62-ddef-480d-9150-679a6ec6345b"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8819-7527"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4276-9531"
+        },
+        {
+          "@id": "#1ec004b3-87ec-4984-b166-93bec986dab2"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0650-2696"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2542-3582"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4961-6469"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5189-3310"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6656-7833"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9737-9437"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9946-810X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9757-2341"
+        },
+        {
+          "@id": "#137e7819-8cdc-4ccb-b8be-eacd9a84b0f8"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3415-9864"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3613-8215"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-02-25",
+      "description": "Data and code in support of the upcoming manuscript \"Three-dimensional spatio-angular fluorescence microscopy with a polarized dual-view inverted selective-plane illumination microscope (pol-diSPIM)\"\n\nEdit 2025-02-21: Now published in PNAS as \"Volumetric imaging of the 3D orientation of cellular structures with a polarized fluorescence light-sheet microscope\" https://doi.org/10.1073/pnas.240667912",
+      "funder": [],
+      "identifier": "S-BIAD1055",
+      "keywords": [
+        "microscopy",
+        "fluorescence",
+        "polarization",
+        "lightsheet"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Three-dimensional spatio-angular fluorescence microscopy with a polarized dual-view inverted selective-plane illumination microscope (pol-diSPIM)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1055/f040034c-9faf-4098-8775-e52db749f6f7/cd03225c-0a40-4669-998f-f8b4693f4ecd.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1055/fe911846-d313-4d42-b35d-2512e4685c19/0d7c9e79-244b-4192-b58b-ee9a49af4ed5.png"
+      ]
+    },
+    {
+      "@id": "#137e7819-8cdc-4ccb-b8be-eacd9a84b0f8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#602dd4cb-ab10-4d4b-b972-2c6f998cc7ca"
+        }
+      ],
+      "email": "rudolfo@mbl.edu",
+      "name": "Rudolf Oldenbourg"
+    },
+    {
+      "@id": "#1ec004b3-87ec-4984-b166-93bec986dab2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d6de387d-fe42-4bfb-8863-23f1d013e3a1"
+        }
+      ],
+      "email": "aatharva@vt.edu",
+      "name": "Atharva Agashe"
+    },
+    {
+      "@id": "#3555fb62-ddef-480d-9150-679a6ec6345b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#eb4f340a-1767-42ff-a811-3b9d3c67834b"
+        }
+      ],
+      "email": "jiji.chen@nih.gov",
+      "name": "Jiji Chen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5189-3310",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c0858228-e26c-45d3-a622-18107ca9f84d"
+        }
+      ],
+      "email": "baskin@umass.edu",
+      "name": "Tobias I. Baskin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6656-7833",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#eb4f340a-1767-42ff-a811-3b9d3c67834b"
+        }
+      ],
+      "email": "vjaumoui@sfu.ca",
+      "name": "Valentin Jaumouille"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2093-8771",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#eb4f340a-1767-42ff-a811-3b9d3c67834b"
+        }
+      ],
+      "email": "guom@zju.edu.cn",
+      "name": "Min Guo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2542-3582",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#602dd4cb-ab10-4d4b-b972-2c6f998cc7ca"
+        }
+      ],
+      "email": "shalin.mehta@czbiohub.org",
+      "name": "Shalin B. Mehta"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3033-674X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#62f4153f-5eb8-47c0-97e2-9607386bc8cd"
+        }
+      ],
+      "email": "talonchandler@gmail.com",
+      "name": "Talon Chandler"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4961-6469",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#602dd4cb-ab10-4d4b-b972-2c6f998cc7ca"
+        }
+      ],
+      "email": "akumar@mbl.edu",
+      "name": "Abhishek Kumar"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8819-7527",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#eb4f340a-1767-42ff-a811-3b9d3c67834b"
+        }
+      ],
+      "email": "yicong.wu@gmail.com",
+      "name": "Yicong Wu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9737-9437",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#454b72a5-72e5-44d3-89f8-082056407300"
+        }
+      ],
+      "email": "liuhf@zju.edu.cn",
+      "name": "Huafeng Liu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9757-2341",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d6de387d-fe42-4bfb-8863-23f1d013e3a1"
+        }
+      ],
+      "email": "nain@vt.edu",
+      "name": "Amrinder Nain"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9946-810X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6"
+        }
+      ],
+      "email": "vinay.swaminathan@med.lu.se",
+      "name": "Vinay Swaminathan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0650-2696",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#eb4f340a-1767-42ff-a811-3b9d3c67834b"
+        }
+      ],
+      "email": "fischerr2@nhlbi.nih.gov",
+      "name": "Robert S. Fischer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3415-9864",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#602dd4cb-ab10-4d4b-b972-2c6f998cc7ca"
+        }
+      ],
+      "email": "pjlarivi@uchicago.edu",
+      "name": "Patrick La Riviere"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3613-8215",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#602dd4cb-ab10-4d4b-b972-2c6f998cc7ca"
+        }
+      ],
+      "email": "shroffh@janelia.hhmi.org",
+      "name": "Hari Shroff"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4276-9531",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#454b72a5-72e5-44d3-89f8-082056407300"
+        }
+      ],
+      "email": "jyuliu@foxmail.com",
+      "name": "Junyu Liu"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-4630-7863",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#eb4f340a-1767-42ff-a811-3b9d3c67834b"
+        }
+      ],
+      "email": "suy@janelia.hhmi.org",
+      "name": "Yijun Su"
+    },
+    {
+      "@id": "#454b72a5-72e5-44d3-89f8-082056407300",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Zhejiang University"
+    },
+    {
+      "@id": "#602dd4cb-ab10-4d4b-b972-2c6f998cc7ca",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Marine Biological Laboratory"
+    },
+    {
+      "@id": "#62f4153f-5eb8-47c0-97e2-9607386bc8cd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Chicago"
+    },
+    {
+      "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Lund University"
+    },
+    {
+      "@id": "#c0858228-e26c-45d3-a622-18107ca9f84d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Massachusetts Amherst"
+    },
+    {
+      "@id": "#d6de387d-fe42-4bfb-8863-23f1d013e3a1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Virginia Tech"
+    },
+    {
+      "@id": "#eb4f340a-1767-42ff-a811-3b9d3c67834b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National Institutes of Health"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_4097",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Nicotiana tabacum"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0ea3c163-2b4e-4143-8644-10d9c86398af",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U2OS cells",
+      "name": "Actin-labelled U2OS",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#44de0f2c-c4be-4fa1-a80f-ba49e6689e91",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "-",
+      "name": "Xylem",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4097"
+      }
+    },
+    {
+      "@id": "#5d896206-8d1b-4bac-b139-5d7e61509553",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "3T3 mouse fibroblasts on nanowires",
+      "name": "3T3 mouse fibroblasts on nanowires",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#806a8db2-60b3-4adf-b7b7-c4e763175a78",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Giant unilamellar vesicles",
+      "name": "Giant Unilamellar Vesicles (GUV)",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#188f9702-9f1b-4bb5-8d98-be6172720c88",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pol-diSPIM",
+      "labEquipment": "pol-diSPIM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000603"
+        }
+      ],
+      "name": "3T3 mouse fibroblasts on nanowires"
+    },
+    {
+      "@id": "#f4496863-d323-49ad-a44a-36411c4aa78a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pol-diSPIM",
+      "labEquipment": "pol-diSPIM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000603"
+        }
+      ],
+      "name": "Xylem"
+    },
+    {
+      "@id": "#f5791187-1a9d-4eb5-b1b0-af6ff2f6f9db",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "pol-diSPIM",
+      "labEquipment": "pol-diSPIM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000603"
+        }
+      ],
+      "name": "Giant unilamellar vesicle"
+    },
+    {
+      "@id": "obo:FBbi_00000603",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence polarization microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2405
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 382160281945
+    }
+  ]
+}

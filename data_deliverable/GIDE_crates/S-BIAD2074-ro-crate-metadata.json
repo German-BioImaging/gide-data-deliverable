@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2074"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2074",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#74f4b2da-2f60-4949-81ec-14a497f6a22c"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d869f48b-4137-4fbf-9b6c-22c17e7cd650"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5666-5173"
+        },
+        {
+          "@id": "#91938b6b-f281-4a69-9e18-2a9da9a23a01"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2569-4200"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-29",
+      "description": "Dopaminergic neuronal release sites have unique characteristics, as only about 25–30% of axonal varicosities contain active zones that support transmitter release. Rim1/2 proteins are important scaffolding molecules that organize these release sites, and a dopaminergic neuron-specific knockout of Rim1/2 leads to the structural disorganization of active zones and almost completely abolishes evoked dopamine release in the nigrostriatal pathway. \nOur phosphoproteomic analysis showed that several pathways associated with the organization of presynaptic release sites are altered with changes in LRKK2 kinase activity, and we found a decrease in the interaction of phosphorylated Rab3a with various active zone proteins from mouse brain.  Therefore, we examined whether alterations in the number and/or organization of active zones may form the cellular basis for the observed deficits in dopamine release in Lrrk2G2019S mice.",
+      "funder": [],
+      "identifier": "S-BIAD2074",
+      "keywords": [
+        "LRRK2",
+        "striatal synaptosome"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "LRRK2 alters the composition and organization of active zone release sites in dopaminergic striatal synaptosomes",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2074/bd5d91d9-08f8-4ebb-b4a2-275ff8cbf470/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#91938b6b-f281-4a69-9e18-2a9da9a23a01",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ef4d9a37-c8d4-429e-bf6b-2c591dc6541e"
+        }
+      ],
+      "name": "Giulia Tombesi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5666-5173",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ef4d9a37-c8d4-429e-bf6b-2c591dc6541e"
+        }
+      ],
+      "email": "chuyu.chen@northwestern.edu",
+      "name": "Chuyu Chen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2569-4200",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ef4d9a37-c8d4-429e-bf6b-2c591dc6541e"
+        }
+      ],
+      "email": "loukia.parisiadou@northwestern.edu",
+      "name": "Loukia Parisiadou "
+    },
+    {
+      "@id": "#ef4d9a37-c8d4-429e-bf6b-2c591dc6541e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Aligning Science Across Parkinson's"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#d869f48b-4137-4fbf-9b6c-22c17e7cd650",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "dopaminergic striatal synaptosomes",
+      "name": "synaptosomes",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#74f4b2da-2f60-4949-81ec-14a497f6a22c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A single optical section for each area of synaptosomes was acquired with 100X 1.49NA objective",
+      "labEquipment": "Nikon A1 laser scanning microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Striatal synaptosome imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 168
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1074934198
+    }
+  ]
+}

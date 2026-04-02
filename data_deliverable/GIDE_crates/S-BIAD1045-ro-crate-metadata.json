@@ -1,0 +1,448 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1045"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1045",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#11e93dc5-f600-4539-9ac1-09b5e96ad351"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c9549043-03af-44fc-a7fd-d3625feb4f51"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8189-842X"
+        },
+        {
+          "@id": "#9baaf0b6-1f88-4de6-9d75-e5d4bc980084"
+        },
+        {
+          "@id": "#5a3808f0-35a1-4e70-9d89-cc0bbc8d0b8d"
+        },
+        {
+          "@id": "#dc7e7b39-a800-4725-8f31-a80dbc94e5d4"
+        },
+        {
+          "@id": "#9b3e40cd-c48a-42ee-85a5-0e279584a3c1"
+        },
+        {
+          "@id": "#00f0b271-48cd-4fca-971a-b8c5f7fd6aa7"
+        },
+        {
+          "@id": "#6442c8d5-3289-4e5e-99b7-a4eb024ee350"
+        },
+        {
+          "@id": "#3b955379-5d80-47c2-8a73-d11e3e1bcf7a"
+        },
+        {
+          "@id": "#4ff29abd-3996-46a3-8a98-5ff791469895"
+        },
+        {
+          "@id": "#82004a7a-87eb-46bb-8125-759b207de5c1"
+        },
+        {
+          "@id": "#de9292b0-a295-4b3a-bb9e-c4bc5cb3355c"
+        },
+        {
+          "@id": "#84fd706b-c4d8-4331-bcfc-b6440f5452d6"
+        },
+        {
+          "@id": "#4922c1dc-b67b-423d-af86-9d7370445b4a"
+        },
+        {
+          "@id": "#6dd0f9cd-7a35-4e28-8917-d4a011ef6870"
+        },
+        {
+          "@id": "#5b563686-bfff-4074-a9bc-8d035d2da2a7"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-02-27",
+      "description": "Accurate placenta pathology assessment is essential for managing maternal and newborn health, but the placenta's heterogeneity and temporal variability pose challenges for histology analysis. To address this issue, we developed the ‘Histology Analysis Pipeline.PY’ (HAPPY), a deep learning hierarchical method for quantifying the variability of cells and micro-anatomical tissue structures across placenta histology whole slide images. HAPPY differs from patch-based features or segmentation approaches by following an interpretable biological hierarchy, representing cells and cellular communities within tissues at a single-cell resolution across whole slide images. We present a set of quantitative metrics from healthy term placentas as a baseline for future assessments of placenta health and we show how these metrics deviate in placentas with clinically significant placental infarction. HAPPY’s cell and tissue predictions closely replicate those from independent clinical experts and placental biology literature.",
+      "funder": [],
+      "identifier": "S-BIAD1045",
+      "keywords": [
+        "histology",
+        "deep learning",
+        "placenta",
+        "graph neural networks",
+        "computer vision"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "HAPPY: a deep learning pipeline for mapping cell-to-tissue graphs across placenta histology whole slide images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1045/12b12edc-8451-4493-add2-4a1d28134470/54d8387e-b2f3-4eca-a240-3b249750f7b7.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1045/e64c7663-4fd7-45da-8b7c-5f1057aa3c51/5e781457-4c52-44b2-87fc-8f6009d4aecb.png"
+      ]
+    },
+    {
+      "@id": "#00f0b271-48cd-4fca-971a-b8c5f7fd6aa7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01dm91j21"
+        }
+      ],
+      "name": "Liis Salumäe"
+    },
+    {
+      "@id": "#3b955379-5d80-47c2-8a73-d11e3e1bcf7a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03dbr7087"
+        }
+      ],
+      "name": "W. Tony Parks"
+    },
+    {
+      "@id": "#4922c1dc-b67b-423d-af86-9d7370445b4a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04tpp9d61"
+        }
+      ],
+      "name": "Linda M. Ernst"
+    },
+    {
+      "@id": "#4ff29abd-3996-46a3-8a98-5ff791469895",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01cqmqj90"
+        }
+      ],
+      "name": "Drorith Hochner-Celnikier"
+    },
+    {
+      "@id": "#5a3808f0-35a1-4e70-9d89-cc0bbc8d0b8d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03z77qz90"
+        }
+      ],
+      "name": "Valentina Rukins"
+    },
+    {
+      "@id": "#5b563686-bfff-4074-a9bc-8d035d2da2a7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/052gg0110"
+        }
+      ],
+      "name": "Christoffer Nellåker"
+    },
+    {
+      "@id": "#6442c8d5-3289-4e5e-99b7-a4eb024ee350",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01cqmqj90"
+        }
+      ],
+      "name": "Karen Meir"
+    },
+    {
+      "@id": "#6dd0f9cd-7a35-4e28-8917-d4a011ef6870",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/052gg0110"
+        }
+      ],
+      "name": "Cecilia M. Lindgren"
+    },
+    {
+      "@id": "#82004a7a-87eb-46bb-8125-759b207de5c1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0524sp257"
+        }
+      ],
+      "name": "Abigail Fraser"
+    },
+    {
+      "@id": "#84fd706b-c4d8-4331-bcfc-b6440f5452d6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03z77qz90"
+        }
+      ],
+      "name": "Triin Laisk"
+    },
+    {
+      "@id": "#9b3e40cd-c48a-42ee-85a5-0e279584a3c1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01dm91j21"
+        }
+      ],
+      "name": "Siim Siigur"
+    },
+    {
+      "@id": "#9baaf0b6-1f88-4de6-9d75-e5d4bc980084",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03z77qz90"
+        }
+      ],
+      "name": "Jelisaveta Džigurski"
+    },
+    {
+      "@id": "#dc7e7b39-a800-4725-8f31-a80dbc94e5d4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01cqmqj90"
+        }
+      ],
+      "name": "Omri Dodi"
+    },
+    {
+      "@id": "#de9292b0-a295-4b3a-bb9e-c4bc5cb3355c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03qxff017"
+        }
+      ],
+      "name": "Hagit Hochner"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8189-842X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/052gg0110"
+        }
+      ],
+      "email": "claudia.vanea@linacre.ox.ac.uk",
+      "name": "Claudia Vanea"
+    },
+    {
+      "@id": "https://ror.org/01cqmqj90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Hadassah Medical Center"
+    },
+    {
+      "@id": "https://ror.org/01dm91j21",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Tartu University Hospital"
+    },
+    {
+      "@id": "https://ror.org/03dbr7087",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Toronto"
+    },
+    {
+      "@id": "https://ror.org/03qxff017",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Hebrew University of Jerusalem"
+    },
+    {
+      "@id": "https://ror.org/03z77qz90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Tartu"
+    },
+    {
+      "@id": "https://ror.org/04tpp9d61",
+      "@type": [
+        "Organization"
+      ],
+      "name": "NorthShore University HealthSystem"
+    },
+    {
+      "@id": "https://ror.org/0524sp257",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Bristol"
+    },
+    {
+      "@id": "https://ror.org/052gg0110",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#c9549043-03af-44fc-a7fd-d3625feb4f51",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Parenchymal placenta section",
+      "name": "Placenta Whole Slide Images",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#11e93dc5-f600-4539-9ac1-09b5e96ad351",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "x40 magnification",
+      "labEquipment": "Hamamatsu XR\n3D HISTECH PANNORAMIC 250 Flash III",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 5616746081
+    }
+  ]
+}

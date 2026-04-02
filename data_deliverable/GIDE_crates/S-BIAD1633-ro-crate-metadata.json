@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1633"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1633",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3c2066a1-e0e5-47ce-8115-09913859ae15"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f8e92187-ed84-49d2-862c-9890c8bad705"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9239-7310"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-11",
+      "description": "Spinal muscular atrophy (SMA) is caused by mutations in the Survival Motor Neuron 1 (SMN1) gene. While traditionally viewed as a motor neuron disorder, there is involvement of various peripheral organs in SMA. Notably, fatty liver has been observed in SMA mouse models and SMA patients. Nevertheless, it remains unclear whether intrinsic depletion of SMN protein in the liver contributes to pathology in the peripheral or central nervous systems. To address this, we developed a mouse model with a liver-specific depletion of SMN by utilizing an Alb-Cre transgene together with one Smn2B allele and one Smn1 exon 7 allele flanked by loxP sites. Initially, we evaluated phenotypic changes in these mice at postnatal day 19 (P19), when the severe model of SMA, the Smn2B/- mice, exhibit many symptoms of the disease. The liver-specific SMN depletion does not induce motor neuron death, neuromuscular pathology or muscle atrophy, characteristics typically observed in the Smn2B/- mouse at P19. However, mild liver steatosis was observed, although no changes in liver function were detected. Notably, pancreatic alterations resembled that of Smn2B/-mice, with a decrease in insulin-producing b-cells and an increase in glucagon-producing a-cells, accompanied by a reduction in blood glucose and an increase in plasma glucagon and glucagon-like peptide (GLP-1). These changes were transient, as mice at P60 exhibited recovery of liver and pancreatic function. While the mosaic pattern of the Cre-mediated excision precludes definitive conclusions regarding the contribution of liver-specific SMN depletion to overall tissue pathology, our findings highlight an intricate connection between liver function and pancreatic abnormalities in SMA.",
+      "funder": [],
+      "identifier": "S-BIAD1633",
+      "keywords": [
+        "Spinal muscular atrophy, neuromuscular disease, metabolism, liver, pancreas"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Image data accompanying the paper \"Impact of liver-specific survival motor neuron (SMN) depletion on central nervous system and peripheral tissue pathology\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1633/2baa0a51-e30a-4450-8705-4ecd65f53da1/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9239-7310",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6cd17707-e601-47e8-b13b-390ca23604e5"
+        }
+      ],
+      "email": "rkothary@ohri.ca",
+      "name": "Rashmi Kothary"
+    },
+    {
+      "@id": "#6cd17707-e601-47e8-b13b-390ca23604e5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ottawa Hospital Research Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#f8e92187-ed84-49d2-862c-9890c8bad705",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse liver sections",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#3c2066a1-e0e5-47ce-8115-09913859ae15",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Described in manuscript",
+      "labEquipment": "Described in manuscript",
+      "measurementTechnique": [],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 33
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 389479117
+    }
+  ]
+}

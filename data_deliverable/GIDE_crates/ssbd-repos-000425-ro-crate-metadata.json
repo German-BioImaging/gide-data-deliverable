@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000425/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000425/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000425",
+      "name": "Xenium data for a comparison of spatial transcriptomics technologies for medulloblastoma cryosections",
+      "description": "10X Genomics Xenium data from human Medulloblastoma samples. The data was acuired in the course of a study performing a comparison of four imaging-based ST methods – RNAscope HiPlex, Molecular Cartography, MERFISH/Merscope, and Xenium – together with sequencing-based ST (Visium). These technologies were used to study cryosections of medulloblastoma with extensive nodularity (MBEN), a tumor chosen for its distinct microanatomical features. Our analysis reveals that automated imaging-based ST methods are well suited to delineating the intricate MBEN microanatomy, capturing cell-type-specific transcriptome profiles. We devise approaches to compare the sensitivity and specificity of the different methods together with their unique attributes to guide method selection based on the research aim. Furthermore, we demonstrate how reimaging of slides after the ST analysis can markedly improve cell segmentation accuracy and integrate additional transcript and protein readouts to expand the analytical possibilities and depth of insights. This study highlights key distinctions between various ST technologies and provides a set of parameters for evaluating their performance. Our findings aid in the informed choice of ST methods and delineate approaches for enhancing the resolution and breadth of spatial transcriptomic analyses, thereby contributing to advancing ST applications in solid tumor research.",
+      "datePublished": "2025-03-11",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1101/2024.04.03.586404"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Michele Bortolomeazi",
+      "email": "michele.bortolomeazzi@dkfz-heidelberg.de",
+      "description": "Organization: German Cancer Research Center (DKFZ); Department: ScOpenLab; Laboratory: ScOpenLab",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04cdgtt98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04cdgtt98",
+      "@type": "Organization",
+      "name": "German Cancer Research Center (DKFZ)"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "Deutsche Forschungsgemeinschaft: INST 35/1503-1 FUGG NFDI 46/1 – 501864659\r\nMinistry of Science, Research and the Arts Baden-Württemberg: INST 35/1314-1\r\nBundesministerium für Bildung und Forschung: SATURN3 (01KD2206B)"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2024.04.03.586404",
+      "@type": "ScholarlyArticle",
+      "name": "Comparison of spatial transcriptomics technologies using tumor cryosections",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "10X Xenium",
+      "description": "10X Xenium",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-technique-1",
+      "@type": "DefinedTerm",
+      "name": "10X Xenium"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 43898884096,
+      "description": "43.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 80,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

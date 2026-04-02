@@ -1,0 +1,226 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1026"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1026",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9057d2f7-1cee-4c50-8660-797e52214fc2"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d0a54ea4-3e1c-42e3-b235-a721a7bfb530"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6688-0539"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1837-6359"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8849-0088"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-29",
+      "description": "We present computational tools that allow versatile and accurate 3D nuclear segmentation in plant organs, enable the analysis of cell-nucleus geometric relationships, and improve the accuracy of 3D cell segmentation. This biostudies submission includes Arabidopsis ovule model training dataset used in the study. The training dataset is composed of strong and weak nuclei image channels, corresponding ground truth segmentation, cell wall image and associated cell segmentation mentioned in the study. Trained models from the study, a total of 47 trained models are made available from this study. This included 15 initial models, 30 gold models, and 2 platinum models. Models were trained using PlantSeg, Stardist and Cellpose. All image datasets and its segmentation as part of the figures in this study is also available as separate zip files. This includes  image dataset from different species and organs as listed below. \n\n1- Arabidopsis thaliana -Shoot apical meristem\n2- Cardamine hirsuta- Leaf\n3- Antirrhinum majus- Ovule\n4-Arabidopsis thaliana- Ovule\n5-Arabidopsis thaliana- Sepal\n6-Mouse-Blastocyst/ Embryo\n7-Arabidopsis thaliana- Mature leaf\n\nThe method to apply the models is available as a github repository- GoNuclear (https://github.com/kreshuklab/go-nuclear)",
+      "funder": [],
+      "identifier": "S-BIAD1026",
+      "keywords": [
+        "StarDist",
+        "PlantSeg",
+        "Arabidopsis",
+        "Cardamine",
+        "Nuclei",
+        "Segmentation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Go-Nuclear. A deep learning-based toolkit for 3D nuclei segmentation and quantitative analysis in cellular and tissue context",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6688-0539",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "kay.schneitz@tum.de",
+      "name": "Kay Schneitz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8849-0088",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "t.mody@tum.de",
+      "name": "Tejasvinee Mody"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1837-6359",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#26db2715-074c-4aa1-983d-be701bac452e"
+        }
+      ],
+      "email": "athul.vijayan@tum.de",
+      "name": "Athul Vijayan"
+    },
+    {
+      "@id": "#26db2715-074c-4aa1-983d-be701bac452e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute for Plant Breeding Research"
+    },
+    {
+      "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Technical University of Munich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#d0a54ea4-3e1c-42e3-b235-a721a7bfb530",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Ovule samples from early primordium outgrowth to the mature pre-fertilization stages",
+      "name": "3D digital atlas ovules images for model training using machine learning",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#9057d2f7-1cee-4c50-8660-797e52214fc2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal laser scanning microscopy of ovules stained with SR2200 and TO-PRO-3 iodide was performed on an upright Leica TCS SP8 X WLL2 HyVolution 2 (Leica Microsystems) equipped with GaAsP (HyD) detectors and a 63x glycerol objective (HC PL anterior-posteriorO CS2 63x/1.30 GLYC, CORR CS2). Scan speed was at 400 Hz, the pinhole was set to 1 Airy units, line average between 2 and 4, and the digital zoom between 0.75 and 2. For z-stacks, 12 or 16 bit images were captured at a slice interval of 0.33 μm with voxel size of 0.126 μm x 0.126 μm x 0.33 μm. Laser power or gain was adjusted for z compensation to obtain an optimal z-stack. Image acquisition parameters were the following: SR2200 excitation, 405 nm diode laser (50 mW) with a laser power ranging from 0.1% to 1.5% intensity, detection at 416–476 nm with the gain of the HyD detector set to 20. TO-PRO-3 iodide excitation, white-light laser at 642 nm, with a laser power ranging from 2% to 3.5%, detection at 661 to 795 nm, with the gain of the HyD detector set to 400. Images were adjusted for color and contrast using ImageJ (Rueden et al. 2017) or MorphoGraphX software (Strauss et al. 2022).\n",
+      "labEquipment": "Leica TCS SP8 X WLL2 HyVolution 2 (Leica Microsystems) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Microscopy and image acquisition of prepared ovule samples"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 11
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 37715166962
+    }
+  ]
+}

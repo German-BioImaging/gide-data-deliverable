@@ -1,0 +1,292 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1176"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1176",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3ca1c627-5044-4d3b-a6aa-a5393a736c30"
+        },
+        {
+          "@id": "#63334d70-8092-481d-a25b-77ce5dd722af"
+        },
+        {
+          "@id": "#7bffce9c-19fe-4c18-9003-f915de93afad"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#76527dff-48bd-4afe-bc56-29cad3e3fb0c"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0008-5513"
+        },
+        {
+          "@id": "#856e1804-8852-4f98-87af-4ce50d4b4b54"
+        },
+        {
+          "@id": "#49baad05-3778-4f34-bf48-ef9d7117fe1e"
+        },
+        {
+          "@id": "#cc636a2a-7c94-4547-b58f-4056ce9bcca0"
+        },
+        {
+          "@id": "#90e35895-22d8-414e-9683-bc3eca37eda6"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-10",
+      "description": "Tumor heterogeneity drives drug resistance and relapse in breast cancer. This study examined spatial proteomic heterogeneity using integrated multi-region spatial mass spectrometry proteomics, exome sequencing, and imaging across 280 tumor regions. For the imaging component, 121 regions from 47 tissue sections across 11 tumors were analyzed. Consecutive tissue slices underwent different staining and imaging techniques. Pathologist-selected regions (based on H-DAB staining for ER, PR, HER2, and panCK) were laser captured for proteomic analysis. Additional staining for immune and stromal markers (CD31, alpha-SMA, Pan-CK, CD68, CD3, and DAPI) allowed for the assessment of blood vessel coverage, spatial distribution of tumor and immune cells, and stromal composition within and surrounding these regions.",
+      "funder": [],
+      "identifier": "S-BIAD1176",
+      "keywords": [
+        "breast cancer",
+        "intra tumor heterogeneity ",
+        "spatial proteomics",
+        "tumor microenvironment"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Integrated spatial proteomic analysis of breast cancer heterogeneity unravels mechanisms of cancer cell phenotypic plasticity",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1176/11972a9b-cf3f-481f-b8f2-54781672ecf1/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#49baad05-3778-4f34-bf48-ef9d7117fe1e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "shiri.karagach@weizmann.ac.il",
+      "name": "Shiri Karagach"
+    },
+    {
+      "@id": "#856e1804-8852-4f98-87af-4ce50d4b4b54",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4d083f71-996c-4fb1-a2b2-11ec9a5eaca0"
+        }
+      ],
+      "email": "mariyamardamshina@gmail.com",
+      "name": "Mariya Mardamshina"
+    },
+    {
+      "@id": "#90e35895-22d8-414e-9683-bc3eca37eda6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "tami.geiger@weizmann.ac.il",
+      "name": "Tamar Geiger"
+    },
+    {
+      "@id": "#cc636a2a-7c94-4547-b58f-4056ce9bcca0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "ofra.golani@weizmann.ac.il",
+      "name": "Ofra Golani"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0008-5513",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "vishnu.mohan@weizmann.ac.il",
+      "name": "Vishnu Mohan"
+    },
+    {
+      "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Weizmann Institute of Science"
+    },
+    {
+      "@id": "#4d083f71-996c-4fb1-a2b2-11ec9a5eaca0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Tel Aviv University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#76527dff-48bd-4afe-bc56-29cad3e3fb0c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human breast cancer tissue",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3ca1c627-5044-4d3b-a6aa-a5393a736c30",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A Plan-Apochromat 20x objective with a 1x camera adapter was used in conjunction with a pco.edge 4.2 4MP camera. Images were captured at 20X objective magnification with a pixel size of 0.326 µm. Autofocus was employed with 7 focal planes acquired using a 5 µm step size. Flat field correction was enabled with intensity statistics for compensation. Four filter sets were employed: Dapi-Q (20 ms exposure, 9% excitation intensity), Cy5-Q (20 ms exposure, 68% excitation intensity), FITC (25 ms exposure, 55% excitation intensity), and TRITC (20 ms exposure, 10% excitation intensity). All channels were acquired with 8-bit depth and saved in JPEG format at 90% quality.",
+      "labEquipment": "Pannoramic SCAN 150 scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "IF-Imaging-Set2"
+    },
+    {
+      "@id": "#63334d70-8092-481d-a25b-77ce5dd722af",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A Plan-Apochromat 20x objective with a 1x camera adapter was used in conjunction with a pco.edge 4.2 4MP camera. Images were captured at 20X objective magnification with a pixel size of 0.326 µm. Autofocus was employed with 7 focal planes acquired using a 5 µm step size. Flat field correction was enabled with intensity statistics for compensation. Four filter sets were employed: Dapi-Q (20 ms exposure, 9% excitation intensity), Cy5-Q (85 ms exposure, 100% excitation intensity), FITC (20 ms exposure, 10% excitation intensity), and TRITC (20 ms exposure, 45% excitation intensity). All channels were acquired with 8-bit depth and saved in JPEG format at 90% quality.",
+      "labEquipment": "Pannoramic SCAN 150 scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "IF-Imaging-Set1"
+    },
+    {
+      "@id": "#7bffce9c-19fe-4c18-9003-f915de93afad",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were captured with 20X objective magnification and a pixel size of 0.2715 µm. 24 bit color images were acquired.",
+      "labEquipment": "Leica Aperio VERSA Digital Pathology Scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Histology"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1279
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1281287372513
+    }
+  ]
+}

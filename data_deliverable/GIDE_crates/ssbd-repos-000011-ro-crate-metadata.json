@@ -1,0 +1,146 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000011/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000011/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000011",
+      "name": "A set of BDML files for quantitative information about neuronal nuclei in C. elegans adult",
+      "description": "quantitative information about neuronal nuclei in C. elegans adult",
+      "datePublished": "2016-05-22",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Animals",
+        "Caenorhabditis elegans/cytology",
+        "Caenorhabditis elegans/physiology",
+        "Cell Nucleus/physiology[major]",
+        "Computational Biology",
+        "Databases, Factual",
+        "Imaging, Three-Dimensional/methods[major]",
+        "Normal Distribution",
+        "Pattern Recognition, Automated/methods[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pcbi.1004970"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yu Toyoshima",
+      "description": "Organization: The University of Tokyo; Department: Department of Biological Sciences; Laboratory: Iino Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1004970",
+      "@type": "ScholarlyArticle",
+      "name": "Accurate Automatic Detection of Densely Distributed Cell Nuclei in 3D Space.",
+      "datePublished": "2016"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "vernacularName": "nematode"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 71081984,
+      "description": "71.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 28,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD612"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD612",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5099d76d-c45d-4705-892d-7d9988ab2b1b"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#44d80b75-dbdf-4382-9855-5caca94db0ea"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5070-698X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-01-24",
+      "description": "s-SNOM and TEM images of RPMI-8226 (Multiple myeloma) cells.",
+      "funder": [],
+      "identifier": "S-BIAD612",
+      "keywords": [
+        "Multiple myeloma",
+        "myeloma",
+        "s-SNOM",
+        "SNOM",
+        "TEM",
+        "scanning probe",
+        "spectroscopic",
+        "infrared"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Label-free nanoscale mapping of intracellular organelle chemistry",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD612/a6b80a0d-99a8-493d-917c-21072987a62f/a0d2effb-622a-4d63-b81b-addd12b20e35.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5070-698X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1ba7043f-fcc8-4c41-bc07-2aa74d649202"
+        }
+      ],
+      "email": "geg15@ic.ac.uk",
+      "name": "George Greaves"
+    },
+    {
+      "@id": "#1ba7043f-fcc8-4c41-bc07-2aa74d649202",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Imperial College London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#44d80b75-dbdf-4382-9855-5caca94db0ea",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Multiple myeloma cells RPMI-8226",
+      "name": "Multiple myeloma cells RPMI-8226",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5099d76d-c45d-4705-892d-7d9988ab2b1b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Wavenumber (1020 - 1735)cm-1",
+      "labEquipment": "NeaSNOM",
+      "measurementTechnique": [],
+      "name": "s-SNOM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 24
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 93935342
+    }
+  ]
+}

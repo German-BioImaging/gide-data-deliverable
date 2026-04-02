@@ -1,0 +1,234 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/17-Aoki-MolDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/17-Aoki-MolDyn/",
+      "@type": "Dataset",
+      "identifier": "17-Aoki-MolDyn",
+      "name": "17-Aoki-MolDyn",
+      "description": "17-Aoki-MolDyn",
+      "datePublished": "2016-10-03",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Algorithms",
+        "Animals",
+        "Benzamides/pharmacology",
+        "Cell Communication",
+        "Cell Count",
+        "Cell Line",
+        "Cell Proliferation[major]",
+        "Enzyme Activation",
+        "Extracellular Signal-Regulated MAP Kinases/antagonists & inhibitors",
+        "Extracellular Signal-Regulated MAP Kinases/metabolism[major]",
+        "Gene Expression Regulation",
+        "Humans",
+        "Imidazoles/pharmacology",
+        "Kinetics",
+        "MAP Kinase Signaling System[major]",
+        "Models, Biological",
+        "Promoter Regions, Genetic",
+        "Rats",
+        "Sequence Analysis, RNA",
+        "Stochastic Processes",
+        "Time-Lapse Imaging",
+        "raf Kinases/antagonists & inhibitors",
+        "raf Kinases/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.molcel.2013.09.015"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-6"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@lif.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Yuka Kumagai"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Atsuro Sakurai"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Naoki Komatsu"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Yoshihisa Fujita"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Clara Shionyu"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Michiyuki Matsuda"
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.molcel.2013.09.015",
+      "@type": "ScholarlyArticle",
+      "name": "Stochastic ERK activation induced by noise and cell-to-cell propagation regulates cell density-dependent proliferation.",
+      "datePublished": "2013"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "NRK-52E",
+      "description": "NRK-52E",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116",
+      "@type": "Taxon",
+      "scientificName": "Rattus norvegicus",
+      "vernacularName": "rat"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 164712089,
+      "description": "164.7 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 4,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

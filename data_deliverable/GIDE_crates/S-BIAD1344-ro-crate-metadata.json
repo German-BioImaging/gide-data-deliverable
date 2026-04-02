@@ -1,0 +1,278 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1344"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1344",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#13cfdae0-20be-406b-b8ee-4f308c44210f"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#625f8672-bee1-4365-b68a-af7ca7033703"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9999-4292"
+        },
+        {
+          "@id": "#c498d3db-c801-4869-b491-82bee50be36d"
+        },
+        {
+          "@id": "#ee8fc19b-28fd-4fcd-a6af-7781fbcf2d2a"
+        },
+        {
+          "@id": "#fafd1044-813c-4cd6-a736-5d4810d29085"
+        },
+        {
+          "@id": "#614c435c-d5e6-4586-9680-18acba8848c6"
+        },
+        {
+          "@id": "#ddfb9ba1-62b8-45a3-9604-c6a987ac55f7"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-29",
+      "description": "The dataset is composed of 98 whole slide images (WSIs) of renal cell carcinoma, a type of kidney cancer. These WSIs are multiplex immunofluorescent (mIF) images. They have been labeled using tow distinct panels of protein markers to allow simultaneous visualisation of multiple targets withing the same tissue sample.\nPanel 1 includes markers TIM-3, PD1, PD-L1, and CD8 with a DNA counterstain (Hoechst). These markers are often associated with immune response and are crucial in understanding how the immune system interacts with cancer cells. Panel 2 includes OCT4a, ZEB1, Snail, and CD44, also combined with Hoechst for DNA visualisation. These markers are particularly important because they are linked to cancer stem cells (CSC) and the epithelial-to-mesenchymal transition (EMT), processes that play significant roles in cancer progression and metastasis.\nThis dataset will be expected to be highly valuable in the development of tools and methods aimed at characterising the differences between primary renal cancer and its metastatic forms. By analyzing these images, researchers can gain deeper insights into how renal cancer evolves and spreads, potentially leading to improved prognostic tools and personalised treatment strategies for patients.",
+      "funder": [],
+      "identifier": "S-BIAD1344",
+      "keywords": [
+        "Multiplex immunofluorescence; WSI; Renal cancer; Image analysis; "
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Multiplex Immunofluorescent Whole Slide Images of Renal Cancer",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1344/e684b665-5d70-40dd-96c2-3711d9a41804/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#614c435c-d5e6-4586-9680-18acba8848c6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01nrxwf90"
+        }
+      ],
+      "email": "alex.laird@ed.ac.uk",
+      "name": "Alex Laird"
+    },
+    {
+      "@id": "#c498d3db-c801-4869-b491-82bee50be36d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "raffaeledefilippis92@gmail.com",
+      "name": "Raffaele De Philippis"
+    },
+    {
+      "@id": "#ddfb9ba1-62b8-45a3-9604-c6a987ac55f7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "djh20@st-andrews.ac.uk",
+      "name": "David J. Harrison"
+    },
+    {
+      "@id": "#ee8fc19b-28fd-4fcd-a6af-7781fbcf2d2a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "gw66@st-andrews.ac.uk",
+      "name": "Georg Wölflein"
+    },
+    {
+      "@id": "#fafd1044-813c-4cd6-a736-5d4810d29085",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "gds35@cam.ac.uk",
+      "name": "Grant D. Stewart"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9999-4292",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://ror.org/01nrxwf90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#625f8672-bee1-4365-b68a-af7ca7033703",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Renal cell carcinoma",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#13cfdae0-20be-406b-b8ee-4f308c44210f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1. Panel 1 - TIM-3 (FITC channel, Exposure time-60ms), PD1 (Cy5 channel, Exposure time-50ms), PD-L1 (Cy3 channel, Exposure time-100ms), CD8 (Alexa Fluore 750 channel, Exposure time-800ms), Hoechst (Hoechst channel, Exposure time-7ms)\n2. Panel 2 - ZEB1 (FITC channel, Exposure time-50ms), SNAIL (Cy5 channel, Exposure time-50ms), OCT4a (Cy3 channel, Exposure time-50ms), CD44 (Alexa Fluore 750 channel, Exposure time-300ms), Hoechst (Hoechst channel, Exposure time-6ms)",
+      "labEquipment": "Zeiss Axio Z1 scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 202
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2052021625245
+    }
+  ]
+}

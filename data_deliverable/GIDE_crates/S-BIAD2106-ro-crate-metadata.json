@@ -1,0 +1,339 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2106"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2106",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#36500683-d0ef-4f2c-bf22-82eb8956e8bc"
+        },
+        {
+          "@id": "#cbf10040-295e-4c32-a734-9f388043abe6"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1fc6714a-be16-4dac-8949-d023fe49e3a7"
+        },
+        {
+          "@id": "#703ef7a5-1628-4982-b571-1075163b5a8c"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0008-8183-6729"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5163-5100"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4844-6955"
+        },
+        {
+          "@id": "#04c2c36d-e22f-4337-8d10-47db054314c9"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8627-1260"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4110-1006"
+        },
+        {
+          "@id": "#59592e6d-7bb9-407e-9f69-ea32ead797aa"
+        },
+        {
+          "@id": "#f47878a0-2144-4e5b-a9f8-be17de129ae5"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-25",
+      "description": "This dataset is the training set with annotations of contiguous structures for SELMA3D 2025 challenge. The SELMA3D 2025 challenge focuses on self-supervised learning for 3D light-sheet microscopy (LSM) image segmentation. Its objective is to encourage the development of generalizable models capable of serving multiple 3D LSM image segmentation tasks. This dataset is dedicated to developing self-supervised learning strategies for segmenting contiguous structures in 3D light-sheet microscopy images. It contains 3D image patches of different contiguous structures including blood vessels and nerves. Each patch includes corresponding pixel-wise annotations for the structures.",
+      "funder": [],
+      "identifier": "S-BIAD2106",
+      "keywords": [
+        "Light-sheet microscopy",
+        " 3D image",
+        "deep learning",
+        "self-supervised learning",
+        "image segmentation",
+        "contiguous  structure",
+        "vessel segmentation",
+        "nerve segmentation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": " 3D light-sheet microscopy data for SELMA3D 2025 challenge -  contiguous structures - training subset with annotations ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#04c2c36d-e22f-4337-8d10-47db054314c9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Luciano Höher"
+    },
+    {
+      "@id": "#59592e6d-7bb9-407e-9f69-ea32ead797aa",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Hongcheng Mai"
+    },
+    {
+      "@id": "#f47878a0-2144-4e5b-a9f8-be17de129ae5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Jie Luo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5163-5100",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Ali Erturk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4110-1006",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Doris Kaltenecker"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4844-6955",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6e73475e-2733-4531-8975-98f8f953a2e6"
+        }
+      ],
+      "name": "Johannes C. Paetzold"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8627-1260",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Mihail Todorov"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-8183-6729",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2"
+        }
+      ],
+      "email": "ying.chen@campus.lmu.de",
+      "name": "Ying Chen"
+    },
+    {
+      "@id": "#6e73475e-2733-4531-8975-98f8f953a2e6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Cornell University"
+    },
+    {
+      "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ludwig-Maximilians-Universität München"
+    },
+    {
+      "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Zentrum München"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#1fc6714a-be16-4dac-8949-d023fe49e3a7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain",
+      "name": "Biosample for peripheral nerve patches",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#703ef7a5-1628-4982-b571-1075163b5a8c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain",
+      "name": "Biosample for brain blood vessel patches",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#36500683-d0ef-4f2c-bf22-82eb8956e8bc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 5.9 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 8-μm steps while using left- and right-sided illumination. ",
+      "labEquipment": "A ×1 Olympus air objective (Olympus MV PLAPO ×1/0.25 NA (WD = 65 mm)) coupled to an Olympus MVX10 zoom body was used, which provided zoom-out and zoom-in ranging from ×0.63 up to ×6.3. Using ×1 objective and ×0.63 of zoom, we imaged a field of view of 2 × 2.5 cm, covering the entire width of the mouse body. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - peripheral nerves"
+    },
+    {
+      "@id": "#cbf10040-295e-4c32-a734-9f388043abe6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with 16-bit depth and at a nominal resolution of 1.625 μm per voxel on the x and y axes. In the z dimension, we took sectional images in 3-μm steps while using left- and right-sided illumination. ",
+      "labEquipment": "Imaging was performed using a 4× objective lens (Olympus XLFLUOR 340) equipped with an immersion corrected dipping cap mounted on a LaVision UltraII microscope coupled to a white-light laser module (NKT SuperK Extreme EXW-12) for imaging. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition - blood vessel"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 54
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1183588463
+    }
+  ]
+}

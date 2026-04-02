@@ -1,0 +1,150 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000341/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000341/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000341",
+      "name": "Dataset for \"Live-cell fluorescence imaging and optogenetic control of PKA kinase activity in fission yeast Schizosaccharomyces pombe.\"",
+      "description": "The cAMP-PKA signaling pathway plays a crucial role in sensing and responding to nutrient availability in the fission yeast Schizosaccharomyces pombe. This pathway monitors external glucose levels to control cell growth and sexual differentiation. However, the temporal dynamics of the cAMP-PKA pathway in response to external stimuli remains unclear mainly due to the lack of tools to quantitatively visualize the activity of the pathway. Here, we report the development of the kinase translocation reporter (KTR)-based biosensor spPKA-KTR1.0, which allows us to measure the dynamics of PKA activity in fission yeast cells. The spPKA-KTR1.0 is derived from the transcription factor Rst2, which translocates from the nucleus to the cytoplasm upon PKA activation. We found that spPKA-KTR1.0 translocates between the nucleus and cytoplasm in a cAMP-PKA pathway-dependent manner, indicating that the spPKA-KTR1.0 is a reliable indicator of the PKA activity in fission yeast cells. In addition, we implemented a system that simultaneously visualizes and manipulates the cAMP-PKA signaling dynamics by introducing bPAC, a photoactivatable adenylate cyclase, in combination with spPKA-KTR1.0. This system offers an opportunity for investigating the role of the signaling dynamics of the cAMP-PKA pathway in fission yeast cells with higher temporal resolution. All imaging raw data and quantifications are available in the dataset.",
+      "datePublished": "2024-04-08",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1002/yea.3937"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yuhei  Goto",
+      "email": "y-goto@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: National Institute for Basic Biology; Laboratory: Division of Quantitative Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/055n47h92"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/055n47h92",
+      "@type": "Organization",
+      "name": "National Institutes of Natural Sciences"
+    },
+    {
+      "@id": "https://doi.org/10.1002/yea.3937",
+      "@type": "ScholarlyArticle",
+      "name": "Live-cell fluorescence imaging and optogenetic control of PKA kinase activity in fission yeast Schizosaccharomyces pombe.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "See details in Sakai et al., bioRxiv, 2024",
+      "description": "See details in Sakai et al., bioRxiv, 2024",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853",
+      "@type": "Taxon",
+      "scientificName": "Schizosaccharomyces pombe",
+      "vernacularName": "fission yeast"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 90586865664,
+      "description": "90.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 31006,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD610"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD610",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7991045b-298c-4a76-ae03-9b0cebbe5de2"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a3c9128b-6ac9-401c-acd5-d0790da9dad8"
+        },
+        {
+          "@id": "#81c73489-816a-4cce-9ba2-94d39640ad5f"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9830-7929"
+        },
+        {
+          "@id": "#2977135f-e3e0-4b0e-9456-e030df9f0b92"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-02-26",
+      "description": "Fluorescence confocal microscopy of cell-line derived spheroids",
+      "funder": [],
+      "identifier": "S-BIAD610",
+      "keywords": [
+        "organoids ",
+        "confocal",
+        "3D cell culture",
+        "BT474",
+        "FIB-SEM",
+        "live dyes",
+        "patient-derived organoids"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Light and electron microscopy continuum-resolution imaging of 3D cell cultures",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD610/bda38f94-d392-4d37-a34f-a5e709c67905/be684476-a50b-4b95-adc3-5f3dce0b5ac9.png"
+      ]
+    },
+    {
+      "@id": "#2977135f-e3e0-4b0e-9456-e030df9f0b92",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "julia.mahamid@embl.de",
+      "name": "Julia Mahamid"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9830-7929",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "edoardo.dimprima@embl.de",
+      "name": "Edoardo D'Imprima"
+    },
+    {
+      "@id": "#5074a07c-1144-4134-96c3-f98335b1653a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#81c73489-816a-4cce-9ba2-94d39640ad5f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human cancer cell ",
+      "name": "BT474 spheroid",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a3c9128b-6ac9-401c-acd5-d0790da9dad8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Patient-derived ",
+      "name": "Colon organoids",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7991045b-298c-4a76-ae03-9b0cebbe5de2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Live cell imaging was performed at 37°C and 5% CO2 with a Zeiss LSM 780 NLO (Jena, Germany) equipped with a LD LCI Plan-Apochromat 25x 0.8 NA water immersion objective. To image the whole HPF carrier volume and locate single organoids, we first detected cell nuclei marked with Hoechst-33342 and acquired z-stacks with 6x6 tiles of 5122 pixels with 10% overlap, and 10 μm z-step. The final montage was stitched using ZEN-black software. For single organoids, we acquired z-stacks of 10242 pixels at different z-steps ranging from 1.0 or 1.8 μm. ",
+      "labEquipment": " Zeiss LSM 780 NLO (Jena, Germany)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 562573363
+    }
+  ]
+}

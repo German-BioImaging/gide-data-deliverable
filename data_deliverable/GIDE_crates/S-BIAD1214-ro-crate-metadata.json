@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1214"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1214",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#daf19b08-69bd-4699-a5f3-761fd3f86e38"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ccc26183-b613-4c5e-abfe-224aefe91c4a"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#94862bd0-0e43-48b3-9410-a0e4072ba308"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-29",
+      "description": "This submission includes the source data files of the images of main figures. It includes H&E section of liver and adipose tissue.\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "funder": [],
+      "identifier": "S-BIAD1214",
+      "keywords": [
+        "Hematoxylin and eosin staining ,Oil Red O, "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Data related to article \"GLP1R agonist attenuates HFD-induced insulin resistance ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1214/bbd85f05-f874-4cc9-9752-6e571dcbd20b/9d6e6d6a-836a-4d1c-a201-64d4e8602da0.png"
+      ]
+    },
+    {
+      "@id": "#94862bd0-0e43-48b3-9410-a0e4072ba308",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22"
+        }
+      ],
+      "email": "mondalsiraj@gmail.com",
+      "name": "prosenjit mondal"
+    },
+    {
+      "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Indian Institute of Science Education and Research Berhampur"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#ccc26183-b613-4c5e-abfe-224aefe91c4a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "liver and adipose tissue sections",
+      "name": "Data related to article \"GLP1R agonist attenuates HFD-induced insulin resistance ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#daf19b08-69bd-4699-a5f3-761fd3f86e38",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "images were taken at 40x using OPTIKA preview software",
+      "labEquipment": "phase contrast microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "name": "Data related to article \"GLP1R agonist attenuates HFD-induced insulin resistance "
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 138
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 860957744
+    }
+  ]
+}

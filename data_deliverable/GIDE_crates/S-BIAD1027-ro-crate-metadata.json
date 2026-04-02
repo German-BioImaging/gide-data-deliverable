@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1027"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1027",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#486552bf-8860-4d4c-b430-a501cfb017a3"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b2f688f8-dbaa-40f8-b493-c7cf990cd047"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2651-2584"
+        },
+        {
+          "@id": "#f779b911-5b5d-4076-b09a-889fe2c97860"
+        },
+        {
+          "@id": "#c9372b08-3801-49e9-b6d3-2d592ffbb97c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-02-29",
+      "description": "During asymmetric cell division, cell polarity is coordinated with the cell cycle to allow proper inheritance of cell fate determinants and generation of cellular diversity. In the Caenorhabditis elegans (C. elegans) zygote, polarity is governed by evolutionarily conserved Partitioning (PAR) proteins that segregate to opposing cortical domains to specify asymmetric cell fates. Timely establishment of PAR domains requires a cell cycle kinase, Aurora A (AIR-1 in C. elegans). Aurora A depletion by RNAi causes a spectrum of phenotypes including reversed polarity,  excess posterior domains, and no posterior domain. How depletion of a single kinase can cause seemingly opposite phenotypes remains obscure. Using an auxin-inducible degradation system and drug treatments, we found that AIR-1 regulates polarity differently at different times of the cell cycle. During meiosis I, AIR-1 acts to prevent later formation of bipolar domains, while in meiosis II, AIR-1 is necessary to recruit PAR-2 onto the membrane. Together these data clarify the origin of multiple polarization phenotypes in RNAi experiments and reveal multiple roles of AIR-1 in coordinating PAR protein localization with cell cycle progression. ",
+      "funder": [],
+      "identifier": "S-BIAD1027",
+      "keywords": [
+        "C. elegans",
+        "Polarity ",
+        "Aurora A kinase "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Temporally distinct roles of Aurora A in polarization of the C. elegans zygote",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1027/55671a27-aef2-4ba2-90fd-1a5acab88a50/71969406-3f5a-4aa0-a829-b5d2606088fa.png"
+      ]
+    },
+    {
+      "@id": "#c9372b08-3801-49e9-b6d3-2d592ffbb97c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "email": "daniel.dickinson@austin.utexas.edu",
+      "name": "Daniel Dickinson "
+    },
+    {
+      "@id": "#f779b911-5b5d-4076-b09a-889fe2c97860",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "email": "bailey.dejesus@utexas.edu",
+      "name": "Bailey de Jesus "
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2651-2584",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "email": "nimanzi@utexas.edu",
+      "name": "Nadia Manzi"
+    },
+    {
+      "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Texas at Austin"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#b2f688f8-dbaa-40f8-b493-c7cf990cd047",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C. elegans zygote",
+      "name": "UTX12",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#486552bf-8860-4d4c-b430-a501cfb017a3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Image File OME-TIFF Metadata for details",
+      "labEquipment": "Visitech iSIM super-resolution scan head  ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Super-Resolution Confocal Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 39
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 23363976269
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2419"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2419",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9d54543e-79fb-4822-9082-9741aaa0df85"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#39406ea8-dbc9-4b5e-baa4-9b9dc003caac"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6790-8345"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-25",
+      "description": "Understanding the factors involved in chromatin dynamics is crucial for the study of biochemical processes in which distant genomic regions need to come in close proximity. Previous single locus tracking studies suggest that chromatin dynamics are linked to active transcription, but studies which compare the chromatin dynamics of different locations within a defined chromatin domain are still very limited. Here we used the ANCHOR3 DNA labeling system to track multiple cis-regulatory elements and non-regulatory control regions at different positions in the mouse Klf4 locus. We observe homogeneous chromatin motion of cis-regulatory elements and non-cis-regulatory control regions in Klf4 transcribing mESCs and their non-transcribing EpiLCs daughter cells. These observations challenge the notion that active transcription has a major effect on the locus dynamics of mammalian genes. ",
+      "funder": [],
+      "identifier": "S-BIAD2419",
+      "keywords": [
+        "Single locus tracking",
+        "Chromatin dynamics",
+        "ANCHOR DNA labeling",
+        "Klf4",
+        "Rad23b"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Chromatin Dynamics of the mouse Klf4 locus",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6790-8345",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/018906e22"
+        }
+      ],
+      "email": "vanstaalduinenjente@gmail.com",
+      "name": "Jente van Staalduinen "
+    },
+    {
+      "@id": "https://ror.org/018906e22",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Erasmus MC"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#39406ea8-dbc9-4b5e-baa4-9b9dc003caac",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "F1-21.6 - mouse embryonic stem cells",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9d54543e-79fb-4822-9082-9741aaa0df85",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Stream acquisitions of 1,000 frames were acquired on a Ti-Eclipse inverted microscope (Nikon) with Spinning Disc unit CSU-X1 (Yokogawa) using a 100×/1.49 NA oil immersion objective (pixel size =  67 nm) and the 49002 ET – EGFP (Chroma) filter set with a 491 nm laser. Images were captured with the following settings: 100 ms exposure time and EM 10 MHz (100 V gain) on a QuantEM512C 512x512pixels 16bit (Photometrics) with the Perfect Focus System (Nikon) switched on. During imaging, cells were maintained under 5%CO2 and 37°C conditions using a Tokai Hit incubator.",
+      "labEquipment": "Ti-Eclipse inverted microscope (Nikon) with Spinning Disc unit CSU-X1 (Yokogawa) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Single locus tracking"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1031
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 541982478705
+    }
+  ]
+}

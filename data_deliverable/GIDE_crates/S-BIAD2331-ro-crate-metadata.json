@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2331"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2331",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#42a41947-ee02-4b68-ac1f-9c8d410b7f69"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7b0fb13e-f0c3-4789-acdf-fab5b120ac8d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#c888d14b-b045-41a0-a8da-5a13b58449a7"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-12",
+      "description": "The dataset consists of 5D live imaging data (X, Y, Z, T, C) of breast cancer spheroids acquired using confocal microscopy. Images are saved as single-tile TIFFs. The channels include Brightfield (cell morphology) and mScarlet (nuclear marker). For more details, please refer to the project’s GitHub page.",
+      "funder": [],
+      "identifier": "S-BIAD2331",
+      "keywords": [
+        "breast cancer",
+        "spheroids",
+        "3D"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "AI4Life Open Calls Project 11: 3D Matrix Motility Map (3DM³)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2331/51fae5fb-7db9-4f86-b0a6-b8c2fed32491/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#c888d14b-b045-41a0-a8da-5a13b58449a7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ea2eb963-f7c6-498a-bcd1-bd8a625ecd82"
+        }
+      ],
+      "email": "florian.meyer@izi.uni-stuttgart.de",
+      "name": "Florian"
+    },
+    {
+      "@id": "#ea2eb963-f7c6-498a-bcd1-bd8a625ecd82",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Stuttgart, Institute of Cell Biology and Immunology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#7b0fb13e-f0c3-4789-acdf-fab5b120ac8d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "MDA-MB-231 cells.",
+      "name": "Control Cellline",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#42a41947-ee02-4b68-ac1f-9c8d410b7f69",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were imaged using an EC Plan-Neofluar 20×/0.50 M27 (Carl Zeiss) oil immersion objective with 577 nm laser excitation and brightfield acquisition. The Z-resolution was 8.1 µm, and the time resolution was 15 minutes. For each spheroid, either two or four separate tiles with approximately 5% overlap were imaged.",
+      "labEquipment": " AxioObserver microscope (Carl Zeiss) equipped with a CSU-X1 spinning disk module",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Live Cell Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 50316137600
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1823"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1823",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#00691a1c-8187-4d70-b935-77a9f181583b"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#48c828e3-4e60-4037-9007-b3a9c2345896"
+        },
+        {
+          "@id": "#85155588-7926-4f5a-8649-db05928ffc49"
+        },
+        {
+          "@id": "#2061ec8d-5982-41e8-925d-19498fc22018"
+        },
+        {
+          "@id": "#9de88e40-681b-4610-a713-e979e46796b2"
+        },
+        {
+          "@id": "#047934fa-fbe9-4800-ae70-cebe0b384b21"
+        },
+        {
+          "@id": "obo:NCBITaxon_562"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#cb631969-2be5-4e5d-b1fa-4be93db151ee"
+        },
+        {
+          "@id": "#3ad25ce3-3162-4f75-989d-39311ef59bc4"
+        },
+        {
+          "@id": "#b7d3ba4b-ccfd-443b-b2b7-004219299439"
+        },
+        {
+          "@id": "#a8389f72-64cf-44f3-b3ac-acadd0888cc3"
+        },
+        {
+          "@id": "#8f3c35b5-45b1-4ba6-9047-9c18ce100bac"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-11",
+      "description": "This repository includes all the microscopy images and data that were generated and used in the publication.",
+      "funder": [],
+      "identifier": "S-BIAD1823",
+      "keywords": [
+        "Antimicrobial peptides, phenotypic classification, single-cell microscopy, microfluidics, Escherichia coli"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Time-resolved phenotyping at subcellular resolution reveals shared principles and key trade-offs across antimicrobial peptide activities",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#3ad25ce3-3162-4f75-989d-39311ef59bc4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "tatjana.schlechtweg@stanford.edu",
+      "name": "Tatjana Schlechtweg"
+    },
+    {
+      "@id": "#8f3c35b5-45b1-4ba6-9047-9c18ce100bac",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "jacobs-wagner@stanford.edu",
+      "name": "Christine Jacobs-Wagner"
+    },
+    {
+      "@id": "#a8389f72-64cf-44f3-b3ac-acadd0888cc3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "aebarron@stanford.edu",
+      "name": "Annelise E. Barron"
+    },
+    {
+      "@id": "#b7d3ba4b-ccfd-443b-b2b7-004219299439",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2f07936c-ec78-4d97-8079-dbd7ec6548d3"
+        }
+      ],
+      "email": "whl243@gate.sinica.edu.tw",
+      "name": "Wei-Hsiang Lin"
+    },
+    {
+      "@id": "#cb631969-2be5-4e5d-b1fa-4be93db151ee",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "fragasso@stanford.edu",
+      "name": "Alessio Fagasso"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#2f07936c-ec78-4d97-8079-dbd7ec6548d3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Academia Sinica"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_562",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli"
+    },
+    {
+      "@id": "#047934fa-fbe9-4800-ae70-cebe0b384b21",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Single cells of Escherichia coli",
+      "name": "Widefield microscopy data of Escherichia coli",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#2061ec8d-5982-41e8-925d-19498fc22018",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Single cells of Escherichia coli",
+      "name": "Widefield microscopy data of Escherichia coli",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#48c828e3-4e60-4037-9007-b3a9c2345896",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Single cells of Escherichia coli",
+      "name": "Widefield microscopy data of Escherichia coli",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#85155588-7926-4f5a-8649-db05928ffc49",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Single cells of Escherichia coli",
+      "name": "Widefield microscopy data of Escherichia coli",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#9de88e40-681b-4610-a713-e979e46796b2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Single cells of Escherichia coli",
+      "name": "Widefield microscopy data of Escherichia coli",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#00691a1c-8187-4d70-b935-77a9f181583b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired using a Nikon Ti2-E inverted microscope equipped with a Photometrics Prime BSI back-illuminated sCMOS camera (2048x2048 pixels, 6.5 m pixel size), a 100X Plan Apo 1.45NA Ph3 oil objective (with type N immersion oil by Nikon), a Lumencore Spectra III LED (Light Emitting Diode) engine, a Perfect Focus System (PFS), temperature-controlled Okolab enclosure, and a polychroic mirror (FF-409/493/596-Di02 for by Shemrock) combined with a triple-pass emitter (FF-1-432/523/702-25 by Shemrock) for mTagBFP2/GFP/mCherry. mTagBFP2, GFP (or SYTOX Green), mCherry (or mScarlet-I) were imaged using excitation at 365 nm, 488 nm, and 594 nm, exposure of 300 ms, 200 ms, and 200 ms, , and a light emitting diode (LED) power of 75%, 20%, and 30%, respectively (see (Papagiannakis et al., 2024) for power measurements for the different light sources). A 5% transmission neutral density filter was also used to lower the LED power and reduce photobleaching and phototoxicity. All experiments were carried out at 37°C unless indicated otherwise.\nThe microscope was controlled using NIS Elements software (Nikon), and an N-Dimensional (ND) acquisition module was used to set and acquire the time-lapse images. Phase and fluorescence images were acquired every 1 min (for single-cell analysis, wide-trenches experiments) or 10 min (for some of the experiments with fluorescently labeled AMPs, Figures 5C and S7B). ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Timelapse imaging of single cells"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 92
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2981725593928
+    }
+  ]
+}

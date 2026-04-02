@@ -1,0 +1,232 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2216"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2216",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5f1ac6a9-82ad-424a-9010-0364d55ff949"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#39cf0d98-082c-4001-b2f2-7a1ac350703d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4726-230X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9671-657X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4492-5139"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-30",
+      "description": "Raw imaging data supporting manuscript \"α-synuclein oligomer-driven cell susceptibility in early Parkinson’s Disease\"",
+      "funder": [],
+      "identifier": "S-BIAD2216",
+      "keywords": [
+        "alpha-synuclein",
+        "Parkinson's Disease",
+        "Spinning-Disk Confocal"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "α-synuclein oligomer-driven cell susceptibility in early Parkinson’s Disease",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9671-657X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7003a258-d8f5-4490-bbe0-3f60dbe0a707"
+        },
+        {
+          "@id": "https://ror.org/03zj4c476"
+        }
+      ],
+      "email": "jcb228@cam.ac.uk",
+      "name": "Jonathan C Breiter"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4492-5139",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7003a258-d8f5-4490-bbe0-3f60dbe0a707"
+        },
+        {
+          "@id": "https://ror.org/03zj4c476"
+        }
+      ],
+      "email": "sl591@cam.ac.uk",
+      "name": "Steven F Lee"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4726-230X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7003a258-d8f5-4490-bbe0-3f60dbe0a707"
+        },
+        {
+          "@id": "https://ror.org/03zj4c476"
+        }
+      ],
+      "email": "jsb92@cam.ac.uk",
+      "name": "Joseph S Beckwith"
+    },
+    {
+      "@id": "#7003a258-d8f5-4490-bbe0-3f60dbe0a707",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Yusuf Hamied Department of Chemistry, University of Cambridge"
+    },
+    {
+      "@id": "https://ror.org/03zj4c476",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Aligning Science Across Parkinson's"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#39cf0d98-082c-4001-b2f2-7a1ac350703d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human patients with Braak Stage 3/4 Parkinson's Disease, or age-matched Healthy Controls.",
+      "name": "FFPE Fixed Human Brain Slices",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5f1ac6a9-82ad-424a-9010-0364d55ff949",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging for cell stains was done using 488 nm excitation, and for alpha-synuclein using 561 nm excitation. For alpha-synuclein the power of the laser was set at 100%, for 488 nm the power was adjusted to ensure high SNR without saturation of the sCMOS camera.",
+      "labEquipment": "The microscope used to image the FFPE human brain slices was a spinning disk confocal microscope (3i intelligent imaging). The microscope was equipped with a 200 mW, 488 nm laser (LuxX) and a 150 mW, 561 nm laser (OBIS). These lasers were housed in a beam combiner (3i intelligent imaging), which focused them into an optical fiber which sent the illumination light into a field flattener (Yokogawa-Uniformizer for CSUW). The excitation light was then passed into a spinning disk unit (50 μm sized pinholes, Yokogawa CSU-W1 T2 Single Molecule Spinning Disk Confocal, SoRa Dual Microlens Disk) and then the microscope body (Zeiss Axio Observer 7 Basic Marianas™ Microscope with Definite Focus 3) using a dichroic mirror (FF01-440/521/607/700, Semrock). The fluorescence was filtered using either a FF01-525/45-25-STR filter (Semrock) in the case of 488 nm excitation or a FF02-617/73-25-STR filter (Semrock) in the case of 561 nm excitation. The fluorescence was then focused onto one of two sCMOS cameras (Prime 95B, Teledyne Photometrics). The objective lens was a Zeiss oil immersion objective (Alpha Plan-Apochromat 100x/1.46 NA Oil TIRF Objective, M27), and the microscope was controlled using a PC (Dell-Acquisition Workstation 310R) and software (Slidebook) provided by the manufacturer (3i intelligent imaging). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Main Survey Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 10531
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 752652049243
+    }
+  ]
+}

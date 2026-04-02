@@ -1,0 +1,219 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1091"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1091",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#43f24fc4-5a71-4e6f-b845-c6c666375e92"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4dfa884a-cc64-49c6-bcaa-2b93e452b955"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5018-7211"
+        },
+        {
+          "@id": "#c659e69b-31a3-470c-8768-e349dab51596"
+        },
+        {
+          "@id": "#368fae95-23be-42fa-9c38-bf2b23f1e1ac"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-23",
+      "description": "Here we provide the raw RNA-FISH images displayed in the study \"YY1 binding is a gene-intrinsic barrier to Xist-mediated gene silencing\". These images were collected from iXist-ChrX mouse embryonic stem cell lines engineered with the FKBP12 degron tag fused to endogenous YY1, such that addition of dTAG-13 acutely degrades YY1 protein from cells. Degradation of YY1 - either prior to Xist induction or after prolonged Xist induction - has little effect on the appearance of Xist RNA territories over the Xi chromosome. ",
+      "funder": [],
+      "identifier": "S-BIAD1091",
+      "keywords": [
+        "X inactivation",
+        "Xist",
+        "RNA-FISH",
+        "YY1"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "RNA-FISH of Xist in iXist-ChrX mouse embryonic stem cells upon acute degradation of YY1",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1091/ecd7b3b4-7686-4798-8781-1380434811b1/fec6761c-1e6b-47d9-854e-9ba2324566a6.png"
+      ]
+    },
+    {
+      "@id": "#368fae95-23be-42fa-9c38-bf2b23f1e1ac",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "neil.brockdorff@bioch.ox.ac.uk",
+      "name": "Neil Brockdorff"
+    },
+    {
+      "@id": "#c659e69b-31a3-470c-8768-e349dab51596",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "mafalda.almeida@bioch.ox.ac.uk",
+      "name": "Mafalda Almeida"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5018-7211",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "joebowness@btinternet.com",
+      "name": "Joseph Bowness"
+    },
+    {
+      "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#4dfa884a-cc64-49c6-bcaa-2b93e452b955",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse embryonic stem cells with inducible Xist RNA expression",
+      "name": "iXist-ChrX mouse embryonic stem cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#43f24fc4-5a71-4e6f-b845-c6c666375e92",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "PlanApo ×63/1.4 NA oil-immersion objective. For each field of view, a variable number of Z-stacks were selected for imaging (10-25), intended to ensure that the Xist RNA territories of every cell were in focus in at least one Z-plane. ",
+      "labEquipment": "Inverted fluorescence Axio Observer Z.1 microscope (Zeiss) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescence Imaging RNA-FISH"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 151
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7601495146
+    }
+  ]
+}

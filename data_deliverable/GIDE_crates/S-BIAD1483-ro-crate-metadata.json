@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1483"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1483",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a6e39445-ed6a-4c86-afd2-9a822abb7485"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2c871cdb-dc19-40e3-8954-04da44562040"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8926-8606"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-26",
+      "description": "Healthy brain development hinges on proper myelination. Disruptions in this process result in a variety of neurological disorders. Myelin basic protein (MBP) immunohistochemistry is a key method for studying myelination and myelin-related disorders. Despite MBP studies dating back to the 1980s, there has been a surprising lack of detailed accounts of normal MBP progression across the developing mouse brain. This study presents a detailed spatiotemporal view of MBP distribution across 12 developmental ages from postnatal day 2 to 60. We used an optimized immunohistochemistry protocol to overcome the challenges of myelin's unique lipid-rich composition, enabling more consistent staining across diverse brain structures and developmental stages. ",
+      "funder": [],
+      "identifier": "S-BIAD1483",
+      "keywords": [
+        "myelin, MBP (myelin basic protein), postnatal development, white matter"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Regional expression of myelin basic protein across postnatal brain development of C57BL/6J mice",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8926-8606",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2b43f121-4fde-4ff9-94b5-b12ca2199e83"
+        }
+      ],
+      "email": "alain_burette@med.unc.edu",
+      "name": "alain burette"
+    },
+    {
+      "@id": "#2b43f121-4fde-4ff9-94b5-b12ca2199e83",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of North Carolina at Chapel Hill"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#2c871cdb-dc19-40e3-8954-04da44562040",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse brain",
+      "name": "Section",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#a6e39445-ed6a-4c86-afd2-9a822abb7485",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All brain sections were imaged using a UPLXAPO 20X objective (NA 0.8) and a Hamamatsu ORCA-Fusion camera (2304 × 2304), producing 16-bit grayscale images with approximately 0.3 µm/pixel resolution. We optimized our imaging parameters, adjusting exposure time and laser intensity to capture the full spectrum of MBP staining intensities within the 16-bit scale. ",
+      "labEquipment": "Olympus SLIDEVIEW VS200 slide scanner equipped with a SILA 4-line laser combiner (405 nm, 488 nm, 561 nm, and 638 nm) and scrambler unit (Evident Scientific, Inc. Waltham, MA)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1407
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3067285924360
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10553"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10553",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f68f5d59-eba2-48ab-a389-6de86b9b6608"
+        },
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1ea84f02-5d41-4ff6-ad0f-f18d204ee70d"
+        },
+        {
+          "@id": "obo:NCBITaxon_114"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#d78ed679-8139-4893-9bd3-7b13f538e7ed"
+        },
+        {
+          "@id": "#d953ab99-2d75-4437-86a2-1e5cfe480b89"
+        },
+        {
+          "@id": "#6f655110-2887-4347-b025-13abc419edbe"
+        },
+        {
+          "@id": "#0a2fcb88-c107-49b2-a0df-2977f72837d8"
+        },
+        {
+          "@id": "#c191271b-4109-4daa-ac8b-932b844608e8"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0864-0259"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2021-04-30",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-10553",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "FIB-SEM of Gemmata obscuriglobus - a species of the Planctomycetes phylum",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10553/bed2d07b-2db4-4543-b170-45d8308d9c25/fb0fb234-8979-4949-bbcc-6967ed67c4e0.png"
+      ]
+    },
+    {
+      "@id": "#0a2fcb88-c107-49b2-a0df-2977f72837d8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Odelgard A"
+    },
+    {
+      "@id": "#6f655110-2887-4347-b025-13abc419edbe",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Mahajan M"
+    },
+    {
+      "@id": "#c191271b-4109-4daa-ac8b-932b844608e8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Bergström Lind S"
+    },
+    {
+      "@id": "#d78ed679-8139-4893-9bd3-7b13f538e7ed",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Seeger C"
+    },
+    {
+      "@id": "#d953ab99-2d75-4437-86a2-1e5cfe480b89",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Dyrhage K"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0864-0259",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Andersson SGE"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_114",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Gemmata obscuriglobus"
+    },
+    {
+      "@id": "#1ea84f02-5d41-4ff6-ad0f-f18d204ee70d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Planctomycetes bacteria with unique cell architecture featuring heavily invaginated membranes",
+      "name": "Gemmata obscuriglobus cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_114"
+      }
+    },
+    {
+      "@id": "#f68f5d59-eba2-48ab-a389-6de86b9b6608",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "G. obscuriglobus cells were imaged by FIB-SEM following freeze substitution and resin embedding. Cells were mounted on an SEM-pin and coated with 5 nm Pt before FIB-milling. Reconstruction was performed using 3dmod as part of IMOD 4.9 on cells that displayed healthy morphology (full membrane integrity, high contrast in periplasm and cytoplasm).",
+      "labEquipment": "FIB-SEM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "name": "FIB-SEM"
+    },
+    {
+      "@id": "obo:FBbi_00050000",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1715579835
+    }
+  ]
+}

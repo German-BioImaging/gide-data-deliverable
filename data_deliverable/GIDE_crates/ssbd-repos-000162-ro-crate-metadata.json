@@ -1,0 +1,260 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000162/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000162/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000162",
+      "name": "See the paper titled “Metastatic tumor cells evade pulmonary NK cell-mediated killing by thrombin-mediated loss of CD155/PVR/Necl-5. ”",
+      "description": "Natural killer (NK) cells lyse invading tumor cells to limit metastatic growth in the lung, but how some cancers evade this host protective mechanism to establish a growing lesion is unknown. Here we have combined ultra-sensitive bioluminescence imaging with intravital two-photon microscopy involving genetically-encoded biosensors to examine this question. NK cells eliminated disseminated tumor cells from the lung within 24 hrs of arrival, but not thereafter. Intravital dynamic imaging revealed that 50% of NK-tumor cell encounters lead to tumor cell death in the first 4 hrs after tumor cell arrival, but after 24 hrs of arrival, nearly 100% of the interactions result in the survival of the tumor cell. During this 24 hrs period, the probability of ERK activation in NK cells upon encountering the tumor cells was decreased from 68% to 8%, which correlated with the loss of the activating ligand CD155/PVR/Necl-5 from the tumor cell surface. Thus, by quantitatively visualizing the NK-tumor cell interaction at the early stage of metastasis, we have revealed the crucial parameters of NK cell immune surveillance in lung.",
+      "datePublished": "2021-09-11",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Animals",
+        "Biosensing Techniques",
+        "Cell Communication/immunology[major]",
+        "Cell Line, Tumor",
+        "Female",
+        "Immunologic Surveillance[major]",
+        "Intravital Microscopy/methods[major]",
+        "Killer Cells, Natural/immunology[major]",
+        "Luminescent Proteins",
+        "Male",
+        "Mice",
+        "Mice, Inbred BALB C",
+        "Mice, Inbred C57BL",
+        "Neoplasm Metastasis/immunology[major]",
+        "Neoplastic Cells, Circulating/pathology[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.76269"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1901247"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001865"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0002848"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Matsuda Michiyuki",
+      "email": "matsuda.michiyuki.2c@kyoto-u.ac.jp",
+      "description": "Organization: Graduate School of Biostudies; Department: Research Center for Dynamic Living Systems; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04tb1ww30"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04tb1ww30",
+      "@type": "Organization",
+      "name": "Graduate School of Biostudies"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.76269",
+      "@type": "ScholarlyArticle",
+      "name": "Functional visualization of NK cell-mediated killing of metastatic single tumor cells.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "NKp46iCre/ B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J , NKp46iCre/ Tg(lox-mCherry-hyBRET-ERK-NLS), C57BL6N",
+      "description": "NKp46iCre/ B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J , NKp46iCre/ Tg(lox-mCherry-hyBRET-ERK-NLS), C57BL6N",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "hasCellLine": "B16F10"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1901247",
+      "@type": "DefinedTerm",
+      "name": "Lung metastasis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001865",
+      "@type": "DefinedTerm",
+      "name": "NK cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0002848",
+      "@type": "DefinedTerm",
+      "name": "tumor cell"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Two photon excitation microscopy",
+      "description": "Two photon excitation microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "Bioluminescence imaging",
+      "description": "Bioluminescence imaging",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "Timelapse microscopy",
+      "description": "Timelapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "Two photon excitation microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
+      "@type": "DefinedTerm",
+      "name": "Bioluminescence imaging"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
+      "@type": "DefinedTerm",
+      "name": "Timelapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 262108672000,
+      "description": "262.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1474803,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

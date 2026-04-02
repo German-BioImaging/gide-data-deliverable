@@ -1,0 +1,246 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1339"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1339",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b35c215c-7638-4a3b-af78-fc998db10fbd"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8ae15ea1-a934-4f69-82da-2338cb09787a"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9f188a43-4988-4d33-8dcf-41b713b778cf"
+        },
+        {
+          "@id": "#d8f81880-6fa0-46b6-a23b-2eaed96b081b"
+        },
+        {
+          "@id": "#b647adce-025e-4ac7-ac4c-c583cd5ab404"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-27",
+      "description": "RNA-FISH and immunofluorescence data sets of Xist and Tsix lncRNA and histone mark H3K36me3 measured in female mESC.",
+      "funder": [],
+      "identifier": "S-BIAD1339",
+      "keywords": [
+        "long non coding RNA",
+        "Xist",
+        "Tsix",
+        "mESC",
+        "H3K36me3",
+        "RNA-FISH",
+        "Immunofluorescence "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Transcriptional stochasticity reveals multiple mechanisms of long non-coding RNA regulation at the Xist – Tsix locus",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1339/032f838b-f59a-41f7-8ed9-39f576d27790/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#9f188a43-4988-4d33-8dcf-41b713b778cf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "name": "Benjamin K Kesler"
+    },
+    {
+      "@id": "#b647adce-025e-4ac7-ac4c-c583cd5ab404",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "email": "gregor.neuert@vanderbilt.edu",
+      "name": "Gregor Neuert"
+    },
+    {
+      "@id": "#d8f81880-6fa0-46b6-a23b-2eaed96b081b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "name": "John Adams"
+    },
+    {
+      "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vanderbilt University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#8ae15ea1-a934-4f69-82da-2338cb09787a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse embryonic stem cells, F1 2-1",
+      "name": "mouse embryonic stem cells, F1 2-1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b35c215c-7638-4a3b-af78-fc998db10fbd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100X, images spaced 300nm apart, 65nm pixel size. Channels: [1] DAPI (Semrock Brightline DAPI-5060C-NTE-ZERO; 20ms exposure), [2] Xist-CY5 (Semrock Brightline NIK-0013 RevA-NTE-ZERO; 1000ms exposure), [3] Tsix-TMR (Semrock Brightline SpGold-B-NTE-ZERO; 1000ms exposure) OR AF594 (Semrock Brightline NIK-0012 RevA-NTE-ZERO; 1000ms exposure), [4] TRANS (10ms exposure)",
+      "labEquipment": "Nikon Eclipse Ti microscope, Hamamatsu Orca Flash C11440-22CU 4v2 CMOS camera, Nikon Perfect Focus System (TI-PFS-CON 596216), Excelitas fluorescent light source (X-cite Series 120 Q), and 100x VC DIC lens (Nikon MRD01901)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "mESC Exonic lncRNA Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1181
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1053774516319
+    }
+  ]
+}

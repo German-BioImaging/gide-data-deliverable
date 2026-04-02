@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000487/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000487/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000487",
+      "name": "Submedius Thalamic Inputs Shape the Presynaptic Architecture of Layer 5 Orbitofrontal Cortex in Mice",
+      "description": "The orbitofrontal cortex (OFC) is central to cognitive and social functions, yet its presynaptic partners remain incompletely defined. In female mice, the OFC modulates infant-directed caregiving behaviors in an experience-dependent manner. Here, we identify the submedius thalamus (SMT) as a major presynaptic partner of the OFC. Trans-synaptic tracing revealed intensive inputs from both the SMT and mediodorsal thalamus (MD) to OFC layer 5 excitatory neurons. We generated a Tnnt1-Cre mouse line that enables selective targeting of these higher-order thalamic nuclei. Axonal tracing demonstrated complementary projection patterns of the SMT and MD across prefrontal regions. Microendoscopic Ca2+ imaging demonstrated pup retrieval-related activity in both SMT and MD, with SMT exhibiting learning-related plasticity. Projection-specific chemogenetic silencing demonstrated that SMT modulates OFC activity during pup retrieval, although its behavioral relevance appeared limited. Collectively, our study provides a presynaptic map of OFC layer 5 neurons and a proof of concept for selective manipulation of the SMT as a previously understudied thalamic input to the OFC.",
+      "datePublished": "2026-01-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.isci.2026.114828"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Genichi Tasaka",
+      "email": "t.genichi@gmail.com",
+      "description": "Organization: Riken BDR; Laboratory: Miyamichi Lab",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04j1n1c04"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04j1n1c04",
+      "@type": "Organization",
+      "name": "Riken BDR"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.isci.2026.114828",
+      "@type": "ScholarlyArticle",
+      "name": "Submedius thalamic inputs shape the presynaptic architecture of layer 5 orbitofrontal cortex in mice.",
+      "datePublished": "2026"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 184091758592,
+      "description": "184.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 19,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

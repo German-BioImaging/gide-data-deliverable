@@ -1,0 +1,181 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD887"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD887",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a74d9f91-8238-48e3-84a2-5e7cc287e3da"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d6029439-d8b1-4475-be6f-f496ad11aa16"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#fa351ba6-117f-4445-a529-8501a45f8e53"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-09-14",
+      "description": "Lowerlimb Visium and scRNAseq dataset for WebAtlas",
+      "funder": [],
+      "identifier": "S-BIAD887",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "WebAtlas - human lower limb Visium and scRNAseq dataset",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#fa351ba6-117f-4445-a529-8501a45f8e53",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "name": "Tong Li"
+    },
+    {
+      "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2",
+      "@type": [
+        "Organization"
+      ],
+      "address": "Wellcome Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge, CB10 1SA, UK",
+      "name": "Wellcome Sanger Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#d6029439-d8b1-4475-be6f-f496ad11aa16",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "lower limb",
+      "name": "First biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a74d9f91-8238-48e3-84a2-5e7cc287e3da",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "{'hamamatsu.AHEX[0]': '800D2828C1097C15242BBD0478172425C1097C112031C103740E182CBD0778131C28B503680E1429BD0B6C181037B901700F1430B9077011142EB50C781B1838BC0078132026BD077C07202FBD09800D2833C10984122C37C107840C3034C50A4763', 'hamamatsu.AHEX[0].fluorescence': '840B1427B5077C131427B10378171027B1057C0F102FB400740B082FAD037813082BA901680B002FAD076C170037A803700F0437A903700F0033A509741B043BAC0378110C2BAD037C031033AD0380091437B105800F143FB103800B1C37B1051D47', 'hamamatsu.AHEX[0].ploidy': '840B1427B5077C131427B10378171027B1057C0F102FB400740B082FAD037813082BA901680B002FAD076C170037A803700F0437A903700F0033A509741B043BAC0378110C2BAD037C031033AD0380091437B105800F143FB103800B1C37B1051D47', 'hamamatsu.AHEX[1]': '8C0E302CC9088418302BC503801A3429C50484142C30C9018010242EC5038414282DBD02740F202BC10778182036BC027C102031BD057813202DBD0B801F2835C00184143026C506840B2C31C50688123435C5048C153439C5038C103C39C9060A7C', 'hamamatsu.AHEX[1].fluorescence': '8C0B242BBD038817202BB40384172027B90184131C33B805800F1433B4038017142FAC05740F0C2FB50378170C37B0057C0F1037B1017813102FAD07801B143BB40580131C2BB50184091C37B503880F2437B9038813243FB400880F283BB901017F', 'hamamatsu.AHEX[1].ploidy': '8C0B242BBD038817202BB40384172027B90184131C33B805800F1433B4038017142FAC05740F0C2FB50378170C37B0057C0F1037B1017813102FAD07801B143BB40580131C2BB50184091C37B503880F2437B9038813243FB400880F283BB901017F', 'hamamatsu.AHEX[2]': '840B1427B5077C131427B10378171027B1057C0F102FB400740B082FAD037813082BA901680B002FAD076C170037A803700F0437A903700F0033A509741B043BAC0378110C2BAD037C031033AD0380091437B105800F143FB103800B1C37B1051D47', 'hamamatsu.AHEX[2].fluorescence': '840B1427B5077C131427B10378171027B1057C0F102FB400740B082FAD037813082BA901680B002FAD076C170037A803700F0437A903700F0033A509741B043BAC0378110C2BAD037C031033AD0380091437B105800F143FB103800B1C37B1051D47', 'hamamatsu.AHEX[2].ploidy': '840B1427B5077C131427B10378171027B1057C0F102FB400740B082FAD037813082BA901680B002FAD076C170037A803700F0437A903700F0033A509741B043BAC0378110C2BAD037C031033AD0380091437B105800F143FB103800B1C37B1051D47', 'hamamatsu.Created': '2011/01/26', 'hamamatsu.MHLN[0].24bit': '_1357CJJPJKOVWjx', 'hamamatsu.MHLN[0].36bit': '_1357GGEPJKOVWjx', 'hamamatsu.MHLN[1].24bit': '_1357FHEPJKOVWjx', 'hamamatsu.MHLN[1].36bit': '_1359DEEPJKOVWjx', 'hamamatsu.MHLN[2].24bit': '_1357CJJPJKOVWjx', 'hamamatsu.MHLN[2].36bit': '_1357DEEPJKOVWjx', 'hamamatsu.Macro.S/N': '0Y0385', 'hamamatsu.NDP.S/N': '910276', 'hamamatsu.Objective.Lens.Magnificant': '35.16', 'hamamatsu.PSHV': '197', 'hamamatsu.PSHV.10x': '197', 'hamamatsu.PSHV.40x': '197', 'hamamatsu.PSHV.ploidy': '197', 'hamamatsu.PSHV.ploidy.10x': '197', 'hamamatsu.Product': 'C9600-12', 'hamamatsu.Reference': 'S3364_C59-FLEG-FO1_C1_H&E', 'hamamatsu.SourceLens': '40', 'hamamatsu.Updated': '2020/09/24', 'hamamatsu.XOffsetFromSlideCentre': '13207678', 'hamamatsu.YOffsetFromSlideCentre': '4894865', 'hamamatsu.YRNP[0]': '0,0,0,0', 'hamamatsu.YRNP[1]': '0,0,0,0', 'hamamatsu.YRNP[2]': '0,0,0,0', 'hamamatsu.calibration.version': '349', 'hamamatsu.ccd.height': '0', 'hamamatsu.ccd.width': '9302', 'hamamatsu.ccd.width.ploidy': '9302', 'hamamatsu.coarse.focus.pitch': '4870', 'hamamatsu.colorfilterID': '1', 'hamamatsu.cube.kind': '0', 'hamamatsu.exposure.barcode.macro': '278', 'hamamatsu.exposure.slide.darkfield.macro': '10', 'hamamatsu.exposure.slide.macro': '20', 'hamamatsu.fine.focus.pitch': '250', 'hamamatsu.focalplane.leftbottom': '90342,689528,109381', 'hamamatsu.focalplane.lefttop': '90342,489528,109139', 'hamamatsu.focalplane.rightbottom': '490342,689528,108900', 'hamamatsu.focalplane.righttop': '490342,489528,108599', 'hamamatsu.lane.shift.amount': '5', 'hamamatsu.roi.barcode.macro': '932,300,1196,669', 'hamamatsu.roi.slide.macro': '35,280,1229,689', 'hamamatsu.slant.leftbottom': '89976,691844,109929', 'hamamatsu.slant.lefttop': '89976,491844,109515', 'hamamatsu.slant.rightbottom': '489976,491844,109012', 'hamamatsu.slant.righttop': '489976,691844,109491', 'hamamatsu.slide.tickness': '0', 'hamamatsu.stage.center': '180342,589528', 'hamamatsu.system.version': '1.0', 'hamamatsu.target.white.intensity': '235', 'hamamatsu.valid.DDKP': '1', 'hamamatsu.valid.DLTP': '0', 'hamamatsu.valid.DSHP': '1', 'hamamatsu.variable.exposuretime': '0', 'hamamatsu.zCoarse[0]': '1,7392,0,100', 'hamamatsu.zCoarse[1]': '1,1946,0,100', 'hamamatsu.zCoarse[2]': '0,0,0,0', 'hamamatsu.zFine[0]': '1,295680,0,100', 'hamamatsu.zFine[1]': '1,77824,0,100', 'hamamatsu.zFine[2]': '0,0,0,0', 'openslide.level-count': '9', 'openslide.level[0].downsample': '1', 'openslide.level[0].height': '37632', 'openslide.level[0].tile-height': '8', 'openslide.level[0].tile-width': '4096', 'openslide.level[0].width': '40960', 'openslide.level[1].downsample': '2', 'openslide.level[1].height': '18816', 'openslide.level[1].tile-height': '8', 'openslide.level[1].tile-width': '2048', 'openslide.level[1].width': '20480', 'openslide.level[2].downsample': '4', 'openslide.level[2].height': '9408', 'openslide.level[2].tile-height': '8', 'openslide.level[2].tile-width': '1024', 'openslide.level[2].width': '10240', 'openslide.level[3].downsample': '8', 'openslide.level[3].height': '4704', 'openslide.level[3].tile-height': '8', 'openslide.level[3].tile-width': '512', 'openslide.level[3].width': '5120', 'openslide.level[4].downsample': '16', 'openslide.level[4].height': '2352', 'openslide.level[4].tile-height': '8', 'openslide.level[4].tile-width': '256', 'openslide.level[4].width': '2560', 'openslide.level[5].downsample': '32', 'openslide.level[5].height': '1176', 'openslide.level[5].tile-height': '8', 'openslide.level[5].tile-width': '128', 'openslide.level[5].width': '1280', 'openslide.level[6].downsample': '64', 'openslide.level[6].height': '588', 'openslide.level[6].tile-height': '4', 'openslide.level[6].tile-width': '64', 'openslide.level[6].width': '640', 'openslide.level[7].downsample': '128', 'openslide.level[7].height': '294', 'openslide.level[7].tile-height': '2', 'openslide.level[7].tile-width': '32', 'openslide.level[7].width': '320', 'openslide.level[8].downsample': '256', 'openslide.level[8].height': '147', 'openslide.level[8].tile-height': '1', 'openslide.level[8].tile-width': '16', 'openslide.level[8].width': '160', 'openslide.mpp-x': '0.22710240047237298', 'openslide.mpp-y': '0.22710240047237298', 'openslide.objective-power': '40', 'openslide.quickhash-1': '54923fdc5c820cf86f535e4165bda0dcb189b8471852fcb583f97e50ea5458a4', 'openslide.vendor': 'hamamatsu', 'tiff.DateTime': '2020:10:07 10:09:28', 'tiff.Make': 'Hamamatsu', 'tiff.Model': 'C9600-12', 'tiff.ResolutionUnit': 'centimeter', 'tiff.Software': 'NDP.scan 3.2.15', 'tiff.XResolution': '44033', 'tiff.YResolution': '44033'}",
+      "labEquipment": "hamamatsu",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "First acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1185372137
+    }
+  ]
+}

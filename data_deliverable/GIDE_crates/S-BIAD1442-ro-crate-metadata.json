@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1442"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1442",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#77c1ec08-b173-4a32-b818-c6b548256611"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5a7e1415-c6d9-4b8c-b77b-9f45a2300531"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0515-3562"
+        },
+        {
+          "@id": "#0ab57c93-d99f-4f11-a3f6-7ff8ad55fe94"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-31",
+      "description": "confocal image files used to generate data and figures",
+      "funder": [],
+      "identifier": "S-BIAD1442",
+      "keywords": [
+        "Dachsous, DCHS1, Fat, Hippo, planar cell polarity, cross-vein"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Contributions of the Dachsous intracellular domain to Dachsous-Fat signaling",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1442/ab2b3681-0b33-43fd-b81e-32b200e7464b/d0e70218-330e-4fab-9563-4b49d64cbebe.png"
+      ]
+    },
+    {
+      "@id": "#0ab57c93-d99f-4f11-a3f6-7ff8ad55fe94",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d47b2730-d363-4dbc-811a-cbf93db7ccc5"
+        }
+      ],
+      "email": "btripathi@waksman.rutgers.edu",
+      "name": "Bipin Kumar Tripathi "
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0515-3562",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d47b2730-d363-4dbc-811a-cbf93db7ccc5"
+        }
+      ],
+      "email": "irvine@waksman.rutgers.edu",
+      "name": "Ken Irvine"
+    },
+    {
+      "@id": "#d47b2730-d363-4dbc-811a-cbf93db7ccc5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Rutgers, The State University of New Jersey"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#5a7e1415-c6d9-4b8c-b77b-9f45a2300531",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila wing imaginal discs",
+      "name": "Contributions of the Dachsous intracellular domain to Dachsous-Fat signaling",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#77c1ec08-b173-4a32-b818-c6b548256611",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40x and 63x objectives",
+      "labEquipment": "Leica SP8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 43
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 132726762692
+    }
+  ]
+}

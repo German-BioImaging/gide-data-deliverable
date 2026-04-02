@@ -1,0 +1,203 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1423"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1423",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#235be601-f85a-4047-b017-967b670dab01"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3953ece5-248c-4ef7-9389-a077860702c2"
+        },
+        {
+          "@id": "#a58aa4cb-a9c4-46b9-bf51-692d3c94b096"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5938-258X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-16",
+      "description": "Representative immunofluorescence images of HEK293-MFSD5-WT-OE cells +/- doxycycline (Dox) induction. Red: M6P-1 antibody staining. Green: anti-LAMP1 staining. Blue channel: DAPI staining. Violet: Galanthus Nivalis Lectin staining.",
+      "funder": [],
+      "identifier": "S-BIAD1423",
+      "keywords": [
+        "MFSD5",
+        "mannose 6-phosphate modification",
+        "M6P-1",
+        "Galanthus Nivalis Lectin",
+        "high-mannose N-glycans",
+        "HEK293 cells"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Effects of MFSD5 overexpression on localization of intracellular proteins carrying high-mannose N-glycans and mannose-6-phosphate (M6P) modifications",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1423/e8d283e4-3671-4a9b-86fd-c33edb4ff57f/8c8957a2-5f2e-433c-bc6f-3540aac72ee6.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5938-258X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3c196d32-7abf-434f-8efb-337159ea251e"
+        }
+      ],
+      "email": "steoh@cemm.at",
+      "name": "Shao Thing Teoh"
+    },
+    {
+      "@id": "#3c196d32-7abf-434f-8efb-337159ea251e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "CeMM Research Center for Molecular Medicine"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#3953ece5-248c-4ef7-9389-a077860702c2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293 human embryonic kidney cell line with stable integration of MFSD5 overexpression construct",
+      "name": "HEK293-MFSD5-WT-OE +Dox",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a58aa4cb-a9c4-46b9-bf51-692d3c94b096",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293 human embryonic kidney cell line with stable integration of MFSD5 overexpression construct",
+      "name": "HEK293-MFSD5-WT-OE uninduced",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#235be601-f85a-4047-b017-967b670dab01",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Coverslip-mounted cells were imaged on a Zeiss LSM 700 confocal microscope using the Plan-Apochromat 63x/1.40 oil objective. The 555 nm laser at 2% power with a pinhole of 0.89 AU was used to image M6P-1 (AlexaFluor 568) with detection wavelength range 568-800. The 488 nm laser at 2% power with a pinhole of 1.00 AU was used to image LAMP1 (AlexaFluor 488) with detection wavelength range 300-550. The 405 nm laser at 2% power with a pinhole of 1.19 AU was used to image nuclei (DAPI) with detection wavelength range 300-483. The 639 nm laser at 2% power with a pinhole of 0.77 AU was used to image GNL (AlexaFluor 647) with detection wavelength range 560-800. Pixel and line times were 1.58 µs and 30.00 µs respectively for all channels.",
+      "labEquipment": "Zeiss LSM 700",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "GNL, anti-LAMP1, M6P-1 & DAPI immunofluorescence image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 21854816
+    }
+  ]
+}

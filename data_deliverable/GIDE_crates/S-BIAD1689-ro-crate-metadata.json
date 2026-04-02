@@ -1,0 +1,183 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1689"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1689",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#51e12c8e-83ed-45c5-9436-697ad94db100"
+        },
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9aa636d9-80d4-4db5-a2a1-b464487313f5"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3057-995X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-15",
+      "description": "Tissue deformations during morphogenesis can be active, driven by internal processes, or passive, resulting from stresses applied at their boundaries. Here, we introduce the Drosophila hindgut primordium as a model for studying boundary-driven tissue morphogenesis. We characterize its deformations and show that its complex shape changes can be a passive consequence of the deformations of the active regions of the embryo that surround it. First, we find an intermediate characteristic triangular shape in the 3D deformations of the hindgut. We construct a minimal model of the hindgut primordium as an elastic ring deformed by active midgut invagination and germ band extension on an ellipsoidal surface, which robustly captures the symmetry-breaking into this triangular shape. We then quantify the 3D kinematics of the tissue by a set of contours and discover that the hindgut deforms in two stages: an initial translation on the curved embryo surface followed by a rapid breaking of shape symmetry. We extend our model to show that the contour kinematics in both stages are consistent with our passive picture. Our results suggest that the role of in-plane deformations during hindgut morphogenesis is to translate the tissue to a region with anisotropic embryonic curvature and show that uniform boundary conditions are sufficient to generate the observed nonuniform shape change. Our work thus provides a possible explanation for the various characteristic shapes of blastopore-equivalents in different organisms and a framework for the mechanical emergence of global morphologies in complex developmental systems.",
+      "funder": [],
+      "identifier": "S-BIAD1689",
+      "keywords": [
+        "Drosophila development",
+        "embryogenesis",
+        "morphogenesis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A model for boundary-driven tissue morphogenesis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3057-995X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5bf483e0-d0c0-4430-be37-dd8a34215614"
+        }
+      ],
+      "name": "Daniel Alber"
+    },
+    {
+      "@id": "#5bf483e0-d0c0-4430-be37-dd8a34215614",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Princeton University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#9aa636d9-80d4-4db5-a2a1-b464487313f5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila embryo",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#51e12c8e-83ed-45c5-9436-697ad94db100",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "33.3× magnification with a 1.6μm beam width was used to image the embryo, with 488nm excitation at 5% power used for the Byn LlamaTag endogenous GFP reporter and 561nm excitation at 5% laser power used for the HisRFP reporter",
+      "labEquipment": "Bruker/Luxendo MuVi-SPIM light-sheet microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "Image Acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000369",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "SPIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 136
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 918494535751
+    }
+  ]
+}

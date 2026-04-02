@@ -1,0 +1,203 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2315"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2315",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#62d4a1e2-b47d-414e-a548-37907a59dab3"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e3de2fe6-ae4f-47c4-9b00-5d542f3cc0ad"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0009-6913-4289"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2244-5081"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-26",
+      "description": "High-grade serous ovarian cancer (HGSOC) is a devastating disease that is frequently detected at an incurable stage. Advances in ultrasensitive mass spectrometry-based spatial proteomics have provided a unique opportunity to uncover early molecular events in tumorigenesis and common dysregulated pathways with high therapeutic potential. Here, we present a comprehensive proteomic analysis of serous tubal intraepithelial carcinoma (STIC), the HGSOC precursor lesion, covering more than 10,000 proteins. We found that STICs and concurrent invasive carcinomas were indistinguishable at the global proteomic level, revealing a similar level of molecular heterogeneity. Using cell-type-resolved tissue proteomics, we revealed strong cell-of-origin signatures preserved in STICs and invasive tumors and identified early dysregulated pathways of therapeutic relevance, such as an onco-metabolic increase in cholesterol biosynthesis. Finally, we uncovered substantial remodeling of the co-evolving tumor microenvironment, affecting approximately one-third of the stromal proteome, and derived a common signature associated with progressive immunosuppression and extracellular matrix restructuring. In summary, our study highlights the power of spatially resolved quantitative proteomics to dissect the molecular underpinnings of early carcinogenesis and provides a rich proteomic resource for future biomarker and drug target research in ovarian cancer.",
+      "funder": [],
+      "identifier": "S-BIAD2315",
+      "keywords": [
+        "serous tubal intraepithelial carcinoma (STIC) ",
+        "spatial proteomics",
+        "cyclic immunofluorescnece",
+        "high-grade serous ovarian cancer"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Spatial proteomics of ovarian cancer precursors delineates early disease changes and drug targets",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2315/7ce42eaa-30e3-439a-9ca7-0360291ebf5b/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2244-5081",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#40efead8-8b96-469c-a468-0956f40c0e1a"
+        }
+      ],
+      "email": "fabian.coscia@mdc-berlin.de",
+      "name": "Fabian Coscia"
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-6913-4289",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#40efead8-8b96-469c-a468-0956f40c0e1a"
+        }
+      ],
+      "email": "anuar.makhmut@mdc-berlin.de",
+      "name": "Anuar Makhmut"
+    },
+    {
+      "@id": "#40efead8-8b96-469c-a468-0956f40c0e1a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Delbrück Center for Molecular Medicine"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#e3de2fe6-ae4f-47c4-9b00-5d542f3cc0ad",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "High-grade serous ovarian cancer. Serous tubal intraepithelial carcinoma (STIC) with matching high-grade serous ovarian cancer (HGSOC) and normal fallopian tube epithelium (NFTE)",
+      "name": "Serous tubal intraepithelial carcinoma (STIC) with matching high-grade serous ovarian cancer (HGSOC) and normal fallopian tube epithelium (NFTE)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#62d4a1e2-b47d-414e-a548-37907a59dab3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was conducted using a Zeiss Axioscan 7 slide scanner equipped with the Colibri 7 LED light source and an EC Plan-Neofluar 20x/0.50 M27 objective at 2×2 binning. Stitching of the raw images was performed using ZEN software (version 3.5, Blue Edition), with the DAPI channel set as the reference for all channels and the following parameters: minimal overlap of 5%, maximal shift of 15%, Comparer set to Optimized, and Global Optimizer set to Best.",
+      "labEquipment": "Zeiss Axioscan 7",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Multiplex immunofluorescence imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 413394287648
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1293"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1293",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f6885f5e-d707-470c-aa03-9c13db826a77"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#adf807cc-e3b6-4a78-bed0-9d7438e487f0"
+        },
+        {
+          "@id": "#9a0a0b8d-6cc6-48b4-9487-fc8eae23fd73"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#6faa760a-e776-4d37-a69e-859213355315"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-26",
+      "description": "images for publication with title: Bifunctional probes reveal the rules of intracellular ether lipid transport",
+      "funder": [],
+      "identifier": "S-BIAD1293",
+      "keywords": [
+        "lipid transport",
+        "U-2 OS",
+        "lipid",
+        "vesicular",
+        "transport",
+        "transfer protein",
+        "hCT 116"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Bifunctional probes reveal the rules of intracellular ether lipid transport",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1293/ec7bdb5e-725b-4bcf-ab91-2e21ff2fd1ac/1c2cc8fb-0d37-4bc5-926e-32d62c587c92.png"
+      ]
+    },
+    {
+      "@id": "#6faa760a-e776-4d37-a69e-859213355315",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e233172d-2def-4183-b697-e655fae39a32"
+        }
+      ],
+      "email": "bohlig@mpi-cbg.de",
+      "name": "Kristin Böhlig"
+    },
+    {
+      "@id": "#e233172d-2def-4183-b697-e655fae39a32",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute of Molecular Cell Biology and Genetics"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9a0a0b8d-6cc6-48b4-9487-fc8eae23fd73",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "epithelial cell line from Large intestine",
+      "name": "HCT 116",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#adf807cc-e3b6-4a78-bed0-9d7438e487f0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U-2 OS is a cell line with epithelial morphology that was derived in 1964 from a moderately differentiated sarcoma of the tibia of a 15-year-old, White, female osteosarcoma patient (info from https://www.atcc.org/products/htb-96)",
+      "name": "U-2 OS",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f6885f5e-d707-470c-aa03-9c13db826a77",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Four laser lines were used for excitation: 405, 488, 561 and 647 nm with their respective filter sets.\n\nImages were acquired by using 75% laser power and 250 ms exposure per frame. 20 frames, 0.3 µm were collected from the top to the bottom of the cell. Z-drift compensation was used to find the correct starting plane in every image.",
+      "labEquipment": "Images were acquired using a 100X silicone immersion oil objective (UPLSAPO100XS) from Olympus mounted in an Olympus IX83 microscope. The microscope was fitted with a Yokogawa CSU-W1 SoRa unit and images were captured by an ORCA-Flash 4.0 V3 digital CMOS camera or an ORCA-Fusion from Hamamatsu.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1883
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 862730259973
+    }
+  ]
+}

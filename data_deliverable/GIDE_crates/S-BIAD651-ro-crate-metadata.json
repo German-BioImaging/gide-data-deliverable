@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD651"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD651",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7075f9c1-3305-42ce-ba0b-9134fd763cdb"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b730d2c5-1b25-48fc-b1c8-4b6a53ef81d3"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#2913e306-2052-4233-91f2-5ad2d2b4c3bc"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-20",
+      "description": "Raw images for Thomas et al: \"Nucleoporin foci are stress-sensitive condensates dispensable for C. elegans nuclear pore assembly\"",
+      "funder": [],
+      "identifier": "S-BIAD651",
+      "keywords": [
+        "C. elegans / condensate / nucleoporin / oocyte / aging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Source images for \"Nucleoporin foci are stress-sensitive condensates dispensable for C. elegans nuclear pore assembly\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD651/05815ca6-b5c9-459b-9213-586bfa186f3c/0455e9ca-acf8-4c87-ab63-7b6e8e479df9.png"
+      ]
+    },
+    {
+      "@id": "#2913e306-2052-4233-91f2-5ad2d2b4c3bc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "email": "laurathomas1313@gmail.com",
+      "name": "Laura Louise Thomas"
+    },
+    {
+      "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Johns Hopkins University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#b730d2c5-1b25-48fc-b1c8-4b6a53ef81d3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C. elegans oocytes, embryos, and somatic tissues",
+      "name": "Source images for \"Nucleoporin foci are stress-sensitive condensates dispensable for C. elegans nuclear pore assembly\"",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#7075f9c1-3305-42ce-ba0b-9134fd763cdb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "To image germlines or somatic cells, a 20 μm Z stack (1 μm step size) was captured using a 63x objective (Zeiss) with the 1x relay lens. For high resolution images of oocytes, 3 μm Z stacks (0.1 μm step size) were acquired using the 63x objective with the 2.8x relay lens. As germline condensates are highly sensitive to imaging-induced stress (Elaswad et al., 2022), care was taken to avoid compression of germlines, and all animals were imaged only once and maintained on the slide for <5 min. To image entire worms, an 80 μm Z stack (1 μm step size) was captured using a 10x objective (Zeiss) with the 1x relay lens.\nEmbryos were imaged as 15 μm Z stacks (1 μm step size), captured using the 63x objective with the 2.8x relay lens. For imaging fixed germlines and embryos, prepared slides were imaged as 15 μm Z stacks (0.5 μm step size), captured using the 63x objective with the 2.8x relay lens.",
+      "labEquipment": "Zeiss Axio Observer with CSU-W1 SoRa spinning disk scan head (Yokogawa), 1x/2.8x/4x relay lens (Yokogawa), and an iXon Life 888 EMCCD camera (Andor) controlled by Slidebook 6.0 software (Intelligent Imaging Innovations)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Source images for \"Nucleoporin foci are stress-sensitive condensates dispensable for C. elegans nuclear pore assembly\""
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 247
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12060113025
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000388/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000388/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000388",
+      "name": "Confocal images of the immunostained cerebellum in PTPdelta/Ptprd KO mice",
+      "description": "PTPdelta/Ptprd promotes the extension of climbing fiber (CF) synaptic territory along Purkinje cell (PC) dendrites predominantly in Aldoc-negative (–) PCs. Gross morphology of the cerebellar vermis with immunofluorescence for the PC marker Calbindin (Calb) and the CF terminal marker VGluT2 in a WT and a PTPdelta KO mouse. Confocal images of the cerebellum showing immunoreactivities of Car8, Aldoc, and VGluT2 in WT and PTPdelta KO mice.",
+      "datePublished": "2024-09-26",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.3389/fnmol.2023.1206245"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takaki Watanabe",
+      "email": "wtakaki@m.u-tokyo.ac.jp",
+      "description": "Organization: Teikyo University; Department: Advanced Comprehensive Research Organization (ACRO)",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01gaw2478"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Masanobu Kano"
+    },
+    {
+      "@id": "https://ror.org/01gaw2478",
+      "@type": "Organization",
+      "name": "Teikyo University"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fnmol.2023.1206245",
+      "@type": "ScholarlyArticle",
+      "name": "PTPdelta is a presynaptic organizer for the formation and maintenance of climbing fiber to Purkinje cell synapses in the developing cerebellum.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 7221325824,
+      "description": "7.2 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 80,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

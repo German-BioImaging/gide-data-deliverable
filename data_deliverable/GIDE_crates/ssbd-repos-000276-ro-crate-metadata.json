@@ -1,0 +1,227 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000276/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000276/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000276",
+      "name": "Time-course images of cellular dynamics of SMART mice stimulated responds to necroptosis.",
+      "description": "ssbd-repos-000276",
+      "datePublished": "2024-11-25",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Humans",
+        "Mice",
+        "Animals",
+        "Necroptosis[major]",
+        "Fluorescence Resonance Energy Transfer",
+        "Mice, Transgenic",
+        "Protein Kinases/metabolism",
+        "Biosensing Techniques[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s42003-022-04300-0"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0070266"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097528"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0006915"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097194"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1256"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hiroyasu Nakano",
+      "email": "hiroyasu.nakano@med.toho-u.ac.jp",
+      "description": "Organization: Toho University School of Medicine; Department: Department of Biochemistry",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03paye555"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/03paye555",
+      "@type": "Organization",
+      "name": "Toho University School of Medicine"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s42003-022-04300-0",
+      "@type": "ScholarlyArticle",
+      "name": "Generation of transgenic mice expressing a FRET biosensor, SMART, that responds to necroptosis.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0070266",
+      "@type": "DefinedTerm",
+      "name": "necroptotic process"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097528",
+      "@type": "DefinedTerm",
+      "name": "execution phase of necroptosis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006915",
+      "@type": "DefinedTerm",
+      "name": "apoptotic process"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097194",
+      "@type": "DefinedTerm",
+      "name": "execution phase of apoptosis"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "FRET",
+      "description": "FRET",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 289549312,
+      "description": "289.5 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 46,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

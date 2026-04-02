@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000471/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000471/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000471",
+      "name": "Export of type II collagen in Tango1L-KO medaka and Tango1S-KO medaka",
+      "description": "Newly synthesized proteins destined for the secretory pathway are folded and assembled in the endoplasmicreticulum (ER) and then transported to the Golgi apparatus via COPII vesicles, which are normally 60–90 nm. COPIIvesicles must accordingly be enlarged to accommodate proteins larger than 90 nm, such as long-chain collagen. Key molecules involved in this enlargement are Tango1 and Tango1-like (Tali), which are transmembrane proteins in theER encoded by the MIA3 and MIA2 genes, respectively. Interestingly, two splicing variants are expressed from eachof these two genes: Tango1L and Tango1S from the MIA3 gene, and Tali and cTAGE5 from the MIA2 gene. Here, we constructed Tango1L-knockout (KO), Tango1S-KO, Tali-KO, and cTAGE5-KO separately in medaka fish, a vertebrate model organism, and characterized them. Results showed that only Tango1L-KO conferred a lethal phenotype to medaka fish. Only Tango1L-KO medaka fish exhibited a shorter tail than wild-type (WT) fish and showed the defectsin the export of type II collagen from the ER, contrary to the previous reports analyzing Tango1-KO or Tali-KO miceand the results of knockdown experiments in human cultured cells. Medaka fish may employ a simpler system than mammals for the export of large molecules from the ER.",
+      "datePublished": "2025-09-18",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1247/csf.25001"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0006888"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0006887"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007030"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051047"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0033363"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazutoshi Mori",
+      "email": "kazutoshi.8r@kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Institute for Advanced Study",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1247/csf.25001",
+      "@type": "ScholarlyArticle",
+      "name": "Tango1L but not Tango1S, Tali and cTAGE5 is required for export of type II collagen in medaka fish",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033",
+      "@type": "Taxon",
+      "scientificName": "Oryzias latipes",
+      "vernacularName": "medaka"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006888",
+      "@type": "DefinedTerm",
+      "name": "endoplasmic reticulum to Golgi vesicle-mediated transport"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006887",
+      "@type": "DefinedTerm",
+      "name": "exocytosis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007030",
+      "@type": "DefinedTerm",
+      "name": "Golgi organization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051047",
+      "@type": "DefinedTerm",
+      "name": "positive regulation of secretion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0033363",
+      "@type": "DefinedTerm",
+      "name": "secretory granule organization"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Zeiss LSM880 Airyscan",
+      "description": "Zeiss LSM880 Airyscan",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-technique-1",
+      "@type": "DefinedTerm",
+      "name": "Zeiss LSM880 Airyscan"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1285091328,
+      "description": "1.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 12,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2226"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2226",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#836bbb28-5f72-42a8-8c05-71de1a2d559e"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#47583863-f1a3-46e0-aa6d-56b443057fad"
+        },
+        {
+          "@id": "#25f0c472-22f1-42e5-a231-f4742779ded0"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9540-7422"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5560-8473"
+        },
+        {
+          "@id": "https://orcid.org/0009-0000-7404-6368"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2839-5302"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-07",
+      "description": "This is a benchmark dataset used to develop and test a new metric for quantitatively describing vacuome organization in developing root tissues.\nReference: Kočová H, Caldarescu GA, Bezvoda R, Cvrčková F: The Tonoplast Topology Index - a new metric for describing vacuole organization. Manuscript in preparation/to be submitted to biorXiv.",
+      "funder": [],
+      "identifier": "S-BIAD2226",
+      "keywords": [
+        "Arabidopsis thaliana, tonoplast, vacuole, rhizodermis, root tip"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Tonoplast organization in the rhizodermis of the Arabidopsis thaliana root tip: effect of root position on the surface vs. inside agar medium.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2226/eea6d366-07d8-4894-be05-b9216625be43/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2839-5302",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024d6js02"
+        }
+      ],
+      "email": "caldarescugeorge@gmail.com",
+      "name": "George Alexandru Caldarescu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5560-8473",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024d6js02"
+        }
+      ],
+      "email": "fatima@natur.cuni.cz",
+      "name": "Fatima Cvrčková"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9540-7422",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9e83a75a-07e5-4d21-96d9-88bca47b4ccb"
+        }
+      ],
+      "email": "bezvoda@natur.cuni.cz",
+      "name": "Radek Bezvoda"
+    },
+    {
+      "@id": "https://orcid.org/0009-0000-7404-6368",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024d6js02"
+        }
+      ],
+      "email": "helena.kocova@natur.cuni.cz",
+      "name": "Helena Kočová"
+    },
+    {
+      "@id": "#9e83a75a-07e5-4d21-96d9-88bca47b4ccb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "charles university"
+    },
+    {
+      "@id": "https://ror.org/024d6js02",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Charles University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#25f0c472-22f1-42e5-a231-f4742779ded0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Primary root tip, rhizodermis - Arabidopsis thaliana line expressing plant vacuolar H+ pyrophosphatase 1 fused with monomeric GFP (VHP1:mGFP), obtained by crossing an original Col-0 background line (Segami et al., 2014) to the Col-8 background.",
+      "name": "BS-top",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#47583863-f1a3-46e0-aa6d-56b443057fad",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Primary root tip, rhizodermis - Arabidopsis thaliana line expressing plant vacuolar H+ pyrophosphatase 1 fused with monomeric GFP (VHP1:mGFP), obtained by crossing an original Col-0 background line (Segami et al., 2014) to the Col-8 background.",
+      "name": "BS-deep",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#836bbb28-5f72-42a8-8c05-71de1a2d559e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal Z-stack images were acquired using a vertical spinning disc confocal microscopy system consisting of a Zeiss Axio Observer 7 microscope integrated with a Yokogawa CSU-W1-T2 spinning disk unit featuring 50 um pinholes and a VSHOM1000 excitation homogenizer (Visitron Systems), along with VisiView software (Visitron System, v4.40.14) and alpha Plan-Apochromat 100×/1.46 Oil immersion objective. A 488 nm laser was employed for GFP (excitation 488 nm, emission 500-550 nm). \n",
+      "labEquipment": "Vertical spinning disc confocal microscopy system consisting of a Zeiss Axio Observer 7 microscope integrated with a Yokogawa CSU-W1-T2 spinning disk.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Confocal spinning disc microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 42
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 731303549
+    }
+  ]
+}

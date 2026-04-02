@@ -1,0 +1,191 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1114"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1114",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0b1aa3c0-2cf4-4607-a949-e0b83d6e8e19"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cc20abde-fa71-4ecd-80c4-6e6d29b9aec7"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1970-5751"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-02",
+      "description": "Human Bone marrow biopsy (formalin fixed and paraffin-embedded, EDTA decalcified) whole-slide sections stained with p53 (in green), pH2A.X (in red), CD71 (in white).",
+      "funder": [],
+      "identifier": "S-BIAD1114",
+      "keywords": [
+        "bone marrow biopsy",
+        "multiplex imaging",
+        "spatial analysis",
+        "tp53",
+        "H2A.X",
+        "DNA damage",
+        "myelodysplastic syndrome",
+        "acute myeloid leukemia"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Multiplex imaging reveals spatially resolved DNA-damage response neighborhoods in TP53-mutated myelodysplastic neoplasms",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1114/5bac7e45-d742-4b2e-91de-9ea405663348/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1970-5751",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a2ee82f5-298e-46be-83e8-78b4f0918a4f"
+        }
+      ],
+      "email": "tony.yw.yeung@gmail.com",
+      "name": "Tony Yeung"
+    },
+    {
+      "@id": "#a2ee82f5-298e-46be-83e8-78b4f0918a4f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Rochester"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#cc20abde-fa71-4ecd-80c4-6e6d29b9aec7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "bone marrow biopsy, formalin-fixed and paraffin-embedded, EDTA-decalcified",
+      "name": "Bone marrow biopsy with multiplex immunofluorescence staining",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#0b1aa3c0-2cf4-4607-a949-e0b83d6e8e19",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "4 channel whole-slide scanner. DAPI, FITC, texas Red, CY5 channel. 40X objective.",
+      "labEquipment": "Olympus VS110 and VS120",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human Bone marrow biopsy (formalin fixed and paraffin-embedded, EDTA decalcified) whole-slide sections stained with DAPI (blue), p53 (in green), pH2A.X (in red), CD71 (in white)."
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 14
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 46525981107
+    }
+  ]
+}

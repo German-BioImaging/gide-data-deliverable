@@ -1,0 +1,191 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/18-Kunida-MolDynRho/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/18-Kunida-MolDynRho/",
+      "@type": "Dataset",
+      "identifier": "18-Kunida-MolDynRho",
+      "name": "18-Kunida-MolDynRho",
+      "description": "18-Kunida-MolDynRho",
+      "datePublished": "2016-10-03",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Cell Line, Tumor",
+        "Cell Movement[major]",
+        "Feedback, Physiological[major]",
+        "Fibrosarcoma/chemistry",
+        "Fibrosarcoma/enzymology",
+        "Fibrosarcoma/physiopathology[major]",
+        "Fluorescence Resonance Energy Transfer",
+        "Humans",
+        "Time-Lapse Imaging",
+        "rac1 GTP-Binding Protein/metabolism",
+        "rho GTP-Binding Proteins/genetics",
+        "rho GTP-Binding Proteins/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1242/jcs.096859"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-5"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@lif.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Katsuyuki Kunida"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Michiyuki Matsuda"
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1242/jcs.096859",
+      "@type": "ScholarlyArticle",
+      "name": "FRET imaging and statistical signal processing reveal positive and negative feedback loops regulating the morphology of randomly migrating HT-1080 cells.",
+      "datePublished": "2012"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "HT-1080",
+      "description": "HT-1080",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 116833448,
+      "description": "116.8 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 6,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

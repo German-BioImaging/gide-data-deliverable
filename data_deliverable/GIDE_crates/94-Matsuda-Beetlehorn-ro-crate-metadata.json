@@ -1,0 +1,242 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/94-Matsuda-Beetlehorn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/94-Matsuda-Beetlehorn/",
+      "@type": "Dataset",
+      "identifier": "94-Matsuda-Beetlehorn",
+      "name": "Time lapse images of pupal molt of the Japanese rhinoceros beetle Trypoxylus dichotomus at different time stage",
+      "description": "94-Matsuda-Beetlehorn",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Biomechanical Phenomena",
+        "Coleoptera/anatomy & histology[major]",
+        "Coleoptera/cytology[major]",
+        "Coleoptera/growth & development",
+        "Computer Simulation",
+        "Epithelial Cells/cytology[major]",
+        "Metamorphosis, Biological"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-017-14170-w"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_273928"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007552"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-272"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hiroki Gotoh",
+      "email": "h-r-goto@ees.hokudai.ac.jp",
+      "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04chrp450"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Keisuke Matsuda"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Yuki Tajika"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Takamichi Sushida"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Hitoshi Aonuma"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Teruyuki Niimi"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Masakazu Akiyama"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Yasuhiro Inoue"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Shigeru Kondo"
+    },
+    {
+      "@id": "https://ror.org/04chrp450",
+      "@type": "Organization",
+      "name": "Nagoya University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-017-14170-w",
+      "@type": "ScholarlyArticle",
+      "name": "Complex furrows in a 2D epithelial sheet code the 3D structure of a beetle horn.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Trypoxylus dichotomus",
+      "description": "Trypoxylus dichotomus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_273928"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_273928",
+      "@type": "Taxon",
+      "scientificName": "Trypoxylus dichotomus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
+      "@type": "DefinedTerm",
+      "name": "cell migration"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007552",
+      "@type": "DefinedTerm",
+      "name": "metamorphosis"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 8141686,
+      "description": "8.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 5,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

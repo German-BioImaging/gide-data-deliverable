@@ -1,0 +1,183 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1232"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1232",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bf2e328c-e20d-43d1-ad33-63121bfa0213"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#286ba7b7-0e34-481c-ae62-e0a6e7cc3ce6"
+        },
+        {
+          "@id": "obo:NCBITaxon_4164"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#774ad153-e9dd-4144-82c2-cbc376e48051"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-13",
+      "description": "In order to test the combination of a microscope and mobile phone to take bioImages, samples of plants such as leaves, petals and seeds were collected from around the Wellcome Genome Campus in Hinxton.  Each sample was dissected into small pieces and mounted on glass slides then placed under the lens whilst a attachment that held the phone over the eyepice of the microscope was fixed in place. As the phone would automatically focus the image, it was difficult to gauge how much more focus the sample required because the auto-focus would change everytime the microscope stage was moved to focus. As a result, the auto-focus was switched off before the images were taken. The phone magnification was kept at 1x so not to affect the images and each change in magnification of the microscope was recorded. ",
+      "funder": [],
+      "identifier": "S-BIAD1232",
+      "keywords": [
+        "foxgloves"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Dissection of plant samples under a microscope, taken with a mobile phone. ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1232/ec8ffe1b-9768-4816-a5ed-b57542ef08a1/b40f7fca-7225-4107-aed6-681238f534bc.png"
+      ]
+    },
+    {
+      "@id": "#774ad153-e9dd-4144-82c2-cbc376e48051",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04z3afh10"
+        }
+      ],
+      "name": "Mercedes Olvera Valencia"
+    },
+    {
+      "@id": "https://ror.org/04z3afh10",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Instituto Nacional de Cancerología"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4164",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Digitalis purpurea"
+    },
+    {
+      "@id": "#286ba7b7-0e34-481c-ae62-e0a6e7cc3ce6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "cell",
+      "name": "Dissection of plant samples under a microscope, taken with a mobile phone. ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4164"
+      }
+    },
+    {
+      "@id": "#bf2e328c-e20d-43d1-ad33-63121bfa0213",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A Swift SW150 microscope was used in addition to the iPhone 11 Pro used to take the photo",
+      "labEquipment": "A Swift SW150 microscope was used in addition to the iPhone 11 Pro used to take the photos\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Foxglove 2"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 49361385
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1119"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1119",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#46f3f31f-b482-4474-8147-1d970cef7327"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5eaffb35-23c2-4acd-931c-5e4c748fc74c"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f1a0de16-e1ec-418b-b42c-f1997e3884fe"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-25",
+      "description": "Achieving complete tumor resection is challenging and can be improved by real-time fluorescence guided surgery with molecular-targeted probes. However, pre-clinical identification and validation of probes presents a lengthy process that is traditionally performed in animal models and hampered by inter- and intra-tumoral heterogeneity in target expression. To screen multiple probes at patient scale, we developed a multispectral real-time 3D imaging platform that implements organoid technology to effectively model patient tumor heterogeneity and, importantly, healthy human tissue binding. ",
+      "funder": [],
+      "identifier": "S-BIAD1119",
+      "keywords": [
+        "fluorescence-guided surgery",
+        "patient-derived organoids",
+        "multi-spectral 3D imaging",
+        "neuroblastoma",
+        "breast cancer"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Source Images A multispectral 3D live organoid imaging platform to screen probes for fluorescence guided surgery",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#f1a0de16-e1ec-418b-b42c-f1997e3884fe",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6f1aea11-0f52-461e-99ce-f78276c87f72"
+        }
+      ],
+      "email": "a.c.rios@prinsesmaximacentrum.nl",
+      "name": "Anne Rios"
+    },
+    {
+      "@id": "#6f1aea11-0f52-461e-99ce-f78276c87f72",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Princess Máxima Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#5eaffb35-23c2-4acd-931c-5e4c748fc74c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Organoids",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#46f3f31f-b482-4474-8147-1d970cef7327",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See manuscript methods",
+      "labEquipment": "Zeiss LSM880",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "3D multi-spectral imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4548855921
+    }
+  ]
+}

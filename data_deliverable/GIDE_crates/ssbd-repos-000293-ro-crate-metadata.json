@@ -1,0 +1,273 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000293/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000293/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000293",
+      "name": "Novel inhibitors of microtubule organization and phragmoplast formation in diverse plant species",
+      "description": "ssbd-repos-000293",
+      "datePublished": "2024-12-14",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.26508/lsa.202201657"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051301"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007010"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0009524"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005856"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1357"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Minako Ueda",
+      "email": "minako.ueda.e7@tohoku.ac.jp",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01dq60k83"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01dq60k83",
+      "@type": "Organization",
+      "name": "Tohoku University"
+    },
+    {
+      "@id": "https://doi.org/10.26508/lsa.202201657",
+      "@type": "ScholarlyArticle",
+      "name": "Novel inhibitors of microtubule organization and phragmoplast formation in diverse plant species.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Physcomitrium patens"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097",
+      "@type": "Taxon",
+      "scientificName": "Nicotiana tabacum",
+      "vernacularName": "tobacco"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "thale cress"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
+      "@type": "DefinedTerm",
+      "name": "cell division"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007010",
+      "@type": "DefinedTerm",
+      "name": "cytoskeleton organization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009524",
+      "@type": "DefinedTerm",
+      "name": "phragmoplast"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
+      "@type": "DefinedTerm",
+      "name": "cytoskeleton"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "two-photon laser scanning microscopy",
+      "description": "two-photon laser scanning microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
+      "@type": "DefinedTerm",
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 14437949440,
+      "description": "14.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 24,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

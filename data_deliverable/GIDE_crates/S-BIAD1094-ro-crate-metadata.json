@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1094"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1094",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7282161e-0706-41de-87e0-bedc3dbb48b8"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2485215d-2e44-4aec-81e3-e6e220e9df61"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#1c5ed1c8-3895-4704-b257-47488a11813c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-29",
+      "description": "These are images of U2OS cells subject to the Cell Painting Assay after treatment with compounds from EUbOPEN wave1. ",
+      "funder": [],
+      "identifier": "S-BIAD1094",
+      "keywords": [
+        "cell painting, eubopen"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "EUbOPEN Wave1 compounds Cell Painting Images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#1c5ed1c8-3895-4704-b257-47488a11813c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cdbfc63d-b2cc-4348-a681-7e910294fad5"
+        }
+      ],
+      "email": "ifsumia@gmail.com",
+      "name": "Iffat Sumia"
+    },
+    {
+      "@id": "#cdbfc63d-b2cc-4348-a681-7e910294fad5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Servier (France)"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2485215d-2e44-4aec-81e3-e6e220e9df61",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bone sarcoma cell line",
+      "name": "U2OS Culture Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7282161e-0706-41de-87e0-bedc3dbb48b8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x air objective\n\nChannels:\nExcitation :  405nm /  Excitation Power : 100% / Emission filter : 445/45 / Z offset : -8.5um\nExcitation :  488nm /  Excitation Power : 100% / Emission filter : 525/50 / Z offset : -8.5um\nExcitation :  488nm /  Excitation Power : 100% / Emission filter : 600/37 / Z offset : -8.5um\nExcitation :  561nm /  Excitation Power : 100% / Emission filter : 600/37 / Z offset : -8.5um\nExcitation :  640nm /  Excitation Power : 100% / Emission filter : 676/29 / Z offset : -8.5um\nExcitation :  BrightField LED (confocal path) /  Excitation Power : 30% / Emission filter : 525/50 /\n Z offset : Z = -15.5um, Z= -10.5um, Z=-5.5um\n",
+      "labEquipment": "Yokogawa CV8000\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Imaging data"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 105
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2360274615701
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/412-Katoh-BMP4Cilia/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/412-Katoh-BMP4Cilia/",
+      "@type": "Dataset",
+      "identifier": "412-Katoh-BMP4Cilia",
+      "name": "BMP4 regulates asymmetric Pkd2 distribution in mouse nodal immotile cilia and ciliary mechanosensing required for left–right determination",
+      "description": "Background: Mouse nodal immotile cilia mechanically sense the bending direction for left–right (L–R) determination and activate the left-side-specific signaling cascade, leading to increased Nodal activity. Asymmetric distribution of Pkd2, a crucial channel for L–R determination, on immotile cilia has been reported recently. However, the causal relationship between the asymmetric Pkd2 distribution and direction-dependent flow sensing is not well understood. Furthermore, the underlying molecular mechanism directing this asymmetric Pkd2 distribution remains unclear.\nResults: The effects of several recombinant proteins and inhibitors on the Pkd2 distribution were analyzed using super-resolution microscopy. Notably, bone morphogenetic protein 4 (BMP4) affected the Pkd2 distribution. Addi- tionally, three-dimensional manipulation of nodal immotile cilia using optical tweezers revealed that excess BMP4 caused defects in the mechanosensing abil- ity of the cilia.\nConclusions: Experimental data together with model calculations suggest that BMP4 regulates the asymmetric distribution of Pkd2 in nodal immotile cilia, thereby affecting the ability of these cilia to sense the bending direction for L– R determination. This study, for the first time, provides insight into the rela- tionship between the asymmetric protein distribution in cilia and their function.",
+      "datePublished": "2025-11-28",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1002/dvdy.727"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097730"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0019722"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000334"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1758"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "https://doi.org/10.1002/dvdy.727",
+      "@type": "ScholarlyArticle",
+      "name": "BMP4 regulates asymmetric Pkd2 distribution in mouse nodal immotile cilia and ciliary mechanosensing required for left-right determination.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "B6;B6C3(129)-Tg(NDE-hsp-Pkd2/Venus)1Hmd",
+      "description": "B6;B6C3(129)-Tg(NDE-hsp-Pkd2/Venus)1Hmd",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "B6;B6C3(129)-Tg(NDE-hsp-Pkd2/Venus)1Hmd, B6(D2)-Smo<Rgsc2073>)",
+      "description": "B6;B6C3(129)-Tg(NDE-hsp-Pkd2/Venus)1Hmd, B6(D2)-Smo<Rgsc2073>)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "FVB-Invs<inv>(CCM)",
+      "description": "FVB-Invs<inv>(CCM)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-4",
+      "@type": "BioSample",
+      "name": "Dnah11 tm1Bknr, B6-Tg(Nodal NDE-5HT6/GCaMP6,5HT6/mCherry)35Hmd,  STOCK Tg(Nodal NDE-GCaMP6)29AHmd",
+      "description": "Dnah11 tm1Bknr, B6-Tg(Nodal NDE-5HT6/GCaMP6,5HT6/mCherry)35Hmd,  STOCK Tg(Nodal NDE-GCaMP6)29AHmd",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097730",
+      "@type": "DefinedTerm",
+      "name": "non-motile cilium"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
+      "@type": "DefinedTerm",
+      "name": "calcium-mediated signaling"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "stimulated emission depletion",
+      "description": "stimulated emission depletion",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000334"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000334",
+      "@type": "DefinedTerm",
+      "name": "stimulated emission depletion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 52508657939,
+      "description": "52.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 24,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

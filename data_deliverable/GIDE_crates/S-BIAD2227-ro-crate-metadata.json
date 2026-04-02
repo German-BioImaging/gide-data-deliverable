@@ -1,0 +1,209 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2227"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2227",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#432cb7cd-577b-41b7-96c4-b140837c2aef"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f0b65155-7cd7-415a-970a-bceb9f7ad860"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9a8879f5-f676-426d-838f-883e0adbba51"
+        },
+        {
+          "@id": "#a665f05e-8441-48f0-aafc-7491355956c7"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-08",
+      "description": "We present a novel optical nanomotion-based rapid antibiotic and antifungal susceptibility test. The technique consisted of studying the effects of antibiotics or antifungals on the nanometric scale displacements of bacteria or yeasts to assess their sensitivity or resistance to drugs. The technique relies on a traditional optical microscope, a video camera, and custom-made image analysis software. It provides reliable results in a time frame of 2-4 h and can be applied to motile, non-motile, fast, and slowly growing microorganisms. Due to its extreme simplicity and low cost, the technique can be easily implemented in laboratories and medical centers in developing countries.",
+      "funder": [],
+      "identifier": "S-BIAD2227",
+      "keywords": [
+        "antimicrobials",
+        "bacteria",
+        "nanomotion",
+        "optical microscope",
+        "yeast"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "A simplified version of rapid susceptibility testing of bacteria and yeasts using optical nanomotion detection",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#9a8879f5-f676-426d-838f-883e0adbba51",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02s376052"
+        }
+      ],
+      "email": "sandor.kasas@epfl.com",
+      "name": "Sandor Kasas"
+    },
+    {
+      "@id": "#a665f05e-8441-48f0-aafc-7491355956c7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/006e5kg04"
+        }
+      ],
+      "email": "Ronnie.Willaert@vub.be",
+      "name": "Ronnie Willaert"
+    },
+    {
+      "@id": "https://ror.org/006e5kg04",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vrije Universiteit Brussel"
+    },
+    {
+      "@id": "https://ror.org/02s376052",
+      "@type": [
+        "Organization"
+      ],
+      "name": "École Polytechnique Fédérale de Lausanne"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#f0b65155-7cd7-415a-970a-bceb9f7ad860",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Microbial population",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#432cb7cd-577b-41b7-96c4-b140837c2aef",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For these experiments, we used a Zeiss inverted traditional optical microscope (Observer Z.1) with a 63x oil immersion objective, coupled with a PCO Edge 5.5 camera. Several (3–5) 10 s-long videos of different fields of view were recorded at 30 fps of both the control and exposed samples for each replicate. ",
+      "labEquipment": "Zeiss inverted traditional optical microscope (Observer Z.1) coupled with a PCO Edge 5.5 camera",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 341
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 519562345
+    }
+  ]
+}

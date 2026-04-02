@@ -1,0 +1,201 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1167"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1167",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#11aa59c2-b244-4e5d-ac82-e198dd888c4a"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2531df33-bd58-4d59-9571-8f52eefe647b"
+        },
+        {
+          "@id": "obo:NCBITaxon_7719"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8444-0630"
+        },
+        {
+          "@id": "#baef98e5-b2b9-46ac-b54e-e1ecd324a1c3"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-18",
+      "description": "Equal cell division relies upon astral microtubule-based centering\nmechanisms, yet how the interplay between mitotic entry, cortical\nforce generation and long astral microtubules leads to symmetric cell\ndivision is not resolved.We report that a cortically located sperm aster\ndisplaying long astral microtubules that penetrate the whole zygote\ndoes not undergo centration until mitotic entry. At mitotic entry, we\nfind that microtubule-based cortical pulling is lost. Quantitative\nmeasurements of cortical pulling and cytoplasmic pulling together\nwith physical simulations suggested that a wavelike loss of cortical\npulling at mitotic entry leads to aster centration based on cytoplasmic\npulling. Cortical actin is lost from the cortex at mitotic entry coincident\nwith a fall in cortical tension from ∼300pN/μm to ∼100pN/μm.\nFollowing the loss of cortical force generators at mitotic entry, long\nmicrotubule-based cytoplasmic pulling is sufficient to displace the\naster towards the cell center. These data reveal how mitotic aster\ncentration is coordinated with mitotic entry in chordate zygotes.",
+      "funder": [],
+      "identifier": "S-BIAD1167",
+      "keywords": [
+        "Mitotic apparatus",
+        " Nuclear migration",
+        "Cell cycle",
+        "Sperm aster"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Reduction of cortical pulling at mitotic entry facilitates aster centration",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#baef98e5-b2b9-46ac-b54e-e1ecd324a1c3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f52a3cb2-20e2-4734-bebe-c0f41aac70dd"
+        }
+      ],
+      "email": "faisal.bekkouche@imev-mer.fr",
+      "name": "bekkouche"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8444-0630",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f52a3cb2-20e2-4734-bebe-c0f41aac70dd"
+        }
+      ],
+      "email": "remi.dumollard@imev-mer.fr",
+      "name": "dumollard"
+    },
+    {
+      "@id": "#f52a3cb2-20e2-4734-bebe-c0f41aac70dd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "French National Centre for Scientific Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7719",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Ciona intestinalis"
+    },
+    {
+      "@id": "#2531df33-bd58-4d59-9571-8f52eefe647b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "phallusia mammillata zygote",
+      "name": "bio-sample1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7719"
+      }
+    },
+    {
+      "@id": "#11aa59c2-b244-4e5d-ac82-e198dd888c4a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "DT=10 sec\nDZ=1 (1,5 µm)\n10 z places",
+      "labEquipment": "confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "imaging of PM fingers"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 249
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 141359086077
+    }
+  ]
+}

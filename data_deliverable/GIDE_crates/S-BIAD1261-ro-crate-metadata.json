@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1261"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1261",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e486b971-bffa-480e-ae61-b9e97583fc15"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#de41f4f8-c63b-4faa-91b9-edcd85c3485b"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#fd84fe97-cc6b-49f5-8fd5-85db5cdd09a0"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-05",
+      "description": "To date, apart from moderate hypothermia, there are almost no adequate interventions available for neuroprotection in cases of brain damage due to cardiac arrest. Affected persons often have severe limitations in their quality of life. The aim of this study was to investigate protective properties of the active compound of dimethyl fumarate, monomethyl fumarate (MMF), on distinct regions of the central nervous system after ischemic events. Dimethyl fumarate is an already established drug in neurology with known anti-inflammatory and antioxidant properties. In this study, we chose organotypic slice cultures of rat cerebellum and hippocampus as an ex vivo model. To simulate cardiac arrest and return of spontaneous circulation we performed oxygen-glucose-deprivation (OGD) followed by treatments with different concentrations of MMF (1-30 µM in cerebellum and 5-30 µM in hippocampus). Immunofluorescence staining with propidium iodide (PI) and 4′,6-diamidine-2-phenylindole (DAPI) was performed to analyze PI/DAPI ratio after imaging with a spinning disc confocal microscope. In the statistical analysis, the relative cell death of the different groups was compared. In both, the cerebellum and hippocampus, the MMF-treated group showed a significantly lower PI/DAPI ratio compared to the non-treated group after OGD. Thus, we showed for the first time that both cerebellar and hippocampal slice cultures treated with MMF after OGD are significantly less affected by cell death.",
+      "funder": [],
+      "identifier": "S-BIAD1261",
+      "keywords": [
+        "brain damage; cardiac arrest; cell death; hypoxic chamber; ischemia; organotypic slice cultures; post-treatment; resuscitation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Region-Specific Protective Effects of Monomethyl Fumarate in Cerebellar and Hippocampal Organotypic Slice Cultures Following Oxygen-Glucose Deprivation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#fd84fe97-cc6b-49f5-8fd5-85db5cdd09a0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4f63e18a-57ee-4589-b329-835ea3b87fe6"
+        }
+      ],
+      "email": "cytologie@rub.de",
+      "name": "Cytology Department RUB"
+    },
+    {
+      "@id": "#4f63e18a-57ee-4589-b329-835ea3b87fe6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ruhr University Bochum"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#de41f4f8-c63b-4faa-91b9-edcd85c3485b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "p9 Wistar rat hippocampal and cerebellar slice cultures",
+      "name": "Biosample",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#e486b971-bffa-480e-ae61-b9e97583fc15",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was performed on a spinning disk confocal microscope using a 20x objective. The exposure time was set to 900 ms. Multiple z-stacks were first acquired as a matrix, then stitched and stacked into a single image. A 405 nm laser was used for DAPI excitation and a 561 nm laser for PI excitation.",
+      "labEquipment": "VisiScope Confocal-Cell Explorer, Visitron Systems GmbH, Puchheim, Germany\nNikon PlanFluor 20×, NA 0.5; Nikon Instruments Europe BV, Amsterdam, Netherlands",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1980
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 907079141281
+    }
+  ]
+}

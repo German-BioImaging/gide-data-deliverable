@@ -1,0 +1,219 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD873"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD873",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f42ba229-2151-4193-87b3-0005a17668d4"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#28243f36-b164-4355-baff-7128bae4e5b7"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#2e6c58ea-7224-47c2-a32d-1a1f994dbf9e"
+        },
+        {
+          "@id": "#ca5f6239-3983-403a-a918-a1eb6e5f4ac9"
+        },
+        {
+          "@id": "#dc03e818-6bb5-4f92-a102-9f31908fc8b2"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-09-07",
+      "description": "Data for all the experiments described in our paper: \"Escalating High-dimensional Imaging using Combinatorial Channel Multiplexing and Deep Learning\". For further information, please refer to our paper or visit our git repository.\n\nLink to our paper: https://www.biorxiv.org/content/10.1101/2023.09.09.556962v1\nLink to our GitHub repository: https://github.com/KerenLab/CombPlex",
+      "funder": [],
+      "identifier": "S-BIAD873",
+      "keywords": [
+        "CombPlex",
+        "Combinatorial Staining",
+        "Deep Learning",
+        "Multiplexed Imaging",
+        "MIBI",
+        "CODEX"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Experimental Data for CombPlex Paper: \"Escalating High-dimensional Imaging using Combinatorial Channel Multiplexing and Deep Learning\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#2e6c58ea-7224-47c2-a32d-1a1f994dbf9e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "Leeat.Keren@weizmann.ac.il",
+      "name": "Leeat Keren"
+    },
+    {
+      "@id": "#ca5f6239-3983-403a-a918-a1eb6e5f4ac9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "Raz.Ben-Uri@weizmann.ac.il",
+      "name": "Raz Ben-Uri"
+    },
+    {
+      "@id": "#dc03e818-6bb5-4f92-a102-9f31908fc8b2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "lior.ben-shabat@weizmann.ac.il",
+      "name": "Lior Ben Shabat"
+    },
+    {
+      "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Weizmann Institute of Science"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#28243f36-b164-4355-baff-7128bae4e5b7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cancer tissues",
+      "name": "CombPlex Experimental Data",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f42ba229-2151-4193-87b3-0005a17668d4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Please refer to the Methods section in our paper.",
+      "labEquipment": "CODEX, MIBI",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "CombPlex Experimental Data"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 24547
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 196329316459
+    }
+  ]
+}

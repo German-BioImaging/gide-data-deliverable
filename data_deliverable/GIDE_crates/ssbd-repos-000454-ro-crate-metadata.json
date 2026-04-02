@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000454/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000454/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000454",
+      "name": "Dynamics of pollen tube in Arabidopsis thaliana",
+      "description": "In the pistil of flowering plants, each ovule usually associates with a single pollen tube for fertilization. This one-to-one pollen tube guidance, which contributes to polyspermy blocking and efficient seed production, is largely different from animal chemotaxis of many sperms to one egg. However, the functional mechanisms underlying the directional cues and polytubey blocks in the depths of the pistil remain unknown. Here, the authors develop a two-photon live imaging method to directly observe pollen tube guidance in the pistil of Arabidopsis thaliana, clarifying signaling and cellular behaviors in the one-to-one guidance. Ovules are suggested to emit multiple signals for pollen tubes, including an integument- dependent directional signal that reaches the inner surface of the septum and adhesion signals for emerged pollen tubes on the septum. Not only FERONIA in the septum but ovular gametophytic FERONIA and LORELEI, as well as FERONIA- and LORELEI- independent repulsion signal, are involved in polytubey blocks on the ovular funiculus. However, these funicular blocks are not strictly maintained in the first 45 min, explaining previous reports of polyspermy in flowering plants.",
+      "datePublished": "2026-01-21",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s44319-024-00151-4"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yoko Mizuta",
+      "email": "mizuta.yoko.u6@f.mail.nagoya-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules (WPI-ITbM)",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04chrp450"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04chrp450",
+      "@type": "Organization",
+      "name": "Nagoya University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s44319-024-00151-4",
+      "@type": "ScholarlyArticle",
+      "name": "Deep imaging reveals dynamics and signaling in one-to-one pollen tube guidance.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "thale cress"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 18951815168,
+      "description": "19.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 33,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

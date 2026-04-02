@@ -1,0 +1,223 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2228"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2228",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e9b2a3ea-1ce2-481b-9880-2aa931518a04"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#60c2fdf5-fec2-4f09-a7a0-6b5e8d8c8f1e"
+        },
+        {
+          "@id": "#c09a4e7f-fd8e-4b24-8fbb-6e656e4e3aac"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#d4b31a1c-38d6-4bd2-99ab-9bff1a95fa45"
+        },
+        {
+          "@id": "#38fc8cd5-70e0-4852-8c3b-2b517d1c95ef"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-08",
+      "description": "Nanometric scale size oscillations seem to be a fundamental feature of all living organisms on Earth. Their detection usually requires complex and very sensitive devices. However, some recent studies demonstrated that very simple optical microscopes and dedicated image processing software can also fulfill this task. This novel technique, termed as optical nanomotion detection (ONMD), was recently successfully used on yeast cells to conduct rapid antifungal sensitivity tests. In this study, we demonstrate that the ONMD method can monitor motile sub-cellular organelles, such as mitochondria. Here, mitochondrial isolates (from HEK 293 T and Jurkat cells) undergo predictable motility when viewed by ONMD and triggered by mitochondrial toxins, citric acid intermediates, and dietary and bacterial fermentation products (short-chain fatty acids) at various doses and durations. The technique has superior advantages compared to classical methods since it is rapid, possesses a single organelle sensitivity, and is label- and attachment-free.",
+      "funder": [],
+      "identifier": "S-BIAD2228",
+      "keywords": [
+        "optical nanomotion",
+        "mitochondria",
+        "rotenone",
+        "metabolic substrate",
+        "short chain fatty acid"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Mitochondrial nanomotion measured by optical microscopy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#38fc8cd5-70e0-4852-8c3b-2b517d1c95ef",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/006e5kg04"
+        }
+      ],
+      "email": "Ronnie.Willaert@vub.be",
+      "name": "Ronnie Willaert"
+    },
+    {
+      "@id": "#d4b31a1c-38d6-4bd2-99ab-9bff1a95fa45",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02s376052"
+        }
+      ],
+      "email": "sandor.kasas@epfl.ch",
+      "name": "Sandor Kasas"
+    },
+    {
+      "@id": "https://ror.org/006e5kg04",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vrije Universiteit Brussel"
+    },
+    {
+      "@id": "https://ror.org/02s376052",
+      "@type": [
+        "Organization"
+      ],
+      "name": "École Polytechnique Fédérale de Lausanne"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#60c2fdf5-fec2-4f09-a7a0-6b5e8d8c8f1e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human embryonic kidney cells (HEK293T)",
+      "name": "Biosample 2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c09a4e7f-fd8e-4b24-8fbb-6e656e4e3aac",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Jurkat cells (immortal cell line of human T cells)",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e9b2a3ea-1ce2-481b-9880-2aa931518a04",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "An inverted optical microscope (Zeiss Observer Z.1) with a 63 × oil-immersion objective, coupled to a camera (MU9PC-MH XIMEA and PCO Edge 5.5) was used to record the 2D displacement of single mitochondria. The camera was typically recording 10-s-long videos with a framerate of 30 frames per second (fps). The recorded movies were saved as AVI files. All measurements were carried out at room temperature without phase contrast nor fluorescent staining of the mt-DNA.",
+      "labEquipment": "Inverted optical microscope (Zeiss Observer Z.1)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 159
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 70855284
+    }
+  ]
+}

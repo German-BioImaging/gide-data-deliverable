@@ -1,0 +1,299 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD676"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD676",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5aa5c005-8ad2-4561-8c16-d28d9668abad"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#bee40745-4271-40bd-99e2-f71da71cf741"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ae49a943-771f-4ae1-9aa7-dcc34c47c41f"
+        },
+        {
+          "@id": "#bdefa6e6-3178-4c55-a4c8-d668dca73965"
+        },
+        {
+          "@id": "#bf36dc13-3c38-4f42-b8fb-21c814791c1d"
+        },
+        {
+          "@id": "#65691a0c-d827-437e-8060-9c995634664b"
+        },
+        {
+          "@id": "#54ed8e39-d864-4801-9f0f-769e54cbc128"
+        },
+        {
+          "@id": "#3bf76e0f-2886-41d0-a8e7-37fe041285f0"
+        },
+        {
+          "@id": "#122b98ee-a019-4c8e-a78d-c068fe43818e"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-04-11",
+      "description": "Studies of postmortem human tissue provide insight into pathological processes, but are inherently limited by practical considerations that limit the scale at which tissue can be examined, and the obvious issue that the tissue reflects only one time point in a continuous disease process.  We approached this problem by adapting new tissue clearance techniques to an entire cortical area of human brain, which allows surveillance of hundreds of thousands of neurons throughout the depth of the entire cortical thickness.  This approach allows detection of “rare” events, that may be difficult to detect in standard 5 micron-thick paraffin sections. For example, it is well established that neurofibrillary tangles begin within a neuron, and ultimately, in at least some instances, persist in the brain even after the neuron has died. These are referred to as “ghost tangles”, a term that appropriately implies their “difficult to see” ephemeral qualities. We set out to find ghost tangles as one example of the power of the tissue clearance/image analysis techniques to detect rare events, and to learn what happens at the end point of a tangle’s life history. We were able to identify 8103 AT8+ tau tangles, 132465 HuD+ neurons, and 299640 DAPI+ nuclei in tissue samples from three subjects with severe Alzheimer’s disease (Braak V-VI) and 4 AT8+ tau tangles, 200447 HuD+ neurons, and 462715 DAPI+ nuclei in tissue samples from three subjects with no significant tau pathology (Braak 0-I).  Among these data we located 57 ghost tangles, which makes them only 0.7% of the total tau tangles observed. We found that ghost tangles are more likely to be found in cortical layers 3 and 5 (49/57), with a select few scattered across other layers 1, 2, 4, and 6. This ability to find rare events, such as ghost tangles, in large enough quantities to statistically test their distribution exemplifies how tissue clearing can be used as a powerful tool for studying selective vulnerability or resilience to pathology across brain regions.",
+      "funder": [],
+      "identifier": "S-BIAD676",
+      "keywords": [
+        "Alzheimer's Disease",
+        "Tau",
+        "Neurofibrillary Tangles",
+        "AT8",
+        "DAPI",
+        "HUD",
+        "Inferior Temporal Gyrus",
+        "Human",
+        "Brain",
+        "Tissue Clearing",
+        "Confocal Microscopy"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Spatial characterization of tangle-bearing neurons and ghost tangles in the human inferior temporal gyrus with three-dimensional imaging",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD676/9199caf9-b5ab-4237-8be3-21120636266f/bb16522c-7744-4de9-b56d-3f24fc0f6a91.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD676/d5bd9bc5-95c2-4d0b-adb6-279457bd3868/0f82ab60-956d-44d5-b5eb-027984619a55.png"
+      ]
+    },
+    {
+      "@id": "#122b98ee-a019-4c8e-a78d-c068fe43818e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fb6f44ea-8cfe-48cb-b104-9f73cd54c18b"
+        }
+      ],
+      "name": "Bradley T. Hyman"
+    },
+    {
+      "@id": "#3bf76e0f-2886-41d0-a8e7-37fe041285f0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fb6f44ea-8cfe-48cb-b104-9f73cd54c18b"
+        }
+      ],
+      "name": "Rachel E. Bennett"
+    },
+    {
+      "@id": "#54ed8e39-d864-4801-9f0f-769e54cbc128",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cdd16461-ab27-45bc-a52a-8d94f8632292"
+        }
+      ],
+      "name": "Douglas S. Richardson"
+    },
+    {
+      "@id": "#65691a0c-d827-437e-8060-9c995634664b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4feafd40-08cd-4786-823c-f0d5e67791db"
+        }
+      ],
+      "name": "Zachary Hoglund"
+    },
+    {
+      "@id": "#ae49a943-771f-4ae1-9aa7-dcc34c47c41f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fb6f44ea-8cfe-48cb-b104-9f73cd54c18b"
+        }
+      ],
+      "email": "tzwang@mgh.harvard.edu",
+      "name": "Theodore J. Zwang"
+    },
+    {
+      "@id": "#bdefa6e6-3178-4c55-a4c8-d668dca73965",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4feafd40-08cd-4786-823c-f0d5e67791db"
+        }
+      ],
+      "name": "Benjamin Woost"
+    },
+    {
+      "@id": "#bf36dc13-3c38-4f42-b8fb-21c814791c1d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4feafd40-08cd-4786-823c-f0d5e67791db"
+        }
+      ],
+      "name": "Joshua Bailey"
+    },
+    {
+      "@id": "#4feafd40-08cd-4786-823c-f0d5e67791db",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Massachusetts General Hospital"
+    },
+    {
+      "@id": "#cdd16461-ab27-45bc-a52a-8d94f8632292",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Harvard University"
+    },
+    {
+      "@id": "#fb6f44ea-8cfe-48cb-b104-9f73cd54c18b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Harvard Medical School"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#bee40745-4271-40bd-99e2-f71da71cf741",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Inferior Temporal Gyrus",
+      "name": "Human Brain Tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5aa5c005-8ad2-4561-8c16-d28d9668abad",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Samples were then placed on a glass microscope slide with a 3D-printed ring that allows the tissue to remain in a pool of glycerol during imaging. The ring was 3D-printed to match the thickness of the tissue (Formlabs) so a glass coverslip could be placed on top and seal the tissue in the glycerol. The tissue was then imaged using Olympus Inverted Confocal FV3000 with a 10x air objective, and multi-region images were stitched together using the microscope software. ",
+      "labEquipment": "Olympus Inverted Confocal FV3000 with a 10x air objective",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 57
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 170499503423
+    }
+  ]
+}

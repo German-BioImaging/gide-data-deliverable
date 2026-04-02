@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1207"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1207",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#efc893ad-2ac2-40d4-82b5-ee4726be7b9f"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7ba03da3-f2cd-4e5b-8ff3-44834d4285fb"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f4009aad-abe6-4fdf-80fd-f57ab14f9d79"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-29",
+      "description": "F4/80 staining in mouse liver from RCD, RCD_drug, HFD, and HFD_drug groups.",
+      "funder": [],
+      "identifier": "S-BIAD1207",
+      "keywords": [
+        "f4/80"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "F4/80 staining in mouse liver from RCD, RCD_drug, HFD, and HFD_drug groups.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1207/98f58176-87b0-4013-90cf-168747ed3e3b/dad7745c-7361-413c-b5e5-387a1618182f.png"
+      ]
+    },
+    {
+      "@id": "#f4009aad-abe6-4fdf-80fd-f57ab14f9d79",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22"
+        }
+      ],
+      "email": "mondalsiraj@gmail.com",
+      "name": "prosenjit mondal"
+    },
+    {
+      "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Indian Institute of Science Education and Research Berhampur"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#7ba03da3-f2cd-4e5b-8ff3-44834d4285fb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "liver tissue",
+      "name": "F4/80 staining in mouse liver from RCD, RCD_drug, HFD, and HFD_drug groups.",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#efc893ad-2ac2-40d4-82b5-ee4726be7b9f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "images were taken at 60x ",
+      "labEquipment": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "F4/80 staining in mouse liver from RCD, RCD_drug, HFD, and HFD_drug groups.."
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 64
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 102601984
+    }
+  ]
+}

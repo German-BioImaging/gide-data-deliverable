@@ -1,0 +1,278 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1326"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1326",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#dd189167-2e05-4527-97b0-1db2d0c204e0"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#06384e3b-9718-431e-91c2-636acf2502d7"
+        },
+        {
+          "@id": "#c0d78fff-0e62-470e-ad49-e611439b9f7b"
+        },
+        {
+          "@id": "#b7ca5acb-c90c-4a3c-b209-0675accdea28"
+        },
+        {
+          "@id": "#707b38db-f517-4d6a-9f9b-7402796876c8"
+        },
+        {
+          "@id": "obo:NCBITaxon_1126"
+        },
+        {
+          "@id": "obo:NCBITaxon_1160"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2349-945X"
+        },
+        {
+          "@id": "#cd30b348-a554-4097-a2c1-6b0e1b1033cc"
+        },
+        {
+          "@id": "#dbcff462-816b-4959-b548-6c9320e4041a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-29",
+      "description": "under construction",
+      "funder": [],
+      "identifier": "S-BIAD1326",
+      "keywords": [
+        "Microcystis",
+        "Planktothrix",
+        "Microcystin",
+        "Anabaenopeptin",
+        "Cyanopeptide synthesis",
+        "cyanobacterial peptides",
+        "Bloom-forming cyanobacteria"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Real time observation and modelling of heterogenous cyanopeptide synthesis as revealed by chemical labelling",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#cd30b348-a554-4097-a2c1-6b0e1b1033cc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#683c4211-2f40-4bf9-ba24-a8d9a52fa780"
+        }
+      ],
+      "name": "Martin Offterdinger"
+    },
+    {
+      "@id": "#dbcff462-816b-4959-b548-6c9320e4041a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#423ae4eb-2d5c-4dfe-ba6c-933219e6a6ce"
+        }
+      ],
+      "email": "rainer.kurmayer@uibk.ac.at",
+      "name": "Rainer Kurmayer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2349-945X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#423ae4eb-2d5c-4dfe-ba6c-933219e6a6ce"
+        }
+      ],
+      "email": "ruben.moron-asensio@uibk.ac.at",
+      "name": "Rubén Morón Asensio"
+    },
+    {
+      "@id": "#423ae4eb-2d5c-4dfe-ba6c-933219e6a6ce",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universität Innsbruck"
+    },
+    {
+      "@id": "#683c4211-2f40-4bf9-ba24-a8d9a52fa780",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Innsbruck Medical University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_1126",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Microcystis aeruginosa"
+    },
+    {
+      "@id": "obo:NCBITaxon_1160",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Planktothrix agardhii"
+    },
+    {
+      "@id": "#06384e3b-9718-431e-91c2-636acf2502d7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Microcystis aeruginosa individual cells.",
+      "name": "Microcystis aeruginosa strain Hofbauer modified cyanopeptide synthesis",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1126"
+      }
+    },
+    {
+      "@id": "#707b38db-f517-4d6a-9f9b-7402796876c8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Planktothrix agardhii filament section",
+      "name": "Planktothrix agarhdii No371/1 release modified cyanopeptide",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1160"
+      }
+    },
+    {
+      "@id": "#b7ca5acb-c90c-4a3c-b209-0675accdea28",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Planktothrix agardhii filament section",
+      "name": "Planktothrix agarhdii No371/1 modified cyanopeptide synthesis",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1160"
+      }
+    },
+    {
+      "@id": "#c0d78fff-0e62-470e-ad49-e611439b9f7b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Microcystis aeruginosa strain Hofbauer cells",
+      "name": "Microcystis aeruginosa strain Hofbauer release of modified cyanopeptides",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1126"
+      }
+    },
+    {
+      "@id": "#dd189167-2e05-4527-97b0-1db2d0c204e0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "5 µl of the samples were mounted using antifade solution (ProLong® Diamond Antifade Mountant, Thermo Fisher Scientific, Darmstadt, Germany). The samples were air-dried for 48 h in the dark and stored at 4 °C until microscopical analysis. For the image acquisition, a DMI 6000 SP8 (Leica Microsystems was used microscope, with an 93× HCX Plan Apo 1.4 glycerol objective was used. Images were acquired with a sequential scan using the following laser configuration\n495nm (Em 500-550 nm), 620 nm (Em 680-730 nm). Excitation at 495 nm (Ch0) was used for measuring intensities of ALEXA 488 labelled modified cyanopeptides, while excitation at 620 nm (Ch2) was used for measuring the intrinsic natural autofluorescence of the cells.\n\nAn initial set of images was taken with a digital magnification of 2.25x, while three-dimensional images were acquired at a digital magnification of 10.5x to a resolution of 50 nm per voxel in the XY axis and 150 nm at the Z axis. Confocal images were deconvolved to improve final resolution with Huygens Essential 20.04 software using the Classic Maximum Likelihood Estimation (CMLE) algorithm, according to the manufacturer’s recommendations (Science Volume Imaging BV, Hilversum, The Netherlands).",
+      "labEquipment": "Leica Microsystems SP8 Laser Scanning Confocal Microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2326
+    }
+  ]
+}

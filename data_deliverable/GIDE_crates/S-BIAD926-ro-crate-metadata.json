@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD926"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD926",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6fac70fd-bbc8-482d-a406-9f41ee8f5f5f"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6f246861-593f-45ca-bba2-f49c34c74b73"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#60c6b088-dc7e-479e-bfaf-facb7732652e"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-19",
+      "description": "TP53-mutant acute myeloid leukemia (AML) and myelodysplastic neoplasms (MDS) are characterized by chemotherapy resistance and represent an unmet clinical need. Chimeric antigen receptor (CAR) T-cells might be a promising therapeutic option for TP53-mutant AML/MDS. However, the impact of TP53 deficiency in AML cells on the efficacy of CAR T-cells is unknown.\nWe here show that CAR T-cells engaging TP53-deficient leukemia cells exhibit a prolonged interaction time, upregulate exhaustion markers, and are inefficient to control AML cell outgrowth in vitro and in vivo compared to TP53 wildtype cells. Transcriptional profiling revealed that the mevalonate pathway is upregulated in TP53-deficient AML cells under CAR T-cell attack, while CAR T-cells engaging TP53-deficient AML cells downregulate the Wnt pathway. In vitro rational targeting of either of these pathways rescues AML cell sensitivity to CAR T-cell-mediated killing. \nWe thus demonstrate that TP53 deficiency confers resistance to CAR T-cell therapy and identify the mevalonate pathway as a therapeutic vulnerability of TP53-deficient AML cells engaged by CAR T-cells, and the Wnt pathway as a promising CAR T-cell therapy-enhancing approach for TP53-deficient AML/MDS.",
+      "funder": [],
+      "identifier": "S-BIAD926",
+      "keywords": [
+        "CAR T-cells",
+        "acute myeloid leukemia",
+        "TP53"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Targeting the mevalonate or Wnt pathways to overcome CAR T-cell resistance in TP53-mutant AML cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#60c6b088-dc7e-479e-bfaf-facb7732652e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#678d14ca-88fd-467a-b82a-72285a4ae497"
+        }
+      ],
+      "email": "jan.matthias.mueller@gmail.com",
+      "name": "Jan Müller"
+    },
+    {
+      "@id": "#678d14ca-88fd-467a-b82a-72285a4ae497",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Hospital of Zurich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#6f246861-593f-45ca-bba2-f49c34c74b73",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human healthy donor CAR T-cells and human AML cell lines MOLM13",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#6fac70fd-bbc8-482d-a406-9f41ee8f5f5f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Time-lapses were conducted on a Nikon-Ti Eclipse equipped with linear-encoded motorized stage, Orca Flash 4.0 V2 (Hamamatsu), a Spectra X fluorescent light source (Lumencor), a 10× CFI Plan Apochromat λ objective (NA 0.45) and an incubation chamber. Appropriate filter sets (all AHF) were chosen to detect fluorescence: GFP (470/40; 495LP; 525/50), CellVue® Claret Far Red (620/60; 660LP; 700/75) and propidium iodide (550/32; 585LP; 605/15). Bright field images were acquired using white light emitted by the Spectra X and a custom-made motorized mirror controlled by Arduino UNO Rev3 (Arduino). Typically, 16 positions per microgrid were acquired at 10min time intervals for up to 96h.",
+      "labEquipment": "Nikon-Ti Eclipse",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 76
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 114111411277
+    }
+  ]
+}

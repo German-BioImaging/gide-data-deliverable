@@ -1,0 +1,380 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1426"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1426",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d194a407-4171-479f-af5f-2c6dc128f2b7"
+        },
+        {
+          "@id": "#a3a2454d-f9d7-4395-a346-79a33e58b881"
+        },
+        {
+          "@id": "#68148636-7a31-41ef-bcd7-9c72c7b55477"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e0291e34-b5e2-40e3-bffc-ba52c5a5a069"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7558-7916"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4926-1175"
+        },
+        {
+          "@id": "#a8766749-0f92-4eb2-a3df-8b8d6ed71a5f"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1226-2636"
+        },
+        {
+          "@id": "#c84e49de-f281-4f86-9395-f000925cccbc"
+        },
+        {
+          "@id": "#e173078c-e457-483f-9702-286de0997380"
+        },
+        {
+          "@id": "#39d63e2d-1434-45c3-993c-3ee04a7091a1"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7107-7887"
+        },
+        {
+          "@id": "https://orcid.org/0009-0005-7340-7412"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4740-2037"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4232-9432"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2185-7068"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-28",
+      "description": "Combining molecular profiling with imaging techniques has advanced the field of spatial biology, offering new insights into complex biological processes. Focusing on diffuse IDH-mutated low-grade glioma, this study presents a workflow for Spatial Multi-omics Integration, SMINT, specifically combining spatial transcriptomics and spatial metabolomics. Our workflow incorporates both existing and custom-developed computational tools to enable cell segmentation and registration of spatial coordinates from both modalities to a common coordinate framework. During our investigation of cell segmentation strategies, we found that nuclei-only segmentation, while containing only 40% of segmented cell transcripts, enables accurate cell type annotation, but does not account for multinucleated cells. Our integrative workflow including cell-morphology segmentation identified distinct cellular neighborhoods at the infiltrating edge of gliomas, which were enriched in multinucleated and oligodendrocyte-lineage tumor cells, that may drive tumor invasion into the normal cortical layers of the brain.",
+      "funder": [],
+      "identifier": "S-BIAD1426",
+      "keywords": [
+        "Spatial Transcriptomics ",
+        "Spatial Metabolomics",
+        "Cell Segmentation ",
+        "Confocal ",
+        "Multi-Omics",
+        "Alignment"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "An integrative spatial multi-omic workflow for unified analysis of tumor tissue",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1426/73361893-069c-4b40-8175-0ebc9c529152/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#39d63e2d-1434-45c3-993c-3ee04a7091a1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": "Ana Maluenda"
+    },
+    {
+      "@id": "#a8766749-0f92-4eb2-a3df-8b8d6ed71a5f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": "Tianyao Lu"
+    },
+    {
+      "@id": "#c84e49de-f281-4f86-9395-f000925cccbc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": "Vinod K. Narayana"
+    },
+    {
+      "@id": "#e173078c-e457-483f-9702-286de0997380",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": " Adam Valkovic"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7558-7916",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "email": "kriel.j@wehi.edu.au",
+      "name": "Jurgen Kriel"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1226-2636",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": "Oluwaseun E. Fatunla"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2185-7068",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": " Saskia Freytag"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4232-9432",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": "Sarah A. Best"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4740-2037",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": "James R. Whittle"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7107-7887",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": "Malcolm J. McConville"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4926-1175",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": "Joel J.D. Moffet"
+    },
+    {
+      "@id": "https://orcid.org/0009-0005-7340-7412",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01b6kha49"
+        }
+      ],
+      "name": "Ellen Tsui"
+    },
+    {
+      "@id": "https://ror.org/01b6kha49",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Walter and Eliza Hall Institute of Medical Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#e0291e34-b5e2-40e3-bffc-ba52c5a5a069",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Low Grade Glioma (WHO Grade 3)",
+      "name": "Human Low Grade Glioma (WHO Grade 3)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#68148636-7a31-41ef-bcd7-9c72c7b55477",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Stage calibration \nThe LSM 980 confocal stage was calibrated to recognize the Xenium slide as a conventional 76 x 26mm slide. This was achieved by setting support points on each corner of the Xenium sample area, and calibrating the stage. The Zen Blue experiment file was reused for subsequent rounds of imaging.\nSet regions of interest and support points\nA low resolution TPMT tilescan (256x256 pixels) of the entire sample area was taken at 10x magnification. Regions of interest were drawn accordingly for each section on the sample area. To ensure all tiles were captured at adequate focus, 10-20 support points were added to each section depending on their size. \nSetting imaging parameters\nUsing a 20x objective, the appropriate strength of 405, 488 and 647 laser lines was determined. Thereafter, the z-position of each support point was calibrated manually, opting for a z-slice in the middle of the section. Tile sizes were set to 3852 x 3852 with a LSM scan speed of 7 at bidirectional direction. Small z-stacks of 5-6 slices were selected to reduce imaging time. After determining the upper and lower z-limit, the center slice was determined, and the z-stack strategy set to center for tile scan acquisition.\nImage processing and export \nOrthogonal projections were first created using Zen Blue software (version 3.8). Thereafter, individual tiles were exported as tiffs, followed by stitching of the orthogonal projection in Zen Blue at 10% overlap. Resulting cell masks after segmentation were overlaid with the stitched output. \n",
+      "labEquipment": "Ziess LSM-980",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Acquisition "
+    },
+    {
+      "@id": "#a3a2454d-f9d7-4395-a346-79a33e58b881",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All SM experiments were performed using iMScopeTM QT instrument (Shimadzu, Japan). The instrument is equipped with a Laser-diode-excited Nd:YAG laser, and an atmospheric pressure MALDI. Data was acquired using a laser intensity at 60 for 10 µm spatial resolution, detector voltage was set at 2.36 kV, laser repetition frequency set at 1000 Hz, desolvation line temperature maintained at 250 °C and a laser irradiation count of 50 shots were accumulated per pixel.   ",
+      "labEquipment": "Shimadzu iMScopeTM QT\t",
+      "measurementTechnique": [],
+      "name": "Spatial Metabolomics"
+    },
+    {
+      "@id": "#d194a407-4171-479f-af5f-2c6dc128f2b7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "As per manufacturers instructions ",
+      "labEquipment": "10x Xenium ",
+      "measurementTechnique": [],
+      "name": "Xenium Spatial Transcriptomics"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1474
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 60726606281
+    }
+  ]
+}

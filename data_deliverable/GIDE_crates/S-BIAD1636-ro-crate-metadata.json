@@ -1,0 +1,357 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1636"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1636",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3b83c009-a9ee-4032-b9b2-ca48d9e86d0a"
+        },
+        {
+          "@id": "#d11f3724-ac8b-4a11-9ebc-b54e0637ff59"
+        },
+        {
+          "@id": "#67800805-27e9-456b-8eba-4583e3202613"
+        },
+        {
+          "@id": "#db4bfe9a-fda0-4616-8ed3-9c5f1b0b8124"
+        },
+        {
+          "@id": "obo:FBbi_00000367"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000368"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#baf208de-a567-48dd-84de-c3a1ecccbcde"
+        },
+        {
+          "@id": "#34d6322d-3101-4a9a-87f7-bf6018823de3"
+        },
+        {
+          "@id": "#2097d7b5-3d89-442f-8234-ba14dc4b2609"
+        },
+        {
+          "@id": "obo:NCBITaxon_4100"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4822-6706"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7543-5186"
+        },
+        {
+          "@id": "#6664b3ca-2d18-4f56-a5b2-d9c4b8c22a63"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-19",
+      "description": "In Arabidopsis thaliana the root stem cell niche (SCN) is maintained by a complex regulatory network crucial for growth and developmental plasticity. However, many aspects of this network, particularly concerning stem cell quiescence and replenishment, remain unclear. Here, we investigate the interactions of key transcription factors (TFs) BRASSINOSTEROID AT VASCULAR AND ORGANIZING CENTRE (BRAVO), PLETHORA 3 (PLT3) and WUSCHEL-RELATED HOMEOBOX 5 (WOX5) in SCN maintenance. Analysis of mutants reveals their combinatorial regulation of cell fates and divisions in the SCN. Additionally, studies using Fluorescence Resonance Energy Transfer Fluorescence Lifetime Imaging Microscopy (FRET-FLIM) in combination with novel analysis methods enable us to quantify protein-protein interaction (PPI) affinities and higher-order complex formation among these TFs. Our finding were integrated into a computational model, indicating that cell type specific protein complex profiles and formations, influenced by prion-like domains in PLT3, play an important role in regulating the SCN. We propose that these unique protein complex signatures may serve as indicators of cell specificity, enriching the regulatory network that governs stem cell maintenance and replenishment in the Arabidopsis root.",
+      "funder": [],
+      "identifier": "S-BIAD1636",
+      "keywords": [
+        "FRET-FLIM",
+        "Mathematical modelling",
+        "root stem cell niche",
+        "transcription factor complexes"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Root stem cell homeostasis in Arabidopsis involves cell-type-specific transcription factor complexes",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1636/26dc6221-13b8-4cf9-a0b2-d69379d389f8/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#6664b3ca-2d18-4f56-a5b2-d9c4b8c22a63",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b1ddde39-2c82-4504-82ed-73e17a64e944"
+        }
+      ],
+      "email": "m.l.garciagomez@uu.nl",
+      "name": "Monica L. García-Gómez"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7543-5186",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "y.stahl@bio.uni-frankfurt.de",
+      "name": "Yvonne Stahl"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4822-6706",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "vivien.strotmann@hhu.de",
+      "name": "Vivien I. Strotmann"
+    },
+    {
+      "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Goethe University Frankfurt"
+    },
+    {
+      "@id": "#b1ddde39-2c82-4504-82ed-73e17a64e944",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Utrecht University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "obo:NCBITaxon_4100",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Nicotiana benthamiana"
+    },
+    {
+      "@id": "#2097d7b5-3d89-442f-8234-ba14dc4b2609",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Nuclei of leaf epidermal pavement cells",
+      "name": "FRET-FLIM",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4100"
+      }
+    },
+    {
+      "@id": "#34d6322d-3101-4a9a-87f7-bf6018823de3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Root meristem of fixed 6-day-old seedlings",
+      "name": "SCN",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#baf208de-a567-48dd-84de-c3a1ecccbcde",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Root meristem of 6-day-old seedlings",
+      "name": "Fluorescence intensity",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#3b83c009-a9ee-4032-b9b2-ca48d9e86d0a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "512x512 pixels, 2.05 µs pixel dwell time, digital zoom 4, 8x Averaging; Channel 1: PMT detector, 561 nm excitation with varying laser power and detector gain, detection 583-673 nm; Channel 2: GaAsP-detector, 514 nm excitation, detection 519-553 nm",
+      "labEquipment": "Inverted LSM880 confocal microscope equipped with 40x C-Apochromat/1.2 Korr FCS M27 water immersion objective (ZEISS)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorscence intensity"
+    },
+    {
+      "@id": "#67800805-27e9-456b-8eba-4583e3202613",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "z-stack with varying slices but fixed 0.22 µm sections, 512x250 pixels, around 1 µs pixel dwell time, line sequential scannnig mode, 2x Averaging, digital zoom 4; Channel 1: excitation at 488 nm with varying laser power and detector gain, detection at 493-558 nm, detector offset -20; Channel 2: GaAsP detector, excitation at 561 nm with varying laser power and detector gain, detection at 591-702 nm, detector offset -50",
+      "labEquipment": "Inverted LSM880 confocal microscope equipped with 40x C-Apochromat/1.2 Korr FCS M27 water immersion objective or inverted LSM780 confocal microscope with 40x C-Apochromat/1.2 Corr W27 water immersion objective (ZEISS)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "SCN_QC"
+    },
+    {
+      "@id": "#d11f3724-ac8b-4a11-9ebc-b54e0637ff59",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1024x1024 pixels,0.34 µs pixel dwell time, digital zoom 2, 8x Averaging; Channel 3: PMT detector, 561 nm excitation with varying laser power and detector gain, detection 583-673 nm; Channel 2: GaAsP-detector, 514 nm excitation, detection 519-553 nm",
+      "labEquipment": "Inverted LSM880 confocal microscope equipped with 40x C-Apochromat/1.2 Korr FCS M27 water immersion objective or inverted LSM780 confocal microscope with 40x C-Apochromat/1.2 Corr W27 water immersion objective (ZEISS)\t",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "SCN_CSC"
+    },
+    {
+      "@id": "#db4bfe9a-fda0-4616-8ed3-9c5f1b0b8124",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40 frames (10 frames for red channel) at 256x256 pixels, 12.6 µs pixel dwell time and digital zoom 8 ",
+      "labEquipment": "Inverted LSM780 confocal microscope with 40x C-Apochromat/1.2 Corr W27 water immersion objective (ZEISS) equipped with HydraHarp400, Tau-SPAD single photon counting detectors and a pulsed laser diode at 485 nm (PicoQuant)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000368"
+        },
+        {
+          "@id": "obo:FBbi_00000367"
+        }
+      ],
+      "name": "FRET-FLIM"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000367",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRET"
+    },
+    {
+      "@id": "obo:FBbi_00000368",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FLIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4182
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 121749623418
+    }
+  ]
+}

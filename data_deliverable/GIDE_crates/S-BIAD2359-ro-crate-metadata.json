@@ -1,0 +1,270 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2359"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2359",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f7fb178d-18c4-44e0-9081-c7a4bbd68fca"
+        },
+        {
+          "@id": "#7242e42b-0ce0-4643-b480-6b97bb921cc2"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9c0ba554-5bd3-4633-8c75-464423f57ca4"
+        },
+        {
+          "@id": "obo:NCBITaxon_9541"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7241-1798"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-27",
+      "description": "Despite being heavily infiltrated by immune cells, tuberculosis (TB) granulomas often subvert the host response to Mycobacterium tuberculosis (Mtb) infection and support bacterial persistence. We previously discovered that human TB granulomas are enriched for immunosuppressive factors typically associated with tumor-immune evasion, raising the intriguing possibility that they promote tolerance to infection. In this study, our goal was to identify candidate drivers for establishing this tolerogenic niche and to determine if the magnitude of this response correlates with bacterial persistence. To do this, we conducted a multimodal spatial analysis of 52 granulomas from 16 non-human primates (NHP) infected with low dose Mtb for 9-12 weeks. Notably, each granuloma’s bacterial burden was individually quantified, allowing us to directly ask how granuloma spatial structure and function relate to infection control. With this imaging resource, we found that a universal feature of TB granulomas was partitioning of the myeloid core into two distinct metabolic environments, one of which is hypoxic. This hypoxic environment associated with pathologic immune cell states, dysfunctional cellular organization of the granuloma, and a near-complete blockade of lymphocyte infiltration that would be required for a successful host response. The extent of these hypoxia-associated features correlated with worsened bacterial burden. We conclude that hypoxia correlates with immune cell state and organization within granulomas and is possibly a potent driver of subverted immunity during TB.",
+      "funder": [],
+      "identifier": "S-BIAD2359",
+      "keywords": [
+        "Tuberculosis",
+        "Multiplexed imaging",
+        "Granulomas",
+        "Spatial"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "The immunometabolic topography of cellular organization and bacterial control in tuberculosis granulomas",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2359/b1b58a4e-15a8-4026-805a-76749a1f762c/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7241-1798",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        },
+        {
+          "@id": "#0352fa9d-bf56-47f9-8c9a-97bb83d9d515"
+        },
+        {
+          "@id": "#d078ef47-50b0-4ad3-aea9-d3d6f057ad8b"
+        },
+        {
+          "@id": "#cc40378b-fc96-44a1-8500-fbd6db90869f"
+        },
+        {
+          "@id": "#49022659-8a0d-465f-820e-5a2191d3fc13"
+        },
+        {
+          "@id": "https://ror.org/03vek6s52"
+        },
+        {
+          "@id": "https://ror.org/042nb2s44"
+        },
+        {
+          "@id": "https://ror.org/053r20n13"
+        }
+      ],
+      "email": "erin.mccaffrey@nih.gov",
+      "name": "Erin McCaffrey"
+    },
+    {
+      "@id": "#0352fa9d-bf56-47f9-8c9a-97bb83d9d515",
+      "@type": [
+        "Organization"
+      ],
+      "name": "NIH"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#49022659-8a0d-465f-820e-5a2191d3fc13",
+      "@type": [
+        "Organization"
+      ],
+      "name": "AdventHealth University"
+    },
+    {
+      "@id": "#cc40378b-fc96-44a1-8500-fbd6db90869f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Michigan"
+    },
+    {
+      "@id": "#d078ef47-50b0-4ad3-aea9-d3d6f057ad8b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Pittsburgh"
+    },
+    {
+      "@id": "https://ror.org/03vek6s52",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Harvard University"
+    },
+    {
+      "@id": "https://ror.org/042nb2s44",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Massachusetts Institute of Technology"
+    },
+    {
+      "@id": "https://ror.org/053r20n13",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ragon Institute of MGH, MIT and Harvard"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9541",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Macaca fascicularis"
+    },
+    {
+      "@id": "#9c0ba554-5bd3-4633-8c75-464423f57ca4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lung tuberculosis granulomas. TB",
+      "name": "Pulmnonary Tuberculosis Granulomas",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9541"
+      }
+    },
+    {
+      "@id": "#7242e42b-0ce0-4643-b480-6b97bb921cc2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40X magnification",
+      "labEquipment": "Hamamatsu Nanozoomer",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Histology"
+    },
+    {
+      "@id": "#f7fb178d-18c4-44e0-9081-c7a4bbd68fca",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All MIBI-TOF data was generated on a commercial MIBIScope instrument (IonPath, Menlo Park, USA). To image each ROI, we broke them down into 400 um x 400 um fields-of-view (FOVs). Each FOV was (1024 pixels)^2 and were imaged using the “Coarse” settings on the MIBIScope instrument. Between all runs we conducted an imaging test on the molybdenum and PMMA standards per the manufacturer’s recommendations and settings. When the detector sensitivity dropped below the recommended levels, we adjusted the detector gain to minimize FOV-to-FOV sensitivity differences. One slide and one ROI was imaged at a time. However, to minimize image artifacts from instrument drift, we randomized the acquisition of each FOV within an ROI. All default image processing (background correction and denoising) were disabled. ",
+      "labEquipment": "Ionpath",
+      "measurementTechnique": [],
+      "name": "MIBI-TOF Data"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 104
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 58758993378
+    }
+  ]
+}

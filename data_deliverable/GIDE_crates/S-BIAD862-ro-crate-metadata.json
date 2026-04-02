@@ -1,0 +1,203 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD862"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD862",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c13ba411-0b8f-4e0a-a6ec-11c74b49db2a"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#510e5126-c766-44fe-aa53-934f35b35e7b"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8294-2995"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3956-3279"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-25",
+      "description": "Image datasets relative to Fig EV2 A-D, EV3 A-C, 2 A-E, Appendix Fig. S1D",
+      "funder": [],
+      "identifier": "S-BIAD862",
+      "keywords": [
+        "ICAM-1",
+        "VE-Cad",
+        "CM-H2DCFDA",
+        "HAEC"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Integrated Systems Biology Approach Identifies Gene Targets for Endothelial Dysfunction",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD862/b1aa0bc7-b689-4842-892a-3452ba8fdfeb/fcd169f3-627a-429e-8b8c-19e3f3c1a0b7.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3956-3279",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8"
+        }
+      ],
+      "email": "iguaracy@ebi.ac.uk",
+      "name": "Iguaracy Pinheiro-de-Sousa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8294-2995",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8"
+        }
+      ],
+      "email": "petsalaki@ebi.ac.uk",
+      "name": "Evangelia Petsalaki"
+    },
+    {
+      "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Bioinformatics Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#510e5126-c766-44fe-aa53-934f35b35e7b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Aortic Endothelial Cells ",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c13ba411-0b8f-4e0a-a6ec-11c74b49db2a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were obtained at 10x magnification, with 9-12 images per well.",
+      "labEquipment": "ThermoFisher EVOS™ M7000 Imaging System",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 12
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 179490369179
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10554"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10554",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2b215425-73d2-4362-bb6b-e6e709a8073f"
+        },
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2de9c2f1-4838-49cc-b6f0-f65f1a1ad073"
+        },
+        {
+          "@id": "obo:NCBITaxon_692036"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0864-0259"
+        },
+        {
+          "@id": "#54b89c87-5500-452e-8de9-62109fbc3da0"
+        },
+        {
+          "@id": "#38f69ffa-6cc3-4b71-b213-82d1dfbb087c"
+        },
+        {
+          "@id": "#53a0a764-f411-4efd-b468-48e418d98115"
+        },
+        {
+          "@id": "#f2164a0d-b419-448d-944e-de0c581bc5f2"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2021-04-30",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-10554",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "FIB-SEM of Tuwongella immobilis - a species of the Planctomycetes phylum",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10554/67726fa7-e1e3-44cb-a0fc-a61fa1a76b16/4b54816f-13da-48ad-8989-f9e0f6b14fe1.png"
+      ]
+    },
+    {
+      "@id": "#38f69ffa-6cc3-4b71-b213-82d1dfbb087c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Dyrhage K"
+    },
+    {
+      "@id": "#53a0a764-f411-4efd-b468-48e418d98115",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Mahajan M"
+    },
+    {
+      "@id": "#54b89c87-5500-452e-8de9-62109fbc3da0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Odelgard A"
+    },
+    {
+      "@id": "#f2164a0d-b419-448d-944e-de0c581bc5f2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Seeger C"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0864-0259",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Andersson SGE"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_692036",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Tuwongella immobilis"
+    },
+    {
+      "@id": "#2de9c2f1-4838-49cc-b6f0-f65f1a1ad073",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tuwongella immobilis bacterial cells cultured on M1 agar plates",
+      "name": "Tuwongella immobilis culture",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_692036"
+      }
+    },
+    {
+      "@id": "#2b215425-73d2-4362-bb6b-e6e709a8073f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FIB-SEM analysis was performed to examine membrane networks and cell structures. Samples were coated with 5 nm Pt before FIB-milling. Reconstruction was performed using 3dmod as part of IMOD 4.9 on cells that displayed healthy morphology (full membrane integrity, high contrast in periplasm and cytoplasm).",
+      "labEquipment": "FIB-SEM system",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "name": "FIB-SEM Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00050000",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 12
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7229477262
+    }
+  ]
+}

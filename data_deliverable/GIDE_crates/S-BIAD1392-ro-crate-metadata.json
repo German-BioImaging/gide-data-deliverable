@@ -1,0 +1,272 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1392"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1392",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e799855b-5132-4c1e-9f8c-3c4f63679e7d"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c8947078-f6b2-4086-b31f-2b762fc1c09e"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5196-1122"
+        },
+        {
+          "@id": "#b897d2ea-55f4-45df-9431-c4b9e06109da"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6688-0539"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2794-4266"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1334-6388"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0456-6912"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-01",
+      "description": "This submission includes 3D images of fixed Arabidopsis thaliana ovules at all developmental stages acquired by confocal laser scanning microscopy. It also contains the corresponding segmentation masks for cell boundaries.",
+      "funder": [],
+      "identifier": "S-BIAD1392",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "PlantSeg core datasets: Ovules of Arabidopsis thaliana",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1392/c1d4ee83-55b6-41ea-90b9-ba2b5253121c/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1392/712f8669-7681-4dfc-8d9e-cdc68c4f8045/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#b897d2ea-55f4-45df-9431-c4b9e06109da",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ce53ce69-14ea-4edd-a5c2-f2b75c0a9369"
+        }
+      ],
+      "name": "Athul Vijayan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6688-0539",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ce53ce69-14ea-4edd-a5c2-f2b75c0a9369"
+        }
+      ],
+      "name": "Kay Schneitz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0456-6912",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8"
+        }
+      ],
+      "name": "Teresa Zulueta-Coarasa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5196-1122",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ce53ce69-14ea-4edd-a5c2-f2b75c0a9369"
+        }
+      ],
+      "name": "Rachele Tofanelli"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1334-6388",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#75817f88-c2dd-4bf3-888a-6cfe06abd1f9"
+        }
+      ],
+      "name": "Anna Kreshuk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2794-4266",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#75817f88-c2dd-4bf3-888a-6cfe06abd1f9"
+        }
+      ],
+      "name": "Adrian Wolny"
+    },
+    {
+      "@id": "#75817f88-c2dd-4bf3-888a-6cfe06abd1f9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "EMBL, Heidelberg, Germany"
+    },
+    {
+      "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Bioinformatics Institute"
+    },
+    {
+      "@id": "#ce53ce69-14ea-4edd-a5c2-f2b75c0a9369",
+      "@type": [
+        "Organization"
+      ],
+      "name": "School of Life Sciences Weihenstephan, Technical University of Munich, Freising, Germany"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "mouse-ear cress"
+    },
+    {
+      "@id": "#c8947078-f6b2-4086-b31f-2b762fc1c09e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "ovules",
+      "name": "Arabidopsis thaliana ovules",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#e799855b-5132-4c1e-9f8c-3c4f63679e7d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images acquired by confocal laser scanning microscopy with a voxel size of 0.075 × 0.075 × 0.235 μm. Confocal laser scanning microscopy of ovules stained with SR2200 and TO-PRO-3 iodide was performed on an upright Leica TCS SP8 X WLL2 HyVolution 2 (Leica Microsystems) equipped with GaAsP (HyD) detectors and a 63× glycerol objective (HC PL APO CS2 63×/1.30 GLYC, CORR CS2). Scan speed was at 400 Hz, line average between 2 and 4, and the digital zoom between 1 and 2. Laser power or gain was adjusted for z compensation to obtain an optimal z-stack. In case of the absence of GaAsP (HyD) detectors laser power and gain have to be adjusted according to the instrument at hand (Additional file 4). SR2200 fluorescence was excited with a 405 nm diode laser (50 mW) with a laser power ranging from 0.1 to 1.5% intensity and detected at 420 to 500 nm with the gain of the HyD detector set to 20. To-PRO-3 iodide fluorescence excitation was done at 642 nm with the white-light laser with a laser power ranging from 2 to 3.5% and detected at 655 to 720 nm with the gain of the HyD detector set to 200. Direct Red 23 fluorescence was excited using laser line 561 nm (white-light laser) with the laser power set to 5 to 8% and detected at 580 to 680 nm with the HyD gain set to 100. Calcofluor White fluorescence was excited using the 405 nm diode laser (50 mW) with the laser power set to 1 to 3% and detected at 420 to 490 nm with the HyD gain set to 100. For z-stacks 12-bit images were captured at a slice interval of 0.24 μm with optimized system resolution of 0.063 μm × 0.063 μm × 0.240 μm as final pixel size according to the Nyquist criterion. Scan speed was set to 400 Hz, the pinhole was set to 0.6 Airy units, line average was between 2 and 4, and the digital zoom was set between 1 and 2, as required. Laser power or gain was adjusted for z compensation to obtain an optimal z-stack.",
+      "labEquipment": "Leica TCS SP8 X WLL2 HyVolution 2 (Leica Microsystems)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal laser scanning microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 62
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4480733180
+    }
+  ]
+}

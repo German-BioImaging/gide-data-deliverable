@@ -1,0 +1,525 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2453"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2453",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#15d3541b-1e82-4521-bb7e-f084d41ffc6a"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ea5a4151-ecea-407c-9b01-5a49c4ae9e5b"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0003-3476-6258"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9999-4292"
+        },
+        {
+          "@id": "#ae03051e-21a5-4e20-a455-ac56cca12085"
+        },
+        {
+          "@id": "#6078a59a-75fd-45cd-a67f-16663a844609"
+        },
+        {
+          "@id": "#99eff95f-8b7f-495e-8ff0-dc4a4f1b2d43"
+        },
+        {
+          "@id": "#5d1d31c2-3b87-4802-a991-d85db32bac73"
+        },
+        {
+          "@id": "#a519162c-57b6-491a-b86c-7cb8869f3ca3"
+        },
+        {
+          "@id": "#c0cbd392-87cf-4310-bf01-7e4aa7213055"
+        },
+        {
+          "@id": "#502715e7-94ea-4d36-a26d-4cd950d45716"
+        },
+        {
+          "@id": "#92019c39-b34e-4824-bb47-bbe54e406d41"
+        },
+        {
+          "@id": "#1e923d06-f936-4869-9924-677335fd890b"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5978-292X"
+        },
+        {
+          "@id": "#91f8b409-3b1a-4882-89c2-c6d3999377eb"
+        },
+        {
+          "@id": "#daac2de7-1d9d-46f5-8afa-1d0ea631ac61"
+        },
+        {
+          "@id": "#1faf7c4c-5257-4d7f-9f13-9bb3ca43197e"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9041-9988"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1200/jco.20.01800"
+        }
+      ],
+      "datePublished": "2025-11-27",
+      "description": "This dataset corresponds to 443 clear-cell and 37 papillary renal cell carcinoma (RCC) cohort of patients from the UK translational arm of the SORCE trial, a phase III randomized study evaluating adjuvant sorafenib versus placebo in renal cancer (ClinicalTrials.gov identifier: NCT00492258). This multi-center cohort encompasses intermediate- and high-risk RCC cases randomized to receive sorafenib adjuvant therapy (1 or 3 years) or placebo. The image collection  comprises tumour samples from 480 patients enrolled in the trial’s UK tissue biobank as part of TRANSORCE. For each patient, a formalin-fixed, paraffin-embedded (FFPE) primary tumor section was used to generate a whole-slide haematoxylin and eosin (H&E) image, and lo-multiplex immunofluorescence (mIF) imaging was performed for 382 cases.\nThe mIF panel included p21^CDKN1a, MCM2, and CD105 (endoglin), together with Hoechst nuclear counterstaining. All H&E whole-slide images (WSIs) were acquired using a Zeiss Axio Scan.Z1 scanner at 40× magnification, and mIF images were acquired on the same platform at 20× magnification. Both image types are provided in CZI format. Automated image analysis was performed on all mIF slides using HALO® software. The principal derived metric for each tumour is the percentage of p21⁺/MCM2⁻ and CD105⁺/p21⁺/MCM2⁻ cells, representing the cell-cycle arrest fraction in tumor and endothelial cells. In total, the dataset includes 480 H&E WSIs and 382 multi-channel mIF WSIs. Also, the dataset includes two CSV files containing quantitative metrics (phenotypic proportions and average nuclear/cell parameters), along with a clinical metadata file providing de-identified patient information. The clinical dataset accompanying this cohort includes the following variables: treatment arm ( A: placebo, B: one year sorafenib, C: three year sorafenib), age at randomization, time from diagnosis to randomization, date of randomization, date of operation, gender, WHO performance status, histology at diagnosis, pathological T stage, regional lymph node status, tumor size, ISUP nuclear grade, presence of tumor necrosis, raw Leibovich score, Leibovich risk group, maximum tumor diameter, disease-free survival status (DFS 0/1) and date, and overall survival status (OS 0/1) and date.  All data are released under a CC0 license, enabling unrestricted reuse by the research community.",
+      "funder": [],
+      "identifier": "S-BIAD2453",
+      "keywords": [
+        "H&E",
+        "multiplex immunofluorescence ",
+        "Renal cell carcinoma",
+        "Cell cycle",
+        "Biomarker",
+        "sorafenib",
+        "adjuvant therapy"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Histopathology and Lo-multiplex immunofluorescence dataset of cell‐cycle related proteins in renal cell carcinoma – SORCE trial",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2453/2a07fd62-87f3-415e-8da4-c095b4b20c98/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#1e923d06-f936-4869-9924-677335fd890b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/034vb5t35"
+        }
+      ],
+      "email": "lisa.pickering@stgeorges.nhs.uk",
+      "name": "Lisa M Pickering"
+    },
+    {
+      "@id": "#1faf7c4c-5257-4d7f-9f13-9bb3ca43197e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02jx3x895"
+        }
+      ],
+      "email": "a.meade@ucl.ac.uk",
+      "name": "Angela Meade"
+    },
+    {
+      "@id": "#502715e7-94ea-4d36-a26d-4cd950d45716",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00cdwy346"
+        }
+      ],
+      "email": "rhona.mcmenemin@nuth.nhs.uk",
+      "name": "Rhona McMenemin"
+    },
+    {
+      "@id": "#5d1d31c2-3b87-4802-a991-d85db32bac73",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/049sr1d03"
+        }
+      ],
+      "email": "jim.barber@wales.nhs.uk",
+      "name": "Jim Barber"
+    },
+    {
+      "@id": "#6078a59a-75fd-45cd-a67f-16663a844609",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/034vb5t35"
+        }
+      ],
+      "email": "james.larkin@rmh.nhs.uk",
+      "name": "James Larkin"
+    },
+    {
+      "@id": "#91f8b409-3b1a-4882-89c2-c6d3999377eb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/013meh722"
+        }
+      ],
+      "email": "tgqe2@medschl.cam.ac.uk",
+      "name": "Tim Eisen"
+    },
+    {
+      "@id": "#92019c39-b34e-4824-bb47-bbe54e406d41",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01wwv4x50"
+        }
+      ],
+      "email": "p.nathan@nhs.net",
+      "name": "Paul Nathan"
+    },
+    {
+      "@id": "#99eff95f-8b7f-495e-8ff0-dc4a4f1b2d43",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8d87b796-ad04-4de8-96a4-569a06bb7f6b"
+        }
+      ],
+      "email": "axel.bex@nhs.net",
+      "name": "Axel Bex"
+    },
+    {
+      "@id": "#a519162c-57b6-491a-b86c-7cb8869f3ca3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05krs5044"
+        }
+      ],
+      "email": "j.e.brown@sheffield.ac.uk",
+      "name": "Janet Brown"
+    },
+    {
+      "@id": "#ae03051e-21a5-4e20-a455-ac56cca12085",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/013meh722"
+        }
+      ],
+      "email": "gds35@cam.ac.uk",
+      "name": "Grant D Stewart"
+    },
+    {
+      "@id": "#c0cbd392-87cf-4310-bf01-7e4aa7213055",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024mrxd33"
+        }
+      ],
+      "email": "n.vasudev@leeds.ac.uk",
+      "name": "Naveen S Vasudev"
+    },
+    {
+      "@id": "#daac2de7-1d9d-46f5-8afa-1d0ea631ac61",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01ffhnr70"
+        }
+      ],
+      "email": "anne.warren@nhs.net",
+      "name": "Anne Warren"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9041-9988",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "djh20@st-andrews.ac.uk",
+      "name": "David Harrison"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9999-4292",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5978-292X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02jx3x895"
+        }
+      ],
+      "email": "e.frangou@ucl.ac.uk",
+      "name": "Elena Frangou"
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-3476-6258",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "ha82@st-andrews.ac.uk",
+      "name": "Hazem Abdullah"
+    },
+    {
+      "@id": "#8d87b796-ad04-4de8-96a4-569a06bb7f6b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Royal Free London NHS Foundation Trust UCL"
+    },
+    {
+      "@id": "https://ror.org/00cdwy346",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Freeman Hospital"
+    },
+    {
+      "@id": "https://ror.org/013meh722",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://ror.org/01ffhnr70",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Cambridge University Health Partners"
+    },
+    {
+      "@id": "https://ror.org/01wwv4x50",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Mount Vernon Cancer Centre"
+    },
+    {
+      "@id": "https://ror.org/024mrxd33",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Leeds"
+    },
+    {
+      "@id": "https://ror.org/02jx3x895",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University College London"
+    },
+    {
+      "@id": "https://ror.org/02wn5qz54",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://ror.org/034vb5t35",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Royal Marsden Hospital"
+    },
+    {
+      "@id": "https://ror.org/049sr1d03",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Velindre Cancer Centre"
+    },
+    {
+      "@id": "https://ror.org/05krs5044",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Sheffield"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1200/jco.20.01800",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2020",
+      "name": "Adjuvant Sorafenib for Renal Cell Carcinoma at Intermediate or High Risk of Relapse: Results From the SORCE Randomized Phase III Intergroup Trial."
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#ea5a4151-ecea-407c-9b01-5a49c4ae9e5b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Kidney tumour tissue (clear-cell and papillary renal cell carcinoma)",
+      "name": "Renal Cell Carcinoma tissue (SORCE trial)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#15d3541b-1e82-4521-bb7e-f084d41ffc6a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40× objective for bright-field imaging for H&E slides and 20x fluorescence imaging for IF slides with four channels (p21 Cy3, MCM2 FITC, CD105 Cy5, Hoechst). Focus was automatically optimized per slide; images saved as multi-channel .czi files. ",
+      "labEquipment": "Zeiss Axio Scan.Z1 slide scanner (bright-field and fluorescence)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Whole-Slide Image Digitization"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 864
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4412196834284
+    }
+  ]
+}

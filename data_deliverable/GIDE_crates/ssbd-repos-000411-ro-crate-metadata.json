@@ -1,0 +1,150 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000411/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000411/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000411",
+      "name": "3D-time-lapse images of vacuolar sorting of BOR1",
+      "description": "Plants maintain nutrient homeostasis by controlling the activities and abundance of nutrient transporters. In Arabidopsis thaliana, the borate (B) transporter BOR1 plays a role in the efficient translocation of B under low-B conditions. BOR1 undergoes polyubiquitination in the presence of sufficient B and is then transported to the vacuole via multivesicular bodies (MVBs) to prevent B accumulation in tissues at a toxic level. A previous study indicated that BOR1 physically interacts with µ subunits of adaptor protein complexes AP-3 and AP-4, both involved in vacuolar sorting pathways. In this study, we investigated the roles of AP-3 and AP-4 subunits in BOR1 trafficking in Arabidopsis. The lack of AP-3 subunits did not affect either vacuolar sorting or polar localization of BOR1-GFP, whereas the absence of AP-4 subunits resulted in a delay in high-B-induced vacuolar sorting without affecting polar localization. Super-resolution microscopy revealed a rapid sorting of BOR1-GFP into AP-4-positive spots in the trans-Golgi network (TGN) upon high-B supply. These results indicate that AP-4 is involved in sequestration of ubiquitinated BOR1 into a TGN-specific subdomain 'vacuolar-trafficking zone', and is required for efficient sorting of MVB and vacuole. Our findings have thus helped elucidate the rapid vacuolar sorting process facilitated by AP-4 in plant nutrient transporters.",
+      "datePublished": "2025-07-04",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1093/pcp/pcae096"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Junpei Takano",
+      "email": "jtakano@omu.ac.jp",
+      "description": "Organization: Osaka Prefecture University; Department: Graduate School of Life and Environmental Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04s6fbg51"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04s6fbg51",
+      "@type": "Organization",
+      "name": "Osaka Prefecture University"
+    },
+    {
+      "@id": "https://doi.org/10.1093/pcp/pcae096",
+      "@type": "ScholarlyArticle",
+      "name": "Rapid Vacuolar Sorting of the Borate Transporter BOR1 Requires the Adaptor Protein Complex AP-4 in Arabidopsis.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Col-0",
+      "description": "Col-0",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "thale cress"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 436408320,
+      "description": "436.4 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 78,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

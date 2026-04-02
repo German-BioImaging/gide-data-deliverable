@@ -1,0 +1,361 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1967"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1967",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0e4ed684-c10c-40ca-9087-032ad2d2ae98"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000368"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2236aff4-c28e-4277-bfc3-6d50cb95b77f"
+        },
+        {
+          "@id": "#996bc096-bc6f-4017-abfa-95a0a76029d4"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8367-5163"
+        },
+        {
+          "@id": "#66ca6738-99e8-4dc6-82e4-e9514bb86154"
+        },
+        {
+          "@id": "#872f1d6c-1614-4776-85d4-0542a2ee723f"
+        },
+        {
+          "@id": "#fd25f7ff-291b-4aff-a9a5-693b6fdc19b0"
+        },
+        {
+          "@id": "#22694ee0-76fc-4622-bb78-2c12389a6574"
+        },
+        {
+          "@id": "#142affdf-a0e9-4697-98e6-582cf19a4e19"
+        },
+        {
+          "@id": "#fd426877-94c9-4749-9791-dc6d7e257d85"
+        },
+        {
+          "@id": "#5b491e14-d4cc-4100-8454-40e2bd5ee230"
+        },
+        {
+          "@id": "#be128d9a-e42d-4f4f-89ca-b6670319b705"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-18",
+      "description": "Fluorescence lifetime imaging microscopy (FLIM) translates the duration of excited states of fluorophores into lifetime information as additional source of contrast in images of biological samples. This offers the possibility to separate fluorophores particularly beneficial in case of similar excitation spectra. Here, we demonstrate the distinction of fluorescent molecules based on FLIM phasor analysis, called lifetime separation, in live-cell imaging using open-source software for analysis. We showcase two applications using Caenorhabditis elegans as a model system. First, we separated the highly spectrally overlapping fluorophores mCherry and mKate2 to distinctively track tagged proteins in six-dimensional datasets to investigate cell division in the developing early embryo. Second, we separated fluorescence of tagged proteins of interest from masking natural autofluorescence in adult hermaphrodites. For FLIM data handling and workflow implementation, we developed the open-source plugin napari-FLIM-phasor-plotter to implement conversion, visualization, analysis and reuse of FLIM data of different formats. Our work thus advances technical applications and bioimage data management and analysis in FLIM microscopy for life science research.",
+      "funder": [],
+      "identifier": "S-BIAD1967",
+      "keywords": [
+        "FLIM",
+        "live-cell imaging",
+        "phasor",
+        "napari"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Fluorescence lifetime separation of fluorophores in C. elegans embryos and hermaphrodites",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1967/395edb59-eb94-44bb-9299-8e2b701f3f15/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#142affdf-a0e9-4697-98e6-582cf19a4e19",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e6708d02-5d60-4644-87ba-a65749077a54"
+        }
+      ],
+      "name": "Hella Hartmann"
+    },
+    {
+      "@id": "#22694ee0-76fc-4622-bb78-2c12389a6574",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e6708d02-5d60-4644-87ba-a65749077a54"
+        }
+      ],
+      "name": "Anja Nobst"
+    },
+    {
+      "@id": "#5b491e14-d4cc-4100-8454-40e2bd5ee230",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#166f5026-e901-4f95-afeb-1758bbdf7128"
+        }
+      ],
+      "name": "Robert Haase"
+    },
+    {
+      "@id": "#66ca6738-99e8-4dc6-82e4-e9514bb86154",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e6708d02-5d60-4644-87ba-a65749077a54"
+        }
+      ],
+      "name": "Marcelo Leomil Zoccoler"
+    },
+    {
+      "@id": "#872f1d6c-1614-4776-85d4-0542a2ee723f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#766d268c-3365-412d-9408-926465f8c066"
+        }
+      ],
+      "name": "Svetlana Iarovenko"
+    },
+    {
+      "@id": "#be128d9a-e42d-4f4f-89ca-b6670319b705",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e6708d02-5d60-4644-87ba-a65749077a54"
+        }
+      ],
+      "name": "Gunar Fabig"
+    },
+    {
+      "@id": "#fd25f7ff-291b-4aff-a9a5-693b6fdc19b0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e6708d02-5d60-4644-87ba-a65749077a54"
+        }
+      ],
+      "name": " Chukwuebuka William Okafornta"
+    },
+    {
+      "@id": "#fd426877-94c9-4749-9791-dc6d7e257d85",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e6708d02-5d60-4644-87ba-a65749077a54"
+        }
+      ],
+      "name": "Thomas Müller-Reichert"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8367-5163",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e6708d02-5d60-4644-87ba-a65749077a54"
+        }
+      ],
+      "email": "cornelia.wetzker@tu-dresden.de",
+      "name": "Cornelia Wetzker"
+    },
+    {
+      "@id": "#166f5026-e901-4f95-afeb-1758bbdf7128",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leipzig University"
+    },
+    {
+      "@id": "#766d268c-3365-412d-9408-926465f8c066",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Molecular Biotechnology of the Austrian Academy of Sciences, Vienna"
+    },
+    {
+      "@id": "#e6708d02-5d60-4644-87ba-a65749077a54",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Technische Universität Dresden"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#2236aff4-c28e-4277-bfc3-6d50cb95b77f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole embryos (Brenda Tissue and Enzyme Source Ontology BTO_0000379) or gut (BTO_0000545) and reproductive system (BTO_0000081) of hermaphrodites",
+      "name": "C. elegans",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#996bc096-bc6f-4017-abfa-95a0a76029d4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole embryos (Brenda Tissue and Enzyme Source Ontology BTO_0000379) or gut (BTO_0000545) and reproductive system (BTO_0000081) of hermaphrodites",
+      "name": "C. elegans",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#0e4ed684-c10c-40ca-9087-032ad2d2ae98",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "GFP and natural (gut) autofluorescence in the green spectrum were excited at 480 nm (approximately 16 µW in none-objective control) and emission detected in the range of 500 to 560 nm. mCherry and mKate2, both red fluorophores, were excited either alone or simultaneously at 590 nm (approximately 84 µW in none-objective control) and emission was detected in the range of 610 to 800 nm. The pinhole was set to one Airy unit at 600 nm reference. Both spectral ranges were imaged simultaneously. Emitted light was detected with hybrid HyD X detectors (Leica Microsystems, Germany).\nThe field of view and zoom factor of 4 were chosen to image whole embryos as z stacks of FLIM images of 256 x 256 pixels. The image stacks were recorded with 600 Hz speed of bi-directional scans and optical zoom of 4. This yielded a pixel dwell time of 2.4 µs, a frame time of 0.66 s and voxel sizes of 0.27 µm in x and y and 0.5 µm in the z dimension. To collect sufficient photons for FLIM imaging, three frames were summed per image yielding a total scan time of approximately 40 s or shorter per image stack. Acquisition was performed continuously from two-cell stage prior to the first division until condensed chromatin in the second division appeared (differing from 18 to 30 min between embryos).\nFor whole worms, we recorded several time points but analyzed only a single. Two channels z stacks of FLIM images were acquired with the same setup as embryos. Differences in central settings included optical zoom of 1, image sizes of 512 x 128 pixels resulting in voxel sizes of 0.54 µm x 0.54 µm x 0.5 µm in x, y, z. Pixel dwell times were 1.2 µs and frame times of 0.58 s with two added frames leading to 99.2 s (AZ212) and 116.5 s (JJ1473) per stack per time point. \nThe 6D FLIM image datasets were then saved in LIF format in a containerized data structure. We then exported 6D embryo datasets and 5D single time point adult datasets as individual 4D files in PTU format (dimensions being x, y, channels and photon counts in the FLIM dimension which we refer to as microtime) for each z plane and time point as sole export mode for downstream data processing and sharing.",
+      "labEquipment": "Upright STELLARIS 8, Leica Microsystems, Germany with a pulsed supercontinuum laser (NKT Photonics, Germany) for single photon excitation at 40 MHz frequency, water immersion objective (40x/1.1, HC PL APO CS2, Leica Microsystems, Germany). Acquisition software Leica Application Suite X (LAS X) (version 4.5.0.25531) including the FLIM/FCS license (version 4.5.0).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000368"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Fluorescence lifetime imaging microscopy (http://purl.obolibrary.org/obo/FBbi_00000605)"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000368",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FLIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 292
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 53359550664
+    }
+  ]
+}

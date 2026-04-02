@@ -1,0 +1,299 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1419"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1419",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#91ecccff-5afc-4de2-8e3b-0bfe5e30ad8a"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#046a45df-4be0-4720-9453-24b8d25e5cbe"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9061-7383"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3862-9237"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8883-3338"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9491-2868"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5252-4015"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4159-6934"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9570-4152"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-15",
+      "description": "Associated with Rappe et al. (2024) Longitudinal autophagy profiling of the mammalian brain reveals sustained mitophagy throughout healthy aging. EMBO Journal\nhttps://www.embopress.org/doi/full/10.1038/s44318-024-00241-y\n\nRaw data image files and source data spreadsheets. ",
+      "funder": [],
+      "identifier": "S-BIAD1419",
+      "keywords": [
+        "Aging ",
+        "Autophagy",
+        "Brain",
+        "Mitochondria",
+        "Mitophagy",
+        "Neuroscience"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Longitudinal autophagy profiling of the mammalian brain reveals sustained mitophagy throughout healthy aging",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1419/bb06c80c-7ed0-41fa-b3fe-afa0f671501a/987132c9-cb3c-42b1-81cd-73ec8e07353a.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5252-4015",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139"
+        }
+      ],
+      "email": "homa.ehsan@helsinki.fi",
+      "name": "Homa Ehsan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8883-3338",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139"
+        }
+      ],
+      "email": "fumi.suomi@helsinki.fi",
+      "name": "Fumi Suomi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9491-2868",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#46d72dfe-27e5-42ec-af0d-75419052ae01"
+        }
+      ],
+      "email": "antti.hassinen@helsinki.fi",
+      "name": "Antti Hassinen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4159-6934",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f4997998-e6ad-4936-8a98-109ada29d20f"
+        }
+      ],
+      "email": "eija.jokitalo@helsinki.fi",
+      "name": "Eija Jokitalo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9061-7383",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139"
+        }
+      ],
+      "email": "anna.rappe@helsinki.fi",
+      "name": "Anna Rappe"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9570-4152",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139"
+        }
+      ],
+      "email": "thomas.mcwilliams@helsinki.fi",
+      "name": "Thomas McWilliams"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3862-9237",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f4997998-e6ad-4936-8a98-109ada29d20f"
+        }
+      ],
+      "email": "helena.vihinen@helsinki.fi",
+      "name": "Helena Vihinen"
+    },
+    {
+      "@id": "#46d72dfe-27e5-42ec-af0d-75419052ae01",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute for Molecular Medicine Finland"
+    },
+    {
+      "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Helsinki"
+    },
+    {
+      "@id": "#f4997998-e6ad-4936-8a98-109ada29d20f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "HiLIFE – Elämäntieteiden Instituutti"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#046a45df-4be0-4720-9453-24b8d25e5cbe",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse brain tissue sections (in vivo analysis, main article) and cultured cells (mouse embryonic fibroblasts, mouse adult lung fibroblasts, Human ARPE-19; in vitro analysis, EV1).",
+      "name": "Reporter models mito-QC and auto-QC",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#91ecccff-5afc-4de2-8e3b-0bfe5e30ad8a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Tissue confocal microscopy\nConfocal photomicrographs (tile scans, z-stacks, and conventional images) were obtained by uniform random sampling using an ANDOR Dragonfly 505 High-Speed Spinning Disk Confocal Microscope with SRRF Stream SuperResolution, equipped with a Zyla sCMOS camera (Oxford Instruments, UK), and Plan Apochromat VC X60 objective (NA 1.2, water) with PerfectFocus System. Low-resolution tile scans were imaged using a 10× objective (NA 0.3, air) or 40× objective (NA 1.15, water). Representative images for lysosomal validation staining were imaged using a 100× objective (NA 1.49, oil). High-resolution representative images were deconvolved using the associated IMARIS Fusion software. For representative images, photomicrographs were digitally altered within linear parameters, with minimal adjustments to levels and linear contrast applied to all images.\n\nTransmission electron microscopy and quantitation\nA Hitachi transmission electron microscope (HT7800, Hitachi High-Technologies, Tokyo, Japan) operated at 100 kV and equipped with a bottom-mounted Rio9 CMOS camera (Gatan Inc., Pleasanton, CA) was used for image acquisition.",
+      "labEquipment": "ANDOR Dragonfly 505 High-Speed Spinning Disk Confocal Microscope with SRRF Stream SuperResolution, equipped with a Zyla sCMOS camera (Oxford Instruments, UK), and Plan Apochromat VC X60 objective (NA 1.2, water) with PerfectFocus System.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal imaging and electron microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 77
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 532493879210
+    }
+  ]
+}

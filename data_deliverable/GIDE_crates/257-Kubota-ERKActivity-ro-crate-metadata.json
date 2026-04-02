@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/257-Kubota-ERKActivity/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/257-Kubota-ERKActivity/",
+      "@type": "Dataset",
+      "identifier": "257-Kubota-ERKActivity",
+      "name": "Time-lapse confocal images of ERK1-EGFP for MEK1-WT or MEK1-mutations after EGF stimulation.",
+      "description": "257-Kubota-ERKActivity",
+      "datePublished": "2023-03-22",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Humans",
+        "MAP Kinase Kinase 1/genetics",
+        "MAP Kinase Signaling System/genetics",
+        "Mitogen-Activated Protein Kinase Kinases/metabolism",
+        "Neoplasms/metabolism[major]",
+        "Protein Kinase Inhibitors/pharmacology",
+        "Protein Kinase Inhibitors/therapeutic use",
+        "Proto-Oncogene Proteins c-akt/genetics[major]",
+        "Proto-Oncogene Proteins c-akt/metabolism[major]",
+        "Signal Transduction/genetics"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-022-31690-w"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0004707"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0000165"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-903"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Mutsuhiro Takekawa",
+      "email": "takekawa@ims.u-tokyo.ac.jp",
+      "description": "Organization: The University of Tokyo; Department: Institute of Medical Science; Laboratory: Division of Cell Signaling and Molecular Medicine",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-022-31690-w",
+      "@type": "ScholarlyArticle",
+      "name": "Qualitative differences in disease-associated MEK mutants reveal molecular signatures and aberrant signaling-crosstalk in cancer.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ HEK293",
+      "description": "Homo sapiens ~ HEK293",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
+      "@type": "DefinedTerm",
+      "name": "HEK293"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004707",
+      "@type": "DefinedTerm",
+      "name": "MAP kinase activity"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000165",
+      "@type": "DefinedTerm",
+      "name": "MAPK cascade"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 148429843,
+      "description": "148.4 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 63,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

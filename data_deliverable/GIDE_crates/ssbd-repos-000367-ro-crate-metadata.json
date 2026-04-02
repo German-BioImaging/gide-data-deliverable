@@ -1,0 +1,258 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000367/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000367/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000367",
+      "name": "The folding dynamics of Drosophila wing during pupal development",
+      "description": "Biological systems are inherently noisy; however, they produce highly stereotyped tissue morphology. Drosophila pupal wings show a highly stereotypic folding through uniform expansion and subsequent buckling of wing epithelium within a surrounding cuticle sac. The folding pattern produced by buckling is generally stochastic; it is thus unclear how buckling leads to stereotypic tissue folding of the wings. The authors found that the extracellular matrix (ECM) protein, Dumpy, guides the position and direction of buckling-induced folds. Dumpy anchors the wing epithelium to the overlying cuticle at specific tissue positions. Tissue-wide alterations of Dumpy deposition and degradation yielded different buckling patterns. In summary, they propose that spatiotemporal ECM remodeling shapes stereotyped tissue folding through dynamic interactions between the epithelium and its external structures.",
+      "datePublished": "2025-11-28",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Extracellular Matrix[major]",
+        "Epithelium",
+        "Extracellular Matrix Proteins[major]",
+        "Drosophila",
+        "Stereotyped Behavior"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1126/sciadv.adh2154"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007389"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0035209"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0031012"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000255"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Alice Tsuboi",
+      "email": "tsuboi.arisu.5s@kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Graduate School of Biostudies",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1126/sciadv.adh2154",
+      "@type": "ScholarlyArticle",
+      "name": "Spatiotemporal remodeling of extracellular matrix orients epithelial sheet folding.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "sd-Gal4/+; UAS-dpyRNAi/E-Cadher- in::GFP; UAS-mCD8::mCherry/UAS-Dcr2, sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/ UAS-NpRNAi, sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+, Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci- Gal4/+, Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci-Gal4/ UAS-3xFLAG.dCas9.VPR, y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/ci-Gal4, ap-GAL4/UAS-dpyRNAi; UAS-Dcr2/UAS-DsRed, sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-NpRNAi/+, Dpy::YFP, Ubi-GAP43::tdTomato/+; rho^{ve-1}, vn^{1}/+, sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/Dpy::YFP, sd-Gal4/+; Dp::YFP, UAS-mCD8::mCherry/+, ap-GAL4/+; UAS-Dcr2/UAS-DsRed, y, w, hs-flp;  E-Cadherin::GFP; Act > CD2 > GAL4; UAS-mCD8::mCherry, y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/hh-Gal4, sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-SbRNAi/+, Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh-Gal4/ UAS-3xFLAG.dCas9.VPR, Dpy::YFP, Ubi-GAP43:: tdTomato/+; rho^{ve-1}, vn^{1}/rho^{ve-1}, vn^{1}, sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+; UAS- SbRNAi/+, sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP, Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh- Gal4/+",
+      "description": "sd-Gal4/+; UAS-dpyRNAi/E-Cadher- in::GFP; UAS-mCD8::mCherry/UAS-Dcr2, sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/ UAS-NpRNAi, sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+, Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci- Gal4/+, Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci-Gal4/ UAS-3xFLAG.dCas9.VPR, y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/ci-Gal4, ap-GAL4/UAS-dpyRNAi; UAS-Dcr2/UAS-DsRed, sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-NpRNAi/+, Dpy::YFP, Ubi-GAP43::tdTomato/+; rho^{ve-1}, vn^{1}/+, sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/Dpy::YFP, sd-Gal4/+; Dp::YFP, UAS-mCD8::mCherry/+, ap-GAL4/+; UAS-Dcr2/UAS-DsRed, y, w, hs-flp;  E-Cadherin::GFP; Act > CD2 > GAL4; UAS-mCD8::mCherry, y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/hh-Gal4, sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-SbRNAi/+, Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh-Gal4/ UAS-3xFLAG.dCas9.VPR, Dpy::YFP, Ubi-GAP43:: tdTomato/+; rho^{ve-1}, vn^{1}/rho^{ve-1}, vn^{1}, sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+; UAS- SbRNAi/+, sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP, Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh- Gal4/+",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007389",
+      "@type": "DefinedTerm",
+      "name": "pattern specification process"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0035209",
+      "@type": "DefinedTerm",
+      "name": "pupal development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0031012",
+      "@type": "DefinedTerm",
+      "name": "extracellular matrix"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "multi-photon microscopy",
+      "description": "multi-photon microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000255"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000255",
+      "@type": "DefinedTerm",
+      "name": "multi-photon microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 379047432192,
+      "description": "379.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 16747,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

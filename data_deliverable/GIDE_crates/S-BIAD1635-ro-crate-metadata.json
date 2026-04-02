@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1635"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1635",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#168ff6fb-c07c-426f-8adf-d3a7c4156539"
+        },
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e8436e1b-00d6-49fd-a413-1a92c7104094"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#645a3303-8649-4940-b20a-acc9a6c44bbc"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-13",
+      "description": "Rheumatoid arthritis (RA) is associated with heart and lung dysfunction. Current therapies\nfail to attenuate such complications. Here, we identify formyl-peptide receptor type 2 (FPR2)\nas therapeutic target to treat heart and lung dysfunction associated with inflammatory arthritis.\nArthritic mice on high levels of dietary homocysteine develop cardiac diastolic dysfunction\nand reduced lung compliance, mirroring two comorbidities in RA. Therapeutic administration\nof a small molecule FPR2 agonist (BMS986235) to hyper-homocysteine arthritic mice\nprevented diastolic dysfunction (monitored by echocardiography) and restored lung\ncompliance. These tissue-specific effects were secondary to reduced neutrophil infiltration,\nmodulation of fibroblast activation and phenotype (in the heart) and attenuation of monocyte\nand macrophage numbers (in the lung). A dual FPR1/2 agonist (compound 43) failed to\nprevent the reduction in lung compliance of arthritic mice and promoted accumulation of\ninflammatory monocytes and pro-fibrotic macrophages in lung parenchyma. This cellular\nresponse lies downstream of FPR1-mediated potentiation of CCL2-dependent monocyte\nchemotaxis and activation. This finding supports therapeutic development of selective FPR2\nagonists to mitigate two impactful comorbidities associated with inflammatory arthritides.",
+      "funder": [],
+      "identifier": "S-BIAD1635",
+      "keywords": [
+        "Histology",
+        "Echocardiography"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Formyl-peptide receptor type 2 activation mitigates secondary organ damage in inflammatory arthritis EMM-2024-20382\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1635/22fc4718-6289-4f4e-8580-59d4631959bc/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#645a3303-8649-4940-b20a-acc9a6c44bbc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a8dfb2c7-4f41-4b14-aa04-a4e18382fcd1"
+        }
+      ],
+      "email": "m.perretti@qmul.ac.uk",
+      "name": "Mauro Perretti "
+    },
+    {
+      "@id": "#a8dfb2c7-4f41-4b14-aa04-a4e18382fcd1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Queen Mary University of London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#e8436e1b-00d6-49fd-a413-1a92c7104094",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse heart and lungs",
+      "name": "Figure 7 Heart histology Naive, vehicle and BMS treatments",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#168ff6fb-c07c-426f-8adf-d3a7c4156539",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging of mouse hearts and lungs\nSample preparation. Mice were terminally anaesthetised with xylazine (7.5mg/kg) and ketamine (150mg/kg), blood was collected from the inferior vena cava into heparin coated syringes and plasma was stored at -80°C. The descending aorta and brachial artery were clamped, and lungs were perfusion-fixed with 5ml of PBS followed by 5ml of 2% PFA in PBS at 2.5ml/min using a syringe pump (Harvard apparatus). The upper trachea was exposed and a 22G plastic catheter was inserted and ligated into position for lung inflation-fixation for ~10 min with 1:1 ratio of 4% PFA and optimal cutting temperature medium (OCT). Hearts and lungs were ligated, excised and immersed in 4% PFA for 2 h and then transferred into 10%, 15%, and 30% sucrose for 2 h, overnight and 4 h, respectively at 4°C. Hearts were then cut coronally so that adjacent tissue sections from the same heart sample were used for second harmonic generation (SHG) imaging and immunofluorescence. Tissues were embedded and frozen in OCT on pre-cooled isopropanol and 30 µm frozen sections were cut using a Bright OFT5000 cryostat and stored at -80°C prior to subsequent analysis.  \n\nSecond Harmonic Generation (SHG) imaging and collagen quantification. SHG imaging was performed for label-free imaging of collagen on 30 µm frozen sections of heart and lung tissue. Images were acquired with a SP8 DIVE multiphoton (MP) laser scanning microscope (Leica) with 25x water immersion motCORR objective (Leica). SHG signals were collected at 450 nm after excitation at 900 nm with an Insight Duals-067 MP laser (Spectra-Physics). XY axes acquisition was performed with 0.75 zoom factor, a speed of 600Hz bidirectional scan at 1024x1024 pixel resolution, and under 4 times line average, while Z axes was set at 1.5 µm Z-step size. Five random images per lung section and six random images per heart section (two at interventricular septum, two at left ventricular apex and two at left ventricular wall) were acquired. \nQuantification of collagen contents was performed on SHG images after conversion to maximum intensity projection (ImageJ), then segmented using the machine learning Ilastic software, and quantified via a macro on ImageJ. Representative images and videos were generated using Imaris (Oxford Instrument).\n\nImmunofluorescence imaging. Tissue sections (30-µm) were incubated in PBS with 2% BSA and 0.1% Triton X-100 for 30 min to block and permeabilize the tissue. Primary antibodies were diluted in block/perm buffer to the concentrations specified below and incubated at room temperature for 1 hour. Sections were washed three times in PBS, and secondary antibody was incubated for 1 hour at room temperature. After washing, sections were counterstained with DAPI and mounted with ProLong Gold Antifade Mountant. Sections were left to cure overnight before imaging and analysis.  Images were acquired using a Nikon CSU-W1 SoRa spinning disk confocal microscope with a 20x, 0.8 numerical aperture objective lens. Three random regions per lung section, and four regions for left ventricle sections, were selected for imaging. Images were captured as Z-stacks with a step size of 1 µm. For analysis, each Z-stack was transformed into a maximum intensity projection image (Image J), background was subtracted, and a Gaussian filter was applied. Channel thresholding was applied to accurately map cells within the image and MRP14+ neutrophils and Galectin-3+ macrophages were quantified per field of view (FOV). Due to the dense and overlapping cellular distribution of vimentin ve+ cardiac fibroblasts, the percentage area covered by the cells was calculated. All images from each animal were averaged to generate a single data point per animal.\n",
+      "labEquipment": "SP8 DIVE multiphoton (MP) laser scanning microscope (Leica) with 25x water immersion motCORR objective (Leica)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "name": "Figure 7C Naive"
+    },
+    {
+      "@id": "obo:FBbi_00000254",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 24
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8865827338
+    }
+  ]
+}

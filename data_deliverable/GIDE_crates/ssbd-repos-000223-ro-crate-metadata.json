@@ -1,0 +1,166 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000223/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000223/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000223",
+      "name": "Adult zebrafish's telencephalic neural activity and behavior data during the GO/NOGO tasks in the virtual reality environment.",
+      "description": "These data are used in the following paper: Torigoe, M et al., Zebrafish capable of generating the prediction error showed improved active avoidance behavior. Nature Communications (2021).To elucidate the mechanisms of decision making, authors established a closed-loop virtual reality system for adult zebrafish. In the virtual space, zebrafish performed GO(active avoidance)/NOGO(passive avoidacne) tasks and authors captured the neural activity of the telencephalon during the tasks by 2-photon calcium imaging. These data includes calcium imaging movies, positions, fluorescence intensity and delf/f0 of all ROIs corresponding to cells extracted from the movies and behavioral data.",
+      "datePublished": "2022-03-23",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Animals",
+        "Avoidance Learning/physiology[major]",
+        "Behavior, Animal/physiology[major]",
+        "Intravital Microscopy",
+        "Microscopy, Fluorescence, Multiphoton",
+        "Neocortex/cytology",
+        "Neocortex/physiology[major]",
+        "Neural Networks, Computer",
+        "Neurons/physiology",
+        "Photic Stimulation/methods",
+        "Reward[major]",
+        "Stereotaxic Techniques",
+        "Virtual Reality",
+        "Zebrafish/physiology[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-021-26010-7"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Makio Torigoe",
+      "email": "makio.torigoe@riken.jp",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Brain Science; Laboratory: Laboratory for Neural Circuit Dynamics of Decision Making",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-021-26010-7",
+      "@type": "ScholarlyArticle",
+      "name": "Zebrafish capable of generating future state prediction error show improved active avoidance behavior in virtual reality.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "TgBAC(camk2a:GAL4VP16); TgBAC(vglut2a:Gal4); Tg(UAS:G-CaMP7) zebrafih",
+      "description": "TgBAC(camk2a:GAL4VP16); TgBAC(vglut2a:Gal4); Tg(UAS:G-CaMP7) zebrafih",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955",
+      "@type": "Taxon",
+      "scientificName": "Danio rerio",
+      "vernacularName": "zebrafish"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 624599015424,
+      "description": "624.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 8890,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

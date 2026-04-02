@@ -1,0 +1,250 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1942"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1942",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#daf772d1-83b7-4cee-8445-491b2b887782"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c01af27d-95f8-441f-8b15-206e4e66deb0"
+        },
+        {
+          "@id": "obo:NCBITaxon_88036"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4501-5180"
+        },
+        {
+          "@id": "#6b1fdc3b-b2ae-4f17-a92b-b9216ba2161a"
+        },
+        {
+          "@id": "#61b77376-d377-4cdb-a424-2c8d24cde048"
+        },
+        {
+          "@id": "#3c3a1176-a23f-43b0-b0c1-bad19a104dcd"
+        },
+        {
+          "@id": "#11fc7c1a-e3ba-442c-b745-bed322e6290a"
+        },
+        {
+          "@id": "#e0e87e73-f99f-4015-ba0c-6fcf92120b06"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-20",
+      "description": "Roots of Selaginella moellendorfii were imaged for a number of selected transcripts over multiple z-sections",
+      "funder": [],
+      "identifier": "S-BIAD1942",
+      "keywords": [
+        "Selaginella moellendorfii",
+        "HCR RNA-FISH",
+        "root"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "HCR RNA-FISH of Selaginella moellendorfii roots",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#11fc7c1a-e3ba-442c-b745-bed322e6290a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fb175ad2-7ffa-47a6-aa79-63b7d5682461"
+        }
+      ],
+      "email": "hans.motte@psb.ugent.be",
+      "name": "Hans Motte"
+    },
+    {
+      "@id": "#3c3a1176-a23f-43b0-b0c1-bad19a104dcd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fb175ad2-7ffa-47a6-aa79-63b7d5682461"
+        }
+      ],
+      "email": "tom.beeckman@psb.ugent.be",
+      "name": "Tom Beeckman"
+    },
+    {
+      "@id": "#61b77376-d377-4cdb-a424-2c8d24cde048",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fb175ad2-7ffa-47a6-aa79-63b7d5682461"
+        }
+      ],
+      "email": "xilan.yang@psb.ugent.be",
+      "name": "Xilan Yang"
+    },
+    {
+      "@id": "#6b1fdc3b-b2ae-4f17-a92b-b9216ba2161a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fb175ad2-7ffa-47a6-aa79-63b7d5682461"
+        }
+      ],
+      "email": "steven.maere@psb.ugent.be",
+      "name": "Steven Maere"
+    },
+    {
+      "@id": "#e0e87e73-f99f-4015-ba0c-6fcf92120b06",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fb175ad2-7ffa-47a6-aa79-63b7d5682461"
+        }
+      ],
+      "email": "ward.poelmans@psb.ugent.be",
+      "name": "Ward Poelmans"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4501-5180",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fb175ad2-7ffa-47a6-aa79-63b7d5682461"
+        }
+      ],
+      "email": "stijn.hawinkel@psb.ugent.be",
+      "name": "Stijn Hawinkel"
+    },
+    {
+      "@id": "#fb175ad2-7ffa-47a6-aa79-63b7d5682461",
+      "@type": [
+        "Organization"
+      ],
+      "name": "VIB-UGent Center for Plant Systems Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_88036",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Selaginella moellendorffii"
+    },
+    {
+      "@id": "#c01af27d-95f8-441f-8b15-206e4e66deb0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Root tips",
+      "name": "HCR RNA-FISH of Selaginella moellendorfii roots",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_88036"
+      }
+    },
+    {
+      "@id": "#daf772d1-83b7-4cee-8445-491b2b887782",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "imaging green fluorophores by 561 nm excitation and 580-650 nm wavelength detection, red fluorophores by 633 nm excitation and 650-755 nm wavelength detection, and Calcofluor White by 405 nm excitation and 410-525 nm wavelength detection.",
+      "labEquipment": "Confocal imaging of roots was performed using a Zeiss LSM710 confocal microscope for the first experiment and a Leica Stellaris 5 confocal microscope for the second experiment,",
+      "measurementTechnique": [],
+      "name": "HCR RNA-FISH parameters"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8705
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 23779262589
+    }
+  ]
+}

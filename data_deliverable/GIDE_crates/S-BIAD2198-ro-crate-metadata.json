@@ -1,0 +1,236 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2198"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2198",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bbf6dfe6-7227-49c9-9b39-d06c1051fcfa"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#91205a8c-13df-406e-a807-001d45ae4ff6"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3451-7262"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7347-6945"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5059-2743"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4531-7197"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-02",
+      "description": "A growing body of evidence from primate embryos as well as in vitro systems supports the notion that amnion and primordial germ cell (PGC) lineage progressing cells share a common precursor. To gain comprehensive transcriptomic insights into this critical but poorly understood precursor and its progeny, we examined the evolving transcriptome of a developing human pluripotent stem cell-derived model of amnion and PGC formation at the single cell level. This analysis revealed several continuous amniotic fate progressing states with state-specific markers. Additionally, a progenitor-like cell, that displays bi-potential characteristics for amnion and PGC-like cell lineages and is marked by CLDN10, was identified. Strikingly, we found that expression of CLDN10 is restricted to the amnion-epiblast boundary region in our human post-implantation amniotic sac model as well as in peri-gastrula cynomolgus macaque embryos; moreover, this boundary region presents amnion/PGC progenitor-like transcriptional characteristics. Furthermore, our loss of function analysis showed that CLDN10 promotes amniotic but suppresses PGC-like fate. Overall, based on the single cell transcriptomic resource in this study, we identify a CLDN10+ amnion/PGC progenitor like population at the amnion-epiblast boundary of the primate peri-gastrula, and present additional molecular clues as to how amnion and PGC may be formed at the amnion-epiblast boundary in human peri-gastrula.",
+      "funder": [],
+      "identifier": "S-BIAD2198",
+      "keywords": [
+        "CLDN10",
+        "amnion",
+        "primordial germ cell",
+        "primate embryo",
+        "post-implantation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "CLDN10-driven lineage decision in an amnion and primordial germ cell progenitor at the amnion-epiblast boundary in primates",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2198/2d852080-4556-447c-b017-9541276b2de4/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5059-2743",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00qqv6244"
+        }
+      ],
+      "email": "arengarajan@mcw.edu",
+      "name": "Anusha Rengarajan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4531-7197",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00qqv6244"
+        }
+      ],
+      "email": "ktaniguchi@mcw.edu",
+      "name": "Kenichiro Taniguchi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7347-6945",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00qqv6244"
+        }
+      ],
+      "email": "acarleton@mcw.edu",
+      "name": "Amber E Carleton"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3451-7262",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00qqv6244"
+        }
+      ],
+      "email": "nsekulovski@mcw.edu",
+      "name": "Nikola Sekulovski"
+    },
+    {
+      "@id": "https://ror.org/00qqv6244",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Medical College of Wisconsin"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#91205a8c-13df-406e-a807-001d45ae4ff6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "H9 human embryonic stem cells",
+      "name": "H9 human embryonic stem cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bbf6dfe6-7227-49c9-9b39-d06c1051fcfa",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Gel-3D cysts were imaged on a Zeiss LSM980/Nikon A1 microscope (40x magnification setting, water immersion objective). 3D image stacks were acquired over the whole cyst volume in z.",
+      "labEquipment": "Zeiss LSM980, Nikon A1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 186
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 19956265158
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1492"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1492",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#244e1bee-01cc-4886-8d0a-25f9a2e27c34"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#aecff242-e5eb-4b92-9718-992abffe38af"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#19655e3a-a421-4f93-8674-8243a9675efb"
+        },
+        {
+          "@id": "#d5892bfd-c3a6-48f0-b7e3-3251747c904e"
+        },
+        {
+          "@id": "#22cc329a-590f-472d-892f-be56fe321080"
+        },
+        {
+          "@id": "#a7cef44d-5e7e-40c2-90ae-9bc23d6f0a93"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0456-6912"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-26",
+      "description": "One of the principal challenges in counting or segmenting nuclei is dealing with clustered nuclei. To help assess algorithms' performance in this regard, this synthetic image set consists of four subsets with increasing degree of clustering. Each subset is also provided in two different levels of quality: high SNR and low SNR.",
+      "funder": [],
+      "identifier": "S-BIAD1492",
+      "keywords": [],
+      "license": "https://creativecommons.org/licenses/by/3.0/",
+      "name": "Synthetic images and segmentation masks simulating HL-60 cell nucleus in 3D",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1492/a9f1d7cc-8316-46b7-a1a8-db4067f7e4b9/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#19655e3a-a421-4f93-8674-8243a9675efb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cd93678e-cf9c-4b2f-94c4-1e585c1c2cfd"
+        }
+      ],
+      "name": "David Svoboda"
+    },
+    {
+      "@id": "#22cc329a-590f-472d-892f-be56fe321080",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cd93678e-cf9c-4b2f-94c4-1e585c1c2cfd"
+        }
+      ],
+      "name": "Stanislav Stejskal"
+    },
+    {
+      "@id": "#a7cef44d-5e7e-40c2-90ae-9bc23d6f0a93",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fe82c74d-41a7-4ea3-bee9-e31b1c4d2550"
+        }
+      ],
+      "name": "Broad Institute's Imaging Platform"
+    },
+    {
+      "@id": "#d5892bfd-c3a6-48f0-b7e3-3251747c904e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cd93678e-cf9c-4b2f-94c4-1e585c1c2cfd"
+        }
+      ],
+      "name": "Michal Kozubek"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0456-6912",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8"
+        }
+      ],
+      "name": "Teresa Zulueta-Coarasa"
+    },
+    {
+      "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Bioinformatics Institute"
+    },
+    {
+      "@id": "#cd93678e-cf9c-4b2f-94c4-1e585c1c2cfd",
+      "@type": [
+        "Organization"
+      ],
+      "address": "Botanická 68a, Faculty of Informatics, Masaryk University, 602 00 Brno, Czech Republic",
+      "name": "Centre for Biomedical Image Analysis"
+    },
+    {
+      "@id": "#fe82c74d-41a7-4ea3-bee9-e31b1c4d2550",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Broad Institute of Massachusetts Institute of Technology and Harvard, Cambridge, Massachusetts, USA"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#aecff242-e5eb-4b92-9718-992abffe38af",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "simulated human promyelocytic leukemia cells (HL-60) stained with DAPI",
+      "name": "Simulated HL-60 cells",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#244e1bee-01cc-4886-8d0a-25f9a2e27c34",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "N/A",
+      "labEquipment": "Virtual microscope imitating the microscope Zeiss S100 (objective Zeiss 63x/1.40 Oil DIC) attached to confocal unit Atto CARV and CCD camera Micromax 1300-YHS.",
+      "measurementTechnique": [],
+      "name": "Simulated fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 480
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 14245281282
+    }
+  ]
+}

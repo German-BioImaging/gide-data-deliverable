@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD967"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD967",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f2a5d2d4-6c54-4048-8455-4392791795b9"
+        },
+        {
+          "@id": "#1d7606c5-bdc8-44a8-99af-446f60b83852"
+        },
+        {
+          "@id": "obo:FBbi_00000366"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#be87365b-684b-4a8d-9135-2bbbd4a5ece4"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5f5db09b-f23f-4303-be6b-ed9f22a152f4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-01-22",
+      "description": "Raw and processed imaging data associated with this study of DNMT3B function.",
+      "funder": [],
+      "identifier": "S-BIAD967",
+      "keywords": [
+        "DNA methylation",
+        "Epigenetics",
+        "Heterochromatin",
+        "DNMT3B",
+        "Confocal",
+        "FRAP"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "DNMT3B PWWP mutations cause hypermethylation of heterochromatin.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD967/c73abdea-023b-4203-b4c7-8621a9025a9d/12f9c570-5287-4a65-aea9-0c7d81a7f60d.png"
+      ]
+    },
+    {
+      "@id": "#5f5db09b-f23f-4303-be6b-ed9f22a152f4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "d.sproul@ed.ac.uk",
+      "name": "Duncan Sproul"
+    },
+    {
+      "@id": "#de588502-f2ed-4e10-94dc-797256ad666b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#be87365b-684b-4a8d-9135-2bbbd4a5ece4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human cell line",
+      "name": "DNMT3B KO cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1d7606c5-bdc8-44a8-99af-446f60b83852",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FRAP experiments were carried out on a Leica Stellaris 8 using a 20mW 488nm Diode laser and a 63x 1.4NA oil immersion lens. Images were acquired every 2 s using the Resonant Scanner with line averaging of 2. Pixel size was set to nyquist (103 nm) sampling and 256 x 256 array was acquired. Bleaching parameters: in all image series 5 ‘pre-bleach’ images were acquired, a consistently sized area of 2 µm diameter was bleached.  Bleach settings were 488 nm laser set to 100% 15 repetitions. Post-bleach images were acquired every 2 s for 150 s. ",
+      "labEquipment": "Leica Stellaris 8 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000366"
+        }
+      ],
+      "name": "DNMT3B FRAP"
+    },
+    {
+      "@id": "#f2a5d2d4-6c54-4048-8455-4392791795b9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Using a 100x 1.49NA oil immersion lens",
+      "labEquipment": "SoRa (Nikon-Europe) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal imaging for DNMT3B localisation"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000366",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRAP"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 558
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 61421230715
+    }
+  ]
+}

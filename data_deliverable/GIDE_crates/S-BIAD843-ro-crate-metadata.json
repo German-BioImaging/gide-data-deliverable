@@ -1,0 +1,267 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD843"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD843",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#25914539-0f7d-4172-8124-4a409d7fd73d"
+        },
+        {
+          "@id": "#d234afcc-4e06-4a24-a4f4-3c507e69650b"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fc88ba58-26bc-469d-a619-2248f8b94b6f"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0565-4356"
+        },
+        {
+          "@id": "#a2443993-af88-48f0-a69f-eb9d9b1b80df"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5402-7637"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8722-4992"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-14",
+      "description": "Individual 3D cell shapes of Drosophila Wing Disc",
+      "funder": [],
+      "identifier": "S-BIAD843",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "3D cell shape of Drosophila Wing Disc",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD843/62c55886-5924-4e42-88b4-74b06df983c1/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD843/35530278-2038-45dc-ba34-30651f01b46a/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#a2443993-af88-48f0-a69f-eb9d9b1b80df",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb9d2092-2795-4274-957a-67bca8db2355"
+        }
+      ],
+      "name": "Ines Fernandez Mosquera"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5402-7637",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb9d2092-2795-4274-957a-67bca8db2355"
+        }
+      ],
+      "email": "p.munuera@ucl.ac.uk",
+      "name": "Pablo Vicente Munuera"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8722-4992",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6d3c9f9d-d868-48d1-b3f3-11527ff94060"
+        }
+      ],
+      "email": "y.mao@ucl.ac.uk",
+      "name": "Yanlan Mao"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0565-4356",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb9d2092-2795-4274-957a-67bca8db2355"
+        }
+      ],
+      "email": "g.paci@ucl.ac.uk",
+      "name": "Giulia Paci"
+    },
+    {
+      "@id": "#6d3c9f9d-d868-48d1-b3f3-11527ff94060",
+      "@type": [
+        "Organization"
+      ],
+      "address": "London, UK",
+      "name": "MRC Laboratory for Molecular Cell Biology, University College London"
+    },
+    {
+      "@id": "#cb9d2092-2795-4274-957a-67bca8db2355",
+      "@type": [
+        "Organization"
+      ],
+      "address": "London, UK",
+      "name": "LMCB, University College London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fruit fly"
+    },
+    {
+      "@id": "#fc88ba58-26bc-469d-a619-2248f8b94b6f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila wing disk, http://purl.obolibrary.org/obo/UBERON_6001778",
+      "name": "Wing disk",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#25914539-0f7d-4172-8124-4a409d7fd73d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Voxel size 0.0430x0.0430x0.5002 micron^3",
+      "labEquipment": "Leica Microsystems Stellaris 8 DIVE (Deep In-Vivo Explorer)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal imaging"
+    },
+    {
+      "@id": "#d234afcc-4e06-4a24-a4f4-3c507e69650b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Voxel size 0.0430x0.0430x0.2985 micron^3",
+      "labEquipment": "Leica Microsystems Stellaris 8 DIVE (Deep In-Vivo Explorer)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "name": "Multi-photon imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000254",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 61196461
+    }
+  ]
+}

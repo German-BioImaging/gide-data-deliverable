@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1163"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1163",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0d9163bf-7e00-4e39-9f6c-1e88cc70fc6c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0531faaa-ad9d-49ea-9154-0bc5f8bfa95f"
+        },
+        {
+          "@id": "obo:NCBITaxon_9986"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0004-4720-0402"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-12",
+      "description": "Cerebral palsy (CP) is a prevalent neurological disorder that imposes a significant burden on children, families, and society worldwide. Recently, the RhoB p.S73F mutation was identified as a de novo mutation associated with CP. However, the mechanism by which the RhoB p.S73F mutation causes CP is currently unclear. In this study, rabbit models were generated to mimic the human RhoB p.S73F mutation using the SpG-BE4max system, and exhibited the typical symptoms of human CP, such as periventricular leukomalacia and spastic-dystonic diplegia. Further investigation revealed that the RhoB p.S73F mutation could activate ACAT1 through the LYN pathway, and the subsequently altered lipid levels may lead to neuronal and white matter damage resulting in the development of CP. This study presented the first mammalian model of genetic CP that accurately replicates RhoB p.S73F mutation in humans, provided further insights between RhoB and lipid metabolism, and novel therapeutic targets for human CP.",
+      "funder": [],
+      "identifier": "S-BIAD1163",
+      "keywords": [
+        "Cerebral Palsy; RhoB; Rabbit model; Neuromotor Impairment; Lipid metabolism"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The RhoB p.S73F mutation leads to cerebral palsy through dysregulation of lipid homeostasis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1163/08a8424d-381d-4b02-b9f4-dcf629c34283/b6b8065b-8cba-42c2-b0fb-c748785a53ee.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0009-0004-4720-0402",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bb1fad6e-3fb3-4318-993c-01bba99e81f4"
+        }
+      ],
+      "email": "wuxinyu20@mails.jlu.edu.cn",
+      "name": "Xinyu Wu"
+    },
+    {
+      "@id": "#bb1fad6e-3fb3-4318-993c-01bba99e81f4",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Jilin University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9986",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Oryctolagus cuniculus"
+    },
+    {
+      "@id": "#0531faaa-ad9d-49ea-9154-0bc5f8bfa95f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Rabbit brain tissue",
+      "name": "The RhoB p.S73F mutation leads to cerebral palsy through dysregulation of lipid homeostasis",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9986"
+      }
+    },
+    {
+      "@id": "#0d9163bf-7e00-4e39-9f6c-1e88cc70fc6c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Three randomly selected fields of view imaged at 200× magnification within the region of interest of each brain section on anatomically defined coronal sections were quantitatively analysed by ImageJ software (ImageJ 1.5, NIH, USA) by a blind observer. ",
+      "labEquipment": "Sections were imaged using an Olympus IX73 inverted microscope (Olympus, Tokyo, Japan) and Olympus cellSens software (cellSens Standard 1.9). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 164
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4260116431
+    }
+  ]
+}

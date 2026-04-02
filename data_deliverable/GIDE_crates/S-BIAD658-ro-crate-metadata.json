@@ -1,0 +1,315 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD658"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD658",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e6dc9bd6-eb15-4dab-b221-3290a3043b6f"
+        },
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d7dc6971-8c24-4cb8-873e-0bde6d227c37"
+        },
+        {
+          "@id": "obo:NCBITaxon_9031"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a31817ae-3f02-4b83-9f43-a4e4203e9781"
+        },
+        {
+          "@id": "#b0786bc6-b8e0-45fc-9b8a-d413a8b4e293"
+        },
+        {
+          "@id": "#8c5c728b-7c8b-4a20-9676-33689a9e5073"
+        },
+        {
+          "@id": "#62fa22f7-d12f-4a22-94d0-081a085183a8"
+        },
+        {
+          "@id": "#f57dc0dc-717d-4e66-bacc-2ec61ad85133"
+        },
+        {
+          "@id": "#ad8ffec3-2469-41e9-bf57-83d6241d5bd8"
+        },
+        {
+          "@id": "#a2f65029-81f1-456e-b518-29e86bc14d7a"
+        },
+        {
+          "@id": "#dbfe6e68-1127-4759-a153-8dd191b9a3bd"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-21",
+      "description": "Significance: CSF rhinorrhea (leakage of brain fluid from the nose) can be difficult to identify and currently requires invasive procedures such as intrathecal fluorescein which requires a lumbar drain placement. Fluorescein is also known to have rare but significant side effects including seizures and death. As the number of endonasal skull base cases increase, the number of CSF leaks have also increased for which an alternative diagnostic method would be highly advantageous to patients.\nAim:  To develop an instrument to identify CSF leaks based on water absorption in the SWIR without the need of intrathecal contrast agents. This device needed to be adapted to the anatomy of the human nasal cavity while maintaining low weight and ergonomic characteristics of current surgical instruments.\nApproach: Absorption spectra of CSF and artificial CSF were obtained to characterize the absorption peaks that could be targeted with SWIR light. Different illumination systems were tested and refined prior to adapting them into a portable endoscope for testing in 3D printed models and cadavers for feasibility. \nResults: We identified CSF to have an identical absorption profile as water. In our testing, a narrow band laser source at 1480nm proved superior to using a broad 1450 nm LED. Using a SWIR enabling endoscope set up, we tested the ability to detect artificial CSF in a cadaver model.\nConclusions: An endoscopic system based on SWIR narrow band imaging can provide an alternative in the future to invasive methods of CSF leak detection.",
+      "funder": [],
+      "identifier": "S-BIAD658",
+      "keywords": [
+        "skull base surgery",
+        "shortwave infrared",
+        "SWIR",
+        "sinuscopy",
+        "endoscopy",
+        "CSF leak"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Development of a shortwave infrared (SWIR) sinuscope for the detection of cerebrospinal fluid (CSF) leaks.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD658/b02a81a6-0c73-4d3c-9407-124e5be355af/99552b9d-657b-4d3f-ad81-930cf94ccc8a.png"
+      ]
+    },
+    {
+      "@id": "#62fa22f7-d12f-4a22-94d0-081a085183a8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "oliver.bruns@nct-dresden.de",
+      "name": "Oliver Bruns"
+    },
+    {
+      "@id": "#8c5c728b-7c8b-4a20-9676-33689a9e5073",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7157871b-8353-4459-802c-a7de724551bc"
+        }
+      ],
+      "email": "thomas.bischof@nct-dresden.de",
+      "name": "Thomas Bischof"
+    },
+    {
+      "@id": "#a2f65029-81f1-456e-b518-29e86bc14d7a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "stella29@stanford.edu",
+      "name": "Stella Yang"
+    },
+    {
+      "@id": "#a31817ae-3f02-4b83-9f43-a4e4203e9781",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7157871b-8353-4459-802c-a7de724551bc"
+        }
+      ],
+      "email": "tjadinawklein@hotmail.co.uk",
+      "name": "Tjadina Klein"
+    },
+    {
+      "@id": "#ad8ffec3-2469-41e9-bf57-83d6241d5bd8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "michael.t.chang@stanford.edu",
+      "name": "Michael Chang"
+    },
+    {
+      "@id": "#b0786bc6-b8e0-45fc-9b8a-d413a8b4e293",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "tvaldez1@stanford.edu",
+      "name": "Tulio Valdez"
+    },
+    {
+      "@id": "#dbfe6e68-1127-4759-a153-8dd191b9a3bd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "tustym@stanford.edu",
+      "name": "Mahbuba Afrin Tusty"
+    },
+    {
+      "@id": "#f57dc0dc-717d-4e66-bacc-2ec61ad85133",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "jnayak@stanford.edu",
+      "name": "Jayakar Nayak"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#7157871b-8353-4459-802c-a7de724551bc",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz-Zentrum Dresden-Rossendorf"
+    },
+    {
+      "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Technical University of Munich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9031",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Gallus gallus"
+    },
+    {
+      "@id": "#d7dc6971-8c24-4cb8-873e-0bde6d227c37",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Segment of chicken skin, food grade",
+      "name": "Chicken Skin",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9031"
+      }
+    },
+    {
+      "@id": "#e6dc9bd6-eb15-4dab-b221-3290a3043b6f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Gain setting: 1\nExposure times: between 5ms and 200ms\n",
+      "labEquipment": "Goldeye G-032 Cool TEC2 (Allied Vision) \nOwl 640 Mini VIS-SWIR (Raptor Photonics) (figure 3)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "name": "SWIR Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000240",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "macroscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 109
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1014167021
+    }
+  ]
+}

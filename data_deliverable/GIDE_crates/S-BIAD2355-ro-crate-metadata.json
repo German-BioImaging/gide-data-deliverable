@@ -1,0 +1,243 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2355"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2355",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0cfd9abf-5d04-4c4a-8184-3cecb9d710a0"
+        },
+        {
+          "@id": "#684e4a84-499e-4b1c-965b-de453168dac0"
+        },
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ef9d3205-7281-4981-9189-81a619399e8a"
+        },
+        {
+          "@id": "#a3b6042b-b808-4812-b39a-2bb9ba04d04f"
+        },
+        {
+          "@id": "#940126ff-0115-49f1-a399-1d21c03319bc"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0116-6892"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3366-4703"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-31",
+      "description": "Volumetric calcium imaging datasets obtained through scanned temporal focusing 2-photon microscopy at the snout region of the main motor cortex of awake passive mice. See methods section from https://doi.org/10.1101/2025.06.17.660119 for more details.",
+      "funder": [],
+      "identifier": "S-BIAD2355",
+      "keywords": [
+        "Calcium imaging",
+        "Motor cortex",
+        "in vivo 2-photon"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Imaging datasets supporting \"Column-Like Subnetwork Reconstruction in Motor Cortex from Graph-Based 3D High-Density Two-Photon Calcium Imaging\", P. Aymard, J-C. Boffi, H. Asari, R. Prevedel, D. Holcman.  https://doi.org/10.1101/2025.06.17.660119 ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2355/480e39ae-a86f-4df8-a2f0-d64a048b791a/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0116-6892",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01yr73893"
+        }
+      ],
+      "email": "juan.boffi@embl.de",
+      "name": "Juan Carlos Boffi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3366-4703",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01yr73893"
+        }
+      ],
+      "email": "prevedel@embl.de",
+      "name": "Robert Prevedel"
+    },
+    {
+      "@id": "https://ror.org/01yr73893",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#940126ff-0115-49f1-a399-1d21c03319bc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse dorsal cortex from inferior colliculus.",
+      "name": "Calcium imaging of inferior colliculus",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#a3b6042b-b808-4812-b39a-2bb9ba04d04f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse snout region of the main Motor Cortex.",
+      "name": "Calcium imaging of Motor cortex",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ef9d3205-7281-4981-9189-81a619399e8a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lateral half of the face.",
+      "name": "Snout movement videos",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#0cfd9abf-5d04-4c4a-8184-3cecb9d710a0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": " See methods from  https://doi.org/10.1101/2025.06.17.660119 ",
+      "labEquipment": "usb webcam",
+      "measurementTechnique": [],
+      "name": "Video recording of face movements"
+    },
+    {
+      "@id": "#684e4a84-499e-4b1c-965b-de453168dac0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": " See methods from  https://doi.org/10.1101/2025.06.17.660119 ",
+      "labEquipment": "Custom scanned temporal focusing 2-photon microscope (sTeFo 2P) from the Prevedel Lab at EMBL Heidelberg.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "name": "Volumetric Calcium imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000254",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2845
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 452729363053
+    }
+  ]
+}

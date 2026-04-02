@@ -1,0 +1,125 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000406/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000406/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000406",
+      "name": "Time lapse images of HT1080 cells expressing Fucci cell cycle reporter",
+      "description": "HT1080 human sarcoma cells were transduced with lentivirus expressing  a two-color fluorescent ubiquitination-based cell cycle indicator [Fucci(CA)] (Sakaue-Sawano, A. et al., Mol. Cell 68 (3): 626-640.e5 (2017). PMID 29107535). The cells were subjected to time-lapse imaging using KEYENCE BZ-X800 with a PlanFluor ×20 objective lens (NA = 0.45, WD = 8.80–7.50 mm, Ph1; KEYENCE).  In KEYENCE BZ-X810, Fucci mCherry and mVenus signals were detected using a TRITC filter (Ex, 545/25 nm; Em, 605/70 nm; KEYENCE) and mVenus filter (Ex, 500/20; Em, 535/30 nm; M SQUARE), respectively. 67.3 um x 67.3 um images were acquired every 15 min for 76.5 hours.",
+      "datePublished": "2025-03-26",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Toru Hiratsuka",
+      "email": "toru.hiratsuka@oici.jp",
+      "description": "Organization: Osaka International Cancer Institute",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05xvwhv53"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/05xvwhv53",
+      "@type": "Organization",
+      "name": "Osaka International Cancer Institute"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 2617442304,
+      "description": "2.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 10,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

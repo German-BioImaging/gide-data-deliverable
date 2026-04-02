@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1328"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1328",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ee3dfce9-2682-4565-ad0f-3a712514f790"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e9842fcb-e2be-4282-9801-4f2781282b77"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-7594-1601"
+        },
+        {
+          "@id": "#4ea0ca16-7d47-4697-aedd-1e21d1427680"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-22",
+      "description": "Corresponding scanned images from Figure 5D of the Smith et al. EMBO J submission \"Differentiation signals induce APOBEC3A expression via GRHL3 in squamous epithelia and squamous cell carcinoma\", August 2024.",
+      "funder": [],
+      "identifier": "S-BIAD1328",
+      "keywords": [
+        "APOBEC",
+        "squamous cell carcinoma",
+        "head and neck cancer",
+        "differentiation",
+        "cancer"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Differentiation signals induce APOBEC3A expression via GRHL3 in squamous epithelia and squamous cell carcinoma - Image Data",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1328/431eb192-c47b-45f0-a053-d6489757ae53/504647a0-0620-43b5-b6f2-555fd42f8ca1.png"
+      ]
+    },
+    {
+      "@id": "#4ea0ca16-7d47-4697-aedd-1e21d1427680",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01ryk1543"
+        }
+      ],
+      "email": "t.r.fenton@soton.ac.uk",
+      "name": "Tim Fenton"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7594-1601",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01ryk1543"
+        }
+      ],
+      "email": "b.p.sharpe@soton.ac.uk",
+      "name": "Benjamin Sharpe"
+    },
+    {
+      "@id": "https://ror.org/01ryk1543",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Southampton"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#e9842fcb-e2be-4282-9801-4f2781282b77",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human head and neck squamous cell carcinoma",
+      "name": "HN 485",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ee3dfce9-2682-4565-ad0f-3a712514f790",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x objective, whole slide",
+      "labEquipment": "Olympus VS110 Digital Slide Scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Olympus VS110"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 7
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1503611721
+    }
+  ]
+}

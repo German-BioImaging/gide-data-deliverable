@@ -1,0 +1,272 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/29-Ke-SeeDB2/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/29-Ke-SeeDB2/",
+      "@type": "Dataset",
+      "identifier": "29-Ke-SeeDB2",
+      "name": "29-Ke-SeeDB2",
+      "description": "29-Ke-SeeDB2",
+      "datePublished": "2017-10-03",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Brain/anatomy & histology",
+        "Brain/metabolism",
+        "Brain Mapping",
+        "Iohexol/chemistry",
+        "Mice",
+        "Microscopy, Fluorescence[major]",
+        "Neurons/physiology[major]",
+        "Receptors, N-Methyl-D-Aspartate/deficiency",
+        "Receptors, N-Methyl-D-Aspartate/genetics",
+        "Refractometry",
+        "Saponins/chemistry",
+        "Synapses/chemistry",
+        "Synapses/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8449-0080"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.celrep.2016.02.057"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        },
+        {
+          "@id": "#biosample-3"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-59"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8449-0080",
+      "@type": "Person",
+      "name": "Takeshi Imai",
+      "email": "imai@cdb.riken.jp",
+      "description": "Organization: Kyushu University; Department: Department of Developmental Neurophysiology, Graduate School of Medical Sciences; Laboratory: Laboratory for Sensory Circuit Formation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00p4k0j84"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Meng-Tsen Ke",
+      "email": "t-imai@med.kyushu-u.ac.jp"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Yasuhiro Nakai"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Satoshi Fujimoto"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Rie Takayama"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Shuhei Yoshida"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Tomoya S. Kitajima"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Makoto Sato"
+    },
+    {
+      "@id": "https://ror.org/00p4k0j84",
+      "@type": "Organization",
+      "name": "Kyushu University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.celrep.2016.02.057",
+      "@type": "ScholarlyArticle",
+      "name": "Super-Resolution Mapping of Neuronal Circuitry With an Index-Optimized Clearing Agent.",
+      "datePublished": "2016"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "HEK293T",
+      "description": "HEK293T",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Drosophila melanogaster",
+      "description": "Drosophila melanogaster",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fly"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 32407382204,
+      "description": "32.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 505,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

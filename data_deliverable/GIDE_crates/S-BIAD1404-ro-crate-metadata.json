@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1404"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1404",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#56750343-6304-443f-b91f-e238b809b6aa"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0043a0c8-0f4f-4066-8ccc-b02f765c52bc"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5735fc60-693c-4b7c-898c-e376c84803a6"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-03",
+      "description": "Location of Regions of Interest (ROIs) for all primary tumor and lymph node metastases in matched progressors (cases) and non-progressors (controls)",
+      "funder": [],
+      "identifier": "S-BIAD1404",
+      "keywords": [
+        "HPV-associated oropharyngeal cancer, Lymph node metastasis, Primary tumor, Progressor, Non-progressor,  Region of interest, H&E,"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Increased interaction between B cells and CD3+ T cells is observed in non-progressors with human papillomavirus-associated oropharyngeal squamous cell carcinoma",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1404/7a9abf03-6506-43bc-af1b-cd0d272a3df1/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#5735fc60-693c-4b7c-898c-e376c84803a6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5471a71f-a537-4489-a48d-1bf84083eef2"
+        }
+      ],
+      "email": "bartemes.kathleen@mayo.edu",
+      "name": "Kathleen Bartemes"
+    },
+    {
+      "@id": "#5471a71f-a537-4489-a48d-1bf84083eef2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Mayo Clinic"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0043a0c8-0f4f-4066-8ccc-b02f765c52bc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human papillomavirus-associated oropharyngeal squamous cell carcinoma primary tumors and lymph node metastases",
+      "name": "Increased interaction between B cells and CD3+ T cells is observed in non-progressors with human papillomavirus-associated oropharyngeal squamous cell carcinoma",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#56750343-6304-443f-b91f-e238b809b6aa",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Unknown",
+      "labEquipment": "Traditional microscopic acquisition ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "Primary and lymph node (LN) tumor tissue sections from 10 HPV(+)OPSCC cases and 10 matched controls were interrogated by IMC using a panel of antibodies to immune and tumor cell markers (Table S1). Tissue sectioning and staining were performed by the Mayo Clinic Pathology Research Core. H&E-stained adjacent sections were used to select two to seven regions of interest (ROIs) per tissue section (approximately 4 m2 total per tissue), focusing on areas of primarily tumor, tumor and immune infiltrate, or tumor and stroma. Data from the ROIs were acquired by the Mayo Clinic Immune Monitoring Core using the Hyperion Imaging System (Standard BioTools, San Francisco, CA, USA)."
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 40
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 534243526
+    }
+  ]
+}

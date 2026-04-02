@@ -1,0 +1,460 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1316"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1316",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a69d13ec-966e-4b23-813c-4ee7e6579c69"
+        },
+        {
+          "@id": "#151f9b52-60c8-43a7-bc52-17c51eef97ed"
+        },
+        {
+          "@id": "#efe1738c-2505-4c70-8473-abb93972a8e5"
+        },
+        {
+          "@id": "#c01544ef-1aae-48cd-be50-fc22c97edf0a"
+        },
+        {
+          "@id": "#d95e3613-cd66-4f75-8dff-17efafbc7402"
+        },
+        {
+          "@id": "#3cd886f5-ea29-48ab-9f54-e8b336ec684a"
+        },
+        {
+          "@id": "#a2cd4a5d-67c6-4332-9156-2fb1f2d95fb9"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c86cb23a-1064-4738-9355-54827f07dcb3"
+        },
+        {
+          "@id": "#9da0b7c8-8cc0-4e86-8366-40409a807aec"
+        },
+        {
+          "@id": "#242501f9-b2e7-4d71-a2d6-ac160e9ecc44"
+        },
+        {
+          "@id": "#10f80920-e84d-4f80-8187-4405d6ac492a"
+        },
+        {
+          "@id": "#6f968923-0f98-40c7-ae97-729801d8086b"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        },
+        {
+          "@id": "obo:NCBITaxon_32644"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#c420c0ea-507a-496c-8bef-8d71785f18f1"
+        },
+        {
+          "@id": "#ded9b7e9-14ea-4ca9-bce8-673045b1c1f6"
+        },
+        {
+          "@id": "#5c2802ca-2dde-47df-a188-9a9f092bff75"
+        },
+        {
+          "@id": "#09e6d007-3fa1-4d03-817d-5e527ff1ee8e"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-13",
+      "description": "Images (not externally cited), callsets, benchmarking measures, and analysis results used for testing fluorescence quantification software tools including Neuert Lab's TrueSpot tool.",
+      "funder": [],
+      "identifier": "S-BIAD1316",
+      "keywords": [
+        "RNA-FISH",
+        "Benchmarking",
+        "IF",
+        "Software",
+        "TrueSpot"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "TrueSpot: A robust automated tool for quantifying signal puncta in fluorescent imaging",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1316/34b9efc1-2649-4c54-8534-635918345164/6c31d40b-c8cf-425b-88d8-7cbc4b6dfd26.png"
+      ]
+    },
+    {
+      "@id": "#09e6d007-3fa1-4d03-817d-5e527ff1ee8e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "email": "gregor.neuert@vanderbilt.edu",
+      "name": "Gregor Neuert"
+    },
+    {
+      "@id": "#5c2802ca-2dde-47df-a188-9a9f092bff75",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "name": "Hossein Jashnasz"
+    },
+    {
+      "@id": "#c420c0ea-507a-496c-8bef-8d71785f18f1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "name": "Blythe Hospelhorn"
+    },
+    {
+      "@id": "#ded9b7e9-14ea-4ca9-bce8-673045b1c1f6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "name": "Benjamin Kesler"
+    },
+    {
+      "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vanderbilt University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_32644",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "unidentified"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#10f80920-e84d-4f80-8187-4405d6ac492a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "None, these are simulated images",
+      "name": "Sim-FISH Simulations",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_32644"
+      }
+    },
+    {
+      "@id": "#242501f9-b2e7-4d71-a2d6-ac160e9ecc44",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Fixed whole S. cerevisiae cells",
+      "name": "S. cerevisae BY4147",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#6f968923-0f98-40c7-ae97-729801d8086b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Immortalized human cervical cancer cell line.",
+      "name": "H-128 (HeLa)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9da0b7c8-8cc0-4e86-8366-40409a807aec",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "None - Simulated images",
+      "name": "RS-FISH Simulated Images",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_32644"
+      }
+    },
+    {
+      "@id": "#c86cb23a-1064-4738-9355-54827f07dcb3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse embryonic stems cells (cell line 16.7)",
+      "name": "mESC 16.7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#151f9b52-60c8-43a7-bc52-17c51eef97ed",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "N/A",
+      "labEquipment": "N/A",
+      "measurementTechnique": [],
+      "name": "RS-FISH Image Simulation"
+    },
+    {
+      "@id": "#3cd886f5-ea29-48ab-9f54-e8b336ec684a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100X, 69 images spaced 300nm apart, 65nm pixel size. Channels: [1] DAPI (Semrock Brightline DAPI-5060C-NTE-ZERO; 20ms exposure), [2] Xist-CY5 (Semrock Brightline NIK-0013 RevA-NTE-ZERO; 1000ms exposure), [3] Tsix-TMR (Semrock Brightline SpGold-B-NTE-ZERO; 1000ms exposure) OR AF594 (Semrock Brightline NIK-0012 RevA-NTE-ZERO; 1000ms exposure), [4] TRANS (10ms exposure)",
+      "labEquipment": "Nikon Eclipse Ti microscope, Hamamatsu Orca Flash C11440-22CU 4v2 CMOS camera, Nikon Perfect Focus System (TI-PFS-CON 596216), Excelitas fluorescent light source (X-cite Series 120 Q), and 100x VC DIC lens (Nikon MRD01901)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "mESC Exonic lncRNA Image Acquisition"
+    },
+    {
+      "@id": "#a2cd4a5d-67c6-4332-9156-2fb1f2d95fb9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "60X (160nm pixel size), ~27 images spaced 500 nm apart. Channels [1] DAPI (405nm; 100ms exposure), [2] MCP-GFP (488nm; 100ms exposure), [3] Unspecified cytosolic marker (561nm; 100ms exposure), [4] CY5 (647nm; 300ms exposure)",
+      "labEquipment": "Olympus IX81 confocal microscope, Andor iXon Ultra 888 EMCCD camera",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "HeLa CY5/MS2 Image Acquisition"
+    },
+    {
+      "@id": "#a69d13ec-966e-4b23-813c-4ee7e6579c69",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100X, 81 images spaced 300nm apart, 65nm pixel size. Channels: [1] DAPI (Semrock Brightline DAPI-5060C-NTE-ZERO; 20ms exposure), [2] Xist-CY5 (Semrock Brightline NIK-0013 RevA-NTE-ZERO; 1000ms exposure), [3] Tsix-TMR (Semrock Brightline SpGold-B-NTE-ZERO; 1000ms exposure), [4] YFP - Used for AF488 (Semrock Brightline YFP-2427B-NTE; 500ms exposure), [5] TRANS (10ms exposure)",
+      "labEquipment": "Nikon Eclipse Ti microscope, Hamamatsu Orca Flash C11440-22CU 4v2 CMOS camera, Nikon Perfect Focus System (TI-PFS-CON 596216), Excelitas fluorescent light source (X-cite Series 120 Q), and 100x VC DIC lens (Nikon MRD01901)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "mESC Intronic lncRNA/ Histone Mark Image Acquisition"
+    },
+    {
+      "@id": "#c01544ef-1aae-48cd-be50-fc22c97edf0a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See publication for details",
+      "labEquipment": "Sim-FISH v0.2 (https://github.com/fish-quant/sim-fish)",
+      "measurementTechnique": [],
+      "name": "Sim-FISH Image Simulation"
+    },
+    {
+      "@id": "#d95e3613-cd66-4f75-8dff-17efafbc7402",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100X, 25-32 images spaced 200nm apart, 65nm pixel size. Channels: [1] CY5 (1000ms exposure), [2] TMR (1000ms exposure), [3] DAPI (20ms exposure), [4] TRANS (20ms exposure)",
+      "labEquipment": "Nikon Eclipse Ti microscope, Hamamatsu Orca Flash C11440-22CU 4v2 CMOS camera, Nikon Perfect Focus System (TI-PFS-CON 596216), Excelitas fluorescent light source (X-cite Series 120 Q), and 100x VC DIC lens (Nikon MRD01901)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "S. cerevisiae STL1/CTT1 time course image acquisition"
+    },
+    {
+      "@id": "#efe1738c-2505-4c70-8473-abb93972a8e5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100X, 13 images at 500nm spacing. Channels: [1] GFP (Semrock Brightline FITC-2024B-NTE-ZERO; 150ms exposure), [2] TRANS (10ms exposure).",
+      "labEquipment": "Nikon Eclipse Ti microscope, Hamamatsu Orca Flash C11440-22CU 4v2 CMOS camera, Nikon Perfect Focus System (TI-PFS-CON 596216), Excelitas fluorescent light source (X-cite Series 120 Q), and 100x VC DIC lens (Nikon MRD01901)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "scProtein-GFP Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6020
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 187961584945
+    }
+  ]
+}

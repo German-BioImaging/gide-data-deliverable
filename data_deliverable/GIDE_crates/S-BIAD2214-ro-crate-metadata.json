@@ -1,0 +1,202 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2214"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2214",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#248a9446-9001-4a61-81a3-e3d26c37a837"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#85457c4f-a0dd-4b6d-baab-9ade8a14a16f"
+        },
+        {
+          "@id": "#addcef01-1fc3-422b-b4fa-efd92694a308"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4745-1338"
+        },
+        {
+          "@id": "#e7245567-6821-4f57-82e1-4133dbf73c99"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-31",
+      "description": "We generate Visium 10x data from healthy skin (n=2) and inflamed atopic dermatitis skin (n=1).\nWe generate Xenium 10x data from non-lesional atopic dermatitis skin (n=2) and inflamed atopic dermatitis skin (n=1).\nWe use these datasets to locate skin fibroblast subtypes identified from scRNA-seq.",
+      "funder": [],
+      "identifier": "S-BIAD2214",
+      "keywords": [
+        "human",
+        " skin",
+        "fibroblasts"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Spatial localisation of human skin fibroblasts",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2214/1f71649d-a964-48b5-82a0-ca258a8a6e00/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#e7245567-6821-4f57-82e1-4133dbf73c99",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05cy4wa09"
+        }
+      ],
+      "email": "mh32@sanger.ac.uk",
+      "name": "Muzlifah Haniffa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4745-1338",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05cy4wa09"
+        }
+      ],
+      "email": "ls34@sanger.ac.uk",
+      "name": "Lloyd Steele"
+    },
+    {
+      "@id": "https://ror.org/05cy4wa09",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Wellcome Sanger Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#85457c4f-a0dd-4b6d-baab-9ade8a14a16f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult human skin",
+      "name": "Inflamed eczema",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#addcef01-1fc3-422b-b4fa-efd92694a308",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult human skin",
+      "name": "Non Inflamed eczema",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#248a9446-9001-4a61-81a3-e3d26c37a837",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "As per manufacturers instructions",
+      "labEquipment": "10x Xenium",
+      "measurementTechnique": [],
+      "name": "Xenium Spatial Transcriptomics"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 51
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7185750607
+    }
+  ]
+}

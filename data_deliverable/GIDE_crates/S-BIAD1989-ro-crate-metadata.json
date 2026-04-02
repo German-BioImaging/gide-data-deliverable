@@ -1,0 +1,281 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1989"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1989",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#96f25409-1977-493a-8e8f-f610f16fe14d"
+        },
+        {
+          "@id": "obo:FBbi_00000248"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#391a57d3-5893-4664-a2c4-1452cb820e30"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5808-3214"
+        },
+        {
+          "@id": "#5b8102d4-0781-4c9e-ae1c-a4cfc7d9b387"
+        },
+        {
+          "@id": "#038a9f5f-250b-4cf4-867e-a10984a06192"
+        },
+        {
+          "@id": "#b682e239-7700-4022-8a19-e1327a91c7a1"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5150-1890"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3212-3940"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-28",
+      "description": "The ColoPola dataset is a collection of colorectal cancer polarimetric images. It consists of 572 tissue slices (specimens), including 288 healthy samples and 284 malignant samples. In total, the dataset contains 20,592 polarimetric images, with 10,368 images corresponding to healthy samples and 10,224 images representing malignant samples.\nFor each tissue slice, 36 polarimetric images are provided, corresponding to different polarization states. These states include HH, HV, HP, HM, HR, HL, VH, VV, VP, VM, VR, VL, PH, PV, PP, PM, MH, MV, MP, MR, ML, MM, RH, RV, RP, RM, RR, RL, LH, LV, LP, LM, LR, and LL. The six polarization states used for measurement purposes are horizontal linear (H), vertical linear (V), 45-degree linear (P), 135-degree linear (M), right circular (R), and left circular (L).\nEach folder in the ColoPola dataset contains 36 polarimetric images, all formatted in TIF and sized at 1280 × 1024 pixels (e.g., HH.tif, HV.tif, …, LL.tif).",
+      "funder": [],
+      "identifier": "S-BIAD1989",
+      "keywords": [
+        "ColoPola dataset",
+        "Colorectal cancer",
+        "Mueller matrix transformation",
+        "Polarimetric imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "ColoPola: A polarimetric imaging dataset for colorectal cancer detection",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1989/cbcd278a-e299-4e95-9bd0-38f32787b028/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#038a9f5f-250b-4cf4-867e-a10984a06192",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#111e50f4-46dc-47e3-9ba1-681d84c8a251"
+        }
+      ],
+      "email": "ngthaovi1104@gmail.com",
+      "name": "Thao-Vi Nguyen"
+    },
+    {
+      "@id": "#5b8102d4-0781-4c9e-ae1c-a4cfc7d9b387",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#111e50f4-46dc-47e3-9ba1-681d84c8a251"
+        }
+      ],
+      "email": "hoangquyen2200@gmail.com",
+      "name": "Quoc-Hoang-Quyen Vo"
+    },
+    {
+      "@id": "#b682e239-7700-4022-8a19-e1327a91c7a1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#111e50f4-46dc-47e3-9ba1-681d84c8a251"
+        }
+      ],
+      "email": "hiepnguyen2296@gmail.com",
+      "name": "The-Hiep Nguyen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5150-1890",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7d5124f1-7142-4dd5-a244-3f0ba777a24d"
+        }
+      ],
+      "email": "qhphan@nuu.edu.tw",
+      "name": "Quoc-Hung Phan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5808-3214",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#111e50f4-46dc-47e3-9ba1-681d84c8a251"
+        }
+      ],
+      "email": "ptthien@hcmiu.edu.vn",
+      "name": "Thi-Thu-Hien Pham"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3212-3940",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a0524a3e-0180-4c91-86dc-0ca98e472990"
+        }
+      ],
+      "email": "lethanhhai@siu.edu.vn",
+      "name": "Thanh-Hai Le"
+    },
+    {
+      "@id": "#111e50f4-46dc-47e3-9ba1-681d84c8a251",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vietnam National University Ho Chi Minh City"
+    },
+    {
+      "@id": "#7d5124f1-7142-4dd5-a244-3f0ba777a24d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National United University"
+    },
+    {
+      "@id": "#a0524a3e-0180-4c91-86dc-0ca98e472990",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Saigon International University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#391a57d3-5893-4664-a2c4-1452cb820e30",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "- Samples of healthy colorectal tissue\n- Samples of cancerous colorectal tissue",
+      "name": "Colorectal cancer",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#96f25409-1977-493a-8e8f-f610f16fe14d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Tissue slices, sectioned in three directions, were mounted on quartz slides for observation and measurement. Stained samples underwent conventional histopathological analysis using a microscope, while unstained samples were assessed using a custom-built transmission Mueller matrix polarimetry system. Within this system, a CCD camera captured 36 images per sample under varying polarization conditions. To ensure measurement reliability, both stained and unstained samples were analyzed at least three times per slice.\nFor benchmarking classification results derived from the Mueller matrix imaging system and deep learning models, stained H&E samples were meticulously annotated by an experienced histopathologist.\nThe study employed six distinct polarization states for incident and analyzed light: horizontal linear (H), vertical linear (V), 45-degree linear (P), 135-degree linear (M), right circular (R), and left circular (L). These states generated a total of 36 polarization images captured by the CCD, classified as HH, HV, HP, HM, HR, HL, VH, VV, VP, VM, VR, VL, PH, PV, PP, PM, MH, MV, MP, MR, ML, MM, RH, RV, RP, RM, RR, RL, LH, LV, LP, LM, LR, and LL. The first letter of each notation represents the polarization state produced by the polarization state generator (PSG), while the second letter indicates the polarization state controlled by the polarization state analyzer (PSA).\nThe elements of matrix M were constructed by superimposing the corresponding polarization images as required. For instance, element m11 was derived by combining HH, HV, VH, and VV, following the equation m11 = HH + HV + VH + VV.\nFor comparative analysis, certain samples were stained with H&E and examined microscopically (namely, with a Nikon Eclipse Ti-U microscope), serving as reference data. Meanwhile, unstained samples were processed using the experimental polarimetry system. The 36 polarization images collected per sample contributed to the creation of the Colorectal Cancer Polarimetric (ColoPola) dataset, supporting further diagnostic and computational studies.",
+      "labEquipment": "a frequency-stable He-Ne laser (HNLS008R, Thorlabs Co.) \nlinear polarizer P1, P2 (GTH5M, Thorlabs Co.)\nquarter-wave plate Q1, Q2 (QWP0-63304-4-R10, CVI Co.)\nconvex lens L1, L2 (LSSB04-A, Thorlabs, Inc.)\na CCD camera (CCD, DCU224C, Thorlabs, Inc.)\nrotation motorized stages (SGSP-60YAW-0B, Sigma Koki Co.)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000248"
+        }
+      ],
+      "name": "ColoPola: A polarimetric imaging dataset for colorectal cancer"
+    },
+    {
+      "@id": "obo:FBbi_00000248",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "polarization microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 20591
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 27520015216
+    }
+  ]
+}

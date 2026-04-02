@@ -1,0 +1,274 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2277"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2277",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#22368157-df54-4ced-9741-4622baf9db21"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#99928645-e109-4bc9-8ee5-22fd2b481ec4"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0000-7619-7100"
+        },
+        {
+          "@id": "#94efd66b-4e49-468e-8fff-13d629a8af1d"
+        },
+        {
+          "@id": "#566d6daf-820b-4d37-8a02-3acea10746d9"
+        },
+        {
+          "@id": "#3c4ef9c7-a2c9-4d2e-9430-d95b2abd97c6"
+        },
+        {
+          "@id": "#cfb5f5d7-610e-4442-bcfa-93ad0a233b7e"
+        },
+        {
+          "@id": "#d3bcf2cb-f313-4f64-8ce7-87a0a51b40ee"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-10",
+      "description": "To profile the non-small cell lung cancer (NSCLC) tumor microenvironment and underlying gene expression of tumor, stromal and immune cells we designed an in situ sequencing (ISS) target gene panel (n = 242) with the company Cartana, which is now part of 10x Genomics, capturing relevant cell type markers and genes previously reported to be involved in disease onset, progression and therapy resistance. We imaged n = 7 commercial adenocarcinoma samples using six rounds of imaging.",
+      "funder": [],
+      "identifier": "S-BIAD2277",
+      "keywords": [
+        "in situ sequencing",
+        "NSCLC",
+        "Lung tissue",
+        "tumor microenvironment"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "iss-nf: A Nextflow-based end-to-end in situ sequencing data decoding workflow",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2277/ef78b75a-e7e7-4563-a738-466343e57601/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#3c4ef9c7-a2c9-4d2e-9430-d95b2abd97c6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "christian.tischer@embl.de",
+      "name": "Christian Tischer"
+    },
+    {
+      "@id": "#566d6daf-820b-4d37-8a02-3acea10746d9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05gedqb32"
+        }
+      ],
+      "email": "luis.a.valesilva@gsk.com",
+      "name": "Luis A. Vale-Silva"
+    },
+    {
+      "@id": "#94efd66b-4e49-468e-8fff-13d629a8af1d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05gedqb32"
+        }
+      ],
+      "email": "dima.x.dvornikov@gsk.com",
+      "name": "Dmytro Dvornikov"
+    },
+    {
+      "@id": "#cfb5f5d7-610e-4442-bcfa-93ad0a233b7e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05gedqb32"
+        }
+      ],
+      "email": "frank.x.wippich@gsk.com",
+      "name": "Frank Wippich"
+    },
+    {
+      "@id": "#d3bcf2cb-f313-4f64-8ce7-87a0a51b40ee",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05gedqb32"
+        }
+      ],
+      "email": "nils.x.kurzawa@gsk.com",
+      "name": "Nils Kurzawa"
+    },
+    {
+      "@id": "https://orcid.org/0009-0000-7619-7100",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03mstc592"
+        }
+      ],
+      "email": "nima.vakili@embl.de",
+      "name": "Nima Vakili"
+    },
+    {
+      "@id": "https://ror.org/03mstc592",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://ror.org/05gedqb32",
+      "@type": [
+        "Organization"
+      ],
+      "name": "GlaxoSmithKline (Germany)"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#99928645-e109-4bc9-8ee5-22fd2b481ec4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human non-small cell lung cancer",
+      "name": "Seven In situ sequencing (ISS) datasets from non-small cell lung cancer (NSCLC) samples ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#22368157-df54-4ced-9741-4622baf9db21",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "image_acquisition:\n  pixel_size:\n    x: 0.1625  # µm\n    y: 0.1625  # µm\n  units: micrometers\n  description: \"Image acquired at 0.1625 µm per pixel resolution using XYZ microscope.\"\n",
+      "labEquipment": "Olympus VS200 slide scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Epifluorescence microscopy "
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 225
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1118910851381
+    }
+  ]
+}

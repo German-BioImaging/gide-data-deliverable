@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1413"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1413",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ec4138dd-624e-4d0c-8897-bdabf54d0d20"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c0682b5e-6b77-436e-a394-015c9a517baf"
+        },
+        {
+          "@id": "obo:NCBITaxon_317"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a64cd806-2eaa-4562-80ba-463f2ee7c828"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-09",
+      "description": "This is the raw microscopy data used in Lopez-Pagan et al (2024) to quantify the growth cost associated with flagellar expression",
+      "funder": [],
+      "identifier": "S-BIAD1413",
+      "keywords": [
+        "bacteria",
+        "flagella"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Microscopy data - Cooperative colonization of the host and pathogen dissemination involves stochastic and spatially structured expression of virulence traits",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1413/8d34c83e-a1e1-4cfe-833d-f1b49a81e121/ece11605-799d-40b2-89b8-79f010c4599b.png"
+      ]
+    },
+    {
+      "@id": "#a64cd806-2eaa-4562-80ba-463f2ee7c828",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b0e5c5b-cdc2-422e-8462-d05b8912df3f"
+        }
+      ],
+      "email": "julien.luneau@unil.ch",
+      "name": "Julien"
+    },
+    {
+      "@id": "#5b0e5c5b-cdc2-422e-8462-d05b8912df3f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Lausanne"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_317",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Pseudomonas syringae"
+    },
+    {
+      "@id": "#c0682b5e-6b77-436e-a394-015c9a517baf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Pseudomonas syringae pv. phaseolicola fliC::GFP and Pseudomonas syringae pv. phaseolicola eGFP",
+      "name": "Pseudomonas syringae pv. phaseolicola fliC::GFP",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_317"
+      }
+    },
+    {
+      "@id": "#ec4138dd-624e-4d0c-8897-bdabf54d0d20",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Heterogeneous flagellum expression was measured during microcolony formation on HIM + 1.25% agarose pads as follows: 2X HIM medium was mixed with a melted 2.5% agarose solution and immediately placed in the wells of a custom 3D-printed mold (template available here: https://github.com/JLuneau/Pseudomonas_AgarPads_fliC/tree/main/3D_printed_AgarPad_mold) disposed on a 50 mm round coverslip (Epredia, CB005005A140MNZ0). To ensure the flatness of the pads, another coverslip was immediately placed on top of the mold. The pads were solidified for 15 minutes at room temperature. The bottom coverslip was removed and 4 µl of bacterial suspensions adjusted to OD=0.005 in HIM were dropped on the pads surface. Right after the droplets dried, a new coverslip was placed on the mold and the assembled device was mounted on the microscope. For time-lapse experiments, images were taken every 15 min, starting 4 hours after cells were placed on the pads and for 24 hours at 25°C. Images were acquired using the NIS-Elements software on a Nikon Eclipse Ti2 inverted microscope equipped with a Hamamatsu ORCA-Flash4.0LT Digital camera and a Nikon Plan Apo Lambda 100X/1.45 Oil objective. The 1.5X manual knob was engaged to enhance magnification. Illumination settings: Phase contrast, 100 ms, 50% intensity; GFP (470 nm excitation & 519 nm emission filters), 300 ms, 50% intensity. ",
+      "labEquipment": "Nikon Ti2 Eclipse",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Agar pads"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 57
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 11047129772
+    }
+  ]
+}

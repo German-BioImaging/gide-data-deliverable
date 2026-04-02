@@ -1,0 +1,235 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1876"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1876",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f4bf9431-1bbd-458f-97d0-536c62677f3e"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ef36eb90-a4b3-4771-9b5b-485956681786"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#271fcb38-f52b-4a4c-b1b9-5d3310070a18"
+        },
+        {
+          "@id": "#05b3100b-0721-4f18-b634-0f6444edc4d1"
+        },
+        {
+          "@id": "#ca872418-b48d-4b27-b1a7-d2bb69dfcb19"
+        },
+        {
+          "@id": "#87258b3b-69ab-4f41-bd76-25cfb3ecef63"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-31",
+      "description": "All imaging regards the study evaluating the role of GBP1 in phagolysosomal response of macrophages to mycobacteria. Folders correspond to each specific figure. ",
+      "funder": [],
+      "identifier": "S-BIAD1876",
+      "keywords": [
+        "macrophage",
+        "infection",
+        "mycobacteria",
+        "innate immunity ",
+        "lysosome",
+        "guanylate-binding protein"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "GBP1 drives lysosomal activity against cytosol-invading mycobacteria in macrophages",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1876/a9b86013-0c41-4076-ba6d-803871eac34d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#05b3100b-0721-4f18-b634-0f6444edc4d1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "email": "m.a.aguirre.garcia@biology.leidenuniv.nl",
+      "name": "Mayra A. Aguirre-García "
+    },
+    {
+      "@id": "#271fcb38-f52b-4a4c-b1b9-5d3310070a18",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "email": "a.h.meijer@biology.leidenuniv.nl",
+      "name": "Annemarie H. Meijer"
+    },
+    {
+      "@id": "#87258b3b-69ab-4f41-bd76-25cfb3ecef63",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "name": "Sharon Portelli"
+    },
+    {
+      "@id": "#ca872418-b48d-4b27-b1a7-d2bb69dfcb19",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05"
+        }
+      ],
+      "name": "Monica Varela"
+    },
+    {
+      "@id": "#45fb019a-dc2e-440e-9541-47a5e08cae05",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leiden University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#ef36eb90-a4b3-4771-9b5b-485956681786",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human blood samples - Human blood samples were isolated from buffy coats obtained from healthy donors after written informed consent (Sanquin, Amsterdam, the Netherlands).",
+      "name": "Human monocyte-derived macrophages and U937 PMA-derived macrophages",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f4bf9431-1bbd-458f-97d0-536c62677f3e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were imaged using Leica confocal microscopy systems, TCS SP8 and Stellaris 5, using 40x oil-immersion objective (NA 1.30) and  20X (N.A 0.75), 60x and 40x oil-immersion objective (NA 1.40) respectively. ",
+      "labEquipment": "Cells were imaged using Leica confocal microscopy systems, TCS SP8 and Stellaris 5, using 40x oil-immersion objective (NA 1.30) and  20X (N.A 0.75), 60x and 40x oil-immersion objective (NA 1.40) respectively. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "GBP1 drives lysosomal activity against cytosol-invading mycobacteria in macrophages "
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 33
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 555973459801
+    }
+  ]
+}

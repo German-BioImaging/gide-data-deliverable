@@ -1,0 +1,195 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/125-Gessesse-CX3CR1nanodisc/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/125-Gessesse-CX3CR1nanodisc/",
+      "@type": "Dataset",
+      "identifier": "125-Gessesse-CX3CR1nanodisc",
+      "name": "Transmission electron images of homogeneity of CX3CR1-nanodisc complex in a reconstituted cell-free synthesis system",
+      "description": "125-Gessesse-CX3CR1nanodisc",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.3390/life8040054"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032594"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0098796"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097648"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-269"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yoshihiro Shimizu",
+      "email": "yshimizu@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell-Free Protein Synthesis",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Belay Gessesse"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Takashi Nagaike"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Koji Nagata"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Takuya Ueda"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.3390/life8040054",
+      "@type": "ScholarlyArticle",
+      "name": "G-Protein Coupled Receptor Protein Synthesis on a Lipid Bilayer Using a Reconstituted Cell-Free Protein Synthesis System.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "NA",
+      "description": "NA"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032594",
+      "@type": "DefinedTerm",
+      "name": "protein transport within lipid bilayer"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098796",
+      "@type": "DefinedTerm",
+      "name": "membrane protein complex"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097648",
+      "@type": "DefinedTerm",
+      "name": "G protein coupled receptor complex"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 432697260,
+      "description": "432.7 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 103,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

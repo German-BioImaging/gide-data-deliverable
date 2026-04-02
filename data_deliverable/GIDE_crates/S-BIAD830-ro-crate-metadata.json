@@ -1,0 +1,201 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD830"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD830",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3561ff71-520a-4ef2-a046-4c1255af9596"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#436cee5a-8a8c-4d62-b5fe-4467eeba42fc"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2281-5780"
+        },
+        {
+          "@id": "#2b0523ca-e679-4a68-8ffd-23465807c234"
+        },
+        {
+          "@id": "#4a756021-07d2-4cbd-a051-c4cda4c130a8"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-01-25",
+      "description": "Imaging Mass Cytometry data of 32 chordoma patients, including primary tumors, local recurrences and a metastasis.",
+      "funder": [],
+      "identifier": "S-BIAD830",
+      "keywords": [
+        "chordoma",
+        "imaging mass cytometry"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Multimodal profiling of chordoma immunity reveals distinct immune contextures",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#2b0523ca-e679-4a68-8ffd-23465807c234",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a"
+        }
+      ],
+      "email": "j.v.m.g.bovee@lumc.nl",
+      "name": "Judith Bovee"
+    },
+    {
+      "@id": "#4a756021-07d2-4cbd-a051-c4cda4c130a8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a"
+        }
+      ],
+      "email": "n.f.de_miranda@lumc.nl",
+      "name": "Noel de Miranda"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2281-5780",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a"
+        }
+      ],
+      "email": "s.van_oost@lumc.nl",
+      "name": "Siddh van Oost"
+    },
+    {
+      "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leiden University Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#436cee5a-8a8c-4d62-b5fe-4467eeba42fc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "chordoma",
+      "name": "Three tissue microarrays constructed with FFPE archival tissue of 32 chordoma patients",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3561ff71-520a-4ef2-a046-4c1255af9596",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1000x1000 pixel ROIs acquired with CyTOF Software",
+      "labEquipment": "Hyperion mass cytometry imaging system ",
+      "measurementTechnique": [],
+      "name": "Image acquisition with imaging mass cytometry"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 32005615025
+    }
+  ]
+}

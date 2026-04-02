@@ -1,0 +1,328 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1269"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1269",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8f621c3b-fba8-4047-8cfa-5975b1a8f6e5"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#41d26b7f-6af4-4670-b3e5-c0ed6839c3cb"
+        },
+        {
+          "@id": "obo:NCBITaxon_10029"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0430-1463"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2082-3277"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4510-8456"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5559-9554"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9286-920X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1426-9540"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2043-5234"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-12",
+      "description": "This repository contains all the data related to the study PhotoFiTT (Phototoxicity Fitness Time Trial) as well as example data for PhotoFiTT computational framework (https://github.com/HenriquesLab/PhotoFiTT).",
+      "funder": [],
+      "identifier": "S-BIAD1269",
+      "keywords": [
+        "phototoxicity",
+        "deep learning",
+        "training data",
+        "live cell imaging",
+        "microscopy ",
+        "2D",
+        "mitosis"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "PhotoFiTT:  A Quantitative Framework for Assessing Phototoxicity in Live-Cell Microscopy Experiments",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1269/a93097b1-45bd-41a7-92ae-9af82c0b0d39/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1269/ddf4b17b-e739-4dec-bac0-7923b426a4ef/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0430-1463",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4a106407-224f-410c-a2c9-07895632b687"
+        }
+      ],
+      "email": "mrosario@igc.gulbenkian.pt",
+      "name": "Mario Del Rosario"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1426-9540",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9908c345-4081-4379-a654-1619527df1ac"
+        }
+      ],
+      "email": "pmatos@itqb.unl.pt",
+      "name": "Pedro M. Pereira"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2043-5234",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4ddc5fa7-6d67-4a2c-8672-adac89759933"
+        }
+      ],
+      "email": "rjhenriques@igc.gulbenkian.p",
+      "name": "Ricardo Henriques"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5559-9554",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9908c345-4081-4379-a654-1619527df1ac"
+        }
+      ],
+      "email": "raquel.portela@itqb.unl.pt",
+      "name": "Raquel Portela"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9286-920X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e6c3105b-8546-44ae-ac87-1722d02d27e3"
+        }
+      ],
+      "email": "guillaume.jacquemet@abo.fi",
+      "name": "Guillaume Jacquemet"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2082-3277",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4a106407-224f-410c-a2c9-07895632b687"
+        }
+      ],
+      "email": "egomez@igc.gulbenkian.pt",
+      "name": "Estibaliz Gómez de Mariscal"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4510-8456",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d31a9386-5af4-4659-9604-820678e7800e"
+        }
+      ],
+      "email": "lmorgado@igc.gulbenkian.pt",
+      "name": "Leonor Morgado"
+    },
+    {
+      "@id": "#4a106407-224f-410c-a2c9-07895632b687",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Instituto Gulbenkian de Ciência"
+    },
+    {
+      "@id": "#4ddc5fa7-6d67-4a2c-8672-adac89759933",
+      "@type": [
+        "Organization"
+      ],
+      "name": "MRC Laboratory for Molecular Cell Biology"
+    },
+    {
+      "@id": "#9908c345-4081-4379-a654-1619527df1ac",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universidade Nova de Lisboa"
+    },
+    {
+      "@id": "#d31a9386-5af4-4659-9604-820678e7800e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "abbelight"
+    },
+    {
+      "@id": "#e6c3105b-8546-44ae-ac87-1722d02d27e3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Turku"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10029",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Cricetulus griseus"
+    },
+    {
+      "@id": "#41d26b7f-6af4-4670-b3e5-c0ed6839c3cb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Chinese Hamster Ovary (CHO) cells ",
+      "name": "Live cell imaging of CHO cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10029"
+      }
+    },
+    {
+      "@id": "#8f621c3b-fba8-4047-8cfa-5975b1a8f6e5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The images were captured using a x20 objective lens. Exposure times were adjusted based on the experimental conditions for different fields of view within the same well (100 ms for 0.6 J/cm^2, 1 s for 6 J/cm^2, and 10 s for 60 J/cm^2). The power used for each wavelength line was as follows: 84.9 ± 2.8 mW for 385 nm, 85.2 ± 0.8 mW for 475 nm, and 70.6 ± 0.4 mW for 630 nm (mean ± standard deviation).\n\nImages were taken every 4 minutes for a duration of 8 hours, with a pixel size of 0.55 µm x 0.55 µm. Temperature and CO2 levels were consistently maintained at 37ºC and 5%, respectively, throughout the exposure to excitation light and imaging periods. For fixed samples, cells were imaged using the same objective lens in multichannel acquisition mode. Brightfield images were captured alongside fluorescent images using the 385 nm filter to obtain paired brightfield and Hoechst-stained images.",
+      "labEquipment": "Widefield microscope Axio Observer 7 (Zeiss) equipped with a Colibri 7 LED illumination (Zeiss), a 20x/0.8 Plan Apochromat objective (Zeiss) and a Prime 95B sCMOS camera (Teledyne Photometrics).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Chinese Hamster Ovary (CHO) cells image data (synchronised and unsynchronised populations)"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 349
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 32689754341
+    }
+  ]
+}

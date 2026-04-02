@@ -1,0 +1,257 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1503"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1503",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9005246a-9e87-4191-b33d-5de50662655b"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7b2ac45c-ce40-4023-afae-ac46e442c4c5"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5b5df504-03a6-433a-8a7f-19de3032c57d"
+        },
+        {
+          "@id": "#3205d596-9f2b-4e9b-beab-b504fee951bb"
+        },
+        {
+          "@id": "#df966a67-efab-49b5-9293-68322cb51ad5"
+        },
+        {
+          "@id": "#7fa8aa9d-409a-4b40-84b1-abeaa62aa4f5"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2387-6203"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-30",
+      "description": "The endosomal pathway is essential for regulating cell signaling and cellular homeostasis. Rab5-positive early endosomes receive proteins from the plasma membrane. Dependent on a ubiquitin mark on the protein, they will be either recycled or sorted into intraluminal vesicles (ILVs) by ESCRT. During endosome maturation Rab5 will be replaced by Rab7 on endosomes that are able to fuse with lysosomes to form endolysosomes. Whether ESCRT-driven ILV formation and Rab5-to-Rab7 conversion are coordinated remains unknown. Here we show that loss of early ESCRTs leads to enlarged Rab5-positive endosomes and prohibit Rab conversion. Reduction of ubiquitinated cargo alleviated this phenotype. Moreover, ubiquitinated proteins on the endosomal limiting membrane prevented the displacement of the Rab5GEF RABX-5 by the Rab7GEF SAND-1/CCZ-1. Overexpression of Rab7 could partially overcome this block, even in the absence of SAND-1 or Ccz1, suggesting the presence of a second Rab7GEF. Our data reveal a hierarchy of events in which cargo corralling by ESCRTs is upstream of Rab conversion and thereby ESCRT-0 and ubiquitinated cargo could act as timers determining the onset of Rab conversion.",
+      "funder": [],
+      "identifier": "S-BIAD1503",
+      "keywords": [
+        "C. elegans",
+        "endosomes",
+        "live cell imaging",
+        "mammalian cells",
+        "Rab GTPases ",
+        "RabGEF",
+        "ESCRT"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Coordination between ESCRT function and Rab conversion during endosome maturation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1503/46faa3ec-220f-4ca7-8a5e-b01d31f68cb9/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#3205d596-9f2b-4e9b-beab-b504fee951bb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#17d1b700-4eec-425b-a45a-a01e02c564ea"
+        }
+      ],
+      "name": "Samit Desai"
+    },
+    {
+      "@id": "#5b5df504-03a6-433a-8a7f-19de3032c57d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#17d1b700-4eec-425b-a45a-a01e02c564ea"
+        }
+      ],
+      "name": "Daniel P. Ott"
+    },
+    {
+      "@id": "#7fa8aa9d-409a-4b40-84b1-abeaa62aa4f5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#996a08fb-07dd-4395-8670-fa1b717660db"
+        }
+      ],
+      "name": "Andres Kaech"
+    },
+    {
+      "@id": "#df966a67-efab-49b5-9293-68322cb51ad5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#17d1b700-4eec-425b-a45a-a01e02c564ea"
+        }
+      ],
+      "name": "Jachen A. Solinger"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2387-6203",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#17d1b700-4eec-425b-a45a-a01e02c564ea"
+        }
+      ],
+      "email": "anne.spang@unibas.ch",
+      "name": "Anne Spang"
+    },
+    {
+      "@id": "#17d1b700-4eec-425b-a45a-a01e02c564ea",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Biozentrum"
+    },
+    {
+      "@id": "#996a08fb-07dd-4395-8670-fa1b717660db",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Center for Microscopy and Image Analysis"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#7b2ac45c-ce40-4023-afae-ac46e442c4c5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C. elegans intestinal cells",
+      "name": "C. elegans",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#9005246a-9e87-4191-b33d-5de50662655b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Sample preparation and image acquisition are described in \"Coordination between ESCRT function and Rab conversion during endosome maturation\".",
+      "labEquipment": "Talos 120 transmission electron microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "Electron microscopy (image acquisition)"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 48
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 669981192
+    }
+  ]
+}

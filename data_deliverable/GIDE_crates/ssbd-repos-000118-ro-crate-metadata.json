@@ -1,0 +1,180 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000118/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000118/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000118",
+      "name": "Electron microscopy of mature photoreceptors in hESC-Dereived retina rosette-like structure",
+      "description": "ssbd-repos-000118",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Animals",
+        "Disease Models, Animal",
+        "Embryonic Stem Cells/pathology[major]",
+        "Female",
+        "Humans",
+        "Induced Pluripotent Stem Cells/pathology",
+        "Male",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "Mice, Inbred NOD",
+        "Mice, Transgenic",
+        "Photoreceptor Cells/pathology",
+        "Retina/pathology[major]",
+        "Retinal Degeneration/pathology[major]",
+        "Stem Cell Transplantation/methods"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.stemcr.2018.01.032"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042462"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0060041"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097733"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-266"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Michiko Mandai",
+      "email": "michiko.mandai@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.stemcr.2018.01.032",
+      "@type": "ScholarlyArticle",
+      "name": "Establishment of Immunodeficient Retinal Degeneration Model Mice and Functional Maturation of Human ESC-Derived Retinal Sheets after Transplantation.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042462",
+      "@type": "DefinedTerm",
+      "name": "eye photoreceptor cell development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060041",
+      "@type": "DefinedTerm",
+      "name": "retinal development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097733",
+      "@type": "DefinedTerm",
+      "name": "photoreceptor cell cilium"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 25765888,
+      "description": "25.8 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 4,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

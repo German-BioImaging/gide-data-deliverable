@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1466"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1466",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a2d8c50a-25b4-4dc9-bd06-3ff7acb2f750"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4f8bc9e1-678a-4c48-9c9e-60b3fa9144d8"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8685-4896"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-06",
+      "description": "Confocal and immunoblot data of RPE-1 cells",
+      "funder": [],
+      "identifier": "S-BIAD1466",
+      "keywords": [
+        "RPE-1, confocal, immunoblot"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Nanoscale analysis of human G1 and metaphase chromatin in situ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1466/8313aad7-c1a9-4848-9fd3-1df262a80ffc/b00a732a-246c-4f7d-a774-5c5b348bf938.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8685-4896",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01tgyzw49"
+        }
+      ],
+      "email": "lu@anaphase.org",
+      "name": "Lu Gan"
+    },
+    {
+      "@id": "https://ror.org/01tgyzw49",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National University of Singapore"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#4f8bc9e1-678a-4c48-9c9e-60b3fa9144d8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "RPE-1 cells",
+      "name": "RPE-1 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a2d8c50a-25b4-4dc9-bd06-3ff7acb2f750",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For morphological analysis, RPE-1 cells were imaged using a Nikon Eclipse Ti microscope (Nikon Instruments Inc., Tokyo, Japan) equipped with a Plan Fluor 10× Ph1 objective lens. To obtain fields of view of multiple cells, Z-stack images were acquired on an LSM 900 AiryScan microscope controlled by ZEN 3.1 software, using a 20× 0.8 NA Plan-Apochromat under confocal mode (Zeiss, Jena, Germany). Z-projection at maximum intensity was done in FIJI.\n\nTo obtain a large field of view containing multiple cells, Z-stacks were acquired with a Zeiss LSM 900 confocal microscope (see above). To observe details of single cells, Z-stacks were acquired with the same microscope, but using a 63× 1.4 NA Plan-Apochromat oil-immersion objective and operated in Airyscan super-resolution mode. Z-stacks (3-D) were projected using Fiji’s “3D Project” brightest point method.",
+      "labEquipment": "LSM900",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 160
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 15343456154
+    }
+  ]
+}

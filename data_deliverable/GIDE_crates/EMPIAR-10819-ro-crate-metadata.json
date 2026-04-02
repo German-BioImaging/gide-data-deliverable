@@ -1,0 +1,206 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10819"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10819",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#df3681d4-5f9f-4649-bb53-d581abb73f63"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#aab97ba1-f73c-49ab-810e-768f0efc4005"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#80733522-8bca-4431-8609-8fe73e00726b"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5703-2922"
+        },
+        {
+          "@id": "#fc383397-dd8a-4b4b-b888-200e3c5cf12b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2021-10-29",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-10819",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Benchmark FIB SEM data of HeLa cells previously imaged by Zeiss LSM900 Airyscan microscopy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10819/7286f675-48c5-4c01-b6db-648e733f5478/77f9a4c1-c71b-4ef0-9632-0165c24e55f5.png"
+      ]
+    },
+    {
+      "@id": "#80733522-8bca-4431-8609-8fe73e00726b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Peddie CJ"
+    },
+    {
+      "@id": "#fc383397-dd8a-4b4b-b888-200e3c5cf12b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Collinson L"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5703-2922",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Domart MC"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#aab97ba1-f73c-49ab-810e-768f0efc4005",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human cervical cancer epithelial cells (HeLa) obtained from the Cell Services Science Technology Platform at The Francis Crick Institute, originated from the American Type Culture Collection (ATCC; CCL-2)",
+      "name": "HeLa cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#df3681d4-5f9f-4649-bb53-d581abb73f63",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were first mapped with a 10x objective (NA 0.3) using brightfield microscopy to determine their position on the grid and tile scans were generated. The cells of interest were then imaged at high resolution in Airyscan mode with a 63x oil objective (NA 1.4). Smart setup was used to set up the imaging conditions. A sequential scan of each channel was used to limit crosstalk and z-stacks were acquired throughout the whole volume of the cells. For FIB-SEM, images were acquired at 5 nm isotropic resolution throughout the cell of interest, using a 6 µs dwell time. During acquisition, the SEM was operated at an accelerating voltage of 1.5 kV with 1.5 nA current. The EsB detector was used with a grid voltage of 1.2 kV. Ion beam milling was performed at an accelerating voltage of 30 kV and a current of 700 pA.",
+      "labEquipment": "Zeiss AxioObserver 7 LSM900 with Airyscan 2 microscope, Crossbeam 540 FIB-SEM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00050000"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "CLEM imaging with Airyscan and FIB-SEM"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00050000",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5999
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1846156898899
+    }
+  ]
+}

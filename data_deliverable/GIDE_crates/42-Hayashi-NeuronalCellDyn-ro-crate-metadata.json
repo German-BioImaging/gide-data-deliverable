@@ -1,0 +1,202 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/42-Hayashi-NeuronalCellDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/42-Hayashi-NeuronalCellDyn/",
+      "@type": "Dataset",
+      "identifier": "42-Hayashi-NeuronalCellDyn",
+      "name": "BDML file for the tracking of an endosome retrogradely or anterogradely transported in the axon of a supracervical ganglion (SCG) neuron in vitro",
+      "description": "42-Hayashi-NeuronalCellDyn",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Animals",
+        "Axons/metabolism",
+        "Axons/physiology[major]",
+        "Biological Transport, Active[major]",
+        "Endosomes/metabolism[major]",
+        "Male",
+        "Mice",
+        "Mice, Inbred ICR",
+        "Models, Neurological[major]",
+        "Thermodynamics"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1091/mbc.E18-01-0022"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0098930"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005768"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yasushi Okada",
+      "email": "y.okada@riken.jp",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Kumiko Hayashi"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Yuta Tsuchizawa"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Mitsuhiro Iwaki"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1091/mbc.E18-01-0022",
+      "@type": "ScholarlyArticle",
+      "name": "Application of the fluctuation theorem for noninvasive force measurement in living neuronal axons.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Rattus norvegicus",
+      "description": "Rattus norvegicus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116",
+      "@type": "Taxon",
+      "scientificName": "Rattus norvegicus",
+      "vernacularName": "rat"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098930",
+      "@type": "DefinedTerm",
+      "name": "axonal transport"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005768",
+      "@type": "DefinedTerm",
+      "name": "endosome"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 91461204,
+      "description": "91.5 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 396,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

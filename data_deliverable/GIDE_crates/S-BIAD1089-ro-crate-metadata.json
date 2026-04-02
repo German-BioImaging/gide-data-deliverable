@@ -1,0 +1,223 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1089"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1089",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0f149032-69aa-4d0a-8d6f-faa5173d0496"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4deb8200-d5a7-4afb-b63a-1e0b9a5cd1fd"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#670e6b60-a676-4dc4-93bb-5f2fc735c823"
+        },
+        {
+          "@id": "#c62fb33e-396b-4807-a21f-a60b929e84bd"
+        },
+        {
+          "@id": "#e165ed42-e8be-4f5e-a162-51010037ae65"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-30",
+      "description": "Skeletal muscles display a unique plasticity, which responds to the rapid changes of the organism activity, nutritional habits, health conditions, genetic background, and other factors (Schiaffino and Reggiani, 2011; Sirago et al., 2022). The muscle is composed by multiple fibers that have different contractile characteristics. Skeletal muscle fibers differ one from another in the contractile apparatus composition, calcium handling properties, number of mitochondria, and morphological features (Schiaffino and Reggiani, 2011; Giacomello et al., 2020). We refer to the term “fiber profile” to all the features, such as MHC expression, morphology and metabolic activity, that characterize a single muscle fiber. In general, the isoforms of Myosin Heavy Chain (MyHC) expressed in a muscle fiber, are considered the gold standard in the correlation of the morphological, contractile, and metabolic properties. Interestingly, recent data show that both in rodent and human muscles, morphological and metabolic characteristics of fibers expressing the same MyHCs can significantly diverge.\nIn the present project we investigated the different fiber profile of skeletal muscle fibers expressing MyHCI and IIa in soleus and exstensor digitorum longus muscles.\nThis data was selected as part of the AI4Life Open Calls 2023 for image analysis consultation and deep-learning applications.",
+      "funder": [],
+      "identifier": "S-BIAD1089",
+      "keywords": [
+        "AI4Life",
+        "skeletal muscle",
+        "Myosin Heavy Chain"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Analysis of the fiber profile of skeletal muscle",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#670e6b60-a676-4dc4-93bb-5f2fc735c823",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f6b01e3c-6116-41ee-8be2-79809112537a"
+        }
+      ],
+      "email": "egiacomello@units.it",
+      "name": "Emiliana Giacomello"
+    },
+    {
+      "@id": "#c62fb33e-396b-4807-a21f-a60b929e84bd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "email": "vera.galinova@fht.org",
+      "name": "Vera Galinova"
+    },
+    {
+      "@id": "#e165ed42-e8be-4f5e-a162-51010037ae65",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "email": "joran.deschamps@fht.org",
+      "name": "Joran Deschamps"
+    },
+    {
+      "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Human Technopole"
+    },
+    {
+      "@id": "#f6b01e3c-6116-41ee-8be2-79809112537a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Trieste"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#4deb8200-d5a7-4afb-b63a-1e0b9a5cd1fd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cross sections of murine skeletal muscle (soleus-sol- and Extensor digitorum longus- edl-) from male mice",
+      "name": "Analysis of the fiber profile of skeletal muscle",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#0f149032-69aa-4d0a-8d6f-faa5173d0496",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired with a Leica DM500 microscope with a 20x objective, equipped with a Leica ICC50 digital camera (Leica, Germany), using constant acquisition parameters. The full section was reconstructed by stitching the images with the Trak2EM function in Fiji software, and converted to grayscale.",
+      "labEquipment": "Leica DM500 microscope with a 20x objective, equipped with a Leica ICC50 digital camera (Leica, Germany)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Analysis of the fiber profile of skeletal muscle"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 12
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 876914895
+    }
+  ]
+}

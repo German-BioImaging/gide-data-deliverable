@@ -1,0 +1,253 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1763"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1763",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#17c8c63b-2f92-4277-9d88-cc093ceea60b"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#bb1007d9-420e-40a9-b9c8-7a5f3189ed54"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0577-1130"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4698-0844"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6410-1749"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3392-9479"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1101/2025.03.24.645013"
+        }
+      ],
+      "datePublished": "2025-04-03",
+      "description": "Image of stress granules in live U2OS cells (specifically, U2OS ∆∆G3BP1/2 cells stably expressing GFP-G3BP1), induced using 200mM sodium arsenite. This image is primarily intended for use as part of the worked example in the FlickerPrint documentation and is indicative of the types of images required for conducting flicker spectroscopy analysis using FlickerPrint.\nFor portability reasons, this image is slightly shorter (133 frames) than the recommended length for images used for analysis with FlickerPrint (1000 frames).",
+      "funder": [],
+      "identifier": "S-BIAD1763",
+      "keywords": [
+        "Flicker Spectroscopy",
+        "U2OS",
+        "Stress Granules"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Stress granules in U2OS cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1763/63555957-c98c-485d-bd1a-c4056e9f8fdf/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6410-1749",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#94649938-b036-4a59-98f2-9042786d7b8e"
+        }
+      ],
+      "email": "Sushma.Grellscheid@uib.no",
+      "name": "Sushma N. Grellscheid"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3392-9479",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "halim.kusumaatmaja@ed.ac.uk",
+      "name": "Halim Kusumaatmaja"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0577-1130",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "thomas.williamson@ed.ac.uk",
+      "name": "Thomas A. Williamson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4698-0844",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#94649938-b036-4a59-98f2-9042786d7b8e"
+        }
+      ],
+      "email": "Thomas.Stevenson@uib.no",
+      "name": "Thomas Stevenson"
+    },
+    {
+      "@id": "#94649938-b036-4a59-98f2-9042786d7b8e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Bergen"
+    },
+    {
+      "@id": "#de588502-f2ed-4e10-94dc-797256ad666b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2025.03.24.645013",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "FlickerPrint: An Analysis Package for Measuring Interfacial Tension and Bending Rigidity of Biomolecular Condensates and Vesicles at Scale"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#bb1007d9-420e-40a9-b9c8-7a5f3189ed54",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U2OS human cells from the ΔΔ17-U2OS-EGFP-G3BP line. These cells were a gift from N. Kedersha, Harvard University (retired).",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#17c8c63b-2f92-4277-9d88-cc093ceea60b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were collected using an Andor Dragonfly 505 spinning disk confocal microscope with a 100×1.49 numerical aperture (NA) CFI SR HPApo total internal reflection fluorescence oil immersion lens with a × 1.5 magnification objective (Nikon MRD01995) and a 60 × 1.40 NACFI apochromat Lambda oil immersion lens with a×2 magnification objective (NikonMRD71670) with a 1024-by-1024 pixel iXon 888 Life electron-multiplying charge-coupled device camera , with a read noise of <1.",
+      "labEquipment": "Andor Dragonfly 505",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 281268508
+    }
+  ]
+}

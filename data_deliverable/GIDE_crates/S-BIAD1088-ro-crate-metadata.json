@@ -1,0 +1,207 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1088"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1088",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#215eeada-53cd-4e6d-9c12-e7cd241a5bb7"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9ae28593-c762-48ae-8215-715fcf289a00"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#c4827ca8-f07e-4b5e-b408-e8444a03f0c3"
+        },
+        {
+          "@id": "#18a1e6a8-c826-41dc-8b8f-505095048e60"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-02",
+      "description": "The source image data of Figure 2 and Figure 4 for the manuscript. ",
+      "funder": [],
+      "identifier": "S-BIAD1088",
+      "keywords": [
+        "Confocal image source data files"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A proximity proteomics pipeline with improved reproducibility and throughput",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1088/db973c00-e8a0-405c-ae75-6760cdcc898c/b0a24d81-a7d7-405d-813d-6e0518bb2ba7.png"
+      ]
+    },
+    {
+      "@id": "#18a1e6a8-c826-41dc-8b8f-505095048e60",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "huttenhain@stanford.edu",
+      "name": "Ruth Hüttenhain"
+    },
+    {
+      "@id": "#c4827ca8-f07e-4b5e-b408-e8444a03f0c3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#492cee35-ebbf-4107-90c1-beab97fdd692"
+        }
+      ],
+      "email": "qiongyu.li@ucsf.edu",
+      "name": "Qiongyu Li"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#492cee35-ebbf-4107-90c1-beab97fdd692",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, San Francisco"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9ae28593-c762-48ae-8215-715fcf289a00",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293T cell line",
+      "name": "Confocal imaging of HEK293T cells with APEX-tagged spatial references",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#215eeada-53cd-4e6d-9c12-e7cd241a5bb7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were generated using a Nikon Ti2-E microscope equipped with a Crest X-Light-V2 spinning disk confocal (Crest Optics), emission filters, 438/24 (DAPI), 511/20 (GFP), 560/25 (RFP), and 685/40 (Cy5), and Celeste Light Engine excitation lasers 405/477/546/638 nm used respectively (Lumencor), Piezo stage (Mad City Labs), and a Prime 95B 25mm CMOS camera (Photometrics) using a Plan Apo VC 100x/1.4 Oil (Nikon). The data was captured with NIS-Elements software (v. 5.41.01 build 1709, Nikon) and processed in Fiji/ImageJ2 (Schindelin et al, 2012). \n",
+      "labEquipment": "Nikon Ti2-E microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition method"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 13
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 5125594595
+    }
+  ]
+}

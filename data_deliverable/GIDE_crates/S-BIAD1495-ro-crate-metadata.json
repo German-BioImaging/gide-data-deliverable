@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1495"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1495",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c4bd275f-d5fa-4f98-97b0-5bbcb546e122"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2769bcb2-9c3b-4fbf-92f9-411862d386ce"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3862-8349"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7397-1321"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-14",
+      "description": "Wild-type and Nup133-deficient cells were fixed with 4% PFA and subjected to immunofluorescence staining experiments to assess the nuclear localization of transcription factor YAP. Neuronal precursors at different time points in the neuronal differentiation (2h, 24h, 48h) were used for the experiments.",
+      "funder": [],
+      "identifier": "S-BIAD1495",
+      "keywords": [
+        "immunofluorescence staining"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Immunofluorescence staining images of mouse neuronal precursors with nuclear YAP",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1495/7746a993-6a3e-44ec-8329-aec04a4143bf/92522d90-96ba-47bc-8582-34139f39c062.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7397-1321",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d0cd3ba3-888a-4006-98e8-3c2292d0d391"
+        }
+      ],
+      "email": "martin.beck@biophys.mpg.de",
+      "name": "Martin Beck"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3862-8349",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d0cd3ba3-888a-4006-98e8-3c2292d0d391"
+        }
+      ],
+      "email": "reiya.taniguchi@biophys.mpg.de",
+      "name": "Reiya Taniguchi"
+    },
+    {
+      "@id": "#d0cd3ba3-888a-4006-98e8-3c2292d0d391",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute of Biophysics"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#2769bcb2-9c3b-4fbf-92f9-411862d386ce",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse neuronal precursors",
+      "name": "mouse neuronal precursors",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#c4bd275f-d5fa-4f98-97b0-5bbcb546e122",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired using a 63×/1.40 oil objective. 25 Z stacks were acquired with 0.6 um intervals. Bidirectional image acquisition with scan speed of 600 was used for the data acquisition. Line average was set to 2.",
+      "labEquipment": "Stellaris 5 confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal stack acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 240
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 26315932656
+    }
+  ]
+}

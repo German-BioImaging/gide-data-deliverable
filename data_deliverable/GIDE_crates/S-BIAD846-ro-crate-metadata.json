@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD846"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD846",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#fa28a129-c327-4347-9ad8-035b7238d338"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#758c4372-212d-4a0f-a172-7e87f002a093"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#801606b4-792d-4feb-a116-3061b918cc31"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-15",
+      "description": "OME-NGFF converted study from idr0025.  We have developed a platform for validation of antibody binding and protein subcellular localization data obtained from immunofluorescence using siRNA technology combined with automated confocal microscopy and image analysis. By combining the siRNA technology with automated sample preparation, automated imaging and quantitative image analysis, a high-throughput assay has been set-up to enable confirmation of accurate protein binding and localization in a systematic manner. Here, we describe the analysis and validation of the subcellular location of 65 human proteins, targeted by 75 antibodies and silenced by 130 siRNAs. A large fraction of (80%) the subcellular locations, including locations of several previously uncharacterized proteins, could be confirmed by the significant down-regulation of the antibody signal after the siRNA silencing. A quantitative analysis was set-up using automated image analysis to facilitate studies of targets found in more than one compartment. The results obtained using the platform demonstrate that siRNA silencing in combination with quantitative image analysis of antibody signals in different compartments of the cells is an attractive approach for ensuring accurate protein localization as well as antibody binding using immunofluorescence. With a large fraction of the human proteome still unexplored, we suggest this approach to be of great importance under the continued work of mapping the human proteome on a subcellular level.",
+      "funder": [],
+      "identifier": "S-BIAD846",
+      "keywords": [
+        "protein subcellular localization, antibody binding, siRNA"
+      ],
+      "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "name": "Systematic validation of antibody binding and protein subcellular localization using siRNA and confocal microscopy (OME-NGFF)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#801606b4-792d-4feb-a116-3061b918cc31",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "email": "idr-support@openmicroscopy.org",
+      "name": "Image Data Resource (IDR)"
+    },
+    {
+      "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#758c4372-212d-4a0f-a172-7e87f002a093",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U2OS human osteosarcoma cell line",
+      "name": "U2OS cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#fa28a129-c327-4347-9ad8-035b7238d338",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "To facilitate a high-throughput procedure and objective and reproducible imaging, the confocal image acquisition was automated using a Leica SP5 laser-scanning confocal microscope and the Leica Matrix Screener v.2.3.0 software (Leica Microsystems, Mannheim, Germany). A 10 x/0.3 N/A dry objective was used for single organelle staining antibodies and to facilitate proper annotation, higher magnification using a 40x/0.85 N/A dry objective for the multiple organelle staining antibodies. Both objectives were used with the following scanning settings; 8 bit acquisition, 600 Hz scan speed, line average 2 and a image size of 2048x2048 pixels. The pixel size was 0.75 x 0.75 um and 0.19 x 0.19 um for the 10 x and 40 x objective. To capture enough cells (n > 20) for the subsequent quantitative analysis, images were acquired at 4 or 16 non-overlapping positions in each well for the 10 x and 40 x objective, respectively. With this set-up, 48 or 192 images were acquired for each antibody. For each position, a low-resolution (16 x 16 pixels) autofocus procedure based on contrast from the microtubule antibody staining (contrast based method 1 in Leica Matrix Screener v.2.3.0) was applied using the 543 nm HeNe laser. Following this, a sequential acquisition of the three fluorophores was used to avoid cross talk with the following setup: a UV 405 nm diode laser for excitation of the DAPI staining of the nucleus, a 543 nm and 633 nm HeNe laser for excitation of the Alexa 555 and Alexa 647 secondary antibodies staining the microtubules (a-tubulin) and calreticulin in the endoplasmic reticulum (the latter used for normal variation study only), and a 488nm argon laser exciting the Alexa 488 secondary antibody for detection of the target protein. Before starting the automated acquisition, the detector gain was manually adjusted for each antibody using the staining of the negative control. To make best use of the dynamic range of the detec-or and to trace any potential decrease in staining intensity between the wells, the gain was adjusted to minimize the number of saturated pixels and use the full dynamic range of the detector. To allow quantitative relative measurements of staining intensity, the two siRNA samples and the control were always imaged with identical gain settings. To better visualize the degree of down-regulation as a result from quantitative imaging, a selected subset of antibodies were imaged manually at higher resolution using a 63x/ 1.4 N/A oil immersion objective, with the same parameters as for the automated setup. The pixel size here was 80 x 80nm.",
+      "labEquipment": "Leica SP5 laser-scanning confocal microscope and the Leica Matrix Screener v.2.3.0 software (Leica Microsystems, Mannheim, Germany)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Automated confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2708880694
+    }
+  ]
+}

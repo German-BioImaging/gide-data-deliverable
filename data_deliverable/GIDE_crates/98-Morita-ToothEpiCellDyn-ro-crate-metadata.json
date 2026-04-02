@@ -1,0 +1,267 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/98-Morita-ToothEpiCellDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/98-Morita-ToothEpiCellDyn/",
+      "@type": "Dataset",
+      "identifier": "98-Morita-ToothEpiCellDyn",
+      "name": "BDML quantitative informations and time-lapse confocal images of the epithelial tissue deformation in tooth development",
+      "description": "98-Morita-ToothEpiCellDyn",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Division/physiology",
+        "Cell Movement/physiology",
+        "Cell Shape/physiology",
+        "Epithelium/growth & development[major]",
+        "Mice",
+        "Microscopy, Confocal/methods",
+        "Models, Biological",
+        "Odontogenesis/physiology[major]",
+        "Tooth/growth & development[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6550-8778"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        },
+        {
+          "@id": "#auth-011"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pone.0161336"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007427"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042476"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-263"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takashi Tsuji",
+      "email": "t-tsuji@cdb.riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organ Regeneration",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6550-8778",
+      "@type": "Person",
+      "name": "Ritsuko Morita",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Tissue Microenvironment",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Miho Kihira"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Yousuke Nakatsu"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Yohei Nomoto"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Miho Ogawa"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Kazumasa Ohashi"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Kensaku Mizuno"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Tetsuhiko Tachikawa"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Yukitaka Ishimoto"
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Yoshihiro Morishita"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0161336",
+      "@type": "ScholarlyArticle",
+      "name": "Coordination of Cellular Dynamics Contributes to Tooth Epithelium Deformations.",
+      "datePublished": "2016"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007427",
+      "@type": "DefinedTerm",
+      "name": "epithelial cell migration"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042476",
+      "@type": "DefinedTerm",
+      "name": "odontogenesis"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 13288223166,
+      "description": "13.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 7,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

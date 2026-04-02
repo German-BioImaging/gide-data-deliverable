@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2078"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2078",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3e951f0b-5417-432e-80cf-48778067fd65"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#adbeb985-3bdb-416e-b6be-5973ad971c84"
+        },
+        {
+          "@id": "obo:NCBITaxon_9823"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a02b8918-8288-41cc-b869-167885ba4fb6"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0856-5511"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-30",
+      "description": "NuMA is a mitotic adaptor protein that activates dynein and connects it to microtubule minus ends",
+      "funder": [],
+      "identifier": "S-BIAD2078",
+      "keywords": [
+        "microtubules"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "NuMA is a mitotic adaptor protein that activates dynein and connects it to microtubule minus ends",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2078/f8ba78d7-e6b0-4031-aea6-2b1dbc0a70b8/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#a02b8918-8288-41cc-b869-167885ba4fb6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7caaf0c9-34ad-4427-8fe0-10abb0348e62"
+        }
+      ],
+      "email": "sabina.colombo@crg.eu",
+      "name": "Sabina Colombo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0856-5511",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7caaf0c9-34ad-4427-8fe0-10abb0348e62"
+        }
+      ],
+      "email": "felix.ruhnow@crg.eu",
+      "name": "Felix Ruhnow"
+    },
+    {
+      "@id": "#7caaf0c9-34ad-4427-8fe0-10abb0348e62",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre for Genomic Regulation"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9823",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Sus scrofa"
+    },
+    {
+      "@id": "#adbeb985-3bdb-416e-b6be-5973ad971c84",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Purified tubulin from pig brains",
+      "name": "Tubulin",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9823"
+      }
+    },
+    {
+      "@id": "#3e951f0b-5417-432e-80cf-48778067fd65",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100ms exposure time, laser at 50%, 5s time-lapse",
+      "labEquipment": "NIKON with ilas2",
+      "measurementTechnique": [],
+      "name": "TIRF MT growth assay"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1051751531
+    }
+  ]
+}

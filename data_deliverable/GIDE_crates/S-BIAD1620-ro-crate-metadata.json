@@ -1,0 +1,257 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1620"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1620",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7323b310-956f-47fe-9c6d-d5778226aa8a"
+        },
+        {
+          "@id": "#078177ed-ab1b-49bd-88fa-074871de6c64"
+        },
+        {
+          "@id": "#9e585c1f-d803-43bd-842f-472915208a38"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cfcd1a47-c4b2-4508-91dc-8cda1ccd35ec"
+        },
+        {
+          "@id": "#27ea90ec-50e7-41d3-a66d-7234bab8f8d9"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7324-555X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2043-5234"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-06",
+      "description": "Datasets used in the SReD paper.",
+      "funder": [],
+      "identifier": "S-BIAD1620",
+      "keywords": [
+        "SReD",
+        "Microscopy",
+        "fluorescence"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Datasets used in the SReD paper",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/S-BIAD1620/fe07683d-36e2-4831-ab4f-29d7b2506321/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7324-555X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#057c552e-340d-4f51-ab15-d179ff0e43fe"
+        }
+      ],
+      "email": "afonso.mendes92@gmail.com",
+      "name": "Afonso Mendes"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2043-5234",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02jx3x895"
+        }
+      ],
+      "email": "r.henriques@itqb.unl.pt",
+      "name": "Ricardo Henriques"
+    },
+    {
+      "@id": "#057c552e-340d-4f51-ab15-d179ff0e43fe",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Instituto de Tecnologia Química e Biológica"
+    },
+    {
+      "@id": "https://ror.org/02jx3x895",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University College London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#27ea90ec-50e7-41d3-a66d-7234bab8f8d9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Jurkat cell expressing a TetOn-Optigag-(i)EGFP construct",
+      "name": "Jurkat cell line expressing a TetOn-Optigag-(i)EGFP construct",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#cfcd1a47-c4b2-4508-91dc-8cda1ccd35ec",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "RPE1 cells stably expressing an EB3-GFP construct",
+      "name": "RPE1-EB3-GFP",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#078177ed-ab1b-49bd-88fa-074871de6c64",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The sample was illuminated with LED light at 515 nm (CoolLED pe800) and acquisition was done at 75 ms exposure with an active Nikon Perfect Focus system and the NIS-Elements AR 5.30.05 software (Nikon Instruments). Volumes were captured by acquiring frames at different depths (z-step size: 0.5 µm). Image deconvolution was performed using a custom Python script based on the Richardson-Lucy method.",
+      "labEquipment": "ECLIPSE Ti2-E (Nikon Instruments) equipped with a Fusion BT (Hamamatsu Photonics K.K., C14440-20UP) and a Plan Apo λ 100x (NA 1.45) Oil objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition of Jurkat cells expressing TetOn-Optigag-(i)EGFP"
+    },
+    {
+      "@id": "#7323b310-956f-47fe-9c6d-d5778226aa8a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Widefield imaging was performed in a Nanoimager (ONI) using the 488 nm laser at 10% and channel 0 (two-band dichroic: 498-551 nm and 576-620 nm). Images were acquired at 75 ms exposure for 2 minutes. Pixel size: 117 nm. ",
+      "labEquipment": "Nanoimager (ONI)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition of RPE1-EB3-GFP"
+    },
+    {
+      "@id": "#9e585c1f-d803-43bd-842f-472915208a38",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "488 nm laser at 10% and channel 0 (two-band dichroic: 498-551 nm and 576-620 nm). The HILO angle was optimised manually and images were acquired at 100 ms exposure. Pixel size: 117 nm",
+      "labEquipment": "Nanomager (ONI)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "HILO imaging of Jurkat cells expressing TetOn-Optigag-(i)EGFP"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 35083212
+    }
+  ]
+}
