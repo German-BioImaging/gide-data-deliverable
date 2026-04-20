@@ -1,7 +1,7 @@
 # Deliverable D10.1 – Model description and snapshot
 
 > [!NOTE]
-> This is an draft version for the [foundingGIDE](https://founding-gide.eurobioimaging.eu/about-us/) deliverable 10.1
+> This is a draft version for the [foundingGIDE](https://founding-gide.eurobioimaging.eu/about-us/) deliverable 10.1
 > It will be formatted in a standard document for delivery
 
 ## Executive Summary
