@@ -1,0 +1,423 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1164"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1164",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#512d3838-ce66-41c2-a575-8a3d2fb19784"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#afb0f8cd-ac3e-4b78-b4b3-3ee6ba438db9"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5eddd7d9-0175-4a66-8417-0843957b85b6"
+        },
+        {
+          "@id": "#6d92948b-6043-44bb-bfdf-20bcd63bd5ca"
+        },
+        {
+          "@id": "#53696148-8a3a-4fa2-b8b9-22b790d29e1d"
+        },
+        {
+          "@id": "#48a52f5e-cd79-4895-bfdc-7febc6d868ac"
+        },
+        {
+          "@id": "#53ca1395-7e0a-4c04-a361-891bc4acbeb9"
+        },
+        {
+          "@id": "#286b94a3-135f-4f34-96b7-450c0898731f"
+        },
+        {
+          "@id": "#7dbdcfe5-dd5d-4a90-b16d-cac341a9a20f"
+        },
+        {
+          "@id": "#64f7a1c4-97d9-49c6-bc76-d1847a8099da"
+        },
+        {
+          "@id": "#a6a7afca-11cd-4570-aa54-a2e46657005c"
+        },
+        {
+          "@id": "#16f802be-0067-4a00-9997-39c672e465e7"
+        },
+        {
+          "@id": "#7ebf8062-a42a-4607-871c-4049f918403c"
+        },
+        {
+          "@id": "#2206ae3c-49f6-445c-8f15-9f180ac18ef7"
+        },
+        {
+          "@id": "#8ad2b3c3-7b2e-4c33-b891-0ff3725cd7eb"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-13",
+      "description": "High-content single cell imaging of GFP-tagged yeast proteome-wide library in wild type, DUB single and double mutants that process unanchored polyubiquitin chains.",
+      "funder": [],
+      "identifier": "S-BIAD1164",
+      "keywords": [
+        "Unconventional K29-linked unanchored polyubiquitin chains",
+        "ubiquitin homeostasis",
+        "DUB-E3 ligase interplay",
+        "protein aggregation",
+        "Intranuclear Quality control compartment",
+        "ribosome assembly stress response",
+        "Ribosomopathies"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Proteome Dynamics in DUB mutants in Saccharomyces cerevisiae ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1164/8a80099c-78f7-49da-bdc3-6c1fe03a30a1/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#16f802be-0067-4a00-9997-39c672e465e7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01swzsf04"
+        }
+      ],
+      "email": "david.shore@unige.ch",
+      "name": "David Shore"
+    },
+    {
+      "@id": "#2206ae3c-49f6-445c-8f15-9f180ac18ef7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00wj6x496"
+        }
+      ],
+      "email": "pierre.thibault@umontreal.ca",
+      "name": "Pierre Thibault"
+    },
+    {
+      "@id": "#286b94a3-135f-4f34-96b7-450c0898731f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03dbr7087"
+        }
+      ],
+      "email": "michael.costanzo@utoronto.ca",
+      "name": "Michael Costanzo"
+    },
+    {
+      "@id": "#48a52f5e-cd79-4895-bfdc-7febc6d868ac",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/004raaa70"
+        }
+      ],
+      "email": "benjamin.albert@univ-tlse3.fr",
+      "name": "Benjamin Albert"
+    },
+    {
+      "@id": "#53696148-8a3a-4fa2-b8b9-22b790d29e1d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00wj6x496"
+        }
+      ],
+      "email": "eric.bonneil@umontreal.ca",
+      "name": "Eric Bonneil"
+    },
+    {
+      "@id": "#53ca1395-7e0a-4c04-a361-891bc4acbeb9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/004raaa70"
+        }
+      ],
+      "email": "carine.dominique@univ-tlse3.fr",
+      "name": "Carine Dominique"
+    },
+    {
+      "@id": "#5eddd7d9-0175-4a66-8417-0843957b85b6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03dbr7087"
+        }
+      ],
+      "email": "brenda.andrews@utoronto.ca",
+      "name": "Brenda Andrews"
+    },
+    {
+      "@id": "#64f7a1c4-97d9-49c6-bc76-d1847a8099da",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03dbr7087"
+        }
+      ],
+      "email": "myra.masinas@utoronto.ca",
+      "name": "Myra Paz David Masinas"
+    },
+    {
+      "@id": "#6d92948b-6043-44bb-bfdf-20bcd63bd5ca",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03dbr7087"
+        }
+      ],
+      "email": "harsha.garadisuresh@utoronto.ca",
+      "name": "Harsha Garadi Suresh"
+    },
+    {
+      "@id": "#7dbdcfe5-dd5d-4a90-b16d-cac341a9a20f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01z1gye03"
+        }
+      ],
+      "email": "carles.pons@irbbarcelona.org",
+      "name": "Carles Pons"
+    },
+    {
+      "@id": "#7ebf8062-a42a-4607-871c-4049f918403c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/004raaa70"
+        }
+      ],
+      "email": "anthony.henras@ibcg.biotoul.fr",
+      "name": "Anthony K. Henras"
+    },
+    {
+      "@id": "#8ad2b3c3-7b2e-4c33-b891-0ff3725cd7eb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03dbr7087"
+        }
+      ],
+      "email": "charlie.boone@utoronto.ca",
+      "name": "Charles Boone"
+    },
+    {
+      "@id": "#a6a7afca-11cd-4570-aa54-a2e46657005c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03dbr7087"
+        }
+      ],
+      "email": "ermira.shuteriqi@utoronto.ca",
+      "name": "Ermira Shuteriqi"
+    },
+    {
+      "@id": "https://ror.org/004raaa70",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université de Toulouse"
+    },
+    {
+      "@id": "https://ror.org/00wj6x496",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute for Research in Immunology and Cancer"
+    },
+    {
+      "@id": "https://ror.org/01swzsf04",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Geneva"
+    },
+    {
+      "@id": "https://ror.org/01z1gye03",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute for Research in Biomedicine"
+    },
+    {
+      "@id": "https://ror.org/03dbr7087",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Toronto"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#afb0f8cd-ac3e-4b78-b4b3-3ee6ba438db9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GFP-tagged Saccharomyces cerevisiae",
+      "name": "Proteome Dynamics in DUB mutants in Saccharomyces cerevisiae",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#512d3838-ce66-41c2-a575-8a3d2fb19784",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All imaging was done with a 60× water‐immersion objective. GFP was excited using a 488 nm laser and emission collected through a 520/35‐nm filter. tdTomato was excited using a 561‐nm laser, and emission collected through a 600/40‐nm filter. E2crimson was excited using a 640 nm laser, and emission collected through a 690/50 nm filter. ",
+      "labEquipment": "Perkin Elmer Phenix",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Proteome Dynamics in DUB mutants in Saccharomyces cerevisiae - images"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 442362
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 843671126249
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000288/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000288/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000288",
+      "name": "Autocrine TGF-β-positive feedback in profibrotic AT2-lineage cells plays a crucial role in non-inflammatory lung fibrogenesis",
+      "description": "The molecular etiology of idiopathic pulmonary fibrosis (IPF) has been extensively investigated to identify new therapeutic targets. While anti-inflammatory treatment is not effective for IPF patients, researchers have found that damaged alveolar epithelial cells play a critical role in lung fibrogenesis. Here, we established organoid-based lung fibrosis model using mouse and human lung tissue to assess direct communication between damaged alveolar type II (AT2)-lineage cells and lung fibroblasts by excluding immune cells. Using this in vitro model and mouse genetics, we demonstrated that bleomycin causes DNA damage and activates p53 signaling in AT2-lineage cells, leading to AT2-to-AT1 transition-like state with a senescence-associated secretory phenotype (SASP). Among SASP-related factors, TGF-β played an exclusive role in promoting lung fibroblast-to-myofibroblast differentiation. Moreover, the autocrine TGF-β-positive feedback loop in AT2-lineage cells is a critical cellular system in non-inflammatory lung fibrogenesis. These findings provide insights into the mechanism of IPF and identified potential therapeutic targets.",
+      "datePublished": "2023-07-11",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Humans",
+        "Animals",
+        "Mice",
+        "Transforming Growth Factor beta[major]",
+        "Feedback",
+        "Alveolar Epithelial Cells",
+        "Idiopathic Pulmonary Fibrosis/genetics[major]",
+        "Cell Differentiation"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-023-40617-y"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Mitsuru Morimoto",
+      "email": "mitsuru.morimoto@riken.jp",
+      "description": "Organization: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Lung Development and Regeneration",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/023rffy11"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/023rffy11",
+      "@type": "Organization",
+      "name": "RIKEN Center for Biosystems Dynamics Research"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-023-40617-y",
+      "@type": "ScholarlyArticle",
+      "name": "Autocrine TGF-beta-positive feedback in profibrotic AT2-lineage cells plays a crucial role in non-inflammatory lung fibrogenesis.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1416728576,
+      "description": "1.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 201,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

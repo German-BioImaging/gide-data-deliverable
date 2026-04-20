@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1029"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1029",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#18b46534-41b4-4566-bed3-66224351eb98"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#77ab476f-4d9b-4def-b91e-5fb2620bc031"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9c9b5ee4-a354-4555-9edc-460348aa49bd"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-01-30",
+      "description": "We found that the number of primordial germ cells (PGCs) decreased dramatically after MCM8 deficiency due to proliferation defects. We further demonstrated that MCM8 interacted with two known helicases DDX5 and DHX9 in PGCs, and loss of MCM8 led to R-loop accumulation by reducing the retention of these helicases at R-loops, thus inducing genome instability.",
+      "funder": [],
+      "identifier": "S-BIAD1029",
+      "keywords": [
+        "primordial germ cells, MCM8, R-loop, genome stability, fertility"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "MCM8 interacts with DDX5 to promote R-loop resolution in primordial germ cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1029/2425549e-425d-450d-9ea1-e445de2bc796/84e67b33-4ba0-4178-9ee0-ef298198e4a0.png"
+      ]
+    },
+    {
+      "@id": "#9c9b5ee4-a354-4555-9edc-460348aa49bd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#96a081c7-8641-420c-a5b9-b9ae8f9f8a6d"
+        }
+      ],
+      "email": "wcx12362379@outlook.com",
+      "name": "Canxin Wen"
+    },
+    {
+      "@id": "#96a081c7-8641-420c-a5b9-b9ae8f9f8a6d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Shandong University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#77ab476f-4d9b-4def-b91e-5fb2620bc031",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "genital ridges at E11.5 and gonads at E13.5, E15.5, and PD3",
+      "name": "MCM8 knockout phonotype",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#18b46534-41b4-4566-bed3-66224351eb98",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The 405 nm laser was used to image nuclei (Hoechst), the 488 nm laser was used to image marker of representative cells (DDX4/STELLA), and the 561 nm laser was used to image targeted protein.",
+      "labEquipment": "Samples were photographed by a Z-axis scan using a Dragonfly spinning disc confocal microscope (ANDOR Technology).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 158
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 938688116
+    }
+  ]
+}

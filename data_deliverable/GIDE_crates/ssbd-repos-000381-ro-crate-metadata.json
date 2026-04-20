@@ -1,0 +1,172 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000381/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000381/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000381",
+      "name": "The transcription factor NRF1 (NFE2L1) activates aggrephagy by inducing p62 and GABARAPL1 after proteasome inhibition to maintain proteostasis",
+      "description": "The ubiquitin‒proteasome system (UPS) and autophagy are the two primary cellular pathways of misfolded or damaged protein degradation that maintain cellular proteostasis. When the proteasome is dysfunctional, cells compensate for impaired protein clearance by activating aggrephagy, a type of selective autophagy, to eliminate ubiquitinated protein aggregates; however, the molecular mechanisms by which impaired proteasome function activates aggrephagy remain poorly understood. Here, we demonstrate that activation of aggrephagy is transcriptionally induced by the transcription factor NRF1 (NFE2L1) in response to proteasome dysfunction. Although NRF1 has been previously shown to induce the expression of proteasome genes after proteasome inhibition (i.e., the proteasome bounce-back response), our genome-wide transcriptome analyses identified autophagy-related p62/SQSTM1 and GABARAPL1 as genes directly targeted by NRF1. Intriguingly, NRF1 was also found to be indispensable for the formation of p62-positive puncta and their colocalization with ULK1 and TBK1, which play roles in p62 activation via phosphorylation. Consistently, NRF1 knockdown substantially reduced the phosphorylation rate of Ser403 in p62. Finally, NRF1 selectively upregulated the expression of GABARAPL1, an ATG8 family gene, to induce the clearance of ubiquitinated proteins. Our findings highlight the discovery of an activation mechanism underlying NRF1-mediated aggrephagy through gene regulation when proteasome activity is impaired.",
+      "datePublished": "2024-09-25",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Proteostasis[major]",
+        "Transcription Factors[major]",
+        "Proteasome Endopeptidase Complex",
+        "Macroautophagy",
+        "Gene Expression Regulation",
+        "Ubiquitin"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-023-41492-9"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Akira Kobayashi",
+      "email": "akobayas@mail.doshisha.ac.jp",
+      "description": "Organization: Doshisha University; Department: Graduate School of Life and Medical Sciences; Laboratory: Laboratory for Genetic Code",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01fxdkm29"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01fxdkm29",
+      "@type": "Organization",
+      "name": "Doshisha University"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported in part by grants-in-aid (18J20672 (AH), 19K22826 (AK), 20H04135 (AK), 21K19743 (AK), 22H04659 (AK), 19K07650 (TW) and 22K07219 (TW)) from the Ministry of Education, Culture, Sports, Science and Technology and the Mitsubishi Foundation (AK)."
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-023-41492-9",
+      "@type": "ScholarlyArticle",
+      "name": "The transcription factor NRF1 (NFE2L1) activates aggrephagy by inducing p62 and GABARAPL1 after proteasome inhibition to maintain proteostasis.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": [
+        "HCT116",
+        "Neuro2a"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1503551488,
+      "description": "1.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 353,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

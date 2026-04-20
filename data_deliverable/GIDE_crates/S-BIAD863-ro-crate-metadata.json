@@ -1,0 +1,203 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD863"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD863",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#93f3440b-e3c2-4c83-86a7-557bfb68a58f"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a39715b9-875b-490c-86e1-48aca9b1a655"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#61b8b64c-f580-44af-a23f-5e95958d6584"
+        },
+        {
+          "@id": "#76a080e0-eb60-46e8-b6a7-cff48902d311"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-28",
+      "description": "Representative raw images acquired for all fusion oncoproteins and controls included in the manuscript. All files consist of multiple Z-stacks ranging at least 10 μm and two channels. C0 files refer to the 405 channel (Hoechst DNA) and C1 files refer to the 488 channel (mEGFP-protein). ",
+      "funder": [],
+      "identifier": "S-BIAD863",
+      "keywords": [
+        "condensate",
+        "fusion oncoprotein",
+        "transcription",
+        "cell signaling"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Defining the Condensate Landscape of Fusion Oncoproteins",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD863/abefa091-03b4-4734-b3f6-75b910ed498e/c6d25b6a-f4a7-4370-92f1-4d1e79bf7372.png"
+      ]
+    },
+    {
+      "@id": "#61b8b64c-f580-44af-a23f-5e95958d6584",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02r3e0967"
+        }
+      ],
+      "email": "hazheen.shirnekhi@stjude.org",
+      "name": "Hazheen Shirnekhi"
+    },
+    {
+      "@id": "#76a080e0-eb60-46e8-b6a7-cff48902d311",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02r3e0967"
+        }
+      ],
+      "email": "richard.kriwacki@stjude.org",
+      "name": "Richard Kriwacki"
+    },
+    {
+      "@id": "https://ror.org/02r3e0967",
+      "@type": [
+        "Organization"
+      ],
+      "name": "St. Jude Children's Research Hospital"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#a39715b9-875b-490c-86e1-48aca9b1a655",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells expressing mEGFP-tagged proteins and co-stained with Hoechst DNA dye. ",
+      "name": "Defining the Condensate Landscape of Fusion Oncoproteins",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#93f3440b-e3c2-4c83-86a7-557bfb68a58f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "3D images of cells were captured as z stacks with 0.2 mm spacing between planes, spanning 12.2 mm in total. Live HeLa cells were imaged at 37°C in phenol red-free DMEM with high glucose (Gibco) supplemented with 1X penicillin/streptomycin, 10% fetal bovine serum, 4 mM L-Glutamine, and 25 mM HEPES. ",
+      "labEquipment": "All microscopy images were acquired on a 3i Marianas system (Denver, CO) configured with a Yokogawa CSU-W spinning disk confocal microscope utilizing a 100x Zeiss objective, 405 nm (Hoechst) and 488 nm (mEGFP) laser lines, and Slidebook (RRID:SCR_014300) 6.0 (3i). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Defining the Condensate Landscape of Fusion Oncoproteins"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3012
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 204145772132
+    }
+  ]
+}

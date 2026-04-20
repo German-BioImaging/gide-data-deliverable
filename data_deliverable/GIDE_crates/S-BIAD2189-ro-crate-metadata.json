@@ -1,0 +1,280 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2189"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2189",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#43c5adb3-5f0a-453a-aa3b-a161ca56ed32"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6d64f362-e466-4191-b75f-43eea0e4a0c5"
+        },
+        {
+          "@id": "#be0502b3-3d78-45bf-9c0b-aa42f9b87ebf"
+        },
+        {
+          "@id": "#fe88caa8-ddd2-4f61-84c6-1aa6deb59708"
+        },
+        {
+          "@id": "#5bbec42a-8b74-430b-b31a-d2db04d50154"
+        },
+        {
+          "@id": "obo:NCBITaxon_34506"
+        },
+        {
+          "@id": "obo:NCBITaxon_6248"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0463-2529"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8612-0016"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0260-3174"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-31",
+      "description": "Raw imaging data files for Abell et al, 2025.",
+      "funder": [],
+      "identifier": "S-BIAD2189",
+      "keywords": [
+        "skin-penetrating parasitic nematode",
+        "strongyloides stercoralis",
+        "strongyloides ratti",
+        "skin penetration",
+        "parasitic nematode behavior",
+        "nematode"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Strongyloides species exhibit distinct behaviors on the skin of different mammals",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2189/2c635d01-550d-45b8-b257-42834c2fc4a6/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0463-2529",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03g35dg18"
+        }
+      ],
+      "email": "cmcclure@desu.edu",
+      "name": "Courtney R. Abell"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8612-0016",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/046rm7j60"
+        }
+      ],
+      "email": "ruhiali@g.ucla.edu",
+      "name": "Ruhi Patel"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0260-3174",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/046rm7j60"
+        }
+      ],
+      "email": "ehallem@ucla.edu",
+      "name": "Elissa A. Hallem"
+    },
+    {
+      "@id": "https://ror.org/03g35dg18",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Delaware State University"
+    },
+    {
+      "@id": "https://ror.org/046rm7j60",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_34506",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Strongyloides ratti"
+    },
+    {
+      "@id": "obo:NCBITaxon_6248",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Strongyloides stercoralis"
+    },
+    {
+      "@id": "#5bbec42a-8b74-430b-b31a-d2db04d50154",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole organism",
+      "name": "Strongyloides stercoralis UPD strain",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6248"
+      }
+    },
+    {
+      "@id": "#6d64f362-e466-4191-b75f-43eea0e4a0c5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole organism",
+      "name": "Strongyloides ratti EAH414",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_34506"
+      }
+    },
+    {
+      "@id": "#be0502b3-3d78-45bf-9c0b-aa42f9b87ebf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole organism",
+      "name": "Strongyloides ratti ED231 strain",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_34506"
+      }
+    },
+    {
+      "@id": "#fe88caa8-ddd2-4f61-84c6-1aa6deb59708",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole organism",
+      "name": "Strongyloides stercoralis EAH435",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6248"
+      }
+    },
+    {
+      "@id": "#43c5adb3-5f0a-453a-aa3b-a161ca56ed32",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images acquired at 4 fps.",
+      "labEquipment": "Leica M 165 FC fluorescence dissection microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Skin-penetration assay acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 42297800
+    }
+  ]
+}

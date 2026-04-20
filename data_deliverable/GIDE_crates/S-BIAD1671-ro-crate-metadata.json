@@ -1,0 +1,247 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1671"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1671",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#153c748d-b6a1-4c80-95d0-5a4a0ab715bf"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6903b00b-cb67-4460-905f-64bdf6015f85"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#1431de0c-eba0-4227-a888-3c869006a5da"
+        },
+        {
+          "@id": "#e9035ca5-fb09-43c9-b577-e6abb2f7e24a"
+        },
+        {
+          "@id": "#adb1243f-aaf6-4271-a9ce-6b507b7211ab"
+        },
+        {
+          "@id": "#0f8f91ad-8d6e-4569-a26a-8cee8d742c4d"
+        },
+        {
+          "@id": "#8ccffd23-0785-4910-8b67-74ce063b0898"
+        },
+        {
+          "@id": "#b8f0d7cc-9aa2-4161-8c7a-30aa769dfde7"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-28",
+      "description": "This dataset accompanies our paper titled \"Deep Learning Imaging Analysis to Identify Bacterial Metabolic States Associated with Carcinogen Production,\" which was accepted by Discover Imaging on 17 February 2025.\n\nOur dataset comprises light microscopy images of cultured Clostridium scindens captured at 100× magnification using the TissueFAX system. \n",
+      "funder": [],
+      "identifier": "S-BIAD1671",
+      "keywords": [
+        "Clostridium scindens "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Cultured Clostridium Scindens Microscopy Images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1671/63fc23d6-e975-4138-b30c-1ca29da373b6/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0f8f91ad-8d6e-4569-a26a-8cee8d742c4d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cbfb9899-4db5-42b2-9a3f-efe4655e16d3"
+        }
+      ],
+      "name": "Daniel Lachance"
+    },
+    {
+      "@id": "#1431de0c-eba0-4227-a888-3c869006a5da",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cbfb9899-4db5-42b2-9a3f-efe4655e16d3"
+        }
+      ],
+      "email": "morouskh@fredhutch.org",
+      "name": "Maysam"
+    },
+    {
+      "@id": "#8ccffd23-0785-4910-8b67-74ce063b0898",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cbfb9899-4db5-42b2-9a3f-efe4655e16d3"
+        }
+      ],
+      "name": "Samuel S. Minot"
+    },
+    {
+      "@id": "#adb1243f-aaf6-4271-a9ce-6b507b7211ab",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cbfb9899-4db5-42b2-9a3f-efe4655e16d3"
+        }
+      ],
+      "name": "Norma Morella"
+    },
+    {
+      "@id": "#b8f0d7cc-9aa2-4161-8c7a-30aa769dfde7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cbfb9899-4db5-42b2-9a3f-efe4655e16d3"
+        }
+      ],
+      "name": "Neelendu Dey"
+    },
+    {
+      "@id": "#e9035ca5-fb09-43c9-b577-e6abb2f7e24a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cbfb9899-4db5-42b2-9a3f-efe4655e16d3"
+        }
+      ],
+      "name": "Sarwesh Rauniyar"
+    },
+    {
+      "@id": "#cbfb9899-4db5-42b2-9a3f-efe4655e16d3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Fred Hutch Cancer Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#6903b00b-cb67-4460-905f-64bdf6015f85",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bacterial cells (anaerobic gut microbiota)",
+      "name": "Clostridium Scindens",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#153c748d-b6a1-4c80-95d0-5a4a0ab715bf",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Microscopy System: TissueFAX Imaging System (TissueGnostics)\nObjective Lens: 100× magnification\nImaging Mode: Brightfield microscopy\nZ-stack Depth: 0.2 μm\nPixel Conversion Rate: 0.064 μm per pixel\nCamera Sensor: High-resolution CCD sensor\nLight Source: LED-based illumination\nExposure Time: Optimized for Gram-stained bacterial images\nContrast Enhancement: Applied using automatic histogram equalization\nFocus and Alignment: Manually adjusted to ensure sharp bacterial visualization\nAcquisition Software: TissueFAX software suite\nImaging Environment: Temperature-controlled lab at 37°C for live sample handling before fixation",
+      "labEquipment": "TissueFAX Imaging System",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 369
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1571602137
+    }
+  ]
+}

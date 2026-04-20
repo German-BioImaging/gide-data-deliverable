@@ -1,0 +1,209 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1610"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1610",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#60f7b297-9344-49d9-ae75-c47e3c4ccb97"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#00162104-ebfd-477a-9d03-a14c35b615c8"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9170-6567"
+        },
+        {
+          "@id": "#9fae3adf-85ee-4434-9ece-fbda3b8cc7e7"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-30",
+      "description": "Plants have the remarkable ability to regenerate whole organisms through formation of pluripotent cell masses from somatic cells. Cellular programs leading to fate change of somatic to pluripotent cells resemble lateral root (LR) formation and both are chiefly regulated by auxin. Brassinosteroid signalling also plays an important role during LR formation, but little is known about the direct link between auxin and brassinosteroid components, such as BZR1 and BES1, in relation to pluripotency acquisition. Here we show that gain-of-function mutants bzr1-D and bes1-D exhibit altered callus formation, yet disruption of these transcription factors does not produce major changes to callus formation or de novo organogenesis. Moreover, our data reveals that BZR1 displays enhanced expression in callus tissue and directly binds to the promoters of ARF7 and ARF19, two master pluripotency regulators, leading to their enhanced transcription. Remarkably, we see abrogation of callus formation in bzr1-D upon disruption of ARF7 and ARF19, emphasizing that BZR1 callus phenotype is dependent on these two auxin-signalling components. In conclusion, we depict a link between ARF7, ARF19 and BZR1 in the promotion of pluripotency acquisition, portraying BZR1 as a major supporting factor in callus formation.",
+      "funder": [],
+      "identifier": "S-BIAD1610",
+      "keywords": [
+        "bzr1-D",
+        "bes1-D",
+        "callus",
+        "ipsc",
+        "CIM",
+        "SIM",
+        "Callus inducing media",
+        "Shoot inducing media",
+        "stem cell",
+        "bzr1",
+        "bes1"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "BZR1 promotes pluripotency acquisition and callus development through direct regulation of ARF7 and ARF19",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1610/d86e151a-fda1-40ea-99d2-b0c0477a54c4/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#9fae3adf-85ee-4434-9ece-fbda3b8cc7e7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b154dd0c-62be-4e09-99aa-686e0e90795c"
+        }
+      ],
+      "name": "Eleazar José Rodriguez Gomes"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9170-6567",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b154dd0c-62be-4e09-99aa-686e0e90795c"
+        }
+      ],
+      "email": "thomas.j.a@bio.ku.dk",
+      "name": "Thomas Juel Ammitsøe"
+    },
+    {
+      "@id": "#b154dd0c-62be-4e09-99aa-686e0e90795c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Copenhagen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#00162104-ebfd-477a-9d03-a14c35b615c8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Root explants",
+      "name": "BZR1-YFP and BES1-YFP Arabidopsis thaliana root explant callus NT, CIM or SIM",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#60f7b297-9344-49d9-ae75-c47e3c4ccb97",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "samples were prepared on coverslip with water. Aquisition: water immersed 63x magnification for root tips and 20x for mature tissue. Fluorescent proteins were excited with 488nm laser with 518 emission. Images were captured as z-stacks",
+      "labEquipment": "Zeiss LSM700 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 144
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 590317465
+    }
+  ]
+}

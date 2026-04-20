@@ -1,0 +1,276 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1425"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1425",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#779cafdc-5261-4a65-b183-075bc12a3943"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#61f1d07d-78b4-4bed-9251-f34d16133d6c"
+        },
+        {
+          "@id": "#c23f909b-0202-4c28-99bd-97cc395aa2bb"
+        },
+        {
+          "@id": "#1c6f730a-88c1-4386-aa74-c98a7f711176"
+        },
+        {
+          "@id": "#2c764005-c9e2-4b7e-91da-2459b26ea70d"
+        },
+        {
+          "@id": "#fcfdf329-1678-4de3-92ba-7c658e75f3c6"
+        },
+        {
+          "@id": "#45473f3f-ef5c-43ab-b1c1-7ed714558937"
+        },
+        {
+          "@id": "#87e92894-f6ef-4ee0-98e5-7328f8aff4aa"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#e68f5032-0347-4420-9aee-dc05dce871d0"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-20",
+      "description": "Protein aggregates arise naturally under normal physiological conditions, but their formation is accelerated by age or stress-induced protein misfolding. When the stressful event dissolves, these aggregates are removed by mechanisms, such as aggrephagy, chaperone-mediated autophagy, refolding attempts, or the proteasome. It was recently shown that mitochondria in yeast cells may support these primarily cytosolic processes. Protein aggregates attach to mitochondria, and misfolded proteins are transported into the matrix and degraded by mitochondria-specific proteases. Using a proximity labeling method and colocalization with an established stress granule (SG) marker, we were able to show that these mitochondria-localized aggregates that harbor the “super aggregator” Ola1p are, in fact, SGs. Our in vivo and in vitro studies have revealed that Ola1p can be transferred from mitochondria to lipid droplets (LDs). This “mitochondria to LD” aggregate transfer dampens proteotoxic effects. The LD-based protein aggregate removal system gains importance when other proteolytic systems fail. Furthermore, we were able to show that the distribution of SGs is drastically altered in LD-deficient yeast cells, demonstrating that LDs play a role in the SG life cycle.",
+      "funder": [],
+      "identifier": "S-BIAD1425",
+      "keywords": [
+        "protein detoxification",
+        "protein aggregation",
+        "protein shuttling",
+        "stress response",
+        "lipid droplets",
+        "mitochondria",
+        "triacylglycerol",
+        "apoptosis",
+        "lipids/oxidation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Ola1p trafficking indicates an interaction network between mitochondria, lipid droplets, and stress granules in times of stress",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1425/25a17abd-e7e8-48f7-835a-c94d420405fc/c7b7fb18-5868-4e85-82ab-fc0a88f03663.png"
+      ]
+    },
+    {
+      "@id": "#e68f5032-0347-4420-9aee-dc05dce871d0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#09404166-f984-4fd8-a516-2cba83e52244"
+        }
+      ],
+      "email": "mark.rinnerthaler@plus.ac.at",
+      "name": "Mark Rinnerthaler"
+    },
+    {
+      "@id": "#09404166-f984-4fd8-a516-2cba83e52244",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Salzburg"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#1c6f730a-88c1-4386-aa74-c98a7f711176",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Yeast cells",
+      "name": "BY4741 Ola1-GFP Pet10-mCherry",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#2c764005-c9e2-4b7e-91da-2459b26ea70d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "BY4741 Ola1 GFP mtRFP",
+      "name": "Ola1 mtRFP 10 min. recovery",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#45473f3f-ef5c-43ab-b1c1-7ed714558937",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Yeast cells",
+      "name": "Yeplac181GPD Pet10 mCherry",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#61f1d07d-78b4-4bed-9251-f34d16133d6c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Yeast cells",
+      "name": "TIF after 48h",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#87e92894-f6ef-4ee0-98e5-7328f8aff4aa",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Yeast Cells",
+      "name": "BY4741 pUG35 ola1 gfp Yeplac181GPD Pet10 mCherry",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#c23f909b-0202-4c28-99bd-97cc395aa2bb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Yeast cells",
+      "name": "TIF after 24h",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#fcfdf329-1678-4de3-92ba-7c658e75f3c6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "BY4741 Ola1 GFP mtRFP",
+      "name": "Ola1 mtRFP 20 min. recovery",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#779cafdc-5261-4a65-b183-075bc12a3943",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Microscopical analysis was performed with a Nikon (Tokyo, Japan) Eclipse Ni-U equipped with a DS-Fi2 digital camera, a Nikon Eclipse Ti2-E (Tokyo, Japan), and a Leica DMi8 microscope (Wetzlar, Germany) with an Abberior STEDYCON instrument (Abberior, Göttingen, Germany). Colocalization of two fluorescent proteins was quantified using the imaging software NIS-Elements (Nikon, Tokyo, Japan). This software determines the Pearson's correlation coefficient (PCC) and Mander's correlation coefficient (MCC). MCC ranges from 0 to 1, and PCC ranges from −1 to +1. In case of PCC, a positive value indicates a colocalization event, whereas a negative value indicates no colocalization. The higher the PCC and MCC, the better the colocalization. The PCC as well as MCC was calculated for 10 cells. Scale bars in all images represent 5 μm.",
+      "labEquipment": "Microscopical analysis was performed with a Nikon (Tokyo, Japan) Eclipse Ni-U equipped with a DS-Fi2 digital camera, a Nikon Eclipse Ti2-E (Tokyo, Japan), and a Leica DMi8 microscope (Wetzlar, Germany) with an Abberior STEDYCON instrument (Abberior, Göttingen, Germany). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquesition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 181
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 36670960145
+    }
+  ]
+}

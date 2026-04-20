@@ -1,0 +1,292 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2452"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2452",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ef0336dc-59e5-41c8-8d05-3984c49b3a43"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#50b553c4-7da7-4e7e-9c3a-6d6013275a3e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0003-3476-6258"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9999-4292"
+        },
+        {
+          "@id": "#3dc800cb-8b96-4c8f-af17-9cdf4eba2097"
+        },
+        {
+          "@id": "#580a8568-ded0-4246-a4d8-670f2efbfc65"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9041-9988"
+        },
+        {
+          "@id": "#9e80c29d-3560-4e75-9ca1-214e28c10f2c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-27",
+      "description": "This dataset comprises an independent Korean cohort of clear cell renal cell carcinoma (ccRCC) patients collected at Seoul National University Hospital. This cohort comprises patients that have undergone surgical retention with no prior treatment. It includes 300 haematoxylin and eosin (H&E) whole-slide images (WSIs) providing detailed histopathological context, alongside 71 lo-plex immunofluorescence (mIF) WSIs. The mIF panel targets  p21, MCM2, and Lamin B1,with Hoechst used as a nuclear counterstain. Additionally, 71 single-plex immunohistochemistry (IHC) images for CD105 (DAB chromogen staining of vasculature) are provided for complementary vascular analyses.\nAll H&E WSIs were acquired using a Zeiss Axio Scan.Z1 scanner at 20× magnification, and automated image analysis of all mIF slides was performed using HALO® software. The principal derived metrics for each tumour are the percentages of p21⁺/MCM2⁻ cells and CD105⁺/p21⁺/MCM2⁻ cells, representing the cell-cycle arrest fractions in tumour and putative endothelial cell populations, respectively.\nEach case is accompanied by two CSV files containing quantitative metrics (phenotypic proportions and average nuclear/cell parameters), along with a clinical metadata file providing de-identified patient information. The clinical data include recurrence, disease-free survival (DFS), Fuhrman nuclear grade, tumor status, tumor size, lymph node status, tumour necrosis, Leibovich score based on Fuhrman grade (Lscore_Fuhrman), ISUP grade (International Society of Urological Pathology grade), and Leibovich score based on ISUP grade (Lscore_ISUP).",
+      "funder": [],
+      "identifier": "S-BIAD2452",
+      "keywords": [
+        "clear cell Renal Cell Carcinoma",
+        "H&E",
+        "Cell cycle arrest",
+        "Biomarker",
+        "multiplex immunoflourescence ",
+        "whole slide image",
+        "P21",
+        "MCM2",
+        "CD105"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Histopathology and Lo-multiplex immunofluorescence dataset of cell‐cycle related proteins in renal cell carcinoma – Korean cohort",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2452/cad13c96-7ee6-44d7-8ab4-7ea644256e4f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#3dc800cb-8b96-4c8f-af17-9cdf4eba2097",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04h9pn542"
+        }
+      ],
+      "email": "mdrafael@snu.ac.kr",
+      "name": "Cheol Kwak"
+    },
+    {
+      "@id": "#580a8568-ded0-4246-a4d8-670f2efbfc65",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04h9pn542"
+        }
+      ],
+      "email": "blue7270@snu.ac.kr",
+      "name": "Kyung Chul Moon"
+    },
+    {
+      "@id": "#9e80c29d-3560-4e75-9ca1-214e28c10f2c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04h9pn542"
+        }
+      ],
+      "email": "drboss@snu.ac.kr",
+      "name": "Chang Wook Jeong"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9041-9988",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "djh20@st-andrews.ac.uk",
+      "name": "David Harrison"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9999-4292",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-3476-6258",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "ha82@st-andrews.ac.uk",
+      "name": "Hazem Abdullah"
+    },
+    {
+      "@id": "https://ror.org/02wn5qz54",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://ror.org/04h9pn542",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Seoul National University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#50b553c4-7da7-4e7e-9c3a-6d6013275a3e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Kidney tumor (clear-cell renal cell carcinoma)",
+      "name": "Clear-cell Renal cell Carcinoma ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ef0336dc-59e5-41c8-8d05-3984c49b3a43",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20× objective; bright-field scanning for H&E and DAB IHC slides; fluorescence scanning for multiplex IF slides. Fluorescence channels for IF were: Cy3 (p21), FITC (MCM2), Cy5 (Lamin B1), plus DAPI/Hoechst for nuclei. All images were captured at full slide resolution and stored in CZI format.",
+      "labEquipment": "Zeiss Axio Scan.Z1 automated slide scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Whole-Slide Scanning of H&E, IF, and IHC slides"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 444
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1305430705548
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1325"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1325",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2fb52127-9d9f-4c8f-ae30-6f309a70aca5"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#52a7ce75-95f3-45b8-aa98-4727d303fcf8"
+        },
+        {
+          "@id": "#8ef01c27-114f-4f9d-bda4-21c53851d4e7"
+        },
+        {
+          "@id": "#4efe0ff4-59e7-4c04-b8fd-30bf9f7c8b6c"
+        },
+        {
+          "@id": "#fc86d868-fd67-4198-b8db-ff40aed2be0d"
+        },
+        {
+          "@id": "obo:NCBITaxon_1126"
+        },
+        {
+          "@id": "obo:NCBITaxon_1160"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2349-945X"
+        },
+        {
+          "@id": "#aabdd9b2-a3b6-4c69-9896-3e55955b09e6"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-29",
+      "description": "In this study time-lapse experiments have been performed using pulsed feeding of non-natural amino acids (non-AAs) in order to observe the build up or decline of azide- or alkyne-modified (clickable) microcystins (MCs) or anabaenopetins (APs) in M. aeruginosa and P. agardhii. Clickable MCs or APs have been subsequently labeled via Copper-catalyzed Azide-Alkyne Cycloaddition (CuAAC) with ALEXA Fluor 488 (A488) and imaged using confocal microscopy analysis ",
+      "funder": [],
+      "identifier": "S-BIAD1325",
+      "keywords": [
+        "Microcystin",
+        "Anabaenopeptin",
+        "Planktothrix",
+        "Microcystis",
+        "cyanopeptide synthesis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Real-time observation of clickable cyanopeptide synthesis in bloom-forming cyanobacteria Microcystis and Planktothrix",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#aabdd9b2-a3b6-4c69-9896-3e55955b09e6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#423ae4eb-2d5c-4dfe-ba6c-933219e6a6ce"
+        }
+      ],
+      "email": "rainer.kurmayer@uibk.ac.at",
+      "name": "Rainer Kurmayer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2349-945X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#423ae4eb-2d5c-4dfe-ba6c-933219e6a6ce"
+        }
+      ],
+      "email": "ruben.moron-asensio@uibk.ac.at",
+      "name": "Rubén Morón Asensio"
+    },
+    {
+      "@id": "#423ae4eb-2d5c-4dfe-ba6c-933219e6a6ce",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universität Innsbruck"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_1126",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Microcystis aeruginosa"
+    },
+    {
+      "@id": "obo:NCBITaxon_1160",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Planktothrix agardhii"
+    },
+    {
+      "@id": "#4efe0ff4-59e7-4c04-b8fd-30bf9f7c8b6c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Planktothrix agardhii filament section",
+      "name": "Planktothrix agardhii No371/1 time lapse build up",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1160"
+      }
+    },
+    {
+      "@id": "#52a7ce75-95f3-45b8-aa98-4727d303fcf8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Microcystis aeruginosa individual cells.",
+      "name": "Microcystis aeruginosa strain Hofbauer time-lapse build up",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1126"
+      }
+    },
+    {
+      "@id": "#8ef01c27-114f-4f9d-bda4-21c53851d4e7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Microcystis aeruginosa strain Hofbauer cells",
+      "name": "Microcystis aeruginosa strain Hofbauer time-lapse decline",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1126"
+      }
+    },
+    {
+      "@id": "#fc86d868-fd67-4198-b8db-ff40aed2be0d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Planktothrix agardhii filament section",
+      "name": "Planktothrix agardhii No371/1 time-lapse decline",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1160"
+      }
+    },
+    {
+      "@id": "#2fb52127-9d9f-4c8f-ae30-6f309a70aca5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "5 µl of the samples were mounted using antifade solution (ProLong® Diamond Antifade Mountant, Thermo Fisher Scientific, Darmstadt, Germany). The samples were air-dried for 48 h in the dark and stored in slide boxes placed in sealed plastic bags at 4 °C until microscopy analysis. For the image acquisition, a DMI 6000 SP8 (Leica Microsystems) microscope was used. Images were taken with a 93× HCX Plan Apo 1.4 glycerol objective and 10.5x digital zoom. Images were acquired via a sequential scan protocol using the following laser configuration: Channel 0 (Ch0) excitation at 495nm (Em 500-550 nm), and channel 1 (Ch1) excitation at 620 nm (Em 680-730 nm). Ch0 was used for measuring intensities of ALEXA 488 labeled modified cyanopeptides, while Ch1 was used for measuring the intrinsic natural autofluorescence of the cells.\n\nAn initial set of images was taken with a digital magnification of 2.25x, while three-dimensional images were acquired at a digital magnification of 10.5x to a resolution of 50 nm per voxel in the XY axis and 150 nm at the Z axis. Confocal images were deconvolved to improve final resolution with Huygens Essential 23.1 software using the Classic Maximum Likelihood Estimation (CMLE) algorithm, according to the manufacturer’s recommendations (Science Volume Imaging BV, Hilversum, The Netherlands).",
+      "labEquipment": "Leica Microsystems SP8 Laser Scanning Confocal Microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 104420646756
+    }
+  ]
+}

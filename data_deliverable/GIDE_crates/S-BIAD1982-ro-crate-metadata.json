@@ -1,0 +1,454 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1982"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1982",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#81e4c074-0549-448b-b152-d801d1be0155"
+        },
+        {
+          "@id": "#13adaf51-6d91-43f5-a328-e42ba617dd73"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ea80676e-0de4-4aee-b0c4-27928c3a7143"
+        },
+        {
+          "@id": "#b21e832e-47ab-4103-865a-1da47a97d276"
+        },
+        {
+          "@id": "#d7a8b453-3503-4998-a3c3-9192b19ab681"
+        },
+        {
+          "@id": "#3beed082-359d-40b2-8915-cd313a5359df"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1016-2447"
+        },
+        {
+          "@id": "#cd0c565f-137b-4447-8ed3-1c05290e9655"
+        },
+        {
+          "@id": "#e5737212-b334-4418-8941-f9ea74063950"
+        },
+        {
+          "@id": "#5630aa61-fbf7-4834-aab9-e6846635c302"
+        },
+        {
+          "@id": "#f8ec6f58-2fd8-4721-9468-203f259a4e2a"
+        },
+        {
+          "@id": "#ae3be13c-98b2-4865-a706-dcdb3d5c41b1"
+        },
+        {
+          "@id": "#0c5d9c84-2fe1-4077-8b70-dc0c55473d74"
+        },
+        {
+          "@id": "#5df0cabc-39db-4417-af51-62b6240c6dfe"
+        },
+        {
+          "@id": "#0890dd79-5ff6-4973-a72c-5db0a06942a7"
+        },
+        {
+          "@id": "#520ce133-86e6-455c-8454-399dd88b248d"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1101/2024.09.23.614351"
+        }
+      ],
+      "datePublished": "2025-05-26",
+      "description": "We here report an aberration-corrected 25-plane camera array Multifocus microscope (M25) for high-speed, high-resolution wide-field optical microscopy in three spatial dimensions (3D). We demonstrate live imaging of 25-plane 3D volumes of up to 180x180x50um at >100 volumes per second. 3D data is recorded simultaneously by an array of 25 small, sensitive, synchronized machine-vision cameras. M25 employs aberration-corrected Multifocus microscopy—an optical method where diﬀractive Fourier optics are used for multiplexing and refocusing light—with a simplified design for chromatic dispersion correction where a corrective diﬀractive gratings is placed on each camera in the array. This elegant architecture for chromatic correction will be applicable in a broad range of diﬀractive imaging applications. M25 is a powerful optical tool for high-speed 3D microscopy in that it allows both non-invasive, label-free bright-field and highly sensitive fluorescence microscopy. We showcase M25 capabilities in 3D particle tracking, bright-field, and fluorescence imaging in D. melanogaster, and locomotion and neural activity studies in C. elegans.",
+      "funder": [],
+      "identifier": "S-BIAD1982",
+      "keywords": [
+        "fluorescence microscopy",
+        "high-speed imaging",
+        "multifocus microscopy",
+        "multi-camera",
+        "C.elegans",
+        "D.melanogaster",
+        "neuroscience"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "High-speed 3D Imaging with 25-Camera Multifocus Microscope",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#0890dd79-5ff6-4973-a72c-5db0a06942a7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#892c19b9-35d7-4bbc-8f08-0d15dfd71955"
+        }
+      ],
+      "name": "Gal Haspel"
+    },
+    {
+      "@id": "#0c5d9c84-2fe1-4077-8b70-dc0c55473d74",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#21423493-5150-4d2e-a31d-c9351fe2136e"
+        }
+      ],
+      "name": "John Demis"
+    },
+    {
+      "@id": "#520ce133-86e6-455c-8454-399dd88b248d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f6996c98-51f0-429b-a544-f05bfb3da700"
+        }
+      ],
+      "email": "sara.abrahamsson@gmail.com",
+      "name": "Sara Abrahamsson"
+    },
+    {
+      "@id": "#5630aa61-fbf7-4834-aab9-e6846635c302",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#885b8c58-7650-432e-a583-911109bb7834"
+        }
+      ],
+      "name": "Maximilian Senftleben"
+    },
+    {
+      "@id": "#5df0cabc-39db-4417-af51-62b6240c6dfe",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#602dd4cb-ab10-4d4b-b972-2c6f998cc7ca"
+        }
+      ],
+      "name": "Jennifer Morgan"
+    },
+    {
+      "@id": "#ae3be13c-98b2-4865-a706-dcdb3d5c41b1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6cde08dc-58cc-40ce-b02f-9b4808ee3a0f"
+        }
+      ],
+      "name": "Thomas Graham"
+    },
+    {
+      "@id": "#cd0c565f-137b-4447-8ed3-1c05290e9655",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f6996c98-51f0-429b-a544-f05bfb3da700"
+        }
+      ],
+      "name": "Antone Bajor"
+    },
+    {
+      "@id": "#e5737212-b334-4418-8941-f9ea74063950",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#885b8c58-7650-432e-a583-911109bb7834"
+        }
+      ],
+      "name": "Gustav Petterson"
+    },
+    {
+      "@id": "#f8ec6f58-2fd8-4721-9468-203f259a4e2a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#602dd4cb-ab10-4d4b-b972-2c6f998cc7ca"
+        }
+      ],
+      "name": "Kaitlyn Fouke"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1016-2447",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f6996c98-51f0-429b-a544-f05bfb3da700"
+        }
+      ],
+      "email": "edhiratam@gmail.com",
+      "name": "Eduardo Hirata-Miyasaki"
+    },
+    {
+      "@id": "#21423493-5150-4d2e-a31d-c9351fe2136e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Santa Barbara"
+    },
+    {
+      "@id": "#602dd4cb-ab10-4d4b-b972-2c6f998cc7ca",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Marine Biological Laboratory"
+    },
+    {
+      "@id": "#6cde08dc-58cc-40ce-b02f-9b4808ee3a0f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Berkeley"
+    },
+    {
+      "@id": "#885b8c58-7650-432e-a583-911109bb7834",
+      "@type": [
+        "Organization"
+      ],
+      "name": "KTH Royal Institute of Technology"
+    },
+    {
+      "@id": "#892c19b9-35d7-4bbc-8f08-0d15dfd71955",
+      "@type": [
+        "Organization"
+      ],
+      "name": "New Jersey Institute of Technology"
+    },
+    {
+      "@id": "#f6996c98-51f0-429b-a544-f05bfb3da700",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Santa Cruz"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2024.09.23.614351",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "None",
+      "name": "High-speed 3D Imaging with 25-Camera Multifocus Microscope"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#3beed082-359d-40b2-8915-cd313a5359df",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Fluorescent Beads",
+      "name": "Beads",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#b21e832e-47ab-4103-865a-1da47a97d276",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C.elegans larvae L1 stage",
+      "name": "ZW495 C.elegans",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#d7a8b453-3503-4998-a3c3-9192b19ab681",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C.elegans L1 larvae",
+      "name": "Paneuronal C.elegans",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#ea80676e-0de4-4aee-b0c4-27928c3a7143",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "D.melanogaster larvae",
+      "name": "H2B Drosophila",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#13adaf51-6d91-43f5-a328-e42ba617dd73",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "M25 UCSC",
+      "labEquipment": "Custom microscope using a 25-camera array multifocus microscope (M25) built on a commercial microscope.\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "M25 UCSC"
+    },
+    {
+      "@id": "#81e4c074-0549-448b-b152-d801d1be0155",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "M25 MBL",
+      "labEquipment": "Custom microscope using a 25-camera array multifocus microscope (M25) built on a commercial microscope.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "M25 MBL"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 24238080312
+    }
+  ]
+}

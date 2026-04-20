@@ -1,0 +1,383 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1761"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1761",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#06daabf3-8062-45c2-9bd4-385ef1859251"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a4e0a1ab-a5fc-475b-b9b6-05e761e4ffd4"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6250-3170"
+        },
+        {
+          "@id": "#e57b50d5-2a37-40bc-89a1-57622f6e0d7a"
+        },
+        {
+          "@id": "#727c9e9e-2f37-46e0-9f7b-cf0f9091dd54"
+        },
+        {
+          "@id": "#a3d427c0-ce48-4c69-b7f4-3944e60ad745"
+        },
+        {
+          "@id": "#2cc58638-3cb8-47be-a12c-ad19e2e9fc6c"
+        },
+        {
+          "@id": "#1c5ddb55-2d50-480f-8f55-f55f03427b3c"
+        },
+        {
+          "@id": "#f29d9ecd-8a1e-4cb5-b1e6-b59c9b5df765"
+        },
+        {
+          "@id": "#1f0121af-173e-42e9-8c25-69063f019778"
+        },
+        {
+          "@id": "#62e30bfb-2021-4f74-b7c1-9ffc12787fa3"
+        },
+        {
+          "@id": "#0b5fbcb1-853e-49c4-8557-980b630f2b0f"
+        },
+        {
+          "@id": "#601d4fb1-f9b8-45f2-8c7b-e90ae5de25d6"
+        },
+        {
+          "@id": "#e6b601e2-e7dc-4e14-bed9-b6eae7cfc62c"
+        },
+        {
+          "@id": "#d004c1fc-ee99-4635-903b-b80fbcbdb3f4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-16",
+      "description": "Fetal hematopoiesis takes place in the liver before colonizing the bone marrow where it will persist for life. This colonization is thought to be mediated by specification of a microenvironment that selectively recruits hematopoietic cells to the nascent bone marrow. The identity and mechanisms regulating the specification of this “colonization niche” are unclear. Here we identify a VCAM1+ sinusoidal colonization niche in the diaphysis that regulates neutrophil and hematopoietic stem cell colonization of the bone marrow. Using confocal microscopymicroscopy, we found that colonizing hematopoietic stem and progenitor cells (HSPC) and myeloid cells selectively localize to a subset of VCAM1+ sinusoids in the center of the diaphysis. Vcam1 deletion in endothelial cells impaired hematopoietic colonization while depletion of yolk-sac-derived osteoclasts abrogateddisrupted VCAM1+ expression, resulting in impaired and neutrophil and HSPC colonization ofto the bone marrow. Unexpectedly, depletion of yolk-sac-derived myeloid cells also increased fetal liver hematopoietic stem cell numbers, function and erythropoiesis in an osteoclast-independent mannerof osteoclast activity. Thus, the yolk sac produces two different types of myeloid cells in different organs that have oppositedistinct roles in regulating fetal hematopoiesis: while yolk-sac derived myeloid cells in the bone marrow promote hematopoietic colonization by specifying a VCAM1+ colonization niche, a different subset of yolk-sac-derived myeloid cells inhibitsregulates HSC in the fetal liverfetal liver hematopoiesis.",
+      "funder": [],
+      "identifier": "S-BIAD1761",
+      "keywords": [
+        "Fetal Hematopoiesis",
+        "Definitive hematopoiesis",
+        "Bone Marrow Microenvironment",
+        "Myeloid Cells",
+        "Hematopoiesis",
+        "Fetal Liver"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Differential Regulation of Fetal Bone Marrow and Liver Hematopoiesis by Yolk-Sac-Derived Myeloid Cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1761/09d7aad5-f7a4-40fe-93a9-f2fbb82deefe/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0b5fbcb1-853e-49c4-8557-980b630f2b0f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "J. Matthew Kofron"
+    },
+    {
+      "@id": "#1c5ddb55-2d50-480f-8f55-f55f03427b3c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Sumit Kumar"
+    },
+    {
+      "@id": "#1f0121af-173e-42e9-8c25-69063f019778",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Jizhou Zhang"
+    },
+    {
+      "@id": "#2cc58638-3cb8-47be-a12c-ad19e2e9fc6c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Xiaowei Gu"
+    },
+    {
+      "@id": "#601d4fb1-f9b8-45f2-8c7b-e90ae5de25d6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Ty D. Troutman"
+    },
+    {
+      "@id": "#62e30bfb-2021-4f74-b7c1-9ffc12787fa3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Qingqing Wu"
+    },
+    {
+      "@id": "#727c9e9e-2f37-46e0-9f7b-cf0f9091dd54",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Morgan Kincaid"
+    },
+    {
+      "@id": "#a3d427c0-ce48-4c69-b7f4-3944e60ad745",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Aryan Tadwalkar"
+    },
+    {
+      "@id": "#d004c1fc-ee99-4635-903b-b80fbcbdb3f4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "email": "Daniel.Lucas@cchmc.org",
+      "name": "Daniel Lucas"
+    },
+    {
+      "@id": "#e57b50d5-2a37-40bc-89a1-57622f6e0d7a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Shelli Homan"
+    },
+    {
+      "@id": "#e6b601e2-e7dc-4e14-bed9-b6eae7cfc62c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Tony De Falco"
+    },
+    {
+      "@id": "#f29d9ecd-8a1e-4cb5-b1e6-b59c9b5df765",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "name": "Anastasiya Slaughter"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6250-3170",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "email": "benjamin.weinhaus@gmail.com",
+      "name": "Benjamin Weinhaus"
+    },
+    {
+      "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Cincinnati Children's Hospital Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#a4e0a1ab-a5fc-475b-b9b6-05e761e4ffd4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Fetal and adult bone marrow",
+      "name": "Fetal Bone Marrow from E16.5-18.5",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#06daabf3-8062-45c2-9bd4-385ef1859251",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal imaging was performed on whole-mounted tissue samples or vibratome sections in a Nikon AXR Inverted Confocal Microscope with the following specifications: high power 405 nm, 445 nm, 488 nm, 514 nm, 561 nm, 594 nm, 640 nm, and 730 nm solid-state diode lasers. All microscopes were equipped with a fully encoded scanning XY motorized stage, Piezo-Z nosepiece for high-speed Z-stack acquisition, resonant and galvanometric scanners, one high-quantum efficiency, low-noise Hamamatsu photomultiplier tube, and three high-quantum efficiency gallium arsenide phosphide photomultiplier tubes (GaAsP-PMTs) for overall 400-820nm detection. For image acquisition we used a LWD Lambda S 40XC water-immersion objective (Nikon, MRD77410) with a resonant scanner and 4X line averaging, 1024 x 1024 pixels resolution, and 0.3 μm Z-step. \n\nFor all pentachrome sections – Transmitted light images were taken on a Nikon NiE upright microscope using a Plan Apo 20x NA 0.75 DIC M N2 (MRD70270) with a Digital Sight 10 camera (SN:111333). Brightness, white balance, exposure, voltage and gain were adjusted for each experiment, with settings maintained throughout the experiment, prior to acquisition.\n\nFor FACS analyses, cells were stained with a cocktail with the indicated antibodies used in each stain for 30 minutes, washed thrice with ice-cold PBS containing 2mm EDTA and 0.5% Bovine Serum Albumin, and analyzed in a BD LSRFortessa™ Flow Cytometer (BD Bioscience). Dead cells and doublets were excluded based on FSC and SSC distribution and DAPI exclusion (Sigma-Aldrich, catalogue number D9542).  The very low hematopoietic stem cell and progenitor numbers found in the E18.5 femur made rigorous detection of these cells in individual femurs challenging. Therefore, for each analysis, we stained and FACS-analyzed all cells found in the long bones from each litter and then plotted the values normalized to the cellularity of one individual femur. Supplementary Figure 1 in the manuscript provides examples of gating strategies for the cell populations interrogated using flow cytometry. Supplementary Table 1 lists all antibodies and dilutions used.",
+      "labEquipment": "Nikon AXR Inverted Confocal Microscope \nNikon NiE upright microscope\na BD LSRFortessa Flow Cytometer ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Methods of Analysis"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 381
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 5143333099977
+    }
+  ]
+}

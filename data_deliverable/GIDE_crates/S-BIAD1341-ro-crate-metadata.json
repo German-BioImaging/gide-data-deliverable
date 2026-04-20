@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1341"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1341",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8d99a156-dbdc-4eb0-bbca-24405a4b7283"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1fff4ca5-df0f-484f-b305-140b1a4b9d65"
+        },
+        {
+          "@id": "obo:NCBITaxon_562"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#adc4fc1b-0217-4c98-a22a-c0354650f153"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-03",
+      "description": "confocal imaging data of biofilms generated using Multipattern Biofilm Lithography detailed in the publication \"Optogenetic patterning generates multi-strain biofilms with spatially distributed antibiotic resistance\" (Jin and Riedel-Kruse 2024)",
+      "funder": [],
+      "identifier": "S-BIAD1341",
+      "keywords": [
+        "biofilm",
+        "patterning"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Optogenetic patterning generates multi-strain biofilms with spatially distributed antibiotic resistance",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1341/7d19e980-0f52-41ee-bd59-6a1cb9c40805/c9d59b82-7008-4605-8df1-d1f11d2c4751.png"
+      ]
+    },
+    {
+      "@id": "#adc4fc1b-0217-4c98-a22a-c0354650f153",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af230922-69b4-4019-b930-7eb9af0ce951"
+        }
+      ],
+      "email": "xiaofan.jin@ucalgary.ca",
+      "name": "Xiaofan Jin"
+    },
+    {
+      "@id": "#af230922-69b4-4019-b930-7eb9af0ce951",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Calgary"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_562",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli"
+    },
+    {
+      "@id": "#1fff4ca5-df0f-484f-b305-140b1a4b9d65",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Genetically engineered E. coli with MBL",
+      "name": "Genetically engineered E. coli with MBL",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#8d99a156-dbdc-4eb0-bbca-24405a4b7283",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images taken on Zeiss LSM 880 Confocal Microscope with a 10x objective, in a heated (30degC) microscopy chamber. Hoechst, GFP and RFP signals were captured using excitation / emission wavelengths of 405/455nm, 488/530nm and 561/626nm respectively.",
+      "labEquipment": "Zeiss LSM 880 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal images taken using Zeiss LSM 880 "
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 348
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 116687598636
+    }
+  ]
+}

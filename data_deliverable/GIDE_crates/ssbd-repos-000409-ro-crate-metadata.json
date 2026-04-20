@@ -1,0 +1,235 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000409/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000409/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000409",
+      "name": "A set of image data used for demonstration of a newly developed optical imaging system \"AMATERAS-2\"",
+      "description": "volumetric fluorescence imaging data of cardiac organoid derived from human-iPS cells, mouse brain section, and quail embryo",
+      "datePublished": "2025-02-03",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Mice",
+        "Imaging, Three-Dimensional/methods[major]",
+        "Quail/embryology[major]",
+        "Brain/embryology[major]",
+        "Brain/cytology[major]",
+        "Embryo, Mammalian/cytology",
+        "Time-Lapse Imaging/methods",
+        "Optical Imaging/methods",
+        "Embryo, Nonmammalian/cytology"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.93633"
+        },
+        {
+          "@id": "https://doi.org/10.7554/elife.93633.2"
+        },
+        {
+          "@id": "https://doi.org/10.7554/elife.93633.1"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000056"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Taro Ichimura",
+      "email": "ichimura@otri.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: Institute for Open and Transdisciplinary Research Initiatives",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Takeharu Nagai",
+      "description": "Department: SANKEN (The Institute of Scientific and Industrial Research)"
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.93633",
+      "@type": "ScholarlyArticle",
+      "name": "Volumetric trans-scale imaging of massive quantity of heterogeneous cell populations in centimeter-wide tissue and embryo.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.7554/elife.93633.2",
+      "@type": "ScholarlyArticle",
+      "name": "Volumetric trans-scale imaging of massive quantity of heterogeneous cell populations in centimeter-wide tissue and embryo",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "https://doi.org/10.7554/elife.93633.1",
+      "@type": "ScholarlyArticle",
+      "name": "Volumetric trans-scale imaging of massive quantity of heterogeneous cell populations in centimeter-wide tissue and embryo",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Coturnix japonica"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "NA, C57BL/6J, tie1:H2B-eYFP",
+      "description": "NA, C57BL/6J, tie1:H2B-eYFP",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "hasCellLine": "201B7"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "trans-scale scope AMATERAS-2",
+      "description": "trans-scale scope AMATERAS-2",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000056"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000056",
+      "@type": "DefinedTerm",
+      "name": "trans-scale scope AMATERAS-2"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 680465039360,
+      "description": "680.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 5122,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

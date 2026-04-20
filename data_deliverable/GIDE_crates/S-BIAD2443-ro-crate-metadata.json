@@ -1,0 +1,284 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2443"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2443",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#57c3503a-a941-40bb-acdc-b0db18f2a096"
+        },
+        {
+          "@id": "#dea7a2ab-ac10-4fa1-80eb-a2eba1699781"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#bbe0267b-f9c0-4c69-9c3d-6fde61652fee"
+        },
+        {
+          "@id": "#85f00ba1-51f9-4396-9640-a88e564cba98"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5823-4884"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1277-4631"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1016/j.cels.2022.10.001"
+        },
+        {
+          "@id": "https://doi.org/10.1038/nbt.4225"
+        }
+      ],
+      "datePublished": "2025-11-26",
+      "description": "Reprocessed images from LINCS image dataset and Human Protein Atlas for training deep learning models. ",
+      "funder": [],
+      "identifier": "S-BIAD2443",
+      "keywords": [
+        "Cell Painting",
+        "Human Protein Atlas",
+        "LINCS",
+        "HPA",
+        "Microscopy",
+        "Fluorescent"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Cell-DINO: Self-Supervised Image-based Embeddings for Cell Fluorescent Microscopy\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1277-4631",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05cb4rb43"
+        },
+        {
+          "@id": "https://ror.org/01y2jtd41"
+        }
+      ],
+      "email": "juan.caicedo@wisc.edu",
+      "name": "Juan C. Caicedo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5823-4884",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fdac1d15-c219-4688-a192-4064e7d35909"
+        }
+      ],
+      "email": "nikitam851@gmail.com",
+      "name": "Nikita Moshkov"
+    },
+    {
+      "@id": "#fdac1d15-c219-4688-a192-4064e7d35909",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Munich"
+    },
+    {
+      "@id": "https://ror.org/01y2jtd41",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Wisconsin–Madison"
+    },
+    {
+      "@id": "https://ror.org/05cb4rb43",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Morgridge Institute for Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.cels.2022.10.001",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2022",
+      "name": "Morphology and gene expression profiling provide complementary information for mapping cell state."
+    },
+    {
+      "@id": "https://doi.org/10.1038/nbt.4225",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2018",
+      "name": "Deep learning is combined with massive-scale citizen science to improve large-scale image classification."
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#85f00ba1-51f9-4396-9640-a88e564cba98",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "27 different cell types - Segmented cells and fields of view",
+      "name": "Human Protein Atlas",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bbe0267b-f9c0-4c69-9c3d-6fde61652fee",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A549 Human cells - 1,571 compounds across 6 doses in A549 cells",
+      "name": "LINCS",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#57c3503a-a941-40bb-acdc-b0db18f2a096",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Phenix Opera with a 20X/1.0NA water objective, 1x1 binning",
+      "labEquipment": "Cell Painting assay, Phenix Opera",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Cell Painting"
+    },
+    {
+      "@id": "#dea7a2ab-ac10-4fa1-80eb-a2eba1699781",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "-",
+      "labEquipment": "-",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "HPA"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 141
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1425925481854
+    }
+  ]
+}

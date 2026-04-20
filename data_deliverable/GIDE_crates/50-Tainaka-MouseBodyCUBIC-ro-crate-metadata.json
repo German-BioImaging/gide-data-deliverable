@@ -1,0 +1,229 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/50-Tainaka-MouseBodyCUBIC/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/50-Tainaka-MouseBodyCUBIC/",
+      "@type": "Dataset",
+      "identifier": "50-Tainaka-MouseBodyCUBIC",
+      "name": "50-Tainaka-MouseBodyCUBIC",
+      "description": "50-Tainaka-MouseBodyCUBIC",
+      "datePublished": "2017-10-03",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Amino Alcohols/analysis[major]",
+        "Animals",
+        "Diabetes Mellitus/pathology",
+        "Imaging, Three-Dimensional/methods",
+        "Islets of Langerhans/pathology",
+        "Male",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "Single-Cell Analysis/methods[major]",
+        "Whole Body Imaging/methods[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.cell.2014.10.034"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-104"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hiroki R Ueda",
+      "email": "uedah-tky@umin.ac.jp",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Kazuki Tainaka"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Shimpei I. Kubota"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Takeru Q. Suyama"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Etsuo A. Susaki"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Dimitri Perrin"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Maki Ukai-Tadenuma"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Hideki Ukai"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Hiroki R. Ueda"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.cell.2014.10.034",
+      "@type": "ScholarlyArticle",
+      "name": "Whole-body imaging with single-cell resolution by tissue decolorization.",
+      "datePublished": "2014"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 118905495,
+      "description": "118.9 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 181,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

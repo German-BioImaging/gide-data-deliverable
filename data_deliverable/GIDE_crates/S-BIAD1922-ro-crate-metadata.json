@@ -1,0 +1,228 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1922"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1922",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5549c82c-6205-4a03-b5a3-4d39e7b45d6c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#34f4925d-7d03-4ef2-9a55-d4bcc1807451"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5036-2419"
+        },
+        {
+          "@id": "#eb4142f8-dd4a-4bd5-9c86-c4854a6da254"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-08",
+      "description": "Gene regulation by RNA interference (RNAi) is a conserved process driven by double-stranded RNA (dsRNA). It responds to exogenous cues and drives endogenous gene regulation. In Caenorhabditis elegans, RNAi can be inherited from parents to offspring. While a number of factors have been implicated in this inheritance process, we do not understand how and when they function. Using a new inheritance assay, we establish a hierarchy amongst previously identified inheritance factors. The nuclear Argonaute protein HRDE-1 was required for RNAi establishment in parents and offspring, but not for the inheritance process. In contrast, the cytoplasmic Argonaute protein WAGO-3 was the only factor essential for inheritance, via sperm and oocyte, while not affecting establishment in either parent or offspring. We propose a cycle between nuclear and cytoplasmic Argonaute proteins, where nuclear activity drives most of the silencing and cytoplasmic activity ensures inheritance. Finally, we implicate the RNA helicase ZNFX-1 as a factor that links the inherited WAGO-3 protein to nuclear RNAi in the offspring.",
+      "funder": [],
+      "identifier": "S-BIAD1922",
+      "keywords": [
+        "Epigenetic",
+        "RNAi inheritance",
+        "Germ cells",
+        "C. elegans",
+        "WAGO",
+        "Paternal",
+        "Maternal",
+        "Zygotic",
+        "Argonaute protein"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Schreier_et_al_2025_A_genetic_framework_for_RNAi_inheritance_in_Caenorhabditis_elegans",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1922/768365b1-b496-408f-8bd9-c0315e11521c/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#eb4142f8-dd4a-4bd5-9c86-c4854a6da254",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03t8mqd25"
+        }
+      ],
+      "email": "r.ketting@imb-mainz.de",
+      "name": "Rene Ketting"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5036-2419",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01yr73893"
+        }
+      ],
+      "email": "jan.schreier@embl.it",
+      "name": "Jan Schreier"
+    },
+    {
+      "@id": "https://ror.org/01yr73893",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://ror.org/03t8mqd25",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Molecular Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#34f4925d-7d03-4ef2-9a55-d4bcc1807451",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult C. elegans hermaphrodites and males",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#5549c82c-6205-4a03-b5a3-4d39e7b45d6c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "THUNDER Imager (Leica) inverted widefield microscope equipped with a 10x/0.32 dry objective for tile scan acquisition or 40x/0.95 dry objective for individual animal acquisition\n\nBC43 spinning disk confocal microscope equipped with a 40x/0.75 air objective",
+      "labEquipment": "THUNDER Imager (Leica) inverted widefield microscope equipped with a 10x/0.32 dry objective for tile scan acquisition or 40x/0.95 dry objective for individual animal acquisition\n\nBC43 spinning disk confocal microscope equipped with a 40x/0.75 air objective",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 148
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 33644318363
+    }
+  ]
+}

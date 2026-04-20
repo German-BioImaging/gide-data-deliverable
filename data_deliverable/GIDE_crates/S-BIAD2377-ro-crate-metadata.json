@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2377"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2377",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e5680a56-c6f2-4418-9cc9-337f8b1eefb5"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e10c56a8-2ed1-411b-97a3-9b96e6fd88e1"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9b39460b-8d3a-4e25-b3d0-8382f9632a7b"
+        },
+        {
+          "@id": "#ebdf9f73-2ea8-4359-9e02-a13c572e7a07"
+        },
+        {
+          "@id": "#d7cad381-c870-42d0-8b01-01624eaca270"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-30",
+      "description": "Drosophila male germline stem cells (GSCs) reside at the testis tip, surrounding a cluster of niche cells known as the hub. Bone Morphogenetic Protein (BMP) ligands secreted from the hub exert both contact-dependent and -independent effects. In close proximity to the niche, BMP signaling maintains stem cells by suppressing transcription of the key differentiation factor Bag of Marbles (Bam). In contrast, the diffusible fraction of BMP promotes differentiation of cells by activating bam. How a single signaling pathway produces such opposing outcomes has remained unclear. Here, we show that the diffusible BMP fraction induces bam transcription by repressing the transcriptional repressor Brinker (Brk). We further found that brk mRNA displays a highly heterogeneous expression pattern within interconnected spermatogonia, suggesting that Brk may prime cell fate in a subset of transit-amplifying cells, helping to preserve a population poised for dedifferentiation while maintaining other cells for differentiation. Our findings propose a model in which a single niche-derived factor modulates reciprocal outcomes inside versus outside the niche, which is essential for the tissue homeostasis. Given the broad use of BMP signaling across stem cell niches, this mechanism may represent a general strategy to ensure correct balance between self-renewal and differentiation of stem cells.",
+      "funder": [],
+      "identifier": "S-BIAD2377",
+      "keywords": [
+        "Germline stem cells, niche, Asymmetric division, Bone Morphogenetic Protein, Brinker"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Brinker regulates reciprocal outcomes of BMP signal between stem cells and differentiating cells\n\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2377/42458074-e030-4bfa-9a33-57f0ce478c1c/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#9b39460b-8d3a-4e25-b3d0-8382f9632a7b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b00927dd-bb07-4f44-903b-6a23ba558f42"
+        }
+      ],
+      "email": "poursaeid@uchc.edu",
+      "name": "Samaneh Poursaeid"
+    },
+    {
+      "@id": "#d7cad381-c870-42d0-8b01-01624eaca270",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b00927dd-bb07-4f44-903b-6a23ba558f42"
+        }
+      ],
+      "email": "inaba@uchc.edu",
+      "name": "Mayu Inaba"
+    },
+    {
+      "@id": "#ebdf9f73-2ea8-4359-9e02-a13c572e7a07",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b00927dd-bb07-4f44-903b-6a23ba558f42"
+        }
+      ],
+      "email": "gamer@uchc.edu",
+      "name": "Jeffrey P Gamer"
+    },
+    {
+      "@id": "#b00927dd-bb07-4f44-903b-6a23ba558f42",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Department of Cell Biology, University of Connecticut Health Center, Farmington, Connecticut, United States of America "
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#e10c56a8-2ed1-411b-97a3-9b96e6fd88e1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila Male testes.",
+      "name": "Brinker regulates reciprocal outcomes of BMP signal between stem cells and differentiating cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#e5680a56-c6f2-4418-9cc9-337f8b1eefb5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Drosophila male gonads were fixed with 4% PFA and immunostained prior to imaging as described in the paper's methods section.",
+      "labEquipment": "Zeiss LSM800",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Brinker regulates reciprocal outcomes of BMP signal between stem cells and differentiating cells"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 904
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 13261293696
+    }
+  ]
+}

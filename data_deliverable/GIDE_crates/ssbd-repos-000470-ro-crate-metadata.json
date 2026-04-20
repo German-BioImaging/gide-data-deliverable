@@ -1,0 +1,149 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000470/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000470/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000470",
+      "name": "Microscopy images of Yamadazyma thunbergiae sp. nov. cultured on diverse media",
+      "description": "This dataset contains 41 light-microscopy images generated during the taxonomic characterization of Yamadazyma thunbergiae sp. nov., a yeast species associated with Bengal clock vine (Thunbergia grandiflora) and soil in Okinawa, Japan. Cells were grown on a panel of commonly used yeast media with differing nutrient compositions. The images underlie the species description reported in: Seike, T. et al. (2024) Int. J. Syst. Evol. Microbiol. 74, e006537. https://doi.org/10.1099/ijsem.0.006537.\r\n\r\nKeywords: Yamadazyma thunbergiae; yeast; Saccharomycotina; morphology; phenotyping; Okinawa; Thunbergia grandiflora; taxonomy.",
+      "datePublished": "2025-09-12",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Soil Microbiology[major]",
+        "Japan",
+        "DNA, Fungal/genetics[major]",
+        "Phylogeny[major]",
+        "DNA, Ribosomal Spacer/genetics[major]",
+        "Sequence Analysis, DNA[major]",
+        "Saccharomycetales/genetics[major]",
+        "Saccharomycetales/classification[major]",
+        "Saccharomycetales/isolation & purification[major]",
+        "Mycological Typing Techniques",
+        "Fatty Acids/chemistry"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1099/ijsem.0.006537"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Taisuke Seike",
+      "email": "seike@bio.kyutech.ac.jp",
+      "description": "Organization: Kyushu Institute of Technology; Department: Department of Bioscience and Bioinformatics; Laboratory: Seike Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02278tr80"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02278tr80",
+      "@type": "Organization",
+      "name": "Kyushu Institute of Technology"
+    },
+    {
+      "@id": "https://doi.org/10.1099/ijsem.0.006537",
+      "@type": "ScholarlyArticle",
+      "name": "Yamadazyma thunbergiae sp. nov., a novel yeast species associated with Bengal clock vines and soil in Okinawa, Japan.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Yamadazyma thunbergiae"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 349143040,
+      "description": "349.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 41,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

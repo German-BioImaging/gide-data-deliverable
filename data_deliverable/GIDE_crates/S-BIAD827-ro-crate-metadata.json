@@ -1,0 +1,202 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD827"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD827",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e1887893-bbc8-44c1-8cb0-12ded7365fa5"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#06439e90-c5c1-4d7a-bb82-c19741cd1361"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3196-2160"
+        },
+        {
+          "@id": "#98effcb7-557d-458e-b8eb-971b83fcd56b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-07-31",
+      "description": "Ct3-GFP or Ct4-GFP inoculation of Arabidopsis roots",
+      "funder": [],
+      "identifier": "S-BIAD827",
+      "keywords": [
+        "Plant symbiosis",
+        "Parasitism",
+        "Plant immunity"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Ct inoculation on At roots",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD827/4ed83578-a279-43c7-bb50-797da167f9ff/5cf22af3-2edc-4043-9d8e-8f8bd915bb6c.png"
+      ]
+    },
+    {
+      "@id": "#98effcb7-557d-458e-b8eb-971b83fcd56b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ],
+      "email": "hiruma@g.ecc.u-tokyo.ac.jp",
+      "name": "Kei Hiruma"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3196-2160",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ],
+      "email": "tahiga@g.ecc.u-tokyo.ac.jp",
+      "name": "Takeshi Higa"
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#06439e90-c5c1-4d7a-bb82-c19741cd1361",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Arabidopsis roots inoculated with Ct",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#e1887893-bbc8-44c1-8cb0-12ded7365fa5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The 488 nm laser was used to image Ct hyphae (GFP), and the 561 nm laser was used to image plasma membrane of At roots (PIP2A-mCherry)",
+      "labEquipment": "Nikon C2 plus",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 11
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4085655011
+    }
+  ]
+}

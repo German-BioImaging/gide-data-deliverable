@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2306"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2306",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#81895c50-85b1-4e5f-9492-ca8d21b42f80"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d0fd93db-745f-47b1-b25b-901c2f932d17"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1658-5635"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-11",
+      "description": "Source image data for figures 1-6 and appendix figures S1-S9",
+      "funder": [],
+      "identifier": "S-BIAD2306",
+      "keywords": [
+        "ADP-ribosylation ",
+        "PARP7",
+        "AHR"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Ubiquitin pathway blockade reveals endogenous ADP-ribosylation marking PARP7 and AHR for degradation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1658-5635",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/052gg0110"
+        }
+      ],
+      "email": "rebecca.smith@path.ox.ac.uk",
+      "name": "Rebecca Smith"
+    },
+    {
+      "@id": "https://ror.org/052gg0110",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#d0fd93db-745f-47b1-b25b-901c2f932d17",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human and mouse cell lines. Full descriptions for immunofluorescence images are given in READ ME file. A separate READ ME file is supplemented for western blots.",
+      "name": "Images for Figures 1-6 and appendix figures S1-S9",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#81895c50-85b1-4e5f-9492-ca8d21b42f80",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Immunofluorescence\nCells were imaged on EVOS M7000 widefield microscope equipped with a UPlanSApo 20x/0.75 N.A. objective lens, DAPI, GFP, and Cy5 EVOSTM Light Cubes and a CMOS camera. Images were analysed using CellProfiler (46) to measure mean intensity grey values in the nucleus of cells. Experiments were repeated a minimum of two times.  \n\nWestern blotting\nWestern blots were visualised using the Odyssey CLx Imager (LI-COR Biosciences). Quantification was performed using the Odyssey Image Studio Lite® software v.5.2 (LI-COR Biosciences).\n",
+      "labEquipment": "Evos7000\nOdyssey CLx Imager",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acqusition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 45
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 19385753866
+    }
+  ]
+}

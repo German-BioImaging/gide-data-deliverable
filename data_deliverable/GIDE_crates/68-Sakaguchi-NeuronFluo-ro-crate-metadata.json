@@ -1,0 +1,205 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/68-Sakaguchi-NeuronFluo/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/68-Sakaguchi-NeuronFluo/",
+      "@type": "Dataset",
+      "identifier": "68-Sakaguchi-NeuronFluo",
+      "name": "A set of labeling images of neuronal circuits labeling with fluorescent proteins in M. musculus",
+      "description": "68-Sakaguchi-NeuronFluo",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Luminescent Proteins/genetics",
+        "Luminescent Proteins/metabolism",
+        "Mice",
+        "Neuroanatomical Tract-Tracing Techniques/methods[major]",
+        "Neuronal Tract-Tracers/metabolism[major]",
+        "Olfactory Bulb/anatomy & histology",
+        "Recombinant Proteins/genetics",
+        "Recombinant Proteins/metabolism",
+        "Staining and Labeling/methods[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8449-0080"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.40350"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042048"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0048667"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_00030425"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-401"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8449-0080",
+      "@type": "Person",
+      "name": "Takeshi Imai",
+      "email": "t-imai@med.kyushu-u.ac.jp",
+      "description": "Organization: Kyushu University; Department: Department of Developmental Neurophysiology, Graduate School of Medical Sciences; Laboratory: Department of Developmental Neurophysiology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00p4k0j84"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Richi Sakaguchi"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Marcus N. Leiwe"
+    },
+    {
+      "@id": "https://ror.org/00p4k0j84",
+      "@type": "Organization",
+      "name": "Kyushu University"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.40350",
+      "@type": "ScholarlyArticle",
+      "name": "Bright multicolor labeling of neuronal circuits with fluorescent proteins and chemical tags.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042048",
+      "@type": "DefinedTerm",
+      "name": "olfactory behavior"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048667",
+      "@type": "DefinedTerm",
+      "name": "cell morphogenesis involved in neuron differentiation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_00030425",
+      "@type": "DefinedTerm",
+      "name": "dendrite"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 288943415430,
+      "description": "288.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 67,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

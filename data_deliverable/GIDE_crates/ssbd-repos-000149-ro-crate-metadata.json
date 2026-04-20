@@ -1,0 +1,167 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000149/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000149/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000149",
+      "name": "Live imaging data of developing hair follicles in an article “Tracing the origin of hair follicle stem cells” (Morita et al., 2021).",
+      "description": "Tissue stem cells are generated from a population of embryonic progenitors through organ-specific morphogenetic events. Although tissue stem cells are central to organ homeostasis and regeneration, it remains unclear how they are induced during development, mainly because of the lack of markers that exclusively label prospective stem cells. Here we combine marker-independent long-term 3D live imaging and single-cell transcriptomics to capture a dynamic lineage progression and transcriptome changes in the entire epithelium of the mouse hair follicle as it develops. We found that the precursors of different epithelial lineages were aligned in a 2D concentric manner in the basal layer of the hair placode. Each concentric ring acquired unique transcriptomes and extended to form longitudinally aligned, 3D cylindrical compartments. Prospective bulge stem cells were derived from the peripheral ring of the placode basal layer, but not from suprabasal cells (as was previously suggested). The fate of placode cells is determined by the cell position, rather than by the orientation of cell division. We also identified 13 gene clusters: the ensemble expression dynamics of these clusters drew the entire transcriptional landscape of epithelial lineage diversification, consistent with cell lineage data. Combining these findings with previous work on the development of appendages in insects, we describe the ‘telescope model’, a generalized model for the development of ectodermal organs in which 2D concentric zones in the placode telescope out to form 3D longitudinally aligned cylindrical compartments.",
+      "datePublished": "2021-06-09",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Lineage[major]",
+        "Cell Tracking",
+        "Ectoderm",
+        "Embryo, Mammalian",
+        "Epithelial Cells/cytology",
+        "Female",
+        "Flow Cytometry",
+        "Gene Expression Regulation, Developmental",
+        "Hair Follicle/cytology[major]",
+        "Male",
+        "Mice",
+        "Mice, Transgenic",
+        "Multigene Family",
+        "RNA-Seq",
+        "Single-Cell Analysis",
+        "Skin",
+        "Stem Cells/cytology[major]",
+        "Tissue Culture Techniques",
+        "Transcriptome",
+        "Vibrissae"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41586-021-03638-5"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Ritsuko Morita",
+      "email": "ritsuko.morita@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Tissue Microenvironment",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hironobu Fujiwara"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41586-021-03638-5",
+      "@type": "ScholarlyArticle",
+      "name": "Tracing the origin of hair follicle stem cells.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 760350945280,
+      "description": "760.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 508953,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

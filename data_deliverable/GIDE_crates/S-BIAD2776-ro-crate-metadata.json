@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2776"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2776",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0796c5c8-4c62-4405-ad25-5b285dedcb61"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a52633e3-a714-454b-bc3b-463d8fe467c0"
+        },
+        {
+          "@id": "#410e7adf-9231-47de-8ec3-682a3c3f8c0e"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2666-6877"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2026-01-12",
+      "description": "Prostate cancer (PCa)-related deaths are mainly due to metastasis. The increase in de novo metastatic hormone-naïve prostate cancers (mHNPCs) highlights the urgent need for biomarkers and treatment strategies for PCa dissemination. We report in a cohort of French patients that the levels of vitamin D and of prostate-specific antigen, the progression biomarker used clinically and secreted by prostatic epithelial cells (PECs), are negatively associated. However, the impact of vitamin D receptor (VDR) signaling in PECs on prostate tumorigenesis remains unclear. We show that VDR inactivation in PECs from Pten(i)pe−/− mice, a relevant preclinical model of PCa, promotes tumor aggressiveness. We demonstrate that VDR loss induces oxidative stress that in turn enhances PECs proliferation. Moreover, CXCL5 secretion by PTEN- and VDR-deficient PECs promotes neutrophil infiltration. Importantly, our data highlight elevated circulating neutrophil levels as a biomarker for PCa dissemination and show the potency of targeting neutrophil chemotaxis to reduce liver micrometastases. Overall, this work provides major insight on how vitamin D signaling slows down tumorigenesis and suggests new therapeutic and diagnostic strategies for mHNPC.",
+      "funder": [],
+      "identifier": "S-BIAD2776",
+      "keywords": [
+        "prostate cancer",
+        "genetically engineered mice",
+        "RWPE1"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Impaired vitamin D signaling reveals neutrophils as key drivers of prostate cancer dissemination",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2776/8d2f1a1b-f261-4da8-94d9-af0a1b171de7/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2666-6877",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b1b51d99-6fb9-438a-a353-cb98259e9cc4"
+        }
+      ],
+      "email": "gilles.laverny@igbmc.fr",
+      "name": "Laverny Gilles"
+    },
+    {
+      "@id": "#b1b51d99-6fb9-438a-a353-cb98259e9cc4",
+      "@type": [
+        "Organization"
+      ],
+      "name": "IGBMC"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#410e7adf-9231-47de-8ec3-682a3c3f8c0e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "prostate",
+      "name": "prostate",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#a52633e3-a714-454b-bc3b-463d8fe467c0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "liver",
+      "name": "liver",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#0796c5c8-4c62-4405-ad25-5b285dedcb61",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x magnification ",
+      "labEquipment": "NanoZoomer S210 Digital slide scanner (Hamamatsu)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "bright-field"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 26
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 13255781025
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD679"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD679",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#92e05f89-d366-483c-99a0-7f9517c6e7d2"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0f8db3df-5f46-48d1-87d8-d765f1228ade"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-1247-7482"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-04-25",
+      "description": "Investigation of the effect of ionizing radiation on the dynamics of damage repair in the DNA of U2OS cells.",
+      "funder": [],
+      "identifier": "S-BIAD679",
+      "keywords": [
+        "ionizing radiation",
+        "NBS1 foci",
+        "mixed beams"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The order of sequential exposure of U2OS cells to gamma and alpha radiation influences the formation and decay dynamics of NBS1 foci",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD679/0107657f-3ff7-45b5-ab6f-27fa801e079f/fbf4627a-e6ae-44d7-93c1-160d8fd88f59.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1247-7482",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/039bjqg32"
+        }
+      ],
+      "email": "atartas@fuw.edu.pl",
+      "name": "Adrianna"
+    },
+    {
+      "@id": "https://ror.org/039bjqg32",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Warsaw"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0f8db3df-5f46-48d1-87d8-d765f1228ade",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Bone Osteosarcoma Epithelial Cells (U2OS Line)",
+      "name": "Biosample ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#92e05f89-d366-483c-99a0-7f9517c6e7d2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The cell nuclei observed under the microscope were randomly selected and NBS1-GFP fluorescence was excited by 120 ms exposure to 488 nm light from a Polychrome IV monochromator (TILL Photonics, Gräfelfing, Germany) and registered by an CCD camera (PCO Sensicam, Kelheim, Germany). Time-lapse movies were recorded with 120-ms-per-frame exposures at 1-minute intervals over 300 mins.  The observed images were recorded using the TILL Photonics Imaging System software (TILLvisION v3.3, Gräfelfing, Germany) installed on the microscope’s PC.",
+      "labEquipment": "inverted fluorescence microscope Carl Zeiss Axiovert 200",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 57
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 10134742964
+    }
+  ]
+}

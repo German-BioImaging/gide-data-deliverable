@@ -1,0 +1,356 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2808"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2808",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#acfa6e57-dcbe-49db-9c89-4465df8b07fa"
+        },
+        {
+          "@id": "#bd0eab8a-e9cb-418f-9828-cd37a2ca6fe2"
+        },
+        {
+          "@id": "#030781d0-c43b-4530-8b0d-8d737bd5ee1b"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#48064ba2-f1c5-4caa-abf9-de807bc475b6"
+        },
+        {
+          "@id": "#624697c1-a5c2-4bcd-8bd0-46d343336fc1"
+        },
+        {
+          "@id": "#ebeaf550-f5f8-4812-b6e9-387ff9cd0d8b"
+        },
+        {
+          "@id": "#2e596ac4-929d-4aa6-81fc-1d49511b1ef0"
+        },
+        {
+          "@id": "#4babc250-595f-4d32-9bc3-68c28507b9ce"
+        },
+        {
+          "@id": "#8afcaa3a-5e69-45c0-b553-72557f52870a"
+        },
+        {
+          "@id": "#99587082-8f65-420f-83b7-4dfe42351969"
+        },
+        {
+          "@id": "#1f480005-3864-4da3-bb39-6f061bb8a393"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5437-1294"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2026-01-19",
+      "description": "We present MitoEM 2.0, a curated benchmark resource for training and evaluating three-dimensional (3D) mitochondria instance segmentation in volume electron microscopy (vEM). The collection assembles multiscale vEM datasets (FIB-SEM, SBF-SEM, and ssSEM) spanning diverse tissues and species, with expert-verified instance labels emphasizing biologically difficult scenarios, including dense mitochondrial packing, hyperfused networks, and thin filamentous connections with ambiguous boundaries.  All releases include native-resolution volumes and standardized processed versions, per-volume metadata (voxel size, modality, tissue, and data splits), and official train/validation/test partitions to enable reproducible benchmarking. Annotations follow a consistent protocol with quality checks and instance reindexing. Data are provided in NIfTI format with an nnU-Net–compatible layout, alongside machine-readable split files and checksums. MitoEM 2.0 facilitates robust model development and fair comparison across methods while supporting reuse in bioimage analysis, algorithm benchmarking, and teaching.",
+      "funder": [],
+      "identifier": "S-BIAD2808",
+      "keywords": [
+        "volume electron microscopy",
+        "mitochondria",
+        "instance segmentation",
+        "benchmark",
+        "FIB-SEM",
+        "SBF-SEM",
+        "serial section EM"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "MitoEM 2.0 - A Benchmark for Challenging 3D Mitochondria Instance Segmentation from EM Images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2808/75f5c9f9-9de5-4421-92b4-45bba609fef9/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2808/2cf99ef5-9f35-437d-9e44-6c6054dce1bf/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5437-1294",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4c14d27f-92a2-4d73-a64d-d121828b0e6d"
+        }
+      ],
+      "email": "luckiepeng@gmail.com",
+      "name": "peng liu"
+    },
+    {
+      "@id": "#4c14d27f-92a2-4d73-a64d-d121828b0e6d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Boston College"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#1f480005-3864-4da3-bb39-6f061bb8a393",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "spermatocytes - Volumetric EM datasets from fruit fly spermatocytes used in the MitoEM 2.0 benchmark",
+      "name": "Drosophila melanogaster (fruit fly) — ME2-Sperm",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#2e596ac4-929d-4aa6-81fc-1d49511b1ef0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "kidney podocytes - Volumetric EM datasets from mouse kidney podocytes used in the MitoEM 2.0 benchmark",
+      "name": "Mouse biosamples (Mus musculus) —ME2-Podo",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#48064ba2-f1c5-4caa-abf9-de807bc475b6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "brainstem tissue - Volumetric EM datasets from mouse brainstem tissue used in the MitoEM 2.0 benchmark",
+      "name": "Mouse biosamples (Mus musculus) — ME2-Stem",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#4babc250-595f-4d32-9bc3-68c28507b9ce",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "pyramidal neurons - Volumetric EM datasets from human pyramidal neurons used in the MitoEM 2.0 benchmark",
+      "name": "Homo sapiens (human) — ME2-Pyra",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#624697c1-a5c2-4bcd-8bd0-46d343336fc1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mossy-fiber boutons - Volumetric EM datasets from mouse mossy fiber boutons used in the MitoEM 2.0 benchmark.",
+      "name": "Mouse biosamples (Mus musculus) — ME2-Mossy",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#8afcaa3a-5e69-45c0-b553-72557f52870a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "pancreas β-cells - Volumetric EM datasets from mouse pancreatic β-cells used in the MitoEM 2.0 benchmark",
+      "name": "Mouse biosamples (Mus musculus) — ME2-Beta",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#99587082-8f65-420f-83b7-4dfe42351969",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "macrophages - Volumetric EM datasets from human macrophages used in the MitoEM 2.0 benchmark",
+      "name": "Homo sapiens (human) — ME2-Macro",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ebeaf550-f5f8-4812-b6e9-387ff9cd0d8b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "T lymphocytes - Volumetric EM datasets from human T lymphocytes used in the MitoEM 2.0 benchmark",
+      "name": "Homo sapiens (human) — ME2-Jurkat",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#030781d0-c43b-4530-8b0d-8d737bd5ee1b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Voxel sizes, section thicknesses, and imaging resolutions vary across datasets and are provided in the file-level metadata.",
+      "labEquipment": "Focused ion beam scanning electron microscopes (FIB-SEM)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "name": "FIB-SEM"
+    },
+    {
+      "@id": "#acfa6e57-dcbe-49db-9c89-4465df8b07fa",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Voxel sizes, section thicknesses, and imaging resolutions vary across datasets and are provided in the file-level metadata.",
+      "labEquipment": "Serial block-face scanning electron microscopes (SBF-SEM)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "SBF-SEM"
+    },
+    {
+      "@id": "#bd0eab8a-e9cb-418f-9828-cd37a2ca6fe2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Voxel sizes, section thicknesses, and imaging resolutions vary across datasets and are provided in the file-level metadata.",
+      "labEquipment": "Serial section scanning electron microscopes",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "Serial section scanning electron microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00050000",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 106
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 65102160037
+    }
+  ]
+}

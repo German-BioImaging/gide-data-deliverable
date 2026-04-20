@@ -1,0 +1,462 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD634"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD634",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#29f61c5f-ae01-438d-8aa0-d9a787751443"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c8c7e2ad-1cf4-49b2-b2a0-1cb033c63dbf"
+        },
+        {
+          "@id": "#f29b5a91-69f1-4921-8d8f-e62ce493c523"
+        },
+        {
+          "@id": "#5fbed112-60d9-4777-83ba-139fa170c05f"
+        },
+        {
+          "@id": "#819dc124-caa5-4fa1-bf99-e47a784b75f0"
+        },
+        {
+          "@id": "#45e124c5-edd3-492b-8f9b-580e7834c623"
+        },
+        {
+          "@id": "#073010c8-ac4d-44ee-a541-0bdaf68cb46c"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1439-5301"
+        },
+        {
+          "@id": "#7e49b7c2-7d2a-4f5f-8c1f-b905fd7332af"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5507-7211"
+        },
+        {
+          "@id": "#9b12118b-568e-4764-a2e5-9f2d570cc3b4"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7149-5843"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1477-6849"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7046-3412"
+        },
+        {
+          "@id": "#438c065f-49b1-423a-ab68-892514ee5cb7"
+        },
+        {
+          "@id": "#4ce5ac3b-8dce-4a31-94d0-96b584362c91"
+        },
+        {
+          "@id": "#0d9eebd4-2098-4c27-8c2a-6b2c708b08d3"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4557-5652"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0456-6912"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-07",
+      "description": "This dataset contains annotated fluorescent nuclear images of normal or cancer cells from different tissue origins and sample preparation types, and can be used to train machine-learning based nuclear image segmentation algorithms. It consists of 79 expert-annotated fluorescence images of immuno and DAPI stained samples containing 7813 nuclei in total. In addition, the dataset is heterogenous in aspects such as type of preparation, imaging modality, magnification, signal-to-noise ratio and other technical aspects. Relevant parameters, e.g. diagnosis, magnification, signal-to-noise ratio and modality with respect to the type of preparation are provided in the file list. The images are derived from one Schwann cell stroma-rich tissue (from a ganglioneuroblastoma) cryosection (10 images/2773 nuclei), seven neuroblastoma (NB) patients (19 images/931 nuclei), one Wilms patient (1 image/102 nuclei), two NB cell lines (CLB-Ma, STA-NB10) (8 images/1785 nuclei) and a human keratinocyte cell line (HaCaT) (41 images/2222 nuclei).",
+      "funder": [],
+      "identifier": "S-BIAD634",
+      "keywords": [
+        "AI",
+        "segmentation",
+        "nucleus",
+        "fluorescence"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "An annotated fluorescence image dataset for training nuclear segmentation methods",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD634/cf92da2f-cf96-4dae-8c2e-15a425fa11d0/static_display_512x512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD634/07db5c81-7990-4a37-8234-fb304e36514d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0d9eebd4-2098-4c27-8c2a-6b2c708b08d3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3aba4a78-a6c2-47bd-aec8-85f4f7ec45b5"
+        }
+      ],
+      "email": "eva.bozsaky@ccri.at",
+      "name": "Eva Bozsaky"
+    },
+    {
+      "@id": "#438c065f-49b1-423a-ab68-892514ee5cb7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3aba4a78-a6c2-47bd-aec8-85f4f7ec45b5"
+        }
+      ],
+      "email": "maria.berneder@ccri.at",
+      "name": "Maria Berneder"
+    },
+    {
+      "@id": "#4ce5ac3b-8dce-4a31-94d0-96b584362c91",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3aba4a78-a6c2-47bd-aec8-85f4f7ec45b5"
+        }
+      ],
+      "email": "magdalena.ambros@ccri.at",
+      "name": "Magdalena Ambros"
+    },
+    {
+      "@id": "#7e49b7c2-7d2a-4f5f-8c1f-b905fd7332af",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3aba4a78-a6c2-47bd-aec8-85f4f7ec45b5"
+        }
+      ],
+      "email": "inge.ambros@ccri.at",
+      "name": "Inge M. Ambros"
+    },
+    {
+      "@id": "#9b12118b-568e-4764-a2e5-9f2d570cc3b4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#299342f3-289a-42f2-a308-44eee87e4ea6"
+        }
+      ],
+      "email": "klaus.beiske@medisin.uio.no",
+      "name": "Klaus Beiske"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7046-3412",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3aba4a78-a6c2-47bd-aec8-85f4f7ec45b5"
+        }
+      ],
+      "email": "tamara.weiss@meduniwien.ac.at",
+      "name": "Tamara Weiss"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0456-6912",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2cb05745-c6d0-4c87-b77f-f59edd751d7f"
+        }
+      ],
+      "email": "teresaz@ebi.ac.uk",
+      "name": "Teresa Zulueta-Coarasa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1439-5301",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3aba4a78-a6c2-47bd-aec8-85f4f7ec45b5"
+        }
+      ],
+      "email": "sabine.taschner@ccri.at",
+      "name": "Sabine Taschner-Mandl"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5507-7211",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3aba4a78-a6c2-47bd-aec8-85f4f7ec45b5"
+        }
+      ],
+      "email": "peter.ambros@ccri.at",
+      "name": "Peter F. Ambros"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7149-5843",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#62553e52-80b1-48a9-a3af-c4fbe52afab6"
+        }
+      ],
+      "email": "hanbury@ifs.tuwien.ac.at",
+      "name": "Allan  Hanbury"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1477-6849",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#29aecae1-93c7-4ec4-8a3c-03a1db7acbb6"
+        }
+      ],
+      "email": "wolfgang.doerr@meduniwien.ac.at",
+      "name": "Wolfgang Doerr"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4557-5652",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3aba4a78-a6c2-47bd-aec8-85f4f7ec45b5"
+        }
+      ],
+      "email": "florian.kromp@ccri.at",
+      "name": "Florian Kromp"
+    },
+    {
+      "@id": "#299342f3-289a-42f2-a308-44eee87e4ea6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Oslo University Hospital"
+    },
+    {
+      "@id": "#29aecae1-93c7-4ec4-8a3c-03a1db7acbb6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "TRAB-Applied and Translational Radiobiology, Department of Radiation Oncology, Medical University of Vienna"
+    },
+    {
+      "@id": "#2cb05745-c6d0-4c87-b77f-f59edd751d7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Bioinformatics Institute (EMBL-EBI)"
+    },
+    {
+      "@id": "#3aba4a78-a6c2-47bd-aec8-85f4f7ec45b5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Children's Cancer Research Institute"
+    },
+    {
+      "@id": "#62553e52-80b1-48a9-a3af-c4fbe52afab6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "TU Wien"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#073010c8-ac4d-44ee-a541-0bdaf68cb46c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Patient-derived neuroblastoma cell lines (CLB-Ma, STA-NB10)",
+      "name": "Neuroblastoma cell lines",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#45e124c5-edd3-492b-8f9b-580e7834c623",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bone marrow cells from neuroblastoma patient",
+      "name": "Bone marrow sample from neuroblastoma patient",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5fbed112-60d9-4777-83ba-139fa170c05f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Wilms tumor tissue",
+      "name": "Tumor sample from Wilms tumor patient",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#819dc124-caa5-4fa1-bf99-e47a784b75f0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HaCaT cell line, a spontaneously transformed human epithelial cell line from adult skin",
+      "name": "Skin keratinocyte cell line",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c8c7e2ad-1cf4-49b2-b2a0-1cb033c63dbf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Schwann cell stroma-rich tissue from a patient with a ganglioneuroblastoma tumor",
+      "name": "Tumor sample from ganglioneuroblastoma patient",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f29b5a91-69f1-4921-8d8f-e62ce493c523",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tumor tissue from neuroblastoma patient",
+      "name": "Tumor sample from neuroblastoma patient",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#29f61c5f-ae01-438d-8aa0-d9a787751443",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Samples were imaged using 1. an Axioplan-II microscope from Zeiss equipped with a Maerzhaeuser slide scanning stage and a Metasystems Coolcube 1 camera using the Metafer software system (V3.8.6) from Metasystems, 2. an Axioplan-II microscope from Zeiss equipped with a Zeiss AxioCam Mrm 1 using the Metasystems ISIS Software for microscopy image acquisition, 3. an LSM 780 microscope from Zeiss equipped with an Argonlaser 458 nm, a photomultiplier tube (PMT) detector (371–740 nm) and a motorized Piezo Z-stage using the Zeiss Zen software package and 4. a SP8X from Leica equipped with a Diode Laser and a PMT detector (447–468 nm). For the presented dataset, we digitized the DAPI staining pattern representing nuclear DNA. Additional immunofluorescence or FISH stainings were in part available. An automatic illumination time was set as measured by pixel saturation (Metasystems Metafer and ISIS) or defined manually (Zeiss and Leica LSMs). Objectives used were a Zeiss Plan-Apochromat 10× objective (Zeiss Axioplan II; numerical aperture 0.45; air), a Zeiss 20× Plan-Apochromat (Zeiss LSM 780; numerical aperture 0.8; oil), a Zeiss 20× Plan-Apochromat (Leica SP8X; nuermical aperture 0.75; oil), a Zeiss Plan-Neofluar 40× objective (Zeiss Axioplan II; numerical aperture 0.75) and a Zeiss Plan-Apochromat 63× objective (Zeiss Axioplan II, Zeiss LSM 780 and Leica SP8X; numerical aperture 1.4; oil). Representative field of views (FOVs) were selected according to the following quality criteria: sharpness, intact nuclei and a sufficient number of nuclei.",
+      "labEquipment": "Axioplan-II microscope from Zeiss, LSM 780 microscope from Zeiss, SP8X from Leica",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescence imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 468
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 495150018
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1641"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1641",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7fbeefcb-4e08-4a50-9602-1d1c6f93ab91"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3c1d622d-8d36-4462-81b7-ab7237b88527"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0007-1380-420X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8772-0294"
+        },
+        {
+          "@id": "#d7b45b79-3b83-4c6f-bedb-bff5045a9adf"
+        },
+        {
+          "@id": "#793597e7-4201-4a47-95f7-cb6524402fe1"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3817-5186"
+        },
+        {
+          "@id": "#70c8afff-5733-4351-9231-f06893a85dda"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-30",
+      "description": "This repository includes a single slice of human thalamus tissue, stained with various neuronal, vascular, and glial markers. 9 ROIs were imaged over the medio-lateral axis of the thalamus. Refer to included .ppt for details on the locations of each ROI and the included .xlsx for details on the performed stainings.",
+      "funder": [],
+      "identifier": "S-BIAD1641",
+      "keywords": [
+        "Thalamus",
+        "Human",
+        "fluorescence microscopy",
+        "multiplex",
+        "macsima"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Neuronal, vascular, and glial markers in human thalamus imaged with multiplexed fluorescence microscopy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1641/998e8d6f-9e1b-4427-9967-a1012573004f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#70c8afff-5733-4351-9231-f06893a85dda",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1894036b-dd0c-4304-854a-75d1f5538a87"
+        }
+      ],
+      "email": "valk@cbs.mpg.de",
+      "name": "Sofie Valk"
+    },
+    {
+      "@id": "#793597e7-4201-4a47-95f7-cb6524402fe1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3bcc9470-b3ab-4a82-93b7-a1b90faafd10"
+        }
+      ],
+      "email": "olgah@miltenyi.com",
+      "name": "Olga Hartwig"
+    },
+    {
+      "@id": "#d7b45b79-3b83-4c6f-bedb-bff5045a9adf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6b252b81-d0e9-43a0-873a-5a6c77a48da1"
+        }
+      ],
+      "email": "Katja.Reimann@uniklinik-leipzig.de",
+      "name": "Katja Reimann"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8772-0294",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6b252b81-d0e9-43a0-873a-5a6c77a48da1"
+        }
+      ],
+      "email": "philip.ruthig@gmail.com",
+      "name": "Philip Ruthig"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3817-5186",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6b252b81-d0e9-43a0-873a-5a6c77a48da1"
+        }
+      ],
+      "email": "Markus.Morawski@medizin.uni-leipzig.de",
+      "name": "Markus Morawski"
+    },
+    {
+      "@id": "https://orcid.org/0009-0007-1380-420X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1894036b-dd0c-4304-854a-75d1f5538a87"
+        }
+      ],
+      "email": "ajohn@cbs.mpg.de",
+      "name": "Alexandra John"
+    },
+    {
+      "@id": "#1894036b-dd0c-4304-854a-75d1f5538a87",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute for Human Cognitive and Brain Sciences"
+    },
+    {
+      "@id": "#3bcc9470-b3ab-4a82-93b7-a1b90faafd10",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Miltenyi Biotec, Application Development Biology"
+    },
+    {
+      "@id": "#6b252b81-d0e9-43a0-873a-5a6c77a48da1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Hospital Leipzig"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#3c1d622d-8d36-4462-81b7-ab7237b88527",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human brain, thalamus",
+      "name": "Human Thalamus, 12µm slice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7fbeefcb-4e08-4a50-9602-1d1c6f93ab91",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired with 20x objective. Each of the 9 ROIs is comprised of a stitched 3x3 grid of FOVs.",
+      "labEquipment": "Miltenyi Biotec MACSima",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Multiplex imaging using MACSima"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 430
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 80243323369
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1200"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1200",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1f2527f1-e93c-420d-878f-62dc214e190c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#40854b59-ed0b-4442-a29f-0fc008cb7cb8"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8168-5421"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7555-5180"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7503-0528"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-28",
+      "description": "This is the dataset that was used for the manuscript \"Decreased GABA levels during development results in increased connectivity in the larval zebrafish tectum.\" The paper authors are Yang Liu, Yongkai Chen, Carly R. Duffy, Ariel J VanLeuven, John Branson Byers, Hannah C. Schriever, Rebecca E. Ball, Jessica M. Carpenter, Chelsea E. Gunderson, Nikolay M. Filipov, Ping Ma, Peter A. Kner, and James D. Lauderdale.",
+      "funder": [],
+      "identifier": "S-BIAD1200",
+      "keywords": [
+        "Zebrafish",
+        "light-sheet microscopy",
+        "GABAergic signaling"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Zebrafish CNS Imaging: Reduced GABA levels result in increased neural connectivity",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1200/83c439c9-658f-4f01-9872-0b63153be06d/ed04f4af-7f51-4199-bd39-53ab589f62a9.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7503-0528",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bccb20a1-f2d9-4999-8a88-7c45eb30dd98"
+        }
+      ],
+      "email": "jdlauder@uga.edu",
+      "name": "James D. Lauderdale"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7555-5180",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bccb20a1-f2d9-4999-8a88-7c45eb30dd98"
+        }
+      ],
+      "email": "kner@uga.edu",
+      "name": "Peter Kner"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8168-5421",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bccb20a1-f2d9-4999-8a88-7c45eb30dd98"
+        }
+      ],
+      "name": "Yang Liu"
+    },
+    {
+      "@id": "#bccb20a1-f2d9-4999-8a88-7c45eb30dd98",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Georgia"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#40854b59-ed0b-4442-a29f-0fc008cb7cb8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Larval zebrafish central nervous system",
+      "name": "Zebrafish",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#1f2527f1-e93c-420d-878f-62dc214e190c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Each fish was imaged at approximately the same horizontal plane referenced from the dorsal surface of the tectum continuously for 2 to 10 minutes under the same laser power (10mW, 99.21 w/cm^2at the sample). Imaging data was collected at 33-50 frames per second (fps) for each single channel.",
+      "labEquipment": "Calcium imaging was performed on a custom-built light sheet microscope. The system is a modified version of the OpenSPIM setup (Pitrone et al. (2013) OpenSPIM: an open-access light-sheet microscopy platform. Nat Meth 10:598-599), as described in our previous work (Liu et al., (2019) Imaging neural events in zebrafish larvae with linear structured illumination light sheet fluorescence microscopy. Neurophotonics 6:015009.).  The microscope is controlled through a custom-written LabVIEW program using a Dell Precision 5810 Tower with 32GB RAM and a quad-core Intel(R) Xeon(R) E5-1603 v3 processor. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 148
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 27508795577
+    }
+  ]
+}

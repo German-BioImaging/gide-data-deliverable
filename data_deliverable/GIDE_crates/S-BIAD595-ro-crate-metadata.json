@@ -1,0 +1,201 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD595"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD595",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e8851048-14e8-46d4-af18-c087348ab2c7"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#71a00cba-ce42-4c94-ba2c-cf4140a02d28"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4440-9396"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.7554/elife.26066"
+        },
+        {
+          "@id": "https://doi.org/10.1126/science.1261605"
+        }
+      ],
+      "datePublished": "2022-12-12",
+      "description": "Tara Expeditions are global scientific voyages that probe morphological and molecular diversity, evolution and ecology of marine plankton to explore how they are impacted by changes in the Earth's climate. The first expeditions collected samples of marine plankton containing viruses, bacteria, archaea, protists and planktonic metazoans living in the photic layer of the world's oceans. These expeditions, the first taking place between 2009 and 2013, include Tara Oceans: a global view, and Tara Oceans Polar Circle, both of which followed the same sampling protocol. This dataset represents expert taxonomic annotations of the Environmental High-Content Fluorescent Microscopy (eHCFM) images data upon Tara Oceans samples in the vicinity of the Marquesas islands (Pacific Ocean).",
+      "funder": [],
+      "identifier": "S-BIAD595",
+      "keywords": [
+        "Biodiversity",
+        "Marine Microbiology",
+        "Tara Oceans",
+        "Environmental microscopy",
+        "Protists",
+        "Plankton",
+        "CLSM"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Taxonomic annotations of confocal microscopy images of environmental protists from the Marquesas Islands (Tara Oceans survey, Southern Pacific Ocean).",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD595/0cee5af8-02e5-442c-9aa9-8157232dfdef/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4440-9396",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af9bf075-c0cf-4383-8aaf-3094ee3c9eba"
+        }
+      ],
+      "email": "sebastien.colin@tuebingen.mpg.de",
+      "name": "Sebastien Colin"
+    },
+    {
+      "@id": "#af9bf075-c0cf-4383-8aaf-3094ee3c9eba",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute for Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1126/science.1261605",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2015",
+      "name": "Ocean plankton. Eukaryotic plankton diversity in the sunlit ocean."
+    },
+    {
+      "@id": "https://doi.org/10.7554/elife.26066",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2017",
+      "name": "Quantitative 3D-imaging for cell biology and ecology of environmental microbial eukaryotes. "
+    },
+    {
+      "@id": "#71a00cba-ce42-4c94-ba2c-cf4140a02d28",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Unicellular eukaryotes from Pacific Oceans (Marquesas archipelago)",
+      "name": "Tara Oceans survey: environmental marine samples of the planktonic biodiversity",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#e8851048-14e8-46d4-af18-c087348ab2c7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "see methodological details here https://dx.doi.org/10.7554%2FeLife.26066",
+      "labEquipment": "Leica CLSM SP8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Tara Oceans Environmental High-Content Fluorescent Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 104988
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3748310825
+    }
+  ]
+}

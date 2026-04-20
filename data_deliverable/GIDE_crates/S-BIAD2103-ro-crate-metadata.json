@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2103"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2103",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#80ef25a9-7a98-4ca2-a4f4-72c82e35d300"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0e0fdc0a-7c8d-4915-a636-8e1e9f195fc5"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0005-2042-3953"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-24",
+      "description": "confocal image and masks of adipocytes from subcutaneous tissu of C57bl6 and swiss mouse",
+      "funder": [],
+      "identifier": "S-BIAD2103",
+      "keywords": [
+        "adipocyte",
+        "lipid",
+        "adipose tissue",
+        "3D imaging",
+        "nile red",
+        "5DTAF"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "3D imaging of mouse adipocytes in situ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2103/70010862-420b-48be-a693-59f44451ce71/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0009-0005-2042-3953",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/003vg9w96"
+        }
+      ],
+      "email": "jerome.bugeon@inrae.fr",
+      "name": "Jerome Bugeon"
+    },
+    {
+      "@id": "https://ror.org/003vg9w96",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#0e0fdc0a-7c8d-4915-a636-8e1e9f195fc5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "adult mouse adipose tissue",
+      "name": "Subcutaneous and visceral adipose tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#80ef25a9-7a98-4ca2-a4f4-72c82e35d300",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cleared tissues, as well as cleared cells mounted into low-gelling agarose slices, were immobilized at the bottom of a 60-mm Petri dish with a tiny drop of superglue. The dish was filled with histodenz and covered with mineral oil to avoid evaporation and thus refractive index changes during acquisitions. For optimal refractive-index homogenization, fixed samples were mounted the day before imaging. Tissue imaging was performed over a depth of 300 µm using and × 2x3 imaging mosaics.",
+      "labEquipment": "3D imaging was performed using a Leica TCS SP8 laser scanning confocal microscope,  equipped with a HC Fluotar L 25x/1.00 IMM (ne=1.457) MotCORR VISIR objective for cleared samples and a HC FLUOTAR L 25x/0,95 W VISIR objective for PBS acquisitions",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "confocal 3D imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2743468799
+    }
+  ]
+}

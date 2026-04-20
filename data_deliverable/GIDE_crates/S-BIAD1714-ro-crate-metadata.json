@@ -1,0 +1,225 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1714"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1714",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1a91fffd-e29f-4371-807f-6966c993ec03"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9d4350bd-a8c6-4a73-9ad3-bdda6a567d27"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9f7a1c1c-0110-4510-9df5-f9e6bde49f50"
+        },
+        {
+          "@id": "#2d3e4ac6-a78b-45ff-a272-1119f761d1b4"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2379-200X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-21",
+      "description": "COMET works towards the deployment of advanced, interpretable artificial intelligence methods in routine diagnostics to facilitate rapid and accurate molecular diagnosis of ependymomas and other brain tumors based on histological image data to improve patient outcome. ",
+      "funder": [],
+      "identifier": "S-BIAD1714",
+      "keywords": [
+        "Ependymoma",
+        "Histology",
+        "HE"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "COMET (Computational Pathology for Molecular Ependymoma Typing)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1714/9fb18284-72fc-4191-a281-c3b78374954c/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#2d3e4ac6-a78b-45ff-a272-1119f761d1b4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ca4fbd-6568-4499-95a8-c20b47fa78e5"
+        }
+      ],
+      "email": "ju.neumann@uke.de",
+      "name": "Julia Neumann"
+    },
+    {
+      "@id": "#9f7a1c1c-0110-4510-9df5-f9e6bde49f50",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ca4fbd-6568-4499-95a8-c20b47fa78e5"
+        }
+      ],
+      "email": "an.gocke@uke.de",
+      "name": "Antonia Gocke"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2379-200X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b9afac9c-6885-4e02-9dac-27aa3d9dd6f5"
+        }
+      ],
+      "email": "yannis.schumann@desy.de",
+      "name": "Yannis Schumann"
+    },
+    {
+      "@id": "#95ca4fbd-6568-4499-95a8-c20b47fa78e5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Medical Center Hamburg-Eppendorf"
+    },
+    {
+      "@id": "#b9afac9c-6885-4e02-9dac-27aa3d9dd6f5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Deutsches Elektronen-Synchrotron DESY"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9d4350bd-a8c6-4a73-9ad3-bdda6a567d27",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "FFPE human ependymoma samples",
+      "name": "Tumoursample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1a91fffd-e29f-4371-807f-6966c993ec03",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The images were acquired under 40× magnification (226 nm per pixel). The median area of the slides was 8.5·109 pixels, and the scan quality of each WSI was verified by manual inspection.",
+      "labEquipment": "Hamamatsu C9600‐12 slide scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 60
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 106238844866
+    }
+  ]
+}

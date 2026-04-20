@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1687"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1687",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#aae77112-6b00-41fe-a79d-a40c25354ed7"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#093741ac-d695-40fc-8194-863f9a4b0665"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8565-1555"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-23",
+      "description": "Upregulation of Epidermal Growth Factor Receptor is evident in most cases of cervical cancer and is usually associated with a poor prognosis. At the same time, therapies directed against EGFR are generally not successful in this type of cancer, which suggests that therapeutic inactivation of EGFR can be easily overcome. In order to evaluate mechanisms by which cervical cancers with alterations in EGFR signaling thrive, we have generated several EGFR mutant clones by CRISPR/Cas9 genome editing. This work details the approach used to generate EGFR mutant cells and describes changes in cell characteristics associated with decreased quantity and altered subcellular distribution of EGFR.    ",
+      "funder": [],
+      "identifier": "S-BIAD1687",
+      "keywords": [
+        "CRISPR-Cas9/cervical cancer/EGFR/EGF binding "
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Microscopy data for Manuscript: Changes in EGFR Activity Following CRISPR/Cas9-Editing of the EGF Binding Domain",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1687/da538b34-b8e1-4c34-9a38-89c22887c667/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8565-1555",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00m6w7z96"
+        }
+      ],
+      "email": "jelena.popovic@northwestern.edu",
+      "name": "Jelena Popovic"
+    },
+    {
+      "@id": "https://ror.org/00m6w7z96",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Northwestern University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#093741ac-d695-40fc-8194-863f9a4b0665",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "cells seeded on coverslips - Cervical cancer",
+      "name": "ME180 cell line and CRISPR/Cas9 derived clones",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#aae77112-6b00-41fe-a79d-a40c25354ed7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Figure 1C\nNikon A1plus \n\tOC name: JPR_RGB\n\tMicroscope name: Ti Microscope\n\tObjective name: Plan Apo λ 60x Oil\n\tObjective magnification: 60\n\tObjective numerical aperture: 1.4\n\tRefractive Index: 1.515\n\tDAPI\n\t\tEmission wavelength: 450.0\n\t\tExcitation wavelength: 405.0\n\t\tPinhole size: 25.54\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 1\n\tAlexa 488 \n\t\tEmission wavelength: 525.0\n\t\tExcitation wavelength: 488.0\n\t\tPinhole size: 25.54\n\t\tChannel modality: Laser Scan Confocal, GaAsP\n\t\tChannel series: 2\n\tAlexa 568\n\t\tEmission wavelength: 595.0\n\t\tExcitation wavelength: 561.0\n\t\tPinhole size: 25.54\n\t\tChannel modality: Laser Scan Confocal, GaAsP\n\t\tChannel series: 3\n\nFigure 3A\nNikon A1plus \n\tOC name: N/A\n\tMicroscope name: Ti Microscope\n\tObjective name: Plan Apo λ 100x Oil\n\tObjective magnification: 100\n\tObjective numerical aperture: 1.45\n\tRefractive Index: 1.515\n\tDAPI\n\t\tEmission wavelength: 450.0\n\t\tExcitation wavelength: 406.5\n\t\tPinhole size: 58.75\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 1\n\tAlexa488\n\t\tEmission wavelength: 525.0\n\t\tExcitation wavelength: 488.0\n\t\tPinhole size: 58.75\n\t\tChannel modality: Laser Scan Confocal, GaAsP\n\t\tChannel series: 2\n\tAlexa568\n\t\tEmission wavelength: 595.0\n\t\tExcitation wavelength: 561.6\n\t\tPinhole size: 58.75\n\t\tChannel modality: Laser Scan Confocal, GaAsP\n\t\tChannel series: 3\n\nFigure 4A\nNikon A1plus \n\tOC name: JP-RGB-100x\n\tMicroscope name: Ti Microscope\n\tObjective name: Plan Apo λ 100x Oil\n\tObjective magnification: 100\n\tObjective numerical aperture: 1.45\n\tRefractive Index: 1.515\n\tDAPI\n\t\tEmission wavelength: 450.0\n\t\tExcitation wavelength: 406.5\n\t\tPinhole size: 49.81\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 1\n\tAlexa488\n\t\tEmission wavelength: 525.0\n\t\tExcitation wavelength: 488.0\n\t\tPinhole size: 49.81\n\t\tChannel modality: Laser Scan Confocal, GaAsP\n\t\tChannel series: 2\n\tAlx647\n\t\tEmission wavelength: 700.0\n\t\tExcitation wavelength: 641.5\n\t\tPinhole size: 49.81\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 3\n\nFigure 5A\nNikon A1plus \n\tOC name: N/A\n\tMicroscope name: Ti Microscope\n\tObjective name: Plan Apo λ 100x Oil\n\tObjective magnification: 100\n\tObjective numerical aperture: 1.45\n\tRefractive Index: 1.515\n\tDAPI\n\t\tEmission wavelength: 450.0\n\t\tExcitation wavelength: 405.0\n\t\tPinhole size: 25.54\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 1\n\tAlexa 488 \n\t\tEmission wavelength: 525.0\n\t\tExcitation wavelength: 488.0\n\t\tPinhole size: 25.54\n\t\tChannel modality: Laser Scan Confocal, GaAsP\n\t\tChannel series: 2\n\tAlexa 647\n\t\tEmission wavelength: 700.0\n\t\tExcitation wavelength: 640.0\n\t\tPinhole size: 25.54\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 3\n\nFigure S3A\nNikon A1plus \n\tOC name: N/A\n\tMicroscope name: Ti Microscope\n\tObjective name: Plan Apo λ 100x Oil\n\tObjective magnification: 100\n\tObjective numerical aperture: 1.45\n\tRefractive Index: 1.515\n\tDAPI\n\t\tEmission wavelength: 450.0\n\t\tExcitation wavelength: 406.5\n\t\tPinhole size: 49.81\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 1\n\tAlexa488\n\t\tEmission wavelength: 525.0\n\t\tExcitation wavelength: 488.0\n\t\tPinhole size: 49.81\n\t\tChannel modality: Laser Scan Confocal, GaAsP\n\t\tChannel series: 2\n\tAlx647\n\t\tEmission wavelength: 700.0\n\t\tExcitation wavelength: 641.5\n\t\tPinhole size: 49.81\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 3\n\nFigure S9\nCamera Nikon DS-Qi2 \n\tSample: 1\n\t\tOC name: TPA-DAPI1\n\t\tMicroscope name: Ti2 Microscope\n\t\tObjective name: S Plan Fluor ELWD 40x Ph2 ADM\n\t\tObjective magnification: 40\n\t\tObjective numerical aperture: 0.6\n\t\tRefractive Index: 1.000\n\t\tTPA-DAPI1\n\t\t\tEmission wavelength: 460.0\n\t\t\tExcitation wavelength: N/A\n\t\t\tChannel modality: Widefield Fluorescence\n\tSample: 2\n\t\tOC name: TPA-GFP1\n\t\tMicroscope name: Ti2 Microscope\n\t\tObjective name: S Plan Fluor ELWD 40x Ph2 ADM\n\t\tObjective magnification: 40\n\t\tObjective numerical aperture: 0.6\n\t\tRefractive Index: 1.000\n\t\tTPA-GFP1\n\t\t\tEmission wavelength: 535.0\n\t\t\tExcitation wavelength: N/A\n\t\t\tChannel modality: Widefield Fluorescence\n\tSample: 3\n\t\tOC name: TPA-Red\n\t\tMicroscope name: Ti2 Microscope\n\t\tObjective name: S Plan Fluor ELWD 40x Ph2 ADM\n\t\tObjective magnification: 40\n\t\tObjective numerical aperture: 0.6\n\t\tRefractive Index: 1.000\n\t\tTPA-Red\n\t\t\tEmission wavelength: 620.0\n\t\t\tExcitation wavelength: N/A\n\t\t\tChannel modality: Widefield Fluorescence\n\nFigure S10\nNikon A1plus \n\tOC name: N/A\n\tMicroscope name: Ti Microscope\n\tObjective name: Plan Apo λ 100x Oil\n\tObjective magnification: 100\n\tObjective numerical aperture: 1.45\n\tRefractive Index: 1.515\n\tDAPI\n\t\tEmission wavelength: 450.0\n\t\tExcitation wavelength: 406.5\n\t\tPinhole size: 49.81\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 1\n\tAlexa568\n\t\tEmission wavelength: 595.0\n\t\tExcitation wavelength: 561.6\n\t\tPinhole size: 49.81\n\t\tChannel modality: Laser Scan Confocal, GaAsP\n\t\tChannel series: 2\n\tAlx647\n\t\tEmission wavelength: 700.0\n\t\tExcitation wavelength: 641.5\n\t\tPinhole size: 49.81\n\t\tChannel modality: Laser Scan Confocal, PMT\n\t\tChannel series: 3\n",
+      "labEquipment": "Laser scan confocal Nikon Ti microscope and Nikon DS-Qi2 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "All figures"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 65
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 200376064
+    }
+  ]
+}

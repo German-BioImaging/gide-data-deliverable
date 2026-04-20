@@ -1,0 +1,309 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1735"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1735",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0bf5b985-7725-4a1c-92a6-f94447410bb9"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#11cea41d-c0e6-4359-a1bd-32c74fb26395"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1277-4631"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1555-8261"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8348-2778"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0249-3844"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8240-4476"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6958-6498"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9587-1954"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-25",
+      "description": "subset of Dataset science bowl 2018 to create a nf-core module \"compute_label_image_similarity\"",
+      "funder": [],
+      "identifier": "S-BIAD1735",
+      "keywords": [
+        "segmentation ",
+        "biaflows",
+        "nextflow"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Subset of Data Science Bowl 2018 used in Biaflows",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1735/4e705dc1-5474-41d4-81b3-e518c50cadae/static_display_512_512.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1735/63f277e5-9be1-4258-ba14-085dd7abd438/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8348-2778",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04n0g0b29"
+        }
+      ],
+      "email": "sebastien.tosi@upf.edu",
+      "name": "Sébastien Tosi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0249-3844",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f1dcabf3-70ea-4300-8bb8-281c21b12a08"
+        }
+      ],
+      "email": "benjamin.pavie@vib.be",
+      "name": "Benjamin Pavie"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1277-4631",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05a0ya142"
+        }
+      ],
+      "name": "Juan C. Caicedo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6958-6498",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f1dcabf3-70ea-4300-8bb8-281c21b12a08"
+        }
+      ],
+      "email": "tatiana.woller@vib.be",
+      "name": "Tatiana Woller"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8240-4476",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "email": "tl10@sanger.ac.uk",
+      "name": "Tong Li"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9587-1954",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00afp2z80"
+        }
+      ],
+      "email": "Raphael.Maree@uliege.be",
+      "name": "Raphaël Marée"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1555-8261",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05a0ya142"
+        }
+      ],
+      "name": "Anne E. Carpenter"
+    },
+    {
+      "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Wellcome Sanger Institute"
+    },
+    {
+      "@id": "#f1dcabf3-70ea-4300-8bb8-281c21b12a08",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vlaams Instituut voor Biotechnologie"
+    },
+    {
+      "@id": "https://ror.org/00afp2z80",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Liège"
+    },
+    {
+      "@id": "https://ror.org/04n0g0b29",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Pompeu Fabra University"
+    },
+    {
+      "@id": "https://ror.org/05a0ya142",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Broad Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#11cea41d-c0e6-4359-a1bd-32c74fb26395",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "multiple biological entities",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#0bf5b985-7725-4a1c-92a6-f94447410bb9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "multiple settings ",
+      "labEquipment": "multiple instruments",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 130
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 56011725
+    }
+  ]
+}

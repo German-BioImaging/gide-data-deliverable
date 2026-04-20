@@ -1,0 +1,300 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1801"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1801",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#215c4ed2-8ba9-45f6-8bac-e01765364e89"
+        },
+        {
+          "@id": "#8707cda8-20de-4efe-a771-04f6fbfe1323"
+        },
+        {
+          "@id": "#1b1eceb3-e5a7-40ed-8adb-024aeafc4886"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cf1a28ea-6f3e-4f28-865e-fce474e3f7cc"
+        },
+        {
+          "@id": "#2c695b96-4125-4af1-8ffe-86b521dd8ace"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_8355"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4954-4204"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1045-4033"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3860-6759"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-05",
+      "description": "Microscopy data for manuscript: \"Palmitoylated Importin Alpha Regulates Mitotic Spindle Orientation Through Interaction NuMA\". A study elucidating a novel role of the nuclear transport protein importin alpha in astral microtubule anchoring.",
+      "funder": [],
+      "identifier": "S-BIAD1801",
+      "keywords": [
+        "Spindle Orientation",
+        "Importin alpha",
+        "NuMA",
+        "Xenopus laevis",
+        "Microcephaly",
+        "Palmitoylation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Palmitoylated Importin Alpha Regulates Mitotic Spindle Orientation Through Interaction with NuMA",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3860-6759",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#56e4d750-8f9c-4bb6-9bde-72e768242fce"
+        }
+      ],
+      "email": "natalie.mosqueda@stonybrook.edu",
+      "name": "Natalie Mosqueda"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1045-4033",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#56e4d750-8f9c-4bb6-9bde-72e768242fce"
+        }
+      ],
+      "email": "christopher.brownlee@stonybrook.edu",
+      "name": "Christopher W Brownlee"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4954-4204",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#56e4d750-8f9c-4bb6-9bde-72e768242fce"
+        }
+      ],
+      "email": "patrick.sutton@stonybrook.edu",
+      "name": "Patrick James Sutton"
+    },
+    {
+      "@id": "#56e4d750-8f9c-4bb6-9bde-72e768242fce",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stony Brook University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_8355",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Xenopus laevis"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2c695b96-4125-4af1-8ffe-86b521dd8ace",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Xenopus laevis embryos",
+      "name": "Xenopus Laevis Embryos",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_8355"
+      }
+    },
+    {
+      "@id": "#cf1a28ea-6f3e-4f28-865e-fce474e3f7cc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HCT116 and RPE1 cell lines",
+      "name": "Human Cell Culture",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1b1eceb3-e5a7-40ed-8adb-024aeafc4886",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Tadpoles imaged at 4X air objective",
+      "labEquipment": "Echo Revolve Microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Xenopus laevis whole mount morphometric imaging"
+    },
+    {
+      "@id": "#215c4ed2-8ba9-45f6-8bac-e01765364e89",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were imaged at 100X unless otherwise specified on an oil immersion lens",
+      "labEquipment": "EVOS M7000",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Human cell culture image acquisition"
+    },
+    {
+      "@id": "#8707cda8-20de-4efe-a771-04f6fbfe1323",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Tadpole brains imaged with confocal settings at 10X unless otherwise stated",
+      "labEquipment": "Zeiss LSM 980 Confocal Microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Xenopus laevis Whole Mount Brain Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 17669
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 31388368186
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD709"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD709",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#10dbb602-549f-4086-8d29-a8c93b524fa0"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#306a90ae-a13d-4a2c-a4d5-91595bd6e9ac"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#24bbd129-0f0b-4ea9-ae51-e2bdde55f82a"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2540-8240"
+        },
+        {
+          "@id": "#5aecdbc5-69f2-4497-803a-1e11290eddf4"
+        },
+        {
+          "@id": "#bed435f5-32eb-4b01-a3db-3861223fe667"
+        },
+        {
+          "@id": "#dd4786c3-9c78-499b-88fd-78ab2568726f"
+        },
+        {
+          "@id": "#830467c3-a492-4c6a-bf69-74ab5296b29d"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1892-0222"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0149-042X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5790-5204"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-08",
+      "description": "Dataset of images and extracted features used in the study Seel et al. 2023",
+      "funder": [],
+      "identifier": "S-BIAD709",
+      "keywords": [
+        "Mitochondria, Mitochondrial DNA, Budding yeast, Cell size"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Regulation with cell size ensures mitochondrial DNA homeostasis during cell growth",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#24bbd129-0f0b-4ea9-ae51-e2bdde55f82a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Anika Seel"
+    },
+    {
+      "@id": "#5aecdbc5-69f2-4497-803a-1e11290eddf4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4c0ab74-2544-426b-8d35-e52f9876c6ba"
+        }
+      ],
+      "name": "Moritz Mayer"
+    },
+    {
+      "@id": "#830467c3-a492-4c6a-bf69-74ab5296b29d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2"
+        }
+      ],
+      "name": "Felix Thoma"
+    },
+    {
+      "@id": "#bed435f5-32eb-4b01-a3db-3861223fe667",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Alissa Finster"
+    },
+    {
+      "@id": "#dd4786c3-9c78-499b-88fd-78ab2568726f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "name": "Daniela Bureik"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5790-5204",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "email": "kurt.schmoller@helmholtz-munich.de",
+      "name": "Kurt M. Schmoller"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1892-0222",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2"
+        }
+      ],
+      "name": "Christof Osman"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0149-042X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4c0ab74-2544-426b-8d35-e52f9876c6ba"
+        }
+      ],
+      "name": "Till Klecker"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2540-8240",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "email": "francesco.padovani@helmholtz-munich.de",
+      "name": "Francesco Padovani"
+    },
+    {
+      "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ludwig-Maximilians-Universität München"
+    },
+    {
+      "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Zentrum München"
+    },
+    {
+      "@id": "#e4c0ab74-2544-426b-8d35-e52f9876c6ba",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Bayreuth"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#306a90ae-a13d-4a2c-a4d5-91595bd6e9ac",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mitochondrial DNA nucleoids and mitochondria network",
+      "name": "Wild-type, Mic60 deletion, Petite and Negative-control",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#10dbb602-549f-4086-8d29-a8c93b524fa0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "63x /1.4 Oil DIC objective\nZ-stacks were acquired over 15.05 µm in 0.35 µm increments\nmKate2 was imaged with an excitation wavelength of 561 nm, and detecting emission between 610-700 nm. mNeon was excited at 488 nm and detected between 410-546 nm. Bright field images were taken using the transmitted light detector (T-PMT).",
+      "labEquipment": "Zeiss LSM 800 confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Imaging budding yeast"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 202745
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 416407751002
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000495/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000495/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000495",
+      "name": "Intra- and extra-nuclear PML and SUMO",
+      "description": "Promyelocytic leukemia (PML) proteins are known to form phase-separated nuclear punctate structures called PML-nuclear bodies (PML-NBs). The integrity disruption of PML-NBs is linked with the pathogenesis of acute promyelocytic leukemia (APL), and trivalent arsenic (As3+) has been used for the clinical treatment of APL to restore normal PML-NBs. As3+ is considered to bind to cysteine residues and enhances modification of PML with small-ubiquitin-like protein (SUMO). We exposed U-2OS and CHO-K1 cells stably overexpressing PML-VI to As3+ and found that the solubility of PML decreased and SUMOylation of PML increased after 2 h-exposure to 3 μM As3+. Contrary to As3+-induced remarkable biochemical changes including the solubility change and SUMOylation of PML, microscopic observation of PML-NBs was not changed clearly after a short-term exposure to As3+. The number of PML-NBs decreased and extranuclear PML bodies (EnPBs), which are remniscences of PML-NBs after nuclear membrane breakdown at mitosis, increased after exposure to As3+ for 24 - 72 h. The amount of SUMOylated PML decreased after prolonged exposure to As3+ while the solubility of PML was kept low, suggesting that As3+ stabilized EnPB without SUMOylation. The effects of As3+ on EnPBs were clearly observed at as low as 0.3 μM As3+ which corresponds to inorganic arsenic level in drinking water worldwide.\r\n\r\nKeywords: arsenic, small ubiquitin-like modifier (SUMO), solubility, phase separation, promyelocytic leukemia-nuclear body (PML-NB), extranuclear PML body (EnPB)",
+      "datePublished": "2026-03-03",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.64898/2026.01.25.701640"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0002462"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Seishiro Hirano",
+      "email": "seishiro@nies.go.jp",
+      "description": "Organization: National Institute for Environmental Studies; Department: Center for Health and Environmental Risk Research",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02hw5fp67"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02hw5fp67",
+      "@type": "Organization",
+      "name": "National Institute for Environmental Studies"
+    },
+    {
+      "@id": "https://doi.org/10.64898/2026.01.25.701640",
+      "@type": "ScholarlyArticle",
+      "name": "Biological differences in promyelocytic leukemia (PML) proteins between PML-nuclear bodies (PML-NBs) and extranuclear PML bodies (EnPBs) in arsenite-exposed cells",
+      "datePublished": "2026"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+        }
+      ],
+      "hasCellLine": [
+        "U-2OS",
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0002462"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029",
+      "@type": "Taxon",
+      "scientificName": "Cricetulus griseus",
+      "vernacularName": "chinese hamster"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0002462",
+      "@type": "DefinedTerm",
+      "name": "CHO-K1"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 240402432,
+      "description": "240.4 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 93,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

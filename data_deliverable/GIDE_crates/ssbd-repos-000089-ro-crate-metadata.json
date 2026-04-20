@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000089/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000089/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000089",
+      "name": "Time-lapse images of spine dynamics in patDp/+ or NLG R451C and wild-type mice",
+      "description": "ssbd-repos-000089",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Autistic Disorder/etiology",
+        "Autistic Disorder/physiopathology[major]",
+        "Biomarkers/analysis",
+        "Biomarkers/metabolism",
+        "Carrier Proteins/genetics",
+        "Carrier Proteins/metabolism",
+        "Cell Adhesion Molecules, Neuronal/genetics",
+        "Dendritic Spines/pathology[major]",
+        "Dendritic Spines/physiology",
+        "Disease Models, Animal",
+        "Disks Large Homolog 4 Protein",
+        "Female",
+        "Green Fluorescent Proteins",
+        "Guanylate Kinases/metabolism",
+        "Male",
+        "Membrane Proteins/genetics",
+        "Membrane Proteins/metabolism",
+        "Mice, Inbred C57BL",
+        "Mice, Inbred ICR",
+        "Mice, Mutant Strains",
+        "Nerve Tissue Proteins/genetics",
+        "Post-Synaptic Density",
+        "Pregnancy",
+        "Synapses/physiology"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/ncomms5742"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0014069"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0106033"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-201"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shigeo Okabe",
+      "email": "okabe@m.u-tokyo.ac.jp",
+      "description": "Organization: University of Tokyo; Department: Department of Cellular Neurobiology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1038/ncomms5742",
+      "@type": "ScholarlyArticle",
+      "name": "Enhanced synapse remodelling as a common phenotype in mouse models of autism.",
+      "datePublished": "2014"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0014069",
+      "@type": "DefinedTerm",
+      "name": "postsynaptic density"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0106033",
+      "@type": "DefinedTerm",
+      "name": "spine synapse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 2733220864,
+      "description": "2.7 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 40,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

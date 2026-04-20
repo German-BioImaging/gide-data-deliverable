@@ -1,0 +1,245 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/422-Asai-KinetochoreBeads/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/422-Asai-KinetochoreBeads/",
+      "@type": "Dataset",
+      "identifier": "422-Asai-KinetochoreBeads",
+      "name": "Dynamics of chromosomes and artificial kinetochore beads in mouse oocytes and embryos",
+      "description": "Faithful chromosome segregation requires biorientation, where the pair of kinetochores on the chromosome establish bipolar microtubule attachment. The integrity of the kinetochore, a macromolecular complex built on centromeric DNA, is required for biorientation, but components sufficient for biorientation remain unknown. The authors show that tethering the outer kinetochore heterodimer NDC80-NUF2 to the surface of apolar microbeads establishes their biorientation-like\nstate in mouse cells. NDC80-NUF2 microbeads align at the spindle equator and self-correct alignment errors. The alignment is associated with stable bipolar microtubule attachment and is independent of the outer kinetochore proteins SPC24-SPC25, KNL1, the Mis12 complex, inner kinetochore proteins,\nand Aurora. Larger microbeads align more rapidly, suggesting a size-dependent biorientation mechanism. ",
+      "datePublished": "2025-11-28",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Mice",
+        "Cell Cycle Proteins/metabolism[major]",
+        "Chromosome Segregation[major]",
+        "Cytoskeletal Proteins/metabolism",
+        "Cytoskeletal Proteins/genetics",
+        "Kinetochores/metabolism[major]",
+        "Microspheres[major]",
+        "Microtubule-Associated Proteins/metabolism[major]",
+        "Microtubule-Associated Proteins/genetics[major]",
+        "Microtubules/metabolism[major]",
+        "Nuclear Proteins/metabolism",
+        "Nuclear Proteins/genetics",
+        "Spindle Apparatus/metabolism[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1126/science.adn5428"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0000776"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005694"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Tomoya S Kitajima",
+      "email": "tomoya.kitajima@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Center for Biosystems Dynamics Research",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Kohei Asai",
+      "description": "Department: Laboratory for Chromosome Segregation; Laboratory: Laboratory for Chromosome Segregation"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Yuanzhuo Zhou"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1126/science.adn5428",
+      "@type": "ScholarlyArticle",
+      "name": "Artificial kinetochore beads establish a biorientation-like state in the spindle.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "B6D2F1",
+      "description": "B6D2F1",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000776",
+      "@type": "DefinedTerm",
+      "name": "kinetochore"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
+      "@type": "DefinedTerm",
+      "name": "chromosome"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1331382013984,
+      "description": "1.3 TB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 20061,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

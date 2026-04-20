@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1268"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1268",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bf15e60e-0380-4f17-8f78-74310cba822d"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d0196bbb-89e8-484d-8282-62cedfe639d5"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7597-3104"
+        },
+        {
+          "@id": "#f5d283b2-af7e-4e7f-a996-f6a8498437df"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-12",
+      "description": "Imaging source data used to create figures in the papaer \"CEP192 drives spatio-temporal control of mitotic Aurora-A\".",
+      "funder": [],
+      "identifier": "S-BIAD1268",
+      "keywords": [
+        "Aurora-A",
+        "mitosis",
+        "CEP192",
+        "centrosome",
+        "cell cycle",
+        "phosphorylation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "CEP192 drives spatio-temporal control of mitotic Aurora-A",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1268/b925b6ba-4a29-4caa-8932-cd1ad41a3178/fab5f419-17ab-416d-8f17-c825d9795591.png"
+      ]
+    },
+    {
+      "@id": "#f5d283b2-af7e-4e7f-a996-f6a8498437df",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "fanni.gergely@bioch.ox.ac.uk",
+      "name": "Fanni Gergely"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7597-3104",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "james.holder@bioch.ox.ac.uk",
+      "name": "James Holder"
+    },
+    {
+      "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#d0196bbb-89e8-484d-8282-62cedfe639d5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "The cells used were RPE1 (p53-/-) and U251.",
+      "name": "Imaging of mitotic RPE1 and U251 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bf15e60e-0380-4f17-8f78-74310cba822d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Various laser power and exposures times were used depending on the marker being images, all imaging settings were kept consistent between conditions of an experiments. ",
+      "labEquipment": "Fixed samples were imaged using a standard upright microscope system (BX61, Olympus). Live cell imaging was carried out with an Olympus ScanR High-content imaging system.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Imaging of mitotic RPE1 and U251 cells"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 100
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4541613017
+    }
+  ]
+}

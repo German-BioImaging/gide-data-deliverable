@@ -1,0 +1,207 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD911"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD911",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b638578e-cb28-4348-a0c4-5ad005df62fe"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#352f7865-0e0a-4211-87c7-550a1581caf1"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6341-9130"
+        },
+        {
+          "@id": "#f0f755d8-9b36-4ab5-9164-f0506aff2af4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-11-06",
+      "description": "Source data of Bioimaging",
+      "funder": [],
+      "identifier": "S-BIAD911",
+      "keywords": [
+        "Drosophila melanogaster"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Programmed disassembly of an Interplanar Amida Network coordinates 3D epithelial morphogenesis ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD911/68d2e00c-2cfb-4ccb-b901-471a17020837/1d36591f-9716-46fa-b3a3-dbc68f79e9f5.png"
+      ]
+    },
+    {
+      "@id": "#f0f755d8-9b36-4ab5-9164-f0506aff2af4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c3eeaefe-bc7f-461b-8676-1e296c3bcfb3"
+        }
+      ],
+      "email": "ngan.tran@ut.ee",
+      "name": "Ngan Vi Tran"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6341-9130",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139"
+        }
+      ],
+      "email": "osamu.shimmi@helsinki.fi",
+      "name": "Osamu Shimmi"
+    },
+    {
+      "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Helsinki"
+    },
+    {
+      "@id": "#c3eeaefe-bc7f-461b-8676-1e296c3bcfb3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Tartu"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#352f7865-0e0a-4211-87c7-550a1581caf1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila pupal wing",
+      "name": "Programmed disassembly of an Interplanar Amida Network coordinates 3D epithelial morphogenesis ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#b638578e-cb28-4348-a0c4-5ad005df62fe",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "HC PL APO 20x/0.75 IMM CORR CS2 (water, glycerol, oil, wd 0.66 mm)\nHC PL APO 93x/1.30  motCORR STED WHITE (glycerol, wd 0.3mm)",
+      "labEquipment": "Leica SP8 STED",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "In vivo live imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 31
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 49956938281
+    }
+  ]
+}

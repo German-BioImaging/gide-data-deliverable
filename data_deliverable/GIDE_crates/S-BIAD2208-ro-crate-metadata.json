@@ -1,0 +1,233 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2208"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2208",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4277f947-a648-4139-993a-05ffe5811b28"
+        },
+        {
+          "@id": "#57cd0cd7-a72a-426b-bc1f-ed755323a1d0"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#68890a2e-1786-4a2a-9414-1443510c4d3f"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2284-7424"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1754-690X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0636-7351"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-04",
+      "description": "Spatial profiling of colorectal cancer (CRC) tissue samples for the single-cell CRC atlas. This dataset includes Xenium spatial transcriptomics data of 15 patients including tumor cores, invasive margins and adjacent normal tissue sections, and imaging mass cytometry (IMC) data of tumor cores and invasive margins of 29 patients.",
+      "funder": [],
+      "identifier": "S-BIAD2208",
+      "keywords": [
+        "Xenium",
+        "spatial transcriptomics",
+        "imaging mass cytometry",
+        "colorectal cancer",
+        "neutrophil"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Single-cell integration and multi-modal profiling reveals phenotypes and spatial organization of neutrophils in colorectal cancer",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/S-BIAD2208/bf92449a-5e02-42d7-90be-ffece489aaae/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0636-7351",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b2c1a015-0fb4-4876-a1b9-37dda3c864d4"
+        }
+      ],
+      "email": "zlatko.trajanoski@i-med.ac.at",
+      "name": "Zlatko Trajanoski"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1754-690X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b2c1a015-0fb4-4876-a1b9-37dda3c864d4"
+        }
+      ],
+      "email": "dietmar.rieder@i-med.ac.at",
+      "name": "Dietmar Rieder"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2284-7424",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b2c1a015-0fb4-4876-a1b9-37dda3c864d4"
+        }
+      ],
+      "email": "alex.kirchmair@gmail.com",
+      "name": "Alexander Kirchmair"
+    },
+    {
+      "@id": "#b2c1a015-0fb4-4876-a1b9-37dda3c864d4",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Medical University of Innsbruck"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#68890a2e-1786-4a2a-9414-1443510c4d3f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Colorectal cancer",
+      "name": "CRC",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4277f947-a648-4139-993a-05ffe5811b28",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Xenium samples were processed according to manufacturer’s protocols (Xenium In Situ Gene Expression with Morphology-based Cell Segmentation Staining User Guide CG0000749 and Decoding & Imaging, User Guide CG000584). Samples were stained utilizing the predesigned Human Immuno-Oncology panel from 10x genomics (PN 1000654), as they became available from the manufacturer. Slides were stained with a Xenium Cell Segmentation kit according to manufacturer’s instructions (User Guide CG0000749). Briefly, probes of the immuno-oncology panel were hybridized overnight before rolling circle amplification and native protein autofluorescence was reduced with a chemical autofluorescence quencher. Slides were processed on a 10x Xenium Analyzer, with ROIs selected to cover the selected regions. The Xenium Onboard Analysis pipeline v2.0.0 (10x Genomics) was run directly on the instrument for imaging processing, cell segmentation, image registration, decoding, deduplication, and secondary analysis.",
+      "labEquipment": "Xenium Analyzer",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Xenium"
+    },
+    {
+      "@id": "#57cd0cd7-a72a-426b-bc1f-ed755323a1d0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging mass cytometry was performed on tissue microarrays from microsatellite-stable CRC patients as previously described (https://doi.org/10.1016/j.isci.2023.108399), using the antibody panel provided in Suppl. Table S3.",
+      "labEquipment": "Hyperion",
+      "measurementTechnique": [],
+      "name": "IMC"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2251
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 321571430584
+    }
+  ]
+}

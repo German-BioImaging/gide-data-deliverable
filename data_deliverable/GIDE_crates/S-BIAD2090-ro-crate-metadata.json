@@ -1,0 +1,197 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2090"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2090",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c0446422-d16c-4c05-a0c1-7f5b987238aa"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e9fe3823-02e0-4694-ab8e-f47c0bc23aa2"
+        },
+        {
+          "@id": "#67d38ec7-f118-4e4f-88e8-80157731c9b6"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0000-4207-8998"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-07",
+      "description": "Image-based pooled CRISPR/Cas9 knockout screens to identify regulators of NLGN1",
+      "funder": [],
+      "identifier": "S-BIAD2090",
+      "keywords": [
+        "CRISPR",
+        "synaptogenesis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "High-content image-based pooled screens reveal regulators of synaptogenesis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0009-0000-4207-8998",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3bc729cf-2c38-4d94-89b6-37dc7c474f7f"
+        }
+      ],
+      "email": "ale@broadinstitute.org",
+      "name": "Anna Le"
+    },
+    {
+      "@id": "#3bc729cf-2c38-4d94-89b6-37dc7c474f7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Broad Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#67d38ec7-f118-4e4f-88e8-80157731c9b6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293 human embryonic kidney cells",
+      "name": "HEK293 cells (secondary screen)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e9fe3823-02e0-4694-ab8e-f47c0bc23aa2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293 human embryonic kidney cells",
+      "name": "HEK293 cells (primary screen)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c0446422-d16c-4c05-a0c1-7f5b987238aa",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Primary and secondary screen phenotype images were acquired with a 20X 0.75 NA CFI Plan Apo Lambda objective, using DAPI (408 nm laser excitation, custom Chroma dual-band 408/473 dichroic and emission filter set), Alexa Fluor 488 (473 nm laser excitation, Chroma T495LPXR dichroic filter, Chroma ET530/30 emission filter), Alexa Fluor 532 (518 nm laser excitation, Chroma T555LPXR dichroic filter, Chroma ET575/30 emission filter), Alexa Fluor 594 (545 nm laser excitation, Chroma T565LPXR dichroic filter, Semrock FF01-615/24 emission filter), Alexa Fluor 647 (635 nm laser excitation, Chroma ZET635RDC dichroic filter, Semrock FF01-680/42 emission filter), and DyLight 755 (750 nm laser excitation, Semrock FF765-Di01 dichroic filter, custom ET820/110 Chroma emission filter) fluorescence channels.\n\nIn situ sequencing images were acquired using a 10X 0.45 NA CFI Plan Apo Lambda objective (Nikon) with the following laser lines, filters, and exposure times: DAPI (408 nm laser excitation at 2% power, custom Chroma dual-band 408/473 dichroic and emission filter set, 20 ms exposure), MiSeq G (545 nm laser at 30% power and Semrock FF01-543/3 excitation filter, Chroma T555LPXR dichroic filter, Chroma ET575/30 emission filter, 200 ms exposure), MiSeq T (545 nm laser excitation at 30% power, Chroma T565LPXR dichroic filter, Semrock FF01-615/24 emission filter, 200 ms exposure), MiSeq A (635 nm laser excitation at 30% power, Chroma ZET635RDC dichroic filter, Semrock FF01-680/42 emission filter, 200 ms), and MiSeq C (635 nm laser excitation at 30% power, Chroma ZET635RDC dichroic filter, Semrock FF01- 732/68 emission filter, 200 ms exposure).\n\nFor phenotyping images, markers include MAP2 (A750), Bassoon (A594), VGAT (A532), VGLUT1 (CY5), HA-tag (GFP), and DNA (DAPI). The sequencing images include DNA (DAPI), G (CY3), T (A594), A (CY5), and C (CY7).",
+      "labEquipment": "Nikon Ti-2 inverted epifluorescence microscope with an Iris 9 sCMOS camera (Teledyne Photometrics) and a CELESTA light engine (Lumencor) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition for primary and secondary screens"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 0
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 0
+    }
+  ]
+}

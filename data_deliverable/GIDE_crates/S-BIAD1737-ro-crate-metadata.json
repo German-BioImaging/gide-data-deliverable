@@ -1,0 +1,249 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1737"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1737",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1111d54c-acc1-463c-8428-7324081f2cb6"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5048c48b-d376-4e5a-a145-61f829621abc"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4655-1185"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9062-1051"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6941-4872"
+        },
+        {
+          "@id": "#148a2dd1-acb9-4aed-8525-568185ed6088"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-25",
+      "description": "This datasets consists of two images of human induced Pluripotent Stem Cells (hiPSC) derived motor neuron-neurospheres, one treated with 5 µM MI132 to induce stress granule formation and the other one untreated. Channel 1 corresponds to Islet1 antibody staining, channel 2 to G3BP antibody staining and channel 3 corresponds to DAPI staining. Images have a z-stack that covers at least half the neurosphere.\n\nThis data was selected as part of the AI4Life Open Calls 2024 for image analysis consultation and deep-learning applications.",
+      "funder": [],
+      "identifier": "S-BIAD1737",
+      "keywords": [
+        "neurosphere",
+        "immunofluorescence",
+        "confocal microscopy",
+        "AI4Life Open Call"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A 3D human motor neuron disease platform for high throughput drug screening",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1737/521c0cf1-90c8-4add-82b6-9ad6585fc795/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#148a2dd1-acb9-4aed-8525-568185ed6088",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b69bec08-adfc-4269-823f-3d4aa67d7f74"
+        }
+      ],
+      "email": "acorbat.bia@gmail.com",
+      "name": "Agustin A. Corbat"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9062-1051",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ff4e969-5671-4506-9306-cec218fc1170"
+        }
+      ],
+      "email": "afonso.malheiro@gimm.pt",
+      "name": "Afonso Malheiro"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6941-4872",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ff4e969-5671-4506-9306-cec218fc1170"
+        }
+      ],
+      "email": "edgar.gomes@gimm.pt",
+      "name": "Edgar R. Gomes"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4655-1185",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9059e148-50cb-4029-ae68-28d8badd543b"
+        }
+      ],
+      "email": "katharina.hennig@izi.fraunhofer.de",
+      "name": "Katharina Hennig"
+    },
+    {
+      "@id": "#8ff4e969-5671-4506-9306-cec218fc1170",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Gulbenkian Institute for Molecular Medicine"
+    },
+    {
+      "@id": "#9059e148-50cb-4029-ae68-28d8badd543b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Fraunhofer Institute for Cell Therapy and Immunology"
+    },
+    {
+      "@id": "#b69bec08-adfc-4269-823f-3d4aa67d7f74",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Science for Life Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#5048c48b-d376-4e5a-a145-61f829621abc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human induced Pluripotent Stem Cells (hiPSC) derived motor neuron-neurospheres",
+      "name": "Neurospheres",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1111d54c-acc1-463c-8428-7324081f2cb6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Z-stack images of the whole neurosphere were acquired using an inverted confocal laser scanning microscope (Zeiss LSM 980) equipped with a Plan-Apochromat 20x/0.8 M27 objective (zoom 0.6). Z-stacks were acquired with 750 nm steps. To account for reduced intensity in deeper planes, an Auto Z Brightness Correction has been used.",
+      "labEquipment": "Zeiss LSM 980",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Neurosphere Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 11958377440
+    }
+  ]
+}

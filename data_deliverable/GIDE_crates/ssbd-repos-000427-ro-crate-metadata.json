@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000427/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000427/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000427",
+      "name": "Histological analysis using human abdominal skin tissue including hair follicles",
+      "description": "The hair cycle is a valuable model for studying tissue remodeling processes in adult mammals. Time-course single-cell transcriptomics offers a powerful approach for characterizing changes in cellular states and interactions; however, its application in human tissues remains challenging. Here, we performed single-cell RNA sequencing on 19 human skin tissues, each containing a single hair follicle. We reconstructed a pseudotemporal progression of the hair cycle—termed the “pseudo-hair cycle”—by computationally ordering samples according to their gene expression profiles. The pseudo-hair cycle delineates the continuum of gene expression changes occurring in 16 distinct epithelial and dermal cell populations throughout the hair cycle, revealing specific cellular states and interactions. We identified hair follicle keratinocytes, dermal sheath fibroblasts, vascular endothelial cells, and leukocytes as key contributors to tissue remodeling during catagen. Our study provides a high-resolution temporal dataset for investigating the dynamic molecular and cellular mechanisms underlying skin remodeling in humans.",
+      "datePublished": "2025-09-05",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.celrep.2025.116196"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hironobu Fujiwara",
+      "email": "hironobu.fujiwara@riken.jp",
+      "description": "Organization: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Tissue Microenvironment",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/023rffy11"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/023rffy11",
+      "@type": "Organization",
+      "name": "RIKEN Center for Biosystems Dynamics Research"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.celrep.2025.116196",
+      "@type": "ScholarlyArticle",
+      "name": "Single-cell transcriptomic reconstruction of the human hair cycle: Capturing the temporal dynamics of skin tissue remodeling.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 198271287296,
+      "description": "198.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 830,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

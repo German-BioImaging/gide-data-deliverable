@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2326"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2326",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9279e869-9a73-4c7a-84d6-3041f70879bb"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#95257b24-7366-405f-ad4a-1b83501c8a57"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8782-9126"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-30",
+      "description": "Colocalization of VGLUT1 or VGLUT2 with α-synuclein was analyzed in cortical sections from striatal monomer-injected mice. Sections were co-stained with either VGLUT1/α-synuclein or VGLUT2/α-synuclein and imaged in 3D Airyscan mode. Images were processed to super-resolution (strength = 5.5), with chromatic aberration corrected (1.2 pixels in the z-axis). Background subtraction was performed in Imaris prior to colocalization analysis. The Coloc function was applied to quantify colocalization of VGLUT1 with α-synuclein and, in a separate analysis, VGLUT2 with α-synuclein. Thresholds for each channel were set independently using the automatic “calculate threshold” function. Colocalization was assessed using the Build Coloc Channel tool in Imaris, and parameters including Manders’ coefficients and the percentage of VGLUT1- or VGLUT2-positive voxels above threshold colocalized with α-synuclein were analyzed.",
+      "funder": [],
+      "identifier": "S-BIAD2326",
+      "keywords": [
+        "α-Synuclein,",
+        "VGLUT1",
+        "VGLUT2",
+        "Colocolization"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Colocalization of VGLUT1/VGLUT2 with α-synuclein in cortical sections of mice injected with α-synuclein monomer in the striatum",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2326/4b389691-0466-4f02-b441-0540c620e355/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8782-9126",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9"
+        }
+      ],
+      "email": "sarozsah@gmail.com",
+      "name": "Saroj Sah"
+    },
+    {
+      "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Yale University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#95257b24-7366-405f-ad4a-1b83501c8a57",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cortex. Colocalization of VGLUT1/VGLUT2 with α-synuclein in cortical sections of mice injected with α-synuclein monomer in the striatum was assessed using images acquired on a Zeiss microscope (LSM 900) and analyzed in Imaris.",
+      "name": "Colocalization of VGLUT1/VGLUT2 with α-synuclein in cortical sections of mice injected with α-synuclein monomer in the striatum",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9279e869-9a73-4c7a-84d6-3041f70879bb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images of VGLUT1/α-synuclein or VGLUT2/α-synuclein were acquired using a Zeiss LSM 900 Airyscan microscope (Carl Zeiss Microscopy) with a 63× oil immersion objective (numerical aperture 1.4). For each animal, 6–8 images were collected from three cortical slices (n=4 mice each group). Images were acquired in 3D Airyscan mode at ≥1.8× magnification with an XY pixel size of 43 nm. Z-stacks were captured with a step size of 120 nm, yielding 35 optical sections and a total thickness of 4.08 µm. Identical microscope settings were applied to ensure consistency. Images were processed in 3D Airyscan mode using a fixed filter strength (5.5). Channel alignment was verified by inspecting for chromatic aberration, and manual corrections (1.2 pixels in the z-axis) were applied in Zeiss ZEN software.",
+      "labEquipment": "Zeiss LSM 900 confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "name": "Colocalization of VGLUT1/VGLUT2 with α-synuclein in cortical sections of mice injected with α-synuclein monomer in the striatum"
+    },
+    {
+      "@id": "obo:FBbi_00000393",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "array-scan confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 42
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 106762727906
+    }
+  ]
+}

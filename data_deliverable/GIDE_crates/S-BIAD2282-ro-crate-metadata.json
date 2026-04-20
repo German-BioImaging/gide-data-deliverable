@@ -1,0 +1,411 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2282"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2282",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d1a3f2d2-ed11-4e24-a4ca-4bdbc0af9614"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#291f4f89-39ba-48c3-a41d-7a31174553e3"
+        },
+        {
+          "@id": "obo:NCBITaxon_9534"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0002-1826-7099"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8771-1865"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1539-0633"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8080-9170"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6368-3273"
+        },
+        {
+          "@id": "#0fd502c8-fec4-4a1b-99f0-97b3473c6fb3"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2365-1749"
+        },
+        {
+          "@id": "#da1df31a-55b0-4d79-a08f-4b982ab0333f"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5501-466X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8658-5967"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7683-0452"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7655-2459"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1740-8390"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-12",
+      "description": "Phospholipidosis (PLD), a cellular adverse effect that is, among others, caused by numerous cationic amphiphilic drugs. Interest is raised within pharma discovery to predict this phenomenon, as it can impact the outcome of phenotypic cellular screens and significantly delay drug development processes. The development of accurate and validated machine learning models for predicting drug-induced PLD across different cell lines and research centers could provide a valuable early application tool for the pharmaceutical industry, potentially accelerating drug discovery and reducing the risk of late-stage failures. We report here the assembly, curation, testing and modeling of one of the largest datasets of repurposed drugs (5000+) tested for PLD induction on different cell lines. A machine-learning classification method was developed and validated to predict whether molecules are prone to induce PLD effects when applied in cell-based screens.\n\nThis constitutes the accompanying publication of the acquired image data.",
+      "funder": [],
+      "identifier": "S-BIAD2282",
+      "keywords": [
+        "Phospholipidosis",
+        "HCS",
+        "Machine learning",
+        "Drug repurposing"
+      ],
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "name": "Interdisciplinary Study on Drug-Induced-Phospholipidosis of Repurposing Libraries through Machine Learning and Experimental Evaluation in Different Cell Lines",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#0fd502c8-fec4-4a1b-99f0-97b3473c6fb3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4d5cee1e-3300-4954-90a5-e9785090daba"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Kun Qian"
+    },
+    {
+      "@id": "#da1df31a-55b0-4d79-a08f-4b982ab0333f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7da71f34-ee4a-4c21-abaa-4f40a91da72a"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Marianna Tampere"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5501-466X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7da71f34-ee4a-4c21-abaa-4f40a91da72a"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Päivi Östling"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6368-3273",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01s1h3j07"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Johanna Huchting"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7655-2459",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01s1h3j07"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Philip Gribbon"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8658-5967",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4d5cee1e-3300-4954-90a5-e9785090daba"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Brinton Seashore-Ludlow"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8771-1865",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01s1h3j07"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Maria Kuzikov"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1539-0633",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7da71f34-ee4a-4c21-abaa-4f40a91da72a"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Adelinn Kalman"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1740-8390",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01s1h3j07"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Andrea Zaliani"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7683-0452",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01s1h3j07"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Yojana Gadiya"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8080-9170",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01s1h3j07"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Jeanette Reinshagen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2365-1749",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4d5cee1e-3300-4954-90a5-e9785090daba"
+        }
+      ],
+      "email": "maria.kuzikov@itmp.fraunhofer.de",
+      "name": "Hanna Axelsson"
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-1826-7099",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#12b4425d-7cb0-44f4-abf7-2e11b68b0a59"
+        }
+      ],
+      "email": "jens.wendt@uni-muenster.de",
+      "name": "Jens Wendt"
+    },
+    {
+      "@id": "#12b4425d-7cb0-44f4-abf7-2e11b68b0a59",
+      "@type": [
+        "Organization"
+      ],
+      "name": "NFDI4Bioimage"
+    },
+    {
+      "@id": "#4d5cee1e-3300-4954-90a5-e9785090daba",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Department of Medical Biochemistry and Biophysics, Karolinska Institutet, Science for Life Laboratory, Solna, Sweden"
+    },
+    {
+      "@id": "#7da71f34-ee4a-4c21-abaa-4f40a91da72a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Department of Oncology-Pathology, Karolinska Institutet, Science for Life Laboratory, Solna, Sweden"
+    },
+    {
+      "@id": "https://ror.org/01s1h3j07",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Fraunhofer Institute for Translational Medicine and Pharmacology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9534",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Chlorocebus aethiops"
+    },
+    {
+      "@id": "#291f4f89-39ba-48c3-a41d-7a31174553e3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Kidney cells",
+      "name": "Vero-E6 Kidney cells from African green monkey",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9534"
+      }
+    },
+    {
+      "@id": "#d1a3f2d2-ed11-4e24-a4ca-4bdbc0af9614",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Channel\t\t\tEmission\tExcitation\nLipidTox\t\t        610\t\t550\nHOECHST 33258\t465\t\t365\nCellMask Deep Red\t708\t\t630\n\n16 bit bit-depth on all channels",
+      "labEquipment": "Image acquisition was performed using the automated Operetta Phenix High Content Screening system (Revvity).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "HCS with Operetta Phenix"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 16
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 206227533322
+    }
+  ]
+}

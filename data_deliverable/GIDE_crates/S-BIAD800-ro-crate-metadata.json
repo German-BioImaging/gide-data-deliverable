@@ -1,0 +1,168 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD800"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD800",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0fe79e43-b1b2-4fc6-890b-07e582d7fc7f"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1f565ce6-7b42-4048-aff3-680d577d4fe3"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#92fe8f2d-ea3c-456b-8c71-3aa1aa800ec1"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-07-07",
+      "description": "OME-NGFF converted study from idr0054.  Original study analysed the in situ localisation of immune cell types in human tonsils using imaging mass cytometry.",
+      "funder": [],
+      "identifier": "S-BIAD800",
+      "keywords": [
+        "Imaging Mass Cytometry, human tonsil"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Imaging Mass Cytometry of human tonsil sections (OME-NGFF)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#92fe8f2d-ea3c-456b-8c71-3aa1aa800ec1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03h2bxq36"
+        }
+      ],
+      "email": "idr-support@openmicroscopy.org",
+      "name": "Image Data Resource (IDR)"
+    },
+    {
+      "@id": "https://ror.org/03h2bxq36",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#1f565ce6-7b42-4048-aff3-680d577d4fe3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Tonsil sections",
+      "name": "Tonsil Tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#0fe79e43-b1b2-4fc6-890b-07e582d7fc7f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "https://onlinelibrary.wiley.com/doi/10.1002/cyto.a.23053",
+      "labEquipment": "Hyperion Imaging System (Fluidigm)",
+      "measurementTechnique": [],
+      "name": "Imaging mass cytometry"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 309455113
+    }
+  ]
+}

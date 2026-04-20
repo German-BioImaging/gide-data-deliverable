@@ -1,0 +1,263 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/13-Watabe-MolDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/13-Watabe-MolDyn/",
+      "@type": "Dataset",
+      "identifier": "13-Watabe-MolDyn",
+      "name": "13-Watabe-MolDyn",
+      "description": "13-Watabe-MolDyn",
+      "datePublished": "2016-01-18",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Computer Simulation[major]",
+        "Microscopy, Fluorescence/methods",
+        "Models, Biological[major]",
+        "Models, Theoretical[major]",
+        "Photons"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pone.0130089"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-2"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Koichi Takahashi",
+      "email": "ktakahashi@riken.jp",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Masaki Watabe"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Satya N. V. Arjunan"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Seiya Fukushima"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Kazunari Iwamoto"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Jun Kozuka"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Satomi Matsuoka"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Yuki Shindo"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Masahiro Ueda"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0130089",
+      "@type": "ScholarlyArticle",
+      "name": "A Computational Framework for Bioimaging Simulation.",
+      "datePublished": "2015"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Dictyostelium discoideum",
+      "description": "Dictyostelium discoideum",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "NA",
+      "description": "NA"
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "PC-12",
+      "description": "PC-12",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116",
+      "@type": "Taxon",
+      "scientificName": "Rattus norvegicus",
+      "vernacularName": "rat"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 162541121198,
+      "description": "162.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 103,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

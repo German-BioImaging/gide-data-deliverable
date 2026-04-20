@@ -1,0 +1,328 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1243"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1243",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b965c46a-505c-411d-ac3b-4173ad87efb8"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00001004"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d6bc2c52-d32a-4590-92cd-72aa6a88ea85"
+        },
+        {
+          "@id": "obo:NCBITaxon_60711"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#e3e650fe-2384-460f-8062-555bc98dd387"
+        },
+        {
+          "@id": "#929e1fca-7e2e-43a8-9cc9-77c6346c5ece"
+        },
+        {
+          "@id": "#d1b13612-1c37-4a05-933f-c5a091748cd4"
+        },
+        {
+          "@id": "#4370edbd-54a2-41e0-b1c3-43cf246cc832"
+        },
+        {
+          "@id": "#be671cb9-caea-4b00-88f2-e704fba245e4"
+        },
+        {
+          "@id": "#f378f3b3-b9bc-43a4-8b21-27e9d04b07a8"
+        },
+        {
+          "@id": "#569a0650-be31-4151-bc26-c569c32b4b6e"
+        },
+        {
+          "@id": "#5a8eb8f7-0948-4006-b818-08d2827c6cb3"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-27",
+      "description": "Data from the paper \"Segmentation of Volumetric Bio-Imaging Data Using Crowdsourced Object-Based Annotation \". This was performed as part of a crowdsourcing workflow to find and segment viruses inside a cryo-electron tomogram. It includes the raw data and  the crowdsourced locations and classes.",
+      "funder": [],
+      "identifier": "S-BIAD1243",
+      "keywords": [
+        "virus",
+        "segmentation",
+        "deep-learning",
+        "CNN",
+        "tomography",
+        "cryo-electron"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Segmentation of Volumetric Bio-Imaging Data Using Crowdsourced Object-Based Annotation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1243/d968ecc0-0a16-4051-8e99-60304e5105e1/51741787-f34e-434f-bace-c8049b7cfbb4.png"
+      ]
+    },
+    {
+      "@id": "#4370edbd-54a2-41e0-b1c3-43cf246cc832",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#30923c93-9a34-4bf0-8741-9b2aedfef869"
+        }
+      ],
+      "email": "dave.stuart@diamond.ac.uk",
+      "name": "David I. Stuart"
+    },
+    {
+      "@id": "#569a0650-be31-4151-bc26-c569c32b4b6e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "mark.boyce@strubi.ox.ac.uk",
+      "name": "Mark Boyce"
+    },
+    {
+      "@id": "#5a8eb8f7-0948-4006-b818-08d2827c6cb3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "geoff@strubi.ox.ac.uk",
+      "name": "Geoff Sutton"
+    },
+    {
+      "@id": "#929e1fca-7e2e-43a8-9cc9-77c6346c5ece",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1408a340-a7ac-4e09-b2a6-00247c44fed7"
+        }
+      ],
+      "email": "Michele.Darrow@rfi.ac.uk",
+      "name": "Michele Darrow"
+    },
+    {
+      "@id": "#be671cb9-caea-4b00-88f2-e704fba245e4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#30923c93-9a34-4bf0-8741-9b2aedfef869"
+        }
+      ],
+      "email": "olly.king@gmail.com",
+      "name": "Oliver N.F. King"
+    },
+    {
+      "@id": "#d1b13612-1c37-4a05-933f-c5a091748cd4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1408a340-a7ac-4e09-b2a6-00247c44fed7"
+        }
+      ],
+      "email": "mark.basham@rfi.ac.uk",
+      "name": "Mark Basham"
+    },
+    {
+      "@id": "#e3e650fe-2384-460f-8062-555bc98dd387",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1408a340-a7ac-4e09-b2a6-00247c44fed7"
+        }
+      ],
+      "email": "avery.pennington@rfi.ac.uk",
+      "name": "Avery Pennington"
+    },
+    {
+      "@id": "#f378f3b3-b9bc-43a4-8b21-27e9d04b07a8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#30923c93-9a34-4bf0-8741-9b2aedfef869"
+        }
+      ],
+      "email": "winmin.tun@nhs.net",
+      "name": "Win Min Tun"
+    },
+    {
+      "@id": "#1408a340-a7ac-4e09-b2a6-00247c44fed7",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Rosalind Franklin Institute"
+    },
+    {
+      "@id": "#30923c93-9a34-4bf0-8741-9b2aedfef869",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Diamond Light Source"
+    },
+    {
+      "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_60711",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Chlorocebus sabaeus"
+    },
+    {
+      "@id": "#d6bc2c52-d32a-4590-92cd-72aa6a88ea85",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Viruses in cellular context",
+      "name": "Reovirus infected cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_60711"
+      }
+    },
+    {
+      "@id": "#b965c46a-505c-411d-ac3b-4173ad87efb8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Tilt series were collected on several positions from three different lamellae using a Thermo Scientific Krios electron microscope (eBIC Krios III) operating at 300 keV and equipped with a Gatan post-column energy filter (selecting a 20 eV window) on a K2 Summit direct electron detector (Gatan). Data acquisition was performed using the dose-symmetric tilting scheme, under low-dose conditions, using serialEM software.",
+      "labEquipment": "Thermo-Fisher Scientific Krios Electron Microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00001004"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "Cryo-electron tomography of FIB-milled sample"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00001004",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "tomography"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7321248627
+    }
+  ]
+}

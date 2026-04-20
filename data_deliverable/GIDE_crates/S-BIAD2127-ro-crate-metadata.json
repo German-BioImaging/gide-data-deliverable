@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2127"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2127",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7670c2ae-4109-4919-9d32-dc4f5a5f096a"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#905f0aca-1073-4884-aa8e-e415c58dde0c"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#396cec93-2e8b-477f-aa66-2c76545d0b17"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-04",
+      "description": "YAP and TAZ, key effectors of the Hippo pathway, are frequently hyperactivated in cancer, where they drive tumor progression and resistance to therapy. Their oncogenic activity relies on interaction with TEAD transcription factors, making the TEAD-YAP/TAZ complex an attractive therapeutic target. Using translational mouse models, we demonstrate that sustained systemic YAP/TAZ depletion leads to severe side effects. However, even transient YAP/TAZ inhibition alone is sufficient to suppress tumor growth in advanced stages. Mechanistically, YAP/TAZ activity promotes T cell exclusion from the tumors by inducing target genes involved in tissue remodeling. Consequentially, YAP/TAZ inhibition induces immune infiltration, but the infiltrating T cells rapidly become exhausted. Combining YAP/TAZ inhibition with immune checkpoint blockade (ICB) overcomes this exhaustion and sensitizes previously resistant tumors to immunotherapy.",
+      "funder": [],
+      "identifier": "S-BIAD2127",
+      "keywords": [
+        "YAP1",
+        "Hippo",
+        "CCA",
+        "ICB"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Transient YAP/TAZ inhibition exposes therapeutic vulnerabilities in advanced cancers",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2127/a6887aba-76f4-4141-98da-332671e8d345/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#396cec93-2e8b-477f-aa66-2c76545d0b17",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ba1fdba8-e7f8-4dc2-8fcc-88c4167d6216"
+        }
+      ],
+      "email": "bjoern.voneyss@leibniz-fli.de",
+      "name": "Bjoern von Eyss"
+    },
+    {
+      "@id": "#ba1fdba8-e7f8-4dc2-8fcc-88c4167d6216",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leibniz Institute on Aging, Fritz \tLipmann Institute e.V."
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#905f0aca-1073-4884-aa8e-e415c58dde0c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Murine Liver",
+      "name": "Jessen et al.",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#7670c2ae-4109-4919-9d32-dc4f5a5f096a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "10x magnification (bright-field), 20x magnification (fluorescence microscopy)",
+      "labEquipment": "Zeiss Axio Scan.Z1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Jessen et al."
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 128
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 16236951004
+    }
+  ]
+}

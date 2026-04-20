@@ -1,0 +1,313 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1158"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1158",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7cf55609-1567-4aef-8b7f-9214527ce37b"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#930f127e-8c49-4a2c-9948-3ec6a5fcda96"
+        },
+        {
+          "@id": "obo:NCBITaxon_287"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#31f8ba51-8aa6-49d1-9d79-280eb9663a8d"
+        },
+        {
+          "@id": "#5b985f4c-498a-4053-a39b-e56abe0c7fa3"
+        },
+        {
+          "@id": "#b1f95c2d-d2d3-439b-9a41-0e35c0919292"
+        },
+        {
+          "@id": "#dbb58c1a-9ac5-483b-a8ec-695c4941b5dc"
+        },
+        {
+          "@id": "#cdcde468-68d1-4ddb-8d17-c6b038adf34f"
+        },
+        {
+          "@id": "#a1b2d26b-b8a5-45ec-8660-e966c54d8d8c"
+        },
+        {
+          "@id": "#f721458e-a40a-4108-afa6-08c7da9a17ce"
+        },
+        {
+          "@id": "#4811e3fa-7a5f-4fe7-b45a-b5f882531e0a"
+        },
+        {
+          "@id": "#4f0a886f-80ad-48f3-a3d2-4d76c40024db"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-03",
+      "description": "Quorum sensing (QS) is a communication form between bacteria via small signal molecules that enables global gene regulation as a function of cell density. We applied a microfluidic mother machine to study the kinetics of the QS response of Pseudomonas aeruginosa bacteria to additions and withdrawals of signal molecules. We traced the fast buildup and the subsequent considerably slower decay of a population-level and single-cell-level QS response. We applied a mathematical model to explain the results quantitatively. We found significant heterogeneity in QS on the single-cell level, which may result from variations in quorum-controlled gene expression and protein degradation. Heterogeneity correlates with cell lineage history, too. We used single-cell data to define and quantitatively characterize the population-level quorum state. We found that the population-level QS response is well-defined. The buildup of the quorum is fast upon signal molecule addition. At the same time, its decay is much slower following signal withdrawal, and the quorum may be maintained for several hours in the absence of the signal. Furthermore, the quorum sensing response of the population was largely repeatable in subsequent pulses of signal molecules.",
+      "funder": [],
+      "identifier": "S-BIAD1158",
+      "keywords": [
+        "fluorescence microscopy, microfluidics, Pseudomonas aeruginosa, quorum sensing"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Single-cell level LasR-mediated quorum sensing response of Pseudomonas aeruginosa to pulses of signal molecules",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#31f8ba51-8aa6-49d1-9d79-280eb9663a8d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/016gb1631"
+        }
+      ],
+      "email": "galajda.peter@brc.hu",
+      "name": "Peter Galajda"
+    },
+    {
+      "@id": "#4811e3fa-7a5f-4fe7-b45a-b5f882531e0a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/016gb1631"
+        }
+      ],
+      "name": "Vanda Varga-Zsíros"
+    },
+    {
+      "@id": "#4f0a886f-80ad-48f3-a3d2-4d76c40024db",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/016gb1631"
+        }
+      ],
+      "email": "nagy.krisztina@brc.hu",
+      "name": "Krisztina Nagy"
+    },
+    {
+      "@id": "#5b985f4c-498a-4053-a39b-e56abe0c7fa3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/016gb1631"
+        }
+      ],
+      "email": "abraham.agnes@brc.hu",
+      "name": "Ágnes Ábrahám"
+    },
+    {
+      "@id": "#a1b2d26b-b8a5-45ec-8660-e966c54d8d8c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/016gb1631"
+        }
+      ],
+      "name": "Imre Pap"
+    },
+    {
+      "@id": "#b1f95c2d-d2d3-439b-9a41-0e35c0919292",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/016gb1631"
+        }
+      ],
+      "email": "der.laszlo@brc.hu",
+      "name": "László Dér"
+    },
+    {
+      "@id": "#cdcde468-68d1-4ddb-8d17-c6b038adf34f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/016gb1631"
+        }
+      ],
+      "email": "vizsnyiczai.gaszton@brc.hu",
+      "name": "Gaszton Vizsnyiczai"
+    },
+    {
+      "@id": "#dbb58c1a-9ac5-483b-a8ec-695c4941b5dc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03m7pt185"
+        }
+      ],
+      "name": "Eszter Csákvári"
+    },
+    {
+      "@id": "#f721458e-a40a-4108-afa6-08c7da9a17ce",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/016gb1631"
+        }
+      ],
+      "name": "Rebeka Lukács"
+    },
+    {
+      "@id": "https://ror.org/016gb1631",
+      "@type": [
+        "Organization"
+      ],
+      "name": "HUN-REN Szegedi Biológiai Kutatóközpont"
+    },
+    {
+      "@id": "https://ror.org/03m7pt185",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Bay Zoltán Foundation for Applied Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_287",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Pseudomonas aeruginosa"
+    },
+    {
+      "@id": "#930f127e-8c49-4a2c-9948-3ec6a5fcda96",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Microfluidic device cultured",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_287"
+      }
+    },
+    {
+      "@id": "#7cf55609-1567-4aef-8b7f-9214527ce37b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Material and Methods section in publication",
+      "labEquipment": "See Material and Methods section in publication",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 38579903
+    }
+  ]
+}

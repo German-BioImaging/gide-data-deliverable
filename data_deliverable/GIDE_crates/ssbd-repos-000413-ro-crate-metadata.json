@@ -1,0 +1,210 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000413/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000413/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000413",
+      "name": "Histolgical sections of the mouse embryos (head)",
+      "description": "The mouse (Mus musculus) is the most standard model organism among mammals, but descriptive studies on its development are limited. This dataset was created to provide a deeper understanding of craniofacial morphogenesis in mice. \r\n\r\nThe histological sections were prepared from wild-type mice at developmental stages 8.5, 9.5, 10.5, 11.5, 12.5, 13.5, 14.5, and 15.5 dpc (days post-coitum), with a focus on the head region. The samples were fixed using Serra's fixative and stored in 70% ethanol. Paraffin sections were prepared following standard protocols. All sections were sagittal, with a thickness of 6 µm for 8.5 and 9.5 dpc, and 9 µm for 10.5 to 15.5 dpc. Peripheral nerves were stained using immunohistochemistry with anti-acetylated tubulin antibody and visualized with DAB. Subsequent staining included alcian blue, hematoxylin, and eosin, performed according to standard procedures.",
+      "datePublished": "2025-02-01",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Mice/anatomy & histology",
+        "Maxillofacial Development[major]",
+        "Skull/anatomy & histology",
+        "Skull/embryology",
+        "Biological Evolution",
+        "Maxilla/anatomy & histology",
+        "Maxilla/embryology"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1002/jmor.70032"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0099563"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/UBERON_0010291"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000322"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hiroki Higashiyama",
+      "email": "higashiyama.hiroki@gmail.com",
+      "description": "Organization: SOKENDAI (The Graduate University for Advanced Studies); Department: Research Center for Integrative Evolutionary Science (RCIES)",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0516ah480"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/0516ah480",
+      "@type": "Organization",
+      "name": "SOKENDAI (The Graduate University for Advanced Studies)"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "20K15858 (JSPS)"
+    },
+    {
+      "@id": "https://doi.org/10.1002/jmor.70032",
+      "@type": "ScholarlyArticle",
+      "name": "On the Maxillofacial Development of Mice, Mus musculus.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6",
+      "description": "C57BL/6",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0099563",
+      "@type": "DefinedTerm",
+      "name": "Morphology"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/UBERON_0010291",
+      "@type": "DefinedTerm",
+      "name": "Histology"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "optical microscope",
+      "description": "optical microscope",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000322"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000322",
+      "@type": "DefinedTerm",
+      "name": "optical microscope"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 73454084096,
+      "description": "73.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2303,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

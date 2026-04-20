@@ -1,0 +1,266 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1237"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1237",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ebc3b37c-4a19-43e4-9d4b-054fb2f782fc"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cb3613f3-46c8-4d7e-8168-1981d74b4b03"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9999-4292"
+        },
+        {
+          "@id": "#fc8d2721-bfda-4943-ac82-d56ac5fa5896"
+        },
+        {
+          "@id": "#eafd96d5-4073-4ff2-8e4d-1b48bd65fb36"
+        },
+        {
+          "@id": "#aa2b2f27-9f98-4575-a2eb-952bbf1ce1fb"
+        },
+        {
+          "@id": "#168428fc-4d94-41dd-ac8a-2bdce3a4943f"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-19",
+      "description": "The dataset comprises whole slide images of lung adenocarcinoma fluorescently labelled with NQO1, NRF2, NRF1, pan-Cytokeratin (AE1/AE3), and Hoechst.",
+      "funder": [],
+      "identifier": "S-BIAD1237",
+      "keywords": [
+        "Lung cancer",
+        "Multiplex immunofluorescence",
+        "WSI",
+        "Image analysis",
+        "Nrf2",
+        "NQO1",
+        "Nrf1"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Lung adenocarcinoma multiplex immunofluorescence whole slide images data",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#168428fc-4d94-41dd-ac8a-2bdce3a4943f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "djh20@st-andrews.ac.uk",
+      "name": "David J. Harrison"
+    },
+    {
+      "@id": "#aa2b2f27-9f98-4575-a2eb-952bbf1ce1fb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03h2bxq36"
+        }
+      ],
+      "email": "oread001@dundee.ac.uk",
+      "name": "Oliver J. Read"
+    },
+    {
+      "@id": "#eafd96d5-4073-4ff2-8e4d-1b48bd65fb36",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "me56@st-andrews.ac.uk",
+      "name": "Mustafa Elshani"
+    },
+    {
+      "@id": "#fc8d2721-bfda-4943-ac82-d56ac5fa5896",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01nrxwf90"
+        }
+      ],
+      "email": "bkaghazc@ed.ac.uk",
+      "name": "Boback Kaghazchi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9999-4292",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://ror.org/01nrxwf90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://ror.org/03h2bxq36",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#cb3613f3-46c8-4d7e-8168-1981d74b4b03",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human lung adenocarcinoma ",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ebc3b37c-4a19-43e4-9d4b-054fb2f782fc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A uniform scanning profile was created using five different fluorescent channels, including DAPI (Heochst), Fluorescein (NQO1), Cy3 (NRF1), Cy5 (NRF2), and Alexa Fluor 750 (pan-Cytokeratin).",
+      "labEquipment": "Zeiss Axio scan z1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 325
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2062578879362
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1078"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1078",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#122d9c85-0847-4aaf-a9d8-fc936c266e26"
+        },
+        {
+          "@id": "#e41e8fff-70d6-4e75-a234-31992d20cf4b"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#35736c40-60f2-4980-94bc-54380e196717"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6085-2510"
+        },
+        {
+          "@id": "#7886a8f7-3503-4988-8756-633a30edeb0d"
+        },
+        {
+          "@id": "#a426ebad-5b36-40fa-8529-2c759b96c9f6"
+        },
+        {
+          "@id": "#2e11be17-9e48-4358-a607-bf046df10822"
+        },
+        {
+          "@id": "#5fa7f451-c1f3-4f07-9e6d-05b335aa1f8e"
+        },
+        {
+          "@id": "#02528736-dd99-4656-bfc4-6d7cb14fea96"
+        },
+        {
+          "@id": "#3164c207-5d04-4563-acce-6be8f32bbbc9"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-08",
+      "description": "The published datasets contain images which were used for the analysis of photoreceptor outer segments on light and electron microscopy images. Both states, postnatal development and degeneration of POS, were analysed in both datasets. The corresponding code can be found in an associated github repository. ",
+      "funder": [],
+      "identifier": "S-BIAD1078",
+      "keywords": [
+        "photoreceptor outer segments",
+        "rod",
+        "cone",
+        "retinal development",
+        "retinal degeneration",
+        "supervised machine learning",
+        "segmentation",
+        "coherency analysis",
+        "electron microscopy",
+        "light microscopy"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Automated quantification of photoreceptor outer segments in developing and degenerating retinas on microscopy images across scales",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1078/8b43d344-54b0-495b-bc7a-d61de9fa3fda/4fd34c0c-8927-444f-9dd4-9cc9f3e7c443.png"
+      ]
+    },
+    {
+      "@id": "#02528736-dd99-4656-bfc4-6d7cb14fea96",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#83222234-de1f-4691-ad5b-bb96cbb8cc38"
+        }
+      ],
+      "name": "Robert Haase"
+    },
+    {
+      "@id": "#2e11be17-9e48-4358-a607-bf046df10822",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e2541776-51bd-466d-9ec1-c3f14b4fcdac"
+        }
+      ],
+      "name": "Thomas Kurth"
+    },
+    {
+      "@id": "#3164c207-5d04-4563-acce-6be8f32bbbc9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c1b4966-aef8-403a-882a-00521ff5af61"
+        }
+      ],
+      "email": "marius.ader@tu-dresden.de",
+      "name": "Marius Ader"
+    },
+    {
+      "@id": "#5fa7f451-c1f3-4f07-9e6d-05b335aa1f8e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#83222234-de1f-4691-ad5b-bb96cbb8cc38"
+        }
+      ],
+      "name": "Ivo F. Sbalzarini"
+    },
+    {
+      "@id": "#7886a8f7-3503-4988-8756-633a30edeb0d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c1b4966-aef8-403a-882a-00521ff5af61"
+        }
+      ],
+      "email": "suse.seidemann@tu-dresden.de",
+      "name": "Suse Seidemann"
+    },
+    {
+      "@id": "#a426ebad-5b36-40fa-8529-2c759b96c9f6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7dbee2b5-3ca4-468a-bfae-12dce36e06b2"
+        }
+      ],
+      "name": "Karl B. Hoffmann"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6085-2510",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c1b4966-aef8-403a-882a-00521ff5af61"
+        }
+      ],
+      "email": "f.salomon@gmx.net",
+      "name": "Florian Salomon"
+    },
+    {
+      "@id": "#0c1b4966-aef8-403a-882a-00521ff5af61",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Center for Regenerative Therapies Dresden (CRTD), Center for Molecular and Cellular Bioengineering (CMCB), Technische Universität Dresden, Germany"
+    },
+    {
+      "@id": "#7dbee2b5-3ca4-468a-bfae-12dce36e06b2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Center for Systems Biology Dresden, Dresden, Germany"
+    },
+    {
+      "@id": "#83222234-de1f-4691-ad5b-bb96cbb8cc38",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Center for Scalable Data Analytics and Artificial Intelligence (ScaDS.AI), Leipzig University, Germany"
+    },
+    {
+      "@id": "#e2541776-51bd-466d-9ec1-c3f14b4fcdac",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Core Facility Electron Microscopy and Histology, Technology Platform, Center for Molecular and Cellular Bioengineering (CMCB), Technische Universität Dresden, Germany"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#35736c40-60f2-4980-94bc-54380e196717",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mice retinal cross section.",
+      "name": "Retinal Cross Sections",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#122d9c85-0847-4aaf-a9d8-fc936c266e26",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The sample was prepared according to the protocol. Both microscopes were used at 80kV acceleration voltage.",
+      "labEquipment": "FEI Morgagni D268 (camera: MegaView III, Olympus)\nJeol JEM1400 Plus (camera: Ruby, JEOL)",
+      "measurementTechnique": [],
+      "name": "Image Acquisition TEM"
+    },
+    {
+      "@id": "#e41e8fff-70d6-4e75-a234-31992d20cf4b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Retinal sections were prepared and stained according to the protocol for LM analysis. The exposure times were adjusted according to each staining. Metadata can be found in the unprocessed czi files using Zen free imaging software.",
+      "labEquipment": "Apotome ImagerZ2",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image Acquisition LM"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4201
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 48868500231
+    }
+  ]
+}

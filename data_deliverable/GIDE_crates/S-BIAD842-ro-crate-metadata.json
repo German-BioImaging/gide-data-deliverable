@@ -1,0 +1,231 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD842"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD842",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#98cc9998-c74f-41f8-a15a-43f4af123ccc"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#bfe40e24-dd11-424b-a9d8-c24c6cff054c"
+        },
+        {
+          "@id": "#7c4cd254-b6b7-4d1d-8e15-ddb5318b8315"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#043c4d46-b622-4458-ab12-c3387c5c1a6d"
+        },
+        {
+          "@id": "#1d66408a-613b-48c7-8646-c89602339653"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2651-2584"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-10-01",
+      "description": "During embryonic development, oriented cell divisions are important for patterned tissue growth and cell fate specification. Cell division orientation is controlled in part by asymmetrically localized polarity proteins, which establish functional domains of the cell membrane and interact with microtubule regulators to position the mitotic spindle. For example, in the 8-cell mouse embryo, apical polarity proteins form caps on the outside, contact-free surface of the embryo that position the mitotic spindle to execute asymmetric cell division. A similar radial or “inside-outside” polarity is established at an early stage in many other animal embryos, but in most cases it remains unclear how inside-outside polarity is established and how it influences downstream cell behaviors. Here, we explore inside-outside polarity in C. elegans somatic blastomeres using spatiotemporally controlled protein degradation and live embryo imaging. We show that PAR polarity proteins, which form apical caps at the center of the contact free membrane, localize dynamically during the cell cycle and contribute to spindle orientation and proper cell positioning. Surprisingly, isolated single blastomeres lacking cell contacts are able to break symmetry and form PAR-3/aPKC caps. Polarity caps form independently of actomyosin flows and microtubules, and can regulate spindle orientation in cooperation with the key polarity kinase aPKC. Together, our results reveal a role for apical polarity caps in regulating spindle orientation in symmetrically dividing cells and provide novel insights into how these structures are formed.",
+      "funder": [],
+      "identifier": "S-BIAD842",
+      "keywords": [
+        "C. elegans",
+        "PAR proteins",
+        "Cell Polarity",
+        "Embryonic Development"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Apical PAR protein caps orient the mitotic spindle in C. elegans early embryos \n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#043c4d46-b622-4458-ab12-c3387c5c1a6d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "email": "naomis@utexas.edu",
+      "name": "Naomi J. Stolpner"
+    },
+    {
+      "@id": "#1d66408a-613b-48c7-8646-c89602339653",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "email": "nimanzi@utexas.edu",
+      "name": "Nadia I. Manzi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2651-2584",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "email": "daniel.dickinson@austin.utexas.edu",
+      "name": "Daniel J. Dickinson"
+    },
+    {
+      "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Texas at Austin"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#7c4cd254-b6b7-4d1d-8e15-ddb5318b8315",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C. elegans early embryo",
+      "name": "UTX175",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#bfe40e24-dd11-424b-a9d8-c24c6cff054c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C. elegans early embryo",
+      "name": "UTX141",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#98cc9998-c74f-41f8-a15a-43f4af123ccc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Image File OME-TIFF Metadata for details",
+      "labEquipment": "Crest XLight V3",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Spinning Disc Confocal"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 21
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 72517413269
+    }
+  ]
+}

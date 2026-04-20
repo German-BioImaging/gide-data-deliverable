@@ -1,0 +1,246 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2516"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2516",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d9ae112a-ba62-4baf-a773-909e9b8a097b"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#51681b67-9ab9-47c3-9d97-d9d36635df7b"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0004-9781-9561"
+        },
+        {
+          "@id": "#49a9f9c3-bd86-44a0-9faf-c50661318c9a"
+        },
+        {
+          "@id": "#4992b326-dbde-49dd-8e44-d138535fc572"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "#45059074-7358-4902-bcea-f6a54f78df5f"
+        }
+      ],
+      "datePublished": "2025-12-22",
+      "description": "Activation of PLK1, a master mitotic kinase, requires phosphorylation of its activation segment on Thr210, within a basic consensus sequence for Aurora kinases. Aurora B-dependent phosphorylation of Thr210 has been reported, but other evidence identified a strict requirement for the Aurora A partner Bora for Thr210 phosphorylation. Here, we investigate the elusive mechanistic basis for this requirement. We show that Aurora A:Bora phosphorylates Thr210 of PLK1 in vitro. On the contrary, T210 was not phosphorylated by isolated Aurora A, additional Aurora A:activator complexes, or Aurora B:INCENP, even when used at high kinase/substrate ratios. A transient interaction of Bora and PLK1, identified by structural modelling and probed mutationally, is uniquely required for Thr210 phosphorylation. Dependency on Bora for Thr210 phosphorylation is eliminated after mutating Lys208, in the Aurora consensus, into arginine. This conservative mutation turns PLK1 into a substrate of nearly all tested active Aurora kinases, including Aurora B. Collectively, these results shine a new light on the specificity of the PLK1 activation mechanism. ",
+      "funder": [],
+      "identifier": "S-BIAD2516",
+      "keywords": [
+        "PLK1",
+        "Bora",
+        "Mitoticentry",
+        "Mitosis",
+        "BI2536",
+        "Time-lapse"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Imaging files for the manuscript: Molecular requirements for PLK1 activation by T-loop phosphorylation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2516/0efe423d-cd4e-4691-a083-bb20cf7a26d7/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#4992b326-dbde-49dd-8e44-d138535fc572",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1bd25812-fed2-4f7d-b9c0-ac0027679898"
+        }
+      ],
+      "email": "Duccio.conti@mpi-dortmund.mpg.de",
+      "name": "Duccio Conti"
+    },
+    {
+      "@id": "#49a9f9c3-bd86-44a0-9faf-c50661318c9a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1bd25812-fed2-4f7d-b9c0-ac0027679898"
+        }
+      ],
+      "email": "Andrea.Musacchio@mpi-dortmund.mpg.de",
+      "name": "Andrea Musacchio"
+    },
+    {
+      "@id": "https://orcid.org/0009-0004-9781-9561",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1bd25812-fed2-4f7d-b9c0-ac0027679898"
+        }
+      ],
+      "email": "arianna.espositoverza@mpi-dortmund.mpg.de",
+      "name": "Arianna Esposito-Verza"
+    },
+    {
+      "@id": "#1bd25812-fed2-4f7d-b9c0-ac0027679898",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute of Molecular Physiology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#45059074-7358-4902-bcea-f6a54f78df5f",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "Molecular requirements for PLK1 activation by T-loop phosphorylation"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#51681b67-9ab9-47c3-9d97-d9d36635df7b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa FlpIn T-REx cells expressing CENP-A SNAP and mNeonGreen-PLK1 or mNeonGreen-Bora - HeLa FlpIn T-REx cells expressing CENP-A SNAP and mNeonGreen-PLK1 or mNeonGreen-Bora",
+      "name": "HeLa FlpIn T-REx cells expressing CENP-A SNAP and mNeonGreen-PLK1 or mNeonGreen-Bora",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d9ae112a-ba62-4baf-a773-909e9b8a097b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "5 hours after the second Thymidine-block release, cells were imaged at 37°C every 20 minutes for 18 hours (for a total tracking of 23 hours). For each field of view, 3 z-sections spaced at 6 µm each were taken. Fluorescence detected in the 488 nm channel was used to assess transgene expression (mNeonGreen PLK1 or Bora), while the 647 nm channel was employed to visualize cells DNA via SiRDNA staining. A brightfield image was acquired in parallel . ",
+      "labEquipment": "DeltaVision Elite (GE Healthcare) deconvolution microscope, equipped with an IX71 inverted microscope (Olympus, Japan), a PLAPON x60/1.42NA oil objective (Olympus) and a pco.edge sCMOS camera (PCO-ECH Inc., USA)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Every 20 minutes (488 nm, 647 nm, brightfield channels) for 18 hours"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 239
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 368002058752
+    }
+  ]
+}

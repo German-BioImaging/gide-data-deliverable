@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1418"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1418",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ffc171bb-bebf-40ab-8159-fcc54c435a5c"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5e9c924a-fd8c-4829-b1f2-a74ebab0699c"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a83c78e2-1d25-46a3-b857-4b9b739ebc45"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-14",
+      "description": "The study implicates the proofreading/exonuclease function of the replicative polymerase of mtDNA, Mip1/PolG,  in damaged induced mtDNA clearance. ",
+      "funder": [],
+      "identifier": "S-BIAD1418",
+      "keywords": [
+        "mtDNA damage",
+        "PolG",
+        "Mip1",
+        "DNA replication",
+        "proof-reading"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Exonuclease action of replicative polymerase gamma drives damage-induced mitochondrial DNA clearance",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#a83c78e2-1d25-46a3-b857-4b9b739ebc45",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ecbe43a-0660-439f-933b-b58379b61013"
+        }
+      ],
+      "email": "akshaya.sesha67@gmail.com",
+      "name": "Akshaya Seshadri"
+    },
+    {
+      "@id": "#8ecbe43a-0660-439f-933b-b58379b61013",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National Centre for Biological Sciences"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#5e9c924a-fd8c-4829-b1f2-a74ebab0699c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mtDNA",
+      "name": "Exonuclease action of replicative polymerase gamma drives damage-induced mitochondrial DNA clearance",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#ffc171bb-bebf-40ab-8159-fcc54c435a5c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "rescence imaging of budding yeast cells were carried out on a wide-field, epifluorescence\nmicroscope (Nikon Eclipse Ti2-E), with motorized XY-stage, 60X plan apochromat objective\n(NA 1.41) and a pE4000 light source (CoolLED). Focus was maintained using an infrared-\nbased Perfect focus system. Z scanning was done using motorized Z-control. Z-stacks were\nacquired across 7μm of the cell in steps of 0.3μm. Images were acquired with Hamamatsu Orca\nFlash 4.0 camera using NIS-elements software (version 5.01).",
+      "labEquipment": "NIKON TI-E2 ECLIPSE",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Exonuclease action of replicative polymerase gamma drives damage-induced mitochondrial DNA clearance"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 266163365
+    }
+  ]
+}

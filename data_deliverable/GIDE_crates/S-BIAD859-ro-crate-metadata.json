@@ -1,0 +1,206 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD859"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD859",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#cb1665d0-43ec-49f0-a7b0-a9057829200c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0b7bafec-a805-404c-83df-311dbd7e6509"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#be91e90a-d671-4c12-95b2-c3be9352cb74"
+        },
+        {
+          "@id": "#19d70c80-f0f7-4b4c-b055-24ee99a8d204"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-01",
+      "description": "In autoimmune Type 1 diabetes (T1D), immune cells progressively infiltrate and destroy the islets of Langerhans – islands of endocrine tissue dispersed throughout the pancreas. However, it is unclear how this process, called ‘insulitis’, develops and progresses within this organ. Here, using highly multiplexed CO-Detection by indEXing (CODEX) tissue imaging and cadaveric pancreas samples from autoantibody positive, T1D, and non-diabetic donors, we examine pseudotemporal-spatial patterns of insulitis and exocrine inflammation within large pancreatic tissue sections. ",
+      "funder": [],
+      "identifier": "S-BIAD859",
+      "keywords": [
+        "Type 1 Diabetes",
+        "CODEX"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "High-Parameter Spatial Profiling of the Pancreas in Human Type 1 Diabetes",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#19d70c80-f0f7-4b4c-b055-24ee99a8d204",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#82118cbe-20f4-4e96-bcaa-62b60991c4eb"
+        }
+      ],
+      "email": "grahaml_barlow@dfci.harvard.edu",
+      "name": "Graham Barlow"
+    },
+    {
+      "@id": "#be91e90a-d671-4c12-95b2-c3be9352cb74",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "pbollyky@stanford.edu",
+      "name": "Paul Bollyky"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#82118cbe-20f4-4e96-bcaa-62b60991c4eb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Dana-Farber Cancer Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0b7bafec-a805-404c-83df-311dbd7e6509",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Pancreas",
+      "name": "Pancreas",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#cb1665d0-43ec-49f0-a7b0-a9057829200c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x .374um/pixel",
+      "labEquipment": "Keyence BZX 710",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Standard CODEX Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 403
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 29639462701602
+    }
+  ]
+}

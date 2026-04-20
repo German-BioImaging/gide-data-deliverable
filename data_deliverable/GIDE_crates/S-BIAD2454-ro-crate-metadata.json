@@ -1,0 +1,307 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2454"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2454",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a2f43237-f9e7-4355-a2a5-1f43123b7c0a"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4bec1b8e-516e-4490-9d6f-9349b2f13b3e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0003-3476-6258"
+        },
+        {
+          "@id": "#7f7626aa-eaf7-49f2-bb6f-38dac63d4c4e"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7296-025X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9999-4292"
+        },
+        {
+          "@id": "#b03ec0b0-dcd6-4d85-aa2b-18f4df720aa0"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9041-9988"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-27",
+      "description": "This entry describes a retrospective cohort of clear-cell renal cell carcinoma (ccRCC) patients from Edinburgh (NHS Lothian). A total of 120 archival nephrectomy specimens from patients with no previous treatment were included. Digital whole-slide images are available for all 120 cases stained with haematoxylin and eosin (H&E) and for 88 cases stained using multiplex immunofluorescence (mIF). The mIF panel comprised p21^CDKN1A, MCM2, and Lamin B1, with Hoechst nuclear counterstain. All slides were scanned at 20× magnification using a Zeiss Axio Scan.Z1, generating high-resolution bright-field and fluorescence images in CZI format. The dataset includes the H&E and multi-channel mIF images, derived single-cell phenotype tables, and a de-identified clinical data file.\nImage analysis was performed using HALO® software with AI-assisted nuclear segmentation. For each cell, fluorescence intensities of p21, MCM2, and Lamin B1 were quantified, allowing classification into proliferative (MCM2⁺) or cell-cycle arrested (p21⁺) phenotypes. Output data for each image include the proportion of p21⁺/MCM2⁻ cells and average morphological measurements such as cell and nuclear size. Quantitative results are provided in CSV format.\nThe accompanying clinical metadata file contains pathological stage (pT), recurrence status, Fuhrman nuclear grade, ISUP grade, tumour size, nodal status, presence or absence of necrosis, derived Leibovich scores based on Fuhrman and ISUP grading (Lscore_Fuhrman and Lscore_ISUP), and disease-free survival (DFS). All data in this cohort are released under a CC0 license to permit unrestricted reuse.",
+      "funder": [],
+      "identifier": "S-BIAD2454",
+      "keywords": [
+        "clear cell renal cell carcinoma",
+        "RCC",
+        "multiplex immunofluorescence",
+        "H&E",
+        "Lamin B1",
+        "P21",
+        "MCM2",
+        "cell-cycle arrest",
+        "histopathology",
+        "biomarker "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Histopathology and Lo-multiplex immunofluorescence dataset of cell‐cycle related proteins in renal cell carcinoma – Scottish cohort",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2454/592df076-e3f9-47bb-8321-75d78886fe9f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#7f7626aa-eaf7-49f2-bb6f-38dac63d4c4e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/013meh722"
+        }
+      ],
+      "email": "gds35@cam.ac.uk",
+      "name": "Grant D Stewart"
+    },
+    {
+      "@id": "#b03ec0b0-dcd6-4d85-aa2b-18f4df720aa0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03q82t418"
+        }
+      ],
+      "email": "Kathryn.Kirkwood@nhs.scot",
+      "name": "Kathryn Kirkwood"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9041-9988",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "djh20@st-andrews.ac.uk",
+      "name": "David Harrison"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9999-4292",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7296-025X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01nrxwf90"
+        }
+      ],
+      "email": "Alex.Laird@ed.ac.uk",
+      "name": "Alexander Laird"
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-3476-6258",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02wn5qz54"
+        }
+      ],
+      "email": "ha82@st-andrews.ac.uk",
+      "name": "Hazem Abdullah"
+    },
+    {
+      "@id": "https://ror.org/013meh722",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://ror.org/01nrxwf90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://ror.org/02wn5qz54",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://ror.org/03q82t418",
+      "@type": [
+        "Organization"
+      ],
+      "name": "NHS Lothian"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#4bec1b8e-516e-4490-9d6f-9349b2f13b3e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Kidney tumour (clear-cell renal cell carcinoma)",
+      "name": "Clear-cell RCC tumour tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a2f43237-f9e7-4355-a2a5-1f43123b7c0a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20× objective; bright-field imaging for H&E slides; fluorescence imaging for IF slides (channels: p21/Cy3, MCM2/FITC, Lamin B1/Cy5, plus DAPI/Hoechst for nuclei. Images saved as multi-channel CZI files ",
+      "labEquipment": "Zeiss Axio Scan.Z1 slide scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Whole-Slide Scanning (H&E and IF)"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 210
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 317541774337
+    }
+  ]
+}

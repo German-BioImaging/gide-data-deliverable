@@ -1,0 +1,176 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1977"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1977",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6631a042-570d-4026-b9ae-e632504f7d72"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#22f81dfe-5586-4cb5-96ff-ca77d1f26e75"
+        },
+        {
+          "@id": "obo:NCBITaxon_160986"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6445-3725"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-26",
+      "description": "The separated root of Zelkova carpinifolia specimen (BIA Acc. No. S-BIAD1968, DOI:10.6019/S-BIAD1968) was subjected to NextITS sequencing. Ascomatal recognition via stereoscopic microscopy (BIA Acc. No. S-BIAD1947, DOI:10.6019/S-BIAD1947) and spore shape and size examination via optical microscopy (BIA Acc. No. S-BIAD1948, DOI:10.6019/S-BIAD1948) identified the root's symbiont as Tuber aestivum.\nThe Zelkova carpinifolia and Tuber aestivum sequences were deposited in NCBI GenBank under accession numbers PV663938 and PV665023, respectively.\nEctomycorrhizal evidence of Z. carpinifolia root, including external structures (SEM & stereoscopic binocular microscopy; Acc. No. S-BIAD1974, DOI:10.6019/S-BIAD1974) and internal structures (optical microscopy; Acc. No. S-BIAD1975, DOI:10.6019/S-BIAD1975 and FE-SEM; Acc. No. S-BIAD1976, DOI:10.6019/S-BIAD1976), was deposited on the BIA.",
+      "funder": [],
+      "identifier": "S-BIAD1977",
+      "keywords": [
+        "Zelkova carpinifolia",
+        "Ectomycorrhizal association",
+        "Mycobiont evolutionary history",
+        "brûlé conditions",
+        "Soil type",
+        "Hyrcanian temperate forests",
+        "Tuber aestivum"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Tuber aestivum hosted by Zelkova carpinifolia: Geology, pedology, and ecology",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1977/f551ed60-03e6-4b18-b81c-c96c4ddf2963/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6445-3725",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0091vmj44"
+        }
+      ],
+      "email": "mirzavash@gmail.com",
+      "name": "Saeed Mirzavash Azar"
+    },
+    {
+      "@id": "https://ror.org/0091vmj44",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Shahid Beheshti University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_160986",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Zelkova carpinifolia"
+    },
+    {
+      "@id": "#22f81dfe-5586-4cb5-96ff-ca77d1f26e75",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Zelkova carpinifolia + Tuber aestivum",
+      "name": "Host, mycobiont, and soil sampling from micro-habitat of Tuber aestivum and Zelkova carpinifolia in Hyrcany",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_160986"
+      }
+    },
+    {
+      "@id": "#6631a042-570d-4026-b9ae-e632504f7d72",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "QGIS v. 3.34.14, 108MP with 10x magnify",
+      "labEquipment": "QGIS, Digital camera",
+      "measurementTechnique": [],
+      "name": "Shapefile mapping, Maps overlaying on Google Earth, Imaging from specimen"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12108674
+    }
+  ]
+}

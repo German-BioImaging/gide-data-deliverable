@@ -1,0 +1,145 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000237/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000237/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000237",
+      "name": "Bright-field time-lapse images of live murine immune-related cells",
+      "description": "This dataset contains the bright-field live cell images of murine immune-related cell lines (1008 cells) and primary murine peripheral blood mononuclear cells (PBMCs) (346 cells). Each cell has 30 frames that were captured in 29 min with 1 min interval. The cells of murine cell lines were determined as T cells (318 cells), leukemia cells (423 cells), or hematopoietic progenitor cells (267 cells) based on their subsequently measured whole transcriptomes. The PBMCs were determined as CD4+ T cells (152 cells), CD8+ T cells (103 cells), or B cells (91 cells) based on their subsequently measured whole transcriptomes. The determined cell types are indicated in an accompanying txt file.",
+      "datePublished": "2022-12-15",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Transcriptome",
+        "Deep Learning[major]",
+        "Robotics[major]",
+        "Image Processing, Computer-Assisted/methods",
+        "Robotic Surgical Procedures[major]",
+        "Gene Expression Profiling",
+        "Phenotype"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.2210283120"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Jianshi Jin",
+      "email": "jianshi.jin@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research (BDR); Laboratory: Lab for Prediction of Cell Systems Dynamics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.2210283120",
+      "@type": "ScholarlyArticle",
+      "name": "Robotic data acquisition with deep learning enables cell image-based prediction of transcriptomic phenotypes.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 837615616,
+      "description": "837.6 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 40624,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

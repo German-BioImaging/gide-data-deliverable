@@ -1,0 +1,384 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1287"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1287",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8e312f2d-8150-4a8f-acbb-548d11e5c043"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3fe3dc4b-6ce0-4a8b-a01e-84b643354eaa"
+        },
+        {
+          "@id": "#46822d15-e640-43da-8eae-8533d195c892"
+        },
+        {
+          "@id": "#76cb7428-4d33-470d-8081-e9f5ae9fc263"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6389-0213"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1016-2447"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3033-674X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2793-0489"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7482-1299"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0926-1480"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8345-8847"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7446-9256"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5551-0417"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4445-0826"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4881-405X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1704-4141"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2542-3582"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-30",
+      "description": "Understanding the dynamics and interactions of cellular components is crucial for biological research and drug discovery. Current dynamic fluorescence microscopy methods can only image a few fluorescent labels, providing a limited view of these complex processes. We developed Mantis, a high-throughput 3D microscope that maps interactions among components of dynamic cell systems. Mantis combines light-sheet fluorescence imaging of multiple fluorophores with quantitative label-free microscopy and is complemented by shrimPy, our open-source software for high-throughput data acquisition and high-performance analysis. Mantis enabled simultaneous 3D time-lapse imaging of 20 cell lines and quantitative analysis of responses to perturbations like viral infection at single-cell resolution. This approach can accelerate the analysis of cellular dynamics and image-based drug discovery.",
+      "funder": [],
+      "identifier": "S-BIAD1287",
+      "keywords": [
+        "microscopy",
+        "high-throughput imaging",
+        "label-free imaging",
+        "fluorescence imaging",
+        "light-sheet microscopy"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Mantis: high-throughput 4D imaging and analysis of the molecular and physical architecture of cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6389-0213",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Ivan E. Ivanov"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7446-9256",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Madhura Bhave"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7482-1299",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Ziwen Liu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0926-1480",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Soorya Pradeep"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1016-2447",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Eduardo Hirata Miyasaki"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2542-3582",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Shalin B. Mehta"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3033-674X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Talon Chandler"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4445-0826",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Carolina Arias"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4881-405X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Manuel D. Leonetti"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5551-0417",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Sudip Khadka"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8345-8847",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492"
+        }
+      ],
+      "name": "Chad Liu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1704-4141",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#492cee35-ebbf-4107-90c1-beab97fdd692"
+        }
+      ],
+      "name": "Bo Huang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2793-0489",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#492cee35-ebbf-4107-90c1-beab97fdd692"
+        }
+      ],
+      "name": "Rasmi Cheloor Kovilakam"
+    },
+    {
+      "@id": "#0c9971cd-2b64-4365-a02e-3f30057cd492",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Chan Zuckerberg Biohub San Francisco"
+    },
+    {
+      "@id": "#492cee35-ebbf-4107-90c1-beab97fdd692",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, San Francisco"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#3fe3dc4b-6ce0-4a8b-a01e-84b643354eaa",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "0.1 μm FluoSpheres beads",
+      "name": "Beads",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#46822d15-e640-43da-8eae-8533d195c892",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293T cells",
+      "name": "HEK293T cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#76cb7428-4d33-470d-8081-e9f5ae9fc263",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A549 cells",
+      "name": "A549 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8e312f2d-8150-4a8f-acbb-548d11e5c043",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Mantis",
+      "labEquipment": "Mantis",
+      "measurementTechnique": [],
+      "name": "Label-free and light-sheet imaging"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4756179114605
+    }
+  ]
+}

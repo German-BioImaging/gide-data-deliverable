@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000444/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000444/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000444",
+      "name": "Inhibitory effects of topically applied novel bovine lactoferrin (bLF)- peptides (bLF-p2 and bLF-p3)",
+      "description": "We developed two novel bovine lactoferrin (bLF) peptides to prevent alveolar bone destruction associated with periodontitis; one is bLF-2 targeting bLF-tumor necrosis factor (TNF) receptor-associated factor 6 (TRAF6) binding site and the other peptide is bLF-3 binding to the TRAF6 dimerization area, competitively.\r\nThe topical application of these novel peptides markedly inhibited TNF-αexpression in gingival tissue (Fig.6-1～8) and significantly reduced the cathepsin-positive osteoclast number (Fig.7) by downregulating RANKL and upregulating OPG in the periodontal ligament in LPS-induced alveolar bone destruction model of rat. It is indicated that novel bLF peptides can be used to treat periodontitis-associated bone destruction.",
+      "datePublished": "2025-07-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Lactoferrin/pharmacology[major]",
+        "Lactoferrin/chemistry[major]",
+        "Lactoferrin/metabolism[major]",
+        "Lipopolysaccharides/pharmacology[major]",
+        "Rats",
+        "Peptides/pharmacology[major]",
+        "Peptides/chemistry[major]",
+        "Osteoclasts/drug effects[major]",
+        "Osteoclasts/metabolism[major]",
+        "RANK Ligand/metabolism",
+        "Male",
+        "Alveolar Bone Loss/drug therapy",
+        "Alveolar Bone Loss/metabolism",
+        "Alveolar Bone Loss/pathology",
+        "Cattle",
+        "Mice",
+        "Osteoblasts/drug effects",
+        "Osteoblasts/metabolism",
+        "Osteoblasts/cytology",
+        "Rats, Sprague-Dawley",
+        "Osteogenesis/drug effects",
+        "Tumor Necrosis Factor-alpha/metabolism",
+        "Binding Sites",
+        "Coculture Techniques",
+        "Osteoprotegerin/metabolism",
+        "Disease Models, Animal"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1111/cbdd.14574"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Mutsumi Miyauchi",
+      "email": "mmiya@hiroshima-u.ac.jp",
+      "description": "Organization: Hiroshima University; Department: Graduate School of Biomedical and Health Sciences; Laboratory: Department of Oral and Maxillofacial Pathobiology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03t78wx29"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Takashi Takata",
+      "description": "Organization: Shunan University",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0558szv56"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/03t78wx29",
+      "@type": "Organization",
+      "name": "Hiroshima University"
+    },
+    {
+      "@id": "https://ror.org/0558szv56",
+      "@type": "Organization",
+      "name": "Shunan University"
+    },
+    {
+      "@id": "https://doi.org/10.1111/cbdd.14574",
+      "@type": "ScholarlyArticle",
+      "name": "Effects of novel lactoferrin peptides on LPS-induced alveolar bone destruction in a rat model.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116",
+      "@type": "Taxon",
+      "scientificName": "Rattus norvegicus",
+      "vernacularName": "rat"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 6967296,
+      "description": "7.0 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 15,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

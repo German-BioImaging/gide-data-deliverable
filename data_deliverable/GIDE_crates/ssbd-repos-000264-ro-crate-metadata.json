@@ -1,0 +1,125 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000264/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000264/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000264",
+      "name": "Raman Images of Rat Liver Tissues underlying Non-Alcoholic Fatty Liver Disease",
+      "description": "An essential challenge in diagnosing states of non-alcoholic fatty liver disease (NAFLD) is the early prediction of progression from non-alcoholic fatty liver (NAFL) to non-alcoholic steatohepatitis (NASH) before the disease progresses. However, histological diagnoses of NAFLD rely on the appearance of anomalous tissue morphologies, and it is difficult to objectively segment the biomolecular environment of the tissue through a conventional histopathological approach. Here, we show that hyper-spectral Raman imaging provides objective diagnostic information on NAFLD in rats, as spectral changes among disease states can be detected before histological characteristics emerge. Our results demonstrate that Raman imaging of NAFLD can be a useful tool for histopathologists, offering biomolecular distinctions among tissue states that cannot be observed through standard histopathological means.",
+      "datePublished": "2023-02-07",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1002/1873-3468.14600"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Khalifa Mohamamd Helal",
+      "email": "khalifahelal@gmail.com",
+      "description": "Organization: Hokkaido University; Department: Graduate School of Life Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02e16g702"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02e16g702",
+      "@type": "Organization",
+      "name": "Hokkaido University"
+    },
+    {
+      "@id": "https://doi.org/10.1002/1873-3468.14600",
+      "@type": "ScholarlyArticle",
+      "name": "Raman imaging of rat non-alcoholic fatty liver tissues reveals distinct biomolecular states.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 281731072,
+      "description": "281.7 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 51,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

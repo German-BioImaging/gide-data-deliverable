@@ -1,0 +1,172 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2511"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2511",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a26011a4-ebac-4e8c-b699-7b1960acfaf0"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#77e0fd96-4950-4feb-824f-002f82531084"
+        },
+        {
+          "@id": "obo:NCBITaxon_4577"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3238-2627"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-18",
+      "description": "This study integrates temporal image analysis, automated watering and weighing, and Bayesian growth modeling to dissect how 47 diverse maize inbred lines respond to drought, heat, and their combination. The results demonstrate genotype-specific effects, and that the combined stress is more closely related to heat than drought stress responses. A follow-up experiment also demonstrates that early stress impacts days to anthesis and plant area long after the stress has concluded. These findings underscore the need to evaluate maize diversity under multifactorial stress regimes to accurately identify resilient genotypes for environment-adaptive breeding.",
+      "funder": [],
+      "identifier": "S-BIAD2511",
+      "keywords": [
+        "maize",
+        "abiotic stress",
+        "rgb",
+        "drought",
+        "heat"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Temporal Phenotypic Responses of Maize to Heat, Drought, and Combined Stresses",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3238-2627",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#46114d15-01d1-4f67-9918-29c9f8ec43f6"
+        }
+      ],
+      "email": "mgehan@danforthcenter.org",
+      "name": "Malia Gehan"
+    },
+    {
+      "@id": "#46114d15-01d1-4f67-9918-29c9f8ec43f6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Donald Danforth Plant Science Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4577",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Zea mays"
+    },
+    {
+      "@id": "#77e0fd96-4950-4feb-824f-002f82531084",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Maize plants - A total of 47 inbred maize genotypes were selected from the Wisconsin Diversity (WiDiv) Panel, including the 24 Nested Association Mapping (NAM) inbred parents and Mo17 (Gage et al., 2020; Fattel et al., 2024; McMullen et al., 2009; Hufford et al., 2021; Chen et al., 2023). Fast-flowering mini maize (FFMM) was also selected for its utility in plant science research, but it should be noted that it has a shortened lifespan compared to the other varieties (McCaw et al., 2016). The selection of  maize lines aimed to maximize genetic and phenotypic diversity (Renk et al., 2021). These genotypes represent eight subpopulations: iodent, non-stiff-stalk, popcorn, stiff-stalk, sweet corn, temperate/tropical mix, tropical, and unknown. FFMM is classified as “unknown” given its complex genetic background, and B108 has previously been labeled as unknown subpopulation (Renk et al., 2021). A complete list of selected genotypes and their subpopulations are available in Supplemental Table 7.",
+      "name": "Maize Diversity Panel",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4577"
+      }
+    },
+    {
+      "@id": "#a26011a4-ebac-4e8c-b699-7b1960acfaf0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Plants were automatically imaged daily using a  ⅔” progressive scan CCD camera (Basler AG, Ahrensburg, Germany) with resolution of 2454 × 2056 pixels for RGB (red-green-blue) images. Plants were rotated to capture two angles (0 and 90 degrees) and imaged from the side-view.",
+      "labEquipment": "Bellwether Phenotyping Facility, St. Louis, MO, 63132",
+      "measurementTechnique": [],
+      "name": "Bellwether"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 43454919561
+    }
+  ]
+}

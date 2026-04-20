@@ -1,0 +1,242 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD687"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD687",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#98f56e1e-2ced-493d-9227-2f92347e1f4b"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a227a7d9-8273-4d1e-a3f4-85e7485e9edb"
+        },
+        {
+          "@id": "#2d2d4deb-4d32-4edd-9f6d-afaa67a29eed"
+        },
+        {
+          "@id": "#52bcbd5e-9aea-47f9-b5ef-f1b0f20eac8a"
+        },
+        {
+          "@id": "#3a2568d5-0fd9-42a1-8164-1eeba3b6c627"
+        },
+        {
+          "@id": "#bf982f04-005d-4d49-a31e-940d2351dd05"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7903-8199"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-09",
+      "description": "The antiviral restriction factor, tetherin, blocks the release of several different families of enveloped viruses, including the Coronaviridae. Tetherin is an interferon-induced protein that forms parallel homodimers between the host cell and viral particles, linking viruses to the surface of infected cells and inhibiting their release. We demonstrated that SARS-CoV-2 infection causes tetherin downregulation, and that tetherin depletion from cells enhances SARS-CoV-2 viral titres. We investigated the potential viral proteins involved in abrogating tetherin function and found that SARS-CoV-2 ORF3a reduces tetherin localisation within biosynthetic organelles via reduced retrograde recycling and increases tetherin localisation to late endocytic organelles. By removing tetherin from the Coronavirus budding compartments, ORF3a enhances virus release. We also found expression of Spike protein caused a reduction in cellular tetherin levels. Our results confirm that tetherin acts as a host restriction factor for SARS-CoV-2 and highlight the multiple distinct mechanisms by which SARS-CoV-2 subverts tetherin function.",
+      "funder": [],
+      "identifier": "S-BIAD687",
+      "keywords": [
+        "restriction factor",
+        "tetherin",
+        "SARS-CoV-2",
+        "retrograde",
+        "membrane traffic"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Tetherin antagonism by SARS-CoV-\n2 enhances virus release: multiple mechanisms including ORF3a-mediated defective retrograde traffic ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7903-8199",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "je333@cam.ac.uk",
+      "name": "James Edgar"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2d2d4deb-4d32-4edd-9f6d-afaa67a29eed",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells",
+      "name": "HeLa cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3a2568d5-0fd9-42a1-8164-1eeba3b6c627",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "T84 cells",
+      "name": "T84 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#52bcbd5e-9aea-47f9-b5ef-f1b0f20eac8a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A549 cells",
+      "name": "A549 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a227a7d9-8273-4d1e-a3f4-85e7485e9edb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Primray HAE cells",
+      "name": "HAE cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bf982f04-005d-4d49-a31e-940d2351dd05",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "TetOne ss-HA-Spike HeLa",
+      "name": "HeLa TetOne ss-HA-Spike",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#98f56e1e-2ced-493d-9227-2f92347e1f4b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "63x Oil objective",
+      "labEquipment": "LSM700 confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1406376257
+    }
+  ]
+}

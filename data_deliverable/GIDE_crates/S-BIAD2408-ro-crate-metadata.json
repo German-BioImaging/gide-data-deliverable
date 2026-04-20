@@ -1,0 +1,195 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2408"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2408",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#22ed154b-434d-41b9-a890-0bdbc6697851"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5abe9bf5-9198-4df1-ad9f-b33aefc2a69e"
+        },
+        {
+          "@id": "obo:NCBITaxon_4565"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3941-576X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5752-5524"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-14",
+      "description": "Standard RGB and multi-spectral images generated from VideometerLab4 for three wheat NDM lines' seeds",
+      "funder": [],
+      "identifier": "S-BIAD2408",
+      "keywords": [
+        "wheat",
+        "seed",
+        "hyperspectral"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Videometer multi-spectral testing data for wheat NDM population seeds",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2408/d7a9c5d4-6075-443c-9def-1b87e0314389/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3941-576X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05td3s095"
+        }
+      ],
+      "email": "daijie@stu.njau.edu.cn",
+      "name": "Jie Dai"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5752-5524",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c8e9383-2052-4324-b161-1cd9ed4e9a77"
+        }
+      ],
+      "email": "Ji.Zhou@niab.com",
+      "name": "Ji Zhou"
+    },
+    {
+      "@id": "#6c8e9383-2052-4324-b161-1cd9ed4e9a77",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National Institute of Agricultural Botany"
+    },
+    {
+      "@id": "https://ror.org/05td3s095",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Nanjing Agricultural University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4565",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Triticum aestivum"
+    },
+    {
+      "@id": "#5abe9bf5-9198-4df1-ad9f-b33aefc2a69e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Three wheat NDM lines called A404, A412, and A422.",
+      "name": "Videometer multi-spectral imagery of wheat NDM population seeds",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4565"
+      }
+    },
+    {
+      "@id": "#22ed154b-434d-41b9-a890-0bdbc6697851",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "MSI was performed using the VideometerLab4 device and the Autofeeder system (Videometer A/S, Denmark), which acquired both standard red-green-blue colour space images (sRGB) and MSI datasets (in hips format) covering 19 spectral bandwidths, ranging from 375 nm (ultraviolet, UV) to 970 nm (near infrared, NIR). For multispectral images, 60~80 seeds (two replicates) were randomly laid on the Autofeeder’s blue-coloured conveyor belt, with 1.5 s for exposure and image acquisition. Roughly, the system is capable of collecting imagery from 3,000 seeds per hour (40-50 seed lots) and over 12,000 seeds per day. Image resolution was kept at 2,192 × 2,192 pixels. A total of 94.1 GB sRGB and MSI data were collected between October and December 2024.",
+      "labEquipment": "VideometerLab4 device and the Autofeeder system",
+      "measurementTechnique": [],
+      "name": "Multi-spectral imaging for three wheat NDM lines' seeds"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 60
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 237908279
+    }
+  ]
+}

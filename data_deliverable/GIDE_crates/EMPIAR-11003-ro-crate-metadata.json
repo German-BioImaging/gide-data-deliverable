@@ -1,0 +1,193 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-11003"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-11003",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#00da7f96-f564-48dd-a40f-7ac190588782"
+        },
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2ec2d185-c1f0-4e7c-b3ed-5eea50d9a533"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0929-475X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0840-6844"
+        },
+        {
+          "@id": "#9b936e34-c0cc-4fc2-afcf-568418665fd4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2022-05-31",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-11003",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "FIB-SEM of U2OS cell at leading edge of a wound assay, non-LPA stimulated, non-polarized",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-11003/34a2a2d3-9f83-45f6-8d97-de0a5e7277a2/1247d787-c5b5-469c-85a3-5be0631adb04.png"
+      ]
+    },
+    {
+      "@id": "#9b936e34-c0cc-4fc2-afcf-568418665fd4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Machado P"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0840-6844",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Pinto A"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0929-475X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Costa J"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#2ec2d185-c1f0-4e7c-b3ed-5eea50d9a533",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Leading edge of U2OS cells in a wound healing assay, non-LPA stimulated, non-polarized condition",
+      "name": "U2OS cell leading edge",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#00da7f96-f564-48dd-a40f-7ac190588782",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired using a Crossbeam 540 (Carl Zeiss) with a z-step size of 8nm.",
+      "labEquipment": "Crossbeam 540, Carl Zeiss",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "name": "FIB-SEM"
+    },
+    {
+      "@id": "obo:FBbi_00050000",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 6104676445
+    }
+  ]
+}

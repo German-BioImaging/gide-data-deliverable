@@ -1,0 +1,269 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1133"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1133",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b8dfe291-8693-46db-8d01-36ccfb9e77b9"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#050b148a-dda1-4169-8993-7697064605b6"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5376-339X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6811-5133"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9464-7475"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8095-858X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0273-1320"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5145-7199"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-30",
+      "description": "Astrocytic dysfunction has been previously described in Parkinson's, but the role of astrocytic gap junctional networks has not been explored. Connexin 43 is the major protein linking astrocytes in networks across the brain. In the present dataset, images from three cortical areas (parietal, frontal, and insular) and basal ganglia (putamen, globus pallidus, caudate, midbrain substantia nigra) were collected from 20 people with Parkinson's and 20 age-matched controls to reveal downregulation in connexin 43 punctate staining in Parkinson's. Punctate pattern was specifically affected in disease, which may indicate dysfunction in gap junctional coupling.",
+      "funder": [],
+      "identifier": "S-BIAD1133",
+      "keywords": [
+        "Parkinson's",
+        "Connexin43",
+        "Astrocyte",
+        "Cerebral Cortex",
+        "Brain",
+        "Basal ganglia"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Connexin 43 in the cortex and basal ganglia in late-stage Parkinson’s disease and age-matched controls",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1133/c0859084-d1eb-4121-b077-20e9e3367d16/4d717122-d2fe-4228-b0d7-68a39b557689.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5145-7199",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "mrk25@medschl.cam.ac.uk",
+      "name": "Mark Kotter"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0273-1320",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "wlk21@medschl.cam.ac.uk",
+      "name": "Wei-Li Kuan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5376-339X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "nh564@cam.ac.uk",
+      "name": "Nataly Hastings"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6811-5133",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "msr43@cam.ac.uk",
+      "name": "Saifur Rahman"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8095-858X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "mw283@cam.ac.uk",
+      "name": "Matthew Wayland"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9464-7475",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "pstempor@gmail.com",
+      "name": "Przemyslaw A. Stempor"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#050b148a-dda1-4169-8993-7697064605b6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "FFPE 5um sections of the human brain from:\nFrontal cortex (Front cort); Parietal cortex (Par cort); Insular cortex (Ins cort); Putamen; Caudate; Globus pallidus internal / external (Globus p, int / ext); Midbrain substantia nigra (Mid SN).",
+      "name": "Connexin 43 puncta images in the human brain",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b8dfe291-8693-46db-8d01-36ccfb9e77b9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Relevant anatomical structures were identified in the nuclear DAPI field, and confocal images of connexin 43 as well as DAPI were collected in the photon-counting mode to minimise batch-to-batch variability; x40 magnification was used. Patients’ identities and disease status were coded, and researchers conducting the imaging were blinded to the experimental conditions. \nIn the present dataset, snapshots of maximal intensity stack projections are shown in addition to the raw files.",
+      "labEquipment": "Leica Stellaris 8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Imaging of connexin 43 in the human brain"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3535
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 156600657741
+    }
+  ]
+}

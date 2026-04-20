@@ -1,0 +1,228 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1085"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1085",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d40c4eb8-eecb-4754-80ab-73b78dec692a"
+        },
+        {
+          "@id": "obo:FBbi_00000368"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c345722f-80b1-4af9-9e97-6d9157cd15bb"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8367-5163"
+        },
+        {
+          "@id": "https://orcid.org/0009-0006-1338-7090"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7316-9507"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4205-2370"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-25",
+      "description": "Dataset of fluorescence lifetime imaging microscopy raw and processed images of metabolic imaging of NAD(P)H and FAD of Drosophila melanogaster sperm both in vitro and in vivo in intact male and female sperm-storage organs",
+      "funder": [],
+      "identifier": "S-BIAD1085",
+      "keywords": [
+        "FLIM, Drosophila, sperm, NADH, FAD, sdt, img"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Metabolic FLIM of NAD(P)H and FAD in Drosophila melanogaster sperm in vitro and in vivo in male and female sperm-storage organs",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7316-9507",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#30d8b0be-02c8-4089-85d2-0a63027c54b6"
+        }
+      ],
+      "name": "Christian Massino"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8367-5163",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#30d8b0be-02c8-4089-85d2-0a63027c54b6"
+        }
+      ],
+      "email": "cornelia.wetzker@tu-dresden.de",
+      "name": "Cornelia Wetzker"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4205-2370",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#30d8b0be-02c8-4089-85d2-0a63027c54b6"
+        }
+      ],
+      "email": "klaus.reinhardt@tu-dresden.de",
+      "name": "Klaus Reinhardt"
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-1338-7090",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#30d8b0be-02c8-4089-85d2-0a63027c54b6"
+        }
+      ],
+      "name": "Christin Froschauer"
+    },
+    {
+      "@id": "#30d8b0be-02c8-4089-85d2-0a63027c54b6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "TU Dresden"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#c345722f-80b1-4af9-9e97-6d9157cd15bb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila melanogaster sperm in vitro and in seminal vesicles or seminal receptacles",
+      "name": "metabolic coenzymes NADH and FAD",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#d40c4eb8-eecb-4754-80ab-73b78dec692a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "NAD(P)H was excited with light of 740 nm and band pass-restricted emission in the range of 450/30 nm (AHF analysentechnik AG, Tübingen, Germany), FAD with light of 900 nm and emission in the range of 525/39 nm. NAD(P)H and FAD were imaged sequentially and emitted light was split spectrally at 505 nm onto two hybrid GaAsP detectors. The total photon count rate was limited to a maximum of 8 × 10^5 per second by laser power limitation by use of the internal acusto-optical modulator to prevent sample damage and the saturation of the detection system. Images were acquired using the SPCM software version 9.77 for ex vivo and 9.80 for in vitro measurements (Becker&Hickl GmbH, Berlin, Germany) at 512 x 512 pixels image size with a pixel dwell time between 3 and 5 μs yielding a total scan time of approximately 120 s. 6 μm beads were imaged for size estimates.",
+      "labEquipment": "FLIM-capable upright laser scanning microscope system with two-photon excitation using a water immersion objective [LD C-Apochromat 40x/1.1 W, 421867-9970-000, Carl Zeiss, Jena, Germany], including an upright AxioExaminer.Z1 (Carl Zeiss, Jena, Germany) with an xy-motorized stage and a Chameleon Ultra II two-photon titanium:sapphire laser (tunable range 690– 1080 nm, 80 MHz repetition rate, 140 fs pulse width, Coherent, USA) and two hybrid GaAsP detectors (HPM-100-40, Becker&Hickl GmbH, Berlin, Germany).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000368"
+        }
+      ],
+      "name": "FLIM"
+    },
+    {
+      "@id": "obo:FBbi_00000368",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FLIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1049
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 40644366485
+    }
+  ]
+}

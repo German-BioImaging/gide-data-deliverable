@@ -1,0 +1,183 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD850"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD850",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8bccc44d-0030-432d-b3fb-3e299b166641"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2c632851-3ccb-480b-9374-b04071669b84"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#00663cca-5883-4ebc-8a87-9e6c22e66155"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-18",
+      "description": "This submission contains the histology images for the PDX models available in Mouse models of Human Cancer database. ",
+      "funder": [],
+      "identifier": "S-BIAD850",
+      "keywords": [
+        "PDX models"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Mouse models of Human Cancer - Histology image",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD850/1667b5ee-fbd9-4dd7-90cc-9bf2b5e09f6b/7482e1ec-f507-4f69-875c-f0902a7a055c.png"
+      ]
+    },
+    {
+      "@id": "#00663cca-5883-4ebc-8a87-9e6c22e66155",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c508a0c-0721-4d83-84c5-39ad1162030c"
+        }
+      ],
+      "name": "Carol J. Bult"
+    },
+    {
+      "@id": "#0c508a0c-0721-4d83-84c5-39ad1162030c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Jackson Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#2c632851-3ccb-480b-9374-b04071669b84",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "The NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ mice, most often known by their branded name, NOD scid gamma (NSG™), do not express the Prkdc gene nor the X-linked Il2rg gene. NSG mice are viable, fertile, normal in size and do not display any gross physical or behavioral abnormalities. Histological examination of lymphoid tissues reveals absence of lymphoid cells and some cystic structures in the thymus, an absence of follicles in the spleen and markedly diminished celluarity of lymph nodes. NSG mice are deficient in mature lymphocytes, serum Ig is not detectable and natural killer (NK) cell cytotoxic activity is extremely low. These mice are resistant to lymphoma development even after sublethal irradiation treatment. ",
+      "name": "Mouse models of Human Cancer",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#8bccc44d-0030-432d-b3fb-3e299b166641",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Histology (H&E) an/or immunohistochemistry (IHC) images associated with specific tumor frequency records. Images are displayed with permission of published and/or submitting author.",
+      "labEquipment": "Microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "Mouse models of Human Cancer - Histology image"
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5352
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3069716190
+    }
+  ]
+}

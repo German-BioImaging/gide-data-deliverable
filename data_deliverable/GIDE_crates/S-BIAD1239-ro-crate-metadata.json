@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1239"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1239",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b37e5cdd-0af3-4b4d-bc90-8240e7e20cb4"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5cc855c9-7fba-4ad8-a296-f467f38775a0"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#d51a550e-b0f8-4515-9710-f76a9b5c4060"
+        },
+        {
+          "@id": "#f5a52978-80ca-4cf3-aae9-12ffb233d8ae"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-25",
+      "description": "The CLP model was used to study polymicrobial sepsis, with sham as a control. Mice were subjected to sham or CLP procedure, and 6h, 24h and 48h later, livers were isolated for immunohistochemisty. As a control, wildtype control (Hnf4aflfl) and liver-specific HNF4a knockout (Hnf4aLiver-i-KO) mice were included, all of which were injected with tamoxifen for 5 consecutive days. Livers were isolated for immunohistochemistry 3 days after the last tamoxifen injection. The images were stained with DAPI (nuclei - blue) and an HNF4a antibody (red) and visualized with Axioscan.Z1 Slide scanner (Zeiss), using a Plan-Apochromat 10x/0.45 M27 objective lens at a pixel size of 0.650 µm.",
+      "funder": [],
+      "identifier": "S-BIAD1239",
+      "keywords": [
+        "Immunohistochemistry, HNF4a, CLP"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A critical role for HNF4α in polymicrobial sepsis-associated metabolic reprogramming and death",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1239/e4c1d29b-d6c1-4fe3-a533-eed8230dadba/0779b012-9c89-421f-b207-fcdfeadba065.png"
+      ]
+    },
+    {
+      "@id": "#d51a550e-b0f8-4515-9710-f76a9b5c4060",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03xrhmk39"
+        }
+      ],
+      "email": "celinevd@irc.vib-ugent.be",
+      "name": "Céline Van Dender"
+    },
+    {
+      "@id": "#f5a52978-80ca-4cf3-aae9-12ffb233d8ae",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03xrhmk39"
+        }
+      ],
+      "email": "claude.libert@irc.vib-ugent.be",
+      "name": "Claude Libert"
+    },
+    {
+      "@id": "https://ror.org/03xrhmk39",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vlaams Instituut voor Biotechnologie"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#5cc855c9-7fba-4ad8-a296-f467f38775a0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver",
+      "name": "Sample IHC HNF4a",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b37e5cdd-0af3-4b4d-bc90-8240e7e20cb4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A Plan-Apochromat 10x/0.45 M27 objective lens was used at a pixel size of 0.650 µm.",
+      "labEquipment": "Axioscan.Z1 Slide scanner (Zeiss)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition IHC HNF4a"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1012842122
+    }
+  ]
+}

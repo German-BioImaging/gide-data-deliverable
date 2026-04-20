@@ -1,0 +1,230 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1704"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1704",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ac6d5891-1667-43f4-9413-507b1747d0c5"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#67780abb-220d-4b13-a380-cf60c6cb5ae2"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5879ec8a-e73e-4c05-a9d1-e7865217783e"
+        },
+        {
+          "@id": "#a1170750-be92-453e-a433-b0d7c12640b7"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-26",
+      "description": "Fibrosis is a key feature of a broad spectrum of cystic kidney diseases, especially autosomal recessive kidney disorders such as nephronophthisis (NPHP). However, its contribution to kidney function decline and the underlying molecular mechanism(s) remains unclear. Here, we show that kidney-specific deletion of Fbxw7, the recognition receptor of the SCFFBW7 E3 ubiquitin ligase, results in a juvenile-adult NPHP-like pathology characterized by slow-progressing corticomedullary cysts, tubular degeneration, severe fibrosis, and gradual loss of kidney function. Expression levels of SOX9, a known substrate of FBW7, and WNT4, a potent pro-fibrotic factor and downstream effector of SOX9, were elevated upon loss of FBW7. Heterozygous deletion of Sox9 in compound mutant mice led to the normalization of WNT4 levels, reduced fibrosis, and preservation of kidney function without significant effects on cystic dilatation and tubular degeneration. These data suggest that FBW7-SOX9-WNT4-induced fibrosis drives kidney function decline in NPHP and, possibly, other forms of autosomal recessive kidney disorders.    ",
+      "funder": [],
+      "identifier": "S-BIAD1704",
+      "keywords": [
+        "FBW7",
+        "SOX9",
+        "Fibrosis",
+        "Nephronophthisis",
+        "kidney function"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "SOX9-dependent fibrosis drives renal function in nephronophthisis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1704/cb597a15-fb84-41c1-ab56-797a0ab553e8/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#5879ec8a-e73e-4c05-a9d1-e7865217783e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8c2e0a71-ec9e-4dde-bf82-c18e81aafef8"
+        }
+      ],
+      "email": "maulin-patel@ouhsc.edu",
+      "name": "Maulin Patel"
+    },
+    {
+      "@id": "#a1170750-be92-453e-a433-b0d7c12640b7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8c2e0a71-ec9e-4dde-bf82-c18e81aafef8"
+        }
+      ],
+      "email": "leonidas-tsiokas@ouhsc.edu",
+      "name": "Leonidas Tsiokas"
+    },
+    {
+      "@id": "#8c2e0a71-ec9e-4dde-bf82-c18e81aafef8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oklahoma Health Sciences Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#67780abb-220d-4b13-a380-cf60c6cb5ae2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse and Human kidney, as well as mouse IMCD3 cells",
+      "name": "Biosample1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ac6d5891-1667-43f4-9413-507b1747d0c5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All parameters were kept the same for comparative panels and/or images.",
+      "labEquipment": "All microscopy images were obtained using an Olympus FV1000 confocal microscope, a Nikon CSU-W1 SoRa Spinning Disk confocal microscope, a Nikon bright field microscope, or an Olympus VS120 Virtual Slide System. All Western blot images were taken using a Bio-Rad Western blot Imager or Licor Imager.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 80
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1537734576
+    }
+  ]
+}

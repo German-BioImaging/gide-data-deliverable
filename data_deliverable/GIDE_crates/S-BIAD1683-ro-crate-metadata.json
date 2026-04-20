@@ -1,0 +1,408 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1683"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1683",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#af0a85a4-d605-4eff-aac1-897fdab8b535"
+        },
+        {
+          "@id": "#07c29978-a177-4ae0-afbe-9f659b93eeb7"
+        },
+        {
+          "@id": "#d22055cf-9ced-418e-9491-02caa0aea526"
+        },
+        {
+          "@id": "#58ef6548-c63e-42c0-8705-7886e280ba63"
+        },
+        {
+          "@id": "#c12a2ef8-4ed7-451c-b1bd-14582c1e640b"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0ee5a8be-7ceb-4b2a-a8d2-e5f49554c835"
+        },
+        {
+          "@id": "#cf7fad96-7f94-4e4f-844a-2bdbdf5c9e22"
+        },
+        {
+          "@id": "#93fb02f1-96f9-4e9b-ae9d-71d041b8035f"
+        },
+        {
+          "@id": "#c68d240e-d270-470b-9c35-c5f0ac72b233"
+        },
+        {
+          "@id": "#6561eddf-36d4-403e-890e-018716f60fb3"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1995-0263"
+        },
+        {
+          "@id": "https://orcid.org/0009-0006-2875-7197"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4818-035X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3956-9363"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8579-4919"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0208-7758"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-19",
+      "description": "Subcellular structures, like podosomes, focal adhesions, and stress granules, are highly dynamic and exist in a continuous state of formation, movement, and turnover. Traditional tracking methods often focus on single-particle tracking or bulk intensity changes, missing the spatial relationships between structures. To fill this gap, we developed ARCOS.px, an open-source Python-based software package, and an interactive napari image viewer plugin to identify and track spatial clusters in microscopy movies. ARCOS.px tracks objects’ spatial relationships, coordination, and lineage over time rather than just individual objects. It can be applied to a wide range of problems where the goal is to track discontinuous but dynamically associated regions in time-lapse images. The method is demonstrated on several subcellular, dynamic events where it tracks podosome-like structures, and RhoA activity waves induced by growth factors or optogenetics. We use it to uncover how different drugs alter the stability, mobility, and interactions of podosome-like structures in REF52 cells. We also found that actin waves in REF52 cells are trailed by active RhoA and Myosin, suggesting the presence of feedback mechanisms that recruit active RhoA at their trailing edge.",
+      "funder": [],
+      "identifier": "S-BIAD1683",
+      "keywords": [
+        "Podosome like Structures",
+        "Actin Waves",
+        "Rho",
+        "MCF10A"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Tracking Coordinated Cellular Dynamics in Time-Lapse Microscopy with ARCOS.px",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1683/b85808fd-b5bb-4f15-ad4f-8588f3067a07/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8579-4919",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5a935473-8d4a-4944-8775-ffcb97b9aed9"
+        }
+      ],
+      "email": "olivier.pertz@unibe.ch",
+      "name": "Olivier Pertz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0208-7758",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5a935473-8d4a-4944-8775-ffcb97b9aed9"
+        }
+      ],
+      "email": "maciej.dobrzynski@unibe.ch",
+      "name": "Maciej Dobrzyński"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1995-0263",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5a935473-8d4a-4944-8775-ffcb97b9aed9"
+        }
+      ],
+      "email": "benjamin.graedel@unibe.ch",
+      "name": "Benjamin Grädel"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3956-9363",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5a935473-8d4a-4944-8775-ffcb97b9aed9"
+        }
+      ],
+      "email": "lucien.hinderling@unibe.ch",
+      "name": "Lucien Hinderling"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4818-035X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a8320a9e-c057-43f0-9730-ed7edab78a5f"
+        }
+      ],
+      "email": "paolo.gagliardi@unito.it",
+      "name": "Paolo Armando Gagliardi"
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-2875-7197",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5a935473-8d4a-4944-8775-ffcb97b9aed9"
+        }
+      ],
+      "email": "lea.broennimann@unibe.ch",
+      "name": "Lea Brönnimann"
+    },
+    {
+      "@id": "#5a935473-8d4a-4944-8775-ffcb97b9aed9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Bern"
+    },
+    {
+      "@id": "#a8320a9e-c057-43f0-9730-ed7edab78a5f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Turin"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0ee5a8be-7ceb-4b2a-a8d2-e5f49554c835",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "REF52 cells",
+      "name": "LA_mCherry Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#6561eddf-36d4-403e-890e-018716f60fb3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "REF52 cells",
+      "name": "LA_mNeonGreen Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#93fb02f1-96f9-4e9b-ae9d-71d041b8035f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "REF52 cells",
+      "name": "LA_rGBD_MLC cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#c68d240e-d270-470b-9c35-c5f0ac72b233",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "MCF10A cells",
+      "name": "ERK_FOXO_H2B Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#cf7fad96-7f94-4e4f-844a-2bdbdf5c9e22",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "REF52 cells",
+      "name": "optoLARG Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#07c29978-a177-4ae0-afbe-9f659b93eeb7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were imaged every 10 seconds, with 3 channels acquired, Lifeact::miRFP703 (not included in this dataset), 2xRGBD, and then stimulated with a 470/24 LED with a specific pattern using a DMD",
+      "labEquipment": "Nikon Ti equipped with a 60x/1.4 NA PlanApo VC oil immersion objective (Nikon), an Andor Zyla sCMOS camera set to 2x2 binning, and an Andor Mosaic DMD. As an illumination source, a Lumencor Spectra X LED was used.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Line Scan Acquisition"
+    },
+    {
+      "@id": "#58ef6548-c63e-42c0-8705-7886e280ba63",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired for 24h at 5-minute intervals for all 3 channels",
+      "labEquipment": "Nikon Eclipse Ti Microscope equipped with a 20x Plan apo air (NA 0.8) objective (Nikon) and an Andor Zyla sCMOS camera.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Hole Formation Acquisition"
+    },
+    {
+      "@id": "#af0a85a4-d605-4eff-aac1-897fdab8b535",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaged 2 channels every second, EB1-eGFP (not included in dataset) and Lifeact::mCherry",
+      "labEquipment": "Nikon Eclipse Ti Microscope equipped 100x PlanApo TIRF oil immersion objective (NA 1.49) and a Photometrics Prime 95B sCMOS camera. As an Illumination source, a Lumencor Spectra X was used.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Single FOV PLS Acquisition"
+    },
+    {
+      "@id": "#c12a2ef8-4ed7-451c-b1bd-14582c1e640b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaged Lifeact::mNeonGreen every second for 20 minutes",
+      "labEquipment": "Nikon Eclipse Ti Microscope equipped 60x PlanApo TIRF oil immersion objective (NA 1.49) and a Photometrics Prime 95B sCMOS camera. As an Illumination source, a Lumencor Spectra X was used.\nAdditional intermediate magnification of 1.5 was used.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "PLS perturbation acquisition "
+    },
+    {
+      "@id": "#d22055cf-9ced-418e-9491-02caa0aea526",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired each 10 seconds for all three imaged channels",
+      "labEquipment": "Nikon Eclipse Ti Microscope equipped with an Ilas2 TIRF system using an Apo TIRF 60x oil immersion objective (NA 1.49) with a PRIM 95B sCMOS camera set to binning 2x2",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Actin Waves Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 243
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 27300589247
+    }
+  ]
+}

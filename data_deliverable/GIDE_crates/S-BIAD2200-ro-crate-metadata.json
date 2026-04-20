@@ -1,0 +1,324 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2200"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2200",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f3500c11-8a79-4201-918b-1986249730fe"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1e3ed490-1def-47e2-83cb-26e17c0b676c"
+        },
+        {
+          "@id": "#74b63fc5-8ede-4872-9a46-fb60d77f49fc"
+        },
+        {
+          "@id": "#ec8adc51-2673-4d60-95dd-e7e363c6feea"
+        },
+        {
+          "@id": "#e0c0f80a-55af-45a7-8834-33b34e0c8bab"
+        },
+        {
+          "@id": "#dc1276e0-be93-4f91-9359-a10d335c1108"
+        },
+        {
+          "@id": "#ec92092c-15f8-4bae-94a4-b449ee936839"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0003-5098-9988"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4085-7020"
+        },
+        {
+          "@id": "#04bbe91c-4f45-4a47-ab7c-959bfa6b98b5"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8528-8298"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-02",
+      "description": "Ultrastructural changes of mitochondria are closely associated with metabolic dysfunction, leading to a variety of human disorders. These changes can be visualized by pan-Expansion Microscopy (pan-ExM), a 3D microscopy technique requiring only standard fluorescence microscopes, at a throughput exceeding that of the current gold standard, 3D electron microscopy, by orders of magnitude. However, a lack of tools that enable the characterization and quantification of the observed ultrastructural features in the acquired 3D datasets at a comparable throughput has hindered the widespread adoption of pan-ExM for quantitative imaging. Here, we present an automated deep-learning based segmentation approach that utilizes pan-ExM’s power to acquire multi-channel images and uses specific labeling as the annotation for the training of the segmentation network. This ‘molecular annotation’ reduces the required manual annotation effort for mitochondria substructures to just a few hours when setting up the experiment and thereby provides access to 3D suborganellar morphology of mitochondria at an unprecedented throughput. Our approach, which we term MAPS (Mitochondrial Automated Pan-ExM Segmentation), enables for the first time to quantify mitochondrial ultrastructural morphology at scale. We demonstrate this power by characterizing the 3D mitochondrial morphology at the organelle and sub-organelle level in tens of HeLa cells under different treatments and localizing mitochondrial proteins in the sub-organellar context. To demonstrate our technology in tissue, we compare the ultrastructural morphology of mitochondria in proximal tubules of kidneys of mice exhibiting acute kidney injury (AKI) with those of untreated mice, revealing striking differences in their cristae structure. MAPS can easily be adapted to different cell and tissue types, allowing the analysis of tens of samples per day, and therefore provides a versatile tool for a comprehensive understanding of mitochondrial ultrastructural changes in many disease contexts. Requiring only standard fluorescence microscopes and computer infrastructure, MAPS is readily adoptable by any lab.",
+      "funder": [],
+      "identifier": "S-BIAD2200",
+      "keywords": [
+        "Expansion Microscopy",
+        "Deep Learning",
+        "Mitochondria",
+        "Kidney",
+        "AKI",
+        "Segmentation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Scalable automated segmentation of pan-Expansion Microscopy data quantifies mitochondrial proteins and morphology at the nanoscale",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2200/efc8096a-7c1d-4e2e-9cef-281e36a4c3ef/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#04bbe91c-4f45-4a47-ab7c-959bfa6b98b5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/052gg0110"
+        }
+      ],
+      "email": "alexander.sauer@eng.ox.ac.uk",
+      "name": " Alexander Sauer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4085-7020",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03v76x132"
+        }
+      ],
+      "email": "joerg.bewersdorf@yale.edu",
+      "name": "Joerg Bewersdorf"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8528-8298",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/052gg0110"
+        }
+      ],
+      "email": "jens.rittscher@eng.ox.ac.uk",
+      "name": "Jens Rittscher"
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-5098-9988",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03v76x132"
+        }
+      ],
+      "email": "yuan.tian.yt396@yale.edu",
+      "name": "Yuan Tian"
+    },
+    {
+      "@id": "https://ror.org/03v76x132",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Yale University"
+    },
+    {
+      "@id": "https://ror.org/052gg0110",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#1e3ed490-1def-47e2-83cb-26e17c0b676c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cell line expanded using pan-ExM with MitoTracker and anti-TOM20 labeling.",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#74b63fc5-8ede-4872-9a46-fb60d77f49fc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cell line expanded using pan-ExM with anti-TOM20, anti-MIC60 or anti-COX4 labeling.",
+      "name": "Biosample 3",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#dc1276e0-be93-4f91-9359-a10d335c1108",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cell line expanded using pan-ExM with MitoTracker and anti-TOM20 labeling.",
+      "name": "Biosample 2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e0c0f80a-55af-45a7-8834-33b34e0c8bab",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse kidney sections expanded using pan-ExM-t with anti-MIC60 and anti-COX4 labeling.",
+      "name": "Biosample 5",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ec8adc51-2673-4d60-95dd-e7e363c6feea",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Oligomycin-treated HeLa cell expanded via pan-ExM, labeled with MitoTracker Orange and anti-TOM20.",
+      "name": "Biosample 4",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ec92092c-15f8-4bae-94a4-b449ee936839",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "AKI mouse kidney sections expanded using pan-ExM-t with anti-MIC60 and anti-COX4 labeling.",
+      "name": "Biosample 6",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#f3500c11-8a79-4201-918b-1986249730fe",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired in spinning disk confocal mode (40-μm pinhole disk) using a CFI Plan Apo VC 60×, NA 1.2, water-immersion objective; an Apo LWD Lambda S 40×, NA 1.15, water-immersion objective; or a Super Fluor 20×, NA 0.75, air objective. Images were collected using 488 nm, 561 nm, and/or 637 nm excitation wavelengths, with image acquisition controlled through Fusion Control Software.",
+      "labEquipment": "Andor Dragonfly 600 High Speed Confocal Microscope Systems",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 253
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1031013177036
+    }
+  ]
+}

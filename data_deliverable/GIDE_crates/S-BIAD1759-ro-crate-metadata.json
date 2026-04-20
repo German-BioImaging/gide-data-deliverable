@@ -1,0 +1,203 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1759"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1759",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2e4cc25f-9533-4f8f-86e1-708b54c76abe"
+        },
+        {
+          "@id": "obo:FBbi_00000255"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3ad73a53-a008-499d-936a-2e05617ca05b"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#fd509a83-d913-4ae2-b645-fd137c2f529c"
+        },
+        {
+          "@id": "#784a2576-3bf1-4b0c-b27f-d1385464b975"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-01",
+      "description": "This repository contains raw intravital microscopy movies used to analyze DMG behavior with the BEHAV3D Tumor Profiler workflow in Google Colab. The data files are in Imaris (.ims) format and have been cropped based on large-scale regions identified by mLSR3D and processed using the Imaris software (Oxford Instruments).",
+      "funder": [],
+      "identifier": "S-BIAD1759",
+      "keywords": [
+        "Single-cell",
+        "Behavior analysis",
+        "DMG",
+        "Intravital microscopy"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "BEHAV3D Tumor Profiler to map heterogeneous cancer cell behavior in the tumor microenvironment",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1759/93a4f1be-2804-4669-b2f5-a3f7d5c1de3e/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#784a2576-3bf1-4b0c-b27f-d1385464b975",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67865ae7-7f74-41e5-b1dd-e552e32121ac"
+        }
+      ],
+      "email": "malieva@iib.uam.es",
+      "name": "Maria Alieva"
+    },
+    {
+      "@id": "#fd509a83-d913-4ae2-b645-fd137c2f529c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67865ae7-7f74-41e5-b1dd-e552e32121ac"
+        }
+      ],
+      "email": "eriosjimenez00@gmail.com",
+      "name": "Emilio Rios-Jimenez"
+    },
+    {
+      "@id": "#67865ae7-7f74-41e5-b1dd-e552e32121ac",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Instituto de Investigaciones Biomédicas Sols-Morreale"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#3ad73a53-a008-499d-936a-2e05617ca05b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse brain cortex",
+      "name": "Adult Mouse DMG",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#2e4cc25f-9533-4f8f-86e1-708b54c76abe",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired with simultaneous imaging with the MaiTai (960 nm) and Insight (1100 nm) lasers. Green, red, and far-red fluorescence was separated by 570 nm and 650 nm dichroic mirrors, and 610/70 nm and 705/90 nm filters (Semrock) and collected by GaAsP or Multialkali photomultiplier tubes. Scanning was performed in a bidirectional mode with a resonant scanner at 400 Hz and 12 bit, with a zoom of 1x, 512 × 512 pixels.",
+      "labEquipment": "FVMPE-RS multiphoton microscope (Olympus) equipped with a MaiTai DeepSee and an InSight DeepSee laser (Spectra-Physics), a 25x/1.05 numerical aperture water objective, and two GaAsP and two Multialkali photomultiplier tubes (Olympus)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000255"
+        }
+      ],
+      "name": "FVMPE-RS Olympus"
+    },
+    {
+      "@id": "obo:FBbi_00000255",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "multi-photon microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 16
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 59843182164
+    }
+  ]
+}

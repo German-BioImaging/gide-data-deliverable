@@ -1,0 +1,309 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1998"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1998",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2e55d3da-a274-4da1-b5f2-76d8ace7017c"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#57f0db0b-7a8a-42ec-bc43-21ae6f134dd3"
+        },
+        {
+          "@id": "#d870d0ac-4397-4540-878f-02a4114f2685"
+        },
+        {
+          "@id": "#859b809b-7e43-4b21-b5e9-9e77e86de858"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#dacd27b2-4897-430f-ac19-1c8b72fc8bfd"
+        },
+        {
+          "@id": "#e13f1b75-d301-4f38-815d-4aa747429e33"
+        },
+        {
+          "@id": "https://orcid.org/0009-0008-9276-5225"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8104-0957"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8462-2883"
+        },
+        {
+          "@id": "#9665d99f-1d5f-40df-a4db-d6ac01ff9b95"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-30",
+      "description": "The bi-directional relationship between the kidneys and heart leads to different forms of cardiorenal syndrome (CRS) in which acute or chronic dysfunction in one organ affects the functioning of the others. This dataset was used to study fibrosis and the impact of chronic kidney disease on cardiac fibrosis in Spraque Dawley Rats, and consists of uncorrelated images from both heart and kidney tissues, in healthy and diseased rats. CRS was induced through 5/6 Nephrectomized, and the tissue samples from both healthy and diseased rats were stained via Sirius Red histology staining, and imaged in bright-field microscopy. This data was selected as part of the AI4Life Open Calls 2023 (OC1) for image analysis consultation and deep-learning applications.\n",
+      "funder": [],
+      "identifier": "S-BIAD1998",
+      "keywords": [
+        "Fibrosis ",
+        "Kidney",
+        "Heart",
+        "CKD",
+        "CRS",
+        "AI4Life Open Call"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Quantifying Fibrosis in the Hearts & Kidneys of Rats impacted with CKD ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1998/ed069ee0-8c5f-4130-b461-9a4d18688b49/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#9665d99f-1d5f-40df-a4db-d6ac01ff9b95",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fe0bbd08-9e4c-4860-836b-a5f877ddb47c"
+        }
+      ],
+      "email": "nathalie.gayrard@umontpellier.fr",
+      "name": "Nathalie Gayrard "
+    },
+    {
+      "@id": "#dacd27b2-4897-430f-ac19-1c8b72fc8bfd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0ce8b5a7-9d1c-47df-ae7b-67a14a384f5b"
+        }
+      ],
+      "email": "juliana@rd-n.org",
+      "name": "Juliana H. Boukhaled"
+    },
+    {
+      "@id": "#e13f1b75-d301-4f38-815d-4aa747429e33",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fe0bbd08-9e4c-4860-836b-a5f877ddb47c"
+        }
+      ],
+      "email": "irene.cortijo-tejero@umontpellier.fr",
+      "name": "Irene Cortijo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8462-2883",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "name": "Joran Deschamps"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8104-0957",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "email": "nuno.pimpao@external.fht.org",
+      "name": "Nuno Pimpão Martins"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-9276-5225",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "name": "Mehdi Seifi"
+    },
+    {
+      "@id": "#0ce8b5a7-9d1c-47df-ae7b-67a14a384f5b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "RD Neprologie"
+    },
+    {
+      "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Human Technopole"
+    },
+    {
+      "@id": "#fe0bbd08-9e4c-4860-836b-a5f877ddb47c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "RD Nephrologie"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#57f0db0b-7a8a-42ec-bc43-21ae6f134dd3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Sprague Dawley Rats ",
+      "name": "Kidney Tissue from Diseased Sprague Dawley Rats",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#859b809b-7e43-4b21-b5e9-9e77e86de858",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Sprague Dawley Rats",
+      "name": "Heart Tissue from Healthy Sprague Dawley Rats",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#d870d0ac-4397-4540-878f-02a4114f2685",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Sprague Dawley Rats",
+      "name": "Kidney Tissue from Healthy Sprague Dawley Rats",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#2e55d3da-a274-4da1-b5f2-76d8ace7017c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Heart and Kidney tissue samples were imaged using a bright-field microscope (Nikon Eclipse e 300) with 200x magnification.   ",
+      "labEquipment": "Nikon Eclipse e 300",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image Acquisition of Hearts & Kidney Samples"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 105
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 702539871
+    }
+  ]
+}

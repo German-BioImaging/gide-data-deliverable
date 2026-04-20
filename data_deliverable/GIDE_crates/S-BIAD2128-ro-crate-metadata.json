@@ -1,0 +1,239 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2128"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2128",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4c7ceaf5-8e06-4c7a-b48f-7316a71dc88d"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f5e28ff9-743a-4cc4-bc60-9e28385aa3ef"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6989-2252"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1458-9402"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9213-3211"
+        },
+        {
+          "@id": "#fed4e1e4-8430-418f-b3c5-33c59ebd0acd"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5105-5915"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-20",
+      "description": "This study describes a protocol on how to perform label-free microscopy of the pancreas of living zebrafish embryos using Raman imaging. ",
+      "funder": [],
+      "identifier": "S-BIAD2128",
+      "keywords": [
+        "Raman",
+        "F-SRS",
+        "E-CARS",
+        "pancreas",
+        "intravital",
+        "zebrafish"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Raman-based label-free microscopic analysis of the pancreas in living zebrafish larvae",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2128/33c7479e-89b3-4e33-ae1f-a993dad024dd/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#fed4e1e4-8430-418f-b3c5-33c59ebd0acd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03cv38k47"
+        }
+      ],
+      "email": "k.a.sjollema@umcg.nl",
+      "name": "Klaas A. Sjollema"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5105-5915",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03cv38k47"
+        }
+      ],
+      "email": "b.n.g.giepmans@umcg.nl",
+      "name": "Ben N.G. Giepmans"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6989-2252",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03cv38k47"
+        }
+      ],
+      "email": "p.de.boer@umcg.nl",
+      "name": "Pascal de Boer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9213-3211",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03cv38k47"
+        }
+      ],
+      "email": "e.m.f.de.lange@umcg.nl",
+      "name": "Eline M.F. de Lange"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1458-9402",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03cv38k47"
+        }
+      ],
+      "email": "n.faraj@umcg.nl",
+      "name": "Noura Faraj"
+    },
+    {
+      "@id": "https://ror.org/03cv38k47",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Medical Center Groningen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#f5e28ff9-743a-4cc4-bc60-9e28385aa3ef",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Zebrafish larvae pancreas. Transgenetic zebrafish for exocrine pancreas cell ablation via the NTR-NFP system with GFP-positive beta cells in the pancreatic islet. Wild type AB zerbafish were used for label-free imaging.",
+      "name": "Zebrafish transgenic line for exocrine pancreas cell ablation",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#4c7ceaf5-8e06-4c7a-b48f-7316a71dc88d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See the paper for an extended imaging protocol. Here in short:\n- Confocal microscopy of transgenic larvae: excitation of 488 nm for GFP and 561 nm for mScarlet and detected at 494-572 nm and 593-750 nm\n- Label-free Raman imaging: Image with a wide range of vibrational frequencies (450 - 3100 cm-1), using forward SRS (F-SRS) and epi-CARS (E-CARS). The pump laser was tuned from 781.35 - 985.3 nm (3100 - 450 cm-1) and later specifically to 791.6, 796.9, 897.0 and 976.2 nm respectively, to excite a vibration at 2937, 2850, 1450 and 545 cm-1.\n",
+      "labEquipment": "Leica STELLARIS 8 coherent Raman scattering confocal microscope ",
+      "measurementTechnique": [],
+      "name": "Label-free Raman imaging"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 37
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1624693013
+    }
+  ]
+}

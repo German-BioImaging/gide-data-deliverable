@@ -1,0 +1,237 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1070"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1070",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b52f8a08-30bd-4f95-9b6f-d91e28b10fcc"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7ca22864-3c35-4773-8fa1-682ff3d38d23"
+        },
+        {
+          "@id": "obo:NCBITaxon_9615"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3197-5014"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4609-0577"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1109-110X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8030-1820"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-01",
+      "description": "Type II MDCK (Madin-Darby canine kidney) cells",
+      "funder": [],
+      "identifier": "S-BIAD1070",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "3D segmentation of MDCK CYSTS",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1070/3d1793f2-4a65-4358-b1a4-f92e2ca40d3d/8ddac999-9e89-4eae-a454-a05a64e8d331.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8030-1820",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1e3ae6d1-6f4a-4f0c-8db4-76556846f108"
+        }
+      ],
+      "email": "lmescudero-ibis@us.es",
+      "name": "Luis M. Escudero Cuadrado"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1109-110X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ea05f0f5-6ae0-4a46-8b7a-4463b0a06b4f"
+        }
+      ],
+      "email": "daniel.franco@dipc.org",
+      "name": "Daniel Franco-Barranco"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3197-5014",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1e3ae6d1-6f4a-4f0c-8db4-76556846f108"
+        }
+      ],
+      "email": "jasanroman@us.es",
+      "name": "Jesus A. Andres-San Roman"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4609-0577",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1e3ae6d1-6f4a-4f0c-8db4-76556846f108"
+        }
+      ],
+      "email": "cmgordillo@us.es",
+      "name": "Carmen M. Gordillo Vazquez"
+    },
+    {
+      "@id": "#1e3ae6d1-6f4a-4f0c-8db4-76556846f108",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universidad de Sevilla"
+    },
+    {
+      "@id": "#ea05f0f5-6ae0-4a46-8b7a-4463b0a06b4f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universidad de El País Vasco"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9615",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Canis lupus familiaris"
+    },
+    {
+      "@id": "#7ca22864-3c35-4773-8fa1-682ff3d38d23",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Type II MDCK (Madin-Darby canine kidney) cells, http://purl.obolibrary.org/obo/BTO_0004607",
+      "name": "First biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9615"
+      }
+    },
+    {
+      "@id": "#b52f8a08-30bd-4f95-9b6f-d91e28b10fcc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Voxel size 0.6152x0.6152x0.7 micron^3",
+      "labEquipment": "Nikon Eclipse Ti-E laser scanning confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "First acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 42
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 35010923
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2789"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2789",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#cf1e68c4-6414-4612-8972-d281bc3ce8d3"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8a271cca-aa5c-40af-899d-7aa11261bd16"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8143-8175"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2026-01-15",
+      "description": "Mitochondrial dysfunction is a critical early driver of retinal ganglion cell (RGC) loss in optic nerve injury. We evaluated whether HDAP2, a mitochondria-targeted aromatic peptide designed to support mitochondrial membrane integrity, could preserve neuronal structure after optic nerve crush (ONC) in C57BL/6 mice (both sexes, n=31). Systemically administered HDAP2 penetrated the blood–retinal barrier and localized to RGCs and mitochondrial-rich retinal layers. Daily treatment significantly improved RGC survival compared to saline-treated ONC animals. RGC densities increased across central, midperipheral, and peripheral regions.\nTransmission electron microscopy revealed that HDAP2 substantially reduced mitochondrial loss within crushed optic nerve axons. Mitochondrial density in HDAP2-treated nerves approached levels observed in uninjured controls and was nearly 3-fold higher than untreated ONC nerves. Mitochondrial morphology was similar across groups, indicating that HDAP2 prevents mitochondrial loss rather than rescuing damaged organelles. HDAP2-treated nerves also exhibited a numerically higher density of structurally intact axons, consistent with reduced ultrastructural degeneration.\nThese findings demonstrate that HDAP2 limits mitochondrial loss and attenuates neuronal degeneration after ONC. Together, the results support HDAP2 as a promising therapeutic candidate for protecting CNS projection neurons by maintaining mitochondrial stability after axonal injury.\n",
+      "funder": [],
+      "identifier": "S-BIAD2789",
+      "keywords": [
+        "retinal ganglion cells; mitochondrial dysfunction; optic nerve crush; neuroprotection; cell-penetrating peptides; glaucoma"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The Mitochondria-Targeted Peptide HDAP2 Reduces Mitochondrial Loss and Retinal Ganglion Cell Degeneration After Optic Nerve Injury",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2789/2ed865c0-f303-49e6-9f10-dc1d4331454a/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8143-8175",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b3925295-d3d0-4e03-ae97-8b797d3d8b03"
+        }
+      ],
+      "email": "mmacneil@york.cuny.edu",
+      "name": "Margaret MacNeil"
+    },
+    {
+      "@id": "#b3925295-d3d0-4e03-ae97-8b797d3d8b03",
+      "@type": [
+        "Organization"
+      ],
+      "name": "York College, CUNY"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#8a271cca-aa5c-40af-899d-7aa11261bd16",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Retinal ganglion cells and optic nerve - Study of the retina and optic nerves in animals that received unilateral optic nerve crush.",
+      "name": "ONC C57BL/6 mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#cf1e68c4-6414-4612-8972-d281bc3ce8d3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images (~160 with 10% overlap) that were automatically stitched together using Airyscan processing to produce a montage of the entire retina.",
+      "labEquipment": "Wholemounts were imaged using a Zeiss LSM 900 confocal microscope with a 10× objective by acquiring ~160 images (10% overlap) that were automatically stitched together using Airyscan processing.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Control wholemounts"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 62
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 39365400926
+    }
+  ]
+}

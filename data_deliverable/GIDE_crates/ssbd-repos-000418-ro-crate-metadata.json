@@ -1,0 +1,302 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000418/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000418/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000418",
+      "name": "Development of DGLa expression in mouse visual cortex",
+      "description": "Immunoperoxidase staining of DGLa in the mouse visual cortex at various postnatal ages",
+      "datePublished": "2025-04-08",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.isci.2024.110145"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1901696"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0098921"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0150077"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0006640"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0046340"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0019369"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0022008"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007405"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005737"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0045211"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0098839"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0031901"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0043196"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032591"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032590"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000277"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yoshio Hata",
+      "email": "yhata@tottori-u.ac.jp",
+      "description": "Organization: Tottori University; Department: Division of Neuroscience",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024yc3q36"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/024yc3q36",
+      "@type": "Organization",
+      "name": "Tottori University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.isci.2024.110145",
+      "@type": "ScholarlyArticle",
+      "name": "Layer specific regulation of critical period timing and maturation of mouse visual cortex by endocannabinoids.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6J",
+      "description": "C57BL/6J",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1901696",
+      "@type": "DefinedTerm",
+      "name": "cannabinoid biosynthetic process"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098921",
+      "@type": "DefinedTerm",
+      "name": "retrograde trans-synaptic signaling by endocannabinoid"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0150077",
+      "@type": "DefinedTerm",
+      "name": "regulation of neuroinflammatory response"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006640",
+      "@type": "DefinedTerm",
+      "name": "monoacylglycerol biosynthetic process"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0046340",
+      "@type": "DefinedTerm",
+      "name": "diacylglycerol catabolic process"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019369",
+      "@type": "DefinedTerm",
+      "name": "arachidonate metabolic process"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0022008",
+      "@type": "DefinedTerm",
+      "name": "neurogenesis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007405",
+      "@type": "DefinedTerm",
+      "name": "neuroblast proliferation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
+      "@type": "DefinedTerm",
+      "name": "cytoplasm"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0045211",
+      "@type": "DefinedTerm",
+      "name": "postsynaptic membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098839",
+      "@type": "DefinedTerm",
+      "name": "postsynaptic density membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0031901",
+      "@type": "DefinedTerm",
+      "name": "early endosome membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0043196",
+      "@type": "DefinedTerm",
+      "name": "varicosity"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032591",
+      "@type": "DefinedTerm",
+      "name": "dendritic spine membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032590",
+      "@type": "DefinedTerm",
+      "name": "dendrite membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscope",
+      "description": "bright-field microscope",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000277"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000277",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscope"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 285560832,
+      "description": "285.6 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 102,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

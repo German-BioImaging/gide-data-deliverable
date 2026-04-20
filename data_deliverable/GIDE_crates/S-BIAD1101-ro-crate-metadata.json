@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1101"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1101",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#26387f68-6a11-42b2-86db-0bd8c31b1a07"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d1913f1d-9688-425f-85d8-92c8ff4111ef"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3191-510X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-30",
+      "description": "Over the recent years, fluorescence microscopy has seen substantial progress, transitioning from primarily qualitative analysis to a profoundly quantitative methodology, yet limitations in imaging depth and data quality persist due to tissue opacity. Tissue optical clearing (TOC) methodologies were implemented to overcome this hurdle, enabling the imaging and quantitative analysis of large tissue samples, such, e.g., complete murine organs. Further advancements such as Expansion Microscopy (ExM) merges TOC benefits with improved imaging resolution, converting cells and tissues into tissue-gel hybrids. Yet, its intricate protocols lead to a remarkable, ~10-20× tissue volume expansion, making the acquisition of even thin sections exceedingly challenging in terms of time, labor, and data handling. Here we present a novel solution, ISEE (Improved Segmentation by gEntle Expansion), for both TOC and gentle (0.6-0.7×) tissue expansion for significantly improved precision of fluorescent signal segmentation, while maintaining tolerable increase during data acquisition in everyday laboratory practice. When applied to thick ~40-200 µm tissue slices, ISEE renders them transparent and ultimately expanded within minutes, in a simple, one-step process compatible with immunohistochemistry as well as with all major murine organs.",
+      "funder": [],
+      "identifier": "S-BIAD1101",
+      "keywords": [
+        "tissue clearing; expansion microscopy; cell segmentation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Tissue Optical Clearing and Expanding Solution for Improved Cell Segmentation - datasets",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3191-510X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0e73946c-7e48-4928-9f5c-7edd8c8417a7"
+        }
+      ],
+      "email": "p.matryba@gmail.com",
+      "name": "Pawel Matryba"
+    },
+    {
+      "@id": "#0e73946c-7e48-4928-9f5c-7edd8c8417a7",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Medical University of Warsaw"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#d1913f1d-9688-425f-85d8-92c8ff4111ef",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "BL6",
+      "name": "Tissue Optical Clearing and Expanding Solution for Improved Cell Segmentation - datasets",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#26387f68-6a11-42b2-86db-0bd8c31b1a07",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "As described in the manuscript",
+      "labEquipment": "Leica SP8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Tissue Optical Clearing and Expanding Solution for Improved Cell Segmentation - datasets"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7324314092
+    }
+  ]
+}

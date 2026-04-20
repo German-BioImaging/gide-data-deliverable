@@ -1,0 +1,201 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1490"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1490",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d0466d57-2ecc-4fd9-a398-961c70e621ed"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#310b2132-5572-4b71-b105-0c8063d4e61b"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#e026fb6d-7e2c-42f9-844c-be5e657390dd"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-22",
+      "description": "Cytonemes are signaling filopodia that facilitate long-range cell-cell communication by forming synapses between cells. Initially discovered in Drosophila for transporting morphogens during embryogenesis, they have since been identified in mammalian cells and implicated in carcinogenesis. Despite their importance, mechanisms controlling cytoneme biogenesis remain elusive. Here, we demonstrate that the Ser/Thr kinase Slik\ndrives remote cell proliferation by promoting cytoneme formation. This function depends on the coiled-coil domain of Slik (SlikCCD), which directly sculpts membranes into tubules. Importantly, Slik plays itsparadoxical roles in cytoneme biogenesis: membrane-sculpting activity promotes cytoneme formation, but this is counteracted by its kinase activity, enhancing actin association with the plasma membrane via Moesin phosphorylation. In vivo, SlikCCD enhances cytoneme formation in one epithelial layer of the wing disc to promote cell proliferation in an adjacent layer. Finally, this function relies on the STRIPAK complex, which controls cytoneme formation and governs proliferation at a distance by regulating Slik association with the plasma membrane. Our study unveils the first family of kinases that sculpts membranes, crucial for cytoneme- mediated control of cell proliferation.",
+      "funder": [],
+      "identifier": "S-BIAD1490",
+      "keywords": [
+        "Drosophila",
+        "cytoneme",
+        "wing disc",
+        "slik",
+        "S2 cell"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Slik sculpts the plasma membrane into cytonemes to control cell-cell communication.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1490/348c15c1-8fd8-4006-8f63-4846ea33fede/8f106f1c-127f-4520-bd70-77759aab4a6a.png"
+      ]
+    },
+    {
+      "@id": "#e026fb6d-7e2c-42f9-844c-be5e657390dd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#74c78435-4558-4b5d-9e1c-3944a9a60007"
+        }
+      ],
+      "email": "sebastien.carreno@umontreal.ca",
+      "name": "Sebastien Carreno"
+    },
+    {
+      "@id": "#74c78435-4558-4b5d-9e1c-3944a9a60007",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université de Montréal"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#310b2132-5572-4b71-b105-0c8063d4e61b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila wing disc and Drosophila S2 cells",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#d0466d57-2ecc-4fd9-a398-961c70e621ed",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Wing discs: Imaging at RT using a Zeiss LSM700 confocal microscope with a Plan Apochromat a Plan Neofluar 40×/1.30 NA oil lens and controlled using ZEN Black software.\nDrosophila S2 cells:  Zeiss observer Z1 equipped with a Plan Apochromat 63x objective / NA 1.4, a Zeiss Axiocam 506 Mono camera and a CSU-X1 confocal scanning unit",
+      "labEquipment": "LSM 700 or Spinning disk:",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 102
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 25802656096
+    }
+  ]
+}

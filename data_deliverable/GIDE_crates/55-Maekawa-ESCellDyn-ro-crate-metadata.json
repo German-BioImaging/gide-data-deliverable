@@ -1,0 +1,259 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/55-Maekawa-ESCellDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/55-Maekawa-ESCellDyn/",
+      "@type": "Dataset",
+      "identifier": "55-Maekawa-ESCellDyn",
+      "name": "Image data of of the three-dimensional-retinas from Fstl4",
+      "description": "55-Maekawa-ESCellDyn",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Differentiation",
+        "Cells, Cultured",
+        "Disease Models, Animal",
+        "Embryo, Mammalian",
+        "Human Embryonic Stem Cells/cytology[major]",
+        "Humans",
+        "Imaging, Three-Dimensional",
+        "Immunohistochemistry",
+        "Mice",
+        "Mice, Knockout",
+        "Nerve Degeneration/pathology",
+        "Nerve Degeneration/therapy[major]",
+        "Neurites/pathology[major]",
+        "Neuronal Outgrowth/physiology[major]",
+        "Retinal Ganglion Cells/pathology[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        },
+        {
+          "@id": "#auth-011"
+        },
+        {
+          "@id": "#auth-012"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.3109/02713683.2015.1038359"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-151"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Akishi Onishi",
+      "email": "aonishi@cdb.riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Yuki Maekawa"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Keizo Matsushita"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Naoshi Koide"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Michiko Mandai"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Kiyoshi Suzuma"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Takashi Kitaoka"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Atsushi Kuwahara"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Chikafumi Ozone"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Tokushige Nakano"
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Mototsugu Eiraku"
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Masayo Takahashi"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.3109/02713683.2015.1038359",
+      "@type": "ScholarlyArticle",
+      "name": "Optimized Culture System to Induce Neurite Outgrowth From Retinal Ganglion Cells in Three-Dimensional Retinal Aggregates Differentiated From Mouse and Human Embryonic Stem Cells.",
+      "datePublished": "2016"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "ES",
+      "description": "ES",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 57546435,
+      "description": "57.5 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 15,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

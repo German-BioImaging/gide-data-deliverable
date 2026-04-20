@@ -1,0 +1,367 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2515"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2515",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#99f3eee4-8506-4a4a-94fb-867fa2cb7468"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#76a61d27-9feb-404f-b042-9e68e2c12236"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8637-1448"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2676-5813"
+        },
+        {
+          "@id": "#80e6bf97-c53a-4fb1-9470-0d8043e98fd4"
+        },
+        {
+          "@id": "#1a130b97-32a5-406b-9684-a0d08e60506b"
+        },
+        {
+          "@id": "#081d098a-f010-4706-89e6-91ea08cdfc61"
+        },
+        {
+          "@id": "#76610d25-1c33-449f-b87d-482b69407856"
+        },
+        {
+          "@id": "#b91e76b8-18e4-4ba4-900c-e0f3753ab271"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0934-8201"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6041-3665"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0503-9348"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2026-01-21",
+      "description": "This dataset contains high-content, live-cell, time-lapse imaging of HeLa cells undergoing apoptosis across a 10-point dose response to the apoptosis inducer staurosporine. Using the ChromaLIVE™ Live Cell Painting assay, cells were imaged every 30 minutes over a six-hour period on the Yokogawa CellVoyager CQ1 spinning-disk confocal platform, capturing multiplexed fluorescence signals (Hoechst, ChromaLIVE 488_yellow, ChromaLIVE 488_red, and ChromaLIVE 561) across three z-planes at four fields of view per well. After live imaging, cells were fixed and stained with AnnexinV to provide a single-cell ground-truth readout of apoptosis.\n\nThe dataset includes raw and illumination-corrected images, cell segmentation masks, single-cell tracking outputs, and extracted morphological features generated using CellProfiler and scDINO deep-learning embeddings. In total, the dataset comprises over 188,000 single-cell observations and 20,677 cell tracks across time, with 2,336 curated morphology features per cell. These measurements quantify the dynamic morphological signatures preceding apoptosis and capture dose- and time-dependent phenotypic trajectories.\n\nThis resource enables the study of temporal morphology changes, benchmarking of image-based profiling pipelines, development of machine-learning models for early apoptosis prediction, and exploration of dynamic cell-state transitions. It supports future work such as profiling additional forms of regulated cell death and constructing temporal morphology atlases.\n",
+      "funder": [],
+      "identifier": "S-BIAD2515",
+      "keywords": [
+        "apoptosis",
+        "regulated cell death",
+        "time-lapse imaging",
+        "high-content imaging",
+        "live-cell imaging",
+        "morphological profiling",
+        "single-cell analysis",
+        "ChromaLIVE",
+        "Cell Painting",
+        "image-based profiling",
+        "cell tracking",
+        "Ultrack",
+        "CellProfiler",
+        "scDINO",
+        "deep learning embeddings",
+        "machine learning",
+        "staurosporine",
+        "dose-response",
+        "HeLa cells",
+        "Annexin V",
+        "phenotype dynamics",
+        "temporal morphology",
+        "bioimage analysis",
+        "fluorescence microscopy",
+        "cytometry by imaging",
+        "systems biology"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "High-content live-cell time-lapse imaging predicts cells about to die via apoptosis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2515/f4a63b01-7924-46e0-b5d9-e9b4a128856b/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#081d098a-f010-4706-89e6-91ea08cdfc61",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4cf2caa0-a99a-4ec7-a2b2-67d987c27dd2"
+        }
+      ],
+      "email": "Akiko.Nakade@yokogawa.com",
+      "name": "Akiko Nakde"
+    },
+    {
+      "@id": "#1a130b97-32a5-406b-9684-a0d08e60506b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4cf2caa0-a99a-4ec7-a2b2-67d987c27dd2"
+        }
+      ],
+      "email": "mahomi.suzuki@cellsignal.com",
+      "name": "Mahomi Suzuki"
+    },
+    {
+      "@id": "#76610d25-1c33-449f-b87d-482b69407856",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4cf2caa0-a99a-4ec7-a2b2-67d987c27dd2"
+        }
+      ],
+      "email": "Toshiaki.Endou@yokogawa.com",
+      "name": "Toshiaki Endou"
+    },
+    {
+      "@id": "#80e6bf97-c53a-4fb1-9470-0d8043e98fd4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#45adb958-58a5-4ba4-b2f6-befd800ec2a2"
+        }
+      ],
+      "email": "ibilem@saguarobio.com",
+      "name": "Ibrahim Bilem"
+    },
+    {
+      "@id": "#b91e76b8-18e4-4ba4-900c-e0f3753ab271",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#463b862a-b554-4f5e-9c1a-42dd7ddc5902"
+        }
+      ],
+      "email": "simon.mathien.1@umontreal.ca",
+      "name": "Simon Mathien"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6041-3665",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ad0f668-6640-42c5-8125-7eea44ddbf51"
+        }
+      ],
+      "email": "dave.bunten@cuanschutz.edu",
+      "name": "Dave Bunten"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0503-9348",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ad0f668-6640-42c5-8125-7eea44ddbf51"
+        }
+      ],
+      "email": "gregory.way@cuanschutz.edu",
+      "name": "Gregory P. Way"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0934-8201",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb255077-2aea-49ce-9ed6-8938acbe5c47"
+        }
+      ],
+      "email": "carla.basualto@uaysen.cl",
+      "name": "Carla Basualto-Alarcon"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8637-1448",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ad0f668-6640-42c5-8125-7eea44ddbf51"
+        }
+      ],
+      "email": "michael.lippincott@cuanschutz.edu",
+      "name": "Michael J. Lippincott"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2676-5813",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8ad0f668-6640-42c5-8125-7eea44ddbf51"
+        }
+      ],
+      "email": "enna.tomkinson@ucdenver.edu",
+      "name": "Jenna Tomkinson"
+    },
+    {
+      "@id": "#45adb958-58a5-4ba4-b2f6-befd800ec2a2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Saguaro Biosciences"
+    },
+    {
+      "@id": "#463b862a-b554-4f5e-9c1a-42dd7ddc5902",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute for Research in Immunology and Cancer, University of Montreal"
+    },
+    {
+      "@id": "#4cf2caa0-a99a-4ec7-a2b2-67d987c27dd2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Life Business Headquarters, Yokogawa Electric Corporation"
+    },
+    {
+      "@id": "#8ad0f668-6640-42c5-8125-7eea44ddbf51",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Department of Biomedical Informatics, University of Colorado Anschutz"
+    },
+    {
+      "@id": "#cb255077-2aea-49ce-9ed6-8938acbe5c47",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Health Sciences Department, Universidad de Aysén, Universidad de Chile"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#76a61d27-9feb-404f-b042-9e68e2c12236",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cell line (human cervical adenocarcinoma) - HeLa cells were exposed to a 10-point dose series of the apoptosis-inducing compound staurosporine and imaged over six hours using the ChromaLIVE™ Live Cell Painting assay. The study captures dynamic single-cell morphological changes during the onset and progression of apoptosis, with multiplexed fluorescence channels and terminal Annexin V staining used to establish ground-truth apoptotic states.",
+      "name": "High-content live-cell time-lapse imaging of apoptosis in HeLa cells treated with staurosporine",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#99f3eee4-8506-4a4a-94fb-867fa2cb7468",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired every 30 minutes for six hours.  \nFour fields of view (FOVs) per well were imaged, each with three z-slices spaced 3 µm apart.  \nChannels and exposure settings:  \n- CH1: Hoechst (excitation 405 nm; emission 447/60 nm; 300 ms exposure)  \n- CH2: ChromaLIVE 488_yellow (excitation 488 nm; emission 617/73 nm; 400 ms exposure)  \n- CH3: ChromaLIVE 488_red (excitation 488 nm; emission 685/40 nm; 400 ms exposure)  \n- CH4: ChromaLIVE 561 (excitation 561 nm; emission 617/73 nm; 400 ms exposure)  \n- CH5: Annexin V (terminal imaging only; excitation 640 nm; emission 685/40 nm; 400 ms exposure)\n",
+      "labEquipment": "Yokogawa CellVoyager CQ1 spinning-disk confocal microscope with an Olympus UPLXAPO 20× dry lens (0.75 NA)",
+      "measurementTechnique": [],
+      "name": "Live-cell time-lapse imaging of ChromaLIVE™- and Hoechst-stained HeLa cells"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6240
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 45085609920
+    }
+  ]
+}

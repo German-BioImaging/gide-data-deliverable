@@ -1,0 +1,203 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1634"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1634",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9a01b8c6-4fa0-42b8-b493-c5ba184a2ca5"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#574f7897-708b-40a0-91fd-85ee2602bc8a"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9103-6671"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7209-7636"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-12",
+      "description": "The mammary epithelium derives from multipotent mammary stem cells (MaSCs) that engage into differentiation during embryonic development. However, adult MaSCs maintain the ability to reactivate multipotency in non-physiological contexts. We previously reported that Notch1 activation in committed basal cells triggers a cell fate switch in the mouse mammary gland. Here, we tested the conservation of this mechanism and found that constitutive Notch1 signaling also induces a basal-to-luminal cell fate switch in adult cells of the lacrimal gland, the salivary gland, and the prostate. Since the lineage transition is progressive in time, we performed single cell transcriptomic analysis on index-sorted mammary cells at different stages of lineage conversion, to generate a temporal map of changes in cell identity. Combining single cell analyses with organoid assays, we demonstrate that proliferation is indispensable for lineage conversion. We also reveal the individual transcriptional landscapes controlling cellular plasticity of committed mammary cells in vivo with spatial and temporal resolution. Given the strong implications of Notch signaling in cancer, these results provide important insights into the mechanisms that drive cellular transformation.",
+      "funder": [],
+      "identifier": "S-BIAD1634",
+      "keywords": [
+        "Lineage conversion",
+        "Notch1 signaling",
+        "epithelial stem cells",
+        "plasticity"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Transcriptional landscapes underlying Notch-induced lineage conversion and plasticity of mammary basal cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1634/ab4ad345-bc45-44ae-abe3-bf748a1b499c/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9103-6671",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7c7fdeb-ad7a-4a7d-af7a-fc7039ae2383"
+        }
+      ],
+      "email": "merle.candice@gmail.com",
+      "name": "Candice Merle"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7209-7636",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7c7fdeb-ad7a-4a7d-af7a-fc7039ae2383"
+        }
+      ],
+      "email": "silvia.fre@curie.fr",
+      "name": "Silvia Fre"
+    },
+    {
+      "@id": "#f7c7fdeb-ad7a-4a7d-af7a-fc7039ae2383",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut Curie"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#574f7897-708b-40a0-91fd-85ee2602bc8a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mammary gland organoids from SMACreERT2/N1ICD mouse",
+      "name": "Mammary gland",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9a01b8c6-4fa0-42b8-b493-c5ba184a2ca5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For image acquisition of stained sections, a laser scanning confocal microscope (LSM780 or LSM880, Carl Zeiss) was used, equipped with a 40x/1.3 oil DICII PL APO objective. For image acquisition of organoids, we used an inverted spinning disk wide confocal microscope (CSU-W1, Nikon) equipped with a 40x/1.15 CFI APO LWD water objective",
+      "labEquipment": "Zeiss LSM780 or LSM880",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 147
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 14352787809
+    }
+  ]
+}

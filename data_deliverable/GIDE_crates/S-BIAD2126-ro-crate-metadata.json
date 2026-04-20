@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2126"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2126",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#834bedb0-5ecb-4db9-b527-bcfe47f9de83"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7114b80c-020d-4a56-add0-de9cf2acba86"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-7345-7429"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-02",
+      "description": "Integration of scRNA-seq data from millions of cells revealed a high diversity of cell types in the healthy and diseased human lung. In a large and complex organ, constantly exposed to external agents, it is crucial to understand the influence of lung tissue topography or external factors on gene expression variability within cell types. Here, we applied three spatial transcriptomics approaches, to: (i) localize the majority of lung cell types, including rare epithelial cells within the tissue topography, (ii) describe consistent anatomical and regional gene expression variability within and across cell types, and (iii) reveal distinct cellular neighborhoods in specific anatomical regions and examine gene expression variations in them. We thus provide a spatially resolved tissue reference atlas in three representative regions of the healthy human lung. We further demonstrate its utility by defining previously unknown imbalances of epithelial cell type compositions in stage II COPD tissues. Our topographic atlas enables a precise description of characteristic regional cellular responses upon experimental perturbations or during disease progression.",
+      "funder": [],
+      "identifier": "S-BIAD2126",
+      "keywords": [
+        "human",
+        "lung",
+        "adult",
+        "healthy",
+        "single cell",
+        "atlas"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Human lung atlas: Spatial single cell atlas reveals regional variations in healthy and diseased human lung ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2126/2c305260-45c4-42dd-8dc3-b545fa43777a/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7345-7429",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05f0yaq80"
+        }
+      ],
+      "email": "alexandra.firsova@gmail.com",
+      "name": "Alexandra Firsova"
+    },
+    {
+      "@id": "https://ror.org/05f0yaq80",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stockholm University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#7114b80c-020d-4a56-add0-de9cf2acba86",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Distal lung",
+      "name": "Human healthy adult lung",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#834bedb0-5ecb-4db9-b527-bcfe47f9de83",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Can be accessed in czi file.",
+      "labEquipment": "Zeiss Axio Observer Z.2, Carl Zeiss Microscopy GmbH, with a Colibri led light source, equipped with a Zeiss AxioCam 506 Mono digital camera and an automated stage",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 317610525
+    }
+  ]
+}

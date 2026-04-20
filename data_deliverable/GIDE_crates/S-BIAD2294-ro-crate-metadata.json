@@ -1,0 +1,230 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2294"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2294",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#96694889-a870-4dec-85e0-5072973da049"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8b131c8c-2386-4b3f-bb2b-963b08508549"
+        },
+        {
+          "@id": "#15f3202f-cf7c-4064-8ee8-23d5bbe3dd05"
+        },
+        {
+          "@id": "obo:NCBITaxon_562"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0008-5507-541X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3100-7275"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-27",
+      "description": "Human immune protection against bacteria critically depends on activation of the complement system. The direct bacteriolytic activity of complement molecules against Gram-negative bacteria acts via the formation of Membrane Attack Complex (MAC) pores. Bactericidal MAC pores damage the bacterial outer membrane, leading to destabilization of the inner membrane. Although it is well-established that inner membrane damage is crucial for bacterial cell death, the critical event causing MAC-mediated inner membrane damage remains elusive. Here we questioned whether the bacterial cell envelope possesses vulnerable spots for MAC pores to insert. We followed the localization of MAC pores on E. coli over time using fluorescence microscopy and elucidate that MAC deposition initiates at the new bacterial pole, which induces inner membrane damage and halts bacterial division. MAC components C8 and C9 preferentially localize at new bacterial poles, while C3b localizes randomly on the bacterial surface. This suggests that preferential MAC localization is determined by one of the initial steps of MAC formation. These findings provide valuable information about the interplay between immune components and the Gram-negative cell envelope.",
+      "funder": [],
+      "identifier": "S-BIAD2294",
+      "keywords": [
+        "Complement System",
+        "Membrane Attack Complex",
+        "Gram-negative",
+        "Microscopy"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Bactericidal Membrane Attack Complex formation initiates at the new pole of E. coli",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2294/2f08e1ed-0a9c-43fd-aadf-04c2c8fdd02d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3100-7275",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1187dc20-2fc0-45c2-b92a-fc4eb6d6e47a"
+        }
+      ],
+      "email": "d.a.c.heesterbeek-2@umcutrecht.nl",
+      "name": "Dani Heesterbeek"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-5507-541X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1187dc20-2fc0-45c2-b92a-fc4eb6d6e47a"
+        }
+      ],
+      "email": "m.f.l.vantwout-2@umcutrecht.nl",
+      "name": "Marije van 't Wout"
+    },
+    {
+      "@id": "#1187dc20-2fc0-45c2-b92a-fc4eb6d6e47a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Medical Center Utrecht"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_562",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli"
+    },
+    {
+      "@id": "#15f3202f-cf7c-4064-8ee8-23d5bbe3dd05",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli clinical isolate EC10.",
+      "name": "EC10",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#8b131c8c-2386-4b3f-bb2b-963b08508549",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Escherichia coli strain MG1655.",
+      "name": "MG1655",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#96694889-a870-4dec-85e0-5072973da049",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fluorescence was detected using Y5, GFP, YFP and CFP filter cubes.",
+      "labEquipment": "Leica SP5 equipped with a HC PL APO100x/1.40 OIL PH3 objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 906
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3954730824
+    }
+  ]
+}

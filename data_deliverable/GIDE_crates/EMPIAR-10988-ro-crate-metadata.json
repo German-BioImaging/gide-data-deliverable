@@ -1,0 +1,196 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10988"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10988",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9316742a-a394-4fcc-b53d-1ea62ff67e27"
+        },
+        {
+          "@id": "#d0ca4ed7-17de-4de7-a0da-ea072e1cb8aa"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#faee1828-591d-4ef8-b9c4-276d3897d52e"
+        },
+        {
+          "@id": "obo:NCBITaxon_4896"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9903-3667"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6968-041X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2022-11-17",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-10988",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Defocus and Volta potential phase plate cryo-electron tomography of S. pombe cryo-FIB lamellae with comprehensive annotations of structures and macromolecules",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6968-041X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Mahamid J"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9903-3667",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Goetz SK"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4896",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Schizosaccharomyces pombe"
+    },
+    {
+      "@id": "#faee1828-591d-4ef8-b9c4-276d3897d52e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "S. pombe K972 Sp h- wild-type haploid cells.",
+      "name": "_:S. pombe wild-type cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4896"
+      }
+    },
+    {
+      "@id": "#9316742a-a394-4fcc-b53d-1ea62ff67e27",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Milled lamellae were loaded into a Titan Krios (Thermo Fisher Scientific) such that the axis of the pre-tilt introduced by FIB milling was aligned perpendicular to the tilt axis of the microscope. Tomograms were acquired on a K2 Summit direct detection camera (Gatan) operating in dose fractionation mode utilizing a Quantum post-column energy filter operated at zero-loss (Gatan). A calibrated pixel size of 3.37 Å was used. Up to 14 tilt series were collected on a single lamella in low dose mode using SerialEM. Starting from the lamella pre-tilt, images were acquired in 2° increments within a range of +58° to −40° using a dose-symmetric tilt scheme with a constant electron dose per tilt image. For ground truth data, a set of ten tilt series were collected with a 70 μm objective aperture.",
+      "labEquipment": "Titan Krios (Thermo Fisher Scientific) microscope with K2 Summit direct detection camera (Gatan) operating in dose fractionation mode utilizing a Quantum post-column energy filter operated at zero-loss (Gatan).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "Cryo-electron tomography, defocus only"
+    },
+    {
+      "@id": "#d0ca4ed7-17de-4de7-a0da-ea072e1cb8aa",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Milled lamellae were loaded into a Titan Krios (Thermo Fisher Scientific) such that the axis of the pre-tilt introduced by FIB milling was aligned perpendicular to the tilt axis of the microscope. Tomograms were acquired on a K2 Summit direct detection camera (Gatan) operating in dose fractionation mode utilizing a Quantum post-column energy filter operated at zero-loss (Gatan). A calibrated pixel size of 3.37 Å was used. Up to 14 tilt series were collected on a single lamella in low dose mode using SerialEM. Starting from the lamella pre-tilt, images were acquired in 2° increments within a range of +58° to −40° using a dose-symmetric tilt scheme with a constant electron dose per tilt image. For ground truth data, a set of ten tilt series were collected with a VPP56 (Thermo Fisher Scientific) with prior conditioning for 5 min.",
+      "labEquipment": "Titan Krios (Thermo Fisher Scientific) microscope with K2 Summit direct detection camera (Gatan) operating in dose fractionation mode utilizing a Quantum post-column energy filter operated at zero-loss (Gatan).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "Cryo-electron tomography, defocus and Volta phase plate"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1183
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 124398730506
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2075"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2075",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#75a42f57-d9e2-4222-bb68-99da476878f6"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#325af2fa-7bb1-431d-90ac-78bee5323d7e"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3593-0462"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3050-4168"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-02",
+      "description": "Images associated with Romay et al. NCVR, DOI: ",
+      "funder": [],
+      "identifier": "S-BIAD2075",
+      "keywords": [
+        "vascular smooth muscle",
+        "aorta",
+        "sex differences",
+        "confocal",
+        "immunofluorescence ",
+        "mouse"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "REGION-SPECIFIC GENE EXPRESSION AND SEX INFORM ABOUT DISEASE SUSCEPTIBILITY IN THE AORTA ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2075/2002c008-6083-4436-9939-b302ae81351c/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3050-4168",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3b97d1bb-c187-4bae-90ab-183d8b03130b"
+        }
+      ],
+      "email": "arispe@northwestern.edu",
+      "name": "Luisa Iruela-Arispe"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3593-0462",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3b97d1bb-c187-4bae-90ab-183d8b03130b"
+        }
+      ],
+      "email": "milagros.romay@northwestern.edu",
+      "name": "Milagros Romay"
+    },
+    {
+      "@id": "#3b97d1bb-c187-4bae-90ab-183d8b03130b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Northwestern University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#325af2fa-7bb1-431d-90ac-78bee5323d7e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Blood Vessel sections - transverse cut, paraffin embedded, formalin fixed tissues",
+      "name": "Biosample1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#75a42f57-d9e2-4222-bb68-99da476878f6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fixed and stained sections were mounted on to the slide holder and images were captured in full span of z-length. ",
+      "labEquipment": "Nikon Yokogawa (CSU-W1) equipped with 20X air and 40X, 100X oil objectives",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Validation of scRNASeq"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1076
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2252171264232
+    }
+  ]
+}

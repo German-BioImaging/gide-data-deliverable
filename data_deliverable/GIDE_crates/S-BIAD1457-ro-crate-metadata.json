@@ -1,0 +1,262 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1457"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1457",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c1af134c-7368-4d04-9b5b-d65dcc4c5e7b"
+        },
+        {
+          "@id": "#e3189067-6365-4275-a2bf-7efde09547b9"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#59199674-4e31-40df-b00c-7ebda1b95c4b"
+        },
+        {
+          "@id": "#0000452f-aef2-4cba-9c85-a31162816f9a"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0311-1887"
+        },
+        {
+          "@id": "#6813f65f-371c-4434-9ac3-ac8e2c6a9a8a"
+        },
+        {
+          "@id": "#c0ab7cf5-744a-42d4-8976-bdff06709f24"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-01",
+      "description": "DNA methylation (DNAme) serves a stable gene regulatory function in somatic cells. In the germ line and during early embryogenesis, however, DNAme undergoes global erasure and re-establishment to support germ cell and embryonic development. While de novo DNAme acquisition during male germ cell development is essential for setting genomic DNA methylation imprints, other intergenerational roles for paternal DNAme in defining embryonic chromatin after fertilization are unknown. To approach this question, we reduce levels of DNAme in developing male germ cells through conditional gene deletion of the de novo DNA methyltransferases DNMT3A and DNMT3B in undifferentiated spermatogonia. We observe that DNMT3A primarily safeguards against DNA hypomethylation in undifferentiated spermatogonia, while DNMT3B catalyzes de novo DNAme during spermatogonial differentiation. Mutant male germ cells nevertheless complete their differentiation to sperm. Failing de novo DNAme in Dnmt3a/Dnmt3b double deficient spermatogonia is associated with increased nucleosome occupancy in mature sperm, preferentially at sites with higher CpG content, supporting the model that DNAme modulates nucleosome retention in sperm. To assess the impact of altered sperm chromatin in the formation of embryonic chromatin, we measure H3K4me3 occupancy at paternal and maternal alleles in 2-cell embryos using a transposon-based tagging assay for modified chromatin. Our data show that reduced DNAme in sperm renders paternal alleles permissive for H3K4me3 establishment in early embryos, independently of possible paternal inheritance of sperm born H3K4me3. Together, this study provides  evidence that paternally inherited DNAme directs chromatin formation during early embryonic development.  ",
+      "funder": [],
+      "identifier": "S-BIAD1457",
+      "keywords": [
+        "Sperm",
+        "DNA methylation",
+        "Nucleosome retention",
+        "Epigenetic inheritance",
+        "H3K4me3",
+        "H3K36me3"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "DNA methylation modulates nucleosome retention in sperm and H3K4 methylation deposition in early mouse embryos.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1457/8dd86e3f-3308-4b7a-a8fc-b3fccc3e31bd/fab446a3-2ccb-474f-a2bc-5a3f72a8d553.png"
+      ]
+    },
+    {
+      "@id": "#6813f65f-371c-4434-9ac3-ac8e2c6a9a8a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3015d5cf-52c1-438b-8ac2-6a289db2a853"
+        }
+      ],
+      "email": "grigorios.fanourgakis@fmi.ch",
+      "name": "Grigorios Fanourgakis"
+    },
+    {
+      "@id": "#c0ab7cf5-744a-42d4-8976-bdff06709f24",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3015d5cf-52c1-438b-8ac2-6a289db2a853"
+        }
+      ],
+      "email": "pavel.komarov@fmi.ch",
+      "name": "Pavel Komarov"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0311-1887",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3015d5cf-52c1-438b-8ac2-6a289db2a853"
+        }
+      ],
+      "email": "peterslab@fmi.ch",
+      "name": "Antoine Peters"
+    },
+    {
+      "@id": "#3015d5cf-52c1-438b-8ac2-6a289db2a853",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Friedrich Miescher Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#0000452f-aef2-4cba-9c85-a31162816f9a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mus Musculus Testis",
+      "name": "Testis Section",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#59199674-4e31-40df-b00c-7ebda1b95c4b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mus Musculus Testis",
+      "name": "Whole mount testicular seminiferous tubules",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#c1af134c-7368-4d04-9b5b-d65dcc4c5e7b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were obtained using spinning disk confocal scanning unit Yokogawa CSU W1 Dual T2 with 100x/1.4 oil immersion objective. ",
+      "labEquipment": "Yokogawa CSU W1 Dual T2",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Yokogawa CSU W1 Dual T2"
+    },
+    {
+      "@id": "#e3189067-6365-4275-a2bf-7efde09547b9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired using motorized automated slide Scanner Zeiss Axioscan Z1 with 40x air objective and analyzed with ZEN blue software (version 2.3, Zeiss). ",
+      "labEquipment": "Slide Scanner Zeiss Axioscan Z1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Slide Scanner Zeiss Axioscan Z1"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 20
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 331125058024
+    }
+  ]
+}

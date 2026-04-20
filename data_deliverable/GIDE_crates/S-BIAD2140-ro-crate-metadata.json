@@ -1,0 +1,281 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2140"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2140",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ea7116aa-03cb-4333-a6df-06081f491fc5"
+        },
+        {
+          "@id": "#5319bcf9-32bd-4f0c-aff5-c39c5b2c24a8"
+        },
+        {
+          "@id": "#6fad545d-410d-4ce2-91c0-9d157cb62bcc"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5471b2b2-0328-4ebc-9dad-83c0971cf010"
+        },
+        {
+          "@id": "#08ac7fbb-3c08-448b-b8ea-53d022fb4203"
+        },
+        {
+          "@id": "#215cd4d6-78e2-4c86-85a9-07f1b66e0af8"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0090-8153"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-06",
+      "description": "During sensitive postnatal periods, brain neural circuits undergo significant refinement coincident with widespread occurrence of neuronal alternative splicing events in which hundreds of genes alter splice site selection to generate isoforms essential for synaptic plasticity. Here, we reveal that neuronal activity-dependent serine119 phosphorylation of paxillin (p-PaxillinS119) acts as a molecular switch in the nucleus to modulate alternative splicing during this period. We report that following NMDA receptor activation, nuclear p-PaxillinS119 is recruited to nuclear speckles, where it interacts with U2AFs and splicing factors. Neuronal paxillin expression is required for timely alternative splicing of synaptic factors, including Snap25. Consequently, young mice lacking paxillin S119 phosphorylation exhibit significantly reduced levels of Snap25-5b isoforms, impaired presynaptic function at hippocampal Schaffer collateral-CA1 synapses, and deficits in short-term learning and memory. These findings support the idea that nuclear p-Paxillin S119 is a critical mediator of alternative splicing programs in postnatal neurons during a sensitive period essential for neural plasticity.",
+      "funder": [],
+      "identifier": "S-BIAD2140",
+      "keywords": [
+        "Alternative splicing",
+        "brain critical time window",
+        "Neuron development",
+        "paxillin",
+        "phosphorylation",
+        "nuclear speckles"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Nuclear Paxillin Modulates Alternative Splicing Programs in Neurons during Sensitive Periods of Brain Development ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2140/0c381add-0243-4f8e-962c-82f2a9efc8e0/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0090-8153",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05bxb3784"
+        }
+      ],
+      "email": "peilincheng@as.edu.tw",
+      "name": "Pei-Lin Cheng"
+    },
+    {
+      "@id": "https://ror.org/05bxb3784",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Academia Sinica"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#08ac7fbb-3c08-448b-b8ea-53d022fb4203",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain slice",
+      "name": "mouse brain section",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#215cd4d6-78e2-4c86-85a9-07f1b66e0af8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse brain slice",
+      "name": "BaseScope",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#5471b2b2-0328-4ebc-9dad-83c0971cf010",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Primary cortical neurons",
+      "name": "Primary Neuron Cultures",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#5319bcf9-32bd-4f0c-aff5-c39c5b2c24a8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The fixed brain tissue slides were processed immunostaining staining according to standard procedures and imaged withand imaged with ZEISS Axioscan 7 Microscope Slide Scanner equipped with a 20X /0.8 M27 Objective. Select a pre-defined profile FL: fluorescence. Select three channelsfor scanning with LED light source module 385nm, 475nm 567nm. Choose the sample detection mode : manual mode and delineate the sample detection area. Correct focus strategy by adding or removing focus points within the sample detection area. Set 10 layers of Z-stack with 3um interval. Start to automaticly scan the slides.",
+      "labEquipment": "ZEISS Axioscan 7 with Axiocam 705 color camera, Plan Apochromat 20X /0.8 M27 Objective. Fluorescence image taken by Axiocam 712 mono camera with Colibri 7 light source and the filter set: 412-438, 501-527, 583-601.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "mouse brain section"
+    },
+    {
+      "@id": "#6fad545d-410d-4ce2-91c0-9d157cb62bcc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The fixed brain tissue slides were processed staining according to BaseScope (Advanced Cell Diagnostics) procedures and imaged with ZEISS Axioscan 7 Microscope Slide Scanner equipped with a 20X /0.8 M27 Objective. Select a pre-defined profile BF: brightfield. Choose the sample detection mode : manual mode and delineate the sample detection area. Correct focus strategy by adding or removing focus points within the sample detection area. Start to automaticly scan the slides.",
+      "labEquipment": "ZEISS Axioscan 7 with Axiocam 705 color camera, Plan Apochromat 20X /0.8 M27 Objective. Color bright field light source is TL LED lamp.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "BaseScope"
+    },
+    {
+      "@id": "#ea7116aa-03cb-4333-a6df-06081f491fc5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The fixed cells were processed further for immunostaining according to standard procedures and imaged with a confocal microscope (Zeiss LSM700) equipped with a  40 × water immersion objective (NA1.1; Zeiss). Surface rendering of three-dimensional images was performed using ZEN software (Zeiss) and Imaris software (Bitplane) without Z-correction. Images were analyzed and processed for presentation in figures using brightness and contrast adjustments in ImageJ software (NIH) and following the guidelines of (Rossner and Yamada, 2004).",
+      "labEquipment": "The fixed cells were processed further for immunostaining according to standard procedures and imaged with a confocal microscope (Zeiss LSM700) equipped with a  40 × water immersion objective (NA1.1; Zeiss). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Fixed primary neurons"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 219
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4304426942
+    }
+  ]
+}

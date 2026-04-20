@@ -1,0 +1,289 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1377"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1377",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c4241257-e6f7-481c-bbab-7d6c6c223a3c"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#570b7e01-2354-4d81-8e70-fc2c346319b5"
+        },
+        {
+          "@id": "obo:NCBITaxon_9615"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#b3270b02-021a-4e8b-b90a-ccfe4c9f9f53"
+        },
+        {
+          "@id": "#68678e37-97e6-40ae-9a61-8a206c0c0cae"
+        },
+        {
+          "@id": "#fade829e-fee2-45f6-bf5d-b3fa7e8388f7"
+        },
+        {
+          "@id": "https://orcid.org/0009-0001-0166-0399"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8462-2883"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-27",
+      "description": "This data was selected as part of the AI4Life Open Calls 2023 for image analysis consultation and deep-learning applications.",
+      "funder": [],
+      "identifier": "S-BIAD1377",
+      "keywords": [
+        "AI4Life Open Call",
+        "tracking",
+        "segmentation",
+        "wound healing",
+        "epithelial",
+        "confocal",
+        "nucleus",
+        "fluorescence",
+        "AI4Life"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Segmentation and Tracking of Wound Healing Assays in Epithelial Cells Using Artificial Intelligence",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1377/432cff9c-e263-46ab-84e8-96e76abe9ee9/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#68678e37-97e6-40ae-9a61-8a206c0c0cae",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8255a447-1214-47a0-8919-06dc7702caad"
+        }
+      ],
+      "email": "Rafael.Garciamata@utoledo.edu",
+      "name": "Rafael Garcia-Mata"
+    },
+    {
+      "@id": "#b3270b02-021a-4e8b-b90a-ccfe4c9f9f53",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8255a447-1214-47a0-8919-06dc7702caad"
+        }
+      ],
+      "email": "Madeline.Lovejoy@rockets.utoledo.edu",
+      "name": "Madeline Lovejoy"
+    },
+    {
+      "@id": "#fade829e-fee2-45f6-bf5d-b3fa7e8388f7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8255a447-1214-47a0-8919-06dc7702caad"
+        }
+      ],
+      "email": "Gideon.Jensen@rockets.utoledo.edu",
+      "name": "Gideon Jensen "
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8462-2883",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "email": "joran.deschamps@fht.org",
+      "name": "Joran Deschamps"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-0166-0399",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "email": "vera.galinova@fht.org",
+      "name": "Vera Galinova"
+    },
+    {
+      "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Human Technopole"
+    },
+    {
+      "@id": "#8255a447-1214-47a0-8919-06dc7702caad",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Toledo"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9615",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Canis lupus familiaris"
+    },
+    {
+      "@id": "#570b7e01-2354-4d81-8e70-fc2c346319b5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Confluent monolayer wound healing assay",
+      "name": "Madin darby canine kidney cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9615"
+      }
+    },
+    {
+      "@id": "#c4241257-e6f7-481c-bbab-7d6c6c223a3c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The monolayer of cells stably expressing scarlet CAAX and GFP H2B markers was imaged two hours after scratching. Images were acquired using the 20x objective on the Andor Dragonfly 200 Confocal Microscope equipped with an Ibidi Stage Top Incubation System with CO2 control. The 488 nm laser was used to visualize nuclei (GFP histone 2B) at 5% laser power, and the 594 nm laser was used to image the cell membrane (scarlet CAAX) at 3% laser power.  Exposure time for the green channel was 400ms and exposure for the red channel was 350ms. Four fields of view per wound were selected based on the parameters of cell reattachment, as well as visible fluorescent expression. Fifteen micrometers of the Z-plane were captured for every field of view with eight steps that were two micrometers apart. Images were acquired every fifteen minutes for a duration of sixteen hours.",
+      "labEquipment": "Andor Dragonfly 200 Confocal Microscope equipped with an Ibidi Stage Top Incubation System with CO2 control",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Live Spinning Disk Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2152975893
+    }
+  ]
+}

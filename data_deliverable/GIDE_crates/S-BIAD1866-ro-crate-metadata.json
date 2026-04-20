@@ -1,0 +1,395 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1866"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1866",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4c2c4ea1-6a5d-40d8-ba45-877ee859588e"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1fb0e33f-9de7-4ea8-8ca1-6c543400c2b0"
+        },
+        {
+          "@id": "obo:NCBITaxon_185431"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ae8b5990-614d-4777-b017-8b05ac7b954b"
+        },
+        {
+          "@id": "#7a20cbd8-4d2d-4955-91b5-81700c827334"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1448-8441"
+        },
+        {
+          "@id": "#5d281aea-5eb7-4c3f-92d8-d85f3be60d7d"
+        },
+        {
+          "@id": "#62b62d7a-a8f1-4fc5-8f8b-e48ac2f38a0e"
+        },
+        {
+          "@id": "#afbcb9a1-824d-4ad8-b64f-2d122938a414"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6435-7266"
+        },
+        {
+          "@id": "#c40b67e0-fb69-4b8c-8af5-c42bb29362ee"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0729-6479"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4792-2198"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2836-9622"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4270-8360"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6954-9569"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-06",
+      "description": "TrypTag genome-wide protein localisation project data. Widefield epifluorescence microscope images of protein subcellular localisation in the unicellular eukaryotic pathogen Trypanosoma brucei by endogenous tagging with mNeonGreen (mNG). This deposition includes the localisations, ontology and microscopy data used to build the TrypTag database. Data can also be browsed at TrypTag.org.\n\nIf you use this data resource please cite Billington et al. 2023 Nature Microbiology (doi:10.1038/s41564-022-01295-6). We recommend including this citation in the results or methods if TrypTag was used as part of a discovery process. If directly using TrypTag images, please also indicate in the figure legend or similar which images are from TrypTag. If carrying out a large-scale data analysis, please also cite this BioStudies deposition.\n\nData can be mined via the cellular localization imaging or cellular component GO term searches at the genome database TriTrypDB.org (part of VEuPathDB). If you do, please also cite the genome database.\n\nYou may also find the following papers informative: Dean et al. 2016 Trends in Parasitology (doi:10.1016/j.pt.2016.10.009), which describes the original project aims and workflow. Halliday et al. 2019 Molecular and Biochemical Parasitology (doi:10.1016/j.molbiopara.2018.12.003), which describes the localisation ontology with example images and comparison to Leishmania.",
+      "funder": [],
+      "identifier": "S-BIAD1866",
+      "keywords": [
+        "Parasitology",
+        "Molecular biology",
+        "Organelles",
+        "Pathogens",
+        "High-throughput screening"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "TrypTag: Genome-wide subcellular protein localisation in Trypanosoma brucei.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1866/3d6f0d73-85cd-4c07-b628-b96b36795936/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#5d281aea-5eb7-4c3f-92d8-d85f3be60d7d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "name": "Philip Dyer"
+    },
+    {
+      "@id": "#62b62d7a-a8f1-4fc5-8f8b-e48ac2f38a0e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "name": "Amy Rachel Barker"
+    },
+    {
+      "@id": "#7a20cbd8-4d2d-4955-91b5-81700c827334",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "name": "Claire Halliday"
+    },
+    {
+      "@id": "#ae8b5990-614d-4777-b017-8b05ac7b954b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "name": "Karen Billington"
+    },
+    {
+      "@id": "#afbcb9a1-824d-4ad8-b64f-2d122938a414",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5babdc98-1487-4b96-be77-f00c9fbdfd54"
+        }
+      ],
+      "name": "Flávia Fernandes Moreira-Leite"
+    },
+    {
+      "@id": "#c40b67e0-fb69-4b8c-8af5-c42bb29362ee",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5babdc98-1487-4b96-be77-f00c9fbdfd54"
+        }
+      ],
+      "name": "Sue Vaughan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6954-9569",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "name": "Keith Gull"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0729-6479",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f3ec48df-247e-4113-8ccd-8d3ba59bacc2"
+        }
+      ],
+      "name": "Christiane Hertz-Fowler"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2836-9622",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5babdc98-1487-4b96-be77-f00c9fbdfd54"
+        }
+      ],
+      "name": "Jack Daniel Sunter"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4270-8360",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "name": "Richard John Wheeler"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4792-2198",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cbe5d72e-b743-4b81-beba-3f0841471156"
+        }
+      ],
+      "name": "Samuel Dean"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6435-7266",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "name": "Mark Carrington"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1448-8441",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "name": "Ross Madden"
+    },
+    {
+      "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "#5babdc98-1487-4b96-be77-f00c9fbdfd54",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Oxford Brookes University"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "#cbe5d72e-b743-4b81-beba-3f0841471156",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Warwick"
+    },
+    {
+      "@id": "#f3ec48df-247e-4113-8ccd-8d3ba59bacc2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Liverpool"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_185431",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Trypanosoma brucei brucei TREU927"
+    },
+    {
+      "@id": "#1fb0e33f-9de7-4ea8-8ca1-6c543400c2b0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Individual cell lines expressing proteins tagged by fusion with the fluorescent protein mNeonGreen at their endogenous locus.",
+      "name": "Trypanosoma brucei brucei TREU927",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_185431"
+      }
+    },
+    {
+      "@id": "#4c2c4ea1-6a5d-40d8-ba45-877ee859588e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Microscopy was carried out on live cells. As they are motile, the cells were washed three times with phosphate-buffered saline, which allows them to adhere to glass. Hoechst 33342 (500 ng /ml was included in the first wash to stain the DNA79.  mNG fluorescence was captured using the L5 filter cube, excitation 480/40 nm, dichroic 505 nm and emission 527/30 nm. A standard exposure time of 2,000 ms was used, unless the mNG signal was particularly bright. Typically, four to five fields of view (aiming for 200 or more cells) were captured, with more when a cell line was identified as having a rare (that is, cell cycle/dependent) signal.",
+      "labEquipment": "Micrographs were captured on a Leica DM5500 B epifluorescence microscope with a 100 W mercury arc lamp and either a 100× or 63× NA 1.4 oil immersion objective (the vast majority at 63×) and an Andor Neo 5.5 sCMOS camera running in 16-bit high well capacity mode, using Micromanager (no single version, updated over the course of data collection).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "High throughput imaging of Trypanosoma brucei brucei"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 277557
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3155387188647
+    }
+  ]
+}

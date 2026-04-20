@@ -1,0 +1,320 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/329-Nelson-Chemotaxis/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/329-Nelson-Chemotaxis/",
+      "@type": "Dataset",
+      "identifier": "329-Nelson-Chemotaxis",
+      "name": "Ammonium chemotaxis\nof Chlamydomonas reinhardtii",
+      "description": "329-Nelson-Chemotaxis",
+      "datePublished": "2025-01-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-023-36818-6"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "#biosample-5"
+        },
+        {
+          "@id": "#biosample-6"
+        },
+        {
+          "@id": "#biosample-7"
+        },
+        {
+          "@id": "#biosample-8"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0060326"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000240"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1506"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Naohiro Kato",
+      "email": "kato@lsu.edu",
+      "description": "Organization: Louisiana State University; Department: Department of Biological Sciences; Laboratory: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05ect4e57"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Gabela Nelson"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Alexis Strain"
+    },
+    {
+      "@id": "https://ror.org/05ect4e57",
+      "@type": "Organization",
+      "name": "Louisiana State University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-023-36818-6",
+      "@type": "ScholarlyArticle",
+      "name": "Cells collectively migrate during ammonium chemotaxis in Chlamydomonas reinhardtii.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "CC-124",
+      "description": "CC-124",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "CC-124, CC-125",
+      "description": "CC-124, CC-125",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "CC-613",
+      "description": "CC-613",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-4",
+      "@type": "BioSample",
+      "name": "CC-1036",
+      "description": "CC-1036",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-5",
+      "@type": "BioSample",
+      "name": "CC-4316",
+      "description": "CC-4316",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-6",
+      "@type": "BioSample",
+      "name": "CC-2894",
+      "description": "CC-2894",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-7",
+      "@type": "BioSample",
+      "name": "CC-4042",
+      "description": "CC-4042",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-8",
+      "@type": "BioSample",
+      "name": "CC-125",
+      "description": "CC-125",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055",
+      "@type": "Taxon",
+      "scientificName": "Chlamydomonas reinhardtii"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060326",
+      "@type": "DefinedTerm",
+      "name": "cell chemotaxis"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "macroscopy",
+      "description": "macroscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000240"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "microscopy",
+      "description": "microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000240",
+      "@type": "DefinedTerm",
+      "name": "macroscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000241",
+      "@type": "DefinedTerm",
+      "name": "microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 486482724,
+      "description": "486.5 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 153,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

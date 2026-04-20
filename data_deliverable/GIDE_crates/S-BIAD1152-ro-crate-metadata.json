@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1152"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1152",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#afa32ef5-64fd-4e0a-b86c-283c89e4309a"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0fada455-94aa-4abe-a5bc-70c8420a3c20"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#27ebf269-3d3c-41a3-8b87-0bfb844718c7"
+        },
+        {
+          "@id": "#24565e54-76d7-42f7-be77-3157f3b90e37"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-29",
+      "description": "Immunofluorescence images for the aforementioned study. ",
+      "funder": [],
+      "identifier": "S-BIAD1152",
+      "keywords": [
+        "SMC5",
+        "APOBEC3A"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The SMC5/6 complex prevents genotoxicity upon APOBEC3A-mediated replication stress",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1152/caedddd0-1681-4bba-9c7c-cd9918f508f4/d3460aa6-d4b9-499a-bd79-03ecef507858.png"
+      ]
+    },
+    {
+      "@id": "#24565e54-76d7-42f7-be77-3157f3b90e37",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#63b21d85-d358-4aeb-916a-dfceb75db76b"
+        }
+      ],
+      "email": "abby.green@wustl.edu",
+      "name": "Abby Green"
+    },
+    {
+      "@id": "#27ebf269-3d3c-41a3-8b87-0bfb844718c7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#63b21d85-d358-4aeb-916a-dfceb75db76b"
+        }
+      ],
+      "email": "d.f.fingerman@wustl.edu",
+      "name": "Dylan Fingerman"
+    },
+    {
+      "@id": "#63b21d85-d358-4aeb-916a-dfceb75db76b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Washington University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0fada455-94aa-4abe-a5bc-70c8420a3c20",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cultured Cells",
+      "name": "K562-A3A",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#afa32ef5-64fd-4e0a-b86c-283c89e4309a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "741 mg/mL propidium iodide (Biotum).Data were collected using an Accuri C6 Flow Cytometerand analyzed by FlowJo software. Immunoblotting and Immunofluorescence. For immunofluorescence, cells were cultured on cover slips. Following treatment, cells were pre-extracted using 0.5% Triton-X in PBS for 15 minutes on ice to visualize chromatin-bound proteins (i.e. RPA). All other immunofluorescence experiments proceeded as followed: cells were fixed with 4% paraformaldehyde for 15 minutes at room temperature(RT), permeabilized with 0.5% Triton-X for 10 minutes at RT, and blocked with 5% BS for 1 hour at RT. Primary antibodies were diluted in 5% BSA and incubated with slides for1 hour to overnight. Secondary antibodies used were anti-mouse or rabbit Alexa Fluor488 and 568 (BD Biosciences). Nuclei were visualized by 4.6-diamidino-2-phenylindole (DAPI, ThermoFisher). Images were acquired using an inverted fluorescent microscope with attached camera(Leica)and processed using ImageJ. Protein foci and cell staining were analyzed in a blinded fashion",
+      "labEquipment": "LEICA",
+      "measurementTechnique": [],
+      "name": "K562-A3A"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 594
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1903819768
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD968"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD968",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0dbf5a8e-4fc5-4683-9061-25664563f27a"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#de27eae1-4847-4f3a-8875-30096a5eed50"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#1d07cf98-cd8c-4e10-a76a-a68ad29cf253"
+        },
+        {
+          "@id": "#8afb2c04-2799-4d84-a35b-90b2ef763146"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-15",
+      "description": "Arabidopsis ARGONAUTE10 regulates root meristem length/activity by quenching mobile miR165/166, which targets PHABULOSA (PHB). Quenching also concentrates a PHB gradient precisely along the xylem axis, allowing correct xylem cells’ specification. ",
+      "funder": [],
+      "identifier": "S-BIAD968",
+      "keywords": [
+        "ARGONAUTE10 (AGO10)",
+        "miR165/166",
+        "PHABULOSA (PHB)",
+        "root apical meristem (RAM)",
+        "stele"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "An AGO10:miR165/6 module regulates meristem activity and xylem development in the Arabidopsis root ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD968/ba046587-4b9c-49c9-9186-d7cf85f0fc4d/8d6b6cea-1b15-4158-bcdc-5c9618e5d75f.png"
+      ]
+    },
+    {
+      "@id": "#1d07cf98-cd8c-4e10-a76a-a68ad29cf253",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05a28rw58"
+        }
+      ],
+      "email": "shirin.mirlohi@biol.ethz.ch",
+      "name": "Shirin Mirlohi"
+    },
+    {
+      "@id": "#8afb2c04-2799-4d84-a35b-90b2ef763146",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05a28rw58"
+        }
+      ],
+      "email": "olivier.voinnet@biol.ethz.ch",
+      "name": "Olivier Voinnet"
+    },
+    {
+      "@id": "https://ror.org/05a28rw58",
+      "@type": [
+        "Organization"
+      ],
+      "name": "ETH Zurich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#de27eae1-4847-4f3a-8875-30096a5eed50",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Seedlings of arabidopsis or leaves of Benthamiana",
+      "name": "All samples used for this study are from Arabidopsis and occasionally Benthamiana",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#0dbf5a8e-4fc5-4683-9061-25664563f27a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "As mentioned in the material and method",
+      "labEquipment": "Zeiss LSM 780",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Arabiidopsis thaliana seedlings"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 230
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 192857008
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# Qleverfile for GIDE, use with https://github.com/ad-freiburg/qlever-control
+# See documentation at https://docs.qlever.dev/qleverfile
+# Tested for Qlever v0.5.45
+
+[data]
+NAME              = gide
+
+[index]
+INPUT_FILES     = gide_metadata_with_ontologies.ttl
+CAT_INPUT_FILES = cat ${INPUT_FILES}
+PARALLEL_PARSING = false
+
+[server]
+PORT               = 7019
+ACCESS_TOKEN       = ${data:NAME}_7643543846_9ZYK82RdeoGL
+MEMORY_FOR_QUERIES = 5G
+CACHE_MAX_SIZE     = 2G
+TIMEOUT            = 30s
+
+[runtime]
+SYSTEM = native
+IMAGE  = docker.io/adfreiburg/qlever:latest
+
+[ui]
+UI_CONFIG = default

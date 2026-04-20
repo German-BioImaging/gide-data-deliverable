@@ -1,0 +1,244 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD976"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD976",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3f7f198a-106f-4568-83cb-922b9dd8afe5"
+        },
+        {
+          "@id": "#2e2b115e-afab-45d2-9303-25b51b28b6db"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1a22f81e-ed3e-42ff-a7e1-3243c9a1eefe"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2214-2806"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0357-7422"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0960-6781"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-20",
+      "description": "Most neurological disorders share a phenotype of synaptic dysfunction. High-content microscopy is indispensable in the drug discovery process but the sensitivity relies on the accuracy of mature synapse detection. We present a workflow whereby synchronous calcium bursting is measured in GCaMP6f-transduced neurons. The same cultures are then subjected to Proximity Ligation Assay (PLA) to label mature synapses, the neurite network and nuclei. The integration of functional and morphological information provides a rich fingerprint of neuronal connectivity, deployable in different experimental conditions. ",
+      "funder": [],
+      "identifier": "S-BIAD976",
+      "keywords": [
+        "High-content microscopy",
+        "Neuronal Connectivity"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Quantification of morpho-functional synaptic connectivity in dissociated neuronal cultures ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD976/9c6c0f48-d0b7-4bcc-a2ae-15db411e1170/f16951dd-4df9-4e21-a736-d1e860016e8a.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2214-2806",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#260096d9-c3bb-44cb-8844-ea1c6593b1fd"
+        }
+      ],
+      "email": "peter.verstraelen@uantwerpen.be",
+      "name": "Peter Verstraelen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0357-7422",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#260096d9-c3bb-44cb-8844-ea1c6593b1fd"
+        }
+      ],
+      "email": "marlies.verschuuren@uantwerpen.be",
+      "name": "Marlies Verschuuren"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0960-6781",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#260096d9-c3bb-44cb-8844-ea1c6593b1fd"
+        }
+      ],
+      "email": "winnok.devos@uantwerpen.be",
+      "name": "Winnok H. De Vos"
+    },
+    {
+      "@id": "#260096d9-c3bb-44cb-8844-ea1c6593b1fd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Antwerp"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#1a22f81e-ed3e-42ff-a7e1-3243c9a1eefe",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Primary cortical cultures from E18 mouse embryos after 21 days in vitro",
+      "name": "BioSample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#2e2b115e-afab-45d2-9303-25b51b28b6db",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Perkin Elmer Ultraview Vox dual spinning disk confocal microscope, mounted on a Nikon Ti body, equipped with a Perfect Focus System was used. A 40X objective with a numerical aperture of 0.95 was used to acquire 20 z-stacks per well with 1 µm spacing . \n\nThe following filter sets were used:\nDAPI: 405 nm excitation / 470(W24) emission\nPLA: 561 nm excitation / 615(W70) emission\nMAP2: 640 nm excitation / 705 (W90) emission",
+      "labEquipment": "Spinning disk confocal microscope (UltraVIEW VoX, PerkinElmer)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Morphological"
+    },
+    {
+      "@id": "#3f7f198a-106f-4568-83cb-922b9dd8afe5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Time-lapse imaging was performed on a Perkin Elmer Ultraview Vox dual spinning disk confocal microscope, mounted on a Nikon Ti body, equipped with a Perfect Focus System and a microscope incubator equilibrated at 37 °C. A 10X air objective was used to acquire a 3-minute time-lapse recording of calcium fluxes (GCaMP6f) in every well, followed by a single image of the neuronal nuclei (nls-dTomato).\n\nThe following acquisition settings were used: \nGCaMP6f: 488 nm excitation/525(W50) nm emission, 3 min @ 2 frames/sec, camera binning 2x2\nNls-dTomato: 561 nm excitation/615(W70) emission, 1 image, no camera binning",
+      "labEquipment": "Spinning disk confocal microscope (UltraVIEW VoX, PerkinElmer)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Functional"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1190
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8679272995
+    }
+  ]
+}

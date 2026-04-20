@@ -1,0 +1,174 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2469"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2469",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#53235dc7-bbb8-42a7-953b-a5279be4532e"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#62b6441c-01d2-4e82-be38-7e3d59d61013"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#6c9966dd-8359-4af3-87df-c13d54e26acd"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-03",
+      "description": "DNA point accumulation for imaging in nanoscale topography (DNA-PAINT) was applied to measure EGFR receptor in resting and EGF-stimulated fixed HeLa cells. Pre-incubated antibody-nanobody construct was used to label EGFR. R3 docking strand was conjugated to the nanobody and complimentary imager strand was coupled to Cy3b fluorophore. ",
+      "funder": [],
+      "identifier": "S-BIAD2469",
+      "keywords": [
+        "in situ",
+        "EGFR",
+        "RTK",
+        "receptor tyrosine kinase ",
+        "super resolution",
+        "DNA-PAINT",
+        "SMLM"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "DNA-PAINT imaging of the resting and EGF-stimulated Hela cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#6c9966dd-8359-4af3-87df-c13d54e26acd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "smb@uni-frankfurt.de",
+      "name": "Heilemann lab"
+    },
+    {
+      "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Goethe University Frankfurt"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#62b6441c-01d2-4e82-be38-7e3d59d61013",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Epidermal Growth Factor Receptor (EGFR) - Imaging of EGFR in resting and EGF-stimulated Hela cells for 5 or 15 min.",
+      "name": "DNA-PAINT data of EGFR in Hela cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#53235dc7-bbb8-42a7-953b-a5279be4532e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100x oil immersion objective (UPlanXApo, NA 1.45, Olympus)\nCamera: iXon Ultra DU-897U-CS0, Andor\nEM gain: 150\nExposure time: 100 ms\nFrame transfer: On\nPreamplifier Gain: 3\nRead out rate: 17 MHz\nFrame number: 20,000\nImage size: 256x256 px\nPixel size: 158 nm\nIllumination mode: TIRF\nLaser wavelengths: 561 nm (excitation)",
+      "labEquipment": "Home-built widefield setup based on a custom-built widefield Nikon Eclipse Ti inverted microscope",
+      "measurementTechnique": [],
+      "name": "DNA-PAINT"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 49230878720
+    }
+  ]
+}

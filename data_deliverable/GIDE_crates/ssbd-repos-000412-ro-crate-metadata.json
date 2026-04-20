@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000412/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000412/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000412",
+      "name": "BMP4 regulates asymmetric Pkd2 distribution in mouse nodal immotile cilia and ciliary mechanosensing required for left–right determination",
+      "description": "Background: Mouse nodal immotile cilia mechanically sense the bending direction for left–right (L–R) determination and activate the left-side-specific signaling cascade, leading to increased Nodal activity. Asymmetric distribution of Pkd2, a crucial channel for L–R determination, on immotile cilia has been reported recently. However, the causal relationship between the asymmetric Pkd2 distribution and direction-dependent flow sensing is not well understood. Furthermore, the underlying molecular mechanism directing this asymmetric Pkd2 distribution remains unclear.\r\nResults: The effects of several recombinant proteins and inhibitors on the Pkd2 distribution were analyzed using super-resolution microscopy. Notably, bone morphogenetic protein 4 (BMP4) affected the Pkd2 distribution. Additionally, three-dimensional manipulation of nodal immotile cilia using optical tweezers revealed that excess BMP4 caused defects in the mechanosensing ability of the cilia.\r\nConclusions: Experimental data together with model calculations suggest that BMP4 regulates the asymmetric distribution of Pkd2 in nodal immotile cilia, thereby affecting the ability of these cilia to sense the bending direction for L– R determination. This study, for the first time, provides insight into the relationship between the asymmetric protein distribution in cilia and their function.",
+      "datePublished": "2025-02-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1002/dvdy.727"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takanobu A Katoh",
+      "email": "takanobu.a.katoh@gmail.com",
+      "description": "Organization: The University of Tokyo; Department: Department of Cell Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1002/dvdy.727",
+      "@type": "ScholarlyArticle",
+      "name": "BMP4 regulates asymmetric Pkd2 distribution in mouse nodal immotile cilia and ciliary mechanosensing required for left-right determination.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 52508712960,
+      "description": "52.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 24,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

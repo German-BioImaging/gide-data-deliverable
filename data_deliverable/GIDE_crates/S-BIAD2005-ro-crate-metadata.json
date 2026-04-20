@@ -1,0 +1,229 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2005"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2005",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a6bbb5b3-4226-46e6-bb1b-ebd514e58c53"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#26b57820-3935-4ab6-8d9a-7205faa2e984"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#29fb12ad-e440-41ce-8304-e6739f2556cb"
+        },
+        {
+          "@id": "#89b9301e-59a0-4ed4-b726-b441fe2fe4ba"
+        },
+        {
+          "@id": "#487d85b4-b4c7-4285-951b-e8590c6cbcff"
+        },
+        {
+          "@id": "#a2dc31f3-563d-4143-b1fc-0af123fde22d"
+        },
+        {
+          "@id": "#08e5041c-21cb-4f5c-8616-5719fc1d46b4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-10",
+      "description": "The data includes images recorded via a towed video frame in the Belgian Part of the North Sea. They show the seafloor, captured at a perpendicular angle, as well as various organisms living on it. Furthermore, text files containing point annotations of the organisms created with the program \"papara(zz)i\" are included. A label tree exported from the web tool \"BIIGLE\" is included as well. The goal of the associated project was to transform the existing point annotations to polygons and to attach a label from the included label tree to the newly created annotations. \n\nThis data was selected as part of the AI4Life Open Calls 2023 for image analysis consultation and deep-learning applications.",
+      "funder": [],
+      "identifier": "S-BIAD2005",
+      "keywords": [
+        "AI4Life Open Call"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "AI4Life OC2 Project #11: Automated species annotation in turbid waters",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2005/b3f8ce68-0d89-47f4-926f-3558e7f99dd3/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#08e5041c-21cb-4f5c-8616-5719fc1d46b4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#35d7a9b5-bca5-4cb4-8617-f159bc80f293"
+        }
+      ],
+      "email": "kristina.lidayova@scilifelab.se",
+      "name": "Kristina Lidayova"
+    },
+    {
+      "@id": "#29fb12ad-e440-41ce-8304-e6739f2556cb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4dbf390c-01fc-4617-90d4-68223343c78c"
+        }
+      ],
+      "email": "njacobsen@naturalsciences.be",
+      "name": "Nils Jacobsen"
+    },
+    {
+      "@id": "#487d85b4-b4c7-4285-951b-e8590c6cbcff",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#35d7a9b5-bca5-4cb4-8617-f159bc80f293"
+        }
+      ],
+      "email": "mehdi.seifi@fht.org",
+      "name": "Mehdi Seifi"
+    },
+    {
+      "@id": "#89b9301e-59a0-4ed4-b726-b441fe2fe4ba",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4dbf390c-01fc-4617-90d4-68223343c78c"
+        }
+      ],
+      "email": "ppodholova@naturalsciences.be",
+      "name": "Pavlína Podholová"
+    },
+    {
+      "@id": "#a2dc31f3-563d-4143-b1fc-0af123fde22d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#35d7a9b5-bca5-4cb4-8617-f159bc80f293"
+        }
+      ],
+      "email": "agustin.corbat@it.uu.se",
+      "name": "Agustin Corbat"
+    },
+    {
+      "@id": "#35d7a9b5-bca5-4cb4-8617-f159bc80f293",
+      "@type": [
+        "Organization"
+      ],
+      "name": "AI4Life"
+    },
+    {
+      "@id": "#4dbf390c-01fc-4617-90d4-68223343c78c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "RBINS"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#26b57820-3935-4ab6-8d9a-7205faa2e984",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "whole organisms",
+      "name": "Biosample 1",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#a6bbb5b3-4226-46e6-bb1b-ebd514e58c53",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Footage was recorded with GoPro Hero 9 cameras set to 4k resolution, linear mode, and 60 fps. The cameras were attached on the video frame so that they recorded the seafloor at a perpendicular angle. Care was taken that the video frame was towed at a speed of no more than 0.3 to 0.5 knots to reduce motion blur. From the videos, still images were extracted every 5 seconds to avoid overlap. A quality control was performed to remove images that were blurry, showed only sediment, or were distorted in any other way to the point were species identification became to difficult. \n\n",
+      "labEquipment": "The footage was recorded during a MSFD sampling campaign in 2023 at gravel bed locations in the Belgian Part of the North Sea (BPNS). A towed underwater video system (provided by the Vlaams Instituut voor de Zee – VLIZ), equipped with GoPro cameras and dive lights was employed to capture the seafloor. ",
+      "measurementTechnique": [],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 102
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 200138861
+    }
+  ]
+}

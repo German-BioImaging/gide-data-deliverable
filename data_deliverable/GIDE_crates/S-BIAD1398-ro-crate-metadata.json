@@ -1,0 +1,266 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1398"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1398",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#53e35d3a-4511-4b30-b5ba-31e44d47a74e"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f2a49b74-a02c-4e35-bc6d-d9be3ee19b1c"
+        },
+        {
+          "@id": "#e08c64a6-8a78-4dba-9325-84aebf738f8e"
+        },
+        {
+          "@id": "#81455db7-ca3b-4957-b0fb-2a5e002df61d"
+        },
+        {
+          "@id": "#31ba2921-3ca3-47cf-9c50-ccf42cfe66e1"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8371-847X"
+        },
+        {
+          "@id": "#518e4ff5-bf71-4f9e-90a0-0cf699dbe61a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-11",
+      "description": "The human blastocyst contains the pluripotent epiblast, from which human embryonic stem cells (hESCs) can be derived. ACTIVIN/NODAL signalling maintains expression of the transcription factor NANOG and in vitro propagation of hESCs. It is unknown whether this reflects a functional requirement for epiblast development in human embryos. Here, we characterised NODAL signalling activity during pre-implantation human development. We showed that NANOG is an early molecular marker restricted to the nascent human pluripotent epiblast and was initiated prior to the onset of NODAL signalling. We further demonstrated that expression of pluripotency-associated transcription factors NANOG, SOX2, OCT4, and KLF17 were maintained in the epiblast in the absence of NODAL signalling activity. Genome-wide transcriptional analysis showed that NODAL signalling inhibition did not impact on NANOG transcription or the wider pluripotency-associated gene regulatory network. These data suggest differences in the signalling requirements regulating pluripotency in the pre-implantation human epiblast compared to existing hESC culture.",
+      "funder": [],
+      "identifier": "S-BIAD1398",
+      "keywords": [
+        "Human embryo ",
+        "Blastocyst",
+        "NODAL signalling",
+        "BMP signalling",
+        "Phospho-SMAD proteins"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "NODAL signalling does not initiate or maintain the pluripotent epiblast in pre-implantation human development",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1398/65b70005-bace-48b0-ad34-81e1f1e088e7/56363364-a695-4ee8-8574-15a3c9ac1c44.png"
+      ]
+    },
+    {
+      "@id": "#518e4ff5-bf71-4f9e-90a0-0cf699dbe61a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "kkn21@cam.ac.uk",
+      "name": "Kathy K. Niakan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8371-847X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "abrumm@ed.ac.uk",
+      "name": "A. Sophie Brumm"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "#de588502-f2ed-4e10-94dc-797256ad666b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#31ba2921-3ca3-47cf-9c50-ccf42cfe66e1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "This study was approved by the UK Human Fertilisation and Embryology Authority (HFEA): research licence numbers R0162, R0397 and R0401 and independently reviewed by the Health Research Authority’s Research Ethics Committee IRAS projects 308099 and 272218. The research was performed in compliance with the HFEA Code of Practice and underwent regular inspections by the HFEA. The human embryos used in this study were surplus and donated by patients undergoing assisted reproduction treatments in the UK. The patients who donated spare embryos were provided with the necessary information about the research project and an opportunity to received counselling. The informed consent included approval of the publication of the results in scientific journals. No financial inducements were offered for donations. ",
+      "name": "Human blastocysts",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#81455db7-ca3b-4957-b0fb-2a5e002df61d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "This study was approved by the UK Human Fertilisation and Embryology Authority (HFEA): research licence numbers R0162, R0397 and R0401 and independently reviewed by the Health Research Authority’s Research Ethics Committee IRAS projects 308099 and 272218. The research was performed in compliance with the HFEA Code of Practice and underwent regular inspections by the HFEA. The human embryos used in this study were surplus and donated by patients undergoing assisted reproduction treatments in the UK. The patients who donated spare embryos were provided with the necessary information about the research project and an opportunity to received counselling. The informed consent included approval of the publication of the results in scientific journals. No financial inducements were offered for donations. ",
+      "name": "Human blastocysts",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e08c64a6-8a78-4dba-9325-84aebf738f8e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "This study was approved by the UK Human Fertilisation and Embryology Authority (HFEA): research licence numbers R0162, R0397 and R0401 and independently reviewed by the Health Research Authority’s Research Ethics Committee IRAS projects 308099 and 272218. The research was performed in compliance with the HFEA Code of Practice and underwent regular inspections by the HFEA. The human embryos used in this study were surplus and donated by patients undergoing assisted reproduction treatments in the UK. The patients who donated spare embryos were provided with the necessary information about the research project and an opportunity to received counselling. The informed consent included approval of the publication of the results in scientific journals. No financial inducements were offered for donations. ",
+      "name": "Human blastocysts",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f2a49b74-a02c-4e35-bc6d-d9be3ee19b1c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "This study was approved by the UK Human Fertilisation and Embryology Authority (HFEA): research licence numbers R0162, R0397 and R0401 and independently reviewed by the Health Research Authority’s Research Ethics Committee IRAS projects 308099 and 272218. The research was performed in compliance with the HFEA Code of Practice and underwent regular inspections by the HFEA. The human embryos used in this study were surplus and donated by patients undergoing assisted reproduction treatments in the UK. The patients who donated spare embryos were provided with the necessary information about the research project and an opportunity to received counselling. The informed consent included approval of the publication of the results in scientific journals. No financial inducements were offered for donations. ",
+      "name": "Human blastocysts",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#53e35d3a-4511-4b30-b5ba-31e44d47a74e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "63x glycerol objective. Argon laser excitation of the Alexa488 fluorophore used to visualise the detected phospho-SMAD proteins, or SMAD2/3 nuclear accumulation.",
+      "labEquipment": "Leica Sp5 or SP8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Acquisition of confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 76
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 64726183532
+    }
+  ]
+}

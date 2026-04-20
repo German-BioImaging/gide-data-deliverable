@@ -1,0 +1,301 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1298"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1298",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1fcb0985-52a4-4cf4-b016-878b0a9ddcd4"
+        },
+        {
+          "@id": "#adc4af2b-916a-402b-a4e5-338581fd2a97"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#098aacb8-8b59-4a31-93d9-424aab3fdc8a"
+        },
+        {
+          "@id": "obo:NCBITaxon_3055"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5887-2069"
+        },
+        {
+          "@id": "#781e67ed-e9f6-4b51-9e69-8ba24b7291a1"
+        },
+        {
+          "@id": "#749e86c2-ba45-4fa6-810f-decc85d193ca"
+        },
+        {
+          "@id": "#8151ba8b-d0dd-44a8-b0c2-c8f7ce1878d6"
+        },
+        {
+          "@id": "#224a4ab8-6257-45bd-b2cf-fdbbedb6bd2e"
+        },
+        {
+          "@id": "#7dc87d77-8151-429c-9467-f2c7a615b55b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-30",
+      "description": "Motility is a phenotypic readout that indicates an organism’s integration of sensory input from its environment with its ability to move. We developed a microscopy workflow and image analysis pipeline to track motility phenotypes from unicellular algae in high-throughput.",
+      "funder": [],
+      "identifier": "S-BIAD1298",
+      "keywords": [
+        "motility",
+        "Chlamydomonas",
+        "high-throughput",
+        "brightfield microscopy",
+        "cell tracking"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "A high-throughput imaging assay for phenotyping unicellular swimming",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1298/cf4e947e-1732-4d43-a023-9327be84f3fb/ce68c6d4-46a7-4132-896a-f7e0cd9dbd7e.png"
+      ]
+    },
+    {
+      "@id": "#224a4ab8-6257-45bd-b2cf-fdbbedb6bd2e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "megan.hochstrasser@arcadiascience.com",
+      "name": "Megan Hochstrasser"
+    },
+    {
+      "@id": "#749e86c2-ba45-4fa6-810f-decc85d193ca",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "audrey.bell@arcadiascience.com",
+      "name": "Audrey Bell"
+    },
+    {
+      "@id": "#781e67ed-e9f6-4b51-9e69-8ba24b7291a1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "tara.essock-burns@arcadiascience.com",
+      "name": "Tara Essock-Burns"
+    },
+    {
+      "@id": "#7dc87d77-8151-429c-9467-f2c7a615b55b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "david.mets@arcadiascience.com",
+      "name": "David Mets"
+    },
+    {
+      "@id": "#8151ba8b-d0dd-44a8-b0c2-c8f7ce1878d6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "keith.cheveralls@arcadiascience.com",
+      "name": "Keith Cheveralls"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5887-2069",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "ryan.lane@arcadiascience.com",
+      "name": "Ryan Lane"
+    },
+    {
+      "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Arcadia Science"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3055",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Chlamydomonas reinhardtii"
+    },
+    {
+      "@id": "#098aacb8-8b59-4a31-93d9-424aab3fdc8a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Chlamydomonas reinhardtii cells, enriched for gametes",
+      "name": "Chlamydomonas reinhardtii",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3055"
+      }
+    },
+    {
+      "@id": "#1fcb0985-52a4-4cf4-b016-878b0a9ddcd4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20 s time-lapses recorded in brightfield at the rate of 20 fps (50 ms exposure time) with the light intensity set to maximize the dynamic range of the acquisition system, using a red LED from LIDA light engine (Lumencor).",
+      "labEquipment": "Inverted Ti2-E microscope (Nikon)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Brightfield time-lapse microscopy of cells in 384-well plate"
+    },
+    {
+      "@id": "#adc4af2b-916a-402b-a4e5-338581fd2a97",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20 s time-lapses recorded in brightfield at the rate of 20 fps (50 ms exposure time) with the light intensity set to maximize the dynamic range of the acquisition system, and a 610 nm longpass filter (ThorLabs FGL610S) placed over the light source.",
+      "labEquipment": "Upright Ni-E widefield microscope (Nikon)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Brightfield time-lapse microscopy of cells in agar microchamber pools"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1042
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 355395619288
+    }
+  ]
+}

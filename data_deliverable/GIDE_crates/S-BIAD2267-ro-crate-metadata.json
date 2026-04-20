@@ -1,0 +1,339 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2267"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2267",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#193286e5-6807-4575-ac21-7b5431a277d4"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5c2ecd4e-af7b-4589-aa04-0de3c3d56f1f"
+        },
+        {
+          "@id": "#82e4f9e6-e248-4313-b8fa-a3bf454be239"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0379-4945"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8786-5418"
+        },
+        {
+          "@id": "https://orcid.org/0009-0003-6035-4126"
+        },
+        {
+          "@id": "https://orcid.org/0009-0009-3700-2994"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3705-7460"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8994-3416"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1266-052X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9707-3377"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1186-0626"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-05",
+      "description": "The parent study primarily entails the use of TurboID proximity-labeling proteomics to map the interactomes and localization of the tyrosine phosphatase SHP2, and some of its pathogenic mutations. This BioImage Archive contains fluorescence microscopy data on cells expressing SHP2, used to further analyze and corroborate the proteomics data.",
+      "funder": [],
+      "identifier": "S-BIAD2267",
+      "keywords": [
+        "proximity-labeling proteomics",
+        "confocal microscopy",
+        "localization",
+        "SHP2",
+        "phosphotyrosine signaling",
+        "tyrosine phosphatase",
+        "epidermal growth factor"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Proximity-labeling proteomics reveals remodeled interactomes and altered localization of pathogenic SHP2 variants",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2267/fc6e422e-2c38-4ac4-a1e6-a4c1d2f9dfbc/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8786-5418",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48"
+        }
+      ],
+      "email": "tang.c.lauren@gmail.com",
+      "name": "Lauren C. Tang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8994-3416",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7abc1a23-3092-4c10-8c7a-f72a89c0829c"
+        }
+      ],
+      "email": "konstantin.krismer@gmail.com",
+      "name": "Konstantin Krismer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9707-3377",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48"
+        }
+      ],
+      "email": "mj2794@columbia.edu",
+      "name": "Marko Jovanovic"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1186-0626",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48"
+        }
+      ],
+      "email": "neel.shah@columbia.edu",
+      "name": "Neel H Shah"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1266-052X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48"
+        }
+      ],
+      "email": "jellert.gaublomme@columbia.edu",
+      "name": "Jellert T. Gaublomme"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3705-7460",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48"
+        }
+      ],
+      "email": "rashmi.voleti@gmail.com",
+      "name": "Rashmi Voleti"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0379-4945",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48"
+        }
+      ],
+      "email": "aev2133@columbia.edu",
+      "name": "Anne van Vlimmeren"
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-6035-4126",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48"
+        }
+      ],
+      "email": "zj2274@columbia.edu",
+      "name": "Ziyuan Jiang"
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-3700-2994",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48"
+        }
+      ],
+      "email": "ahi2112@columbia.edu",
+      "name": "Abhishek Hariharan Iyer"
+    },
+    {
+      "@id": "#7abc1a23-3092-4c10-8c7a-f72a89c0829c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "MIT"
+    },
+    {
+      "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Columbia University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#5c2ecd4e-af7b-4589-aa04-0de3c3d56f1f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK 293 cells",
+      "name": "HEK 293 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#82e4f9e6-e248-4313-b8fa-a3bf454be239",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "SHP2 knock-out HEK 293 cells",
+      "name": "SHP2 knock-out HEK 293 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#193286e5-6807-4575-ac21-7b5431a277d4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All images were acquired under oil immersion 60x magnification (Nikon, MRD71670) using a confocal spinning disk microscope (Andor Dragonfly) coupled to a Nikon Ti-2 inverted epifluorescence microscope with automated stage control, Nikon Perfect Focus System and a Zyla PLUS 4.2-megapixel USB3 camera. Illumination was done with 100 mW 405 nm, 50 mW 488 nm, 50 mW 561 nm, 140 mW 640 nm and 100 mW 785 nm laser solid-state lasers. All hardware was controlled using Andor Fusion software. Lasers, laser powers, exposure times, objectives and experiment-specific acquisition parameters are 100% power 100ms exposure for all the images. Images were acquired with 11 z-slices at 2.0-μm intervals (Total scan size 20 μm). Briefly, to analyze SHP2 localization the images were converted to zarr format. The images were then stitched using ashlar (https://github.com/labsyspharm/ashlar). Images were then preprocessed to replace any 0 padded values from stitching with background values. For images with 2 rounds of imaging (i.e., the endogenous samples) we performed registration using Affine transformation. Once we generated the final image stack, cell masks were obtained using the SHP2 image, and segmentation was performed using Cellpose3 (Stringer & Pachitariu, 2025). Finally, we set up signal cut-offs for both SHP2 signal and mitochondrial signal (as measured by Tom20). We then calculated the number of SHP2 positive pixels co-localizing with mitochondria-positive pixels per cell. We further calculated the average SHP2 intensity per SHP2-positive cell. ",
+      "labEquipment": "60x magnification (Nikon, MRD71670) using a confocal spinning disk microscope (Andor Dragonfly) coupled to a Nikon Ti-2 inverted epifluorescence microscope with automated stage control, Nikon Perfect Focus System and a Zyla PLUS 4.2-megapixel USB3 camera",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1028
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 644836634396
+    }
+  ]
+}

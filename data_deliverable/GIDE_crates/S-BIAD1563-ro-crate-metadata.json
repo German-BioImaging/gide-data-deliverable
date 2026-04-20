@@ -1,0 +1,201 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1563"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1563",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d81dc8e8-4631-4dc3-a9a2-27d715f59aba"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7383cee4-c5e5-42bb-ab86-0137e79f223f"
+        },
+        {
+          "@id": "#521be104-15a4-4852-ba9f-b17c9d17d9ea"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f99e8c6a-c362-4fc4-8d42-10946effac22"
+        },
+        {
+          "@id": "#af4d1dbf-04ed-47f1-ad94-f40e1f8990bb"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-06",
+      "description": "This submission includes raw and analyzed imaging data of C. elegans strains N2 and pdl-1(gk157), which we have used along with an analysis pipeline to characterize a motility phenotype for the mutant strain.",
+      "funder": [],
+      "identifier": "S-BIAD1563",
+      "keywords": [
+        "motility",
+        "C. elegans"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Raw and analyzed motility data for C. elegans N2 and pdl-1(gk157)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1563/91ef6e06-4772-491a-ba8e-3d21ca949d07/6280e7dd-aa5e-4f49-b951-2e10a55ecf9c.png"
+      ]
+    },
+    {
+      "@id": "#af4d1dbf-04ed-47f1-ad94-f40e1f8990bb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/052zd4v68"
+        }
+      ],
+      "email": "taylor.reiter@arcadiascience.com",
+      "name": "Taylor Reiter"
+    },
+    {
+      "@id": "#f99e8c6a-c362-4fc4-8d42-10946effac22",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/052zd4v68"
+        }
+      ],
+      "email": "justin.donnelly@arcadiascience.com",
+      "name": "Justin Donnelly"
+    },
+    {
+      "@id": "https://ror.org/052zd4v68",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Arcadia Science"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#521be104-15a4-4852-ba9f-b17c9d17d9ea",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Worms on nematode growth medium (NGM)",
+      "name": "Adult C. elegans worms, pdl-1(gk157)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#7383cee4-c5e5-42bb-ab86-0137e79f223f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Worms on nematode growth medium (NGM)",
+      "name": "Adult C. elegans worms, N2 wild-type",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#d81dc8e8-4631-4dc3-a9a2-27d715f59aba",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For each FOV, we collected 30 seconds of video data at 24.5 frames per second (fps) using a Kinetix sCMOS camera. We used a Plan Apo D 4× objective with a numerical aperture of 0.20. Each frame in the resulting video file was 1976 × 1976 pixels at a resolution of 1.625 µm per pixel.",
+      "labEquipment": "Nikon upright widefield microscope",
+      "measurementTechnique": [],
+      "name": "Image acquisition on widefield upright microscope"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1401
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1155864756824
+    }
+  ]
+}

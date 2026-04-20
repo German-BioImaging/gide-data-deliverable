@@ -1,0 +1,177 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1040"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1040",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#94534ac3-d13c-4f78-be38-7379082a48da"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7393b019-56b5-4018-8bf2-7c09fad0412c"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0154-0979"
+        },
+        {
+          "@id": "#bb25246e-4113-49dc-950e-a854c8d2699b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-31",
+      "description": "Protein synthesis is a core cellular process, necessary throughout the complex lifecycle of Plasmodium parasites, thus specific translation inhibitors would be a valuable class of antimalarial drugs, capable of both treating symptomatic infections in the blood and providing chemoprotection by targeting the initial parasite population in the liver, preventing both human disease and parasite transmission back to the mosquito host. As increasing numbers of antiplasmodial compounds are identified that converge mechanistically at inhibition of cytoplasmic translation, regardless of molecular target or mechanism, it would be useful to gain deeper understanding of how their effectiveness as liver stage translation inhibitors relates to their chemoprotective potential. Here, we probed that relationship using the P. berghei-HepG2 liver stage infection model. Using o-propargyl puromycin-based labeling of the nascent proteome in P. berghei-infected HepG2 monolayers coupled with automated confocal feedback microscopy to generate unbiased, single parasite image sets of P. berghei liver stage translation, we determined translation inhibition EC50s for five compounds, encompassing parasite-specific aminoacyl tRNA synthetase inhibitors, compounds targeting the ribosome in both host and parasite, as well as DDD107498, which targets Plasmodium eEF2, and is a leading antimalarial candidate compound being clinically developed as cabamiquine. Compounds were then tested at equivalent effective concentrations to compare the parasite response to, and recovery from, a brief period of translation inhibition in early schizogony.",
+      "funder": [],
+      "identifier": "S-BIAD1040",
+      "keywords": [
+        "Automated Confocal Feedback Microscopy",
+        "Plasmodium berghei",
+        "Plasmodium Liver Stage",
+        "Protein Synthesis Inhibitors",
+        "Malaria",
+        "Drug Discovery"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Automated confocal feedback imaging of Plasmodium berghei liver stage translation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#bb25246e-4113-49dc-950e-a854c8d2699b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9a3d99ed-efef-4cf7-81d3-8da8bb9e81fa"
+        }
+      ],
+      "email": "james.mclellan@utsa.edu",
+      "name": "James L. McLellan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0154-0979",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9a3d99ed-efef-4cf7-81d3-8da8bb9e81fa"
+        }
+      ],
+      "email": "kirsten.hanson@utsa.edu",
+      "name": "Kirsten K. Hanson"
+    },
+    {
+      "@id": "#9a3d99ed-efef-4cf7-81d3-8da8bb9e81fa",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Texas at San Antonio"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#7393b019-56b5-4018-8bf2-7c09fad0412c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "P. berghei-infected HepG2 monolayer",
+      "name": "P. berghei-infected HepG2 monolayer",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#94534ac3-d13c-4f78-be38-7379082a48da",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": " All raw image sets were sequentially acquired by automated confocal feedback microscopy (ACFM; see PMID: 37909773, PMID: 24974044 for more information), using a 63x, 1.2 NA water objective on a CAM equipped Leica SP8 confocal running Matrix Screener, and identical acquisition parameters for all samples from a single experiment. Image acquisition parameters can be obtained in the xml file metadata folders associated with each image set.",
+      "labEquipment": "Leica SP8 confocal microscope ",
+      "measurementTechnique": [],
+      "name": "Automated confocal feedback microscopy (ACFM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 162197
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 44361268436
+    }
+  ]
+}

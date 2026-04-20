@@ -1,0 +1,224 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1665"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1665",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#95f7713d-36b5-4279-bb08-d66a6629233d"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#71487ab9-32fa-404d-8d01-1ca7903c786e"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0009-0938-1798"
+        },
+        {
+          "@id": "#b4c4be02-7221-4958-8cc3-c9e7a43a79d4"
+        },
+        {
+          "@id": "#471f0c51-8879-4043-b46f-9eca9d05bacc"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-26",
+      "description": "Widespread control of gene expression through translation has emerged as a key level of spatiotemporal protein expression regulation. Internal ribosomal entry sites (IRESes) provide a prominent mechanism by which ribosomes can confer greater gene regulation. However, their rigorous functional characterization remains difficult. Here we present a set of technologies in embryos and cells including IRES-mediated translation of circular RNA (circRNA) reporters, single-molecule messenger (m)RNA isoform imaging, PacBio long-read sequencing, and isoform-sensitive mRNA quantification along polysome profiles as a new guideline to understand IRES regulation. We investigate a broad range of cellular IRES RNA elements. We show IRES-dependent translation in circRNAs and the relative expression, localization and translation of an IRES-containing mRNA isoform in specific embryonic tissues. We thereby provide a new resource of technologies to elucidate the roles of versatile IRES elements in gene regulation and embryonic development.",
+      "funder": [],
+      "identifier": "S-BIAD1665",
+      "keywords": [
+        "mRNA translation regulation",
+        "mRNA isoforms",
+        "internal ribosome entry site",
+        "cellular IRES",
+        "embryo development"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A versatile toolbox to determine IRES activity in cells and embryonic tissues",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1665/a0efadf0-e8b2-4fc7-8712-e8fd3ece1649/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#471f0c51-8879-4043-b46f-9eca9d05bacc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c6a4ab7a-6118-4069-85c7-630a157a61f4"
+        }
+      ],
+      "name": "Kathrin Leppek"
+    },
+    {
+      "@id": "#b4c4be02-7221-4958-8cc3-c9e7a43a79d4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "name": "Maria Barna"
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-0938-1798",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "name": "Zijian Zhang"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#c6a4ab7a-6118-4069-85c7-630a157a61f4",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Bonn"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#71487ab9-32fa-404d-8d01-1ca7903c786e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse E11 and E11.5 embryo",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#95f7713d-36b5-4279-bb08-d66a6629233d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A Zeiss Axio Observer Z1 microscope was coupled to the Perkin Elmer UltraVIEW Vox spinning disk confocal microscopy system with an encoded ASI MS2000 motorized piezo stage equipped with Plan-Apochromat 10x/0.45 and 63x/1.20 objectives (Carl Zeiss microscopy). The 405-nm, 488-nm and 561-nm solid-state laser lines were paired with the 452W25, 510W20, and 588W21 Semrock emission filters to minimize crosstalk between different fluorophores. Images were acquired with the Volocity Acquisition suite 6.3 (Perkin Elmer).",
+      "labEquipment": "Zeiss Axio Observer Z1 microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 24
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 480569397
+    }
+  ]
+}

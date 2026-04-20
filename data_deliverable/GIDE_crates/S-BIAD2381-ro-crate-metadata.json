@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2381"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2381",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3bb6c088-0a40-462d-ac6c-4cf53f9d0311"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f1cc025c-d915-46f7-806f-fd8ae384b58a"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#fb86588a-2f87-423a-9013-19621dcd0a04"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-03",
+      "description": "Pheochromocytomas and paragangliomas (PPGLs) exhibit substantial molecular and immune heterogeneity, complicating risk assessment and treatment. Here, we define three distinct transcriptional subtypes (C1, C2, C3) through integrative transcriptomic and immunogenomic profiling. C1 is characterized by hypoxia-driven pathways and an immunosuppressive microenvironment, correlating with poor prognosis. C2 exhibits a highly inflamed immune landscape with robust CD8+ T cell infiltration, suggesting potential sensitivity to immunotherapy. C3 is enriched in metabolic reprogramming pathways and displays intermediate clinical outcomes. Genetic analysis reveals subtype-specific mutational patterns, with pseudohypoxic driver mutations (SDHB, VHL, SDHA, SDHD) predominant in C1 and C3, while kinase pathway alterations (NF1, RET) define C2. Single-nucleus RNA sequencing further delineates immune ecosystem diversity. Notably, we identify ANGPT2, PCSK1N, and GPX3 as key subtype-specific biomarkers, with ANGPT2 driving tumor progression in C1 and emerging as a potential therapeutic target. Our findings provide a refined molecular classification integrating immune and genomic features, offering a framework for improved prognostication and precision therapies in PPGLs.",
+      "funder": [],
+      "identifier": "S-BIAD2381",
+      "keywords": [
+        "Pheochromocytomas and paragangliomas, transcriptional subtypes, immune infiltration, prognosis assessment"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Transcriptional Subtypes on Immune Microenvironment and Predicting Postoperative Recurrence and Metastasis in Pheochromocytoma and Paraganglioma",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2381/256f9945-f703-48d6-b2fc-38887596873b/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#fb86588a-2f87-423a-9013-19621dcd0a04",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#64ebdf5a-2419-440f-a18a-28eb480a02be"
+        }
+      ],
+      "email": "liuyang19860504@163.com",
+      "name": "Yang Liu"
+    },
+    {
+      "@id": "#64ebdf5a-2419-440f-a18a-28eb480a02be",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The First Hospital of Jilin University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#f1cc025c-d915-46f7-806f-fd8ae384b58a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Issue.",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#3bb6c088-0a40-462d-ac6c-4cf53f9d0311",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1024",
+      "labEquipment": "Nikon Eclipse E100",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Immunohistochemical staining"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 9
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 37926947
+    }
+  ]
+}

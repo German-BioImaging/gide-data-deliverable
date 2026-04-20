@@ -1,0 +1,202 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2254"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2254",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c04450cd-1f30-4551-9ad5-d22bedba7e25"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2eb54437-8bd8-47c5-a0a4-f3d8d79fb45d"
+        },
+        {
+          "@id": "#1454d379-35f2-4281-bff0-efa300ab79be"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0807-8481"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2026-01-09",
+      "description": "This dataset contains multichannel fluorescence images from an adapted Cell Painting assay applied to 3D colorectal cancer spheroids. Spheroids were generated in ultra-low attachment microplates, cleared to improve optical transparency, and imaged across multiple channels to capture morphological variation throughout the spheroid volume. The image analysis pipeline includes automated spheroid detection, cell segmentation, and feature extraction, with outputs normalized across plates and imaging depths. It provides a resource for scalable, image-based profiling in physiologically relevant 3D spheroid models.",
+      "funder": [],
+      "identifier": "S-BIAD2254",
+      "keywords": [
+        "Morphological profiling",
+        "Spheroids",
+        "Scalable",
+        "3D Cell Painting",
+        "Colorectal Cancer",
+        "Tissue-clearing",
+        "DNA damage"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "High-content morphological profiling by Cell Painting in 3D spheroids",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0807-8481",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/048a87296"
+        }
+      ],
+      "email": "christa.ringers@uu.se",
+      "name": "Christa Ringers"
+    },
+    {
+      "@id": "https://ror.org/048a87296",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Uppsala University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#1454d379-35f2-4281-bff0-efa300ab79be",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HT-29 (CVCL_0320) human colorectal cancer cell line. - HT-29 cells at 300 cells/well (passage +8)",
+      "name": "HT-29 spheroids",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2eb54437-8bd8-47c5-a0a4-f3d8d79fb45d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HCT-116 (CVCL_0291) human colorectal cancer cell line. - HCT-116 cells were seeded at 300 cells/well (passage +10).",
+      "name": "HCT-116 spheroids",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c04450cd-1f30-4551-9ad5-d22bedba7e25",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Spheroids were detected using a custom Nikon JOBS/GA3 protocol. Each well was first scanned at 4× in the SYTO channel to locate spheroids by thresholding. Identified spheroids were then scanned at 20× to determine the Z-position based on changes in focus, after which imaging was performed in five channels with 5 µm spacing across 12 optical sections. Protocols are available in the image_acquisition folder, as well as the filter_settings. ",
+      "labEquipment": "Nikon ECLIPSE Ti2-E inverted microscope (Nikon) equipped with a PLAN APO λD 20×/0.8 NA OFN25 DIC N2 objective (working distance 0.8 mm) combined with a 1.5× additional zoom (effective magnification 30×, resolution 0.227 µm/pixel), a Celesta light engine with 50 µm spinning disk (250 µm spacing). Images were acquired as 16-bit OME-TIFF files (1048 × 1048 pixels).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image acquisition 3D Cell Painting"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 129307
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 309746843326
+    }
+  ]
+}

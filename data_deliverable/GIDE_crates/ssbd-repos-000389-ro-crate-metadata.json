@@ -1,0 +1,145 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000389/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000389/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000389",
+      "name": "Visual quantification of prostaglandin E2 discharge from a single cell",
+      "description": "Calcium transients drive cells to discharge prostaglandin E2 (PGE2). We visualized PGE2-induced protein kinase A (PKA) activation and quantitated PGE2 secreted from a single cell by combining fluorescence microscopy and a simulation model. For this purpose, we first prepared PGE2-producer cells that express either an optogenetic or a chemogenetic calcium channel stimulator: OptoSTIM1 or Gq-DREADD, respectively. Second, we prepared reporter cells expressing the Gs-coupled PGE2 reporter EP2 and the PKA biosensor Booster-PKA, which is based on the principle of Forster resonance FRET. Upon the stimulation-induced triggering of calcium transients, a single producer cell discharges PGE2 to stimulate PKA in the surrounding reporter cells. Due to the flow of the medium, the PKA-activated area exhibited a comet-like smear when HeLa cells were used. In contrast, radial PKA activation was observed when confluent MDCK cells were used, indicating that PGE2 diffusion was restricted to the basolateral space. By fitting the radius of the PKA-activated area to a simulation model based on simple diffusion, we estimated that a single HeLa cell secretes 0.25 fmol PGE2 upon a single calcium transient to activate PKA in more than 1000 neighboring cells. This model also predicts that the PGE2 discharge rate is comparable to the diffusion rate. Thus, our method quantitatively envisions that a single calcium transient affects more than 1000 neighboring cells via PGE2.",
+      "datePublished": "2025-04-08",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1247/csf.23047"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kenta Terai",
+      "email": "terai.kenta.5m@tokushima-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1247/csf.23047",
+      "@type": "ScholarlyArticle",
+      "name": "Visual quantification of prostaglandin E(2) discharge from a single cell.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "vernacularName": "dog"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 88098885632,
+      "description": "88.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 11218,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

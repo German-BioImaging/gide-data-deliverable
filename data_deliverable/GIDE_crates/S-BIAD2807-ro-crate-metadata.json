@@ -1,0 +1,239 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2807"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2807",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7bb2d3b8-87a5-43ad-a002-084e941abe39"
+        },
+        {
+          "@id": "#397dcc38-0a94-4b15-a3fd-5c00839647ff"
+        },
+        {
+          "@id": "#01dae9da-49e0-4e51-a08b-64ce6d44131f"
+        },
+        {
+          "@id": "#54a0704e-7d23-4d66-9879-a3dc98dca755"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a8cec56f-6c97-4493-a003-c33a586a9ac3"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4277-2079"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2026-01-21",
+      "description": "Plasma membrane calcium ATPases (PMCAs) are believed to function exclusively at the plasma membrane where they expel calcium from the cytosol. We have unexpectedly identified a splice variant-dependent localisation of the PMCA isoform PMCA2 to the lysosome, where it forms an evolutionarily conserved complex with NPC1, the lysosomal membrane protein defective in the rare lysosomal storage disease Niemann-Pick disease type C (NPC). This interaction is required for lysosomal Ca2+ homeostasis and implicates PMCA2 as a mediator of Ca2+ uptake into lysosomes. Disruption of the NPC1-PMCA2 complex contributes to the pathophysiology of both Niemann-Pick disease type C and Parkinson’s disease, revealing an unrecognised intracellular function for PMCA2 and a shared mechanism linking lysosomal Ca2+ and lipid regulation in neurodegeneration. ",
+      "funder": [],
+      "identifier": "S-BIAD2807",
+      "keywords": [
+        "PMCA2",
+        "PMCA",
+        "NPC",
+        "Parkinson's",
+        "lysosomal calcium"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Alternative Splicing Directs PMCA2 to Lysosomes and is Linked to Neurodegeneration",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2807/18d9935a-220a-48d2-aae7-60545ac478c1/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4277-2079",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "maria.fernandez-suarez@pharm.ox.ac.uk",
+      "name": "Maria Fernandez-Suarez"
+    },
+    {
+      "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#a8cec56f-6c97-4493-a003-c33a586a9ac3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "PC12 cells",
+      "name": "PC12 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#01dae9da-49e0-4e51-a08b-64ce6d44131f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "488 laser,  LD 63X objective, Zoom: 2.",
+      "labEquipment": "Live cell imaging was performed using a Leica-SP8 confocal microscope with an LD 63X objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "GFP-PMCA2 expressing PC12 cells"
+    },
+    {
+      "@id": "#397dcc38-0a94-4b15-a3fd-5c00839647ff",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "552 laser,  LD 63X objective, Zoom: 2.",
+      "labEquipment": "Confocal images were acquired using a Leica-SP8 confocal microscope with an LD 63X objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "PMCA2-KD immunocytochemistry"
+    },
+    {
+      "@id": "#54a0704e-7d23-4d66-9879-a3dc98dca755",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "488 and 552 lasers,  LD 63X objective, Zoom: 2.",
+      "labEquipment": "Confocal images were acquired using a Leica-SP8 confocal microscope with an LD 63X objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Endogenous NPC1 and PMCA2 colocalisation in PC12 cells"
+    },
+    {
+      "@id": "#7bb2d3b8-87a5-43ad-a002-084e941abe39",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "405 laser,  LD 63X objective, Zoom: 2.",
+      "labEquipment": "Confocal images were acquired using a Leica-SP8 confocal microscope with an LD 63X objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Filipin stained scramble and Atp2b2 knockdown PC12 cells"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 644
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3535248154
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2360"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2360",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#de265ec8-0836-4b84-a080-40560756b0a6"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e842e460-b8ee-4c80-b756-03881044df24"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2800-9501"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-03",
+      "description": "The term polymethine dye (PMD) has been intimately linked to the dinuclear scaffold–two heterocycles linked together by a polymethine chain of varying length. Dinuclear PMDs have been a successful scaffold for non-invasive in vivo imaging in the biologically advantageous near infrared (NIR) and shortwave infrared (SWIR) regions of the electromagnetic spectrum. Trinuclear polymethine dyes, resulting from the addition of a third heterocycle into the polymethine chain, possess the same photophysical properties that make dinuclear dyes excellent fluorescent probes, but have yet to be investigated for in vivo imaging. Herein, we expand upon the dinuclear and trinuclear heptamethine scaffold by taking advantage of the increased reactivity of a cyclopentenyl linker and synthesize flavylium- and chromenylium-based SWIR-emitting fluorophores. The trinuclear scaffold instills the fluorophores with increased steric bulk, leading to beneficial photophysical properties in micelles and outperforming their classic dinuclear counterparts. In this work, we apply trinuclear PMDs for in vivo SWIR imaging in mice and find them to be particularly efficient at lymph node labeling upon intravenous administration.",
+      "funder": [],
+      "identifier": "S-BIAD2360",
+      "keywords": [
+        "Fluorescent probes",
+        "Imaging agents",
+        "Near infrared",
+        "Polymethines",
+        "Shortwave infrared"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Trinuclear Heptamethine Dyes for Shortwave Infrared In Vivo Imaging",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2360/274533d2-89ec-437c-9a30-a8c379a8868e/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2800-9501",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/046rm7j60"
+        }
+      ],
+      "email": "ericlin1337@gmail.com",
+      "name": "Eric Lin"
+    },
+    {
+      "@id": "https://ror.org/046rm7j60",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#e842e460-b8ee-4c80-b756-03881044df24",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live mice and ex vivo dissected mouse organs, carcass.",
+      "name": "SWIR fluorescence imaging in mice: biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#de265ec8-0836-4b84-a080-40560756b0a6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A custom-built SWIR imaging setup was used. Lumics laser units: LU1064D350- U30AN (35 W) “1060 nm”; LU0975DLU350-S30AN03 (35 W) “975 nm”; LU0890D280-U10AN (28 W) “890 nm” were used for excitation. Individual laser outputs were coupled in a 4x1 fan-out fiber-optic bundle (Thorlabs BF46LS01) with a 600 μm core diameter for each optical path. The output from the fiber bundle was affixed to an excitation cube (Thorlabs KCB1E), reflected off of a mirror (Thorlabs BBE1- E03), and passed through a positive achromat (Thorlabs AC254-050-AB-ML), short pass (SP) filter (1100 nm, Edmund Optics #84-768) and an engineered diffuser (Thorlabs ED1-S20-MD) to provide uniform illumination over the working area. The excitation flux (mW/cm2) at the field of illumination was measured with a digital optical power sensor (Thorlabs PM100D) and set in accordance with the International Commission on Non-Ionizing Radiation Protection.4 An InGaAs (Allied Vision Goldeye G-032 Cool TEC2) camera with a sensor temperature set point of -30 °C and gain = 1 was used to detect SWIR emission. The camera was placed vertically above the field of illumination, with emitted light passed through a set of longpass (LP) detection filters (see below) and a C-mount camera lens (Kowa LM35HC-SW). The assembly was partially enclosed to minimize extraneous light while enabling manipulation of the field of view during operation. The camera and lasers were externally controlled and synchronized by delivering trigger pulses of 5 V Transistor-Transistor Logic to the laser drivers and camera using a programmable trigger controller with pulses generated with an Atmel Atmega328 micro-controller unit and programmed using Arduino Nano Rev 3 MCU (A000005) in the Arduino integrated development environment. Imaging data acquired from this system was then transferred to the PC via either a Gigabit Ethernet or CameraLink interface. For image acquisition, the toolbox of MATLAB programming environment was used in combination with a MATLAB script (CCDA V3, https://gitlab.com/brunslab/ccda) to preview and collect the required image data in 14-bit depth. \n\nFor “1100 nm LP” filtering, three optical filters were placed in series before the camera lens: 2x High Performance OD 4.0 1100 nm LP, #84-768 Edmund Optics; 1x FELH1100, Thorlabs.\nFor “1200 nm LP” filtering, three optical filters were placed in series before the camera lens: 2x High Performance OD 4.0 1100 nm LP, #84-768 Edmund Optics; 1x FELH1200, Thorlabs.\nFor “1300 nm LP” filtering, three optical filters were placed in series before the camera lens: 1x High Performance OD 4.0 1300 nm LP, #89-668 Edmund Optics; 1x High Performance OD 4.0 1100 nm LP, #84-768 Edmund Optics; 1x FELH1300, Thorlabs.\nFor “1400 nm LP” filtering, three optical filters were placed in series before the camera lens: 1x High Performance OD 4.0 1300 nm LP, #89-668 Edmund Optics; 1x High Performance OD 4.0 1100 nm LP, #84-768 Edmund Optics; 1x FELH1400, Thorlabs.\n",
+      "labEquipment": "Allied Vision Goldeye G-032 Cool TEC2 camera",
+      "measurementTechnique": [],
+      "name": "SWIR fluorescence imaging in mice: specimen"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 491
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 67128409126
+    }
+  ]
+}

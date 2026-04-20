@@ -1,0 +1,162 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000442/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000442/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000442",
+      "name": "Semaphorin 6D tunes amygdalar circuits for emotional, metabolic, and inflammatory outputs",
+      "description": "Regulated neural-metabolic-inflammatory responses are essential for maintaining physiological homeostasis. However, the molecular machinery that coordinates neural, metabolic, and inflammatory responses is largely unknown. Here, we show that semaphorin 6D (SEMA6D) coordinates anxiogenic, metabolic, and inflammatory outputs from the amygdala by maintaining synaptic homeostasis. Using genome-wide approaches, we identify SEMA6D as a pleiotropic gene for both psychiatric and metabolic traits in human. Sema6d deficiency increases anxiety in mice. When fed a high-fat diet, Sema6d(-/-) mice display attenuated obesity and enhanced myelopoiesis compared with control mice due to higher sympathetic activity via the beta3-adrenergic receptor. Genetic manipulation and spatial and single-nucleus transcriptomics reveal that SEMA6D in amygdalar interneurons is responsible for regulating anxiogenic and autonomic responses. Mechanistically, SEMA6D is required for synaptic maturation and gamma-aminobutyric acid transmission. These results demonstrate that SEMA6D is important for the normal functioning of the neural circuits in the amygdala, coupling emotional, metabolic, and inflammatory responses.",
+      "datePublished": "2025-06-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Humans",
+        "Male",
+        "Mice",
+        "Amygdala/metabolism[major]",
+        "Anxiety/metabolism",
+        "Diet, High-Fat",
+        "Emotions/physiology",
+        "Inflammation/metabolism",
+        "Interneurons/metabolism",
+        "Mice, Inbred C57BL",
+        "Mice, Knockout",
+        "Obesity/metabolism",
+        "Semaphorins/metabolism[major]",
+        "Semaphorins/genetics[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.neuron.2024.06.017"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Sujin Kang",
+      "email": "kang@ifrec.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: WPI-IFReC; Laboratory: Laboratory of Immune Regulation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Atsushi Kumanogoh",
+      "description": "Department: Department of Respiratory Medicine and Clinical Immunology"
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.neuron.2024.06.017",
+      "@type": "ScholarlyArticle",
+      "name": "Semaphorin 6D tunes amygdalar circuits for emotional, metabolic, and inflammatory outputs.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 39938603008,
+      "description": "39.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 11,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

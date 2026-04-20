@@ -1,0 +1,257 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD620"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD620",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#37e96f11-21be-4964-bac7-3c996fc0e637"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1635e791-dce8-4372-80fb-93e4d4f07b50"
+        },
+        {
+          "@id": "obo:NCBITaxon_1423"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0151-5474"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8333-8132"
+        },
+        {
+          "@id": "#655b80ea-94b2-459a-a23f-5825af7f92fb"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8377-3863"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5936-9721"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-02-08",
+      "description": "Bacteria encounter polymeric nutrient sources that need to be processed to support growth. Bacillus subtilis is a bacterium known for its adaptability and resilience within the rhizosphere and broader soil environment. Here we explore the role that a suite of extracellular proteases plays in supporting growth of B. subtilis when an extracellular heterologous protein (BSA) provides an abundant, but polymeric, food source. We confirm the essential role of extracellular proteases in this context and note the influence of the polymeric nutrient concentration on the yield of growth, but not on the relative level of extracellular proteases. We demonstrate the collective action of the extracellular proteases in supporting B. subtilis growth and evidence their use as a shared public good. Furthermore, we show that B. subtilis is subjected to a public good dilemma, but only in the context of using a polymeric food source. Using mathematical simulations, we uncover that this dilemma is driven by the relative cost of producing the public good. Collectively, our findings reveal how B. subtilis can survive in environments that vary significantly in terms of immediate nutrient accessibility. This information should inform steps to improve its efficacy as a biofertilizer in agricultural settings.",
+      "funder": [],
+      "identifier": "S-BIAD620",
+      "keywords": [
+        "Bacillus subtilis",
+        "Extracellular proteases",
+        "Public good ",
+        "Nutrient acquisition"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Extracellular proteases are an essential public good supporting B. subtilis growth through exogenous protein degradation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD620/229cde7b-9a05-46e5-aa31-627ae07fcaf8/76dbd945-ad50-4501-85dd-327abc29b929.png"
+      ]
+    },
+    {
+      "@id": "#655b80ea-94b2-459a-a23f-5825af7f92fb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "email": "c.earl@dundee.ac.uk",
+      "name": "Dr Chris Earl"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0151-5474",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "email": "2392267@dundee.ac.uk",
+      "name": "Thibault Rosazza"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5936-9721",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "email": "n.r.stanleywall@dundee.ac.uk",
+      "name": "Professor Nicola Stanley-Wall"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8333-8132",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7416fa5e-9e3a-4cb5-84b1-7f1914df4397"
+        }
+      ],
+      "email": "lukas.eigentler@uni-bielefeld.de",
+      "name": "Dr Lukas Eigentler"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8377-3863",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "name": "Professor Fordyce Davidson"
+    },
+    {
+      "@id": "#7416fa5e-9e3a-4cb5-84b1-7f1914df4397",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Bielefeld University"
+    },
+    {
+      "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_1423",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Bacillus subtilis"
+    },
+    {
+      "@id": "#1635e791-dce8-4372-80fb-93e4d4f07b50",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "B. subtilis static coculture",
+      "name": "Bacillus subtilis",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_1423"
+      }
+    },
+    {
+      "@id": "#37e96f11-21be-4964-bac7-3c996fc0e637",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "both reflected light and fluorescence signals (485 nm and 620 nm)",
+      "labEquipment": "Leica M165C stereoscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Leica M165C stereoscope"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 10
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3920768422
+    }
+  ]
+}

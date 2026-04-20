@@ -1,0 +1,256 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1936"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1936",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#da3ed50a-dcd8-4df9-b504-6b79be08a029"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#51d873ce-cfb9-436a-bbe2-38cf500468e4"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0001-5719-7700"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8925-2447"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8359-6705"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2713-1513"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-01",
+      "description": "Images of longitudinal muscle myenteric plexus from male α-synuclein overexpressing mice infected with an AAV transducing a nuclear pore protein fused to superfolding GFP for marking neuronal nuclei.",
+      "funder": [],
+      "identifier": "S-BIAD1936",
+      "keywords": [
+        "α-synuclein",
+        "Sun1-sfGFP",
+        "Neuron",
+        "myenteric plexus"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Single-nuclei transcriptome of enteric neurons in α-synuclein overexpressing mice\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1936/a427e140-bc58-4bd3-b976-f8e8d33959bc/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8925-2447",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ef790421-d5db-41ef-b238-82ad13eb36d0"
+        }
+      ],
+      "email": "john.w.bostick@gmail.com",
+      "name": "John Bostick"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8359-6705",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "delaneyk.sullivan@gmail.com",
+      "name": "Delaney Sullivan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2713-1513",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#54948553-f52f-4bf7-a592-583d10ac69e7"
+        }
+      ],
+      "email": "sarkis@caltech.edu",
+      "name": "Sarkis Mazmanian"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-5719-7700",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e450c313-4c69-4d02-be01-fff6bfe8cd32"
+        }
+      ],
+      "email": "chrispukszta@gmail.com",
+      "name": "Christopher Pukszta"
+    },
+    {
+      "@id": "#54948553-f52f-4bf7-a592-583d10ac69e7",
+      "@type": [
+        "Organization"
+      ],
+      "name": "California Institute of Technology"
+    },
+    {
+      "@id": "#e450c313-4c69-4d02-be01-fff6bfe8cd32",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Massachusetts Institute of Technology"
+    },
+    {
+      "@id": "#ef790421-d5db-41ef-b238-82ad13eb36d0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Florida"
+    },
+    {
+      "@id": "#f270c395-b369-47cc-8f34-862290942b7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#51d873ce-cfb9-436a-bbe2-38cf500468e4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult Mouse Longitudinal Muscle Myenteric Plexus",
+      "name": "Alpha Synuclein Over Expressing Mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#da3ed50a-dcd8-4df9-b504-6b79be08a029",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All samples were imaged after staining and slide mounting on a Zeiss LSM 880 with Fast Airyscan using a 40x Nikon water/oil immersion lens. 405, 488, 561, and 594 nm lasers (to detect, DAPI, GFP, PGP9.5 - neurons, and anti-GFP respectively) were set to the minimum power needed to resolve structures with as low of a gain as possible. All exposure times were set to 100 ms and 4 scans of each horizontal line were averaged for acquisition. Z stacks were collected as close together as possible and summed for analysis across the whole tissue sample as set by PGP9.5 stain detection. ",
+      "labEquipment": "Zeiss LSM 880 with Fast Airyscan",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "name": "Myenteric Neurons With Nuclear GFP Expression"
+    },
+    {
+      "@id": "obo:FBbi_00000393",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "array-scan confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 252124064
+    }
+  ]
+}

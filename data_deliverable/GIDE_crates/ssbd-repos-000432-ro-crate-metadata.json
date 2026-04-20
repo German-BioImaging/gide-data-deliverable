@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000432/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000432/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000432",
+      "name": "Chondrocyte hypertrophy and stress anisotropy in long bone development",
+      "description": "The length of long bones is determined by column formation of proliferative chondrocytes and subsequent chondrocyte hypertrophy in the growth plate during bone development. Despite the importance of mechanical loading in long bone development, the mechanical conditions of the cells within the growth plate, such as the stress field, remain unclear owing to the difficulty in investigating spatiotemporal changes within dynamically growing tissues. In this study, the mechanisms of longitudinal bone growth were investigated from a mechanical perspective through column formation of proliferative chondrocytes within the growth plate before secondary ossification center formation using continuum-based particle models (CbPMs). A one-factor model, which simply describes essential aspects of a biological signaling cascade regulating cell activities within the growth plate, was developed and incorporated into CbPM. Subsequently, the developmental process and maintenance of the growth plate structure and resulting bone morphogenesis were simulated. Thus, stress anisotropy in the proliferative zone that affects bone elongation through chondrocyte column formation was identified and found to be promoted by chondrocyte hypertrophy. These results provide further insights into the mechanical regulation of multicellular dynamics during bone development.",
+      "datePublished": "2025-04-23",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.bone.2024.117055"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Taiji Adachi",
+      "email": "adachi@infront.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Department of Biosystems Science; Laboratory: Biomechanics Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.bone.2024.117055",
+      "@type": "ScholarlyArticle",
+      "name": "Chondrocyte hypertrophy in the growth plate promotes stress anisotropy affecting long bone development through chondrocyte column formation.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 602456064,
+      "description": "602.5 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 27,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000110/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000110/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000110",
+      "name": "Immunoelectron microscopic images of nakanori distribution in HeLa cells, human skin fibroblasts and NPC cells",
+      "description": "ssbd-repos-000110",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Binding Sites",
+        "Cells, Cultured",
+        "Cholesterol/metabolism[major]",
+        "Fibroblasts/drug effects",
+        "Fibroblasts/metabolism",
+        "Fungal Proteins/chemistry",
+        "Fungal Proteins/metabolism",
+        "Fungal Proteins/pharmacology[major]",
+        "Grifola/chemistry[major]",
+        "HeLa Cells",
+        "Humans",
+        "Membrane Microdomains/drug effects[major]",
+        "Membrane Microdomains/metabolism",
+        "Membrane Microdomains/virology",
+        "Niemann-Pick Disease, Type C/metabolism[major]",
+        "Protein Binding",
+        "Sphingomyelins/metabolism[major]",
+        "Virus Release"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1096/fj.201500075R"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0048003"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032994"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-170"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Toshihide Kobayashi",
+      "email": "toshihide.kobayashi@unistra.fr",
+      "description": "Organization: University of Strasbourg; Department: Faculty of pharmacy; Laboratory: UMR 7021 CNRS",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00pg6eq24"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/00pg6eq24",
+      "@type": "Organization",
+      "name": "University of Strasbourg"
+    },
+    {
+      "@id": "https://doi.org/10.1096/fj.201500075R",
+      "@type": "ScholarlyArticle",
+      "name": "A novel sphingomyelin/cholesterol domain-specific probe reveals the dynamics of the membrane domains during virus release and in Niemann-Pick type C.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "fibroblast, HeLa , NPC",
+      "description": "fibroblast, HeLa , NPC",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048003",
+      "@type": "DefinedTerm",
+      "name": "protein lipid complex assembly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032994",
+      "@type": "DefinedTerm",
+      "name": "protein lipid complex"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 63145984,
+      "description": "63.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 10,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

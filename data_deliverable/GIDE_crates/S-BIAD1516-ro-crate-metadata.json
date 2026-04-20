@@ -1,0 +1,209 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1516"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1516",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6b18ae35-127f-4643-ab76-06be1ad6e4a7"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4d3882a9-b5ac-4de3-b857-a8a01413d009"
+        },
+        {
+          "@id": "obo:NCBITaxon_3711"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9b18e534-c6a7-44e3-bae5-88ca642c6691"
+        },
+        {
+          "@id": "https://orcid.org/0009-0001-0166-0399"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8462-2883"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-13",
+      "description": "This data was selected as part of the AI4Life Open Calls 2023 for image analysis consultation and deep-learning applications.",
+      "funder": [],
+      "identifier": "S-BIAD1516",
+      "keywords": [
+        "AI4Life Open Call",
+        "tracking",
+        "instance segmentation",
+        "AI4Life"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Leaf Segmentation and Tracking in RGB Plant Imaging",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#9b18e534-c6a7-44e3-bae5-88ca642c6691",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#63899ba8-7050-4283-abc7-c371e91ab961"
+        }
+      ],
+      "name": "Sofia Bengoa Luoni"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8462-2883",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "email": "joran.deschamps@fht.org",
+      "name": "Joran Deschamps"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-0166-0399",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "email": "vera.galinova@fht.org",
+      "name": "Vera Galinova"
+    },
+    {
+      "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Human Technopole"
+    },
+    {
+      "@id": "#63899ba8-7050-4283-abc7-c371e91ab961",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Wageningen University & Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3711",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Brassica rapa"
+    },
+    {
+      "@id": "#4d3882a9-b5ac-4de3-b857-a8a01413d009",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "This study focuses on three plant species: Brassica rapa, Brassica nigra, and Hirchfeldia incana.",
+      "name": "Samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3711"
+      }
+    },
+    {
+      "@id": "#6b18ae35-127f-4643-ab76-06be1ad6e4a7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Although the camera system supports various imaging modalities, only RGB data is used in this analysis. Each plant is photographed daily, creating a unique RGB image for each observation day.",
+      "labEquipment": "Custom multispectral imaging system",
+      "measurementTechnique": [],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 0
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 0
+    }
+  ]
+}

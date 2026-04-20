@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD852"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD852",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#dad3861a-65e7-4a07-9585-7a38b1b1472f"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2e521c5a-b1fd-41a8-98ff-d2082803a478"
+        },
+        {
+          "@id": "obo:NCBITaxon_562"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#3ae2ec2f-5652-4810-b0bf-62bbe0a809b4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-18",
+      "description": "OME-NGFF converted study from idr0091.  We use quantitative time-lapse microscopy combined with microfluidics to analyse the induction dynamics of the lac operon in single bacteria cells.",
+      "funder": [],
+      "identifier": "S-BIAD852",
+      "keywords": [
+        "gene regulation",
+        "lac operon",
+        "single-cell microscopy",
+        "mother machine",
+        "induction lag",
+        "diauxie"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Subpopulations of sensorless bacteria drive fitness in fluctuating environments (OME-NGFF)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD852/ed774ad2-8872-430b-9772-774be2d6c6a5/590b9f72-1ce0-46b9-97c2-d7fa2f2d7e82.png"
+      ]
+    },
+    {
+      "@id": "#3ae2ec2f-5652-4810-b0bf-62bbe0a809b4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03h2bxq36"
+        }
+      ],
+      "email": "idr-support@openmicroscopy.org",
+      "name": "Image Data Resource (IDR)"
+    },
+    {
+      "@id": "https://ror.org/03h2bxq36",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_562",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli"
+    },
+    {
+      "@id": "#2e521c5a-b1fd-41a8-98ff-d2082803a478",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E. coli",
+      "name": "Bacteria",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#dad3861a-65e7-4a07-9585-7a38b1b1472f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100x, Ph3, NA 1.4, typical GFP excitation: Lumencor Cyan at 17% with ND4 during 2 sec",
+      "labEquipment": "Nikon Ti setup controlled with Micro-Manager",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "name": "Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 342
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 91550627154
+    }
+  ]
+}

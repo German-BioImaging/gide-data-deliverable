@@ -1,0 +1,217 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000452/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000452/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000452",
+      "name": "Intracellular signaling observed using giant Dictyostelium cells",
+      "description": "We developed a method to enlarge Dictyostelium discoideum cells by partial cytokinesis inhibition, generating multinucleated yet functional giant cells. These cells retained chemotactic signaling, polarity, and motility, enabling high-resolution live-cell imaging. Using fluorescent probes for cAMP and Ca2+, we uncovered a directional, front-to-rear propagation of cAMP signaling and a biphasic Ca2+ response coordinated with actin wave dynamics.",
+      "datePublished": "2026-01-21",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s42003-025-09505-7"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2025.06.30.662253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0045168"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005737"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yusuke V. Morimoto",
+      "email": "yvm001@phys.kyutech.ac.jp",
+      "description": "Organization: Kyushu Institute of Technology; Department: Department of Physics and Information Technology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02278tr80"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02278tr80",
+      "@type": "Organization",
+      "name": "Kyushu Institute of Technology"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "Japan Science and Technology Agency, JPMJSP2154, JPMJPR204B"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s42003-025-09505-7",
+      "@type": "ScholarlyArticle",
+      "name": "Establishing functional giant Dictyostelium cells reveals front–rear polarity in intracellular signaling",
+      "datePublished": "2026"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2025.06.30.662253",
+      "@type": "ScholarlyArticle",
+      "name": "Front–rear polarity of intracellular signaling uncovered via giant &lt;em&gt;Dictyostelium&lt;/em&gt; cells",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Dictyostelium discoideum, AX2",
+      "description": "Dictyostelium discoideum, AX2",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "vernacularName": "social amoeba"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
+      "@type": "DefinedTerm",
+      "name": "cell migration"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0045168",
+      "@type": "DefinedTerm",
+      "name": "cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
+      "@type": "DefinedTerm",
+      "name": "cytoplasm"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 4980424704,
+      "description": "5.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 54,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

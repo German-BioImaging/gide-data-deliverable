@@ -1,0 +1,235 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2374"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2374",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#44f67fa8-78af-415d-98fe-baf332c7d029"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9a555b8c-9261-4d45-8e04-1ec37869f711"
+        },
+        {
+          "@id": "#9e2970c1-f6ac-4b06-8aff-a4f6dabf19bb"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-1922-4824"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7355-0674"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "#4db28204-57cf-4f67-a425-e05db7d9b8bd"
+        }
+      ],
+      "datePublished": "2025-10-31",
+      "description": "Screening of a comprehensive collection of 1,920 S. aureus mutants (Nebraska transposon mutant library) in epithelial cells across five timepoints (0.5, 1.5, 3, 6 and 48 hours post-infection) using a fluorescence microscopy-based infection assay.",
+      "funder": [],
+      "identifier": "S-BIAD2374",
+      "keywords": [
+        "Staphylococcus aureus",
+        "S. aureus intracellular lifestyle",
+        "host-pathogen interaction"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Systematic identification of bacterial factors driving Staphylococcus aureus intracellular lifestyle in non-professional phagocytes",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2374/5a628de7-eeee-4086-9b5a-dcff8c7ac356/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7355-0674",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/041kmwe10"
+        }
+      ],
+      "email": "a.eulalio@imperial.ac.uk",
+      "name": "Ana Eulalio"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1922-4824",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0220mzb33"
+        }
+      ],
+      "email": "miguel.mano@kcl.ac.uk",
+      "name": "Miguel Mano"
+    },
+    {
+      "@id": "https://ror.org/0220mzb33",
+      "@type": [
+        "Organization"
+      ],
+      "name": "King's College London"
+    },
+    {
+      "@id": "https://ror.org/041kmwe10",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Imperial College London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#4db28204-57cf-4f67-a425-e05db7d9b8bd",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "None",
+      "name": "Systematic identification of bacterial factors driving Staphylococcus aureus intracellular lifestyle in non-professional phagocytes"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9a555b8c-9261-4d45-8e04-1ec37869f711",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells. epithelial cells",
+      "name": "HeLa229 cells infected with S. aureus transposon mutant library NTML",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9e2970c1-f6ac-4b06-8aff-a4f6dabf19bb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells. epithelial cells",
+      "name": "HeLa229 cells infected with S. aureus transposon mutant library NTML",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#44f67fa8-78af-415d-98fe-baf332c7d029",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Image acquisition was performed using an Operetta automated high-content screening fluorescence microscope (PerkinElmer), at 20× magnification, with a total of nine images acquired per well. ",
+      "labEquipment": "PerkinElmer Operetta",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 389523
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 921936744735
+    }
+  ]
+}

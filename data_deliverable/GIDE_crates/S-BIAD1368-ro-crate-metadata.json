@@ -1,0 +1,180 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1368"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1368",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#096718f2-a028-42fa-9c52-1093bd4eb868"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#19f8d0a5-2f10-4fb3-b433-35ab1623c617"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4638-1123"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-21",
+      "description": "Fluorescence imaging in the shortwave infrared (SWIR) region has emerged as a vital tool for studying mammals. SWIR emissive polymethine dyes are well suited to this endeavor; however, advancing in vivo imaging utility with these dyes is primarily limited by hydrophobicity and/or non-specific protein adsorption. Herein, we take a distinct approach to combine hydrophilicity and stealth behavior to construct bright, SWIR emissive chromenylium fluorophores by employing a well-defined poly(2-methyl-2-oxazoline) (POx) star polymer architecture, which we refer to as chromenylium stars, or “CStars.” Of these polymer-shielded dyes, the variant containing five POx chains (CStar30) boasts particularly enhanced aqueous solubility and SWIR brightness, enabling high resolution SWIR imaging in mice. The swift renal clearance and stealth behavior displayed in vivo also achieves improved non-invasive visualization of the lymphatic system. Further, CStar’s orthogonal biodistribution to an FDA-approved dye, indocyanine green, facilitates excitation-multiplexed SWIR imaging in two colors to achieve simultaneous visualization of both normal fluid dynamics and protein dynamics in the same animal in real time at video-rate frame counts.\t",
+      "funder": [],
+      "identifier": "S-BIAD1368",
+      "keywords": [
+        "in vivo imaging",
+        "non-invasive imaging",
+        "fluorescence imaging",
+        "lymphatic imaging",
+        "shortwave infrared (SWIR)",
+        "star polymer fluorophore",
+        "polymethine dyes",
+        "water soluble",
+        "poly(oxazoline)",
+        "stealth in vivo",
+        "excitation multiplexed imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Chromenylium Star Polymers: Merging Water Solubility and Stealth Properties with Shortwave Infrared Emissive Fluorophores",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1368/430575bf-75c3-4ac2-85f3-c547083ad97b/d166209d-8e2a-4e0f-87c2-9b9f4c116c55.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4638-1123",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "emilybrimobley@gmail.com",
+      "name": "Emily B. Mobley"
+    },
+    {
+      "@id": "#f270c395-b369-47cc-8f34-862290942b7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#19f8d0a5-2f10-4fb3-b433-35ab1623c617",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live mice and ex vivo dissected mouse organs, carcass ",
+      "name": "SWIR fluorescence imaging in mice: biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#096718f2-a028-42fa-9c52-1093bd4eb868",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For whole mouse imaging, a custom-built imaging setup was used. Lumics laser units: LU0975DLU350-S30AN03 (35 W) “975 nm”; LU0785D250-U70AN (25 W) \"785 nm”. Note: excitation wavelengths are reported as “974 nm” and “786 nm”, respectively, according to maximum wavelength intensity via spectrometer measurement. Lasers were coupled in a 4-in-1 fan out fiber-optic bundle of 600 µm core diameter (Thorlabs BF46LS01) for each optical path. The fiber bundle output was fixed through an excitation cube (Thorlabs KCB1E), reflected off of a mirror (Thorlabs BBE1- E03), and passed through a positive achromat (Thorlabs AC254-050-AB-ML), SP filters (2x, High Performance OD 4.0 1100 nm SP, Edmund Optics #64-339) and an engineered 20˚ square diffuser (Thorlabs ED1-S20-MD) to provide uniform illumination over the imaging stage. This working area was covered by a heating mat, nose cone (to deliver anesthesia to mice), and non-reflective blackout fabric (Thorlabs BK5). The excitation flux was measured over the illumination area with a digital optical power and energy meter (Thorlabs PM100D) in mW/cm2, and adjusted in accordance with ICNIRP guidelines for whole mouse imaging.8 An InGaAs camera (Allied Vision Goldeye G-032 Cool TEC2) camera was mounted vertically above the imaging stage to detect emitted light. The camera was fitted with a C-mount camera lens (Kowa LM35HC-SW) and a set of LP emission filters (filter set for “1100 nm LP”: 2x High Performance OD 4.0 1100 nm LP, #84-768 Edmund Optics; 1x FELH1100, Thorlabs). The camera used a sensor temperature set point of -30 °C and gain = 1. Exposure time was defined for each experiment. The assembly was partially enclosed to avoid excess light while enabling manipulation of the field of view during operation. Both the camera and lasers were externally controlled and synchronized by delivering trigger pulses of 5V Transistor-Transistor Logic to the laser drivers and camera, using a programmable trigger controller with pulses generated with an Atmel Atmega328 micro-controller unit and programmed using Arduino Nano Rev 3 MCU (A000005) in the Arduino integrated development environment (IDE). Imaging data acquired by this system are then transferred to the PC via a Gigabit Ethernet (GigE), or CameraLink (CL) interface. For image acquisition, the toolbox of MATLAB programming environment was used in combination with a MATLAB script (CCDA V3, https://gitlab.com/brunslab/ccda) to preview and collect image data in 14-bit depth. ",
+      "labEquipment": "Allied Vision Goldeye G-032 Cool TEC2 camera",
+      "measurementTechnique": [],
+      "name": "SWIR fluorescence imaging in mice: imaging acquisition "
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 447
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 5255114204
+    }
+  ]
+}

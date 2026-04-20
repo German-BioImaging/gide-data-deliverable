@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1162"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1162",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c359bf76-ede7-4e05-996e-d4697235c79a"
+        },
+        {
+          "@id": "obo:FBbi_00000255"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e24790a4-eda6-430c-adc6-fec0dc39c78b"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#efeaed96-8068-4644-8ba2-84ff1a0eeac7"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-30",
+      "description": "Imaging data set from p21-IRES-GFP and Puma-tdTomato mice associated with the manuscript EMBOJ-2023-114787\n\nInvestigating how transcription factors control complex cellular processes requires tools that enable responses to be visualised at the single-cell level and their fate to be followed over time. For example, the tumour suppressor TP53/TRP53 can initiate diverse cellular responses by transcriptional activation of its target genes: Puma to induce apoptotic cell death and p21 to induce cell cycle arrest/cell senescence. However, it is not known how these processes are regulated and initiated in different cell types. To be able to examine this, we developed triple-FLAG TRP53 knock-in mice for TRP53 pull-down and two TRP53 response reporter mice, knocking tdTomato or GFP into the Puma/Bbc3 or p21 gene loci, respectively. By crossing the reporter mice onto a TRP53-deficient background, we could show that these reporters reliably inform on TRP53-dependent and TRP53-independent initiation of the apoptotic as well as the cell cycle arrest/senescence programs in vitro and even in vivo. ",
+      "funder": [],
+      "identifier": "S-BIAD1162",
+      "keywords": [
+        "cdkn1a/p21",
+        "p53/TRP53/TP53",
+        "Puma/BBC3",
+        "fluorescent reporter"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Mouse models to investigate in situ cell fate decisions induced by TP53 and other factors",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1162/c9e557e8-c2fa-41b1-b98f-614cc937a396/01df6c95-3f66-4e44-9359-9b1281d630c2.png"
+      ]
+    },
+    {
+      "@id": "#efeaed96-8068-4644-8ba2-84ff1a0eeac7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82"
+        }
+      ],
+      "email": "liesche@crick.ac.uk",
+      "name": "Elizabeth Lieschke"
+    },
+    {
+      "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The Francis Crick Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#e24790a4-eda6-430c-adc6-fec0dc39c78b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Calvarium, or organs",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#c359bf76-ede7-4e05-996e-d4697235c79a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See methods of manuscript",
+      "labEquipment": "FVMPE-RS two-photon upright microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000255"
+        }
+      ],
+      "name": "Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000255",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "multi-photon microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 93
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 71171533273
+    }
+  ]
+}

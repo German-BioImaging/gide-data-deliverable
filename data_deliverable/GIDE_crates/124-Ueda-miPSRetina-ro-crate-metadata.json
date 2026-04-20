@@ -1,0 +1,226 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/124-Ueda-miPSRetina/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/124-Ueda-miPSRetina/",
+      "@type": "Dataset",
+      "identifier": "124-Ueda-miPSRetina",
+      "name": "Immunofluorescence images of photoreceptor-specific genes expressing in mouse iPS cells derived 3D retinal",
+      "description": "124-Ueda-miPSRetina",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Bioartificial Organs[major]",
+        "Cell Differentiation/physiology",
+        "Cells, Cultured",
+        "Cone Opsins/metabolism[major]",
+        "Mice",
+        "Organogenesis/physiology",
+        "Printing, Three-Dimensional",
+        "Retina/cytology[major]",
+        "Retina/growth & development[major]",
+        "Retinal Cone Photoreceptor Cells/metabolism",
+        "Rhodopsin/metabolism[major]",
+        "Stem Cells/cytology[major]",
+        "Stem Cells/physiology",
+        "Tissue Engineering/methods[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.bbrc.2017.12.092"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0060221"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0008594"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032391"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-268"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Akishi Onishi",
+      "email": "aonishi@cdb.riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Kaori Ueda"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Shin-ichiro Ito"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Makoto Nakamura"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Masayo Takahashi"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.bbrc.2017.12.092",
+      "@type": "ScholarlyArticle",
+      "name": "Generation of three-dimensional retinal organoids expressing rhodopsin and S- and M-cone opsins from mouse stem cells.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060221",
+      "@type": "DefinedTerm",
+      "name": "retinal rod cell differentiation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008594",
+      "@type": "DefinedTerm",
+      "name": "photoreceptor development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032391",
+      "@type": "DefinedTerm",
+      "name": "photoreceptor cilium"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 103846876,
+      "description": "103.8 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 31,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

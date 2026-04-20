@@ -1,0 +1,231 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2528"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2528",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9cfdb6d6-ff3b-4853-bd93-9a1f223f6ee9"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4b9ad465-fc36-4e27-8649-a65530f22d55"
+        },
+        {
+          "@id": "#899301ca-cecb-431a-b6bc-ad7d237dc881"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6992-4365"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5260-8972"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.7554/elife.105575"
+        }
+      ],
+      "datePublished": "2025-12-21",
+      "description": "Neurons use cell-adhesion molecules (CAMs) to interact with other neurons and the extracellular environment: the combination of CAMs specifies migration patterns, neuronal morphologies, and synaptic connections across diverse neuron types. Yet little is known regarding the intracellular signaling cascade mediating the CAM recognitions at the cell surface across different neuron types. Using mouse genetics and viral labeling, we investigated the neural developmental role of Afadin​, a cytosolic adapter protein that connects multiple CAM families to intracellular F-actin. We introduced the conditional Afadin mouse mutant  to an embryonic retinal Cre, Six3Cre. We reported that the mouse mutants lead to the scrambled retinal neuron distribution, including Bipolar Cells (BCs), Amacrine Cells (ACs), and retinal ganglion cells (RGCs), across three cellular layers of the retina. This scrambled pattern was first reported here at neuron-type resolution. Importantly, the mutants do not display deficits for BCs, ACs, or RGCs in terms of neural fate specifications or survival. Additionally, the displayed RGC types still maintain synaptic partners with putative AC types, indicating that other molecular determinants instruct synaptic choices independent of Afadin. Lastly, there is a significant decline in visual function and mis-targeting of RGC axons to incorrect zones of the superior colliculus, one of the major retinorecipient areas.  Collectively, our study uncovers a unique cellular role of Afadin in sorting retinal neuron types into proper cellular layers as the structural basis for orderly visual processing.  ",
+      "funder": [],
+      "identifier": "S-BIAD2528",
+      "keywords": [
+        "Afadin",
+        "Cell Adhesion",
+        "Retina",
+        "Amacrine Cells",
+        "Retinal Ganglion Cells",
+        "Neuronal Migration"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Afadin Sorts Different Retinal Neuron Types into Accurate Cellular Layers",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2528/12111253-230a-47d2-9ec2-399c821e98b8/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5260-8972",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#32e57f74-84f6-40a4-b179-5fdb90a58d4c"
+        }
+      ],
+      "email": "Xin.Duan@ucsf.edu",
+      "name": "Xin Duan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6992-4365",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#32e57f74-84f6-40a4-b179-5fdb90a58d4c"
+        }
+      ],
+      "email": "matthew.r.lum@gmail.com",
+      "name": "Matthew Lum"
+    },
+    {
+      "@id": "#32e57f74-84f6-40a4-b179-5fdb90a58d4c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "UC San Francisco"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.7554/elife.105575",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "Afadin Sorts Different Retinal Neuron Types into Accurate Cellular Layers"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#4b9ad465-fc36-4e27-8649-a65530f22d55",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse retina - AfadinF/F mice were generated by targeting the second exon of Afadin with flanking loxP sites as previously characterized in (Beaudoin 2012).",
+      "name": "AfadinWT-Retina",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#899301ca-cecb-431a-b6bc-ad7d237dc881",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse retina - Six3Cre expresses Cre recombinase in all of the retina except its far periphery as previously described (Duan 2018 and Lefebvre 2015)​.",
+      "name": "AfadincKO-Retina",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9cfdb6d6-ff3b-4853-bd93-9a1f223f6ee9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal images were acquired using a Zeiss LSM900 (Carl Zeiss Microscopy). For both retinal wholemounts and sections, images were taken with a step size of 1μm (wholemounts) or 0.5μm (sections) and a 20X, 40X, or 63X lens. For wholemounts of retinas, at least eight areas (∼0.5 × 0.5 mm) were imaged across the whole retina, including two on each nasal, temporal, ventral, and dorsal side. One field from at least eight sections per sample was imaged and analyzed for retinal sections. The numbers from all sections were averaged to generate a single value for each retina. Images were analyzed using ImageJ software (NIH). Only contrast and brightness were adjusted for all images. Images were carefully not oversaturated, and only cells that stained brightly were counted when positive staining was to be determined.",
+      "labEquipment": "Zeiss LSM900 (Carl Zeiss Microscopy)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "AfadincKO and AfadinWT Confocal Images"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 235
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 31008499843
+    }
+  ]
+}

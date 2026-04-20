@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2286"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2286",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bf3e346e-8b3b-4ed7-8feb-6747562d7593"
+        },
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ac28a7ea-62cb-4a56-87a0-959732fbc72b"
+        },
+        {
+          "@id": "obo:NCBITaxon_6183"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5909-4190"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-19",
+      "description": "Sample videos acquired with the InVision device. Videos are of schistosome miracidia swimming in a custom arena and can be used to develop and optimize tracking pipelines.",
+      "funder": [],
+      "identifier": "S-BIAD2286",
+      "keywords": [
+        "video",
+        "tracking",
+        "schistosome",
+        "miracidia"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Quantitative ethology of schistosome miracidia characterizes a conserved snail peptide that inhibits host recognition",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5909-4190",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c74d4a9c-021a-4d3e-a4d0-3d6d39e2ca5d"
+        }
+      ],
+      "email": "wheelenj@uwec.edu",
+      "name": "Nic Wheeler"
+    },
+    {
+      "@id": "#c74d4a9c-021a-4d3e-a4d0-3d6d39e2ca5d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Wisconsin-Eau Claire"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6183",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Schistosoma mansoni"
+    },
+    {
+      "@id": "#ac28a7ea-62cb-4a56-87a0-959732fbc72b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Miracidia.",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6183"
+      }
+    },
+    {
+      "@id": "#bf3e346e-8b3b-4ed7-8feb-6747562d7593",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "White LED panel backlight at max output (>3000 LUX). Basler acA5472-17um camera with Fujifilm Fujinon CF50ZA-1S lens. Recorded for 1 hour at 8 frames per second, with exposure at 750 µs.",
+      "labEquipment": "InVision device. Multi-camera array for wide-field imaging.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000240",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "macroscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 9
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4607227425
+    }
+  ]
+}

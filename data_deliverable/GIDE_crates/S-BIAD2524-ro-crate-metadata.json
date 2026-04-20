@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2524"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2524",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2190d127-4314-4462-a7d3-9d9b559c6ab1"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#006844ef-fcda-4bb4-b2ff-598a8482be74"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2718-6338"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6081-7595"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-19",
+      "description": "Optical multifrequency time-harmonic elastography (OMTHE) was used for rapid mechanical characterization of extra-cellular matrix-derived collagen networks at micrometer resolution. OMTHE was optimized for point-wise shear wave excitation in small sample volumes and compared to tabletop magnetic resonance elastography (ttMRE) and optical intensity changes. Dynamic stiffening due to the fluid-gel transition during collagen polymerization and chemical crosslinking using glutaraldehyde was tracked by shear waves speed (SWS) at vibration frequencies between 3 and 10 kHz and frame rates up to 4 kHz. During collagen polymerization, after an initial lag phase, SWS increased on average 6 ± 3 min earlier than optical density, suggesting that a load-bearing percolating fiber network was established before fibril thickening enhanced light scattering. In contrast, chemical crosslinking showed a lag-free, diffusion-driven SWS increase from 1.7 ± 0.4 m/s to 2.5 ± 0.5 m/s, matching the relative SWS change from ground-truth ttMRE. In conclusion, OMTHE provides a unique research tool that quantifies biomechanical property changes in small biological samples with spatiotemporal resolutions of micrometers and seconds.",
+      "funder": [],
+      "identifier": "S-BIAD2524",
+      "keywords": [
+        "Elastography",
+        "Collagen",
+        "ECM",
+        "Optical Elastography"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Spatiotemporal mapping of microscale stiffness during collagen polymerization and crosslinking by optical multifrequency time-harmonic elastography",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6081-7595",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f147aa82-c8d0-4707-96cf-99b767059f52"
+        }
+      ],
+      "email": "jakob.jordan@charite.de",
+      "name": "Jakob Jordan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2718-6338",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f147aa82-c8d0-4707-96cf-99b767059f52"
+        }
+      ],
+      "email": "frank.sauer@charite.de",
+      "name": "Frank Sauer"
+    },
+    {
+      "@id": "#f147aa82-c8d0-4707-96cf-99b767059f52",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Charité Berlin"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#006844ef-fcda-4bb4-b2ff-598a8482be74",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Rat tail & Bovine Skin - 2.5 g/l",
+      "name": "Collagen Type 1",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#2190d127-4314-4462-a7d3-9d9b559c6ab1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "see method section of the paper",
+      "labEquipment": "Zeiss Axio Observer",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Brightfield imaging for OMTHE"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 75240
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 118139143044
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/292-Katsuta-StressFiber/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/292-Katsuta-StressFiber/",
+      "@type": "Dataset",
+      "identifier": "292-Katsuta-StressFiber",
+      "name": "Time-lapse images showing the pivotal role of alpha-actinin which generates mechanical force in stress fibers",
+      "description": "292-Katsuta-StressFiber",
+      "datePublished": "2025-04-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.isci.2023.106090"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051015"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051492"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005856"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001725"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0009986"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0045010"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000259"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1652"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hiroaki Hirata",
+      "email": "hirata@neptune.kanazawa-it.ac.jp",
+      "description": "Organization: Kanazawwa Institute of Technology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02ws33e43"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hiroki Katsuta"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Satoru Okuda"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Kazuaki Nagayama"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Hiroaki Machiyama"
+    },
+    {
+      "@id": "https://ror.org/02ws33e43",
+      "@type": "Organization",
+      "name": "Kanazawwa Institute of Technology"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.isci.2023.106090",
+      "@type": "ScholarlyArticle",
+      "name": "Actin crosslinking by alpha-actinin averts viscous dissipation of myosin force transmission in stress fibers.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus ~ C2C12 cell",
+      "description": "Mus musculus ~ C2C12 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "hasCellLine": "C2C12 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051015",
+      "@type": "DefinedTerm",
+      "name": "actin filament binding"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051492",
+      "@type": "DefinedTerm",
+      "name": "regulation of stress fiber assembly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
+      "@type": "DefinedTerm",
+      "name": "cytoskeleton"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001725",
+      "@type": "DefinedTerm",
+      "name": "stress fiber"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009986",
+      "@type": "DefinedTerm",
+      "name": "cell surface"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0045010",
+      "@type": "DefinedTerm",
+      "name": "actin nucleation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
+      "@type": "DefinedTerm",
+      "name": "cell migration"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "atomic force microscopy",
+      "description": "atomic force microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000259"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "FRAP",
+      "description": "FRAP",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000259",
+      "@type": "DefinedTerm",
+      "name": "atomic force microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000366",
+      "@type": "DefinedTerm",
+      "name": "FRAP"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 22472524357,
+      "description": "22.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2231,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000490/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000490/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000490",
+      "name": "Visualizing developmental dynamics of the adult-type fat body of Drosophila melanogaster during metamorphosis",
+      "description": "Adipose tissue is a central organ for controlling systemic metabolism both in invertebrates and vertebrates. Here, we have investigated the developmental processes of the adult-type fat body (AFB) in Drosophila. We have established genetic tools that allow visualization and genetic manipulations of cells in the AFB lineage from early in metamorphosis. We identified precursor cells that give rise to the AFB and delineated dynamic cellular behaviors underlying AFB formation. These precursor cells displayed polarized cell shapes and oriented motility, with emigration from the thorax and subsequent dispersal to the abdomen and head. After the migration period, these cells adhered to each other, assembling into the AFB with a sheet-like architecture. Continuous cell proliferation occurred during and after the large-scale migration to achieve appropriate fat tissue mass. Homotypic cell fusion after the sheet formation contributed to the establishment of multinucleated cells in the AFB. We also examined candidate gene functions, and our results argue that ecdysone signaling and the transcription factor Serpent support adult fat body organogenesis.",
+      "datePublished": "2026-01-07",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Drosophila melanogaster/genetics[major]",
+        "Drosophila melanogaster/metabolism[major]",
+        "Drosophila Proteins/genetics[major]",
+        "Drosophila Proteins/metabolism[major]",
+        "Transcription Factors/metabolism",
+        "Drosophila/metabolism",
+        "Metamorphosis, Biological/genetics",
+        "Ecdysone/metabolism",
+        "Adipose Tissue/metabolism",
+        "Larva/metabolism",
+        "Gene Expression Regulation, Developmental"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1242/dev.200815"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051301"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007155"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0140253"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0060386"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007552"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0045168"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016020"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005811"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Taiichi Tsuyama",
+      "email": "t-tsuyama@lif.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Tadashi Uemura"
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was funded by grants from the Japan Agency for Medical Research and Development-Core Research for Evolutional Science and Technology (JP18gm1110001 to T.U.), the Japan Society for the Promotion of Science (08J05328 to T.T. and 10J06191 to K.S.) and the Japan Society for the Promotion of Science KAKENHI Grant-in-Aid for Scientific Research (B) (JP23H02486 to T.U.)."
+    },
+    {
+      "@id": "https://doi.org/10.1242/dev.200815",
+      "@type": "ScholarlyArticle",
+      "name": "Dynamic de novo adipose tissue development during metamorphosis in Drosophila melanogaster.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Fly strains and exact genotypes are summarized in Table S6 of Tsuyama et. al. (2023) Development.",
+      "description": "Fly strains and exact genotypes are summarized in Table S6 of Tsuyama et. al. (2023) Development.",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
+      "@type": "DefinedTerm",
+      "name": "cell migration"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
+      "@type": "DefinedTerm",
+      "name": "cell division"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007155",
+      "@type": "DefinedTerm",
+      "name": "cell adhesion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0140253",
+      "@type": "DefinedTerm",
+      "name": "cell fusion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060386",
+      "@type": "DefinedTerm",
+      "name": "tissue assembly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007552",
+      "@type": "DefinedTerm",
+      "name": "metamorphosis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0045168",
+      "@type": "DefinedTerm",
+      "name": "cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016020",
+      "@type": "DefinedTerm",
+      "name": "membrane"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005811",
+      "@type": "DefinedTerm",
+      "name": "lipid droplet"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 331852308480,
+      "description": "331.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1169,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

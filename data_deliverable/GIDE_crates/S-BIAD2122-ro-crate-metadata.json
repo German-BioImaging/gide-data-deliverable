@@ -1,0 +1,227 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2122"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2122",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#09b46732-61c9-4942-8f52-549fde2a1575"
+        },
+        {
+          "@id": "#74a07137-3380-4b72-8528-1be285aee318"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3dee3c6c-e554-4eaf-9bfe-503645e7cd72"
+        },
+        {
+          "@id": "#fa214523-182e-44d8-9e97-b174f39652b7"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9410-4075"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-30",
+      "description": "The RNA-binding protein eIF2A is an alternative translation initiation factor shown to drive tumor formation by facilitating translation from near-cognate initiation codons. Here, we uncover a novel function for eIF2A in regulating cell migration in a manner independent of overt control of translation. Using a melanoma cell model consisting of non-tumoral melanocytic Mel-ST cells and their metastatic counterpart obtained by H-Ras transformation, we unexpectedly find minimal effects of eIF2A depletion on translation. Interactome studies identified centrosomal proteins as major binding partners of eIF2A. We found that eIF2A co-localizes with the centrosome, enhances centrosome composition and promotes centrosome orientation during cell migration. Migration requires the C-terminal disordered region of eIF2A, involved in mRNA-binding. Interaction with mRNA, however, does not require ongoing translation. These findings reveal a new role for eIF2A in centrosome dynamics beyond its traditional function in translation. ",
+      "funder": [],
+      "identifier": "S-BIAD2122",
+      "keywords": [
+        "eIF2A",
+        "Centrosome",
+        "Melanoma"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "eIF2A regulates cell migration in a translation-independent manner",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2122/7cc20ab8-edbf-4cf2-9ef7-0b32b0260336/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9410-4075",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2ef79872-78ca-4eae-8194-8db04103ec76"
+        }
+      ],
+      "email": "neus.mestre@crg.eu",
+      "name": "Neus"
+    },
+    {
+      "@id": "#2ef79872-78ca-4eae-8194-8db04103ec76",
+      "@type": [
+        "Organization"
+      ],
+      "name": "CRG"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#3dee3c6c-e554-4eaf-9bfe-503645e7cd72",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human metastatic melanoma cells lines Mel-STR",
+      "name": "MEL-STR cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#fa214523-182e-44d8-9e97-b174f39652b7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human melanoma cell line",
+      "name": "UACC62 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#09b46732-61c9-4942-8f52-549fde2a1575",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired using a C Plan-Apochromat 63x/1.4 oil immersion objective and Zeiss 1.518 refractive index (Abbe number: 45) oil immersion media. For excitation, 488 nm (PCNT or centrin), 561 nm (CSPP1), 639 nm (eIF2A) laser diodes were used. Voxel size was 44 nm x 44 nm x100 nm (zoom factor 6) and z-stacks were acquired every 130 nm, covering the complete satellite volume.",
+      "labEquipment": "Zeiss LSM980 airyscan 2 microscope controlled by Zen Blue 3.2 software",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "name": "Airyscan"
+    },
+    {
+      "@id": "#74a07137-3380-4b72-8528-1be285aee318",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "HC PL APO CS2 63x/1.4 oil-immersion objective for colocalization studies.\nHC PL APO CS2 40x/1.3 oil-immersion objective for centrosome orientation and quantification studies.\n3D volume stacks were taken sequentially (in a frame-by-frame acquisition mode, 400 Hz, 1024x1024 pixel image format, system-optimized Z-step size to achieve a voxel size of 0.2841x0.2841x0.3462 μm3) using 405 nm (DAPI), 490 nm (Alexa 488) and 633 nm (Alexa 647) excitation lines with three independent hybrid detectors (HyDs).",
+      "labEquipment": "Leica Stellaris 5 confocal microscope using the LAS X software equipped with a 405 diode laser, an OPSL 488, a DPSS 561 and a white Light laser, WLL (485-685 nm) with a 80MHz repetition rate, equipped with silicon based hybrid (HyD S) detectors",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Leica Stellaris 5 confocal microscope "
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000393",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "array-scan confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 38
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 10672714755
+    }
+  ]
+}

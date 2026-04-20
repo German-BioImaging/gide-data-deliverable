@@ -1,0 +1,315 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1753"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1753",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8f7f7327-dc59-4223-ba3a-dec982006682"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a71b4957-c1ed-4a28-87d3-50e06443c6aa"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3217-3278"
+        },
+        {
+          "@id": "#570080c8-ad5c-4820-a320-b3531d7d5183"
+        },
+        {
+          "@id": "#f4423b4c-9acd-49e9-b427-012cee9e5493"
+        },
+        {
+          "@id": "#72d90dd5-4668-4e59-b5a2-b99d53b7da3a"
+        },
+        {
+          "@id": "https://orcid.org/0009-0003-8518-5971"
+        },
+        {
+          "@id": "#56d10320-15ac-4b96-95b9-97b0ca264a50"
+        },
+        {
+          "@id": "#f52c5140-081b-4597-a93e-d9d5611b2037"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0636-7351"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-28",
+      "description": "A dataset of H&E-stained histopathology images from IBD patients and non-IBD controls.",
+      "funder": [],
+      "identifier": "S-BIAD1753",
+      "keywords": [
+        "H&E",
+        "histopathology",
+        "IBD",
+        "inflammatory bowel disease",
+        "crohn's disease",
+        "ulcerative colitis",
+        "non-IBD",
+        "IBDome",
+        "hematoxylin and eosin",
+        "wsi",
+        "Digital pathology"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "IBDome: An integrated molecular, histopathological, and clinical atlas of inflammatory bowel diseases",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1753/389e1b44-9f2e-445d-af39-e569b82d6fd5/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#56d10320-15ac-4b96-95b9-97b0ca264a50",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f96b3f04-eaaa-4cf0-9f91-4521db212d39"
+        }
+      ],
+      "name": "Christoph Becker"
+    },
+    {
+      "@id": "#570080c8-ad5c-4820-a320-b3531d7d5183",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#683c4211-2f40-4bf9-ba24-a8d9a52fa780"
+        }
+      ],
+      "name": "Gregor Sturm"
+    },
+    {
+      "@id": "#72d90dd5-4668-4e59-b5a2-b99d53b7da3a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f96b3f04-eaaa-4cf0-9f91-4521db212d39"
+        }
+      ],
+      "name": "Raja Atreya"
+    },
+    {
+      "@id": "#f4423b4c-9acd-49e9-b427-012cee9e5493",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5e619101-faaa-46c0-ba63-f94834270f78"
+        }
+      ],
+      "name": "Anja A. Kühl"
+    },
+    {
+      "@id": "#f52c5140-081b-4597-a93e-d9d5611b2037",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5e619101-faaa-46c0-ba63-f94834270f78"
+        }
+      ],
+      "name": "Britta Siegmund"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0636-7351",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#683c4211-2f40-4bf9-ba24-a8d9a52fa780"
+        }
+      ],
+      "email": "zlatko.trajanoski@i-med.ac.at",
+      "name": "Zlatko Trajanoski"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3217-3278",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#683c4211-2f40-4bf9-ba24-a8d9a52fa780"
+        }
+      ],
+      "email": "christina.plattner@i-med.ac.at",
+      "name": "Christina Plattner"
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-8518-5971",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#683c4211-2f40-4bf9-ba24-a8d9a52fa780"
+        }
+      ],
+      "email": "sandro.carollo@i-med.ac.at",
+      "name": "Sandro Carollo"
+    },
+    {
+      "@id": "#5e619101-faaa-46c0-ba63-f94834270f78",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Charité - Universitätsmedizin Berlin"
+    },
+    {
+      "@id": "#683c4211-2f40-4bf9-ba24-a8d9a52fa780",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Innsbruck Medical University"
+    },
+    {
+      "@id": "#f96b3f04-eaaa-4cf0-9f91-4521db212d39",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#a71b4957-c1ed-4a28-87d3-50e06443c6aa",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult IBD and non-IBD patient-derived biopsies and surgical resection samples from various intestinal sites, including anastomosis, caecum, colon, ileum, and rectum.",
+      "name": "IBD and Non-IBD Mucosal Biopsies and Surgical Resections",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8f7f7327-dc59-4223-ba3a-dec982006682",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "x40 magnification",
+      "labEquipment": "NanoZoomer S210 slide scanner (Hamamatsu) \nVectra3 automated quantitative pathology imaging system (Akoya Biosciences)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Acquisition of high-resolution H&E images "
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1362
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1569739054899
+    }
+  ]
+}

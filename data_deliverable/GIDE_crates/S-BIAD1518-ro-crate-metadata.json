@@ -1,0 +1,480 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1518"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1518",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f1bc126d-7d13-43ce-8a86-174b1dc9a33a"
+        },
+        {
+          "@id": "#33d5747c-a0ca-4656-bf87-2dcc64037aac"
+        },
+        {
+          "@id": "#a0311075-fb72-4e38-b284-d91aa122ebe0"
+        },
+        {
+          "@id": "#d13ab143-e6c2-4206-bdc7-05627797a5da"
+        },
+        {
+          "@id": "#aeff0b68-f47b-417a-92a2-11e976d9fa1d"
+        },
+        {
+          "@id": "#8db0725e-fa69-4bd4-9fa0-0b173217f0ca"
+        },
+        {
+          "@id": "#cc58099a-b03f-4e30-94c9-f6fbcb3d5157"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#aee43263-0b5c-4595-8a17-a73b897e8431"
+        },
+        {
+          "@id": "#69b5039b-852a-4fd7-98db-b8775340d17c"
+        },
+        {
+          "@id": "#d91309b0-8000-42fb-90bf-72124153eb82"
+        },
+        {
+          "@id": "#f5e2dc12-4cf7-47b1-91e3-fee7fdfc93da"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7119-0815"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5738-0468"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2396-5871"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4245-496X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7643-3879"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2909-7323"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0456-6912"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-20",
+      "description": "This submission contains a set of 3D microscopy volumes of cell nuclei from different species and tissues that have been manually segmented. We also provide synthetically generated 3D microscopy volumes that can be used for training segmentation methods.",
+      "funder": [],
+      "identifier": "S-BIAD1518",
+      "keywords": [],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "3D Ground Truth Annotations of Nuclei in 3D Microscopy Volumes",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1518/0324f8d8-c195-4c7b-94b7-38ab8dbca541/f3a38697-0e15-40c6-9444-d160d8fee55b.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7119-0815",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e531eb13-abec-4f94-a70b-494f6f9f52ab"
+        }
+      ],
+      "name": "Alain Chen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0456-6912",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8"
+        }
+      ],
+      "name": "Teresa Zulueta-Coarasa"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2396-5871",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f888d32d-0aa2-4bd7-b71e-476692573e57"
+        }
+      ],
+      "name": "Seth Winfree"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2909-7323",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e531eb13-abec-4f94-a70b-494f6f9f52ab"
+        }
+      ],
+      "name": "Edward Delp"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5738-0468",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e531eb13-abec-4f94-a70b-494f6f9f52ab"
+        }
+      ],
+      "name": "Liming Wu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7643-3879",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#463e72d1-efeb-4aa0-9502-220ddc99fbc1"
+        }
+      ],
+      "name": "Paul Salama"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4245-496X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#319d1c84-cecd-46aa-a41a-e1de2066dfc1"
+        }
+      ],
+      "name": "Kenneth Dunn"
+    },
+    {
+      "@id": "#319d1c84-cecd-46aa-a41a-e1de2066dfc1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Division of Nephrology, School of Medicine, Indiana University, Indianapolis, Indiana"
+    },
+    {
+      "@id": "#463e72d1-efeb-4aa0-9502-220ddc99fbc1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Department of Electrical and Computer Engineering, Indiana University-Purdue University, Indianapolis, Indiana"
+    },
+    {
+      "@id": "#a918f5ac-e61a-47a6-938f-992d43f35ef8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Bioinformatics Institute"
+    },
+    {
+      "@id": "#e531eb13-abec-4f94-a70b-494f6f9f52ab",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Video and Image Processing Laboratory, School of Electrical and Computer Engineering, Purdue University, West Lafayette, Indiana"
+    },
+    {
+      "@id": "#f888d32d-0aa2-4bd7-b71e-476692573e57",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Pathology and Microbiology Department, University of Nebraska Medical Center, Omaha, Nebraska"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus",
+      "vernacularName": "house mouse"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus",
+      "vernacularName": "Norway rat"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#69b5039b-852a-4fd7-98db-b8775340d17c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Kidney tissue",
+      "name": "Rat kidney",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#aee43263-0b5c-4595-8a17-a73b897e8431",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Kidney tissue",
+      "name": "Human kidney",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d91309b0-8000-42fb-90bf-72124153eb82",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Intestine tissue",
+      "name": "Mouse Intestine",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#f5e2dc12-4cf7-47b1-91e3-fee7fdfc93da",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "simulated cells from different tissues stained with nuclear markers",
+      "name": "Simulated cell nuclei",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#33d5747c-a0ca-4656-bf87-2dcc64037aac",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The voxel dimensions are 1 × 1 × 1 micron3 (X × Y × Z)",
+      "labEquipment": "Olympus FV1000 confocal microscope system (Olympus America, Inc., Center Valley, PA, USA) adapted for two-photon microscopy using a 40X NA 1.3 oil immersion objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "name": "BABB-cleared kidney two-photon microscopy"
+    },
+    {
+      "@id": "#8db0725e-fa69-4bd4-9fa0-0b173217f0ca",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The voxel dimensions are 0.5407 × 0.5407 × 1.0412 micron3 (X × Y × Z)",
+      "labEquipment": "FV1000 (Olympus) microscope at 20x 0.75 NA oil immersion objective",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Nephrectomy tissue microscopy"
+    },
+    {
+      "@id": "#a0311075-fb72-4e38-b284-d91aa122ebe0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The voxel dimensions are 1 × 1 × 1 micron3 (X × Y × Z).",
+      "labEquipment": "Leica SP8 confocal/multiphoton microscope using a 20X NA 0.75 multi-immersion objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Intestine confocal microscopy"
+    },
+    {
+      "@id": "#aeff0b68-f47b-417a-92a2-11e976d9fa1d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "N/A",
+      "labEquipment": "Virtual microscope imitating acquisition of different tissues stained with nuclear markers with different microscopes.",
+      "measurementTechnique": [],
+      "name": "Simulated fluorescence microscopy"
+    },
+    {
+      "@id": "#cc58099a-b03f-4e30-94c9-f6fbcb3d5157",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The voxel dimensions are 1 × 1 × 1 micron3 (X × Y × Z)",
+      "labEquipment": "Olympus Fluoview 1000 MPE confocal/multiphoton microscope system mounted on an Olympus IX-81 inverted stand (Olympus America, Inc., Center Valley, PA, USA), equipped with an Olympus 60X oil immersion objective",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Scale-cleared kidney and rat liver confocal microscopy"
+    },
+    {
+      "@id": "#d13ab143-e6c2-4206-bdc7-05627797a5da",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The voxel dimensions are 1 × 1 × 1 micron3 (X × Y × Z).",
+      "labEquipment": "Not known",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Stone disease biopsy confocal microscopy"
+    },
+    {
+      "@id": "#f1bc126d-7d13-43ce-8a86-174b1dc9a33a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The voxel dimensions are 0.5407 × 0.5408 × 1.0412 micron3 (X × Y × Z).",
+      "labEquipment": "Leica SP8 confocal scan-head mounted to an upright DM6000 microscope with computer-controlled motorized stage",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Kidney biopsy confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000254",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 760
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1781083806
+    }
+  ]
+}

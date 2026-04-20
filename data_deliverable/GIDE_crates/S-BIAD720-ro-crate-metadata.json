@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD720"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD720",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5c356a72-7f40-4e60-8fa3-e977cde692f2"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8128c45d-06d4-41d3-a60f-3e46ab91c339"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a1be1fe9-213a-4c00-ae4c-56b85dd34b23"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-06-15",
+      "description": "Hepatocytes form bile canaliculi that dynamically respond to the signalling activity of bile acids and bile flow. Little is known about their responses to intraluminal pressure. During embryonic development, hepatocytes assemble apical bulkheads that increase the canalicular resistance to intraluminal pressure. Here, we investigated if they may also protect bile canaliculi against elevated pressure upon impaired bile flow in adult liver. Apical bulkheads accumulate upon bile flow obstruction in mouse models and patients with primary sclerosing cholangitis (PSC). Their loss under these conditions leads to abnormally dilated canaliculi, resembling liver cell rosettes described in other hepatic diseases. 3D reconstruction revealed that these structures are sections of cysts and tubes formed by hepatocytes. Mathematical modelling established that they positively correlate with canalicular pressure and occur early in PSC. Using primary hepatocytes and 3D organoids, we demonstrated that excessive canalicular pressure causes the loss of apical bulkheads and formation of rosettes. Our results suggest that apical bulkheads are a protective mechanism of hepatocytes against impaired bile flow, highlighting the role of canalicular pressure in liver diseases.",
+      "funder": [],
+      "identifier": "S-BIAD720",
+      "keywords": [
+        "Hepatocytes",
+        "Bile canaliculi"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Accumulation of apical bulkheads and hepatocyte rosettes as adaptive responses upon impaired bile flow in liver diseases",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD720/5eeea841-6860-435f-9ac3-594cf7ed4ef9/be52df2a-747e-40ab-a2d6-1f5d0b0c02d9.png"
+      ]
+    },
+    {
+      "@id": "#a1be1fe9-213a-4c00-ae4c-56b85dd34b23",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e233172d-2def-4183-b697-e655fae39a32"
+        }
+      ],
+      "email": "cmayer@mpi-cbg.de",
+      "name": "Carlotta"
+    },
+    {
+      "@id": "#e233172d-2def-4183-b697-e655fae39a32",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute of Molecular Cell Biology and Genetics"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#8128c45d-06d4-41d3-a60f-3e46ab91c339",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Primary Hepatocytes in collagen sandwich culture",
+      "name": "Primary Hepatocytes",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#5c356a72-7f40-4e60-8fa3-e977cde692f2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "see Materials and Methods",
+      "labEquipment": "LSM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Primary Hepatocytes"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 35
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 675485332
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2529"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2529",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#aba13ea6-99f5-48df-9b6e-5319778a7b42"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fa418b2f-7556-424f-9a55-99b0b82c7378"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9d80043f-1fc9-49cb-99ad-544436876451"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-27",
+      "description": "Understanding protein distribution patterns across tissue architecture is crucial for deciphering organ function in health and disease. Here, we show the application of single-cell Deep Visual Proteomics to perform spatially-resolved proteome analysis of individual cells in native liver tissue. We built a robust framework comprising strategic cell selection and continuous protein gradient mapping, allowing the investigation of larger clinical cohorts. We generated a comprehensive spatial map of the human hepatic proteome by analyzing hundreds of isolated hepatocytes from 18 individuals. Among the 2,500 proteins identified per cell, about half exhibited zonated expression patterns. Cross-species comparison with male mice revealed conserved metabolic functions and human-specific features of liver zonation. Analysis of samples with disrupted liver architecture demonstrated widespread loss of protein zonation, with pericentral proteins being particularly susceptible. Our study provides a comprehensive and open-access resource of human liver organization while establishing a broadly applicable framework for spatial proteomics analyses along tissue gradients.",
+      "funder": [],
+      "identifier": "S-BIAD2529",
+      "keywords": [
+        "Spatial proteomics",
+        "Single-cell proteomics",
+        "Liver zonation",
+        "Deep Visual Proteomics",
+        "Mass spectrometry "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Single-cell spatial proteomics maps human liver zonation patterns and their vulnerability to disruption in tissue architecture",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2529/75c0fba5-2cba-4d57-b2a5-e46f4c5c3d74/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#9d80043f-1fc9-49cb-99ad-544436876451",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2405ef00-07f7-4725-a68c-299facdb83ca"
+        }
+      ],
+      "email": "mannlab-dvp@biochem.mpg.de",
+      "name": "Mannlab"
+    },
+    {
+      "@id": "#2405ef00-07f7-4725-a68c-299facdb83ca",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute of Biochemistry"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#fa418b2f-7556-424f-9a55-99b0b82c7378",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Sections (10 um) of adult human liver samples embedded in OCT. - Frozen liver tissue samples embedded in OCT",
+      "name": "Liver tissue samples ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#aba13ea6-99f5-48df-9b6e-5319778a7b42",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For scDVP, confocal image acquisition was performed using a PerkinElmer OperaPhenix high-content imaging system equipped with a 20× air objective (numerical aperture 0.8). The system was operated through Harmony software version 4.9, with images collected using 2×2 binning and 10% overlap between adjacent tiles. For each sample, a single focal plane was manually selected and maintained across all channels. To eliminate channel crosstalk, fluorophores were excited sequentially, with the following acquisition parameters: CFP at 80% laser power and 100ms exposure, Alexa 488 at 30% power and 20ms exposure, Alexa 568 at 80% power for 40ms, and Alexa 647 at 60% power for 40ms. ",
+      "labEquipment": "PerkinElmer OperaPhenix high-content imaging system equipped with a 20× air objective ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "scDVP image acquisition "
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 72
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 81169559080
+    }
+  ]
+}

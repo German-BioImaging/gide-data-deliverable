@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2483"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2483",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f91e6f33-2bcb-42e1-8c96-58c005ea8cf1"
+        },
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fc8a0ee5-636d-43c5-8724-3a0b67390dc7"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3695-6592"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-31",
+      "description": "Video files (.avi) of 10-20 worms moving in a 2D arena without any stimulus. Each video is an independent replicate of a strain that's either wild-type or mutant for genes in the hedgehog pathway. ",
+      "funder": [],
+      "identifier": "S-BIAD2483",
+      "keywords": [
+        "Locomotor Assays",
+        "Behavior",
+        "C. elegans",
+        "mutants",
+        "hedgehog pathway"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Locomotor assays in C. elegans mutants for elements of the Hh pathway",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3695-6592",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8167ca0e-de70-4689-8732-6b9034e98060"
+        }
+      ],
+      "email": "lautaro.gandara@embl.de",
+      "name": "Lautaro Gandara"
+    },
+    {
+      "@id": "#8167ca0e-de70-4689-8732-6b9034e98060",
+      "@type": [
+        "Organization"
+      ],
+      "name": "EMBL"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#fc8a0ee5-636d-43c5-8724-3a0b67390dc7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult worms",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#f91e6f33-2bcb-42e1-8c96-58c005ea8cf1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Recordings were acquired at 30 frames per second, with a spatial resolution of 1280 × 1024 pixels (10 μm pixel size).",
+      "labEquipment": "Recordings were acquired using an Olympus SZX16 stereomicroscope equipped with an FL3-U3-13Y3M-C CMOS camera ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "name": "Image Acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000240",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "macroscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 50
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 583874103958
+    }
+  ]
+}

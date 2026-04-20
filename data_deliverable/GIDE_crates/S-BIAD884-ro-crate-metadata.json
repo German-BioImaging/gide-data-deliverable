@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD884"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD884",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0f458f1d-7af9-4fb9-bfd0-0b6f3b064986"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#08836127-3c5b-4093-b575-485b57c983d9"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#cbbdbf07-fcdb-4409-8d57-974a3f64518e"
+        },
+        {
+          "@id": "#d88f2730-6635-44c4-906d-1bab6f0c511b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-10-31",
+      "description": "Modelling chronic cortical demyelination allows to study long-lasting pathological changes ob-served in multiple sclerosis such as failure of remyelination, chronically disturbed functions of oligodendrocytes, neurons and astrocytes, brain atrophy and cognitive impairments. We aimed at generating an animal model for studying the consequences of chronic cortical demyelination and meningeal inflammation. To induce long-lasting cortical demyelination and chronic meningeal inflammation, we immunized female Lewis rats against myelin oligodendrocyte glycoprotein (MOG) and injected lentiviruses for continuing overexpression of the cytokines TNFα and IFNγ in the cortical brain parenchyma. Immunization with MOG and overexpression of TNF and IFN led to widespread subpial demyelination and meningeal inflammation stable for at least 10 weeks. We demonstrate here that immunization with MOG is necessary for acute as well as chronic cortical demyelination. In addition, long-lasting overexpression of TNF and IFN in the brain paren-chyma is sufficient to induce chronic meningeal inflammation. Our model simulates key features of chronic cortical demyelination and inflammation, reminiscent of human multiple sclerosis pathology. This will allow molecular, cellular and functional investigations for a better under-standing of the adaptation mechanisms of the cerebral cortex in multiple sclerosis.",
+      "funder": [],
+      "identifier": "S-BIAD884",
+      "keywords": [
+        "Demyelination",
+        "Cortical Inflammation",
+        "Multiple Sclerosis",
+        "Grey Matter Lesion",
+        "Cortical Pathology"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "An animal model for chronic meningeal inflammation and inflammatory demyelination of the cerebral cortex",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD884/cf9950c6-7e45-43b2-9c0f-191b07cd2679/7901cfd3-a126-418a-9880-20ba3863f7d0.png"
+      ]
+    },
+    {
+      "@id": "#cbbdbf07-fcdb-4409-8d57-974a3f64518e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d14e39a6-8da8-4312-aace-0bf60520cf92"
+        }
+      ],
+      "email": "lukas.enz@unibas.ch",
+      "name": "Lukas Enz"
+    },
+    {
+      "@id": "#d88f2730-6635-44c4-906d-1bab6f0c511b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d14e39a6-8da8-4312-aace-0bf60520cf92"
+        }
+      ],
+      "email": "nicole-schaeren-wiemers@unibas.ch",
+      "name": "Nicole Schaeren-Wiemers"
+    },
+    {
+      "@id": "#d14e39a6-8da8-4312-aace-0bf60520cf92",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Hospital of Basel"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#08836127-3c5b-4093-b575-485b57c983d9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lewis rat whole brain histological sections.",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#0f458f1d-7af9-4fb9-bfd0-0b6f3b064986",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "200 x magnification at a resolution of 0.345 micrometer per pixel.",
+      "labEquipment": "Scanned with an Olympus VS120-L100-W scanner fitted with a VC50 camera (Olympus, Shinjuku, Tokio, Japan) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image Acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 438
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 117473261808
+    }
+  ]
+}

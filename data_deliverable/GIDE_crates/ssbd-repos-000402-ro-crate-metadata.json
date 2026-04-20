@@ -1,0 +1,279 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000402/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000402/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000402",
+      "name": "Orbitofrontal Cortex Influences Dopamine Dynamics Associated with Alloparental Behavioral Acquisition in Female Mice",
+      "description": "Maternal behaviors, which are crucial for the survival of mammalian infants, require the coordinated operation of multiple brain regions to process infant cues, make decisions, and execute motor plans. Although these processes likely demand higher cognitive functions, the prefrontal areas that regulate limbic parental programs remains poorly understood. Here, we show that the orbitofrontal cortex (OFC) excitatory projection neurons promote alloparental caregiving behaviors in female mice. By chronic microendoscopy, we observed robust yet adaptable representations of pup-directed anticipatory and motor-related activities within the OFC. Some of these plastic responses were significantly overlapped with those related to nonsocial reward signals. The inactivation of OFC output reduced the phasic activities of midbrain dopamine (DA) neurons specifically tied to pup retrieval and impaired the modulation of DA release to the ventral striatum during the acquisition of alloparental behaviors. These findings suggest that the OFC transiently boosts DA activity during the acquisition phase, thereby facilitating the manifestation of alloparental behaviors.",
+      "datePublished": "2025-07-02",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Female",
+        "Prefrontal Cortex/physiology[major]",
+        "Prefrontal Cortex/metabolism[major]",
+        "Dopamine/metabolism[major]",
+        "Mice",
+        "Behavior, Animal[major]",
+        "Maternal Behavior/physiology[major]",
+        "Dopaminergic Neurons/metabolism",
+        "Dopaminergic Neurons/physiology",
+        "Reward",
+        "Mice, Inbred C57BL"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1126/sciadv.adr4620"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2023.02.03.527077"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042711"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0014042"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "#imaging-technique-1"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "#imaging-technique-3"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000267"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazunari Miyamichi",
+      "email": "kazunari.miyamichi@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Lab for comparative connectomics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1126/sciadv.adr4620",
+      "@type": "ScholarlyArticle",
+      "name": "Orbitofrontal cortex influences dopamine dynamics associated with alloparental behavioral acquisition in female mice.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2023.02.03.527077",
+      "@type": "ScholarlyArticle",
+      "name": "Orbitofrontal Cortex Influences Dopamine Dynamics Associated with Alloparental Behavioral Acquisition in Female Mice",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "F1 hybrid of C57BL/6N",
+      "description": "F1 hybrid of C57BL/6N",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042711",
+      "@type": "DefinedTerm",
+      "name": "Maternal behavior"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0014042",
+      "@type": "DefinedTerm",
+      "name": "Neuron"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "TIFF files",
+      "description": "TIFF files",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "microendoscopic imaging with GCaMP6s",
+      "description": "microendoscopic imaging with GCaMP6s",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "CSV/h5 files",
+      "description": "CSV/h5 files",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-3"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "fiber photometory with GCaMP6s or GRABDA",
+      "description": "fiber photometory with GCaMP6s or GRABDA",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000267"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-technique-1",
+      "@type": "DefinedTerm",
+      "name": "TIFF files"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
+      "@type": "DefinedTerm",
+      "name": "microendoscopic imaging with GCaMP6s"
+    },
+    {
+      "@id": "#imaging-technique-3",
+      "@type": "DefinedTerm",
+      "name": "CSV/h5 files"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000267",
+      "@type": "DefinedTerm",
+      "name": "fiber photometory with GCaMP6s or GRABDA"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 470880546816,
+      "description": "470.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 258,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

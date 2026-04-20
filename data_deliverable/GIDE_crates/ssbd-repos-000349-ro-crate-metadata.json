@@ -1,0 +1,166 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000349/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000349/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000349",
+      "name": "High-dimensional and large-scale phenotyping of yeast mutants",
+      "description": "Image and morphological data for high-dimensional and large-scale phenotyping of yeast mutants",
+      "datePublished": "2024-07-12",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Actins/chemistry",
+        "Cell Nucleus/metabolism",
+        "Fungal Proteins/genetics",
+        "Gene Deletion",
+        "Gene Expression Regulation, Fungal",
+        "Genes, Fungal[major]",
+        "Genetic Techniques",
+        "Genome, Fungal",
+        "Genomics",
+        "Microscopy, Fluorescence",
+        "Models, Genetic",
+        "Mutation",
+        "Open Reading Frames",
+        "Phenotype",
+        "Recombination, Genetic",
+        "Saccharomyces cerevisiae/genetics[major]",
+        "Time Factors",
+        "Yeasts/genetics[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.0509436102"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yoshikazu Ohya",
+      "email": "ohya@edu.k.u-tokyo.ac.jp",
+      "description": "Organization: University of Tokyo; Department: Department of Integrated Biosciences; Laboratory: Laboratory of Signal Transduction",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "University of Tokyo"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by the Institute for Bioinformatics and Research and Development of the Japan Science and Technology Corporation."
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.0509436102",
+      "@type": "ScholarlyArticle",
+      "name": "High-dimensional and large-scale phenotyping of yeast mutants.",
+      "datePublished": "2005"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932",
+      "@type": "Taxon",
+      "scientificName": "Saccharomyces cerevisiae",
+      "vernacularName": "baker's yeast"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 48594403328,
+      "description": "48.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 614274,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2275"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2275",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b26ca48b-67b3-4ec3-ab97-291155b6d4ce"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7e8a1ea3-566e-4ccd-a575-e7103e20eb22"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1637-140X"
+        },
+        {
+          "@id": "#48bee45a-dd42-4250-bff5-9d01e3390e58"
+        },
+        {
+          "@id": "#3b7382bf-5365-4189-94a8-9eab17f35097"
+        },
+        {
+          "@id": "#f0ad28b6-07e9-488f-ad50-db6c831349d9"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8924-3233"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-09",
+      "description": "Time-lapse epifluorescence microscopy of MCF10A cells stably expressing OptoFGFR1-mCitrine, ERK-KTR-mKate2 and H2B-iRFP713. Cells received single, brief blue-light pulses at 7 different doses, repeated 20× (main dataset) or 15× (second dataset) at 30-min intervals, to quantify information transmission from receptor to ERK at the single-cell level. Data include ERK cytosol to nucleus ratio trajectories and derived features used for SLEMI-based mutual information analysis.",
+      "funder": [],
+      "identifier": "S-BIAD2275",
+      "keywords": [
+        "MCF10A ",
+        "optogenetics",
+        "ERK",
+        "MAPK",
+        "OptoFGFR1",
+        "time-lapse",
+        "epifluorescence",
+        "mutual information",
+        "single-cell"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Single cells can resolve graded stimuli\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2275/ba5c5209-114d-400a-908d-4a86ced954e3/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#3b7382bf-5365-4189-94a8-9eab17f35097",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#073720b8-3aeb-4d1e-b999-8a3f5572f983"
+        }
+      ],
+      "email": "awalczak@lpt.ens.fr",
+      "name": "Aleksandra M Walczak"
+    },
+    {
+      "@id": "#48bee45a-dd42-4250-bff5-9d01e3390e58",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#073720b8-3aeb-4d1e-b999-8a3f5572f983"
+        }
+      ],
+      "email": "lhahn@pks.mpg.de",
+      "name": "Lauritz Hahn"
+    },
+    {
+      "@id": "#f0ad28b6-07e9-488f-ad50-db6c831349d9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#073720b8-3aeb-4d1e-b999-8a3f5572f983"
+        }
+      ],
+      "email": "thierry.mora@phys.ens.fr",
+      "name": "Thierry Mora"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8924-3233",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#87c2a50e-5693-425f-9974-de25a6769ba2"
+        }
+      ],
+      "email": "mathieu.coppey@curie.fr",
+      "name": "Mathieu Coppey"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1637-140X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#87c2a50e-5693-425f-9974-de25a6769ba2"
+        }
+      ],
+      "email": "mirna.kramar@gmail.com",
+      "name": "Mirna Kramar"
+    },
+    {
+      "@id": "#073720b8-3aeb-4d1e-b999-8a3f5572f983",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Laboratoire de Physique de l’ENS"
+    },
+    {
+      "@id": "#87c2a50e-5693-425f-9974-de25a6769ba2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut Curie, UMR 168"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#7e8a1ea3-566e-4ccd-a575-e7103e20eb22",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cell line (MCF10A)",
+      "name": "MCF10A epithelial cells with OptoFGFR1-mCitrine, ERK-KTR-mKate2, and H2B-iRFP713",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b26ca48b-67b3-4ec3-ab97-291155b6d4ce",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Channels: ERK-KTR-mKate2 (exc. 560 nm); H2B-iRFP (exc. 640 nm); typical exposure 200 ms each; frame interval 2 min. Optogenetic activation: 491 nm (blue) laser; 7 doses by illumination time: 200, 300, 500, 700, 1000, 1500, 2000 ms at ~200 µW; 30 min between pulses; routines repeated 20× (main) / 15× (second dataset); total imaging ~93.6 h and ~81.6 h. Input power concurrently recorded (ThorLabs PM100D), variability ~10–20%",
+      "labEquipment": "Olympus IX83 inverted microscope; Photometrics Evolve EMCCD; Gataca Systems laser bench; objective 20× air, NA 0.7; stage-top incubator (Pecon CO₂-Controller 2000; TempControl 37-2). Control via iLas2 and MetaMorph",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Epifluorescence time-lapse with optogenetic stimulation"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 34
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12494901334
+    }
+  ]
+}

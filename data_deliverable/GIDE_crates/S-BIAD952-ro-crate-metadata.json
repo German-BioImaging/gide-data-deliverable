@@ -1,0 +1,290 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD952"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD952",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#62c18fb5-848d-4248-a894-d85a674fc236"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fbe0f0dd-7c62-4e62-8014-6d1df9192afb"
+        },
+        {
+          "@id": "#dc64d84b-8539-4310-82ac-b3a7f227a484"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ed1cfcd4-ffc7-4b17-8d72-a7bbabf6c43c"
+        },
+        {
+          "@id": "#0a483692-64fb-4d83-9a91-bfda98a7ed49"
+        },
+        {
+          "@id": "#ddee4a0a-d7d4-4ad3-91ca-32589a953bae"
+        },
+        {
+          "@id": "#a02c2ebd-dcd6-452d-845b-5e14610698b3"
+        },
+        {
+          "@id": "#4558c8c5-5023-4e94-adbb-fc39f5f552fe"
+        },
+        {
+          "@id": "#bb54fcba-bd6e-4d10-9014-fbc47a863ba9"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-11-30",
+      "description": "GABARAP, like other ATG8 proteins, is a ubiquitin-like modifier and its C-terminal lipid conjugation enables association with cellular membranes. To prevent interference with the lipidation process, N-terminal fluorescent protein (FP) tagging strategies have become the standard for studying ATG8 localization and function in living cells, significantly contributing to our understanding of this protein family's multifaceted roles. \nWe employed live cell imaging with particular emphasis on a GABARAP split-tandem construct, GABARAP(G116A)-mTagBFP2-GABARAP (G-B-G), which retains both a free N-terminus and a lipidation-competent C-terminus, while bivalence creates a gain in affinity conferred by avidity. Notably, reminiscent of early in vitro studies demonstrating an interaction of GABARAP and tubulin, our results revealed a robust association of G-B-G with the microtubule network in living cells. We show that the presence of several basic residues in the amino-terminal helical subdomain of GABARAP and avidity emerged as essential for robust MT association, whereas lipidation ability was not decisive. Interestingly, while the position of the FP-tag had little influence on the result, the nature of the FP itself was crucial, with mTagBFP2 being required for tracking GABARAP tandems in the vicinity of MTs. Though artificial effects cannot be excluded, we assume that G-B-G, with its increased avidity, can give visibility to processes that are based on inherently weak interactions, and thus can help elucidate potential roles of GABARAP e.g. in microtubule-associated processes that are integral to autophagy-related and -unrelated cellular transport. \n",
+      "funder": [],
+      "identifier": "S-BIAD952",
+      "keywords": [
+        "ATG8",
+        "bivalence",
+        "live-cell imaging",
+        "tubulin",
+        "mTagBFP2",
+        "tagging"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Highlighting the hidden: Monitoring the avidity-driven association of a fluorescent GABARAP tandem with microtubules in living cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD952/4da7cf4e-ad57-460d-8c60-abbff13a8483/26817ec3-de85-4f3d-99b0-81609f719235.png"
+      ]
+    },
+    {
+      "@id": "#0a483692-64fb-4d83-9a91-bfda98a7ed49",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a18099b3-318b-450e-a4dc-2b2279b503d6"
+        }
+      ],
+      "email": "l.gold@fz-juelich.de",
+      "name": "Lisa Gold"
+    },
+    {
+      "@id": "#4558c8c5-5023-4e94-adbb-fc39f5f552fe",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a18099b3-318b-450e-a4dc-2b2279b503d6"
+        }
+      ],
+      "email": "si.hoffmann@fz-juelich.de",
+      "name": "Silke Hoffmann"
+    },
+    {
+      "@id": "#a02c2ebd-dcd6-452d-845b-5e14610698b3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#72b70930-be24-4bcc-a720-3a31c2b432b1"
+        }
+      ],
+      "email": "o.h.weiergraeber@fz-juelich.de",
+      "name": "Oliver H. Weiergräber"
+    },
+    {
+      "@id": "#bb54fcba-bd6e-4d10-9014-fbc47a863ba9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#72b70930-be24-4bcc-a720-3a31c2b432b1"
+        }
+      ],
+      "email": "d.willbold@fz-juelich.de",
+      "name": "Dieter Willbold"
+    },
+    {
+      "@id": "#ddee4a0a-d7d4-4ad3-91ca-32589a953bae",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a18099b3-318b-450e-a4dc-2b2279b503d6"
+        }
+      ],
+      "email": "t.gensch@fz-juelich.de",
+      "name": "Thomas Gensch"
+    },
+    {
+      "@id": "#ed1cfcd4-ffc7-4b17-8d72-a7bbabf6c43c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a18099b3-318b-450e-a4dc-2b2279b503d6"
+        }
+      ],
+      "email": "alina.ueffing@hhu.de",
+      "name": "Alina Üffing"
+    },
+    {
+      "@id": "#72b70930-be24-4bcc-a720-3a31c2b432b1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Heinrich Heine University Düsseldorf"
+    },
+    {
+      "@id": "#a18099b3-318b-450e-a4dc-2b2279b503d6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Forschungszentrum Jülich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#dc64d84b-8539-4310-82ac-b3a7f227a484",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa",
+      "name": "HeLa",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#fbe0f0dd-7c62-4e62-8014-6d1df9192afb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Huh-7.5",
+      "name": "Huh-7.5",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#62c18fb5-848d-4248-a894-d85a674fc236",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were imaged using a LSM 710 confocal laser scanning system (Zeiss), operated with ZEN black 2009 software and a Plan-Apochromat 63x/1.40 Oil DIC M27 objective. For live-cell imaging at 37°C, a temperature-controlled microscopy stage was used. In case of staining of actin and microtubules, medium was supplemented with 500 nM SiR-tubulin (SC002, Spirochrome) or 1 µM SiR-actin (SC001, Spirochrome) and cells were incubated for 4 to 8 h prior to imaging. In the case of Huh-7.5 GABARAP SKO and HEK293 Flp in TRex GABARAP SKO, cells were additionally treated with 10 µM verapamil. The laser excitation wavelength and emission filters for the cells expressing fusion protein constructs were 405 nm and 410-509/530 nm for mTagBFP2, 514 nm and 519-621 nm for eYFP, 543 nm and 578-696 nm for mCherry and 633 nm and 638-759 nm for cells stained with SiR-probes.",
+      "labEquipment": "Zeiss LSM 710",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 150
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 389406141
+    }
+  ]
+}

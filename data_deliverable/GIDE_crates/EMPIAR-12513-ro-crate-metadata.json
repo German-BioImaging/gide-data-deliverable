@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-12513"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-12513",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ca413c45-033e-43ae-82ec-8d9df4d199dd"
+        },
+        {
+          "@id": "obo:FBbi_00000257"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f0b15a87-e7ba-4d25-b013-ba3ca817accd"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#2c506ca1-54a7-447f-a128-6c4ba8afc54b"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8344-9772"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9802-1955"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7542-5930"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-29",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-12513",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Volume electron microscopy of APEX2-DAB labeled thalamocortical projections in visual cortex L4",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-12513/48be1d39-28e7-47c3-9ee7-0f2d8c0aaa2f/61fad344-7f35-4343-bdaf-b8f39e1bf84e.png"
+      ]
+    },
+    {
+      "@id": "#2c506ca1-54a7-447f-a128-6c4ba8afc54b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Bosworth AP"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7542-5930",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Allen NJ"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8344-9772",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Weiser Novak S"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9802-1955",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Manor U"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus",
+      "vernacularName": "house mouse"
+    },
+    {
+      "@id": "#f0b15a87-e7ba-4d25-b013-ba3ca817accd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Visual cortex tissue from P28 and P120 mice, specifically examining layer 4 thalamocortical synapses and layer 2/3 intracortical synapses",
+      "name": "Mouse Visual Cortex",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ca413c45-033e-43ae-82ec-8d9df4d199dd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "High-resolution volumes of neuropil from visual cortex layer 4 were imaged using a scanning electron microscope (Zeiss Sigma VP) equipped with a sensitive backscatter detector (Gatan). An ROI of 50x50µm was selected and imaged at high resolution with pixel size of 2nm, dwell time of 6µs, EHT of 3kV, aperture of 30µm, and working distance of 8-9mm.",
+      "labEquipment": "Zeiss Sigma VP scanning electron microscope with Gatan backscatter detector",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000257"
+        }
+      ],
+      "name": "Scanning Electron Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000257",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "scanning electron microscopy (SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 364
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 214482082077
+    }
+  ]
+}

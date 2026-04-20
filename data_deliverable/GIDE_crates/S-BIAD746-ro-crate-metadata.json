@@ -1,0 +1,198 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD746"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD746",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#947d8f9a-520c-4c0b-9d4f-a27581766c96"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0e660d6c-906a-4db2-980f-e50cba989088"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9429b3b5-a07b-4823-ae53-eb5667a2f7cd"
+        },
+        {
+          "@id": "#1fc9f74b-f804-46b4-ab23-7e95f6a2cf62"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-30",
+      "description": "Hypoxia drives breast tumor malignancy. Mitochondria play essential roles in cellular adaptation to hypoxia, but the underlying mechanism remains elusive. Through mitochondrial proteomic profiling, we find that the prolyl hydroxylase EglN1 accumulates on mitochondria under hypoxia. EglN1 substrate binding region β2β3 loop is responsible for its mitochondrial translocation and contributes to breast tumor growth. Furthermore, we identify AMP-activated protein kinase alpha (AMPKα) as an EglN1 substrate on mitochondria. The EglN1-AMPKα interaction is essential for their mutual mitochondrial translocation. EglN1 prolyl-hydroxylates AMPKα under normoxia, then they rapidly dissociate following prolyl-hydroxylation, leading to their immediate release from mitochondria. While hypoxia results in constant EglN1-AMPKα interaction and their accumulation on mitochondria, leading to the formation of Ca2+/calmodulin-dependent protein kinase 2 (CaMKK2)-EglN1-AMPKα complex to activate AMPKα phosphorylation, consequently ensuring metabolic homeostasis and breast tumor growth. Our findings demonstrate EglN1 as an oxygen-sensitive metabolic checkpoint signaling hypoxic stress to mitochondria through its β2β3 loop region, revealing a therapeutic target for breast cancer.",
+      "funder": [],
+      "identifier": "S-BIAD746",
+      "keywords": [
+        "Mitochondria,EglN1,AMPKα,Hypoxia,Breast Cancer"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Mitochondrial EglN1 drives breast cancer progression by controlling metabolic adaptation to hypoxic stress",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#1fc9f74b-f804-46b4-ab23-7e95f6a2cf62",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/033vjfk17"
+        }
+      ],
+      "email": "RonghuiGao@whu.edu.cn",
+      "name": "Ronghui Gao"
+    },
+    {
+      "@id": "#9429b3b5-a07b-4823-ae53-eb5667a2f7cd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/033vjfk17"
+        }
+      ],
+      "email": "jing_zhang@whu.edu.cn",
+      "name": "jing zhang"
+    },
+    {
+      "@id": "https://ror.org/033vjfk17",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Wuhan University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0e660d6c-906a-4db2-980f-e50cba989088",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human breast tumor",
+      "name": "Imaging of tumor cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#947d8f9a-520c-4c0b-9d4f-a27581766c96",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells expressing EglN1-GFP were cultured on coverslips in 24-well plates, and were exposed to normoxia or hypoxia for 24 h at 37°C incubator. Cells were washed once with PBS after MitoTracker staining for 30 minutes at 37°C incubator and were fixed with 4% paraformaldehyde for 20 minutes at room temperature. The nucleus was stained with 4,6-diamidino-2-phenylindole (DAPI). DAPI(blue):405nm laser, GFP(green):488nm laser, Red:594nm laser.",
+      "labEquipment": "Zeiss LSM880 with Airyscan confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Microscopy "
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 369
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 545205541
+    }
+  ]
+}

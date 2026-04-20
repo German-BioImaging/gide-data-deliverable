@@ -1,0 +1,286 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1405"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1405",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d8efd10f-76a0-4f7e-8e4d-a40312ea0373"
+        },
+        {
+          "@id": "#cefcc907-c192-46b1-9f58-0854f16ebc15"
+        },
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#25395ca8-245c-4568-b183-21b7910632fe"
+        },
+        {
+          "@id": "#e93fd3ec-fe83-4651-a881-b08ceb0c8482"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6194-9568"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2536-2545"
+        },
+        {
+          "@id": "#ba3cd6ed-b111-47bf-a00c-a2b0736e04be"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3329-8435"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7613-090X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-03",
+      "description": "Dataset containing multi-view light sheet microscopy images of whole zebrafish embryos between 12 hpf and 72 hpf labelled with DAPI and fluorescent markers reporting on the expression of different genes.",
+      "funder": [],
+      "identifier": "S-BIAD1405",
+      "keywords": [
+        "zebrafish",
+        "embryo",
+        "in toto",
+        "whole-organism",
+        "light sheet",
+        "multi-view",
+        "DAPI",
+        "nuclei",
+        "cadherin",
+        "tissue organisation",
+        "nuQLOUD"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Whole-organism imaging of zebrafish development focussing on cadherin expression and tissue diversity",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1405/305c65dd-8bc8-461a-8178-48eb6463d63e/67df52bc-5e32-4898-8486-781078259906.png"
+      ]
+    },
+    {
+      "@id": "#ba3cd6ed-b111-47bf-a00c-a2b0736e04be",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Jérôme Julmi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6194-9568",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "max.brambach@gmail.com",
+      "name": "Max Brambach"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7613-090X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "darren.gilmour@uzh.ch",
+      "name": "Darren Gilmour"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3329-8435",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Robert Bill"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2536-2545",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Marvin Albert"
+    },
+    {
+      "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Zurich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#25395ca8-245c-4568-b183-21b7910632fe",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole zebrafish embryos between 12 and 72 hours post fertilization. Stained with DAPI for nuclear segmentation and genetic markers as indicated (e.g. HCR agains specific RNAs (e.g. Cdh1), transgenic reporters (e.g. TgBAC(Cdh2:Cdh2-GFP)), or immunofluorescence).",
+      "name": "In toto zebrafish embryo",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#e93fd3ec-fe83-4651-a881-b08ceb0c8482",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole embryo",
+      "name": "in toto CRISPR",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#cefcc907-c192-46b1-9f58-0854f16ebc15",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Zeiss Z.1 light sheet microscope with a W Plan-APO 20x/NA 1.0 WI imaging objective and 10x/NA 0.2 air illumination objectives was used in conjunction with a 0.45 x tube lens. The beam waist of the light sheet was optimised for maximum uniformity across the field of view. Images were recorded using scientific Complementary Metal–Oxide–Semiconductor (sCMOS) cameras (PCO edge 5.5) with max 1920x1920 pixels and 6.5 µm/pixel. The sensor was cropped to the sample dimensions to facilitate smaller file sizes.\n\nThe z-spacing of consecutive frames was 1µ and for each frame the left and right light sheet illumination was recorded separately. During acquisition the ‘Pivot Scan’ option was turned on to reduce illumination artefacts. The light sheet offset was manually calibrated for each sample individually by contrast maximisation. Illumination settings were chosen to minimise acquisition time. To avoid photobleaching during setup, spatial alignment and multiview setup was performed using the DAPI channel. Other fluorescent channels were set up using single frame acquisition. Multicolour imaging was performed sequentially by prioritising z-stacks over colour, i.e., full z-stacks were acquired repeatedly with single colours.",
+      "labEquipment": "Zeiss Z.1 light sheet microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "Whole brain imaging"
+    },
+    {
+      "@id": "#d8efd10f-76a0-4f7e-8e4d-a40312ea0373",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Zeiss Z.1 microscope with a W Plan-APO 20x/NA 1.0 WI imaging objective and 10x/NA 0.2 air illumination objectives was used in conjunction with a 0.45 x tube lens. The beam waist of the light sheet was optimised for maximum uniformity across the field of view. Images were recorded using scientific Complementary Metal–Oxide–Semiconductor (sCMOS) cameras (PCO edge 5.5) with max 1920x1920 pixels and 6.5 µm/pixel. The sensor was cropped to the sample dimensions to facilitate smaller file sizes.\n\nSamples were imaged from four orthogonal sides starting with a lateral view with the ventral-dorsal axis of the sample going from left to right and continuing in steps of 90° clockwise along the anteroposterior axis of the sample. For 12 hpf samples one such imaging volume was sufficient to capture a whole sample. For more developed samples, several overlapping (10%-20%) four-view imaging volumes were acquired along the anteroposterior axis of the sample; 24 hpf: 2 volumes, 48 hpf: 4 volumes, 72 hpf: 5 volumes. The z-spacing of consecutive frames was 1µ and for each frame the left and right light sheet illumination was recorded separately. During acquisition the ‘Pivot Scan’ option was turned on to reduce illumination artefacts. The light sheet offset was manually calibrated for each sample individually by contrast maximisation. Illumination settings were chosen to minimise acquisition time. To avoid photobleaching during setup, spatial alignment and multiview setup was performed using the DAPI channel. Other fluorescent channels were set up using single frame acquisition. Multicolour imaging was performed sequentially by prioritising z-stacks over colour, i.e., full z-stacks were acquired repeatedly with single colours.",
+      "labEquipment": "Zeiss Z.1. Light-sheet microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "In toto light sheet acquisition of developing zebrafish embryos"
+    },
+    {
+      "@id": "obo:FBbi_00000369",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "SPIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 297
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 459188990883
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD961"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD961",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#adbdebff-a612-425d-b112-1355f8fd1d24"
+        },
+        {
+          "@id": "#ec44aa41-dc64-4b63-9342-3a3d7abd5e7d"
+        },
+        {
+          "@id": "#aef66ff8-5295-4213-afb2-95a3d4c7ae56"
+        },
+        {
+          "@id": "#fb3aaf64-81bb-4933-9672-9b845a1f113e"
+        },
+        {
+          "@id": "#ba25a678-04dd-4d4b-b037-bdc82d90b511"
+        },
+        {
+          "@id": "obo:FBbi_00000367"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0de717d2-f8e9-4f98-9b5f-c3882cd07ce1"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8617-827X"
+        },
+        {
+          "@id": "#ff1fb655-21cf-4c48-bab1-2838ffac40e4"
+        },
+        {
+          "@id": "#0e776874-025c-4cda-b346-0276aead82a1"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-06",
+      "description": "Molecular interactions are key to all cellular processes, and particularly interesting to investigate in the context of gene regulation. Protein–protein interactions are challenging to examine in vivo as they are dynamic, and require spatially and temporally resolved studies to interrogate them. Foerster Resonance Energy Transfer (FRET) is a highly sensitive imaging method, which can interrogate molecular interactions. FRET can be detected by Fluorescence Lifetime Imaging Microscopy (FLIM-FRET), which is more robust to concentration variations and photobleaching than intensity-based FRET but typically needs long acquisition times to achieve high photon counts. New variants of non-fitting lifetime-based FRET perform well in samples with lower signal and require less intensive instrument calibration and analysis, making these methods ideal for probing protein–protein interactions in more complex live 3D samples. Here we show that a non-fitting FLIM-FRET variant, based on the Average Arrival Time of photons per pixel (AAT− FRET), is a sensitive and simple way to detect and measure protein–protein interactions in live early stage zebrafish embryos.",
+      "funder": [],
+      "identifier": "S-BIAD961",
+      "keywords": [
+        "AAT",
+        "FLIM",
+        "FRET",
+        "Confocal Microscopy",
+        "model organisms",
+        "live imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Non-fitting FLIM-FRET facilitates analysis of protein interactions in live zebrafish embryos",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD961/966425eb-79ac-4f36-b80f-69d4cee86a91/5b3cbf8b-4e58-4473-a42e-40ff8e27e98d.png"
+      ]
+    },
+    {
+      "@id": "#0e776874-025c-4cda-b346-0276aead82a1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "laura.murphy@ed.ac.uk",
+      "name": "Laura Murphy"
+    },
+    {
+      "@id": "#ff1fb655-21cf-4c48-bab1-2838ffac40e4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "j.auer@ed.ac.uk",
+      "name": "Julia Auer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8617-827X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de588502-f2ed-4e10-94dc-797256ad666b"
+        }
+      ],
+      "email": "ann.wheeler@ed.ac.uk",
+      "name": "Ann Wheeler"
+    },
+    {
+      "@id": "#de588502-f2ed-4e10-94dc-797256ad666b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Edinburgh"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#0de717d2-f8e9-4f98-9b5f-c3882cd07ce1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "zebrafish embryos 2-3 hours post fertilisation",
+      "name": "mznanog",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#adbdebff-a612-425d-b112-1355f8fd1d24",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Image data were acquired in Frame Sequential mode. Donor (mCitrine) and SiR-DNA were imaged to create a z-stack with an 8-μm z-step size, using the 515 nm laser at 40% power with a HyD-X detector (523–570 nm), and the 652 nm laser at 20% power with a HyD-X detector (digital mode, 662–710 nm), respectively. To verify protein expression levels, pre-acquisition images were taken for a single z-plane per embryo, using the 515 nm laser at 30% power for mCitrine (HyD-detector, 523–570 nm), using the 587 nm laser at 30% power for mCherry (HyD-detector, 595–640 nm) and using the 652 nm laser at 20% power laser for SiR-DNA (HyD-X detector, digital mode, 662–710 nm).",
+      "labEquipment": "Leica Stellaris 8 confocal microscope with white light laser, HyD-X detector, 40X 1.2 NA water-immersion objective lens",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000367"
+        }
+      ],
+      "name": "Intensity FRET"
+    },
+    {
+      "@id": "#aef66ff8-5295-4213-afb2-95a3d4c7ae56",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Acceptor photobleaching was carried out for two z-planes on opposite ends of the z-stack. The acceptor (mCherry) was bleached using 100% 587 nm laser for 30 s. Pre- and post-bleach images were acquired with same settings as above for mCitrine and SiR-DNA, and an additional channel to monitor mCherry intensity: 30% 587 nm laser with HyD detector (595–640 nm). For intensity-based FRET, the the HyD-X detector was used in photon counting mode. For AAT− FRET Acc-Pb, the HyD-X detector was used in TauInteraction mode (Intensity, AAT and mfD value given per pixel).",
+      "labEquipment": "Leica Stellaris 8 confocal microscope with white light laser, HyD-X detector, 40X 1.2 NA water-immersion objective lens",
+      "measurementTechnique": [],
+      "name": "Acceptor photobleaching (AccPB) FRET"
+    },
+    {
+      "@id": "#ba25a678-04dd-4d4b-b037-bdc82d90b511",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Donor photobleaching was carried out for two z-planes on opposite ends of the z-stack. The donor (mCitrine) was bleached using the 515 nm laser at 100% power with a laser for 30 s. Pre- and post-bleach images were acquired with same settings as above for mCherry and SiR-DNA, and an additional channel to monitor mCitrine intensity: 515 nm laser at 30% power with a with HyD detector (523–570 nm).",
+      "labEquipment": "Leica Stellaris 8 confocal microscope with white light laser, HyD-X detector, 40X 1.2 NA water-immersion objective lens",
+      "measurementTechnique": [],
+      "name": "Donor photobleaching SE-FRET"
+    },
+    {
+      "@id": "#ec44aa41-dc64-4b63-9342-3a3d7abd5e7d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Image data were acquired in Frame Sequential mode. Donor (mCitrine) and SiR-DNA were imaged to create a z-stack with an 8-μm z-step size, using the 515 nm laser at 40% power with a HyD-X detector (523–570 nm), and the 652 nm laser at 20% power with a HyD-X detector (digital mode, 662–710 nm), respectively. To verify protein expression levels, pre-acquisition images were taken for a single z-plane per embryo, using the 515 nm laser at 30% power for mCitrine (HyD-detector, 523–570 nm), using the 587 nm laser at 30% power for mCherry (HyD-detector, 595–640 nm) and using the 652 nm laser at 20% power laser for SiR-DNA (HyD-X detector, digital mode, 662–710 nm). For AAT− FRET, the HyD-X detector was used in TauContrast mode (Intensity and AAT value given per pixel). ",
+      "labEquipment": "Leica Stellaris 8 confocal microscope with white light laser, HyD-X detector, 40X 1.2 NA water-immersion objective lens",
+      "measurementTechnique": [],
+      "name": "Average Arrival Time (AAT) FRET"
+    },
+    {
+      "@id": "#fb3aaf64-81bb-4933-9672-9b845a1f113e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For SE-FRET, acceptor (mCherry) and SiR-DNA were imaged to create a z-stack with an 8-μm z-step size, using the 515 nm laser at 40% power with a HyD-X detector (TauContrast mode, 595–640 nm), and 652 nm laser at 20% power with a HyD-X detector (digital mode, 662–710 nm), respectively. Pre-acquisition images were acquired as for intensity-based or AAT− FRET. ",
+      "labEquipment": "Leica Stellaris 8 confocal microscope with white light laser, HyD-X detector, 40X 1.2 NA water-immersion objective lens",
+      "measurementTechnique": [],
+      "name": "Sensitied emission (SE) FRET"
+    },
+    {
+      "@id": "obo:FBbi_00000367",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRET"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 967499507
+    }
+  ]
+}

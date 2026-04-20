@@ -1,0 +1,223 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2517"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2517",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b84df70d-96de-4b82-b0c3-4b734c478bdb"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#298f7188-efce-45b1-9245-2d15a0957ea5"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9280-9848"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5642-3641"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0363-0716"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-19",
+      "description": "Activation of innate immunity at the single-cell level is a heterogenous process, yet the origins of this variability – fundamentally linked to the control of immune responses – remain poorly understood. Here, we combine classical fluctuation tests with genomic and high-content microscopy approaches to investigate the heritability of single-cell gene-expression patterns in the evolutionarily conserved toll-like receptor (TLR) system. Using population-level and single-cell RNA-seq, we show that a subset of TLR4-dependent genes, approximately 7% overall and 15% among upregulated genes, including key cytokines and immune effectors, retained transcriptional memory across more than 25 cell divisions in clonal populations of immortalised murine macrophages. High-content microscopy of selected immune-relevant proteins from these RNA-seq analyses, including the TNF-alfa and IL1-beta cytokines, across thousands of clonal populations for up to ~10 cell divisions, revealed that transcriptional heritability remains strong over multiple generations but is ultimately transient and shaped by environmental and population context. Among these, CD36, a scavenger receptor involved in bacterial recognition, showed strong heritability, and we demonstrated that CD36-positive clones were more susceptible to Listeria monocytogenes infection, directly linking transcriptional heritability to infection outcome. Together, these findings demonstrate widespread, long-term TLR-mediated transcriptional heritability and provide a conceptual framework for understanding how variability in heritable transcriptional traits shapes immune function.",
+      "funder": [],
+      "identifier": "S-BIAD2517",
+      "keywords": [
+        "Innate immunity",
+        "macrophages",
+        "toll-like receptor",
+        "heterogeneity",
+        "transcriptional memory",
+        "single cell expression",
+        "heritability",
+        "Listeria monocytogenes"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Single-cell gene expression patterns of the Toll-like receptor signalling are heritable traits",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2517/48effc28-fc78-4f24-93ef-1a240b1a22aa/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5642-3641",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e2ef4817-92e0-4a8e-b966-8e9e7fcf9056"
+        }
+      ],
+      "email": "conguyen@ippt.pan.pl",
+      "name": "Truong Co Nguyen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0363-0716",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e2ef4817-92e0-4a8e-b966-8e9e7fcf9056"
+        }
+      ],
+      "email": "ppaszek@ippt.pan.pl",
+      "name": "Pawel Paszek"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9280-9848",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e2ef4817-92e0-4a8e-b966-8e9e7fcf9056"
+        }
+      ],
+      "email": "jredondo@ippt.pan.pl",
+      "name": "Juan Alfonso Redondo Marin"
+    },
+    {
+      "@id": "#e2ef4817-92e0-4a8e-b966-8e9e7fcf9056",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Fundamental Technological Research, Polish Academy of Science"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#298f7188-efce-45b1-9245-2d15a0957ea5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Immortalized, commercial cell line - Immortalized Bone Marrow-Derived Macrophages",
+      "name": "iBMDM",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b84df70d-96de-4b82-b0c3-4b734c478bdb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Provided in the metadata of each file.",
+      "labEquipment": "Operetta CLS from PerkinElmer",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "High/throughput fluorescent microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 18635
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 548088427389
+    }
+  ]
+}

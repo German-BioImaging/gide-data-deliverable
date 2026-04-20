@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2466"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2466",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#33e5ef15-d92a-48ce-af15-b2eb54fc52d2"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8221fc34-c71a-4eaa-9b78-c78133955098"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4026-9920"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1101/2025.07.29.667395"
+        }
+      ],
+      "datePublished": "2025-12-05",
+      "description": "Radiation damage remains a fundamental limitation in cryo-electron microscopy (cryo-EM), constraining the total electron dose that can be used and thus hindering high-resolution imaging of biological specimens. Recent studies have proposed that temporally structured or pulsed electron beams could reduce radiation damage by allowing time for energy dissipation between individual electron interactions. To evaluate this hypothesis, we conducted a systematic investigation using a radio-frequency (RF) driven 300 kV Titan Krios microscope equipped with cold field emission gun (c-FEG) to generate highly regular pulsed electron beams for specimens under cryogenic conditions. We compared radiation damage in three representative samples: paraffin 2D crystals, bacteriorhodopsin (purple membrane) 2D crystals, and plunge-frozen tobacco mosaic virus (TMV) in vitreous ice, under both pulsed and conventional random illumination, while keeping all other imaging conditions constant. Radiation damage was quantified by tracking the decay of computed diffraction intensities to determine the critical dose (Ne). We observed no statistically significant difference in critical dose between pulsed and random illumination across all 3 samples. Our findings provide a critical reference point for future development and evaluation of temporally modulated electron sources in cryo-EM instrumentation.",
+      "funder": [],
+      "identifier": "S-BIAD2466",
+      "keywords": [
+        "cryo-EM",
+        "damage mitigation",
+        "pulsed-electron beam",
+        "high resolution"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Pulsed-electron illumination does not reduce beam damage for imaging biological macromolecules",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2466/9e594c33-c7a5-4291-90f9-01955d30f680/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4026-9920",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a0c9876d-8813-4848-ae8b-ff180a266e63"
+        }
+      ],
+      "email": "vishal.kumar@epfl.ch",
+      "name": "Vishal Kumar"
+    },
+    {
+      "@id": "#a0c9876d-8813-4848-ae8b-ff180a266e63",
+      "@type": [
+        "Organization"
+      ],
+      "name": "EPFL"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2025.07.29.667395",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "Pulsed-electron illumination does not reduce beam damage for imaging biological macromolecules"
+    },
+    {
+      "@id": "#8221fc34-c71a-4eaa-9b78-c78133955098",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Purple membrane, Tobacco Mosaic Virus",
+      "name": "Biological specimens",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#33e5ef15-d92a-48ce-af15-b2eb54fc52d2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Accelerating Voltage: 300 kV\nPixel size: 0.65 A",
+      "labEquipment": "Titan Krios",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "Cryo-EM imaging "
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2351
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 869090428067
+    }
+  ]
+}

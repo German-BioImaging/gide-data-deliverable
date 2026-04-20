@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1186"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1186",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ea27f902-a770-424f-ba29-45629337a15d"
+        },
+        {
+          "@id": "obo:FBbi_00000254"
+        },
+        {
+          "@id": "obo:FBbi_00001004"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#76320fe4-d78d-40a5-a520-49b8562b649e"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#40f8d01a-aeb1-416d-90af-ab196b5e6d4e"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3636-4239"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-27",
+      "description": "3D detection of GFP-Salmonella in spleen of infected mice before and after antimicrobial treatment ",
+      "funder": [],
+      "identifier": "S-BIAD1186",
+      "keywords": [
+        "Salmonella",
+        "infection",
+        "spleen",
+        "enrofloxacin",
+        "ceftriaxon"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Serial-two photon tomography of Salmonella-infected mouse spleen",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1186/6ef0d6da-80be-4a04-9fef-3e639468fb98/331a9b5b-c5a8-4cec-91ba-a972df7f6195.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1186/6a7f7d1e-fb39-4e18-b614-737fe4ae6ef8/075499c8-8639-4ff6-bfce-ca62f04d77fe.png"
+      ]
+    },
+    {
+      "@id": "#40f8d01a-aeb1-416d-90af-ab196b5e6d4e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a5306e8a-3370-4f5e-bc65-71657a2938a3"
+        }
+      ],
+      "email": "jiagui.li@unibas.ch",
+      "name": "Jiagui Li"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3636-4239",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a5306e8a-3370-4f5e-bc65-71657a2938a3"
+        }
+      ],
+      "email": "dirk.bumann@unibas.ch",
+      "name": "Dirk Bumann"
+    },
+    {
+      "@id": "#a5306e8a-3370-4f5e-bc65-71657a2938a3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Basel"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#76320fe4-d78d-40a5-a520-49b8562b649e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Salmonella-infected spleen",
+      "name": "Salmonella-infected spleen from mice with or without antimicrobial treatment",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ea27f902-a770-424f-ba29-45629337a15d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "We imaged agarose-embedded tissues using a two-photon whole-organ tomograph (TissueCyte 1000, TissueVision). We cut physical sections every 50 μm at a speed of 0.3 mm/s. After each sectioning, we imaged layers 20, 30, 40, 50, and 60 μm below the blockface in three channels (red channel 1: 560 to 650nm; green channel 2: Chroma Technology ET510/20m, 500 to 520 nm; blue channel 3: 450 to 500nm) using 940 nm excitation laser light (Mai Tai eHP, Spectraphysics). We imaged with a resolution of 0.435 μm in x and y by using a 20×objective with numerical aperture (NA) 1.0 (Plan Apo, Zeiss 421452-9880-000). ",
+      "labEquipment": "TissueCyte 1000, TissueVision",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00001004"
+        },
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "name": "Salmonella-infected spleen from mice with or without antimicrobial treatment"
+    },
+    {
+      "@id": "obo:FBbi_00000254",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00001004",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "tomography"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4260
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1360912739090
+    }
+  ]
+}

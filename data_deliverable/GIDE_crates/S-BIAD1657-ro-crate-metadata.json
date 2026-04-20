@@ -1,0 +1,213 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1657"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1657",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e9d63075-086f-4e8a-8d42-191fb4570558"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c8643183-088a-41c3-a2a9-8c930f42f8e8"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f1a6e96c-8555-46ec-b5f5-dc38a3be1e70"
+        },
+        {
+          "@id": "#0781473a-c3a0-4c20-b18a-fa5c534c4f2e"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-19",
+      "description": "Across the evolutionary spectrum, sexual interactions can significantly influence the physiology and somatic aging in various species. In Caenorhabditis, male pheromones, sperm, and seminal fluid shorten the lifespan of hermaphrodites through different mechanisms. However, it is unclear whether the male seminal fluid protein is involved in this post-mating regulation. Here, we identified that SFP-1 is a seminal fluid protein required for physiological changes in mated hermaphrodites. SFP-1, packaged into secretory vesicles via the phospholipid scramblases ANOH-1 and ANOH-2 in male seminal vesicles, is endocytosed by intestinal cells after mating. Within the intestine, the NTF2-like domain of SFP-1 assists interaction with the transcription factors SKN-1 and DAF-16, triggering post-mating somatic fat depletion and lifespan reduction.  Our results provide insight into how the male seminal fluid protein SFP-1 triggers mating-induced physiological changes in sexual interactions.",
+      "funder": [],
+      "identifier": "S-BIAD1657",
+      "keywords": [
+        " Longevity / Seminal fluid protein / Mating / Lipid metabolism"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A seminal fluid protein SFP-1 regulates mated hermaphrodite aging and fat metabolism in C. elegans",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1657/81497845-692d-4127-972e-097e091d62ca/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0781473a-c3a0-4c20-b18a-fa5c534c4f2e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7a1d4df2-d6e1-44d4-a008-50225803450b"
+        }
+      ],
+      "email": "jiankeg@hust.edu.cn",
+      "name": "jianke Gong"
+    },
+    {
+      "@id": "#f1a6e96c-8555-46ec-b5f5-dc38a3be1e70",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7a1d4df2-d6e1-44d4-a008-50225803450b"
+        }
+      ],
+      "email": "d202180782@hust.edu.cn",
+      "name": "mingqing Chen"
+    },
+    {
+      "@id": "#7a1d4df2-d6e1-44d4-a008-50225803450b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Huazhong University of Science and Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#c8643183-088a-41c3-a2a9-8c930f42f8e8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "worms",
+      "name": "c.elegans",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#e9d63075-086f-4e8a-8d42-191fb4570558",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "2048",
+      "labEquipment": "FV3000 (Olympus)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "FV3000 (Olympus)"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 298
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1720257008
+    }
+  ]
+}

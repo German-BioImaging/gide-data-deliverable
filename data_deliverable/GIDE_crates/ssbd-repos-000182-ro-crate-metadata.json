@@ -1,0 +1,198 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000182/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000182/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000182",
+      "name": "Micro-topographical guidance of macropinocytic signaling patches",
+      "description": "In fast moving cells such as amoeba and immune cells, dendritic actin filaments are spatio-temporally regulated to shape large-scale plasma membrane protrusions.  Despite the importance in migration as well as in particle and liquid ingestion, how their dynamics are affected by micrometer-scale features of the contact surface is still poorly understood.  Here, through quantitative image analysis of Dictyostelium on micro-fabricated surfaces, we show that there is a distinct mode of topographical guidance directed by the macropinocytic membrane cup.  Unlike other topographic guidance known to date that depends on nanometer-scale curvature sensing protein or stress fibers, the macropinocytic membrane cup is driven by the Ras/PI3K/F-actin signaling patch and its dependency on the micrometer-scale topographic features; namely PI3K/F-actin-independent accumulation of Ras-GTP at the convex curved surface, PI3K-dependent patch propagation along the convex edge and its actomyosin-dependent constriction at the concave edge.  Mathematical model simulations demonstrate that the topographically-dependent initiation in combination with the mutually-defining patch patterning and the membrane deformation gives rise to the topographical guidance.  Our results suggest that the macropinocytic cup is a self-enclosing structure that can support liquid ingestion by default, however in the presence of structured surfaces, it is directed to faithfully trace bent and bifurcating ridges for particle ingestion and cell guidance.",
+      "datePublished": "2021-10-01",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Cell Membrane/physiology",
+        "Chemotaxis",
+        "Computer Simulation[major]",
+        "Dictyostelium/physiology[major]",
+        "Models, Biological[major]",
+        "Movement",
+        "Phosphatidylinositol 3-Kinases",
+        "Pinocytosis/physiology[major]",
+        "Signal Transduction"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.2110281118"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0008104"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Gen HONDA",
+      "email": "ghonda@g.ecc.u-tokyo.ac.jp",
+      "description": "Organization: University of Tokyo; Department: Department of Basic Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.2110281118",
+      "@type": "ScholarlyArticle",
+      "name": "Microtopographical guidance of macropinocytic signaling patches.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        }
+      ],
+      "hasCellLine": [
+        "AX4",
+        "AX2",
+        "NC4"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "vernacularName": "social amoeba"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008104",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 6876422144,
+      "description": "6.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 0,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

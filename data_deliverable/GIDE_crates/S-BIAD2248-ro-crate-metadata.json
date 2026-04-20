@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2248"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2248",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6e83b8a1-5115-45de-8b40-b6917936d471"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#144de694-1b10-4e9d-b785-ae762b694ec2"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1953-3902"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-08",
+      "description": "In most somatic cells, heterochromatin localizes at the nuclear periphery while euchromatin is broadly distributed within the nucleus. However, the nuclear pore vicinity is devoid of heterochromatin, forming striking exclusion zones within the peripheral heterochromatin layer. Whether and how these exclusion zones affect global chromatin organization is unknown. Here we demonstrate that the main nuclear pore basket component, Translocated Promoter Region (TPR), forms biomolecular condensates which are necessary and sufficient to exclude heterochromatin. We further demonstrate that this mechanism controls chromatin organization locally, at nuclear pores, and regulates heterochromatin positioning in the entire nucleus. Our study therefore highlights a new mechanism of global chromatin organization through condensate-mediated mechanical exclusion of heterochromatin at nuclear pore baskets.",
+      "funder": [],
+      "identifier": "S-BIAD2248",
+      "keywords": [
+        "TPR",
+        "chromatin organization",
+        "nucleus",
+        "Nuclear Pore"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Biomolecular condensates at the nuclear pore basket maintain global chromatin organization ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2248/63c99103-5a78-46e9-b6bd-a6c607e4e880/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1953-3902",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02feahw73"
+        }
+      ],
+      "email": "charlene.boumendil@igh.cnrs.fr",
+      "name": "Charlene Boumendil"
+    },
+    {
+      "@id": "https://ror.org/02feahw73",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre National de la Recherche Scientifique"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#144de694-1b10-4e9d-b785-ae762b694ec2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "NIH3T3 fibroblast cells stably expressing the WT TPR protein that can bind to the nuclear pores. Over-expression of TPR-GFP or TPRdeltaMid-GFP or TPRdeltaMid::FG(NUP98)-GFP for 48h after addition of doxycycline. \nIF of endogenous TPR (Nuclear Basket) and endogenous Nup153 (Nuclear pores complex) after overexpression.",
+      "name": "TPR-GFP over expression at nuclear pores",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#6e83b8a1-5115-45de-8b40-b6917936d471",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "GFP tagged proteins were immunostained with a GFP booster-AF488 excited with 488 nm and its emission detected with 400-550nm, Nup153 (AF555) was excited with 555 nm and detected with 525-720nm, endogenous TPR (AF647) was excited with 647nm and detected with 640-720nm, and DAPI was exited with 350nm and detected with 400-505nm. Full nucleus 3D imaging was acquired with the following airyscan settings: 0.2µm z-steps, dual time of 1.15 μs and a size of 0.31 μm. Airyscan image processing was applied automatically after imaging using Zeiss ZEN software (version blue 3.6) to obtain the final processed images. ",
+      "labEquipment": "Zeiss LSM980 confocal inverted microscope equipped with an Airyscan 2 module in super-resolution mode with a 63×/1.4 oil immersion objective",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "name": "TPR-GFP over expression at nuclear pores"
+    },
+    {
+      "@id": "obo:FBbi_00000393",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "array-scan confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 25
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 105444378240
+    }
+  ]
+}

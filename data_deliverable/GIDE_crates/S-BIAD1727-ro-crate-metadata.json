@@ -1,0 +1,224 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1727"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1727",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#110b5665-cad4-4761-a7df-b43ce87f3b42"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cf79b917-55f4-40e7-8c18-8270465098d4"
+        },
+        {
+          "@id": "obo:NCBITaxon_4565"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-7234-3796"
+        },
+        {
+          "@id": "#571ab039-c968-4e8d-8808-a2951204dfee"
+        },
+        {
+          "@id": "#da82f2b5-4d54-4e2b-87a3-d7711319fbe8"
+        },
+        {
+          "@id": "#db2f44ef-2346-4da3-af4f-7d872704fed5"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-21",
+      "description": "We provide time series data for more than 4,000 wheat plots, including aligned high-resolution image sequences totaling more than 153,000 aligned images across six years. Measurement data for eight key wheat traits is included, namely canopy cover values, plant heights, wheat head counts, senescence ratings, heading date, final plant height, grain yield, and protein content. Genetic marker information and environmental data complement the time series. Data quality is demonstrated through heritability analyses and genomic prediction models, achieving accuracies aligned with previous research.",
+      "funder": [],
+      "identifier": "S-BIAD1727",
+      "keywords": [
+        "wheat",
+        "trait",
+        "regression",
+        "timeseries",
+        "breeding",
+        "alignment",
+        "phenotyping"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The FIP 1.0 Data Set: Highly Resolved Annotated Image Time Series of 4,000 Wheat Plots Grown in Six Years",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1727/e42d770f-2382-4c12-a009-0e0c68bfff89/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#571ab039-c968-4e8d-8808-a2951204dfee",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#09039ee8-dc22-4d24-8526-909663ccb3a3"
+        }
+      ],
+      "email": "lukas.roth@usys.ethz.ch",
+      "name": "Lukas Roth"
+    },
+    {
+      "@id": "#da82f2b5-4d54-4e2b-87a3-d7711319fbe8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#09039ee8-dc22-4d24-8526-909663ccb3a3"
+        }
+      ],
+      "email": "norbert.kirchgessner@usys.ethz.ch",
+      "name": "Norbert Kirchgessner"
+    },
+    {
+      "@id": "#db2f44ef-2346-4da3-af4f-7d872704fed5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#09039ee8-dc22-4d24-8526-909663ccb3a3"
+        }
+      ],
+      "email": "achim.walter@usys.ethz.ch",
+      "name": "Achim Walter"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7234-3796",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#09039ee8-dc22-4d24-8526-909663ccb3a3"
+        }
+      ],
+      "email": "mboss@ethz.ch",
+      "name": "Mike Boss"
+    },
+    {
+      "@id": "#09039ee8-dc22-4d24-8526-909663ccb3a3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "ETH Zurich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4565",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Triticum aestivum"
+    },
+    {
+      "@id": "#cf79b917-55f4-40e7-8c18-8270465098d4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Wheat plots",
+      "name": "Wheat",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4565"
+      }
+    },
+    {
+      "@id": "#110b5665-cad4-4761-a7df-b43ce87f3b42",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "\nThe images were mostly captured using auto white balance, auto exposure, an ISO of 100, an exposure time of 1/250 second (4 ms), and zero exposure bias value.\nThe ground sampling distance is approximately 0.55 mm.",
+      "labEquipment": "EOS 5D Mark II, 35 mm lens (Canon Inc., Tokyo, Japan)",
+      "measurementTechnique": [],
+      "name": "FIP 1.0 camera"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 151293
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 169451660950
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD986"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD986",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1acc1e8e-5411-4863-8352-37ea98b413d1"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e3ec3b15-ed17-4ded-80d6-aa1448a1cc99"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0031-8468"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2140-308X"
+        },
+        {
+          "@id": "#45d17785-a9c1-43db-91d1-56b0300103be"
+        },
+        {
+          "@id": "#d9d47e62-fa9d-4d41-8c9c-043d0b503370"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9900-1841"
+        },
+        {
+          "@id": "#9372f428-c675-4472-96d6-d4db44cae18e"
+        },
+        {
+          "@id": "#a296ede9-e2dd-429b-876f-bea7a62dbd61"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9694-7378"
+        },
+        {
+          "@id": "#ea7a8d0c-0b02-4ef3-a858-12aec2cca0ff"
+        },
+        {
+          "@id": "#de8c1c4a-ba01-4ff6-88e4-1e6a57bd1765"
+        },
+        {
+          "@id": "#d4c7d18f-cd84-469a-8dc8-50cd68fd80eb"
+        },
+        {
+          "@id": "#fab16ee1-eca8-4243-a8aa-f53543fcb1c5"
+        },
+        {
+          "@id": "#c3555fd0-2f52-4194-89ed-c67230e57b57"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8746-3037"
+        },
+        {
+          "@id": "#2d185963-2dea-40f5-b5f4-7036aeb4e1cc"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7858-0231"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5237-0789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6886-1454"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9794-9532"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-31",
+      "description": "We used the 10x Genomics Visium platform to define the spatial topography of gene expression in the six-layered human dorsolateral prefrontal cortex. We identified extensive layer-enriched expression signatures and refined associations to previous laminar markers. We overlaid our laminar expression signatures on large-scale single nucleus RNA-sequencing data, enhancing spatial annotation of expression-driven clusters. By integrating neuropsychiatric disorder gene sets, we showed differential layer-enriched expression of genes associated with schizophrenia and autism spectrum disorder, highlighting the clinical relevance of spatially defined expression. We then developed a data-driven framework to define unsupervised clusters in spatial transcriptomics data, which can be applied to other tissues or brain regions in which morphological architecture is not as well defined as cortical laminae. Last, we created a web application for the scientific community to explore these raw and summarized data to augment ongoing neuroscience and spatial transcriptomics research (http://research.libd.org/spatialLIBD).",
+      "funder": [],
+      "identifier": "S-BIAD986",
+      "keywords": [
+        "Spatial transcriptomics",
+        "Human",
+        "Brain",
+        "Visium",
+        "dorsolateral prefrontal cortex",
+        "schizophrenia",
+        "autism",
+        "RNA"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "spatialLIBD - Transcriptome-scale spatial gene expression in the human dorsolateral prefrontal cortex",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD986/ba5a61e2-fbcb-4532-a0f2-135323ca938f/43225c8d-e277-497c-9186-54a00d768fd3.png"
+      ]
+    },
+    {
+      "@id": "#2d185963-2dea-40f5-b5f4-7036aeb4e1cc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e2739399-d6c7-420f-a7b5-d98d442e3047"
+        }
+      ],
+      "name": "Nikhil Rao"
+    },
+    {
+      "@id": "#45d17785-a9c1-43db-91d1-56b0300103be",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "name": "Lukas M. Weber"
+    },
+    {
+      "@id": "#9372f428-c675-4472-96d6-d4db44cae18e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e2739399-d6c7-420f-a7b5-d98d442e3047"
+        }
+      ],
+      "name": "Stephen R. Williams"
+    },
+    {
+      "@id": "#a296ede9-e2dd-429b-876f-bea7a62dbd61",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "name": "Joseph L. Catallini II"
+    },
+    {
+      "@id": "#c3555fd0-2f52-4194-89ed-c67230e57b57",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb"
+        }
+      ],
+      "name": "Joel E. Kleinman"
+    },
+    {
+      "@id": "#d4c7d18f-cd84-469a-8dc8-50cd68fd80eb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e2739399-d6c7-420f-a7b5-d98d442e3047"
+        }
+      ],
+      "name": "Jennifer Chew"
+    },
+    {
+      "@id": "#d9d47e62-fa9d-4d41-8c9c-043d0b503370",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e2739399-d6c7-420f-a7b5-d98d442e3047"
+        }
+      ],
+      "name": "Cedric Uytingco"
+    },
+    {
+      "@id": "#de8c1c4a-ba01-4ff6-88e4-1e6a57bd1765",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2f83d3ec-ee86-4ab6-bacc-fdc290ac05f9"
+        }
+      ],
+      "name": "Madhavi Tippani"
+    },
+    {
+      "@id": "#ea7a8d0c-0b02-4ef3-a858-12aec2cca0ff",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "name": "Zachary Besich"
+    },
+    {
+      "@id": "#fab16ee1-eca8-4243-a8aa-f53543fcb1c5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e2739399-d6c7-420f-a7b5-d98d442e3047"
+        }
+      ],
+      "name": "Yifeng Yin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6886-1454",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "name": "Andrew E. Jaffe"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9694-7378",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "name": "Matthew N. Tran"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5237-0789",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb"
+        }
+      ],
+      "name": "Keri Martinowich"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7858-0231",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "name": "Stephanie C. Hicks"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8746-3037",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb"
+        }
+      ],
+      "name": "Thomas M. Hyde"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9794-9532",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04xfq0f34"
+        }
+      ],
+      "email": "pakiessling@ukaachen.de",
+      "name": "Paul Kiessling"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9900-1841",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb"
+        }
+      ],
+      "name": "Brianna K. Barry"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0031-8468",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb"
+        }
+      ],
+      "name": "Kristen R. Maynard"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2140-308X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "email": "lcolladotor@gmail.com",
+      "name": " Leonardo Collado-Torres"
+    },
+    {
+      "@id": "#2f83d3ec-ee86-4ab6-bacc-fdc290ac05f9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Lieber Institute for Brain Development"
+    },
+    {
+      "@id": "#4bc97fe1-66f0-486e-8e13-90e007eb6cdb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Johns Hopkins Medicine"
+    },
+    {
+      "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Johns Hopkins University"
+    },
+    {
+      "@id": "#e2739399-d6c7-420f-a7b5-d98d442e3047",
+      "@type": [
+        "Organization"
+      ],
+      "name": "10X Genomics (United States)"
+    },
+    {
+      "@id": "https://ror.org/04xfq0f34",
+      "@type": [
+        "Organization"
+      ],
+      "name": "RWTH Aachen University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#e3ec3b15-ed17-4ded-80d6-aa1448a1cc99",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human brain tissue DLPFC",
+      "name": "Patient DLPFC brain tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1acc1e8e-5411-4863-8352-37ea98b413d1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Brightfield histology images were taken using a 10× objective (Plan APO) on a Nikon Eclipse Ti2-E (27,755 × 50,783 pixels2 for TO, 13,332 × 13,332 pixels2 for GEX). Raw images were stitched together using NIS-Elements AR 5.11.00 (Nikon) and exported as .tiff files with low- and high-resolution settings.",
+      "labEquipment": " Nikon Eclipse Ti2-E",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Brightfield histology images HE stain"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 96
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12519849299
+    }
+  ]
+}

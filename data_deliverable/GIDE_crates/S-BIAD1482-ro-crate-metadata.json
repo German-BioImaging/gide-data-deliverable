@@ -1,0 +1,262 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1482"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1482",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c577b886-f5bc-41c5-bcbe-66a697d2512b"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9a84f4a3-361e-4391-96d6-07fe17bb9f3e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8806-9672"
+        },
+        {
+          "@id": "#937b1ab2-ae82-4be0-9845-462743688520"
+        },
+        {
+          "@id": "#b01cb091-7a04-4239-a01c-1c3fab67a806"
+        },
+        {
+          "@id": "#a5e9fdb4-709a-4951-92cb-795413d0538b"
+        },
+        {
+          "@id": "#8065628c-770e-433f-be3f-3e4c559e7a45"
+        },
+        {
+          "@id": "#4db40248-0c37-47e5-b04b-f060f2904364"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-18",
+      "description": "This data descriptor reports a new dataset that includes the ankle joint kinematics/kinetics, associated muscle surface electromyography, and ultrafast ultrasound images with various annotations, such as pennation angle, fascicle length, tissue displacements, echogenicity, and muscle thickness, of ten healthy participants when performing volitional isometric, isokinetic, and dynamic ankle joint functions (walking at multiple treadmill speeds, including  0.50 m/s, 0.75 m/s, 1.00 m/s, 1.25 m/s, and 1.50 m/s). Data were recorded by a research-use ultrasound machine, a self-designed ankle testbed, an inertia measurement unit system, a Vicon motion capture system, a surface electromyography system, and an instrumented treadmill. The descriptor in this work presents the results of a data curation or collection exercise from previous works, rather than describing a novel primary/experimental data collection.",
+      "funder": [],
+      "identifier": "S-BIAD1482",
+      "keywords": [
+        "Ankle joint",
+        "Ultrasound image",
+        "Surface electromyography",
+        "Dorsiflexion",
+        "Plantarflexion",
+        "Muscle contractility"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "AnkleImage - An ultrafast ultrasound image dataset to understand the ankle joint muscle contractility",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#4db40248-0c37-47e5-b04b-f060f2904364",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2b43f121-4fde-4ff9-94b5-b12ca2199e83"
+        }
+      ],
+      "name": "Nitin Sharma"
+    },
+    {
+      "@id": "#8065628c-770e-433f-be3f-3e4c559e7a45",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2b12a62b-8753-4abd-bda6-e3a473eccda7"
+        }
+      ],
+      "name": "Xuefeng Bao"
+    },
+    {
+      "@id": "#937b1ab2-ae82-4be0-9845-462743688520",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2b43f121-4fde-4ff9-94b5-b12ca2199e83"
+        }
+      ],
+      "name": "Noor Hakam"
+    },
+    {
+      "@id": "#a5e9fdb4-709a-4951-92cb-795413d0538b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2b43f121-4fde-4ff9-94b5-b12ca2199e83"
+        }
+      ],
+      "name": "Ashwin Iyer"
+    },
+    {
+      "@id": "#b01cb091-7a04-4239-a01c-1c3fab67a806",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#96f691fe-28be-4521-aa55-0fed152beddf"
+        }
+      ],
+      "name": "Oluwasegun Akinniyi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8806-9672",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#96f691fe-28be-4521-aa55-0fed152beddf"
+        }
+      ],
+      "email": "qiang.zhang@ua.edu",
+      "name": "Qiang Zhang"
+    },
+    {
+      "@id": "#2b12a62b-8753-4abd-bda6-e3a473eccda7",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Wisconsin–Milwaukee"
+    },
+    {
+      "@id": "#2b43f121-4fde-4ff9-94b5-b12ca2199e83",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of North Carolina at Chapel Hill"
+    },
+    {
+      "@id": "#96f691fe-28be-4521-aa55-0fed152beddf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Alabama"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9a84f4a3-361e-4391-96d6-07fe17bb9f3e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Ankle joint skeletal muscles",
+      "name": "AnkleImage - An ultrafast ultrasound image dataset to understand the ankle joint muscle contractility",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c577b886-f5bc-41c5-bcbe-66a697d2512b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "This data descriptor reports a new dataset that includes the ankle joint kinematics/kinetics, associated muscle surface electromyography, and ultrafast\nultrasound images with various annotations, such as pennation angle, fascicle length, tissue displacements, echogenicity, and\nmuscle thickness, of ten healthy participants when performing volitional isometric, isokinetic, and dynamic ankle joint functions\n(walking at multiple treadmill speeds, including 0.50 m/s, 0.75 m/s, 1.00 m/s, 1.25 m/s, and 1.50 m/s). Data were recorded by a\nresearch-use ultrasound machine, a self-designed ankle testbed, an inertia measurement unit system, a Vicon motion capture\nsystem, a surface electromyography system, and an instrumented treadmill. The descriptor in this work presents the results of\na data curation or collection exercise from previous works, rather than describing a novel primary/experimental data collection.",
+      "labEquipment": "This data descriptor reports a new dataset that includes the ankle joint kinematics/kinetics, associated muscle surface electromyography, and ultrafast\nultrasound images with various annotations, such as pennation angle, fascicle length, tissue displacements, echogenicity, and\nmuscle thickness, of ten healthy participants when performing volitional isometric, isokinetic, and dynamic ankle joint functions\n(walking at multiple treadmill speeds, including 0.50 m/s, 0.75 m/s, 1.00 m/s, 1.25 m/s, and 1.50 m/s). Data were recorded by a\nresearch-use ultrasound machine, a self-designed ankle testbed, an inertia measurement unit system, a Vicon motion capture\nsystem, a surface electromyography system, and an instrumented treadmill. The descriptor in this work presents the results of\na data curation or collection exercise from previous works, rather than describing a novel primary/experimental data collection.",
+      "measurementTechnique": [],
+      "name": "AnkleImage - An ultrafast ultrasound image dataset to understand the ankle joint muscle contractility"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 251670
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2486962464063
+    }
+  ]
+}

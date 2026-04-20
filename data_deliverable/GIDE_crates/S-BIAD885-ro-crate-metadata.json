@@ -1,0 +1,183 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD885"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD885",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#709bb0d8-6df7-4698-b96f-2de59dbefaed"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2c5df1c2-e720-4331-b98d-dd62e2f1a4f8"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9bf8ab1c-2695-42b3-b62a-d533cab77ecb"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-09-06",
+      "description": "OME-NGFF converted study from idr0010.  DNA double-strand breaks (DSBs) not only interrupt the genetic information, but also disrupt the chromatin structure, and both impairments require repair mechanisms to ensure genome integrity. We showed previously that RNF8-mediated chromatin ubiquitylation protects genome integrity by promoting the accumulation of repair factors at DSBs. Here, we provide evidence that, while RNF8 is necessary to trigger the DSB-associated ubiquitylations, it is not sufficient to sustain conjugated ubiquitin in this compartment. We identified RNF168 as a novel chromatin-associated ubiquitin ligase with an ability to bind ubiquitin. We show that RNF168 interacts with ubiquitylated H2A, assembles at DSBs in an RNF8-dependent manner, and, by targeting H2A and H2AX, amplifies local concentration of lysine 63-linked ubiquitin conjugates to the threshold required for retention of 53BP1 and BRCA1. Thus, RNF168 defines a new pathway involving sequential ubiquitylations on damaged chromosomes and uncovers a functional cooperation between E3 ligases in genome maintenance.",
+      "funder": [],
+      "identifier": "S-BIAD885",
+      "keywords": [
+        "DNA damage",
+        "RNAi"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "High content screen for genes whose downregulation by RNAi affects acccumulation of p53-binding protein 1 (53BP1) at sites of double strand breaks (OME-NGFF)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#9bf8ab1c-2695-42b3-b62a-d533cab77ecb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "email": "idr-support@openmicroscopy.org",
+      "name": "Image Data Resource (IDR)"
+    },
+    {
+      "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2c5df1c2-e720-4331-b98d-dd62e2f1a4f8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human U-2-OS osteosarcoma cells",
+      "name": "U-2-OS cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#709bb0d8-6df7-4698-b96f-2de59dbefaed",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired with optical resolution of 0.465 um/pixel. Before plating the cells, the first spot on each array was manually marked and the entire array was scanned in a DIC transmission light to assess the quality of the siRNA spots and to adjust their correct position in the centre of the acquired field. After passing this quality check, the cells were seeded in the chamber and processed as described in the previous section. The marked first siRNA spot was then re-found and the arrays were acquired with appropriate excitation and emission Zeiss filter sets (#1, 365/12 excitation - LP397 emission for Hoechst; and #38HE, 470/40 excitation  525/50 emission for Alexa Fluor 488). The Hoechst-associated fluorescence (exposure time 10 ms) was used for automated identification of the focal plane. The exposure time to record the 53BP1-associated fluorescence was 30 ms. (Note:file names contain the word dapi but Hoechst was used).",
+      "labEquipment": "Wide-field fluorescence microscope (Zeiss Axiovert 200) equipped with motorized stage, 20x air objective (PlanApochromat 20x/0.8), CCD camera (Coolsnap HQ, Roper Scientific) operated by Metamorph software (version 6.2r6; Molecular Devices), fluorescent light source X-Cite 120 (Exfo Photonic Solutions, Inc), and Uniblitz shutters (Vincent Associates)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 147
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 70355702017
+    }
+  ]
+}

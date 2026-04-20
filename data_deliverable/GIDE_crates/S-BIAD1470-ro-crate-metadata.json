@@ -1,0 +1,279 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1470"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1470",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a8844d1e-71c1-4731-a774-e881b76359af"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cb746891-9fee-4466-b298-1488edc6d43e"
+        },
+        {
+          "@id": "obo:NCBITaxon_3055"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f4a1b1f9-4fcb-4108-b1f7-6ad323cad453"
+        },
+        {
+          "@id": "#3fc0af5c-40b0-45a4-af6d-fc658ec7e846"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5887-2069"
+        },
+        {
+          "@id": "#c7bc85e4-5217-4e71-971c-da4d474718f5"
+        },
+        {
+          "@id": "#dde8d159-2801-4c38-9869-3cf7037e0c34"
+        },
+        {
+          "@id": "#54da8621-5931-4d21-89fb-6fd62a4affd1"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-08",
+      "description": "We used Chlamydomonas reinhardtii motility mutants with disrupted genes homologous to human SPEF2 or DNALI1 to model spermatogenic failure disorders SPGF43 and SPGF83, respectively. We recovered aspects of wild-type motility in these mutants with a small-scale drug screen.",
+      "funder": [],
+      "identifier": "S-BIAD1470",
+      "keywords": [
+        "spermatogenic failure",
+        "time-lapse microscopy",
+        "chlamydomonas"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Data underlying the pub \"Rescuing Chlamydomonas motility in mutants modeling spermatogenic failure\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1470/faa0fe00-c2c8-40fb-9293-f62702c212bb/83e08807-1399-4353-8804-acb179218148.png"
+      ]
+    },
+    {
+      "@id": "#3fc0af5c-40b0-45a4-af6d-fc658ec7e846",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "tara.essock-burns@arcadiascience.com",
+      "name": "Tara Essock-Burns"
+    },
+    {
+      "@id": "#54da8621-5931-4d21-89fb-6fd62a4affd1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "dave.mets@arcadiascience.com",
+      "name": "David Mets"
+    },
+    {
+      "@id": "#c7bc85e4-5217-4e71-971c-da4d474718f5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "megan.hochstrasser@arcadiascience.com",
+      "name": "Megan Hochstrasser"
+    },
+    {
+      "@id": "#dde8d159-2801-4c38-9869-3cf7037e0c34",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "cameron.macquarrie@arcadiascience.com",
+      "name": "Cameron Dale MacQuarrie"
+    },
+    {
+      "@id": "#f4a1b1f9-4fcb-4108-b1f7-6ad323cad453",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "audrey.bell@arcadiascience.com",
+      "name": "Audrey Bell"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5887-2069",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06"
+        }
+      ],
+      "email": "ryan.lane@arcadiascience.com",
+      "name": "Ryan Lane"
+    },
+    {
+      "@id": "#0d5eab0d-0bff-4e61-b712-65f81a223e06",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Arcadia Science"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3055",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Chlamydomonas reinhardtii"
+    },
+    {
+      "@id": "#cb746891-9fee-4466-b298-1488edc6d43e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Chlamydomonas reinhardtii cells",
+      "name": "Chlamydomonas reinhardtii cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3055"
+      }
+    },
+    {
+      "@id": "#a8844d1e-71c1-4731-a774-e881b76359af",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20 s time-lapse duration\n50 ms exposure time\n1.3 µm pixel size\n10x magnification\n0.45 NA",
+      "labEquipment": "Inverted Nikon Ti2-E & Yokogawa CSU W1-SoRa confocal microscope fitted with an ORCA-Fusion BT digital sCMOS camera (Hamamatsu), a LIDA Light Engine (Lumencor) for illumination, and a Nikon Plan Apo 10x 0.45 Air objective.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Bright-field microscopy time lapses"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 372
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 108434322362
+    }
+  ]
+}

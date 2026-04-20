@@ -1,0 +1,171 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1941"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1941",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7e57658f-3a2d-4c4b-8115-944c2f71d90e"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3e2e9271-60f2-45be-9954-f4933107c3fd"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1876-7432"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-04",
+      "description": "In this study, we demonstrate the effectiveness of dodecaLSFM by achieving high-resolution imaging of whole mouse brain vasculature with tissue clearing, allowing precise morphometric analysis of vascular networks without stripe artifacts. Furthermore, we show that combining dodecaLSFM with expansion microscopy (ExM) enables whole-organ 3D imaging at cellular resolution. This approach provides an advanced, scalable solution for large-volume imaging, facilitating detailed structural and functional studies across diverse biological applications.",
+      "funder": [],
+      "identifier": "S-BIAD1941",
+      "keywords": [
+        "Light Sheet microscopy",
+        "Expansion microscopy (ExM)"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Dodecagon light sheet fluorescence microscopy for large volume imaging without striping artifacts",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1941/1ff7fc10-ed05-447c-987f-50f410b6ec52/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1876-7432",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#282aee28-e953-4ef9-a532-27b201226efd"
+        }
+      ],
+      "email": "bichangchen@gmail.com",
+      "name": "Bi-Chang Chen"
+    },
+    {
+      "@id": "#282aee28-e953-4ef9-a532-27b201226efd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Research Center for Applied Science, Academia Sinica"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#3e2e9271-60f2-45be-9954-f4933107c3fd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse brain and kidney",
+      "name": "Whole oragns acquisition ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#7e57658f-3a2d-4c4b-8115-944c2f71d90e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The exposure time (50ms-200ms) of camera, laser line illumination and movement of XYZ-stage are under the control of micro-manager.",
+      "labEquipment": "As illustrated in Fig. 1, three laser beams with excitation wavelength of 488 nm, 561 nm and 647 nm are\ncombined and expanded to a diameter of 6 mm using two-lens telescope configuration. Each beam is\nsplit into twelve equally intense beams by a diffractive beam splitter (MS-356-561-Y-X, Holo/Or), and the\nbeams are delivered through electrical tunable lenses onto a 2D array in other to compensate the\nchromatic aberration. Afterwards, a system of mirrors is used to guide these collimated beams into twelve\ncylindrical lenses of 100 mm focal length, placed at each side of dodecagon sample chamber, generating\ntwelve light sheets. These twelve light sheets can be modulated through different slit apertures in shaping\nthe thickness and length of light sheets to match different sample sizes. Custom-made sample holders\nare designed for various sample types, such as clearing or expansion samples, and mounted at the\ncenter of the chamber. For the imaging part, the fluorescent images were detected using standard\nobjective (Olympus, 10X NA 0.6) with tube lens of 150 mm (Thorlab, AC508-150-A) or Canon 85 mm \nLens with Canon 75-300 Zoom Lens set to 135mm or 300mm and acquired by the camera (Hamamatsu, \nORCA-Lightning or Andor, Zyla-4.2Plus).",
+      "measurementTechnique": [],
+      "name": "Dodecagon light sheet fluorescence microscopy for large cleared sample"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 11
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2382243451
+    }
+  ]
+}

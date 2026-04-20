@@ -1,0 +1,292 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/105-Ono-ToothDev/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/105-Ono-ToothDev/",
+      "@type": "Dataset",
+      "identifier": "105-Ono-ToothDev",
+      "name": "CT images of tooth movement of the natural erupted tooth and bioengineered tooth",
+      "description": "105-Ono-ToothDev",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Biomedical Engineering/trends",
+        "Dogs",
+        "Humans",
+        "Odontogenesis/physiology",
+        "Regeneration/physiology",
+        "Regenerative Medicine[major]",
+        "Stem Cells",
+        "Tissue Engineering[major]",
+        "Tooth/growth & development",
+        "Tooth/transplantation[major]",
+        "Tooth Eruption",
+        "Tooth Germ/physiology",
+        "Tooth Germ/transplantation[major]",
+        "Tooth Replantation",
+        "Transplantation, Autologous/methods"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        },
+        {
+          "@id": "#auth-011"
+        },
+        {
+          "@id": "#auth-012"
+        },
+        {
+          "@id": "#auth-013"
+        },
+        {
+          "@id": "#auth-014"
+        },
+        {
+          "@id": "#auth-015"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/srep44522"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042476"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-256"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takuo Kuboki",
+      "email": "kuboki@md.okayama-u.ac.jp",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02pc6pc55"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Mitsuaki Ono",
+      "description": "Department: Graduate School of Medicine"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Masamitsu Oshima",
+      "description": "Department: Dentistry and Pharmaceutical Sciences"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Miho Ogawa"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Wataru Sonoyama"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Emilio Satoshi Hara"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Yasutaka Oida"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Shigehiko Shinkawa"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Ryu Nakajima"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Atsushi Mine"
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Satoru Hayano"
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Satoshi Fukumoto"
+    },
+    {
+      "@id": "#auth-013",
+      "@type": "Person",
+      "name": "Shohei Kasugai"
+    },
+    {
+      "@id": "#auth-014",
+      "@type": "Person",
+      "name": "Akira Yamaguchi"
+    },
+    {
+      "@id": "#auth-015",
+      "@type": "Person",
+      "name": "Takashi Tsuji"
+    },
+    {
+      "@id": "https://ror.org/02pc6pc55",
+      "@type": "Organization",
+      "name": "Okayama University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/srep44522",
+      "@type": "ScholarlyArticle",
+      "name": "Practical whole-tooth restoration utilizing autologous bioengineered tooth germ transplantation in a postnatal canine model.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Canis lupus familiaris",
+      "description": "Canis lupus familiaris",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042476",
+      "@type": "DefinedTerm",
+      "name": "odontogenesis"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 341430,
+      "description": "341.4 kB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 9,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

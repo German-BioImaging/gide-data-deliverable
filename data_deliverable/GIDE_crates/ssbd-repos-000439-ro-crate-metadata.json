@@ -1,0 +1,159 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000439/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000439/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000439",
+      "name": "EGFR dynamics on CHO–K1 cells with depletion and supplementation of cholesterol",
+      "description": "Epidermal growth factor receptor (EGFR)-mediated signal transduction controls cell growth and proliferation. The signaling pathway is regulated so that it is activated only by external EGF stimuli, but the mechanisms that prevent EGF-independent spontaneous activation of EGFR-mediated signaling are unknown. Here we report cholesterol depletion activates EGFR-mediated signaling without EGF. We applied automated single-molecule imaging to EGFR and characterized the lateral diffusion and cluster formation on cholesterol-depleted and cholesterol-supplemented membranes. In cells in which cholesterol was depleted by methyl-beta-cyclodextrin treatment, EGFR exhibited a reduction in lateral diffusion, an acceleration of cluster formation, and autophosphorylation without EGF. Concurrently, extracellular signal-regulated kinase (ERK), which is regulated by EGFR-mediated signaling, exhibited phosphorylation and nuclear translocation without EGF. These cholesterol depletion-induced changes were similar, albeit less efficient, to those that occurred with EGF stimulation in normal cells without methyl-beta-cyclodextrin, indicating the spontaneous activation of EGFR signaling. The exogenous supplementation of cholesterol suppressed the methyl-beta-cyclodextrin-induced spontaneous activation of EGFR and ERK nuclear translocation. Single-molecule imaging of EGFR in a large number of cells revealed cell-to-cell heterogeneity, with a sub-population showing a high ability for spontaneous activation. These results provide evidence that EGFR-mediated signaling is properly regulated by cholesterol metabolism to prevent uncontrolled spontaneous activation.",
+      "datePublished": "2025-07-04",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.bbrc.2024.149673"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Michio Hiroshima",
+      "email": "m_hiroshima.fbs@osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences; Laboratory: Laboratory of Single Molecular Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Masahiro Ueda"
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.bbrc.2024.149673",
+      "@type": "ScholarlyArticle",
+      "name": "Cholesterol suppresses spontaneous activation of EGFR-mediated signal transduction.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+        }
+      ],
+      "hasCellLine": "CHO–K1"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029",
+      "@type": "Taxon",
+      "scientificName": "Cricetulus griseus",
+      "vernacularName": "chinese hamster"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 543256576,
+      "description": "543.3 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 17,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

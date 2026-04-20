@@ -1,0 +1,158 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000290/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000290/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000290",
+      "name": "Bright-field images of the liverwort Marchantia polymorpha ssp. ruderalis in gemmalings (dorsal view).",
+      "description": "Keywords: bright-field microscopy, Marchantia polymorpha\r\nTime points: Days 0, 1, 2, 3, 4, and 7 after plating gemmae.\r\nAccessions: (1) Tak-1 (Takaragaike-1) and Tak-2 (Takaragaike-2) (Bowman et al., 2017). (2) Rit-1 (Recombinant inbred line from Tak-1/Tak-2 accessions-1) and Rit-2 (Recombinant inbred line from Tak-1/Tak-2 accessions-2). Rit-1 and Rit-2 are inbred accessions which has constructed by crossing Tak-1 and Tak-2 and inbreeding the resulting shiblings for 4 generations. (3) male and female of  Australian/Melbourne (Flores-Sandoval et al., 2015).\r\nCulture: Plants were cultured from gemmae on 1/2×Gamborg’s B5 medium containing 1.0% agar at 22 degrees centigrade under continuous white light. \r\nImage acquisition: Images were acquired by the digital microscope KH-7700 (HIROX) equipped with the lens MXG-2016Z (day 0-3: ×60, day 4: ×40, day 7: ×20).\r\n\r\nThe dataset includes 199-200 plants for Australian/Melbourne and Tak-1/Tak-2, and 600-602 for Rit-1/Rit-2, respectively, with the same numbers of female and male individuals, except 99 females and 100 males in Aus 7-day-old gemmalings.",
+      "datePublished": "2023-04-13",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yoko Tomizawa",
+      "email": "y-tomiza@nibb.ac.jp",
+      "description": "Organization: Exploratory Research Center on Life and Living Systems (ExCELLS); Department: Quantitative Biology Research Group; Laboratory: Aoki lab",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/005t7z309"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/005t7z309",
+      "@type": "Organization",
+      "name": "Exploratory Research Center on Life and Living Systems (ExCELLS)"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Marchantia polymorpha"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Tak-1 (male accession)/Tak-2 (female accession), Rit-1 (male accession)/Rit-2 (female accession), and Australian/Melbourne (male & female accession)",
+      "description": "Tak-1 (male accession)/Tak-2 (female accession), Rit-1 (male accession)/Rit-2 (female accession), and Australian/Melbourne (male & female accession)"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 34584547328,
+      "description": "34.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 6001,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

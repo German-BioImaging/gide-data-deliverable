@@ -1,0 +1,212 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000160/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000160/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000160",
+      "name": "Bidirectional Wnt signaling between endoderm and mesoderm confers tracheal identity in mouse and human cells",
+      "description": "The periodic cartilage and smooth muscle structures in mammalian trachea are derived from tracheal mesoderm, and tracheal malformations result in serious respiratory defects in neonates. Here we show that canonical Wnt signaling in mesoderm is critical to confer trachea mesenchymal identity in human and mouse. At the initiation of tracheal development, endoderm begins to express Nkx2.1, and then mesoderm express Tbx4 gene. Loss of &beta;-catenin in fetal mouse mesoderm causes loss of Tbx4+ tracheal mesoderm and tracheal cartilage agenesis. The mesenchymal Tbx4 expression relies on endodermal Wnt activation and Wnt ligand secretion but is independent of known Nkx2.1-mediated respiratory development, suggesting that bidirectional Wnt signaling between endoderm and mesoderm promotes trachea development. Activating Wnt, Bmp signaling in mouse embryonic stem cell (ESC)-derived lateral plate mesoderm (LPM) generates tracheal mesoderm containing chondrocytes and smooth muscle cells. For human ESC-derived LPM, SHH activation is required along with WNT to generate proper tracheal mesoderm. Together, these findings may contribute to developing applications for human tracheal tissue repair.",
+      "datePublished": "2020-07-23",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Differentiation/genetics",
+        "Cells, Cultured",
+        "Endoderm/cytology",
+        "Endoderm/embryology",
+        "Endoderm/metabolism[major]",
+        "Gene Expression Regulation, Developmental[major]",
+        "Human Embryonic Stem Cells/metabolism",
+        "Humans",
+        "Mesoderm/cytology",
+        "Mesoderm/embryology",
+        "Mesoderm/metabolism[major]",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "Mice, Knockout",
+        "Mice, Transgenic",
+        "Mouse Embryonic Stem Cells/metabolism",
+        "T-Box Domain Proteins/genetics",
+        "T-Box Domain Proteins/metabolism",
+        "Thyroid Nuclear Factor 1/genetics",
+        "Thyroid Nuclear Factor 1/metabolism",
+        "Trachea/cytology",
+        "Trachea/embryology",
+        "Trachea/metabolism[major]",
+        "Wnt Signaling Pathway/genetics[major]",
+        "beta Catenin/genetics[major]",
+        "beta Catenin/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-020-17969-w"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001759"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007165"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Mitsuru Morimoto",
+      "email": "mitsuru.morimoto@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Lung Development and Regeneration",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-020-17969-w",
+      "@type": "ScholarlyArticle",
+      "name": "Bidirectional Wnt signaling between endoderm and mesoderm confers tracheal identity in mouse and human cells.",
+      "datePublished": "2020"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL6J/Mouse",
+      "description": "C57BL6J/Mouse",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": [
+        "H1 cell",
+        "EB3 cell",
+        "C57BL/6J-Chr 12A/J/NaJ AC464/GrsJ mES cells"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001759",
+      "@type": "DefinedTerm",
+      "name": "Organ induction"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007165",
+      "@type": "DefinedTerm",
+      "name": "Signal transduction"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 7409594368,
+      "description": "7.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 93,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

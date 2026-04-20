@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2101"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2101",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9dfe32c1-a3d4-411b-8a39-df21dacf9a21"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#63b470bc-0df9-4323-a0db-bf3e3a0921e4"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#103db513-a3bd-4184-ba83-49dc2398c07b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-21",
+      "description": "During brain development, neural progenitor cells (NPCs) undergo rapid division, necessitating efficient ribosomal biogenesis for proliferation. Yet, the regulatory mechanisms remain largely elusive. Here, we report that the DNA binding protein Kin17 exhibits development-dependent expression and plays a vital role in embryonic development. Complete loss of Kin17 in mice leads to embryonic lethality, while Kin17 depletion specifically in NPCs allows embryonic survival but results in reduced brain size and cortical lamination defects. Our findings demonstrate that these cortical malformation stems from impaired NPC proliferation and differentiation. Mechanistically, we show that Kin17 binds to the promoter region of rDNA, sequentially recruiting NCL and Polr1a, thereby promoting rDNA transcription. Consequently, Kin17 facilitates ribosome biogenesis and protein translation in NPCs. This study underscores a critical role of Kin17 in promoting rDNA transcription and ribosomal biogenesis in NPCs during brain development, which is essential for proper cortical lamination.",
+      "funder": [],
+      "identifier": "S-BIAD2101",
+      "keywords": [
+        "Kin17; Neural Progenitor Cells (NPCs); Cortical Lamination; rDNA Transcription; Ribosome Biogenesis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Kin17 promotes rDNA transcription, ribosomal biogenesis and cortical lamination",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2101/f73f4b18-ab45-4e9d-8abb-085f4627cfb6/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#103db513-a3bd-4184-ba83-49dc2398c07b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04c4dkn09"
+        }
+      ],
+      "email": "lwb164@mail.ustc.edu.cn",
+      "name": "Wenbo Li"
+    },
+    {
+      "@id": "https://ror.org/04c4dkn09",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Science and Technology of China"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#63b470bc-0df9-4323-a0db-bf3e3a0921e4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Ctrl and Kin17 cKO neurospheres \nCortex of Ctrl and Kin17 cKO mice\nBrain of  Ctrl and Kin17 cKO mice",
+      "name": "biosample ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9dfe32c1-a3d4-411b-8a39-df21dacf9a21",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": ".The 405 nm laser was used to image nuclei (DAPI),  the 488 nm laser was used to image greenish fluorescence, and the 594 nm laser was used to image red fluorescence",
+      "labEquipment": "Fluorescence images were acquired using a Leica confocal laser microscope equipped with DFC 365 FX Digital Camera.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "mage acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 218
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 730968249
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1323"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1323",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#39a59143-e616-4ba0-b807-6d892150f73d"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#73e35b39-180f-49b8-8733-530a784247f3"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4135-9576"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3276-3008"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9619-6655"
+        },
+        {
+          "@id": "https://orcid.org/0009-0004-3423-5796"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2278-120X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-17",
+      "description": "Widefield fluorescence microscopy images of various clonal populations of human lung epithelial A549 cancer cells infected with the fluorescent reporter adenovirus AdV-C5-E1A-FS2A-GFP. Cells were fixed at 24 hours post infection, stained with DAPI, and imaged in the DAPI (channel 1) and GFP (channel 2) channels with either 10x or 20x magnification.",
+      "funder": [],
+      "identifier": "S-BIAD1323",
+      "keywords": [
+        "fluorescence microscopy",
+        "Adenovirus",
+        "virology",
+        "Luria-Delbrück-experiment"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Preexisting cell state rather than stochastic noise confers high or low infection susceptibility of human lung epithelial cells to adenovirus",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1323/bbfdf968-eed1-4909-a827-789020c5a77f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3276-3008",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "maarit.suomalainen@mls.uzh.ch",
+      "name": "Maarit Suomalainen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4135-9576",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "anthony.petkidis@uzh.ch",
+      "name": "Anthony Petkidis"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9619-6655",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "vardan.andriasyan@mnf.uzh.ch",
+      "name": "Vardan Andriasyan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2278-120X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "urs.greber@mls.uzh.ch",
+      "name": "Urs Greber"
+    },
+    {
+      "@id": "https://orcid.org/0009-0004-3423-5796",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ce29d161-91a3-4522-92a2-caa7ba0b2676"
+        }
+      ],
+      "email": "absingh@udel.edu",
+      "name": "Abhyudai Singh"
+    },
+    {
+      "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Zurich"
+    },
+    {
+      "@id": "#ce29d161-91a3-4522-92a2-caa7ba0b2676",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Delaware"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#73e35b39-180f-49b8-8733-530a784247f3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A549 human lung epithelial cancer cells",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#39a59143-e616-4ba0-b807-6d892150f73d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fluorescence images were acquired using the high-throughput microscope ImageXpress Micro Confocal (IXM-C, Molecular Devices) using a 10x or 20x air objective. ",
+      "labEquipment": "ImageXpress Micro Confocal (Molecular Devices)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image Acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 46704
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 401480478913
+    }
+  ]
+}

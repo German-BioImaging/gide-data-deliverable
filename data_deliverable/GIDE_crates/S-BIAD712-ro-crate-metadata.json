@@ -1,0 +1,202 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD712"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD712",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2f586303-206d-403f-915c-e74a90f4c1e7"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#328ca2de-070f-47d8-b0e9-bfb22b0e7e62"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0597-4923"
+        },
+        {
+          "@id": "#d2b6c167-e546-40ca-99bc-460b0570a469"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-26",
+      "description": "Live undifferentiated KOLF2.1J human iPSCs were labelled with 7 organelle markers targeted to the nucleus, endoplasmic reticulum (ER), Golgi, mitochondria, peroxisomes, lysosomes, and lipid droplets. Complete z-stack and timelapse images were acquired in lambda mode (410-695 nm, 8.9 nm resolution) and subsequently linear unmixed into 8 different channels (channel 1 to 7 correspond to organelles, while channel 8 is the residual of the unmixing).",
+      "funder": [],
+      "identifier": "S-BIAD712",
+      "keywords": [
+        "multispectral ",
+        "organelles",
+        "live iPSCs"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Multispectral imaging of 7 organelles in live undifferentiated human induced pluripotent stem cells (hiPSCs).",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD712/bf237c4b-55f0-4326-aabe-6f4ea48f2ed3/40f610f2-9841-4a51-ab39-f00fadfd1dd4.png"
+      ]
+    },
+    {
+      "@id": "#d2b6c167-e546-40ca-99bc-460b0570a469",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2b43f121-4fde-4ff9-94b5-b12ca2199e83"
+        }
+      ],
+      "email": "sarahcoh@med.unc.edu",
+      "name": "Sarah Cohen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0597-4923",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2b43f121-4fde-4ff9-94b5-b12ca2199e83"
+        }
+      ],
+      "email": "maria_zanellati@med.unc.edu",
+      "name": "Maria Clara Zanellati"
+    },
+    {
+      "@id": "#2b43f121-4fde-4ff9-94b5-b12ca2199e83",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of North Carolina at Chapel Hill"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#328ca2de-070f-47d8-b0e9-bfb22b0e7e62",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "iPSCs colonies",
+      "name": "human induced pluripotent stem cells (iPSCs)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2f586303-206d-403f-915c-e74a90f4c1e7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired on a Zeiss 880 laser scanning confocal microscope equipped with a 32-channel multi-anode spectral detector (Carl Zeiss) in lambda mode at 8.9 nm bins (collecting wavelengths 410-695), with 63×/1.4 NA objective lens, and a 2.2× zoom. All fluorophores were excited simultaneously using 405, 458, 514, 561, and 633 nm lasers, with a 458/514/561/633 nm main beam splitter. Z-stacks and Tile series were acquired with 1.2 μm optical slices, at a scan speed of 1.90 s/frame. Live imaging was performed with stable 5% CO2 at 37◦C, and each imaging session was not longer than 1-2 hours. Images of multiply labeled cells were subjected to linear unmixing using Zen Software (Carl Zeiss) by using single fluorophore reference spectra",
+      "labEquipment": "Zeiss 880 laser scanning confocal microscope equipped with a 32-channel multi-anode spectral detector (Carl Zeiss).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Multispectral Imaging "
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 67
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 32532011008
+    }
+  ]
+}

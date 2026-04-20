@@ -1,0 +1,257 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2482"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2482",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8f7f1928-5f64-4dce-bee1-7c14cc9153be"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#732396e5-1ac4-4572-8f94-0f5f7341cf0a"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5766-1200"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2001-9596"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4085-7020"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1908-7949"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1038/s41587-025-02905-4"
+        }
+      ],
+      "datePublished": "2025-12-10",
+      "description": "Understanding the molecular anatomy and neural connectivity of the brain requires imaging technologies that can map the 3D nanoscale distribution of specific proteins in the context of brain ultrastructure. Light and electron microscopy (EM) visualize either specific labels or anatomical ultrastructure but combining molecular specificity with anatomical context is challenging. Here, we present pan-Expansion Microscopy of tissue (pan-ExM-t), an all-optical imaging method that combines ~16-24-fold linear expansion with fluorescent pan-stainings of proteins and lipids (providing EM-like ultrastructural context), and immunolabeling (for molecular imaging). We demonstrate the versatility of this approach by imaging synaptic and cell-specific antibodies in the ultrastructural 3D context of pre and postsynaptic densities, neuropil nanoarchitecture, and cellular organelles in dissociated neuron cultures and mouse brain tissue sections. Furthermore, we demonstrate tracing of neuronal circuitry from pan-ExM-t image volumes, suggesting that any laboratory with access to a confocal microscope can now localize specific molecules within nanoscale cellular and circuit contexts. ",
+      "funder": [],
+      "identifier": "S-BIAD2482",
+      "keywords": [
+        "pan-ExM",
+        "Expansion Microscopy",
+        "Neuroscience",
+        "Connectomics"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "All-optical visualization of specific molecules in the ultrastructural context of brain tissue",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2482/f725431b-aa1e-4054-8169-9c4e07ae1cf6/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1908-7949",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9"
+        }
+      ],
+      "email": "aaron.kuan@yale.edu",
+      "name": "Aaron Kuan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4085-7020",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9"
+        }
+      ],
+      "email": "joerg.bewersdorf@yale.edu",
+      "name": "Joerg Bewersdorf"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5766-1200",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9"
+        }
+      ],
+      "email": "allison.cairns@yale.edu",
+      "name": "Allison Cairns"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2001-9596",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8bc251ff-428e-4f6a-85c0-1f3fc7d72054"
+        },
+        {
+          "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9"
+        }
+      ],
+      "email": "ons.msaad@panluminate.com",
+      "name": "Ons M'Saad"
+    },
+    {
+      "@id": "#8bc251ff-428e-4f6a-85c0-1f3fc7d72054",
+      "@type": [
+        "Organization"
+      ],
+      "name": "panluminate"
+    },
+    {
+      "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Yale University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41587-025-02905-4",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "All-optical visualization of specific molecules in the ultrastructural context of brain tissue"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#732396e5-1ac4-4572-8f94-0f5f7341cf0a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse and rat cultured neurons and brain tissue.",
+      "name": "Cultured neurons and neural tissue.",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#8f7f1928-5f64-4dce-bee1-7c14cc9153be",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Methods and Supplementary Methods.",
+      "labEquipment": "Spinning disk confocal microscope. See Methods and Supplementary Methods.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Fluorescence Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 245
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 6127411708
+    }
+  ]
+}

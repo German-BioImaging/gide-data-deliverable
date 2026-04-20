@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD625"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD625",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ffa4926a-2f90-4a6b-a4c7-e0a3c8829918"
+        },
+        {
+          "@id": "obo:FBbi_00000368"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#caa54737-663f-4069-a03c-f788f9397da2"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3553-4307"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-29",
+      "description": "BioImages submission for manuscript text \"rs1663689 regulates ADGRG6 via interchromosomal interaction and modulates the malignant progression of lung cancer\"",
+      "funder": [],
+      "identifier": "S-BIAD625",
+      "keywords": [
+        "BioImages",
+        "interchromosomal interaction",
+        " lung cancer"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "BioImages submission for manuscript text \"rs1663689 regulates ADGRG6 via interchromosomal interaction and modulates the malignant progression of lung cancer\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD625/127372e0-c844-4fee-ac85-9549da585b33/02672483-7f60-41d4-9462-6f08417e42cb.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3553-4307",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#67fd853e-f2f5-4fca-bb97-51b61b952c03"
+        }
+      ],
+      "email": "xinyuelei@tmu.edu.cn",
+      "name": "Xinyue Lei"
+    },
+    {
+      "@id": "#67fd853e-f2f5-4fca-bb97-51b61b952c03",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Tianjin Medical University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#caa54737-663f-4069-a03c-f788f9397da2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human lung cancer cell",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#ffa4926a-2f90-4a6b-a4c7-e0a3c8829918",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": " The 488 nm laser was used to image nuclei (His-GFP), and the 555 nm laser was used to image transcriptional dots , both at 5% laser power. Exposure time for the green channel was automatic exposure.",
+      "labEquipment": "Zeiss Elyra \nFluorescent positive-microscope LeicaDMI3000B\nFluorescent inverted microscope LeicaDMI3000B\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000368"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000368",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FLIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 150
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1163284342
+    }
+  ]
+}

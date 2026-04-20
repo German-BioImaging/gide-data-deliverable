@@ -1,0 +1,173 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1497"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1497",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a0fe12b0-7276-46dd-b5fb-7b6ff8ef7595"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0fb96ecf-207e-4357-adf9-dec0f610bdd6"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#8cd83127-f164-4209-bbfa-1a5ba39d2920"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-30",
+      "description": "Immune responses play an integral role in skeletal muscle regeneration. In the genetically inherited muscle disease Duchenne muscular dystrophy (DMD), muscle regeneration is disrupted, leading to chronic inflammation, fibrosis, and early mortality. Previously, it has been suggested that type-2 innate immune cells, particularly eosinophils and their production of IL-4, play an essential role in effective muscle regeneration after acute injury. We here re-investigate the role of eosinophils in skeletal muscle repair using mice deficient in eosinophils (ΔdblGATA), or deficient in IL-4R/IL-13R signaling through STAT6 (Stat6-/-). We show that neither deficiency has an impact on skeletal muscle regeneration in response to acute injury as quantified by fiber size, immune cell infiltration, or muscle-resident stem cell proliferation. We also investigate the role of STAT6 signaling in mdx:Stat6-/- mice, a model of DMD and, again, find that ablation of STAT6 signaling has no effect on the rate or severity of fibrotic scar formation or disease progression. In contrast to previous models, our data suggest a negligible role for eosinophils and STAT6 signaling in skeletal muscle regeneration after acute or chronic injury.",
+      "funder": [],
+      "identifier": "S-BIAD1497",
+      "keywords": [
+        "Eosinophils",
+        "STAT6 Signaling",
+        "Skeletal Muscle Regeneration",
+        "Duchenne Muscular Dystrophy (DMD) "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Type-2 innate signals are dispensable for skeletal muscle regeneration and pathology linked to Duchenne muscular dystrophy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1497/4c5ecaf7-35a2-426e-a79c-ccfc69fe478b/758c76df-d5ae-4745-b252-577f3e893a7f.png"
+      ]
+    },
+    {
+      "@id": "#8cd83127-f164-4209-bbfa-1a5ba39d2920",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8b55d23c-f051-4a9c-bf61-3491b508c528"
+        }
+      ],
+      "email": "m.messing92@gmail.com",
+      "name": "Melina Messing"
+    },
+    {
+      "@id": "#8b55d23c-f051-4a9c-bf61-3491b508c528",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of British Columbia"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#0fb96ecf-207e-4357-adf9-dec0f610bdd6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Skeletal muscle",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#a0fe12b0-7276-46dd-b5fb-7b6ff8ef7595",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Described in manuscript",
+      "labEquipment": "Described in manuscript",
+      "measurementTechnique": [],
+      "name": "Image aquisition 1"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 187
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 13693065776
+    }
+  ]
+}

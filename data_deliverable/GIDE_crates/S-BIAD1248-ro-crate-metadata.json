@@ -1,0 +1,171 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1248"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1248",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#515d6f9c-e7ee-4f8a-812c-47eb44a9bc64"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9ceed1f4-a17c-4d3a-9c5d-f3a36cac3cfe"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3428-418X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-01",
+      "description": "Upon activation of ASC-containing inflammasomes, intracellular molecular aggregates (ASC specks) are assembled and released from myeloid cells into the extracellular space where they enhance the aggregation of Aβ amyloid in Alzheimer’s disease. This raises the question whether ASC is involved in additional aggregation proteinopathies. In this study we report that ASC governs the extent of inflammation-induced amyloid A (AA) amyloidosis, a systemic disease caused by the aggregation and peripheral deposition of the acute-phase reactant serum amyloid A (SAA).",
+      "funder": [],
+      "identifier": "S-BIAD1248",
+      "keywords": [
+        "ASC",
+        "SAA",
+        "Innate immunity",
+        "inflammation",
+        "inflammasome"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "ASC and SAA protein colocalization by confocal microscopy.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3428-418X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#678d14ca-88fd-467a-b82a-72285a4ae497"
+        }
+      ],
+      "name": "Marco Losa"
+    },
+    {
+      "@id": "#678d14ca-88fd-467a-b82a-72285a4ae497",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Hospital of Zurich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9ceed1f4-a17c-4d3a-9c5d-f3a36cac3cfe",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Heart tissue of disease and control.",
+      "name": "ASC and SAA protein colocalization in heart tissue imaged by confocal microscopy",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#515d6f9c-e7ee-4f8a-812c-47eb44a9bc64",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x images were acquired with a 700Hz bidirectional scan and 100x images with a 1000Hz bidirectional scan",
+      "labEquipment": "Leica SP8 3D, 3-color gated STED laser scanning confocal microscope",
+      "measurementTechnique": [],
+      "name": "Confocal Imaging of Heart Tissue"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3548418818
+    }
+  ]
+}

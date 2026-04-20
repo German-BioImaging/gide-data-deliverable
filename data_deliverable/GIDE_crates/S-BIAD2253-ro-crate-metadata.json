@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2253"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2253",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e330fc55-b8ac-4d47-b5c3-f7037f8bd4b3"
+        },
+        {
+          "@id": "obo:FBbi_00000366"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#25591d53-c74d-467e-b0bc-e4a6893d5d96"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4910-3871"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-30",
+      "description": "Liquid–liquid phase separation (LLPS) and subsequent liquid–gel/solid transition are considered common aggregation mechanisms of proteins linked to neurodegenerative diseases. aSynuclein (aSyn), the main component of Parkinson’s disease pathology, has been reported to undergo LLPS, thereby accelerating aggregate formation. However, the precise molecular events involved in the early stages of aSyn aggregation remain controversial. In this study, we show that aSyn aggregation is promoted by droplets formed by ubiquilin-2 (UBQLN2), rather than by aSyn LLPS itself. During the liquid–gel/solid transition of UBQLN2 droplets, aSyn within the droplets transformed into pathogenic fibrils both in vitro and in cells. Immunohistochemistry of brain sections from sporadic Parkinson’s disease patients revealed UBQLN2 in substantia nigra Lewy bodies, implicating UBQLN2 in aSyn aggregation in vivo. Furthermore, the small compound SO286 inhibited both UBQLN2 self-association and its interaction with aSyn by binding to the STI1 domain, thereby suppressing aSyn aggregation. These findings demonstrate that UBQLN2 droplets catalyze aSyn fibrillization and suggest that small molecules targeting fibril-catalyzing proteins such as UBQLN2 may represent a novel therapeutic approach for neurodegenerative diseases.",
+      "funder": [],
+      "identifier": "S-BIAD2253",
+      "keywords": [
+        " phase separation",
+        "Parkinson's disease",
+        "α-Synuclein",
+        "UBQLN2"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Ubiquilin-2 liquid droplets catalyze aSynuclein fibril formation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2253/7aaf4cb2-9c68-4513-a408-a9e8a1062e5e/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4910-3871",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01692sz90"
+        }
+      ],
+      "email": "m.imoto.xz@juntendo.ac.jp",
+      "name": "Masaya Imoto"
+    },
+    {
+      "@id": "https://ror.org/01692sz90",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Juntendo University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#25591d53-c74d-467e-b0bc-e4a6893d5d96",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cell.",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e330fc55-b8ac-4d47-b5c3-f7037f8bd4b3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Microscope:\nZeiss LSM880 confocal microscope\nObjective lens:\n63×/1.4 oil immersion objective\nLaser excitation:\n405 nm/488 nm/561 nm/633nm\n\nSoftware:\nZEN software (Zeiss) for acquisition.\n",
+      "labEquipment": "Confocal Microscopy: Zeiss LSM880 confocal microscope\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000366"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "name": "Confocal Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000366",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRAP"
+    },
+    {
+      "@id": "obo:FBbi_00000393",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "array-scan confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 106
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2008658988
+    }
+  ]
+}

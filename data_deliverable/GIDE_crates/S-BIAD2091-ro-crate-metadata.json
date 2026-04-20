@@ -1,0 +1,295 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2091"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2091",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b35322b9-a51e-4506-aa80-6213620917f8"
+        },
+        {
+          "@id": "#a2bc7f57-1d4c-4949-9bb5-addcb9c4e103"
+        },
+        {
+          "@id": "#47fe29b9-6b54-43fa-b0a8-65f17c2f4162"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c331661b-fa01-46d5-b2d6-f60a6a9967dc"
+        },
+        {
+          "@id": "#97f95637-274b-4aa8-ba3b-94ee378fb81f"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5414-8906"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6041-0157"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9998-5716"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5145-7591"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3048-5518"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-09",
+      "description": "Spatial omics is transforming our ability to interrogate local tissue microenvironments by enabling spatially resolved measurement of biomolecules such as transcripts, proteins, and metabolites. However, capturing the full biological complexity of tissues requires combining multiple modalities, which introduces both experimental as well as computational challenges. To address computational difficulties due to differences in resolution, noise levels, and available channels, we present MIMIC—a reproducible, semi-automated workflow that integrates Mass Spectrometry Imaging (MSI) and Imaging Mass Cytometry (IMC) for joint downstream analysis. MIMIC incorporates rigorous quality control, including registration error assessment, and supports pixel-level modeling to delineate analyte–cell type associations. We demonstrate the power of our approach with a proof-of-concept study on artificial tissue and apply it to human liver tissue affected by Metabolic dysfunction-associated steatotic liver disease (MASLD). Despite integration challenges, MIMIC provides a robust framework that successfully recovers known molecular associations and reveals novel spatial relationships across modalities.",
+      "funder": [],
+      "identifier": "S-BIAD2091",
+      "keywords": [
+        "MALDI-MSI",
+        "IMC",
+        "liver biopsy",
+        "Glycans"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "MIMIC: a flexible pipeline to register and summarize IMC-MSI experiments",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2091/475fa79e-6af1-4c89-ae75-2ce9e247d288/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5414-8906",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Reto Gerber"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6041-0157",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c0dd8743-af85-45ba-bc62-0b0f26a2c121"
+        }
+      ],
+      "name": "Jake Griner"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9998-5716",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c0dd8743-af85-45ba-bc62-0b0f26a2c121"
+        }
+      ],
+      "name": "Silvia Guglietta"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3048-5518",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "mark.robinson@mls.uzh.ch",
+      "name": "Mark D. Robinson"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5145-7591",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c0dd8743-af85-45ba-bc62-0b0f26a2c121"
+        }
+      ],
+      "email": "kriegc@musc.edu",
+      "name": "Carsten Krieg"
+    },
+    {
+      "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Zurich"
+    },
+    {
+      "@id": "#c0dd8743-af85-45ba-bc62-0b0f26a2c121",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Medical University of South Carolina"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#97f95637-274b-4aa8-ba3b-94ee378fb81f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human cell lines Huh7 (hepatocellular carcinoma), AC16 (human cardiomyocyte), and Mel624 (melanoma)",
+      "name": "Cell lines",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c331661b-fa01-46d5-b2d6-f60a6a9967dc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human liver",
+      "name": "Liver biopsy",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#47fe29b9-6b54-43fa-b0a8-65f17c2f4162",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Bightfield scanning was performed using a Nano-zoomer 2.0-RS high resolution slide scanner (Hamamatsu) at 40x magnification. Automated calibration was performed before each scan. ",
+      "labEquipment": "Nano-zoomer 2.0-RS high resolution slide scanner (Hamamatsu)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Slide Scan"
+    },
+    {
+      "@id": "#a2bc7f57-1d4c-4949-9bb5-addcb9c4e103",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Mass spectrometry imaging was performed on a timsTOF fleX MALDI-QTOF instrument (Bruker Daltonics, Bremen, Germany) operated in qTOF mode with the trapped ion mobility spectrometry (TIMS) device deactivated. All data were acquired in positive ion mode over an m/z range of 700–4000. The instrument was tuned with the following global settings: MALDI Plate Offset of 30 V, Deflection 1 Delta at 70 V, Funnel 1 and Funnel 2 RF at 450 and 500 Vpp, respectively, and Multipole RF at 500 Vpp. The collision cell was configured with 10 eV collision energy and 2900 Vpp collision RF, and quadrupole transmission was achieved with an ion energy of 5 eV and a low mass cutoff of m/z 700. The focus optics were set with a transfer time of 110 $\\mu s$ and pre-pulse storage of 10 $\\mu s$. The SmartBeam 3D laser was operated at 10 kHz. Mass calibration was performed prior to acquisition using ESI-L Tune Mix (Agilent Technologies, Santa Clara, CA, USA)",
+      "labEquipment": "timsTOF fleX MALDI-QTOF (Bruker Daltonics, Bremen, Germany)",
+      "measurementTechnique": [],
+      "name": "Mass Spectrometry Imaging"
+    },
+    {
+      "@id": "#b35322b9-a51e-4506-aa80-6213620917f8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The instrument was tuned and calibrated using the 3-Element Full Coverage Tuning Slide (Standard BioTools) to ensure that the 175Lu counts exceeded 750. Data acquisition was performed with a step size of 1 micrometer, a laser frequency of 200 Hz, and a laser energy setting of -1 dBa.",
+      "labEquipment": "Hyperion Tissue Imager (BioTools)",
+      "measurementTechnique": [],
+      "name": "Imaging Mass Cytometry"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 275
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 55777047333
+    }
+  ]
+}

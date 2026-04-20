@@ -1,0 +1,300 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/232-Tany-SignalingDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/232-Tany-SignalingDyn/",
+      "@type": "Dataset",
+      "identifier": "232-Tany-SignalingDyn",
+      "name": "Live-cell imaging of G-protein-coupled receptors (GPCRs) downstream signaling dynamics in HeLa cells.",
+      "description": "232-Tany-SignalingDyn",
+      "datePublished": "2025-02-17",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "GTP-Binding Proteins/genetics[major]",
+        "GTP-Binding Proteins/metabolism[major]",
+        "HeLa Cells",
+        "Humans",
+        "Receptors, G-Protein-Coupled/genetics[major]",
+        "Receptors, G-Protein-Coupled/metabolism[major]",
+        "Signal Transduction"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1042/BCJ20220021"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0019933"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007165"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0019722"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007266"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0004952"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001588"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007212"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001591"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0004993"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0098664"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1601"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yuhei Goto",
+      "email": "y-goto@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: Exploratory Research Center on Life and Living Systems (ExCELLS); Laboratory: Quantitative Biology Research Group",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/055n47h92"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: Exploratory Research Center on Life and Living Systems (ExCELLS); Laboratory: Quantitative Biology Research Group",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/055n47h92"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/055n47h92",
+      "@type": "Organization",
+      "name": "National Institutes of Natural Sciences"
+    },
+    {
+      "@id": "https://doi.org/10.1042/BCJ20220021",
+      "@type": "ScholarlyArticle",
+      "name": "Quantitative live-cell imaging of GPCR downstream signaling dynamics.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ HeLa cell",
+      "description": "Homo sapiens ~ HeLa cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019933",
+      "@type": "DefinedTerm",
+      "name": "cAMP-mediated signaling"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007165",
+      "@type": "DefinedTerm",
+      "name": "signal transduction"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
+      "@type": "DefinedTerm",
+      "name": "calcium-mediated signaling"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007266",
+      "@type": "DefinedTerm",
+      "name": "Rho protein signal transduction"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004952",
+      "@type": "DefinedTerm",
+      "name": "dopamine neurotransmitter receptor activity"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001588",
+      "@type": "DefinedTerm",
+      "name": "coupled via Gs"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007212",
+      "@type": "DefinedTerm",
+      "name": "dopamine receptor signaling pathway"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001591",
+      "@type": "DefinedTerm",
+      "name": "coupled via Gi/Go"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004993",
+      "@type": "DefinedTerm",
+      "name": "G protein-coupled serotonin receptor activity"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098664",
+      "@type": "DefinedTerm",
+      "name": "G protein-coupled serotonin receptor signaling pathway"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 10520670033,
+      "description": "10.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 19820,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

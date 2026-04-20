@@ -1,0 +1,203 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2239"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2239",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ec54aeda-c142-444a-9854-40802bcc4359"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f50d3fef-be20-4d3d-a3b3-9e6f31a3ee21"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8230-6174"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-22",
+      "description": "This dataset contains all raw and processed imaging data associated with the manuscript. The images include immunofluorescent and DAB-stained brain sections used to examine amyloid, tau and alpha syunclein co-pathology and related neuroinflammation. These files support the figures presented in the manuscript and are provided to enable reproducibility and reuse.",
+      "funder": [],
+      "identifier": "S-BIAD2239",
+      "keywords": [
+        "co-pathology",
+        "brain",
+        "microglia",
+        "T cells",
+        "amyloid-beta",
+        "tau",
+        "alpha-synuclein"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Tau, amyloid-beta and alpha-synuclein co-pathologies enhance neuropathology and neuroinflammation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2239/5af3660f-f5e1-4c30-bf05-8d7a1d0dc38b/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8230-6174",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/008s83205"
+        }
+      ],
+      "email": "jweb@uab.edu",
+      "name": "Jhodi Webster"
+    },
+    {
+      "@id": "https://ror.org/008s83205",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Alabama at Birmingham"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#f50d3fef-be20-4d3d-a3b3-9e6f31a3ee21",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "6-9-month-old, C57BL/6J or J20 transgenic, male and female, hippocampus and cortex",
+      "name": "Adult mouse brain",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#ec54aeda-c142-444a-9854-40802bcc4359",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Following immunohistochemistry, sectioned mouse brains were imaged on a Nikon confocal AX microscope, using 10x, 20x or 40x magnification settings. The 488 nm laser was used to image microglia (Iba1) and the 561 nm laser was used to image T cells (CD4), both at 6% laser power. Z Stack settings are as follows: 1.554 μm, 20 steps, 1697.70 μm (bottom) and 1727.22 μm (top). For brightfield images, 10x or 20x magnification settings were used on a Zeiss Imager. ",
+      "labEquipment": "Nikon Confocal AX, Zeiss AxioImager M2 Microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Co-pathology manuscript image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 43
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1443701076
+    }
+  ]
+}

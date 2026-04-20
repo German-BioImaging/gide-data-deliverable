@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1130"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1130",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#67f2c794-23f9-4da5-8b7c-7aca05c5a590"
+        },
+        {
+          "@id": "obo:FBbi_00000260"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#31ab16e7-6e2a-4d14-9c88-be03cc38d74d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9796"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1508-664X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-18",
+      "description": "Whole organ microCT dataset and segmented labels of an entire pony placenta",
+      "funder": [],
+      "identifier": "S-BIAD1130",
+      "keywords": [
+        "microCT"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Quantitative microCT imaging of a whole equine placenta and its blood vessel network",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1130/11412efc-528d-4cf9-932b-8e9b82565945/222acf41-0188-463e-9557-39e7e4a3ec21.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1508-664X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#18ed5cfd-be3f-4332-b72e-444fa7d61ca9"
+        }
+      ],
+      "email": "d.j.laundon@soton.ac.uk",
+      "name": "Davis Laundon"
+    },
+    {
+      "@id": "#18ed5cfd-be3f-4332-b72e-444fa7d61ca9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Southampton"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9796",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Equus caballus"
+    },
+    {
+      "@id": "#31ab16e7-6e2a-4d14-9c88-be03cc38d74d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Term delivered placenta",
+      "name": "Pony",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9796"
+      }
+    },
+    {
+      "@id": "#67f2c794-23f9-4da5-8b7c-7aca05c5a590",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was carried out at 160 kVp / 470 μA with 2 mm of aluminium being used to pre-filter the X-ray beam. The source to detector and source to object distances were set at 1519 mm and 940 mm respectively, which combined with a 3000 x 3000 dexels detector resulted in an isotropic voxel (edge) size of 86 μm. Acquisition was conducted using both horizontal and vertical field extension modes.  The horizontal field extension offsets the detector so only half the width of the sample is in field of view at any time. This allows for a sample that is wider than the detector to be imaged. This results in part (half) of the specimen being sampled during the initial 0 -180 degrees rotation, and the rest of the specimen scanned during the second 180 -360 degrees rotation, with an appropriate overlap (10-20%). The process was then repeated 3 times to cover the vertical height of the specimen, with overlaps to eliminate cone-beam beam artefacts. This gave a total scan time of approximately 1 hour 40 minutes. The collected radiographs are then combined in silico to provide the information required for the full field of horizontal view reconstruction by the diondo diControl software (v 1.9.1.62), and then the scans concatenated to provide the full vertical field of view. During the reconstruction ring artefact, bad pixel, beam hardening and truncation corrections were applied.",
+      "labEquipment": "diondo d5 system",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000260"
+        }
+      ],
+      "name": "Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000260",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "X-ray microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2407778038
+    }
+  ]
+}

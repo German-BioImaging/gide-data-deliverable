@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1390"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1390",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8e999083-6a8d-4f1e-8b6e-493f756216d4"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f4ec373b-86ce-457e-9180-df61a17ad610"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#1da745df-a5ec-4b42-96b5-05624ab84512"
+        },
+        {
+          "@id": "#61749c51-7b4a-43e2-b389-d7f19e6a5766"
+        },
+        {
+          "@id": "#e33491dd-0901-496a-acd2-bc592e04de7a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-26",
+      "description": "We identified DIDO3 and RNAPII colocalization on kinetochores with two different anti-DIDO3 antibodies: one recognizing DIDO common amino terminus combined with RNAPII and autoimmune serum CREST; which recognizes a range of centromeric and kinetochore proteins (Moroi et al., 1980); and a specific anti-DIDO3 antibody together with anti-RNAPII. Also, overexpressed HA-tagged DIDO3 (HA-DIDO3) in WT MEF colocalized with active RNAPIIS2.",
+      "funder": [],
+      "identifier": "S-BIAD1390",
+      "keywords": [
+        "Confocal microscopy, DIDO, RNAPII"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "DIDO colocalization studies with RNAPII and RNAPS2",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#1da745df-a5ec-4b42-96b5-05624ab84512",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#343b62a2-64be-4948-8743-cc9f4943d8c9"
+        }
+      ],
+      "email": "cpacios@cnb.csic.es",
+      "name": "Cristina Pacios Bras"
+    },
+    {
+      "@id": "#61749c51-7b4a-43e2-b389-d7f19e6a5766",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#343b62a2-64be-4948-8743-cc9f4943d8c9"
+        }
+      ],
+      "email": "tpons@cnb.csic.es",
+      "name": "Tirso Pons"
+    },
+    {
+      "@id": "#e33491dd-0901-496a-acd2-bc592e04de7a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#343b62a2-64be-4948-8743-cc9f4943d8c9"
+        }
+      ],
+      "email": "cmartineza@cnb.csic.es",
+      "name": "Carlos Martínez-A."
+    },
+    {
+      "@id": "#343b62a2-64be-4948-8743-cc9f4943d8c9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centro Nacional de Biotecnología"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#f4ec373b-86ce-457e-9180-df61a17ad610",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse Embryonic Fibroblast (MEF).",
+      "name": "DIDO colocalization studies with RNAPII and RNAPS2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#8e999083-6a8d-4f1e-8b6e-493f756216d4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Optical sections were acquired with a 60x oil objective. The 488, 561, 638 lasers were used depending on the characteristics of the secondary antibodies used for the different samples (for more information please see File_list.xlsx). \n",
+      "labEquipment": "A confocal multispectral system Leica STELLARIS 5, with 4 laser lines, 3 Power HyD S spectral detectors and integrated software module for real-time multidimensional super-resolution multidimensional image detection and processing was used.\n",
+      "measurementTechnique": [],
+      "name": "Image aquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 140115203
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD930"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD930",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b1744d47-414e-4239-bb41-b63a05a73128"
+        },
+        {
+          "@id": "obo:FBbi_00001002"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#716bd100-4180-45ea-b758-64da78502728"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f2e534c9-d906-454d-86ec-4f3d2d39426e"
+        },
+        {
+          "@id": "#fd428ab6-dbca-4866-bcb8-663d9372906b"
+        },
+        {
+          "@id": "#83528435-097a-409b-85fd-3ba88ac79b55"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-11-20",
+      "description": "Mice were treated with A-1331852 and lung tumor growth was analyzed with uCT scan of the lung and with Ki67 staining of lung tumors ",
+      "funder": [],
+      "identifier": "S-BIAD930",
+      "keywords": [
+        "Bcl-xL, LUAD, KP mouse "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Analysis of Bcl-xL blockade in mice with lung tumors and Bcl-xL expression in human LUAD ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#83528435-097a-409b-85fd-3ba88ac79b55",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01r9htc13"
+        }
+      ],
+      "email": "abudllah.mayet@ulb.be",
+      "name": "Abdullah Mayet "
+    },
+    {
+      "@id": "#f2e534c9-d906-454d-86ec-4f3d2d39426e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02s376052"
+        }
+      ],
+      "email": "anita.bodac@epfl.ch",
+      "name": "Anita Bodac"
+    },
+    {
+      "@id": "#fd428ab6-dbca-4866-bcb8-663d9372906b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01r9htc13"
+        }
+      ],
+      "email": "etienne.meylan@ulb.be",
+      "name": "Etienne Meylan "
+    },
+    {
+      "@id": "https://ror.org/01r9htc13",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université Libre de Bruxelles"
+    },
+    {
+      "@id": "https://ror.org/02s376052",
+      "@type": [
+        "Organization"
+      ],
+      "name": "École Polytechnique Fédérale de Lausanne"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#716bd100-4180-45ea-b758-64da78502728",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lungs with tumors ",
+      "name": "KP mouse lung sections and CT scans ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b1744d47-414e-4239-bb41-b63a05a73128",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "\nThe IHC images were aquired at 20X magnification and quantification of positive cells on IHCs was performed using the QuPath software.",
+      "labEquipment": "Lung images were captured using an X-Ray microtomography machine (µCT) (Quantum FX; PerkinElmer)\n\nFor ki67 IHC staining image acquisition, tissue slides were scanned with the VS120-SL Olympus slide scanner \n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00001002"
+        }
+      ],
+      "name": "CT scan image aquisition and Ki67 staining image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00001002",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "X-ray computed tomography"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 11
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8552505677
+    }
+  ]
+}

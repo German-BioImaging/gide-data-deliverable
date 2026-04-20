@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1493"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1493",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a4d110ee-b09e-4673-8c29-62d6aa2cec87"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#99ac2d81-6055-46e5-a4e8-ca48c0ab34e5"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3862-8349"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7397-1321"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-14",
+      "description": "Wild-type and Nup133-deficient cells were fixed with 4% PFA and subjected to immunofluorescence staining experiments to assess the presence of differentiaiton marker Pax6. Neural progenitor cells 2h after neuronal differentiation induction were used for the experiments.",
+      "funder": [],
+      "identifier": "S-BIAD1493",
+      "keywords": [
+        "immunofluorescence staining"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Immunofluorescence staining images of mouse neural progenitor cells with Pax6",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1493/b823256a-a257-4976-9248-ba1acd70f7d5/fa782fe8-64e8-4478-a793-2552ae215970.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7397-1321",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d0cd3ba3-888a-4006-98e8-3c2292d0d391"
+        }
+      ],
+      "email": "martin.beck@biophys.mpg.de",
+      "name": "Martin Beck"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3862-8349",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d0cd3ba3-888a-4006-98e8-3c2292d0d391"
+        }
+      ],
+      "email": "reiya.taniguchi@biophys.mpg.de",
+      "name": "Reiya Taniguchi"
+    },
+    {
+      "@id": "#d0cd3ba3-888a-4006-98e8-3c2292d0d391",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute of Biophysics"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#99ac2d81-6055-46e5-a4e8-ca48c0ab34e5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse neural progenitor cells obtained by differentiating mouse embryonic stem cells under non-adhesive condition",
+      "name": "mouse neural progenitor cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#a4d110ee-b09e-4673-8c29-62d6aa2cec87",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired using a 63×/1.40 oil objective. 15 Z stacks were acquired with 1 um intervals. Bidirectional image acquisition with scan speed of 400 was used for the data acquisition. Line average was set to 4.",
+      "labEquipment": "Stellaris 5 confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal stack acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 56
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3523608144
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1758"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1758",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2907362a-a592-4865-983f-753c729e167f"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2e6dc074-188d-4b8c-bd25-8bd8d7bddb94"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8623-7380"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4305-8301"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-28",
+      "description": "The Drosophila melanogaster olfactory system is one of the most intensively studied parts of the nervous system in any animal. Composed of ~50 independent olfactory neuron classes, with several associated hygrosensory and thermosensory pathways, it has been subject to diverse types of experimental analyses. However, synthesizing the available information is limited by the incomplete data and inconsistent nomenclature found in the literature. In this work, we first “complete” the peripheral sensory map through the identification of a previously uncharacterized antennal sensory neuron population expressing Or46aB, and the definition of an exceptional “hybrid” olfactory neuron class comprising functional Or and Ir receptors. Second, we survey developmental, anatomical, connectomic, functional and evolutionary studies to generate an integrated dataset and associated visualisations of these sensory neuron pathways, creating an unprecedented resource. Third, we illustrate the utility of the dataset to reveal relationships between different organizational properties of this sensory system, and the new questions these stimulate. Such examples emphasize the power of this resource to promote further understanding of the construction, function and evolution of these neural circuits.",
+      "funder": [],
+      "identifier": "S-BIAD1758",
+      "keywords": [
+        "Drosophila melanogaster",
+        "olfaction",
+        "olfactory receptor",
+        "sensory neuron",
+        "antennal lobe"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "An integrated anatomical, functional and evolutionary view of the Drosophila olfactory system",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1758/c1e49735-91cd-4dbe-a7bd-73351036d5c6/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8623-7380",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b0e5c5b-cdc2-422e-8462-d05b8912df3f"
+        }
+      ],
+      "email": "jerome.mermet@unil.ch",
+      "name": "Jérôme Mermet"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4305-8301",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b0e5c5b-cdc2-422e-8462-d05b8912df3f"
+        }
+      ],
+      "email": "richard.benton@unil.ch",
+      "name": "Richard Benton"
+    },
+    {
+      "@id": "#5b0e5c5b-cdc2-422e-8462-d05b8912df3f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Lausanne"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#2e6dc074-188d-4b8c-bd25-8bd8d7bddb94",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole mount antennae",
+      "name": "JM_XXX.czi",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#2907362a-a592-4865-983f-753c729e167f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images from antennae and maxillary palps were acquired with confocal microscopes (Zeiss LSM710 or Zeiss LSM880 systems) using a 40x (or 63x for the palp) oil immersion objective and processed using Fiji software (Schindelin et al, 2012). See File list for details.",
+      "labEquipment": "Zeiss LSM 880",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "JM_XXX.czi"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 34
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1556840546
+    }
+  ]
+}

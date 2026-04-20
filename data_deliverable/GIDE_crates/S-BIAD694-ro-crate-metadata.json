@@ -1,0 +1,404 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD694"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD694",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4805a869-0a98-44fc-903c-e55a1d776497"
+        },
+        {
+          "@id": "#46a8fbd7-12b6-4b73-a350-94775e3297b7"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b2033742-b850-411a-a512-07945cd0ae1d"
+        },
+        {
+          "@id": "#68ae9e6d-50b0-4010-832e-76a894f43847"
+        },
+        {
+          "@id": "#364f9c67-4944-41bd-a5a7-93744b31cdd8"
+        },
+        {
+          "@id": "#49e58397-9cb0-4d71-92be-15a1defd0c7c"
+        },
+        {
+          "@id": "#cfcdf2cb-a56e-4ac4-b212-3ab55b11d5c6"
+        },
+        {
+          "@id": "#487c72e3-abc3-4b2b-82e0-49ed59bed03b"
+        },
+        {
+          "@id": "#f48d6ba7-80b9-4cd0-8f4d-e56b608dbe1f"
+        },
+        {
+          "@id": "#501d2ac2-ff14-4cee-af5e-3ded7342a7ea"
+        },
+        {
+          "@id": "#d716a17e-6b76-4185-ae1e-37ecd90a24f0"
+        },
+        {
+          "@id": "#f054934b-30b8-4671-8855-b792abcfc291"
+        },
+        {
+          "@id": "#df26ceb2-c0d3-4e7b-9f34-a515df2894f2"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5871-8256"
+        },
+        {
+          "@id": "#4eb986df-e72b-403b-8a79-0c61a9bf3000"
+        },
+        {
+          "@id": "#d78fc1a9-2b94-4125-9c75-68cc34ec5613"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2651-2584"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-17",
+      "description": "Fluorescent protein (FP) tagging is a key method for observing protein distribution, dynamics, and interaction with other proteins in living cells. However, the typical approach using overexpression of tagged proteins can perturb cell behavior and introduce localization artifacts. To preserve native expression, fluorescent proteins can be inserted directly into endogenous genes. This approach has been widely used in yeast for decades, and more recently in invertebrate model organisms with the advent of CRISPR/Cas9. However, endogenous FP tagging has not been widely used in mammalian cells due to inefficient homology-directed repair. Recently, the CRISPaint system has utilized non-homologous end joining for efficient integration of FP tags into native loci, but it only allows C-terminal knock-ins. Here, we enhanced the CRISPaint system by introducing new universal donors for N-terminal insertion and for multicolor tagging with orthogonal selection markers. We adapted the procedure for mouse embryonic stem cells, which can be differentiated into diverse cell types. Our protocol is rapid and efficient, enabling live imaging in less than 2 weeks post-transfection. These improvements increase the versatility and applicability of FP knock-in in mammalian cells.",
+      "funder": [],
+      "identifier": "S-BIAD694",
+      "keywords": [
+        "CRISPR",
+        "Non-Homologous End Joining (NHEJ)",
+        "Knock-in",
+        "Fluorescent Protein",
+        "Gene Tagging",
+        "Protein Tagging",
+        "Embryonic Stem Cells",
+        "mESC"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Efficient and rapid fluorescent protein knock-in with universal donors in mouse embryonic stem cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD694/4025b7ff-37f4-442f-a54d-a8f0be1e2d4b/5941ff4c-b41c-48c7-9c3e-19cb30003eda.png"
+      ]
+    },
+    {
+      "@id": "#4eb986df-e72b-403b-8a79-0c61a9bf3000",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "name": "Nitya Kopparapu"
+    },
+    {
+      "@id": "#d78fc1a9-2b94-4125-9c75-68cc34ec5613",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "name": "Lauren Ohler"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5871-8256",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "email": "yushiphd@utexas.edu",
+      "name": "Yu Shi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2651-2584",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589"
+        }
+      ],
+      "email": "daniel.dickinson@austin.utexas.edu",
+      "name": "Daniel J. Dickinson"
+    },
+    {
+      "@id": "#cb6ed0f4-2e64-45ef-b323-040ba0bac589",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Texas at Austin"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#364f9c67-4944-41bd-a5a7-93744b31cdd8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Pooled Beta-catenin-mNG knock-in mESCs, Pooled",
+      "name": "Pooled Beta-catenin-mNG knock-in mESCs",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#487c72e3-abc3-4b2b-82e0-49ed59bed03b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Tpx2-mNG knock-in mESCs, Pooled",
+      "name": "Pooled Tpx2-mNG knock-in mESCs",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#49e58397-9cb0-4d71-92be-15a1defd0c7c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mNG-Myh9 knock-in mESC, clonal 1",
+      "name": "Clonal mNG-Myh9 knock-in mESC 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#501d2ac2-ff14-4cee-af5e-3ded7342a7ea",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Myh9-mNG knock-in mESCs, clonal number 2.7",
+      "name": "Clonal Myh9-mNG knock-in mESC 2.7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#68ae9e6d-50b0-4010-832e-76a894f43847",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Zo1-mNG+Beta-catenin-Halo dual knock-in mESCs, Pooled",
+      "name": "Pooled Zo1-mNG+Beta-catenin-Halo knock-in mESCs",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b2033742-b850-411a-a512-07945cd0ae1d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Clonal mNG-Myh9 knock-in mESC, clonal number 2",
+      "name": "Clonal mNG-Myh9 knock-in mESC 2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#cfcdf2cb-a56e-4ac4-b212-3ab55b11d5c6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Clonal mNG-Myh9 knock-in mESC, clonal number 8",
+      "name": "Clonal mNG-Myh9 knock-in mESC 8",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#d716a17e-6b76-4185-ae1e-37ecd90a24f0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "J1 Wild-Type mESCs",
+      "name": "J1 WT mESCs",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#df26ceb2-c0d3-4e7b-9f34-a515df2894f2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Zo1-mNG knock-in mESCs, Pooled",
+      "name": "Pooled Zo1-mNG knock-in mESCs",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#f054934b-30b8-4671-8855-b792abcfc291",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Beta-catenin-mNG+Zo1-Halo dual knock-in mESCs, Pooled",
+      "name": "Pooled Beta-catenin-mNG+Zo1-Halo knock-in mESCs",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#f48d6ba7-80b9-4cd0-8f4d-e56b608dbe1f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "β-catenin-mNG knock-in mESCs, clonal 20-6",
+      "name": "Clonal β-catenin-mNG knock-in mESCs 20-6",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#46a8fbd7-12b6-4b73-a350-94775e3297b7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Image File OME-TIFF Metadata for details",
+      "labEquipment": "a Nikon 1457 Eclipse Ti-2 microscope equipped with 20×0.75 NA and 60×1.45 NA 1458 objectives, a Photometrics PrimeBSI camera, an OptoSpin filter wheel 1459 (CAIRN Research, Kent, England) and a vt-iSIM super-resolution 1460 confocal scan head (VisiTech international, Sunderland, UK). 1461 mNeonGreen fluorescence was excited using a 505 nm diode laser. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "vt-iSIM super-resolution 1460 confocal"
+    },
+    {
+      "@id": "#4805a869-0a98-44fc-903c-e55a1d776497",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Image File OME-TIFF Metadata for details",
+      "labEquipment": "Crest XLight V3",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Spinning Disk Confocal"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 30
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1863925017
+    }
+  ]
+}

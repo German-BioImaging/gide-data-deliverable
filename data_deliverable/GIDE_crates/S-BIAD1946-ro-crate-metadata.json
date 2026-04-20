@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1946"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1946",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3d7c6ee2-953f-4969-8299-8421162b00a9"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#67d0d049-54dc-4774-b4b3-db00aa229e0a"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6486-7143"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-02",
+      "description": "Bipolar spindle assembly and chromosome biorientation are prerequisites for chromosome segregation during cell division. The kinesin motor KIF11 (also widely known as Eg5) drives spindle bipolarization by sliding antiparallel microtubules bidirectionally, elongating a spherical spindle into a bipolar-shaped structure in acentrosomal oocytes. During meiosis I, this process stretches homologous chromosome pairs, establishing chromosome biorientation at the spindle equator. The quantitative requirement for KIF11 in acentrosomal spindle bipolarization and homologous chromosome biorientation remains unclear. Here, using a genetic strategy to modulate KIF11 expression levels, we show that Kif11 haploinsufficiency impairs spindle elongation, leading to the formation of a partially bipolarized spindle during meiosis I in mouse oocytes. While the partially bipolarized spindle allows chromosome stretching in the inner region of its equator, it fails to do so in the outer region, where merotelic kinetochore-microtubule attachments are favored to form. These findings demonstrate the necessity of biallelic functional Kif11 for bipolar spindle assembly in acentrosomal oocytes and reveal a spatially differential requirement for homologous chromosome biorientation within the spindle.",
+      "funder": [],
+      "identifier": "S-BIAD1946",
+      "keywords": [
+        "spindle",
+        "oocyte",
+        "meiosis",
+        "chromosome segregation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Kif11-haploinsufficient oocytes reveal spatially differential requirements for chromosome biorientation in the spindle",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1946/b03aede3-5332-409c-91c0-b7eae90aa678/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6486-7143",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/023rffy11"
+        }
+      ],
+      "email": "tomoya.kitajima@riken.jp",
+      "name": "Tomoya Kitajima"
+    },
+    {
+      "@id": "https://ror.org/023rffy11",
+      "@type": [
+        "Organization"
+      ],
+      "name": "RIKEN Center for Biosystems Dynamics Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#67d0d049-54dc-4774-b4b3-db00aa229e0a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Oocyte",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#3d7c6ee2-953f-4969-8299-8421162b00a9",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Live imaging\nMessenger RNAs were transcribed in vitro using the mMESSAGE mMACHINE T7 Kit (Invitrogen). The following mRNAs were introduced by microinjection into fully-grown GV-stage mouse oocytes: 0.4–0.6 pg H2B-mCherry (Kitajima et al, 2011) , 2.4–7 pg EGFP-Map4 (Schuh & Ellenberg, 2007) , 0.6 pg H2B-SNAP (Takenouchi et al, 2024), 1.5 pg Kif11-mCherry, 1.5 pg Kif11ΔMotor-mCherry, 1.5 pg mCherry (Asai et al, 2024) and 0.4–0.6 pg mNeonGreen-Cep192 (Clift & Schuh, 2015; Kyogoku & Kitajima, 2017). For SNAP imaging, the oocytes were cultured in medium containing SNAP-Cell® 647-SiR (New England Biolabs) for 1 hour at 37°C. The oocytes were released from the dyes before live imaging. Live imaging was performed with a Zeiss LSM880 or LSM780 confocal microscope equipped with a 40x C-Apochromat 1.2NA water immersion objective lens, controlled by MyPiC (Politi et al, 2018) . For spindle and chromosome imaging of wild-type and cKO mouse oocytes, 14–16 confocal z-sections (every 3 μm) of 512x512 pixel xy images were acquired every 5–6 minutes, whereas for control (DMSO) and inhibitor (Monastrol) treated oocyte imaging, 25 confocal z-sections (every 1.5 μm) of 256x256 pixel xy images were acquired at 5 minutes intervals. For microtubule organizing center (MTOC) imaging, 25 confocal z-sections (every 15 μm) of 512x512 pixel xy images were acquired every 12 minutes.\n\nImmunostaining\nOocytes were fixed with 1.6% formaldehyde in 10 mM PIPES (pH 7.0), 1 mM MgCl2, and 0.1% Triton X-100 for 30 minutes, followed by permeabilized with PBT (PBS supplemented with 0.1% Triton X-100) at 4°C overnight. When indicated, oocytes were pretreated with cold M2 medium on ice for 5 min (Figs. 4E,F; Fig. EV4) before fixation. The oocytes were blocked with 3% bovine serum albumin (BSA)-PBT for 2 hours and incubated at 4°C overnight with primary antibodies. The oocytes were washed with 3% BSA-PBT and then incubated with secondary antibodies and 5 µg/ml Hoechst33342 for 2 hours or overnight (Figs. 4E,F; Fig. EV4). The oocytes were washed again and suspended in 0.01% BSA-PBS. The oocytes were imaged under a Zeiss LSM780 confocal microscope equipped with a GaAsP detector or LSM880 confocal microscope with AiryScan (Figs. 4E,F; Fig. EV4) and a 40x C-Apochromat 1.2NA water immersion objective lens. We recorded z-confocal sections (every 1 μm) of 512x512 pixel xy images to capture the entire spindle of the oocyte using LSM780, or z-confocal sections (every 0.2 μm) of 1000x1000 pixel xy images to capture the spindle microtubules and kinetochores using LSM880 (Figs. 4E,F; Fig. EV4).\n\tThe following primary antibodies were used: human anti-centromere antibodies (1:200, ACA, 15-234, Europa Bioproducts), a rabbit anti-KIF11 (1:500, HPA010568, Sigma), a rat monoclonal anti-alpha tubulin (1:2000, MCA77G, Bio-Rad). The secondary antibodies were Alexa Fluor 488 goat anti-rabbit IgG (H + L) (A11034); Alexa Fluor 555 goat anti‐human IgG (H+L) (A21433); Alexa Fluor 488 goat anti-rat IgG (H+L) (A11006); Alexa Fluor 555 goat anti-human IgG (H+L) (A21433). Representative single slice or Z-projection images are shown.\n",
+      "labEquipment": "Zeiss LSM780/880",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 68
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1362341904
+    }
+  ]
+}

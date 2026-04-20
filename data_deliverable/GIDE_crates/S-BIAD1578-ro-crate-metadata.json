@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1578"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1578",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f36492a7-c255-42e0-bf71-965c9b73f361"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f2fafd8b-27d7-42d0-9e31-f1fe4e1810c0"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2800-9501"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-16",
+      "description": "Imaging in the shortwave infrared (SWIR) region offers high-resolution visualization of in vivo targets in a multiplexed manner. These methods require bright, bathochromically-shifted fluorescent dyes with sufficient emission at SWIR wave-lengths, ideally above 1400 nm for high resolution images. Polymethine dyes are an ideal class of contrast agents due to their excellent molecular absorption and high degree of modularity. In this work, we push flavylium and chromenylium dyes further into the SWIR region through polymethine chain extension. This panel of nonamethine dyes boasts absorbances as red as 1149 nm and tail emission beyond 1500 nm. These dyes are the brightest fluorophores at their respective bandgaps to date, with εmax ~105 M-1 cm-1 and ΦF up to 0.5%. We showcased two nonamethine dyes for multiplexed imaging with all SWIR excitation (1060, 1150 nm) and detection at the preferred SWIR wavelengths of 1500–1700 nm, enhancing the depths and resolutions able to be obtained in multicolor SWIR imaging with small molecule contrast agents.",
+      "funder": [],
+      "identifier": "S-BIAD1578",
+      "keywords": [
+        "shortwave infrared, SWIR, NIR-II, polymethine, fluorescence, optical imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "High-Resolution Multicolor Shortwave Infrared In Vivo Imaging with Chromenylium Nonamethine Dyes ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1578/49b00ca0-bcbc-4527-b696-b3ddbde69504/73f1f5ad-556d-4a27-8a90-7ba52ebf4c6b.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2800-9501",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "ericlin1337@gmail.com",
+      "name": "Eric Lin"
+    },
+    {
+      "@id": "#f270c395-b369-47cc-8f34-862290942b7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#f2fafd8b-27d7-42d0-9e31-f1fe4e1810c0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live mice and ex vivo dissected mouse organs",
+      "name": "SWIR Fluorescence Imaging in mice: Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#f36492a7-c255-42e0-bf71-965c9b73f361",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For whole mouse imaging, a custom-built setup was used. Lumics laser units: LU1064D350- U30AN (35 W) “1060 nm”; LU0975DLU350-S30AN03 (35 W) “974 nm”; LU0890D280-U10AN (28 W) “890 nm”; LU0785D250-U70AN (25 W) \"785 nm”; and mpbc.ca laser unit: 2RU-YFL-P-10-1160-M (10 W) “1150 nm” were used for excitation. Lumics laser outputs were coupled in a 4x1 fan-out fiber-optic bundle (Thorlabs BF46LS01) of 600 μm core diameter for each optical path. The output from the fiber was fixed in an excitation cube (Thorlabs KCB1E), reflected off of a mirror (Thorlabs BBE1- E03), and passed through a positive achromat (Thorlabs AC254-050-AB-ML), short pass (SP) filter (1100 nm, Edmund Optics #84-768) and an engineered diffuser (Thorlabs ED1-S20-MD) to provide uniform illumination over the working area. The mpbc.ca laser fiber output (collimated to a 0.7 mm gaussian beam) was fixed with a clamp (Thorlabs VC1) and reflected off of two mirrors (Thorlabs KCB1C) in sequence into a 10X AR-coated achromatic Galilean beam expander (Thorlabs GBE10-C) with an engineered diffuser (Thorlabs ED1-S20-MD) to illuminate the working area. The working area was covered by a heating mat coated with blackout fabric (Thorlabs BK5). Emitted light was detected via an InGaAs (Allied Vision Goldeye G-032 Cool TEC2) camera with a sensor temperature set point of -30 °C. The camera was placed vertically above the field of illumination, with emitted light passed through a set of longpass (LP) emission filters (defined for each experiment) and a C-mount camera lens (Kowa LM35HC-SW). The excitation flux at the field of illumination was measured with a digital optical power sensor (Thorlabs PM100D). The assembly was partially enclosed to avoid excess light while enabling manipulation of the field of view during operation. Camera and lasers were externally controlled and synchronized by delivering trigger pulses of 5V Transistor-Transistor Logic to the laser drivers and camera using a programmable trigger controller with pulses generated with an Atmel Atmega328 micro-controller unit and programmed using Arduino Nano Rev 3 MCU (A000005) in the Arduino integrated development environment (IDE). Acquired imaging data are then transferred to the PC via either a Gigabit Ethernet (GigE), or CameraLink (CL) interface. For image acquisition, the toolbox of MATLAB programming environment was used in combination with a MATLAB script (CCDA V3, https://gitlab.com/brunslab/ccda) to preview and collect the required image data in 14-bit depth.",
+      "labEquipment": "Allied Vision Goldeye G-032 Cool TEC2 Camera",
+      "measurementTechnique": [],
+      "name": "SWIR Fluorescence Imaging: Imaging Acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 545
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1814791700
+    }
+  ]
+}

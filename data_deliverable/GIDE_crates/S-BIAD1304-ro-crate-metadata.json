@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1304"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1304",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#827bd9cc-03e8-4e2c-a3f5-75499d17cc5c"
+        },
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b8838cb3-1389-42d1-ba12-18e422439de9"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#5f64a47e-e6cd-49b0-aba4-f1bac097615e"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-30",
+      "description": "Mycosis fungoides (MF), a type of cutaneous T-cell lymphoma, presents with diverse clinical manifestations and lacks definitive early diagnostic markers. This study applies CD30-positive large cell transformation as a model to identify tumor cell-specific early diagnostic indicators in MF by comparing malignant T cells (MT) with reactive T cells (RT). Utilizing Deep Visual Proteomics (DVP) technique, including immunohistochemistry, single-cell laser microdissection, and mass spectrometry-based proteomics, we elucidated molecular differences associated with disease progression and epidermotropism. Key findings revealed significant upregulation of cell cycle-related proteins (MCM2-7, PCNA) and chromatin remodeling factors in MT cells. Conversely, downregulated proteins (CMA1, KREMEN2) in MT cells were linked to reduced inflammatory response and cytoskeletal changes. Longitudinal analysis pinpointed proteins and pathways upregulated in advanced-stage MF, particularly those involved in DNA replication, chromatin modification, and stress response. Spatial analysis identified proteins related to cell adhesion and cytoskeletal dynamics contributing to epidermotropism. Our findings uncover novel tumor-specific biomarkers and critical molecular pathways involved in MF progression. The upregulation of proteins associated with cell proliferation, chromatin remodeling, and epidermal adhesion provides promising targets for early diagnosis and therapeutic intervention. This study enhances our understanding of MF pathogenesis and offers insights for developing improved diagnostic and treatment strategies.",
+      "funder": [],
+      "identifier": "S-BIAD1304",
+      "keywords": [
+        "Mycosis fungoides",
+        "CD30-positive large cell transformation",
+        "spatial proteomics",
+        "epidermotropism",
+        "biomarkers",
+        "disease progression"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Deep Visual Proteomics Reveal Spatial-Temporal Molecular Signatures of Mycosis Fungoides",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#5f64a47e-e6cd-49b0-aba4-f1bac097615e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b154dd0c-62be-4e09-99aa-686e0e90795c"
+        }
+      ],
+      "email": "xiang.zheng@cpr.ku.dk",
+      "name": "Xiang Zheng"
+    },
+    {
+      "@id": "#b154dd0c-62be-4e09-99aa-686e0e90795c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Copenhagen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#b8838cb3-1389-42d1-ba12-18e422439de9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lesional mycosis fungoides skin",
+      "name": "Samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#827bd9cc-03e8-4e2c-a3f5-75499d17cc5c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x brightfield",
+      "labEquipment": "AxioScan7 microscope (Zeiss)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "name": "Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000240",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "macroscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 14321083772
+    }
+  ]
+}

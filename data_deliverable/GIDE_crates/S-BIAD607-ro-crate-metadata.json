@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD607"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD607",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#21d2cc5b-5765-49f0-bd89-7f743dfc1f44"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#10e02ac1-0401-4fad-945f-b49bb0793262"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3150-6384"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-04-29",
+      "description": "Proper chromosome segregation is crucial for cell division. In eukaryotes, this is achieved by the kinetochore, an evolutionarily conserved multi-protein complex that physically links the DNA to spindle microtubules and takes an active role in monitoring and correcting erroneous spindle-chromosome attachments. Our mechanistic understanding of these functions and how they ensure an error-free outcome of mitosis is still limited, partly because we lack a complete understanding of the kinetochore structure in the cell. In this study, we use single-molecule localization microscopy to visualize individual kinetochore complexes in situ in budding yeast. For major kinetochore proteins, we measured their abundance and position within the metaphase kinetochore. Based on this comprehensive dataset, we propose a quantitative model of the budding yeast kinetochore. While confirming many aspects of previous reports based on bulk imaging, our results present a unifying nanoscale model of the kinetochore in budding yeast.",
+      "funder": [],
+      "identifier": "S-BIAD607",
+      "keywords": [
+        "Kinetochore",
+        "Super-resolution microscopy",
+        "Single-molecule localization microscopy"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Nanoscale structural organization and stoichiometry of the budding yeast kinetochore",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3150-6384",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5074a07c-1144-4134-96c3-f98335b1653a"
+        }
+      ],
+      "email": "waltwu512@gmail.com",
+      "name": "Yu-Le Wu"
+    },
+    {
+      "@id": "#5074a07c-1144-4134-96c3-f98335b1653a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#10e02ac1-0401-4fad-945f-b49bb0793262",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Yeast cells",
+      "name": "Budding yeast",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#21d2cc5b-5765-49f0-bd89-7f743dfc1f44",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "SMLM",
+      "labEquipment": "SMLM",
+      "measurementTechnique": [],
+      "name": "SMLM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 0
+    }
+  ]
+}

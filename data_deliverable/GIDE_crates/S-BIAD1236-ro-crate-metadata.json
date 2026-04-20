@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1236"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1236",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#da9ced47-86a7-4d8b-a78d-088a7aabc36d"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#eaafa0f0-552c-42e4-b903-55ed61b1a0ec"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0008-1259-4017"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3795-3772"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1918-9216"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-06-17",
+      "description": "This is an image of a human tonsil collected on the Rarecyte Orion. This is a widefield spectral-unmixing microscope with a 20x (0.75) dry objective. The slide was stained with 15 antibodies, Hoechst, and autofluorescence was calculated (AF1) . The channels are:\n\n01 Hoechst\n02 AF1\n03 CD31_Argo515\n04 CD11c_Argo555L\n05 CD68_Argo535\n06 CD163_Argo580L\n07 CD20_Argo660L\n08 CD4_Argo572\n09 CD8a_Argo602\n10 CD45RO_Argo624\n11 PD-L1_Argo662\n12 FOXP3_Argo686\n13 LAG3_Argo730\n14 PD-1_Argo760\n15 Ki-67_Argo784\n16 CD45_Argo810 \n17 S100_Argo845",
+      "funder": [],
+      "identifier": "S-BIAD1236",
+      "keywords": [
+        "tonsil",
+        "multiplex",
+        "immunofluorescence"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Human tonsil with 17 channels",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1918-9216",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#92f47520-af0a-4a5a-857f-07abceef7614"
+        }
+      ],
+      "email": "zmikulski@lji.org",
+      "name": "Zbigniew Mikulski"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3795-3772",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#92f47520-af0a-4a5a-857f-07abceef7614"
+        }
+      ],
+      "email": "smcardle@lji.org",
+      "name": "Sara McArdle"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-1259-4017",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#92f47520-af0a-4a5a-857f-07abceef7614"
+        }
+      ],
+      "email": "sgoldstein@lji.org",
+      "name": "Simon Goldstein"
+    },
+    {
+      "@id": "#92f47520-af0a-4a5a-857f-07abceef7614",
+      "@type": [
+        "Organization"
+      ],
+      "name": "La Jolla Institute for Immunology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#eaafa0f0-552c-42e4-b903-55ed61b1a0ec",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Tonsil Section",
+      "name": "Human Tonsil Section",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#da9ced47-86a7-4d8b-a78d-088a7aabc36d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired with a 20x 0.75 dry objective and the pixel size is 0.325 um/pixel. The entire tissue was captured via tiling. \n\nThe Orion uses angled dichroic mirrors to capture approximately 10 nm emission bands.  The excitation laser - emission bands for each channel were:\nChannel\tExcitation\tEmission Center\tAntibody\nCh01\t405\t452\tHoechst\nCh02\t445\t486\tAutofluorescence\nCh03\t470\t516\tCD31_Argo515\nCh04\t470\t560\tCD11c_Argo555L\nCh05\t520\t542\tCD68_Argo535\nCh06\t520\t582\tCD163_Argo580L\nCh07\t520\t672\tCD20_Argo660L\nCh08\t555\t574\tCD4_Argo572\nCh09\t555\t602\tCD8a_Argo602\nCh10\t555\t628\tCD45RO_Argo624\nCh11\t640\t664\tPD-L1_Argo662\nCh12\t640\t688\tFOXP3_Argo686\nCh13\t640\t722\tLAG3_Argo730\nCh14\t730\t764\tPD-1_Argo760\nCh15\t730\t784\tKi-67_Argo784\nCh16\t730\t814\tCD45_Argo810 \nCh17\t730\t848\tS100_Argo845\nCh18\t730\t872\tBlank\nCh19\t730\t890\tBlank\n\nImages were processed using Rarecyte's custom algorithm, involving tile stitching, non-linear channel alignment, and spectral unmixing.  The unmixing matrix was determined using previously acquired single color controls. \n",
+      "labEquipment": "Rarecyte Orion",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Orion Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 75389046712
+    }
+  ]
+}

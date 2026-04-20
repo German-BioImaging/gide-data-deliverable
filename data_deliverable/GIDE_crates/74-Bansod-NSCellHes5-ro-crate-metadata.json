@@ -1,0 +1,211 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/74-Bansod-NSCellHes5/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/74-Bansod-NSCellHes5/",
+      "@type": "Dataset",
+      "identifier": "74-Bansod-NSCellHes5",
+      "name": "Neurogenesis and gliogenesis in WT and Hes5-overexpressing Tg brain",
+      "description": "74-Bansod-NSCellHes5",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Astrocytes/metabolism",
+        "Basic Helix-Loop-Helix Transcription Factors/genetics",
+        "Basic Helix-Loop-Helix Transcription Factors/metabolism[major]",
+        "Cell Differentiation",
+        "Cell Proliferation",
+        "Down-Regulation/genetics",
+        "Gene Expression Regulation, Developmental",
+        "Gene Knockdown Techniques",
+        "Genes, Reporter",
+        "Mammals/embryology[major]",
+        "Mammals/genetics",
+        "Mice, Transgenic",
+        "Neocortex/embryology[major]",
+        "Neocortex/metabolism[major]",
+        "Neural Stem Cells/metabolism",
+        "Neurogenesis/genetics[major]",
+        "Neuroglia/metabolism",
+        "Neurons/cytology",
+        "Neurons/metabolism",
+        "Promoter Regions, Genetic/genetics",
+        "Repressor Proteins/genetics",
+        "Repressor Proteins/metabolism[major]",
+        "Time Factors"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1242/dev.147256"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0022008"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042063"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-153"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Toshiyuki Ohtsuka",
+      "email": "tohtsuka@infront.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Institute for Frontier Life and Medical Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Shama Bansod"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Ryoichiro Kageyama"
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1242/dev.147256",
+      "@type": "ScholarlyArticle",
+      "name": "Hes5 regulates the transition timing of neurogenesis and gliogenesis in mammalian neocortical development.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "NIH3T3",
+      "description": "NIH3T3",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0022008",
+      "@type": "DefinedTerm",
+      "name": "neurogenesis"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042063",
+      "@type": "DefinedTerm",
+      "name": "gliogenesis"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 130770670,
+      "description": "130.8 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 123,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

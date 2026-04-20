@@ -1,0 +1,267 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD681"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD681",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3126cb75-67a6-46d3-8459-c46439301c54"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c2d5867e-8519-486d-8abd-1d53f25b3cdf"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1251-0978"
+        },
+        {
+          "@id": "#fcd82ef8-a5e9-4a27-ae19-e7e9eda148e7"
+        },
+        {
+          "@id": "#59d5c57b-080a-465f-8dbb-74beb25a7545"
+        },
+        {
+          "@id": "#f144bb95-4be9-4ecd-b4ad-427b50ae92ee"
+        },
+        {
+          "@id": "#5da0f3a2-7237-49b2-8a85-714f6c573d39"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-06-15",
+      "description": "Cilia are cellular projections that perform sensory and motile functions in eukaryotic cells. A defining feature of cilia is that they are evolutionarily ancient yet not universally conserved. In this study we have used the resulting presence and absence pattern in the genomes of diverse eukaryotes to identify a set of 386 human genes associated with cilium assembly or motility. Comprehensive tissue-specific RNAi in Drosophila and mutant analysis in C. elegans revealed signature ciliary defects for 70-80% of novel genes, a percentage similar to that for known genes within the cluster. Further characterization identified different phenotypic classes, including a set of genes related to the cartwheel component Bld10/CEP135 and two highly conserved regulators of cilium biogenesis. We propose this dataset defines the core set of genes required for cilium assembly and motility across eukaryotes, an invaluable resource for future studies of cilium biology and associated disorders.",
+      "funder": [],
+      "identifier": "S-BIAD681",
+      "keywords": [
+        "Caenorhabditis elegans",
+        "Centrioles",
+        "Cilia",
+        " Drosophila melanogaster",
+        "Evolution"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "A Phylogenetic Profiling Approach Identifies Novel Ciliogenesis Genes In Drosophila And C. elegans\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD681/98f6fdfd-3246-49d0-85e4-ab96180c3072/7f21b5ef-5d32-48fc-8250-8ae9652540e2.png"
+      ]
+    },
+    {
+      "@id": "#59d5c57b-080a-465f-8dbb-74beb25a7545",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1bc97290-ca77-4d03-8abf-8c1718f20cfd"
+        }
+      ],
+      "email": "tiffany.su@univie.ac.at",
+      "name": "TIffany Y Su"
+    },
+    {
+      "@id": "#5da0f3a2-7237-49b2-8a85-714f6c573d39",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#02651d31-04bf-4b08-b5c1-cd9df09317f3"
+        }
+      ],
+      "email": "Alexander.Schleiffer@imp.ac.at",
+      "name": "Alexander Schleiffer"
+    },
+    {
+      "@id": "#f144bb95-4be9-4ecd-b4ad-427b50ae92ee",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#393eb7ae-bb46-4643-9297-56d6f753afd0"
+        }
+      ],
+      "email": "balazs.erdi@imba.oeaw.ac.at",
+      "name": "Balazs Erdi"
+    },
+    {
+      "@id": "#fcd82ef8-a5e9-4a27-ae19-e7e9eda148e7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1bc97290-ca77-4d03-8abf-8c1718f20cfd"
+        }
+      ],
+      "email": "jeroen.dobbelaere@univie.ac.at",
+      "name": "Jeroen Dobbelaere"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1251-0978",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1bc97290-ca77-4d03-8abf-8c1718f20cfd"
+        }
+      ],
+      "email": "alex.dammermann@univie.ac.at",
+      "name": "Alexander Dammermann"
+    },
+    {
+      "@id": "#02651d31-04bf-4b08-b5c1-cd9df09317f3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Research Institute of Molecular Pathology"
+    },
+    {
+      "@id": "#1bc97290-ca77-4d03-8abf-8c1718f20cfd",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Perutz Labs"
+    },
+    {
+      "@id": "#393eb7ae-bb46-4643-9297-56d6f753afd0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Molecular Biotechnology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#c2d5867e-8519-486d-8abd-1d53f25b3cdf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Worms and Flies",
+      "name": "Figure source data",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#3126cb75-67a6-46d3-8459-c46439301c54",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "As detailed in Methods Section of the Study",
+      "labEquipment": "Light and electron microscopes as detailed in File List",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 362
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 9569155624
+    }
+  ]
+}

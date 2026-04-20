@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1090"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1090",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#daf0b38d-4f3e-471c-bba2-b4690d2e61dd"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c4a735dd-e72b-43be-8a2d-39da15f846e0"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#63b4d29d-e88c-4fbc-a731-9aeec23db9d1"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-25",
+      "description": "Nodal B-cell non-Hodgkin lymphomas (B-NHL) are a clinically diverse set of cancers thought to originate from distinct stages of B-cell maturation. To spatially profile intratumor heterogeneity across B-NHL entities, we performed co-detection by indexing (CODEX), a highly multiplexed immunohistochemistry technique imaging 54 markers, on FFPE tissue sections from 19 patient lymph nodes (two 4.5 mm cores per lymph node) including 5 mantle cell lymphoma (MCL), 5 follicular lymphoma (FL), 5 diffuse large B-cell lymphoma (DLBCL), and 2 marginal zone lymphoma (MZL) tumors, in addition to 4 reactive lymph nodes (rLN).",
+      "funder": [],
+      "identifier": "S-BIAD1090",
+      "keywords": [
+        "immunohistochemistry",
+        "lymph node",
+        "lymphomas"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Highly multiplexed immunohistochemistry of nodal B-cell non-Hodgkin lymphomas",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1090/cf90f386-d640-4485-8072-da07f69020f8/bb62a9c8-69c5-4940-9950-3cff684509e8.png"
+      ]
+    },
+    {
+      "@id": "#63b4d29d-e88c-4fbc-a731-9aeec23db9d1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3127b99-26ab-4871-81c8-6a6d7c6f7656"
+        }
+      ],
+      "email": "donnacha.fitzgerald@embl.de",
+      "name": "Donnacha Fitzgerald"
+    },
+    {
+      "@id": "#a3127b99-26ab-4871-81c8-6a6d7c6f7656",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Hospital Heidelberg"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#c4a735dd-e72b-43be-8a2d-39da15f846e0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Reactive, mantle cell lymphoma, follicular lymphoma, diffuse large B-cell lymphoma, and marginal zone lymphoma nodal samples.",
+      "name": "Human lymph nodes samples in nodal B-cell non-Hodgkin lymphomas and reactive lymph nodes",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#daf0b38d-4f3e-471c-bba2-b4690d2e61dd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "We selected 7x7 fields of view and an appropriate number of z-planes (10-14) to capture the best focal plane across the imaging area. Multicycle imaging was performed using a CODEX microfluidics device. Post completion of multicycle imaging, coverslips were stained with hematoxylin/eosin, and the same areas were imaged in brightfield mode.",
+      "labEquipment": "Keyence BZ-X710 inverted fluorescence microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "CODEX (co-detection by indexing)"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 35
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 136445909040
+    }
+  ]
+}

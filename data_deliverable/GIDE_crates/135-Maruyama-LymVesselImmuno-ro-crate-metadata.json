@@ -1,0 +1,220 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/135-Maruyama-LymVesselImmuno/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/135-Maruyama-LymVesselImmuno/",
+      "@type": "Dataset",
+      "identifier": "135-Maruyama-LymVesselImmuno",
+      "name": "Immunostaining images of Prox1, PECAM or VEGER3 expression in mouse embryo different  developmental stage",
+      "description": "135-Maruyama-LymVesselImmuno",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Lineage[major]",
+        "Endothelial Cells/metabolism",
+        "Heart/embryology[major]",
+        "Homeodomain Proteins/metabolism",
+        "LIM-Homeodomain Proteins/metabolism[major]",
+        "Lymphangiogenesis[major]",
+        "Lymphatic Vessels/cytology[major]",
+        "Lymphatic Vessels/embryology[major]",
+        "Mesoderm/embryology",
+        "Mesoderm/metabolism",
+        "Mice",
+        "Pharynx/cytology",
+        "Stem Cells/metabolism",
+        "Transcription Factors/metabolism[major]",
+        "Tumor Suppressor Proteins/metabolism",
+        "Vascular Endothelial Growth Factor Receptor-3/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.ydbio.2019.05.002"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1990183"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0060836"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-271"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hiroki Kurihara",
+      "email": "kuri-tky@umin.net",
+      "description": "Organization: The University of Tokyo; Department: Graduate School of Medicine; Laboratory: Department of Physiological Chemistry and Metabolism",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Kazuaki Maruyama"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Sachiko Miyagawa-Tomita"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Kaoru Mizukami"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Fumio Matsuzaki"
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.ydbio.2019.05.002",
+      "@type": "ScholarlyArticle",
+      "name": "Isl1-expressing non-venous cell lineage contributes to cardiac lymphatic vessel development.",
+      "datePublished": "2019"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1990183",
+      "@type": "DefinedTerm",
+      "name": "lymphatic vascular process in circulatory system"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060836",
+      "@type": "DefinedTerm",
+      "name": "lymphatic endothelial cell differentiation"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 61802747,
+      "description": "61.8 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 17,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1233"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1233",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#325158ac-047e-4506-8217-228e6899bd0c"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#55726add-2d56-415d-96e1-138c46ad62ad"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8802-352X"
+        },
+        {
+          "@id": "#f6764655-3000-4076-8a1b-98dbe95aa1fa"
+        },
+        {
+          "@id": "#5762cd60-83c4-45bd-9735-f8d3292ad65d"
+        },
+        {
+          "@id": "#013e1cde-61d6-43ff-bb3a-e925b359de8e"
+        },
+        {
+          "@id": "#ac104097-a913-4df3-aa7c-cd41ea6eb3c8"
+        },
+        {
+          "@id": "#988e2245-d270-4e86-9700-c3b296e6f96a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-05",
+      "description": "Raw and analysed image sequences for \"Functional specialization of Arabidopsis VEL polymerization domains in the switch to Polycomb silencing\" BioRxiv https://doi.org/10.1101/2024.02.15.580496",
+      "funder": [],
+      "identifier": "S-BIAD1233",
+      "keywords": [
+        "single molecule tracking",
+        "nuclear speckles",
+        "epigenetics",
+        "flowering",
+        "vernalization",
+        "plant microscopy"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "VEL chromatin regulation proteins in Arabidopsis: SlimVar imaging and single molecule tracking analysis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1233/fb952350-651d-45fe-9b4a-6a3c91c2b168/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#013e1cde-61d6-43ff-bb3a-e925b359de8e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "mathias.nielsen@weizmann.ac.il",
+      "name": "Mathias Nielsen"
+    },
+    {
+      "@id": "#5762cd60-83c4-45bd-9735-f8d3292ad65d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "geng-jen.jang@jic.ac.uk",
+      "name": "Geng-Jen Jang"
+    },
+    {
+      "@id": "#988e2245-d270-4e86-9700-c3b296e6f96a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "caroline.dean@york.ac.uk",
+      "name": "Caroline Dean"
+    },
+    {
+      "@id": "#ac104097-a913-4df3-aa7c-cd41ea6eb3c8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "email": "mark.leake@york.ac.uk",
+      "name": "Mark Leake"
+    },
+    {
+      "@id": "#f6764655-3000-4076-8a1b-98dbe95aa1fa",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "anna.schulten@jic.ac.uk",
+      "name": "Anna Schulten"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8802-352X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a"
+        }
+      ],
+      "email": "alex.payne-dwyer@york.ac.uk",
+      "name": "Alex Payne-Dwyer"
+    },
+    {
+      "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Weizmann Institute of Science"
+    },
+    {
+      "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "John Innes Centre"
+    },
+    {
+      "@id": "#f7155d44-b7ad-47cc-9fe4-1820d3572b9a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of York"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#55726add-2d56-415d-96e1-138c46ad62ad",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Arabidopsis thaliana root tip nuclei (epidermis to endodermis)",
+      "name": "SlimVar images of VEL mutant proteins in root tip nuclei",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#325158ac-047e-4506-8217-228e6899bd0c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Continuous wave lasers Coherent OBIS LX/LS at 488 nm wavelength (camera triggered)\nObjective lens / immersion medium: Nikon NA 1.49 Apo TIRF 100× oil, using Olympus Type F oil (n=1.518)\nIrradiance at sample: 1-5 kW/cm^2 at 60 degree incidence\nEmission filters: 580 nm longpass dichroic + 525/50 nm bandpass filter\nDetector: Teledyne Photometrics Prime95B, 12-bit ‘Sensitivity’ gain\nExposure time: 10 ms\nFrame rate: 80 fps",
+      "labEquipment": "Custom SlimVar widefield microscope (Leake lab, University of York)",
+      "measurementTechnique": [],
+      "name": "SlimVar imaging method"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6164
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 454803124686
+    }
+  ]
+}

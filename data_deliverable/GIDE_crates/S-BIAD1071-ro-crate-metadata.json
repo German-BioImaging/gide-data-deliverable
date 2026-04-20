@@ -1,0 +1,278 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1071"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1071",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5bd91f84-3777-4c87-aafd-11dd7b81c155"
+        },
+        {
+          "@id": "obo:FBbi_00001005"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#486b8fa0-c4ad-477b-b2e8-320182839b18"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5415-2999"
+        },
+        {
+          "@id": "#8bd6773c-2222-4c60-a0c8-dfc2d1ddaa3c"
+        },
+        {
+          "@id": "#747cb628-b569-4e17-a097-b49acaba5517"
+        },
+        {
+          "@id": "#89f1fb4b-13a4-42ba-a4ce-e3bb0f3ad98d"
+        },
+        {
+          "@id": "#7130799d-c3c2-430a-976f-edfaa11c2ff9"
+        },
+        {
+          "@id": "#f2d866f6-08a5-460b-aacc-3b98ad75f206"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-02",
+      "description": "This PDF contains 100 flat panel CT scans, with 50 scans from control group patient ears and 50 scans from superior canal dehiscence patient ears.",
+      "funder": [],
+      "identifier": "S-BIAD1071",
+      "keywords": [
+        "CT Scans",
+        "Temporal Bone",
+        "Superior Canal Dehiscence"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Supplementary Digital Content 5 for Superior Canal Dehiscence and the Risk of Additional Dehiscences: A Retrospective CT Cohort Study (Shankar et al.)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#7130799d-c3c2-430a-976f-edfaa11c2ff9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "email": "jcarey@jhmi.edu",
+      "name": "John Carey"
+    },
+    {
+      "@id": "#747cb628-b569-4e17-a097-b49acaba5517",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5912b78e-7be6-4d8e-8898-1e4b07bd1300"
+        }
+      ],
+      "email": "mspearl@childrensnational.org",
+      "name": "Monica Pearl"
+    },
+    {
+      "@id": "#89f1fb4b-13a4-42ba-a4ce-e3bb0f3ad98d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2dc6c0fd-b1c7-46d3-a6de-df949cf691ea"
+        }
+      ],
+      "email": "adeethyia@gmail.com",
+      "name": "Adeethyia Shankar"
+    },
+    {
+      "@id": "#8bd6773c-2222-4c60-a0c8-dfc2d1ddaa3c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "email": "nnaguru1@jhmi.edu",
+      "name": "Nimesh Nagururu"
+    },
+    {
+      "@id": "#f2d866f6-08a5-460b-aacc-3b98ad75f206",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "email": "bward15@jh.edu",
+      "name": "Bryan Ward"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5415-2999",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1"
+        }
+      ],
+      "email": "ahjeethashankar@gmail.com",
+      "name": "Ahjeetha Shankar"
+    },
+    {
+      "@id": "#2dc6c0fd-b1c7-46d3-a6de-df949cf691ea",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Brown University"
+    },
+    {
+      "@id": "#5912b78e-7be6-4d8e-8898-1e4b07bd1300",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Children's National"
+    },
+    {
+      "@id": "#c836f11f-8f11-42a1-bd8e-87991cb29fc1",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Johns Hopkins University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#486b8fa0-c4ad-477b-b2e8-320182839b18",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Temporal Bone",
+      "name": "Supplementary Digital Content 5 for Superior Canal Dehiscence and the Risk of Additional Dehiscences: A Retrospective CT Cohort Study (Shankar et al.): Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5bd91f84-3777-4c87-aafd-11dd7b81c155",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Eligible participants for this study were patients aged 18 and older who received high-resolution flat-panel CT (DynaCT; Siemens, Erlangen, Germany) without intravenous contrast for otologic evaluations at the Johns Hopkins Hospital from January 2018 to December 2019. CT scans with significant artifacts or structural alterations precluding accurate measurements, including advanced otosclerosis, labyrinthitis ossificans, or fractures, were excluded. At our institution, flat panel CT is primarily used to investigate potential dehiscences in the superior semicircular canal (SSC) but is increasingly used for other indications. The study aimed to include a sample of 50 control ears without a radiologic diagnosis of superior canal dehiscence (SCD) and 50 ears with SCD based on radiology reports.",
+      "labEquipment": "Flat-panel CT imaging",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00001005"
+        }
+      ],
+      "name": "Supplementary Digital Content 5 for Superior Canal Dehiscence and the Risk of Additional Dehiscences: A Retrospective CT Cohort Study (Shankar et al.): Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00001005",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "computed tomography"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 380078257
+    }
+  ]
+}

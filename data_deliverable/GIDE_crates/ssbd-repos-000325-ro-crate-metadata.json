@@ -1,0 +1,232 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000325/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000325/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000325",
+      "name": "Dataset for \"Live-cell imaging provides direct evidence for a threshold in CDK activity at the G2/M transition.\"",
+      "description": "Cyclin-dependent kinase (CDK) plays an essential role in determining the temporal ordering of the cell cycle phases. However, despite significant progress in studying regulators of CDK and phosphorylation patterns of CDK substrates at the population level, it remains elusive how CDK regulators coordinately affect CDK activity at the single-cell level and how CDK controls the temporal order of cell cycle events. This is mostly due to the lack of tools for quantifying CDK activity in individual living cells. Here, we elucidate the dynamics of CDK activity in fission yeast and mammalian cells by using a newly developed CDK activity biosensor, Eevee-spCDK, based on Förster Resonance Energy Transfer (FRET). Taking advantage of this system, we unravel the profile of CDK activity in vegetatively growing S. pombe cells. Thus, we detect a transient increase in S phase followed by a gradual increment during G2 phase. CDK activity then reaches its maximum in early M phase and rapidly decreases at mitotic exit. During G2 phase, CDK activity exhibits a biphasic pattern, i.e. an early slow increase and a late fast rise prior to the G2/M phase transition, as predicted from mathematical studies. Remarkably, although CDK activity does not necessarily correlate with cyclin levels, we find that it converges to the same level around mitotic onset in several mutant backgrounds, including pom1Δ cells and wee1 or cdc25 overexpressing cells. These data provide the first direct evidence that cells enter M phase when CDK activity reaches a high threshold, consistent with the quantitative model of cell cycle progression in fission yeast.",
+      "datePublished": "2024-01-15",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.devcel.2023.12.014"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2023.03.26.534249"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051726"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0045168"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: National Institute for Basic Biology; Laboratory: Division of Quantitative Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/055n47h92"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/055n47h92",
+      "@type": "Organization",
+      "name": "National Institutes of Natural Sciences"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.devcel.2023.12.014",
+      "@type": "ScholarlyArticle",
+      "name": "Live-cell imaging defines a threshold in CDK activity at the G2/M transition.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2023.03.26.534249",
+      "@type": "ScholarlyArticle",
+      "name": "Live-cell imaging provides direct evidence for a threshold in CDK activity at the G2/M transition",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "See details in Sugiyama et. al., bioRxiv. 2023",
+      "description": "See details in Sugiyama et. al., bioRxiv. 2023",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853",
+      "@type": "Taxon",
+      "scientificName": "Schizosaccharomyces pombe",
+      "vernacularName": "fission yeast"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051726",
+      "@type": "DefinedTerm",
+      "name": "Cell cycle regulation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0045168",
+      "@type": "DefinedTerm",
+      "name": "Cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "Hela cell"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "wide-field microscopy",
+      "description": "wide-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
+      "@type": "DefinedTerm",
+      "name": "wide-field microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 81826627584,
+      "description": "81.8 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 29665,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD601"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD601",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#32cf0a9f-ef53-4157-9fe5-fef36afb9090"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#06f417e6-fcff-442d-87b2-ee2235f706bb"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#7a4911c2-7d53-46ae-9e5c-a1a70391089b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-12",
+      "description": "The image series of IFT trains' motility were obtained with confocal fluorescence light microscopy during the process of fixation with glutaraldehyde, and the corresponding kymographs were generated. ",
+      "funder": [],
+      "identifier": "S-BIAD601",
+      "keywords": [
+        "IFT trains; Primary cilia: CLEM"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "CLEM study of IFT trains in primary cilia",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD601/d42659eb-65ce-4194-aa76-e885de797e82/4eb94648-3c5a-4e35-8bed-0ce935f5f038.png"
+      ]
+    },
+    {
+      "@id": "#7a4911c2-7d53-46ae-9e5c-a1a70391089b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/012zs8222"
+        }
+      ],
+      "email": "ssfleon2008@163.com",
+      "name": "Shufeng SUn"
+    },
+    {
+      "@id": "https://ror.org/012zs8222",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University at Albany, State University of New York"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#06f417e6-fcff-442d-87b2-ee2235f706bb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cultured IMCD3 cells",
+      "name": "CLEM study of IFT trains in primary cilia",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#32cf0a9f-ef53-4157-9fe5-fef36afb9090",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The exposure time was 120 ms, the frame rate was 5-10 frames/second, and the total time for image recording was 1.2~1.5 min.",
+      "labEquipment": "Nikon Eclipse TE2000-E microscope equipped with micro-lens enhanced confocal microscopy; charge-coupled device (CCD) camera (Andor Zyla sCMOS) with a pixel size of 0.1073 μm.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "CLEM study of IFT trains in primary cilia"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 7
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 127733954
+    }
+  ]
+}

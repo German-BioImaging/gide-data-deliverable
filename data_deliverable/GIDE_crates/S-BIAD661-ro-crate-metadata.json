@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD661"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD661",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2a2c0b53-5614-4729-9761-be6e336279c7"
+        },
+        {
+          "@id": "obo:FBbi_00000365"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c3f2e378-d10f-4ab0-8057-eecf7890ca62"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7911-3427"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-17",
+      "description": "FAM3C/ILEI is an important cytokine for tumor progression and metastasis. However, its involvement in inflammation remains elusive. Here, we show that ILEI protein is highly expressed in psoriatic lesions. Inducible keratinocyte-specific ILEI overexpression in mice (K5-ILEIind) recapitulates many aspects of psoriasis following TPA challenge, primarily manifested by impaired epidermal differentiation and increased neutrophil recruitment. Mechanistically, ILEI triggers Erk and Akt signaling, which then activate STAT3 via Ser727 phosphorylation. Keratinocyte-specific ILEI deletion ameliorates TPA-induced skin inflammation. A transcriptomic ILEI signature obtained from the K5-ILEIind model shows enrichment in several signaling pathways also found in psoriasis and identifies urokinase as a targetable enzyme to counteract ILEI activity. Pharmacological inhibition of urokinase in TPA-induced K5-ILEIind mice results in significant improvement of psoriasiform symptoms by reducing ILEI secretion. The ILEI signature distinguishes psoriasis from healthy skin with uPA ranking among the top “separator” genes. Our study identifies ILEI as a key driver in psoriasis, indicates the relevance of ILEI-regulated genes for disease manifestation and shows the clinical impact of ILEI and urokinase as novel potential therapeutic targets in psoriasis.",
+      "funder": [],
+      "identifier": "S-BIAD661",
+      "keywords": [
+        "data source file, FAM3C/ILEI, psoriasis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "FAM3C/ILEI protein is elevated in psoriatic lesions and triggers psoriasiform hyperproliferation in mice",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD661/9ab1c216-1f04-47a6-bddd-6aca322cb475/c23ec456-3a70-4363-870d-45f90da52388.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7911-3427",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e1a980ac-893d-4899-99f1-43d8ee671a48"
+        }
+      ],
+      "email": "agnes.csiszar@meduniwien.ac.at",
+      "name": "Agnes Csiszar"
+    },
+    {
+      "@id": "#e1a980ac-893d-4899-99f1-43d8ee671a48",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Medical University of Vienna"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#c3f2e378-d10f-4ab0-8057-eecf7890ca62",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human and mouse skin",
+      "name": "FAM3C/ILEI protein is elevated in psoriatic lesions and triggers psoriasiform hyperproliferation in mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#2a2c0b53-5614-4729-9761-be6e336279c7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "diverse",
+      "labEquipment": "diverse, fluorescent and bright field microscopic images and Western blots",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000365"
+        }
+      ],
+      "name": "data source file"
+    },
+    {
+      "@id": "obo:FBbi_00000365",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FLIP"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 271
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1142027130
+    }
+  ]
+}

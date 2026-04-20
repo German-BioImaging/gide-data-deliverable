@@ -1,0 +1,290 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000397/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000397/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000397",
+      "name": "Flexible Adjustment of Oxytocin Neuron Activity in Mother Mice Revealed by Microendoscopy",
+      "description": "Oxytocin (OT) neurons in the hypothalamic paraventricular nucleus (PVH) play an important role in a range of physiological and behavioral processes, including the initiation of milk ejection and the regulation of parental behaviors in mothers. However, their activity patterns at the single-cell level remain poorly understood. Using microendoscopic Ca2+ imaging in freely moving mother mice, we demonstrate highly correlated pulsatile activity among individual OT neurons during lactation. The number of OT neurons engaged in the pulsatile activity, along with the characteristics of individual waveforms, was dynamically modulated by lactation and weaning experiences. Notably, only 10% of the imaged OT neurons exhibited a significantly elevated response during pup retrieval, a hallmark of maternal behaviors, with a magnitude 18 times smaller than that observed during lactation. Collectively, these findings demonstrate the utility of microendoscopic imaging for PVH OT neurons and highlight the flexible adjustments of their individual activity patterns in freely behaving mother mice.",
+      "datePublished": "2024-12-17",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Oxytocin/metabolism[major]",
+        "Neurons/physiology[major]",
+        "Neurons/metabolism[major]",
+        "Mice",
+        "Female",
+        "Paraventricular Hypothalamic Nucleus/metabolism[major]",
+        "Paraventricular Hypothalamic Nucleus/physiology[major]",
+        "Paraventricular Hypothalamic Nucleus/cytology[major]",
+        "Lactation/physiology[major]",
+        "Endoscopy/methods",
+        "Maternal Behavior/physiology",
+        "Calcium/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1126/sciadv.adt1555"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2024.09.18.613777"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0060156"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0014042"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "#imaging-technique-1"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "#imaging-technique-3"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000284"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazunari Miyamichi",
+      "email": "kazunari.miyamichi@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Lab for comparative connectomics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "Please specify the funding organization(s) and grant number."
+    },
+    {
+      "@id": "https://doi.org/10.1126/sciadv.adt1555",
+      "@type": "ScholarlyArticle",
+      "name": "Flexible adjustment of oxytocin neuron activity in mouse dams revealed by microendoscopy.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2024.09.18.613777",
+      "@type": "ScholarlyArticle",
+      "name": "Flexible Adjustment of Oxytocin Neuron Activity in Mother Mice Revealed by Microendoscopy",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "F1 hybrid of C57BL/6N and FVB strain for TIFF files. C57BL/6N for CSV files.",
+      "description": "F1 hybrid of C57BL/6N and FVB strain for TIFF files. C57BL/6N for CSV files.",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060156",
+      "@type": "DefinedTerm",
+      "name": "Milk ejection reflux"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0014042",
+      "@type": "DefinedTerm",
+      "name": "Neuron"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "TIFF files",
+      "description": "TIFF files",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "microendoscopic imaging with GCaMP6s",
+      "description": "microendoscopic imaging with GCaMP6s",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "CSV files",
+      "description": "CSV files",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-3"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "fiber photometory with GCaMP6s",
+      "description": "fiber photometory with GCaMP6s",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000284"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-technique-1",
+      "@type": "DefinedTerm",
+      "name": "TIFF files"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
+      "@type": "DefinedTerm",
+      "name": "microendoscopic imaging with GCaMP6s"
+    },
+    {
+      "@id": "#imaging-technique-3",
+      "@type": "DefinedTerm",
+      "name": "CSV files"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000284",
+      "@type": "DefinedTerm",
+      "name": "fiber photometory with GCaMP6s"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1568650682368,
+      "description": "1.6 TB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 398,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

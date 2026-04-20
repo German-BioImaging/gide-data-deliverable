@@ -1,0 +1,230 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/4-Keller-FlyEmbryo/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/4-Keller-FlyEmbryo/",
+      "@type": "Dataset",
+      "identifier": "4-Keller-FlyEmbryo",
+      "name": "4-Keller-FlyEmbryo",
+      "description": "4-Keller-FlyEmbryo",
+      "datePublished": "2013-10-03",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Animals",
+        "Drosophila melanogaster/growth & development",
+        "Embryo, Nonmammalian",
+        "Microscopy/instrumentation[major]",
+        "Microscopy/methods[major]",
+        "Zebrafish/growth & development"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/nmeth.1476"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0009790"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Philipp J. Keller",
+      "email": "keller@embl.de",
+      "description": "Organization: Molecular Biology Laboratory; Department: Cell Biology and Biophysics Unit",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00tw3jy02"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Philipp J Keller"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Annette D Schmidt"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Anthony Santella"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Khaled Khairy"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Zhirong Bao"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Joachim Wittbrodt"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Ernst H K Stelzer"
+    },
+    {
+      "@id": "https://ror.org/00tw3jy02",
+      "@type": "Organization",
+      "name": "Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.1476",
+      "@type": "ScholarlyArticle",
+      "name": "Fast, high-contrast imaging of animal development with scanned light sheet-based structured-illumination microscopy.",
+      "datePublished": "2010"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Drosophila melanogaster",
+      "description": "Drosophila melanogaster",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "vernacularName": "fly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@type": "DefinedTerm",
+      "name": "embryo development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 4301626808,
+      "description": "4.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 12,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

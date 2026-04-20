@@ -1,0 +1,188 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST1083"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST1083",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#30d7de4e-b7b4-42a2-b863-49cde3b2319d"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2f4799b3-5192-4cd9-97d5-854bc7d0d21a"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ba543707-958a-4870-ad86-41c9a297e21c"
+        },
+        {
+          "@id": "#fc62241a-9b14-4a2c-a169-775f8039ef13"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-11",
+      "description": "Image data of Spatial distribution of three ARGONAUTEs regulates the anther phasiRNA pathway",
+      "funder": [],
+      "identifier": "S-BSST1083",
+      "keywords": [
+        "Rice, wildtype, ago1b, ago1d, cultivar Nipponbare"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Spatial distribution of three ARGONAUTEs regulates the anther phasiRNA pathway",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BSST1083/07b9ced8-1b50-4dd2-9d61-2a696cb49b3c/24fc870f-423e-4756-b8d1-fa56c796155d.png"
+      ]
+    },
+    {
+      "@id": "#ba543707-958a-4870-ad86-41c9a297e21c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a57686d5-260b-4808-b11a-96797297b5af"
+        }
+      ],
+      "email": "reina.komiya@oist.jp",
+      "name": "Reina Komiya"
+    },
+    {
+      "@id": "#fc62241a-9b14-4a2c-a169-775f8039ef13",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a57686d5-260b-4808-b11a-96797297b5af"
+        }
+      ],
+      "email": "koji.koizumi@oist.jp",
+      "name": "Koji Koizumi"
+    },
+    {
+      "@id": "#a57686d5-260b-4808-b11a-96797297b5af",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Okinawa Institute of Science and Technology Graduate University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#2f4799b3-5192-4cd9-97d5-854bc7d0d21a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Rice cells, Wildtype, ago1b, ago1d, and ago1bago1d mutants.",
+      "name": "Biosample",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#30d7de4e-b7b4-42a2-b863-49cde3b2319d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See Nature communications (2023) 12:3333",
+      "labEquipment": "Stereo, Lightsheet, Confocal, Bright-field microscopes",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 98
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8221336864
+    }
+  ]
+}

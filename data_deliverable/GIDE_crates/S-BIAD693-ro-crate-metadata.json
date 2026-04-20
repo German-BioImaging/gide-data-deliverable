@@ -1,0 +1,188 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD693"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD693",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d69f28cb-333c-4861-85fe-f169b91a5ed8"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fc834939-fdda-45c3-8cf9-c2122f8a7149"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3901-4691"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-05-01",
+      "description": "Large-scale, live cell imaging-based pooled CRISPR/Cas9 knockout screens to understand essential gene function.",
+      "funder": [],
+      "identifier": "S-BIAD693",
+      "keywords": [
+        "Live-cell",
+        "Fluorescence",
+        "CRISPR",
+        "mitosis",
+        "screen",
+        "pooled screen",
+        "gene knockout"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "The phenotypic landscape of essential human genes - Secondary live cell screen",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3901-4691",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3bc729cf-2c38-4d94-89b6-37dc7c474f7f"
+        }
+      ],
+      "email": "lukefunk@broadinstitute.org",
+      "name": "Luke Funk"
+    },
+    {
+      "@id": "#3bc729cf-2c38-4d94-89b6-37dc7c474f7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Broad Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#fc834939-fdda-45c3-8cf9-c2122f8a7149",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells",
+      "name": "Fixed cell culture",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d69f28cb-333c-4861-85fe-f169b91a5ed8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "See associated publication for acquisition details. In short, phenotype images were acquired with a 20X objective lens across a small z-stack, tiling fully across each well and plate. Sequencing images were acquired with a 10X objective lens in a single focal plane, tiling fully across each well and plate.",
+      "labEquipment": "See associated publication for microscope details. In short, a Nikon Ti2 was used for epifluorescence imaging with 10X and 20X objective lenses.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Imaging acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 10468
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12058655370812
+    }
+  ]
+}

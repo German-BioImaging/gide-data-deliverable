@@ -1,0 +1,192 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD606"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD606",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2f00858d-b0b4-49fc-9635-d918637731ee"
+        },
+        {
+          "@id": "obo:FBbi_00001002"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c96dd8d0-c44f-4e91-b092-e67fff3a7abb"
+        },
+        {
+          "@id": "obo:NCBITaxon_261975"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#62cd2ebc-fd63-4b1d-82f3-ee8ff3fa950a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-01-31",
+      "description": "µCT datasets of Pycnogonum litorale specimens that had been subjected to various degrees of posterior amputation.",
+      "funder": [],
+      "identifier": "S-BIAD606",
+      "keywords": [
+        "Pycnogonida",
+        "sea spider",
+        "Pantopoda",
+        "Arthropoda",
+        "regeneration",
+        "evolution",
+        "µCT",
+        "development",
+        "segmentation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "The sea spider Pycnogonum litorale overturns the paradigm of the absence of axial regeneration in molting animals",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD606/38026912-4a13-406d-9751-3bdb444f729b/cd1c3ba0-dd52-4b7c-9244-53689fc9ee76.png"
+      ]
+    },
+    {
+      "@id": "#62cd2ebc-fd63-4b1d-82f3-ee8ff3fa950a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e993d278-8704-48eb-a157-220f1ed3a361"
+        }
+      ],
+      "email": "georg.brenneis@univie.ac.at",
+      "name": "Georg Brenneis"
+    },
+    {
+      "@id": "#e993d278-8704-48eb-a157-220f1ed3a361",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Vienna"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_261975",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Pycnogonum litorale"
+    },
+    {
+      "@id": "#c96dd8d0-c44f-4e91-b092-e67fff3a7abb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Complete specimens and selected ROIs",
+      "name": "Pycnogonida (sea spiders)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_261975"
+      }
+    },
+    {
+      "@id": "#2f00858d-b0b4-49fc-9635-d918637731ee",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Dried specimens were placed in plastic tubes for overview scans. For higher resolution scans of the posterior body region with the regenerates, they were subsequently attached to plastic welding rods with hot glue. Scans were performed under 40 kV/200 μA/8 W or 30 kV/200 μA/6 W settings. Depending on the specimen size and region of interest, a 4×, 10×, or 20× objective was chosen. Exposure times were individually adjusted for each scan, ranging from 0.75 to 6.5 s. To reduce noise, binning 2 was applied during data acquisition. Tomography projections were reconstructed with the XMReconstructor software (Carl Zeiss Microscopy) with binning 1 (= full resolution) and TIFF format image stacks as output.",
+      "labEquipment": "Xradia MicroXCT-200 (Carl Zeiss Microscopy)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00001002"
+        }
+      ],
+      "name": "Pycnogonum litorale µCT"
+    },
+    {
+      "@id": "obo:FBbi_00001002",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "X-ray computed tomography"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 25
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 40004315670
+    }
+  ]
+}

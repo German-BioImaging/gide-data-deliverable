@@ -1,0 +1,279 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2301"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2301",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#14664cd7-9595-4195-9bf4-d06c840ca01d"
+        },
+        {
+          "@id": "#4b3e6659-e51a-4ee5-81c5-d35ab2edb385"
+        },
+        {
+          "@id": "#1d92ac64-ee1a-48b6-b52b-ad9b72da5922"
+        },
+        {
+          "@id": "#6c580789-3d1c-49b1-84a7-43e2acd7732d"
+        },
+        {
+          "@id": "#4dc4023f-bf9b-464d-abf2-264979aced09"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#01bb0c4c-f703-4a3a-8c7b-380c31d39b8a"
+        },
+        {
+          "@id": "#b3921c2f-f7cb-4d38-bc9d-281b685a8287"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4416-3720"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-01",
+      "description": "Lung cancer is the leading cause of cancer-related deaths worldwide. Existing therapeutic options have limited efficacy, particularly for lung squamous cell carcinoma (LUSC), underscoring the critical need for the identification of new therapeutic targets. We previously demonstrated that the Transmembrane Serine Protease TMPRSS11B promotes transformation of human bronchial epithelial cells and enhances lactate export from LUSC cells. To determine the impact of TMPRSS11B activity on the host immune system and the tumor microenvironment (TME), we evaluated the effect of Tmprss11b depletion in a syngeneic mouse model. Tmprss11b depletion significantly reduced tumor burden in immunocompetent mice and triggered an infiltration of immune cells. RNA FISH analysis and spatial transcriptomics in the autochthonous Rosa26-Sox2-Ires-GfpLSL/LSL; Nkx2-1fl/fl; Lkb1fl/fl (SNL) model revealed an enrichment of Tmprss11b expression in LUSC tumors, specifically in Krt13+ hillock-like cells. Ultra-pH sensitive nanoparticle imaging and metabolite analysis identified regions of acidification, elevated lactate, and enrichment of immunosuppressive (M2-like) macrophages in LUSC tumors. These results demonstrate that TMPRSS11B promotes an acidified and immunosuppressive TME and nominate this enzyme as a therapeutic target in LUSC. ",
+      "funder": [],
+      "identifier": "S-BIAD2301",
+      "keywords": [
+        "squamous cell lung cancer",
+        "TMPRSS11B",
+        "lactate transport",
+        "acidified tumor microenvironment",
+        "immune suppression",
+        "hillock cells",
+        "KRT13",
+        "KLF4"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "TMPRSS11B promotes an acidified microenvironment and immune suppression in squamous lung cancer\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2301/86128e64-8745-4268-bdb9-f8416c49e422/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4416-3720",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05byvp690"
+        }
+      ],
+      "email": "harishankar.sunil@utsouthwestern.edu",
+      "name": "Hari Shankar Sunil"
+    },
+    {
+      "@id": "https://ror.org/05byvp690",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Texas Southwestern Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#01bb0c4c-f703-4a3a-8c7b-380c31d39b8a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "KLN205 subcutaneous tumors. Tumor samples from the LUSC syngeneic model KLN205 (subcutaneously grown in DBA/2 mice).",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b3921c2f-f7cb-4d38-bc9d-281b685a8287",
+      "@type": [
+        "BioSample"
+      ],
+      "description": ".. Whole lung sections from the Rosa26-Sox2-Ires-Gfp^LSL/LSL;Nkx2-1^fl/fl;Lkb1^fl/fl (SNL)  genetically engineered mouse model (GEMM) of LUSC.",
+      "name": "Biosample 2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#14664cd7-9595-4195-9bf4-d06c840ca01d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Whole slide scans were obtained using Zeiss Axioscan.Z1 at 20x magnification.",
+      "labEquipment": "Zeiss Axioscan.Z1 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image Acquisition 1 (fluorescence microscopy)"
+    },
+    {
+      "@id": "#1d92ac64-ee1a-48b6-b52b-ad9b72da5922",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Magnetic resonance imaging (MRI) was performed on mice using the 7T Bruker Biospec instrument at the Advanced Imaging Research Center at UT Southwestern.",
+      "labEquipment": " 7T Bruker Biospec",
+      "measurementTechnique": [],
+      "name": "Image Acquisition 3 (MRI)"
+    },
+    {
+      "@id": "#4b3e6659-e51a-4ee5-81c5-d35ab2edb385",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Whole slide scans (brightfield) were obtained using Hamamatsu NanoZoomer S60 at 20x magnification. ",
+      "labEquipment": "Hamamatsu NanoZoomer S60 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image Acquisition 2 (bright-field microscopy)"
+    },
+    {
+      "@id": "#4dc4023f-bf9b-464d-abf2-264979aced09",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The Leica laser LDM6 microdissection microscope was used to selectively cut the tissue areas exclusively identified as lung squamous cell carcinoma, lung adenocarcinoma, adeno-squamous, low pH, high pH, and normal tissue regions based on adjacent histology staining and fluorescent UPS probe distribution. Each excised area was collected in individual PCR vials. ",
+      "labEquipment": "Leica laser LDM6",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image acquisition 5 (Laser capture microdissection)"
+    },
+    {
+      "@id": "#6c580789-3d1c-49b1-84a7-43e2acd7732d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The lungs were imaged with liver, spleen, kidney, heart, and brain from the same mouse for brightfield (BF) and Indocyanine green (ICG) signals using Pearl ® Trilogy small animal imaging system (LICOR Bio). ",
+      "labEquipment": "Pearl ® Trilogy small animal imaging system (LICOR Bio) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image Acquisition 4 (Ultra pH-sensitive nanoparticle imaging)"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5080
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 77571840494
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1663"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1663",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3e279b39-2f4b-47a2-9892-f0234823ad8d"
+        },
+        {
+          "@id": "#38f4e4cb-e755-4c33-8371-a36b9002059c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#007cead7-c213-45ec-a1d9-55f14249aa23"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2618-0962"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-10",
+      "description": "Fetal infection with human cytomegalovirus (hCMV) can cause sensorineural hearing loss and vestibular impairment, yet its pathogenesis remains unclear. This study aims to identify potential target cell types of hCMV in the human fetal inner ear. \nViral particles use several envelope glycoproteins to enter target cells, including the pentameric complex, the trimeric complex and glycoprotein B. Platelet-derived growth factor receptor alpha (PDGFRA) serves as the receptor in fibroblasts, neuropilin-2 (NRP2) in epithelial, endothelial and dendritic cells as well as in leukocytes. Upon binding of these glycoproteins, glycoprotein B initiates membrane fusion which is proposed to be mediated by EGFR. When and where these proteins are expressed in the fetal inner ear during development is unknown. To address this, expression patterns of PDGFRA, NRP2 and EGFR were investigated in human fetal inner ear tissue using single-nucleus RNA sequencing data (first trimester: N=2) and immunohistochemistry (first trimester: N=6, second trimester: N=5) . \nPDGFRA gene and protein expression was detected in mesenchymal cells, NRP2 protein expression in epithelial cells and endothelial cells, and EGFR gene and protein expression in both epithelial cells and mesenchymal cells. Notably, all three receptors were present in tissue from the first and second trimesters. \nIn conclusion, hCMV host receptors PDGFRA, NRP2 and EGFR are expressed in mesenchymal, epithelial and endothelial cells within the cochlea and vestibular organs during the first and second trimesters. These cell types may serve as targets for hCMV infection of the fetal inner ear.",
+      "funder": [],
+      "identifier": "S-BIAD1663",
+      "keywords": [
+        "immunohistochemistry",
+        "immunofluorescence",
+        "inner ear",
+        "pdgfra",
+        "egfr",
+        "nrp2"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Cytomegalovirus host receptor expression in the human fetal inner ear",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1663/8446ab5c-1f68-4929-8b41-049c8a850d3f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2618-0962",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a"
+        }
+      ],
+      "email": "l.c.m.grijpink@lumc.nl",
+      "name": "Lucia Grijpink"
+    },
+    {
+      "@id": "#ca302015-6cbb-45be-9cb4-4d7b965ba72a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leiden University Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#007cead7-c213-45ec-a1d9-55f14249aa23",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human fetal inner ear",
+      "name": "Human fetal inner ear",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#38f4e4cb-e755-4c33-8371-a36b9002059c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "z-stacks were obtained",
+      "labEquipment": "Leica SP8 confocal laser scanning microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Leica SP8 confocal laser scanning microscope "
+    },
+    {
+      "@id": "#3e279b39-2f4b-47a2-9892-f0234823ad8d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Leica DM5500 B microscope was operating under Leica Application Suite X microscope software (LAS X, Leica Microsystems, Germany)",
+      "labEquipment": "Leica DM5500 B microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Leica DM5500 B microscope"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 61
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 15091234625
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1135"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1135",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d9359d40-4b56-41fe-88e8-7a816f77d32a"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#08266124-05c0-47e3-ab82-25f8a7719dc3"
+        },
+        {
+          "@id": "obo:NCBITaxon_9615"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3956-9363"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2368-1534"
+        },
+        {
+          "@id": "#95c095ff-b228-4128-af37-f62ebd08dfec"
+        },
+        {
+          "@id": "#94d7efc5-a1b7-4333-aabb-cd0a2d699494"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-30",
+      "description": "This dataset shows calcium signalling waves in a MDCK epithelium. The cells stably express GCaMP6S, a GFP-based intracellular calcium sensor. Imaging data courtesy of Yasuyuki Fujita (Y. Takeuchi et al., “Calcium Wave Promotes Cell Extrusion,” Current Biology, vol. 30, no. 4. Elsevier BV, pp. 670-681.e6, Feb. 2020. doi: 10.1016/j.cub.2019.11.089). Collective event analysis has been performed using ARCOS (P. A. Gagliardi et al., “Automatic detection of spatio-temporal signaling patterns in cell collectives,” Journal of Cell Biology, vol. 222, no. 10. Rockefeller University Press, Jul. 27, 2023. doi: 10.1083/jcb.202207048). The analysis scripts and results corresponding to the raw data published here are accessible online (Maciej Dobrzynski, “ARCOS, a computational approach for automatic recognition of collective signalling.” Mendeley, Apr. 26, 2023. doi: 10.17632/8GCNCG6ZKT.3).\nAdditionally, the dataset has been used to showcase the capabilities of conv-paint, an interactive pixel classification tool for napari. \n\nData dimensions: [t,y,x] -> [300,1024,1024]\nPixel resolution: 0.86µm/px (880.64μm total)\nTime resolution: 5sec/frame (25min total)\nFiletype: TIFF ",
+      "funder": [],
+      "identifier": "S-BIAD1135",
+      "keywords": [
+        "calcium",
+        "timelapse",
+        "fluorescence imaging",
+        "epithelium",
+        "collective events"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Calcium waves in MDCK epithelium",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#94d7efc5-a1b7-4333-aabb-cd0a2d699494",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3cfda99f-0444-4fac-98a0-841852770f99"
+        }
+      ],
+      "email": "olivier.pertz@unibe.ch",
+      "name": "Olivier Pertz"
+    },
+    {
+      "@id": "#95c095ff-b228-4128-af37-f62ebd08dfec",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#35909016-0563-415e-9d52-3f8c7050c354"
+        }
+      ],
+      "email": "gyro@staff.kanazawa-u.ac.jp",
+      "name": "Yasuto Takeuchi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3956-9363",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#78dc7768-f45e-4b55-95d4-6fc12860ec9a"
+        }
+      ],
+      "email": "lucien.hinderling@unibe.ch",
+      "name": "Lucien Hinderling"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2368-1534",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3cfda99f-0444-4fac-98a0-841852770f99"
+        }
+      ],
+      "email": "maciej.dobrzynski@unibe.ch",
+      "name": "Maciej Dobrzyński"
+    },
+    {
+      "@id": "#35909016-0563-415e-9d52-3f8c7050c354",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Division of Molecular Oncology, Institute for Genetic Medicine, Hokkaido University Graduate School of Chemical Sciences and Engineering, 060-0815 Sapporo, Japan"
+    },
+    {
+      "@id": "#3cfda99f-0444-4fac-98a0-841852770f99",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Cell Biology, University of Bern, Baltzerstrasse 4, 3012 Bern, Switzerland"
+    },
+    {
+      "@id": "#78dc7768-f45e-4b55-95d4-6fc12860ec9a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Graduate School for Cellular and Biomedical Sciences, University of Bern, SwitzerlanGraduate School for Cellular and Biomedical Sciences, University of Bern, Switzerland"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9615",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Canis lupus familiaris"
+    },
+    {
+      "@id": "#08266124-05c0-47e3-ab82-25f8a7719dc3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "MDCK epithelium",
+      "name": "MDCK epithelium",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9615"
+      }
+    },
+    {
+      "@id": "#d9359d40-4b56-41fe-88e8-7a816f77d32a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Data dimensions: [t,y,x] -> [300,1024,1024]\nPixel resolution: 0.86µm/px (880.64μm total)\nTime resolution: 5sec/frame (25min total)",
+      "labEquipment": "fluorescence microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "MDCK epithelium acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 672661949
+    }
+  ]
+}

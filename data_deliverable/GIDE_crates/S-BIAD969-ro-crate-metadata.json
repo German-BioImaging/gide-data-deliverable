@@ -1,0 +1,217 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD969"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD969",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c960ad7e-57c9-40a6-be25-9c28859a092c"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c351bc21-80f8-4649-bd0b-c388de0b99e5"
+        },
+        {
+          "@id": "#fe42f062-ceab-4220-bad2-a10c4a85f030"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6614-2325"
+        },
+        {
+          "@id": "#88bb958a-eb4e-43ab-b0e2-725314d05882"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-20",
+      "description": "Differentiation of induced pluripotent stem cells (iPSC) towards different neuronal lineages has enabled diverse cellular models of human neurodevelopment and related disorders. However, in vitro differentiation is a variable process that frequently leads to heterogeneous cell populations that may confound disease-relevant phenotypes. To characterize the baseline and diversity of cortical neurodevelopment in vitro, we differentiated iPSC lines from multiple healthy donors to cortical neurons and profiled the transcriptomes of 60,000 single cells across three timepoints spanning 70 days. We compared the cell types observed in vitro to those seen in vivo and in organoid cultures to assess how well iPSC-derived cells recapitulate neurodevelopment in vivo. We found that over 60% of the cells resembled those seen in the fetal brain with high confidence, while 28% represented metabolically abnormal cell states and broader neuronal classes observed in organoids. Further, we used high-content imaging to quantify morphological phenotypes of the differentiating neurons across the same time points using Cell Painting. By modeling the relationship between image-based features and gene expression, we compared cell type- and donor-specific effects across the two modalities at single cell resolution. We found that while morphological features capture broader neuronal classes than scRNA-seq, they enhance our ability to quantify the biological processes that drive neuronal differentiation over time, such as mitochondrial function and cell cycle. Finally, we show that iPSC-derived cortical neurons are a relevant model for a range of brain-related complex traits. Taken together, we provide a comprehensive molecular atlas of human cortical neuron development in vitro that introduces a relevant framework for disease modeling.",
+      "funder": [],
+      "identifier": "S-BIAD969",
+      "keywords": [
+        "Cell Painting",
+        "Neuronal development",
+        "IPSC differentiation",
+        "in vitro 2D culture"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Characterization of cortical neurodevelopment in vitro using gene expression and morphology profiles from single cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD969/5e0d343a-2322-4592-9e21-37db94a16249/25105788-d0a8-4585-b41f-c73850c6931c.png"
+      ]
+    },
+    {
+      "@id": "#88bb958a-eb4e-43ab-b0e2-725314d05882",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139"
+        }
+      ],
+      "email": "helena.kilpinen@helsinki.fi",
+      "name": "Helena Kilpinen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6614-2325",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139"
+        }
+      ],
+      "email": "dimitri.meistermann@helsinki.fi",
+      "name": "Dimitri Meistermann"
+    },
+    {
+      "@id": "#c31a9d28-487d-49b6-be5e-3573a5854139",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Helsinki"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#c351bc21-80f8-4649-bd0b-c388de0b99e5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "2D culture of IPSCs at day 70 of differentiation toward cortical neuron fate",
+      "name": "CP_D70",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#fe42f062-ceab-4220-bad2-a10c4a85f030",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "2D culture of IPSCs at day 20 of differentiation toward cortical neuron fate",
+      "name": "CP_D40",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c960ad7e-57c9-40a6-be25-9c28859a092c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The imaging was done using the 40x NA 1.1 water immersion object and with the following lasers: 405 nm (emission window 435-480 nm), 488 nm (500-550 nm), 561 nm (570-630 nm), and 640 nm (650-760 nm), resulting in Golgi apparatus, nucleic acid and cytoskeletal dyes being captured in the same channel (CGAN). Images were captured using the Andor Zyla sCMOS camera (2160 x 2160 pixels; 6.5 μm pixel size). For each well, 28 fields on 3 planes were acquired. Amongst images taken from multiple planes (n=3), the z-stack with the highest intensity per channel was selected for analysis.",
+      "labEquipment": "The cells were imaged with PerkinElmer Opera Phenix High Content Screening System using the Harmony Software v4.9. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Imaq1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 40320
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 376245959040
+    }
+  ]
+}

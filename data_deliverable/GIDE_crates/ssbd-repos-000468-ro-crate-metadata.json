@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000468/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000468/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000468",
+      "name": "Exposed Hsp70-binding site impacts yeast Sup35 prion disaggregation and propagation",
+      "description": "The dynamic balance between formation and disaggregation of amyloid fibrils is associated with many neurodegenerative diseases. Multiple chaperones interact with and disaggregate amyloid fibrils, which impacts amyloid propagation and cellular phenotypes. However, it remains poorly understood whether and how site-specific binding of chaperones to amyloids facilitates the concerted disaggregation process and modulates physiological consequences in vivo. Here, we identified binding sites of Ssa1, Sis1, and Hsp104 chaperones for Sup35, the protein determinant of yeast prion [PSI+] yeast. Our biophysical and genetic analyses with various Sup35 deletion mutants and amyloid conformations revealed that the Ssa1-binding to the region outside amyloid core plays a key role in facilitating disaggregation and propagation of yeast prions both in vitro and in vivo. Furthermore, we developed a reconstitution system, including the Ssa1-binding tag and the HAP/Caseinolytic protease P (ClpP) hybrid chaperones, and found that this reconstitution system successfully degraded distinct prion strain conformations. Together, these results show that the properly positioned, exposed Ssa1-binding region in amyloid fibrils influences the efficiency of amyloid disaggregation and propagation, and eventually prion strain phenotypes. More broadly, our findings provide molecular foundations for previous, puzzling observations of prion propagation in vivo, and offer insights into elimination of amyloid deposits in cells.",
+      "datePublished": "2025-09-12",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Saccharomyces cerevisiae Proteins/metabolism[major]",
+        "Saccharomyces cerevisiae Proteins/genetics[major]",
+        "Saccharomyces cerevisiae Proteins/chemistry[major]",
+        "Peptide Termination Factors/metabolism[major]",
+        "Peptide Termination Factors/chemistry[major]",
+        "Peptide Termination Factors/genetics[major]",
+        "Saccharomyces cerevisiae/metabolism[major]",
+        "Saccharomyces cerevisiae/genetics[major]",
+        "HSP70 Heat-Shock Proteins/metabolism[major]",
+        "Binding Sites",
+        "Prions/metabolism[major]",
+        "Prions/chemistry[major]",
+        "Amyloid/metabolism[major]",
+        "Protein Binding",
+        "Heat-Shock Proteins/metabolism",
+        "Heat-Shock Proteins/genetics",
+        "Heat-Shock Proteins/chemistry",
+        "Adenosine Triphosphatases/metabolism",
+        "Adenosine Triphosphatases/genetics",
+        "Molecular Chaperones/metabolism",
+        "Molecular Chaperones/genetics",
+        "Protein Aggregates",
+        "HSP40 Heat-Shock Proteins"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.2318162121"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Motomasa Tanaka",
+      "email": "motomasa.tanaka@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Brain Science; Laboratory: Laboratory for Protein Conformation Diseases",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.2318162121",
+      "@type": "ScholarlyArticle",
+      "name": "Exposed Hsp70-binding site impacts yeast Sup35 prion disaggregation and propagation.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "recombinant proteins"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932",
+      "@type": "Taxon",
+      "scientificName": "Saccharomyces cerevisiae",
+      "vernacularName": "baker's yeast"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 8495104,
+      "description": "8.5 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 82,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

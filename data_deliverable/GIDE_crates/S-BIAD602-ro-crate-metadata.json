@@ -1,0 +1,267 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD602"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD602",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f1a5e10d-5ce5-49d7-ae95-b1f17d11673d"
+        },
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d5d0d083-79e3-4dc9-a357-c5abdf5b393e"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4185-2467"
+        },
+        {
+          "@id": "#d73c2a37-ebee-449d-a58f-ed11583ca0b7"
+        },
+        {
+          "@id": "#3208b0e2-8b74-411c-a208-9e374da3ac5e"
+        },
+        {
+          "@id": "#eac8bdfb-f713-4a9c-bb92-4801c9c36eb0"
+        },
+        {
+          "@id": "#4177499a-b9da-4323-808b-82ca4b99e8a5"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2022-12-17",
+      "description": "Two photon microscopy time series and lightsheet microscopy z-stack and time series of early Drosophila embryogenesis during posterior midgut invagination. ",
+      "funder": [],
+      "identifier": "S-BIAD602",
+      "keywords": [
+        "Drosophila",
+        "morphogenesis",
+        "two-photon",
+        "lightsheet",
+        "myosin",
+        "GAP43"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Data repository for \"Curvature gradient drives polarized tissue flow in the Drosophila embryo\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD602/dbdc5f4e-bd64-4f04-8eae-eef1cd11f0b3/1835ec41-8eff-49c3-b04d-4141f5774242.png"
+      ]
+    },
+    {
+      "@id": "#3208b0e2-8b74-411c-a208-9e374da3ac5e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02me5cy06"
+        }
+      ],
+      "email": "marc-eric.perrin@univ-amu.fr",
+      "name": "Marc-Eric Perrin"
+    },
+    {
+      "@id": "#4177499a-b9da-4323-808b-82ca4b99e8a5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04ex24z53"
+        }
+      ],
+      "email": "thomas.lecuit@univ-amu.fr",
+      "name": "Thomas Lecuit"
+    },
+    {
+      "@id": "#d73c2a37-ebee-449d-a58f-ed11583ca0b7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02me5cy06"
+        }
+      ],
+      "email": "bandan.chakrabortty@univ-amu.fr",
+      "name": "Bandan Chakrabortty"
+    },
+    {
+      "@id": "#eac8bdfb-f713-4a9c-bb92-4801c9c36eb0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/052bbtn31"
+        }
+      ],
+      "email": "matthias.merkel@univ-amu.fr",
+      "name": "Matthias Merkel"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4185-2467",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02me5cy06"
+        }
+      ],
+      "email": "emily.gehrels@univ-amu.fr",
+      "name": "Emily Gehrels"
+    },
+    {
+      "@id": "https://ror.org/02me5cy06",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Developmental Biology Institute of Marseille"
+    },
+    {
+      "@id": "https://ror.org/04ex24z53",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Collège de France"
+    },
+    {
+      "@id": "https://ror.org/052bbtn31",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre de Physique Théorique"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#d5d0d083-79e3-4dc9-a357-c5abdf5b393e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila posterior midgut invagination",
+      "name": "Drosophila",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#f1a5e10d-5ce5-49d7-ae95-b1f17d11673d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "1040 nm pulsed laser for membrane (GAP43::mScarlet), 920 nm pulsed laser for myosin (sqh:GFP)",
+      "labEquipment": "Two photon microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "name": "Two photon"
+    },
+    {
+      "@id": "obo:FBbi_00000254",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 292798210
+    }
+  ]
+}

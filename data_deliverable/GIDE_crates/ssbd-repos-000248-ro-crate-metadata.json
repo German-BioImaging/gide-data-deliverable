@@ -1,0 +1,249 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000248/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000248/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000248",
+      "name": "Imaging dataset of migrating MDCK cells and wounded mouse ear skin.",
+      "description": "Upon the initiation of collective cell migration, cells at the free edge are specified as the leader cells; however, the mechanism underlying the leader cell specification remains elusive. Here, we show that lamellipodial extension after the release from mechanical confinement causes sustained ERK activation and underlies the leader cell specification. Live-imaging with FRET-based biosensors revealed that leader cells exhibit sustained ERK activation in an HGF-dependent manner. Meanwhile, follower cells exhibit oscillatory ERK activation waves in an EGF signaling-dependent manner. Lamellipodial extension at the free edge increases the cellular sensitivity to HGF. This HGF-dependent sustained ERK activation in turn promotes lamellipodial extension and traction force generation, thereby forming a positive feedback loop between cell extension and ERK activation, and specifying the cells at the free edge as the leader cells. Collectively, our findings reveal that integration of physical environment and biochemical cues underlies the leader cell specification during collective cell migration.",
+      "datePublished": "2022-09-29",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Movement/physiology",
+        "Dogs",
+        "Epidermal Growth Factor/pharmacology",
+        "Extracellular Signal-Regulated MAP Kinases/metabolism[major]",
+        "Feedback",
+        "Hepatocyte Growth Factor[major]",
+        "Mice"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.devcel.2022.09.003"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1903977"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000277"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "#imaging-technique-2"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Naoya Hino",
+      "email": "naoya.hino@ist.ac.at",
+      "description": "Organization: Institute of Science and Technology Austria",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03gnh5541"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/03gnh5541",
+      "@type": "Organization",
+      "name": "Institute of Science and Technology Austria"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.devcel.2022.09.003",
+      "@type": "ScholarlyArticle",
+      "name": "A feedback loop between lamellipodial extension and HGF-ERK signaling specifies leader cells during collective cell migration.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mouse: B6N-Tyrc-Brd/BrdCrCrl-Tg(hyBRET-ERK-NES)",
+      "description": "Mouse: B6N-Tyrc-Brd/BrdCrCrl-Tg(hyBRET-ERK-NES)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "hasCellLine": "Madin-Darby canine kidney (MDCK) cells"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "vernacularName": "dog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1903977",
+      "@type": "DefinedTerm",
+      "name": "Collective cell migration"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Wide-field",
+      "description": "Wide-field",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000277"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal",
+      "description": "confocal",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-2"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "and two-photon microscopy",
+      "description": "and two-photon microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000277",
+      "@type": "DefinedTerm",
+      "name": "Wide-field"
+    },
+    {
+      "@id": "#imaging-technique-2",
+      "@type": "DefinedTerm",
+      "name": "confocal"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
+      "@type": "DefinedTerm",
+      "name": "and two-photon microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 87944065024,
+      "description": "87.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 680,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000052/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000052/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000052",
+      "name": "ssbd-repos-000052",
+      "description": "ssbd-repos-000052",
+      "datePublished": "2017-10-03",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Acetylation",
+        "Animals",
+        "Animals, Genetically Modified",
+        "Embryonic Development",
+        "Histone Code",
+        "Histones/metabolism[major]",
+        "Reactive Oxygen Species/metabolism",
+        "Regeneration",
+        "Tail/physiology",
+        "Xenopus Proteins/metabolism[major]",
+        "Xenopus laevis"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1111/gtc.12349"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0006338"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-102"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Ken-ichi T. Suzuki",
+      "email": "suzuk107@hiroshima-u.ac.jp",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03t78wx29"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/03t78wx29",
+      "@type": "Organization",
+      "name": "Hiroshima University"
+    },
+    {
+      "@id": "https://doi.org/10.1111/gtc.12349",
+      "@type": "ScholarlyArticle",
+      "name": "In vivo tracking of histone H3 lysine 9 acetylation in Xenopus laevis during tail regeneration.",
+      "datePublished": "2016"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355",
+      "@type": "Taxon",
+      "scientificName": "Xenopus laevis",
+      "vernacularName": "african clawed frog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006338",
+      "@type": "DefinedTerm",
+      "name": "chromatin remodeling"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 17684480,
+      "description": "17.7 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 16,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

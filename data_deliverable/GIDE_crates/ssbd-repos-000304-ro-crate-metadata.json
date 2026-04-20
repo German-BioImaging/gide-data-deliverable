@@ -1,0 +1,145 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000304/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000304/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000304",
+      "name": "Identifying a lung stem cell subpopulation by combining single-cell morphometrics, organoid culture, and transcriptomics",
+      "description": "Single-cell RNA sequencing is a valuable tool for dissecting cellular heterogeneity in complex systems. However, it is still challenging to estimate the proliferation and differentiation potentials of subpopulations within dormant tissue stem cells. Here, we established a new single-cell analysis method for profiling the organoid-forming capacity and differentiation potential of tissue stem cells to disclose stem cell subpopulations by integrating single-cell morphometrics, organoid-forming assay, and RNA sequencing, a method named scMORN. To explore lung epithelial stem cells, we initially developed feeder-free culture system, which could expand all major lung stem cells, including basal, club, and alveolar type 2 (AT2) cells and found that club cells contained a subpopulation, which showed better survival rate and high proliferation capacity and could differentiate into alveolar cells. Using the scMORN method, we discovered a club cell subpopulation named Muc5b+ and large club (ML-club) cells that efficiently formed organoids than other club or AT2 cells in our feeder-free organoid culture and differentiated into alveolar cells in vitro. Single-cell transcriptome profiling and immunohistochemical analysis revealed that ML-club cells localized at the intrapulmonary proximal airway and distinct from known subpopulation of club cell such as BASCs. Furthermore, we identified CD14 as a cell surface antigen of ML-club cells and showed that purified CD14+ club cells engrafted into injured mouse lungs had better engraftment rate and expansion than other major lung stem cells, reflecting the observations in organoid culture systems. The scMORN method could be adapted to different stem cell tissues to discover useful stem cell subpopulations.",
+      "datePublished": "2023-07-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1093/stmcls/sxad044"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Mitsuru Morimoto",
+      "email": "mitsuru.morimoto@riken.jp",
+      "description": "Organization: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Lung Development and Regeneration",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/023rffy11"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/023rffy11",
+      "@type": "Organization",
+      "name": "RIKEN Center for Biosystems Dynamics Research"
+    },
+    {
+      "@id": "https://doi.org/10.1093/stmcls/sxad044",
+      "@type": "ScholarlyArticle",
+      "name": "Identifying a Lung Stem Cell Subpopulation by Combining Single-Cell Morphometrics, Organoid Culture, and Transcriptomics.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 6929100800,
+      "description": "6.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 74,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

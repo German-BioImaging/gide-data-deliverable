@@ -1,0 +1,568 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD657"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD657",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f6e17243-5d53-44d9-911e-913629ab4f8a"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9c8f61f7-e680-49ee-aabf-477be5cdee9e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#13fb63af-ccfd-4cd9-9960-945b787d670b"
+        },
+        {
+          "@id": "#3873976f-2c78-435c-8d74-e76f4d33a2d2"
+        },
+        {
+          "@id": "#a1513be2-ff2c-4308-a37f-18f1f265653d"
+        },
+        {
+          "@id": "#8e811209-8e04-4f61-8d0d-b47030019b77"
+        },
+        {
+          "@id": "#da37bcad-45e9-42df-9393-3a8aa3227535"
+        },
+        {
+          "@id": "#867c26bf-f5c6-4b04-8d2c-761e8f8705cb"
+        },
+        {
+          "@id": "#8526b1ba-1499-48f5-b74a-e53da7c2a775"
+        },
+        {
+          "@id": "#913a00eb-829c-4880-9769-82a4d0acb1aa"
+        },
+        {
+          "@id": "#edd2921d-01a4-4c86-b9a4-5280d034b09b"
+        },
+        {
+          "@id": "#6a4ac0a2-9f69-483c-ae78-bb541bb4879d"
+        },
+        {
+          "@id": "#df94d79c-5da6-4daa-bb14-60af11ed9875"
+        },
+        {
+          "@id": "#3fd24665-20de-4311-9bd8-6254495d4732"
+        },
+        {
+          "@id": "#074a9bb0-a906-4b8f-9c9c-07897841f1f8"
+        },
+        {
+          "@id": "#f26821c2-4a91-4c06-99dc-88c7762aa5ad"
+        },
+        {
+          "@id": "#3e8abcd8-7759-42dc-bda1-81d141623c97"
+        },
+        {
+          "@id": "#0089e44a-6e62-43fd-9c2c-ead284ae7c20"
+        },
+        {
+          "@id": "#902f0cea-2838-461b-b082-59308777138a"
+        },
+        {
+          "@id": "#89044d8c-219e-402c-911a-bff60b67dba8"
+        },
+        {
+          "@id": "#40f4ce38-2107-4f94-9ddf-9040bfd2bdae"
+        },
+        {
+          "@id": "#c0acf837-0649-4750-8332-e236a653e690"
+        },
+        {
+          "@id": "#2407b48e-41c9-4721-8fda-9354251fdd0f"
+        },
+        {
+          "@id": "#eba4388d-72f6-4505-89cc-4ffdd96ed751"
+        },
+        {
+          "@id": "#12cb0460-7a2c-485a-b643-1acbd3cee502"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-24",
+      "description": "This dataset contains the raw images as well as the metadata used in the paper \"Multi-site assessment of reproducibility in high-content live cell imaging data\". ",
+      "funder": [],
+      "identifier": "S-BIAD657",
+      "keywords": [
+        "Reproducibility, variability, high-content imaging, cell migration, batch effect removal"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Multi-site assessment of reproducibility in high-content cell migration imaging data",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#0089e44a-6e62-43fd-9c2c-ead284ae7c20",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82"
+        }
+      ],
+      "email": "jarama.clucas@icr.ac.uk",
+      "name": "Jarama Clucas"
+    },
+    {
+      "@id": "#074a9bb0-a906-4b8f-9c9c-07897841f1f8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c4a26c72-3ba2-46e8-9f3a-0f98fec92d7f"
+        }
+      ],
+      "email": "merijn.vanerp@radboudumc.nl",
+      "name": "Merijn van Erp"
+    },
+    {
+      "@id": "#12cb0460-7a2c-485a-b643-1acbd3cee502",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "email": "staffan.stromblad@ki.se",
+      "name": "Staffan Strömblad"
+    },
+    {
+      "@id": "#13fb63af-ccfd-4cd9-9960-945b787d670b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "email": "jianjiang.hu@ki.se",
+      "name": "Jianjiang Hu"
+    },
+    {
+      "@id": "#2407b48e-41c9-4721-8fda-9354251fdd0f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c4a26c72-3ba2-46e8-9f3a-0f98fec92d7f"
+        }
+      ],
+      "email": "peter.friedl@radboudumc.nl",
+      "name": "Peter Friedl"
+    },
+    {
+      "@id": "#3873976f-2c78-435c-8d74-e76f4d33a2d2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "email": "xserrapicamal@gmail.com",
+      "name": "Xavier Serra-Picamal"
+    },
+    {
+      "@id": "#3e8abcd8-7759-42dc-bda1-81d141623c97",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c4a26c72-3ba2-46e8-9f3a-0f98fec92d7f"
+        }
+      ],
+      "email": "felix.toenisen@radboudumc.nl",
+      "name": "Felix Weiss"
+    },
+    {
+      "@id": "#3fd24665-20de-4311-9bd8-6254495d4732",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#46497652-9659-4671-8563-e65813813ed3"
+        }
+      ],
+      "email": "evelien.vanhamme@irc.vib-ugent.be",
+      "name": "Evelien Van Hamme"
+    },
+    {
+      "@id": "#40f4ce38-2107-4f94-9ddf-9040bfd2bdae",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#91792e73-6254-4885-9f14-37fda3362547"
+        }
+      ],
+      "email": "christophe.ampe@ugent.be",
+      "name": "Christophe Ampe"
+    },
+    {
+      "@id": "#6a4ac0a2-9f69-483c-ae78-bb541bb4879d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "omsapo@gmail.com",
+      "name": "Omer Polansky"
+    },
+    {
+      "@id": "#8526b1ba-1499-48f5-b74a-e53da7c2a775",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "email": "xiaowei.gong@ki.se",
+      "name": "Xiaowei Gong"
+    },
+    {
+      "@id": "#867c26bf-f5c6-4b04-8d2c-761e8f8705cb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82"
+        }
+      ],
+      "email": "ege.nil@gmail.com",
+      "name": "Nil Ege"
+    },
+    {
+      "@id": "#89044d8c-219e-402c-911a-bff60b67dba8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82"
+        }
+      ],
+      "email": "Erik.Sahai@crick.ac.uk",
+      "name": "Erik Sahai"
+    },
+    {
+      "@id": "#8e811209-8e04-4f61-8d0d-b47030019b77",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#91792e73-6254-4885-9f14-37fda3362547"
+        }
+      ],
+      "email": "leen.vantroys@ugent.be",
+      "name": "Marleen Van Troys"
+    },
+    {
+      "@id": "#902f0cea-2838-461b-b082-59308777138a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82"
+        }
+      ],
+      "email": "dowbaj@mpi-cbg.de",
+      "name": "Anna M. Dowbaj"
+    },
+    {
+      "@id": "#913a00eb-829c-4880-9769-82a4d0acb1aa",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "name": "Yuliia Didan"
+    },
+    {
+      "@id": "#a1513be2-ff2c-4308-a37f-18f1f265653d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c4a26c72-3ba2-46e8-9f3a-0f98fec92d7f"
+        }
+      ],
+      "email": "gert-jan.bakker@radboudumc.nl",
+      "name": "Gert-Jan Bakker"
+    },
+    {
+      "@id": "#c0acf837-0649-4750-8332-e236a653e690",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "benny.geiger@weizmann.ac.il",
+      "name": "Benjamin Geiger"
+    },
+    {
+      "@id": "#da37bcad-45e9-42df-9393-3a8aa3227535",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "sabina.winograd-katz@weizmann.ac.il",
+      "name": "Sabina Winograd-katz"
+    },
+    {
+      "@id": "#df94d79c-5da6-4daa-bb14-60af11ed9875",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#91792e73-6254-4885-9f14-37fda3362547"
+        }
+      ],
+      "email": "bakkali.karima@hotmail.com",
+      "name": "Karima Bakkali"
+    },
+    {
+      "@id": "#eba4388d-72f6-4505-89cc-4ffdd96ed751",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "email": "matteo.bottai@ki.se",
+      "name": "Matteo Bottai"
+    },
+    {
+      "@id": "#edd2921d-01a4-4c86-b9a4-5280d034b09b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "inna.grosheva@gmail.com",
+      "name": "Inna Grosheva"
+    },
+    {
+      "@id": "#f26821c2-4a91-4c06-99dc-88c7762aa5ad",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c4a26c72-3ba2-46e8-9f3a-0f98fec92d7f"
+        }
+      ],
+      "email": "manon.vullings@radboudumc.nl",
+      "name": "Manon Vullings"
+    },
+    {
+      "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Weizmann Institute of Science"
+    },
+    {
+      "@id": "#46497652-9659-4671-8563-e65813813ed3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "VIB-UGent Center for Inflammation Research"
+    },
+    {
+      "@id": "#8cf4e4a6-0ed2-4a7c-bb26-a0fb87ec1b82",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The Francis Crick Institute"
+    },
+    {
+      "@id": "#91792e73-6254-4885-9f14-37fda3362547",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ghent University"
+    },
+    {
+      "@id": "#c4a26c72-3ba2-46e8-9f3a-0f98fec92d7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Radboud University Nijmegen Medical Centre"
+    },
+    {
+      "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Karolinska Institutet"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9c8f61f7-e680-49ee-aabf-477be5cdee9e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HT1080 cell line",
+      "name": "HT1080 cell line",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f6e17243-5d53-44d9-911e-913629ab4f8a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "2D:\nFor the live cell imaging, we used multidimensional automatized microscopes with an environmental chamber to keep temperature, humidity, and CO2 constant. Pre-warmed media with or without ROCK inhibitor (Y27632, final concentration at 15 μM) was added before the start of imaging. A 20x 0.75 NA objective was used and tiled images (5 x 5) were generated to capture a large area in each well. The images were acquired in 5 min interval for 6 h. \n3D:\n1.\tThe lower left corner of the spheroid was positioned in the scan field, with the border of the spheroid core touching the image border. \n2.\tA z-range of up to 120 µm was used to image from z = 1/2 to z = 4/5 of spheroid dimensions. \n3.\tTransmission, reflection and fluorescence channels were recorded sequentially at 8-bit resolution. The laser power was set close to the saturation limit of the dye. The detector amplification (high voltage) was set in such a manner, that the brightest cells in migration zones made use of the full digital detection range. \n4.\tIn both laboratories, imaging was performed using a Zeiss LSM880 equipped with a 20x 0.8 NA objective. The following microscope parameters were used: scan field 708.5µm2, pixel size 1.2 µm, pixel dwell time 1.3 µs, z-step size 2 µm and line averaging 3.\n",
+      "labEquipment": "Nikon A1; Zeiss 780; DeltaVision",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Confocal and widefield"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 456868315896
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1920"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1920",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1f4a5892-f861-4d67-8fba-7a6cf08b44d0"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fbf6b62d-d4e7-44a0-96b7-92bdd8bb2a36"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3502-6465"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-09",
+      "description": "This study investigates how the aorta grows after birth—a process that is crucial for matching the size and function of the vascular system to a growing body. Our study reveals how the aorta grows after birth, showing that its expansion follows specific biological rules and scales with the spine—not body weight. Using a combination of high-resolution imaging, single-cell RNA sequencing, and mathematical modeling, we show that aortic growth occurs in two distinct waves of cell proliferation that follow the direction of blood flow, which are spatially stochastic, yet temporally coordinated. Each wave exhibits unique cell cycle kinetics and properties, with the first wave exhibiting cell cycle durations as fast as 6 hours. As cells grow, they also shift their metabolism, particularly in fatty acid usage. Mathematical modeling and experiments indicated endothelial cell extrusion is essential to prevent overcrowding and maintain proper tissue structure.  In a genetic model of achondroplasia, the aorta achieves proper scaling through enhanced cell extrusion while maintaining normal proliferation dynamics. Overall, this study provides a multiscale blueprint for how the aorta grows and maintains balance, relying on differentiated cell proliferation rather than resident stem cells.",
+      "funder": [],
+      "identifier": "S-BIAD1920",
+      "keywords": [
+        "mouse",
+        "aorta",
+        "single-cell-biology",
+        "lineage tracing",
+        "confocal imaging"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Resolving the design principles that control postnatal vascular growth and scaling",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3502-6465",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/000e0be47"
+        }
+      ],
+      "email": "yogesh.goyal@northwestern.edu",
+      "name": "Yogesh Goyal"
+    },
+    {
+      "@id": "https://ror.org/000e0be47",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Northwestern University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#fbf6b62d-d4e7-44a0-96b7-92bdd8bb2a36",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse aorta",
+      "name": "Images of endothelial cells in the aorta",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#1f4a5892-f861-4d67-8fba-7a6cf08b44d0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal imaging\nAll confocal images were acquired using a Nikon A1R HD25 microscope. Multi-tile and Z-stack images were stitched and maximum intensity processed using NIS Elements software. Figure images were denoised using NIS Elements software.\n\nEdU in vivo labeling\nMice were intraperitoneally injected with EdU (dissolved in PBS, 100uL of 10mg/mL for mice older than P21, 50uL of 10mg/mL for pups). At time of harvest, animals were sacrificed and aortas were harvested and fixed. Click-iTTM EdU Alexa Fluor 594 reaction was performed on aorta tissue according to manufacturer’s instructions (Invitrogen), before immuno-staining with primary and secondary antibodies as described previously. Mounted tissues were then imaged through confocal microscopy.",
+      "labEquipment": "Nikon A1R HD25 microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition details"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 9
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 121454961522
+    }
+  ]
+}

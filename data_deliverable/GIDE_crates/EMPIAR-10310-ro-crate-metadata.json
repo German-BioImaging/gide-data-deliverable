@@ -1,0 +1,226 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10310"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10310",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#56073628-0574-48af-9c42-512ea7530911"
+        },
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#282e55ee-d0ae-4eae-97ad-890b1d49d5d2"
+        },
+        {
+          "@id": "obo:NCBITaxon_6359"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0555-151X"
+        },
+        {
+          "@id": "#7319306b-eb6e-404d-baca-abe3cace3f1a"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3212-5057"
+        },
+        {
+          "@id": "#f0929902-6283-4f49-a89c-ffc90b43b265"
+        },
+        {
+          "@id": "#81e6f025-9ba3-4699-8835-13538439cccc"
+        },
+        {
+          "@id": "#d66db4fa-493f-446c-bf21-07fa2f735155"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2020-02-07",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-10310",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "FIB-SEM of parapodia from Platynereis dumerilii",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10310/2e32dd1d-864b-449b-ae23-3fdc4abdb1e8/79965e61-3248-49f3-a4fd-407a3be350d5.png"
+      ]
+    },
+    {
+      "@id": "#7319306b-eb6e-404d-baca-abe3cace3f1a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Lleti JMS"
+    },
+    {
+      "@id": "#81e6f025-9ba3-4699-8835-13538439cccc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Steyer AM"
+    },
+    {
+      "@id": "#d66db4fa-493f-446c-bf21-07fa2f735155",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Schwab Y"
+    },
+    {
+      "@id": "#f0929902-6283-4f49-a89c-ffc90b43b265",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Templin RM"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0555-151X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Hennies J"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3212-5057",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Schieber NL"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6359",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Platynereis dumerilii",
+      "vernacularName": "Dumeril's clam worm"
+    },
+    {
+      "@id": "#282e55ee-d0ae-4eae-97ad-890b1d49d5d2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Six days post fertilization P. dumerilii larvae raised in natural sea water under a 16 hour light and 8 hour dark cycle at 18°C",
+      "name": "P. dumerilii larva",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6359"
+      }
+    },
+    {
+      "@id": "#56073628-0574-48af-9c42-512ea7530911",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FIB-SEM image acquisition was performed with the Zeiss Auriga 60 or a Zeiss Crossbeam 540 using the Atlas 5 software. Images were acquired at 1.5 kV with the energy-selective back-scattered electron (EsB) detector with a grid voltage of 1100 V, analytical mode at a 700 pA current. The dwell time was 4 µs/10 µs, with line average of 1. Images had a 10 nm xy pixel size and 10 nm slicing thickness. During the 3D data acquisition the FIB was operated at 1 nA/1.5 nA with the SEM and the FIB operating simultaneously. No form of z-slice thickness tracking was performed.",
+      "labEquipment": "Zeiss Auriga 60 or Zeiss Crossbeam 540 FIB-SEM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "name": "FIB-SEM Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00050000",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5899
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 91124559572
+    }
+  ]
+}

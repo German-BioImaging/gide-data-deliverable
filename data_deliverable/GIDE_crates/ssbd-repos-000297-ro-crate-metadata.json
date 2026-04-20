@@ -1,0 +1,207 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000297/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000297/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000297",
+      "name": "Fiber photometry traces of the kisspeptin neurons in the arcuate nucleus of the hypothalamus in young and aging mice",
+      "description": "eventually leading to a loss of fertility. The pulsatile secretion of gonadotropin-releasing hormone (GnRH), which is essential for gonad function, is primarily controlled by kisspeptin neurons in the hypothalamic arcuate nucleus (ARCkiss), the pulse generator of GnRH. The pulsatility of GnRH release, as assessed by the amount of circulating gonadotropin, is markedly reduced in aged animals, suggesting that the malfunctions of ARCkiss may be responsible for reproductive aging and menopause-related disorders. However, the activity dynamics of ARCkiss during the natural transition to reproductive senescence remain unclear. Herein, we introduce chronic in vivo Ca2+ imaging of ARCkiss in female mice by fiber photometry to monitor the synchronous episodes of ARCkiss (SEskiss), a known hallmark of GnRH pulse generator activity, from the fully reproductive to acyclic phase over 1 year. During the reproductive phase, we find that not only the frequency, but also the intensities and waveforms of individual SEskiss, vary depending on the stage of the estrus cycle. During the transition to reproductive senescence, the integrity of SEskiss patterns, including the frequency and waveforms, remains mostly unchanged, whereas the intensities tend to decline. These data illuminate the temporal dynamics of ARCkiss activities in aging female mice. More generally, our findings demonstrate the utility of fiber-photometry-based chronic imaging of neuroendocrine regulators in the brain to characterize aging-associated malfunction.",
+      "datePublished": "2023-04-26",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.82533"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2022.08.08.503241"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/UBERON_0000994"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032278"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005463"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000284"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazunari Miyamichi",
+      "email": "kazunari.miyamichi@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Lab for comparative connectomics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.82533",
+      "@type": "ScholarlyArticle",
+      "name": "Dynamics of pulsatile activities of arcuate kisspeptin neurons in aging female mice.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2022.08.08.503241",
+      "@type": "ScholarlyArticle",
+      "name": "Dynamics of Pulsatile Activities of Arcuate Kisspeptin Neurons in Aging Female Mice",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6j",
+      "description": "C57BL/6j",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/UBERON_0000994",
+      "@type": "DefinedTerm",
+      "name": "reproductive functions"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032278",
+      "@type": "DefinedTerm",
+      "name": "pulsatile activities for secretion of gonadotrophin"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005463",
+      "@type": "DefinedTerm",
+      "name": "n/a"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fiber photometory with GCaMP6s",
+      "description": "fiber photometory with GCaMP6s",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000284"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000284",
+      "@type": "DefinedTerm",
+      "name": "fiber photometory with GCaMP6s"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 17251057664,
+      "description": "17.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 295,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

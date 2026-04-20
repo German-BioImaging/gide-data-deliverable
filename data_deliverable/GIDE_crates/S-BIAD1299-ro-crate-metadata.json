@@ -1,0 +1,202 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1299"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1299",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#639158db-e881-4622-a44e-404230db80d1"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d52e668a-fa91-4d28-8dbe-750e6bc75406"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0002-2877-9354"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-22",
+      "description": "Lgr5+ intestinal stem cells (ISCs) play crucial roles in maintenance of the intestinal epithelium renewal and regeneration after injury. The mechanism underlying the interplay between Wnt and BMP signaling is not fully understood. Here we report that Bcl11b, which is downregulated by BMP signaling, enhances Wnt signaling to maintain Lgr5+ ISCs and thus promote the regeneration of the intestinal epithelium upon injuries. Bcl11b knockout leads to a significant decrease of Lgr5+ ISCs in both intestinal crypts and cultured organoids. Mechanistically, BMP suppresses the expression of Bcl11b, which can positively regulate Wnt target genes by inhibiting the function of the Nucleosome Remodeling and Deacetylase (NuRD) complex and facilitating the β-catenin-TCF4 interaction. Bcl11b can also promote intestinal epithelium repair after injuries elicited by both irradiation and DSS-induced inflammation. Furthermore, Bcl11b deletion prevents proliferation and tumorigenesis of colorectal cancer cells. Together, our findings suggest that BMP balances Wnt signaling via Bcl11b to delicately regulate the homeostasis and regeneration of the intestinal epithelium through signaling pathway-epigenetic axis.",
+      "funder": [],
+      "identifier": "S-BIAD1299",
+      "keywords": [
+        "Bcl11b",
+        "Intestinal stem cells",
+        "BMP signaling",
+        "Wnt signaling",
+        "Regeneration",
+        "Colorectal cancer"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "BMP suppresses Wnt signaling via the Bcl11b-regulated NuRD complex to maintain intestinal stem cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1299/b6705733-06ac-4bb2-8b66-e28eb48f28ca/a2443c48-f6ec-4c0a-9a48-543b044db477.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0009-0002-2877-9354",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a85c06a1-bbb4-446d-8cd2-6b860fa4bd1c"
+        }
+      ],
+      "email": "liu-yuan@mail.tsinghua.edu.cn",
+      "name": "Yuan Liu"
+    },
+    {
+      "@id": "#a85c06a1-bbb4-446d-8cd2-6b860fa4bd1c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Tsinghua University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#d52e668a-fa91-4d28-8dbe-750e6bc75406",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse intestinal epithelium",
+      "name": "BMP balances Wnt signaling via the Bcl11b-regulated NuRD complex to maintain intestinal stem cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#639158db-e881-4622-a44e-404230db80d1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Immunofluorescence images were captured using Olympus FV3000 confocal microscope with 20x magnification setting on the Olympus 20x/0.3 air objective. The 355 nm laser, 488 nm laser, 561 nm laser and 647 nm laser were used to image co-immunofluorescence tissue and organoids. \nImmunofluorescence images were captured using Olympus EVIDENT VS200 with 20x magnification setting on the Olympus 20x/0.3 air objective. The 405 nm laser, 488 nm laser, 561 nm laser and 647 nm laser were used to image co-immunofluorescence tissue and organoids. \nImmunofluorescence images were captured using High Content Screening System (Opera Phenix, PerkinElmer) with 10x magnification setting on the 10x/0.3 air objective. The 488 nm laser and 568 nm laser were used to observe organoids. \nHematoxylin-eosin staining and immunohistochemistry images were captured using Scaning machine (KF-PRO-120-HI, KFBIO) with 20x magnification setting on the 20x/0.75 air objective and analyzed using KF-viewer software.\nWhole-well scanning image of organoids were captured using ECLIPSE Ti2 microscope (Nikon) linked to an DS-Ri2 camera (Nikon) using 4X air objective with NIS-Elements software.\n\nImages were processed using FV31S-SW software (Olympus)，OlyVIA （Olympus), NIS-Elements or Harmony software (version 4.9), respectively. Images were analyzed using the ImageJ software, and Photoshop (Adobe) was used to prepare the figure images.",
+      "labEquipment": "Immunofluorescence images were captured using Olympus FV3000 confocal microscope, Olympus EVIDENT VS200 or High Content Screening System (Opera Phenix, PerkinElmer). \nHematoxylin-eosin staining and immunohistochemistry images were captures using scaning machine (KF-PRO-120-HI, KFBIO). \nWhole-well scan image data of organoids were captured using ECLIPSE Ti2 microscope (Nikon) linked to an DS-Ri2 camera (Nikon).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "BMP balances Wnt signaling via the Bcl11b-regulated NuRD complex to maintain intestinal stem cells"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 75
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8691237546
+    }
+  ]
+}

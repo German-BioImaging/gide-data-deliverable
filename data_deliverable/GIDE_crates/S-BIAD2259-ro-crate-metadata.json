@@ -1,0 +1,226 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2259"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2259",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a784dd39-18ca-4598-a2a0-b174a0436512"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ab45e6ce-12cf-4986-992b-55b3d10dad93"
+        },
+        {
+          "@id": "#b9e2ee53-d5fe-4286-b956-399db3f3b4a7"
+        },
+        {
+          "@id": "obo:NCBITaxon_4932"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7479-2563"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0197-163X"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.1101/2025.02.05.635468"
+        }
+      ],
+      "datePublished": "2026-01-16",
+      "description": "Essential for eukaryotes, multiple copies of the exocyst complex tether each secretory vesicle to\nthe plasma membrane (PM) in constitutive exocytosis. The exocyst higher-order structure\n(ExHOS) that coordinates the action of these multiple exocysts remains unexplored. We integrated particle tracking, super-resolution microscopy and cryo-electron tomography to time-\nresolve the continuum conformational landscape of the ExHOS and to functionally annotate its\ndifferent conformations. We found that 7 exocysts form flexible ring-shaped ExHOS that tether 2\nvesicles at <45 nm from the PM. The ExHOS rapidly expands while it pulls the vesicle towards the\nPM in a stepwise mechanism comprising three metastable states at 27, 18 and 5 nm from the\nPM. After fusion, Sec18 mediates the disassembly of the stationary ExHOS, an emergent function\nthat controls the rate of exocytosis. By resolving the biophysical principles of tethering we\nbridged the gap between static isolated structures and the dynamic and multimeric nature of\nexocytosis.\n\nThis datset contains in particular the correlative light and electorn microscopy images of lamellae that were subsequently used to target tomogram acqusition. ",
+      "funder": [],
+      "identifier": "S-BIAD2259",
+      "keywords": [
+        "constitutive exocytosis",
+        "exocyst",
+        "vesicle tethering",
+        "particle tracking",
+        "SMLM",
+        "Cryo-ET",
+        "In situ structural biology",
+        "Sec18"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Continuum architecture dynamics of vesicle tethering in exocytosis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2259/2dc97e32-1592-4f16-b118-bae3f4b44f1f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7479-2563",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cd30c28c-b08d-4921-9101-bba2d5e3d7d8"
+        }
+      ],
+      "email": "oriol.gallego@upf.edu",
+      "name": "Oriol Gallego"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0197-163X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#07169f4b-3cec-4028-a4ce-cbb4c8e8f545"
+        }
+      ],
+      "email": "daniel.castano@csic.es",
+      "name": "Daniel Castaño-Díez"
+    },
+    {
+      "@id": "#07169f4b-3cec-4028-a4ce-cbb4c8e8f545",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Instituto Biofisika"
+    },
+    {
+      "@id": "#cd30c28c-b08d-4921-9101-bba2d5e3d7d8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universitat Pompeu Fabra"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2025.02.05.635468",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "Continuum architecture dynamics of vesicle tethering in exocytosis"
+    },
+    {
+      "@id": "obo:NCBITaxon_4932",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Saccharomyces cerevisiae"
+    },
+    {
+      "@id": "#ab45e6ce-12cf-4986-992b-55b3d10dad93",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lamellae of Saccharomyces cerevisiae, focusing on plasma membrane regions - Saccharomyces cerevisiae (background Invitrogen BY4741 - his3Δ1 leu2Δ0 met15Δ0 ura3Δ0) with mNeonGreen tagging of the exocyst complex (tor1-1, Exo84-2xmNeonGreen Kan, Sec5-2xmNeonGreen Kan, Exo70-2xmNeonGreen Hph) or mScarlet3 tagging of Sec9 (leu2Δ0::Gal1pr-JSce1/His, 3xmScarlet3-Sec9)",
+      "name": "Saccharomyces_cerevisiae_cryoCLEM",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#b9e2ee53-d5fe-4286-b956-399db3f3b4a7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Lamellae of Saccharomyces cerevisiae, focusing on plasma membrane regions - Saccharomyces cerevisiae (background Invitrogen BY4741 - his3Δ1 leu2Δ0 met15Δ0 ura3Δ0) with mNeonGreen tagging of the exocyst complex (tor1-1, Exo84-2xmNeonGreen Kan, Sec5-2xmNeonGreen Kan, Exo70-2xmNeonGreen Hph) or mScarlet3 tagging of Sec9 (leu2Δ0::Gal1pr-JSce1/His, 3xmScarlet3-Sec9)",
+      "name": "Saccharomyces_cerevisiae_cryoCLEM",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4932"
+      }
+    },
+    {
+      "@id": "#a784dd39-18ca-4598-a2a0-b174a0436512",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cryo-fluorescence Z-stack images of lamellae were acquired with 100X objective (0.75 NA) in AiryScan mode on LSM900 (Zeiss) equipped with a cryo-stage (Linkam). A 488 nm laser was used to acquire exocyst-mNG images (channel 2). The Z-stacks were aligned with StackReg, then maximum intensity projection was done in Fiji for later correlation (channel 1). Thereafter, grids with lamellae were loaded into a Titan Krios G4 (ThermoFisher Scientific) equipped with SelectrisX energy filter and Falcon4i camera, operated with SerialEM software. Medium magnification montages of the lamellae were acquired and blended with Etomo (channel 4). Then medium-mag-montages and their corresponding fluorescence map were registered in ICY with ec-CLEMv2 plugin, so that the fluorescence signal could be used to guide the high-magnification tilt series collection. Thereafter, dose-symmetric tilt-series were acquired in SerialEM with PACE-tomo, but are not part of this dataset and are instead uploaded to EMPAIR (ID)",
+      "labEquipment": "LSM900 (Zeiss) equipped with a cryo-stage (Linkam) with Zeiss EC-Epiplan-Neofluar 100x/0.75 DIC objective.\nTitan Krios G4 (ThermoFisher Scientific) equipped with SelectrisX energy filter and Falcon4i camera, operated with SerialEM software.",
+      "measurementTechnique": [],
+      "name": "Cryo-CLEM_acquisition_methodology"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 101
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 9305614611
+    }
+  ]
+}

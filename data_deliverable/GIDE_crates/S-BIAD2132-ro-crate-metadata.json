@@ -1,0 +1,242 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2132"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2132",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9d3a1f86-e480-4c5a-be9d-bcfcaeaa5703"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8a7becdb-c2c9-4134-aa5a-fb785e6d9d06"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0004-0874-9662"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2722-1965"
+        },
+        {
+          "@id": "#5b839f51-6da6-433f-8247-1e8ce67996e0"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7034-0850"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-03",
+      "description": "The highly multiplexed immunofluorescence dataset was generated using 46-oligonucleotide-barcoded antibodies (pre-conjugated antibodies by the vendor Akoya Biosciences) in the PhenoCycler Fusion system. The antibody panel was applied to Tissue MicroArray (TMA) samples from normal tissues on microscope slides. TMAs were generated in accordance with strategies used in the Human Protein Atlas and we followed the tissue sample preparation protocol described by Danielsson et al. Tissue samples were handled  in accordance with Swedish laws and regulations and obtained from the Department of Pathology, Uppsala University Hospital, Sweden, as part of the sample collection governed  by the Uppsala Biobank. ",
+      "funder": [],
+      "identifier": "S-BIAD2132",
+      "keywords": [
+        "spatial proteomics",
+        "highly multiplexed immunofluorescence",
+        "Tissue MicroArray",
+        "human normal tissue"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Highly multiplexed dataset from normal TMA, The Human Protein Atlas",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2132/d58cf1f3-24f0-4509-88a4-55e302413748/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#5b839f51-6da6-433f-8247-1e8ce67996e0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/026vcq606"
+        }
+      ],
+      "email": "anna.backstrom@scilifelab.se",
+      "name": "Anna Bäckström"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7034-0850",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/026vcq606"
+        }
+      ],
+      "email": "emmalu@stanford.edu",
+      "name": "Emma Lundberg"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2722-1965",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "anamaca@stanford.edu",
+      "name": "Anna Martinez Casals"
+    },
+    {
+      "@id": "https://orcid.org/0009-0004-0874-9662",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "fredbn@stanford.edu",
+      "name": "Frederic Ballllosera Navarro"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "https://ror.org/026vcq606",
+      "@type": [
+        "Organization"
+      ],
+      "name": "KTH Royal Institute of Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#8a7becdb-c2c9-4134-aa5a-fb785e6d9d06",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Normal human tissue from the following organs: Adrenal gland, Appenix, Bladder, Bone marrow, Breast, Bronchus, Caudate/Cerebellum, Cervix, Colon, Cortex, Duodenum, Endometrium-pre, Endometrium-post, Epididymis, Esophagus, Fallopian tube, Gall bladder, Heart muscle, Hippocampus, Kidney, Liver, Lung, Lymph node, Nasopharynx, Oral tissue, Ovary, Pancreas, Parathyroid, Placenta, Prostate, Rectum, Seminal vesicle, Salivary gland, Skeletal muscle, Small intestine, Smooth muscle, Soft tissue, Skin, Spleen, Stomach, Testis, Thyriod gland, Tonsil, Vagina, Vulva/anal.",
+      "name": "Normal human tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9d3a1f86-e480-4c5a-be9d-bcfcaeaa5703",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Three fluorescent oligoreporters with spectrally distinct dyes (Atto550 , AF647,  AF750) were applied to the tissue in iterative imaging cycles. The images were captured using a widefield microscope with a Olympus UCPlanFL 20×/0.70 NA objective and a resolution of 0.5 µm/pixel.",
+      "labEquipment": "PhenoImager Fusion 2.2.0 (Akoya Bio- sciences, Marlborough, MA).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Scan 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 95
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 28824642652
+    }
+  ]
+}

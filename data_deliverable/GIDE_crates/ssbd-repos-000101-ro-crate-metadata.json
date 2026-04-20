@@ -1,0 +1,171 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000101/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000101/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000101",
+      "name": "SEM images of natrual tooth or bio-hybrid implant tooth surface and periodontal tissue structure",
+      "description": "ssbd-repos-000101",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Artificial Organs[major]",
+        "Biocompatible Materials",
+        "Bone Regeneration",
+        "Cell Adhesion Molecules/biosynthesis",
+        "Dental Cementum/metabolism",
+        "Dental Implants[major]",
+        "Dental Sac/cytology",
+        "Dental Sac/physiology",
+        "Durapatite/chemistry",
+        "Extracellular Matrix Proteins/biosynthesis",
+        "Gene Expression Regulation",
+        "Immunohistochemistry",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "Orthodontics, Corrective/methods[major]",
+        "Osteocalcin/biosynthesis",
+        "Periodontal Ligament/physiology",
+        "Periodontal Ligament/surgery",
+        "Tissue Engineering/methods[major]",
+        "Tooth/surgery",
+        "Tooth/transplantation[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/srep06044"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0071529"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-252"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takashi Tsuji",
+      "email": "t-tsuji@rs.noda.tus.ac.jp",
+      "description": "Organization: Tokyo University of Science; Department: Research Institute for Science and Technology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05sj3n476"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/05sj3n476",
+      "@type": "Organization",
+      "name": "Tokyo University of Science"
+    },
+    {
+      "@id": "https://doi.org/10.1038/srep06044",
+      "@type": "ScholarlyArticle",
+      "name": "Functional tooth restoration by next-generation bio-hybrid implant as a bio-hybrid artificial organ replacement therapy.",
+      "datePublished": "2014"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0071529",
+      "@type": "DefinedTerm",
+      "name": "cementum mineralization"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 8353792,
+      "description": "8.4 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 8,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

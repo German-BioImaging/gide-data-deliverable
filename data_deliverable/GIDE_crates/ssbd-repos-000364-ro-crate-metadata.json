@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000364/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000364/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000364",
+      "name": "A set of imaging data obtained by INSPCTOR",
+      "description": "With advancements in human induced pluripotent stem cell (hiPSC) technology, there is an increasing demand for quality control techniques to manage the long-term process of target cell production effectively. While monitoring systems designed for use within incubators are promising for assessing culture quality, existing systems still face challenges in terms of compactness, throughput, and available metrics. To address these limitations, we have developed a compact and high-throughput lens-free imaging device named INSPCTOR. The device is as small as a standard culture plate, which allows for the installation of multiple units within an incubator. INSPCTOR utilises a large thin-film transistor image sensor, enabling simultaneous observation of six independent culture environments, each approximately 1 cm2. With this device, we successfully monitored the confluency of hiPSC cultures and identified the onset timing of epithelial-to-mesenchymal transition during mesodermal induction. Additionally, we quantified the beating frequency and conduction of hiPSC-derived cardiomyocytes by using high-speed imaging modes. This enabled us to identify the onset of spontaneous beating during differentiation and assess chronotropic responses in drug evaluations. Moreover, by tracking beating frequency over 10 days of cardiomyocyte maturation, we identified week-scale and daily-scale fluctuations, the latter of which correlated with cellular metabolic activity. The metrics derived from this device would enhance the reproducibility and quality of target cell production.",
+      "datePublished": "2024-10-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Myocytes, Cardiac/cytology[major]",
+        "Myocytes, Cardiac/metabolism[major]",
+        "Humans",
+        "Induced Pluripotent Stem Cells/cytology[major]",
+        "Induced Pluripotent Stem Cells/metabolism[major]",
+        "Cell Culture Techniques/instrumentation[major]",
+        "Transistors, Electronic[major]",
+        "Cell Differentiation",
+        "Cells, Cultured",
+        "Equipment Design"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1039/d4lc00528g"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000278"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takeharu Nagai",
+      "email": "ng1@sanken.osaka-u.ac.jp",
+      "description": "Organization: The University of Osaka",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "The University of Osaka"
+    },
+    {
+      "@id": "https://doi.org/10.1039/d4lc00528g",
+      "@type": "ScholarlyArticle",
+      "name": "Compact lens-free imager using a thin-film transistor for long-term quantitative monitoring of stem cell culture and cardiomyocyte production.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": "Human induced pluripotent stem cells 585A1"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Lens-free imaging",
+      "description": "Lens-free imaging",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000278"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000278",
+      "@type": "DefinedTerm",
+      "name": "Lens-free imaging"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 4444364800,
+      "description": "4.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1040544,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

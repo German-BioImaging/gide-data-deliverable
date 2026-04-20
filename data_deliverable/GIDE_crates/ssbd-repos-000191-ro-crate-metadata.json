@@ -1,0 +1,240 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000191/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000191/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000191",
+      "name": "KIF5C running on various states of microtubules",
+      "description": "ssbd-repos-000191",
+      "datePublished": "2024-12-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Adenylyl Imidodiphosphate/chemistry",
+        "Adenylyl Imidodiphosphate/pharmacology",
+        "Animals",
+        "Biological Transport, Active",
+        "Chlorocebus aethiops",
+        "Dogs",
+        "Guanosine Diphosphate/chemistry",
+        "Guanosine Diphosphate/metabolism",
+        "Guanosine Triphosphate/chemistry",
+        "Guanosine Triphosphate/metabolism",
+        "HeLa Cells",
+        "Humans",
+        "Kinesins/chemistry[major]",
+        "Kinesins/metabolism[major]",
+        "Madin Darby Canine Kidney Cells",
+        "Microtubules/chemistry[major]",
+        "Microtubules/metabolism[major]",
+        "Vero Cells"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1083/jcb.201711178"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0099111"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007019"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0062195"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000617"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1360"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yasushi Okada",
+      "email": "y.okada@riken.jp",
+      "description": "Organization: RIKEN BDR; Department: Laboratory for Cell Polarity Regulation; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04j1n1c04"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Nobutaka Hirokawa",
+      "email": "hirokawa@m.u-tokyo.ac.jp",
+      "description": "Organization: The University of Tokyo; Department: Department of Cell Biology and Anatomy; Laboratory: Department of Cell Biology and Anatomy",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04j1n1c04",
+      "@type": "Organization",
+      "name": "RIKEN BDR"
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1083/jcb.201711178",
+      "@type": "ScholarlyArticle",
+      "name": "Kinesin-binding-triggered conformation switching of microtubules contributes to polarized transport.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0099111",
+      "@type": "DefinedTerm",
+      "name": "microtubule-based transport"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007019",
+      "@type": "DefinedTerm",
+      "name": "microtubule depolymerization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0062195",
+      "@type": "DefinedTerm",
+      "name": "microtubule bundle maintenance"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "evanescent wave microscopy",
+      "description": "evanescent wave microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000617"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000617",
+      "@type": "DefinedTerm",
+      "name": "evanescent wave microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1771243520,
+      "description": "1.8 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 3,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

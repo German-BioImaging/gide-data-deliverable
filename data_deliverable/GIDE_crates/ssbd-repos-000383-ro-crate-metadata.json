@@ -1,0 +1,252 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000383/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000383/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000383",
+      "name": "Time-lapse images of intracellular structure in elongating Arabidopsis zygotes",
+      "description": "ssbd-repos-000383",
+      "datePublished": "2025-11-26",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Arabidopsis[major]",
+        "Zygote/metabolism",
+        "Cell Division",
+        "Cell Cycle",
+        "Asymmetric Cell Division",
+        "Cell Polarity"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-023-50020-8"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0016043"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0010070"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0015629"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0015630"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005739"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005773"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takumi Higaki",
+      "email": "thigaki@kumamoto-u.ac.jp",
+      "description": "Organization: Kumamoto University; Department: Graduate School of Science and Technology; Laboratory: Graduate School of Science and Technology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02cgss904"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02cgss904",
+      "@type": "Organization",
+      "name": "Kumamoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-023-50020-8",
+      "@type": "ScholarlyArticle",
+      "name": "Comprehensive and quantitative analysis of intracellular structure polarization at the apical-basal axis in elongating Arabidopsis zygotes.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Col-0",
+      "description": "Col-0",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "vernacularName": "thale cress"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016043",
+      "@type": "DefinedTerm",
+      "name": "cellular component organization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0010070",
+      "@type": "DefinedTerm",
+      "name": "zygote asymmetric cell division"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0015629",
+      "@type": "DefinedTerm",
+      "name": "actin cytoskeleton"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0015630",
+      "@type": "DefinedTerm",
+      "name": "microtubule cytoskeleton"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
+      "@type": "DefinedTerm",
+      "name": "mitochondrion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005773",
+      "@type": "DefinedTerm",
+      "name": "vacuole"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "two-photon laser scanning microscopy",
+      "description": "two-photon laser scanning microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
+      "@type": "DefinedTerm",
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 9060470784,
+      "description": "9.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 132,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

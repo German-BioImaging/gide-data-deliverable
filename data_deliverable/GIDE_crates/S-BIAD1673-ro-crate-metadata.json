@@ -1,0 +1,190 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1673"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1673",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5c0ecc65-4543-44b1-b6dc-0196ee4309e0"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#23e5c4aa-ae6c-460b-9d15-8b1588f3c1d5"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0008-3398-6917"
+        },
+        {
+          "@id": "#9fb6ef2b-5627-4eee-9d7d-1ad9d2695ef7"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-31",
+      "description": "Mono-ADP-ribosylation, a regulatory modification of both protein and nucleic acids, has been implicated in innate immunity. In cells, this modification is catalyzed by PARP enzymes, some of which are induced in response to type I interferons. Mono-ADP-ribosylation is fully reversible by hydrolases that include proteins with macrodomains, highly conserved protein domains found in all kingdoms of life. Macrodomains encoded by certain positive sense single-stranded RNA viruses, such as Chikungunya virus and SARS-CoV2, antagonize host MARylation to enhance viral replication and suppress the immune response. While macrodomain hydrolase activity is essential for CHIKV replication, in SARS-CoV2, it predominantly contributes to immune evasion, underscoring viral macrodomains as attractive antiviral drug targets. Efforts to develop macrodomain inhibitors have included computational modeling, crystallography-based methods, and in vitro assays. However, tools to study macrodomain activity directly in cells remain rare. In this study, we established a cell-based assay using PARP15 isoform 1, which we identified to form nuclear foci dependent on its ADP-ribosyltransferase activity. Active macrodomains dissolve these foci, providing a means to monitor hydrolase activity in living cells. Using stable cell lines, this system enables the screening of macrodomain inhibitors while simultaneously addressing cell permeability, toxicity, and physiological relevance. Adaptable to various macrodomains, this platform offers a versatile approach to study macrodomain function, analyzing mutants, and advancing drug discovery efforts.",
+      "funder": [],
+      "identifier": "S-BIAD1673",
+      "keywords": [
+        "nuclear foci",
+        "viral macrodomains",
+        "mono-ADP-ribosylation",
+        "drug-discovery",
+        "assay"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Screening assay to monitor mono-ADP-ribosylhydrolase activity of viral macrodomains in cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1673/be6079e1-0246-4dcf-a883-3083dfa06934/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#9fb6ef2b-5627-4eee-9d7d-1ad9d2695ef7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e98f1bc1-d9a8-46f9-8f0c-616266c95ff3"
+        }
+      ],
+      "email": "pkorn@ukaachen.de",
+      "name": "Patricia Korn"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-3398-6917",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e98f1bc1-d9a8-46f9-8f0c-616266c95ff3"
+        }
+      ],
+      "email": "sarah.knapp@rwth-aachen.de",
+      "name": "Sarah Knapp"
+    },
+    {
+      "@id": "#e98f1bc1-d9a8-46f9-8f0c-616266c95ff3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universitätsklinikum Aachen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#23e5c4aa-ae6c-460b-9d15-8b1588f3c1d5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa FlpIn T-REx cells",
+      "name": "Foci Assay",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5c0ecc65-4543-44b1-b6dc-0196ee4309e0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were captured using a Zeiss LSM710 Confocal Laser Scanning Microscope equipped with an AxioCam (Zeiss) and C-Apochromat 40x water immersion objective. For all pictures the pinhole was set 1 airy unit for the longest wavelength and dimensions of 980 x 980 pixels was chosen. The EGFP fluorochrome (emission maximum: 509 nm) was excited at a wavelength of 488 nm by an argon laser and detected using a 488 nm single channel photomultiplier (PMT) and a 493-557 nm bandpass filter. The Spy650DNA was excited at a wavelength of 633 nm by helium-neon-laser and detected using a 644 - 735 nm bandpass filter. ",
+      "labEquipment": "Zeiss LSM 710",
+      "measurementTechnique": [],
+      "name": "Foci Assay"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 539
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1604994112
+    }
+  ]
+}

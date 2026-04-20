@@ -1,0 +1,219 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1513"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1513",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#551bacb4-d21c-46bb-ade3-8964e2134b83"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#28146151-8f90-47b3-a8a4-fa80821005f9"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0574-4530"
+        },
+        {
+          "@id": "#0124a789-3698-4536-b461-8862ada710db"
+        },
+        {
+          "@id": "#16ea01c2-2cfd-464f-a170-5c4b8a43b7c8"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-09",
+      "description": "Image dataset for the Elife paper https://doi.org/10.7554/eLife.98535.3",
+      "funder": [],
+      "identifier": "S-BIAD1513",
+      "keywords": [
+        "Drosophila",
+        "wing",
+        "eye",
+        "cell competition"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Flamingo participates in multiple models of cell competition",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1513/af5b4cea-ee14-44df-a94e-2db542b11f7e/7b4e99f6-779e-4691-bcd2-cf737277434e.png"
+      ]
+    },
+    {
+      "@id": "#0124a789-3698-4536-b461-8862ada710db",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "email": "bomsoo@stanford.edu",
+      "name": "Bomsoo Cho"
+    },
+    {
+      "@id": "#16ea01c2-2cfd-464f-a170-5c4b8a43b7c8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "email": "jaxelrod@stanford.edu",
+      "name": "Jeffrey D. Axelrod"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0574-4530",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "email": "pablosb@stanford.edu",
+      "name": "Pablo Sanchez Bosch"
+    },
+    {
+      "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford Medicine"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#28146151-8f90-47b3-a8a4-fa80821005f9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila wing disc",
+      "name": "Cell competition study",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#551bacb4-d21c-46bb-ade3-8964e2134b83",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were taken with either 20x, 40x or 63x objectives, at 1024x1024 px, using PMT or HyD detectors. All images were taken so that sensor saturation was never reached and keeping background noise to the minimum.\nImage stacks were taken when needed by using the optimized parameters for the laser/objective pairing.",
+      "labEquipment": "Leica SP8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1159
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 65406102739
+    }
+  ]
+}

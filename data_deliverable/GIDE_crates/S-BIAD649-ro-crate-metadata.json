@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD649"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD649",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f9ffde46-27a2-40c9-8f5a-35f4d6ebb4b5"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#de4d4407-5cf7-476f-96cc-f0d72ec411d6"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#36e27424-0e8f-49a6-9c08-0e09f849d2be"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-04-30",
+      "description": "HSV-1 exploits host heterochromatin for nuclear egress: Figure 1 Source Data",
+      "funder": [],
+      "identifier": "S-BIAD649",
+      "keywords": [
+        "HSV-1, TEM"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "HSV-1 exploits host heterochromatin for nuclear egress: Figure 1",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD649/75104a91-37a3-43e4-be37-23dc5e5e5eed/908f4c5e-e0ba-4df3-b679-515e3068351f.png"
+      ]
+    },
+    {
+      "@id": "#36e27424-0e8f-49a6-9c08-0e09f849d2be",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/007ps6h72"
+        }
+      ],
+      "email": "avgousti@fredhutch.org",
+      "name": "Daphne Avgousti"
+    },
+    {
+      "@id": "https://ror.org/007ps6h72",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Fred Hutchinson Cancer Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#de4d4407-5cf7-476f-96cc-f0d72ec411d6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HFF-T",
+      "name": "HFF-T",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f9ffde46-27a2-40c9-8f5a-35f4d6ebb4b5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All data were collected at spot size 5 with a 100um C2 aperture and 70um objective aperture. For quantification, nuclei were targeted at 1250x and manually circled. Autofocus was set to -2.0um. Nuclei were then imaged at 11000x as a montage and stitched together automatically using SerialEM (Nexperion Inc). Stitched maps were exported as uncompressed 16-bit tif files for further analysis. For qualitative analysis, images were manually focused to -2.0um defocus and then 20 1-second frames were collected and drift-corrected using Velox software (Thermo Fisher Scientific, Eindhoven, NL). Final summed images were exported as 16-bit tif files and cropped using ImageJ. ",
+      "labEquipment": "Talos L120C microscope operated at 120kV with a Ceta-16M (4096 x 4096) camera",
+      "measurementTechnique": [],
+      "name": "Talos"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 97838528
+    }
+  ]
+}

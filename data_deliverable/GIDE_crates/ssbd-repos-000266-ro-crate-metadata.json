@@ -1,0 +1,188 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000266/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000266/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000266",
+      "name": "Neuropeptide gene expression atlas in the adult zebrafish brain",
+      "description": "Zebrafish is a useful model organism in neuroscience; however, its gene expression atlas in the adult brain is not well developed. In the present study, we examined the expression of 38 neuropeptides (agrp, asip2b, avp, calca, cart2a, cart2b, cart3a, cart3b, cart4, cart5, ccka, cckb, crha, crhb, gal, galp, gnrh2, gnrh3, grp, kiss1, kiss2, npb, npvf, npy, hcrt, oxt, pdyn, penka, penkb, pmch, pmchl, pomca, pomcb, tac1, tac3a, tac3b, vipa, and vipb), GABAergic neuron marker gene mix (gad1a, gad1b, and gad2), and glutamatergic neuron marker gene mix (slc17a6a, slc17a6b, slc17a7a, and slc17a7b) in the adult zebrafish brain using in situ hybridization. Three to five adult male fish were sampled per gene. Sampled brains were PFA-fixed and paraffin-embedded, and serial sections of whole brains were prepared. The entire brain of a zebrafish can be placed on a single glass slide. Each glass slide was subjected to in situ hybridization and scanned using a NanoZoomer HT slide scanner (Hamamatsu Photonics). All of the scan data can be viewed and downloaded from the database at this site.",
+      "datePublished": "2024-06-04",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Animals",
+        "Zebrafish/anatomy & histology[major]",
+        "Prosencephalon/metabolism[major]",
+        "Neuropeptides/genetics[major]",
+        "Neuropeptides/metabolism[major]",
+        "Atlases as Topic",
+        "Gene Expression",
+        "Databases, Genetic",
+        "Mice"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1002/cne.25619"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-951"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Towako Hiraki-Kajiyama",
+      "email": "towako.kajiyama@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Brain Science; Laboratory: Laboratory for Systems Molecular Ethology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1002/cne.25619",
+      "@type": "ScholarlyArticle",
+      "name": "An atlas and database of neuropeptide gene expression in the adult zebrafish forebrain.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "RIKEN Wako",
+      "description": "RIKEN Wako",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955",
+      "@type": "Taxon",
+      "scientificName": "Danio rerio",
+      "vernacularName": "zebrafish"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "NanoZoomer HT slide scanner",
+      "description": "NanoZoomer HT slide scanner",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-technique-1",
+      "@type": "DefinedTerm",
+      "name": "NanoZoomer HT slide scanner"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 116536778752,
+      "description": "116.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 267,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

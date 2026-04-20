@@ -1,0 +1,190 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2080"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2080",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#680a2fb5-3a8c-4722-bc9b-9978d9c700ce"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f3c494c4-7b1f-43a9-9183-b5d6d9421334"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7800-7120"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-05",
+      "description": "MEIOC prevents continued mitotic cycling and promotes meiotic entry during mouse oogenesis: In multicellular organisms, germ cells’ transformation into haploid gametes requires that they transition from mitosis to meiosis, whereby they stop mitotic cycling and enter the meiotic cell cycle. In mammals, transcriptional activator STRA8-MEIOSIN mediates the decision to enter the meiotic cell cycle by triggering the G1-to-meiotic S phase transition. However, the molecular basis by which mammalian germ cells prevent continued mitotic cycling before entering the meiotic cell cycle remains unclear. Here, we investigate MEIOC’s role in the mitosis-to-meiosis transition during mouse oogenesis by analyzing proliferation, cell cycle transcriptomics, and cell cycle-associated protein expression. MEIOC was previously shown to destabilize mRNA and repress the mitotic program after meiotic entry. Here, we demonstrate that MEIOC prevents continued mitotic cycling prior to meiotic entry in oogenic cells. We find that the mitosis-to-meiosis transition involves the repression of G1/S cyclin CCNA2 at the transcript and protein levels, and that MEIOC downregulates CCNA2 protein expression. In addition, MEIOC promotes entry into meiotic S phase by increasing Meiosin transcript abundance and consequently activating the STRA8-MEIOSIN transcription factor. Given that STRA8-MEIOSIN upregulates Meioc expression, MEIOC and STRA8-MEIOSIN form a positive feedback loop to reinforce timely meiotic initiation. We also demonstrate that BMP signaling halts mitotic cycling and promotes meiotic entry by upregulating MEIOC. We conclude that, in mouse oogenic cells, the transition from mitosis to meiosis occurs as two molecularly regulated steps– (i) halt of mitotic cycling and (ii) entry into the meiotic cell cycle – and that MEIOC modifies the cell cycle program to facilitate both steps in this transition. \n\nThis study was published in: \n\nUshuhuda EG*, Nguyen JT*, Pfaltzgraff NG, Wenner SM, Kofron M, Mikedis MM. MEIOC prevents continued mitotic cycling and promotes meiotic entry during mouse oogenesis. Development. 2025 Nov 25:dev205037. PMID: 41287933.\n* equal contribution\n\n",
+      "funder": [],
+      "identifier": "S-BIAD2080",
+      "keywords": [
+        "transition from mitosis to meiosis",
+        "oogenesis",
+        "Meioc",
+        "Stra8",
+        "Ccna2",
+        "Rec8",
+        "proliferation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "DNA synthesis, CCNA2, and REC8 at the transition from mitosis to meiosis during oogenesis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2080/8400a8ab-7ce8-4500-b83e-0a0f0db650e0/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7800-7120",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994"
+        }
+      ],
+      "email": "maria.mikedis@cchmc.org",
+      "name": "Maria Mikedis"
+    },
+    {
+      "@id": "#85f9475e-d906-43c4-9fb5-c7f79f56e994",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Cincinnati Children's Hospital Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#f3c494c4-7b1f-43a9-9183-b5d6d9421334",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "E14.5 fetal ovary from mouse, C57Bl/6N",
+      "name": "E14.5 fetal ovary from mouse",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#680a2fb5-3a8c-4722-bc9b-9978d9c700ce",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Slides were imaged on a Nikon Yokogawa Sora W1 confocal spinning disk microscope with Hamamatsu FusionBT SCMOS camera in the spinning disk fluorescence modality using a 50um pinhole with a Nikon CFI Apochromat LWD Lambda S 20x water immersion objective (numerical aperture = 0.95; refractive index = 1.333) using NIS Elements software (NIS-Elements 5.42.06 (Build 1821) LO, 64bit, Nikon). Laser excitations of 405 nm, 488 nm, 561 nm, and 640 nm were used for  DAPI, Alexa Fluor 488 (GFP), Alexa Fluor 568 (RFP), and Alexa Fluor 647 (Cy5), respectively. Emission signals were captured through corresponding emission filters at 455/50 nm, 525/36 nm, 605/52 nm, and 705/72 nm. 10-20 z-stack images were acquired with a step size of 0.6 um through 6um sections and converted into maximum intensity projection (MIP) images, which were used for image analysis. ",
+      "labEquipment": "Nikon Yokogawa Sora W1 confocal spinning disk microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 272
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4397661069
+    }
+  ]
+}

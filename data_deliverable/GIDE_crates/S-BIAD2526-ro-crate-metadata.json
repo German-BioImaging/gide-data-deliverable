@@ -1,0 +1,172 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2526"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2526",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#cb2184bb-43ed-4211-a193-b27ed5a15f1c"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#65b26a02-b35e-47e2-b262-44113cab66ee"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4638-1123"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-31",
+      "description": "Fluorescence imaging across the near-infrared (NIR, 700–1000 nm) and shortwave infrared (SWIR, 1000–2000 nm) regions offers significant advantages for biomedical applications, yet photophysical enhancements achieved with NIR and SWIR chromophores observed in solution often fail to translate to complex biological environments. Fluorous-soluble fluorophores, fluorofluorophores, face additional challenges, exhibiting poor brightness and photostability when dissolved in perfluorocarbons (PFCs) due to unfavorable interactions with the fluorous phase. Here, we report counterion exchange as a strategy to enhance the photophysical properties of two heptamethine cyanine fluorofluorophore for NIR and SWIR imaging. Exchanging the small chloride counterion with a large, fluorinated aryl borate counterions significantly improved the brightness (10-fold) and photostability (57-fold) in PFCs. These enhancements were successfully translated across multiple biological systems from macrophage cells to NIR imaging zebrafish retinal tissue and finally to SWIR imaging in mice. These results demonstrate that strategic counterion modification provides a straightforward approach to optimize fluorofluorophores, with solution-phase improvements that translate to in vivo NIR and SWIR imaging.",
+      "funder": [],
+      "identifier": "S-BIAD2526",
+      "keywords": [
+        "fluorofluorophore",
+        "couterion exchange",
+        "perfluorocarbons",
+        "near infrared imaging",
+        "shortwave infrared imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Counterion-enhanced brightness of fluorous-soluble heptamethine cyanine dyes for near- and shortwave infrared fluorescence imaging",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4638-1123",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "emilybrimobley@gmail.com",
+      "name": "Emily B. Mobley"
+    },
+    {
+      "@id": "#f270c395-b369-47cc-8f34-862290942b7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#65b26a02-b35e-47e2-b262-44113cab66ee",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Live mice",
+      "name": "SWIR fluorescence imaging in mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#cb2184bb-43ed-4211-a193-b27ed5a15f1c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A custom-built setup was used for all SWIR (shortwave infrared) imaging. Lumics laser unit LU0785D250-U70AN (25 W) “785 nm” was used to provide diffuse illumination at 786 nm. The excitation wavelength is reported as the peak emission wavelength (786 nm), as measured via spectrometer. This laser was coupled in a 4-in-1 fan out fiber-optic bundle of 600 µm core diameter (Thorlabs BF46LS01) for each optical path (note: other laser units coupled in this setup are off for the experiments described herein). The fiber optic bundle was fixed through an excitation cube (Thorlabs KCB1E), reflected off of a mirror (Thorlabs BBE1-E03), and passed through a positive acromat (Thorlabs AC254-050-AB-ML), SP filters (2x High Performance OD 4.0 1100 nm SP, Edmund Optics (#64-339), and finally an engineered 20˚ square diffuser (Thorlabs ED1-S20-MD) to provide uniform illumination over the imaging area. This area was covered with non-reflective blackout fabric (Thorlabs BK5). The excitation flux over the imaging area was set to 100 mW/cm2 for capillary imaging, and 140 mW/cm2 for animal imaging, as measured with a digital optical power and energy meter (Thorlabs PM100D). The power density used for animal imaging was set in accordance with ICNIRP guidelines. An InGaAs camera (Allied Vision Goldeye G-032 Cool TEC2) was mounted vertically above the imaging area to detect SWIR light. The camera was fitted with a C-mount lens (Kowa LM35HC-SW) and a set of LP (longpass) emission filters (defined below). \n\nFilter set used for “1000 nm LP” filtering (= emission collection 1000–1700 nm): 2x High Performance OD 4.0 1000 nm LP, Edmund Optics (#84-766); 1x FELH1000 (Thorlabs).\nFilter set used for “1100 nm LP” filtering (= emission collection 1100–1700 nm): 2x High Performance OD 4.0 1100 nm LP, Edmund Optics (#84-768); 1x FELH1100 (Thorlabs).\nFilter set used for “1200 nm LP filtering (= emission collection 1200–1700 nm): 2x High Performance OD 4.0 1100 nm LP, Edmund Optics (#84-768); 1x FELH1200 (Thorlabs).\nFilter set used for “1300 nm LP filtering (= emission collection 1300–1700 nm): 2x High Performance OD 4.0 1300 nm LP, Edmund Optics (#89-668); 1x FELH1300 (Thorlabs).\nFilter set used for “1400 nm LP filtering (= emission collection 1400–1700 nm): 2x High Performance OD 4.0 1300 nm LP, Edmund Optics (#89-668); 1x FELH1400 (Thorlabs).\n\nThe camera used a sensor temperature setpoint of -30 ˚C and gain = 1. Exposure time was defined for each experiment and are listed for each image (Figure 5D, S15, S16). The entire assembly was partially enclosed and operated in the dark to avoid light pollution while enabling manipulation of the field of view. Both the camera and laser unit were externally controlled. For image acquisition, the toolbox of MATLAB programming environment was used in a combination with script CCDA V3 (https://gitlab.com/brunslab/ccda) to preview and collect images at 14-bit depth.\n",
+      "labEquipment": "Allied Vision Goldeye G-032 Cool TEC2 camera",
+      "measurementTechnique": [],
+      "name": "SWIR fluorescence imaging in mice"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 64
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 41371137
+    }
+  ]
+}

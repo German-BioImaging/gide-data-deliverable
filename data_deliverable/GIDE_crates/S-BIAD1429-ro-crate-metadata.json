@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1429"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1429",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#22742d7b-8bfc-4d04-aed4-002099df21ae"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9f301782-113c-40f6-a762-f15742c2b136"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9745-8063"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-25",
+      "description": "Live imaging of secretory cargoes is a powerful method for understanding the mechanisms of membrane trafficking. Inducing the synchronous release of cargoes from an organelle is key for enhancing microscopic observation. We developed an optical cargo-releasing method, ‘retention using dark state of LOV2’ (RudLOV), which enables exceptional spatial, temporal, and quantity control during cargo release. A limited amount of cargo-release using RudLOV successfully visualized cargo cisternal-movement and cargo-specific exit sites on the Golgi/trans-Golgi network. Moreover, by controlling the timing of cargo-release using RudLOV, we revealed canonical and non-canonical effects of the well-known dynamin inhibitor dynasore, which inhibits early- but not late-Golgi transport and exits from the trans-Golgi network where dynamin-2 is active. Accumulation of COPI vesicles at the cis-side of the Golgi stacks in dynasore-treated cells suggests that dynasore targets COPI-uncoating/tethering/fusion machinery in the early-Golgi cisternae or endoplasmic reticulum but not in the late-Golgi cisternae. These results provide insight into the cisternal maturation of Golgi stacks. ",
+      "funder": [],
+      "identifier": "S-BIAD1429",
+      "keywords": [
+        "confocal images"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "RudLOV—a new optically synchronized cargo transport method reveals unexpected effect of dynasore",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1429/3679cebf-d32b-4453-b73b-56aad92873e2/0a9d9f5f-5f4f-48f5-be23-b3186b36e9ea.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9745-8063",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03t78wx29"
+        }
+      ],
+      "email": "ttago@akikolab.org",
+      "name": "Tatsuya Tago"
+    },
+    {
+      "@id": "https://ror.org/03t78wx29",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Hiroshima University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9f301782-113c-40f6-a762-f15742c2b136",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human HeLa cells",
+      "name": "Biosample1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#22742d7b-8bfc-4d04-aed4-002099df21ae",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Live imaging of HeLa cells using RudLOV by FV3000\nHeLa cells stably expressing GalT::iRFP713 and Sec61b::TagBFP2::LOV2 (clone G7) were transfected with a DNA plasmid encoding Zdk1-FP-GPI, Zdk1-FP-VSVG, or TNFα-Zdk1-FP using jetPRIME or JetOptimus transfection reagent according to the manufacturer’s instructions. At 6–10 h after transfection, the medium was replaced with fresh medium containing 25 µM of biliverdin (Cayman Chemical). The next day, the cells were treated for 4 h with nocodazole. Cycloheximide (100 μg/mL; Cayman Chemical) was administered, and Zdk1-FP-cargo release into the secretory pathway was induced by administration of 0.05% 445 nm laser illumination for 5–10 min using the LSM stimulation mode in FV3000 (Evident, Tokyo, Japan), equipped with a quinta Band dichroic mirror 89903bs (Chroma Technology Corporation, Bellows Falls, VT, USA). Time lapse 3D-stacks of confocal micrographs were obtained using an FV3000 (except for those shown in Figure 1F). The 3D-stacks were projected using the maximum intensity with Fiji. The obtained 3D voxel data were displayed as volume-rendered images using the Volocity software. Figure 1F shows single sections of the confocal micrograph for pre-illumination and 15 min post-illumination conditions, obtained using an FV3000. As shown in Figure 1G, confocal micrographs were obtained, and the signal intensity of the Zdk1-FP-cargo was measured in the Golgi area defined by GalT::iRFP713 using Fiji. Precise cargo localization within the Golgi stacks was measured using line profiles across the Golgi stacks using Fiji, and processed using Plot2 Pro (Michael Wesemann, Berlin, Germany). Co-localization of VSVG and GM130/GalT was measured using custom plugins for Fiji, as described by Papanikou et al. (Papanikou et al., 2015). Briefly, for each timepoint, slices in the Z-stack were concatenated into a montage, regions positive to GM130, GalT, and Cargo were defined, and the Mander's overlap coefficient (MOC) were calculated for each montage.\nWe administered 100 μM of dynasore, 10 μM of Dyngo4a (Cayman Chemical), 10 μM of dynole34-2, and 100 μM of dynole31-2 (negative control; R&D Systems, Minneapolis, MN, USA) before or after illumination, as indicated in the text.\n\nLive imaging of HeLa cells using the RUSH system with an FV3000 confocal microscope\nHeLa cells stably expressing GalT::iRFP713 were transfected with a DNA plasmid encoding RUSH system bi-cistronic expression plasmids Str::KDEL_SBP::NeonGreen::VSVG using jetPRIME or JetOptimus transfection reagent as per the manufacturer’s instructions. At 6–10 h after transfection, the medium was replaced with fresh medium containing 25 µM of biliverdin. The next day, after 4 h of treatment with nocodazole, the release of SBP::NeonGreen::VSVG into the secretory pathway was induced by replacing the medium with 100 µM biotin (Fujifilm WAKO Chemicals) and 100 μg/mL of cycloheximide. Time-lapse confocal micrographs were obtained using an FV3000 microscope. As shown in Figure 1B, the signal intensity of SBP::Neon Green::VSVG was measured in proximity to the Golgi apparatus using Fiji as defined by GalT::iRFP713.\n\nLive imaging of HeLa cells using the RUSH system with SCLIM\nHeLa cells stably expressing GalT::iRFP713 inoculated on glass-based dishes (Iwaki, Tokyo, Japan) were transfected with a DNA plasmid encoding the RUSH system bi-cistronic expression plasmids Str::KDEL_SBP::Scarlet::GPI using JetOptimus transfection reagent as per the manufacturer’s instructions. The cells were cultured for 1 day in phenol red-free medium to reduce background fluorescence. The cells were then treated with 10 µM nocodazole for 4 h to disrupt the microtubules. SBP::EGFP::GPI was released into the secretory pathway by replacing the medium with 100 µM biotin and 100 μg/mL of cycloheximide. To observe the effect of Dyngo4a, the cells were pre-treated with 100 µM of Dyngo4a for approximately 10 min. The medium was replaced with another containing 100 µM biotin, 100 μg/mL cycloheximide, and 100 µM Dyngo4a to initiate the transport of SBP::EGFP::GPI. Z-stack images were obtained using SCLIM (Kurokawa et al., 2013; Kurokawa et al., 2019; Tojima et al., 2023) and processed via deconvolution with Volocity (Perkin Elmer, Waltham, MA, USA) using the theoretical point-spread function for spinning-disk confocal microscopy. The obtained 3D voxel data were displayed as volume-rendered images using the Volocity software.\n\nElectron microscopy imaging of GalT::APEX2::EGFP expressing HeLa cells with and without dynasore treatment\nAclar-film (Nisshin-EM, Tokyo, Japan) was cut into pieces, washed with acetone, placed in an µ-Slide 8-well cell culture chamber (ibidi GmbH, Gräfelfing, Germany), and hydrated using culture medium for more than 24 h. HeLa cells that were transfected with CMV-GalT::APEX2::EGFP or CT7-NeonGreen::APEX2::eCOP and seeded on the film to grow overnight. After 1 h of incubation with 100 μM of dynasore (Cayman Chemical), the cells were fixed in 0.1 M cacodylate buffer (pH 7.4) with 2% glutaraldehyde (Electron Microscopy Sciences, Hatfield, PA, USA) and 2% paraformaldehyde (Electron Microscopy Sciences) for 1 h on ice. DAB staining was performed as described by Martell et al. (Martell et al., 2017) with some previously described modifications (Otsuka et al., 2019). DAB staining was performed by applying fresh DAB solution every 20 min for 1 h at room temperature to cells expressing GalT::APEX2::EGFP and NeonGreen::APEX2::eCOP. Post-fixation was performed using 2% (w/v) osmium tetroxide (Electron Microscopy Sciences, Hatfield, UAS) for 30 min in chilled cacodylate buffer. The films were rinsed five times (2 min each time) with chilled distilled water, placed overnight in ddH2O containing chilled 2% (w/v) uranyl acetate, dehydrated, and penetrated with EPON-812 resin (Electron Microscopy Sciences) as described previously (Otsuka et al., 2019). Aclar-films with cells in EPON-812 were polymerized into a thin EPON-812 sheet at 100 °C for 20 h. Polymerized EPON-812 sheet-containing cells were cut into 2 mm squares, and the attached Aclar-film was removed and re-polymerized after being placed on the bottom of a pyramidal mold with new EPON-812. The cells were cut with a diamond knife into 70-nm sections and imaged using a JEM1400 transmission electron microscope (JEOL, Tokyo, Japan) operated at 80 kV. Montage images were captured with a CCD camera system (JEOL).\n",
+      "labEquipment": "Live imaging of HeLa cells using RudLOV by FV3000\nHeLa cells stably expressing GalT::iRFP713 and Sec61b::TagBFP2::LOV2 (clone G7) were transfected with a DNA plasmid encoding Zdk1-FP-GPI, Zdk1-FP-VSVG, or TNFα-Zdk1-FP using jetPRIME or JetOptimus transfection reagent according to the manufacturer’s instructions. At 6–10 h after transfection, the medium was replaced with fresh medium containing 25 µM of biliverdin (Cayman Chemical). The next day, the cells were treated for 4 h with nocodazole. Cycloheximide (100 μg/mL; Cayman Chemical) was administered, and Zdk1-FP-cargo release into the secretory pathway was induced by administration of 0.05% 445 nm laser illumination for 5–10 min using the LSM stimulation mode in FV3000 (Evident, Tokyo, Japan), equipped with a quinta Band dichroic mirror 89903bs (Chroma Technology Corporation, Bellows Falls, VT, USA). Time lapse 3D-stacks of confocal micrographs were obtained using an FV3000 (except for those shown in Figure 1F). The 3D-stacks were projected using the maximum intensity with Fiji. The obtained 3D voxel data were displayed as volume-rendered images using the Volocity software. Figure 1F shows single sections of the confocal micrograph for pre-illumination and 15 min post-illumination conditions, obtained using an FV3000. As shown in Figure 1G, confocal micrographs were obtained, and the signal intensity of the Zdk1-FP-cargo was measured in the Golgi area defined by GalT::iRFP713 using Fiji. Precise cargo localization within the Golgi stacks was measured using line profiles across the Golgi stacks using Fiji, and processed using Plot2 Pro (Michael Wesemann, Berlin, Germany). Co-localization of VSVG and GM130/GalT was measured using custom plugins for Fiji, as described by Papanikou et al. (Papanikou et al., 2015). Briefly, for each timepoint, slices in the Z-stack were concatenated into a montage, regions positive to GM130, GalT, and Cargo were defined, and the Mander's overlap coefficient (MOC) were calculated for each montage.\nWe administered 100 μM of dynasore, 10 μM of Dyngo4a (Cayman Chemical), 10 μM of dynole34-2, and 100 μM of dynole31-2 (negative control; R&D Systems, Minneapolis, MN, USA) before or after illumination, as indicated in the text.\n\nLive imaging of HeLa cells using the RUSH system with an FV3000 confocal microscope\nHeLa cells stably expressing GalT::iRFP713 were transfected with a DNA plasmid encoding RUSH system bi-cistronic expression plasmids Str::KDEL_SBP::NeonGreen::VSVG using jetPRIME or JetOptimus transfection reagent as per the manufacturer’s instructions. At 6–10 h after transfection, the medium was replaced with fresh medium containing 25 µM of biliverdin. The next day, after 4 h of treatment with nocodazole, the release of SBP::NeonGreen::VSVG into the secretory pathway was induced by replacing the medium with 100 µM biotin (Fujifilm WAKO Chemicals) and 100 μg/mL of cycloheximide. Time-lapse confocal micrographs were obtained using an FV3000 microscope. As shown in Figure 1B, the signal intensity of SBP::Neon Green::VSVG was measured in proximity to the Golgi apparatus using Fiji as defined by GalT::iRFP713.\n\nLive imaging of HeLa cells using the RUSH system with SCLIM\nHeLa cells stably expressing GalT::iRFP713 inoculated on glass-based dishes (Iwaki, Tokyo, Japan) were transfected with a DNA plasmid encoding the RUSH system bi-cistronic expression plasmids Str::KDEL_SBP::Scarlet::GPI using JetOptimus transfection reagent as per the manufacturer’s instructions. The cells were cultured for 1 day in phenol red-free medium to reduce background fluorescence. The cells were then treated with 10 µM nocodazole for 4 h to disrupt the microtubules. SBP::EGFP::GPI was released into the secretory pathway by replacing the medium with 100 µM biotin and 100 μg/mL of cycloheximide. To observe the effect of Dyngo4a, the cells were pre-treated with 100 µM of Dyngo4a for approximately 10 min. The medium was replaced with another containing 100 µM biotin, 100 μg/mL cycloheximide, and 100 µM Dyngo4a to initiate the transport of SBP::EGFP::GPI. Z-stack images were obtained using SCLIM (Kurokawa et al., 2013; Kurokawa et al., 2019; Tojima et al., 2023) and processed via deconvolution with Volocity (Perkin Elmer, Waltham, MA, USA) using the theoretical point-spread function for spinning-disk confocal microscopy. The obtained 3D voxel data were displayed as volume-rendered images using the Volocity software.\n\nElectron microscopy imaging of GalT::APEX2::EGFP expressing HeLa cells with and without dynasore treatment\nAclar-film (Nisshin-EM, Tokyo, Japan) was cut into pieces, washed with acetone, placed in an µ-Slide 8-well cell culture chamber (ibidi GmbH, Gräfelfing, Germany), and hydrated using culture medium for more than 24 h. HeLa cells that were transfected with CMV-GalT::APEX2::EGFP or CT7-NeonGreen::APEX2::eCOP and seeded on the film to grow overnight. After 1 h of incubation with 100 μM of dynasore (Cayman Chemical), the cells were fixed in 0.1 M cacodylate buffer (pH 7.4) with 2% glutaraldehyde (Electron Microscopy Sciences, Hatfield, PA, USA) and 2% paraformaldehyde (Electron Microscopy Sciences) for 1 h on ice. DAB staining was performed as described by Martell et al. (Martell et al., 2017) with some previously described modifications (Otsuka et al., 2019). DAB staining was performed by applying fresh DAB solution every 20 min for 1 h at room temperature to cells expressing GalT::APEX2::EGFP and NeonGreen::APEX2::eCOP. Post-fixation was performed using 2% (w/v) osmium tetroxide (Electron Microscopy Sciences, Hatfield, UAS) for 30 min in chilled cacodylate buffer. The films were rinsed five times (2 min each time) with chilled distilled water, placed overnight in ddH2O containing chilled 2% (w/v) uranyl acetate, dehydrated, and penetrated with EPON-812 resin (Electron Microscopy Sciences) as described previously (Otsuka et al., 2019). Aclar-films with cells in EPON-812 were polymerized into a thin EPON-812 sheet at 100 °C for 20 h. Polymerized EPON-812 sheet-containing cells were cut into 2 mm squares, and the attached Aclar-film was removed and re-polymerized after being placed on the bottom of a pyramidal mold with new EPON-812. The cells were cut with a diamond knife into 70-nm sections and imaged using a JEM1400 transmission electron microscope (JEOL, Tokyo, Japan) operated at 80 kV. Montage images were captured with a CCD camera system (JEOL).\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1139
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 21925523569
+    }
+  ]
+}

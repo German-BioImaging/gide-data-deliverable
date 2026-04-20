@@ -1,0 +1,213 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1521"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1521",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9448feb5-d4ac-4727-8da9-ecac4df7ac84"
+        },
+        {
+          "@id": "obo:FBbi_00000366"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0d805a93-a3e7-4d67-88d8-6331acce6a2e"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#e884a283-2135-461e-b584-bcfef7ad7c92"
+        },
+        {
+          "@id": "#f93c2f86-92dd-438a-b285-01d9cfcf8399"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-12",
+      "description": "The files here are the source data for 4 main figures of Ma et al., Regional Ca2+ Wave, Hormone Responses upon Laser Ablation in Arabidopsis. ",
+      "funder": [],
+      "identifier": "S-BIAD1521",
+      "keywords": [
+        "Ca2+ wave/Ethylene/Jasmonate/Laser ablation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Ca2+ Waves and Ethylene/JA Crosstalk Orchestrate Wound Responses in Arabidopsis Roots",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1521/369d8684-b523-4884-943e-975c0db97341/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#e884a283-2135-461e-b584-bcfef7ad7c92",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7a304d75-2476-42c8-a9ed-2619e4376e18"
+        }
+      ],
+      "email": "xuemin.ma@slu.se",
+      "name": "Xuemin Ma"
+    },
+    {
+      "@id": "#f93c2f86-92dd-438a-b285-01d9cfcf8399",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7a304d75-2476-42c8-a9ed-2619e4376e18"
+        }
+      ],
+      "email": "peter.marhavy@slu.se",
+      "name": "Peter Marhavý"
+    },
+    {
+      "@id": "#7a304d75-2476-42c8-a9ed-2619e4376e18",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Swedish University of Agricultural Sciences"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#0d805a93-a3e7-4d67-88d8-6331acce6a2e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "5-day-old Arabidopsis root ",
+      "name": "Image data for Regional Ca2+ Wave, Hormone Responses upon Laser Ablation in Arabidopsis Figure 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#9448feb5-d4ac-4727-8da9-ecac4df7ac84",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "(1)\tPrepare STELLARIS 8 Multiphoton for use [set lasers (for GFP-488); objectives - 40× glycerol immersion objective; image size - x: 242.28 µm, y: 120.94 µm, Z: 19.00 µm; zoom - 1.2; scan mode – xyz; pixel dwell - 1.02 µs; pinhole, 67.9 µm. laser power was set to 2% for AOS::NLS-3xVenus and ACS6::NLS-3xVenus; laser power was set to 4.5% for JAZ10::NLS-3xVenus. Fluorescence signals for yellow fluorescent protein (YFP) (excitation 515 nm, emission 525-560 nm) and propidium iodide (excitation 520 nm, emission 590 nm) were detected. \n(2)\tUsing FRAP (fluorescence recovery after photobleaching) mode, go to set up window, in this mode change the scan mode to xyt, change the MFP to SP667. The rest will be kept as in (1). \n(3)\tAdding a new laser, (800 nm), turn on the MP1 shutter, keep the intensity as 0. \n(4)\tMove to the FRAP mode, bleach window, setting the laser power 20-25% . Select the ROI (target region for ablation) in this window. \n(5)\tMove to the FRAP mode, time course window, in this window, set up as 1 repetition, 2 pre-bleach, 5 bleach, and 2 post-bleach. \n(6)\tMove back to FRAP mode, change back to the Stellaris 8 mode for normal confocal imaging, and take the image immediately after ablation as time 0. Settings as (1).\n\n",
+      "labEquipment": "STELLARIS 8 Multiphoton/Confocal Microscope from Leica Microsystems coupled with a Mai Tai Multiphoton laser.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000366"
+        }
+      ],
+      "name": "Laser ablation and confocal imaging protocol"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000366",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRAP"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1044
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 71511151894
+    }
+  ]
+}

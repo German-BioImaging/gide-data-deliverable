@@ -1,0 +1,233 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1009"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1009",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d5b944fa-c0d0-4cc9-9024-201c38ea2063"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d090630f-61e7-430b-84c5-55f72ecc437d"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4670-1139"
+        },
+        {
+          "@id": "#b87f0538-6fb7-455c-bcca-257aa2724e70"
+        },
+        {
+          "@id": "#9d97d0f7-d05c-4c78-a9fa-e0482e64d068"
+        },
+        {
+          "@id": "#10a58804-d2bd-42e1-b8d0-a16d5f2911aa"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-02-21",
+      "description": "The tight control of fate transitions during stem cell differentiation is essential for proper\ntissue development and maintenance. However, identifying how the multilayered regulation\nof gene expression programmes orchestrates stem cell differentiation in vivo remains\nelusive, because of the challenges in studying sparsely distributed adult stem cells in a\nsystematic manner. Here, we synchronised Drosophila female germline stem cell (GSC)\ndifferentiation in vivo to perform in-depth transcriptome and translatome analyses at high\ndevelopmental resolution. This characterisation revealed widespread and dynamic changes\nin mRNA level, promoter usage, exon inclusion, and translation efficiency. Transient\nexpression of the master regulator, Bam, drives a first wave of expression changes, primarily\nmodifying the cell cycle programme. Surprisingly, as Bam levels recede, differentiating cells\nreturn to a remarkably stem cell-like transcription and translation programme, with a few\ncrucial changes feeding into a second phase driving terminal differentiation to form the\noocyte. Altogether, these findings reveal that rather than a unidirectional accumulation of\nchanges, the in vivo differentiation programme relies on distinctly regulated and\ndevelopmentally sequential waves.",
+      "funder": [],
+      "identifier": "S-BIAD1009",
+      "keywords": [
+        "Drosophila",
+        "ovary",
+        "differentiation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Two distinct waves of transcriptome and translatome changes drive germline stem cell differentiation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1009/09fa56ef-1ac2-47b4-8a5d-adf6e18907ca/2841df89-6475-4acf-8c5d-9a3b8a48db86.png"
+      ]
+    },
+    {
+      "@id": "#10a58804-d2bd-42e1-b8d0-a16d5f2911aa",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "fk319@cam.ac.uk",
+      "name": "Felipe Karam Teixeira"
+    },
+    {
+      "@id": "#9d97d0f7-d05c-4c78-a9fa-e0482e64d068",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "dg572@cam.ac.uk",
+      "name": "Daniel Gebert"
+    },
+    {
+      "@id": "#b87f0538-6fb7-455c-bcca-257aa2724e70",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "name": "Jinghua Gui"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4670-1139",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "tjs73@cam.ac.uk",
+      "name": "Tamsin Samuels"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#d090630f-61e7-430b-84c5-55f72ecc437d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila ovary",
+      "name": "Drosophila ovary",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#d5b944fa-c0d0-4cc9-9024-201c38ea2063",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Leica Sp8, 40x oil objective",
+      "labEquipment": "Leica Sp8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Leica Sp8"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 36
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1036717736
+    }
+  ]
+}

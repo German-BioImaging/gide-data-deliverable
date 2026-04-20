@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000436/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000436/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000436",
+      "name": "In vivo imaging of micronuclei incorporation by microglia",
+      "description": "Microglia—resident immune cells in the central nervous system—undergomorphological and functional changes in response to signals from thelocal environment and mature into various homeostatic states. However,niche signals underlying microglial differentiation and maturationremain unknown. Here, we show that neuronal micronuclei (MN) transferto microglia, which is followed by changing microglial characteristicsduring the postnatal period. Neurons passing through a dense regionof the developing neocortex give rise to MN and release them into theextracellular space, before being incorporated into microglia and inducingmorphological changes. Two-photon imaging analyses have revealedthat microglia incorporating MN tend to slowly retract their processes.Loss of the cGAS gene alleviates effects on micronucleus-dependentmorphological changes. Neuronal MN-harboring microglia also exhibitunique transcriptome signatures. These results demonstrate that neuronalMN serve as niche signals that transform microglia, and provide a potentialmechanism for regulation of microglial characteristics in the early postnatalneocortex.",
+      "datePublished": "2025-05-26",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41593-024-01863-5"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Fuminori Tsuruta",
+      "email": "tsuruta.fuminori.fn@u.tsukuba.ac.jp",
+      "description": "Organization: University of Tsukuba; Department: Institute of Life and Environmental Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02956yf07"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02956yf07",
+      "@type": "Organization",
+      "name": "University of Tsukuba"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41593-024-01863-5",
+      "@type": "ScholarlyArticle",
+      "name": "Propagation of neuronal micronuclei regulates microglial characteristics.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 20041265152,
+      "description": "20.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 56,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

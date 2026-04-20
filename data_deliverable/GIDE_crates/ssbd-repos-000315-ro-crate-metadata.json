@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000315/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000315/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000315",
+      "name": "x-y coordinates of Caenorhabditis elegans centroids stimulated with electric shock",
+      "description": "Behavioral persistency reflects internal brain states, which are the foundations of multiple brain functions. However, experimental paradigms enabling genetic analyses of behavioral persistency and its associated brain functions have been limited. Here we report novel persistent behavioral responses caused by electric stimuli in the nematode Caenorhabditis elegans. When the animals on bacterial food are stimulated by alternating current, their movement speed suddenly increases two- to three-fold, persisting for more than one minute even after a five-second stimulation. Genetic analyses reveal that voltage-gated channels in the neurons are required for the response, possibly as the sensors, and neuropeptide signaling regulates the duration of the persistent response. Additional behavioral analyses implicate that the animal's response to electric shock is scalable and has a negative valence. These properties, along with persistence, have been recently regarded as essential features of emotion, suggesting that C. elegans response to electric shock may reflect a form of emotion, akin to fear.",
+      "datePublished": "2023-08-15",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1093/genetics/iyad148"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kotaro Kimura",
+      "email": "kokimura@nsc.nagoya-cu.ac.jp",
+      "description": "Organization: Nagoya City University; Department: Graduate School of Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04wn7wc95"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/04wn7wc95",
+      "@type": "Organization",
+      "name": "Nagoya City University"
+    },
+    {
+      "@id": "https://doi.org/10.1093/genetics/iyad148",
+      "@type": "ScholarlyArticle",
+      "name": "Electric shock causes a fleeing-like persistent behavioral response in the nematode Caenorhabditis elegans.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "vernacularName": "nematode"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 40587264,
+      "description": "40.6 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 137,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

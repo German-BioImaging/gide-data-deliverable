@@ -1,0 +1,338 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/118-Iraha-hESCRetina/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/118-Iraha-hESCRetina/",
+      "@type": "Dataset",
+      "identifier": "118-Iraha-hESCRetina",
+      "name": "Electron microscopy of mature photoreceptors in hESC-Dereived retina rosette-like structure",
+      "description": "118-Iraha-hESCRetina",
+      "datePublished": "2019-11-20",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Animals",
+        "Disease Models, Animal",
+        "Embryonic Stem Cells/pathology[major]",
+        "Female",
+        "Humans",
+        "Induced Pluripotent Stem Cells/pathology",
+        "Male",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "Mice, Inbred NOD",
+        "Mice, Transgenic",
+        "Photoreceptor Cells/pathology",
+        "Retina/pathology[major]",
+        "Retinal Degeneration/pathology[major]",
+        "Stem Cell Transplantation/methods"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        },
+        {
+          "@id": "#auth-011"
+        },
+        {
+          "@id": "#auth-012"
+        },
+        {
+          "@id": "#auth-013"
+        },
+        {
+          "@id": "#auth-014"
+        },
+        {
+          "@id": "#auth-015"
+        },
+        {
+          "@id": "#auth-016"
+        },
+        {
+          "@id": "#auth-017"
+        },
+        {
+          "@id": "#auth-018"
+        },
+        {
+          "@id": "#auth-019"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.stemcr.2018.01.032"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0060041"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042462"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097733"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-266"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Michiko Mandai",
+      "email": "michiko.mandai@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Satoshi Iraha"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Hung-Ya Tu"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Suguru Yamasaki"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Takahiro Kagawa"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Motohito Goto"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Riichi Takahashi"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Takehito Watanabe"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Sunao Sugita"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Shigenobu Yonemura"
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Genshiro A. Sunagawa"
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Take Matsuyama"
+    },
+    {
+      "@id": "#auth-013",
+      "@type": "Person",
+      "name": "Momo Fujii"
+    },
+    {
+      "@id": "#auth-014",
+      "@type": "Person",
+      "name": "Atsushi Kuwahara"
+    },
+    {
+      "@id": "#auth-015",
+      "@type": "Person",
+      "name": "Akiyoshi Kishino"
+    },
+    {
+      "@id": "#auth-016",
+      "@type": "Person",
+      "name": "Naoshi Koide"
+    },
+    {
+      "@id": "#auth-017",
+      "@type": "Person",
+      "name": "Mototsugu Eiraku"
+    },
+    {
+      "@id": "#auth-018",
+      "@type": "Person",
+      "name": "Hidenobu Tanihara"
+    },
+    {
+      "@id": "#auth-019",
+      "@type": "Person",
+      "name": "Masayo Takahashi"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.stemcr.2018.01.032",
+      "@type": "ScholarlyArticle",
+      "name": "Establishment of Immunodeficient Retinal Degeneration Model Mice and Functional Maturation of Human ESC-Derived Retinal Sheets after Transplantation.",
+      "datePublished": "2018"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens",
+      "description": "Homo sapiens",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060041",
+      "@type": "DefinedTerm",
+      "name": "retinal development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042462",
+      "@type": "DefinedTerm",
+      "name": "eye photoreceptor cell development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097733",
+      "@type": "DefinedTerm",
+      "name": "photoreceptor cell cilium"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 25766252,
+      "description": "25.8 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 4,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

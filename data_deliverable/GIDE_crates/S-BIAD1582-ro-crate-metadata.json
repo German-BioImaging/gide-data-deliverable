@@ -1,0 +1,255 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1582"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1582",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b2c4c995-a898-40df-a897-3cc423d31cec"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#afd2148f-6e44-4595-a51e-a0622f40810c"
+        },
+        {
+          "@id": "#524367fe-393a-4879-874d-74eb440e2214"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6324-1421"
+        },
+        {
+          "@id": "#64a9682d-aecd-4d53-927f-4b9ba6030b0e"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-17",
+      "description": "Confocal timelapse imaging stacks of live, organotypic SCN brain slices expressing endogenous circadian clock protein fluorescent fusions. There are 30 minutes between each frame. The Green channel represents mVenus fluorescence from either PER2::Venus or Venus::BMAL1. The red channel represents CRY1::mRuby3. Images were acquired on a Zeiss LSM880 using a 10x Apochromat objective.",
+      "funder": [],
+      "identifier": "S-BIAD1582",
+      "keywords": [
+        "brain",
+        "suprachiasmatic nucleus",
+        "circadian",
+        "clock protein",
+        "timelapse",
+        "organotypic slices",
+        "PER2",
+        "CRY1",
+        "BMAL1"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "mPER2, mCRY1 and mBMAL1 fluorescence timelapse imaging in the suprachiasmatic nucleus",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1582/0b9e5723-b5e2-4b4d-86b2-6bf8aedb918a/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#64a9682d-aecd-4d53-927f-4b9ba6030b0e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#833de045-c952-4ca3-8379-3235aaf39273"
+        }
+      ],
+      "email": "mha@mrc-lmb.cam.ac.uk",
+      "name": "Michael H Hastings"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6324-1421",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4ddc5fa7-6d67-4a2c-8672-adac89759933"
+        }
+      ],
+      "email": "nsmyllie@mrc-lmb.cam.ac.uk",
+      "name": "Nicola J Smyllie"
+    },
+    {
+      "@id": "#4ddc5fa7-6d67-4a2c-8672-adac89759933",
+      "@type": [
+        "Organization"
+      ],
+      "name": "MRC Laboratory for Molecular Cell Biology"
+    },
+    {
+      "@id": "#833de045-c952-4ca3-8379-3235aaf39273",
+      "@type": [
+        "Organization"
+      ],
+      "name": "MRC Laboratory of Molecular Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#524367fe-393a-4879-874d-74eb440e2214",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "suprachiasmatic nucleus",
+      "name": "BC-KI",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#afd2148f-6e44-4595-a51e-a0622f40810c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "suprachiasmatic nucleus",
+      "name": "PC-KI",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b2c4c995-a898-40df-a897-3cc423d31cec",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "3-5 days after slice preparation the SCN slices were transferred to glass bottom imaging dishes containing recording media and sealed with silicone grease.\nThe stage of the microscope was maintained at 37oC throughout the recording.\nA 10x apochromat objective was used to acquire the images.\nmVenus fluorescence was acquired using the 514 laser at 20% power\nmRuby3 fluorescence was acquired using the 568 laser at 20% power\nImages were acquired using 4x averaging, frame size of 1024x1024 pixels, every 30 minutes. \n  \n",
+      "labEquipment": "Zeiss LSM880",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Confocal timelapse imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 616101959
+    }
+  ]
+}

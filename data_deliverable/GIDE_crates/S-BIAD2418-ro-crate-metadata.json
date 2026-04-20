@@ -1,0 +1,274 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2418"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2418",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#362356d1-6889-4ceb-b066-4a4a793de90e"
+        },
+        {
+          "@id": "obo:FBbi_00000368"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e70d62c7-def0-413a-8e20-9ef55fe0afc9"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2021-8379"
+        },
+        {
+          "@id": "#49a31216-add1-44b8-9743-64018227509c"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2877-0133"
+        },
+        {
+          "@id": "https://orcid.org/0009-0009-2143-2754"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5542-8002"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1477-5478"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-30",
+      "description": "Human triple negative breast cancer tissue samples including cores and resections from Neoadjuvant Chemotherapy (NACT) responders and non-responders. Samples were acquired as part of the Wellcome Leap DeltaTissue project and were stained with the nuclear dye SiR-DNA followed by imaging using FLIM to detect chromatin compaction",
+      "funder": [],
+      "identifier": "S-BIAD2418",
+      "keywords": [
+        "Fluorescence Lifetime Imaging Microscopy (FLIM)",
+        "Cancer",
+        "TNBC",
+        "Human"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Fluorescence Lifetime Imaging Microscopy (FLIM) of human triple negative breast cancer tissue samples",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2418/fa93384f-2c20-4b5d-8ad6-ece00b8754ad/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#49a31216-add1-44b8-9743-64018227509c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#82b730b2-7ff2-4420-b3db-d431f019031a"
+        }
+      ],
+      "email": "thomas.phillips.bio@gmail.com",
+      "name": " Thomas A Phillips"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5542-8002",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d5f03da5-4cfe-4a70-a7af-73e24b445c9e"
+        }
+      ],
+      "email": "leorro@post.bgu.ac.il",
+      "name": "Leor Ariel Rose"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1477-5478",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d5f03da5-4cfe-4a70-a7af-73e24b445c9e"
+        }
+      ],
+      "email": "assafzar@gmail.com",
+      "name": " Assaf Zaritsky"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2021-8379",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#82b730b2-7ff2-4420-b3db-d431f019031a"
+        }
+      ],
+      "email": "maddy.parsons@kcl.ac.uk",
+      "name": " Maddy Parsons"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2877-0133",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#82b730b2-7ff2-4420-b3db-d431f019031a"
+        }
+      ],
+      "email": "stefania.marcotti@kcl.ac.uk",
+      "name": " Stefania Marcotti"
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-2143-2754",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d5f03da5-4cfe-4a70-a7af-73e24b445c9e"
+        }
+      ],
+      "email": "reutme@post.bgu.ac.il",
+      "name": " Reut Mealem"
+    },
+    {
+      "@id": "#82b730b2-7ff2-4420-b3db-d431f019031a",
+      "@type": [
+        "Organization"
+      ],
+      "name": " King’s College London"
+    },
+    {
+      "@id": "#d5f03da5-4cfe-4a70-a7af-73e24b445c9e",
+      "@type": [
+        "Organization"
+      ],
+      "name": " Ben-Gurion University of the Negev"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#e70d62c7-def0-413a-8e20-9ef55fe0afc9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human cancer tissue - Human triple negative breast cancer tissue core biopsies and matched resections for non-responder patients",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#362356d1-6889-4ceb-b066-4a4a793de90e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Samples were imaged with 65% laser power using a 10x air objective (0.4NA) with additional 2x magnification. SiR-DNA was excited using 11.98% power, at 651 nm and emitted signal was gated at 658-780 nm. Data was captured using the HyDS2 detector. LAS Navigator was used to define the boundary of the tissue sections and build a tiled series of individual images to cover the entire section area. Tiled regions were then stitched into single images using LAS X software. To permit accumulation of sufficient photons for fitting of decay curves, a frame repeat of 5 was applied to each tile acquired and a minimum mean signal of 1000 counts was required for each tile to allow for robust lifetime fitting.",
+      "labEquipment": "Leica Stellaris FALCON microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000368"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000368",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FLIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 169
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 49645256693
+    }
+  ]
+}

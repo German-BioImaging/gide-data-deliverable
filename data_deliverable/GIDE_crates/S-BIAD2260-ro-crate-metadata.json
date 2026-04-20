@@ -1,0 +1,234 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2260"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2260",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#22e83b63-7f9d-4f73-bb4d-3e0ebcbb776b"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#43b04121-75ff-4b52-beec-c913f8bdc3ce"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ab87840e-5f60-4045-a546-5fa772e35f23"
+        },
+        {
+          "@id": "#761b83dd-8770-47ed-8f55-ef32c19e0706"
+        },
+        {
+          "@id": "#a91e95f1-1ca3-47d9-9c98-97688a556400"
+        },
+        {
+          "@id": "#9edd3d60-bf1e-404d-af65-5bca644d25f3"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-01",
+      "description": "Biomolecular condensates mediate dynamic compartmentalization of cellular processes. The multivalent interactions that underlie biomolecular condensation are often promoted by intrinsically disordered regions (IDRs) within proteins. While the role of IDRs in biomolecular condensates is well appreciated, predicting whether an IDR forms condensates in cells remains challenging. Here, we developed a machine learning model to accurately predict the condensation behavior of IDRs, analyzing 215 IDRs from fusion oncoproteins in HEK293T cells. We identified distinct sequence-derived physicochemical features associated with condensation. Leveraging these data, our model predicts that ~12% of the ~13,000 IDRs in the human proteome are likely to form cellular condensates, establishing a robust framework for proteome-wide analysis of IDR-mediated biomolecular condensation. Notably, proteins with condensate-forming IDRs are significantly enriched in RNA processing and splicing functions and are predominantly localized to membrane-less organelles (MLOs), highlighting a central role of IDR-mediated biomolecular condensation in cellular organization and RNA biology. ",
+      "funder": [],
+      "identifier": "S-BIAD2260",
+      "keywords": [
+        "disordered protein",
+        "biomolecular condensates",
+        "light microscopy"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Proteome-wide computational analyses reveal links between protein condensate formation and RNA biology",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2260/5f8cd8bf-5b72-4ba2-bde6-766927128189/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#761b83dd-8770-47ed-8f55-ef32c19e0706",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02r3e0967"
+        }
+      ],
+      "email": "smaiti@stjude.org",
+      "name": "Snigdha Maiti"
+    },
+    {
+      "@id": "#9edd3d60-bf1e-404d-af65-5bca644d25f3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02r3e0967"
+        }
+      ],
+      "email": "rkriwacki@stjude.org",
+      "name": "Richard W. Kriwacki"
+    },
+    {
+      "@id": "#a91e95f1-1ca3-47d9-9c98-97688a556400",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02r3e0967"
+        }
+      ],
+      "email": "stripathi@stjude.org",
+      "name": "Swarnendu Tripathi"
+    },
+    {
+      "@id": "#ab87840e-5f60-4045-a546-5fa772e35f23",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02r3e0967"
+        }
+      ],
+      "email": "dbaggett@stjude.org",
+      "name": "David Baggett"
+    },
+    {
+      "@id": "https://ror.org/02r3e0967",
+      "@type": [
+        "Organization"
+      ],
+      "name": "St. Jude Children's Research Hospital"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#43b04121-75ff-4b52-beec-c913f8bdc3ce",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK-293T Cells - Transiently Transfected HEK293T cells",
+      "name": "Transiently Transfected Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#22e83b63-7f9d-4f73-bb4d-3e0ebcbb776b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "3D images of cells were captured as z stacks with 0.3 µm spacing between planes, spanning 12 µm in total. Live HEK293T cells were imaged at 37 °C in phenol red-free DMEM with high glucose (Gibco) supplemented with 1× penicillin/streptomycin, 10% FBS, 6 mmol/L l-glutamine, and 25 mmol/L HEPES.  ",
+      "labEquipment": "3i Marianas system (Denver, CO) configured with a Yokogawa CSU-W spinning disk confocal microscope utilizing a 100x Zeiss objective, 405 nm (Hoechst) and 488 nm (mEGFP) laser lines, and Slidebook (RRID: SCR_014300) 6.0 (3i).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1704
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3314186768
+    }
+  ]
+}

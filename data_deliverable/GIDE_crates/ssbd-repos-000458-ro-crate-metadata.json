@@ -1,0 +1,163 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000458/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000458/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000458",
+      "name": "Xenium In Situ Gene Expression and Multiplex Fluorescence Immunostaining data of non-small cell lung cancers",
+      "description": "The interaction of tumor cells and their microenvironment is thought to be a key factor in tumor development. We present spatial RNA profiles obtained from 30 lung adenocarcinoma patients at the non-invasive and later invasive stages. We use spatial transcriptome sequencing data in conjunction with in situ RNA profiling to conduct higher resolution analyses. The detailed examination of each case, as well as the subsequent computational analyses based on the observed diverse profiles, reveals that significant changes in the phenotypic appearances of tumor cells are frequently associated with changes in immune cell features. The phenomenon coincides with the induction of a series of cellular expression programs that enable tumor cells to transform and break through the immune cell barrier, allowing them to progress further. The study shows how lung tumors develop through interaction in their microenvironments.",
+      "datePublished": "2025-09-08",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Humans",
+        "Tumor Microenvironment/genetics[major]",
+        "Adenocarcinoma of Lung/genetics[major]",
+        "Adenocarcinoma of Lung/pathology[major]",
+        "Adenocarcinoma of Lung/metabolism[major]",
+        "Lung Neoplasms/genetics[major]",
+        "Lung Neoplasms/pathology[major]",
+        "Lung Neoplasms/metabolism[major]",
+        "Gene Expression Profiling[major]",
+        "Gene Expression Regulation, Neoplastic[major]",
+        "Transcriptome",
+        "Female",
+        "Adenocarcinoma/genetics",
+        "Adenocarcinoma/pathology",
+        "Adenocarcinoma/metabolism",
+        "Male"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-024-54671-7"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yutaka Suzuki",
+      "email": "ysuzuki@edu.k.u-tokyo.ac.jp",
+      "description": "Organization: The University of Tokyo; Department: Department of Computational Biology and Medical Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Ayako Suzuki",
+      "description": "Department: Graduate School of Frontier Sciences"
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-024-54671-7",
+      "@type": "ScholarlyArticle",
+      "name": "Spatially resolved gene expression profiling of tumor microenvironment reveals key steps of lung adenocarcinoma development.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 157205532672,
+      "description": "157.2 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1324,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

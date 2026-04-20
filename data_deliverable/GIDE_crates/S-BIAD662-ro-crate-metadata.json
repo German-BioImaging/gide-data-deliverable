@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD662"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD662",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a65ddbb9-4549-44d1-b8ae-15a745d66971"
+        },
+        {
+          "@id": "obo:FBbi_00000365"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#30b37cb8-6e71-49a0-9d43-899905557947"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7911-3427"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-30",
+      "description": "FAM3C/ILEI is an important factor in epithelial-to-mesenchymal transition (EMT) induction, tumor progression and metastasis. Overexpressed in many cancers, elevated ILEI levels and secretion correlate with poor patient survival. Although ILEI’s causative role in invasive tumor growth and metastasis has been demonstrated in several cellular tumor models, there are no available transgenic mice to study these effects in the context of a complex organism. Here, we describe the generation and initial characterization of a Tet-ON inducible Fam3c/ILEI transgenic mouse strain. We find that ubiquitous induction of ILEI overexpression (R26-ILEIind) at weaning age leads to a shortened lifespan, reduced body weight and microcytic hypochromic anemia. The anemia was reversible at a young age within a week upon withdrawal of ILEI induction. Vav1-driven overexpression of the ILEIind transgene in all hematopoietic cells (Vav-ILEIind) did not render mice anemic or lower overall fitness, demonstrating that no intrinsic mechanisms of erythroid development were dysregulated by ILEI and that hematopoietic ILEI hyperfunction did not contribute to death. Reduced serum iron levels of R26-ILEIind mice were indicative for a malfunction in iron uptake or homeostasis. Accordingly, the liver, the main organ of iron metabolism, was severely affected in moribund ILEI overexpressing mice: increased alanine transaminase and aspartate aminotransferase levels indicated liver dysfunction, the liver was reduced in size, showed increased apoptosis, reduced cellular iron content, and had a fibrotic phenotype. These data indicate that high ILEI expression in the liver might reduce hepatoprotection and induce liver fibrosis, which leads to liver dysfunction, disturbed iron metabolism and eventually to death. Overall, we show here that the novel Tet-ON inducible Fam3c/ILEI transgenic mouse strain allows tissue specific timely controlled overexpression of ILEI and thus, will serve as a versatile tool to model the effect of elevated ILEI expression in diverse tissue entities and disease conditions, including cancer.",
+      "funder": [],
+      "identifier": "S-BIAD662",
+      "keywords": [
+        "FAM3C, ILEI Tet-ON, anemia, liver fibrosis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Inducible overexpression of a FAM3C/ILEI transgene has pleiotropic effects with shortened life span, liver fibrosis and anemia in mice",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD662/0c1eaa63-7c2b-4fb4-bb38-68fe52f06ae7/8d3e3825-22aa-421a-9076-101010c1f2cd.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7911-3427",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e1a980ac-893d-4899-99f1-43d8ee671a48"
+        }
+      ],
+      "email": "agnes.csiszar@meduniwien.ac.at",
+      "name": "Agnes Csiszar"
+    },
+    {
+      "@id": "#e1a980ac-893d-4899-99f1-43d8ee671a48",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Medical University of Vienna"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#30b37cb8-6e71-49a0-9d43-899905557947",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "blood, liver",
+      "name": "Inducible overexpression of a FAM3C/ILEI transgene has pleiotropic effects with shortened life span, liver fibrosis and anemia in mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#a65ddbb9-4549-44d1-b8ae-15a745d66971",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "scans at 40x magnification on demand with extended focus",
+      "labEquipment": "bright-field histological microscope; 3D Mirax slidescanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000365"
+        }
+      ],
+      "name": "Inducible overexpression of a FAM3C/ILEI transgene has pleiotropic effects with shortened life span, liver fibrosis and anemia in mice"
+    },
+    {
+      "@id": "obo:FBbi_00000365",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FLIP"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 114
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 467470440
+    }
+  ]
+}

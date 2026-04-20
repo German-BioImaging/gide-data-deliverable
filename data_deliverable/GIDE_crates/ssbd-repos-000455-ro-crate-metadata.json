@@ -1,0 +1,166 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000455/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000455/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000455",
+      "name": "Quantification of Cyclin-CDK dissociation constants using FCCS with green and near-infrared fluorescent proteins.",
+      "description": "The cell cycle is a highly coordinated process governed by cyclin-bound cyclin-dependent kinases (CDKs). While the interaction between cyclin and CDK are well-documented, the dissociation constants (Kd) between specific cyclin-CDK pairs within living cells remain poorly understood. Fluorescence cross-correlation spectroscopy (FCCS) enables the quantification of the Kd, but challenges remain in selecting an optimal pair of fluorescent molecules for FCCS in a living cell. In this study, we demonstrate that mNeonGreen and phycocyanobilin-bound miRFP670 represent a suitable pair for FCCS in living cells from the viewpoint of high photostability and low bleed-through. This fluorescent protein pair enables us to measure the Kd values of the cyclin-dependent kinase Cdc2 and B-type cyclin Cdc13 in fission yeast cells. Moreover, we roughly estimated the Kd values for 36 cyclin-CDK complexes, formed by 9 distinct cyclins and 4 CDKs, in mammalian cells, including unconventional cyclin-CDK pairs. These measurements suggest potential versatility of cyclin-CDK binding in cell cycle progression, with implications for understanding cell cycle regulation in both fission yeast and higher eukaryotes.",
+      "datePublished": "2025-09-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1242/jcs.263921"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+        },
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Aika Toyama",
+      "email": "tooyama.aika.48p@st.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1242/jcs.263921",
+      "@type": "ScholarlyArticle",
+      "name": "Quantification of Cyclin-CDK dissociation constants using FCCS with green and near-infrared fluorescent proteins.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "L972 (h-), YG181 (h+ ade6-M210 leu1-32 z::Padh1-mScarlet-I-HA-mNeonGreen<<nat), HS445 (h- 2L::Padh1-mCherry2-HA-mNeonGreen<<nat), HS565 (h- 2L::Padh1-spmNeonGreen<<nat 3R::Padh1-miRFP670<<kan 1L::synPCB2.1<<bsd), HS494 (h- 1L::Padh1-SynPCB2.1<<bsd cdc2-miRFP670<<hyg cdc13-spmNeonGreen<<kan), YG2004 (h- 1L::Padh1-SynPCB2.1<<bsd 2L::Padh1-mEGFP-miRFP670<<nat), YG2005 (h- 1L::Padh1-SynPCB2.1<<bsd 2L::Padh1-mStayGold-miRFP670<<nat), YG2006 (h- 1L::Padh1-SynPCB2.1<<bsd 2L::Padh1-mStayGold(Sp codon optimized)-miRFP670<<nat), YG2007-1 (h- 1L::Padh1-SynPCB2.1<<bsd cdc13-miRFP670<<kan cdc2-mNeonGreen<<hyg)",
+      "description": "L972 (h-), YG181 (h+ ade6-M210 leu1-32 z::Padh1-mScarlet-I-HA-mNeonGreen<<nat), HS445 (h- 2L::Padh1-mCherry2-HA-mNeonGreen<<nat), HS565 (h- 2L::Padh1-spmNeonGreen<<nat 3R::Padh1-miRFP670<<kan 1L::synPCB2.1<<bsd), HS494 (h- 1L::Padh1-SynPCB2.1<<bsd cdc2-miRFP670<<hyg cdc13-spmNeonGreen<<kan), YG2004 (h- 1L::Padh1-SynPCB2.1<<bsd 2L::Padh1-mEGFP-miRFP670<<nat), YG2005 (h- 1L::Padh1-SynPCB2.1<<bsd 2L::Padh1-mStayGold-miRFP670<<nat), YG2006 (h- 1L::Padh1-SynPCB2.1<<bsd 2L::Padh1-mStayGold(Sp codon optimized)-miRFP670<<nat), YG2007-1 (h- 1L::Padh1-SynPCB2.1<<bsd cdc13-miRFP670<<kan cdc2-mNeonGreen<<hyg)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+        }
+      ],
+      "hasCellLine": [
+        "HeLa/Blvra KO (JCRB1992)",
+        "HeLa/Blvra KO/rtTA/TRE-SynPCB2.1"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853",
+      "@type": "Taxon",
+      "scientificName": "Schizosaccharomyces pombe",
+      "vernacularName": "fission yeast"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 687187316736,
+      "description": "687.2 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 3696,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

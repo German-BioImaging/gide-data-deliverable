@@ -1,0 +1,233 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/57-Herawati-CellDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/57-Herawati-CellDyn/",
+      "@type": "Dataset",
+      "identifier": "57-Herawati-CellDyn",
+      "name": "Images and quantitative data showing the self-organizing mechanism in mouse multiciliated cells (MCCs)",
+      "description": "57-Herawati-CellDyn",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Actins/metabolism",
+        "Animals",
+        "Basal Bodies/drug effects",
+        "Basal Bodies/metabolism[major]",
+        "Basal Bodies/ultrastructure",
+        "Calcium-Binding Proteins/metabolism",
+        "Cell Differentiation/drug effects",
+        "Cell Polarity/drug effects",
+        "Cell Survival/drug effects",
+        "Cell Tracking",
+        "Cilia/drug effects",
+        "Cilia/metabolism[major]",
+        "Cilia/ultrastructure",
+        "Computer Simulation",
+        "Cytoskeleton/drug effects",
+        "Cytoskeleton/metabolism[major]",
+        "Cytoskeleton/ultrastructure",
+        "Epithelial Cells/cytology",
+        "Epithelial Cells/drug effects",
+        "Epithelial Cells/metabolism",
+        "Green Fluorescent Proteins/metabolism",
+        "Imaging, Three-Dimensional",
+        "Mice, Inbred C57BL",
+        "Models, Biological",
+        "Nocodazole/pharmacology",
+        "Polymerization",
+        "Time Factors",
+        "Tomography",
+        "Trachea/cytology"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1083/jcb.201601023"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005856"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-152"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Sachiko Tsukita",
+      "email": "atsukita@biosci.med.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences and Medicine; Laboratory: Laboratory of Biological Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Shuji Ishihara",
+      "email": "shuji@meiji.ac.jp"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Elisa Herawati"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Daisuke Taniguchi"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Hatsuho Kanoh"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Kazuhiro Tateishi"
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://doi.org/10.1083/jcb.201601023",
+      "@type": "ScholarlyArticle",
+      "name": "Multiciliated cell basal bodies align in stereotypical patterns coordinated by the apical cytoskeleton.",
+      "datePublished": "2016"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
+      "@type": "DefinedTerm",
+      "name": "cytoskeleton"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 2628178804,
+      "description": "2.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 28,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

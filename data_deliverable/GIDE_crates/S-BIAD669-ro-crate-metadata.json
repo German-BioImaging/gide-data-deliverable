@@ -1,0 +1,205 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD669"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD669",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8f748087-168e-4076-bc78-a9fc420cc7d7"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b5b291ec-74d1-40a9-8eed-f94ab3a50dba"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#a8576530-bb93-4c97-b597-531a1862ff38"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3727-2408"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-04-09",
+      "description": "The conversion of STAT proteins from latent to active transcription factors is central to cytokine signalling. Triggered by their signal-induced tyrosine phosphorylation, it is the assembly of a range of cytokine-specific STAT homo- and heterodimers that marks a key step in the transition of hitherto latent proteins to transcription activators. In contrast, the constitutive self-assembly of latent STATs and how it relates to the functioning of activated STATs, is understood less well. To provide a more complete picture, we developed a co-localisation-based assay and tested all 28 possible combinations of the seven unphosphorylated STAT proteins in living cells. It led to the identification of five U-STAT homodimers ―STAT1, STAT3, STAT4, STAT5A and STAT5B― and two heterodimers ―STAT1:STAT2 and STAT5A:STAT5B― as well as semi-quantitative assessments of the forces and characterisations of binding interfaces that support them. One STAT protein ―STAT6― was found to be monomeric. This comprehensive analysis of latent STAT self-assembly lays bare considerable structural and functional diversity in the ways that link STAT dimerization before and after activation.",
+      "funder": [],
+      "identifier": "S-BIAD669",
+      "keywords": [
+        "STAT",
+        "Interaction Assay",
+        "NES",
+        "NLS",
+        "Jak-STAT",
+        "Cytokines"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "A family-wide assessment of latent STAT transcription factor interactions reveals divergent dimer repertoires",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD669/9bebef08-e06c-44f8-8c63-6bbdba2d3d2e/04780445-3f35-402a-ace8-7815025bdbd4.png"
+      ]
+    },
+    {
+      "@id": "#a8576530-bb93-4c97-b597-531a1862ff38",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b6eb519-d7cf-49b6-9341-9e784705ae19"
+        }
+      ],
+      "email": "uwe.vinkemeier@nottingham.ac.uk",
+      "name": "Uwe Vinkemeier"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3727-2408",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b6eb519-d7cf-49b6-9341-9e784705ae19"
+        }
+      ],
+      "email": "sebikrause1993@web.de",
+      "name": "Sebastian Krause"
+    },
+    {
+      "@id": "#5b6eb519-d7cf-49b6-9341-9e784705ae19",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Nottingham"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#b5b291ec-74d1-40a9-8eed-f94ab3a50dba",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8f748087-168e-4076-bc78-a9fc420cc7d7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A Zeiss Axioplan 2 microscope with Zeiss Plan Apochromat 63x (NA=1.4) oil immersion objective and with FITC (“green channel”) and Texas red (“red channel”) filter sets for recording EGFP and Cherry / Cy3 emissions, respectively, and Zeiss’ AxioVision 4.7 software were used for wide-field fluorescence imaging. Fourteen-bit black and white images were captured with a digital Axiocam CCD camera (Carl Zeiss Jena). ",
+      "labEquipment": "Zeiss Axioplan 2 microscope with Zeiss Plan Apochromat 63x (NA=1.4) oil immersion objective and with FITC (“green channel”) and Texas red (“red channel”) filter sets for recording EGFP and Cherry / Cy3 emissions",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 593
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 604587030
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD886"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD886",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#064923b9-3f77-49be-8b04-3b2b43459477"
+        },
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d41bcfe7-32e4-4be4-83fd-ad9e9a6fe4f2"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5342-5841"
+        },
+        {
+          "@id": "#74c90c8e-bd54-4f61-a1e5-4c3105dd6201"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-01-01",
+      "description": "Lateral line neuromasts",
+      "funder": [],
+      "identifier": "S-BIAD886",
+      "keywords": [
+        "zebrafish",
+        "lateral line"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Cell shape analysis of zebrafish lateral line neuromasts",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD886/d85d17b3-838a-4cb9-84d3-d8c0f1211830/d577a412-3f4c-416d-95b4-a058fb29cb87.png"
+      ]
+    },
+    {
+      "@id": "#74c90c8e-bd54-4f61-a1e5-4c3105dd6201",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "mnh25@uw.edu",
+      "name": "Madeleine Hewitt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5342-5841",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "draible@uw.edu",
+      "name": "David Raible"
+    },
+    {
+      "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Washington"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#d41bcfe7-32e4-4be4-83fd-ad9e9a6fe4f2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "lateral line neuromast",
+      "name": "claudin",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#064923b9-3f77-49be-8b04-3b2b43459477",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was performed using a Zeiss LSM 880 with Airyscan equipped with a Zeiss C-Apochromat 40x/1.2W numerical water objective. Imaging was performed at room temperature (approximately 25°C). 633 nm, 561 nm, and 488 nm lasers were used for excitation. Gain was adjusted for different transgenes but kept constant across experiments with the same transgene. Images were collected with physical voxel size of 0.05 x 0.05 x 0.22 µm3. All images were captured using the Zen Black acquisition software (Zeiss).",
+      "labEquipment": "Zeiss 880 airyscan",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000393"
+        }
+      ],
+      "name": "airyscan confocal imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000393",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "array-scan confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 12
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8256328034
+    }
+  ]
+}

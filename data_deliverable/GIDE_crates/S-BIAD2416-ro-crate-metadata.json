@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2416"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2416",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#11cf1e7c-c530-4cf3-8ea5-43a5d606098b"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d46f0768-56a6-4cbf-8a27-d7e5e06061c2"
+        },
+        {
+          "@id": "obo:NCBITaxon_8355"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-1364-9610"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-21",
+      "description": "Eukaryotic chromosome segregation requires attachment of chromosomes to microtubules through the kinetochore so that chromosomes can align and move in mitosis. Kinetochores assemble on the centromere which is epigenetically defined by the histone H3 variant CENtromere Protein A (CENP-A). During DNA replication CENP-A is equally divided between replicated chromatids and new CENP-A nucleosomes are re-assembled during the subsequent G1 phase. How cells regulate the cell cycle timing of CENP-A assembly is a central question in the epigenetic maintenance of centromeres. CENP-A nucleosome assembly requires the Mis18 complex (Mis18α, Mis18β, and M18BP1) which is regulated in its localization to centromeres between metaphase and G1. Here, we define a new regulatory mechanism that works through phosphorylation of Xenopus laevis M18BP1 between metaphase and interphase. This switch disrupts binding of M18BP1 to CENP-A nucleosomes in metaphase, and when relieved enables M18BP1 binding to CENP-A nucleosomes in interphase. We show that this phosphorylation dependent mechanism regulates CENP-A nucleosome assembly. We propose that the phospho-regulated binding of M18BP1 to CENP-A nucleosomes restricts new CENP-A assembly to interphase. \n",
+      "funder": [],
+      "identifier": "S-BIAD2416",
+      "keywords": [
+        "CENP-A",
+        "centromere"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Regulation of X. laevis M18BP1 centromeric localization and CENP-A assembly (EMBO Reports)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2416/5be71061-f410-4e42-9aba-25df858ca26f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1364-9610",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00f54p054"
+        }
+      ],
+      "email": "rrbrown@stanford.edu",
+      "name": "Rae Brown"
+    },
+    {
+      "@id": "https://ror.org/00f54p054",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_8355",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Xenopus laevis"
+    },
+    {
+      "@id": "#d46f0768-56a6-4cbf-8a27-d7e5e06061c2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "sperm nuclei from X. laevis.",
+      "name": "sperm nuclei from X. laevis",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_8355"
+      }
+    },
+    {
+      "@id": "#11cf1e7c-c530-4cf3-8ea5-43a5d606098b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Image acquisition and processing\nImaging was performed on a Nikon Eclipse Ti2 inverted microscope (Nikon TI2-LA-FL-2) with a CrestOptic X-Light V3 Confocal Unit (Nikon) and a Celesta Light Engine (Lumencor), controlled via NIS-Elements 6.10.01 software (Nikon). Images of sperm nuclei were acquired with a Nikon Plan Apo 60XA/1.40 oil immersion lens. Images were acquired using an Electron Multiplying Charge-Coupled Device (EMCCD) camera (iXon Life 897) and digitized to 16 bits. Z sections were taken at 0.2μm intervals across a span of 8μm. Displayed images of sperm nuclei are maximum intensity projections of z-stacks with brightness adjusted uniformly within a figure to facilitate viewing. \n",
+      "labEquipment": "Nikon Eclipse Ti2 inverted microscope (Nikon TI2-LA-FL-2) with a CrestOptic X-Light V3 Confocal Unit (Nikon) and a Celesta Light Engine (Lumencor), controlled via NIS-Elements 6.10.01 software (Nikon)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Imaging conditions"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 21272
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 16490546911
+    }
+  ]
+}

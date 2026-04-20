@@ -1,0 +1,231 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1401"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1401",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d3506455-94d1-4341-b4f7-335484507a40"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#10ad2524-b6fb-4900-bb10-69093b541705"
+        },
+        {
+          "@id": "#6a8f4369-f2a6-4301-82ef-0e25fbc6234e"
+        },
+        {
+          "@id": "#5f974514-2f1d-4389-94f4-a7ebb1440550"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1006-0520"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7081-7874"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-21",
+      "description": "Study of localization of chromosomes 11 and 14 in the context of translocation t(11;14) in mantle cell lymphoma cell lines.",
+      "funder": [],
+      "identifier": "S-BIAD1401",
+      "keywords": [
+        "Translocation",
+        "Mantle Cell Lymphoma",
+        "FISH",
+        "Radial position"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Translocations can drive expression changes of multiple genes in regulons covering entire chromosome arms",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1401/3696fe01-d860-4a67-907b-f93df701f44d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7081-7874",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7caaf0c9-34ad-4427-8fe0-10abb0348e62"
+        }
+      ],
+      "email": "renee.beekman@crg.eu",
+      "name": "Renée Beekman"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1006-0520",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7caaf0c9-34ad-4427-8fe0-10abb0348e62"
+        }
+      ],
+      "email": "anna.oncins@crg.eu",
+      "name": "Anna Oncins"
+    },
+    {
+      "@id": "#7caaf0c9-34ad-4427-8fe0-10abb0348e62",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre for Genomic Regulation"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#10ad2524-b6fb-4900-bb10-69093b541705",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human mantle cell lymphoma cell line",
+      "name": "Z-138",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5f974514-2f1d-4389-94f4-a7ebb1440550",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Healthy lymphoblastic cell line",
+      "name": "GM12878",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#6a8f4369-f2a6-4301-82ef-0e25fbc6234e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human mantle cell lymphoma cell line",
+      "name": "JVM2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d3506455-94d1-4341-b4f7-335484507a40",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired directly after FISH protocol or after some days stored at -20 degrees (less than one week). Images were acquired using a Plan-Apochromat 63x/1.4 oil immersion objective and Zeiss 1.518 refractive index (Abbe number: 45) oil immersion media. For excitation, 405 nm (for DAPI), 488 nm (Alexa Fluor 488) and 561 nm (Texas Red) laser diodes were used. The emitted light was detected in a sequential mode with the Airyscan detector with the emission filters: 465 (DAPI), 517 (AF488) and 592 (TR) with an Airyscan detector. Images covered a 20um axial range, covering the complete cell nuclei volume, with stacks of 0.13 um and a voxel size of 73 x 73 x 130 nm3. Zoom factor was 3.6, scanning was unidirectional and line average was set to 2, with an image size of 35.7 x 35.7 um2. ",
+      "labEquipment": "Zeiss linescan confocal LSM980 with Airyscan 2",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acqusition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 217
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 46853503414
+    }
+  ]
+}

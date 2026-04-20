@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2124"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2124",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a14521b1-8a10-478e-b367-c87064ab48fc"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#724e9f8c-798a-480b-af57-98121d5e289e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3944-0153"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-01",
+      "description": "This dataset contains raw microscopy images and analysis files underlying the manuscript describing the role of PARP7 in proteotoxic stress and autophagic degradation. Images include confocal microscopy of HeLa cells treated with various compounds.",
+      "funder": [],
+      "identifier": "S-BIAD2124",
+      "keywords": [
+        "PARP7",
+        "autophagy",
+        "HeLa cells",
+        "protein degradation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "PARP7 is a proteotoxic stress sensor which labels proteins for autophagic degradation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2124/a5128433-bf4c-4e4f-8478-52e01847eb44/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3944-0153",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#03ef6d80-2183-4411-b5bb-08d73e1438b4"
+        }
+      ],
+      "email": "rzaja@ukaachen.de",
+      "name": "Roko Zaja"
+    },
+    {
+      "@id": "#03ef6d80-2183-4411-b5bb-08d73e1438b4",
+      "@type": [
+        "Organization"
+      ],
+      "name": "RWTH Aachen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#724e9f8c-798a-480b-af57-98121d5e289e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells treated with proteotoxic stressors and inhibitors",
+      "name": "HeLa cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a14521b1-8a10-478e-b367-c87064ab48fc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired using a Zeiss LSM confocal microscope with 63x oil objective and appropriate filter sets. Image settings are detailed in the manuscript Methods.",
+      "labEquipment": "Zeiss LSM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal microscopy acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 249
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1725001287
+    }
+  ]
+}

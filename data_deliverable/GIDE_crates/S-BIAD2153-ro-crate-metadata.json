@@ -1,0 +1,292 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2153"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2153",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e61f5ec5-ce6f-4bea-98c1-f3b0e3d99579"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9db86ed0-53bb-425f-a929-3e5753b5c4f8"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#94d4e971-e425-445e-8c1f-204fe9c4e193"
+        },
+        {
+          "@id": "#3917dfa0-e1e6-4335-9273-dc35054ea52b"
+        },
+        {
+          "@id": "#254f6391-9621-4db3-b530-6c71a0133520"
+        },
+        {
+          "@id": "#7ed03751-2611-4c88-af86-43895c63bd6b"
+        },
+        {
+          "@id": "#4a1bbd73-8a61-41f9-9750-95f2e815ac92"
+        },
+        {
+          "@id": "#e5875076-de37-4d1a-8d73-b5685cc6134e"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8257-7465"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-18",
+      "description": "Ribosomes are huge ribonucleoprotein particles that mediate protein synthesis in all organisms. The synthesis of ribosomes is a complex process that involves hundreds of supporting factors in mammalian cells, including proto-oncogenes and tumor suppressors. Dysregulation of ribosome biogenesis can contribute to tumorigenesis and the increased production of ribosomes in cancer cells is known to promote proliferative cell growth. Therefore, ribosome biogenesis represents an attractive vulnerability of cancer cells that ought to be exploited for the development of anti-cancer drugs. Despite the large number of trans-acting factors promoting in ribosome assembly including potentially druggable enzymes, only few chemical inhibitors that act on ribosome biogenesis, especially downstream of pre-rRNA transcription, have been identified to date. \nWe have established a pipeline to perform single-cell, imaging-based screening campaigns using four different readouts, including fluorescent ribosomal protein reporters (RPS2-YFP, RPL29-GFP) and immunofluorescence analyses of the ribosome biogenesis factor ENP1(BYSL), in HeLa cells, a human cancer line. This dataset contains the raw data and segmentation analysis of our pilot screen, using a library comprising more than 1000 FDA-approved drugs with known targets in other pathways. This pilot screen obtained excellent quality scores and identified altogether ten compounds as hits. ",
+      "funder": [],
+      "identifier": "S-BIAD2153",
+      "keywords": [
+        "machine learning",
+        "chemical compound screen",
+        "ribosome synthesis",
+        "high-content screening",
+        "microscopy",
+        "cancer",
+        "drug"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Establishment of an imaging-based screening pipeline for the identification of human ribosome biogenesis inhibitors",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#254f6391-9621-4db3-b530-6c71a0133520",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02s6k3f65"
+        }
+      ],
+      "name": "Kerstin Dörner"
+    },
+    {
+      "@id": "#3917dfa0-e1e6-4335-9273-dc35054ea52b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#679e7643-6ca4-458d-af16-53d603ad4986"
+        }
+      ],
+      "name": "Réka Hollandi"
+    },
+    {
+      "@id": "#4a1bbd73-8a61-41f9-9750-95f2e815ac92",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05a28rw58"
+        }
+      ],
+      "name": "Ivo Zemp"
+    },
+    {
+      "@id": "#7ed03751-2611-4c88-af86-43895c63bd6b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05a28rw58"
+        }
+      ],
+      "name": "Matteo Rosellini"
+    },
+    {
+      "@id": "#94d4e971-e425-445e-8c1f-204fe9c4e193",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05a28rw58"
+        }
+      ],
+      "name": "Claudia Gafko"
+    },
+    {
+      "@id": "#e5875076-de37-4d1a-8d73-b5685cc6134e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#679e7643-6ca4-458d-af16-53d603ad4986"
+        }
+      ],
+      "name": "Peter Horvath"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8257-7465",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05a28rw58"
+        }
+      ],
+      "email": "ulrike.kutay@bc.biol.ethz.ch",
+      "name": "Ulrike Kutay"
+    },
+    {
+      "@id": "#679e7643-6ca4-458d-af16-53d603ad4986",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Biological Research Center Szeged"
+    },
+    {
+      "@id": "https://ror.org/02s6k3f65",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Basel"
+    },
+    {
+      "@id": "https://ror.org/05a28rw58",
+      "@type": [
+        "Organization"
+      ],
+      "name": "ETH Zurich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9db86ed0-53bb-425f-a929-3e5753b5c4f8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "cultured HeLa cells (with/without expression of RPS2-YFP or RPL29-GFP reporter)",
+      "name": "HeLa cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e61f5ec5-ce6f-4bea-98c1-f3b0e3d99579",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "10x objective, 3x3 images per well, laser-based autofocusing, sequential imaging of channels",
+      "labEquipment": "Molecular Devices Image Express microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "high throughput imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 0
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 0
+    }
+  ]
+}

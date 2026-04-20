@@ -1,0 +1,225 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1317"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1317",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c42a1d80-d700-49b1-afd3-f59d22e5fb92"
+        },
+        {
+          "@id": "#9101ba9f-744b-4812-ab81-9dd62050a4a1"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9d5fbf3e-4c86-4aa8-acf4-6c29a9f206b6"
+        },
+        {
+          "@id": "#36ffd948-9625-463a-adbf-bb2a6ae11a15"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5490-7343"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-29",
+      "description": "This is source data for both: 1) EED IF Confocal Image data during 3 different synchronization time points; 2) RPB1-Dendra2 STORM raw data for 2 time points.",
+      "funder": [],
+      "identifier": "S-BIAD1317",
+      "keywords": [
+        "EED RNA Pol II Circadian Confocal STORM"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "EZH1 Orchestrates Circadian Gene Expression Acting on Transcription Machinery Integrity \n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1317/a55098d2-a7c1-4408-b821-191833a73fad/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5490-7343",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b46bcda9-adbd-445f-a269-c23d30868471"
+        }
+      ],
+      "email": "peng.liu@kaust.edu.sa",
+      "name": "PENG LIU"
+    },
+    {
+      "@id": "#b46bcda9-adbd-445f-a269-c23d30868471",
+      "@type": [
+        "Organization"
+      ],
+      "name": "King Abdullah University of Science and Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#36ffd948-9625-463a-adbf-bb2a6ae11a15",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C2C12 Myotube",
+      "name": "EED shuttle dynamics in synchronized C2C12 cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9d5fbf3e-4c86-4aa8-acf4-6c29a9f206b6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "RPB1-Dendra2 in C2C12 cells",
+      "name": "RNA Pol II tcPALM",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9101ba9f-744b-4812-ab81-9dd62050a4a1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Immunofluorescence images were acquired on a Zeiss LSM710 confocal microscope with 100X oil-immersion objective.\n",
+      "labEquipment": "Zeiss LSM710",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "EED shuttle dynamics in synchronized C2C12 cells"
+    },
+    {
+      "@id": "#c42a1d80-d700-49b1-afd3-f59d22e5fb92",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For STORM imaging of Dendra2-RPB1Amr in C2C12 cells, synchronization of stable C2C12 cell lines expressing Dendra2-RPB1Amr was performed as described previously52. The cells at indicated time points were washed twice with DPBS and transferred into FluoroBrite™ DMEM (GIBCO) containing 10% FBS (GIBCO) before image acquisition. We acquired images using a custom-built setup(Abadi et al, 2018) with minor modifications(Cho et al., 2018). Briefly, cells were illuminated with 1.3 W cm−2 near-UV light (405 nm) for photoconversion of Dendra2 and 3.2 kW cm−2 (561 nm) for fluorescence detection with an exposure time of 10 ms. We acquired total 10000 frames of fluorescence images of Dendra2-RPB1Amr (image acquisition time of 100 s) to conduct tcPALM analysis. Super resolution images were reconstructed using Localizer software(Dedecker et al, 2012). The number of bursts detected by using a maximum blinking cut-off of 75 frames and below were less than 10 bursts. This number of bursts was not enough for a reliable fitting of the data to the cumulative distribution function. Thus, we choose 100 frames as a maximum blinking cut-off for our analysis. To distinguish small clustering of RNA Pol II from fluorescence blinking or intensity fluctuations of Dendra2, we set the maximum blinking cut off at 100 frames. We then collected the correlation time obtained after fitting to the cumulative distribution function with R-squared values ≥ 0.98. As shown in Fig. S12A, the events due to single molecule photo physics in fixed cells showed R-squared values below the set threshold of 0.98. We normalized the data based on the number of bursts where we considered 2500 bursts in in live and in fixed cells to calculate the correlation time. As shown in Extended Data Fig. 12b, our analysis (maximum blinking cutoff = 100 frames and R-squared value ≥ 0.98) showed that the correlation time obtained from live cells can be distinguished from fixed cells by considering correlation time values below 20 seconds.  To further remove any contribution of the photophysical phenomenon, we removed the correlation time values if their frequencies is smaller than 20% of the maximum frequency. Thus, we only considered the frequencies that lie in the cyan shaded area for further analyses.",
+      "labEquipment": "STORM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "RNA Pol II tcPALM"
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 520
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 112465219747
+    }
+  ]
+}

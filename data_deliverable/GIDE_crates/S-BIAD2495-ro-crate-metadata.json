@@ -1,0 +1,219 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2495"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2495",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#14d8b1dc-f601-4bae-a51e-3e897a87b82f"
+        },
+        {
+          "@id": "#03ad0233-76ce-4645-8f24-91b6b1e303db"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#59763822-62c7-4c64-aa4f-925f6e608ade"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0000-7081-6222"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1236-4162"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-16",
+      "description": "PLA (Proximity Ligation Assay) and Immunoflourescence(IF) Images\n",
+      "funder": [],
+      "identifier": "S-BIAD2495",
+      "keywords": [
+        "PLA",
+        "Transcription Replication Conflict",
+        "DNA damage"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "NELF prevents widespread transcriptional readthrough into DNA replication zones of cancer cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2495/7c85b971-9de8-444e-958d-97511654d6b6/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1236-4162",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d149e7e-acb8-4fec-944b-96eb0965be30"
+        }
+      ],
+      "email": "nojima.takayuki.058@m.kyushu-u.ac.jp",
+      "name": "Takayuki Nojima"
+    },
+    {
+      "@id": "https://orcid.org/0009-0000-7081-6222",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0d149e7e-acb8-4fec-944b-96eb0965be30"
+        }
+      ],
+      "email": "o.piro.hann.6s@gmail.com",
+      "name": "Chihiro Nakayama"
+    },
+    {
+      "@id": "#0d149e7e-acb8-4fec-944b-96eb0965be30",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Kyushu University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#59763822-62c7-4c64-aa4f-925f6e608ade",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "DLD-1 is a colorectal adenocarcinoma cell line isolated from the large intestine of a colon adenocarcinoma patient and can be used in cancer research - PLA : Proximity Ligation Assay (PCNA/MCM2 and Ser2 phospho (transcribing) Pol II )\nIF : Immunofluorescence (γH2AX, DNA damage marker)",
+      "name": "DLD1 OsTIR1 NELFCD-AID cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#03ad0233-76ce-4645-8f24-91b6b1e303db",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40x magnification",
+      "labEquipment": "Visitech Infinity3 HAWK confocal laser microscope. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "IF"
+    },
+    {
+      "@id": "#14d8b1dc-f601-4bae-a51e-3e897a87b82f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40x magnification",
+      "labEquipment": "Zeiss LSM980 (with Airyscan 2) microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "PLA"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 131
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 11558962685
+    }
+  ]
+}

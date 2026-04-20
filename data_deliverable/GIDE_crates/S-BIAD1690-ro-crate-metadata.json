@@ -1,0 +1,212 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1690"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1690",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#be3a145a-278a-4d23-bf28-a416a8dcb914"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6c15a6bd-dfe1-4445-9ff3-204dbf051ef9"
+        },
+        {
+          "@id": "obo:NCBITaxon_4577"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1071-5355"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6794-8133"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7639-4470"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-10",
+      "description": "Accurate 3D reconstruction is essential for high-throughput plant phenotyping, particularly for studying complex structures such as root systems. While photogrammetry and Structure from Motion (SfM) techniques have become widely used for 3D root imaging, the impact of camera calibration on model accuracy remains largely underexplored in plant science. In this study, we systematically evaluate the effects of focus, aperture, exposure time, and gain settings on the quality of 3D root models generated using a multi-camera scanning system. Through a series of experiments, we demonstrate that calibration significantly improves model quality, with focus misalignment and shallow depth of field (DoF) being the most critical factors affecting reconstruction accuracy. Our results further show that proper calibration has a greater effect on reducing noise than filtering noise during post-processing, emphasizing the importance of optimizing image acquisition rather than relying solely on computational corrections. By providing practical calibration guidelines, this work enhances the reproducibility and accuracy of 3D root phenotyping, ultimately improving trait quantification for applications in plant breeding and crop research.",
+      "funder": [],
+      "identifier": "S-BIAD1690",
+      "keywords": [
+        "plant phenotyping",
+        "roots",
+        "photogrammetry",
+        "3D reconstruction",
+        " camera calibration",
+        "Structure from Motion"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Image data of the manuscript: \"Optimizing root phenotyping: Assessing the impact of camera calibration on 3D root reconstruction\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7639-4470",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#065fb2b7-8888-4b3f-b46e-8de41ae1d992"
+        }
+      ],
+      "email": "suxingliu@arizona.edu",
+      "name": "Suxing Liu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1071-5355",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#065fb2b7-8888-4b3f-b46e-8de41ae1d992"
+        }
+      ],
+      "email": "bucksch@arizona.edu",
+      "name": "Alexander Bucksch"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6794-8133",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#bccb20a1-f2d9-4999-8a88-7c45eb30dd98"
+        }
+      ],
+      "email": "peterjacek.pietrzyk@uga.edu",
+      "name": "Peter Pietrzyk"
+    },
+    {
+      "@id": "#065fb2b7-8888-4b3f-b46e-8de41ae1d992",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Arizona"
+    },
+    {
+      "@id": "#bccb20a1-f2d9-4999-8a88-7c45eb30dd98",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Georgia"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4577",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Zea mays"
+    },
+    {
+      "@id": "#6c15a6bd-dfe1-4445-9ff3-204dbf051ef9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mature corn roots",
+      "name": "3D maize roots",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4577"
+      }
+    },
+    {
+      "@id": "#be3a145a-278a-4d23-bf28-a416a8dcb914",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "see paper",
+      "labEquipment": "Optical 3D scanner ",
+      "measurementTechnique": [],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 26
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 127736854049
+    }
+  ]
+}

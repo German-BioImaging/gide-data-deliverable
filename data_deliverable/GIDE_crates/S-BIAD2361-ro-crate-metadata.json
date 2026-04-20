@@ -1,0 +1,185 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2361"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2361",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#82ff5721-e955-4d36-bcfe-c797f112b752"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#28bb35df-8f40-4e8f-8919-2409c56b151d"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#84838f32-4df0-46d1-959b-a149b1a3d97d"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-02",
+      "description": " Programmed Cell Death Pathways Coordinate Neutrophil and Macrophage Clearance in Zebrafish and Are Differentially Exploited by Salmonella Typhimurium",
+      "funder": [],
+      "identifier": "S-BIAD2361",
+      "keywords": [
+        "INFLAMMASOME",
+        "ZEBRAFISH"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": " Programmed Cell Death Pathways Coordinate Neutrophil and Macrophage Clearance in Zebrafish and Are Differentially Exploited by Salmonella Typhimurium",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2361/d86894a8-1b99-4ba4-ba7a-98553382146e/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#84838f32-4df0-46d1-959b-a149b1a3d97d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fe5eee8d-f4a0-474e-8737-5439a0d8e7ec"
+        }
+      ],
+      "email": "juanm.lozanogil@gmail.com",
+      "name": "IIC_UMU"
+    },
+    {
+      "@id": "#fe5eee8d-f4a0-474e-8737-5439a0d8e7ec",
+      "@type": [
+        "Organization"
+      ],
+      "name": "uNIVERSITY OF MURCIA"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#28bb35df-8f40-4e8f-8919-2409c56b151d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "2 days post fertilization zebrafish embryos.",
+      "name": " Programmed Cell Death Pathways Coordinate Neutrophil and Macrophage Clearance in Zebrafish and Are Differentially Exploited by Salmonella Typhimurium",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#82ff5721-e955-4d36-bcfe-c797f112b752",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "2 days post fertilization zebrafish embryos",
+      "labEquipment": "LEICADFZ7000",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "000"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2472
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3034778917
+    }
+  ]
+}

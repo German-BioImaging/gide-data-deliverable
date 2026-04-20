@@ -1,0 +1,197 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1883"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1883",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#90977f71-bfdd-44b5-bcfa-c672fc6b5539"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#99a48d3e-1d4f-4b36-9310-c5727879d99e"
+        },
+        {
+          "@id": "obo:NCBITaxon_7227"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#48e3153f-036b-4e33-bf86-a128582821be"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-29",
+      "description": "Transposable elements are major contributors to the evolution of their hosts, but the mechanisms driving their own diversification remain poorly understood. Here, we reveal key principles governing the evolution of insect endogenous retroviruses (ERVs), a class of infectious LTR-retrotransposons that encode an Envelope protein. Through comparative analyses and experimental studies of transposon life cycles in Drosophila, we demonstrate how two crucial ERV traits—infectivity and spatiotemporal expression—co-evolve. We find that ERVs have adapted their cis-regulatory sequences to function across all ovarian cell types. Strikingly, infectious ERV lineages display distinct expression patterns in somatic cells, from where they infect the germline, whereas derived retroelement lineages that have lost infectivity are expressed exclusively in the germline. Co-evolutionary changes in the piRNA pathway, which integrates transposon promoter and sequence information into differentially expressed piRNA clusters, highlight the functional significance of the diverse ERV expression niches. By investigating a unique ERV lineage, rover, we reconstruct the molecular events that transformed an infectious ERV into a retroelement. Overall, our study uncovers fundamental mechanisms that drive the co-evolution of ERVs and their hosts, with important implications for understanding the functional diversification of LTR sequences.",
+      "funder": [],
+      "identifier": "S-BIAD1883",
+      "keywords": [
+        "Endogenous retroviruses, Metaviridae, Transposon evolution, LTR retrotransposons, PIWI/piRNA pathway, piRNA cluster evolution, Drosophila germline biology"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Co-evolving infectivity and expression patterns drive the diversification of endogenous retroviruses",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1883/7adad549-6382-43fd-990e-6edd180253d4/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#48e3153f-036b-4e33-bf86-a128582821be",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#393eb7ae-bb46-4643-9297-56d6f753afd0"
+        }
+      ],
+      "email": "julius.brennecke@imba.oeaw.ac.at",
+      "name": "Julius Brennecke"
+    },
+    {
+      "@id": "#393eb7ae-bb46-4643-9297-56d6f753afd0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Molecular Biotechnology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7227",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Drosophila melanogaster"
+    },
+    {
+      "@id": "#99a48d3e-1d4f-4b36-9310-c5727879d99e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Drosophila ovaries",
+      "name": "Co-evolving infectivity and expression patterns drive the diversification of endogenous retroviruses",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7227"
+      }
+    },
+    {
+      "@id": "#90977f71-bfdd-44b5-bcfa-c672fc6b5539",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "we used standard confocal settings; identity of all channels is given in the upload summary file. ",
+      "labEquipment": "LSM780 Zeiss for confocal images\nUpright sCMOS Apotome colour-camera for wide-field images",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Co-evolving infectivity and expression patterns drive the diversification of endogenous retroviruses"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 70
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 5096947542
+    }
+  ]
+}

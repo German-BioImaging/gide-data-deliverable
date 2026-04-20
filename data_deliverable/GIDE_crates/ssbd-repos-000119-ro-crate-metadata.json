@@ -1,0 +1,425 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000119/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000119/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000119",
+      "name": "A set of transverse sections of teleost fish vertebral bodies",
+      "description": "Imaging data of transverse sections of teleost fish vertebral bodies",
+      "datePublished": "2019-03-26",
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "keywords": [
+        "Animals",
+        "Fishes/anatomy & histology[major]",
+        "Fishes/growth & development",
+        "Spine/anatomy & histology[major]",
+        "Spine/growth & development",
+        "X-Ray Microtomography"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1002/jmor.20983"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "#biosample-5"
+        },
+        {
+          "@id": "#biosample-6"
+        },
+        {
+          "@id": "#biosample-7"
+        },
+        {
+          "@id": "#biosample-8"
+        },
+        {
+          "@id": "#biosample-9"
+        },
+        {
+          "@id": "#biosample-10"
+        },
+        {
+          "@id": "#biosample-11"
+        },
+        {
+          "@id": "#biosample-12"
+        },
+        {
+          "@id": "#biosample-13"
+        },
+        {
+          "@id": "#biosample-14"
+        },
+        {
+          "@id": "#biosample-15"
+        },
+        {
+          "@id": "#biosample-16"
+        },
+        {
+          "@id": "#biosample-17"
+        },
+        {
+          "@id": "#biosample-18"
+        },
+        {
+          "@id": "#biosample-19"
+        },
+        {
+          "@id": "#biosample-20"
+        },
+        {
+          "@id": "#biosample-21"
+        },
+        {
+          "@id": "#biosample-22"
+        },
+        {
+          "@id": "#biosample-23"
+        },
+        {
+          "@id": "#biosample-24"
+        },
+        {
+          "@id": "#biosample-25"
+        },
+        {
+          "@id": "#biosample-26"
+        },
+        {
+          "@id": "#biosample-27"
+        },
+        {
+          "@id": "#biosample-28"
+        },
+        {
+          "@id": "#biosample-29"
+        },
+        {
+          "@id": "#biosample-30"
+        },
+        {
+          "@id": "#biosample-31"
+        },
+        {
+          "@id": "#biosample-32"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-262"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Misaki Sakashita & Shigeru Kondo",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Laboratory of Pattern Formation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://doi.org/10.1002/jmor.20983",
+      "@type": "ScholarlyArticle",
+      "name": "Comparative morphological examination of vertebral bodies of teleost fish using high-resolution micro-CT scans.",
+      "datePublished": "2019"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "M. cinereus"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "S. melanostictus"
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "K. punctatus"
+    },
+    {
+      "@id": "#biosample-4",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "P. altivelis altivelis"
+    },
+    {
+      "@id": "#biosample-5",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "L. setigerus"
+    },
+    {
+      "@id": "#biosample-6",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "L. litulon"
+    },
+    {
+      "@id": "#biosample-7",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "C. abei"
+    },
+    {
+      "@id": "#biosample-8",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Z. nebulosa"
+    },
+    {
+      "@id": "#biosample-9",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "Z. faber"
+    },
+    {
+      "@id": "#biosample-10",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "M. sagifue"
+    },
+    {
+      "@id": "#biosample-11",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "C. saira"
+    },
+    {
+      "@id": "#biosample-12",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "H. hilgendorfii"
+    },
+    {
+      "@id": "#biosample-13",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "S. oblongus"
+    },
+    {
+      "@id": "#biosample-14",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "S. zonatus"
+    },
+    {
+      "@id": "#biosample-15",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "C. spinosus"
+    },
+    {
+      "@id": "#biosample-16",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "A. hanedai"
+    },
+    {
+      "@id": "#biosample-17",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "T. japonicus"
+    },
+    {
+      "@id": "#biosample-18",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "P. major"
+    },
+    {
+      "@id": "#biosample-19",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "S. japonica"
+    },
+    {
+      "@id": "#biosample-20",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "H. typus"
+    },
+    {
+      "@id": "#biosample-21",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "S. forsteni"
+    },
+    {
+      "@id": "#biosample-22",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "S. pinguis"
+    },
+    {
+      "@id": "#biosample-23",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "R. prometheoides"
+    },
+    {
+      "@id": "#biosample-24",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "S. japonicus"
+    },
+    {
+      "@id": "#biosample-25",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "T. orientalis"
+    },
+    {
+      "@id": "#biosample-26",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "T. tonggol"
+    },
+    {
+      "@id": "#biosample-27",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "P. olivaceus"
+    },
+    {
+      "@id": "#biosample-28",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "H. dubius"
+    },
+    {
+      "@id": "#biosample-29",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "M. uradoi"
+    },
+    {
+      "@id": "#biosample-30",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "T. pardalis"
+    },
+    {
+      "@id": "#biosample-31",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "T snyderi"
+    },
+    {
+      "@id": "#biosample-32",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "T. stictonotus"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 32130531328,
+      "description": "32.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 49,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

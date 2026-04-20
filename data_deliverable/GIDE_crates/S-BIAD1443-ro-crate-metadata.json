@@ -1,0 +1,175 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1443"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1443",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#89961418-ec9e-4ed5-8183-ca6002a47676"
+        },
+        {
+          "@id": "obo:FBbi_00000259"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#dae7419b-2bf8-41b9-a35c-2ca587eb4720"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9214-5837"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-29",
+      "description": "This repository presents an objective, quantifiable method for assessing atopic dermatitis (AD) severity. The program integrates deep learning object detection with spatial analysis algorithms to accurately calculate the density of circular nano-size objects (CNOs), termed the Effective Corneocyte Topographical Index (ECTI). The ECTI demonstrates remarkable robustness in overcoming the inherent challenges of nano-imaging, such as environmental noise and structural occlusions on the corneocyte surface, further enhancing its applicability in clinical settings.",
+      "funder": [],
+      "identifier": "S-BIAD1443",
+      "keywords": [
+        "Atopic Dermatitis",
+        "Corneocyte Surface Topography",
+        "Deep Learning",
+        "Object Detection",
+        "Kernel Density Estimator",
+        "Atomic Force Microscope "
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Stratum corneum nanotexture feature detection using deep learning and spatial analysis: a non-invasive tool for skin barrier assessment",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9214-5837",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04qtj9h94"
+        }
+      ],
+      "email": "jenhw@dtu.dk",
+      "name": "Jen-Hung Wang"
+    },
+    {
+      "@id": "https://ror.org/04qtj9h94",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Technical University of Denmark"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#dae7419b-2bf8-41b9-a35c-2ca587eb4720",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human stratum corneum",
+      "name": "stratum corneum tape stripping",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#89961418-ec9e-4ed5-8183-ca6002a47676",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "20x20 micrometers",
+      "labEquipment": "atomic force microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000259"
+        }
+      ],
+      "name": "corneocyte nanotexture"
+    },
+    {
+      "@id": "obo:FBbi_00000259",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "atomic force microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 14
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 380928
+    }
+  ]
+}

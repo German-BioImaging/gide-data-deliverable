@@ -1,0 +1,503 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1092"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1092",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7ebccd3c-5ed0-4ed0-9371-a846a1d76853"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3be81c51-ccc0-4d4b-8dbc-b92ec5e6fec8"
+        },
+        {
+          "@id": "#8728843e-d59c-43bc-89cb-3fc4e8acbf26"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0009-7292-7714"
+        },
+        {
+          "@id": "#d3efb9d4-9193-43e4-acc7-b77011dba8c3"
+        },
+        {
+          "@id": "#f780c90d-cb4c-4231-b372-83e29deef1bc"
+        },
+        {
+          "@id": "#53a5d815-fce7-4c24-99af-6e3f3e876881"
+        },
+        {
+          "@id": "#e6617ff5-5086-4616-bbee-c91dba46af89"
+        },
+        {
+          "@id": "#28db646f-d039-458b-80a1-7d166154cec0"
+        },
+        {
+          "@id": "#b751d2af-9b2e-4fe7-aedb-3f32c91d5012"
+        },
+        {
+          "@id": "#7cc8b534-2801-4a21-b684-da492b72491e"
+        },
+        {
+          "@id": "#85ded684-2981-4ae6-b05f-c8ec369d952c"
+        },
+        {
+          "@id": "#8037367b-f6e7-4b2f-8fa4-273d2a0d4e5e"
+        },
+        {
+          "@id": "#c18967c7-6164-44de-8897-8905e75741fd"
+        },
+        {
+          "@id": "#a2e2a88e-e7fb-460d-b70a-40d46c1ad0ae"
+        },
+        {
+          "@id": "#e8bc95ac-24d9-4229-ae5c-c2ca40293d7a"
+        },
+        {
+          "@id": "#88639118-454e-481e-ad6c-0a475ce61f77"
+        },
+        {
+          "@id": "#1f8af249-1b5f-4ff4-ba09-6c2b8b582047"
+        },
+        {
+          "@id": "#3714af87-aa9d-416d-bc40-9e04f349e34d"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8192-869X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-11",
+      "description": "Multiple myeloma involves early dissemination of malignant plasma cells across the bone marrow; however, the initial steps of dissemination remain unclear. Human bone marrow-derived mesenchymal stromal cells (hMSCs) stimulate myeloma cell expansion (e.g., IL-6) and simultaneously retain myeloma cells via chemokines (e.g., CXCL12) and adhesion factors. Hence, we hypothesized that the imbalance between cell division and retention drives dissemination. \nWe present an in vitro model using primary hMSCs co-cultured with INA-6 myeloma cells. Time-lapse microscopy revealed proliferation and attachment/detachment dynamics. Separation techniques (V-well adhesion assay and well plate sandwich centrifugation) were established to isolate MSC-interacting myeloma subpopulations that were characterized by RNAseq, cell viability and apoptosis. Results were correlated with gene expression data (n=837) and survival of myeloma patients (n=536). \nOn dispersed hMSCs, INA-6 saturate hMSC-surface before proliferating into large homotypic aggregates, from which single cells detached completely. On confluent hMSCs, aggregates were replaced by strong heterotypic hMSC-INA-6 interactions, which modulated apoptosis time-dependently. Only INA-6 daughter cells (nMA-INA6) detached from hMSCs by cell division but sustained adherence to hMSC-adhering mother cells (MA-INA6).\nIsolated nMA-INA6 indicated hMSC-autonomy through superior viability after IL­6 withdrawal and upregulation of proliferation-related genes. MA-INA6 upregulated adhesion and retention factors (CXCL12), that, intriguingly, were highly expressed in myeloma samples from patients with longer overall and progression-free survival, but their expression decreased in relapsed myeloma samples. \nAltogether, in vitro dissemination of INA-6 is driven by detaching daughter cells after a cycle of hMSC-(re)attachment and proliferation, involving adhesion factors that represent a bone marrow-retentive phenotype with potential clinical relevance.",
+      "funder": [],
+      "identifier": "S-BIAD1092",
+      "keywords": [
+        "Multiple Myeloma",
+        "Human",
+        "Mesenchymal Stromal Cells",
+        "MSC",
+        "Cell Adhesion",
+        "Cell Interaction",
+        "Dissemination",
+        "Metastasis",
+        "Survival",
+        "Time-lapse Microscopy",
+        "Cancer",
+        "Human Cells",
+        "Plasma Cells"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Modelling Myeloma Dissemination in vitro with hMSC-Interacting Subpopulations of INA-6 Cells and their Aggregation/Detachment Dynamics",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#1f8af249-1b5f-4ff4-ba09-6c2b8b582047",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1f5ac860-754a-4d32-8633-a8bf09ba9a86"
+        }
+      ],
+      "name": "Dirk Hose"
+    },
+    {
+      "@id": "#28db646f-d039-458b-80a1-7d166154cec0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Jutta Meißner-Weigl"
+    },
+    {
+      "@id": "#3714af87-aa9d-416d-bc40-9e04f349e34d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cc280554-64a9-409b-89ef-2006f0b0486a"
+        }
+      ],
+      "name": "Franziska Jundt"
+    },
+    {
+      "@id": "#53a5d815-fce7-4c24-99af-6e3f3e876881",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cc280554-64a9-409b-89ef-2006f0b0486a"
+        }
+      ],
+      "name": "Wyonna Rindt"
+    },
+    {
+      "@id": "#7cc8b534-2801-4a21-b684-da492b72491e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Melanie Krug"
+    },
+    {
+      "@id": "#8037367b-f6e7-4b2f-8fa4-273d2a0d4e5e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#864abecd-ee50-4cf8-aa10-f16de41c7908"
+        }
+      ],
+      "name": "Tanja Nicole Hartmann"
+    },
+    {
+      "@id": "#85ded684-2981-4ae6-b05f-c8ec369d952c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cc280554-64a9-409b-89ef-2006f0b0486a"
+        }
+      ],
+      "name": "Marietta Herrmann"
+    },
+    {
+      "@id": "#88639118-454e-481e-ad6c-0a475ce61f77",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1f5ac860-754a-4d32-8633-a8bf09ba9a86"
+        }
+      ],
+      "name": "Anja Seckinger"
+    },
+    {
+      "@id": "#a2e2a88e-e7fb-460d-b70a-40d46c1ad0ae",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Maximilian Rudert"
+    },
+    {
+      "@id": "#b751d2af-9b2e-4fe7-aedb-3f32c91d5012",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Sabine Zeck"
+    },
+    {
+      "@id": "#c18967c7-6164-44de-8897-8905e75741fd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Ellen Leich"
+    },
+    {
+      "@id": "#d3efb9d4-9193-43e4-acc7-b77011dba8c3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3127b99-26ab-4871-81c8-6a6d7c6f7656"
+        }
+      ],
+      "name": "Susanne Beck"
+    },
+    {
+      "@id": "#e6617ff5-5086-4616-bbee-c91dba46af89",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Marietheres Evers"
+    },
+    {
+      "@id": "#e8bc95ac-24d9-4229-ae5c-c2ca40293d7a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Denitsa Docheva"
+    },
+    {
+      "@id": "#f780c90d-cb4c-4231-b372-83e29deef1bc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Doris Schneider"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8192-869X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "email": "regina.ebert@uni-wuerzburg.de",
+      "name": "Regina Ebert"
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-7292-7714",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "email": "martin.kur4@gmail.com",
+      "name": "Martin Kuric"
+    },
+    {
+      "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Würzburg"
+    },
+    {
+      "@id": "#1f5ac860-754a-4d32-8633-a8bf09ba9a86",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vrije Universiteit Brussel"
+    },
+    {
+      "@id": "#864abecd-ee50-4cf8-aa10-f16de41c7908",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Freiburg"
+    },
+    {
+      "@id": "#a3127b99-26ab-4871-81c8-6a6d7c6f7656",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Hospital Heidelberg"
+    },
+    {
+      "@id": "#cc280554-64a9-409b-89ef-2006f0b0486a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universitätsklinikum Würzburg"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#3be81c51-ccc0-4d4b-8dbc-b92ec5e6fec8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Time-lapse recording (62h) of co-cultures consisting of INA-6 and human mesenchymal stromal cells (hMSCs) at different densities (single dispersed or confluent hMSCs). INA-6 on disperse hMSCs show attachment of INA-6 on hMSC, homotypic aggregate growth and spontaneous detachments of INA-6 in the convective stream, modeling dissemination. INA-6 on confluent hMSCs show heterotypic attachment and growth of INA-6 on hMSC. Dividing INA-6 cells generate either two MSC-adhering (not moving), or one MSC-adhering + non-MSC-adhering daughter cells ",
+      "name": "Co-Culture of primary hMSCs and Myeloma Cell line INA-6",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#8728843e-d59c-43bc-89cb-3fc4e8acbf26",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Time-lapse recording (62h) of co-cultures consisting of INA-6 and human mesenchymal stromal cells (hMSCs) at different densities (single dispersed or confluent hMSCs). INA-6 on disperse hMSCs show attachment of INA-6 on hMSC, homotypic aggregate growth and spontaneous detachments of INA-6 in the convective stream, modeling dissemination. INA-6 on confluent hMSCs show heterotypic attachment and growth of INA-6 on hMSC. Dividing INA-6 cells generate either two MSC-adhering (not moving), or one MSC-adhering + non-MSC-adhering daughter cells ",
+      "name": "Co-Culture of primary hMSCs and Myeloma Cell line INA-6",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7ebccd3c-5ed0-4ed0-9371-a846a1d76853",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "We used the black and white camera Axiocam 506 mono (D). For mosaic acquisitions (“tiles”) we used a tiling overlap of 8-10% and image tiles were not stitched. Images were magnified 5x and 10x (Fluar 5x/0.25 M27 and EC Plan-Neofluar 10x/0.3 Ph1 M27). Brightfield and fluorescence images of 13 mm² of co-culture were acquired every 15 minutes for 63 h. Movement speed of the motorized table was adjusted to the lowest setting that allows acquisition of the complete region within 15 minutes.\n",
+      "labEquipment": "All microscopy equipment was acquired from ZEISS. The microscope was an Axio Observer 7 with confocal Apotome.2 equipped with a motorized reflector revolver and motorized scanning table (130x100 mm). The microscope was mounted on an Antivibrations-Set [Axio Observer (D)] with two antivibration carrier plates, each equipped with two vibration dampening feet. The light source was a microLED 2 for transmission light and (for fluorescence) Colibri 7 (R[G/Y]B-UV) for the green channel of incident light (590 nm). For excitation (EX) and emission (EM) light filtering and beam splitting (BS) we used the following reflector: 43 HE Cy 3 shift free (E) (EX: 550/25, BS: 570, EM: 605/70).\nLive cells were imaged inside an ibidi Stage Top Incubation System equilibrated to 80% humidity, 5% CO2 and 37 °C.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Automated Time-Lapse Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 14
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 87565817159
+    }
+  ]
+}

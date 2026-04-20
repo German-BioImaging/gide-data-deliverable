@@ -1,0 +1,428 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1274"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1274",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#89985190-fcbe-4bf5-b3b2-a718de8dab58"
+        },
+        {
+          "@id": "#a773138a-33ee-425f-b592-5a45a1d52f93"
+        },
+        {
+          "@id": "#1c8f3d3f-37e5-4b7e-aa62-51143ce654cc"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e364b493-9ecf-41e5-aec7-f02bb39e04fc"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0500-8218"
+        },
+        {
+          "@id": "#8db0ab34-a710-4ac7-ab9d-e525c994206d"
+        },
+        {
+          "@id": "#b5ad24a9-2a11-4e01-8b76-59b25cdd68bb"
+        },
+        {
+          "@id": "#b7a1edd9-dd0a-49c1-92f5-0b0b82a6e7ea"
+        },
+        {
+          "@id": "#98e543e7-caec-4a08-a342-1ea697dfe00e"
+        },
+        {
+          "@id": "#def138d8-90af-4dad-adbe-93e3882a63e9"
+        },
+        {
+          "@id": "#11753e1b-85d1-45bd-aeb8-896d9050bcd1"
+        },
+        {
+          "@id": "#b468fb3d-f958-44aa-ae25-f3bf0f650656"
+        },
+        {
+          "@id": "#6a748651-1314-49f8-9089-03061a0ce002"
+        },
+        {
+          "@id": "#a9e3e412-ffb8-44e5-824b-db5912fcf84e"
+        },
+        {
+          "@id": "#798a5503-7aa4-45ea-93da-7b20a6aa62ef"
+        },
+        {
+          "@id": "#fd1ce78f-0ece-4232-a597-48e9ba9a1b54"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-15",
+      "description": "Like other volume electron microscopy approaches, Automated Tape Collecting Ultramicrotomy (ATUM) enables imaging of serial sections deposited on thick plastic tapes by scanning electron microscopy (SEM). ATUM is unique in enabling hierarchical imaging and thus efficient screening for target structures, as needed for correlative light and electron microscopy. However, SEM of sections on tape can only access the section surface, thereby limiting the axial resolution to the typical size of cellular vesicles with an order of magnitude lower than the acquired xy resolution. In contrast, serial-section electron tomography (ET), a transmission electron microscopy-based approach, yields isotropic voxels at full EM resolution, but requires deposition of sections on electron-stable thin and fragile films, thus making screening of large section libraries difficult and prone to section loss. To combine the strength of both approaches, we developed ‘ATUM-Tomo’, a hybrid method, where sections are first reversibly attached to plastic tape via a dissolvable coating, and after screening detached and transferred to the ET-compatible thin films. ATUM-SEM of serial semi-thick sections and consecutive ET of selected re-mounted sections combines SEM’s fast target recognition and coarse rendering capability with high-resolution volume visualizations, respectively, thus enabling multi-scale interrogation of cellular ultrastructure. As a proof-of-principle, we applied correlative ATUM-Tomo to study ultrastructural features of blood brain barrier (BBB) leakiness around microthrombi in a mouse model of traumatic brain injury. Microthrombi and associated sites of BBB leakiness were identified by confocal imaging of injected fluorescent and electron-dense nanoparticles, then relocalized by ATUM-SEM, and finally interrogated by correlative ATUM-Tomo. This workflow is a seamless zoom-in on structural BBB pathology from the micro- to the nanometer scale. Overall, our new ATUM-Tomo approach will substantially advance ultrastructural analysis of biological phenomena that require cell- and tissue-level contextualization of the finest subcellular textures.",
+      "funder": [],
+      "identifier": "S-BIAD1274",
+      "keywords": [
+        "Array tomography, electron tomography, blood brain barrier, ATUM, volume electron microscopy, fluorescence microscopy, CLEM"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "ATUM-Tomo: A multi-scale approach to cellular ultrastructure by combined volume scanning electron microscopy and electron tomography ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1274/86106193-a0c7-40c2-b54d-4eb49ce22b1c/29c15a65-6a9c-4f4f-92db-787a8c5b4bba.png"
+      ]
+    },
+    {
+      "@id": "#11753e1b-85d1-45bd-aeb8-896d9050bcd1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "cornelia.niemann@tum.de",
+      "name": "Cornelia Niemann"
+    },
+    {
+      "@id": "#6a748651-1314-49f8-9089-03061a0ce002",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9f378507-5f3b-44e5-b0d3-580765b827e9"
+        }
+      ],
+      "email": "Nikolaus.Plesnila@med.uni-muenchen.de",
+      "name": "Nikolaus Plesnila"
+    },
+    {
+      "@id": "#798a5503-7aa4-45ea-93da-7b20a6aa62ef",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#30d8b0be-02c8-4089-85d2-0a63027c54b6"
+        }
+      ],
+      "email": "mueller-reichert@tu-dresden.de",
+      "name": "Thomas Müller-Reichert"
+    },
+    {
+      "@id": "#8db0ab34-a710-4ac7-ab9d-e525c994206d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "lucia.rodriguez@tum.de",
+      "name": "Lucia Rodriguez"
+    },
+    {
+      "@id": "#98e543e7-caec-4a08-a342-1ea697dfe00e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9f378507-5f3b-44e5-b0d3-580765b827e9"
+        }
+      ],
+      "email": "Antonia.Wehn@med.uni-muenchen.de",
+      "name": "Antonia Wehn"
+    },
+    {
+      "@id": "#a9e3e412-ffb8-44e5-824b-db5912fcf84e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "thomas.misgeld@tum.de",
+      "name": "Thomas Misgeld"
+    },
+    {
+      "@id": "#b468fb3d-f958-44aa-ae25-f3bf0f650656",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#28059fbb-5e68-4f70-9f2e-5b6653f6b0dc"
+        }
+      ],
+      "email": "andrey.klymchenko@unistra.fr",
+      "name": "Andrey S. Klymchenko"
+    },
+    {
+      "@id": "#b5ad24a9-2a11-4e01-8b76-59b25cdd68bb",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "georg.kislinger@dzne.de",
+      "name": "Georg Kislinger"
+    },
+    {
+      "@id": "#b7a1edd9-dd0a-49c1-92f5-0b0b82a6e7ea",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#30d8b0be-02c8-4089-85d2-0a63027c54b6"
+        }
+      ],
+      "email": "gunar.fabig@tu-dresden.de",
+      "name": "Gunar Fabig"
+    },
+    {
+      "@id": "#def138d8-90af-4dad-adbe-93e3882a63e9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "hanyi_jiang1997@hotmail.com",
+      "name": "Hanyi Jiang"
+    },
+    {
+      "@id": "#fd1ce78f-0ece-4232-a597-48e9ba9a1b54",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9f378507-5f3b-44e5-b0d3-580765b827e9"
+        }
+      ],
+      "email": "Igor.Khalin@med.uni-muenchen.de",
+      "name": "Igor Khalin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0500-8218",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b15f57bb-8a8f-4026-8473-5a53804e5d96"
+        }
+      ],
+      "email": "martina.schifferer@dzne.de",
+      "name": "Martina Schifferer"
+    },
+    {
+      "@id": "#28059fbb-5e68-4f70-9f2e-5b6653f6b0dc",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université de Strasbourg"
+    },
+    {
+      "@id": "#30d8b0be-02c8-4089-85d2-0a63027c54b6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "TU Dresden"
+    },
+    {
+      "@id": "#9f378507-5f3b-44e5-b0d3-580765b827e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "LMU Klinikum"
+    },
+    {
+      "@id": "#b15f57bb-8a8f-4026-8473-5a53804e5d96",
+      "@type": [
+        "Organization"
+      ],
+      "name": "German Center for Neurodegenerative Diseases"
+    },
+    {
+      "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Technical University of Munich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#e364b493-9ecf-41e5-aec7-f02bb39e04fc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "brain, cortex",
+      "name": "fixed mouse brain after traumatic brain injury",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#1c8f3d3f-37e5-4b7e-aa62-51143ce654cc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For electron tomography (ET), single serial semi-thick (400 nm) sections were released as described above and collected on slot grids covered with a Formvar layer of golden interference color. Colloidal gold particles (diameter 20 nm, BBI) serving as fiducials for tomographic reconstruction were then attached to the sections by submerging the grids into a droplet of the pure colloidal gold solution for 1 min. Samples were blotted to remove residual solution and air-dried. Semi-thick sections were imaged using a Tecnai F30 transmission electron microscope (Thermo Fisher Scientific) operated at 300 kV and equipped with a 4k×4k CMOS camera (OneView, Gatan) as previously described (Kiewisz et al., 2022). Using a dual-axis specimen holder (Type 2040, Fishione, USA), tilt series were recorded from -60° to +60° with 1° increments at a magnification of 4700x and a pixel size of 2.572 nm applying the SerialEM software package (Mastronarde, 2003; Mastronarde, 2005). For dual-tilt electron tomography, the grid was rotated for 90° in the XY-plane and the second tilt series was acquired using identical microscope settings (Mastronarde, 1997). Both tomographic image stacks of the same positions were reconstructed, combined and flattened using IMOD (Kremer, Mastronarde and McIntosh, 1996; Mastronarde and Held, 2017). Serial semi-thick sections were stitched and combined by using the ZIB Amira (Zuse Institute Berlin, Germany) software package (Stalling, Westerhoff and Hege, 2005; Lindow et al., 2021). After converting the image data into TIFF format, the image registration was manually refined in Fiji TrakEM2., followed by a final elastic alignment. Segmentation of cellular features was performed manually with the program VAST (Berger, Seung and Lichtman, 2018) and subsequently rendered in Blender (Brito, 2018). All movies were generated using Amira.",
+      "labEquipment": "Tecnai F30 transmission electron microscope (Thermo Fisher Scientific)",
+      "measurementTechnique": [],
+      "name": "electron tomography"
+    },
+    {
+      "@id": "#89985190-fcbe-4bf5-b3b2-a718de8dab58",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was performed using confocal microscopy (ZEISS LSM 900, Carl Zeiss Microscopy GmbH, Jena Germany). Confocal imaging revealed that lectin and LND fluorescence was possible with minimal autofluorescence despite perfusion fixation with glutaraldehyde. A 10x objective (EC Plan-Neofluar 10x/0.30 M27) was used with an image matrix of 1024×1024 pixel, a pixel scaling of 0.2×0.2 μm and a color depth of 8 bit. The scanned region of approximately 2×2 mm covered the whole cortical thickness of the lesion and peri-lesional area in order to generate overview maps for later correlation. Whole brain images were collected in z-stacks as tile scans with a slice-distance of 5 μm and a total range of 50 μm. Specific regions of interest including the microthrombi and sites of extravasation were collected in single plane using 25x magnification (objective: EC Plan-Neofluar 25x/0.8 Imm Korr DIC M27) with an image matrix of 1024×1024 pixel, a pixel scaling of 0.2×0.2 μm and a depth of 8 bit. After imaging for maximal 1 hour, the glass slide was immersed into a petri dish filled with 1x PBS. As soon as the tissue section was floating from the glass sandwich, it was transferred to fresh buffer for storage.   ",
+      "labEquipment": "ZEISS LSM 900, Carl Zeiss Microscopy GmbH\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "confocal imaging"
+    },
+    {
+      "@id": "#a773138a-33ee-425f-b592-5a45a1d52f93",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "ATUM-SEM was performed on a Crossbeam Gemini 340 SEM (Zeiss) with a four-quadrant backscatter detector at 8 kV. Hierarchical imaging captures large areas at low resolution that can, in turn, be screened for structures of interest that are subsequently reimaged at higher resolution and so forth. In ATLAS5 Array Tomography (Fibics), wafer overview images were generated (1000 nm/pixel). We acquired whole section low resolution images (0.1×0.1×1 µm) of every 10th section (thus simulating the thickness of one confocal plane covering 1 µm thickness) to generate overviews that can be correlated with the confocal imaging data. We used blood vessel patterns, bleedings and the different tissue layers as landmarks. Target regions were identified and acquired at medium resolution (20×20×200 nm). Within this volume, clots were selected for high-resolution imaging (4-20×4-20×200 nm). \nFor ATUM-Tomo, electron micrographs were acquired in a similar hierarchical scheme on an Apreo S2 SEM (Thermo Fisher Scientific) with the T1 detector. Serial-section acquisition was performed using the Maps2 (Thermo Fisher Scientific) software. We acquired images of whole sections at low resolution (100×100×400 nm) to facilitate re-location. Anatomical landmarks and vasculature patterns of single SEM overview images and a summed (in Fiji) stack of sections were compared to the confocal data sets in Fiji. Within this volume, we selected a region with clots and transition zones and extravasation for high-resolution imaging at 20×20×400 nm. We acquired subsets of these regions on each or every second section at 10×10×400 nm or 10×10×800 nm resolution, respectively.\n",
+      "labEquipment": "SEM Zeiss Crossbeam 340 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "array tomography "
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1854
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 235453267624
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1944"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1944",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a647e7bb-cc8d-41ae-9f64-be93e0fe3788"
+        },
+        {
+          "@id": "#804088b8-e935-4c1a-8ee0-74e692ba5008"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#264f3e13-f776-47bc-9cc3-7ff139798cd4"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#64586cda-6170-4a15-80fb-599d7c6afab7"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2686-2923"
+        },
+        {
+          "@id": "#0f305e1c-fc8d-40ad-8bbd-65771dee9bab"
+        },
+        {
+          "@id": "#d171acf3-7e26-45e6-b460-e4abab22d9ed"
+        },
+        {
+          "@id": "#aa701a7a-da3a-4016-9d6b-c40eb0910e9e"
+        },
+        {
+          "@id": "#00e6f180-845f-4a2d-ad19-3786364c7807"
+        },
+        {
+          "@id": "#99df31e8-ab89-4366-b7be-fe2602bc7a18"
+        },
+        {
+          "@id": "#c6d725c2-f7f0-4fae-8975-daf9f0ae0154"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-09",
+      "description": "Image dataset of immunofluorescence tile- and confocal microscopy images and their corresponding segmentations of dorsal root ganglia (DRG) after chronic construction injury (CCI) in the rat. We analyzed the DRG of male and female rats 1 week or 5 weeks after CCI from the ipsilateral (IL) and contralateral (CL) side and L4 and L5 spinal level. Image segmentation was performed with a DL-based method (deepflash2) and advanced thresholding. Provided are the raw images, the converted tiff images separated by each channel, and the predicted masks.",
+      "funder": [],
+      "identifier": "S-BIAD1944",
+      "keywords": [
+        "segmentation",
+        " DRG",
+        "CCI",
+        "tile-microscopy",
+        "deep learning",
+        "annotation",
+        "rat"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Image data from: Sex-specific molecular and cellular phenotyping of dorsal root ganglia during ongoing pain resolution after chronic constriction injury in the rat",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1944/b733c193-e0c9-457b-b76c-8720e145d1d4/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#00e6f180-845f-4a2d-ad19-3786364c7807",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a26cc14b-9a9d-4cf8-b27e-f5ef5c30c43b"
+        }
+      ],
+      "name": "Alexander Brack"
+    },
+    {
+      "@id": "#0f305e1c-fc8d-40ad-8bbd-65771dee9bab",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a26cc14b-9a9d-4cf8-b27e-f5ef5c30c43b"
+        }
+      ],
+      "name": "Beate Hartmannsberger"
+    },
+    {
+      "@id": "#64586cda-6170-4a15-80fb-599d7c6afab7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#13fdf025-71aa-421a-b53c-6b6d002a5dc0"
+        },
+        {
+          "@id": "#a26cc14b-9a9d-4cf8-b27e-f5ef5c30c43b"
+        }
+      ],
+      "email": "Schlott_F@ukw.de",
+      "name": "Felicitas Schlott"
+    },
+    {
+      "@id": "#99df31e8-ab89-4366-b7be-fe2602bc7a18",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a26cc14b-9a9d-4cf8-b27e-f5ef5c30c43b"
+        }
+      ],
+      "name": "Heike Rittner"
+    },
+    {
+      "@id": "#aa701a7a-da3a-4016-9d6b-c40eb0910e9e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#54f8ed83-15f6-41b5-bc8d-08d71db489c3"
+        }
+      ],
+      "name": "Thorsten Bischler"
+    },
+    {
+      "@id": "#c6d725c2-f7f0-4fae-8975-daf9f0ae0154",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#13fdf025-71aa-421a-b53c-6b6d002a5dc0"
+        }
+      ],
+      "email": "Blum_R@ukw.de",
+      "name": "Robert Blum"
+    },
+    {
+      "@id": "#d171acf3-7e26-45e6-b460-e4abab22d9ed",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#54f8ed83-15f6-41b5-bc8d-08d71db489c3"
+        }
+      ],
+      "name": "Tom Gräfenhan"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2686-2923",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#13fdf025-71aa-421a-b53c-6b6d002a5dc0"
+        }
+      ],
+      "email": "anmschulte@gmail.com",
+      "name": "Annemarie Sodmann"
+    },
+    {
+      "@id": "#13fdf025-71aa-421a-b53c-6b6d002a5dc0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Department of Neurology, University Hospital Würzburg, Würzburg, Germany"
+    },
+    {
+      "@id": "#54f8ed83-15f6-41b5-bc8d-08d71db489c3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Core Unit Systems Medicine, University of Würzburg, Würzburg, Germany"
+    },
+    {
+      "@id": "#a26cc14b-9a9d-4cf8-b27e-f5ef5c30c43b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Department of Anesthesiology, Intensive Care, Emergency Medicine and Pain Therapy, Centre for Interdisciplinary Pain Medicine, University Hospital Würzburg, Würzburg, Germany"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#264f3e13-f776-47bc-9cc3-7ff139798cd4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Dorsal root ganglia.",
+      "name": "Dorsal root ganglia slices of rats",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#804088b8-e935-4c1a-8ee0-74e692ba5008",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Tile microscopy was performed using an AxioImager2 microscope (Zeiss) using a 20× Plan- Apochromat objective (0.8 N.A). Images with 14 bit were acquired using an Axiocam 506 mono camera (Zeiss) with a binning of 4×4 at a pixel resolution of 0.908 µm/pixel. As a light source, the LED excitation wavelengths (in nm) 385, 475, 555, and 630 of the Colibri.2 LED light source (Zeiss) were used together with corresponding multiband filter sets. Whole DRG were imaged with the tile scan function of the Zen Imaging Software (Version 2.6). For each DRG, 6 – 12 x,y (2D)-images were stitched together. LED intensities were adjusted to elicit the strongest signal in the first third of the 14-bit scale and each staining was imaged with the same settings. Raw images were stored in the .czi format.",
+      "labEquipment": "Tile microscopy was performed using an AxioImager2 microscope (Zeiss).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescence tile microscopy"
+    },
+    {
+      "@id": "#a647e7bb-cc8d-41ae-9f64-be93e0fe3788",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "High-resolution confocal images with were acquired at an inverted Olympus IX81 microscope equipped with an Olympus FV1000 confocal laser scanning system. A FVD10 SPD spectral detector and diode lasers of 405, 473, 559, and 635 nm were used in combination with an Olympus UPLSAPO60× (oil, NA: 1.35) objective. The pinhole was set to represent one airy disc. Confocal images (x,y-z; 12-bit, 1024×1024 pixel) were taken throughout the depth of the tissue with approximately 20 to 30 planes (400 nm step size). Raw images were stored in the .oib format.",
+      "labEquipment": "Inverted Olympus IX81 microscope equipped with an Olympus FV1000 confocal laser scanning system",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 34051
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 175270234301
+    }
+  ]
+}

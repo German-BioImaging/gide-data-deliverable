@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1455"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1455",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3cf7a4e8-0d0c-4325-b446-d4096ee14c3a"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#176a7ee7-135a-4ba2-811d-bd8832aaebc8"
+        },
+        {
+          "@id": "#f19dd1a2-005b-4d2f-9f1e-671b77d14878"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#bfb24553-c836-4f71-97d7-0e6f35b292ac"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-30",
+      "description": "In order to study eIF1A roles in mRNA translation we identified small molecules affecting eIF1A-RPS10 interaction and use this molecules to affect this interaction in fixed cells using proximity ligation assay.",
+      "funder": [],
+      "identifier": "S-BIAD1455",
+      "keywords": [
+        "eIF1A",
+        "RPS10",
+        "PLA"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Targeting eIF1A-ribosome interaction with small molecules unveils differential regulation of uORFs by eIF1A and RPS10 and their antitumor and antiviral effects ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1455/cf958337-713a-4a32-99eb-91fc7b48eb9a/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#bfb24553-c836-4f71-97d7-0e6f35b292ac",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0316ej306"
+        }
+      ],
+      "email": "daniel.hayat@weizmann.ac.il",
+      "name": "daniel hayat"
+    },
+    {
+      "@id": "https://ror.org/0316ej306",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Weizmann Institute of Science"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#176a7ee7-135a-4ba2-811d-bd8832aaebc8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HEK293T cells. fixed HEK239T cells treated with DMSO or 1Ais for 3 hours",
+      "name": "control",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f19dd1a2-005b-4d2f-9f1e-671b77d14878",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "fixed HEK293T cells.",
+      "name": "1Ais treatament",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3cf7a4e8-0d0c-4325-b446-d4096ee14c3a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fluorescence was identified by confocal microscope in 3 channels (Far red: ex/em: 594/624, DAPI ex/em: 354/456, and DIS contrast). For each channel ~20 images were taken to cover all cell volume. magnification: 60X oil immersion.",
+      "labEquipment": "Olympus confocal Laser Scanning Microscope\nFV4000",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "image aquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 29
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3695206400
+    }
+  ]
+}

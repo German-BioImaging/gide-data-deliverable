@@ -1,0 +1,323 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000199/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000199/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000199",
+      "name": "A set of imaging data related to the development of trans-scale scope and its application to biological study",
+      "description": "optical images indicating optical performance of the imaging method, images of centimeter-scale dynamics of multicellular systems (MDCK cells, HeLa cells, Dictyostelium Discoidium) observed with sub-cellular resolution",
+      "datePublished": "2021-09-30",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Animals",
+        "Brain/cytology",
+        "Calcium/analysis",
+        "Cells/cytology[major]",
+        "Cyclic AMP/analysis",
+        "Dictyostelium/chemistry",
+        "Dictyostelium/ultrastructure",
+        "Dogs",
+        "Entosis",
+        "Epithelial Cells/ultrastructure",
+        "Equipment Design",
+        "Green Fluorescent Proteins",
+        "HeLa Cells/chemistry",
+        "HeLa Cells/ultrastructure",
+        "Humans",
+        "Interneurons/ultrastructure",
+        "Luminescent Proteins",
+        "Madin Darby Canine Kidney Cells",
+        "Mice",
+        "Microscopy, Fluorescence/instrumentation",
+        "Microscopy, Fluorescence/methods[major]",
+        "Neurons/ultrastructure",
+        "Semiconductors"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1101/2020.06.29.179044"
+        },
+        {
+          "@id": "https://doi.org/10.1038/s41598-021-95930-7"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0019722"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0140676"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001777"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "#imaging-technique-1"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "#imaging-technique-2"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takeharu Nagai",
+      "email": "ng1@sanken.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: SANKEN (The Institute of Scientific and Industrial Research)",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/035t8zc32"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/035t8zc32",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2020.06.29.179044",
+      "@type": "ScholarlyArticle",
+      "name": "Exploring rare cellular activity in more than one million cells by a trans-scale-scope",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-021-95930-7",
+      "@type": "ScholarlyArticle",
+      "name": "Exploring rare cellular activity in more than one million cells by a transscale scope.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "unknown",
+      "description": "unknown",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+        }
+      ],
+      "hasCellLine": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        "Ax2 cells"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "vernacularName": "dog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "vernacularName": "social amoeba"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
+      "@type": "DefinedTerm",
+      "name": "Calcium signaling"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0140676",
+      "@type": "DefinedTerm",
+      "name": "cAMP signaling"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001777",
+      "@type": "DefinedTerm",
+      "name": "Whole cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "Cell nucleus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "AMATERAS",
+      "description": "AMATERAS",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "trans-scale scope",
+      "description": "trans-scale scope",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-2"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-technique-1",
+      "@type": "DefinedTerm",
+      "name": "AMATERAS"
+    },
+    {
+      "@id": "#imaging-technique-2",
+      "@type": "DefinedTerm",
+      "name": "trans-scale scope"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 646896775168,
+      "description": "646.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 4257,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

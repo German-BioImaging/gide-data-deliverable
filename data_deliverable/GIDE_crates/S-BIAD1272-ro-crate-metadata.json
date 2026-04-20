@@ -1,0 +1,214 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1272"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1272",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#fbefaa4a-b778-4db5-9127-268d62bb326a"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f0f4262a-dee2-4aae-815a-ff25ffed7081"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#beae5121-f575-4274-8575-3aec7b008f6d"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0504-1824"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9821-3578"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-12",
+      "description": "p44/42 MAPK (ERK1/2) (Y202/204) was labeled via secondary immunofluorescence in HeLa cells either in resting state or after stimulation with EGF or HGF for 5 or 30 min and imaged with a confocal microscope.",
+      "funder": [],
+      "identifier": "S-BIAD1272",
+      "keywords": [
+        "confocal microscopy"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Confocal microscopy data of phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) in HeLa cells stimulated with EGF or HGF",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#beae5121-f575-4274-8575-3aec7b008f6d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04cvxnb49"
+        }
+      ],
+      "email": "catapano@chemie.uni-frankfurt.de",
+      "name": "Claudia Catapano"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9821-3578",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04cvxnb49"
+        }
+      ],
+      "email": "heilemann@chemie.uni-frankfurt.de",
+      "name": "Mike Heilemann"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0504-1824",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/04cvxnb49"
+        }
+      ],
+      "email": "dietz@chemie.uni-frankfurt.de",
+      "name": "Marina S. Dietz"
+    },
+    {
+      "@id": "https://ror.org/04cvxnb49",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Goethe University Frankfurt"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#f0f4262a-dee2-4aae-815a-ff25ffed7081",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells",
+      "name": "Cell samples",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#fbefaa4a-b778-4db5-9127-268d62bb326a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "- acquisition software: Leica Application Suite X software (v3.5.7.23225)\n- Objective: HC PL APO CS2 63x/1.40 oil immersion objective (Leica Microsystems)\n- scan speed: 600 Hz \n- image size: 512 × 512 px\n- pinhole diameter: 105.4 µm \n- zoom factor: 0.75 \n- pixel size: 481.47 nm \n- field of view: 246 × 246 µm.\n- 3D stacks of whole cells were acquired by imaging 16 planes with an axial distance of 1 µm in two sequences: \n1) excitation of DAPI with a 405 nm diode (0.01% intensity) and abberior STAR 635P with a 633 nm HeNe laser (8% intensity)\n2) excitation of ATTO 488 with an Argon laser at 496 nm (1% intensity)\n- detection:\nDAPI: HyD detector (gain 50) in a 410-506 nm detection window\nabberior STAR 635P: PMT detector (gain 900) in a 638-784 nm detection window\nATTO 488: PMT detector (gain 900) in a  506-738 nm detection window\n",
+      "labEquipment": "commercial Leica SP8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4845123363
+    }
+  ]
+}

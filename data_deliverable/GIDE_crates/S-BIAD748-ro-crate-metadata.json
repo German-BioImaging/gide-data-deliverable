@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD748"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD748",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#cdacd779-7fe9-447f-a2e0-53918847ec68"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f211027d-00aa-4220-bf30-a564b0080051"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4612-6752"
+        },
+        {
+          "@id": "#f8254b30-b962-4f48-9658-29decfeb81e5"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9548-7709"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-02-16",
+      "description": "Primary cilia are essential signaling organelles that protrude from most cells in the body. Heterodimeric kinesin-2 (KIF3A/KIF3B/KAP3) powers several intracellular transport processes, including intraflagellar transport (IFT), essential for ciliogenesis. A long-standing question is how a motor protein is differentially regulated for specific cargos. Since phosphorylation of the KIF3A tail domain was suggested to regulate the activity of kinesin-2 for ciliogenesis, similarly as for the cytosolic cargo N-Cadherin, we set out to map the phosphosites involved in this regulation. Using well-characterized Kif3a-/-; Kif3b-/- mouse embryonic fibroblasts, we perform ciliogenesis rescue assays with a library of phosphomimetic mutants comprising all predicted phosphosites in the KIF3A tail domain. In contrast to previous reports, we find that KIF3A tail domain phosphorylation is dispensable for ciliogenesis in mammals. Thus, mammalian kinesin-2 is differently regulated for IFT than currently thought, consistent with the idea of differential regulation for ciliary and cytosolic cargo.",
+      "funder": [],
+      "identifier": "S-BIAD748",
+      "keywords": [
+        "cell biology, intraflagellar transport, motor protein regulation, KIF3A/KIF3B/KAP3, phosphorylation, primary cilia"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "KIF3A tail domain phosphorylation is not required for ciliogenesis in mouse embryonic fibroblasts\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD748/f70ac5ba-d947-4957-a5b7-aea36e9283eb/a0b2fb0e-9a49-41b0-a0f2-30ac33f92978.png"
+      ]
+    },
+    {
+      "@id": "#f8254b30-b962-4f48-9658-29decfeb81e5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b9969662-4afa-4161-be7c-305f10c6b054"
+        }
+      ],
+      "email": "jmadam5@ilstu.edu",
+      "name": "Jessica M Adams"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9548-7709",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b9969662-4afa-4161-be7c-305f10c6b054"
+        }
+      ],
+      "email": "mfengel@ilstu.edu",
+      "name": "Martin F Engelke"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4612-6752",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b9969662-4afa-4161-be7c-305f10c6b054"
+        }
+      ],
+      "email": "afasawe@ilstu.edu",
+      "name": "Ayoola S Fasawe"
+    },
+    {
+      "@id": "#b9969662-4afa-4161-be7c-305f10c6b054",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Illinois State University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#f211027d-00aa-4220-bf30-a564b0080051",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Kif3a-/-; Kif3b-/- 3T3 cells derived via CRISPR/Cas9 (Engelke et al., 2019) from Flp-In-3T3 cells (Thermo Fisher Scientific)",
+      "name": "Cell line",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#cdacd779-7fe9-447f-a2e0-53918847ec68",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fixed and mounted specimens were imaged on the BZ-X810 microscope. Transfected cells were located either in the red (KIF3B) channel, if present, or in the green (KIF3A) channel. Exposure was optimized for the greatest dynamic range possible for each channel separately and then kept constant throughout the imaging session. The presence of cilia was evaluated in the infrared channel (ARL13B staining). If cilia were present, cilia were used for focusing, else focusing was done in the channel in which transfected cells had been selected. The 2.83 megapixels monochrome CCD camera chip was used to collect 14-bit TIF images using no pixel binning (Keyence setting: \"high resolution\").",
+      "labEquipment": "BZ-X810 epifluorescence microscope (Keyence) equipped with a Plan Apochromate 40x, 0.95 numerical aperture (NA) objective, and four Chromas filter cubes: blue (Cat# 49028), green (Cat# 49308), red (\"mCherry\"), and infrared (Cat# 49009).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Epifluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1954
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 40041646222
+    }
+  ]
+}

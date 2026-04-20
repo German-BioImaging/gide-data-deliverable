@@ -1,0 +1,154 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000437/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000437/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000437",
+      "name": "Amphiregulin-producing TH2 cells facilitate esophageal fibrosis of eosinophilic esophagitis",
+      "description": "Background: Massive eosinophil infiltration into the esophagus is associated with subepithelial fibrosis and esophageal stricture in patients with eosinophilic esophagitis (EoE). However, the pathogenesis of esophageal fibrosis remains unclear.\r\n\r\nObjective: We sought to elucidate the cellular and molecular mechanisms underlying the induction of esophageal fibrosis.\r\n\r\nMethods: We established a murine model of EoE accompanied by fibrotic responses following long-term intranasal administration of house dust mite antigen. Using this murine model, we investigated the characteristics of immune cells infiltrating the fibrotic region of the inflamed esophagus using flow cytometry and histological analyses. We also analyzed the local inflammatory sites in the esophagus of patients with EoE using single-cell RNA sequencing, flow cytometry, and immunohistochemistry.\r\n\r\nResults: Enhanced infiltration of both amphiregulin-producing and IL-5-producing TH2 cells was detected in the fibrotic area of the esophagus in mice subjected to repeated house dust mite exposure. Deletion of amphiregulin in CD4+ T cells ameliorates esophageal fibrosis. An analysis of human esophageal biopsy samples showed that the infiltration of amphiregulin-producing CD4+ T cells was higher in patients with EoE than in control patients. Furthermore, the number of infiltrated amphiregulin-producing CD4+ T cells was associated with the degree of esophageal fibrosis in patients with EoE.\r\n\r\nConclusions: Amphiregulin, produced by TH2 cells, contributes to esophageal fibrosis in EoE and may be a therapeutic target.",
+      "datePublished": "2025-07-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.jacig.2024.100287"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kiyoshi Hirahara",
+      "email": "hiraharak@chiba-u.jp",
+      "description": "Organization: Chiba University; Department: Department of Immunology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01hjzeq58"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Chiaki Iwamura",
+      "description": "Department: Graduate School of Medicine"
+    },
+    {
+      "@id": "https://ror.org/01hjzeq58",
+      "@type": "Organization",
+      "name": "Chiba University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jacig.2024.100287",
+      "@type": "ScholarlyArticle",
+      "name": "Amphiregulin-producing T(H)2 cells facilitate esophageal fibrosis of eosinophilic esophagitis.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 232448000,
+      "description": "232.4 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 35,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

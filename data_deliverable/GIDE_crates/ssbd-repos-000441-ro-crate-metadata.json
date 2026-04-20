@@ -1,0 +1,136 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000441/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000441/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000441",
+      "name": "Designing protein-based artificial kinetochores as decoys to prevent meiotic errors in oocytes",
+      "description": "Chromosome mis-segregation during meiosis in oocytes causes miscarriages and congenital diseases. Aging-associated premature chromosome separation is a major cause of mis-segregation. Effective prevention of premature chromosome separation has not yet been achieved. Here, we design protein-based artificial kinetochores that act as decoys to prevent premature chromosome separation. Designed artificial kinetochore-like decoys are submicroscale clusters of NDC80-NUF2-tethered protein particles that can establish a biorientation-like state by competing with chromosomal kinetochores for HURP-decorated microtubules. This competition reduces excessive bipolar microtubule pulling forces exerted on chromosomes, thereby effectively preventing premature chromosome separation during meiosis I and II in aged mouse oocytes. These effects suppress egg aneuploidy. This study provides a decoy strategy with biocompatible artificial kinetochores to prevent aging-associated meiotic errors in oocytes.",
+      "datePublished": "2025-11-04",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41556-025-01792-w"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yuanzhuo Zhou",
+      "email": "yuanzhuo.zhou@riken.jp",
+      "description": "Organization: Laboratory for Chromosome Segregation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/006rjbv46"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/006rjbv46",
+      "@type": "Organization",
+      "name": "Laboratory for Chromosome Segregation"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41556-025-01792-w",
+      "@type": "ScholarlyArticle",
+      "name": "Designing protein-based artificial kinetochores as decoys to prevent meiotic errors in oocytes.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 3812153982976,
+      "description": "3.8 TB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 65293,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

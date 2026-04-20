@@ -1,0 +1,282 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1347"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1347",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a7e99535-55bf-4d6f-9a1c-e40376d009f0"
+        },
+        {
+          "@id": "#28ad8cc4-1729-4d62-85de-360a9dc6d325"
+        },
+        {
+          "@id": "#2b8bb41d-567d-4e2d-9be7-60fc382218ee"
+        },
+        {
+          "@id": "obo:FBbi_00000367"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2a611aeb-484c-4427-aea5-8d4fa09c3b49"
+        },
+        {
+          "@id": "#f8196d58-07ba-4c6e-8a29-8bcdc0e908af"
+        },
+        {
+          "@id": "#7778c298-e5de-4dd1-8db8-07b5292758b2"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#8e38ef1e-2e5d-419f-bfca-17585107a569"
+        },
+        {
+          "@id": "#65cfd0d1-f4df-4171-8040-2b54e06ef7d6"
+        },
+        {
+          "@id": "#220c6074-5034-416d-b525-a5eb59a0ab7a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-01",
+      "description": "The assembly of membrane receptors into signaling complexes is at the origin of key cellular events. Yet, we often lack detailed structural mechanistic understanding. Receptors are embedded into a complex cellular membrane, which defines their dynamics but also complicates their experimental characterizations significantly. Here, we showcase an integrative structural biology approach to investigate the activation mechanism of the human growth factor receptor MET. MET is a receptor tyrosine kinase involved in cell proliferation, migration, and survival. MET is also hijacked by the intracellular pathogen Listeria monocytogenes. Its invasion protein, internalin B (InlB), binds to MET and promotes the formation of a signaling dimer that triggers the internalization of the pathogen. Here, we use a combination of structural biology, modeling, molecular dynamics simulations, and in situ single-molecule Förster resonance energy transfer (smFRET) to elucidate the early events in MET activation. Simulations show that InlB binding stabilizes MET in a conformation that promotes dimer formation. smFRET identifies the organization of the in situ signaling dimer, which resembles one of two previously published  crystal structures yet shows differences. Further MD simulations resulted in a refinement of the dimer model, which is in quantitative agreement with smFRET results. We accurately describe the structural dynamics underpinning an important cellular event and introduce a powerful methodological pipeline applicable to studying the activation of other plasma membrane receptors in situ.",
+      "funder": [],
+      "identifier": "S-BIAD1347",
+      "keywords": [
+        "in situ",
+        "receptor tyrosine kinases",
+        "MET",
+        "single-molecule FRET",
+        "smFRET",
+        "dSTORM",
+        "super-resolution",
+        "single-molecule imaging",
+        "RTK"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Single-molecule imaging and molecular dynamics simulations reveal early activation of the MET receptor in situ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1347/a4a0270d-3937-4e08-b80c-6fb127b2325d/25dad20e-aa06-4e51-8ae9-04690302ae48.png"
+      ]
+    },
+    {
+      "@id": "#220c6074-5034-416d-b525-a5eb59a0ab7a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "heilemann@chemie.uni-frankfurt.de",
+      "name": "Mike Heilemann"
+    },
+    {
+      "@id": "#65cfd0d1-f4df-4171-8040-2b54e06ef7d6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "dietz@chemie.uni-frankfurt.de",
+      "name": "Marina S. Dietz"
+    },
+    {
+      "@id": "#8e38ef1e-2e5d-419f-bfca-17585107a569",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "li@chemie.uni-frankfurt.de",
+      "name": "Yunqing Li"
+    },
+    {
+      "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Goethe University Frankfurt"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2a611aeb-484c-4427-aea5-8d4fa09c3b49",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Eukaryotic cells ",
+      "name": "dSTORM imaging of MET on the plasma membrane of various cell lines",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7778c298-e5de-4dd1-8db8-07b5292758b2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Eukaryotic cell",
+      "name": "smFRET of MET + InlB321 in fixed U-2 OS cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f8196d58-07ba-4c6e-8a29-8bcdc0e908af",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U-2 OS cells",
+      "name": "smFRET of MET + InlB321 in live U-2 OS cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#28ad8cc4-1729-4d62-85de-360a9dc6d325",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Objective: 100x oil immersion objective (UPlanXApo, NA 1.45, Olympus)\nCamera: iXon Ultra X-10971 EMCCD (Andor)\nEM gain: 200\nExposure time: 40 ms\nFrame transfer: On\nPreamplifier Gain: 3\nRead out rate: 17 MHz\nFrame number: 4000 or 100 for tetraspecks\nImage size: 512x256 px\nPixel size: 159 nm\nIllumination mode: TIRF\nLaser wavelengths: 561 nm, and 637 nm (only used for measurements of beads)",
+      "labEquipment": "custom-built microscope built on an Olympus IX-71 inverted microscope (Olympus)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000367"
+        }
+      ],
+      "name": "smFRET"
+    },
+    {
+      "@id": "#2b8bb41d-567d-4e2d-9be7-60fc382218ee",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Objective: 100x oil immersion objective (UPlanXApo, NA 1.45, Olympus)\nCamera: iXon Ultra X-10971 EMCCD (Andor)\nEM gain: 150\nExposure time: 100 ms\nFrame transfer: On\nPreamplifier Gain: 3\nRead out rate: 17 MHz\nFrame number: 1000 for cell measurements, 100 for Tetraspecks\nImage size: 512x256 px\nPixel size: 159 nm\nIllumination mode: TIRF\nLaser wavelengths: 561, 637 nm\nExcitation mode: Alternating laser excitation",
+      "labEquipment": "Custom-built Olympus IX-71 inverted microscope (Olympus)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000367"
+        }
+      ],
+      "name": "smFRET-ALEX"
+    },
+    {
+      "@id": "#a7e99535-55bf-4d6f-9a1c-e40376d009f0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Objective: 100x oil immersion objective (NA 1.49, TIRF; Nikon)\nCamera: iXon Ultra DU-897U EMCCD (Andor)\nEM gain: 200\nExposure time: 50 ms\nFrame transfer: On\nPreamplifier Gain: 3\nRead out rate: 17 MHz\nFrame number: 30,000\nImage size: 256x256 - 320x320 px\nPixel size: 157 nm\nIllumination mode: TIRF\nLaser wavelengths: 647 nm (excitation), 405 nm (reactivation)",
+      "labEquipment": "N-STORM (Nikon)",
+      "measurementTechnique": [],
+      "name": "dSTORM"
+    },
+    {
+      "@id": "obo:FBbi_00000367",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRET"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1571
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1078734161444
+    }
+  ]
+}

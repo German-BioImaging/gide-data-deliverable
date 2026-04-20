@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1961"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1961",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e01c870b-f9ef-481a-a99c-aee6c5257af3"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f4928267-2be7-4141-bf2b-4362bd38330c"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5828-3259"
+        },
+        {
+          "@id": "#fb0ea9f8-52a3-428f-8881-f93000c783a2"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-22",
+      "description": "SCLC_IMC is a dataset containing images from mouse SCLC tumors and their tumor environments, acquired with imaging mass cytometry.\nLung tumors were induced in two mouse lines differing by their tumor mutation burden (TMB). After appearance of the tumors, each mouse was treated with one of the five considered treatment.",
+      "funder": [],
+      "identifier": "S-BIAD1961",
+      "keywords": [
+        "SCLC, IMC, MIBI-TOF, Hyperion, tumor micro-environment, mouse models"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Imaging Mass Cytometry Dataset of Small-Cell Lung Cancer tumors and tumor environments",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#fb0ea9f8-52a3-428f-8881-f93000c783a2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4ed2ee5-5c6e-4275-b06c-b504478f6e70"
+        }
+      ],
+      "email": "ibruliolta@yahoo.com",
+      "name": "Olta IBRULI"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5828-3259",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e4ed2ee5-5c6e-4275-b06c-b504478f6e70"
+        }
+      ],
+      "email": "france.rose@wanadoo.fr",
+      "name": "France ROSE"
+    },
+    {
+      "@id": "#e4ed2ee5-5c6e-4275-b06c-b504478f6e70",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cologne"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#f4928267-2be7-4141-bf2b-4362bd38330c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Frozen lung tissue with SCLC tumors",
+      "name": "Mouse tissues",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#e01c870b-f9ef-481a-a99c-aee6c5257af3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Before staining, the slides were thawed at room temperature for 30 minutes, fixed using Image-iT™ Fixative Solution (ThermoFisher) washed in DPBS and DPBS/0.05% Tween-20, and blocked with SuperBlock™ Blocking Buffer (Thermo Fisher Scientific) for one hour. Primary antibody staining was conducted overnight at 4°C. The next morning, slides were washed, and nuclear staining was performed using Cell-ID Intercalator-Ir (Standard Biotools) and DAPI. Stained slides were washed, air-dried, and prepared for imaging. IMC enables multiplexed detection of up to 40 markers within a single tissue section. Combining laser ablation with time-of-flight mass spectrometry, IMC can quantify metal-labeled antibodies in tissue sections. The high number of simultaneous markers allow a precise description of cellular content as well as spatial relationships between cells. Per mouse, two areas to image were selected such that one was located in the central tumor region and one in the tumor-normal lung border, with the help of the MCD software viewer. The automatic ablation of all selected areas was done.",
+      "labEquipment": "Hyperion from Fluidigm",
+      "measurementTechnique": [],
+      "name": "Imaging Mass Cytometry"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 225
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3137512769
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1333"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1333",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5711791a-4851-466f-9514-7670afdca808"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#25538192-1e4b-4ed3-a13d-f1c70b76af98"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#091e966b-47b8-41d0-8faf-2abc526afed5"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-24",
+      "description": "Transcriptional factors (TFs) act as key determinants of the coordination of cell death and survival by differentially modulating gene expression. Here, we systematically identified many TFs including condensate-forming TEAD4 in stressed cells. In sharp contrast to YAP-induced transcription-activating condensation of TEAD4, we found that co-factors such as VGLL4 and RFXANK could alternatively induce repressive condensation of TEAD4 to trigger cell death. Illustrated using VGLL4 as the cofactor, we mechanistically revealed that the heterotypic interactions between TEAD4 and VGLL4 favor the oligomerization and assembly of large condensates of TEAD4 to manifest a nonclassical inhibitory function of this transcription factor, i.e., causing DNA/chromatin to be aggregated and entangled, which eventually impede gene expression. Based on these findings, we engineered a linker peptide to selectively “glue” TEAD4 molecules together, thereby forcefully driving its condensation-induced repression of YAP-induced activation. This glue peptide displayed a strong antitumor effect via inhibition of TEAD4-related gene transcription. Collectively, this work revealed a new type of phase separation, i.e., repressive condensation of TFs, revealed how cofactor-induced differential condensation can orchestrate opposite functions of a given TF, and further developed a new class of antitumor strategies involving artificially inducing repressive condensation. ",
+      "funder": [],
+      "identifier": "S-BIAD1333",
+      "keywords": [
+        "Repressive condensation, TEAD4, VGLL family of proteins, Glue peptide, Cancer"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Identification of a Repressive Type of TF Condensation and Engineering a Glue Peptide Therapy Against Cancer",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1333/63ff42c4-614a-4cc1-9060-1071e0079a6c/e4aa2140-0209-4337-982c-d57b7fb3a742.png"
+      ]
+    },
+    {
+      "@id": "#091e966b-47b8-41d0-8faf-2abc526afed5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3984d5b6-8b02-4433-861a-a1261182a6f3"
+        }
+      ],
+      "email": "tangyang@tongji.edu.cn",
+      "name": "Yang Tang"
+    },
+    {
+      "@id": "#3984d5b6-8b02-4433-861a-a1261182a6f3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Shanghai Tenth People's Hospital"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#25538192-1e4b-4ed3-a13d-f1c70b76af98",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human embryonic kidney 293 cells and gastric cancer cell lines",
+      "name": "Microscopy images",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5711791a-4851-466f-9514-7670afdca808",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "HEK293FT and HEK293A-YAPKO cells were cultured in DMEM medium. HGC-27 cells were grown in RPMI 1640 medium. Patient-derived cells (PDCs) were established as described previously. All cells were maintained in culture supplemented with 10% heat-inactivated FBS and 1% penicillin/streptomycin at 37°C with 5% CO2 in a humidified incubator. For immunofluorescence assays, cells were fixed with 4% PFA for 30 min. Images of cells incubated with primary and secondary fluorophore-conjugated antibodies were captured using a Zeiss LSM880 confocal microscope with a 63 × oil immersion lens. Twenty-five cells were scanned and analyzed using Fiji ImageJ software. For immunoelectron microscopy, cells were fixed by adding to them a mixture of 4% PFA and 0.1% glutaraldehyde in 400 mM HEPES buffer (pH 7.4) at 4°C overnight. The fixative was replaced by washing the cells with 0.15 M glycine in PBS 3 times for 5 min each to quench free aldehyde. Cells were then scraped and subjected to centrifugation in order to collect them in 1% gelatin. Pellets were embedded in 12% gelatin, solidified in ice and cut into 1 mm3 blocks on a cold plate. The small blocks were immersed in 2.3 M sucrose and the immersion was rotated at 4°C overnight and transferred to an aluminium specimen holder and frozen in liquid nitrogen. Sections (70 nm) of the transferred material were cut at −115 °C using an ultramicrotome and mounted on 100-mesh formvar/carbon-coated nickel grids. These cryosections were immune-labelled with the primary antibody and secondary antibody. After being labeled, the sections were counterstained with methylcellulose/uranyl acetate for 7 min, and imaged using an electron microscope at 120 kV.\n",
+      "labEquipment": "Zeiss LSM880 confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 200
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3974805315
+    }
+  ]
+}

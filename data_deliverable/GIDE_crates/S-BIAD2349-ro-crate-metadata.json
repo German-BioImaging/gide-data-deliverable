@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2349"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2349",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9caf7b7f-aba7-4a02-83d6-8b45a0386794"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4a6941a8-0c22-43c4-b618-b033e9d87405"
+        },
+        {
+          "@id": "#6314e3fe-f192-4fc8-b7cc-a309bc91771f"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0006-1190-8155"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-20",
+      "description": "Leigh syndrome (LS) is a complex, genetic mitochondrial disorder defined by neurodegenerative phenotypes with pediatric manifestation. However, recent clinical studies report behavioral phenotypes in human LS patients that are more reminiscent of neurodevelopmental delays. To determine if disruptions in epochs of rapid brain growth during infancy precede the hallmark brain lesions that arise during childhood, we evaluated neural and glial precursor cellular dynamics in a mouse model of LS. Loss of Complex I significantly impacted neural stem cell proliferation, neuronal and oligodendroglial progeny, lineage progression, and displayed overt differences in specific brain regions across postnatal development. Our findings show that these disruptions in all categories occur specifically within the subventricular zone and corpus callosum prior to the age where these mice experience neurodegeneration. Given that LS is considered a neurodegenerative disease, we propose that there are neurodevelopmental signatures predating classic diagnosis in LS.   ",
+      "funder": [],
+      "identifier": "S-BIAD2349",
+      "keywords": [
+        "Leigh syndrome",
+        "Complex I",
+        "Postnatal neurogenesis",
+        "Neural stem cell",
+        "Subventricular zone",
+        "Corpus callosum",
+        "Mitochondria"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Impaired Complex I dysregulates neural/glial precursors and corpus callosum development revealing postnatal defects in Leigh Syndrome mice",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2349/35b82c54-f34e-4ee7-b061-a383c96bee20/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-1190-8155",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02smfhw86"
+        }
+      ],
+      "email": "srbiswas@vt.edu",
+      "name": "Sahitya Ranjan Biswas"
+    },
+    {
+      "@id": "https://ror.org/02smfhw86",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Virginia Tech"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#4a6941a8-0c22-43c4-b618-b033e9d87405",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Half hemisphere of P14 Mouse.",
+      "name": "WT",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#6314e3fe-f192-4fc8-b7cc-a309bc91771f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Half hemisphere of P14 Mouse.",
+      "name": "NDUFS4 KO",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#9caf7b7f-aba7-4a02-83d6-8b45a0386794",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The Kinetix CMOS camera and 10X objective was used for phase contrast image acquisition. The acquired images were obtained as stitched using . Nikon NIS-Element Package. ",
+      "labEquipment": "Nikon C2 confocal laser scanning microscope ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Half hemisphere confocal images"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1250357140
+    }
+  ]
+}

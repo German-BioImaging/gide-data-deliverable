@@ -1,0 +1,292 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2215"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2215",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#39d9ae96-802f-41af-b1b6-687c44b2eebd"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f2bd5995-980f-4adf-925e-b35a29e4373b"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9967-5398"
+        },
+        {
+          "@id": "#d4c21970-3da7-41fa-b973-eab6578a396a"
+        },
+        {
+          "@id": "#cefc5db2-fec9-4417-bd7a-5f0b3b5cc946"
+        },
+        {
+          "@id": "#72b7fa0d-289a-42cc-a34b-d7690d959c0e"
+        },
+        {
+          "@id": "#31e2bece-13e2-4b03-9edb-86631790b3e8"
+        },
+        {
+          "@id": "#63d2ab91-b395-4854-9cce-6faaab82caa5"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-01",
+      "description": "Loss of polarity is a hallmark of cancer, and the related epithelial-to-mesenchymal transition (EMT) phenotype also impacts prognosis and therapy outcomes, particularly in colorectal cancer (CRC). However, the mechanisms and drugs that impact these morphological changes are understudied, due to the complete failure of typical live/dead 2D high-throughput screens to capture morphology or the lack of robustness of 3D screens. We designed a high-throughput screen using 3D type I collagen cultures of CRC cells to assess morphological changes in colonies and identified several FDA-approved drugs that re-epithelialize CRC colonies (images uploaded here are images from screen). One of these drugs, azithromycin, increased colony circularity, enhanced E-cadherin membrane localization and ZO-1 localization to tight junctions, caused transcriptomic changes consistent with downregulation of epithelial-to-mesenchymal transition, and elevated sensitivity to the chemotherapeutic, irinotecan. A retrospective analysis of patient data demonstrated that the use of azithromycin in patients undergoing treatment for CRC with irinotecan had improved the 5-year survival compared to the chemotherapy alone. These results highlight the importance of morphological screens to identify novel drug candidates and synergistic mechanisms. ",
+      "funder": [],
+      "identifier": "S-BIAD2215",
+      "keywords": [
+        "Colorectal Cancer",
+        "3D Collagen Cultures",
+        "High-Throughput Screen",
+        "High-Content Imaging",
+        "Epithelial-to-Mesenchymal Transition",
+        "EMT",
+        "Epithelial Polarity",
+        "Drug Resistance",
+        "Chemotherapy"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "3D collagen high-throughput screen identifies drugs that induce epithelial polarity and enhance chemotherapy response in colorectal cancer",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2215/d615fd3f-35aa-474f-915b-664af8553446/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#31e2bece-13e2-4b03-9edb-86631790b3e8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "email": "joshua.a.bauer@vanderbilt.edu",
+      "name": "Joshua A. Bauer"
+    },
+    {
+      "@id": "#63d2ab91-b395-4854-9cce-6faaab82caa5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05dq2gs74"
+        }
+      ],
+      "email": "bhuminder.singh@vumc.org",
+      "name": "Bhuminder Singh"
+    },
+    {
+      "@id": "#72b7fa0d-289a-42cc-a34b-d7690d959c0e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "email": "claudia.c.wahoski@vanderbilt.edu",
+      "name": "Claudia C. Wahoski"
+    },
+    {
+      "@id": "#cefc5db2-fec9-4417-bd7a-5f0b3b5cc946",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "email": "vivian.t.jones7@gmail.com",
+      "name": "Vivian Truong Jones"
+    },
+    {
+      "@id": "#d4c21970-3da7-41fa-b973-eab6578a396a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "email": "thomas.p.hasaka@vanderbilt.edu",
+      "name": "Thomas P. Hasaka"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9967-5398",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7"
+        }
+      ],
+      "email": "sarah.j.harmych@vanderbilt.edu",
+      "name": "Sarah J. Harmych"
+    },
+    {
+      "@id": "#c76a3317-3c1e-438a-b6e1-d67717a72ad7",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vanderbilt University"
+    },
+    {
+      "@id": "https://ror.org/05dq2gs74",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Vanderbilt University Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#f2bd5995-980f-4adf-925e-b35a29e4373b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "SC colonies grown in type I collagen",
+      "name": "SC Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#39d9ae96-802f-41af-b1b6-687c44b2eebd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Plates were imaged on an ImageXpress confocal HT.ai automated high-content imaging system (Molecular Devices, LLC, San Jose, CA, USA) using the transmitted light and FITC channels and 4x objective. Z-series were collected containing 17 planes with a step size of 50 µM and maximum intensity projections were saved. ",
+      "labEquipment": "ImageXpress confocal HT.ai automated high-content imaging system ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "BF, Calcein AM"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 7392
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 62120772278
+    }
+  ]
+}

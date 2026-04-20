@@ -1,0 +1,201 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2433"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2433",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#fd62e658-797a-4fd8-9d18-f7be3ea49bea"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        },
+        {
+          "@id": "obo:FBbi_00000260"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f4f01e09-c981-4a55-8796-a7bfba235dc2"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1508-664X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-24",
+      "description": "Multiscale 3D image datasets of mammalian placental tissue ",
+      "funder": [],
+      "identifier": "S-BIAD2433",
+      "keywords": [
+        "microCT",
+        "SBFSEM",
+        "multiscale",
+        "correlative",
+        "placenta"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "From mice to rhinos: Whole-organ quantification of 3D mammalian placental structure using correlative multiscale imaging",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2433/654d4a7c-a27a-4722-b80b-c203d95d1808/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1508-664X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#18ed5cfd-be3f-4332-b72e-444fa7d61ca9"
+        }
+      ],
+      "email": "d.j.laundon@soton.ac.uk",
+      "name": "Davis Laundon"
+    },
+    {
+      "@id": "#18ed5cfd-be3f-4332-b72e-444fa7d61ca9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Southampton"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#f4f01e09-c981-4a55-8796-a7bfba235dc2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Placenta",
+      "name": "Tissue samples from mouse, human, giraffe, cow, sheep, donkey and rhino placentas as detailed in the file list",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#fd62e658-797a-4fd8-9d18-f7be3ea49bea",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Please see supplementary methods of associated publication for detailed imaging parameters. ",
+      "labEquipment": "FFPE & CXEM microCT: Custom Nikon XTH 225 ST\n\nWhole organ placenta imaging: diondo d5 system\n\nSBF-SEM: TESCAN CLARA SEM with Katana SBF microtome\n\n2D histology sections were imaged with a dotSlide Virtual Microscopy System slide scanner (Olympus) under a 4x objective lens.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000260"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "microCT and electron microscopy (as detailed in supplementary methods of the associated publication)"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000260",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "X-ray microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 60
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 67132133740
+    }
+  ]
+}

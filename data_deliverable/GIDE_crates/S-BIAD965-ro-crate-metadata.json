@@ -1,0 +1,243 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD965"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD965",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c68bf6e6-8f01-4dce-9785-ff0f2bde3c42"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#8dcb986f-b830-49c5-a99f-a27c0ad277d1"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#85f9aec9-df9f-4836-9e9c-9f97f2641ba1"
+        },
+        {
+          "@id": "#21b36013-63f4-4aed-95f3-57d4848762ca"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8615-8789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2916-0772"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-20",
+      "description": "The dataset for quantitative analysis of BB-arrays, including observations of MTECs and mouse tracheal cells. ",
+      "funder": [],
+      "identifier": "S-BIAD965",
+      "keywords": [
+        "Apical cytoskeletons",
+        "Ciliary basal bodies",
+        "Coordinated ciliary beating",
+        "Mucociliary clearance",
+        "Multiciliated cells "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "The dataset for quantitative analysis of BB-arrays.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD965/c9dd3c9a-a44b-4e6a-8056-7fe67792b469/a6e2b395-9364-46f3-90d6-468f6adb4acc.png"
+      ]
+    },
+    {
+      "@id": "#21b36013-63f4-4aed-95f3-57d4848762ca",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#16fbde59-39ef-4c65-919a-88ba2d9ca4f2"
+        }
+      ],
+      "email": "konishi.satoshi.g90@kyoto-u.jp",
+      "name": "Satoshi Konishi"
+    },
+    {
+      "@id": "#85f9aec9-df9f-4836-9e9c-9f97f2641ba1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#22accc2d-ab32-4cd3-931c-d39eaabd44f9"
+        }
+      ],
+      "email": "shiratsuchi.gen.tl@teikyo-u.ac.jp",
+      "name": "Gen Shiratsuchi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8615-8789",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#22accc2d-ab32-4cd3-931c-d39eaabd44f9"
+        }
+      ],
+      "email": "atamura@med.teikyo-u.ac.jp",
+      "name": "Atsushi Tamura"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2916-0772",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#22accc2d-ab32-4cd3-931c-d39eaabd44f9"
+        }
+      ],
+      "email": "atsukita@med.teikyo-u.ac.jp",
+      "name": "Sachiko Tsukita "
+    },
+    {
+      "@id": "#16fbde59-39ef-4c65-919a-88ba2d9ca4f2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "#22accc2d-ab32-4cd3-931c-d39eaabd44f9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Teikyo University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#8dcb986f-b830-49c5-a99f-a27c0ad277d1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Primary cultured cells",
+      "name": "MTEC (mouse tracheal epithelial cell)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#c68bf6e6-8f01-4dce-9785-ff0f2bde3c42",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were aquired using a SD-OSR equipped with a silicone oil immersion objective lens (UPlanSApo 60× Sil, NA 1.3; Olympus), a motorized scanning deck, and the appropriate filter sets. The microscope was connected to an ORCA-Flash 4.0v2 sCMOS camera (Hamamatsu Photonics) or a Zyla 4.2 sCMOS camera (Andor Technology). All hardware was controlled using MetaMorph software (Molecular Devices).",
+      "labEquipment": "Spinning Disk-Olympus super-resolution microscope (SD-OSR; SpinSR; Olympus) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 237
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 819085672
+    }
+  ]
+}

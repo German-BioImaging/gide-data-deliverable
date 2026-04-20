@@ -1,0 +1,232 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2146"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2146",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f54e2f05-06e2-4b69-b431-03e51d51458f"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#fd39a4fc-2be5-4524-9eb9-b3fbfc4ebe0e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0006-9029-180X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7679-6197"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8773-1070"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-09",
+      "description": "\nUnderstanding the composition of the tumor microenvironment is critical for cancer research. Spatial transcriptomics profiles gene expressions in spatial context, revealing tissue architecture and cellular heterogeneity, but its cost and technical complexity limit adoption. To address this issue, we introduce a pipeline to build STHELAR, a large-scale dataset that integrates spatial transcriptomics with Hematoxylin and Eosin (H&E) whole slide images for cell type annotation. The dataset comprises 31 human Xenium FFPE sections across 16 tissue types, for 22 cancerous and 9 non-cancerous patients. It contains over 11 million cells, each assigned to one of ten curated cell-type categories designed to accommodate a pan-cancer setting. Annotations were derived through Tangram-based alignment to single-cell reference atlases, followed by slide-specific clustering and differential expression analysis. Co-registered H&E images enabled the extraction of over 500,000 patches with segmentation and classification masks. Quality control steps assessed segmentation accuracy, filtered out low-confidence regions, and verified annotation integrity. STHELAR provides a reference resource for developing models to predict cell-type annotations directly from histological images.\n\nThe following describes the organization of the dataset folder:\n\n*** 1. A SpatialData object for each slide in .zarr format ***\n\nIn the 'sdata_slides' folder, a SpatialData object named 'sdata_slide-id.zarr.zip' is provided for each slide with all the information and analyses. The SpatialData format can be manipulated using all the tools in the Scverse ecosystem, making it easy and convenient to use. This SpatialData object includes the following components:\n- 'he' image: H&E slide at several levels (with level 0 corresponding to 40x resolution and level 1 corresponding to 20x resolution), aligned with ST using the Xenium software from 10x Genomics.\n- 'morpho' image: DAPI image at several levels showing each nucleus.\n- 'st' points: Transcripts location on the slide.\n- 'cell_boundaries' shapes: Polygons for cell boundaries with corresponding cell id.\n- 'nucleus_boundaries' shapes: Polygons for nucleus boundaries with same corresponding cell id.\n- 'he_patches' shapes: Coordinates for H&E patches of size 256 px with 64 x overlap at 40x resolution, with metrics (Dice coefficient, Jaccard index, and Panoptic Quality) that compare the given mask with pre-trained CellViT prediction.\n- 'table_cells' table: Table that gives the RNA count for each cell, along with preprocessing layer, cell type annotation, cell id, and clustering.\n- 'table_nuclei' table: Table that gives the RNA count for each nucleus, along with preprocessing layer, cell type annotation, cell id, clustering, and PanNuke label.\n- 'table_combined' table: Table for MFA analysis with RNA count for cytoplasm and for nucleus, along with clustering analysis and cell type annotations.\n- 'features_cellvit' table: Table that gives the nucleus embeddings for each cell using the pre-trained CellViT model as encoder.\n- 'features_phikonv2' table: Table that gives the cell embeddings for each cell using the Phikon-v2 model as encoder.\n- 'features_vit_google' table: Table that gives the cell embeddings for each cell using the ViT based model from Google as encoder.\n- 'table_scvi' table: Table that gives the scVI embeddings for each cell, using scVI model specifically trained for each slide.\n\n*** 2. H&E patches with corresponding segmentation and classification masks ***\n\nIn the 'data_40x/data' folder, we provide:\n- 'images.zip': H&E patches for all the slides together, using slide-id_patch-id identification.\n- 'masks_slides' folder: Contains a 'masks_slide-id.npz' file for each slide containing segmentation and cell type classification masks, formatted identically to those in PanNuke.\n- 'annot_dicts_ct_1' folder: Contains the 'label2cat.json' dictionary which maps the final cell labels in sdata to categories in the classification masks, the 'cat2color.json' dictionary which maps each category in the masks to a plotting color for visual inspection, and the 'cat2idx.json' dictionary which maps each category to its corresponding index position within the mask.\n- 'masks_cell_ids_nuclei.zip': Segmentation masks for all the slides together, assigning to each pixel the cell ID corresponding to its nucleus.\n- 'pretrained_CellViT_mask_preds' folder: Contains an 'instance_map_predictions_slide-id.h5' file for each slide with the predicted segmentation for each patch using the pre-trained CellViT model.\n\n*** 3. Data for CellViT fine-tuning ***\n\nFor the global dataset, the following element can be found in the 'data_40x/data' folder:\n- 'cell_count.csv': Table summarizing, for each patch_id across all slides, the nucleus count per cell type. It follows the same format as the cell_count.csv file provided by the CellViT authors.\n- 'labels.zip': Segmentation and classification masks for all slides. Unlike the previous masks.npz files, this format follows the CellViT convention, which separates the original mask into an instance mask and a cell type mask.\n- 'patch_metrics.csv': Table presenting the evaluation metrics for each mask, using Dice coefficient, Jaccard index, and Panoptic Quality, and comparing with the predicted masks from the pre-trained CellViT model.\n- 'types.csv': Table giving the tissue type for each patch.\n\nTwo fine-tuning have been done with detailed or grouped cell type classes. We provide for each fine-tuning in 'data_40x/finetuning_CellViT_detailed' or 'data_40x/finetuning_CellViT_grouped' folders:\n- 'cell_count_train.csv', 'cell_count_valid.csv', and 'cell_count_test.csv': Split versions of the cell_count file indicating which patch belongs to the train, validation, or test sets.\n- 'dataset_config.yaml' and 'weight_config.yaml': Configuration files required for fine-tuning CellViT.\n\n*** 4. CellViT fine-tuning outputs ***\n\nIn each fine-tuning directory ('data_40x/finetuning_CellViT_detailed' or 'data_40x/finetuning_CellViT_grouped'), the subfolder 'output' contains all results from the fine-tuning and evaluation processes:\n- 'config.yaml': Configuration file used for CellViT fine-tuning.\n- 'logs.log.1–5': Log files for fine-tuning.\n- 'checkpoint_n.pth': Checkpoint for the best model with n the corresponding epoch number.\n- 'inference_results.json': File containing inference results on the test set.\n- 'inference.log': Log file for inference.\n\n*** 5. Analysis of the fine-tuned CellViT models ***\n\nFor each fine-tuning, the resulting model was applied to all slides. Results can be found in the 'data_40x/finetuning_CellViT_detailed/finetuned_model_analysis' or 'data_40x/finetuning_CellViT_grouped/finetuned_model_analysis'folder, that contains a subfolder for each slide ID with the following files:\n- 'config.yaml': Configuration from the fine-tuning.\n- 'inference_results.json': Prediction results.\n- 'inference.log': Log file for inference.\n- 'inference_instance_map_predictions.h5': Predicted segmentation mask for each patch for all the slides.\n- 'cell_features_cellvit.npy': Nucleus embeddings for each cell using the given fine-tuned CellViT model as encoder.\n- 'pixel_class_gt_mask.pth': The pixel count for each cell type category for each nucleus using Xenium based segmentation mask instead of the predicted one.\n\n*** 6. Additional data ***\n\nAll analyses were conducted on H&E patches at 40x resolution. However, 'images.zip', 'labels.zip', 'masks_cell_ids_nuclei.zip', 'instance_map_predictions_all_slides.h5' (segmentation prediction using pre-trained CellViT), 'patch_metrics.csv', 'cell_count.csv', and 'types.csv' are also provided at 20x resolution in 'data_20x/data' folder for research purposes.",
+      "funder": [],
+      "identifier": "S-BIAD2146",
+      "keywords": [
+        "Whole Slide Image",
+        "Cell type annotation",
+        "Spatial Transcriptomics",
+        "Cancer",
+        "Deep Learning",
+        "Segmentation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "STHELAR, a multi-tissue dataset linking spatial transcriptomics and histology for cell type annotation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7679-6197",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#32e05dfb-c080-4249-a419-f6b9b680f355"
+        }
+      ],
+      "email": "paul-henry.cournede@centralesupelec.fr",
+      "name": "Paul-Henry Cournède"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8773-1070",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#32e05dfb-c080-4249-a419-f6b9b680f355"
+        }
+      ],
+      "email": "stergios.christodoulidis@centralesupelec.fr",
+      "name": "Stergios Christodoulidis"
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-9029-180X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#32e05dfb-c080-4249-a419-f6b9b680f355"
+        }
+      ],
+      "email": "felicie.giraud-sauveur@centralesupelec.fr",
+      "name": "Félicie Giraud-Sauveur"
+    },
+    {
+      "@id": "#32e05dfb-c080-4249-a419-f6b9b680f355",
+      "@type": [
+        "Organization"
+      ],
+      "name": "CentraleSupélec - Université Paris-Saclay"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#fd39a4fc-2be5-4524-9eb9-b3fbfc4ebe0e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "\nThe dataset comprises 31 human Xenium FFPE sections across 16 tissue types (breast, bone, bone marrow, brain, cervix, colon, heart, kidney, liver, lung, lymph node, ovarian, pancreatic, prostate, skin, tonsil), for 22 cancerous and 9 non-cancerous patients.\n\nMore specifically, for each slide (with in order slide_id / tissue / disease or information):\n- bone_s0 / bone / healthy\n- bone_marrow_s0 / bone marrow / acute lymphoid leukemia\n- bone_marrow_s1 / bone marrow / healthy\n- brain_s0 / brain / brain cancer (glioblastoma multiforme)\n- breast_s0 / breast / breast cancer (ductal carcinoma)\n- breast_s1 / breast / breast cancer (ductal carcinoma)\n- breast_s3 / breast / breast cancer (lobular carcinoma)\n- breast_s6 / breast / breast cancer (II-A, T1cN1MX))\n- cervix_s0 / cervix / cervical cancer (III-B,T1bN1MX)\n- colon_s1 / colon / colorectal cancer adenocarcinoma\n- colon_s2 / colon / colorectal cancer adenocarcinoma\n- heart_s0 / heart / healthy\n- kidney_s0 / kidney / healthy\n- kidney_s1 / kidney / papillary renal cell carcinoma (PRCC)\n- liver_s0 / liver / healthy\n- liver_s1 / liver / liver cancer\n- lung_s1 / lung / lung cancer (NSCLC)\n- lung_s3 / lung / invasive acinar adenocarcinoma (IB,T2aN0MX)\n- lymph_node_s0 / lymph node / reactive lymph node (left axilla)\n- ovary_s0 / ovary / ovary serous carcinoma\n- ovary_s1 / ovary / ovarian papillary serous carcinoma (III-B, T3bN0MX)\n- pancreatic_s0 / pancreatic / pancreatic adenocarcinoma\n- pancreatic_s1 / pancreatic / pancreatic ductal adenocarcinoma\n- pancreatic_s2 / pancreatic / pancreatic adenocarcinoma\n- prostate_s0 / prostate / prostate adenocarcinoma\n- skin_s1 / skin / healthy\n- skin_s2 / skin / melanoma\n- skin_s3 / skin / melanoma\n- skin_s4 / skin / primary dermal melanoma\n- tonsil_s0 / tonsil / reactive follicular hyperplasia\n- tonsil_s1 / tonsil / follicular lymphoid hyperplasia",
+      "name": "Human tissues",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f54e2f05-06e2-4b69-b431-03e51d51458f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The instrument run was performed following the Xenium Analyzer User Guide CG000584 (https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/instruments/xenium-analyzer/xenium-analyzer-user-guide).\nThe on-instrument analysis was run with Xenium Onboard Analysis with following versions:\n- bone_s0: v1.9.0.\n- bone_marrow_s0: v1.9.0.\n- bone_marrow_s1: v1.9.0.\n- brain_s0: v2.0.0.\n- breast_s0: v1.3.\n- breast_s1: v1.0.2.\n- breast_s3: v1.0.2.\n- breast_s6: v3.0.0.\n- cervix_s0: v3.0.0.\n- colon_s1: v1.6.0.\n- colon_s2: v2.0.0.\n- heart_s0: v1.9.0.\n- kidney_s0: v1.5.0.\n- kidney_s1: v1.5.0.\n- liver_s0: v1.9.0.\n- liver_s1: v1.9.0.\n- lung_s1: v2.0.0.\n- lung_s3: v3.0.0.\n- lymph_node_s0: v3.0.0.\n- ovary_s0: v2.0.0.\n- ovary_s1: v3.0.0.\n- pancreatic_s0: v1.6.0.\n- pancreatic_s1: v2.0.0.\n- pancreatic_s2: v2.0.0.\n- prostate_s0: v3.0.0.\n- skin_s1: v1.9.0.\n- skin_s2: v1.7.0. The data were reanalyzed with Xenium Ranger to reduce false positive cells in the dermis using the xeniumranger resegment pipeline and a --dapi-filter of 400.\n- skin_s3: v1.6.0.\n- skin_s4: v3.0.0.\n- tonsil_s0: v1.9.0.\n- tonsil_s1: v1.9.0.",
+      "labEquipment": "Xenium Analyzer (10x Genomics instrument)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Xenium technology"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 459
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 887059533292
+    }
+  ]
+}

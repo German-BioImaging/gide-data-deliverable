@@ -1,0 +1,287 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1523"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1523",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1f74d329-a3b4-4bce-b56a-20655a09d8ad"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f235cd98-c7c0-4d5d-8adc-d8689a0345af"
+        },
+        {
+          "@id": "#5cf5c9c6-f3f1-43d1-bbc0-d699ce2847b7"
+        },
+        {
+          "@id": "#e91dfa1c-1be6-4261-9405-7f3b02658931"
+        },
+        {
+          "@id": "#c15f503c-68f8-440b-850b-8068e4909035"
+        },
+        {
+          "@id": "#30599668-29d3-4d9b-9d17-e94012356cfc"
+        },
+        {
+          "@id": "#5a94d9bc-bc0b-4cd9-9ba5-79846c0fdfde"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4604-6170"
+        },
+        {
+          "@id": "#5c398c8d-dd9a-465f-9e47-dc18af651551"
+        },
+        {
+          "@id": "#78ebe002-462e-4879-85fe-4aead0810af4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-02-18",
+      "description": "Protein misfolding diseases, including alpha-1 antitrypsin deficiency (AATD), pose significant health challenges, with their cellular progression still poorly understood. We utilize spatial proteomics by mass spectrometry and machine learning to map AATD in human liver tissue. Combining Deep Visual Proteomics (DVP) with single-cell analysis, we probe intact patient biopsies to resolve molecular events during hepatocyte stress in pseudo-time across fibrosis stages. We achieve unprecedented proteome depth of up to 4,300 proteins from a third of a single cell in formalin-fixed, paraffin-embedded (FFPE) tissue. This dataset revealed a potentially clinically actionable peroxisomal upregulation that precedes the canonical unfolded protein response. Our single-cell proteomics data show alpha-1 antitrypsin accumulation is largely cell-intrinsic, with minimal stress propagation between hepatocytes. We integrated proteomic data with AI-guided image-based phenotyping across multiple disease stages, revealing a late-stage hepatocyte phenotype characterized by globular protein aggregates and distinct proteomic signatures, notably including elevated TNFSF10/TRAIL levels. This phenotype may represent a critical disease progression stage. Our study offers novel insights into AATD pathogenesis and introduces a powerful methodology for high-resolution, in situ proteomic analysis of complex tissues. This approach holds potential to unravel molecular mechanisms in various protein misfolding disorders, setting a new standard for understanding disease progression at the single-cell level in human tissue.",
+      "funder": [],
+      "identifier": "S-BIAD1523",
+      "keywords": [
+        "Deep Visual Proteomics",
+        "DVP",
+        "Mass spectrometry",
+        "Single-cell",
+        "Liver",
+        "Alpha-1 antitrypsin deficiency"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Deep Visual Proteomics maps proteotoxicity in a genetic liver disease",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#5c398c8d-dd9a-465f-9e47-dc18af651551",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2405ef00-07f7-4725-a68c-299facdb83ca"
+        }
+      ],
+      "name": "Sophia Mädler"
+    },
+    {
+      "@id": "#78ebe002-462e-4879-85fe-4aead0810af4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2405ef00-07f7-4725-a68c-299facdb83ca"
+        }
+      ],
+      "name": "Matthias Mann"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4604-6170",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2405ef00-07f7-4725-a68c-299facdb83ca"
+        }
+      ],
+      "email": "rosenberger@biochem.mpg.de",
+      "name": "Florian A Rosenberger"
+    },
+    {
+      "@id": "#2405ef00-07f7-4725-a68c-299facdb83ca",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute of Biochemistry"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#30599668-29d3-4d9b-9d17-e94012356cfc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver explant tissue, fibrosis stage F4",
+      "name": "Explant_DVP_04",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5a94d9bc-bc0b-4cd9-9ba5-79846c0fdfde",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver explant tissue, fibrosis stage F4",
+      "name": "Explant_DVP_05",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5cf5c9c6-f3f1-43d1-bbc0-d699ce2847b7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver explant tissue, 3um formalin-fixed paraffin-embedded tissue section",
+      "name": "Explant_DVP_01",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c15f503c-68f8-440b-850b-8068e4909035",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver explant tissue, fibrosis stage F4",
+      "name": "Explant_DVP_03",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e91dfa1c-1be6-4261-9405-7f3b02658931",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver explant tissue, fibrosis stage F4",
+      "name": "Explant_DVP_02",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f235cd98-c7c0-4d5d-8adc-d8689a0345af",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liver explant tissue, 3um formalin-fixed paraffin-embedded tissue section",
+      "name": "Explant_DVP_01",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1f74d329-a3b4-4bce-b56a-20655a09d8ad",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Sections were imaged on an PerkinElmer OperaPhenix high-content microscope, controlled with Harmony v4.9 software, at 40× magnification and 0.75 numerical aperture, with a binning of 1 and a per tile overlap of 10%. Only one z-plane was recorded, which was manually specified for each slide and channel. The three channels (Alexa 488, Alexa 568, Alexa 647) were imaged consecutively after deactivation of simultaneous recording to avoid any leakage between channels.",
+      "labEquipment": "PerkinElmer OperaPhenix high-content microscope, controlled with Harmony v4.9 software",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 10
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 190622660016
+    }
+  ]
+}

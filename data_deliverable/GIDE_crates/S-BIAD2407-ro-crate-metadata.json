@@ -1,0 +1,173 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2407"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2407",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d1b2c36e-b996-4ed2-8fa2-6c5d988e296c"
+        },
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b781ff6d-5f0c-4028-9243-3d7f7b87b6b0"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5323-6098"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-12",
+      "description": "This collection includes 3D FIB-SEM datasets of Phaeodactylum tricornutum (strain 1 and strain 18) with segmentation labels for chloroplast and vacuole. It provides pretrained deep learning models developed across multiple architectures (3D VNet, 3D SegNet, 3D CNN 4-level, MONAI DynUNet, MONAI BasicUNet, Swin-Net + VNet hybrid, and Contrast-Aware Dual Encoder VNet). The dataset supports organelle segmentation research and transfer learning.",
+      "funder": [],
+      "identifier": "S-BIAD2407",
+      "keywords": [
+        " 3D electron microscopy",
+        "deep learning segmentation",
+        " microalgae ultrastructure",
+        "training weight model"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Automating 3D EM segmentation in diatom microalgae using AI-assisted learning: creating a scalable workflow for studying cell morphology\n\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5323-6098",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f8710620-2b09-4a87-9450-dcfca2902ad9"
+        }
+      ],
+      "email": "clarisse.uwizeye1@univ-grenoble-alpes.fr",
+      "name": "Uwizeye Clarisse"
+    },
+    {
+      "@id": "#f8710620-2b09-4a87-9450-dcfca2902ad9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université Grenoble Alpes"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#b781ff6d-5f0c-4028-9243-3d7f7b87b6b0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Phaeodactylum tricornutum 1 \nPhaeodactylum tricornutum 18 \nThalassiosira pseudonana.",
+      "name": "Biosample 1",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#d1b2c36e-b996-4ed2-8fa2-6c5d988e296c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The resin block containing the cells was fixed to a stub using carbon paste and abraded on the surface with a diamond knife in a microtome to create a perfectly clean and flat surface. The entire sample was coated with a 4 nm layer of platinum to prevent charging during observation. Inside the FIB-SEM, a second platinum layer (1–2 µm) was locally deposited on the analysed area to mitigate possible curtaining artefacts. The sample was then abraded slice by slice with the Ga⁺ ion beam (typically at a current of 700 nA and an acceleration voltage of 30 kV). Each freshly exposed surface was imaged using scanning electron microscopy (SEM) at 1.5 kV and with a current of ~1 nA, with the in-lens EsB backscatter detector being used for this purpose. For the algae sample, we generally used simultaneous milling and imaging for greater stability, with hourly automatic correction of focus and astigmatism. A thickness of 8 nm was removed for each slice, and SEM images were recorded with a pixel size of 8 nm, providing an isotropic voxel size of 8 × 8 × 8 nm³. Whole volumes were imaged with 800–1,000 frames, depending on the species. Due to the smaller dimensions of the cells, the voxel size was reduced to 4 × 4 × 4 nm³ in the case of Micromonas, resulting in higher-resolution datasets comprising approximately 350–500 frames per cell.",
+      "labEquipment": "Zeiss NVision 40 or a Zeiss CrossBeam 550 microscope (Zeiss, Germany), both equipped with Fibics Atlas 3D software for tomography ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00050000",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 20
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 732458563
+    }
+  ]
+}

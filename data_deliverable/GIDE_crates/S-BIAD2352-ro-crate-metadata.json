@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2352"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2352",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#553e0843-3f19-4c54-9c44-92f56c260b31"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b3225c29-fce1-4878-ad16-65f1f72b0d51"
+        },
+        {
+          "@id": "obo:NCBITaxon_511145"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0006-7031-6213"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8907-502X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2579-5546"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-23",
+      "description": "Manually and automatically segmented single cells of Escherichia coli to assess effect of segmentation differences on cell size measurements",
+      "funder": [],
+      "identifier": "S-BIAD2352",
+      "keywords": [
+        "Escherichia coli",
+        "cell segmentation",
+        "FM 4-64"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Data for size comparison of Escherichia coli single cells for segmentation error propagation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2352/79625355-4f15-449f-b842-01214b003155/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2579-5546",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0534re684"
+        }
+      ],
+      "email": "carsten.fortmann-grote@evolbio.mpg.de",
+      "name": "Carsten Fortmann-Grote"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8907-502X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0534re684"
+        }
+      ],
+      "email": "lopezgarrido@evolbio.mpg.de",
+      "name": "Javier Lopez-Garrido"
+    },
+    {
+      "@id": "https://orcid.org/0009-0006-7031-6213",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0534re684"
+        }
+      ],
+      "email": "reyesmatte@evolbio.mpg.de",
+      "name": "Octavio Reyes-Matte"
+    },
+    {
+      "@id": "https://ror.org/0534re684",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Planck Institute for Evolutionary Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_511145",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli str. K-12 substr. MG1655"
+    },
+    {
+      "@id": "#b3225c29-fce1-4878-ad16-65f1f72b0d51",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Exponentially growing Escherichia coli MG1655. Escherichia coli MG1655 lab strain",
+      "name": "Escherichia coli",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_511145"
+      }
+    },
+    {
+      "@id": "#553e0843-3f19-4c54-9c44-92f56c260b31",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FM 4-64 images were visualized using an excitation filter of 542 nm and an emission filter 679 nm transmission at 100% and an exposure time of 0.2 s. SoftWorx (Cytiva Life Sciences) was used to deconvolve FM 4-64 images.",
+      "labEquipment": "DeltaVision Ultra microscope with a PCO Edge sCMOS camera and an Olympus 100X UPLX APO objective (Numerical aperture 1.45, Refractive index 1.518 Ph3)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 864
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 9896828
+    }
+  ]
+}

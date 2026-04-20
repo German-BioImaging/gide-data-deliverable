@@ -1,0 +1,190 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD682"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD682",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7c2494a6-dfba-45f8-8483-944d9f973444"
+        },
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4e476523-fa61-4a71-a581-35962c5bccb2"
+        },
+        {
+          "@id": "obo:NCBITaxon_4565"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8719-2268"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-04-26",
+      "description": "19,159 images of diseased wheat plants taken in fields, field trials and glasshouses",
+      "funder": [],
+      "identifier": "S-BIAD682",
+      "keywords": [
+        "wheat",
+        "yellow rust",
+        "stripe rust",
+        "brown rust",
+        "leaf rust",
+        "mildew",
+        "septoria"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Images of diseased wheat with yellow (stripe) rust, brown (leaf) rust, Septoria or mildew, or healthy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD682/194bc79e-8954-4948-b3e5-5032c35d9e52/1b48aaab-f91c-4bdf-8e1d-1e330ef46b6f.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8719-2268",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "james.brown@jic.ac.uk",
+      "name": "James K M Brown"
+    },
+    {
+      "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "John Innes Centre"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4565",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Triticum aestivum"
+    },
+    {
+      "@id": "#4e476523-fa61-4a71-a581-35962c5bccb2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Wheat plants in farmers' fields, field trials and glasshouses",
+      "name": "Infected wheat plants",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4565"
+      }
+    },
+    {
+      "@id": "#7c2494a6-dfba-45f8-8483-944d9f973444",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Plants were photographed in fields and glasshouses with realistic background detail",
+      "labEquipment": "A range of small digital cameras and mobile phones",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "name": "Wheat disease images"
+    },
+    {
+      "@id": "obo:FBbi_00000240",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "macroscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 19159
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 257835413517
+    }
+  ]
+}

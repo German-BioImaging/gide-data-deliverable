@@ -1,0 +1,469 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/295-Katoh-CiliumDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/295-Katoh-CiliumDyn/",
+      "@type": "Dataset",
+      "identifier": "295-Katoh-CiliumDyn",
+      "name": "Images of immotile cilia dynamics in wild-type mouse embryo or iv/iv mutant embryo",
+      "description": "295-Katoh-CiliumDyn",
+      "datePublished": "2023-07-20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Mice",
+        "Cilia/physiology[major]",
+        "Calcium/metabolism[major]",
+        "Biophysics",
+        "Body Patterning"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1126/science.abq8148"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007368"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097730"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0003127"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0019722"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000288"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000088"
+        },
+        {
+          "@id": "#imaging-protocol-5"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-6"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        },
+        {
+          "@id": "#imaging-protocol-7"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        },
+        {
+          "@id": "#imaging-protocol-8"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000322"
+        },
+        {
+          "@id": "#imaging-protocol-9"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000334"
+        },
+        {
+          "@id": "#imaging-protocol-10"
+        },
+        {
+          "@id": "#imaging-technique-10"
+        },
+        {
+          "@id": "#imaging-protocol-11"
+        },
+        {
+          "@id": "#imaging-technique-11"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1058"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takanobu A. Katoh",
+      "email": "takanobu.a.katoh@gmail.com",
+      "description": "Organization: The University of Tokyo; Department: Graduate School of Medicine; Laboratory: Cell Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Toshihiro Omori",
+      "email": "omori@tohoku.ac.jp",
+      "description": "Organization: Tohoku University; Department: Graduate School of Biomedical Engineering",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01dq60k83"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Hiroshi Hamada",
+      "email": "hiroshihamada@ncbs.res.in",
+      "description": "Organization: Tata Instituite for Foundamental Research; Department: National Center for Biological Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03ht1xw27"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://ror.org/01dq60k83",
+      "@type": "Organization",
+      "name": "Tohoku University"
+    },
+    {
+      "@id": "https://ror.org/03ht1xw27",
+      "@type": "Organization",
+      "name": "Tata Instituite for Foundamental Research"
+    },
+    {
+      "@id": "https://doi.org/10.1126/science.abq8148",
+      "@type": "ScholarlyArticle",
+      "name": "Immotile cilia mechanically sense the direction of fluid flow for left-right determination.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007368",
+      "@type": "DefinedTerm",
+      "name": "determination of left/right symmetry"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097730",
+      "@type": "DefinedTerm",
+      "name": "non-motile cilium"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0003127",
+      "@type": "DefinedTerm",
+      "name": "detection of nodal flow"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
+      "@type": "DefinedTerm",
+      "name": "calcium-mediated signaling"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "highly inclined and laminated optical sheet (HILO) microscopy",
+      "description": "highly inclined and laminated optical sheet (HILO) microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "Spinning disk confocal microscopy with deconvolution",
+      "description": "Spinning disk confocal microscopy with deconvolution",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "Spinning disk confocal microscope with custom-built optical pathway",
+      "description": "Spinning disk confocal microscope with custom-built optical pathway",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000288"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "Whole-Cell FRAP (FRAPとは異なります。本論文で初めて報告した新規顕微鏡法です)",
+      "description": "Whole-Cell FRAP (FRAPとは異なります。本論文で初めて報告した新規顕微鏡法です)",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000088"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-5",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-6",
+      "@type": "LabProtocol",
+      "name": "Spinning disk confocal microscopy",
+      "description": "Spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-7",
+      "@type": "LabProtocol",
+      "name": "Calcium imaging",
+      "description": "Calcium imaging",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-8",
+      "@type": "LabProtocol",
+      "name": "Optical-tweezers",
+      "description": "Optical-tweezers",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000322"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-9",
+      "@type": "LabProtocol",
+      "name": "STED",
+      "description": "STED",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000334"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-10",
+      "@type": "LabProtocol",
+      "name": "AiryScan",
+      "description": "AiryScan",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-10"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-11",
+      "@type": "LabProtocol",
+      "name": "immunostaining",
+      "description": "immunostaining",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-11"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000241",
+      "@type": "DefinedTerm",
+      "name": "highly inclined and laminated optical sheet (HILO) microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000288",
+      "@type": "DefinedTerm",
+      "name": "Spinning disk confocal microscope with custom-built optical pathway"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000088",
+      "@type": "DefinedTerm",
+      "name": "Whole-Cell FRAP (FRAPとは異なります。本論文で初めて報告した新規顕微鏡法です)"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "Spinning disk confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
+      "@type": "DefinedTerm",
+      "name": "Calcium imaging"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000322",
+      "@type": "DefinedTerm",
+      "name": "Optical-tweezers"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000334",
+      "@type": "DefinedTerm",
+      "name": "STED"
+    },
+    {
+      "@id": "#imaging-technique-10",
+      "@type": "DefinedTerm",
+      "name": "AiryScan"
+    },
+    {
+      "@id": "#imaging-technique-11",
+      "@type": "DefinedTerm",
+      "name": "immunostaining"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 20486038840,
+      "description": "20.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 23,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

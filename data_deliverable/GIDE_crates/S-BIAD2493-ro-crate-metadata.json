@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2493"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2493",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#326007e4-f16e-497c-8402-4c54bf2b6876"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#df9e3d59-8232-4f4b-8123-c15bb1fb2329"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f852af01-02a2-4664-a94d-4666a36a37c9"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-13",
+      "description": "Raw two-channel TIRF microscopy images (488 nm and 640 nm) generated for particle detection and ROI-based colocalization analysis. The dataset includes experimental and control image sets acquired under identical imaging conditions. Images were analyzed using custom ImageJ (Fiji) macros to identify particles in each channel and quantify spatial co-occurrence based on ROI overlap.",
+      "funder": [],
+      "identifier": "S-BIAD2493",
+      "keywords": [
+        "TIRF microscopy, two-channel fluorescence imaging, ROI-based colocalization, particle detection"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Two-channel TIRF microscopy images for ROI-based colocalization analysis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#f852af01-02a2-4664-a94d-4666a36a37c9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#63ca2298-db1d-4fa4-aeff-a84eb8be053a"
+        }
+      ],
+      "email": "ria.xiangzi@gmail.com",
+      "name": "Xiangzi HU"
+    },
+    {
+      "@id": "#63ca2298-db1d-4fa4-aeff-a84eb8be053a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Chinese Academy and Sciences"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#df9e3d59-8232-4f4b-8123-c15bb1fb2329",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Protein",
+      "name": "Reconstituted protein sample for two-channel fluorescence imaging",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#326007e4-f16e-497c-8402-4c54bf2b6876",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired under identical acquisition settings for all samples using two fluorescence channels (488 nm and 640 nm), with illumination optimized for TIRF microscopy",
+      "labEquipment": "Total internal reflection fluorescence (TIRF) microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Two-channel TIRF image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 0
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 0
+    }
+  ]
+}

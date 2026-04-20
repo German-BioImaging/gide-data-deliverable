@@ -1,0 +1,241 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2120"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2120",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#9e5e8cf7-59d6-47d5-9cef-0f842e96c422"
+        },
+        {
+          "@id": "#f382e733-c456-4a1a-b69d-823467b1e402"
+        },
+        {
+          "@id": "obo:FBbi_00000366"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d04c5ae8-b52e-4fb5-8ffd-0d2c41e1edf7"
+        },
+        {
+          "@id": "#cb8299a8-16c5-41a5-9056-9172220668cb"
+        },
+        {
+          "@id": "#27658eeb-f942-4e7e-848c-18819275bc64"
+        },
+        {
+          "@id": "obo:NCBITaxon_3702"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6307-2229"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-25",
+      "description": "3D images in Imaris format used for cell volume measurements and signal quantification of different markers in lines expressing H1.1-RFP or H1.1-RFP mutant variants and FRAP images in TIF format for measuring the mobility of H1.1-RFP or H1.1-RFP mutant variants",
+      "funder": [],
+      "identifier": "S-BIAD2120",
+      "keywords": [
+        "Arabidopsis",
+        "Spore Mother Cell",
+        "H1 Linker Histone"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Pre-meiotic H1.1 degradation is essential for Arabidopsis gametogenesis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2120/08c13737-919f-4521-9582-9e08e46d011e/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6307-2229",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#02972ea4-8abd-46f6-a053-45f0322dd258"
+        }
+      ],
+      "email": "cbaroux@botinst.uzh.ch",
+      "name": "Baroux Celia"
+    },
+    {
+      "@id": "#02972ea4-8abd-46f6-a053-45f0322dd258",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Zürich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_3702",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Arabidopsis thaliana"
+    },
+    {
+      "@id": "#27658eeb-f942-4e7e-848c-18819275bc64",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "ovule primordia stage 1-II to 2-II collected 5 days post induction (Dex, 5dpi) ",
+      "name": "H1.1-RFP and H1.1-RFP mutant variants",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#cb8299a8-16c5-41a5-9056-9172220668cb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "ovule primordia stage 1-II to 2-II collected 5 days post induction (Dex, 5dpi) ",
+      "name": "H1.1-RFP and H1.1-RFP mutant variants",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#d04c5ae8-b52e-4fb5-8ffd-0d2c41e1edf7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "ovule primordia stage 1-II to 2-II collected 5 days post induction (Dex, 5dpi) ",
+      "name": "H1.1-RFP and H1.1-RFP mutant variants",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_3702"
+      }
+    },
+    {
+      "@id": "#9e5e8cf7-59d6-47d5-9cef-0f842e96c422",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Serial image acquisition was carried out using confocal microscopy (CSLM Leica SP5, Stellaris,  Leica Microsystems, Germany) with an HC PL APO 63x/1,30 GLYC CORR CS2 objective lens, using the fluorophore’s optimal excitation laser, an emission window of circa 40-60nm centered on the emission maximum, using a resonance scanning mode (8000Hz), photon counting mode for detection, and background free HyD detectors, with signal accumulation per line to optimize the pixel intensity distribution. Images were acquired with voxel size of 0.08- 0.1μm x,y,z dimension. ",
+      "labEquipment": "SP5, Stellaris  Leica Microsystems",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "3D confocal imaging"
+    },
+    {
+      "@id": "#f382e733-c456-4a1a-b69d-823467b1e402",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Serial image acquisition was carried out using a CSLM Leica SP8 inv equipped with a FRAP module (Leica Microsystems, Germany) and an HC PL APO 63x/1.20 W motCORR CS2 objective lens. Bleaching and imaging were done over a single plane with pinhole  increased up to maximum (5.38 AU) to capture the entire nucleus. Bleaching was performed within a region-of-interest (ROI) of 2μm diameter, positioned in euchromatin, using 3-5 pulses to reach near full bleach of the signal, using the max power and full transmission of the 561nm laser. Post-bleach images were recorded using low laser intensity for sustainable acquisition, with two sequences: the first sequence of 30 images with 265ms interval captures the initial,  rapid recovery phase; the second sequence captured the slow recovery phase with 24 images with 10 sec intervals.\n\nTwo FRAP experiments were done independently and are reflected by two replicate controls H1.1-RFP(1) and H1.1-RFP(2) \nExperiment 1: H1.1-RFP(1), H1.1-R57K-RFP, H1.1-R57A-RFP\nExperiment 2: H1.1-RFP(1), H1.1-6xGC-RFP, H1.1-K89R-RFP\n",
+      "labEquipment": "SP8 Leica Microsystems",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000366"
+        }
+      ],
+      "name": "Time-Lapse confocal imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000366",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRAP"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 369
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 21498794972
+    }
+  ]
+}

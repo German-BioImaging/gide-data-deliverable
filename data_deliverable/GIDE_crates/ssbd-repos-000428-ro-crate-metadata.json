@@ -1,0 +1,192 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000428/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000428/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000428",
+      "name": "Locomotion of mig-17/ ADAMTS and  chondroitin  related mutants",
+      "description": "These movies represents locomotion of aged C. elegans at day1, 3, 5, 7, and 9 adult on OP50 bacteria  after tap stimuli in wild type N2, mig-17 (k174) mutamts, mig-22 (k185) mutants, sqv-5 (k175) mutants, mig-17 (k174) mig-22 (k185) double mutants, and sqv-5 (k175) mig-22 (k185) double mutants. The anomunt of chondroitin in mig-22 (k185) mutants  is two times conmpare to wild type. On the other hand, that in sqv-5 (k175) mutants is one tenth conmpare to wild type. Day 1 adult that did not have egg was collected. Then, animals are transfered to new plate at each two days until their behavior recoreded. In case of sqv-5 mutants, since some of them are sterile, we collected L4 larve at first. Then, we used these animals as day 1 adult at the next day.",
+      "datePublished": "2025-04-08",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-024-55417-7"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0047238"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yukimasa Shibata",
+      "email": "yukshibata@kwansei.ac.jp",
+      "description": "Organization: Kwansei Gakuin University; Department: Department of Biomedical Sciences; Laboratory: Nishiwaki lab",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02qf2tx24"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02qf2tx24",
+      "@type": "Organization",
+      "name": "Kwansei Gakuin University"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by a Grant-in- Aid for Research Activity Start-up by the Ministry of Education, Culture, Sports, Science and Technology to YS(22K20658) and by the Naito Grant for the advancement of natural science to KN"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-024-55417-7",
+      "@type": "ScholarlyArticle",
+      "name": "Endogenous chondroitin extends the lifespan and healthspan in C. elegans.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "N2, mig-17 (k174), mig-22 (k185), sqv-5 (k175), mig-17(k174) mig-22 (k185), mig-22 (k185) sqv-5 (k175)",
+      "description": "N2, mig-17 (k174), mig-22 (k185), sqv-5 (k175), mig-17(k174) mig-22 (k185), mig-22 (k185) sqv-5 (k175)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "vernacularName": "nematode"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0047238",
+      "@type": "DefinedTerm",
+      "name": "chondroitin synthase activity"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Light microscopy",
+      "description": "Light microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000345",
+      "@type": "DefinedTerm",
+      "name": "Light microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 2478006272,
+      "description": "2.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 270,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

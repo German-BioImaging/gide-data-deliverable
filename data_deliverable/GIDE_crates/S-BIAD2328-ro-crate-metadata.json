@@ -1,0 +1,223 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2328"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2328",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5605a6a0-a37a-46a2-bfd9-b69135c848c8"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#86f3c322-7c8a-421f-a9be-2a63b43b8b13"
+        },
+        {
+          "@id": "obo:NCBITaxon_34"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6504-4360"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1449-4772"
+        },
+        {
+          "@id": "#c32f9f73-f0ae-4108-94af-dc0bf14787d6"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4312-2844"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-11",
+      "description": "This project contains four complementary datasets supporting Zhang et al. (2025). Dataset 1: Common Stocks (Welch Lab). Dataset 2: Shimkets Lab pretraining dataset. Dataset 3: Shimkets LS3934 nitrate experiments. Dataset 4: WT replicate dataset for aggregation fate analysis. Together these datasets cover the training, validation, and application phases of our deep learning framework for phenotypic quantification.",
+      "funder": [],
+      "identifier": "S-BIAD2328",
+      "keywords": [
+        "Myxococcus xanthus; bacterial self-organization; brightfield microscopy; time-lapse imaging; fruiting body development; motility mutants"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Time-lapse microscopy datasets of Myxococcus xanthus development under starvation",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#c32f9f73-f0ae-4108-94af-dc0bf14787d6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/025r5qe02"
+        }
+      ],
+      "email": "rowelch@syr.edu",
+      "name": "Roy D. Welch"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6504-4360",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5c86eba5-0995-4706-80a2-ce80d195a3c3"
+        }
+      ],
+      "email": "zhang.jiangguo95@gmail.com",
+      "name": "Jiangguo Zhang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1449-4772",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5c86eba5-0995-4706-80a2-ce80d195a3c3"
+        }
+      ],
+      "email": "igoshin@rice.edu",
+      "name": "Oleg A. Igoshin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4312-2844",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/025r5qe02"
+        }
+      ],
+      "email": "eacaro@syr.edu",
+      "name": "Eduardo A. Caro"
+    },
+    {
+      "@id": "#5c86eba5-0995-4706-80a2-ce80d195a3c3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Rice University"
+    },
+    {
+      "@id": "https://ror.org/025r5qe02",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Syracuse University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_34",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Myxococcus xanthus"
+    },
+    {
+      "@id": "#86f3c322-7c8a-421f-a9be-2a63b43b8b13",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Strains (wild-type and mutants: pilQ, aglB3, asgB, csgA, sdeK, etc.). Time-lapse movies of M. xanthus wild-type (DK1622) and genetically diverse mutant strains from the Common Stocks collection.",
+      "name": "Myxococcus xanthus developmental imaging dataset",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_34"
+      }
+    },
+    {
+      "@id": "#5605a6a0-a37a-46a2-bfd9-b69135c848c8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Brightfield mode, 2592 × 1944 px (1 µm/pixel) raw, later resized to 1296 × 972 px (2 µm/pixel), JPEG compressed to ~126 KB per frame. Frame interval: 1 min for 24 h (1440 frames per movie).",
+      "labEquipment": "Wild Heerbrugg M7 S dissecting microscope with Spot Insight 2 camera",
+      "measurementTechnique": [],
+      "name": "Microscopy instrumentation and acquisition parameters"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 37
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 209939295228
+    }
+  ]
+}

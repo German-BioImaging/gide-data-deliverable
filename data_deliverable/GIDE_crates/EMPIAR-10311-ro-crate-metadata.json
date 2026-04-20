@@ -1,0 +1,226 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10311"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-10311",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1826812c-8498-416a-9a98-5d03a4d38420"
+        },
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#48637779-1487-4e74-9b94-8b5ddd39e463"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0555-151X"
+        },
+        {
+          "@id": "#bbfb56aa-be79-4ba2-b18a-12d90ade50d7"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3212-5057"
+        },
+        {
+          "@id": "#bc96ab6e-e2dc-4481-8fd6-39bb247d3282"
+        },
+        {
+          "@id": "#6fb8f569-d4f5-46a6-b910-acb5217f919b"
+        },
+        {
+          "@id": "#2bd4d80b-697e-42c9-b0bb-b3ea6b27aff6"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2020-02-07",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-10311",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "FIB-SEM of a HeLa cell",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10311/cd3e28e2-3071-4aaa-9534-7b7da5a0892d/c7c8a39b-e226-4667-9e8d-d617b63d6baf.png"
+      ]
+    },
+    {
+      "@id": "#2bd4d80b-697e-42c9-b0bb-b3ea6b27aff6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Schwab Y"
+    },
+    {
+      "@id": "#6fb8f569-d4f5-46a6-b910-acb5217f919b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Steyer AM"
+    },
+    {
+      "@id": "#bbfb56aa-be79-4ba2-b18a-12d90ade50d7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Lleti JMS"
+    },
+    {
+      "@id": "#bc96ab6e-e2dc-4481-8fd6-39bb247d3282",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Templin RM"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0555-151X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Hennies J"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3212-5057",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Schieber NL"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#48637779-1487-4e74-9b94-8b5ddd39e463",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "GalNAc-T2-GFP HeLa cells grown on sapphire disk",
+      "name": "GalNAc-T2-GFP HeLa cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1826812c-8498-416a-9a98-5d03a4d38420",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FIB-SEM image acquisition was performed with the Zeiss Auriga 60 or a Zeiss Crossbeam 540 using the Atlas 5 software. Images were acquired at 1.5 kV with the energy-selective back-scattered electron (EsB) detector with a grid voltage of 1100 V, analytical mode at a 700 pA current. The dwell time was 4 µs/10 µs, with line average of 1. Images had a 5 nm xy pixel size and 8 nm slicing thickness in the z-direction. During the 3D data acquisition the FIB was operated at 1 nA/1.5 nA with the SEM and the FIB operating simultaneously.",
+      "labEquipment": "Zeiss Auriga 60 or Zeiss Crossbeam 540 FIB-SEM with Atlas 5 software",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00050000"
+        }
+      ],
+      "name": "FIB-SEM HeLa Cell Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00050000",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 5183
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 100892822504
+    }
+  ]
+}

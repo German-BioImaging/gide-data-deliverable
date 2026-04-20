@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2432"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2432",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e428bf53-e403-4590-9415-1030daedf184"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c02302b1-ebed-43a7-bd77-5ed0ece158d5"
+        },
+        {
+          "@id": "obo:NCBITaxon_4556"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3238-2627"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "#461edb57-99b6-4752-8b3d-14655c0f150a"
+        }
+      ],
+      "datePublished": "2025-11-21",
+      "description": "Figure 6 Raw Data",
+      "funder": [],
+      "identifier": "S-BIAD2432",
+      "keywords": [
+        "hyperspectral",
+        "anthocyanin",
+        "mi-ace",
+        "sensors",
+        "plant"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Remote sensing of endogenous pigmentation by inducible synthetic circuits in grasses",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3238-2627",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#46114d15-01d1-4f67-9918-29c9f8ec43f6"
+        }
+      ],
+      "email": "mgehan@danforthcenter.org",
+      "name": "Malia Gehan"
+    },
+    {
+      "@id": "#46114d15-01d1-4f67-9918-29c9f8ec43f6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Donald Danforth Plant Science Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#461edb57-99b6-4752-8b3d-14655c0f150a",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "2025",
+      "name": "Remote sensing of endogenous pigmentation by inducible synthetic circuits in grasses"
+    },
+    {
+      "@id": "obo:NCBITaxon_4556",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Setaria viridis"
+    },
+    {
+      "@id": "#c02302b1-ebed-43a7-bd77-5ed0ece158d5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Setaria viridis.",
+      "name": "Remote sensing of endogenous pigmentation by inducible synthetic circuits in grasses",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4556"
+      }
+    },
+    {
+      "@id": "#e428bf53-e403-4590-9415-1030daedf184",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The HDP includes a high-resolution VNIR camera (Headwall e-sSeries E, 400 to 1000 nm, with 923 spectral bands) integrated on a Kuka KR Quantec Pro robotic arm. The HDP has dedicated halogen illumination from two angles (Ushio J12V150WA), and top-view images of taped leaves were gathered. We used a mate gray vivid PVC board (Palight®) as the image background to reduce the reflectance from the background itself. The Headwall e-series camera was optimized to a 30 cm focal distance for image capture (30 cm from sample to camera lens). Scan rate of the Headwall VNIR e-series camera is 10 FPS, slit width is fixed at 20 µm, slit length is 10.4mm, pixel pitch 6.5 µm, focal length is set at 2.8 mm. A standard lab-calibrated non-uniformity correction was applied to image data. Before images were taken, a spectralon reflectance panel was also used as a white reference and dark reference image images were captured to calibrate the raw hyperspectral image data cube into reflectance values.",
+      "labEquipment": "Headwall e-series",
+      "measurementTechnique": [],
+      "name": "Image Acquisition 1"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 50762122442
+    }
+  ]
+}

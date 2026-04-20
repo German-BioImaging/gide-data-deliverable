@@ -1,0 +1,188 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD588"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD588",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f8e0d1b7-b878-4752-adda-f5f2ec1441d7"
+        },
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#6f608178-b6d8-480c-b6c6-8601638b1e5c"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3857-9989"
+        },
+        {
+          "@id": "#e8b5b70e-5727-4d5a-96bb-404a4e5e901c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-01-10",
+      "description": "The Darwin Tree of Life project has the goal to sequence the genomes of 70,000 species of eukaryotic organisms in Britain and Ireland. This is a collection of photographs of the samples included in the study, provided by the National History Museum (NHM).",
+      "funder": [],
+      "identifier": "S-BIAD588",
+      "keywords": [
+        "Darwin Tree of Life",
+        "DNA sequencing",
+        "biodiversity"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Darwin Tree of Life - NHM samples image catalogue",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#e8b5b70e-5727-4d5a-96bb-404a4e5e901c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d0d9719f-1ea4-4b16-9ddb-4803bfeb2b74"
+        }
+      ],
+      "email": "matthew.besley1@nhm.ac.uk",
+      "name": "Matthew Besley"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3857-9989",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d0d9719f-1ea4-4b16-9ddb-4803bfeb2b74"
+        }
+      ],
+      "email": "inez.januszczak@nhm.ac.uk",
+      "name": "Inez Januszczak"
+    },
+    {
+      "@id": "#d0d9719f-1ea4-4b16-9ddb-4803bfeb2b74",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Natural History Museum, London"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#6f608178-b6d8-480c-b6c6-8601638b1e5c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "whole organisms",
+      "name": "Biosample 1",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#f8e0d1b7-b878-4752-adda-f5f2ec1441d7",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "N/A",
+      "labEquipment": "Photography camera (various models)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000240"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000240",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "macroscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 17537
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 98992017136
+    }
+  ]
+}

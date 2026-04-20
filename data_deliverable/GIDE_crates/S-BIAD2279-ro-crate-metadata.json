@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2279"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2279",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#768f2bbc-551e-4edf-be42-935fa490b812"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#56cc2bc1-33bb-4e19-8342-4c704a7b2eda"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ca9f84e0-0db6-499d-bacc-757507021163"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-11",
+      "description": "• Acute otitis media (AOM) is a common\ndisease with causative organisms including\nH. influenzae and S. pneumoniae. A possible\nconsequence of AOM is chronic otitis media\n(COM), which can be caused by organisms\nincluding S. aureus and P. aeruginosa.\n• Current diagnostics cannot differentiate\nbetween bacterial and non-bacterial cases\n• ICG-maltotriose is a fluorescent probe that\nbinds specifically to the maltodextrin\ntransporter found in bacterial cells\n• This study explores the use of ICG-\nmaltotriose, which binds to bacterial cells,\ncombined with SWIR imaging to distinguish\nbetween bacterial and nonbacterial AOM in\nmurine models.",
+      "funder": [],
+      "identifier": "S-BIAD2279",
+      "keywords": [
+        "Acute otitis media, H. influenzae, S. pneumoniae, SWIR, ICG-Maltotriose"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Detection of Bacterial vs Inflammatory Acute Otitis Media using\nICG-Maltotriose in Short-wave Infrared (SWIR)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2279/1541f809-a451-44aa-8708-47aa61f66a4d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#ca9f84e0-0db6-499d-bacc-757507021163",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "vschiel@stanford.edu",
+      "name": "Viktoria Schiel"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#56cc2bc1-33bb-4e19-8342-4c704a7b2eda",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse middle ear",
+      "name": "Middle Ear, tympanic membrane",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#768f2bbc-551e-4edf-be42-935fa490b812",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "SWIR fluorescence images of the tympanic\nmembranes obtained using a custom SWIR\nsetup with laser excitation at 793 nm.",
+      "labEquipment": "ICG-maltotriose (10 nmol) was administered\nPOD1 retroorbitally.\n• In-vivo fluorescence images were taken at 5\nhours.\n• SWIR fluorescence images of the tympanic\nmembranes obtained using a custom SWIR\nsetup with laser excitation at 793 nm.\n• Middle ears were harvested and imaged on\nthe Pearl Trilogy (LICOR).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Image Aquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 18
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 63391572
+    }
+  ]
+}

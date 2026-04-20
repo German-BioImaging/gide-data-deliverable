@@ -1,0 +1,279 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1077"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1077",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#07f742d0-243a-4a8d-bca3-c91d050ef394"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#d6f7bf1a-6550-426a-bdb3-76bd3db193d4"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8772-0294"
+        },
+        {
+          "@id": "#d232b551-dfeb-485d-bc76-b6880d44325b"
+        },
+        {
+          "@id": "#c531197d-a59c-4158-8ddf-50a33cc90f11"
+        },
+        {
+          "@id": "#029c1e31-d643-4192-a6d7-1b0b6932d95e"
+        },
+        {
+          "@id": "#4c146eba-5efc-42d9-adcc-ad0394982765"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2023-1207"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-13",
+      "description": "With this dataset, we present light sheet microscopical datasets of iDISCO+ cleared adult mouse auditory and visual cortex. They feature an immunohistochemical staining of neuronal cell bodies (HuC/HuD), cell nuclei (TO-PRO-3), myelinated neurites (Myelin Basic Protein), and an autofluorescence channel. For all channels, we provide cell-level datasets including sensory cortical areas on cellular level (0.54 x 0.54 x 4µm XYZ). The data provide insight into cell distribution, cell densities and fibre directions in the neocortex.\n",
+      "funder": [],
+      "identifier": "S-BIAD1077",
+      "keywords": [
+        "Light sheet Fluorescence Microscopy",
+        "Clearing",
+        "idisco",
+        "cortex",
+        "auditory",
+        "visual"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Cell-Level 3D data of Auditory Cortex of adult mice: Neurons, nuclei, myelination imaged with light sheet microscopy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1077/4a65738d-8774-48d7-8786-53f6eb104b33/103bcf3a-8af6-4951-811c-9760c11d7872.png"
+      ]
+    },
+    {
+      "@id": "#029c1e31-d643-4192-a6d7-1b0b6932d95e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0de67ad0-191f-4795-bba3-7e2f37e86695"
+        }
+      ],
+      "name": "Nico Scherf"
+    },
+    {
+      "@id": "#4c146eba-5efc-42d9-adcc-ad0394982765",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#166f5026-e901-4f95-afeb-1758bbdf7128"
+        }
+      ],
+      "name": "Markus Morawski"
+    },
+    {
+      "@id": "#c531197d-a59c-4158-8ddf-50a33cc90f11",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#166f5026-e901-4f95-afeb-1758bbdf7128"
+        }
+      ],
+      "name": "Marion Fink"
+    },
+    {
+      "@id": "#d232b551-dfeb-485d-bc76-b6880d44325b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#871458a3-7a7e-41d8-8498-4e38479ca049"
+        }
+      ],
+      "name": "Gesine Müller"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8772-0294",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0de67ad0-191f-4795-bba3-7e2f37e86695"
+        }
+      ],
+      "email": "philip.ruthig@gmail.com",
+      "name": "Philip Ruthig"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2023-1207",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#166f5026-e901-4f95-afeb-1758bbdf7128"
+        }
+      ],
+      "email": "marcs@uni-leipzig.de",
+      "name": "Marc Schönwiesner"
+    },
+    {
+      "@id": "#0de67ad0-191f-4795-bba3-7e2f37e86695",
+      "@type": [
+        "Organization"
+      ],
+      "name": "max planck institute for human cognitive and brain sciences"
+    },
+    {
+      "@id": "#166f5026-e901-4f95-afeb-1758bbdf7128",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Leipzig University"
+    },
+    {
+      "@id": "#871458a3-7a7e-41d8-8498-4e38479ca049",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Göttingen"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#d6f7bf1a-6550-426a-bdb3-76bd3db193d4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse Primary Auditory Cortex",
+      "name": "Adult Mice",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#07f742d0-243a-4a8d-bca3-c91d050ef394",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The data were acquired with a Lavision Biotec Ultramicroscope II with a Neo 5.5 sCMOS camera, with BABB as imaging medium and a MI Plan 12x objective (NA=0.53, voxel size 0.54 x 0.54 x 4 µm XYZ). Image data were acquired in a 2x3 stack mosaic acquisition, including primary auditory and primary visual cortex and surrounding areas. Light sheet NA was set to 0.165 (minimum sheet thickness 3.4µm), with a sheet width of 40% (~1.2cm) and an exposure time of 97 ms. Laser power for the respective lasers were set to 7.5mW (488nm), 22.5mW (555nm), 3.25mW (640nm), 75mW (785nm). To minimize a potential bias from the optical system, all samples but one were scanned with light sheets from the right side. \n",
+      "labEquipment": "Miltenyi UltraII LSFM.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Light Sheet Fluorescence Microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 33
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 279794680959
+    }
+  ]
+}

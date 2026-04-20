@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1211"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1211",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#044f1709-6697-43ef-85c6-485d359cee17"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f15dc17b-89c1-440b-9603-be49433fb44e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#54a4cf40-075a-4e04-bf40-7856588c2ff3"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-29",
+      "description": "To check the effect of GLP1R agoniston lipid accumulation in low and high glucose condition through BODIPY in HepG2 cells after knock down of CaMKKII and LKB1.",
+      "funder": [],
+      "identifier": "S-BIAD1211",
+      "keywords": [
+        "BODIPY,F4/80 Staining, Lipid accumulation, Palmitate ,BSA, HepG2 Cells, mouse primary hepatocytes, mouse liver tissue sections, IHC, imaging, confocal, fluorescence  imaging, nikon, zeiss"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "To check the effect of GLP1R agonist  on lipid accumulation in low and high glucose condition through BODIPY in HepG2 cells after knock down of CaMKKII and LKB1.\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1211/caef6cd6-bf25-4d56-a38c-26bf52eb20ac/9fc8bebe-554c-4797-af40-121b8d3a466b.png"
+      ]
+    },
+    {
+      "@id": "#54a4cf40-075a-4e04-bf40-7856588c2ff3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22"
+        }
+      ],
+      "email": "mondalsiraj@gmail.com",
+      "name": "prosenjit mondal"
+    },
+    {
+      "@id": "#a36b8b0d-0720-4558-aa86-4aecc3891b22",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Indian Institute of Science Education and Research Berhampur"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#f15dc17b-89c1-440b-9603-be49433fb44e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "cells",
+      "name": "To check the effect of GLP1R agonist  on lipid accumulation in low and high glucose condition through BODIPY in HepG2 cells after knock down of CaMKKII and LKB1.",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#044f1709-6697-43ef-85c6-485d359cee17",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "images were taken at 60X.",
+      "labEquipment": "confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "To check the effect of GLP1R agonist  on lipid accumulation in low and high glucose condition through BODIPY in HepG2 cells after knock down of CaMKKII and LKB1."
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 62
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 125296064
+    }
+  ]
+}

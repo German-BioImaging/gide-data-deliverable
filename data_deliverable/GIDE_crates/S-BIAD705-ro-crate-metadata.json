@@ -1,0 +1,213 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD705"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD705",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d5bd9beb-c7eb-44fb-82b2-2f912f733c9c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#368f10ab-7a85-452c-bc68-8d72c33ca294"
+        },
+        {
+          "@id": "#a3e8543b-a1b9-489c-80c6-cb71ee57e0d9"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#c9709c01-eebb-4602-8136-683880842399"
+        },
+        {
+          "@id": "#503ef2ec-5f59-4171-afb9-6ded724c5071"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-11",
+      "description": "Optical codes can be used to track single live cells in an image data space, while DNA barcodes can be used to identify single cells in a sequencing data space. We have developed dual image and DNA (ID)-coding, which identifies individual single cells in both live image and sequencing data spaces. Samples provided here are relevant to proof-of-concept studies of ID-coding presented in the associated publication.\nOptically-coded micro-particles were encapsulated in hydrogel droplets with or without single cells. Multiple hydrogel droplets were imaged in individual microscopic views, which were segmented afterwards. ",
+      "funder": [],
+      "identifier": "S-BIAD705",
+      "keywords": [
+        "Functional microparticles",
+        "Multi-modal measurement"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Microscopic images of cells and optically-coded microbeads encapsulated in hydrogel droplets",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#503ef2ec-5f59-4171-afb9-6ded724c5071",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1828cf82-27c2-4cde-9fd0-c880ec9b14d9"
+        }
+      ],
+      "email": "takahiro.mimori@gmail.com",
+      "name": "Takahiro Mimori"
+    },
+    {
+      "@id": "#c9709c01-eebb-4602-8136-683880842399",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1828cf82-27c2-4cde-9fd0-c880ec9b14d9"
+        }
+      ],
+      "email": "fumikawasaki@g.ecc.u-tokyo.ac.jp",
+      "name": "Fumiko Kawasaki"
+    },
+    {
+      "@id": "#1828cf82-27c2-4cde-9fd0-c880ec9b14d9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#368f10ab-7a85-452c-bc68-8d72c33ca294",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cells (K562 cells HEK293 cells) and synthetic DNA-barcoded fluorescent microbeads",
+      "name": "Cells  and DNA-barcoded fluorescent microbeads",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a3e8543b-a1b9-489c-80c6-cb71ee57e0d9",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cells (K562 cells HEK293 cells) and synthetic DNA-barcoded fluorescent microbeads",
+      "name": "Cells  and DNA-barcoded fluorescent microbeads",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d5bd9beb-c7eb-44fb-82b2-2f912f733c9c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Hydrogels containing optically-coded micro-particles (with or without cells) in culture medium were gently loaded on a glass-bottom 6 well plate (MatTek Corporation) covered by a round-shaped cover glass (Matsunami Corp.). Unit images were recorded on InCellAnalyzer6000 (GE Healthcare) at x10 magnification. For each view, z-stack images (5-um pitch) at five channels (DAPI, FITC, dsRed, Cy5, brightfield) as well as a phase contrast image at the central z-position. ",
+      "labEquipment": "InCellAnalyzer6000 (GE Healthcare)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 32
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 512921324317
+    }
+  ]
+}

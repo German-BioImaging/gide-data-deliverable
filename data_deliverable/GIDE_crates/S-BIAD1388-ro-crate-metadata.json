@@ -1,0 +1,231 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1388"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1388",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#41bd78f3-a381-428b-b228-58d1ffbc60e0"
+        },
+        {
+          "@id": "#d17073e5-2528-4c6e-9a38-accf7c7778ba"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#55374769-771f-4e6b-8673-e1787d034dac"
+        },
+        {
+          "@id": "#07d526a6-0277-45a2-ad33-402b8c1e453e"
+        },
+        {
+          "@id": "#febc2ae1-4b5b-4f30-99ce-542e667a90a8"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7755-6283"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-02",
+      "description": "immunofluorescent staining in Synovial tissue  of  Healthy, active  Rheumatoid arthritis and and Rheumatoid arthritis in remission. \n",
+      "funder": [],
+      "identifier": "S-BIAD1388",
+      "keywords": [
+        "CD68",
+        "CLEC10A",
+        "AXL",
+        "CD1c",
+        "LAMP3",
+        "Synovial tissue ",
+        "Human"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Distinct tissue-niche localization and function of synovial tissue myeloid DC subsets in health, and in active and remission Rheumatoid Arthritis \n\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1388/2563e244-377d-4d80-b833-868a59dfb903/8a3e9dfb-9406-48df-90e9-2d0872050352.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7755-6283",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#54e7907f-44be-4623-b8a4-0513572a310e"
+        }
+      ],
+      "email": "aziza.elmesmari@glasgow.ac.uk",
+      "name": "Aziza Elmesmari"
+    },
+    {
+      "@id": "#54e7907f-44be-4623-b8a4-0513572a310e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Glasgow"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#07d526a6-0277-45a2-ad33-402b8c1e453e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Synovial tissue of Active rheumatoid arthritis",
+      "name": "Synovial tissue of Active rheumatoid arthritis",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#55374769-771f-4e6b-8673-e1787d034dac",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Synovial tissue of Healthy donor",
+      "name": "Healthy synovial tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#febc2ae1-4b5b-4f30-99ce-542e667a90a8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Synovial tissue of rheumatoid arthritis in remission",
+      "name": "Synovial tissue of rheumatoid arthritis in remission",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#41bd78f3-a381-428b-b228-58d1ffbc60e0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "CD68 (red) & CLEC10A ( Green)\nCD1c (Green) & LAMP3 (Red)\nCD1c (Green ) & AXL (Red)\n",
+      "labEquipment": "Zeiss LSM 880 confocal microscope, using either a water immersion LD C-Apochromat ×40/aperture1aperture1.3, or an oil immersion Plan-Apochromat ×63/1.4 objectives, and images acquired using Zen Black software (Zeiss). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Confocal Microscopy "
+    },
+    {
+      "@id": "#d17073e5-2528-4c6e-9a38-accf7c7778ba",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "membrane 488nm\npanCK 532nm\nCD45 594nm \nCD3 647nm \nDAPI UV",
+      "labEquipment": "CosMx Spatial Molecular Imager",
+      "measurementTechnique": [],
+      "name": "CosMx"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 20
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 446299738
+    }
+  ]
+}

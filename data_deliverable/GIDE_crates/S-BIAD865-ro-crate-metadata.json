@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD865"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD865",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#74c3853f-007f-4605-8574-e9cb56e75df3"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#97469051-e5ad-4959-85c4-5ceefb45f949"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#219be871-3e2a-45b6-82dc-d046ea2900b2"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-29",
+      "description": "OME-NGFF converted study from idr0013.  Despite our rapidly growing knowledge about the human genome, we do not know all of the genes required for some of the most basic functions of life. To start to fill this gap we developed a high-throughput phenotypic screening platform combining potent gene silencing by RNA interference, time-lapse microscopy and computational image processing. We carried out a genome-wide phenotypic profiling of each of the approximately 21,000 human protein-coding genes by two-day live imaging of fluorescently labelled chromosomes. Phenotypes were scored quantitatively by computational image processing, which allowed us to identify hundreds of human genes involved in diverse biological functions including cell division, migration and survival. As part of the Mitocheck consortium, this study provides an in-depth analysis of cell division phenotypes and makes the entire high-content data set available as a resource to the community.",
+      "funder": [],
+      "identifier": "S-BIAD865",
+      "keywords": [
+        "Cell division",
+        "Genetic association study",
+        "Time-lapse imaging"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Phenotypic profiling of the human genome by time-lapse microscopy reveals cell division genes (OME-NGFF)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#219be871-3e2a-45b6-82dc-d046ea2900b2",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2"
+        }
+      ],
+      "email": "idr-support@openmicroscopy.org",
+      "name": "Image Data Resource (IDR)"
+    },
+    {
+      "@id": "#e48e3a75-7a48-4224-bca9-fb3493c562b2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Dundee"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#97469051-e5ad-4959-85c4-5ceefb45f949",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human cells",
+      "name": "Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#74c3853f-007f-4605-8574-e9cb56e75df3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images were acquired with an automated epifluorescence microscope (IX-81; Olympus- Europe) as previously described1,22. Stabilized light sources (MT20, Olympus-Biosystems, Munich), firewire cameras (DB-H1, 1300x1024, Olympus-Biosystems) and an in house modified version of the ScanR software (now commercially available with all new developments from OSIS), EMBL environmental microscope incubator (EMBL, GP 106) as well as a new objective (Plan10x, NA 0.4; Olympus-Europe) and filter sets for GFP (Chroma Inc.) were implemented. An image based autofocusing routine22 was used to focus on the maximum number of interphase cells (scoring size, intensity, contrast) in a field of view. The focus z-coordinates of the transfected cell microarray were saved during the first round of imaging. The temperature stability of the incubated system allowed us to reuse the saved focus map for 48 hours without further autofocusing between the 30 min imaging intervals. As cells needed on average ~1 hour to go through mitosis, we obtained ~2 mitotic images per cell enabling us to detect delays  30 minutes, or a mitotic index change from 5 % to 7.5 %. Higher time resolution would increase the sensitivity to even more subtle delays but increase overall data volume. Illumination of the specimen was reduced to the minimum necessary for sufficient signal to noise ratio for automated phenotyping (see below) with exposure times of 18-50 ms (GFP). Data was compressed without loss (ZIP) on the fly, buffered locally on the microscope computers and then saved on a 5 TB network-attached-storage. Microscopes were connected via a 2 GBit/s network to the NAS to sustain uninterrupted data flow.",
+      "labEquipment": "Epifluorescence microscope (IX-81; Olympus- Europe)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 538
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 14342009403008
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1319"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1319",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#cd553d4e-b01a-4268-90c8-31fee77623a4"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#814ccf50-203e-46d5-93fc-87ac87f722ef"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#4cda379f-4935-4e31-ba89-83473df08a07"
+        },
+        {
+          "@id": "#f111977e-d5ac-4328-8afb-7d0256b1136f"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-08-15",
+      "description": "High-throughput phenotypic screens leveraging biochemical perturbations and high-content readouts are\npoised to advance therapeutic discovery, yet they remain constrained by limitations of scale. To address\n2\nthis, we establish a method of pooling exogenous perturbations followed by computational deconvolution\nto compress a screen’s required sample, labor, and financial input. We benchmark the approach with a\nbioactive small molecule library and a high-content imaging readout, demonstrating the feasibility and\nincreased efficiency of compressed experimental designs compared to conventional approaches. To prove\ngeneralizability, we apply compressed screening in two different biological discovery campaigns. In the\nfirst, we use early-passage pancreatic cancer organoids to map transcriptional responses to a library\nof tumor-microenvironment recombinant protein ligands. We uncover reproducible phenotypic shifts\ninduced by specific ligands that are distinct from canonical reference signatures and uniquely correlate with\nclinical outcome. In the second, we examine the modulatory effects of a known mechanism of action\nchemical compound library on primary human peripheral blood mononuclear cell immune responses.\nThrough contrastive analyses, we identify molecules that potentiate and/or inhibit cell-type specific\ntranscriptional features, uncover pleiotropic effects for individual compounds across diverse cell types, and\nrealize a systems-level view of drug responses. In sum, our approach empowers phenotypic screens with\ninformation-rich readouts to advance drug discovery efforts as well as basic biological inquiry.",
+      "funder": [],
+      "identifier": "S-BIAD1319",
+      "keywords": [
+        "phenotypic screen, cell painting, U2OS"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Compressed phenotypic screening empowers scalable biological discovery",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#4cda379f-4935-4e31-ba89-83473df08a07",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e450c313-4c69-4d02-be01-fff6bfe8cd32"
+        }
+      ],
+      "email": "ivliu@mit.edu",
+      "name": "Nuo Liu"
+    },
+    {
+      "@id": "#f111977e-d5ac-4328-8afb-7d0256b1136f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e450c313-4c69-4d02-be01-fff6bfe8cd32"
+        }
+      ],
+      "email": "shalek@mit.edu",
+      "name": "Alex K. Shalek"
+    },
+    {
+      "@id": "#e450c313-4c69-4d02-be01-fff6bfe8cd32",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Massachusetts Institute of Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#814ccf50-203e-46d5-93fc-87ac87f722ef",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "U2OS human cell lines",
+      "name": "U2OS cell line",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#cd553d4e-b01a-4268-90c8-31fee77623a4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cells were imaged on an ArrayScan VTI with a 20X objective, using the Hoescht\nchannel to autofocus and set the Z, and auto-exposure set for each channel. 9 fields were captured in the\nmiddle of each well.",
+      "labEquipment": "ArrayScan VTI ",
+      "measurementTechnique": [],
+      "name": "cell painting imaging "
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 386248
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1478447815545
+    }
+  ]
+}

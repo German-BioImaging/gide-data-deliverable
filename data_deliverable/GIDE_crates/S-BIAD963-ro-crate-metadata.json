@@ -1,0 +1,668 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD963"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD963",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#8a344b11-4b61-40db-8b89-c75a0f58ac8b"
+        },
+        {
+          "@id": "#ac0b96f9-6fd6-4a83-bd97-a0d8cd94c908"
+        },
+        {
+          "@id": "#a9d50dcf-bdf5-422a-a67c-0df178785ec0"
+        },
+        {
+          "@id": "#2254e7a0-e780-4ae3-bab6-e13491cd041a"
+        },
+        {
+          "@id": "#2d12ac7b-f775-4378-a2f7-4baa381eeffe"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f10c6809-3483-4921-ab92-f09cf760763d"
+        },
+        {
+          "@id": "#3519ffac-be32-48b5-ab1e-d76fdf9f7230"
+        },
+        {
+          "@id": "#6abd8ab7-71bb-4ed1-919b-c2717c6d0c18"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        },
+        {
+          "@id": "obo:NCBITaxon_32644"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1159-0689"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7108-2176"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3543-2519"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4456-0774"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3050-8863"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1096-3030"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1778-9381"
+        },
+        {
+          "@id": "#4fc3644d-4743-454b-b65b-9af29dd780c7"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3783-8213"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1487-6324"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1178-1354"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3675-6198"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4022-0844"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0305-8465"
+        },
+        {
+          "@id": "#f534548c-e4bc-4c7f-937f-bcdfd2427739"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0895-1145"
+        },
+        {
+          "@id": "#43569a23-f75f-45ad-8751-9154bf328a13"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0344-6708"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7860-1867"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8485-0648"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4710-1768"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2963-6865"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8867-9569"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-15",
+      "description": "In 2015, we launched the mesoSPIM initiative (www.mesospim.org), an open-source project for making light-sheet microscopy of large cleared tissues more accessible. Meanwhile, the demand for imaging larger samples at higher speed and resolution has increased, requiring major improvements in the capabilities of light-sheet microscopy. Here, we introduce the next-generation mesoSPIM (\"Benchtop\") with significantly increased field of view, improved resolution, higher throughput, more affordable cost and simpler assembly compared to the original version. We developed a new method for testing objectives, enabling us to select detection objectives optimal for light-sheet imaging with large-sensor sCMOS cameras. The new mesoSPIM achieves high spatial resolution (1.5 µm laterally, 3.3 µm axially) across the entire field of view, a magnification up to 20x, and supports sample sizes ranging from sub-mm up to several centimetres, while being compatible with multiple clearing techniques. The new microscope serves a broad range of applications in neuroscience, developmental biology, and even physics.",
+      "funder": [],
+      "identifier": "S-BIAD963",
+      "keywords": [
+        "light-sheet",
+        "mesoSPIM",
+        "tissue clearing"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "The Benchtop mesoSPIM: a next-generation open-source light-sheet microscope for large cleared samples",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD963/191b1803-0c6a-4fa5-9291-4b2c997e038e/b400b30d-84e2-4102-9df0-36b601422c40.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD963/5cc026d8-815b-4f16-9b94-3a9aeb291fbd/1adc0b3f-7d9e-4897-9f2f-25ccd0d2832c.png"
+      ]
+    },
+    {
+      "@id": "#43569a23-f75f-45ad-8751-9154bf328a13",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2"
+        }
+      ],
+      "name": "Ali Ertürk"
+    },
+    {
+      "@id": "#4fc3644d-4743-454b-b65b-9af29dd780c7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Patricia Schmid"
+    },
+    {
+      "@id": "#f534548c-e4bc-4c7f-937f-bcdfd2427739",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Valentino Aerne"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7860-1867",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Urs Ziegler"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0305-8465",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Taiyo Yamamoto"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0344-6708",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#678d14ca-88fd-467a-b82a-72285a4ae497"
+        }
+      ],
+      "name": "Adriano Aguzzi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1159-0689",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "email": "vladimirov@hifo.uzh.ch",
+      "name": "Nikita Vladimirov"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1178-1354",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Dominik Groos"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1487-6324",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Martina Schaettin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1778-9381",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Shan Zhao"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3050-8863",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "name": "Ruiyao Cai"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3675-6198",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "José María Mateos"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7108-2176",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cdd16461-ab27-45bc-a52a-8d94f8632292"
+        }
+      ],
+      "name": "Fabian Voigt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8485-0648",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Esther Stoeckli"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8867-9569",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Fritjof Helmchen"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0895-1145",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cd0452f3-e559-4005-9fb0-2a3500d55a88"
+        }
+      ],
+      "name": "Alard Roebroeck"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1096-3030",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#678d14ca-88fd-467a-b82a-72285a4ae497"
+        }
+      ],
+      "name": "Anna Maria Reuss"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2963-6865",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Soeren S. Lienkamp"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3543-2519",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Thomas Naert"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3783-8213",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cd0452f3-e559-4005-9fb0-2a3500d55a88"
+        }
+      ],
+      "name": "Sven Hildebrand"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4022-0844",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Philipp Bethge"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4456-0774",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Gabriela R. Araujo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4710-1768",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3"
+        }
+      ],
+      "name": "Laura Baudis"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#5eda1ae1-e3dc-49a2-84bf-4d09c068cee3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Zurich"
+    },
+    {
+      "@id": "#678d14ca-88fd-467a-b82a-72285a4ae497",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Hospital of Zurich"
+    },
+    {
+      "@id": "#7661c63e-9b96-4eee-91af-6f6e868602c2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ludwig-Maximilians-Universität München"
+    },
+    {
+      "@id": "#cd0452f3-e559-4005-9fb0-2a3500d55a88",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Maastricht University"
+    },
+    {
+      "@id": "#cdd16461-ab27-45bc-a52a-8d94f8632292",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Harvard University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_32644",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "unidentified"
+    },
+    {
+      "@id": "#3519ffac-be32-48b5-ab1e-d76fdf9f7230",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Resolution test sample",
+      "name": "Yellow-green fluorescent spheres",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_32644"
+      }
+    },
+    {
+      "@id": "#6abd8ab7-71bb-4ed1-919b-c2717c6d0c18",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult mouse brain and upper part of spinal cord",
+      "name": "Brain and upper spinal cord of a Thy1-GFP line M mouse",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#f10c6809-3483-4921-ab92-f09cf760763d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "None",
+      "name": "Ronchi slide 40 lp/mm ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_32644"
+      }
+    },
+    {
+      "@id": "#2254e7a0-e780-4ae3-bab6-e13491cd041a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "excitation channels: 561, 638 nm;\nz_step: 3 µm;\ndetection objective: Mitutoyo BD Plan Apo 5X/0.14 (Benchtop) or Olympus MVPLAPO1x-zoom5x (mesoSPIM v.5)\n",
+      "labEquipment": "Benchtop mesoSPIM, magnification 5x;\nmesoSPIM v.5, magnification 5x",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "Part of cerebellum"
+    },
+    {
+      "@id": "#2d12ac7b-f775-4378-a2f7-4baa381eeffe",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Excitation channels: 561, 638 nm;\nz_step: 2 µm;\nDetection objective: Mitutoyo G Plan Apo 20X/0.28(t3,5);\nImmersion and scanning: sample cuvette in the air (no large immersion chamber), focus interpolation mode.\n",
+      "labEquipment": "Benchtop mesoSPIM, magnification 20x.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "Region of prefrontal cortex"
+    },
+    {
+      "@id": "#8a344b11-4b61-40db-8b89-c75a0f58ac8b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "No light-sheet was used for illumination. The slide was illuminated with diffuse light from the back. \nLight source: Zeiss HAL100 tungsten-halogen lamp with a specified bandpass filter .\nz_step = 10 µm.",
+      "labEquipment": "Benchtop mesoSPIM (objective: Mitutoyo 2x or 5x); \nmesoSPIM v5 (objective MVPLANAPO1x, zoom 2x or 5x);",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Z-stack of Ronchi slide"
+    },
+    {
+      "@id": "#a9d50dcf-bdf5-422a-a67c-0df178785ec0",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Excitation 488 nm; z_step = 3 µm; detection objective Mitutoyo BD Plan Apo 5X/0.14; 19 tiles.\n",
+      "labEquipment": "Benchtop mesoSPIM, magnification 5x.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "Brain and upper spinal cord"
+    },
+    {
+      "@id": "#ac0b96f9-6fd6-4a83-bd97-a0d8cd94c908",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "z_step = 1 µm",
+      "labEquipment": "Benchtop mesoSPIM",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "Z-stack 50 µm deep"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000369",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "SPIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 114
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 460910263663
+    }
+  ]
+}

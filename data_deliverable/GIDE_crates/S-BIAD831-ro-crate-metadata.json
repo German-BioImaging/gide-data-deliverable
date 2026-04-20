@@ -1,0 +1,280 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD831"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD831",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d4159575-7d9c-46de-b2cd-2f1572712924"
+        },
+        {
+          "@id": "#4c826a14-5cc7-46e2-ace4-c9e3b86f8dd1"
+        },
+        {
+          "@id": "#073d2870-9431-4c69-8e2a-ae2e4e0af0a4"
+        },
+        {
+          "@id": "#9085e274-b882-4501-91d0-7e8d0e21fb1c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#aa0cf342-67f3-481d-aa15-f3aa7d5742ae"
+        },
+        {
+          "@id": "obo:NCBITaxon_9615"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3826-0225"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7263-8896"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5592-4257"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6004-488X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-08-05",
+      "description": "3D cell cultures are indispensable in recapitulating in vivo environments. Among the many 3D culture methods, culturing adherent cells on hydrogel beads to form spheroid-like structures is a powerful strategy for maintaining high cell viability and functions in the adherent states. However, high-throughput, scalable technologies for 3D imaging of individual cells cultured on the hydrogel scaffolds are lacking. This study reports the development of a high throughput, scalable 3D imaging flow cytometry platform for analyzing spheroid models. This platform is realized by integrating a single objective fluorescence light-sheet microscopy with a microfluidic device that combines hydrodynamic and acoustofluidic focusing techniques. This integration enabled unprecedentedly high-throughput and scalable optofluidic 3D imaging, processing 1310 spheroids consisting of 28 117 cells per minute. The large dataset obtained enables precise quantification and comparison of the nuclear morphology of adhering and suspended cells, revealing that the adhering cells have smaller nuclei with less rounded surfaces. This platform's high throughput, robustness, and precision for analyzing the morphology of subcellular structures in 3D culture models hold promising potential for various biomedical analyses, including image-based phenotypic screening of drugs with spheroids or organoids.",
+      "funder": [],
+      "identifier": "S-BIAD831",
+      "keywords": [
+        "3D cell culture",
+        "adherent cell",
+        "3D imaging flow cytometry",
+        "acoustofluidics",
+        "light-sheet microscopy",
+        "hydrogel bead"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "High-throughput 3D imaging flow cytometry of suspended adherent 3D cell cultures",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD831/8d137ca5-7c7d-4200-bbb7-35fe451098dc/ffdffc5a-a71e-4a2d-bcc1-10af47d914b5.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6004-488X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#614d4d4b-a1a0-4114-96c7-666a903f92d4"
+        }
+      ],
+      "email": "sadaota@g.ecc.u-tokyo.ac.jp",
+      "name": "Sadao Ota"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7263-8896",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#614d4d4b-a1a0-4114-96c7-666a903f92d4"
+        }
+      ],
+      "email": "tamamitsu@g.ecc.u-tokyo.ac.jp",
+      "name": "Miu Tamamitsu"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3826-0225",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#614d4d4b-a1a0-4114-96c7-666a903f92d4"
+        }
+      ],
+      "email": "yamashita-minato77@g.ecc.u-tokyo.ac.jp",
+      "name": "Minato Yamashita"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5592-4257",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#614d4d4b-a1a0-4114-96c7-666a903f92d4"
+        }
+      ],
+      "email": "kzkhattori@g.ecc.u-tokyo.ac.jp",
+      "name": "Kazuki Hattori"
+    },
+    {
+      "@id": "#614d4d4b-a1a0-4114-96c7-666a903f92d4",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Tokyo"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9615",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Canis lupus familiaris"
+    },
+    {
+      "@id": "#aa0cf342-67f3-481d-aa15-f3aa7d5742ae",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Madin-Darby canine kidney cells",
+      "name": "Madin-Darby canine kidney cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9615"
+      }
+    },
+    {
+      "@id": "#073d2870-9431-4c69-8e2a-ae2e4e0af0a4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40 frames per second",
+      "labEquipment": "2D fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "2D images to show the uniformity of velocities enabled by focusing methods"
+    },
+    {
+      "@id": "#4c826a14-5cc7-46e2-ace4-c9e3b86f8dd1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "200 frames per second",
+      "labEquipment": "Oblique-plane microscope",
+      "measurementTechnique": [],
+      "name": "Oblique-plane microscopy at 200 Hz"
+    },
+    {
+      "@id": "#9085e274-b882-4501-91d0-7e8d0e21fb1c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40 frames per second. Two time points: 0 min and 5 min.",
+      "labEquipment": "2D fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "2D images to show the stability of velocities for a longer period"
+    },
+    {
+      "@id": "#d4159575-7d9c-46de-b2cd-2f1572712924",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "300 frames per second",
+      "labEquipment": "Oblique-plane microscopy",
+      "measurementTechnique": [],
+      "name": "Oblique-plane microscopy at 300 Hz"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 4006
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 171377942774
+    }
+  ]
+}

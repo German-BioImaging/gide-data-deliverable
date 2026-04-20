@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD985"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD985",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#21e47382-6b2a-4f08-8ba2-50482ca5a5df"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1322af08-de85-446c-aad2-c57d270c8f83"
+        },
+        {
+          "@id": "#05c95f0a-d4ba-400d-b4ec-a4e7b69211e0"
+        },
+        {
+          "@id": "#4191348d-f539-43fe-af93-8faf2223d90d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1266-052X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-12-25",
+      "description": "Pooled genetic screens are powerful tools to study gene function in a high-throughput manner. Typically, sequencing-based screens require cell lysis, which limits the examination of critical phenotypes such as cell morphology, protein subcellular localization, and cell-cell/tissue interactions. In contrast, emerging optical pooled screening methods enable the investigation of these spatial phenotypes in response to targeted CRISPR perturbations. In this study, we report a multi-omic optical pooled CRISPR screening method, which we have named CRISPRmap. Our method combines a novel in situ CRISPR guide identifying barcode readout approach with concurrent multiplexed immunofluorescence and in situ RNA detection. CRISPRmap barcodes are detected and read out through combinatorial hybridization of DNA oligos, enhancing barcode detection efficiency, while reducing both dependency on third party proprietary sequencing reagents and assay cost. Notably, we conducted a multi-omic base-editing screen in a breast cancer cell line on core DNA damage repair genes involved in the homologous recombination and Fanconi anemia pathways investigating how nucleotide variants in those genes influence DNA damage signaling and cell cycle regulation following treatment with ionizing radiation or DNA damaging agents commonly used for cancer therapy. Approximately a million cells were profiled with our multi-omic approach,\nproviding a comprehensive phenotypic assessment of the functional consequences of the studied variants. CRISPRmap enabled us to pinpoint likely-pathogenic patient-derived mutations that were previously classified as variants of unknown clinical significance. Furthermore, our approach effectively distinguished barcodes of a pooled library in tumor tissue, and we coupled it with cell-type and molecular phenotyping by cyclic immunofluorescence. Multi-omic spatial analysis of how CRISPR-perturbed cells respond to various environmental cues in the tissue context offers the potential to significantly expand our understanding of tissue biology in both health and disease.",
+      "funder": [],
+      "identifier": "S-BIAD985",
+      "keywords": [
+        "Optical pooled Screen",
+        "human variants",
+        "DNA damage response",
+        "multi-omic",
+        "single-cell",
+        "spatial genomics",
+        "functional genomics"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Mapping multi-modal phenotypes to perturbations in cells and tissue with CRISPRmap",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1266-052X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48"
+        }
+      ],
+      "email": "jg4106@columbia.edu",
+      "name": "Jellert Gaublomme"
+    },
+    {
+      "@id": "#fafc3474-0067-4e25-a478-60b0d74d0d48",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Columbia University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#05c95f0a-d4ba-400d-b4ec-a4e7b69211e0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "OE19 oesophageal adenocarcinoma xenograft in mice",
+      "name": "Xenograft Tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1322af08-de85-446c-aad2-c57d270c8f83",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "MCF7-BE3 (Human Breast Adenocarcinoma Cell line expressing Base Editor 3)",
+      "name": "Base Editing Screen",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4191348d-f539-43fe-af93-8faf2223d90d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HT1080 cells expressing Cas9 and GFP",
+      "name": "GFP-pilot",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#21e47382-6b2a-4f08-8ba2-50482ca5a5df",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All images were acquired at 20x for CRISPRmap readout. Images were acquired with 4 z-slices at 1.5 μm intervals on the cultured cells and with 6 z-slices at 1.5 μm intervals on the tissue sections unless otherwise specified.",
+      "labEquipment": "Andor Dragonfly coupled to a Nikon Ti-2 inverted epifluorescence microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image acquisition CRISPRmap"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 847
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 7864250403674
+    }
+  ]
+}

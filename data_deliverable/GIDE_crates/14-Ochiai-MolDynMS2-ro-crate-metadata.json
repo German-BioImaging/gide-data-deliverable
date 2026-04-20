@@ -1,0 +1,198 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/14-Ochiai-MolDynMS2/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/14-Ochiai-MolDynMS2/",
+      "@type": "Dataset",
+      "identifier": "14-Ochiai-MolDynMS2",
+      "name": "14-Ochiai-MolDynMS2",
+      "description": "14-Ochiai-MolDynMS2",
+      "datePublished": "2016-10-03",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Animals",
+        "Capsid Proteins/genetics",
+        "Cell Nucleus/genetics[major]",
+        "Cells, Cultured",
+        "Embryonic Stem Cells/metabolism",
+        "Endonucleases/analysis",
+        "Endonucleases/genetics",
+        "Gene Expression",
+        "Green Fluorescent Proteins/analysis",
+        "Green Fluorescent Proteins/genetics",
+        "Homeodomain Proteins/genetics",
+        "In Situ Hybridization, Fluorescence[major]",
+        "Mice",
+        "Mice, Inbred C57BL",
+        "Nanog Homeobox Protein",
+        "Optical Imaging/methods",
+        "Pluripotent Stem Cells/metabolism",
+        "Recombinant Fusion Proteins/analysis",
+        "Transcription, Genetic[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1093/nar/gkv624"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-12"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hiroshi Ochiai",
+      "email": "ochiai@hiroshima-u.ac.jp",
+      "description": "Organization: Hiroshima University; Department: Research Center for the Mathematics on Chromatin Live Dynamics (RcMcD)",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03t78wx29"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Takeshi Sugiwara"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Takashi Yamamoto"
+    },
+    {
+      "@id": "https://ror.org/03t78wx29",
+      "@type": "Organization",
+      "name": "Hiroshima University"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv624",
+      "@type": "ScholarlyArticle",
+      "name": "Simultaneous live imaging of the transcription and nuclear position of specific genes.",
+      "datePublished": "2015"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 4799592,
+      "description": "4.8 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/90-Ishiwata-SpindleDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/90-Ishiwata-SpindleDyn/",
+      "@type": "Dataset",
+      "identifier": "90-Ishiwata-SpindleDyn",
+      "name": "Images of spindle dynamics in different situation",
+      "description": "90-Ishiwata-SpindleDyn",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        },
+        {
+          "@id": "#auth-011"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1080/15421406.2017.1289445"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007059"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0030016"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-163"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shin'ichi Ishiwata",
+      "email": "ishiwata@waseda.jp",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00ntfnx83"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Takeshi Itabashi",
+      "email": "t.itabashi@ruri.waseda.jp",
+      "description": "Department: Faculty of Science and Engineering"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Makito Miyazaki"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Katsuhiko Sato"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Koutaro Nakagome"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Seine A. Shintani"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Fuyu Kobirumaki-Shimozawa"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Norio Fukuda"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Kazuya Suzuki"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Jun Takagi"
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Yuta Shimamotoe"
+    },
+    {
+      "@id": "https://ror.org/00ntfnx83",
+      "@type": "Organization",
+      "name": "Waseda University"
+    },
+    {
+      "@id": "https://doi.org/10.1080/15421406.2017.1289445",
+      "@type": "ScholarlyArticle",
+      "name": "Dynamic properties of bio-motile systems with a liquid-crystalline structure",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Xenopus laevis",
+      "description": "Xenopus laevis",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Hela cell",
+      "description": "Hela cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355",
+      "@type": "Taxon",
+      "scientificName": "Xenopus laevis",
+      "vernacularName": "african clawed frog"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007059",
+      "@type": "DefinedTerm",
+      "name": "chromosome segregation"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030016",
+      "@type": "DefinedTerm",
+      "name": "myofibril"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 537345,
+      "description": "537.3 kB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 26,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000140/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000140/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000140",
+      "name": "Imaging and other-related data of neurogenic tagging mouse lines.",
+      "description": "Raw brain-section images (.scn) used to extract images (.png) in the <a href=\"https://ssbd.riken.jp/neurogt/\">NeuroGT database</a>. Correspondence table (.csv) of the SCN images and the extracted PNG images. Raw whole-mount brain images of X-gal staining used for Fig. 2 in the paper. Raw immunostained images of mGFP and nls-&beta;GAL used for Figs. 4-7, S1, and S2 in the paper. Count data (.xlsx) of EdU-positive and negative-neurons used for Figs. 5 and 7 in the paper.",
+      "datePublished": "2021-03-29",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.crmeth.2021.100012"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007399"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0044297"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000002"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000024"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000077"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-728"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Tatsumi Hirata",
+      "email": "tathirat@nig.ac.jp",
+      "description": "Organization: National Institute of Genetics; Laboratory: Brain Function Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02xg1m795"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02xg1m795",
+      "@type": "Organization",
+      "name": "National Institute of Genetics"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.crmeth.2021.100012",
+      "@type": "ScholarlyArticle",
+      "name": "NeuroGT: A brain atlas of neurogenic tagging CreER drivers for birthdate-based classification and manipulation of mouse neurons.",
+      "datePublished": "2021"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6 Neurod1<sup>CreER</sup>(D1B); Tau<sup>mGFP-nLacZ</sup>, \r\nC57/BL6 Neurod4<sup>CreER</sup>(D4A); Tau<sup>mGFP-nLacZ</sup>, \r\nC57/BL6 Neurog1<sup>CreER</sup>(G1C); Tau<sup>mGFP-nLacZ</sup>, \r\nC57/BL6 Neurog2<sup>CreER</sup>(G2A); Tau<sup>mGFP-nLacZ</sup>",
+      "description": "C57BL/6 Neurod1<sup>CreER</sup>(D1B); Tau<sup>mGFP-nLacZ</sup>, \r\nC57/BL6 Neurod4<sup>CreER</sup>(D4A); Tau<sup>mGFP-nLacZ</sup>, \r\nC57/BL6 Neurog1<sup>CreER</sup>(G1C); Tau<sup>mGFP-nLacZ</sup>, \r\nC57/BL6 Neurog2<sup>CreER</sup>(G2A); Tau<sup>mGFP-nLacZ</sup>",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007399",
+      "@type": "DefinedTerm",
+      "name": "nervous system development (GO:0007399)"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus (GO:0005634)"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0044297",
+      "@type": "DefinedTerm",
+      "name": "cell body (GO:0044297)"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy (FBbi:00000243)",
+      "description": "bright-field microscopy (FBbi:00000243)",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "chemically fixed tissue (FBbi:00000002)",
+      "description": "chemically fixed tissue (FBbi:00000002)",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000002"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "whole mounted tissue (FBbi:00000024)",
+      "description": "whole mounted tissue (FBbi:00000024)",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000024"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "beta-galactosidase (FBbi: 00000077)",
+      "description": "beta-galactosidase (FBbi: 00000077)",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000077"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy (FBbi:00000243)"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000002",
+      "@type": "DefinedTerm",
+      "name": "chemically fixed tissue (FBbi:00000002)"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000024",
+      "@type": "DefinedTerm",
+      "name": "whole mounted tissue (FBbi:00000024)"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000077",
+      "@type": "DefinedTerm",
+      "name": "beta-galactosidase (FBbi: 00000077)"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1808780812288,
+      "description": "1.8 TB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2881,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

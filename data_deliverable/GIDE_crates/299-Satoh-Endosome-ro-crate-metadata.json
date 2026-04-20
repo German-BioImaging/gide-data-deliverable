@@ -1,0 +1,304 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/299-Satoh-Endosome/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/299-Satoh-Endosome/",
+      "@type": "Dataset",
+      "identifier": "299-Satoh-Endosome",
+      "name": "Endosome maturation promoted by interorganelle association between mitochondria and endosomes",
+      "description": "299-Satoh-Endosome",
+      "datePublished": "2024-12-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.celrep.2023.112229"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0001591"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007173"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005769"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0070925"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005739"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005770"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0048388"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005768"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1355"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yusuke Ohba",
+      "email": "yohba@med.hokudai.ac.jp",
+      "description": "Organization: Hokkaido University; Department: Department of Cell Physiology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02e16g702"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Aya O. Satoh"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Yoichiro Fujioka"
+    },
+    {
+      "@id": "https://ror.org/02e16g702",
+      "@type": "Organization",
+      "name": "Hokkaido University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.celrep.2023.112229",
+      "@type": "ScholarlyArticle",
+      "name": "Interaction between PI3K and the VDAC2 channel tethers Ras-PI3K-positive endosomes to mitochondria and promotes endosome maturation.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ A431 cell",
+      "description": "Homo sapiens ~ A431 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0001591"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001591",
+      "@type": "DefinedTerm",
+      "name": "A431 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007173",
+      "@type": "DefinedTerm",
+      "name": "epidermal growth factor receptor signaling pathway"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005769",
+      "@type": "DefinedTerm",
+      "name": "early endosome"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0070925",
+      "@type": "DefinedTerm",
+      "name": "organelle assembly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
+      "@type": "DefinedTerm",
+      "name": "mitochondrion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005770",
+      "@type": "DefinedTerm",
+      "name": "late endosome"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048388",
+      "@type": "DefinedTerm",
+      "name": "endosomal lumen acidification"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005768",
+      "@type": "DefinedTerm",
+      "name": "endosome"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1201968482,
+      "description": "1.2 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 46,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

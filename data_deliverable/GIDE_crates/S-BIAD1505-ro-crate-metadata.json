@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1505"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1505",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#dae7cb5f-8a14-4886-be29-96543bd7d96f"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#37a542d2-940b-4957-9c57-239b7c7260f1"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9944-559X"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-09",
+      "description": "IL-6R Modulation Prevents Preterm Birth ",
+      "funder": [],
+      "identifier": "S-BIAD1505",
+      "keywords": [
+        "Preterm birth "
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A novel modulator of IL-6R prevents inflammation-induced preterm birth and improves newborn outcome",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1505/c610b6c3-a371-43d4-ae1c-4a1bd260edb2/3b744ec1-64e3-41b3-b129-cc919d91a92d.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9944-559X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/0161xgx34"
+        }
+      ],
+      "email": "france.cote.4@umontreal.ca",
+      "name": "France Côté"
+    },
+    {
+      "@id": "https://ror.org/0161xgx34",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université de Montréal"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#37a542d2-940b-4957-9c57-239b7c7260f1",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "PT7 CD1 mice ",
+      "name": "Intestine and lungs ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#dae7cb5f-8a14-4886-be29-96543bd7d96f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "10x objective Zeiss AxioScan.Z1",
+      "labEquipment": "Axioscan ",
+      "measurementTechnique": [],
+      "name": "Axioscan "
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 740
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2209427603
+    }
+  ]
+}

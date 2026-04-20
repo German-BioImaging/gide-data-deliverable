@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1731"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1731",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2f8346b7-a7dd-4f31-bf76-294e2a3dacff"
+        },
+        {
+          "@id": "obo:FBbi_00000368"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#829f2014-4783-47a7-a567-33f3a6a18372"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8782-9126"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-21",
+      "description": "This repository contains microscopic images for the quantification of phospho-synuclein pathology in the cortex following PFF injection into the dorsal striatum. Images are available for analysis at 1, 3, and 6 months post-injection.",
+      "funder": [],
+      "identifier": "S-BIAD1731",
+      "keywords": [
+        "Cortex",
+        "Phospho-synuclein",
+        "PFF"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Phospho-Synuclein Quantification in Cortex at 1, 3, and 6 Months Post-PFF Injection: Image Set",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1731/026534b4-3f55-47a9-bd1b-aa09c7f1f677/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8782-9126",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9"
+        }
+      ],
+      "email": "sarozsah@gmail.com",
+      "name": "Saroj Sah"
+    },
+    {
+      "@id": "#af30ac76-393f-4b5c-ba30-0731559bdda9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Yale University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#829f2014-4783-47a7-a567-33f3a6a18372",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cortex",
+      "name": "pSyn qualification  in mouse prefrontal cortex",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#2f8346b7-a7dd-4f31-bf76-294e2a3dacff",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Ch 647 exposure 20ms laser 3.0% for pSyn imaging, Ch 568 exposure 60ms laser 3.0%, Ch DAPI exposure 80ms laser 4.0% for nucleus staining \n ",
+      "labEquipment": "Spinning Disk Dragonfly microscope (Andor–Oxford Instruments) with a Zyla CMOS camera (20x objective, air)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000368"
+        }
+      ],
+      "name": "Microscopic images of cortex for phosphosynuclein pathology analysis"
+    },
+    {
+      "@id": "obo:FBbi_00000368",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FLIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 42
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 106762727906
+    }
+  ]
+}

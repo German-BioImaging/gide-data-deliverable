@@ -1,0 +1,268 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1602"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1602",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#396b4200-048d-49b1-9645-3cb24d34674f"
+        },
+        {
+          "@id": "#a8fdfce1-0b08-4a75-8abf-e063c158c3a8"
+        },
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#28a12dac-a5f5-4b6f-901b-2f725bacf1cf"
+        },
+        {
+          "@id": "#424326bb-50b8-4d07-9ffa-64128f88419d"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#178cfa90-f10f-4df7-a50c-9fb57b062e57"
+        },
+        {
+          "@id": "#aa2e4069-0949-43bb-9550-2e120ca3f599"
+        },
+        {
+          "@id": "#d18cf14a-a1ed-45fa-b4d0-92aef5f23c07"
+        },
+        {
+          "@id": "#2c3cc9f0-0ffe-4b13-93ac-50d6c5c3d67c"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-30",
+      "description": "A prominent feature of eukaryotic chromosomes are centromeres, which are specialized regions\nof repetitive DNA required for faithful chromosome segregation during cell division. In interphase\ncells centromeres are non-randomly positioned in the three-dimensional space of the nucleus in a\ncell-type specific manner. The functional relevance and the cellular mechanisms underlying this\nobservation are unknown, and quantitative methods to measure distribution patterns of\ncentromeres in 3D space are needed. Here we have developed an analytical framework that\ncombines robust clustering metrics and advanced modeling techniques for the quantitative analysis\nof centromere distributions at the single cell level. To identify a robust quantitative measure for\ncentromere clustering, we benchmarked six metrics for their ability to sensitively detect changes\nin centromere distribution patterns from high-throughput imaging data of human cells, both under\nnormal conditions and upon experimental perturbation of centromere distribution. We find that\nRipley’s K Score has the highest accuracy with minimal sensitivity to variations in centromeres\nnumber, making it the most suitable metric for measuring centromere distributions. As a\ncomplementary approach, we also developed and validated spatial models to replicate centromere\ndistribution patterns, and we show that a radially shifted Gaussian distribution best represents the\ncentromere patterns seen in human cells. Our approach creates tools for the quantitative\ncharacterization of spatial centromere distributions with applications in both targeted studies of\ncentromere organization as well as in unbiased screening approaches.",
+      "funder": [],
+      "identifier": "S-BIAD1602",
+      "keywords": [
+        "centromere clustering",
+        " spatial distribution",
+        "clustering metrics",
+        "image analysis",
+        "Ripley’s K",
+        "genome organization"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Simulation and quantitative analysis of spatial centromere distribution patterns",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1602/70be46c1-436e-4dff-b60d-a17ff1e6cf55/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#178cfa90-f10f-4df7-a50c-9fb57b062e57",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2440c483-5aa2-4c20-a865-f6bd87dd804c"
+        }
+      ],
+      "email": "adib.keikhosravi@nih.gov",
+      "name": "Adib Keikhosravi"
+    },
+    {
+      "@id": "#2c3cc9f0-0ffe-4b13-93ac-50d6c5c3d67c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2440c483-5aa2-4c20-a865-f6bd87dd804c"
+        }
+      ],
+      "email": "mistelit@mail.nih.gov",
+      "name": "Tom Misteli"
+    },
+    {
+      "@id": "#aa2e4069-0949-43bb-9550-2e120ca3f599",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2440c483-5aa2-4c20-a865-f6bd87dd804c"
+        }
+      ],
+      "email": "krishnendu.guin@nih.gov",
+      "name": "Krishnendu Guin"
+    },
+    {
+      "@id": "#d18cf14a-a1ed-45fa-b4d0-92aef5f23c07",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2440c483-5aa2-4c20-a865-f6bd87dd804c"
+        }
+      ],
+      "email": "gianluca.pegoraro@nih.gov",
+      "name": "Gianluca Pegoraro"
+    },
+    {
+      "@id": "#2440c483-5aa2-4c20-a865-f6bd87dd804c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Center for Cancer Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#28a12dac-a5f5-4b6f-901b-2f725bacf1cf",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Includes seven cell lines: A375, MDA-MB-231, HFF-hTERT, hTERT-RPE1, A549, HAP1, and HCT116.\n",
+      "name": "Biosample IF - 7 Cell Lines",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#424326bb-50b8-4d07-9ffa-64128f88419d",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "WTC11",
+      "name": "Biosample IF WTC11",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#396b4200-048d-49b1-9645-3cb24d34674f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For IF experiments, images were acquired using 405 nm (DAPI channel) or 488 nm (CENP-C\nchannel) excitation lasers and a 405/488/561/640 nm excitation dichroic mirror. A 60X water-\nimmersion objective (NA 1.2) was employed, paired with 445/45 nm (DAPI channel) or 525/50\nnm (CENP-C channel) bandpass emission filters. A 16-bit sCMOS camera (2048 × 2048 pixels,\n1×1 binning, pixel size: 0.108 microns) was used for the capture of image Z-stacks spanning 14\nmicrons in depth, collected at 1-micron intervals and maximally projected in on the fly. Images\nwere acquired from 22 fields of view (FOV) per well.",
+      "labEquipment": "CellVoyager CV7000/CV8000",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "#a8fdfce1-0b08-4a75-8abf-e063c158c3a8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "For IF experiments, images were acquired using 405 nm (DAPI channel) or 488 nm (CENP-C\nchannel) excitation lasers and a 405/488/561/640 nm excitation dichroic mirror. A 60X water-\nimmersion objective (NA 1.2) was employed, paired with 445/45 nm (DAPI channel) or 525/50\nnm (CENP-C channel) bandpass emission filters. A 16-bit sCMOS camera (2048 × 2048 pixels,\n1×1 binning, pixel size: 0.108 microns) was used for the capture of image Z-stacks spanning 14\nmicrons in depth, collected at 1-micron intervals and maximally projected in on the fly. Images\nwere acquired from 22 fields of view (FOV) per well.",
+      "labEquipment": "CellVoyager CV7000/CV8000",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000241"
+        }
+      ],
+      "name": "Image acquisition 2"
+    },
+    {
+      "@id": "obo:FBbi_00000241",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 24606
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 196115652608
+    }
+  ]
+}

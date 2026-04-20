@@ -1,0 +1,338 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1540"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1540",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c2a7c896-38d9-4c44-9bf7-9bd99a83aed6"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a2f543a9-afec-4927-bb10-dc39243038b8"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0872-0929"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3792-9695"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5299-3193"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4463-8017"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3515-7468"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8621-9438"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7237-1973"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3030-0384"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-01-29",
+      "description": "Cell polarity involves the asymmetric distribution of cellular components such as signalling molecules and organelles within a cell, alterations in cell morphology and cell-cell contacts. Advances in fluorescence microscopy and deep learning algorithms open up a wealth of unprecedented opportunities to characterise various aspects of cell polarity, but also create new challenges for comprehensible and interpretable image data analysis workflows to fully exploit these new opportunities. Here we present Polarity-JaM, an open source package for reproducible exploratory image analysis that provides versatile methods for single cell segmentation, feature extraction and statistical analysis. We demonstrate our analysis using fluorescence image data of endothelial cells (ECs) and their collective behaviour, which has been shown to be essential for vascular development and disease. The general architecture of the software allows its application to other cell types and imaging modalities, as well as seamless integration into common image analysis workflows, see https://polarityjam.readthedocs.io. \n\nHere, we present the data used in the evaluation process of Polarity-JaM.",
+      "funder": [],
+      "identifier": "S-BIAD1540",
+      "keywords": [
+        "endothelial cells",
+        "KLF4",
+        "VE-Cadherin",
+        "Anti-GM",
+        "Notch1",
+        "shear stress",
+        "confocal_microscopy",
+        "fluorescence_microscopy"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Polarity-JaM: An image analysis toolbox for cell polarity, junction and morphology quantification - data",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1540/e43a91f8-c47f-4f34-96bb-2e7ab6aa4efb/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3030-0384",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0c398cdd-631d-42ce-bc0a-0306e0737e3c"
+        }
+      ],
+      "email": "holger.gerhardt@mdc-berlin.de",
+      "name": "Holger Gerhardt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3515-7468",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f69670f4-cbba-49cf-893e-2eeac48bf8bf"
+        }
+      ],
+      "email": "julia.kraxner@mdc-berlin.de",
+      "name": "Julia Kraxner"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3792-9695",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4bda5f07-be19-414c-a8e2-e4652a72151c"
+        }
+      ],
+      "email": "jan-philipp.albrecht@mdc-berlin.de",
+      "name": "Jan Philipp Albrecht"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5299-3193",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5e619101-faaa-46c0-ba63-f94834270f78"
+        }
+      ],
+      "email": "olya.oppenheim@mdc-berlin.de",
+      "name": "Olya Oppenheim"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7237-1973",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#da493b94-b6cd-42a0-ace7-9eab5adddae0"
+        }
+      ],
+      "email": "orcid@kyleharrington.com",
+      "name": "Kyle Harrington"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8621-9438",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#ebbb81b5-2688-4916-a711-76e0386a4194"
+        }
+      ],
+      "email": "deborah.schmidt@mdc-berlin.de",
+      "name": "Deborah Schmidt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0872-0929",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f69670f4-cbba-49cf-893e-2eeac48bf8bf"
+        }
+      ],
+      "email": "wolfgang.giese@mdc-berlin.de",
+      "name": "Wolfgang Giese"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4463-8017",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5e619101-faaa-46c0-ba63-f94834270f78"
+        }
+      ],
+      "email": "emirbora.akmeric@mdc-berlin.de",
+      "name": "Emir Bora Akmeriç"
+    },
+    {
+      "@id": "#0c398cdd-631d-42ce-bc0a-0306e0737e3c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Berlin Institute of Health at Charité - Universitätsmedizin Berlin"
+    },
+    {
+      "@id": "#4bda5f07-be19-414c-a8e2-e4652a72151c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Humboldt-Universität zu Berlin"
+    },
+    {
+      "@id": "#5e619101-faaa-46c0-ba63-f94834270f78",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Charité - Universitätsmedizin Berlin"
+    },
+    {
+      "@id": "#da493b94-b6cd-42a0-ace7-9eab5adddae0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Max Delbrück Center"
+    },
+    {
+      "@id": "#ebbb81b5-2688-4916-a711-76e0386a4194",
+      "@type": [
+        "Organization"
+      ],
+      "name": "HELMHOLTZ IMAGING"
+    },
+    {
+      "@id": "#f69670f4-cbba-49cf-893e-2eeac48bf8bf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "German Centre for Cardiovascular Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#a2f543a9-afec-4927-bb10-dc39243038b8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Umbilical Vein Endothelial Cells",
+      "name": "Human Umbilical Vein Endothelial Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c2a7c896-38d9-4c44-9bf7-9bd99a83aed6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FSS immunostained slides were imaged on a confocal microscope (Carl Zeiss, LSM 980) using a Plan-Apochromat 20x/0.8 NA Ph2 air objective and 63x/1.4 NA oil objective. For each samplerandom positions throughout the flow slide were selected and Z-stacks covering the entire depth of the monolayer were acquired. Slides were imaged with a two-channel setup, with channel one using the 488 and 633 lasers and channel two using the 405 and 561 lasers. Pinhole size was set to 1AU for both channels. ZEN version 3.4.91.00000 was used for image acquisition, Fiji was used for max projection and export to tiff file format.",
+      "labEquipment": "Carl Zeiss, LSM 980",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "LSM 980"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 348
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4865710763
+    }
+  ]
+}

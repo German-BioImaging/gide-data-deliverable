@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000232/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000232/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000232",
+      "name": "Quantitative live-cell imaging of GPCR downstream signaling dynamics.",
+      "description": "G-protein-coupled receptors (GPCRs) play an important role in sensing various extracellular stimuli, such as neurotransmitters, hormones, and tastants, and transducing the input information into the cell. While the human genome encodes more than 800 GPCR genes, only four Gα-proteins (Gαs, Gαi/o, Gαq/11, and Gα12/13) are known to couple with GPCRs. It remains unclear how such divergent GPCR information is translated into the downstream G-protein signaling dynamics. To answer this question, we report a live-cell fluorescence imaging system for monitoring GPCR downstream signaling dynamics. Genetically encoded biosensors for cAMP, Ca2+, RhoA, and ERK were selected as markers for GPCR downstream signaling, and were stably expressed in HeLa cells. GPCR was further transiently overexpressed in the cells. As a proof-of-concept, we visualized GPCR signaling dynamics of five dopamine receptors and 12 serotonin receptors, and found heterogeneity between GPCRs and between cells. Even when the same Gα proteins were known to be coupled, the patterns of dynamics in GPCR downstream signaling, including the signal strength and duration, were substantially distinct among GPCRs. These results suggest the importance of dynamical encoding in GPCR signaling.",
+      "datePublished": "2022-04-21",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "GTP-Binding Proteins/genetics[major]",
+        "GTP-Binding Proteins/metabolism[major]",
+        "HeLa Cells",
+        "Humans",
+        "Receptors, G-Protein-Coupled/genetics[major]",
+        "Receptors, G-Protein-Coupled/metabolism[major]",
+        "Signal Transduction"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1042/BCJ20220021"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@nibb.ac.jp",
+      "description": "Organization: Division of Quantitative Biology",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00v34f693"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/00v34f693",
+      "@type": "Organization",
+      "name": "Division of Quantitative Biology"
+    },
+    {
+      "@id": "https://doi.org/10.1042/BCJ20220021",
+      "@type": "ScholarlyArticle",
+      "name": "Quantitative live-cell imaging of GPCR downstream signaling dynamics.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cell line sample",
+      "description": "Cell line sample",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 11088416768,
+      "description": "11.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 20814,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

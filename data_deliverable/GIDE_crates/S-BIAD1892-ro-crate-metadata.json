@@ -1,0 +1,205 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1892"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1892",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4496c81f-04ba-4f0d-b170-89d8e42eb830"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c3f2ec4b-e578-4521-8c9e-d592a18d8b03"
+        },
+        {
+          "@id": "obo:NCBITaxon_629395"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ad83982d-8254-44b7-8450-98696311cb81"
+        },
+        {
+          "@id": "#e169b8a0-2820-4375-9915-f5f7ac6f3de0"
+        },
+        {
+          "@id": "#41c7d88b-1f38-42f9-8a02-6744f5dfe392"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-01",
+      "description": "Bacterial cells were grown for 24h in presence of PFAS or DMSO (control), after which they were processed for transmission electron microscopy.",
+      "funder": [],
+      "identifier": "S-BIAD1892",
+      "keywords": [
+        "PFAS",
+        "Per- and polyfluoroalkyl substances",
+        "Gut microbiota",
+        "Gut bacteria"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "PFAS accumulation by human gut bacteria",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1892/27411c4f-b369-4204-9519-37e4dead340f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#41c7d88b-1f38-42f9-8a02-6744f5dfe392",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "nm669@cam.ac.uk",
+      "name": "Nobuhiro Morone"
+    },
+    {
+      "@id": "#ad83982d-8254-44b7-8450-98696311cb81",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "annalindell08@gmail.com",
+      "name": "Anna Lindell"
+    },
+    {
+      "@id": "#e169b8a0-2820-4375-9915-f5f7ac6f3de0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555"
+        }
+      ],
+      "email": "kp533@cam.ac.uk",
+      "name": "Kiran Patil"
+    },
+    {
+      "@id": "#940c5db9-f6a5-47ba-8e12-659dac275555",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_629395",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Bacteria Latreille et al. 1825"
+    },
+    {
+      "@id": "#c3f2ec4b-e578-4521-8c9e-d592a18d8b03",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Liquid cultures of bacterial strains of Bacteroides uniformis, Odoribacter splanchnicus and Escherichia coli grown in mGAM with or without addition of PFAS.",
+      "name": "Bacteria",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_629395"
+      }
+    },
+    {
+      "@id": "#4496c81f-04ba-4f0d-b170-89d8e42eb830",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The bacterial ultrastructure was observed using FEI Talos F200C 200kV transmission electron microscope (Thermo Fischer Scientific, Einthoven Netherlands) with Ceta-16M CMOS-based camera (4kx4k pixels under 16bit dynamic range) and JEM-1400 Flash TMP (JEOL Ltd., Tokyo Japan) with TVIPS TemCam-XF416 CMOS (Tietz Video and Image Processing Systems GmbH, Germany) as described previously.",
+      "labEquipment": "FEI Talos F200C 200kV transmission electron microscope (Thermo Fischer Scientific, Einthoven Netherlands)",
+      "measurementTechnique": [],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 547
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 16541974333
+    }
+  ]
+}

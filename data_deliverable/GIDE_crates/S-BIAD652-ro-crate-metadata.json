@@ -1,0 +1,199 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD652"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD652",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#7881fd0b-9e46-4e79-bb32-dbd51893ee23"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#66514ee6-3751-44a1-a849-d010efd4b520"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9394-7601"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-17",
+      "description": "After peripheral nerve injuries, successful axonal growth and functional recovery requires the reprogramming of Schwann cells into a reparative phenotype, a process dependent on the activation of the transcription factor c-Jun. Nevertheless, axonal regeneration is greatly impaired in aged organisms or after chronic denervation leading to important clinical problems. This regenerative failure has been associated to a diminished c-Jun expression by Schwann cells, but whether the inability of these cells to maintain a repair state is associated to the transition into a phenotype inhibitory for axonal growth, has not been evaluated so far. We find that repair Schwann cells transitions into a senescent phenotype, characterized by diminished c-Jun expression and secretion of factor inhibitory for axonal regeneration in both aging and chronic denervation. In both conditions, elimination of senescent Schwann cells by systemic senolytic drug treatment or genetic targeting improves nerve regeneration and functional recovery in aging and chronic denervation, associated with an upregulation of c-Jun expression and a decrease in nerve inflammation. This work provides the first characterization of senescent Schwann cells and their impact over axonal regeneration in aging and chronic denervation, opening new avenues for enhancing regeneration, and functional recovery after peripheral nerve injuries.",
+      "funder": [],
+      "identifier": "S-BIAD652",
+      "keywords": [
+        "schwann cell",
+        "axonal regeneration",
+        "senescence"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Senescent Schwann cells induced by aging and chronic denervation impair axonal regeneration after peripheral nerve injury",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD652/d136b28d-4b1c-43cb-a1b3-d5363d835a82/81b5ba6c-d34a-431e-a027-1e7999d3b68a.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9394-7601",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#539f9b1a-4791-4b3c-a2a1-d95a7fa798ee"
+        }
+      ],
+      "email": "felipe.court@umayor.cl",
+      "name": "Felipe Court"
+    },
+    {
+      "@id": "#539f9b1a-4791-4b3c-a2a1-d95a7fa798ee",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Universidad Mayor"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#66514ee6-3751-44a1-a849-d010efd4b520",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult and aged mouse sciatic nerve",
+      "name": "Senescent Schwann cells induced by aging and chronic denervation impair axonal regeneration after peripheral nerve injury",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#7881fd0b-9e46-4e79-bb32-dbd51893ee23",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "IF on confocal microscopy (Leica TCS SP8)",
+      "labEquipment": "Confocal Leica TCS SP8",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Senescent Schwann cells induced by aging and chronic denervation impair axonal regeneration after peripheral nerve injury"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 16882
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 19309285286
+    }
+  ]
+}

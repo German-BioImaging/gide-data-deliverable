@@ -1,0 +1,337 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2145"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2145",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#21b6044b-624b-4f1b-8155-d01d63c17547"
+        },
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#834e5c06-5dfc-476b-8cba-617e763b4374"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6755-0221"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9931-8179"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8075-6275"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4261-1670"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4388-9642"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2562-0575"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1983-7244"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1650-8007"
+        },
+        {
+          "@id": "#fff0658e-5159-46cb-a98b-2d083ad82bb9"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0299-3301"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-31",
+      "description": "Cancer metastasis involves a complex cascade of events, where cancer cells migrate from their site of origin to secondary sites via the lymphatic and circulatory system. Mouse models of advanced metastatic breast cancer are usually established orthotopically in the mammary fat pad (MFP) or by intravenous (IV) injection of cell lines (e.g. MDA-MB-231) or via patient-derived xenografts (PDX). These models of metastatic disease are critical for understanding the drivers of clonal diversity and drug resistance, as intra-tumoral heterogeneity is a characteristic of poor clinical outcomes. To understand the growth of metastatic tumours in tissue microenvironments, we adapted and optimised a method based on lentiviral-gene ontology optical barcoding known as LeGO for 3-dimensional imaging of wholemount tissues and organs using light sheet microscopy. This data showed that polychromatic metastases occurred less frequently than monochromatic metastases and were more likely to be located nearer to blood vessels in both spontaneous (i.e. mammary fat pad injections) and experimental (i.e. tail vein injections) mouse assays of metastasis. The LeGO-3D pipeline can provide unique insights about metastatic heterogeneity and dynamics, and represents a new avenue for studying therapeutic response across large volumes of lung tissue.",
+      "funder": [],
+      "identifier": "S-BIAD2145",
+      "keywords": [
+        "LeGO",
+        "Lightsheet",
+        "Cancer",
+        "metastasis"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "LeGO-3D: 3D imaging of lung metastases and vascularisation using light sheet fluorescence microscopy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2145/6688f985-75fb-493c-8dc3-ae7ea2bf6d8b/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#fff0658e-5159-46cb-a98b-2d083ad82bb9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4e29efe7-5ff0-41a2-8c3b-9ce6e63224b4"
+        }
+      ],
+      "email": "caroline.bell@onjcri.org.au",
+      "name": "Caroline Bell"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1650-8007",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4e29efe7-5ff0-41a2-8c3b-9ce6e63224b4"
+        }
+      ],
+      "email": "farrah.el-saafin@onjcri.org.au",
+      "name": "Farrah El-Saafin"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1983-7244",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a6bd9154-c49d-48c8-840e-e769ddc7efa0"
+        }
+      ],
+      "email": "rajasekhar.p@wehi.edu.au",
+      "name": "Pradeep Rajasekhar"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4388-9642",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a6bd9154-c49d-48c8-840e-e769ddc7efa0"
+        }
+      ],
+      "email": "whitehead@wehi.edu.au",
+      "name": "Lachlan W. Whitehead"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6755-0221",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a6bd9154-c49d-48c8-840e-e769ddc7efa0"
+        }
+      ],
+      "email": "rogers@wehi.edu.au",
+      "name": "Kelly L. Rogers"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8075-6275",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4e29efe7-5ff0-41a2-8c3b-9ce6e63224b4"
+        }
+      ],
+      "name": "Delphine Merino"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9931-8179",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a6bd9154-c49d-48c8-840e-e769ddc7efa0"
+        }
+      ],
+      "email": "wimmer.v@wehi.edu.au",
+      "name": "Verena C. Wimmer"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0299-3301",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a6bd9154-c49d-48c8-840e-e769ddc7efa0"
+        }
+      ],
+      "email": "naik.s@wehi.edu.au",
+      "name": "Shalin Naik"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2562-0575",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4e29efe7-5ff0-41a2-8c3b-9ce6e63224b4"
+        }
+      ],
+      "email": "jean.berthelet@onjcri.org.au",
+      "name": "Jean Berthelet"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4261-1670",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a6bd9154-c49d-48c8-840e-e769ddc7efa0"
+        }
+      ],
+      "email": "sabrina.lewis@uni-heidelberg.de",
+      "name": "Sabrina M. Lewis"
+    },
+    {
+      "@id": "#4e29efe7-5ff0-41a2-8c3b-9ce6e63224b4",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Olivia Newton-John Cancer Research Institute"
+    },
+    {
+      "@id": "#a6bd9154-c49d-48c8-840e-e769ddc7efa0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Walter and Eliza Hall Institute of Medical Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#834e5c06-5dfc-476b-8cba-617e763b4374",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse Lung",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#21b6044b-624b-4f1b-8155-d01d63c17547",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Wholemount tissue was imaged on a Lightsheet 7 (Carl Zeiss) microscope. An EC Plan-Neofluar 5x/0.16 detection objective and 5x lightsheet objectives were used to acquire dual-side illuminated, tiled, z-stack images. SVT LeGO and vessel cast images were generated with a resolution of 1.22 μm in xy and 2.88-2.92 μm in z. T-sapphire, Venus, TdTomato and Alexa-647 excitation was captured with lasers 405 nm, 488 nm, 561 nm and 638 nm, respectively. Band pass 505 – 545 nm was used to capture tSapphire and Venus emitted light, band pass 575 - 615 nm was used to capture tdTomato emitted light and long pass 660 nm was used to capture Alexa 647 emitted light. \n\nFor the processing and visualization of these datasets, FIJI can be used to visualise these images in 2D slice mode. In addition, converting to the BigDataViewer can help with opening these datasets using FIJI. Alternatively they can be readily converted into Imaris format for viewing in 3D. The dual side fusion stitched czi files can also be opened on the free Zeiss Zen Lite software (https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-lite.html)",
+      "labEquipment": "Zeiss Lightsheet Z.7",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000369"
+        }
+      ],
+      "name": "Image Acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000369",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "SPIM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 3
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1090423457312
+    }
+  ]
+}

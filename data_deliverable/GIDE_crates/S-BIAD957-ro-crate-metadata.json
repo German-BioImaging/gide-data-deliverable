@@ -1,0 +1,205 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD957"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD957",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#35638613-999e-4f88-8745-cf056b850148"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ddbefaaf-251b-46ec-b849-82041fc291e3"
+        },
+        {
+          "@id": "obo:NCBITaxon_50463"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6688-0539"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8849-0088"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-17",
+      "description": "We present a 3D digital atlas of Cardamine hirsuta ovule development with cellular resolution. The atlas covers all stages from early primordium outgrowth (stage 1-I) to the mature pre-fertilization ovule (stage 3-VI). The atlas provides information about the number of cells, their tissue classification, and about characteristics of cellular morphology, such as cell size and shape, for nearly all cells of the ovule. The complete stagewise ovule dataset is organized by developmental stage. Each developmental stage dataset includes at least 10 samples and each ovule sample possesses a unique sample ID. Sample IDs correspond to 3D z-stacks. Each sample dataset includes raw cell boundaries stack (cell boundaries marked by the cell wall stain SR2200) and nuclei stain stack (TO-PRO3 iodide) obtained from confocal microscopy, neural network-based cell boundary predictions from PlantSeg (https://github.com/hci-unihd/plant-seg), 3D segmented cells stack from the cell boundary predictions using GASP, the annotated 3D cell meshes along with their annotated parent labels in csv format, and the associated cell attribute files in csv format. The 3D mesh files can be opened in the open source software MorphoGraphX (MGX) (www.morphographx.org), the mesh file can be reconverted to obj, stl, ply or any other format of interest in MGX. The high-quality dataset includes 145 wild-type Cardamine hirsuta 3D digital ovules comprising stages 1-I to 3-VI. The file list below includes the sample IDs and their corresponding stages. We also provide the sample-specific cell attributes extracted from 3D cell meshes in MGX. \n\nNomenclature of ovule IDs\n\nA few image stacks comprise multiple ovules attached to the same pistil fragment. In such instances for stages 2-III to 3-VI, the format \"xxxx_A\" represents one ovule of an image stack with more than one ovule attached to the same pistil fragment. For further analysis with the mesh, individual ovules were classified as \"xxxx_A\", \"xxxx_B\", \"xxxx_C\" etc. For example, the dataset \"1785\" encompasses 2 ovules attached to the same pistil fragment. Ovules \"1785A\", \"1785B\" etc represent the individual ovules. One can open the 1785_A mesh and enable the parents to display the labels annotated to the cells in the mesh. The labels are integer values that represent tissue IDs. In general, we follow a pattern of 1-10 tissue labels, except for stages 1-I to 2-II. In case of primordia sample IDs containing mutliple ovules, one can open the ID_cellmesh and enable the parents to display the labels annotated to the radial layers. In this case, the labels are integer values that represent radial layers of each primordium for example, in the same sample ID of primordia, parent labels \"1-3\" represent \"ID_A\" or ovule \"A\", \"11-13\" represent \"ID_B\", \"21-23\" represent \"ID_C\" and so on.\n\nDownload of latest version of MorphoGraphX\n\nTo obtain the latest version of MorphoGraphX please visit the MorphoGraphX website (www.mpipz.mpg.de/MorphoGraphX) or contact Richard Smith by email (Richard.Smith@jic.ac.uk)\n\nOrganism- Cardamine hirsuta\nxxxx_cellboundary Z stack of raw confocal images of cell walls stained with SR2200\nxxxx_nstain Z stack of raw confocal images of nuclei stained with To-Pro-3 iodide\nxxxx_cellboundary_prediction Z stack of neural network based cell boundary predictions obtained from PlantSeg using the raw cell boundary stack.\nxxxx_segmentation Z stack of cells segmented in 3D generated from the cell boundary predictions\nxxxx_cellmesh Cell mesh generated from the segmented stack. The mesh is further processed and cell types within the organ is labelled inside the mesh and is available for visualisation in MGX.\nxxxx_parents Annotated tissue (parent) labels for the encompassed cell IDs in the 3D cell mesh\nxxxx_cellattributes Includes the attributes extracted from the 3D cell mesh dataset\nxxxx \"xxxx\" indicates the ovule sample identity code used in the study",
+      "funder": [],
+      "identifier": "S-BIAD957",
+      "keywords": [
+        "Cardamine hirsuta",
+        "ovule development",
+        "3D digital ovules",
+        "morphogenesis",
+        "topology"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Cardamine wild type ovule atlas: A 3D digital cell atlas of wild-type Cardamine hirsuta ovule development with cellular and tissue resolution",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD957/426b292a-f84c-4edd-a7dc-bd7b534625e1/ab73ec53-fd02-414b-b47d-67b54ff888c3.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD957/daeda2b8-3f88-4bb4-acd1-23145d5070b3/2c19174e-00e4-4493-b717-737cab93b2e2.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6688-0539",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "kay.schneitz@tum.de",
+      "name": "Kay Schneitz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8849-0088",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b"
+        }
+      ],
+      "email": "t.mody@tum.de",
+      "name": "Tejasvinee Mody"
+    },
+    {
+      "@id": "#f9c71eac-d3c3-4095-b28b-a654d9a7f94b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Technical University of Munich"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_50463",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Cardamine hirsuta"
+    },
+    {
+      "@id": "#ddbefaaf-251b-46ec-b849-82041fc291e3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Ovule samples from early primordium outgrowth to the mature pre-fertilization stages",
+      "name": "3D digital atlas of Cardamine hirsuta ovule development",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_50463"
+      }
+    },
+    {
+      "@id": "#35638613-999e-4f88-8745-cf056b850148",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Confocal laser scanning microscopy of ovules stained with SR2200 and TO-PRO-3 iodide was performed on an upright Leica TCS SP8 X WLL2 HyVolution 2 (Leica Microsystems) equipped with GaAsP (HyD) detectors and a 63x glycerol objective (HC PL anterior-posteriorO CS2 63x/1.30 GLYC, CORR CS2). Scan speed was at 400 Hz, the pinhole was set to 1 Airy units, line average between 2 and 4, and the digital zoom between 0.75 and 2. For z-stacks, 12 or 16 bit images were captured at a slice interval of 0.33 μm with voxel size of 0.126 μm x 0.126 μm x 0.33 μm. Laser power or gain was adjusted for z compensation to obtain an optimal z-stack. Image acquisition parameters were the following: SR2200 excitation, 405 nm diode laser (50 mW) with a laser power ranging from 0.1% to 1.5% intensity, detection at 416–476 nm with the gain of the HyD detector set to 20. TO-PRO-3 iodide excitation, white-light laser at 642 nm, with a laser power ranging from 2% to 3.5%, detection at 661 to 795 nm, with the gain of the HyD detector set to 400. Images were adjusted for color and contrast using ImageJ (Rueden et al. 2017) or MorphoGraphX software (Strauss et al. 2022).\n",
+      "labEquipment": "Leica TCS SP8 X WLL2 HyVolution 2 (Leica Microsystems) ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Microscopy and image acquisition of prepared ovule samples"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 843
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 419045230610
+    }
+  ]
+}

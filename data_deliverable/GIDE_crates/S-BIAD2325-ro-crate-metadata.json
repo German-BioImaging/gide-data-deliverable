@@ -1,0 +1,208 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2325"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2325",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#75e88ac6-1941-4d0a-84b6-e93d512a73a2"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9b74d13c-7906-4ff2-83c4-71431a072f07"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#d4d53e31-a108-476f-be62-7da190b77ddc"
+        },
+        {
+          "@id": "#8afa5dff-3f13-4012-a79d-99ffbf1745c1"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-20",
+      "description": "Abstract \nExisting methods to image chromosome segregation errors are not suitable for studying human embryos at advanced preimplantation stages. As chromosomal errors are a leading cause of miscarriage and infertility, it remains unclear whether missegregation arises post-fertilization. Here, we optimise nuclear DNA labelling via mRNA electroporation and apply light-sheet live imaging to reveal chromosome segregation errors immediately before implantation. We show that embryos at advanced preimplantation stages display missegregation, including multipolar spindle formation, lagging chromosomes, misalignment, and mitotic slippage. Most lagging chromosomes are passively inherited rather than reincorporated. To trace individual nuclei, we developed an open-source, semi-automated segmentation method using a customized deep learning model optimized for variability in embryo size, shape and signal. With this approach, we find most labelled cells remain externally positioned, consistent with placental rather than inner cell mass fate. Our findings raise questions about clinical uses of preimplantation genetic testing for aneuploidy, while providing broadly applicable imaging and segmentation methods for studying diverse cellular structures in human embryos.  \n\n \n\nDescription of the imaging:\nLive time-lapse imaging of human blastocyst development labeled with H2B-mCherry. Human blastocysts were electroporated with H2B-mCherry mRNA, resulting in mosaic labelling (not all cells labelled). Fluorescent images were taken every 15 minutes for 46 hours.\n\nHuman embryo thaw:\n\nSlow frozen human embryos were thawed using the Blast thaw kit (Origio; Cat No. 10542010A), following the manufacture’s instructions. Vitrified human embryos were thawed using Vit Kit-Thaw (Fujifilm; Cat No. 90137-SO).\n\n \n\nGeneration of modified mRNAs by in vitro transcription:\n\nThe dsDNA template (H2B-mCherry Plasmid 20972 from Addgene) was linearized, and a small aliquot of the digestion mix was subjected to gel electrophoresis to verify complete digestion. Linearised plasmid was purified using a PCR purification kit (Qiagen, Cat. No. 28104). Poly(A) tailing was carried out using KAPA PCR ready mix (2X) and the following primer sets:\n\nthe forward primer\n\n(CTTACTGGCTTATCGAAATTAATACGA) and the reverse primer (TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTAAACAACAGATGGCTGGCAACTAGAAGG) from Integrated DNA Technologies. Subsequently, the digested plasmid was adjusted to a concentration of 10 ng/μl. Tail PCR was run for 32 cycles and purified using PCR purification kit. In vitro transcription was performed using MEGAscript T7 kit (Thermo Fisher; Cat. No. AMB13345): custom NTP mix was prepared with 3’-O-Me-m7G cap analogue (60 mM, NEB), GTP (75mM, MEGAscript T7 kit), ATP (75mM, MEGAscript T7 kit), Me-CTP (100 mM, TriLink; Cat. No. N-1014-1) and pseudo-UTP (100mM, Tri-link; Cat. No. O-0263). Reaction was heated at 37 C for 2 h. 2 ul of Turbo DNase (Thermo Fisher; Cat. No. AM2238) was added and incubated at 37 C for 15 min. DNAse treated reaction mix was purified using RNAeasy kit (Qiagen; Cat. No. 74104) according to the manufacturer’s instructions. RNA was phosphatase-treated using Antarctic phosphatase (New England BioLabs; Cat. No. M0289S) and purified using MEGAclear kit (Thermo Fisher, Cat. No. AM1909).\n\n \n\nLabelling:\n\nWe transferred 7 µL of the H2B-mCherry mRNA solution onto an electroporation chamber between the electrodes of the plate (CUY501P1-1.5, NEPA GENE Co. Ltd, Sonidel, Ireland). The impedance was adjusted to between 0.19Ω and 0.21Ω (typically 0.20 Ω) by either adding or removing the electroporation solution. The electroporation parameters for human embryos were as follows: 6 poring pulses of 15 V, lasting 2 ms with a 50 ms interval, 10% decay, immediately followed by 5 transfer pulses of 5 V, 40% decay, lasting 50 ms with a 50 ms interval.\n\n \n\nLight sheet imaging:\n\nElectroporated embryos were placed in a fluorinated ethylene propylene (FEP) foil microwell sample holder, containing equilibrated Global medium (LifeGlobal; LGGG-20), supplemented with 5 mg/ml protein supplement (LifeGlobal; LGPS-605), and covered with mineral oil (Origio; ART-4008-5P). We used the LS2-Live dual illumination (Leica Microsystems) and inverted detection microscopes were used for live imaging embryos. Light sheet images were generated by two Nikon 10x 0.2 NA illumination objectives. The illumination beam reaches the sample at an angle of 30° with the horizontal axis crossing an air glass and glass water interfaces. Beam waist of 3.3 µm was selected. Time-lapse images of embryos were captured every 15 minutes for up to 2 days at 37°C and 6% CO2 with either a 16× 0.8 NA or a 25× 1.1 NA objectives. A volume of 150–200 μm was acquired with a Z spacing of 2 μm between slices and 100 ms exposure time for each slice. Laser intensity was minimized to obtain a reasonable signal-to-noise ratio from the raw data while minimizing phototoxicity.\nEthics statement: This study was approved by the UK Human Fertilisation and Embryology Authority (HFEA): research licence numbers R0162, R0397, R0401 and R0152 and independently reviewed by the Health Research Authority’s Research Ethics Committee IRAS projects 308099, 252286 and 272218.\n\nThe process of licence approval entailed independent peer review along with consideration by the HFEA Licence and Executive Committees and the Research Ethics Committee. Our research is compliant with the HFEA Code of Practice and has undergone multiple inspections by the HFEA since the licence was granted.\n\nInformed consent was obtained from all couples that donated surplus embryos following infertility treatment. Before giving consent, donors were provided with information about the research project, an opportunity to receive counselling and the conditions that apply to the research licence. The informed consent included approval of the publication of the results in scientific journals. No financial inducements were offered for donation. All donations were provided pseudonymized at the point of transfer to the research project. Embryos surplus to the patient’s treatment were donated cryopreserved and were transferred to the University of Cambridge and Francis Crick Institute, where they were thawed and used in the research project. Further details about the research project that underwent ethical review can be found here: https://www.trophoblast.cam.ac.uk/Resources/embryo-donations\n\n ",
+      "funder": [],
+      "identifier": "S-BIAD2325",
+      "keywords": [
+        "Human blastocyst",
+        "Time-lapse imaging",
+        "Live imaging",
+        "mRNA electroporation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Live imaging of late-stage preimplantation human embryos reveals late-stage de novo mitotic errors\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#8afa5dff-3f13-4012-a79d-99ffbf1745c1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/013meh722"
+        }
+      ],
+      "email": "kkn21@cam.ac.uk",
+      "name": "Kathy Niakn"
+    },
+    {
+      "@id": "#d4d53e31-a108-476f-be62-7da190b77ddc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#72fb7c93-5603-41fc-a81d-d7d46660a9a0"
+        }
+      ],
+      "email": "aaa206@cam.ac.uk",
+      "name": "Ahmed Mohamed Abdelbaki Abdelaal"
+    },
+    {
+      "@id": "#72fb7c93-5603-41fc-a81d-d7d46660a9a0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of cambridge"
+    },
+    {
+      "@id": "https://ror.org/013meh722",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Cambridge"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9b74d13c-7906-4ff2-83c4-71431a072f07",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "This study was approved by the UK Human Fertilisation and Embryology Authority (HFEA): research licence numbers R0162, R0397, R0401 and R0152 and independently reviewed by the Health Research Authority’s Research Ethics Committee IRAS projects 308099, 252286 and 272218.\n\nThe process of licence approval entailed independent peer review along with consideration by the HFEA Licence and Executive Committees and the Research Ethics Committee. Our research is compliant with the HFEA Code of Practice and has undergone multiple inspections by the HFEA since the licence was granted.\n\nInformed consent was obtained from all couples that donated surplus embryos following infertility treatment. Before giving consent, donors were provided with information about the research project, an opportunity to receive counselling and the conditions that apply to the research licence. The informed consent included approval of the publication of the results in scientific journals. No financial inducements were offered for donation. All donations were provided pseudonymized at the point of transfer to the research project. Embryos surplus to the patient’s treatment were donated cryopreserved and were transferred to the University of Cambridge and Francis Crick Institute, where they were thawed and used in the research project. Further details about the research project that underwent ethical review can be found here: https://www.trophoblast.cam.ac.uk/Resources/embryo-donations. Human blastocysts from 5 to 7 days post fertilisation.",
+      "name": "Live time-lapse imaging of human blastocyst development ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#75e88ac6-1941-4d0a-84b6-e93d512a73a2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": " A volume of 150–200 μm was acquired with a Z spacing of 2 μm between slices and 100 ms exposure time for each slice. Laser intensity was minimized to obtain a reasonable signal-to-noise ratio from the raw data while minimizing phototoxicity.",
+      "labEquipment": "We used the LS2-Live dual illumination (Leica Microsystems) and inverted detection microscopes were used for live imaging embryos. Light sheet images were generated by two Nikon 10x 0.2 NA illumination objectives. The illumination beam reaches the sample at an angle of 30° with the horizontal axis crossing an air glass and glass water interfaces. Beam waist of 3.3 µm was selected. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Lightsheet microscope acquisition "
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 9
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 237241000706
+    }
+  ]
+}

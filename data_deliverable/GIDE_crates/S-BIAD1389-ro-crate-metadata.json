@@ -1,0 +1,197 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1389"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1389",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#894af27c-7e78-4cd2-ade8-a10e30f01c24"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#03903dd1-8f83-4264-a511-fe8997ab0481"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#2dc29873-7a3a-4993-a22f-44c449fddca1"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-06",
+      "description": "Brain development requires the coordinated growth of structures and cues that are essential for forming neural circuits and cognitive functions. The corpus callosum, the largest interhemispheric connection, is formed by the axons of callosal projection neurons through a series of tightly regulated cellular events, including neuronal specification, migration, axon extension and branching. Defects in any of those steps can lead to a range of disorders known as syndromic corpus callosum dysgenesis (CCD). We report five unrelated families carrying bi-allelic variants in WDR47 presenting with CCD together with other neuroanatomical phenotypes such as microcephaly and enlarged ventricles. Using in vitro and in vivo mouse models and complementation assays, we show that WDR47 is required for survival of callosal neurons by contributing to the maintenance of mitochondrial and microtubule homeostasis. We further propose that severity of the CCD phenotype is determined by the degree of the loss of function caused by the human variants. Taken together, we identify WDR47 as a causative gene of a new neurodevelopmental syndrome characterized by corpus callosum abnormalities and other neuroanatomical malformations.",
+      "funder": [],
+      "identifier": "S-BIAD1389",
+      "keywords": [
+        "WDR47, neurodevelopment, corpus callosum dysgenesis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Bi-allelic variants in WDR47 cause a complex neurodevelopmental syndrome ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1389/ea9de699-98f7-4a8b-a24f-832aea1ab602/a2231e32-4433-488f-a55e-5abe366d1097.png"
+      ]
+    },
+    {
+      "@id": "#2dc29873-7a3a-4993-a22f-44c449fddca1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6f46aea6-3584-48be-bd77-2342e5b04ceb"
+        }
+      ],
+      "email": "godin@igbmc.fr",
+      "name": "Juliette Godin"
+    },
+    {
+      "@id": "#6f46aea6-3584-48be-bd77-2342e5b04ceb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut de génétique et de biologie moléculaire et cellulaire"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#03903dd1-8f83-4264-a511-fe8997ab0481",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "images of mouse postal corpus callosum, of primary culture of neurons from WT and WDR47 tm1a mice, of mouse cortical plate after in utero electroporation, and 16weeks mouse brains.",
+      "name": "Data source images",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#894af27c-7e78-4cd2-ade8-a10e30f01c24",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images for migration analysis were acquired in 1024x1024 mode using confocal microscope (TCS SP8X; Leica) at 20X magnification with a z stack of 1,5 μm. For in vivo CC analysis: Images were acquired using a Zeiss Axio Observer 7 microscope equipped with a 10x/0.45 plan Apochromat objective controlled by zen 3.3 software, with a CMOS sensor camera (Hamamatsu Orca Flash 4.0 LT Plus). Primary neurons were imaged once every day from DIV3 to DIV10 using a Zeiss Axio Observer 7 microscope equipped with a 10x/0.45 plan Apochromat objective controlled by Zen 3.3 software, with a CMOS sensor camera (Hamamatsu Orca Flash 4.0 LT Plus) and an incubation chamber (37°C, 5% CO2).",
+      "labEquipment": "Nanozommer 2.0HT, C9600 series at 20× resolution for mouse brain at P60. TCS SP8X; Leica for migration studies and Axio Observer 7 microscope for CC analysis and primary neurons recordings.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 39
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 33782832088
+    }
+  ]
+}

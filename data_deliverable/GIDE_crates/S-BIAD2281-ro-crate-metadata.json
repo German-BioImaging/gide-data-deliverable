@@ -1,0 +1,216 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2281"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2281",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#51754164-2adf-4eec-b6f7-c7de01aec47c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ad8efdcb-d80e-4c91-ba29-f69cff0216dc"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#f4ae8c73-347d-4c68-ab59-f654c03400bc"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-30",
+      "description": "In vitro human organoid models have become transformative tools for studying organogenesis, for example, spinal cord organoids (SCOs) mimic aspects of spinal cord biology. However, current models do not produce spinal motor neurons (spMNs) with a wide range of axial identities along spinal cord segments within a single structure, limiting their utility in understanding human neural axial specification and the selective vulnerability of spMN subpopulations in motor neuron diseases. Here, we present a novel approach to enhance spMN axial heterogeneity in an advanced SCO model derived from neural stem cells (NSCs) and retinoic acid (RA)-primed neuromesodermal progenitors (NMPs). RA priming directed NMP differentiation into caudal neural progenitors, yielding SCOs enriched in spMNs with posterior axial identities. To further spMN axial diversity, we developed a novel, differentiation protocol, that combines NSCs with RA-primed NMPs, generating comprehensive axial SCOs (CASCOs) containing spMNs with segmental identities spanning cervical to lumbar regions, which self-organized into spatially distinct domains. CASCOs were electrophysiologically active, and the incorporation of either an endothelial-like network or skeletal muscle cells enhanced physiological complexity, neural maturation and overall organoid viability. This comprehensive approach provides a robust platform for studying human spMN specification and modeling neurodegenerative disease mechanisms.\n\nContained in this repository are raw images for Figures 6A-C, 8C, and 8E. All other raw image data can be found on the publishers website.",
+      "funder": [],
+      "identifier": "S-BIAD2281",
+      "keywords": [
+        "Immunostaining",
+        "Confocal Imaging",
+        "Spinal Cord Organoids",
+        "In vitro Models",
+        "Axial Heterogeneity",
+        "Neuromesodermal Progenitors",
+        "Homeobox Genes"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Synchronous 3D patterning of diverse CNS progenitors yields spinal cord organoids with cervical-to-lumbar motor neurons",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2281/8dfa006b-e7e0-428a-b16c-ade1cd4d78c1/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#f4ae8c73-347d-4c68-ab59-f654c03400bc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/043j0f473"
+        }
+      ],
+      "email": "muelalabdd@gmail.com",
+      "name": "Natalia Rodriguez-Muela"
+    },
+    {
+      "@id": "https://ror.org/043j0f473",
+      "@type": [
+        "Organization"
+      ],
+      "name": "German Center for Neurodegenerative Diseases"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#ad8efdcb-d80e-4c91-ba29-f69cff0216dc",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "hiPSC-derived Spinal Cord Organoids.",
+      "name": "hiPSC-derived Spinal Cord Organoids",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#51754164-2adf-4eec-b6f7-c7de01aec47c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Z-stacks were acquired with z-intervals determined by Nyquist sampling. Z-stacks of ≥12 µm thickness with 1 µm intervals were acquired, and the Extended Depth of Focus (EDF) mode was applied to process them into projection images. Maximum Intensity Projections were generated, and tiles were stitched with 15% overlap using Hoechst 33342 as reference. Images were uniformly sharpened by 20% and adjusted for contrast, brightness, and gamma using consistent LUT settings and background thresholds across groups.",
+      "labEquipment": "Organoids were imaged on a Zeiss Spinning Disk system on an Axis-Observer.Z1 with a Yokogawa CSU-X1 and a Zeiss Axiocam 506, using automated scans of manually selected regions with a 20x/0.8 Plan-Apochromat Air Objective, or 10x/0.45 Plan-Apochromat Air Objective, or 40x/0.95 Plan-Apochromat Air Objective",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Confocal SCO Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 132
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8282687510
+    }
+  ]
+}

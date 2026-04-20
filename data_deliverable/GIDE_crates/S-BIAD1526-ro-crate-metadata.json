@@ -1,0 +1,278 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1526"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1526",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#dbf86717-fb01-4c50-85cd-6ffe3bd12bb4"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9142e998-7dd5-46dd-98f4-88bf121cf09a"
+        },
+        {
+          "@id": "obo:NCBITaxon_6248"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ae56bb27-3d4b-4c4e-bee2-70fda08cbbff"
+        },
+        {
+          "@id": "#e62e8013-3076-47b5-98c0-f73389e4663c"
+        },
+        {
+          "@id": "#94e8c5fc-dc1b-4d5e-975b-910988928e11"
+        },
+        {
+          "@id": "#5aae0053-f1e6-4ef9-9f36-238d2756128f"
+        },
+        {
+          "@id": "#f59b7516-71fd-4551-9204-9d0d4e5bdb7d"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0260-3174"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-23",
+      "description": "Raw imaging data files for Banerjee et al. 2025 Current Biology",
+      "funder": [],
+      "identifier": "S-BIAD1526",
+      "keywords": [
+        "Carbon dioxide, Strongyloides stercoralis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Carbon dioxide shapes parasite-host interactions in a human-infective nematode.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1526/adc22454-2597-47b2-98ba-2c34586d17d7/03b7b11d-db15-4a85-923b-22f839a59540.png"
+      ]
+    },
+    {
+      "@id": "#5aae0053-f1e6-4ef9-9f36-238d2756128f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "breannawalsh@g.ucla.edu",
+      "name": "Breanna Walsh"
+    },
+    {
+      "@id": "#94e8c5fc-dc1b-4d5e-975b-910988928e11",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "mcastelletto@ucla.edu",
+      "name": "Michelle Castelletto"
+    },
+    {
+      "@id": "#ae56bb27-3d4b-4c4e-bee2-70fda08cbbff",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "nbanerjee1@ucla.edu",
+      "name": "Navonil Banerjee"
+    },
+    {
+      "@id": "#e62e8013-3076-47b5-98c0-f73389e4663c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03tg3h819"
+        }
+      ],
+      "email": "sgang2023@coloradocollege.edu",
+      "name": "Spencer Gang"
+    },
+    {
+      "@id": "#f59b7516-71fd-4551-9204-9d0d4e5bdb7d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/007ps6h72"
+        }
+      ],
+      "email": "fruiz@fredhutch.org",
+      "name": "Felicitas Ruiz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0260-3174",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f270c395-b369-47cc-8f34-862290942b7f"
+        }
+      ],
+      "email": "ehallem@ucla.edu",
+      "name": "Elissa Hallem"
+    },
+    {
+      "@id": "#f270c395-b369-47cc-8f34-862290942b7f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "@id": "https://ror.org/007ps6h72",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Fred Hutch Cancer Center"
+    },
+    {
+      "@id": "https://ror.org/03tg3h819",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Colorado College"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6248",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Strongyloides stercoralis"
+    },
+    {
+      "@id": "#9142e998-7dd5-46dd-98f4-88bf121cf09a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Neurons, Genes",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6248"
+      }
+    },
+    {
+      "@id": "#dbf86717-fb01-4c50-85cd-6ffe3bd12bb4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": " single focal plane images or z-stacks were captured.",
+      "labEquipment": "Zeiss AxioObserver inverted microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 264
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 326431480048
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/23-Shirai-ESCellTissue/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/23-Shirai-ESCellTissue/",
+      "@type": "Dataset",
+      "identifier": "23-Shirai-ESCellTissue",
+      "name": "23-Shirai-ESCellTissue",
+      "description": "23-Shirai-ESCellTissue",
+      "datePublished": "2017-10-03",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Differentiation",
+        "Cobalt/toxicity",
+        "Disease Models, Animal",
+        "Haplorhini",
+        "Human Embryonic Stem Cells/cytology[major]",
+        "Humans",
+        "Photoreceptor Cells/pathology",
+        "Primates",
+        "Rats",
+        "Retina/cytology[major]",
+        "Retina/transplantation[major]",
+        "Retinal Degeneration/chemically induced",
+        "Retinal Degeneration/pathology",
+        "Retinal Degeneration/surgery[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        },
+        {
+          "@id": "#auth-011"
+        },
+        {
+          "@id": "#auth-012"
+        },
+        {
+          "@id": "#auth-013"
+        },
+        {
+          "@id": "#auth-014"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.1512590113"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005623"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-53"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Michiko Mandai",
+      "email": "mmandai@cdb.riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hiroshi Shirai"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Michiko Mandaia"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Keizo Matsushitaa"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Atsushi Kuwaharac"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Shigenobu Yonemuraf"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Tokushige Nakanod"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Juthaporn Assawachananonta"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Toru Kimurac"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Koichi Saitoe"
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Hiroko Terasakib"
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Mototsugu Eirakug"
+    },
+    {
+      "@id": "#auth-013",
+      "@type": "Person",
+      "name": "Yoshiki Sasaid"
+    },
+    {
+      "@id": "#auth-014",
+      "@type": "Person",
+      "name": "Masayo Takahashi"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.1512590113",
+      "@type": "ScholarlyArticle",
+      "name": "Transplantation of human embryonic stem cell-derived retinal tissue in two primate models of retinal degeneration.",
+      "datePublished": "2016"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "ES",
+      "description": "ES",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005623",
+      "@type": "DefinedTerm",
+      "name": "cell"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 2162290,
+      "description": "2.2 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

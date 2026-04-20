@@ -1,0 +1,219 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1962"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1962",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#ff2d6bce-42c0-4bfd-91bb-a129ff401ea2"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#f329b075-f591-4f19-bf96-ce9f30e91455"
+        },
+        {
+          "@id": "obo:NCBITaxon_7955"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7907-1247"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2672-7705"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1375-4157"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-20",
+      "description": "Images of enhancer reporter assay of synthetic enhancers in zebrafish. Enhancers were designed for cardiac muscle, somatic muscle or endothelial cells.",
+      "funder": [],
+      "identifier": "S-BIAD1962",
+      "keywords": [
+        "Enhancer",
+        "enhancer reporter",
+        "zebrafish",
+        "CREsted"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Enhancer reporter assays of synthetic somatic muscle, cardiac muscle and endothelial enhancers in zebrafish.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1962/4d7aac73-fa84-4173-ac87-d211ce0e6c0b/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7907-1247",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/045c7t348"
+        }
+      ],
+      "email": "seppe.dewinter@kuleuven.be",
+      "name": "Seppe De Winter"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1375-4157",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/045c7t348"
+        }
+      ],
+      "email": "katina.spanier@kuleuven.be",
+      "name": "Katina Spanier"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2672-7705",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/045c7t348"
+        }
+      ],
+      "email": "valerie.bercier@kuleuven.be",
+      "name": "Valérie Bercier"
+    },
+    {
+      "@id": "https://ror.org/045c7t348",
+      "@type": [
+        "Organization"
+      ],
+      "name": "VIB-KU Leuven Center for Brain & Disease Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_7955",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Danio rerio"
+    },
+    {
+      "@id": "#f329b075-f591-4f19-bf96-ce9f30e91455",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole animal",
+      "name": "Zebrafish embryo",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_7955"
+      }
+    },
+    {
+      "@id": "#ff2d6bce-42c0-4bfd-91bb-a129ff401ea2",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The Lumencor Spectra III using the green channel was used to excite GFP\nfluorescence, using excitation filter Semrock FF01-378/474/554/635/735-25 and dichroic mirror\nFF409/493/573/652/759-Di01-25x36. Semrock FF01-515/30-25 was used as an emission filter.\nNIS element V6 software was used to control the microscope.",
+      "labEquipment": "spinning disk confocal microscope consisting of a Nikon Ti2 body and Crest X-Light V2 spinning disk using a 10x Plan Apo Lambda lens with numerical aperture of 0.45 and 20x Plan Apo Lambda lens with numerical aperture of 0.8.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Spinning disk confocal"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 103
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 290405515264
+    }
+  ]
+}

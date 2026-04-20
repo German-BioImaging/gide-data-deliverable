@@ -1,0 +1,198 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD619"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD619",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c3408e36-6d4e-47a5-99a8-c174131a894d"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#39c4fa4e-a1c5-44ba-8436-a23eddc9144a"
+        },
+        {
+          "@id": "#66abb7bb-3e29-4944-b0bf-91656c2aeea7"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1982-1509"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-02-01",
+      "description": "Mitophagy is a form of selective autophagy that disposes of superfluous and potentially damage-inducing organelles in a tightly controlled manner. While the machinery involved in mitophagy induction is well known, the regulation of the components is less clear. Here, we demonstrate that TNIP1 knock out accelerates mitophagy rates, and that ectopic TNIP1 negatively regulates the rate of mitophagy. These functions of TNIP1 depend on an evolutionarily conserved LIR motif as well as an AHD3 domain, which are required for binding to the LC3/GABARAP family of proteins and the autophagy receptor TAX1BP1, respectively. We further show that phosphorylation appears to regulate its association with the ULK1 complex member FIP200, allowing TNIP1 to compete with autophagy receptors, providing a molecular rationale for its inhibitory function during mitophagy. Taken together, our findings identify a novel negative regulator of mitophagy that acts at the early steps of autophagosome biogenesis. ",
+      "funder": [],
+      "identifier": "S-BIAD619",
+      "keywords": [
+        "autophagy TNIP1 LC3/GABARAP FIP200 Recruitment"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Autophagy component recruitment to TNIP1 upon chemical-induced dimerization",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD619/760f8ef3-4487-4084-b9fd-38f16c9d4c11/dd16f3b3-a7a6-484a-ae4f-0e0b65b35653.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1982-1509",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#eb4f340a-1767-42ff-a811-3b9d3c67834b"
+        }
+      ],
+      "email": "francois.leguerroue@nih.gov",
+      "name": "Francois Le Guerroue"
+    },
+    {
+      "@id": "#eb4f340a-1767-42ff-a811-3b9d3c67834b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National Institutes of Health"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#39c4fa4e-a1c5-44ba-8436-a23eddc9144a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells",
+      "name": "LC3B/GABARAP protein recruitment",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#66abb7bb-3e29-4944-b0bf-91656c2aeea7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells",
+      "name": "FIP200 endogenous staining",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c3408e36-6d4e-47a5-99a8-c174131a894d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40x water objective (NA 1.15) . Nine sites were imaged per well in triplicate wells.",
+      "labEquipment": "Cells seeded into a 96 well plate (MGB096-1-2-LG-L) were imaged on a Nikon Ti2-E microscope with a CSU-W1 spinning disk, Hamamatsu ORCA-FLASH 4.0 sCMOS camera.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image aquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 84
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12685295616
+    }
+  ]
+}

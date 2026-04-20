@@ -1,0 +1,362 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1752"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1752",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#2572d6b3-cbd8-46d8-a458-dc4e63db4346"
+        },
+        {
+          "@id": "#ad447cd7-d728-4276-9b7d-0debad4a34ba"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#5cf2603e-c17d-455f-a2dd-90d887373df8"
+        },
+        {
+          "@id": "#378065de-1b4a-4b57-a075-f58c9f95a077"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#547d8f74-7ca2-4534-9ee4-3bd518b8e78f"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8501-8028"
+        },
+        {
+          "@id": "#63f3590d-fd28-4a47-96c3-7ab02c512dcf"
+        },
+        {
+          "@id": "#500dc991-bb71-4f13-9ffa-748332743f33"
+        },
+        {
+          "@id": "#216f0994-ee5f-44bf-9832-3b81fd82f72c"
+        },
+        {
+          "@id": "#88b1b04a-e24a-4f15-a07b-e32719446ffc"
+        },
+        {
+          "@id": "#cb2d133c-e0b4-47a2-84f4-ec10f1333a27"
+        },
+        {
+          "@id": "#c1322012-c0d7-4c12-9b49-81fa929e3de4"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-03-27",
+      "description": "SUMMARY. Here, we provide the image datasets supporting the development of CellCycleNet, a cell cycle stage classifier tool. We imaged thousands of fixed interphase mouse fibroblast cells containing a Fluorescent Ubiquitination-based Cell Cycle Indicator-2a (Fucci-2a) transgene, stained with DAPI, from two common fluorescent microscope modalities: widefield epifluorescence and spinning-disk confocal microscopy.\n\nABSTRACT. The cell cycle governs proliferation of all eukaryotic cells. Profiling cell cycle dynamics is therefore central to basic and biomedical research. However, current approaches to cell cycle profiling involve complex interventions that may confound experimental interpretation. We developed CellCycleNet, a machine learning (ML) workflow, to simplify cell cycle staging from fluorescent microscopy data with minimal experimenter intervention and cost. CellCycleNet accurately predicts cell cycle phase using only a fluorescent nuclear stain (DAPI) in fixed interphase cells. Using the Fucci2a cell cycle reporter system as ground truth, we collected two benchmarking image datasets and trained 2D and 3D ML models—of support vector machine (SVM) and deep neural network architecture—to classify nuclei in the G1 or S/G2 phases. Our results show that 3D CellCycleNet outperforms SVM models on each dataset. When trained on two image datasets simultaneously, CellCycleNet achieves the highest classification accuracy (AUROC of 0.94-0.95). Overall, we found that using 3D features, rather than 2D features alone, significantly improves classification performance for all model architectures. We released our image data, models, and software as a community resource.",
+      "funder": [],
+      "identifier": "S-BIAD1752",
+      "keywords": [
+        "cell cycle",
+        "FUCCI ",
+        "fibroblast",
+        "mouse",
+        "machine learning",
+        "artificial intelligence",
+        "support vector machine",
+        "convolutional neural network",
+        "classifier",
+        "DNA stain",
+        "DAPI",
+        "mCherry",
+        "mVenus",
+        "hCdt1",
+        "hGeminin",
+        "GFP",
+        "RFP",
+        "Fucci-2a",
+        "interphase",
+        "fixed",
+        "epifluorescence",
+        "spinning disk confocal",
+        "confocal ",
+        "40x",
+        "60x",
+        " model"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Predicting cell cycle stage from 3D single-cell nuclear stained images.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1752/87fbe9db-f73a-4562-b9c6-3d96f080a8bc/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#216f0994-ee5f-44bf-9832-3b81fd82f72c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "msforman@uw.edu",
+      "name": "Madison Sanchez-Forman"
+    },
+    {
+      "@id": "#500dc991-bb71-4f13-9ffa-748332743f33",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "longnic@uw.edu",
+      "name": "Nicolas J. Longhi"
+    },
+    {
+      "@id": "#547d8f74-7ca2-4534-9ee4-3bd518b8e78f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "gangliuw@uw.edu",
+      "name": "Gang Li"
+    },
+    {
+      "@id": "#63f3590d-fd28-4a47-96c3-7ab02c512dcf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "vbrow@uw.edu",
+      "name": "Valentino E. Browning"
+    },
+    {
+      "@id": "#88b1b04a-e24a-4f15-a07b-e32719446ffc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "concamp@uw.edu",
+      "name": "Conor K. Camplisson"
+    },
+    {
+      "@id": "#c1322012-c0d7-4c12-9b49-81fa929e3de4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "wnoble@uw.edu",
+      "name": "Willam S. Noble"
+    },
+    {
+      "@id": "#cb2d133c-e0b4-47a2-84f4-ec10f1333a27",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "beliveau@uw.edu",
+      "name": "Brian J. Beliveau"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8501-8028",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2"
+        }
+      ],
+      "email": "eknich@uw.edu",
+      "name": "Eva K. Nichols"
+    },
+    {
+      "@id": "#2fde0bf4-67fa-4ad7-a899-51e8eeb869a2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Washington"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#378065de-1b4a-4b57-a075-f58c9f95a077",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "3T3 mouse fibroblasts.",
+      "name": "CellCycleNet 60x Confocal Dataset",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#5cf2603e-c17d-455f-a2dd-90d887373df8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "3T3 mouse fibroblasts.",
+      "name": "CellCycleNet 40x Epifluorescence Dataset",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#2572d6b3-cbd8-46d8-a458-dc4e63db4346",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All images were acquired using the Keyence Plan Apochromatic 40x objective lens (model PZ-PA40, PlanApo NA 0.95/0.17 mm default). A tiled acquisition was obtained over approximately 5 square millimeters of the cell culture plate, at fixed z range of 35 µm, z-step of 0.5 µm, and optical sectioning width of 10. 100% excitation light (metal halide lamp) was used with no binning and monochromatic camera with a digital zoom of x1.0. Each image consists of three fluorescent channels: nuclear stain DAPI (using the DAPI filter cube; model OP-87762, 360/40 nm excitation filter, 400 nm longpass dichroic mirror, 460/50 nm emission filter; 1/1.2s exposure time), the mVenus-hGeminin-AF488 signal (via the GFP filter cube; model OP-87763, excitation wavelength 470/40 nm, emission wavelength 525/50 nm, dichroic mirror wavelength 495 nm; 1/2.3s exposure time), and the mCherry-hCdt1-AF555 signal (via the Cy3/TRITC filter cube; CHROMA model 49004, excitation wavelength 545/25 nm, emission wavelength 605/70 nm, dichroic mirror wavelength 565 nm; 1/7.5s exposure time). An integrated CCD camera was used in 14-bit mode, without binning and with a physical pixel size of 7.549 µm, resulting in an effective pixel size of 188.7 nm while imaging at 40x magnification. The final dataset used for analysis and model training consists of 19,170 total images over 90 tiled z-stacks (71 images per z-stack) and 3 channels; each image is 1440x1920 pixels. The voxel size for each image in the dataset was 188nm*188nm*500nm (X*Y*Z).",
+      "labEquipment": "The epifluorescence image dataset was acquired using a Keyence BZ-X800 fluorescence microscope.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "CellCycleNet 40x Epifluorescence Dataset"
+    },
+    {
+      "@id": "#ad447cd7-d728-4276-9b7d-0debad4a34ba",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A tiled acquisition was obtained over approximately 21 square millimeters of the cell culture plate, at fixed z range of 30 µm and z-step of 0.2 µm. Each image consists of three fluorescent channels, using excitation light emitted at 30 percent maximal intensity from 405 nm, 488 nm, and 561 nm lasers housed in a Nikon LUNF 405/488/561/640NM 1F commercial launch. The nuclear stain DAPI was excited by the 405 nm laser line at 300 ms exposure; the mVenus-hGeminin-AF488 signal was excited by the 488 nm laser line at 300 ms exposure; the mCherry-hCdt1-AF555 signal was excited by the 561 nm laser line at 300 ms exposure. Laser excitation was conveyed through a single-mode optical fiber fed into the CSU-W1 SoRa unit and directed through a microlens array and ’SoRa’ disc containing 50 µm pinholes. A Nikon Plan Apochromat Lambda 60X air objective lens (NA 0.95/0.17 mm) was used to project the excitation and collects the emission light. Emission light was relayed by a 1x lens, through the pinhole disc, after which it was spectrally separated by a quad bandpass dichroic mirror (Semrock Di01-T405/488/568/647-13x15x0.5) and then filtered by one of three single bandpass filters (DAPI: Chroma ET455/50M; mVenus-hGeminin-AF488: Chroma ET525/36M; mCherry-hCdt1-AF555:Chroma ET605/50M). Emission light was then focused by a 1x relay lens onto an Andor Sona 4.2B-11 camera with a physical pixel size of 11 µm, resulting in an effective pixel size of 110 nm. The Andor Sona 4.2B-11 camera was operated in 16-bit mode with rolling shutter. The final dataset used for analysis and model training consists of 625 tiled z-stacks (150 images per z-stack) and 3 channels; each image is 1024x1024 pixels. The voxel size for each image in the dataset was 182nm*182nm*200nm (X*Y*Z).",
+      "labEquipment": "The confocal image dataset was acquired using a Nikon Ti2 inverted fluorescence microscope with a Yokogawa CSU W-1 SoRa spinning disk unit.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "CellCycleNet 60x Confocal Dataset"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2725
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1157390668557
+    }
+  ]
+}

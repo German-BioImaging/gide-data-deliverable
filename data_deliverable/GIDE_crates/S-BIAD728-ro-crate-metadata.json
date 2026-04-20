@@ -1,0 +1,203 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD728"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD728",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0b640d36-36ff-4f15-8074-91d4f2492b6a"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#644da285-660f-4218-a9ce-1d7c23dbf258"
+        },
+        {
+          "@id": "obo:NCBITaxon_37688"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9502-3306"
+        },
+        {
+          "@id": "#a1514163-ca90-4cb7-8e2a-9bf7d40b1116"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-06-15",
+      "description": "confocal and TEM images of Spirostomum ambiguum, showing the entangled architecture of RER and vacuoles.",
+      "funder": [],
+      "identifier": "S-BIAD728",
+      "keywords": [
+        "Spirostomum ambiguum",
+        "confocal microscopy",
+        "TEM"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Entangled architecture of rough endoplasmic reticulum (RER) and vacuoles enables topological damping in cytoplasm of an ultra-fast giant cell",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD728/9d3cb55b-2547-42a9-9876-4f33a1363e92/edabd480-d60b-4311-a86b-f1ed57420680.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD728/7cdb7e4d-f995-4b3b-9481-a718dcfd5d64/77ef6390-2c46-4a60-a574-cfe2f24f5b36.png"
+      ]
+    },
+    {
+      "@id": "#a1514163-ca90-4cb7-8e2a-9bf7d40b1116",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "manup@stanford.edu",
+      "name": "Manu Prakash"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9502-3306",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "email": "jrchang612@gmail.com",
+      "name": "Ray Chang"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_37688",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Spirostomum ambiguum"
+    },
+    {
+      "@id": "#644da285-660f-4218-a9ce-1d7c23dbf258",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mature Spirostomum ambiguum",
+      "name": "Spirostomum ambiguum",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_37688"
+      }
+    },
+    {
+      "@id": "#0b640d36-36ff-4f15-8074-91d4f2492b6a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "- Live cell imaging and high speed imaging\nThe live imaging was performed as previously described method. In brief, the organisms were introduced in a rectangular microfluidic chip (length 2.2cm, width 1cm, height 150μm) of glass slides with copper side walls which act as electrodes. A high speed camera (Phantom V1210 camera, 10000fps) mounted to the microscope (Nikon ECLIPSE Ti2, 40X DIC objective) and an electrophysiological DC pulse generator (Grass instruments, S88) were synchronized with a micro-controller (Arduino Uno). Pulse voltage and duration were chosen according to previously reported results.\n\n- Transmission Electron Microscopy\nSpirostomum ambiguum were fixed in 2% glutaraldehyde with 4% paraformaldehyde in 1X PHEM buffer for at least one hour at room temperature. The samples were stained with Safranin-O and stabilized in 1% low melting point agarose, then cut into 1mm cubes. Samples were rinsed (3×; 10 min, room temperature (RT)) in 1X PBS, and immersed in 1% osmium tetroxide with 1.6% potassium ferricyanide in 1xPBS, pH 7.4 for 1 hour. Samples were rinsed (3×; 10 min, RT) in buffer and then briefly in distilled water. Samples were then subjected to an ascending acetone gradient (10min; 35%, 50%, 70%, 80%, 90%) followed by pure acetone (2×; 10 min, RT). Samples were progressively infiltrated with Epon resin (EMS, Hatfield, PA, USA), while rocking, and then polymerized at 60℃ for 24-48 hours in silicon molds. Thick sections (200 nm) were cut using a Leica UC6 ultramicrotome (Leica, Wetzlar, Germany), collected on glass slides and used for general orientation. Thin sections (70-80 nm) were collected onto formvar-coated 50 mesh copper grids. Thin sections were\npost-stained with 2% aqueous uranyl acetate and Reynold’s lead citrate, 5 mins each. Then sections were either imaged using a Tecnai 12 120kV TEM (FEI, Hillsboro, OR, USA) and data recorded using an UltraScan 1000 with Digital Micrograph 3 software (Gatan Inc., Pleasanton, CA, USA) at UC Berkeley, or imaged in the JEOL JEM-1400 120kV with photo taken using a Gatan Orius 2k X 2k digital camera at Stanford University. The montage image was created by SerialEM. All segmentation of organelles was done manually on Fiji.\n\n- Confocal Imaging\nSpirostomum ambiguum were stained alive in 625ng/mL DiOC6(3) (Sigma-Aldrich catalog #318426-250MG) and 500nM MitoTracker™ Orange CMTMRos (Thermo Fisher Scientific catalog #M7510) for 30 minutes, followed by washing steps in 1X Carter’s media. The cells are then fixed in Bouin’s solution for 30 minutes, and washed in 1X Carter’s media until the supernatant becomes completely transparent and without any yellow-tinged color. The fixed samples are then stained with Hoechst 33342 (Invitrogen catalog #H3579) in 1:1000 dilution for 15 minutes, followed by washing steps in 1X Carter’s media. The fixed samples are transferred to a glass slide, mounted in Vectashield antifade mounting media (Vector labs catalog #H-1000), and sealed with #1.5 coverslip. All Chemicals are diluted from stock solution using 1X Carter’s media.\nWe used Bouin’s solution as our fixatives because of its better preservation of soft and delicate structures. However, as the picric acid is a strong oxidizer and may impact the fluorophores, we used a much shorter fixation time, and all the imaging was done within 24 hours after the fixation. The confocal imaging was done on an inverted Zeiss LSM 780 multiphoton laser scanning confocal microscope, using PLAN APO 63X oil objective (NA 1.4).",
+      "labEquipment": "- Live cell imaging and high speed imaging\nThe live imaging was performed as previously described method. In brief, the organisms were introduced in a rectangular microfluidic chip (length 2.2cm, width 1cm, height 150μm) of glass slides with copper side walls which act as electrodes. A high speed camera (Phantom V1210 camera, 10000fps) mounted to the microscope (Nikon ECLIPSE Ti2, 40X DIC objective) and an electrophysiological DC pulse generator (Grass instruments, S88) were synchronized with a micro-controller (Arduino Uno). Pulse voltage and duration were chosen according to previously reported results.\n\n- Transmission Electron Microscopy\nSpirostomum ambiguum were fixed in 2% glutaraldehyde with 4% paraformaldehyde in 1X PHEM buffer for at least one hour at room temperature. The samples were stained with Safranin-O and stabilized in 1% low melting point agarose, then cut into 1mm cubes. Samples were rinsed (3×; 10 min, room temperature (RT)) in 1X PBS, and immersed in 1% osmium tetroxide with 1.6% potassium ferricyanide in 1xPBS, pH 7.4 for 1 hour. Samples were rinsed (3×; 10 min, RT) in buffer and then briefly in distilled water. Samples were then subjected to an ascending acetone gradient (10min; 35%, 50%, 70%, 80%, 90%) followed by pure acetone (2×; 10 min, RT). Samples were progressively infiltrated with Epon resin (EMS, Hatfield, PA, USA), while rocking, and then polymerized at 60℃ for 24-48 hours in silicon molds. Thick sections (200 nm) were cut using a Leica UC6 ultramicrotome (Leica, Wetzlar, Germany), collected on glass slides and used for general orientation. Thin sections (70-80 nm) were collected onto formvar-coated 50 mesh copper grids. Thin sections were\npost-stained with 2% aqueous uranyl acetate and Reynold’s lead citrate, 5 mins each. Then sections were either imaged using a Tecnai 12 120kV TEM (FEI, Hillsboro, OR, USA) and data recorded using an UltraScan 1000 with Digital Micrograph 3 software (Gatan Inc., Pleasanton, CA, USA) at UC Berkeley, or imaged in the JEOL JEM-1400 120kV with photo taken using a Gatan Orius 2k X 2k digital camera at Stanford University. The montage image was created by SerialEM. All segmentation of organelles was done manually on Fiji.\n\n- Confocal Imaging\nSpirostomum ambiguum were stained alive in 625ng/mL DiOC6(3) (Sigma-Aldrich catalog #318426-250MG) and 500nM MitoTracker™ Orange CMTMRos (Thermo Fisher Scientific catalog #M7510) for 30 minutes, followed by washing steps in 1X Carter’s media. The cells are then fixed in Bouin’s solution for 30 minutes, and washed in 1X Carter’s media until the supernatant becomes completely transparent and without any yellow-tinged color. The fixed samples are then stained with Hoechst 33342 (Invitrogen catalog #H3579) in 1:1000 dilution for 15 minutes, followed by washing steps in 1X Carter’s media. The fixed samples are transferred to a glass slide, mounted in Vectashield antifade mounting media (Vector labs catalog #H-1000), and sealed with #1.5 coverslip. All Chemicals are diluted from stock solution using 1X Carter’s media.\nWe used Bouin’s solution as our fixatives because of its better preservation of soft and delicate structures. However, as the picric acid is a strong oxidizer and may impact the fluorophores, we used a much shorter fixation time, and all the imaging was done within 24 hours after the fixation. The confocal imaging was done on an inverted Zeiss LSM 780 multiphoton laser scanning confocal microscope, using PLAN APO 63X oil objective (NA 1.4).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Live cell imaging, confocal imaging and TEM protocol"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 18
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 15129924906
+    }
+  ]
+}

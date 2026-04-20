@@ -1,0 +1,240 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1134"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1134",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b64ae7e2-c038-4420-90a1-c87ed1647a66"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#71db1d99-9928-476d-b1ff-ce3747d1fb20"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2018-2986"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-3956-9363"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8579-4919"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-30",
+      "description": "This dataset contains a 3D movie of an MCF10A acini. Three fluorescence channels encode a nuclear marker for segmentation and tracking, and reporters for CDK2 and ERK activity. \n\nData dimensions: [t,c,z,y,x] -> [145, 3, 188, 188, 188]\nData format: zarr, \nVoxel size: 0.29x0.29x0.29 μm/px\nTime resolution: 5min/frame\n\nChannels:\nC0: ERK-KTR-mTurquoise2 (ERK activity)\nC1: DHB-mRuby2 (CDK2 activity)\nC2: H2B-miRFP703 (nuclear marker)\n\nThe dataset is used in the paper accompanying conv-paint, an interactive image segmentation tool for napari. The paper will be linked as soon as a preprint is published. The dataset is an interesting test set for various image analysis tools, especially because of its high dimensionality. Stored as a zarr array, it can be drag-and-dropped into the image viewer napari for interactive visualisation and exploration. Each chunk represents one time point.",
+      "funder": [],
+      "identifier": "S-BIAD1134",
+      "keywords": [
+        "lightsheet",
+        "timelapse",
+        "3d",
+        "zarr",
+        "organoid",
+        "MCF10A",
+        "fluorescence"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Light sheet 3D timelapse of a human breast cell acini",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8579-4919",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3cfda99f-0444-4fac-98a0-841852770f99"
+        }
+      ],
+      "email": "olivier.pertz@unibe.ch",
+      "name": "Olivier Pertz"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2018-2986",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3cfda99f-0444-4fac-98a0-841852770f99"
+        }
+      ],
+      "email": "agne.frismantiene@unibe.ch",
+      "name": "Agne Frismantiene"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3956-9363",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e6086f2b-863a-46ef-8835-638ef716ca51"
+        }
+      ],
+      "email": "lucien.hinderling@unibe.ch",
+      "name": "Lucien Hinderling"
+    },
+    {
+      "@id": "#3cfda99f-0444-4fac-98a0-841852770f99",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Cell Biology, University of Bern, Baltzerstrasse 4, 3012 Bern, Switzerland"
+    },
+    {
+      "@id": "#e6086f2b-863a-46ef-8835-638ef716ca51",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Graduate School for Cellular and Biomedical Sciences, University of Bern, Switzerland"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#71db1d99-9928-476d-b1ff-ce3747d1fb20",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "MCF10A (human mammary epithelial cell line) grown in a 3D culture as acini.",
+      "name": "MCF10A acini",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b64ae7e2-c038-4420-90a1-c87ed1647a66",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "5 min time interval\n\n3 imaging channels:\n- mRuby2\n- mTurquoise\n- miRFP703\n\nImages are 2x cropped and binned in post, leading to a final isotropic pixel size of 0.29μm/px.",
+      "labEquipment": "Light-sheet microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 145
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 3346587749
+    }
+  ]
+}

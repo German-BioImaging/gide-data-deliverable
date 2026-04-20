@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1371"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1371",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#805838a7-f899-44de-93ad-d3f28f12523a"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#666f3054-e508-4adb-bd7c-3397c3b48ec0"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7000-7046"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-23",
+      "description": "This data set includes raw confocal images used in the manuscript entitled \"Adoptive transfer of mitochondrial antigen-specific CD8+ T-cells in mice causes parkinsonism and compromises the dopamine system\" and shared previously on BioRxiv.\n\nhttps://www.biorxiv.org/content/10.1101/2024.02.26.582098v1\n\nhttps://doi.org/10.1101/2024.02.26.582098",
+      "funder": [],
+      "identifier": "S-BIAD1371",
+      "keywords": [
+        "Parkinson",
+        "lymphocytes",
+        "dopamine",
+        "mitochondria",
+        "immune",
+        "PINK1"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Microscopy images linked to the manuscript \"Adoptive transfer of mitochondrial antigen-specific CD8+ T-cells in mice causes parkinsonism and compromises the dopamine system\"",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1371/7ca10d02-ac32-42a0-8bd2-34e6dadd79c6/085dfa1b-9a0f-4015-9733-5397b94bb907.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7000-7046",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#74c78435-4558-4b5d-9e1c-3944a9a60007"
+        }
+      ],
+      "email": "louis-eric.trudeau@umontreal.ca",
+      "name": "Louis-Éric Trudeau"
+    },
+    {
+      "@id": "#74c78435-4558-4b5d-9e1c-3944a9a60007",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Université de Montréal"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#666f3054-e508-4adb-bd7c-3397c3b48ec0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Dorsal and ventral striatum.",
+      "name": "Mouse brain slices",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#805838a7-f899-44de-93ad-d3f28f12523a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Images (2048x2048 px resolution, Nyquist, galvanometer scanning mode with 1x averaging and 0.8ms dwell time) were captured using PLAN APO AD 40× OFN25 DIC N2 objective lens (0.6 NA, Nikon Canada) from dorsal and ventral striatum fields. The dorsal striatum encompassed the compartment superior to the anterior commissure and inferior to the corpus callosum, while the ventral striatum included the nucleus accumbens shell and core. In the dorsal striatum, image acquisition involved selecting four random fields on each side from both hemispheres in each section. In the ventral striatum, two fields per hemisphere were chosen in each section. ",
+      "labEquipment": "Quantitative analyses of fluorescence imaging on brain slices were conducted using images acquired through a Nikon AX-R automated point-scanning confocal microscope (Nikon NY, U.S.A). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 12667
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 166166250493
+    }
+  ]
+}

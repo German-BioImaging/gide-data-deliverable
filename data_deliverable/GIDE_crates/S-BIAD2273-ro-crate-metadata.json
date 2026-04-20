@@ -1,0 +1,278 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2273"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2273",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3324d6d8-6bca-4f82-a11a-39aad8fc9413"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#7f8a5c8c-eec7-4360-8dfd-410e36108369"
+        },
+        {
+          "@id": "#9fbaae41-27f3-498d-aa7a-c80133d5f580"
+        },
+        {
+          "@id": "#9ddc8109-6b95-4faa-b190-d3294ecb72a5"
+        },
+        {
+          "@id": "#81215f8c-8bd0-4a8e-85cb-3fb90a173bfd"
+        },
+        {
+          "@id": "#fad3eb22-68b5-4422-8c14-3b90e14592af"
+        },
+        {
+          "@id": "#2ea89bda-aed4-420b-9808-3c94526d3bd3"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-4460-0812"
+        },
+        {
+          "@id": "#5aaa852d-b777-42f8-875a-30f581ff6660"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-10",
+      "description": "Abstract: Relapse and treatment resistance are common in children with high-risk neuroblastoma, and novel therapies are needed. Conventional drug discovery is slow, expensive, often fails in practice, and consequently falls short in addressing pediatric and rare conditions. In such instances, drug repurposing is a promising strategy. Here, we used two independent in silico prediction tools including machine learning to identify approved drugs for repurposing against neuroblastoma. The combination of statins and phenothiazines showed strong synergistic effects in human neuroblastoma organoids, decreased tumor growth and prolonged survival in MYCN-amplified neuroblastoma patient-derived xenografts. The drug combination altered cholesterol metabolism through two different mechanisms and induced a phenotypic change towards an adrenergic state in vitro, which was associated with enhanced chemosensitivity. Integration of the drug combination into standard-of-care chemotherapy regressed tumors and prolonged survival in chemoresistant patient-derived xenografts. Thus, a combination of safe and approved medications added to standard-of-care chemotherapy outperforms chemotherapy alone in chemoresistant neuroblastoma.",
+      "funder": [],
+      "identifier": "S-BIAD2273",
+      "keywords": [
+        "chemoresistance",
+        "drug repurposing",
+        "machine learning",
+        "neuroblastoma",
+        "phenothiazine",
+        "in silico predictions",
+        "statin",
+        "prochlorperazine",
+        "cancer"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Repurposing statins and phenothiazines to treat chemoresistant neuroblastoma",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2273/45155091-d8da-4f36-82ca-f1919e1f199d/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#5aaa852d-b777-42f8-875a-30f581ff6660",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6"
+        }
+      ],
+      "email": "dora.adamic@med.lu.se",
+      "name": "Dora Adamic"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4460-0812",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6"
+        }
+      ],
+      "email": "katarzyna.radke@bric.ku.dk",
+      "name": "Katarzyna Radke"
+    },
+    {
+      "@id": "#a1ef939f-9fd5-419e-a411-33693428a2b6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Lund University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2ea89bda-aed4-420b-9808-3c94526d3bd3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Neuroblastoma tumor ",
+      "name": "T7",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#7f8a5c8c-eec7-4360-8dfd-410e36108369",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Neuroblastoma tumor ",
+      "name": "C3",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#81215f8c-8bd0-4a8e-85cb-3fb90a173bfd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Neuroblastoma tumor ",
+      "name": "comb6",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9ddc8109-6b95-4faa-b190-d3294ecb72a5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Neuroblastoma tumor ",
+      "name": "comb5",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9fbaae41-27f3-498d-aa7a-c80133d5f580",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Neuroblastoma tumor ",
+      "name": "T5",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#fad3eb22-68b5-4422-8c14-3b90e14592af",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Neuroblastoma tumor ",
+      "name": "C1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#3324d6d8-6bca-4f82-a11a-39aad8fc9413",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The multiplex antibody panel scanning was performed on PhenoImager HT 2.0 (Akoya Biosciences) with the acquisition software PhenoImagerHT 2.0.0. Imaging was done with the resolution 0.5um/pixel (20x).\nA spectral fluorophore was used for each primary antibody and a synthetic library combined with extraction of tissue-specific autofluorescence spectrum was prepared using the InForm software (version 3.0, Akoya Biosciences) to enable optimal multispectral unmixing. \nThe exposure times were as follows: DAPI (1.8ms), Opal 570 (42.27ms), Opal 480 (14.11ms), Opal 620 (29.15ms), Opal 780 (54.26ms), Opal 520 (116.93ms), sample AF (100ms).\nAll samples being compared were processed in parallel and images were acquired using the same settings.",
+      "labEquipment": "PhenoImager HT 2.0 (Akoya Biosciences) \n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Scan 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 65
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 41487997251
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-12627"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/EMPIAR-12627",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#627da386-25be-4b63-98fb-faa677fbb18b"
+        },
+        {
+          "@id": "obo:FBbi_00000585"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#053e5b13-f27e-4055-9024-0681e7a3428f"
+        },
+        {
+          "@id": "#31f5ea70-65d3-4eae-80d1-5eadd3ee2b87"
+        },
+        {
+          "@id": "obo:NCBITaxon_33657"
+        },
+        {
+          "@id": "obo:NCBITaxon_2864"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5337-2209"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8758-7681"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0350-4901"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4343-8358"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-22",
+      "description": "",
+      "funder": [],
+      "identifier": "EMPIAR-12627",
+      "keywords": [],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Fib-SEM stacks for Prey (Phaeocystis antarctica) and Host (Ross Sea Dinoflagellate; RSD)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-12627/8a0edc4a-0e94-4db8-801e-9bde729099db/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8758-7681",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Gallet B"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4343-8358",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Decelle J"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5337-2209",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Rao AK"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0350-4901",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [],
+      "name": "Jouneau PH"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_2864",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Dinophyceae",
+      "vernacularName": "dinoflagellates"
+    },
+    {
+      "@id": "obo:NCBITaxon_33657",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Phaeocystis antarctica"
+    },
+    {
+      "@id": "#053e5b13-f27e-4055-9024-0681e7a3428f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cultured microalga Phaeocystis antarctica used as prey/kleptoplastid source for RSD host cells.",
+      "name": "_:Phaeocystis antarctica culture",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_33657"
+      }
+    },
+    {
+      "@id": "#31f5ea70-65d3-4eae-80d1-5eadd3ee2b87",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cultured Ross Sea dinoflagellate (RSD) host cells associated with kleptoplastidy of Phaeocystis antarctica plastids.",
+      "name": "_:Ross Sea dinoflagellate host culture",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_2864"
+      }
+    },
+    {
+      "@id": "#627da386-25be-4b63-98fb-faa677fbb18b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "FIB-SEM tomography used a Zeiss CrossBeam 550. Resin blocks were mounted on stubs, surface-abraded with a diamond knife, and coated with 4-8 nm platinum; an additional 1-2 um platinum layer was deposited in situ. Serial slicing with a Ga+ ion beam (~700 pA at 30 kV) alternated with SEM imaging at 1.5 kV and ~1 nA using an in-column EsB backscatter detector. Slice thickness was 6-8 nm with matching pixel size for isotropic voxels.",
+      "labEquipment": "Zeiss CrossBeam 550 (Zeiss, Germany)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000585"
+        }
+      ],
+      "name": "FIB-SEM tomography (Zeiss CrossBeam 550)"
+    },
+    {
+      "@id": "obo:FBbi_00000585",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "serial block face SEM (SBFSEM)"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 18
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 292699206264
+    }
+  ]
+}

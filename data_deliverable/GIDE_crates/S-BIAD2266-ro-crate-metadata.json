@@ -1,0 +1,233 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2266"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2266",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#79f0ebe8-f0be-48f0-9b51-a9c11943c4ad"
+        },
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#61043549-45bc-40a8-aa1f-7dbe692826a0"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0001-0166-0399"
+        },
+        {
+          "@id": "#e34d68a4-8c42-4389-a992-c71ce22484d9"
+        },
+        {
+          "@id": "#38c6f411-feb3-46ba-9d39-5a2eaf1d63ad"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-09-05",
+      "description": "Two-photon imaging of a patient-derived glioblastoma xenograft expressing membrane-targeted GFP (mGFP). The dataset includes paired synthetic low-resolution and real expansion-microscopy-based high-resolution images for training and one example of real low-resolution and high-resolution data (roughly aligned) for testing.",
+      "funder": [],
+      "identifier": "S-BIAD2266",
+      "keywords": [
+        "AI4Life Open Calls",
+        "AI4Life",
+        "Expansion microscopy",
+        "Super-resolution"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Enhancing the effective resolution of intravital microscopy with digital expansion microscopy",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2266/e7e772f7-0db4-4f2f-ad3b-cb33416ff35b/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#38c6f411-feb3-46ba-9d39-5a2eaf1d63ad",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#81def0e5-53d1-4113-b641-048c6fd3415f"
+        }
+      ],
+      "email": "Varun.Venkataramani@med.uni-heidelberg.de",
+      "name": "Varun Venkataramani"
+    },
+    {
+      "@id": "#e34d68a4-8c42-4389-a992-c71ce22484d9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/013czdx64"
+        }
+      ],
+      "email": "ekin.reyhan@stud.uni-heidelberg.de",
+      "name": "Ekin Reyhan"
+    },
+    {
+      "@id": "https://orcid.org/0009-0001-0166-0399",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/029gmnc79"
+        }
+      ],
+      "email": "vera.galinova@fht.org",
+      "name": "Vera Galinova"
+    },
+    {
+      "@id": "#81def0e5-53d1-4113-b641-048c6fd3415f",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Hospital Heidelberg "
+    },
+    {
+      "@id": "https://ror.org/013czdx64",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Hospital Heidelberg"
+    },
+    {
+      "@id": "https://ror.org/029gmnc79",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Human Technopole"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#61043549-45bc-40a8-aa1f-7dbe692826a0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Glioblastoma xenograft (patient-derived, mGFP-expressing tumor cells)",
+      "name": "Glioblastoma xenograft, two-photon imaging",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#79f0ebe8-f0be-48f0-9b51-a9c11943c4ad",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "- ",
+      "labEquipment": "Two-photon laser-scanning microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000254"
+        }
+      ],
+      "name": "Glioblastoma xenograft, two-photon imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000254",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "two-photon laser scanning microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 465
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2007207077
+    }
+  ]
+}

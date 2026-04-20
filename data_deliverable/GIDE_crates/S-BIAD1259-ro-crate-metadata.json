@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1259"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1259",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#484d4a61-2bb0-48e1-832f-87f42c24a0d6"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#9fb7c5ee-83a8-4b7b-abae-0642ef9a96b5"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-7956-7805"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5096-2361"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-04",
+      "description": "This is the primary image data underpinning the above manuscript. The data set are 16-bit TIFF files acquired on a fully automated spinning disk confocal microscope. Each image is a single colour channel, single optical slice, of a single position in a well, containing a spheroid of HeLa Kyoto cells.",
+      "funder": [],
+      "identifier": "S-BIAD1259",
+      "keywords": [
+        "membrane traffic; Spheroid; high-content screening microscopy; high-content screening analysis; Golgi; Rab GTPases"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "An automated high-content screening and assay platform for the analysis of spheroids at subcellular resolution",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1259/16fd101e-0a81-471b-87cd-21eba6de337b/8091df41-14ff-4727-af4c-82934e226a83.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5096-2361",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#26fabe7a-84c2-4811-806f-a62030791a20"
+        }
+      ],
+      "email": "margaritha.mysior@ucd.ie",
+      "name": "Margaritha Mysior"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7956-7805",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#26fabe7a-84c2-4811-806f-a62030791a20"
+        }
+      ],
+      "email": "jeremy.simpson@ucd.ie",
+      "name": "Jeremy Simpson"
+    },
+    {
+      "@id": "#26fabe7a-84c2-4811-806f-a62030791a20",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University College Dublin"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#9fb7c5ee-83a8-4b7b-abae-0642ef9a96b5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa Kyoto cultured cells",
+      "name": "HCS spheroids",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#484d4a61-2bb0-48e1-832f-87f42c24a0d6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "All images were acquired with an Opera Phenix High-Content Screening System (Revvity) using various water immersion objectives (20x/1.0 NA and 63x/1.15 NA). The ‘PreciScan’ feature of the Opera Phenix High Content Screening System was used to pre-scan each well with a low magnification objective for objects of interest (spheroids) and then a selected number of these objects were reimaged with a high magnification objective. In general, 49 fields of view (a tile of 7x7 images) were imaged for the pre-scan, which is equivalent to ca. 68 % of the entire well using the 20x objective lens. Typically, 65 planes, each 1 µm apart, were acquired. This step size was selected as it facilitated a reasonable total imaging time across the plate (see below) and manageable data size for analysis and storage, both of which are considerations for screening approaches. 100 % laser power and exposure times between 120 ms and 500 ms were used.",
+      "labEquipment": "Revvity Opera Phenix HCS system",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "HCA image acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 137936
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 634007622207
+    }
+  ]
+}

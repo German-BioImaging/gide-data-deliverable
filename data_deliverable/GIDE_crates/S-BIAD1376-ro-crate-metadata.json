@@ -1,0 +1,298 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1376"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1376",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1e2d1d53-1f2d-4c1c-8c67-7963041829be"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4fcbb14f-8b93-404f-a93f-238429d9edc3"
+        },
+        {
+          "@id": "#eea15452-1dbb-4d5f-99a3-7cfa5ad8ef7a"
+        },
+        {
+          "@id": "obo:NCBITaxon_114727"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#4f29da84-ed87-46a5-8b47-4c2d9b335fca"
+        },
+        {
+          "@id": "#82b4dea1-4a99-40fe-9bab-95a2608ef439"
+        },
+        {
+          "@id": "#29aa6bdf-d8a7-44db-b1a9-df40656c8a39"
+        },
+        {
+          "@id": "#775b3afd-0413-42c5-81df-900a4f8c3baf"
+        },
+        {
+          "@id": "#c5a9c3b3-5c63-414a-b331-7551e0e3583e"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6620-807X"
+        },
+        {
+          "@id": "#559925a3-3db2-4a69-8003-49109bd59ac1"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-12",
+      "description": "Experiments related to validation of the mudRapp-seq method.",
+      "funder": [],
+      "identifier": "S-BIAD1376",
+      "keywords": [
+        "influenza",
+        "in situ sequencing",
+        "padlock probes",
+        "virus"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Multiple direct RNA padlock probing and in-situ sequencing (mudRapp-seq)",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#29aa6bdf-d8a7-44db-b1a9-df40656c8a39",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Joél Schaust"
+    },
+    {
+      "@id": "#4f29da84-ed87-46a5-8b47-4c2d9b335fca",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b9d38231-df65-418e-b42a-8ad4855d7647"
+        }
+      ],
+      "email": "Ahmad_s@ukw.de",
+      "name": "Shazeb Ahmad"
+    },
+    {
+      "@id": "#559925a3-3db2-4a69-8003-49109bd59ac1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b9d38231-df65-418e-b42a-8ad4855d7647"
+        }
+      ],
+      "email": "redmond.smyth@helmholtz-hiri.de",
+      "name": "Redmond Smyth"
+    },
+    {
+      "@id": "#775b3afd-0413-42c5-81df-900a4f8c3baf",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "name": "Sabine Fischer"
+    },
+    {
+      "@id": "#82b4dea1-4a99-40fe-9bab-95a2608ef439",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b9d38231-df65-418e-b42a-8ad4855d7647"
+        }
+      ],
+      "name": "Anne-Sophie Gribling Burrer"
+    },
+    {
+      "@id": "#c5a9c3b3-5c63-414a-b331-7551e0e3583e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b9d38231-df65-418e-b42a-8ad4855d7647"
+        }
+      ],
+      "name": "Uddhav Ambi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6620-807X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "email": "markus.ankenbrand@uni-wuerzburg.de",
+      "name": "Markus Ankenbrand"
+    },
+    {
+      "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Würzburg"
+    },
+    {
+      "@id": "#b9d38231-df65-418e-b42a-8ad4855d7647",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Institute for RNA-based Infection Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_114727",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "H1N1 subtype"
+    },
+    {
+      "@id": "#4fcbb14f-8b93-404f-a93f-238429d9edc3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human MDCK cell culture infected by influenza A - strain PR8",
+      "name": "PR8",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_114727"
+      }
+    },
+    {
+      "@id": "#eea15452-1dbb-4d5f-99a3-7cfa5ad8ef7a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human MDCK cell culture infected by influenza A - strain StPt",
+      "name": "StPt",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_114727"
+      }
+    },
+    {
+      "@id": "#1e2d1d53-1f2d-4c1c-8c67-7963041829be",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fluorescently labeled primers were imaged using either Cy3, Cy5, or FluorT labeled primer obtained from integrated DNA technology (IDT). In situ sequencing cycles were imaged using a HC PL APO 63x/1.40 oil objective with the following filters and exposure times for each base: G (excitation 506/21 nm, emission 535/70 nm, dichroic 523 nm, 100 ms); T (excitation 578/24 nm, emission 642/80 nm, dichroic 598 nm, 50 ms); A (excitation 638/31 nm, emission 642/80 nm, dichroic 660 nm, 100 ms); C (excitation 730/40 nm, emission 810/80 nm, dichroic 740 nm, 200 ms). The nuclear DNA was stained with DAPI and imaged at excitation 391/31 nm, emission 460/80 nm, dichroic 415 nm, 50 ms.\nImages are computationally cleared (ICC) and z-stacks maximum intensity projected using the Leica Application Suite X version 3.8.1 (LAS X 3.8.1).",
+      "labEquipment": "Epifluorescence microscope (Leica) with automated XYZ\nstage control and hardware autofocus. An LED light engine was used for fluorescence\nillumination and Leica-DFC9000GT-VSC11903 camera",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 20147
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 158169822711
+    }
+  ]
+}

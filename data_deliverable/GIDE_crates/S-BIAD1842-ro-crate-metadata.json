@@ -1,0 +1,213 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1842"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1842",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#6ffc0616-bedb-4326-997b-1655e0c65778"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000249"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#dd83a4f8-7213-4e23-ab47-768d45176ce5"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-6183-4303"
+        },
+        {
+          "@id": "#8cf84fc6-f48f-400a-a12a-ab44e8a1ab68"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-04-16",
+      "description": "The ability of a single protein to trigger different functions is an assumed key feature of cell signaling, yet there are very few examples demonstrating it. Here, using an optogenetic tool to control membrane localization of RhoA nucleotide exchange factors (GEFs), we present a case where the same protein can trigger both protrusion and retraction when recruited to the plasma membrane, polarizing the cell in two opposite directions. We show that the basal concentration of the GEF prior to activation predicts the resulting phenotype. A low concentration leads to retraction, whereas a high concentration triggers protrusion. This unexpected protruding behavior arises from the simultaneous activation of Cdc42 by the GEF and sequestration of active RhoA by the GEF PH domain at high concentrations. We propose a minimal model that recapitulates the phenotypic switch, and we use its predictions to control the two phenotypes within selected cells by adjusting the frequency of light pulses. Our work exemplifies a unique case of control of antagonist phenotypes by a single protein that switches its function based on its concentration or dynamics of activity. It raises numerous open questions about the link between signaling protein and function, particularly in contexts where proteins are highly overexpressed, as often observed in cancer.",
+      "funder": [],
+      "identifier": "S-BIAD1842",
+      "keywords": [
+        "optogenetics",
+        "cell migration",
+        "cell signalling"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Optogenetic control of a GEF of RhoA uncovers a signaling switch from retraction to protrusion",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#8cf84fc6-f48f-400a-a12a-ab44e8a1ab68",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7c7fdeb-ad7a-4a7d-af7a-fc7039ae2383"
+        }
+      ],
+      "email": "mathieu.coppey@curie.for",
+      "name": "Mathieu Coppey"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6183-4303",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f7c7fdeb-ad7a-4a7d-af7a-fc7039ae2383"
+        }
+      ],
+      "email": "jeands216@gmail.com",
+      "name": "Jean de seze"
+    },
+    {
+      "@id": "#f7c7fdeb-ad7a-4a7d-af7a-fc7039ae2383",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut Curie"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#dd83a4f8-7213-4e23-ab47-768d45176ce5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "hTERT RPE1 cells (CRL-4000 strain, ATCC, Manassas, VA)",
+      "name": "hTERT RPE1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#6ffc0616-bedb-4326-997b-1655e0c65778",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Everything is written in the metadata of the files. 200ms for the fluorescent images, and 20 or 50ms for the DIC image",
+      "labEquipment": "IX71 inverted fluorescence and Differential Interference Contrast (DIC) microscope (Olympus, Melville, NY), controlled with MetaMorph software (Molecular Devices, Eugene, OR). The microscope was equipped with a 60x objective (NA=1.45), motorized stage and filter wheel with SmartShutter Lambda 10-3 control system (Sutter Instrument Company, Novato, CA), a stage-top incubation chamber with temperature and CO2 control (Pecon, Meyer Instruments, Houston, TX), ORCA-Flash4.0 V3 Digital CMOS camera (Hamamatsu Photonics K.K., Japan), z-axis guiding piezo motor (PI, Karlsruhe, Germany), CRISP autofocus system (ASI, Eugene, OR), a laser control system with azimuthal TIRF configuration (iLas2, Roper Scientific, Tucson, AZ) and a DMD pattern projection device (DLP Light Crafter, Texas instruments, Dalas, TX), illuminated with a SPECTRA Light Engine (Lumencor, Beaverton, OR) at 440±10 nm.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000249"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Local optogenetic activation of transfected cells "
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000249",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "time lapse microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 222885
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 166500047898
+    }
+  ]
+}

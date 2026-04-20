@@ -1,0 +1,337 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD622"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD622",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a74e642d-8f01-4d95-a85c-ef1421b562c3"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b705472d-25d8-4548-a865-f6628390fe4e"
+        },
+        {
+          "@id": "obo:NCBITaxon_272563"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-7804-1959"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4281-8006"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9377-546X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2800-9328"
+        },
+        {
+          "@id": "#0537aba7-de5d-407d-86df-da6f525e4d1f"
+        },
+        {
+          "@id": "#9968a544-c5fb-49fd-b881-a7a7b1abff69"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6929-7178"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0185-1459"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-8700-6522"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-01",
+      "description": "The obligate anaerobic, enteric pathogen Clostridioides difficile persists in the intestinal tract by forming antibiotic resistant endospores that contribute to relapsing and recurrent infections. Despite the importance of sporulation for C. difficile pathogenesis, environmental cues, and molecular mechanisms regulating sporulation initiation remain ill defined. Here, using RIL-seq to capture the Hfq-dependent RNA-RNA interactome, we discovered a network of small RNAs that bind to mRNAs encoding sporulation-related genes. We show that two of these small RNAs, SpoX and SpoY, regulate translation of the master regulator of sporulation, Spo0A, in an opposing manner, which ultimately leads to altered sporulation rates. Infection of antibiotic-treated mice with SpoX and SpoY deletion mutants revealed a global effect on gut colonization and intestinal sporulation. Our work uncovers an elaborate RNA-RNA interactome controlling the physiology and virulence of C. difficile and identifies a complex post-transcriptional layer in the regulation of spore formation in this important human pathogen.",
+      "funder": [],
+      "identifier": "S-BIAD622",
+      "keywords": [
+        "Clostridioides difficile",
+        "RIL-seq",
+        "small RNA",
+        "post-transcriptional control",
+        "Hfq",
+        "sporulation",
+        "Spo0A"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "A network of small RNAs regulates sporulation initiation in C. difficile",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#0537aba7-de5d-407d-86df-da6f525e4d1f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e7e6b731-7e25-43e8-959b-d224727b679c"
+        }
+      ],
+      "email": "arne.bublitz@helmholtz-hzi.de",
+      "name": "Arne Bublitz "
+    },
+    {
+      "@id": "#9968a544-c5fb-49fd-b881-a7a7b1abff69",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b9d38231-df65-418e-b42a-8ad4855d7647"
+        }
+      ],
+      "email": "janet.schneider@helmholtz-hiri.de",
+      "name": "Janet Wackenreuter"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9377-546X",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "email": "tina.lence@uni-wuerzburg.de",
+      "name": "Tina Lenče "
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2800-9328",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "email": "johannes.sulzer@uni-wuerzburg.de",
+      "name": "Johannes Sulzer "
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6929-7178",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "email": "milan.gerovac@uni-wuerzburg.de",
+      "name": "Milan Gerovac "
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7804-1959",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "email": "manuela.fuchs@uni-wuerzburg.de",
+      "name": "Manuela Fuchs "
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8700-6522",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "email": "franziska.faber@helmholtz-hiri.de",
+      "name": "Franziska Faber"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0185-1459",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#2f658925-db4d-45d7-8a61-a7f92ae95534"
+        }
+      ],
+      "email": "Till.Strowig@helmholtz-hzi.de",
+      "name": "Till Strowig "
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4281-8006",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc"
+        }
+      ],
+      "email": "vanessa.lamm@uni-wuerzburg.de",
+      "name": "Vanessa Lamm-Schmidt "
+    },
+    {
+      "@id": "#08a6bc79-3e0a-4f15-accb-feb23fbe91dc",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Würzburg"
+    },
+    {
+      "@id": "#2f658925-db4d-45d7-8a61-a7f92ae95534",
+      "@type": [
+        "Organization"
+      ],
+      "name": "German Center for Infection Research"
+    },
+    {
+      "@id": "#b9d38231-df65-418e-b42a-8ad4855d7647",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Institute for RNA-based Infection Research"
+    },
+    {
+      "@id": "#e7e6b731-7e25-43e8-959b-d224727b679c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Centre for Infection Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_272563",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Clostridioides difficile 630"
+    },
+    {
+      "@id": "#b705472d-25d8-4548-a865-f6628390fe4e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Clostridioides difficile 630 cells",
+      "name": "Figure 7A",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_272563"
+      }
+    },
+    {
+      "@id": "#a74e642d-8f01-4d95-a85c-ef1421b562c3",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "At 12 h, 24 h and 48 h post inoculation, 1 ml of culture was removed from the anaerobic chamber, centrifuged at full speed for 30 s, and resuspended in ∼10-30 μl of supernatant. Microcopy slides were prepared by placing 2 μl of the concentrated cultures onto thin 1% agarose pads that were applied directly to the surface of the slide. Phase-contrast microscopy was performed using a HC PLAN FLUOTAR 100x/1.32 PH3 oil immersion objective on a LEICA DM2500 microscope. Two fields of view for each strain and replicate were acquired and used to calculate the percentage of spores (the number of spores divided by the total number of spores, prespores, and vegetative cells; 300 cells per field of view were analyzed).",
+      "labEquipment": "LEICA DM2500 microscope, HC PLAN FLUOTAR 100x/1.32 PH3 oil immersion objective",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "name": "Figure 7A"
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 185
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2254344746
+    }
+  ]
+}

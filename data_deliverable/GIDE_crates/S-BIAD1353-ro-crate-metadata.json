@@ -1,0 +1,511 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1353"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1353",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d3b2d164-3e00-440b-9cf1-17e96ca5a56c"
+        },
+        {
+          "@id": "#b7b7c110-3aca-46a9-b2b3-da03a9722946"
+        },
+        {
+          "@id": "#5e4a823c-e1f9-45ba-9550-e4d18312214e"
+        },
+        {
+          "@id": "#cc6672ae-15d4-4347-a124-3194cda4e953"
+        },
+        {
+          "@id": "#3209a204-931e-44db-a3d4-59f6893f85a4"
+        },
+        {
+          "@id": "#3228d404-5ccd-4f13-8d34-6a0322b7704b"
+        },
+        {
+          "@id": "#257c37b7-29ae-4887-9810-7f641f0782dc"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2aa87b5a-b308-4ae9-8386-57997c4bf9b6"
+        },
+        {
+          "@id": "#6f5a6612-a2e7-48ab-a059-74ed429e9ca3"
+        },
+        {
+          "@id": "#8571cd57-e326-42f4-9311-705838c0e450"
+        },
+        {
+          "@id": "obo:NCBITaxon_562"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#53572c0e-6c82-4714-91c2-45bd925d0daa"
+        },
+        {
+          "@id": "#8062b875-3ac4-4f92-9ab5-4686f689a2be"
+        },
+        {
+          "@id": "#788f36fc-9208-4557-97a1-f240f64b962d"
+        },
+        {
+          "@id": "#c4fa110d-58e1-433b-81ea-93a71d248b7f"
+        },
+        {
+          "@id": "#0cb71f8b-fbc2-417a-8277-7020e32fa1cc"
+        },
+        {
+          "@id": "#d0d8fd35-a6b6-4edb-9106-23d754a7bd9f"
+        },
+        {
+          "@id": "#ebdbbcfa-3c41-47a9-a76d-bca105d38fd6"
+        },
+        {
+          "@id": "#997c6ad3-1b27-4261-ac91-f2b52e4b7784"
+        },
+        {
+          "@id": "#7813c5f6-efb4-4592-9f50-16d573c14d23"
+        },
+        {
+          "@id": "#10b1498b-b4f3-433b-8ef3-6bb08224bbd9"
+        },
+        {
+          "@id": "#6f8c623f-0306-401c-99fe-7d58556ad2d7"
+        },
+        {
+          "@id": "#ce09c41e-8582-4ac3-a9c7-182bab8c713b"
+        },
+        {
+          "@id": "#0db85743-ab52-41e3-bd3c-1953e6ea6481"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-27",
+      "description": "This data set contains all microscopy images and the corresponding image analysis code and outputs for the manuscript: \"Pooled optical screening in bacteria using chromosomally expressed barcodes\". \n\nOptical pooled screening is an important tool to study dynamic phenotypes for libraries of genetically engineered cells. However, the desired engineering often requires that the barcodes used for in situ genotyping are expressed from the chromosome. This has not previously been achieved in bacteria. Here we describe a method for in situ genotyping of libraries with genomic barcodes in Escherichia coli. The method is applied to measure the intracellular maturation time of 84 red fluorescent proteins.\n\nInformation on post-processing and generation of tables and figures in Pooled optical screening in bacteria using chromosomally expressed barcodes is found at DOI: 10.17044/scilifelab.26976952 (see Linked Information).\n",
+      "funder": [],
+      "identifier": "S-BIAD1353",
+      "keywords": [
+        "Pooled optical screening",
+        "genomic barcodes",
+        "fluorescence micropscopy",
+        "microfluidics",
+        "fluorescent protein maturation"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Pooled optical screening in bacteria using chromosomally expressed barcodes",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1353/87af548a-d0b2-4833-a2f9-1f4631bb4415/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0cb71f8b-fbc2-417a-8277-7020e32fa1cc",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "name": "Dvir Schirman"
+    },
+    {
+      "@id": "#0db85743-ab52-41e3-bd3c-1953e6ea6481",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "name": "Johan Elf"
+    },
+    {
+      "@id": "#10b1498b-b4f3-433b-8ef3-6bb08224bbd9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "name": "Spartak Zikrin"
+    },
+    {
+      "@id": "#53572c0e-6c82-4714-91c2-45bd925d0daa",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8b364fbc-36b2-4fad-b715-93d2463822a5"
+        }
+      ],
+      "name": "Ruben R. G. Soares"
+    },
+    {
+      "@id": "#6f8c623f-0306-401c-99fe-7d58556ad2d7",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "name": "Michael Ratz"
+    },
+    {
+      "@id": "#7813c5f6-efb4-4592-9f50-16d573c14d23",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "name": "Fabian Svahn"
+    },
+    {
+      "@id": "#788f36fc-9208-4557-97a1-f240f64b962d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "name": "Jimmy Larsson"
+    },
+    {
+      "@id": "#8062b875-3ac4-4f92-9ab5-4686f689a2be",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "name": "Daniela A. García-Soriano"
+    },
+    {
+      "@id": "#997c6ad3-1b27-4261-ac91-f2b52e4b7784",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "name": "Beer Chakra Sen"
+    },
+    {
+      "@id": "#c4fa110d-58e1-433b-81ea-93a71d248b7f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "name": "David Fange"
+    },
+    {
+      "@id": "#ce09c41e-8582-4ac3-a9c7-182bab8c713b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8b364fbc-36b2-4fad-b715-93d2463822a5"
+        }
+      ],
+      "name": "Mats Nilsson"
+    },
+    {
+      "@id": "#d0d8fd35-a6b6-4edb-9106-23d754a7bd9f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8b364fbc-36b2-4fad-b715-93d2463822a5"
+        }
+      ],
+      "name": "Marco Grillo"
+    },
+    {
+      "@id": "#ebdbbcfa-3c41-47a9-a76d-bca105d38fd6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d"
+        }
+      ],
+      "name": "Anna Knöppel"
+    },
+    {
+      "@id": "#6c45eb2d-1133-4763-8dc3-f5f3d9179e8d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Uppsala University"
+    },
+    {
+      "@id": "#8b364fbc-36b2-4fad-b715-93d2463822a5",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stockholm University"
+    },
+    {
+      "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Karolinska Institutet"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_562",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Escherichia coli"
+    },
+    {
+      "@id": "#2aa87b5a-b308-4ae9-8386-57997c4bf9b6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bacterial cells",
+      "name": "EL4386",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#6f5a6612-a2e7-48ab-a059-74ed429e9ca3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bacterial cells",
+      "name": "EL3853",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#8571cd57-e326-42f4-9311-705838c0e450",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Bacterial cells",
+      "name": "EL330",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_562"
+      }
+    },
+    {
+      "@id": "#257c37b7-29ae-4887-9810-7f641f0782dc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The strains EL3853, carrying an IPTG inducible SYFP2 (MG1655 ygaY::(AmpR paFAB120 Osym SYFP2) ) and EL330 (MG1655, without any fluorescent protein) were grown as in the maturation time experiments before loaded onto different sides of a mother machine chip. Cells were grown in the chip at 30 degrees for at least 3 hours before image acquisitions were started. To allow cell tracking, the cells were imaged in phase contrast (80 ms exposure time) every second minute throughout the experiment. To estimate the “leaky” expression of SYFP2 without IPTG induction, cells were imaged in fluorescence (300ms exposure time) prior to any media swaps. 1mM IPTG and 250 ug/ml CHL were added with time differences indicated in Fig. S4, where each time-difference corresponds to one experiment started from cryostock. Following the media swaps cells were again imaged in fluorescence 20 min after +CHL to allow for SYFP2 maturation.",
+      "labEquipment": "Microscopy experiments were carried out on a Ti2-E microscope (Nikon) for both phase contrast and epifluorescence. The microscope was equipped with a 100x CFI Plan Apo Lambda DM (Nikon) objective, and the build-in intermediate magnification was set to 1.5X Images were acquired using a Sona camera (Andor). \nEpifluorescence imaging was carried out using a Spectra III (Lumencor) set to the Teal channel and a filter cube consisting of a FF01-514/3 (Semrock) excitation filter, a Di02-R514 (Semrock) dichroic mirror, and an ET550/50M (Chroma) emission filter. To maintain a constant temperature of 30oC, we used a temperature unit and lexan enclosure manufactured by Okolab for the microscope stage and the sample. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "EXP-24-CB5642 - Measurement of the time to protein synthesis inhibition after +CHL - Only +CHL."
+    },
+    {
+      "@id": "#3209a204-931e-44db-a3d4-59f6893f85a4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The strains EL3853, carrying an IPTG inducible SYFP2 (MG1655 ygaY::(AmpR paFAB120 Osym SYFP2) ) and EL330 (MG1655, without any fluorescent protein) were grown as in the maturation time experiments before loaded onto different sides of a mother machine chip. Cells were grown in the chip at 30 degrees for at least 3 hours before image acquisitions were started. To allow cell tracking, the cells were imaged in phase contrast (80 ms exposure time) every second minute throughout the experiment. To estimate the “leaky” expression of SYFP2 without IPTG induction, cells were imaged in fluorescence (300ms exposure time) prior to any media swaps. 1mM IPTG and 250 ug/ml CHL were added with time differences indicated in Fig. S4, where each time-difference corresponds to one experiment started from cryostock. Following the media swaps cells were again imaged in fluorescence 20 min after +CHL to allow for SYFP2 maturation.",
+      "labEquipment": "Microscopy experiments were carried out on a Ti2-E microscope (Nikon) for both phase contrast and epifluorescence. The microscope was equipped with a 100x CFI Plan Apo Lambda DM (Nikon) objective, and the build-in intermediate magnification was set to 1.5X Images were acquired using a Sona camera (Andor). \nEpifluorescence imaging was carried out using a Spectra III (Lumencor) set to the Teal channel and a filter cube consisting of a FF01-514/3 (Semrock) excitation filter, a Di02-R514 (Semrock) dichroic mirror, and an ET550/50M (Chroma) emission filter. To maintain a constant temperature of 30oC, we used a temperature unit and lexan enclosure manufactured by Okolab for the microscope stage and the sample. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "EXP-24-CB5640 - Measurement of the time to protein synthesis inhibition after +CHL - +CHL 10 minutes after +IPTG"
+    },
+    {
+      "@id": "#3228d404-5ccd-4f13-8d34-6a0322b7704b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The strains EL3853, carrying an IPTG inducible SYFP2 (MG1655 ygaY::(AmpR paFAB120 Osym SYFP2) ) and EL330 (MG1655, without any fluorescent protein) were grown as in the maturation time experiments before loaded onto different sides of a mother machine chip. Cells were grown in the chip at 30 degrees for at least 3 hours before image acquisitions were started. To allow cell tracking, the cells were imaged in phase contrast (80 ms exposure time) every second minute throughout the experiment. To estimate the “leaky” expression of SYFP2 without IPTG induction, cells were imaged in fluorescence (300ms exposure time) prior to any media swaps. 1mM IPTG and 250 ug/ml CHL were added with time differences indicated in Fig. S4, where each time-difference corresponds to one experiment started from cryostock. Following the media swaps cells were again imaged in fluorescence 20 min after +CHL to allow for SYFP2 maturation.",
+      "labEquipment": "Microscopy experiments were carried out on a Ti2-E microscope (Nikon) for both phase contrast and epifluorescence. The microscope was equipped with a 100x CFI Plan Apo Lambda DM (Nikon) objective, and the build-in intermediate magnification was set to 1.5X Images were acquired using a Sona camera (Andor). \nEpifluorescence imaging was carried out using a Spectra III (Lumencor) set to the Teal channel and a filter cube consisting of a FF01-514/3 (Semrock) excitation filter, a Di02-R514 (Semrock) dichroic mirror, and an ET550/50M (Chroma) emission filter. To maintain a constant temperature of 30oC, we used a temperature unit and lexan enclosure manufactured by Okolab for the microscope stage and the sample. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "EXP-24-CB5641 - Measurement of the time to protein synthesis inhibition after +CHL - +IPTG and +CHL at the same time - +CHL 2 minutes prior to +IPTG."
+    },
+    {
+      "@id": "#5e4a823c-e1f9-45ba-9550-e4d18312214e",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The strains EL3853, carrying an IPTG inducible SYFP2 (MG1655 ygaY::(AmpR paFAB120 Osym SYFP2) ) and EL330 (MG1655, without any fluorescent protein) were grown as in the maturation time experiments before loaded onto different sides of a mother machine chip. Cells were grown in the chip at 30 degrees for at least 3 hours before image acquisitions were started. To allow cell tracking, the cells were imaged in phase contrast (80 ms exposure time) every second minute throughout the experiment. To estimate the “leaky” expression of SYFP2 without IPTG induction, cells were imaged in fluorescence (300ms exposure time) prior to any media swaps. 1mM IPTG and 250 ug/ml CHL were added with time differences indicated in Fig. S4, where each time-difference corresponds to one experiment started from cryostock. Following the media swaps cells were again imaged in fluorescence 20 min after +CHL to allow for SYFP2 maturation.",
+      "labEquipment": "Microscopy experiments were carried out on a Ti2-E microscope (Nikon) for both phase contrast and epifluorescence. The microscope was equipped with a 100x CFI Plan Apo Lambda DM (Nikon) objective, and the build-in intermediate magnification was set to 1.5X Images were acquired using a Sona camera (Andor). \nEpifluorescence imaging was carried out using a Spectra III (Lumencor) set to the Teal channel and a filter cube consisting of a FF01-514/3 (Semrock) excitation filter, a Di02-R514 (Semrock) dichroic mirror, and an ET550/50M (Chroma) emission filter. To maintain a constant temperature of 30oC, we used a temperature unit and lexan enclosure manufactured by Okolab for the microscope stage and the sample. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "EXP-24-CB5638 - Measurement of the time to protein synthesis inhibition after +CHL - +IPTG and +CHL at the same time"
+    },
+    {
+      "@id": "#b7b7c110-3aca-46a9-b2b3-da03a9722946",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Phenotyping: \nAfter loading the pooled library into the microfluidic chip, the cells were grown in IPTG containing media for 8 hours to ensure that all cells in traps are direct descendants of the cell at the bottom of the trap. 100 positions were imaged for 6 hours every minute in phase contrast (80 ms exposure time) and every 5 minutes in epifluorescence (100 ms exposure time). One hour after the imaging started the experiment media was swapped to experimental media containing chloramphenicol (250 μg/ml).\nGenotyping:\nAfter phenotyping, cells were fixed and permeabilized with 70% EtOH for 20 minutes followed by 20 min rehydration in PBS with 0.1% Tween (PBS-T) at RT.\nFrom this stage all reaction mixes were administered to the front channel of the chip using a syringe pump and the lexan stage enclosure was kept at 30 degrees. The composition of the reaction mixes are given in Table S6 and are administered as described below: 1) To further improve cell permeabilization we flowed the lysozyme reaction mix at 1 μl/min for 10 mins onto the chip; 2) Lysozyme activity was stopped by flowing the BSA solution mix at 1ul/min for 10 mins; 3) To produce the RNA barcodes used for PLP binding we flowed the zombie transcription mixture to the chip at a rate of 0.5 μl/min for 120 min; 4) To allow the padlock probe hybridization to the corresponding RNA target we flowed the PLP hybridization mixture to the chip at 1μl/min for 30 min; 5) For the ligation of the padlocks hybridized to the\ntarget RNA, a SplintR ligase mixture was flown into the chip at 0.75 μl/min for 60 min; 6) To optimise the RCA reaction, the RCA primer hybridization mixture containing a primer complementary to the padlock probe was flown into the chip at 1 μl/min for 30 min; 7) For amplification of the padlock DNA we flowed the RCA reaction mixture onto the chip at 0.5 μl/min for 120 min. 8) Barcode detection: for each round of sequential FISH, the L-probes, which were pre-hybridised to detection oligos, were flown onto the chip at 1 μl/min for 30 min followed by imaging for genotyping; 9) Probes were removed from the RCA product by flowing the probe stripping mixture at 1 μl/min for 30 min. Steps 8 and 9 were repeated an additional 6 times with different known variations of L-probe detection oligo pools.\nThe L-probes were mixed for each hybridization-round according to the code allowing for error correction (See Table S7 for a list of the L-probes used). Each strain was assigned a randomly chosen 7-symbol code word (with an alphabet of 4 symbols), while ensuring that each code word has a Hamming distance of at least 3 symbols from all other 84 code words. Each symbol in the code is represented by a differently colored detection oligo. Thus, for each hybridization-round we mixed a collection of 85 L-probes each connecting the padlock probes readout barcode and the correct detection oligo for that round.\nAfter all genotyping rounds, DAPI stain at 1ug/ml (thermo scientific) was flown into the chip for 30 min which was then imaged using the DAPI optical setting.\n\n\n",
+      "labEquipment": "Microscopy experiments were carried out on a Ti2-E microscope (Nikon) for both phase contrast and epifluorescence. The microscope was equipped with a 100x CFI Plan Apo Lambda DM (Nikon) objective, and the build-in intermediate magnification was set to 1.5X Images were acquired using a Sona camera (Andor).\nIn the Maturation time measurements experiments, epifluorescence imaging was carried out using a Spectra III (Lumencor) set to the Yellow channel and a filter cube consisting of a FF01-559/34 (Semrock) excitation filter, a T585lpxr (Chroma) dichroic mirror, and a T590LP (Chroma) emission filter. In the Measurement of the time to protein synthesis inhibition after +CHL experiments, epifluorescence imaging was carried out using a Spectra III (Lumencor) set to the Teal channel and a filter cube consisting of a FF01-514/3 (Semrock) excitation filter, a Di02-R514 (Semrock) dichroic mirror, and an ET550/50M (Chroma) emission filter. To maintain a constant temperature of 30oC, we used a temperature unit and lexan enclosure manufactured by Okolab for the microscope stage and the sample.\nIn the genotyping experiments, the same microscope setup as for phenotyping was used except for the filter cubes and channel on the Spectra III. The light-source channel and filter combinations used were specific to each dye, as follows: DAPI: Violet channel, FF409-Di03 (Semrock), FF01-377/50 (Semrock), FF02-447/60 (Semrock); Alexa488: Cyan channel, FF-506-Di03 (Semrock), EX450-490 (Nikon), FF01-524/24 (Semrock); Cy3: Green channel, FF562-Di03(Semrock), FF01-543/22 (Semrock), FF01-586/20 (Semrock); Cy5: Red channel,\nFF660-Di02 (Semrock), 692/40 (Semrock); Alexa750: NIR channel, T760lpxr (Chroma), ET811/80 (Chroma).\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "CB5647 - Fluorescence maturation time measurement on cell library - repeat 2"
+    },
+    {
+      "@id": "#cc6672ae-15d4-4347-a124-3194cda4e953",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The strains EL3853, carrying an IPTG inducible SYFP2 (MG1655 ygaY::(AmpR paFAB120 Osym SYFP2) ) and EL330 (MG1655, without any fluorescent protein) were grown as in the maturation time experiments before loaded onto different sides of a mother machine chip. Cells were grown in the chip at 30 degrees for at least 3 hours before image acquisitions were started. To allow cell tracking, the cells were imaged in phase contrast (80 ms exposure time) every second minute throughout the experiment. To estimate the “leaky” expression of SYFP2 without IPTG induction, cells were imaged in fluorescence (300ms exposure time) prior to any media swaps. 1mM IPTG and 250 ug/ml CHL were added with time differences indicated in Fig. S4, where each time-difference corresponds to one experiment started from cryostock. Following the media swaps cells were again imaged in fluorescence 20 min after +CHL to allow for SYFP2 maturation.",
+      "labEquipment": "Microscopy experiments were carried out on a Ti2-E microscope (Nikon) for both phase contrast and epifluorescence. The microscope was equipped with a 100x CFI Plan Apo Lambda DM (Nikon) objective, and the build-in intermediate magnification was set to 1.5X Images were acquired using a Sona camera (Andor). \nEpifluorescence imaging was carried out using a Spectra III (Lumencor) set to the Teal channel and a filter cube consisting of a FF01-514/3 (Semrock) excitation filter, a Di02-R514 (Semrock) dichroic mirror, and an ET550/50M (Chroma) emission filter. To maintain a constant temperature of 30oC, we used a temperature unit and lexan enclosure manufactured by Okolab for the microscope stage and the sample. ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "EXP-24-CB5639 - Measurement of the time to protein synthesis inhibition after +CHL -  +CHL 5 minutes after +IPTG."
+    },
+    {
+      "@id": "#d3b2d164-3e00-440b-9cf1-17e96ca5a56c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Phenotyping: \nAfter loading the pooled library into the microfluidic chip, the cells were grown in IPTG containing media for 8 hours to ensure that all cells in traps are direct descendants of the cell at the bottom of the trap. 100 positions were imaged for 6 hours every minute in phase contrast (80 ms exposure time) and every 5 minutes in epifluorescence (100 ms exposure time). One hour after the imaging started the experiment media was swapped to experimental media containing chloramphenicol (250 μg/ml).\nGenotyping:\nAfter phenotyping, cells were fixed and permeabilized with 70% EtOH for 20 minutes followed by 20 min rehydration in PBS with 0.1% Tween (PBS-T) at RT.\nFrom this stage all reaction mixes were administered to the front channel of the chip using a syringe pump and the lexan stage enclosure was kept at 30 degrees. The composition of the reaction mixes are given in Table S6 and are administered as described below: 1) To further improve cell permeabilization we flowed the lysozyme reaction mix at 1 μl/min for 10 mins onto the chip; 2) Lysozyme activity was stopped by flowing the BSA solution mix at 1ul/min for 10 mins; 3) To produce the RNA barcodes used for PLP binding we flowed the zombie transcription mixture to the chip at a rate of 0.5 μl/min for 120 min; 4) To allow the padlock probe hybridization to the corresponding RNA target we flowed the PLP hybridization mixture to the chip at 1μl/min for 30 min; 5) For the ligation of the padlocks hybridized to the\ntarget RNA, a SplintR ligase mixture was flown into the chip at 0.75 μl/min for 60 min; 6) To optimise the RCA reaction, the RCA primer hybridization mixture containing a primer complementary to the padlock probe was flown into the chip at 1 μl/min for 30 min; 7) For amplification of the padlock DNA we flowed the RCA reaction mixture onto the chip at 0.5 μl/min for 120 min. 8) Barcode detection: for each round of sequential FISH, the L-probes, which were pre-hybridised to detection oligos, were flown onto the chip at 1 μl/min for 30 min followed by imaging for genotyping; 9) Probes were removed from the RCA product by flowing the probe stripping mixture at 1 μl/min for 30 min. Steps 8 and 9 were repeated an additional 6 times with different known variations of L-probe detection oligo pools.\nThe L-probes were mixed for each hybridization-round according to the code allowing for error correction (See Table S7 for a list of the L-probes used). Each strain was assigned a randomly chosen 7-symbol code word (with an alphabet of 4 symbols), while ensuring that each code word has a Hamming distance of at least 3 symbols from all other 84 code words. Each symbol in the code is represented by a differently colored detection oligo. Thus, for each hybridization-round we mixed a collection of 85 L-probes each connecting the padlock probes readout barcode and the correct detection oligo for that round.\nAfter all genotyping rounds, DAPI stain at 1ug/ml (thermo scientific) was flown into the chip for 30 min which was then imaged using the DAPI optical setting.\n",
+      "labEquipment": "Microscopy experiments were carried out on a Ti2-E microscope (Nikon) for both phase contrast and epifluorescence. The microscope was equipped with a 100x CFI Plan Apo Lambda DM (Nikon) objective, and the build-in intermediate magnification was set to 1.5X Images were acquired using a Sona camera (Andor).\nIn the Maturation time measurements experiments, epifluorescence imaging was carried out using a Spectra III (Lumencor) set to the Yellow channel and a filter cube consisting of a FF01-559/34 (Semrock) excitation filter, a T585lpxr (Chroma) dichroic mirror, and a T590LP (Chroma) emission filter. In the Measurement of the time to protein synthesis inhibition after +CHL experiments, epifluorescence imaging was carried out using a Spectra III (Lumencor) set to the Teal channel and a filter cube consisting of a FF01-514/3 (Semrock) excitation filter, a Di02-R514 (Semrock) dichroic mirror, and an ET550/50M (Chroma) emission filter. To maintain a constant temperature of 30oC, we used a temperature unit and lexan enclosure manufactured by Okolab for the microscope stage and the sample.\nIn the genotyping experiments, the same microscope setup as for phenotyping was used except for the filter cubes and channel on the Spectra III. The light-source channel and filter combinations used were specific to each dye, as follows: DAPI: Violet channel, FF409-Di03 (Semrock), FF01-377/50 (Semrock), FF02-447/60 (Semrock); Alexa488: Cyan channel, FF-506-Di03 (Semrock), EX450-490 (Nikon), FF01-524/24 (Semrock); Cy3: Green channel, FF562-Di03(Semrock), FF01-543/22 (Semrock), FF01-586/20 (Semrock); Cy5: Red channel,\nFF660-Di02 (Semrock), 692/40 (Semrock); Alexa750: NIR channel, T760lpxr (Chroma), ET811/80 (Chroma).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "CB5644 - Fluorescence maturation time measurement on cell library - repeat 1"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 145068
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 167370273299
+    }
+  ]
+}

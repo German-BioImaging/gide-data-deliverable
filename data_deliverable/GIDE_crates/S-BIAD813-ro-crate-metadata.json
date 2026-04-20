@@ -1,0 +1,213 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD813"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD813",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#cc8d39eb-7cf8-4988-84e7-ed1794a6b6a4"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4ca93273-48dd-4379-8a01-21a66588f73b"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#e0a544f9-d2c3-4cb7-b62c-9eb1625f48e4"
+        },
+        {
+          "@id": "#09ca9908-a3b3-4278-82de-03a4e2a4b893"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-07-10",
+      "description": "Source data EMM-2023-17691: Microscopic images",
+      "funder": [],
+      "identifier": "S-BIAD813",
+      "keywords": [
+        "source data"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Source data EMM-2023-17691: Microscopic images",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD813/f8caf96d-9691-4a7d-8bdc-05070face2f6/af7191eb-1ca3-4825-8c3d-4d174e096fe3.png"
+      ]
+    },
+    {
+      "@id": "#09ca9908-a3b3-4278-82de-03a4e2a4b893",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#91792e73-6254-4885-9f14-37fda3362547"
+        }
+      ],
+      "email": "lars.vereecke@irc.vib-ugent.be",
+      "name": "Lars Vereecke"
+    },
+    {
+      "@id": "#e0a544f9-d2c3-4cb7-b62c-9eb1625f48e4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#91792e73-6254-4885-9f14-37fda3362547"
+        }
+      ],
+      "email": "alexandra.thiran@ugent.be",
+      "name": "Alexandra Thiran"
+    },
+    {
+      "@id": "#91792e73-6254-4885-9f14-37fda3362547",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Ghent University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#4ca93273-48dd-4379-8a01-21a66588f73b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Mouse gut & joint sections",
+      "name": "Source data EMM-2023-17691: Microscopic images",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#cc8d39eb-7cf8-4988-84e7-ed1794a6b6a4",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "/",
+      "labEquipment": "Axioscan (Zeiss)\nLSM880 Airyscan (Zeiss)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Source data EMM-2023-17691: Microscopic images"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 32
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 5092732294
+    }
+  ]
+}

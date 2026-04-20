@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1082"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1082",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#daee9c37-ea38-4f5f-804c-bc59743c324b"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0c7c13e0-0de6-4214-8a11-d83d09a8ac66"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0003-3853-6441"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-13",
+      "description": "The original image data of PASD, GFAP and Iba1 IHC results.",
+      "funder": [],
+      "identifier": "S-BIAD1082",
+      "keywords": [
+        "PASD, GFAP, Iba1"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Amylopectinosis of the fatal epilepsy Lafora disease resists autophagic glycogen catabolism",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1082/3a6eec91-f7c7-4638-ae08-889b6b2261a2/e6e9fbee-ce0c-4d68-b096-2358fc1fe65c.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-3853-6441",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#7b23b97e-c4cb-4ea0-87c1-4deb355a4519"
+        }
+      ],
+      "email": "jun.wu@utsouthwestern.edu",
+      "name": "Jun Wu"
+    },
+    {
+      "@id": "#7b23b97e-c4cb-4ea0-87c1-4deb355a4519",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The University of Texas Southwestern Medical Center"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#0c7c13e0-0de6-4214-8a11-d83d09a8ac66",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "N/A",
+      "name": "N/A",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#daee9c37-ea38-4f5f-804c-bc59743c324b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The images were obtained by scanning brightfield samples at 40x and can be viewed in the free, user-friendly NDPview 2 software.",
+      "labEquipment": "Hamamatsu Nanozoomer 2.0HT",
+      "measurementTechnique": [],
+      "name": "PASD, GFAP and Iba1 images"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 8
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 6101865249
+    }
+  ]
+}

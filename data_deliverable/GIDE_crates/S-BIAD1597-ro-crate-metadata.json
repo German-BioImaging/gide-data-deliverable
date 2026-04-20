@@ -1,0 +1,278 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1597"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1597",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4371f0ec-812f-4ae0-98e1-d7257bbf7565"
+        },
+        {
+          "@id": "#eb346345-f609-433d-a792-0952c2a236ce"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ee799210-7087-4968-8774-a49b7134a90c"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-0008-5513"
+        },
+        {
+          "@id": "#3be6e5a7-f54d-4b16-8dae-212d0edf848f"
+        },
+        {
+          "@id": "#436c06f1-03e2-45fe-acb6-b107fe910bde"
+        },
+        {
+          "@id": "#b8baf010-7c06-4963-b6c1-f53b5ec1048e"
+        },
+        {
+          "@id": "#e1a61520-fc43-47b5-80bb-bf0447e79653"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-12-25",
+      "description": "Ewing sarcoma (EWS), a rare pediatric bone tumor, poses unique therapeutic challenges due to its distinct microenvironment and limited molecular understanding. To gain a comprehensive molecular and functional view of the tumors in their microenvironment, we performed a deep mass spectrometry-based proteomic analysis of 168 tumors from 72 patients from primary, relapsed, and metastatic tumors. Analysis of more than 10,000 proteins across patients revealed novel insights into cancer prognosis, chemo-resistance, and progression. We found ferroptosis inhibition as a potential mediator of EWS chemo-resistance and identified novel subclasses of EWS that link the tumor immune landscape with DNA damage repair, ubiquitin-related proteins, and patient prognosis. Validation by multiplexed immunofluorescence imaging confirmed the association between patient prognosis and tumor neutrophils, and association of macrophages and T-cells with better prognosis. These results suggest that immuno-oncological treatments might be efficacious for a subset of patients. Altogether, this comprehensive investigation provides valuable insights into the intricate biology of EWS, paving the way for developing novel therapeutic strategies.",
+      "funder": [],
+      "identifier": "S-BIAD1597",
+      "keywords": [
+        "Ewing Sarcoma",
+        "Pediatric bone tumor",
+        "Chemo-resistance",
+        "Ferroptosis"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Proteomic landscapes of Ewing sarcoma unravel immunological regulation of tumor progression",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1597/f1b4ee27-aa46-4b44-b974-dc5193174b6b/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#3be6e5a7-f54d-4b16-8dae-212d0edf848f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "sagi.gordon@weizmann.ac.il",
+      "name": "Sagi Gordon"
+    },
+    {
+      "@id": "#436c06f1-03e2-45fe-acb6-b107fe910bde",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "ofrag@weizmann.ac.il",
+      "name": "Ofra Golani"
+    },
+    {
+      "@id": "#b8baf010-7c06-4963-b6c1-f53b5ec1048e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "liat.alyagor@weizmann.ac.il",
+      "name": "Liat Fellus-Alyagor"
+    },
+    {
+      "@id": "#e1a61520-fc43-47b5-80bb-bf0447e79653",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "tami.geiger@weizmann.ac.il",
+      "name": "Tamar Geiger"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0008-5513",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d"
+        }
+      ],
+      "email": "vishnu.mohan@weizmann.ac.il",
+      "name": "Vishnu Mohan"
+    },
+    {
+      "@id": "#38da569e-f601-4204-ae9c-8c352ae2d54d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Weizmann Institute of Science"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#ee799210-7087-4968-8774-a49b7134a90c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Ewing Sarcoma",
+      "name": "EWS DAB and Opal Staining",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4371f0ec-812f-4ae0-98e1-d7257bbf7565",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging was performed by whole slide scanning using 10X / 0.8 objective – pixel size of 0.5 micron and compatible Opal dedicated filter set and Auto Fluorescent background channel. Final image output of 8bit.",
+      "labEquipment": "Phenoimager system (Akoya Biosciences Fusion 2.0)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Immuno-Fluorescence Panel-1,2,3"
+    },
+    {
+      "@id": "#eb346345-f609-433d-a792-0952c2a236ce",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "A Plan-Apochromat 20x objective with a 1x camera adapter was used in conjunction with a pco.edge 4.2 4MP camera. Images were captured at 20X objective magnification with a pixel size of 0.326 µm. Autofocus was performed across 5 focal planes using a step size of 5 µm, with focus limits disabled.  The images were compressed and saved in JPEG format with a quality factor of 80%. ",
+      "labEquipment": "Pannoramic SCAN 150 scanner",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000345"
+        }
+      ],
+      "name": "Histology-DAB"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000345",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "light microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 176
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 865833607858
+    }
+  ]
+}

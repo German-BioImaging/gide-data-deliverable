@@ -1,0 +1,792 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1288"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1288",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d28fc0d9-5a16-4b6e-9be0-c3dbb8ac39cb"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#259b4f39-1532-4ca3-adae-2f9c7a1bd946"
+        },
+        {
+          "@id": "#9c833a9e-e943-4cf3-b8b2-be5d44073729"
+        },
+        {
+          "@id": "#87d165b3-8bc4-47c2-a8d6-41bc0544b77a"
+        },
+        {
+          "@id": "#80d05537-a3c0-4c5b-a8cb-a66e9fb5d928"
+        },
+        {
+          "@id": "#2bdae2be-ccfc-4caf-9000-3f9ba14f0a90"
+        },
+        {
+          "@id": "#e1696c4d-513b-44f5-97cf-e6ba3d83bead"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#8ae018bb-ab5f-4a9f-bd43-069362984e2d"
+        },
+        {
+          "@id": "#4e4b7f4c-041a-4613-b748-951e24e95348"
+        },
+        {
+          "@id": "#22cf060a-272f-4ad7-8c29-68696c47f9f6"
+        },
+        {
+          "@id": "#e78ff5f6-17c2-4829-9cb3-664a21882d67"
+        },
+        {
+          "@id": "#e57661ea-4af0-429a-b7dd-4d42b5c802c4"
+        },
+        {
+          "@id": "#cb17257c-c2aa-481f-bbea-0018303ac36e"
+        },
+        {
+          "@id": "#ac3413bf-da5f-4e49-ad86-99bac3b6a498"
+        },
+        {
+          "@id": "#213fae51-067b-41c2-b234-2f8b75637d5c"
+        },
+        {
+          "@id": "#1205e40e-5f76-449c-a0de-08988d669ef4"
+        },
+        {
+          "@id": "#9388e3b3-4ff4-41ff-b4d5-619ca85d359c"
+        },
+        {
+          "@id": "#6bf8c2ed-2bfc-439c-b105-67214bb62cb5"
+        },
+        {
+          "@id": "#e371c198-8e05-4c9c-86d0-80a6042a66fd"
+        },
+        {
+          "@id": "#ef147442-4531-4f8a-ae32-f63faee46600"
+        },
+        {
+          "@id": "#dac12699-26ee-4987-ac9f-7c9b7e462703"
+        },
+        {
+          "@id": "#c90555ae-55e9-4ef2-aef2-30e680439dd3"
+        },
+        {
+          "@id": "#f081f69c-3e84-477f-8d24-8cdaaa9a1692"
+        },
+        {
+          "@id": "#b184a680-d58f-46cd-80ac-c008da0860f5"
+        },
+        {
+          "@id": "#73e21430-8764-4ac0-bdd8-994d07974a0f"
+        },
+        {
+          "@id": "#ccdc1403-1527-4f9a-a497-bc116d8b39d3"
+        },
+        {
+          "@id": "#203e721e-9bc4-4447-833d-fcdae8b7d3ca"
+        },
+        {
+          "@id": "#a86a2354-1c6a-434e-b8dd-508ad55db2e4"
+        },
+        {
+          "@id": "#9989b17e-d175-4684-98bb-2bea23cf8a89"
+        },
+        {
+          "@id": "#74e0d98f-bb49-4054-8569-9843b5651469"
+        },
+        {
+          "@id": "#b518dc34-313b-4d37-ba8f-658189f3cdb4"
+        },
+        {
+          "@id": "#7cf32f6a-d6a7-49ed-a031-398f75c1a89e"
+        },
+        {
+          "@id": "#6a8cf533-9e7e-490b-a255-d256b12e6268"
+        },
+        {
+          "@id": "#6568d308-fb4e-4951-a623-7e8d821c9031"
+        },
+        {
+          "@id": "#15bb46b9-5c32-4e3e-a25a-c6eac10c1127"
+        },
+        {
+          "@id": "#afef179b-0de7-43d5-b224-0d14f27e6e29"
+        },
+        {
+          "@id": "#d60742b8-f4af-47bf-ac63-16f42e63b66c"
+        },
+        {
+          "@id": "#cbebdb23-4df2-49fd-a904-743ffe2e712b"
+        },
+        {
+          "@id": "#a25cdbef-205b-48cd-8891-5d60cbef9f58"
+        },
+        {
+          "@id": "#edc08e18-2ae4-4a16-bb0c-e04a9211cd57"
+        },
+        {
+          "@id": "#692760d6-2a37-4169-97b4-6023a2e180a3"
+        },
+        {
+          "@id": "#d8f158f6-2684-4809-b667-c689abed7a44"
+        },
+        {
+          "@id": "#e0c994cd-7b4e-4381-9591-22a8943ed23b"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-09-28",
+      "description": "Immune checkpoint inhibition (ICI) has fundamentally changed cancer treatment. However, only a minority of patients with metastatic triple negative breast cancer (TNBC) benefit from ICI, and our understanding of the determinants of response is limited. To better understand the factors influencing patient outcome, we assembled a longitudinal cohort with tissue from the primary tumor, pre-treatment metastatic tumor, and on-treatment metastatic tumor from 117 patients treated with ICI (nivolumab) in the phase II TONIC trial. We used highly multiplexed imaging to quantify the subcellular localization of 37 proteins in each tumor. To extract meaningful information from the imaging data, we developed SpaceCat, a computational pipeline that quantifies features from imaging data such as cell density, cell diversity, spatial structure, and functional marker expression. We applied SpaceCat to 678 images from 294 tumors, generating more than 800 distinct features. Numerous spatial features were associated with patient outcome, including the degree of mixing between cancer and immune cells, the diversity of the neighboring immune cells surrounding cancer cells, and the degree of T cell infiltration at the cancer border. Non-spatial features, including the ratio between T cells and cancer cells and PDL1 levels on myeloid cells, were associated with ICI benefit. We did not identify robust predictors of response in the primary tumors. In contrast, the metastatic tumors had numerous features which predicted response. Some of these features, such as the cellular diversity at the cancer border, were shared across distinct timepoints, but many of the features were predictive at only a single timepoint. Multivariate models accurately predicted patient outcome from the pre-treatment metastatic tumors, with improved performance in the on-treatment tumor. We validated our findings in matched bulk RNA-seq data, observing similar longitudinal trends in the predictive power, but were not able to robustly predict outcome using matched pre-treatment exome sequencing data. Our study highlights the importance of profiling sequential tumor biopsies to understand the evolution of the tumor microenvironment, elucidating the temporal and spatial dynamics underlying patient responses to ICI.",
+      "funder": [],
+      "identifier": "S-BIAD1288",
+      "keywords": [
+        "tnbc",
+        "mibi",
+        "triple-negative breast cancer",
+        "multiplexed ion beam imaging",
+        "mesmer",
+        "cancer"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Temporal and spatial composition of the tumor microenvironment predicts response to immune checkpoint inhibition",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#1205e40e-5f76-449c-a0de-08988d669ef4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8743eaab-a7f5-459f-a157-5a00885ba7a0"
+        }
+      ],
+      "name": "Manon de Graaf"
+    },
+    {
+      "@id": "#15bb46b9-5c32-4e3e-a25a-c6eac10c1127",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8743eaab-a7f5-459f-a157-5a00885ba7a0"
+        }
+      ],
+      "name": "Ton N. Schumacher"
+    },
+    {
+      "@id": "#203e721e-9bc4-4447-833d-fcdae8b7d3ca",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Zumana Khair"
+    },
+    {
+      "@id": "#213fae51-067b-41c2-b234-2f8b75637d5c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "email": "srivarra@stanford.edu",
+      "name": "Sricharan Reddy Varra"
+    },
+    {
+      "@id": "#22cf060a-272f-4ad7-8c29-68696c47f9f6",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "email": "csowers@stanford.edu",
+      "name": "Cami Sowers"
+    },
+    {
+      "@id": "#4e4b7f4c-041a-4613-b748-951e24e95348",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8743eaab-a7f5-459f-a157-5a00885ba7a0"
+        }
+      ],
+      "name": "Iris Nederlof"
+    },
+    {
+      "@id": "#6568d308-fb4e-4951-a623-7e8d821c9031",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Cristina Sotomayor"
+    },
+    {
+      "@id": "#692760d6-2a37-4169-97b4-6023a2e180a3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Christina Curtis"
+    },
+    {
+      "@id": "#6a8cf533-9e7e-490b-a255-d256b12e6268",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Lise Mangiante"
+    },
+    {
+      "@id": "#6bf8c2ed-2bfc-439c-b105-67214bb62cb5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Candace C. Liu"
+    },
+    {
+      "@id": "#73e21430-8764-4ac0-bdd8-994d07974a0f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Christine Yiweh Yeh"
+    },
+    {
+      "@id": "#74e0d98f-bb49-4054-8569-9843b5651469",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Tyler Risom"
+    },
+    {
+      "@id": "#7cf32f6a-d6a7-49ed-a031-398f75c1a89e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Felix Hartmann"
+    },
+    {
+      "@id": "#8ae018bb-ab5f-4a9f-bd43-069362984e2d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "email": "nfgreen@stanford.edu",
+      "name": "Noah Greenwald"
+    },
+    {
+      "@id": "#9388e3b3-4ff4-41ff-b4d5-619ca85d359c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8743eaab-a7f5-459f-a157-5a00885ba7a0"
+        }
+      ],
+      "name": "Veerle Geurts"
+    },
+    {
+      "@id": "#9989b17e-d175-4684-98bb-2bea23cf8a89",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Hadeesha Piyadasa"
+    },
+    {
+      "@id": "#a25cdbef-205b-48cd-8891-5d60cbef9f58",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9"
+        }
+      ],
+      "name": "Robert Tibshirani"
+    },
+    {
+      "@id": "#a86a2354-1c6a-434e-b8dd-508ad55db2e4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Yunhao Bai"
+    },
+    {
+      "@id": "#ac3413bf-da5f-4e49-ad86-99bac3b6a498",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Kathleen Houlahan"
+    },
+    {
+      "@id": "#afef179b-0de7-43d5-b224-0d14f27e6e29",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Zhicheng Ma"
+    },
+    {
+      "@id": "#b184a680-d58f-46cd-80ac-c008da0860f5",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Aziz Khan"
+    },
+    {
+      "@id": "#b518dc34-313b-4d37-ba8f-658189f3cdb4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Alea Delmastro"
+    },
+    {
+      "@id": "#c90555ae-55e9-4ef2-aef2-30e680439dd3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Adam Kagel"
+    },
+    {
+      "@id": "#cb17257c-c2aa-481f-bbea-0018303ac36e",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "email": "alkong@stanford.edu",
+      "name": "Alex Kong"
+    },
+    {
+      "@id": "#cbebdb23-4df2-49fd-a904-743ffe2e712b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#44306fad-7ac1-4571-8e05-c38141005b62"
+        }
+      ],
+      "name": "Marc J. van de Vijver"
+    },
+    {
+      "@id": "#ccdc1403-1527-4f9a-a497-bc116d8b39d3",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Christine Camacho"
+    },
+    {
+      "@id": "#d60742b8-f4af-47bf-ac63-16f42e63b66c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Marc Bosse"
+    },
+    {
+      "@id": "#d8f158f6-2684-4809-b667-c689abed7a44",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8743eaab-a7f5-459f-a157-5a00885ba7a0"
+        }
+      ],
+      "name": "Marleen Kok"
+    },
+    {
+      "@id": "#dac12699-26ee-4987-ac9f-7c9b7e462703",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8743eaab-a7f5-459f-a157-5a00885ba7a0"
+        }
+      ],
+      "name": "Michiel de Maaker"
+    },
+    {
+      "@id": "#e0c994cd-7b4e-4381-9591-22a8943ed23b",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Michael Angelo"
+    },
+    {
+      "@id": "#e371c198-8e05-4c9c-86d0-80a6042a66fd",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Jolene Ranek"
+    },
+    {
+      "@id": "#e57661ea-4af0-429a-b7dd-4d42b5c802c4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Seongyeol Park"
+    },
+    {
+      "@id": "#e78ff5f6-17c2-4829-9cb3-664a21882d67",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Daisy Ding"
+    },
+    {
+      "@id": "#edc08e18-2ae4-4a16-bb0c-e04a9211cd57",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8743eaab-a7f5-459f-a157-5a00885ba7a0"
+        }
+      ],
+      "name": "Hugo M. Horlings"
+    },
+    {
+      "@id": "#ef147442-4531-4f8a-ae32-f63faee46600",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#8743eaab-a7f5-459f-a157-5a00885ba7a0"
+        }
+      ],
+      "name": "Leonie Voorwerk"
+    },
+    {
+      "@id": "#f081f69c-3e84-477f-8d24-8cdaaa9a1692",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d"
+        }
+      ],
+      "name": "Erin McCaffrey"
+    },
+    {
+      "@id": "#269fc60a-db00-4b0b-b190-31a97aedf5e9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford University"
+    },
+    {
+      "@id": "#44306fad-7ac1-4571-8e05-c38141005b62",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Amsterdam"
+    },
+    {
+      "@id": "#8743eaab-a7f5-459f-a157-5a00885ba7a0",
+      "@type": [
+        "Organization"
+      ],
+      "name": "The Netherlands Cancer Institute"
+    },
+    {
+      "@id": "#b8909c75-8e08-46e2-9d87-ece4ac7e6d7d",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Stanford Medicine"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#259b4f39-1532-4ca3-adae-2f9c7a1bd946",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Lymphnode Cells",
+      "name": "Human Lymphnode Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#2bdae2be-ccfc-4caf-9000-3f9ba14f0a90",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Other Human Cells",
+      "name": "Other Human Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#80d05537-a3c0-4c5b-a8cb-a66e9fb5d928",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Skin Cells",
+      "name": "Human Skin Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#87d165b3-8bc4-47c2-a8d6-41bc0544b77a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Lung Cells",
+      "name": "Human Lung Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9c833a9e-e943-4cf3-b8b2-be5d44073729",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Breast Cells",
+      "name": "Human Breast Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#e1696c4d-513b-44f5-97cf-e6ba3d83bead",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Thoracal Cells",
+      "name": "Human Thoracal Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#d28fc0d9-5a16-4b6e-9be0-c3dbb8ac39cb",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "MIBI run setup\nAll MIBI data was generated on a commercial MIBIScope instrument (IonPath, Menlo Park, USA). For each TMA core on each TMA, we used paired H&E images to identify the subregion that would be acquired on MIBI, avoiding areas of necrosis or empty slide (Extended Data Fig. 1b). TMA cores were named by their row and column number in the TMA grid to enable easy mapping back to the appropriate metadata. To ensure that the cores were reliably assigned the correct row and column coordinates on the TMA, we added automated checks to identify naming errors and fix them following user confirmation. Prior to beginning data acquisition, the order of the cores was randomized to mitigate potential batch effects from instrument drift. \n\nAcquisition settings\nWe used the same settings across all MIBI data acquired in this study. The size of each field of view (FOV) was determined based on sample availability. When possible, FOVs of size (800 um)^2 and (2048 pixels^)2 were acquired. However, if insufficient tissue was present, an FOV size of (400 um)^2 and (1024 pixels)^2 was used instead. We used a custom preset of XX beam current and XX dwell time to balance acquisition speed and image clarity. We disabled all default background correction and noise removal settings. \n\nMIBI cohort features\nMultiple ROIs per tissue sample were selected based on the pathologist annotation for areas representative of the tumor and stroma. A total of 1614 cores from 123 unique patients were included on the TMAs for MIBI data acquisition. MIBI data was successfully generated for 1256 cores (success rate 78%), and includes cores from 117 unique patients. We used MIBI to generate high quality, multiplexed imaging data with subcellular resolution across all 21 TMAs in our study. The total dataset consists of 1256 fields of view (FOV), 678 were included in this project.\n",
+      "labEquipment": "MIBIScope instrument (IonPath, Menlo Park, USA).",
+      "measurementTechnique": [],
+      "name": "MIBI Acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6780
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 18353250535
+    }
+  ]
+}

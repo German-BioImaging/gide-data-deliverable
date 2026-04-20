@@ -1,0 +1,221 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1943"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1943",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#3a8344f1-ce7e-422e-b57e-c0dd3e67ebae"
+        },
+        {
+          "@id": "#14d5b48a-bd12-4af0-8be5-7c8aadc747c6"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#149c8d81-403c-42a2-8e8c-b70e0c271068"
+        },
+        {
+          "@id": "#7b961b88-7742-4a54-916d-2a6330277cfd"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#c1d9f50f-8682-4a1a-a302-ec2449c17196"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-05-28",
+      "description": "Lung cancer is preceded by premalignant lesions, and what factors drive this transformation and the potential regulatory mode in the context of tumor initiation remain to be elucidated. In the course of precancerous lesions in mice, we found a phasic shift in metabolic patterns. Macrophages are a heterogeneous cell population with high plasticity in the tumor microenvironment. Single-cell interaction and metabolic analyses highlighted a cellular state, S100a4+ alveolar macrophages, which exhibited distinct fatty acid metabolic activity, such as palmitic acid metabolism, at the atypical adenomatous hyperplasia stage, accompanied by an angiogenic-promoting function in a pre-neoplastic setting of mice. These findings were reproducible in human single-cell transcriptomes and had been confirmed by histopathological staining and in vitro cell coculture assays. Taken together, the results from this study demonstrated that the S100a4+ alveolar macrophage subset contributes to tumorigenesis by altering its metabolic state, suggesting that metabolic interventions targeting this cell state in the early stage of disease may delay neoplastic transformation of the lung epithelium.",
+      "funder": [],
+      "identifier": "S-BIAD1943",
+      "keywords": [
+        "precancerous lesion, atypical adenomatous hyperplasia, alveolar macrophage, fatty acid metabolism, angiogenesis, lung cancer"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "S100a4+ alveolar macrophages accelerate the progression of precancerous atypical adenomatous hyperplasia by promoting fatty acid metabolism",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1943/50aa8b9d-8623-465a-867b-1aa23677de37/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#c1d9f50f-8682-4a1a-a302-ec2449c17196",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#26ce5cd3-a77c-4a10-a3eb-6df285dc4545"
+        }
+      ],
+      "email": "jon0824hh@163.com",
+      "name": "H"
+    },
+    {
+      "@id": "#26ce5cd3-a77c-4a10-a3eb-6df285dc4545",
+      "@type": [
+        "Organization"
+      ],
+      "name": "West China Hospital of Sichuan University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#149c8d81-403c-42a2-8e8c-b70e0c271068",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "mouse lung tissue",
+      "name": "mouse",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#7b961b88-7742-4a54-916d-2a6330277cfd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human lung tissue",
+      "name": "human",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#14d5b48a-bd12-4af0-8be5-7c8aadc747c6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fully automatic scanning of tissue slides: The device used for spectral imaging is a fully automated multispectral tissue quantitative analyzer. After cleaning the slides, they are mounted and loaded into the machine. In the program, select the fluorescence channel panel, set the single-channel automatic exposure, determine the exposure parameters, and save the settings. In the scanning program, match the scanning program for each slide, number the slides, initiate the scan, with the scanning time for a single slide approximately 10-15 minutes.\nFluorescence Result Analysis and Image Capture: Import the raw data into QuPath-0.3.2 software, subtract the background for each fluorescence channel, select the magnification, and export the single fluorescence channel images and merged fluorescence images.",
+      "labEquipment": "fluorescence microscope (Olympus, Tokyo, Japan)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "fluorescence imaging"
+    },
+    {
+      "@id": "#3a8344f1-ce7e-422e-b57e-c0dd3e67ebae",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Fully automatic scanning of tissue slides: The device used for spectral imaging is a fully automated multispectral tissue quantitative analyzer. After cleaning the slides, they are mounted and loaded into the machine. In the program, select the fluorescence channel panel, set the single-channel automatic exposure, determine the exposure parameters, and save the settings. In the scanning program, match the scanning program for each slide, number the slides, initiate the scan, with the scanning time for a single slide approximately 10-15 minutes.\nFluorescence Result Analysis and Image Capture: Import the raw data into QuPath-0.3.2 software, subtract the background for each fluorescence channel, select the magnification, and export the single fluorescence channel images and merged fluorescence images.",
+      "labEquipment": "multispectral tissue imaging system (PerkinElmer Vectra®)",
+      "measurementTechnique": [],
+      "name": "Multiplex immunofluorescence imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 42
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 48752324
+    }
+  ]
+}

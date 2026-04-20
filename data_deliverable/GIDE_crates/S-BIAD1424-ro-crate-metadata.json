@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1424"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1424",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#1fd06d49-5a8d-4d01-a1ae-d484351a147f"
+        },
+        {
+          "@id": "obo:FBbi_00000349"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cc0b46dd-bb6e-481a-b1c0-67744f3859a0"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#4cde1268-7ac6-472a-b354-69bbc780b4ac"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-19",
+      "description": "mIHC staining of human PDAC tissue microarray",
+      "funder": [],
+      "identifier": "S-BIAD1424",
+      "keywords": [
+        "mIHC; PDAC; TMA"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Multimodal single cell-resolved spatial proteomics reveal pancreatic tumor heterogeneity",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1424/c80aa8cb-5b06-468c-a511-a16dcde1b3ff/0bd37932-891d-42b1-b032-999b670d41b3.png"
+      ]
+    },
+    {
+      "@id": "#4cde1268-7ac6-472a-b354-69bbc780b4ac",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c90b77f2-6693-4bf7-a1da-b29b056ed477"
+        }
+      ],
+      "email": "12331053@mail.sustech.edu.cn",
+      "name": "xuyanfen"
+    },
+    {
+      "@id": "#c90b77f2-6693-4bf7-a1da-b29b056ed477",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Southern University of Science and Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#cc0b46dd-bb6e-481a-b1c0-67744f3859a0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human",
+      "name": "mIHC staining of human PDAC tissue microarray",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#1fd06d49-5a8d-4d01-a1ae-d484351a147f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "using a 5× objective to identify the location of the tissue section. Then the multiplexed whole-slide images were acquired at 40× high-magnification, and greyscale images of high magnification were extracted for each dye channel for further analysis.",
+      "labEquipment": "TissueFAXS Spectra Systems (TissueGnostics)",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000349"
+        }
+      ],
+      "name": "mIHC staining of huPDAC tissue microarray"
+    },
+    {
+      "@id": "obo:FBbi_00000349",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "ANSOM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 15448
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 57655060966
+    }
+  ]
+}

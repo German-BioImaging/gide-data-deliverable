@@ -1,0 +1,311 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1421"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1421",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#e524062d-ff12-4eba-a260-57b29688d564"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#27a4d617-318b-4eab-87af-e2cdb788959c"
+        },
+        {
+          "@id": "obo:NCBITaxon_8090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-5942-0793"
+        },
+        {
+          "@id": "#8f448c5c-150e-4427-9093-9a223f716e13"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-2370-8496"
+        },
+        {
+          "@id": "#40a81e50-68eb-4655-8bf6-2d6ecb054fc0"
+        },
+        {
+          "@id": "#7384f3ac-f28e-4c6e-9790-fc35b7b4c0ca"
+        },
+        {
+          "@id": "#92da8234-813a-4116-a300-de6e507456d9"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8550-7377"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8314-8497"
+        },
+        {
+          "@id": "#4fb422e6-5636-4619-913f-eac83a62bd44"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-21",
+      "description": "Motivation: Boldness-shyness is considered a fundamental axis of behavioural variation in humans and other species, with obvious adaptive causes and evolutionary implications. Besides an individual’s own genetics, this phenotype is also affected by the genetic makeup of peers in the individual’s social environment. To identify genetic determinants of variation along the bold-shy behavioural axis, a reliable experimental and analytical setup able to highlight direct and indirect genetic effects is needed.\nResults: We describe a custom assay designed to detect bold-shy behaviours in medaka fish, combining an open-field and novel-object component. We use this assay to explore direct and social genetic effects on the behaviours of 307 pairs of fish from five inbred medaka strains. Applying a Hidden Markov Model (HMM) to classify behavioural modes, we find that direct genetic effects influence the proportions of time the five strains spent in slow-moving states, explaining up to 29.7% of the variance in time spent in those states. We also found that an individual’s behaviour is influenced by the genetics of its tank partner, explaining up to 8.64% of the variance in the time spent in slow-moving states. Our behavioural assay in combination with the HMM analysis is applicable to follow-up genetic linkage studies of genetic variants involved in direct behavioural effects and indirect social genetic effects. A suitable genetic resource for such studies, the Medaka Inbred Kiyosu-Karlsruhe panel (MIKK) has recently been established.",
+      "funder": [],
+      "identifier": "S-BIAD1421",
+      "keywords": [
+        "video",
+        "behaviour",
+        "medaka"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Measurement and classification of bold-shy behaviours in medaka fish",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#40a81e50-68eb-4655-8bf6-2d6ecb054fc0",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cccf60ab-3a05-45b2-873d-4bf72e157ce6"
+        }
+      ],
+      "name": "Cathrin Herder"
+    },
+    {
+      "@id": "#4fb422e6-5636-4619-913f-eac83a62bd44",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cccf60ab-3a05-45b2-873d-4bf72e157ce6"
+        }
+      ],
+      "email": "felix.loosli@kit.edu",
+      "name": "Felix Loosli"
+    },
+    {
+      "@id": "#7384f3ac-f28e-4c6e-9790-fc35b7b4c0ca",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#cccf60ab-3a05-45b2-873d-4bf72e157ce6"
+        }
+      ],
+      "name": "Narendar Aadepu"
+    },
+    {
+      "@id": "#8f448c5c-150e-4427-9093-9a223f716e13",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c4317b32-4a03-4a49-a764-6c66b5d40392"
+        }
+      ],
+      "name": " Ian Brettell"
+    },
+    {
+      "@id": "#92da8234-813a-4116-a300-de6e507456d9",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d9f3f2d8-28a5-410e-b0a2-60298177383b"
+        }
+      ],
+      "name": "Christian Pylatiuk"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8314-8497",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c4317b32-4a03-4a49-a764-6c66b5d40392"
+        }
+      ],
+      "name": "Ewan Birney"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8550-7377",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#0bcc4f8f-ad16-4b20-9b14-dab04ca16cb9"
+        }
+      ],
+      "name": "Joachim Wittbrodt"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2370-8496",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c4317b32-4a03-4a49-a764-6c66b5d40392"
+        }
+      ],
+      "name": "Tomas Fitzgerald"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5942-0793",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c4317b32-4a03-4a49-a764-6c66b5d40392"
+        }
+      ],
+      "name": "Saul Pierotti"
+    },
+    {
+      "@id": "#0bcc4f8f-ad16-4b20-9b14-dab04ca16cb9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Centre for Organismal Studies, University of Heidelberg, Campus Im Neuenheimer Feld, Heidelberg, Germany"
+    },
+    {
+      "@id": "#c4317b32-4a03-4a49-a764-6c66b5d40392",
+      "@type": [
+        "Organization"
+      ],
+      "name": "European Molecular Biology Laboratory, European Bioinformatics Institute, Wellcome Genome Campus, Hinxton, Cambridge, UK"
+    },
+    {
+      "@id": "#cccf60ab-3a05-45b2-873d-4bf72e157ce6",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Biological and Chemical Systems, Biological Information Processing (IBCS-BIP), Karlsruhe Institute of Technology, 76131 Karlsruhe, Germany"
+    },
+    {
+      "@id": "#d9f3f2d8-28a5-410e-b0a2-60298177383b",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute for Automation and Applied Informatics (IAI), Karlsruhe Institute of Technology, 76131 Karlsruhe, Germany"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_8090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Oryzias latipes"
+    },
+    {
+      "@id": "#27a4d617-318b-4eab-87af-e2cdb788959c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Full organism",
+      "name": "Medaka fish pairs",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_8090"
+      }
+    },
+    {
+      "@id": "#e524062d-ff12-4eba-a260-57b29688d564",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The video recording was carried out in a quiet room at 24 °C. The fish were moved from the stocking tank to the observation tank without acclimatisation time and the video recording was started immediately. \n\nAn acrylic glass observation tank (opaque white, size 36x36x10 cm) was divided into four 18x18 cm quadrants by opaque white acrylic glass dividers. Prior to each assay run (involving the simultaneous assay of four pairs of fish, one pair in each of the four quadrants), the observation tank was rinsed and filled with fresh water (3 cm water depth), and placed inside the test box. Videos were recorded with a Ximea xiQ USB3 colour camera fitted with a 5.5 mm f/1.8 lens mounted above the test tank. The test tank was illuminated with white LED panels providing indirect illumination from above. The front door was closed at the beginning of each run to shield from interference by external stimuli.\n\nVideos were recorded using the Ximea CamTool software (version 4.16), set to capture 30 frames per second. Minor variations from this frame rate, for example 29 frames per second, (movie 20190612_1326_icab_kaga_R) were adjusted for in the downstream analysis. All movies were saved as AVI files.\nThe four reference fishes from the iCab line were always introduced to the test tank first and in clockwise order (quadrant order II, I, IV, III), followed by the four test fishes in the same order.\n\nThe open field and novel object assay components were carried out consecutively. For the open field assay, as soon as all fish had been introduced in the tank, the fish pairs were recorded for 10 minutes. Subsequently, the door of the test box was opened, and the “novel object” – a small, dark grey, plastic cylinder of 3 cm diameter x 8 cm height was placed in the middle of each quadrant (quadrant order II, I, IV, III).  The fish pairs were recorded again for 10 minutes, after which the recording was stopped.\n\nThe test tank was then emptied, and all objects including the quadrant dividers, fish nets, and novel objects were rinsed thoroughly with fresh water, before being returned and refilled for the next run.\n\nNote: the quadrant order is (from top left quadrant and moving clockwise) II, I, IV, III only for the files labelled as \"Left\" on the \"Camera stand side\" column. The files labelled as \"Right\" on the same column have the quadrant order flipped vertically (IV, III, II, I).\nNote: the first fish to be introduced in each quadrant is always the reference fish (iCab strain), and the second fish to be introduced is always the test fish.",
+      "labEquipment": "Ximea xiQ USB3 colour camera fitted with a 5.5 mm f/1.8 lens",
+      "measurementTechnique": [],
+      "name": "Ximea camera"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 154
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 79983572038
+    }
+  ]
+}

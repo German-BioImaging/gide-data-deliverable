@@ -1,0 +1,144 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000372/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000372/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000372",
+      "name": "Integrative analysis reveals early epigenetic alterations in high-grade serous ovarian carcinomas",
+      "description": "High-grade serous ovarian carcinoma (HGSOC) is the most lethal gynecological malignancy. To date, the profiles of gene mutations and copy number alterations in HGSOC have been well characterized. However, the patterns of epigenetic alterations and transcription factor dysregulation in HGSOC have not yet been fully elucidated. In this study, we performed integrative omics analyses of a series of stepwise HGSOC model cells originating from human fallopian tube secretory epithelial cells (HFTSECs) to investigate early epigenetic alterations in HGSOC tumorigenesis. Assay for transposase-accessible chromatin using sequencing (ATAC-seq), chromatin immunoprecipitation sequencing (ChIP-seq), and RNA sequencing (RNA-seq) methods were used to analyze HGSOC samples. Additionally, protein expression changes in target genes were confirmed using normal HFTSECs, serous tubal intraepithelial carcinomas (STICs), and HGSOC tissues. Transcription factor motif analysis revealed that the DNA-binding activity of the AP-1 complex and GATA family proteins was dysregulated during early tumorigenesis. The protein expression levels of JUN and FOSL2 were increased, and those of GATA6 and DAB2 were decreased in STIC lesions, which were associated with epithelial- mesenchymal transition (EMT) and proteasome downregulation. The genomic region around the FRA16D site, containing a cadherin cluster region, was epigenetically suppressed by oncogenic signaling. Proteasome inhibition caused the upregulation of chemokine genes, which may facilitate immune evasion during HGSOC tumorigenesis. Importantly, MEK inhibitor treatment reversed these oncogenic alterations, indicating its clinical effectiveness in a subgroup of patients with HGSOC. This result suggests\r\nthat MEK inhibitor therapy may be an effective treatment option for chemotherapy-resistant HGSOC.",
+      "datePublished": "2024-11-21",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s12276-023-01090-1"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Hidenori Machino",
+      "email": "hidenori.machino@riken.jp",
+      "description": "Organization: RIKEN Center for Advanced Intelligence Project; Department: Cancer Translational Research Team",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/03ckxwf91"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Ryuji Hamamoto"
+    },
+    {
+      "@id": "https://ror.org/03ckxwf91",
+      "@type": "Organization",
+      "name": "RIKEN Center for Advanced Intelligence Project"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s12276-023-01090-1",
+      "@type": "ScholarlyArticle",
+      "name": "Integrative analysis reveals early epigenetic alterations in high-grade serous ovarian carcinomas.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 49651712,
+      "description": "49.7 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 14,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

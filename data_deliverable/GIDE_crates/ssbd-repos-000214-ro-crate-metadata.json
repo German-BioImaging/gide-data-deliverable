@@ -1,0 +1,149 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000214/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000214/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000214",
+      "name": "Swimming behaviors of C. elegans in various genetic background cultured in different food conditions; cultured with OP50, 1g/L glucose, or no nutrients (M9 buffer)",
+      "description": "Complex behaviors of various animal species including human are governed by fractal scaling. Fractal scaling of human behaviors is altered by neurodegenerative diseases and aging. However, the mechanism underlying fractal scaling remains unknown. Here, we videorecorded C. elegans cultured in a microfluidic device for 3 days and analyzed temporal patterns of the behaviors by fractal analyses. Residence time distribution in C. elegans behaviors showed a common feature with those of human and mice, i.e., power law distribution for actively-moving state changed to exponential-like decline at longer time scale, whereas that for inactive state did not. We found that the exponential-like decline disappeared in starved C. elegans, and it was restored by culturing animals with glucose. Additionally, the exponential-like decline disappeared in insulin signaling mutants, daf-2 and daf-16. Therefore, we conclude that insulin signaling regulates fractal scaling of C. elegans behavior. Our finding indicates that neurosensory modulation of C. elegans behaviors by insulin signaling is achieved by regulation of fractal scaling. Diabetes mellitus in human is known to be associated with depression, bipolar disorder, and anxiety disorder, which affect daily behavioral activity. Behavioral defects in diabetes patients may be attributed to altered fractal scaling of human behaviors.",
+      "datePublished": "2021-11-25",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Animals",
+        "Caenorhabditis elegans[major]",
+        "Caenorhabditis elegans Proteins/genetics[major]",
+        "Forkhead Transcription Factors/genetics",
+        "Fractals",
+        "Humans",
+        "Insulin",
+        "Longevity",
+        "Mice",
+        "Mutation",
+        "Receptor, Insulin/genetics"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-022-13022-6"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yukinobu Arata",
+      "email": "arata@riken.jp",
+      "description": "Organization: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01psvah38"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01psvah38",
+      "@type": "Organization",
+      "name": "Cellular Informatics Laboratory"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-022-13022-6",
+      "@type": "ScholarlyArticle",
+      "name": "Insulin signaling shapes fractal scaling of C. elegans behavior.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "vernacularName": "nematode"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 52172214272,
+      "description": "52.2 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2678,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

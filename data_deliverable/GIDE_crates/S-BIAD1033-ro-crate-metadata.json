@@ -1,0 +1,188 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1033"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1033",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#4b70ebfa-9cc3-477c-b652-d4a0a70716b1"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#3da73bdd-29e6-43dd-907d-08f4bfe1e20a"
+        },
+        {
+          "@id": "obo:NCBITaxon_10116"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2073-7988"
+        },
+        {
+          "@id": "#17c4880c-b779-4abc-be34-3cef2241271a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-02-07",
+      "description": "Redox homeostasis modulates the morphology of cardiomyocytes\nRedox homeostasis is affected in heart failure. Remodelling of heart failure has been associated with enhanced ROS production due to alterations in the excitation-contraction coupling, or due to altered cytoplasmic calcium handling (Münzel, Gori et al. 2015). However, these alterations are met by adaptations of the antioxidative system to restore redox homeostasis. We have noted that redox induces changes to cardiomyocytes geometry, where oxidative stress induces cardiomyocytes’ elongation and atrophy, while antioxidative compounds promotes cardiomyocytes hypertrophy. These alterations in the cardiomyocyte’s geometry resemble the changes observed to geometry of the heart during heart failure and indicate that intracellular redox homeostasis is involved in regulating the morphology of cardiomyocytes. We quantitatively measured these alterations in cell morphology upon treating neonatal rat cardiomyocytes with a pro-oxidant (Sulforaphane, SF) and an antioxidant (N-Acetyl Cysteine, NAC). We utilized florescence microscopic imaging, followed by image analysis with ImageJ. This experiment is part of a study that investigates the impact of endogenous antioxidative defenses in the heart and the potentially adverse effects associated with excessive quenching of physiological levels of reactive oxygen species, which act as cellular signalling molecules. The study is now available as a pre-pint on BioRxiv (Epigenetic modulators link mitochondrial redox homeostasis to cardiac function a sex-dependent manner, doi: https://doi.org/10.1101/2022.03.26.485908), and under consideration for publication in Nature Communications.",
+      "funder": [],
+      "identifier": "S-BIAD1033",
+      "keywords": [
+        "Cardiomyocytes ",
+        "geometry profiling",
+        "Redox homeostasis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Cell's geometry profiling for neonatal rat cardiomyocytes in 2D culture",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1033/d9bbc69e-4f4b-46e9-af05-c394b11af784/d606edaa-48c2-4199-aecc-b02d6f30399c.png"
+      ]
+    },
+    {
+      "@id": "#17c4880c-b779-4abc-be34-3cef2241271a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "email": "gisele.miranda@ki.se",
+      "name": "Gisele Miranda"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2073-7988",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3"
+        }
+      ],
+      "email": "zaher.elbeck@ki.se",
+      "name": "Zaher ElBeck"
+    },
+    {
+      "@id": "#dda678d3-5b4d-4ec1-a7ee-3bac8c8b0cc3",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Karolinska Institutet"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10116",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Rattus norvegicus"
+    },
+    {
+      "@id": "#3da73bdd-29e6-43dd-907d-08f4bfe1e20a",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Cultured primary neonatal rat cardiomyocytes ",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10116"
+      }
+    },
+    {
+      "@id": "#4b70ebfa-9cc3-477c-b652-d4a0a70716b1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The emission iris was closed to match the objective, according to the specifications by CREST Optics. The ring of the objective was adjusted to the thickness of the plate bottom. The camera used was a Photometrix BSI Express Back illuminated sCMOS for widefield images; Sensitivity 11 Bits mode, readout speed 200 MHz.\nThe α-actinin channel was acquired using a 546 nm laser and a Pentaband emission filter (441/30; 511/26; 593/37; 684/34; 817/66 nm). The laser power and exposure time were set to get the brightest possible images without any saturation. The same settings were used for all the samples to be compared.\nThe brightness and contrast of the analyzed images were adjusted to the same settings, and the images were acquired either in widefield as tiles (9x9).\n",
+      "labEquipment": "S Plan Fluor Ph2 ELWD 60x/0.70 objective on a Nikon Ti2 microscope equipped with a CREST Optics V3 spinning disk confocal (50 um pinholes). ",
+      "measurementTechnique": [],
+      "name": "Widefield images acquisition "
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 23
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 80687308800
+    }
+  ]
+}

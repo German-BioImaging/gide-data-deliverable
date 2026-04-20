@@ -1,0 +1,162 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000453/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000453/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000453",
+      "name": "microtubule-dependent nuclear transport in neurons driven by Nesprin-2 and microtubule motors",
+      "description": "This study identifies Nesprin-2 as a bidirectional motor adaptor during nuclear migration in developing neurons. Nesprin-2 coordinates dynein complex and kinesin-1 and activates prolonged bidirectional movements of the nucleus along forward moving microtubules in migrating neurons.",
+      "datePublished": "2025-07-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Microtubules/metabolism[major]",
+        "Neurons/metabolism[major]",
+        "Kinesins/metabolism[major]",
+        "Kinesins/genetics[major]",
+        "Nerve Tissue Proteins/metabolism[major]",
+        "Nerve Tissue Proteins/genetics[major]",
+        "Dyneins/metabolism[major]",
+        "Cell Nucleus/metabolism[major]",
+        "Mice",
+        "Microtubule-Associated Proteins/metabolism[major]",
+        "Microtubule-Associated Proteins/genetics[major]",
+        "Active Transport, Cell Nucleus",
+        "Dynactin Complex/metabolism",
+        "Dynactin Complex/genetics",
+        "Cell Movement",
+        "Microfilament Proteins/metabolism",
+        "Microfilament Proteins/genetics",
+        "Nuclear Proteins/metabolism",
+        "Nuclear Proteins/genetics",
+        "Cerebellum/metabolism",
+        "Cerebellum/cytology",
+        "Binding Sites",
+        "Humans"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1083/jcb.202405032"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Mineko Kengaku",
+      "email": "kengaku@icems.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Institute for Advanced Study; Laboratory: Institute for Integrated Cell-Material Sciences",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/02kpeqv85"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/02kpeqv85",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1083/jcb.202405032",
+      "@type": "ScholarlyArticle",
+      "name": "Nesprin-2 coordinates opposing microtubule motors during nuclear migration in neurons.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 297267200,
+      "description": "297.3 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 5,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

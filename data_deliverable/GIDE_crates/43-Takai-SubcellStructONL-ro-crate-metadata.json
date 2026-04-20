@@ -1,0 +1,248 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/43-Takai-SubcellStructONL/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/43-Takai-SubcellStructONL/",
+      "@type": "Dataset",
+      "identifier": "43-Takai-SubcellStructONL",
+      "name": "43-Takai-SubcellStructONL",
+      "description": "43-Takai-SubcellStructONL",
+      "datePublished": "2017-10-03",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Animals",
+        "Calcium/metabolism",
+        "Cell Line",
+        "DNA/chemistry",
+        "Dogs",
+        "Embryonic Stem Cells/cytology",
+        "Endosomes/metabolism",
+        "Fluorescence Resonance Energy Transfer",
+        "Focal Adhesions",
+        "Gene Expression Regulation",
+        "Luciferases/chemistry[major]",
+        "Luciferases, Renilla/metabolism",
+        "Luminescence[major]",
+        "Luminescent Proteins/chemistry[major]",
+        "Mice",
+        "Molecular Sequence Data",
+        "Oligonucleotides/chemistry",
+        "Peroxisomes/metabolism",
+        "Promoter Regions, Genetic",
+        "Recombinant Fusion Proteins/chemistry[major]",
+        "Renilla",
+        "Vinculin/chemistry"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.1418468112"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-71"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Yasushi Okada",
+      "email": "y.okada@riken.jp",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Akira Takai"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Masahiro Nakano"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Kenta Saito"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Remi Haruno"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Tomonobu M. Watanabe"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Tatsuya Ohyanagi"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Takashi Jin"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Takeharu Nagai"
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.1418468112",
+      "@type": "ScholarlyArticle",
+      "name": "Expanded palette of Nano-lanterns for real-time multicolor luminescence imaging.",
+      "datePublished": "2015"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "MDCK II",
+      "description": "MDCK II",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 95014858,
+      "description": "95.0 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 6,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

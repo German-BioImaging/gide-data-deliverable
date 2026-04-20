@@ -1,0 +1,257 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/416-Otomo-descSPIM/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/416-Otomo-descSPIM/",
+      "@type": "Dataset",
+      "identifier": "416-Otomo-descSPIM",
+      "name": "Images of brain and xenograft obtained by descSPIM, the desktop- equipped SPIM",
+      "description": "Despite widespread adoption of tissue clearing techniques in recent years, poor access to suitable light-sheet fluorescence microscopes remains a major obstacle for biomedical end-users. Here, we present descSPIM (desktop- equipped SPIM for cleared specimens), a low-cost ($20,000–50,000), low- expertise (one-day installation by a non-expert), yet practical do-it-yourself light-sheet microscope as a solution for this bottleneck. Even the most fundamental configuration of descSPIM enables multi-color imaging of whole mouse brains and a cancer cell line-derived xenograft tumor mass for the visualization of neurocircuitry, assessment of drug distribution, and pathological examination by false-colored hematoxylin and eosin staining in a three- dimensional manner. Academically open-sourced (https://github.com/dbsb- juntendo/descSPIM), descSPIM allows routine three-dimensional imaging of cleared samples in minutes. Thus, the dissemination of descSPIM will accelerate biomedical discoveries driven by tissue clearing technologies.",
+      "datePublished": "2025-11-28",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Mice",
+        "Brain/diagnostic imaging[major]",
+        "Humans",
+        "Microscopy, Fluorescence/methods[major]",
+        "Microscopy, Fluorescence/instrumentation[major]",
+        "Imaging, Three-Dimensional/methods[major]",
+        "Cell Line, Tumor"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-024-49131-1"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005737"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "#imaging-technique-2"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1805"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Etsuo A Susaki",
+      "email": "suishess-kyu@umin.ac.jp",
+      "description": "Organization: Juntendo University; Department: Department of Biochemistry and Systems Biomedicine; Laboratory: Department of Biochemistry and Systems Biomedicine",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01692sz90"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01692sz90",
+      "@type": "Organization",
+      "name": "Juntendo University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-024-49131-1",
+      "@type": "ScholarlyArticle",
+      "name": "descSPIM: an affordable and easy-to-build light-sheet microscope optimized for tissue clearing techniques.",
+      "datePublished": "2024"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "B6.Cg-Tg(Thy1-YFP)HJrs/J",
+      "description": "B6.Cg-Tg(Thy1-YFP)HJrs/J",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ BT-474 cell",
+      "description": "Homo sapiens ~ BT-474 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": "BT-474 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
+      "@type": "DefinedTerm",
+      "name": "cytoplasm"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "selective plane illumination microscopy (SPIM)",
+      "description": "selective plane illumination microscopy (SPIM)",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-2"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#imaging-technique-2",
+      "@type": "DefinedTerm",
+      "name": "selective plane illumination microscopy (SPIM)"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 374304974339,
+      "description": "374.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 50,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1182"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1182",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#de08d88e-bdc5-4fad-bfcf-498b68f18c8c"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#91afaf98-1a9d-4d70-a760-19c1b199eacd"
+        },
+        {
+          "@id": "#a7fc9fd2-13c0-4459-85e9-a1626a563510"
+        },
+        {
+          "@id": "#4f58a374-ece5-4796-b09a-3c442d8dc0e0"
+        },
+        {
+          "@id": "#b2bea736-66f6-4b8f-b6d1-1c81a0d0ba4c"
+        },
+        {
+          "@id": "#fbd3231c-5a2d-4c89-aaf4-66837c077c1b"
+        },
+        {
+          "@id": "#2852c81a-d1f0-4cc5-907c-23990b50a080"
+        },
+        {
+          "@id": "#cc6d554e-f79b-4576-b41a-f39602d0233f"
+        },
+        {
+          "@id": "#84c469c7-6df8-4d23-bdc8-8b5cb2f2f94e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#ab6f6daa-12d3-4de3-a9a4-ee2b8c4a2a7d"
+        },
+        {
+          "@id": "#8f449b4c-ed78-4038-8475-3d0221829bf8"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4728-3194"
+        },
+        {
+          "@id": "#7fab9424-2f9b-438c-815c-43c612c4fe10"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-05-25",
+      "description": "Multiplexed single molecule fluorescence in situ hybridisation of human endometrium. Imaging performed on fresh frozen human samples.",
+      "funder": [],
+      "identifier": "S-BIAD1182",
+      "keywords": [
+        "RNAscope",
+        "smFISH",
+        "Human",
+        "Endometrium"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "An integrated single-cell reference atlas of the human endometrium",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#7fab9424-2f9b-438c-815c-43c612c4fe10",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "email": "rv4@sanger.ac.uk",
+      "name": "Roser Vento-Tormo"
+    },
+    {
+      "@id": "#8f449b4c-ed78-4038-8475-3d0221829bf8",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "email": "lg18@sanger.ac.uk",
+      "name": "Luz Garcia-Alonso"
+    },
+    {
+      "@id": "#ab6f6daa-12d3-4de3-a9a4-ee2b8c4a2a7d",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e"
+        }
+      ],
+      "email": "magda.mareckova@wrh.ox.ac.uk",
+      "name": "Magda Marečková"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4728-3194",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "email": "cm18@sanger.ac.uk",
+      "name": "Cecilia Icoresi Mazzeo"
+    },
+    {
+      "@id": "#4fd6f7d5-9a50-4f9b-8bac-2be37914c43e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oxford"
+    },
+    {
+      "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Wellcome Sanger Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2852c81a-d1f0-4cc5-907c-23990b50a080",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human endometrium\n",
+      "name": "AOrv3-END-0-FO-4",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#4f58a374-ece5-4796-b09a-3c442d8dc0e0",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Endometrium",
+      "name": "A66-RPT-8-FO-1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#84c469c7-6df8-4d23-bdc8-8b5cb2f2f94e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human endometrium",
+      "name": "AOrv6-END-0-FT-1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#91afaf98-1a9d-4d70-a760-19c1b199eacd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Endometrium",
+      "name": "A30-UTR-1-FO-1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#a7fc9fd2-13c0-4459-85e9-a1626a563510",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Endometrium",
+      "name": "A13-UTR-0-TL4-1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b2bea736-66f6-4b8f-b6d1-1c81a0d0ba4c",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Endometrium",
+      "name": "A70-RPT-8-FO-1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#cc6d554e-f79b-4576-b41a-f39602d0233f",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human endometrium",
+      "name": "AOrv5-END-0-FT-1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#fbd3231c-5a2d-4c89-aaf4-66837c077c1b",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human Endometrium",
+      "name": "AOrv39-END-0-FO-2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#de08d88e-bdc5-4fad-bfcf-498b68f18c8c",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "confocal mode with 1 μm z-step size, using a 20X (NA 0.16, 0.299 μm/pixel); 40X (NA 1.1, 0.149 μm/pixel); water-immersion objective. Channels: DAPI (excitation 375 nm, emission 435-480 nm), Atto 425 (ex. 425 nm, em. 463-501 nm), Opal 520 (ex. 488 nm, em. 500-550 nm), Opal 570 (ex. 561 nm, em. 570-630 nm), Opal 650 (ex. 640 nm, em. 650-760 nm)",
+      "labEquipment": "Perkin Elmer Opera Phenix High-Content Screening System",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "confocal fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 11
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 118624906574
+    }
+  ]
+}

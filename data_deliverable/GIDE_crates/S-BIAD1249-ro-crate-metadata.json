@@ -1,0 +1,217 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1249"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1249",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#92e1ae3c-9b85-48dc-8d90-fef149a2adbc"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c98cc7b3-8cac-49d2-8d6b-51108ff50102"
+        },
+        {
+          "@id": "obo:NCBITaxon_4100"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0108-6080"
+        },
+        {
+          "@id": "#0c1ae9af-d891-47c0-98e0-da4e1d1b7f10"
+        },
+        {
+          "@id": "#a4be1eb5-1e13-4d54-a417-8608995e5f6a"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-08-25",
+      "description": "Multivalent protein-chromatin interactions facilitated by higher-order protein assemblies are emerging as a crucial theme in eukaryotic gene regulation. However, understanding the underlying mechanisms in their functional context in vivo remains challenging. Arabidopsis VEL proteins assemble biomolecular condensates by head-to-tail polymerization. Here, we dissect the role of the VEL polymerization domains in conferring the epigenetic switch to Polycomb Repressive Complex 2 (PRC2) silencing at Arabidopsis FLOWERING LOCUS C (FLC). We show that VIN3 VEL polymerization produces higher order nuclear VIN3 assemblies in vivo, which promote multivalent chromatin association and efficient H3K27me3 nucleation. VRN5 VEL polymerization, however, is not required unless a third homolog VEL1 is absent. The VRN5 VEL domain has different polymerization properties and is functionally unable to replace VIN3 VEL, but it is required to physically connect VIN3 with PRC2. This work reveals the combinatorial roles of VEL-polymerization domains in maintaining the chromatin association of Polycomb proteins for the switch to epigenetic silencing.",
+      "funder": [],
+      "identifier": "S-BIAD1249",
+      "keywords": [
+        "Polycomb silencing",
+        "polymerization"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "VEL-dependent polymerization maintains the chromatin association of Polycomb proteins for the switch to epigenetic silencing",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1249/c9ed6b84-0940-4d40-b697-08ef9b359db4/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#0c1ae9af-d891-47c0-98e0-da4e1d1b7f10",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "anna.schulten@jic.ac.uk",
+      "name": "Anna Schulten"
+    },
+    {
+      "@id": "#a4be1eb5-1e13-4d54-a417-8608995e5f6a",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "caroline.dean@jic.ac.uk",
+      "name": "Caroline Dean"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0108-6080",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "geng-jen.jang@jic.ac.uk",
+      "name": "Geng-Jen Jang"
+    },
+    {
+      "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "John Innes Centre"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_4100",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Nicotiana benthamiana"
+    },
+    {
+      "@id": "#c98cc7b3-8cac-49d2-8d6b-51108ff50102",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Leaf samples",
+      "name": "Co-localization analysis of transiently co-expressed GFP-VIN3 and mScarlet-VRN5 (in either wild-type or mutant forms)",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_4100"
+      }
+    },
+    {
+      "@id": "#92e1ae3c-9b85-48dc-8d90-fef149a2adbc",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The excitation at 488 nm, detection at 507-542 nm for GFP and excitation at 561 nm, detection at 575-625 nm for mScarletI. Images were acquired 24 hr after infiltration with a laser speed of 600 Hz, a typical Z-step size of 4.7 μm and a pinhole size of 1 AU. The same settings were used at all imaging sets to allow direct comparison between constructs.",
+      "labEquipment": " Confocal imaging of infiltrated epidermal leaf cells of N. benthamiana was performed on a Leica confocal Stellaris 8 microscope using a 63x/1.2 water objective and 4x zoom.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Image acquisition of VEL proteins"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 25
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1633530007
+    }
+  ]
+}

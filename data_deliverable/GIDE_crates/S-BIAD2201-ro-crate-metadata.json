@@ -1,0 +1,156 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2201"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2201",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b9970d64-5482-4e4f-ae6d-f92630c2253f"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#dd979524-64d0-4726-940a-ff7d165604ca"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#4f29941c-f138-448b-b1d0-f04696a784ac"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-30",
+      "description": "Stem cell-derived embryo models could greatly facilitate our understanding of embryonic development. Here we developed an in vitro culture system supporting stem cell-derived monkey blastoid developing to day 25 (D25). Morphological and transcriptomic analyses showed that these monkey embryoids underwent gastrulation and largely recapitulated key developmental events of the late gastrulation stage observed in vivo, with the appearance of neural plate, hematopoietic system, allantois, primitive gut, primordial germ cells, yolk sac structures, and progenitors of other organs, excluding extraembryonic tissues. This primate stem cell-derived embryo model provides a valuable platform for dissecting the mechanisms of primate embryonic development from blastocyst to late gastrulation stage. ",
+      "funder": [],
+      "identifier": "S-BIAD2201",
+      "keywords": [
+        "Primate; Stem cell; Embryo model; Gastrulation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Modeling late gastrulation in stem-cell derived monkey embryo models\n",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "#4f29941c-f138-448b-b1d0-f04696a784ac",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00vpwhm04"
+        }
+      ],
+      "email": "jli@ion.ac.cn",
+      "name": "Jie Li"
+    },
+    {
+      "@id": "https://ror.org/00vpwhm04",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Center for Excellence in Brain Science and Intelligence Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#dd979524-64d0-4726-940a-ff7d165604ca",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Monkey embryoid",
+      "name": "Stem cell-derived embryo model",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#b9970d64-5482-4e4f-ae6d-f92630c2253f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "10x objective (LiT, N.A. = 0.6) and a 25x objective (LiT, N.A. = 1.0)",
+      "labEquipment": "LiTone XL Light-sheet Microscope (Light Innovation Technology Limited)",
+      "measurementTechnique": [],
+      "name": "Image of Monkey embryoid for 3D reconstruction"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 18
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1170764536129
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1435"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1435",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#760b3c93-6607-4314-bfd8-abc499b3f271"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#42ac0912-202b-4178-92e8-b194e0da33ef"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2555-3069"
+        },
+        {
+          "@id": "#5a8bb810-3a9d-4225-83ee-20bdbacccd92"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-26",
+      "description": "Skeletal muscle wasting results from numerous conditions, such as sarcopenia, glucocorticoid therapy or intensive care. It prevents independent living in the elderly, predisposes to secondary diseases, and ultimately reduces lifespan. There is no approved drug therapy and the major causative mechanisms are not fully understood. Dual specificity phosphatase 22 (DUSP22) is a pleiotropic signaling molecule that plays important roles in immunity and cancer. However, the role of DUSP22 in skeletal muscle wasting is unknown. In this study, DUSP22 was found to be upregulated in sarcopenia patients and models of skeletal muscle wasting. DUSP22 knockdown or pharmacological inhibition with BML-260 prevented multiple forms of muscle wasting. Mechanistically, targeting DUSP22 suppressed FOXO3a, a master regulator of skeletal muscle wasting, via downregulation of the stress-activated kinase JNK, which occurred independently of aberrant Akt activation. DUSP22 targeting was also effective in human skeletal muscle cells undergoing atrophy. In conclusion, phosphatase DUSP22 is a novel target for preventing skeletal muscle wasting and BML-260 is a therapeutically effective small molecule inhibitor. The DUSP22-JNK-FOXO3a axis could be exploited to treat sarcopenia or related aging disorders",
+      "funder": [],
+      "identifier": "S-BIAD1435",
+      "keywords": [
+        "muscle"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Targeting phosphatase DUSP22 ameliorates skeletal muscle wasting via Akt independent JNK-FOXO3a repression",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1435/454df182-b772-4605-a94f-6de93bf5c822/50228194-b36d-4151-a7c2-840bf3c056b6.png"
+      ]
+    },
+    {
+      "@id": "#5a8bb810-3a9d-4225-83ee-20bdbacccd92",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024kbgz78"
+        }
+      ],
+      "email": "jion0905@gm.gist.ac.kr",
+      "name": "Sang Hoon LEE"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2555-3069",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/024kbgz78"
+        }
+      ],
+      "email": "mudeung_776@hotmail.com",
+      "name": "Darren Reece Williams"
+    },
+    {
+      "@id": "https://ror.org/024kbgz78",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Gwangju Institute of Science and Technology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#42ac0912-202b-4178-92e8-b194e0da33ef",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "TA muscle",
+      "name": "TA muscle sample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#760b3c93-6607-4314-bfd8-abc499b3f271",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Mice were anesthetized using ketamine (22 mg/kg; Yuhan, Republic of Korea) and xylazine (10 mg/kg; Bayer, Republic of Korea) in saline by IP injection. The quadriceps, gastrocnemius, soleus and TA muscles were then dissected and weighed. For histological analysis, the muscles were fixed by overnight incubation with 4% paraformaldehyde in PBS pH 7.4 at 4 C. Paraffin sectioning and H&E staining were provided by the Animal Housing Facility, Gwangju Institute of Science and Technology, Republic of Korea (5 µm muscle sections using a Thermo Scientific HistoStar (Thermofisher). H&E staining was carried out with a kit (Merck, Germany)). For immunohistochemistry, TA muscle sections were permeabilized for 15 min (PBS with 0.5% Triton X-100), blocked for 1 h (5% BSA) and incubated with the primary antibody overnight at 4°C. After washing with PBS 3 times for 5 min, the sections were incubated with the secondary antibody at RT for 1 h. The nuclei were counterstained with DAPI in ProLong™ Gold Antifade Mountant (Invitrogen, P36935). Digital images were acquired with Leica DM 2500 (Leica Microsystems). Cross sectional area (CSA) and fiber size distribution was measured using the NIH imaging software Image J 64. ",
+      "labEquipment": "Leica DM 2500 ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Fluorescent data"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 109
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1608275264
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2405"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2405",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b5c91e42-c9e0-4cfa-b2ba-9b265b4685a1"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1e5e5a3f-ae94-4106-aab5-8f40ca62f5ed"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-7988-2055"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-11-17",
+      "description": "This dataset comprises live-cell fluorescence resonance energy transfer (FRET) and corresponding bright-field images of H1975 cells co-expressing the fluorescently tagged proteins CFP-EGFR and YFP-GRB2 under various drug treatment conditions. The data were acquired using quantitative FRET microscopy to simultaneously capture dynamic drug-target interactions and morphological changes at single-cell resolution. This resource enables the quantitative analysis of drug-induced modulation of EGFR/GRB2 interactions, the correlation between target engagement and phenotypic outcomes, and the development of computational models for drug efficacy scoring. The dataset is an essential resource for researchers in cancer biology, drug discovery, and high-content image analysis, providing a foundation for studying dynamic protein-protein interactions and functional drug responses in a live-cell context.",
+      "funder": [],
+      "identifier": "S-BIAD2405",
+      "keywords": [
+        "FRET images, Bright-field images, EGFR/GRB2, H1975"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Database of FRET and bright-field images for H1975 cells co-expressing CFP-EGFR and YFP-GRB2 under drug treatment",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2405/4b399533-8cee-47b6-813d-0bac04b04f69/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7988-2055",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#649f913c-9ac2-4ab9-b6c6-734480809668"
+        }
+      ],
+      "email": "358105649@qq.com",
+      "name": "Gao"
+    },
+    {
+      "@id": "#649f913c-9ac2-4ab9-b6c6-734480809668",
+      "@type": [
+        "Organization"
+      ],
+      "name": "School of Optoelectronic Science and Engineering, South China Normal University"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#1e5e5a3f-ae94-4106-aab5-8f40ca62f5ed",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "MCF-7 cells co-expressing CFP-BCL-XL and YFP-BAK.",
+      "name": "EGFR/GRB2",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b5c91e42-c9e0-4cfa-b2ba-9b265b4685a1",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Image acquisition was performed on the automated wide-field FRET microscope. A 63x/1.42 NA oil immersion objective (UPLFLN40XO, Olympus) was used for all imaging. For each field of view, a multimodal acquisition protocol was executed to sequentially capture the three FRET channels (DD, DA, AA) along with a bright-field image, facilitated by the motorized excitation and emission filter wheels. Twenty to thirty non-overlapping fields were sampled per dish to ensure robust cell population statistics. The system was operated using a mercury lamp light source (Olympus HGLGPS series) for epi-illumination.",
+      "labEquipment": "An automated wide-field FRET microscopy system (based on Olympus IX73) equipped with a 63x/1.42 NA oil immersion objective (UPLFLN40XO, Olympus), a motorized excitation cube wheel, a motorized emission filter wheel (FW103, Thorlabs), and a sCMOS camera (Flash 4.0, Hamamatsu).",
+      "measurementTechnique": [],
+      "name": "FRET images"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6009
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 50408653731
+    }
+  ]
+}

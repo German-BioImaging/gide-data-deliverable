@@ -1,0 +1,226 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1139"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1139",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#c88c504b-dbf4-47c9-86cb-ed6b4eb492a8"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#0d54da4f-15ac-4d4f-a5d5-81ef7ba35d75"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-1690-9027"
+        },
+        {
+          "@id": "#39b35d22-ac68-4512-b923-e3940734a146"
+        },
+        {
+          "@id": "#d6dc6400-7488-4e17-8894-293b01282697"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-21",
+      "description": "The gastrointestinal (GI) tract consists of connected organs, from the oral cavity to rectum, which function to ensure efficient nutrient uptake and barrier immunity. Diseases of the GI tract affect millions worldwide and as such there are now over 25 published single cell RNA-sequencing (scRNAseq) datasets surveying the GI tract, profiling specific anatomical regions, cell lineages, ages and diseases. To consolidate these efforts, we harmonised and integrated scRNAseq datasets across the whole GI tract from developing and adult human tissues, as well as newly generated data from preterm gut. We uniformly processed 385 samples from 189 healthy controls using a newly developed automated QC approach (scAutoQC). In total, our healthy reference contains ~1.1 million cells which we annotated to a total of 136 fine-grained cell states. We anchor 11 published and 1 unpublished GI disease datasets covering gastric and colorectal (CRC) cancers, celiac disease, ulcerative colitis (UC) and Crohn’s disease (CD) to this reference, taking our atlas to a total of 1.6 million cells. Utilising this valuable resource (available at gutcellatlas.org), we discover epithelial cell metaplasia originating from stem cells in intestinal inflammatory diseases (celiac, UC and CD) with transcriptional similarity to cells found in gastric and Brunner’s glands. Whilst previously linked to mucosal healing, we now implicate these metaplastic cells in inflammation through recruitment of immune cells including T cells and neutrophils. Overall, we describe a paradigm shift where inflammation-induced changes in stem cells lead to altered mucosal tissue architecture, which in turn contributes to ongoing inflammation. These findings highlight that in addition to barrier function, epithelial cells actively contribute to progression of inflammation which may be a concept applicable to other tissues and diseases. ",
+      "funder": [],
+      "identifier": "S-BIAD1139",
+      "keywords": [
+        "inflammatory bowel disease",
+        "single cell atlas",
+        "gut cell atlas",
+        "metaplasia",
+        "gastric metaplasia",
+        "pyloric metaplasia",
+        "celiac disease",
+        "crohn's disease",
+        "ulcerative colitis"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Single Cell Integration Characterises Metaplasia in Inflammatory Intestinal Diseases",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1139/9f5a845d-ff4c-4217-bf95-7e26d3cd074c/8c04e6b6-0496-45d5-ab04-150b2374e74c.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1139/de3e0280-1fa1-45d2-9734-d056e9439e85/df361e5b-2dd3-4c73-8310-e89f0e616d0a.png"
+      ]
+    },
+    {
+      "@id": "#39b35d22-ac68-4512-b923-e3940734a146",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "email": "kp9@sanger.ac.uk",
+      "name": "Kryzsztof Polanski"
+    },
+    {
+      "@id": "#d6dc6400-7488-4e17-8894-293b01282697",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "email": "mp33@sanger.ac.uk",
+      "name": "Martin Prete"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1690-9027",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2"
+        }
+      ],
+      "email": "ao15@sanger.ac.uk",
+      "name": "Amanda Oliver"
+    },
+    {
+      "@id": "#95ee80d5-bdd8-467a-b44e-088c8f5936f2",
+      "@type": [
+        "Organization"
+      ],
+      "address": "Wellcome Genome Campus, Hinxton, Cambridge CB10 1SA, UK",
+      "name": "Wellcome Sanger Institute"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#0d54da4f-15ac-4d4f-a5d5-81ef7ba35d75",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Adult healthy and diseased intestinal tissue",
+      "name": "IHC and RNAscope stainings of intestinal tissue from health and disease",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#c88c504b-dbf4-47c9-86cb-ed6b4eb492a8",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "As above",
+      "labEquipment": "RNAscope samples: Stained sections were imaged with a Perkin Elmer Opera Phenix High-Content Screening System, in confocal mode with 1 μm z-step size, using a 20x water-immersion objective (NA 0.16, 0.299 μm per pixel). Channels: DAPI (excitation 375 nm, emission 435–480 nm), Opal 520 (ex. 488 nm, em. 500–550 nm), Opal 570 (ex. 561 nm, em. 570–630 nm), Opal 650 (ex. 640 nm, em. 650–760 nm). \nSamples from Hospital Clinic Barcelona: Image acquisition was performed on a Nikon Ti microscope (Japan) using Nis-Elements Basic Research Software (version 5.30.05).\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition for adult human intestinal samples"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 67
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 713691756068
+    }
+  ]
+}

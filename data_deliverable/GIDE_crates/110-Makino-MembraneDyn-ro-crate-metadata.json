@@ -1,0 +1,473 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/110-Makino-MembraneDyn/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/110-Makino-MembraneDyn/",
+      "@type": "Dataset",
+      "identifier": "110-Makino-MembraneDyn",
+      "name": "Immunoelectron microscopic images of nakanori distribution in HeLa cells, human skin fibroblasts and NPC cells",
+      "description": "110-Makino-MembraneDyn",
+      "datePublished": "2018-11-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Binding Sites",
+        "Cells, Cultured",
+        "Cholesterol/metabolism[major]",
+        "Fibroblasts/drug effects",
+        "Fibroblasts/metabolism",
+        "Fungal Proteins/chemistry",
+        "Fungal Proteins/metabolism",
+        "Fungal Proteins/pharmacology[major]",
+        "Grifola/chemistry[major]",
+        "HeLa Cells",
+        "Humans",
+        "Membrane Microdomains/drug effects[major]",
+        "Membrane Microdomains/metabolism",
+        "Membrane Microdomains/virology",
+        "Niemann-Pick Disease, Type C/metabolism[major]",
+        "Protein Binding",
+        "Sphingomyelins/metabolism[major]",
+        "Virus Release"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
+        },
+        {
+          "@id": "#auth-011"
+        },
+        {
+          "@id": "#auth-012"
+        },
+        {
+          "@id": "#auth-013"
+        },
+        {
+          "@id": "#auth-014"
+        },
+        {
+          "@id": "#auth-015"
+        },
+        {
+          "@id": "#auth-016"
+        },
+        {
+          "@id": "#auth-017"
+        },
+        {
+          "@id": "#auth-018"
+        },
+        {
+          "@id": "#auth-019"
+        },
+        {
+          "@id": "#auth-020"
+        },
+        {
+          "@id": "#auth-021"
+        },
+        {
+          "@id": "#auth-022"
+        },
+        {
+          "@id": "#auth-023"
+        },
+        {
+          "@id": "#auth-024"
+        },
+        {
+          "@id": "#auth-025"
+        },
+        {
+          "@id": "#auth-026"
+        },
+        {
+          "@id": "#auth-027"
+        },
+        {
+          "@id": "#auth-028"
+        },
+        {
+          "@id": "#auth-029"
+        },
+        {
+          "@id": "#auth-030"
+        },
+        {
+          "@id": "#auth-031"
+        },
+        {
+          "@id": "#auth-032"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1096/fj.201500075R"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0065005"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0032994"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-170"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Toshihide Kobayashi",
+      "email": "toshihide.kobayashi@unistra.fr",
+      "description": "Organization: University of Strasbourg; Department: Faculty of pharmacy; Laboratory: UMR 7021 CNRS",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00pg6eq24"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Asami Makino"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Mitsuhiro Abe"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Reiko Ishitsuka"
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Motohide Murate"
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Takuma Kishimoto"
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Shota Sakai"
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Françoise Hullin-Matsuda"
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Yukiko Shimada"
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Takehiko Inaba"
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Hideyuki Miyatake"
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Hideko Tanaka"
+    },
+    {
+      "@id": "#auth-013",
+      "@type": "Person",
+      "name": "Atsushi Kurahashi"
+    },
+    {
+      "@id": "#auth-014",
+      "@type": "Person",
+      "name": "Chan-Gi Pack"
+    },
+    {
+      "@id": "#auth-015",
+      "@type": "Person",
+      "name": "Rinshi S. Kasai"
+    },
+    {
+      "@id": "#auth-016",
+      "@type": "Person",
+      "name": "Shuku Kubo"
+    },
+    {
+      "@id": "#auth-017",
+      "@type": "Person",
+      "name": "Nicole L. Schieber"
+    },
+    {
+      "@id": "#auth-018",
+      "@type": "Person",
+      "name": "Naoshi Dohmae"
+    },
+    {
+      "@id": "#auth-019",
+      "@type": "Person",
+      "name": "Naoya Tochio"
+    },
+    {
+      "@id": "#auth-020",
+      "@type": "Person",
+      "name": "Kyoji Hagiwara"
+    },
+    {
+      "@id": "#auth-021",
+      "@type": "Person",
+      "name": "Yutaka Sasaki"
+    },
+    {
+      "@id": "#auth-022",
+      "@type": "Person",
+      "name": "Yoko Aida"
+    },
+    {
+      "@id": "#auth-023",
+      "@type": "Person",
+      "name": "Fumihiro Fujimori"
+    },
+    {
+      "@id": "#auth-024",
+      "@type": "Person",
+      "name": "Takanori Kigawa"
+    },
+    {
+      "@id": "#auth-025",
+      "@type": "Person",
+      "name": "Kozo Nishibori"
+    },
+    {
+      "@id": "#auth-026",
+      "@type": "Person",
+      "name": "Robert G. Parton"
+    },
+    {
+      "@id": "#auth-027",
+      "@type": "Person",
+      "name": "Akihiro Kusumi"
+    },
+    {
+      "@id": "#auth-028",
+      "@type": "Person",
+      "name": "Yasushi Sako"
+    },
+    {
+      "@id": "#auth-029",
+      "@type": "Person",
+      "name": "Gregor Anderluh"
+    },
+    {
+      "@id": "#auth-030",
+      "@type": "Person",
+      "name": "Makoto Yamashita"
+    },
+    {
+      "@id": "#auth-031",
+      "@type": "Person",
+      "name": "Tetsuyuki Kobayashi"
+    },
+    {
+      "@id": "#auth-032",
+      "@type": "Person",
+      "name": "Peter Greimel"
+    },
+    {
+      "@id": "https://ror.org/00pg6eq24",
+      "@type": "Organization",
+      "name": "University of Strasbourg"
+    },
+    {
+      "@id": "https://doi.org/10.1096/fj.201500075R",
+      "@type": "ScholarlyArticle",
+      "name": "A novel sphingomyelin/cholesterol domain-specific probe reveals the dynamics of the membrane domains during virus release and in Niemann-Pick type C.",
+      "datePublished": "2017"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "HeLa",
+      "description": "HeLa",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "fibroblast",
+      "description": "fibroblast",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "NPC",
+      "description": "NPC",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0065005",
+      "@type": "DefinedTerm",
+      "name": "protein lipid complex assembly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032994",
+      "@type": "DefinedTerm",
+      "name": "protein lipid complex"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 63146265,
+      "description": "63.1 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 10,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

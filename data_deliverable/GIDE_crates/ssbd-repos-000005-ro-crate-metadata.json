@@ -1,0 +1,176 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000005/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000005/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000005",
+      "name": "ssbd-repos-000005",
+      "description": "ssbd-repos-000005",
+      "datePublished": "2013-10-03",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "keywords": [
+        "Algorithms",
+        "Animals",
+        "Body Patterning",
+        "Cell Division[major]",
+        "Cell Nucleus/physiology",
+        "Databases, Factual",
+        "Embryo, Nonmammalian/cytology[major]",
+        "Embryonic Development[major]",
+        "Endoderm/embryology",
+        "Germ Layers/cytology",
+        "Germ Layers/embryology[major]",
+        "Germ Layers/physiology",
+        "Image Processing, Computer-Assisted",
+        "Mesoderm/embryology",
+        "Microscopy, Fluorescence/methods",
+        "Models, Biological",
+        "Motion Pictures",
+        "Mutation",
+        "Software",
+        "Zebrafish/embryology[major]",
+        "Zebrafish/genetics",
+        "beta Catenin/analysis"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1126/science.1162493"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0009790"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Philipp J. Keller",
+      "email": "keller@embl.de",
+      "description": "Organization: European Molecular Biology Laboratory; Department: Cell Biology and Biophysics Unit",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/010jaxs89"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/010jaxs89",
+      "@type": "Organization",
+      "name": "European Molecular Biology Laboratory"
+    },
+    {
+      "@id": "https://doi.org/10.1126/science.1162493",
+      "@type": "ScholarlyArticle",
+      "name": "Reconstruction of zebrafish early embryonic development by scanned light sheet microscopy.",
+      "datePublished": "2008"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955",
+      "@type": "Taxon",
+      "scientificName": "Danio rerio",
+      "vernacularName": "zebrafish"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@type": "DefinedTerm",
+      "name": "embryo development"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 51775833088,
+      "description": "51.8 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 14,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

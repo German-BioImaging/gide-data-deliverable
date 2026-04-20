@@ -1,0 +1,226 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1201"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1201",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#5b8a9e6f-4290-4849-bc5a-6976e48cdddd"
+        },
+        {
+          "@id": "obo:FBbi_00000366"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#00ccc826-b157-43fc-9269-5e7d922a40b2"
+        },
+        {
+          "@id": "#9c263cda-81e6-4e80-977a-7b120bac1026"
+        },
+        {
+          "@id": "#f131ff1e-de01-4d17-905b-d8122b8b6e54"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3381-7514"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.3389/fcell.2024.1430728"
+        }
+      ],
+      "datePublished": "2024-06-07",
+      "description": "TIRF FRAP datasets of Talin in aocal adhesions of transformed and non-transformed cell lines",
+      "funder": [],
+      "identifier": "S-BIAD1201",
+      "keywords": [
+        "Talin, Focal Adhesion, TIRF, FRAP, Cancer"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": " Differential Talin Cleavage in Transformed and Non-Transformed Cells and Its Consequences",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1201/eac84d34-d5a6-4a32-88b4-5129ff0f4da6/1bb10172-1e3a-4b96-b40b-7067a4173c62.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1201/40b03b42-dccd-4007-aca0-794aaf503717/9e8647a3-f223-4323-b9a4-26d64b0456de.png",
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1201/8ff0258f-07a9-487a-b2d7-f976696b1c11/bffe0724-7bec-47fe-b037-7f27dc0e4ee4.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3381-7514",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#194fd76e-ac2c-40b9-9d30-651b30097b05"
+        }
+      ],
+      "email": "xian.hu@medisin.uio.no",
+      "name": "Edna Xian Hu"
+    },
+    {
+      "@id": "#194fd76e-ac2c-40b9-9d30-651b30097b05",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of Oslo"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fcell.2024.1430728",
+      "@type": [
+        "ScholarlyArticle"
+      ],
+      "datePublished": "None",
+      "name": "Differential Talin Cleavage in Transformed and Non-Transformed Cells and Its Consequences"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#00ccc826-b157-43fc-9269-5e7d922a40b2",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A375P Cellline",
+      "name": "A375P Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#9c263cda-81e6-4e80-977a-7b120bac1026",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "A2058 Cell line",
+      "name": "A2058 Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f131ff1e-de01-4d17-905b-d8122b8b6e54",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Meljuso Cell lines",
+      "name": "Meljuso Cells",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#5b8a9e6f-4290-4849-bc5a-6976e48cdddd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100ms per frame, pixel size: 0.1549X0.1549 micron",
+      "labEquipment": "Olympus IX81, Gataca Ilas2 Ring TIRF(TIRF and FRAP module), Hamamatsu W-VIEW GEMINI(dual camera beam splitter), 2 Photometrics Prime95 sCMOS( camera) and metamorph software",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000366"
+        }
+      ],
+      "name": "TIRF FRAP of Focal Adhesion Proteins"
+    },
+    {
+      "@id": "obo:FBbi_00000366",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "FRAP"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 251
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 88967725313
+    }
+  ]
+}

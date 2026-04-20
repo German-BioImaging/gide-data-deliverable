@@ -1,0 +1,242 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000449/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000449/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000449",
+      "name": "Vasopressin-to-Oxytocin Receptor Crosstalk in the Preoptic Area Underlying Parental Behaviors in Male Mice",
+      "description": "The transition to parenthood brings significant changes in behavior toward offspring. For instance, in anticipation of their offspring, male mice shift from infanticidal to caregiving behaviors. While the release of oxytocin from the paraventricular hypothalamus (PVH) plays a critical role in paternal caregiving, it does not fully account for the entire behavioral shift. The specific downstream neurons and signaling mechanisms involved in this process remain obscure. Here, we demonstrate that PVH vasopressin neurons also essentially contribute to a paternal behavioral shift. This vasopressin signal is partially transmitted through oxytocin receptors (OTRs) expressed in the anterior commissure and medial nuclei of the preoptic area. These OTR-expressing neurons receive inputs from both PVH oxytocin and vasopressin neurons and are responsible for expressing paternal caregiving behaviors. Collectively, this non-canonical vasopressin-to-OTR crosstalk within specific limbic circuits acts as a pivotal regulator of paternal behavioral changes in mice.",
+      "datePublished": "2025-12-10",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Male",
+        "Preoptic Area/metabolism[major]",
+        "Preoptic Area/physiology[major]",
+        "Receptors, Oxytocin/metabolism[major]",
+        "Receptors, Oxytocin/genetics[major]",
+        "Vasopressins/metabolism[major]",
+        "Paternal Behavior/physiology[major]",
+        "Mice",
+        "Oxytocin/metabolism",
+        "Neurons/metabolism",
+        "Paraventricular Hypothalamic Nucleus/metabolism",
+        "Paraventricular Hypothalamic Nucleus/cytology",
+        "Receptors, Vasopressin/metabolism[major]",
+        "Behavior, Animal/physiology",
+        "Mice, Inbred C57BL",
+        "Signal Transduction",
+        "Female"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-025-66908-0"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0060746"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0014042"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "#imaging-technique-1"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000284"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazunari Miyamichi",
+      "email": "kazunari.miyamichi@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Lab for comparative connectomics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "Please specify the funding organization(s) and grant number."
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-025-66908-0",
+      "@type": "ScholarlyArticle",
+      "name": "Vasopressin-to-oxytocin receptor crosstalk in the preoptic area underlying parental behaviors in male mice.",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6N for CSV files.",
+      "description": "C57BL/6N for CSV files.",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060746",
+      "@type": "DefinedTerm",
+      "name": "Parental behavior"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0014042",
+      "@type": "DefinedTerm",
+      "name": "Neuron"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "CSV files",
+      "description": "CSV files",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-1"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fiber photometory with GCaMP6s",
+      "description": "fiber photometory with GCaMP6s",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000284"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-technique-1",
+      "@type": "DefinedTerm",
+      "name": "CSV files"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000284",
+      "@type": "DefinedTerm",
+      "name": "fiber photometory with GCaMP6s"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 1137455104,
+      "description": "1.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 13,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1527"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1527",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#f6488a07-e503-401a-8d03-feb34c6e8f27"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#22303c8c-0a61-4568-8be1-0446a57d13e4"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8454-4360"
+        },
+        {
+          "@id": "#aec08c47-09fe-4472-8296-59cac74b0c00"
+        },
+        {
+          "@id": "#ac356a65-31ae-45b3-bbdb-d57426340697"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-12-31",
+      "description": "Microscopic examination after applying the Ziehl–Neelsen staining for acid-fast bacilli (AFB) remains one of the most cost-effective and widely used diagnostic methods for AFB detection. However, it relies on expert interpretation, and even experienced professionals are prone to false negatives, particularly when bacterial load within a slide is low. The process is time-intensive, leading to reduced focus and subsequent errors. To address these challenges, researchers have turned to automated tuberculosis detection methods using machine learning and deep learning. Developing such algorithms requires large-scale datasets representing diverse conditions. Currently, no publicly accessible datasets for AFB whole-slide images (WSI) exist, hindering comparative performance evaluations of algorithms. Here, we present AFB-Dx, a dataset developed by the Korea National Forensic Service from autopsy-derived tissue slides fixed and stained at two testing institutions. The dataset includes 421 WSIs annotated only when reverse transcription polymerase chain reaction results and expert pathologist diagnoses were concordant, alongside quality evaluations. AFB-Dx offers a valuable resource for researchers aiming to develop and evaluate machine learning algorithms for WSI-based AFB diagnosis.",
+      "funder": [],
+      "identifier": "S-BIAD1527",
+      "keywords": [
+        "Mycobacterium tuberculosis, digital pathology, AFB stain"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "AFB-Dx: A Digital Pathology Dataset for Tuberculosis Detection and Analysis",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1527/825e7390-0e50-4829-a29e-4969510ab156/b26c9696-c91e-4be2-b6df-84f4a9aaaa34.png"
+      ]
+    },
+    {
+      "@id": "#ac356a65-31ae-45b3-bbdb-d57426340697",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9d179767-b964-4597-a08c-05a7d9775c3e"
+        }
+      ],
+      "email": "arsenal@yonsei.ac.kr",
+      "name": "Sangwon Hwang"
+    },
+    {
+      "@id": "#aec08c47-09fe-4472-8296-59cac74b0c00",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#9d179767-b964-4597-a08c-05a7d9775c3e"
+        }
+      ],
+      "email": "ljfirst@hanmail.net",
+      "name": "Joong Lee"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8454-4360",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d8728e21-4502-49d2-9690-e4619e97e6eb"
+        }
+      ],
+      "email": "ljh1118@gmail.com",
+      "name": "Junghye Lee"
+    },
+    {
+      "@id": "#9d179767-b964-4597-a08c-05a7d9775c3e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Yonsei University"
+    },
+    {
+      "@id": "#d8728e21-4502-49d2-9690-e4619e97e6eb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "National Forensic Service"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#22303c8c-0a61-4568-8be1-0446a57d13e4",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Human autopsy tissue specimens",
+      "name": "Biosample1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#f6488a07-e503-401a-8d03-feb34c6e8f27",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The AFB-stained samples were scanned using a digital whole slide scanner at 400x and with a single focus layer.",
+      "labEquipment": "Roche Ventana DP200 slide scanner",
+      "measurementTechnique": [],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 421
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1245284982118
+    }
+  ]
+}

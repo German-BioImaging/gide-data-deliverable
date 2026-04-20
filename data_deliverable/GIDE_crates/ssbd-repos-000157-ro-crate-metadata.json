@@ -1,0 +1,317 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000157/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000157/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000157",
+      "name": "Raw data of an article “Multiple types of navigational information are diffusely and independently encoded in the population activities of the dentate gyrus neurons” (Murano et al., 2020)",
+      "description": "The dentate gyrus (DG) plays critical roles in cognitive functions such as learning, memory, and spatial coding, and its dysfunction is implicated in various neuropsychiatric disorders. However, it remains largely unknown how information is represented in this region. Here, we recorded neuronal activity in the DG using Ca2+ imaging in freely moving mice and analysed this activity using machine learning. Although each individual neuron was weakly and diversely tuned to multiple information types, the activity patterns of populations of DG neurons enabled us to successfully decode position, speed, and motion direction in an open field as well as current and future location in a T-maze. In αCaMKII heterozygous knockout mice, an animal model of neuropsychiatric disorders, including intellectual disability and bipolar disorder, the decoding accuracy of position in the open field and future location in the T-maze were selectively reduced. These results suggest that multiple types of information are diffusely and independently distributed in DG neurons.",
+      "datePublished": "2020-06-23",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Calcium-Calmodulin-Dependent Protein Kinase Type 2/genetics",
+        "Cognition/physiology[major]",
+        "Dentate Gyrus/cytology[major]",
+        "Dentate Gyrus/physiology[major]",
+        "Memory, Short-Term/physiology",
+        "Mice",
+        "Mice, Knockout",
+        "Neurons/physiology[major]"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1101/2020.06.09.141572"
+        },
+        {
+          "@id": "https://doi.org/10.1073/pnas.2106830119"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0021704"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0021542"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0021870"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0065009"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0008637"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000365"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "#imaging-technique-2"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000405"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "#imaging-technique-4"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Tomoyuki Murao",
+      "email": "miyakawa@fujita-hu.ac.jp",
+      "description": "Organization: Fujita Health University; Department: Institute for Comprehensive Medical Science; Laboratory: Division of Systems Medical Science",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/046f6cx68"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Ryuichi Nakajima",
+      "description": "Laboratory: Laboratory for Developmental Dynamics"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Tsuyoshi Miyakawa"
+    },
+    {
+      "@id": "https://ror.org/046f6cx68",
+      "@type": "Organization",
+      "name": "Fujita Health University"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2020.06.09.141572",
+      "@type": "ScholarlyArticle",
+      "name": "Multiple types of navigational information are independently encoded in the population activities of the dentate gyrus neurons",
+      "datePublished": "2020"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.2106830119",
+      "@type": "ScholarlyArticle",
+      "name": "Multiple types of navigational information are independently encoded in the population activities of the dentate gyrus neurons.",
+      "datePublished": "2022"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6J",
+      "description": "C57BL/6J",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0021704",
+      "@type": "DefinedTerm",
+      "name": "In the heterozygous CaMKIIa knockout mice"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0021542",
+      "@type": "DefinedTerm",
+      "name": "a marker of mature neurons in the dentate gyrus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0021870",
+      "@type": "DefinedTerm",
+      "name": "is largely reduced. The neurons of these mutants had multiple features of normal immature neurons"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0065009",
+      "@type": "DefinedTerm",
+      "name": "at molecular"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008637",
+      "@type": "DefinedTerm",
+      "name": "morphological and electrophysiological levels."
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "in-vivo",
+      "description": "in-vivo",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000365"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "freely behaving",
+      "description": "freely behaving",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-2"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "epi-fluorescent calcium imaging",
+      "description": "epi-fluorescent calcium imaging",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000405"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "miniature microscope",
+      "description": "miniature microscope",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-4"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000365",
+      "@type": "DefinedTerm",
+      "name": "in-vivo"
+    },
+    {
+      "@id": "#imaging-technique-2",
+      "@type": "DefinedTerm",
+      "name": "freely behaving"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000405",
+      "@type": "DefinedTerm",
+      "name": "epi-fluorescent calcium imaging"
+    },
+    {
+      "@id": "#imaging-technique-4",
+      "@type": "DefinedTerm",
+      "name": "miniature microscope"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 5352523980800,
+      "description": "5.4 TB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 716,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

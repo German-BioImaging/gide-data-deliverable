@@ -1,0 +1,227 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1005"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1005",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bdc659a9-7563-4d83-a057-0edcdf5ec74b"
+        },
+        {
+          "@id": "#3370bf8b-d7ed-4d34-bbda-5f892155471a"
+        },
+        {
+          "@id": "#04b9cf1f-e211-4ca4-8d24-9f5ec78e8115"
+        },
+        {
+          "@id": "#fb8d9148-e31d-439b-a13a-bef07a67b085"
+        },
+        {
+          "@id": "#69c1d3ed-e61a-4690-a393-1a803e4d8606"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#c2e0d54a-40a6-454a-ad49-f0dd8b277919"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9347-4448"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-01-10",
+      "description": "Recently, a low-level somatic mutation in the NRAS gene (c.182 A > G, Q61R) was identified in various specimens from patients with kaposiform lymphangiomatosis. However, it is unknown how these low-frequency mutated cells can affect the characterization and surrounding environment of their lesions. To understand the pathogenesis and association of these gene abnormalities, we established NRASQ61R mutated lymphatic endothelial cells transfected with lentivirus vector and undertook morphological and functional characterization, protein expression profiling, and metabolome analysis. NRASQ61R human dermal lymphatic endothelial cells showed poor tube formation, a low proliferation rate, and high migration ability with an increase in the ratio of mutated cells. An analysis of signaling pathways showed inactivation of the PIK3/AKT/mTOR pathway and hyperactivation of the RAS/MAPK/ERK pathway, which was improved by MAPK kinase (MEK) inhibitor treatment. This study shows the theoretical circumstances induced in vitro by NRASQ61R-mutated cells in the affected lesions of kaposiform lymphangiomatosis patients.",
+      "funder": [],
+      "identifier": "S-BIAD1005",
+      "keywords": [
+        "NRAS gene",
+        "kaposiform lymphangiomatosis",
+        "lymphatic endothelial cells",
+        "sirolimus",
+        "trametinib",
+        "tube formation"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Changes in cell morphology and function induced by the NRAS Q61R mutation in lymphatic endothelial cells",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1005/9d070525-f32f-4c39-bf62-49208f7c7b27/08955420-3a27-48a6-9759-f8125670d935.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9347-4448",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#dd282829-c5d7-4250-83e4-329398497c64"
+        }
+      ],
+      "email": "ozeki.michio.j5@f.gifu-u.ac.jp",
+      "name": "Michio Ozeki"
+    },
+    {
+      "@id": "#dd282829-c5d7-4250-83e4-329398497c64",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Gifu University Hospital"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#c2e0d54a-40a6-454a-ad49-f0dd8b277919",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Juvenile foreskin-derived human dermal lymphatic endothelial cells (HDLECs) ",
+      "name": "Juvenile foreskin-derived human dermal lymphatic endothelial cells (HDLECs) ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#04b9cf1f-e211-4ca4-8d24-9f5ec78e8115",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Wimasis Image Analysis (WimTube; Wimasis GmbH Munich, Germany)",
+      "labEquipment": "time-lapse video microscopy (WSL-1800-B; ATTO Corp., Tokyo, Japan)",
+      "measurementTechnique": [],
+      "name": "Tube formation assay"
+    },
+    {
+      "@id": "#3370bf8b-d7ed-4d34-bbda-5f892155471a",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "The Human Angiogenesis/Growth Factor Magnetic Bead Panel (MILLIPLEX MAP, HAGP1MAG-12K)",
+      "labEquipment": "EMD Millipore, Billerica, MA, USA",
+      "measurementTechnique": [],
+      "name": "Suspension array"
+    },
+    {
+      "@id": "#69c1d3ed-e61a-4690-a393-1a803e4d8606",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "a light-capture cooled CCD camera system (ATTO Corp., Tokyo, Japan)",
+      "labEquipment": "a light-capture cooled CCD camera system (ATTO Corp., Tokyo, Japan)",
+      "measurementTechnique": [],
+      "name": "Analysis of signaling pathways by western blotting and multiplex protein assay"
+    },
+    {
+      "@id": "#bdc659a9-7563-4d83-a057-0edcdf5ec74b",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "VANTED software",
+      "labEquipment": "MassHunter Quantitative Analysis B.04.00 (Agilent Technologies) ",
+      "measurementTechnique": [],
+      "name": "Metabolome analysis (C-SCOPE)"
+    },
+    {
+      "@id": "#fb8d9148-e31d-439b-a13a-bef07a67b085",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Quantification of wound areas was performed using image analysis software (Image J) at 0, 6, 12, 18, and 24 h.",
+      "labEquipment": "time-lapse video microscopy (WSL-1800-B; ATTO Corp., Tokyo, Japan)",
+      "measurementTechnique": [],
+      "name": "Scratch assay"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 20
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 35034064
+    }
+  ]
+}

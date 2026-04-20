@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1362"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1362",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#bed2639a-45ad-4534-84b7-3062b4045a0d"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e6d0e30d-3ec0-497c-a87e-d8212762beea"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-5744-9229"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6391-6409"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-10-03",
+      "description": "This study comprises of mammalian cells infected with Sendai Virus or other pathogenic viruses, immunolabelled for proteins localized to viral IBs and imaged by confocal microscopy. The influence of a host protein, EHMT1 on viral IBs is assessed under various conditions by monitoring the formation of these structures. ",
+      "funder": [],
+      "identifier": "S-BIAD1362",
+      "keywords": [
+        "Protein localization, Viral Inclusion bodies, EHMT1"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "A cytoplasmic form of EHMT1(N) methylates viral proteins to enable inclusion body maturation and efficient viral replication",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1362/ac654492-2a22-41c1-93ab-62e6071b6e25/2a46cc4b-85f8-4345-9674-e019e5a3cb81.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5744-9229",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3d9053f-707b-4162-a357-e34e9a511839"
+        }
+      ],
+      "email": "kriti.kestur@gmail.com",
+      "name": "KRITI BILIGIRI"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6391-6409",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#a3d9053f-707b-4162-a357-e34e9a511839"
+        }
+      ],
+      "email": "shravanti@igib.in",
+      "name": "Shravanti Rampalli"
+    },
+    {
+      "@id": "#a3d9053f-707b-4162-a357-e34e9a511839",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Genomics and Integrative Biology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#e6d0e30d-3ec0-497c-a87e-d8212762beea",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Sendai viral Inclusion bodies ",
+      "name": "Condensation of EHMT1 in the cytoplasm",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#bed2639a-45ad-4534-84b7-3062b4045a0d",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40X, 60x or 100X objectives ",
+      "labEquipment": "Olympus FV3000, Leica SP8 or Nikon A1R confocal microscope",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Images were acquired by Confocal microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 83
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 11058126451
+    }
+  ]
+}

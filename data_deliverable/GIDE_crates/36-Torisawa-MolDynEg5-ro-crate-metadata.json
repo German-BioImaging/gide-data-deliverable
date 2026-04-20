@@ -1,0 +1,186 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/36-Torisawa-MolDynEg5/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/36-Torisawa-MolDynEg5/",
+      "@type": "Dataset",
+      "identifier": "36-Torisawa-MolDynEg5",
+      "name": "36-Torisawa-MolDynEg5",
+      "description": "36-Torisawa-MolDynEg5",
+      "datePublished": "2017-10-03",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Actins/metabolism",
+        "Biomechanical Phenomena",
+        "Elasticity",
+        "HEK293 Cells",
+        "Humans",
+        "Kinesins/chemistry",
+        "Kinesins/metabolism[major]",
+        "Mechanical Phenomena[major]",
+        "Microtubules/metabolism[major]",
+        "Models, Biological",
+        "Protein Multimerization",
+        "Protein Structure, Quaternary",
+        "Spindle Apparatus/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1016/j.bpj.2016.06.010"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005874"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-66"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Oiwa",
+      "email": "oiwa@nict.go.jp",
+      "description": "Organization: National Institute of Information and Communications Technology; Department: Advanced ICT Research Institute",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/016bgq349"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Takayuki Torisawa"
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Daisuke Taniguchi"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Shuji Ishihara"
+    },
+    {
+      "@id": "https://ror.org/016bgq349",
+      "@type": "Organization",
+      "name": "National Institute of Information and Communications Technology"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.bpj.2016.06.010",
+      "@type": "ScholarlyArticle",
+      "name": "Spontaneous Formation of a Globally Connected Contractile Network in a Microtubule-Motor System.",
+      "datePublished": "2016"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "NA",
+      "description": "NA"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005874",
+      "@type": "DefinedTerm",
+      "name": "microtubule"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 8475536778,
+      "description": "8.5 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 3,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

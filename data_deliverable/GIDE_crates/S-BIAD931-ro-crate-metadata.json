@@ -1,0 +1,207 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD931"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD931",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#111ab6e2-0eb6-4ead-abb9-7c78e453ce30"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#59a5aa32-2d7d-4120-b52c-f35e6f7e2cd3"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7898-6795"
+        },
+        {
+          "@id": "#4395d6d1-ba16-45ae-9000-00b95800b46f"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-01-18",
+      "description": "Human rhinovirus is the most frequently isolated virus during severe exacerbations of chronic respiratory diseases, like chronic obstructive pulmonary disease. In this disease, alveolar macrophages display significantly diminished phagocytic functions that could be associated with bacterial superinfections. However, how human rhinovirus affects the functions of macrophages is largely unknown. Macrophages treated with HRV16 demonstrated deficient bacteria killing activity, impaired phagolysosome biogenesis and altered intracellular compartments. Using RNA sequencing, we identified the small GTPase ARL5b to be upregulated by the virus in primary human macrophages. Importantly, depletion of ARL5b rescued bacterial clearance and localization of endosomal markers in macrophages upon HRV16 exposure. In permissive cells, depletion of ARL5b increased the secretion of HRV16 virions. Thus, we identify ARL5b as a novel regulator of intracellular trafficking dynamics and phagolysosomal biogenesis in macrophages and as a restriction factor of HRV16 in permissive cells. ",
+      "funder": [],
+      "identifier": "S-BIAD931",
+      "keywords": [
+        "macrophages",
+        "rhinovirus",
+        "endosomes",
+        "ARL5b",
+        "bacteria",
+        "clearance",
+        "phagosome maturation",
+        "restriction factor"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "ARL5b inhibits human rhinovirus 16 propagation and impairs macrophage-mediated bacterial clearance",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD931/3c3fea27-66f4-47a4-80a7-35f2fb3da310/4d946cbd-537d-44db-a4d4-5cafa7ad6d20.png"
+      ]
+    },
+    {
+      "@id": "#4395d6d1-ba16-45ae-9000-00b95800b46f",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4e6fa5ef-ba54-46c5-b9c5-1178f1691834"
+        }
+      ],
+      "email": "florence.niedergang@inserm.fr",
+      "name": "Niedergang"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7898-6795",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#4e6fa5ef-ba54-46c5-b9c5-1178f1691834"
+        }
+      ],
+      "email": "suzanne.faure-dupuy@inserm.fr",
+      "name": "Faure-Dupuy"
+    },
+    {
+      "@id": "#4e6fa5ef-ba54-46c5-b9c5-1178f1691834",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institut Cochin"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#59a5aa32-2d7d-4120-b52c-f35e6f7e2cd3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "human monocytes derived macrophages",
+      "name": "Images present in the publication",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#111ab6e2-0eb6-4ead-abb9-7c78e453ce30",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Image acquisition was performed with a 100x (1.4 NA) objective and an Orca Flash 4LT+ camera (Hamamatsu Photonics). Z series of images were taken at 0.3 μm z-step increments. ",
+      "labEquipment": "Image acquisition was performed on an inverted wide-field DMI6000 microscope (Leica Microsystems, Wetzlar).",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Image acquisition of the publication"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 123
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 8093551385
+    }
+  ]
+}

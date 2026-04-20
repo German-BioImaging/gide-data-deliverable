@@ -1,0 +1,380 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/database/project/387-Ando-StayGold/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database/project/387-Ando-StayGold/",
+      "@type": "Dataset",
+      "identifier": "387-Ando-StayGold",
+      "name": "Super resolution cellular images using fluorescent-tags of StayGold variants",
+      "description": "387-Ando-StayGold",
+      "datePublished": "2025-11-26",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41592-023-02085-6"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_60710"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0002597"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005694"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007030"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0015629"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0030837"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005739"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_1904637"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "#imaging-technique-2"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "#imaging-technique-3"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "#imaging-technique-4"
+        },
+        {
+          "@id": "#imaging-protocol-5"
+        },
+        {
+          "@id": "#imaging-technique-5"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/omero/webclient/?show=project-1753"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Atsushi Miyawaki",
+      "email": "atsushi.miyawaki@riken.jp",
+      "description": "Organization: RIKEN; Department: Laboratory for Cell Function Dynamics; Laboratory: Laboratory for Cell Function Dynamics",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01sjwvz98"
+        }
+      ]
+    },
+    {
+      "@id": "https://ror.org/01sjwvz98",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41592-023-02085-6",
+      "@type": "ScholarlyArticle",
+      "name": "StayGold variants for molecular fusion and membrane-targeting applications.",
+      "datePublished": "2023"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ HCT 116 cell",
+      "description": "Homo sapiens ~ HCT 116 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": "HCT 116 cell"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ HeLa cell",
+      "description": "Homo sapiens ~ HeLa cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Chlorocebus pygerythrus ~ COS-7 cell",
+      "description": "Chlorocebus pygerythrus ~ COS-7 cell",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_60710"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0002597"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_60710",
+      "@type": "Taxon",
+      "scientificName": "Chlorocebus pygerythrus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0002597",
+      "@type": "DefinedTerm",
+      "name": "COS-7 cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
+      "@type": "DefinedTerm",
+      "name": "chromosome"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007030",
+      "@type": "DefinedTerm",
+      "name": "Golgi organization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0015629",
+      "@type": "DefinedTerm",
+      "name": "actin cytoskeleton"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030837",
+      "@type": "DefinedTerm",
+      "name": "negative regulation of actin filament polymerization"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
+      "@type": "DefinedTerm",
+      "name": "mitochondrion"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1904637",
+      "@type": "DefinedTerm",
+      "name": "cellular response to ionomycin"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "single-beam laser-scanning confocal microscopy (LSCM)",
+      "description": "single-beam laser-scanning confocal microscopy (LSCM)",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-2"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "structured illumination microscopy (SIM) (Fbbi:",
+      "description": "structured illumination microscopy (SIM) (Fbbi:",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-3"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "00000332)",
+      "description": "00000332)",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-4"
+        }
+      ]
+    },
+    {
+      "@id": "#imaging-protocol-5",
+      "@type": "LabProtocol",
+      "name": "lattice SIM",
+      "description": "lattice SIM",
+      "measurementTechnique": [
+        {
+          "@id": "#imaging-technique-5"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#imaging-technique-2",
+      "@type": "DefinedTerm",
+      "name": "single-beam laser-scanning confocal microscopy (LSCM)"
+    },
+    {
+      "@id": "#imaging-technique-3",
+      "@type": "DefinedTerm",
+      "name": "structured illumination microscopy (SIM) (Fbbi:"
+    },
+    {
+      "@id": "#imaging-technique-4",
+      "@type": "DefinedTerm",
+      "name": "00000332)"
+    },
+    {
+      "@id": "#imaging-technique-5",
+      "@type": "DefinedTerm",
+      "name": "lattice SIM"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 164910731729,
+      "description": "164.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 265,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
+}

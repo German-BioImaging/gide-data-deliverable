@@ -1,0 +1,266 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1285"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1285",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#467e3434-e223-4f08-a7f1-13ca87cf65fd"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#a751daa5-d019-461f-b54d-8d70775184c3"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-2701-3149"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9999-4292"
+        },
+        {
+          "@id": "#36937bcd-4c5d-4deb-9986-b85bd35cfad1"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-0740-3668"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9041-9988"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-07-24",
+      "description": "A collection of Haematoxylin and Eosin (H&E) stained whole slide images (WSI) scanned at X40 magnification with accompanying clinical markers. ",
+      "funder": [],
+      "identifier": "S-BIAD1285",
+      "keywords": [
+        "WSI",
+        "H&E",
+        "hematoxylin and eosin",
+        "haematoxylin and eosin",
+        "survival",
+        "biomarker",
+        "KRAS",
+        "BRAF",
+        "NRAS",
+        "MMR",
+        "MSI",
+        "tumour staging"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "SurGen: 1020 H&E-stained Whole Slide Images With Survival and Genetic Markers",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1285/fbb4eaca-f6a2-4756-954e-e8469ed4143b/213056b6-0d3f-4e01-afe1-29f338ec7234.png"
+      ]
+    },
+    {
+      "@id": "#36937bcd-4c5d-4deb-9986-b85bd35cfad1",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5a9af977-462f-4227-868f-2017e54cd808"
+        }
+      ],
+      "email": "craig.marshall@nhslothian.scot.nhs.uk",
+      "name": "Craig Marshall"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9041-9988",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "david.harrison@st-andrews.ac.uk",
+      "name": "David J Harrison"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9999-4292",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "ihu@st-andrews.ac.uk",
+      "name": "In Hwa Um"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0740-3668",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "dcchb@st-andrews.ac.uk",
+      "name": "David Harris-Birtill"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2701-3149",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c"
+        }
+      ],
+      "email": "cggm1@st-andrews.ac.uk",
+      "name": "Craig Myles"
+    },
+    {
+      "@id": "#5a9af977-462f-4227-868f-2017e54cd808",
+      "@type": [
+        "Organization"
+      ],
+      "name": "NHS Lothian Biorepository"
+    },
+    {
+      "@id": "#c18d9558-bbb7-4556-a80c-4b6236a05b2c",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University of St Andrews"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#a751daa5-d019-461f-b54d-8d70775184c3",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Homo sapien (human) tissue",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#467e3434-e223-4f08-a7f1-13ca87cf65fd",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "x40 Magnification (0.1112 microns/pixel)",
+      "labEquipment": "ZEISS AxioScan Z1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image Aquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 1022
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 4319959089253
+    }
+  ]
+}

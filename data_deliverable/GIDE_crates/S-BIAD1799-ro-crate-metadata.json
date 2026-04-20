@@ -1,0 +1,214 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1799"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1799",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#05afc004-963f-4460-832d-98c6819a23a6"
+        },
+        {
+          "@id": "#36a8d7be-cc5f-4d16-b9e0-04fca903fb5f"
+        },
+        {
+          "@id": "obo:FBbi_00000246"
+        },
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#623715ed-f134-4fea-91e0-587c30b83bb6"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4957-9175"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-07-17",
+      "description": "Dataset for testing automatic detection and correlation of bimodal fiducial particles. Contains immunofluorescence (IF) and electron microscopy (EM) tileset images of the same areas of cell sections, as well as manually (using ec-CLEM) and automatically correlated images. Metadata includes particle coordinates. ",
+      "funder": [],
+      "identifier": "S-BIAD1799",
+      "keywords": [
+        "CLEM",
+        "Electron microscopy",
+        "fiducials",
+        "registration"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Automated EM LM correlation based on fiducial particles",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1799/fe8ecdd7-f04a-4002-906b-70b88d65b468/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4957-9175",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1187dc20-2fc0-45c2-b92a-fc4eb6d6e47a"
+        }
+      ],
+      "email": "j.a.vanderbeek-10@umcutrecht.nl",
+      "name": "Jan van der Beek"
+    },
+    {
+      "@id": "#1187dc20-2fc0-45c2-b92a-fc4eb6d6e47a",
+      "@type": [
+        "Organization"
+      ],
+      "name": "University Medical Center Utrecht"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#623715ed-f134-4fea-91e0-587c30b83bb6",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "90nm thawed  cryosections of HEK293 cells",
+      "name": "HEK293",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#05afc004-963f-4460-832d-98c6819a23a6",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "100x, 1.47 NA TIRF objective; Photometrics prime 95B sCMOS camera; LAS X software",
+      "labEquipment": "Leica Thunder widefield microscope\n",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000246"
+        }
+      ],
+      "name": "Immuno-Fluorescence Imaging"
+    },
+    {
+      "@id": "#36a8d7be-cc5f-4d16-b9e0-04fca903fb5f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Components: Veleta VEL-FEI-TEC12-TEM camera; SerialEM software\nTilesets acquired at 29,000-50,000x",
+      "labEquipment": "FEI Tecnai T12 or FEI Tecnai T20",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000256"
+        }
+      ],
+      "name": "Electron microscopy imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000246",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "fluorescence microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000256",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "electron microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 27
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 12267618256
+    }
+  ]
+}

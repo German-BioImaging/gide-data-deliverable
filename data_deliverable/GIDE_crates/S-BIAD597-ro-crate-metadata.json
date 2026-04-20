@@ -1,0 +1,221 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD597"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD597",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#124e260b-0f9a-409b-8699-f09345693062"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#b981a101-7dcf-479a-859a-a2c5e7949b45"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#407620da-2b04-4bc2-b21b-30ef0efd0fa4"
+        },
+        {
+          "@id": "#aa267b77-e605-40be-9ea7-6a835dc9f69c"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0504-1824"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9821-3578"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2022-12-08",
+      "description": "The dynamics of the receptor tyrosine kinase HER2 were measured using universal point accumulation for imaging in nanoscale topography (uPAINT) in living HeLa cells with total internal reflection fluorescence (TIRF) microscopy. Different conditions were measured where in each the receptor was labeled with a non-activating anti-HER2 nanobody coupled to Cy3B as fluorecent probe. The conditions include a resting state without any ligand and cells stimulated with the ligands EGF, TGFα, EREG and NRGβ1 activating other receptors of the ErbB family.",
+      "funder": [],
+      "identifier": "S-BIAD597",
+      "keywords": [
+        "single-particle tracking",
+        "live cell",
+        "single-molecule",
+        "microscopy"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Single-particle tracking (SPT) data of HER2 labeled with a non-activating nanobody in HeLa cells activated with the ligands EGF, TGFα, EREG, NRGβ1",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD597/8aac997d-d150-4786-a7e4-1aa727f4b0d2/73ee0d5f-1c62-42f3-bc31-97f18c8cde1e.png"
+      ]
+    },
+    {
+      "@id": "#407620da-2b04-4bc2-b21b-30ef0efd0fa4",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "catapano@chemie.uni-frankfurt.de",
+      "name": "Claudia Catapano"
+    },
+    {
+      "@id": "#aa267b77-e605-40be-9ea7-6a835dc9f69c",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "rahm@chemie.uni-frankfurt.de",
+      "name": "Johanna V Rahm"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9821-3578",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "heilemann@chemie.uni-frankfurt.de",
+      "name": "Mike Heilemann"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0504-1824",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf"
+        }
+      ],
+      "email": "dietz@chemie.uni-frankfurt.de",
+      "name": "Marina S Dietz"
+    },
+    {
+      "@id": "#3087fced-eb89-461a-8b3a-33a92f32fdcf",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Goethe University Frankfurt"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#b981a101-7dcf-479a-859a-a2c5e7949b45",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "HeLa cells",
+      "name": "HeLa ",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#124e260b-0f9a-409b-8699-f09345693062",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "exposure time: 20 ms\nnumber of frames per tif file: 1000\nexcitation of Cy3B: 561 nm laser with an irradiation intensity of 6.3 W/cm²\nImage size: 256 x 256 px with 157 nm pixel size",
+      "labEquipment": "commercial widefield microscope (N-STORM by Nikon) operated in TIRF illumination",
+      "measurementTechnique": [],
+      "name": "SPT measurements"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 2400
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 190967712668
+    }
+  ]
+}

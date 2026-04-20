@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1019"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1019",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b96e4f05-0cea-406d-b185-f9fddf6067ae"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#4739d4c3-d17a-44e4-88f3-e68d3786c1b8"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-8256-3795"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-03-29",
+      "description": "Representative Raw data releated to the paper \"Virtual reality empowered deep learning analysis of brain cells\" by Kaltenecker, Al-Maskari and Negwer et al. Additional scans are available upon reasonable request.",
+      "funder": [],
+      "identifier": "S-BIAD1019",
+      "keywords": [
+        "c-Fos",
+        "Light-sheet imaging",
+        "tissue clearing"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "Whole brain c-Fos antibody labeling",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8256-3795",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187"
+        }
+      ],
+      "email": "rami.almaskari@helmholtz-munich.de",
+      "name": "Rami Al-Maskari"
+    },
+    {
+      "@id": "#de7ee26e-30d9-4187-a765-52a69efa7187",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Helmholtz Zentrum München"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#4739d4c3-d17a-44e4-88f3-e68d3786c1b8",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Whole cleared mouse brain that was antibody labeled for c-Fos as marker for neuronal activity",
+      "name": "Whole mouse brains",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#b96e4f05-0cea-406d-b185-f9fddf6067ae",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Light-sheet imaging for c-Fos labelled brains was conducted through a 4× objective lens (Olympus XLFLUOR 340) equipped with an immersion corrected dipping cap mounted on an UltraMicroscope II (LaVision BioTec) coupled to a white light laser module (NKT SuperK Extreme EXW-12). The antibody signal was visualized using a 640/40nm excitation and 690/50nm emission filter. Tiling scans (3 by 3 tiles) were acquired with a 15-20% overlap, 60% sheet width and 0.027 NA. The images were taken in 16-bit depth and at a nominal resolution of 1.625 μm/voxel on the XY axes. In z-dimension we took images in 6 μm steps using left and right sided illumination.",
+      "labEquipment": "UltraMicroscope II (LaVision BioTec)",
+      "measurementTechnique": [],
+      "name": "Light-Sheet Imaging"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 6
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 194982005150
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD626"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD626",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#0cc0c16a-5f44-4696-b5aa-07066209d6ae"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#cc616092-f9b5-4fc1-bd14-7bccb1e51626"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-2613-5977"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3905-8077"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2023-03-01",
+      "description": "The plant immune system relies on the perception of molecules that signal the presence of a microbe threat. This triggers signal transduction that mediates a range of cellular responses via a collection of molecular machinery including receptors, small molecules, and enzymes. One response to pathogen perception is the restriction of cell-to-cell communication by plasmodesmal closure. We previously found that while chitin and flg22 trigger specialized immune signaling cascades in the plasmodesmal plasma membrane, both execute plasmodesmal closure via callose synthesis at the plasmodesmata. This indicates the signaling pathways ultimately converge at or upstream of callose synthesis. To establish the hierarchy of signaling at plasmodesmata and characterize points of convergence in microbe elicitor-triggered signaling, we profiled the dependence of plasmodesmal responses triggered by different elicitors on a range of plasmodesmal signaling machinery. We identified that, like chitin, flg22 signals via RBOHD to induce plasmodesmal closure. Further, we found that PDLP1, PDLP5 and CALS1 are common to microbe- and SA-triggered responses, identifying PDLPs as a candidate signaling nexus. To understand how PDLPs relay a signal to CALS1, we screened for PDLP5 interactors and found NHL3, which is also required for chitin-, flg22- and SA-triggered plasmodesmal responses and PDLP-mediated activation of callose synthesis. We conclude that a PDLP-NHL3 complex acts as an integrating node of plasmodesmal signaling cascades, transmitting multiple immune signals to activate CALS1 and plasmodesmata closure.",
+      "funder": [],
+      "identifier": "S-BIAD626",
+      "keywords": [
+        "Plasmodesmata, signaling cascades, callose, immunity"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "A PDLP-NHL3 complex integrates plasmodesmal immune signaling cascades",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD626/5be764b2-40a9-43c3-8f94-4551a4ff119f/fce4ad25-14ce-4488-b99d-1160307f415c.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2613-5977",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "estee.tee@jic.ac.uk",
+      "name": "Estee E. Tee"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3905-8077",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e"
+        }
+      ],
+      "email": "christine.faulkner@jic.ac.uk",
+      "name": "Christine Faulkner"
+    },
+    {
+      "@id": "#f5a443fa-4340-46ad-8652-96d7e0538c7e",
+      "@type": [
+        "Organization"
+      ],
+      "name": "John Innes Centre"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "#cc616092-f9b5-4fc1-bd14-7bccb1e51626",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Leaf samples",
+      "name": "Plasmodesmata callose staining and quantification",
+      "taxonomicRange": []
+    },
+    {
+      "@id": "#0cc0c16a-5f44-4696-b5aa-07066209d6ae",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Aniline blue was excited with a 405 nm UV laser and collected at 430-550 nm",
+      "labEquipment": "Confocal microscope LSM Zeiss 800 using a 63× water immersion objective (Plan-Apochromat 63×/1.0 M27)",
+      "measurementTechnique": [],
+      "name": "Image acquisition"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 208
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 16036951634
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2312"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2312",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#b5132599-2cd3-45fc-ad80-b01f14a7b1c5"
+        },
+        {
+          "@id": "obo:FBbi_00000349"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ac1a62a0-249e-484e-b595-39ec1d51c44e"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-3298-3315"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-31",
+      "description": "Background Radiomics has significantly advanced radiation oncology by providing quantitative, objective metrics to predict therapeutic efficacy. The ability of radiomics to quantify intricate tumor characteristics enhances its potential role in precision oncology, particularly in predicting tumor response to treatments. However, these methods have not been applied to\nthree-dimensional, multicellular tumor spheroids, which are the preferred in vitro model for pre-animal, pre-clinical selection of novel, future-oriented treatment modalities as they mimic the pathophysiological milieu of tumor microareas or micrometastases.\nResults: In this study, we implement an AI-driven predictive modeling workflow using radiomics data from early post-treatment imaging of spheroids of two human cancer cell lines subjected to radiation therapy and hyperthermia. The objective is to predict long-term tumor spheroid relapse from early post-treatment observations. For this purpose, we utilize a comprehensive dataset comprising image time series data from two distinct spheroid types across two independent experiments. We consider three post-treatment observation ranges - short, mid, and long - from which the treatment response is predicted. Our approach integrates\nmultiple feature selection methods and machine learning algorithms for optimal classification performance. Our findings demonstrate that radiomics significantly improves the early prediction of tumor spheroid relapse. A detailed evaluation of the model performance reveals a time gain by early prediction of 2-14 days, while cases of late relapse remain challenging. Conclusions The presented radiomics-based approach potentially reduces the resource-intensive demands associated with prolonged experimental monitoring in a state-of-the-art spheroid assays and allows accurate prediction for up to three days beyond the observation horizon.",
+      "funder": [],
+      "identifier": "S-BIAD2312",
+      "keywords": [
+        "brightfield microscopy",
+        "annotation",
+        "radiomics",
+        "multicellular tumor spheroids",
+        "3D cancer models",
+        "radiation oncology"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Predicting treatment response of tumor spheroids from radiomics analysis of post-treatment dynamics",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2312/60f928c5-b207-412c-9ad6-2122cef484bd/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3298-3315",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/05q5pk319"
+        }
+      ],
+      "email": "pejman.shojaee@htw-dresden.de",
+      "name": "Pejman Shojaee"
+    },
+    {
+      "@id": "https://ror.org/05q5pk319",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Hochschule für Technik und Wirtschaft Dresden – University of Applied Sciences"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#ac1a62a0-249e-484e-b595-39ec1d51c44e",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "FaDu, SAS spheroids.",
+      "name": "FaDu, SAS spheroids",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#b5132599-2cd3-45fc-ad80-b01f14a7b1c5",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "see README and O. Chen, S. Michlı́ková, L. Eckhardt, M. Wondrak, A. M. De Mendoza, M. Krause, D. D. McLeod, L. A. Kunz-Schughart, Efficient heat shock response affects hyperthermia-induced radiosensitization in a tumor spheroid control probability assay, Cancers 13 (13) (2021) 3168. doi:10.3390/cancers13133168.",
+      "labEquipment": "see O. Chen, S. Michlı́ková, L. Eckhardt, M. Wondrak, A. M. De Mendoza, M. Krause, D. D. McLeod, L. A. Kunz-Schughart, Efficient heat shock response affects hyperthermia-induced radiosensitization in a tumor spheroid control probability assay, Cancers 13 (13) (2021) 3168. doi:10.3390/cancers13133168.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000349"
+        }
+      ],
+      "name": "Brightfield microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000349",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "ANSOM"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 118099
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 94052778516
+    }
+  ]
+}

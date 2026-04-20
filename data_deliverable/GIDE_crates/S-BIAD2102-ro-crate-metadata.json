@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2102"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2102",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#d08fa1a7-b26e-4af4-83bb-d7c7e709fc57"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#ccf68ca8-acfa-44b4-bb1a-2d7b5b7866b7"
+        },
+        {
+          "@id": "obo:NCBITaxon_8022"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0009-0005-2042-3953"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-06-24",
+      "description": "confocal image and masks of adipocytes from subcutaneous and visceral tissu of rainbow trout",
+      "funder": [],
+      "identifier": "S-BIAD2102",
+      "keywords": [
+        "adipocytes",
+        "lipid",
+        "adipose tissue",
+        "3D imaging",
+        "nile red",
+        "5 DTAF"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "3D imaging of trout adipocytes in situ",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2102/47657055-6892-4328-86e5-1f114964407f/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0009-0005-2042-3953",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#e93b67bf-b20d-42cb-be55-46454b2418eb"
+        }
+      ],
+      "email": "jerome.bugeon@inrae.fr",
+      "name": "Bugeon"
+    },
+    {
+      "@id": "#e93b67bf-b20d-42cb-be55-46454b2418eb",
+      "@type": [
+        "Organization"
+      ],
+      "name": "INRAE, LPGP"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_8022",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Oncorhynchus mykiss"
+    },
+    {
+      "@id": "#ccf68ca8-acfa-44b4-bb1a-2d7b5b7866b7",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "adult trout adipose tissue",
+      "name": "Subcutaneous and visceral adipose tissue",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_8022"
+      }
+    },
+    {
+      "@id": "#d08fa1a7-b26e-4af4-83bb-d7c7e709fc57",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Cleared tissues, as well as cleared cells mounted into low-gelling agarose slices, were immobilized at the bottom of a 60-mm Petri dish with a tiny drop of superglue. The dish was filled with histodenz and covered with mineral oil to avoid evaporation and thus refractive index changes during acquisitions. For optimal refractive-index homogenization, fixed samples were mounted the day before imaging. Tissue imaging was performed over a depth of 300 µm using and × 2x3 imaging mosaics.",
+      "labEquipment": "3D imaging was performed using a Leica TCS SP8 laser scanning confocal microscope,  equipped with a HC Fluotar L 25x/1.00 IMM (ne=1.457) MotCORR VISIR objective for cleared samples and a HC FLUOTAR L 25x/0,95 W VISIR objective for PBS acquisitions",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "confocal 3D imaging"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 48
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 102412576347
+    }
+  ]
+}

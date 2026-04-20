@@ -1,0 +1,210 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1407"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1407",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#dd77370e-cac6-48eb-8cbe-daf61236d970"
+        },
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#2799d119-5a3b-45ea-837f-de151b29db65"
+        },
+        {
+          "@id": "obo:NCBITaxon_9606"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8596-0996"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6709-9533"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-11-30",
+      "description": "527 digital whole slide images of haematoxylin and eosin (H&E) stained tissue sections from 431 colorectal cancer patients across 3 clinical datasets (BRAF, MISSONI, and VALENTINO). The BRAF cohort is comprised of patients with BRAF V600E mutant microsatellite stable (MSS) cancers (n=165, 24m median follow-up). The MISSONI cohort is comprised of patients with microsatellite instability, with a subset receiving immunotherapy, (n=90, 24m median follow-up). The VALENTINO cohort includes patients with RAS/RAF wildtype MSS cancers who received chemotherapy and anti-EGFR therapy (n=176, 32m median follow-up). Slides are taken from both primary and metastatic sites. Slides were digitised using a Zeiss AxioScan.Z1 slide scanner (40x magnification, 0.11 µm/pixel).",
+      "funder": [],
+      "identifier": "S-BIAD1407",
+      "keywords": [
+        "Histology",
+        "Digital Pathology",
+        "H&E",
+        "Whole Slide Image",
+        "Colorectal Cancer",
+        "Metastasis"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "H&E Whole Slide Images of Colorectal Cancer from 3 clinically annotated datasets with 24+ months follow-up.",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": []
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6709-9533",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513"
+        }
+      ],
+      "email": "andrea.sottoriva@fht.org",
+      "name": "Andrea Sottoriva"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8596-0996",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#d4b84892-8d1c-4e5c-86d2-98abb68475f9"
+        }
+      ],
+      "email": "nick.trahearn@icr.ac.uk",
+      "name": "Nicholas Trahearn"
+    },
+    {
+      "@id": "#5b29b3a5-b5c4-4707-b082-237247a84513",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Human Technopole"
+    },
+    {
+      "@id": "#d4b84892-8d1c-4e5c-86d2-98abb68475f9",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Cancer Research"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_9606",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Homo sapiens"
+    },
+    {
+      "@id": "#2799d119-5a3b-45ea-837f-de151b29db65",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "Homo sapien tissue of colorectal cancer from both primary and metastatic sites",
+      "name": "Biosample",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_9606"
+      }
+    },
+    {
+      "@id": "#dd77370e-cac6-48eb-8cbe-daf61236d970",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "40X Magnification (0.11 microns/pixel).\n\nNote: TIF Images from the VALENTINO cohort have been downsampled from this resolution to 0.44 microns/pixel.",
+      "labEquipment": "Zeiss AxioScan.Z1",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000243"
+        }
+      ],
+      "name": "Image Acquisition"
+    },
+    {
+      "@id": "obo:FBbi_00000243",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "bright-field microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 527
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 1439352234798
+    }
+  ]
+}

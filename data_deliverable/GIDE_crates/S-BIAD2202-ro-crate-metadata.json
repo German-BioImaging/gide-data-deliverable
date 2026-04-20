@@ -1,0 +1,218 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2202"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2202",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#df8ab4b1-9a6d-4ab0-a956-67d661142906"
+        },
+        {
+          "@id": "#3da4382c-edda-454e-ab36-a984de10449f"
+        },
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#1261ce20-51bd-40d5-a936-132132161fb5"
+        },
+        {
+          "@id": "#d419f21e-4562-40ef-bc3e-1ecdbd4d48dd"
+        },
+        {
+          "@id": "obo:NCBITaxon_6239"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#9961f27b-94cb-47b2-b3bc-b821cd27b749"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2025-10-15",
+      "description": "Germ granules are liquid-like condensates that regulate small RNA pathways and gene expression, ensuring genome stability and fertility in animals. In C. elegans, several Argonaute proteins, central players of small RNA pathways, localize to germ granules, yet the functional significance of this spatial enrichment remains unclear. Here, we disrupted the localization of the Argonaute WAGO-4 to germ granules by introducing targeted mutations in the FG repeats of Vasa-like GLH proteins. These mutations did not disrupt overall germ granule architecture but significantly reduced WAGO-4 partitioning, leading to its predominant localization in the cytoplasm. Functional analyses revealed that this mislocalization partially compromised WAGO-4 activity, resulting in reduced WAGO-4 binding of small RNAs targeting specific genes, particularly those not co-regulated by the Argonaute CSR-1. This selective effect highlights the importance of WAGO-4’s spatial localization for efficient small RNA loading and gene regulation. Our findings demonstrate that germ granules serve as specialized compartments that fine-tune Argonaute function, emphasizing the role of phase-separated condensates in modulating RNA pathways and gene regulatory networks.",
+      "funder": [],
+      "identifier": "S-BIAD2202",
+      "keywords": [
+        "C. elegans germline",
+        "Germ granules",
+        "Argonautes",
+        "GLH (Vasa like) proteins"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "WAGO-4 Germ Granule Localization Ensures Fidelity in Small RNA Loading",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD2202/ca640c4a-75dd-4539-a87d-b9394032d055/static_display_512_512.png"
+      ]
+    },
+    {
+      "@id": "#9961f27b-94cb-47b2-b3bc-b821cd27b749",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://ror.org/01zqrxf85"
+        }
+      ],
+      "email": "stela.jelenic@gmail.com",
+      "name": "Stela Jelenic"
+    },
+    {
+      "@id": "https://ror.org/01zqrxf85",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute of Molecular Biotechnology"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_6239",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Caenorhabditis elegans"
+    },
+    {
+      "@id": "#1261ce20-51bd-40d5-a936-132132161fb5",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "C. elegans.",
+      "name": "Biosample 1",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#d419f21e-4562-40ef-bc3e-1ecdbd4d48dd",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "..",
+      "name": "Biosample 2 - in vitro condensates",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_6239"
+      }
+    },
+    {
+      "@id": "#3da4382c-edda-454e-ab36-a984de10449f",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Condensates were imaged in a single z slice in 2 channels: laser 561 (mScarlet::WAGO-4 signal or buffer as a negative control - exp. time 800 ms) and laser 488 (PGL-3-GFP 5% spike - exp. time 100 ms)",
+      "labEquipment": "Olympus IX83 inverted microscope fitted with a spinning-disk scan head (Yokogawa CSU-W1) operating at 4,000 rpm. Imaging was facilitated by either a Teledyne Photometrics Prime 95B sCMOS camera with a pixel size of 11um or a Hamamatsu Orca Fusion CMOS camera with a pixel size of 6.5um. We used 100x/1.4 oil-immersion objective (Olympus UPLSAPO) or a 40x/0.75 air objective (Olympus UPLSAPO). Illumination was provided by Coherent OBIS lasers at wavelengths of 405nm, 488nm, 561nm, and 640nm.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image acquisition 2"
+    },
+    {
+      "@id": "#df8ab4b1-9a6d-4ab0-a956-67d661142906",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Imaging parameters were adjusted individually for each fluorescently labelled protein and temperature, based on signal strength. Control and mutant worms expressing the same fluorescently labelled protein and grown at the same temperature were always imaged during the same imaging session and under identical imaging conditions (laser power, exposure settings, z section thickness). Exposure times for each laser and for each image are indicated in the File list table (and z slice where applicable). For fixed samples, the exposure times for each channel were the same for all genotypes and are indicated in the Files List.",
+      "labEquipment": "Olympus IX83 inverted microscope fitted with a spinning-disk scan head (Yokogawa CSU-W1) operating at 4,000 rpm. Imaging was facilitated by either a Teledyne Photometrics Prime 95B sCMOS camera with a pixel size of 11um or a Hamamatsu Orca Fusion CMOS camera with a pixel size of 6.5um. We used 100x/1.4 oil-immersion objective (Olympus UPLSAPO) or a 40x/0.75 air objective (Olympus UPLSAPO). Illumination was provided by Coherent OBIS lasers at wavelengths of 405nm, 488nm, 561nm, and 640nm.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000253"
+        }
+      ],
+      "name": "Image acquisition 1"
+    },
+    {
+      "@id": "obo:FBbi_00000253",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 87
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 2275322894
+    }
+  ]
+}

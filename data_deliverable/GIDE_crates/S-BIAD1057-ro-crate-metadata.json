@@ -1,0 +1,214 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1057"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1057",
+      "@type": [
+        "Dataset"
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#a9123652-beab-45c5-b633-d8c070591411"
+        },
+        {
+          "@id": "#1657e5a0-ad91-4df4-b616-f50a93778483"
+        },
+        {
+          "@id": "obo:FBbi_00000247"
+        },
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#e0708e92-b462-4a31-b975-a38a4b0848cb"
+        },
+        {
+          "@id": "obo:NCBITaxon_10090"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-3688-1474"
+        }
+      ],
+      "citation": [],
+      "datePublished": "2024-04-01",
+      "description": "Compaction is the first morphogenetic movement of the eutherian mammals and involves a developmentally regulated adhesion process. Previous studies investigated cellular and mechanical aspects of compaction. During mouse and human compaction, cells spread onto each other as a result of a contractility-mediated increase in surface tension pulling at the edges of their cell-cell contacts. However, how compaction may affect the mechanical stability of cell-cell contacts remains unknown. Here, we used a dual pipette aspiration assay on cell doublets to quantitatively analyze the mechanical stability of compacting mouse embryos. We measured increased mechanical stability of contacts with rupture forces growing from 40 to 70 nN, which was highly correlated with cell-cell contact expansion. Analyzing the dynamic molecular reorganization of cell-cell contacts, we find minimal recruitment of the cell-cell adhesion molecule Cdh1 (also known as E-cadherin) to contacts but we observe its reorganization into a peripheral adhesive ring. However, this reorganization is not associated with increased effective bond density, contrary to previous reports in other adhesive systems. Using genetics, we reduce the levels of Cdh1 or replace it with a chimeric adhesion molecule composed of the extracellular domain of Cdh1 and the intracellular domain of Cdh2 (also known as N-cadherin). We find that reducing the levels of Cdh1 impairs the mechanical stability of cell-cell contacts due to reduced contact growth, which nevertheless show higher effective bond density than WT contacts of similar size. On the other hand, chimeric adhesion molecules cannot form large or strong contacts indicating that the intracellular domain of Cdh2 is unable to reorganize contacts and/or is mechanically weaker than the one of Cdh1 in mouse embryos. Together, we find that mouse embryo compaction mechanically strengthens cell-cell adhesion via the expansion of Cdh1 adhesive rings that maintain pre-compaction levels of effective bond density. ",
+      "funder": [],
+      "identifier": "S-BIAD1057",
+      "keywords": [
+        "adhesion",
+        "mechanics",
+        "compaction",
+        "mouse development"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "name": "Mechanical strengthening of cell-cell adhesion during mouse embryo compaction",
+      "publisher": {
+        "@id": "https://www.ebi.ac.uk/bioimage-archive/"
+      },
+      "size": [
+        {
+          "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c"
+        },
+        {
+          "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1057/a2e43d09-af42-46e9-a476-be0b233876ea/0ec55ae2-7c87-43ef-a28e-b8cbda0bad3d.png"
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3688-1474",
+      "@type": [
+        "Person"
+      ],
+      "affiliation": [
+        {
+          "@id": "#1d7e00f3-5644-4b2a-a4e4-05fa1d4315e8"
+        }
+      ],
+      "email": "jean-leon.maitre@curie.fr",
+      "name": "Jean-Léon Maître"
+    },
+    {
+      "@id": "#1d7e00f3-5644-4b2a-a4e4-05fa1d4315e8",
+      "@type": [
+        "Organization"
+      ],
+      "name": "Institute Curie"
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/bioimage-archive/",
+      "@type": [
+        "Organization"
+      ],
+      "name": "BioImage Archive"
+    },
+    {
+      "@id": "obo:NCBITaxon_10090",
+      "@type": [
+        "Taxon"
+      ],
+      "scientificName": "Mus musculus"
+    },
+    {
+      "@id": "#e0708e92-b462-4a31-b975-a38a4b0848cb",
+      "@type": [
+        "BioSample"
+      ],
+      "description": "8-cell stage doublets from mouse embryos",
+      "name": "8-cell stage doublet compaction",
+      "taxonomicRange": {
+        "@id": "obo:NCBITaxon_10090"
+      }
+    },
+    {
+      "@id": "#1657e5a0-ad91-4df4-b616-f50a93778483",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "3 images at 3 focal planes 10 µm apart taken every 30 min",
+      "labEquipment": "Time lapse imaging of dissociated 4-cell stage blastomeres and separation of 8-cell stage doublets are performed on a Leica DMI6000 B inverted microscope equipped with a 40x/0.8 DRY HC PL APO Ph2 (11506383) objective. A 0.7x lens is mounted in front of a Retina R3 camera. The microscope is equipped with a custom incubation chamber (EMBLEM) to keep the sample at 37°C and maintain the atmosphere at 5% CO2.\nTime lapse imaging of dissociated 4-cell stage blastomeres without separation at the 8-cell stage are performed on a Celldiscoverer 7 (Zeiss) equipped with a 20x/0.95 objective. A 2x tubelens in front of an Axiovert (Zeiss) camera. The microscope is equipped with an incubation chamber keeping the sample at 37°C and maintaining the atmosphere at 5% CO2.",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000247"
+        }
+      ],
+      "name": "Timelapse imaging of 8-cell doublet compaction"
+    },
+    {
+      "@id": "#a9123652-beab-45c5-b633-d8c070591411",
+      "@type": [
+        "LabProtocol"
+      ],
+      "description": "Excitation is achieved using 405, 488, 561 and 642 nm laser lines through a 63x/1.2 C Apo Korr water immersion objective; emission is collected through 450/50 nm, 525/50 nm, 595/50 band pass or 610 nm low pass filters.",
+      "labEquipment": "Immunostainings are imaged on an inverted Zeiss Observer Z1 microscope with a CSU-X1 spinning disc unit (Yokogawa). ",
+      "measurementTechnique": [
+        {
+          "@id": "obo:FBbi_00000251"
+        }
+      ],
+      "name": "Imaging of immunostaining"
+    },
+    {
+      "@id": "obo:FBbi_00000247",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "phase contrast microscopy"
+    },
+    {
+      "@id": "obo:FBbi_00000251",
+      "@type": [
+        "DefinedTerm"
+      ],
+      "name": "confocal microscopy"
+    },
+    {
+      "@id": "#1037e7dd-b10a-47a1-885c-1f3b2998ff1c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count",
+      "value": 391
+    },
+    {
+      "@id": "#480bb0bc-db43-46e5-88ae-071380b9d63c",
+      "@type": [
+        "QuantitiveValue"
+      ],
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes",
+      "value": 99300680608
+    }
+  ]
+}
