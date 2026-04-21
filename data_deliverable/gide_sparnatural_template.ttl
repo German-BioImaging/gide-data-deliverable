@@ -1,0 +1,277 @@
+@prefix schema: <http://schema.org/> .
+@prefix volipi: <http://data.sparna.fr/ontologies/volipi#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix this: <https://data.example.com/ontologies/sparnatural-config/> .
+@prefix core: <http://data.sparna.fr/ontologies/sparnatural-config-core#> .
+@prefix datasources: <http://data.sparna.fr/ontologies/sparnatural-config-datasources#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix dwciri: <http://rs.tdwg.org/dwc/iri/> .
+
+<https://data.mydomain.com/ontologies/sparnatural-config> a owl:Ontology;
+  dct:source <https://docs.google.com/spreadsheets/d/1oTs0TQ9yEhW2uuFPg8kFbIxM-zfm0pK_>;
+  dct:format <https://xls2rdf.sparna.fr/rest/convert?url=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1oTs0TQ9yEhW2uuFPg8kFbIxM-zfm0pK_%2Fexport%3Fformat%3Dxlsx&noPostProcessings=true> .
+
+this:Study a sh:NodeShape;
+  sh:order "1"^^xsd:integer;
+  volipi:iconName "fa-solid fa-image";
+  sh:targetClass schema:Dataset;
+  rdfs:label "Study"@en;
+  sh:description "An IDR study dataset."@en;
+  core:defaultLabelProperty schema:name;
+  sh:property this:label, this:study_identifier, this:studied_species, this:used_imaging_method, this:study_thumbnail, this:release_date .
+
+this:label sh:path schema:name;
+  sh:nodeKind sh:Literal;
+  sh:order "1"^^xsd:integer;
+  sh:name "title"@en;
+  sh:description "Study title."@en;
+  dash:propertyRole dash:LabelRole .
+
+this:study_identifier sh:path schema:identifier;
+  sh:node this:Identifier;
+  sh:order "2"^^xsd:integer;
+  sh:name "identifier"@en;
+  sh:description "Identifier linked from the study via schema:identifier."@en;
+  dash:searchWidget core:ListProperty;
+  datasources:datasource this:list_study_identifiers_in_dataset;
+  core:enableNegation "true"^^xsd:boolean .
+
+this:studied_species sh:path schema:about;
+  sh:node this:Species;
+  sh:nodeKind sh:IRI;
+  sh:order "3"^^xsd:integer;
+  sh:name "species"@en;
+  sh:description "Species studied in this dataset."@en;
+  dash:searchWidget core:ListProperty;
+  datasources:datasource this:list_species_in_dataset;
+  core:enableNegation "true"^^xsd:boolean .
+
+this:used_imaging_method sh:path dwciri:measurementMethod;
+  sh:node this:ImagingMethod;
+  sh:nodeKind sh:IRI;
+  sh:order "4"^^xsd:integer;
+  sh:name "imaging method"@en;
+  sh:description "Primary imaging method used by this dataset."@en;
+  dash:searchWidget core:ListProperty;
+  datasources:datasource this:list_imaging_methods_in_dataset;
+  core:enableNegation "true"^^xsd:boolean .
+
+this:study_thumbnail sh:path schema:thumbnailUrl;
+  sh:node this:Thumbnail;
+  sh:nodeKind sh:Literal;
+  sh:order "5"^^xsd:integer;
+  sh:name "thumbnail"@en;
+  sh:description "Study thumbnail URL."@en;
+  dash:searchWidget core:ListProperty;
+  datasources:datasource this:list_study_thumbnails_in_dataset;
+  core:enableNegation "true"^^xsd:boolean .
+
+this:release_date sh:path schema:datePublished;
+  sh:name "release date"@en;
+  sh:nodeKind sh:Literal;
+  sh:datatype core:TimeProperty-Date;
+  sh:node this:Date;
+  dash:searchWidget core:TimeProperty-Date;
+  sh:deactivated "false"^^xsd:boolean;
+  core:enableOptional "true"^^xsd:boolean;
+  core:enableNegation "true"^^xsd:boolean .
+
+this:Date a sh:NodeShape;
+  sh:order "32"^^xsd:integer;
+  volipi:iconName "fa-solid fa-calendar-alt";
+  sh:nodeKind sh:Literal;
+  rdfs:label "Date"@en;
+  sh:description "A date or year."@en .
+
+this:Identifier a sh:NodeShape;
+  sh:deactivated "true"^^xsd:boolean;
+  volipi:iconName "fa-solid fa-link";
+  sh:nodeKind sh:IRI;
+  rdfs:label "Identifier"@en;
+  sh:description "A linked study identifier."@en;
+  core:defaultLabelProperty rdfs:label;
+  sh:property this:identifier_label .
+
+this:identifier_label sh:path rdfs:label;
+  sh:nodeKind sh:Literal;
+  sh:name "identifier label"@en;
+  dash:propertyRole dash:LabelRole .
+
+this:Species a sh:NodeShape;
+  sh:deactivated "true"^^xsd:boolean;
+  volipi:iconName "fa-solid fa-dna";
+  sh:targetClass schema:Taxon;
+  rdfs:label "Taxon"@en;
+  sh:description "A taxonomic unit associated with a dataset."@en;
+  core:defaultLabelProperty dwc:scientificName;
+  sh:property this:species_scientific_name, this:species_parent_taxon .
+
+this:species_scientific_name sh:path dwc:scientificName;
+  sh:nodeKind sh:Literal;
+  sh:name "scientific name"@en;
+  dash:propertyRole dash:LabelRole .
+
+this:species_parent_taxon sh:path [ sh:oneOrMorePath rdfs:subClassOf ];
+  sh:node this:Species;
+  sh:nodeKind sh:IRI;
+  sh:order "2"^^xsd:integer;
+  sh:name "parent taxon"@en;
+  sh:description "Taxon ancestors in the imported NCBITaxon subset."@en;
+  dash:searchWidget core:ListProperty;
+  datasources:datasource this:list_parent_taxa;
+  core:enableNegation "true"^^xsd:boolean .
+
+this:ImagingMethod a sh:NodeShape;
+  sh:deactivated "true"^^xsd:boolean;
+  volipi:iconName "fa-solid fa-microscope";
+  sh:targetClass schema:DefinedTerm;
+  rdfs:label "Imaging Method"@en;
+  sh:description "An imaging method term used in a dataset."@en;
+  core:defaultLabelProperty schema:name;
+  sh:property this:imaging_method_name, this:imaging_method_parent .
+
+this:imaging_method_name sh:path schema:name;
+  sh:nodeKind sh:Literal;
+  sh:name "method name"@en;
+  dash:propertyRole dash:LabelRole .
+
+this:imaging_method_parent sh:path [ sh:oneOrMorePath rdfs:subClassOf ];
+  sh:node this:ImagingMethodParent;
+  sh:nodeKind sh:IRI;
+  sh:order "2"^^xsd:integer;
+  sh:name "parent imaging method"@en;
+  sh:description "Imaging method ancestors in the imported FBBI subset."@en;
+  dash:searchWidget core:ListProperty;
+  datasources:datasource this:list_parent_imaging_methods;
+  core:enableNegation "true"^^xsd:boolean .
+
+this:Thumbnail a sh:NodeShape;
+  sh:deactivated "true"^^xsd:boolean;
+  volipi:iconName "fa-solid fa-image";
+  sh:nodeKind sh:Literal;
+  rdfs:label "Thumbnail"@en;
+  sh:description "A thumbnail URL associated with a study."@en .
+
+this:ImagingMethodParent a sh:NodeShape;
+  sh:deactivated "true"^^xsd:boolean;
+  volipi:iconName "fa-solid fa-microscope";
+  sh:targetClass owl:Class;
+  rdfs:label "Parent Imaging Method"@en;
+  sh:description "A parent imaging method from the imported FBBI subset."@en;
+  core:defaultLabelProperty rdfs:label;
+  sh:property this:imaging_method_parent_label .
+
+this:imaging_method_parent_label sh:path rdfs:label;
+  sh:nodeKind sh:Literal;
+  sh:name "method name"@en;
+  dash:propertyRole dash:LabelRole .
+
+this:list_species_in_dataset a datasources:SPARQLQuery;
+  datasources:queryString """
+PREFIX dwc: <http://rs.tdwg.org/dwc/terms/>
+PREFIX schema: <http://schema.org/>
+SELECT DISTINCT ?uri ?label
+WHERE {
+  ?domain a $domain .
+  ?domain $property ?uri .
+  ?uri a schema:Taxon ;
+       dwc:scientificName ?label .
+}
+ORDER BY UCASE(STR(?label))
+LIMIT 500
+""";
+  rdfs:comment "List only species IRIs attached to datasets, with scientific names."@en .
+
+this:list_imaging_methods_in_dataset a datasources:SPARQLQuery;
+  datasources:queryString """
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?uri ?label
+WHERE {
+  ?domain a $domain .
+  ?domain $property ?uri .
+  ?uri a schema:DefinedTerm ;
+       schema:name ?label .
+}
+ORDER BY UCASE(STR(?label))
+LIMIT 500
+""";
+  rdfs:comment "List only imaging method terms attached to datasets."@en .
+
+this:list_study_thumbnails_in_dataset a datasources:SPARQLQuery;
+  datasources:queryString """
+SELECT DISTINCT ?uri ?label
+WHERE {
+  ?domain a $domain .
+  ?domain $property ?uri .
+  FILTER(isLiteral(?uri))
+  BIND(STR(?uri) AS ?label)
+}
+ORDER BY UCASE(STR(?label))
+LIMIT 500
+""";
+  rdfs:comment "List thumbnail URLs attached to datasets."@en .
+
+this:list_study_identifiers_in_dataset a datasources:SPARQLQuery;
+  datasources:queryString """
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?uri ?label
+WHERE {
+  ?domain a $domain .
+  ?domain $property ?uri .
+  OPTIONAL {
+    ?uri rdfs:label ?rdfsLabel .
+    FILTER(isIRI(?uri))
+  }
+  BIND(COALESCE(?rdfsLabel, STR(?uri)) AS ?label)
+}
+ORDER BY UCASE(STR(?label))
+LIMIT 500
+""";
+  rdfs:comment "List study identifiers linked from datasets via schema:identifier."@en .
+
+this:list_parent_taxa a datasources:SPARQLQuery;
+  datasources:queryString """
+PREFIX dwc: <http://rs.tdwg.org/dwc/terms/>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?uri ?label
+WHERE {
+  ?domain a $domain .
+  ?domain rdfs:subClassOf+ ?uri .
+  ?uri a schema:Taxon .
+  OPTIONAL { ?uri dwc:scientificName ?scientificName . }
+  OPTIONAL { ?uri rdfs:label ?rdfsLabel . }
+  BIND(COALESCE(?scientificName, ?rdfsLabel, STR(?uri)) AS ?label)
+}
+ORDER BY UCASE(STR(?label))
+LIMIT 500
+""";
+  rdfs:comment "List parent taxa linked by rdfs:subClassOf."@en .
+
+this:list_parent_imaging_methods a datasources:SPARQLQuery;
+  datasources:queryString """
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?uri ?label
+WHERE {
+  ?domain a $domain .
+  ?domain rdfs:subClassOf+ ?uri .
+  ?uri a owl:Class .
+  OPTIONAL { ?uri schema:name ?schemaName . }
+  OPTIONAL { ?uri rdfs:label ?rdfsLabel . }
+  BIND(COALESCE(?schemaName, ?rdfsLabel, STR(?uri)) AS ?label)
+}
+ORDER BY UCASE(STR(?label))
+LIMIT 500
+""";
+  rdfs:comment "List parent imaging methods linked by rdfs:subClassOf."@en .
