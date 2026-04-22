@@ -7,15 +7,15 @@ config:
         }
         GROUP BY ?class
         ORDER BY DESC(?count)
-      sort_key: ?count
+      sort_key: "?count"
     - name: "All predicates"
       query: |
         SELECT ?predicate (COUNT(*) AS ?count) WHERE {
-          ?s ?predicate ?o .``
+          ?s ?predicate ?o .
         }
         GROUP BY ?predicate
         ORDER BY DESC(?count)
-      sort_key: ?count
+      sort_key: "?count"
     - name: "All taxa"
       query: |
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -34,7 +34,7 @@ config:
         GROUP BY ?taxon ?taxon_label ?publisher ?publisher_str
         ORDER BY DESC(?count)
         LIMIT 1000
-      sort_key: ?count
+      sort_key: "?count"
     - name: "All imaging methods"
       query: |
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -56,7 +56,7 @@ config:
         GROUP BY ?moreGeneralMethod ?moreGeneralMethod_label
         ORDER BY DESC(?count)
         LIMIT 1000
-      sort_key: ?count
+      sort_key: "?count"
     - name: "Studies about bacteria that used light microscopy"
       query: |
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

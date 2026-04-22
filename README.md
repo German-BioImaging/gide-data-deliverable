@@ -1,3 +1,15 @@
+# Exploring with QLever
+
+To explore the deliverable with a Qlever SPARQL endpoint, make sure https://qlever.dev/ is installed and:
+
+
+```
+cd data_deliverable
+qlever index
+qlever start --description "gide"
+qlever ui
+```
+
 # Deliverable D10.1 – Model description and snapshot
 
 > [!NOTE]
