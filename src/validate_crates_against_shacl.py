@@ -22,6 +22,7 @@ HERE = Path(__file__).parent.resolve()
 CRATES_DIR = HERE / "../data_deliverable/GIDE_crates"
 SHAPES_FILE = HERE / "gide_shapes.ttl"
 HTML_OUTPUT = HERE / "index.html"
+HTML_OUTPUT_DELIVERABLE = HERE / "../data_deliverable/gide_profile_validation.html"
 
 RO_CRATE_CONTEXT_URL = "https://w3id.org/ro/crate/1.2/context"
 _ro_crate_context_cache: dict | None = None
@@ -738,6 +739,8 @@ def main():
     # ── HTML report ───────────────────────────────────────────────────────
     write_html_report(all_results, HTML_OUTPUT)
     print(f"\nHTML report written to {HTML_OUTPUT}")
+    write_html_report(all_results, HTML_OUTPUT_DELIVERABLE)
+    print(f"HTML report written to {HTML_OUTPUT_DELIVERABLE}")
 
     sys.exit(1 if (crates_with_violations or n_errors) else 0)
 

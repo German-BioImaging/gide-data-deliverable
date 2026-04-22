@@ -11,18 +11,21 @@ ROOT = Path(__file__).resolve().parents[0]
 
 
 def main() -> None:
-    source_ttls = ["merged_output.ttl", "merged_output_simplified.ttl"]
+    source_ttls = [
+        ("gide_metadata_combined.ttl", "gide_metadata_with_ontologies.ttl"),
+        ("gide_metadata_combined_simplified.ttl", "gide_metadata_with_ontologies_simplified.ttl"),
+    ]
 
-    for source_ttl in source_ttls:
+    for source_ttl, output_ttl in source_ttls:
         print(f"Processing {source_ttl}...")
-        GIDE_STUDIES = ROOT / source_ttl
+        GIDE_STUDIES = ROOT / "../data_deliverable" / source_ttl
         FBBI_OWL = ROOT / "ontologies/raw/fbbi.owl"
         NCBITAXON_TSV = ROOT / "ontologies/raw/ncbitaxon_hierarchy_wikidata.tsv"
 
         OUT_DIR = ROOT / "ontologies/extracted"
         OUT_FBBI_TTL = OUT_DIR / "gide_fbbi_hierarchy_subset.ttl"
         OUT_NCBI_TTL = OUT_DIR / "gide_ncbitaxon_hierarchy_subset.ttl"
-        OUT_JOINT_TTL = ROOT / source_ttl.replace(".ttl", "_with_fbbi_ncbitaxon.ttl")
+        OUT_JOINT_TTL = ROOT / "../data_deliverable" / output_ttl
 
         OBO_BASE = "http://purl.obolibrary.org/obo/"
 

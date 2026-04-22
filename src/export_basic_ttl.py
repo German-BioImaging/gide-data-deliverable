@@ -3123,8 +3123,8 @@ HERE = Path(__file__).parent.resolve()
 
 def main():
 
-    gide_crates_folder = HERE / "GIDE_crates"
-    output_path = HERE / "merged_output.ttl"
+    gide_crates_folder = HERE / "../data_deliverable/GIDE_crates"
+    output_path = HERE / "../data_deliverable/gide_metadata_combined.ttl"
 
     if not gide_crates_folder.exists():
         print(f"Error: {gide_crates_folder} folder not found")

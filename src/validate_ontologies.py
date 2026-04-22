@@ -28,6 +28,7 @@ CRATES_DIR = ROOT / "../data_deliverable/GIDE_crates"
 FBBI_OWL = ROOT / "ontologies" / "raw" / "fbbi.owl"
 NCBITAXON_TSV = ROOT / "ontologies" / "raw" / "ncbitaxon_hierarchy_wikidata.tsv"
 HTML_OUTPUT = ROOT / "ncbi_fbbi_usage.html"
+HTML_OUTPUT_DELIVERABLE = ROOT / "../data_deliverable/gide_ncbi_and_fbbi_validation.html"
 
 OBO_BASE = "http://purl.obolibrary.org/obo/"
 
@@ -734,6 +735,11 @@ def main() -> None:
 
     write_html_report(results)
     print(f"\nHTML report written to {HTML_OUTPUT}")
+    
+    # Also write to data_deliverable
+    import shutil
+    shutil.copy(HTML_OUTPUT, HTML_OUTPUT_DELIVERABLE)
+    print(f"HTML report written to {HTML_OUTPUT_DELIVERABLE}")
 
     sys.exit(1 if total_mismatches else 0)
 
